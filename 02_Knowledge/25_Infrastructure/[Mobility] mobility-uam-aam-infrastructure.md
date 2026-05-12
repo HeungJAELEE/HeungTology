@@ -1,0 +1,134 @@
+---
+Basic:
+  id: "[Mobility] mobility-uam-aam-infrastructure"
+  domain: "Unknown_Domain"
+  project: "Vault_Modernization"
+  date: "2026-05-12"
+  version: "v6.3.7"
+Object:
+  object_type: "Concept"
+  tier: 1
+  description: "Standard Industrial Node"
+  physical_model: "N/A"
+Semantic:
+  tags: - '#auto-healed'
+  is_part_of: []
+  related_to: []
+Dynamic:
+  status: "Ratified_v6.3.7_Migration"
+  topology_policy: "Interconnected_Cluster"
+  graphify_link_external: true
+  fidelity_engine: "DomainFidelityEngine"
+  diagnostic_protocol:
+    - 'Standard_Verification: Verify baseline parameters.'
+    - 'Context_Audit: Ensure topological integrity.'
+Trust Metrics:
+  T_static: 1.0
+  T_dynamic: 1.0
+  T_init: 1.0
+  source: "Antigravity Vault"
+  isolation_index: 0.0
+---
+
+# [Mobility] mobility-uam-aam-infrastructure
+
+## 1. 왜 배우는가? (Why: Expanding Urban Space)
+기존의 도심 교통 체증은 2차원 평면 공간의 물리적 한계로 인해 해결 불가능한 엔트로피 증가 상태에 도달했습니다. **UAM(Urban Air Mobility)** 및 **AAM(Advanced Air Mobility)**은 이동의 차원을 지상에서 공중으로 확장하여, 도심 내 이동 시간을 $1/3$ 이하로 단축하는 혁신적 솔루션입니다. 이를 실현하기 위해선 단순한 기체 개발을 넘어, **버티포트(Vertiport)**라는 지상 인프라, **전기 수직 이착륙기(eVTOL)**의 에너지 관리, 그리고 수천 대의 기체를 동기화 제어하는 **저고도 항공 교통 관리(UTM)** 시스템이 하나의 거대한 물리적 네트워크로 통합되어야 합니다. 이를 분석하는 목적은 '지상의 정체'를 '공중의 흐름'으로 전환하는 3차원 물류/교통 아키텍처의 물리적 설계를 이해하기 위함입니다.
+
+---
+
+## 2. 핵심 기술 사양 (Numerical Specs)
+
+eVTOL 기체 및 인프라의 핵심 공학 파라미터입니다.
+
+| 항목 (Parameter) | 사양 (Specification) | 엔지니어링 의미 |
+| :--- | :--- | :--- |
+| **에너지 밀도 (Battery)** | $> 250\text{ Wh/kg}$ (Pack level) | 수직 이착륙을 위한 최소 물리적 에너지 임계치 |
+| **순항 속도 (Cruising)** | $200\text{km/h} \sim 320\text{km/h}$ | 광역 도심 간 이동 효율성 확보 |
+| **소음 수준 (Noise)** | $< 65\text{ dB}$ (at $150\text{m}$) | 도심 내 운행을 위한 사회적 수용성 기준 |
+| **충전 전력 (Fast Charge)** | $> 500\text{ kW}$ | 버티포트 내 짧은 회항 시간(Turn-around) 확보 |
+| **정밀 이착륙 오차** | $\pm 0.5\text{m}$ (GNSS+Vision) | 협소한 버티포트 패드 내 안전 착륙 보장 |
+| **운용 고도** | $300\text{m} \sim 600\text{m}$ | 저고도 빌딩 숲 사이의 안전 항로 구축 |
+
+---
+
+## 3. 심층 분석: eVTOL 추진 아키텍처와 분산 추진(DEP) (Deep Analysis)
+
+### 3.1 DEP (Distributed Electric Propulsion)의 물리적 강점
+전통적인 헬리콥터와 달리, eVTOL은 여러 개의 소형 로터를 분산 배치합니다.
+- **Safety (Redundancy)**: 특정 로터가 고장 나더라도 나머지 로터의 출력을 실시간 제어하여 비상 착륙이 가능합니다 ($10^{-9}$ 수준의 항공 안전 등급 지향).
+- **Control Efficiency**: 대형 로터의 피치(Pitch) 조절 대신, 개별 모터의 회전수(RPM)를 조절함으로써 조종 응답 속도를 비약적으로 높입니다.
+
+### 3.2 Vertiport: 3D 허브의 물류 역학
+버티포트는 단순한 이착륙장이 아닌, **'에너지 충전 + 승객 승하차 + 항행 관리'**가 융합된 복합 시설입니다.
+- **Logic Flow**: $\text{Arrival} \rightarrow \text{Auto-Taxiing} \rightarrow \text{Rapid Charge} \rightarrow \text{Take-off}$. 
+- **Thermal Management**: 500kW 이상의 초급속 충전 시 발생하는 열을 냉각하기 위해 버티포트 바닥면에 수냉식 쿨링 패드가 매립되어야 하며, 이는 기체의 열관리 시스템과 연동됩니다.
+
+---
+
+## 4. AI & Hardware Synergy: 3D Traffic Management
+
+수천 대의 eVTOL이 얽히는 도심 상공은 인간의 관제 능력을 초월하며, AI 기반의 자동 관제가 필수적입니다.
+
+- **RTX 4060 기반 4D 경로 최적화 (Digital Twin)**:
+  - 시간($t$)을 포함한 4차원 좌표계 상에서 기체 간의 충돌 가능성을 $10\text{ms}$ 단위로 예측.
+  - 빌딩 풍(Downwash), 돌풍(Gust) 데이터를 OpenVINO 가속 모델로 실시간 분석하여 최적의 비행 자세 제어값 하달.
+- **Swarm Intelligence**:
+  - 기체 간의 직접 통신(V2V)을 통해 중앙 서버 없이도 스스로 대열을 정비하고 경로를 우회하는 분산형 지능 체계 구축.
+
+---
+
+## 5. [스스로 체크 (Verification Checklist)]
+
+- [ ] **에너지 마진**: 비상 착륙 및 회항(Diversion)을 위한 예비 배터리 용량($\sim 20\%$)을 제외하고도 목표 주행 거리를 충족하는가?
+- [ ] **소음 스펙트럼**: 고주파 대역의 로터 소음이 도심 배경 소음과 융합되어 거주자 불쾌감을 유발하지 않는 수준인가?
+- [ ] **인프라 연결**: 버티포트의 충전 규격이 국제 항공 표준(GAMA/EASA)을 준수하며 지상 교통(지하철, 버스)과 5분 이내 환승이 가능한가?
+- [ ] **사이버 보안**: 위성 항법 시스템(GNSS) 스푸핑이나 해킹 시에도 물리적 안정성을 유지하는 백업 항법(Inertial Navigation)이 존재하는가?
+
+---
+
+## 🏗️ [HDS-Gold V6.3.7 Enrichment Section]
+
+### 1. Scientific Rationale: The Disk Loading and Power Loading Trade-off
+eVTOL 설계의 물리적 한계는 **[디스크 로딩(Disk Loading)]**에 의해 결정됩니다. 
+- **물리적 인과관계**: 단위 로터 면적당 지지하는 무게가 높을수록 수직 이착륙 시 필요한 전력이 기하급수적으로 증가합니다($P \propto \sqrt{\text{DL}}$). 
+- **엔지니어링 선택**: UAM 기체는 도심 내 소음 저감을 위해 로터 크기를 줄이는 경향이 있으나, 이는 디스크 로딩을 높여 배터리 소모를 가속화합니다. 최적의 UAM 설계는 **[멀티-로터 모드]**와 **[고정익 순항 모드]**를 물리적으로 전환(Tilt-rotor)하여, 이착륙 효율과 비행 효율을 동시에 확보하는 데 있습니다.
+
+### 2. AI-Hardware Bridge Code: Real-time Flight Path Deconfliction
+RTX 4060에서 주변 기체와의 충돌 위험을 감지하는 공간 충돌 감지 기초 로직입니다.
+
+```python
+import numpy as np
+
+def check_collision_risk(my_pos, other_aircrafts, safety_radius=100):
+    # my_pos: [x, y, z, vx, vy, vz]
+    # other_aircrafts: [[x, y, z, ...], ...]
+    
+    risks = []
+    for other in other_aircrafts:
+        # 1. 상대 거리 계산
+        dist = np.linalg.norm(my_pos[:3] - other[:3])
+        
+        # 2. 상대 속도를 이용한 CPA(Closest Point of Approach) 예측
+        rel_vel = my_pos[3:] - other[3:]
+        time_to_cpa = -np.dot(my_pos[:3] - other[:3], rel_vel) / (np.linalg.norm(rel_vel)**2 + 1e-9)
+        
+        if time_to_cpa > 0 and dist < safety_radius * 2:
+            risks.append({"id": other.id, "ttc": time_to_cpa})
+            
+    return sorted(risks, key=lambda x: x['ttc'])
+```
+
+### 3. Bidirectional Knowledge Linkage
+- **Upstream**: it-future-mobility-master ➡️ 본 노드 (항공 부문 확장)
+- **Downstream**: 본 노드 ➡️ mobility-uam-traffic-management-and-cns (교통 관제 연동)
+
+---
+**관련 노드:**
+- it-future-mobility-master — 3차원 교통망을 포함한 미래 모빌리티 통합 전략
+- Mobility mobility-sdv-software-defined-vehicle-architecture — eVTOL의 자율 비행을 위한 소프트웨어 아키텍처
+- mobility-uam-traffic-management-and-cns — 저고도 항공 관제 및 통신/항법/감시 시스템 상세
+- it-battery-engineering-master — UAM의 높은 출력 밀도 요구사항을 충족하는 전고체/고출력 배터리 설계
+
+---
+*Generated by Antigravity Chief Technical Strategist (Supreme Edition)*

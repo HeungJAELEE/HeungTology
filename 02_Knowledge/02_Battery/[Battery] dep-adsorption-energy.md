@@ -1,0 +1,143 @@
+---
+Basic:
+  id: "[[[Battery] dep-adsorption-energy"
+  domain: "Unknown_Domain"
+  project: "Vault_Modernization"
+  date: "2026-05-12"
+  version: "v6.3.7"
+Object:
+  object_type: "Concept"
+  tier: 1
+  description: "Standard Industrial Node"
+  physical_model: "N/A"
+Semantic:
+  tags: - '#auto-healed'
+  is_part_of: []]
+  related_to: []
+Dynamic:
+  status: "Ratified_v6.3.7_Migration"
+  topology_policy: "Interconnected_Cluster"
+  graphify_link_external: true
+  fidelity_engine: "DomainFidelityEngine"
+  diagnostic_protocol:
+    - 'Standard_Verification: Verify baseline parameters.'
+    - 'Context_Audit: Ensure topological integrity.'
+Trust Metrics:
+  T_static: 1.0
+  T_dynamic: 1.0
+  T_init: 1.0
+  source: "Antigravity Vault"
+  isolation_index: 0.0
+---
+
+# [[[Battery] dep-adsorption-energy
+
+## 1. 왜 배우는가? (Why: The Atomic Glue)
+반도체 공정에서 가스 상태의 전구체가 웨이퍼 위에 내려앉아 박막이 되는 첫 번째 단계는 **'흡착(Adsorption)'**입니다. 전구체 분자가 표면에 얼마나 강력하게 달라붙는지 결정하는 것이 바로 **'흡착 에너지($E_{ads}$)'**입니다. 이 에너지가 너무 작으면 분자가 금방 튕겨 나가 증착이 안 되고, 너무 크면 표면에서 이동($\text{Diffusion}$)하지 못해 고르지 못한 박막이 형성됩니다. 
+
+우리가 흡착 에너지를 분석하는 목적은 공정 온도를 설계할 때 분자가 표면에 머무는 시간($\text{Residence Time}$)을 나노초 단위로 제어하여, **[완벽한 단분자층 포화]]**와 **[결함 없는 막질]**을 구현하기 위함입니다.
+
+---
+
+## 2. 핵심 기술 사양 (Numerical Specs)
+
+흡착 거동을 지배하는 핵심 물리 파라미터와 수식입니다.
+
+| 항목 (Parameter) | 수식 / 단위 | 물리적 의미 |
+| :--- | :--- | :--- |
+| **Adsorption Energy ($E_{ads}$)** | $\text{eV/molecule}$ | 가스 분자가 표면에 결합할 때 방출되는 에너지 |
+| **Physisorption (물리 흡착)** | $< 0.5 \text{ eV}$ | 반데르발스 힘에 의한 약한 결합 (가역적) |
+| **Chemisorption (화학 흡착)** | $> 1.0 \text{ eV}$ | 전자 공유/이동에 의한 강력한 결합 (비가역적) |
+| **Desorption Rate ($k_d$)** | $\nu \exp(-E_{ads}/kT)$ | 열에너지에 의해 표면에서 분자가 떨어져 나가는 속도 |
+| **Residence Time ($\tau$)** | $1/k_d$ | 분자가 다시 증발하기 전까지 표면에 머무는 평균 시간 |
+| **Surface Coverage ($\theta$)** | Langmuir Isotherm | 가용 표면 사이트 중 흡착된 분자가 차지하는 비율 |
+
+---
+
+## 3. 심층 분석: 물리 흡착 vs 화학 흡착 (Deep Analysis)
+
+흡착의 종류에 따라 증착의 성격이 완전히 달라집니다.
+
+### 3.1 Physisorption (물리적 안착)
+- **원리**: 유도 쌍극자 사이의 반데르발스 힘에 의해 발생합니다.
+- **특징**: 결합이 약해 낮은 온도에서도 쉽게 탈착($\text{Desorption}$)됩니다. ALD 공정에서는 이를 억제해야 자가 제한 특성을 확보할 수 있습니다.
+
+### 3.2 Chemisorption (화학적 결합)
+- **원리**: 전구체와 기판 원자 사이의 실제 화학 결합이 형성됩니다.
+- **특징**: 결합이 강력하며 특정 온도 범위(ALD Window)에서 안정적인 단분자층을 형성합니다. 원자가 에너지를 받아 표면의 낮은 에너지 자리를 찾아 이동하는 **[표면 확산]**의 에너지를 공급하는 근원이기도 합니다.
+
+### 3.3 Adsorption Isotherm (흡착 등온선)
+- **Langmuir Model**: "표면 사이트는 유한하며, 한 사이트에는 하나의 분자만 붙을 수 있다"는 가정을 통해 ALD의 자가 제한성을 수학적으로 설명합니다.
+  - $\theta = \frac{KP}{1+KP}$ ($P$: 분압, $K$: 흡착 평형 상수)
+
+---
+
+## 4. AI & Hardware Synergy: Adsorption Simulation on RTX 4060
+
+RTX 4060 하드웨어를 활용하여 전구체의 흡착 거동을 예측하는 전략입니다.
+
+- **RTX 4060 기반 DFT 연산 가속**:
+  - 새로운 전구체 분자가 다양한 기판(Si, SiO2, Cu 등)에 접근할 때의 에너지 맵을 RTX 4060의 CUDA 코어로 고속 시뮬레이션 ➡️ 실험 없이도 최적의 흡착 조건($T, P$) 도출.
+- **Surface Kinetic Monte Carlo (KMC)**:
+  - 수백만 개의 분자가 표면에서 흡착, 확산, 탈착되는 과정을 RTX 4060에서 병렬 연산 ➡️ 실제 박막의 거칠기($\text{Roughness}$)와 밀도($\text{Density}$)를 원자 수준에서 예측.
+- **Recipe Optimization**:
+  - 시뮬레이션 결과를 바탕으로 전구체 주입 시간($\text{Pulse Time}$)을 최소화하여 생산량($\text{Throughput}$)을 $20\%$ 이상 향상시키는 레시피 자동 생성.
+
+---
+
+## 5. [스스로 체크 (Verification Checklist)]
+
+- [ ] **Desorption Check**: 공정 온도가 너무 높아 전구체가 결합하기도 전에 탈착되고 있지는 않은가?
+- [ ] **Site Competition**: 불순물(수분, 탄소 등)이 표면 사이트를 먼저 차지하여 증착 속도를 저해하고 있지는 않은가?
+- [ ] **Activation Energy**: 전구체가 화학 흡착 단계로 넘어가기 위한 활성화 에너지 장벽을 넘을 만큼 충분한 열이 공급되고 있는가?
+- [ ] **Coverage Saturation**: 펄스 시간을 늘렸을 때 표면 피복율($\theta$)이 $1.0$에 수렴하며 자가 제한이 일어나는지 확인했는가?
+
+---
+
+## 🏗️ [HDS-Gold V6.3.7 Enrichment Section]
+
+### 1. Scientific Rationale: The Potential Well and Thermal Vibration
+흡착 에너지는 표면 원자들 사이에 형성되는 **[포텐셜 우물(Potential Well)]**의 깊이입니다. 
+- **물리적 인과관계**: 가스 분자가 이 우물 안으로 떨어지면 열역학적으로 안정한 상태가 됩니다. 하지만 표면 원자들은 끊임없이 열진동($\text{Thermal Vibration}$)을 하며 이 분자를 밖으로 쳐내려 합니다. 흡착 에너지가 이 열진동 에너지($kT$)보다 충분히 커야 분자는 표면에 붙어 있을 수 있습니다. 이는 물리 시스템에서 **[신호 대 잡음비]**와 같으며, 에너지를 제어함으로써 무작위적인 분자의 움직임 속에서 질서 있는 박막 성장을 인출해내는 물리적 기법입니다.
+
+### 2. AI-Hardware Bridge Code: Residence Time Calculator (Python)
+온도와 흡착 에너지에 따른 분자의 표면 체류 시간을 계산하는 파이썬 코드입니다.
+
+```python
+import numpy as np
+
+def calculate_residence_time(temp_c, e_ads_ev):
+    # k: 볼츠만 상수 (eV/K)
+    k_ev = 8.617e-5
+    temp_k = temp_c + 273.15
+    
+    # nu: 전구체의 진동 주파수 (보통 10^13 Hz)
+    nu = 1e13
+    
+    # 1. 탈착 속도 계산 (Arrhenius 형식)
+    kd = nu * np.exp(-e_ads_ev / (k_ev * temp_k))
+    
+    # 2. 체류 시간 (Tau) 계산
+    residence_time_sec = 1 / kd
+    
+    print(f"[Simulation] Temp: {temp_c}C, E_ads: {e_ads_ev}eV")
+    print(f"- Residence Time: {residence_time_sec:.2e} seconds")
+    
+    return residence_time_sec
+
+# RTX 4060에서 수천 개의 온도/에너지 조합을 맵핑하여 공정 윈도우 시각화 가능
+```
+
+### 3. Bidirectional Knowledge Linkage
+- **Upstream**: it-semi-fabrication-master ➡️ 본 노드 (표면 과학 기초)
+- **Downstream**: 본 노드 ➡️ [AI] dep-ald-window (흡착에 의한 온도 창 결정)
+
+---
+**관련 노드:**
+- it-semi-fabrication-master — 반도체 제조 공정 및 증착 메커니즘의 전체 아키텍처
+- [AI] dep-ald-window — 흡착 에너지가 안정적으로 유지되는 최적의 공정 온도 구간
+- dep-ald-cycle-timing — 흡착 시간을 기반으로 한 ALD 전구체 주입 및 퍼지 타이밍 설계
+- Battery dep-precursor-high-k — 특정 흡착 에너지를 갖도록 설계된 고성능 유전체 전구체 화학
+
+---
+*Generated by Antigravity Chief Technical Strategist (Supreme Edition)*
