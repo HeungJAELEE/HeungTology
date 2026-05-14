@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "semiconductor-cmp-planarization-and-removal-rate-log-v2026"
-  domain: "05_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DataLog", "#Semiconductor", "#CMP", "#Planarization", "#Removal_Rate", "#Surface_Finishing", "#Manufacturing_Data", "#HDS_Gold_v6_1"]'
-  is_part_of: '["SOP chemical-mechanical-polishing-cmp-and-wafer-planarization", "MOC 01_Semiconductor"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: 05_Semiconductor
+  id: semiconductor-cmp-planarization-and-removal-rate-log-v2026
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an industrial process engineer at Antigravity.
+  - A technical document titled "semiconductor-cmp-planarization-and-removal-rate-log-v2026".
+  - Generate 5 expected queries that would be used to search for this document later.
+  - Specific and practical (real-world application).
+  - End each with '?'.
+  is_part_of: '["SOP chemical-mechanical-polishing-cmp-and-wafer-planarization", "MOC
+    01_Semiconductor"]'
+  related_to: []
+  tags: '["#DataLog", "#Semiconductor", "#CMP", "#Planarization", "#Removal_Rate",
+    "#Surface_Finishing", "#Manufacturing_Data", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] semiconductor-cmp-planarization-and-removal-rate-log-v2026

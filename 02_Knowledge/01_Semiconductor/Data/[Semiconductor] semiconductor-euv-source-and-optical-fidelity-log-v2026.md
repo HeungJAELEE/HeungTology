@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "semiconductor-euv-source-and-optical-fidelity-log-v2026-data"
-  domain: "05_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Data", "#Semiconductor", "#EUV", "#Lithography", "#Optical_Fidelity", "#Yield", "#ASML", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Semiconductor EUV-lithography-physics-and-source-engineering", "Semiconductor semiconductor-lithography-and-nanopatterning-physics"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: 05_Semiconductor
+  id: semiconductor-euv-source-and-optical-fidelity-log-v2026-data
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Input: A technical document titled "semiconductor-euv-source-and-optical-fidelity-log-v2026-data".'
+  - '*   Task: Create 5 expected queries for future document retrieval.'
+  - '*   Constraints:'
+  - Concrete and practical (real-world engineering context).
+  is_part_of: '["Semiconductor EUV-lithography-physics-and-source-engineering", "Semiconductor
+    semiconductor-lithography-and-nanopatterning-physics"]'
+  related_to: []
+  tags: '["#Data", "#Semiconductor", "#EUV", "#Lithography", "#Optical_Fidelity",
+    "#Yield", "#ASML", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026

@@ -1,33 +1,40 @@
 ---
 Basic:
-  id: "MOC-INFRA-FUTURE-CITY-2026-V6.3.7"
-  domain: "Global_Infrastructure_and_Future_Cities"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Global_Infrastructure_and_Future_Cities
+  id: MOC-INFRA-FUTURE-CITY-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "MOC"
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#MOC", "#Infrastructure", "#Smart_City", "#Energy", "#Communication", "#Resilience", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - Assistant to an Industrial Process Engineer.
+  - A technical document titled "MOC-INFRA-FUTURE-CITY-2026-V6.3.7".
+  - Generate 5 expected queries for future searching.
+  - Specific and practical (professional/industry-focused).
+  - End with '?'.
   is_part_of: '["MOC 00_INDEX"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#MOC", "#Infrastructure", "#Smart_City", "#Energy", "#Communication", "#Resilience",
+    "#FidelityEngine", "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Infrastructure_FutureCity_RAG_V6.3.7_Tier0"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Infrastructure_FutureCity_RAG_V6.3.7_Tier0
 ---
 
 # [[[MOC] 25_global-infrastructure-and-future-cities-hub: The Planetary OS

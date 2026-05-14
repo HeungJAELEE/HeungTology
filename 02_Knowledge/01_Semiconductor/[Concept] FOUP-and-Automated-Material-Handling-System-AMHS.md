@@ -1,33 +1,40 @@
 ---
 Basic:
-  id: "[Concept] FOUP-and-Automated-Material-Handling-System-AMHS"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Unknown_Domain
+  id: '[Concept] FOUP-and-Automated-Material-Handling-System-AMHS'
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: - '#auto-healed'
+  expected_queries:
+  - Assistant to an Antigravity industrial process engineer.
+  - A technical document titled "[Concept] FOUP-and-Automated-Material-Handling-System-AMHS".
+  - Create 5 expected queries for searching this document later.
+  - Queries must be specific and practical/professional (실무적).
+  - Must end with a '?'.
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags:
+  - '#auto-healed'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [Concept] FOUP-and-Automated-Material-Handling-System-AMHS

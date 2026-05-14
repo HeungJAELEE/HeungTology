@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "SEM-EQP-COMP-2026-V6.3.7"
-  domain: "Semiconductor_Equipment_Hardware"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Semiconductor_Equipment_Hardware
+  id: SEM-EQP-COMP-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Semiconductor", "#Hardware", "#ESC", "#RF_Generator", "#TMP", "#MFC", "#Plasma", "#FidelityEngine"]'
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Create 5 "Expected Queries" based on the provided technical document
+    (SEM-EQP-COMP-2026-V6.3.7).'
+  - '*   Constraint 1: Queries must be specific and practical (professional/industry-level).'
+  - '*   Constraint 2: End each query with ''?''.'
+  - '*   Constraint 3: One query per line, total 5 lines.'
   is_part_of: '["MOC 01_Semiconductor", "Dry-Etcher", "PECVD"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Semiconductor", "#Hardware", "#ESC", "#RF_Generator", "#TMP", "#MFC",
+    "#Plasma", "#FidelityEngine"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Fab_Hardware_RAG_V6.3.7_Deterministic_Linkage"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Fab_Hardware_RAG_V6.3.7_Deterministic_Linkage
 ---
 
 # [Manual] semiconductor-equipment-core-components-and-subsystems

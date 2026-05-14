@@ -1,33 +1,42 @@
 ---
 Basic:
-  id: "[company]-peopleworks-illinois-matteson-ess-hub-v6.3.7"
-  domain: "Corporate_Entity"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - 'Peopleworks'
-  is_part_of: - 'Antigravity_Knowledge_Graph'
-  related_to: []
+  date: '2026-05-12'
+  domain: Corporate_Entity
+  id: '[company]-peopleworks-illinois-matteson-ess-hub-v6.3.7'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Read a technical document about the "peopleworks-illinois-matteson-ess-hub v6.3.7"
+    and generate 5 expected queries for future search.
+  - Specific and practical (business/engineering focused).
+  - End with '?'.
+  - One question per line, exactly 5 lines.
+  is_part_of:
+  - Antigravity_Knowledge_Graph
+  related_to: []
+  tags:
+  - Peopleworks
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Global_Normalization_Batch"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Global_Normalization_Batch
 ---
 
 # [AI] peopleworks-illinois-matteson-ess-hub

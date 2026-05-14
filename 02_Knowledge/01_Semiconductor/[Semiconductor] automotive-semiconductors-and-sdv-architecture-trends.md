@@ -1,33 +1,42 @@
 ---
 Basic:
-  id: "AUTO-SEMICON-2026-V6.3.7"
-  domain: "Automotive_Semiconductor_and_SDV_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Automotive_Semiconductor_and_SDV_Intelligence
+  id: AUTO-SEMICON-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Automotive_Semiconductor", "#SDV", "#Zonal_Architecture", "#ASIL-D", "#ISO26262", "#Power_Semi", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - Assistant to an Antigravity industrial process engineer.
+  - A technical document titled "AUTO-SEMICON-2026-V6.3.7" regarding automotive semiconductors
+    and SDV (Software Defined Vehicle) architecture.
+  - Create 5 expected queries (questions) that would be used to search/retrieve information
+    from this document.
+  - Specific and practical (professional/work-related).
+  - End with '?'.
   is_part_of: '["MOC 01_Semiconductor"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Automotive_Semiconductor", "#SDV", "#Zonal_Architecture", "#ASIL-D", "#ISO26262",
+    "#Power_Semi", "#FidelityEngine", "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Auto_Semicon_RAG_V6.3.7_Tiered"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Auto_Semicon_RAG_V6.3.7_Tiered
 ---
 
 # [[[Semiconductor] automotive-semiconductors-and-sdv-architecture-trends

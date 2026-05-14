@@ -1,34 +1,44 @@
 ---
 Basic:
-  id: "wafer-defect-kinetics-and-yield-forensics"
-  domain: "General_Industrial"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: General_Industrial
+  id: wafer-defect-kinetics-and-yield-forensics
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Defect_Classification_Audit: Automated defect classification (ADC) accuracy check.'
+  - 'Killer_Defect_Analysis: Distinguishing between nuisance and yield-limiting defects.'
+  - 'Spatial_Signature_Analysis: Identifying equipment-specific defect patterns (e.g.,
+    edge rings).'
+  fidelity_engine: YieldFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: The systematic study and detection of wafer-level defects using optical
+    and electron-beam metrology, focused on identifying root causes and optimizing
+    semiconductor yield.
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "The systematic study and detection of wafer-level defects using optical and electron-beam metrology, focused on identifying root causes and optimizing semiconductor yield."
-  physical_model: "N/A"
 Semantic:
-  tags: '["wafer-inspection", "defect-detection", "yield-management", "metrology", "semiconductor-quality"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Technical document titled "wafer-defect-kinetics-and-yield-forensics".
+  - Create 5 expected queries for future searching/retrieval.
+  - Specific and practical (industry-focused).
+  - End with '?'.
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "YieldFidelityEngine"
-  diagnostic_protocol:
-    - 'Defect_Classification_Audit: Automated defect classification (ADC) accuracy check.'
-    - 'Killer_Defect_Analysis: Distinguishing between nuisance and yield-limiting defects.'
-    - 'Spatial_Signature_Analysis: Identifying equipment-specific defect patterns (e.g., edge rings).'
+  tags: '["wafer-inspection", "defect-detection", "yield-management", "metrology",
+    "semiconductor-quality"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # 🔍 Wafer Defect Kinetics and Yield Forensics

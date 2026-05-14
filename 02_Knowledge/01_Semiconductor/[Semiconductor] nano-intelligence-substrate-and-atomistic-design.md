@@ -1,33 +1,40 @@
 ---
 Basic:
-  id: "semiconductor-nano-intelligence-substrate-and-atomistic-design-entity"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: semiconductor-nano-intelligence-substrate-and-atomistic-design-entity
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Nano_Tech", "#Quantum_Physics", "#Lithography", "#ALD", "#GAA", "#HDS_Gold_v6_1"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Create 5 expected queries for searching the provided technical document later.
+  - Questions must be specific and practical.
+  - Questions must end with '?'.
+  - One question per line, total of 5 lines.
   is_part_of: '["MOC 01_Semiconductor", "Semiconductor semiconductor-fab-master-guide"'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Entity", "#Semiconductor", "#Nano_Tech", "#Quantum_Physics", "#Lithography",
+    "#ALD", "#GAA", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] nano-intelligence-substrate-and-atomistic-design

@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "[[[Semiconductor] background-subtraction"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
+  date: '2026-05-12'
+  domain: Unknown_Domain
+  id: '[[[Semiconductor] background-subtraction'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Read a technical document about "background-subtraction" in semiconductors/video
+    processing.
+  - Create 5 expected queries for future document retrieval.
+  - Specific and practical (professional/industrial context).
+  - End with '?'.
+  is_part_of: []
+  related_to: []
+  tags:
+  - '#auto-healed'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] background-subtraction

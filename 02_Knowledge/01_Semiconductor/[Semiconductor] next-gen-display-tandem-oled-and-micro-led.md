@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "ENTITY-OLED-MICROLED-2026-V6.3.7"
-  domain: "Display_Physics_and_Optoelectronics"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Display_Physics_and_Optoelectronics
+  id: ENTITY-OLED-MICROLED-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Display", "#OLED", "#Tandem", "#MicroLED", "#EQE", "#IQE", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "ENTITY-OLED-MICROLED-2026-V6.3.7" regarding Tandem
+    OLED and Micro-LED physics.
+  - Create 5 expected queries (search terms/questions) for future retrieval.
+  - Specific and practical/professional (industrial context).
+  - End with '?'.
   is_part_of: '["MOC 07_Display_Comm"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Display", "#OLED", "#Tandem", "#MicroLED", "#EQE", "#IQE", "#FidelityEngine",
+    "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Display_Optics_RAG_V6.3.7_Tiered"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Display_Optics_RAG_V6.3.7_Tiered
 ---
 
 # [[[Semiconductor] Next-Gen Display: Tandem OLED & Micro-LED Physics

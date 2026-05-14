@@ -1,30 +1,36 @@
 ---
-aliases: '["V6.3.7 프론트엔드 에이전트 운영 가이드", "분리형 RAG 아키텍처", "위키 오염 복구", "Triple-Sync 정화"]'
-type: SOP
 Basic:
-  domain: 00_System_Governance
   date: 2026-05-09
+  domain: 00_System_Governance
+Dynamic:
+  status: Ratified (V6.3.7.4 Final)
 Object:
   uuid: v6-3-7-decoupled-rag-and-wiki-entropy-management-sop
 Semantic:
-  tags: '["#SOP", "#System_Governance", "#RAG_Architecture", "#Troubleshooting", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 00_master-plan-and-system-governance-hub"]'
   caused_by: '["API_429_Quota_Exceeded_during_RAG_Synthesis", "Legacy_Folder_Merge_causing_Filename_Content_Mismatch"]'
-  controls: '["RAG_Fallback_Strategy", "Agent_Write_Permission_Sandbox", "Trust_Source_Tagging", "Mutant_Node_Triage_Protocol", "Vector_DB_Sync_Trigger"]'
-Dynamic:
-  status: "Ratified (V6.3.7.4 Final)"
+  controls: '["RAG_Fallback_Strategy", "Agent_Write_Permission_Sandbox", "Trust_Source_Tagging",
+    "Mutant_Node_Triage_Protocol", "Vector_DB_Sync_Trigger"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Read the provided technical document ([SOP] v6-3-7-decoupled-rag-and-wiki-entropy-management.md)
+    and generate 5 expected queries for future search.
+  - Specific and practical questions.
+  - Must end with '?'.
+  - One question per line, total 5 lines.
+  is_part_of: '["MOC 00_master-plan-and-system-governance-hub"]'
+  tags: '["#SOP", "#System_Governance", "#RAG_Architecture", "#Troubleshooting", "#HDS_Gold_v6_1"]'
 Trust Metrics:
   T_init: 1.0
   T_static: 1.0
-  note: "수석 아키텍트 직접 승인 SOP. 시스템 헌법급 문서."
+  note: 수석 아키텍트 직접 승인 SOP. 시스템 헌법급 문서.
+aliases: '["V6.3.7 프론트엔드 에이전트 운영 가이드", "분리형 RAG 아키텍처", "위키 오염 복구", "Triple-Sync 정화"]'
+citation_count: 0
+current_trust_level: 0.4
 provenance: '["Project V6.3.7 지식망 정화 및 아키텍처 업그레이드"]'
 related_to: '["MOC 00_master-plan-and-system-governance-hub"]'
-
-# [RLHF Trust Metrics: 점근적 신뢰도 평가 모델]
-trust_base: 0.40          # (정적) 파생 문서의 최초 신뢰도 시작점
-trust_lambda: 0.3         # (정적) 학습률 (가중치 상승 속도 제어 상수)
-citation_count: 0         # (동적) 터미널에서 Y를 누를 때마다 +1씩 누적되는 정수
-current_trust_level: 0.40 # (동적) 파이썬 API가 공식을 계산하여 덮어쓰는 최종 결과값
+trust_base: 0.4
+trust_lambda: 0.3
+type: SOP
 ---
 
 # [SOP] v6-3-7-decoupled-rag-and-wiki-entropy-management

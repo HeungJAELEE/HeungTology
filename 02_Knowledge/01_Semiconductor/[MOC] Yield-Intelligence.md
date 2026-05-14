@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "[moc]-yield-intelligence-v6.3.7"
-  domain: "Semiconductor_Yield_Engineering"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - 'Yield_Intelligence'
-  is_part_of: - 'Antigravity_Knowledge_Graph'
-  related_to: []
+  date: '2026-05-12'
+  domain: Semiconductor_Yield_Engineering
+  id: '[moc]-yield-intelligence-v6.3.7'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
+  tier: 0
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "[moc]-yield-intelligence-v6.3.7".
+  - Create 5 "Expected Queries" that would be used to search for this document later.
+  - Queries must be specific and practical.
+  - Must end with '?'.
+  is_part_of:
+  - Antigravity_Knowledge_Graph
+  related_to: []
+  tags:
+  - Yield_Intelligence
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Yield_Management_Framework"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Yield_Management_Framework
 ---
 
 # [[[MOC] Yield-Intelligence

@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "71_advanced-semiconductor-manufacturing-processes-hub-moc"
-  domain: "71_Advanced_Semiconductor_Manufacturing_Processes_Hub"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#MOC", "#Semiconductor", "#Manufacturing", "#EUV", "#Etching", "#ALD", "#CMP", "#Implantation", "#Cleaning", "#RTP", "#PVD", "#Metrology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: 71_Advanced_Semiconductor_Manufacturing_Processes_Hub
+  id: 71_advanced-semiconductor-manufacturing-processes-hub-moc
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
+  tier: 0
+Semantic:
+  expected_queries:
+  - Assistant to an Industrial Process Engineer at Antigravity.
+  - Read the provided technical document and write 5 expected queries for future search/retrieval.
+  - Specific and practical.
+  - End with a question mark (?).
+  - One question per line, total 5 lines.
+  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub",
+    "[[GEMINI.md]"]'
+  related_to: []
+  tags: '["#MOC", "#Semiconductor", "#Manufacturing", "#EUV", "#Etching", "#ALD",
+    "#CMP", "#Implantation", "#Cleaning", "#RTP", "#PVD", "#Metrology", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[MOC] 71_advanced-semiconductor-manufacturing-processes-hub

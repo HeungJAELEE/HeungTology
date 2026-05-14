@@ -1,33 +1,52 @@
 ---
 Basic:
-  id: "SEM-WBG-MASTER-2026-V6.3.7"
-  domain: "Wide-Bandgap_Power_Semiconductor_and_Energy_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#SiC", "#GaN", "#Ga2O3", "#Diamond", "#Power_Semiconductor", "#WBG", "#UWBG", "#Energy_Sovereignty", "#v6.3.7"]
-  is_part_of: ["MOC 01_Semiconductor", "MOC 01_Infrastructure"]
-  related_to: []
+  date: '2026-05-12'
+  domain: Wide-Bandgap_Power_Semiconductor_and_Energy_Intelligence
+  id: SEM-WBG-MASTER-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Create 5 expected queries (questions) for searching the provided technical
+    document.'
+  - '*   Document: SEM-WBG-MASTER-2026-V6.3.7 regarding Wide-Bandgap (WBG) and Ultra-Wide
+    Bandgap (UWBG) power semiconductors.'
+  - '*   Constraints:'
+  - Specific and practical questions.
+  is_part_of:
+  - MOC 01_Semiconductor
+  - MOC 01_Infrastructure
+  related_to: []
+  tags:
+  - '#SiC'
+  - '#GaN'
+  - '#Ga2O3'
+  - '#Diamond'
+  - '#Power_Semiconductor'
+  - '#WBG'
+  - '#UWBG'
+  - '#Energy_Sovereignty'
+  - '#v6.3.7'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] wide-bandgap-power-semis-gan-sic

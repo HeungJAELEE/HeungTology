@@ -1,33 +1,42 @@
 ---
 Basic:
-  id: "[[[Semiconductor] open-cv-7"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
+  date: '2026-05-12'
+  domain: Unknown_Domain
+  id: '[[[Semiconductor] open-cv-7'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "[[[Semiconductor] open-cv-7" covering RNNs, LSTM,
+    Attention, and their hardware implications.
+  - Create 5 expected queries (questions) that would be used when searching for this
+    document later.
+  - Specific and practical.
+  - End with '?'.
+  is_part_of: []
+  related_to: []
+  tags:
+  - '#auto-healed'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] open-cv-7

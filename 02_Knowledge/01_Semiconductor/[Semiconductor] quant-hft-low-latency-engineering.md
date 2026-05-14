@@ -1,33 +1,39 @@
 ---
 Basic:
-  id: "[[[Semiconductor] quant-hft-low-latency-engineering"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] quant-hft-low-latency-engineering'
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Quant", "#HFT", "#Low-Latency", "#FPGA_Acceleration"]]'
+  expected_queries:
+  - Assistant to an industrial process engineer at Antigravity.
+  - A technical document titled "[[[Semiconductor] quant-hft-low-latency-engineering".
+  - Write 5 expected queries for later searching/retrieving this document.
+  - Specific and practical.
+  - End with '?'.
   is_part_of: '["MOC High-Performance-Computing"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Quant", "#HFT", "#Low-Latency", "#FPGA_Acceleration"]]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] quant-hft-low-latency-engineering

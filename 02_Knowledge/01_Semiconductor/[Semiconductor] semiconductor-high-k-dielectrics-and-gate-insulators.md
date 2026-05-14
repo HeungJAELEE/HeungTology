@@ -1,35 +1,43 @@
 ---
 Basic:
-  id: "semiconductor-high-k-dielectrics-and-gate-insulators-entity"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Materials", "#High-k", "#Dielectrics", "#Quantum_Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub", "Semiconductor semiconductor-atomic-layer-deposition-ald-physics"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: semiconductor-high-k-dielectrics-and-gate-insulators-entity
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Create 5 expected queries for searching the provided technical document.'
+  - '*   Conditions:'
+  - Concrete and practical (industry-focused).
+  - End with '?'.
+  is_part_of: '["MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub",
+    "Semiconductor semiconductor-atomic-layer-deposition-ald-physics"]'
+  related_to: []
+  tags: '["#Entity", "#Semiconductor", "#Materials", "#High-k", "#Dielectrics", "#Quantum_Physics",
+    "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
- 
+
 # [[[Semiconductor] semiconductor-high-k-dielectrics-and-gate-insulators
  
 ## 1. [왜 배우는가? (Why: The Quantum Barrier of Digital Integrity)]]

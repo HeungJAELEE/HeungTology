@@ -1,33 +1,43 @@
 ---
 Basic:
-  id: "SEMI-METRO-INS-2026-V6.3.7"
-  domain: "Semiconductor_Metrology_and_Inspection_Physics"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Metrology", "#Inspection", "#CD-SEM", "#Scatterometry", "#Overlay", "#Yield_Management", "#HDS_Gold_V6.3.7"]'
-  is_part_of: '["MOC 10_semiconductor-and-nanofabrication-intelligence-hub", "MOC 20_semiconductor-manufacturing-and-metrology-intelligence-hub"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: Semiconductor_Metrology_and_Inspection_Physics
+  id: SEMI-METRO-INS-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "SEMI-METRO-INS-2026-V6.3.7" regarding Semiconductor
+    Metrology & Inspection.
+  - Create 5 expected queries (search terms/questions) that would be used to find
+    this document later.
+  - Specific and practical (industry-relevant).
+  - End with a '?'.
+  is_part_of: '["MOC 10_semiconductor-and-nanofabrication-intelligence-hub", "MOC
+    20_semiconductor-manufacturing-and-metrology-intelligence-hub"]'
+  related_to: []
+  tags: '["#Metrology", "#Inspection", "#CD-SEM", "#Scatterometry", "#Overlay", "#Yield_Management",
+    "#HDS_Gold_V6.3.7"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Advanced_Metrology_RAG_V6.3.7_Tier0"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Advanced_Metrology_RAG_V6.3.7_Tier0
 ---
 
 # [[[Semiconductor] Metrology & Inspection: Physics of Atomic Precision Verification

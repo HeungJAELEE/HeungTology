@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "GOD-INDEX-2026-V6.3.7"
-  domain: "Antigravity_Global_Industrial_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Antigravity_Global_Industrial_Intelligence
+  id: GOD-INDEX-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "MOC"
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#MOC", "#INDEX", "#SSOT", "#IndustrialIntelligence", "#GraphRAG", "#PrecisionTiering", "#FidelityEngine"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "GOD-INDEX-2026-V6.3.7" (The Antigravity Global Industrial
+    Intelligence Fabric).
+  - Create 5 expected queries for future search/retrieval.
+  - Specific and practical (industry/engineering context).
+  - Must end with '?'.
   is_part_of: '[] # Root Node'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#MOC", "#INDEX", "#SSOT", "#IndustrialIntelligence", "#GraphRAG", "#PrecisionTiering",
+    "#FidelityEngine"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Global_Industrial_RAG_V6.3.7_Deterministic_Fabric"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Global_Industrial_RAG_V6.3.7_Deterministic_Fabric
 ---
 
 # [[[MOC] 00_INDEX: The Antigravity Global Industrial Intelligence Fabric

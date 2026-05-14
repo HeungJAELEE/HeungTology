@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "[company]-peopleworks-product-portfolio-and-technical-specs-v6.3.7"
-  domain: "Corporate_Entity"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - 'HUD'
-  is_part_of: - 'Antigravity_Knowledge_Graph'
-  related_to: []
+  date: '2026-05-12'
+  domain: Corporate_Entity
+  id: '[company]-peopleworks-product-portfolio-and-technical-specs-v6.3.7'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Industrial Process Engineer at Antigravity.'
+  - '*   Input: A technical document titled `[company]-peopleworks-product-portfolio-and-technical-specs-v6.3.7`.'
+  - '*   Task: Create 5 expected queries for future searching of this document.'
+  - '*   Constraints:'
+  - Specific and practical queries.
+  is_part_of:
+  - Antigravity_Knowledge_Graph
+  related_to: []
+  tags:
+  - HUD
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Global_Normalization_Batch"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Global_Normalization_Batch
 ---
 
 # [AI] peopleworks-product-portfolio-and-technical-specs

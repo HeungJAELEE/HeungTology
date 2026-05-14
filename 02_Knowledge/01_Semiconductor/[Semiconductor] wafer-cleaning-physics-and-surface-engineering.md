@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "wafer-cleaning-physics-and-surface-engineering-entity"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Cleaning", "#Surface_Engineering", "#Fluid_Dynamics", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Semiconductor nano-intelligence-substrate-and-atomistic-design-master-guide", "MOC 01_Semiconductor"]'
-  related_to: []
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: wafer-cleaning-physics-and-surface-engineering-entity
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Generate 5 expected queries for searching the provided technical document.'
+  - '*   Conditions:'
+  - Specific and practical/professional queries.
+  - Must end with '?'.
+  is_part_of: '["Semiconductor nano-intelligence-substrate-and-atomistic-design-master-guide",
+    "MOC 01_Semiconductor"]'
+  related_to: []
+  tags: '["#Entity", "#Semiconductor", "#Cleaning", "#Surface_Engineering", "#Fluid_Dynamics",
+    "#Thermodynamics", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] wafer-cleaning-physics-and-surface-engineering

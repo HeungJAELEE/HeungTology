@@ -1,3 +1,13 @@
+---
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Create 5 "Expected Queries" based on the provided technical document.'
+  - '*   Document: `[Semiconductor] chiplet-and-hybrid-bonding.md`.'
+  - '*   Constraints:'
+  - Queries must be specific and practical (professional/industrial level).
+---
+
 ﻿---
 Basic:
   id: "SEM-CHIP-BOND-2026-V6"

@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "[[[Semiconductor] haptic-feedback-teleoperation"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
+  date: '2026-05-12'
+  domain: Unknown_Domain
+  id: '[[[Semiconductor] haptic-feedback-teleoperation'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Create 5 expected queries (questions) based on the provided technical
+    document.'
+  - '*   Document Title: `[[[Semiconductor] haptic-feedback-teleoperation`'
+  - '*   Conditions:'
+  - Specific and practical questions.
+  is_part_of: []
+  related_to: []
+  tags:
+  - '#auto-healed'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] haptic-feedback-teleoperation

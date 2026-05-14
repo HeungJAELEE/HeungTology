@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "SEMICON-EQUIP-2026-V6.3.7"
-  domain: "Global_Semiconductor_Equipment_and_Materials_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Global_Semiconductor_Equipment_and_Materials_Intelligence
+  id: SEMICON-EQUIP-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Semiconductor_Equipment", "#EUV_Source", "#ESC", "#Vacuum_Physics", "#Precursor", "#CMP_Slurry", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Create 5 expected queries for searching the provided technical document
+    (`SEMICON-EQUIP-2026-V6.3.7`).'
+  - '*   Conditions:'
+  - Specific and practical/professional.
+  - End with '?'.
   is_part_of: '["MOC 01_Semiconductor"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Semiconductor_Equipment", "#EUV_Source", "#ESC", "#Vacuum_Physics", "#Precursor",
+    "#CMP_Slurry", "#FidelityEngine", "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Equipment_Materials_RAG_V6.3.7_Tiered"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Equipment_Materials_RAG_V6.3.7_Tiered
 ---
 
 # [[[Semiconductor] semiconductor-materials-and-equipment-master-guide

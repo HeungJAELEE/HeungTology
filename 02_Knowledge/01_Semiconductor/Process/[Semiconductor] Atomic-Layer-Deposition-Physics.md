@@ -1,33 +1,50 @@
 ---
 Basic:
-  id: "SEM-ALD-MASTER-2026-V6.3.7"
-  domain: "Semiconductor_Manufacturing_Process"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#ALD", "#Atomic_Layer_Deposition", "#Self_Limiting", "#Conformality", "#High_k", "#HfO2", "#PEALD", "#Semiconductor"]
-  is_part_of: ["MOC 01_Semiconductor", "MOC Deposition-Materials-Hub"]
-  related_to: []
+  date: '2026-05-12'
+  domain: Semiconductor_Manufacturing_Process
+  id: SEM-ALD-MASTER-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Create 5 expected queries for searching the provided technical document.'
+  - '*   Document Title: SEM-ALD-MASTER-2026-V6.3.7 (About Atomic Layer Deposition
+    - ALD).'
+  - '*   Constraints:'
+  - Specific and practical (industry/engineering focus).
+  is_part_of:
+  - MOC 01_Semiconductor
+  - MOC Deposition-Materials-Hub
+  related_to: []
+  tags:
+  - '#ALD'
+  - '#Atomic_Layer_Deposition'
+  - '#Self_Limiting'
+  - '#Conformality'
+  - '#High_k'
+  - '#HfO2'
+  - '#PEALD'
+  - '#Semiconductor'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] Atomic-Layer-Deposition-Physics

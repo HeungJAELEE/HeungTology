@@ -1,33 +1,40 @@
 ---
 Basic:
-  id: "DISP-OLED-PHYS-2026-V6.3.7"
-  domain: "Display_Manufacturing_Physics"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Display_Manufacturing_Physics
+  id: DISP-OLED-PHYS-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#OLED", "#Evaporation", "#TFE", "#FidelityEngine", "#HertzKnudsen", "#Encapsulation"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "DISP-OLED-PHYS-2026-V6.3.7" about OLED evaporation
+    and encapsulation.
+  - Create 5 expected queries for searching this document later.
+  - Specific and practical (industrial/engineering context).
+  - End with '?'.
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#OLED", "#Evaporation", "#TFE", "#FidelityEngine", "#HertzKnudsen", "#Encapsulation"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Display_Physics_RAG_V6.3.7"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Display_Physics_RAG_V6.3.7
 ---
 
 # [[[Semiconductor] display-oled-evaporation-master

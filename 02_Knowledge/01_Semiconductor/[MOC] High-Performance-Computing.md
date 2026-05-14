@@ -1,33 +1,42 @@
 ---
 Basic:
-  id: "[moc]-high-performance-computing-v6.3.7"
-  domain: "Semiconductor_Computing"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - 'HPC'
-  is_part_of: - 'Antigravity_Knowledge_Graph'
-  related_to: []
+  date: '2026-05-12'
+  domain: Semiconductor_Computing
+  id: '[moc]-high-performance-computing-v6.3.7'
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
+  tier: 0
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Generate 5 expected queries (search terms/questions) based on the provided
+    technical document.'
+  - '*   Document: `[moc]-high-performance-computing-v6.3.7`.'
+  - '*   Constraints:'
+  - Specific and practical/professional questions.
+  is_part_of:
+  - Antigravity_Knowledge_Graph
+  related_to: []
+  tags:
+  - HPC
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "HPC_Architecture_Reference"
+  T_static: 1.0
   isolation_index: 0.0
+  source: HPC_Architecture_Reference
 ---
 
 # [[[MOC] High-Performance-Computing

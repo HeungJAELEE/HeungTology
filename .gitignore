@@ -2,5 +2,4 @@
 !.gitignore
 !/02_Knowledge/
 !/rag_cli_v2.py
-!/rag_db/
 !/README.md

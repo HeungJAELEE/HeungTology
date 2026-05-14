@@ -1,33 +1,43 @@
 ---
 Basic:
-  id: "[Concept] Photoresist-Chemical-Formulation-and-Polymer-Science"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Unknown_Domain
+  id: '[Concept] Photoresist-Chemical-Formulation-and-Polymer-Science'
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: - '#auto-healed'
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Create 5 expected queries for searching the provided technical document.'
+  - '*   Document Title: [Concept] Photoresist-Chemical-Formulation-and-Polymer-Science.'
+  - '*   Document Content: Covers PR components (Polymer Resin, PAC/PAG, Solvent,
+    Additives), CAR (Chemically Amplified Resist) mechanism (acid generation/chain
+    reaction), Positive vs. Negative PR, and a Python simulation logic for PR profiles
+    (Dill model, diffusion length, PEB).'
+  - '*   Condition 1: Specific and practical (실무적).'
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags:
+  - '#auto-healed'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [Concept] Photoresist-Chemical-Formulation-and-Polymer-Science

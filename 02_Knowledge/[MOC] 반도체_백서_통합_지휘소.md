@@ -1,33 +1,40 @@
 ---
 Basic:
-  id: "MOC_SEMICON_WHITEPAPER_HUB"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: MOC_SEMICON_WHITEPAPER_HUB
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "MOC"
+  description: Standard Industrial Node
+  object_type: MOC
+  physical_model: N/A
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#MOC", "#Semiconductor", "#Governance", "#HDS_Gold_v6_1"]'
+  expected_queries:
+  - Assistant to an Industrial Process Engineer at Antigravity.
+  - Read the provided technical document (`MOC_SEMICON_WHITEPAPER_HUB`) and generate
+    5 expected queries for future search.
+  - Specific and practical questions.
+  - Must end with '?'.
+  - One question per line, total of 5 lines.
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#MOC", "#Semiconductor", "#Governance", "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[MOC] 반도체_백서_통합_지휘소

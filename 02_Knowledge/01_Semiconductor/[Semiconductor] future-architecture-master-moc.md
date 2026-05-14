@@ -1,33 +1,43 @@
 ---
 Basic:
-  id: "semiconductor-future-architecture-master-hub"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: 01_Semiconductor
+  id: semiconductor-future-architecture-master-hub
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#MOC", "#Semiconductor", "#Future_Tech", "#Physics", "#Next_Gen", "#Materials", "#HDS_Gold_v6_1"]'
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity Industrial Process Engineer.'
+  - '*   Task: Write 5 "Expected Queries" based on the provided technical document.'
+  - '*   Document Title: `semiconductor-future-architecture-master-hub`'
+  - '*   Content: Covers future semiconductor architectures (CFET, VTFET, 2D materials),
+    numerical specs (Gate Pitch, Drive Current, etc.), thermomechanical analysis of
+    3D stacking, quantum transport in 2D materials, PPA (Power-Performance-Area),
+    and technology roadmaps.'
+  - '*   Specific and practical (industrial/engineering context).'
   is_part_of: '["MOC 01_Semiconductor", "MOC 135_knowledge-distillation-and-system-integration-mastery-hub"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#MOC", "#Semiconductor", "#Future_Tech", "#Physics", "#Next_Gen", "#Materials",
+    "#HDS_Gold_v6_1"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [[[Semiconductor] future-architecture-master-moc

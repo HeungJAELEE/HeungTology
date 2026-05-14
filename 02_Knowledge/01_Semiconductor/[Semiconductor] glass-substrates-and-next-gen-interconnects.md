@@ -1,3 +1,14 @@
+---
+Semantic:
+  expected_queries:
+  - '*   Role: Assistant to an Antigravity industrial process engineer.'
+  - '*   Task: Write 5 expected queries (questions) that would be used to search this
+    technical document later.'
+  - '*   Conditions:'
+  - Specific and practical (industrial/engineering context).
+  - Must end with '?'.
+---
+
 ﻿---
 Basic:
   id: "SEM-GLASS-SUB-2026-V6"

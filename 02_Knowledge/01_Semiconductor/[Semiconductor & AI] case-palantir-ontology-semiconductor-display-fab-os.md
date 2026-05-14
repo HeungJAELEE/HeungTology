@@ -1,33 +1,51 @@
 ---
 Basic:
-  id: "CASE-PALANTIR-SEMI-2026-V6.3.7"
-  domain: "Semiconductor_and_Display_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#Palantir", "#Foundry", "#Ontology", "#Semiconductor", "#Display", "#Yield_Optimization", "#AIP", "#v6.3.7"]
-  is_part_of: ["MOC 01_Semiconductor", "MOC 09_SmartFactory_Production"]
-  related_to: []
+  date: '2026-05-12'
+  domain: Semiconductor_and_Display_Intelligence
+  id: CASE-PALANTIR-SEMI-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
 Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
   diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
+Object:
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
+  tier: 1
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "CASE-PALANTIR-SEMI-2026-V6.3.7" regarding Palantir
+    Foundry Ontology for Fab OS (Semiconductors & AI).
+  - Create 5 expected queries (questions) that would be used to search for/retrieve
+    information from this document.
+  - Specific and practical/operational.
+  - Must end with '?'.
+  is_part_of:
+  - MOC 01_Semiconductor
+  - MOC 09_SmartFactory_Production
+  related_to: []
+  tags:
+  - '#Palantir'
+  - '#Foundry'
+  - '#Ontology'
+  - '#Semiconductor'
+  - '#Display'
+  - '#Yield_Optimization'
+  - '#AIP'
+  - '#v6.3.7'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # [Semiconductor & AI] Palantir Foundry Ontology for Fab OS

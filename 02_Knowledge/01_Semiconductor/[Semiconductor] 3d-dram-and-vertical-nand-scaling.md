@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "SEMICON-3D-MEM-2026-V6.3.7"
-  domain: "3D_Memory_Architecture_and_Vertical_Scaling_Intelligence"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: 3D_Memory_Architecture_and_Vertical_Scaling_Intelligence
+  id: SEMICON-3D-MEM-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#3D_DRAM", "#Vertical_NAND", "#V-NAND", "#Stacking", "#Memory_Physics", "#HARC_Etching", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - Technical document "SEMICON-3D-MEM-2026-V6.3.7" regarding 3D DRAM and Vertical
+    NAND scaling.
+  - Create 5 expected queries for future searching/retrieval.
+  - Specific and practical (hands-on).
+  - End with '?'.
   is_part_of: '["MOC 01_Semiconductor"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#3D_DRAM", "#Vertical_NAND", "#V-NAND", "#Stacking", "#Memory_Physics",
+    "#HARC_Etching", "#FidelityEngine", "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "3D_Memory_RAG_V6.3.7_Tiered"
+  T_static: 1.0
   isolation_index: 0.0
+  source: 3D_Memory_RAG_V6.3.7_Tiered
 ---
 
 # [[[Semiconductor] 3d-dram-and-vertical-nand-scaling

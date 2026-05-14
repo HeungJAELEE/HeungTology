@@ -1,33 +1,41 @@
 ---
 Basic:
-  id: "SEMICON-SMART-FAB-2026-V6.3.7"
-  domain: "Global_Smart_Fab_and_Yield_Intelligence_Sovereignty"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: Global_Smart_Fab_and_Yield_Intelligence_Sovereignty
+  id: SEMICON-SMART-FAB-2026-V6.3.7
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Standard_Verification: Verify baseline parameters.'
+  - 'Context_Audit: Ensure topological integrity.'
+  fidelity_engine: DomainFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Standard Industrial Node
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
 Semantic:
-  tags: '["#Smart_Fab", "#Yield_Intelligence", "#APC", "#Virtual_Metrology", "#Causal_AI", "#Digital_Twin", "#FidelityEngine", "#Sovereignty"]'
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled "SEMICON-SMART-FAB-2026-V6.3.7" about Smart Fab and
+    Yield Intelligence.
+  - Create 5 expected queries for future retrieval/search.
+  - Queries must be specific and practical/professional.
+  - End each query with '?'.
   is_part_of: '["MOC 01_Semiconductor"]'
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  tags: '["#Smart_Fab", "#Yield_Intelligence", "#APC", "#Virtual_Metrology", "#Causal_AI",
+    "#Digital_Twin", "#FidelityEngine", "#Sovereignty"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Smart_Fab_Intelligence_RAG_V6.3.7_Tiered"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Smart_Fab_Intelligence_RAG_V6.3.7_Tiered
 ---
 
 # [[[Semiconductor] smart-fab-and-yield-intelligence-master-guide

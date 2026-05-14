@@ -1,3 +1,13 @@
+---
+Semantic:
+  expected_queries:
+  - Assistant to an Antigravity Industrial Process Engineer.
+  - A technical document titled `[Semiconductor] Burn-In.md`.
+  - Create 5 expected queries for future searching/retrieval of this document.
+  - Specific and practical (professional/engineering context).
+  - Must end with '?'.
+---
+
 ﻿---
 Basic:
   id: "SEM-BURN-IN-2026-V6"

@@ -1,34 +1,43 @@
 ---
 Basic:
-  id: "advanced-packaging-hbm4-cowos-and-hybrid-bonding"
-  domain: "General_Industrial"
-  project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
+  date: '2026-05-12'
+  domain: General_Industrial
+  id: advanced-packaging-hbm4-cowos-and-hybrid-bonding
+  project: Vault_Modernization
+  version: v6.3.7
+Dynamic:
+  diagnostic_protocol:
+  - 'Warpage_Audit: Measure substrate curvature during thermal cycles.'
+  - 'TSV_Connectivity_Check: Monitor electrical resistance of vertical interconnects.'
+  - 'Bonding_Interface_Audit: Detect voids at the hybrid bonding interface using acoustic
+    microscopy.'
+  fidelity_engine: StackingFidelityEngine
+  graphify_link_external: true
+  status: Ratified_v6.3.7_Migration
+  topology_policy: Interconnected_Cluster
 Object:
-  object_type: "Concept"
+  description: Next-generation semiconductor packaging technologies integrating multiple
+    dies (CPU, GPU, HBM) on a single substrate or stacking them vertically to overcome
+    bandwidth and power efficiency limits.
+  object_type: Concept
+  physical_model: N/A
   tier: 1
-  description: "Next-generation semiconductor packaging technologies integrating multiple dies (CPU, GPU, HBM) on a single substrate or stacking them vertically to overcome bandwidth and power efficiency limits."
-  physical_model: "N/A"
 Semantic:
-  tags: '["advanced-packaging", "hbm4", "cowos", "hybrid-bonding", "tsv", "2-5d-3d-ic"]'
+  expected_queries:
+  - Assistant to an Industrial Process Engineer at Antigravity.
+  - Technical document titled "advanced-packaging-hbm4-cowos-and-hybrid-bonding".
+  - Create 5 expected queries for future retrieval of this document.
+  - Queries must be specific and practical (industry-focused).
+  - Must end with '?'.
   is_part_of: []
   related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "StackingFidelityEngine"
-  diagnostic_protocol:
-    - 'Warpage_Audit: Measure substrate curvature during thermal cycles.'
-    - 'TSV_Connectivity_Check: Monitor electrical resistance of vertical interconnects.'
-    - 'Bonding_Interface_Audit: Detect voids at the hybrid bonding interface using acoustic microscopy.'
+  tags: '["advanced-packaging", "hbm4", "cowos", "hybrid-bonding", "tsv", "2-5d-3d-ic"]'
 Trust Metrics:
-  T_static: 1.0
   T_dynamic: 1.0
   T_init: 1.0
-  source: "Antigravity Vault"
+  T_static: 1.0
   isolation_index: 0.0
+  source: Antigravity Vault
 ---
 
 # 📦 Advanced Packaging: HBM4, CoWoS, and Hybrid Bonding
