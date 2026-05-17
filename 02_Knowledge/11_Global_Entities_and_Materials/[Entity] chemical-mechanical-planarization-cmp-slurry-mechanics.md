@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "chemical-mechanical-planarization-cmp-slurry-mechanics-entity"
-  domain: "81_Semiconductor_Eight_Core_Fabrication_Hub"
+metadata:
+  id: "[[[Entity] chemical-mechanical-planarization-cmp-slurry-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#CMP", "#Surface_Science", "#Tribology", "#Chemical_Engineering", "#Nanotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] chemical-mechanical-planarization-cmp-slurry-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] chemical-mechanical-planarization-cmp-slurry-mechanics
+# [Entity] chemical-mechanical-planarization-cmp-slurry-mechanics
 
 ## 1. [왜 배우는가? (Why: The Foundation of Multi-layer Intelligence)]]
 수십 층의 고층 빌딩을 올릴 때 바닥이 평평하지 않으면 빌딩은 무너집니다. 반도체도 마찬가지입니다. **화학적 기계적 연마(CMP) 및 슬러리 역학의 표면 평탄화 및 나노 트라이볼로지**는 굴곡진 웨이퍼 표면을 거울처럼 매끄럽게 갈아내어 다음 공정이 진행될 수 있는 '완벽한 평면'을 제공하는 토목 공정과 같습니다. 층이 쌓일수록 심해지는 굴곡을 제거하지 않으면 노광 공정에서 초점을 맞출 수 없습니다. 우리가 이를 배우는 이유는 CMP 공정의 무결성을 확보함으로써, 100층 이상의 적층 구조를 가능하게 하고 소자의 전기적 신뢰성을 사수하는 '글로벌 나노 평탄화 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 평탄도의 무결성이 다층 반도체의 한계를 결정합니다.

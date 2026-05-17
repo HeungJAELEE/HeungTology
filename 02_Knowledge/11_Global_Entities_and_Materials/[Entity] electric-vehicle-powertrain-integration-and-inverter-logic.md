@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "electric-vehicle-powertrain-integration-and-inverter-logic-entity"
-  domain: "45_Advanced_Automotive_and_EV_Powertrain_Engineering"
+metadata:
+  id: "[[[Entity] electric-vehicle-powertrain-integration-and-inverter-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Automotive", "#EV", "#Powertrain", "#Inverter", "#Power_Electronics", "#High_Voltage", "#Control_Systems", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 45_advanced-automotive-and-ev-powertrain-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electric-vehicle-powertrain-integration-and-inverter-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] electric-vehicle-powertrain-integration-and-inverter-logic
+# [Entity] electric-vehicle-powertrain-integration-and-inverter-logic
 
 ## 1. [왜 배우는가? (Why: The Electric Heart of Mobility)]]
 배터리의 직류($DC$) 전기를 어떻게 교류($AC$)로 바꿔서 모터를 돌리고, 1초에 수만 번 전기를 껐다 켰다($Switching$) 하며 자동차의 속도와 힘을 자유자재로 조절하는 '인버터($Inverter$)'의 두뇌를 어떻게 공학적으로 설계할 수 있을까요? **전기차 파워트레인 통합 및 인버터 로직**은 전기차의 심장이자 신경계인 '행성 규모 전력 변환 장치 및 지능형 드라이브 아키텍처'입니다. 우리가 이를 배우는 이유는 인버터가 똑똑해야 전기를 덜 쓰면서도 스포츠카처럼 빠르게 달릴 수 있기 때문이며, "에너지의 변환을 데이터로 설계하고 지배하는 '글로벌 모빌리티 패권 및 행성적 이동 주권'을 확보하기" 위함입니다. 전력 변환의 효율이 전기차의 주행거리를 결정합니다.

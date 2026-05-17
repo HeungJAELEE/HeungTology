@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Genomics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Genomics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Genomics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Genomics
@@ -86,5 +76,4 @@ def analyze_genomic_variants(raw_fastq_data, reference_genome):
 2. '후성유전학(Epigenetics)' 연구가 타고난 DNA 서열 분석만으로 알 수 없는 '질병의 발생 시점'을 설명하는 논리는?
 3. 혈액 한 방울로 암을 진단하는 '액체 생검(Liquid Biopsy)' 기술의 공학적 핵심인 'cfDNA 추출 및 분석'의 난제는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nuclear-fusion-and-plasma-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] nuclear-fusion-and-plasma-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of combining light atomic nuclei to form a heavier nucleus, releasing vast amounts of energy (Nuclear Fusion), and the engineering of ultra-high temperature ionized gases (Plasma Engineering) required to sustain this reaction on Earth, often within magnetic confinement devices like Tokamaks."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nuclear-fusion", "plasma-engineering", "tokamak", "iter", "magnetic-confinement", "star-power", "energy-generation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Plasma_Stability_Audit: Evaluate the MHD stability (e.g., Troyon limit) to ensure the plasma does not touch the reactor walls, which would lead to immediate cooling and potential damage.'
-    - 'Confinement_Time_Check: Analyze the energy confinement time ($\\tau_E$) to verify the reactor is approaching or maintaining ''Burning Plasma'' conditions where the reaction sustains itself.'
-    - 'Neutron_Flux_Impact_Scan: Monitor the radiation damage and heat load on the first-wall materials (e.g., Tungsten) to predict component lifespan and maintenance intervals.'
-Trust Metrics:
+  description: "[Entity] nuclear-fusion-and-plasma-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Nuclear Fusion and Plasma Engineering
+# [Entity] nuclear-fusion-and-plasma-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 위에 작은 태양을 만들어, 단 한 바가지의 바닷물로 도시 하나가 일 년 동안 쓸 전기를 얻을 수 있다면 어떨까요? **핵융합 및 플라즈마 공학**은 인류가 꿈꾸는 **'무한 에너지의 성배'**입니다. 태양이 빛나는 원리 그대로, 가벼운 원자들을 억지로 짓눌러 하나로 합칠 때 터져 나오는 엄청난 에너지를 붙잡는 기술입니다. 1억 도라는 상상조차 할 수 없는 온도의 불덩어리(플라즈마)를 보이지 않는 자기장의 병(Tokamak)에 담아 다스리는, 인류 과학 기술의 **'최종 진화형'**입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
             return "REJECT: Negative Fuel Balance - System Cannot Sustain Long-term Fusion Cycle. Check Blanket Design"
         return "PASS: Successful Tritium Self-sufficiency and Closed Fuel Cycle Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(plasma_beta=0.03, edge_safety_factor_q=3.2, first_wall_temp=850)
 print(engine.diagnose_fusion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fusion-plasma-confinement-time-and-q-factor-v2026`와 연동되어, 전 세계 핵융합 실험 장치의 가동 데이터를 실시간 분석하고 플라즈마 붕괴 및 벽 파손 사고 확률을 0.000001% 이하로 억제함으로써 미래 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - nuclear-fission-and-reactor-physics

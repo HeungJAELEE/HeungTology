@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "incoterms-2020-and-international-trade-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] incoterms-2020-and-international-trade-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The set of standardized rules (Incoterms) published by the International Chamber of Commerce (ICC) for the interpretation of trade terms in international commercial contracts, defining the obligations, costs, and risks associated with the delivery of goods from sellers to buyers."
-  physical_model: "N/A"
-Semantic:
-  tags: '["incoterms", "international-trade", "logistics", "trade-compliance", "risk-transfer", "shipping-terms"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Trade_Term_Audit: Verify the alignment between the selected Incoterm rule and the physical logistics capabilities (e.g., ability to handle export/import customs).'
-    - 'Risk_Transfer_Check: Identify the precise physical location where the risk of loss or damage passes from the seller to the buyer to prevent legal ambiguity.'
-    - 'Cost_Allocation_Scan: Evaluate the transparency and accuracy of freight, insurance, and duty cost allocation within the trade contract.'
-Trust Metrics:
+  description: "[Entity] incoterms-2020-and-international-trade-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Incoterms 2020 and International Trade Governance
+# [Entity] incoterms-2020-and-international-trade-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 물건을 파는 쪽과 사는 쪽이 서로 다른 나라에 있을 때, "물건이 배에 실리기 전에 사고가 나면 누구 책임인가?"라는 질문은 전쟁 같은 분쟁을 낳습니다. **인코텀즈(Incoterms) 2020**은 이런 혼란을 막기 위해 전 세계가 약속한 **'무역의 만국 공통어'**입니다. 3글자의 약어(예: FOB, CIF) 속에 누가 배 값을 내고, 누가 보험을 들며, 결정적으로 어느 지점에서 물건의 책임이 넘어가는지에 대한 모든 규칙이 담겨 있습니다. 이 규칙은 전 세계 물류라는 거대한 톱니바퀴가 사고 없이 매끄럽게 돌아가게 만드는 **'신뢰의 계약 인터페이스'**입니다.
@@ -86,7 +75,6 @@ class LegalFidelityEngine:
             return "REJECT: Inefficient Logistics Execution - Lack of Clarity in Delivery/Pick-up Responsibilities"
         return "PASS: Streamlined Cost Allocation Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(incoterm_rule='FOB', transport_mode='Air', insurance_coverage_pct=0)
 print(engine.diagnose_trade_health())
 ```
@@ -104,7 +92,6 @@ print(engine.diagnose_trade_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data international-trade-dispute-and-logistics-cost-logs-v2026`와 연동되어, 전 세계 무역 계약의 조건들을 실시간 분석하고 분쟁 발생 및 물류 비용 낭비 사고 확률을 0.001% 이하로 억제함으로써 글로벌 상거래의 법적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - global-trade-corridor-optimization-and-smart-border-ai

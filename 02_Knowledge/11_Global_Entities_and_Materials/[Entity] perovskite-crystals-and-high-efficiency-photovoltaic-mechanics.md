@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "perovskite-crystals-and-high-efficiency-photovoltaic-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] perovskite-crystals-and-high-efficiency-photovoltaic-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of Perovskite-structured crystals (specifically hybrid organic-inorganic lead halides) and their application in solar cells (Photovoltaics), focusing on their exceptional light absorption, long charge-carrier diffusion lengths, and potential to surpass the Shockley-Queisser limit through tandem configurations."
-  physical_model: "N/A"
-Semantic:
-  tags: '["perovskite", "solar-cells", "photovoltaics", "energy-harvesting", "crystal-structure", "tandem-cells", "optoelectronics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Crystal_Purity_Audit: Evaluate the crystallinity and grain size of the perovskite thin film to ensure minimal recombination centers and maximum charge mobility.'
-    - 'Stability_Degradation_Check: Analyze the PCE decay under continuous light (ISOS-L protocols) and moisture to identify ion migration or chemical decomposition issues.'
-    - 'Tandem_Current_Matching_Scan: Monitor the J-V curves of tandem cells (e.g., Perovskite/Silicon) to ensure current matching between the top and bottom layers for optimal efficiency.'
-Trust Metrics:
+  description: "[Entity] perovskite-crystals-and-high-efficiency-photovoltaic-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Perovskite Crystals and High-Efficiency Photovoltaic Mechanics
+# [Entity] perovskite-crystals-and-high-efficiency-photovoltaic-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 종이처럼 얇고 유연하면서도, 기존의 두꺼운 실리콘 태양광판보다 더 많은 전기를 만들어낼 수 있는 마법의 유리가 있다면 어떨까요? **페로브스카이트 결정 및 고효율 태양광 역학**은 '차세대 에너지 혁명'의 심장입니다. 특유의 결정 구조($ABX_3$) 덕분에 빛을 아주 잘 흡수하고 전기를 잘 전달하는 이 소재는, 인쇄하듯이 펴 발라 만들 수 있어 가격이 저렴하면서도 효율은 기존 태양전지를 뛰어넘으려 하고 있습니다. 인류가 햇빛만으로 모든 에너지를 충당하는 시대를 앞당길 **'광학의 기적'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Current Mismatch in Tandem Configuration - Bottom Layer Bottleneck Identified. Adjust Top Layer Thickness"
         return "PASS: Synchronized Charge Extraction and Maximum Tandem Efficiency Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(crystal_grain_size_nm=550, t80_lifetime_hours=5000, bandgap_alignment_ev=1.56)
 print(engine.diagnose_perovskite_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_perovskite_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data perovskite-pce-stability-and-degradation-logs-v2026`와 연동되어, 전 세계 페로브스카이트 연구 및 생산 라인의 데이터를 실시간 분석하고 효율 저하 및 열화 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 광학 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - perovskite-tandem-solar-cell-efficiency-limit-physics

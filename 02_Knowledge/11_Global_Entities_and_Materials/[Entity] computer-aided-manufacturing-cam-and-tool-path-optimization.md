@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-aided-manufacturing-cam-and-tool-path-optimization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-aided-manufacturing-cam-and-tool-path-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The use of software to control machine tools and related ones in the manufacturing of workpieces (CAM) and the algorithmic logic used to calculate the most efficient sequence and trajectory of cutting tools to minimize machining time and maximize surface quality (Tool-Path Optimization)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cam", "tool-path", "optimization", "manufacturing-automation", "post-processing", "precision-machining", "digital-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Path_Fidelity_Audit: Evaluate the ''Step-over'' and ''Step-down'' parameters to identify if the tool path is causing excessive ''Scallop Heights'' that would require manual polishing.'
-    - 'Collision_Integrity_Check: Analyze the 3D tool/holder simulation against the workpiece and fixtures to ensure ''Zero-Collision'' during high-speed multi-axis movements.'
-    - 'Efficiency_Fidelity_Scan: Monitor the ''Air-cutting'' time and rapid traverse efficiency to verify that the optimized path is minimizing non-productive movements.'
-Trust Metrics:
+  description: "[Entity] computer-aided-manufacturing-cam-and-tool-path-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ Computer-Aided Manufacturing (CAM) and Tool-Path Optimization
+# [Entity] computer-aided-manufacturing-cam-and-tool-path-optimization
 
 ## 1. 개요 (Why: 인간적 통찰)
 컴퓨터에 설계도(CAD)가 있어도, 기계가 실제로 어느 길로 가서 어떻게 깎아야 할지 모른다면 무용지물입니다. **CAM 및 가공 경로(Tool-Path) 최적화**는 설계도를 '기계의 움직임'으로 번역하는 **'제조의 지휘자'** 기술입니다. 깎아야 할 부분을 가장 빠르게, 그러면서도 공구가 부러지지 않게 영리한 길을 찾아내는 것이 핵심입니다. 1시간 걸릴 작업을 10분으로 줄이고, 거친 금속을 거울처럼 매끄럽게 만드는 **'디지털 제조의 실천적 지능'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Post-processing Logic Failure - G-code generated is incompatible with the target machine controller. Risk of hard-stop error"
         return "PASS: Validated Machine Language and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(air_cut_time_pct=12.5, tool_engagement_angle_deg=45.0, collision_clearance_mm=15.0)
 print(engine.diagnose_cam_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cam_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cam-efficiency-metrics-and-tool-path-quality-v2026`와 연동되어, 전 세계 주요 항공기 및 정밀 기계 부품 공장의 데이터를 실시간 분석하고 충돌 및 공구 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 가공 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-and-g-code-interpolation-logic

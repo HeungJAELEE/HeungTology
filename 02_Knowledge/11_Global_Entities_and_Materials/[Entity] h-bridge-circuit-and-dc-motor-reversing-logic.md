@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "h-bridge-circuit-and-dc-motor-reversing-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] h-bridge-circuit-and-dc-motor-reversing-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electronic circuit that enables a voltage to be applied across a load in opposite directions (H-Bridge) and the physical logic of switching four transistors to control the direction and speed of a DC motor (Reversing Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["h-bridge", "dc-motor", "reversing-logic", "pwm", "motor-drive", "power-electronics", "industrial-automation", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Switching_Fidelity_Audit: Evaluate the ''Dead Time'' to identify if high-fidelity ''Shoot-through'' current is occurring, preventing catastrophic short-circuits in the H-bridge legs.'
-    - 'Direction_Integrity_Check: Analyze the high-fidelity ''State Machine'' to ensure that opposite diagonal transistors are never activated simultaneously, maintaining deterministic reversing logic.'
-    - 'Braking_Fidelity_Scan: Monitor the high-fidelity ''Regenerative Current'' during motor braking to verify that the high-fidelity bus capacitor can absorb the energy without overvoltage failure.'
-Trust Metrics:
+  description: "[Entity] h-bridge-circuit-and-dc-motor-reversing-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🪜 H-Bridge Circuit and DC Motor Reversing Logic
+# [Entity] h-bridge-circuit-and-dc-motor-reversing-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇의 바퀴나 전동 창문을 앞으로도 가게 하고 뒤로도 가게 하려면 건전지를 직접 뺐다 꼈다 해야 할까요? **H-브리지 회로 및 DC 모터 역전 로직**은 스위치 4개를 'H'자 모양으로 배치해, 전기 신호만으로 플러스(+)와 마이너스(-)를 마음대로 바꿔주는 **'전기의 교차로'** 기술입니다. 단순한 방향 전환뿐만 아니라, 전기를 아주 잘게 쪼개어(PWM) 속도를 조절하고, 전기를 거꾸로 돌려 급정거까지 시킵니다. **'모터라는 물리적 하드웨어에 방향성과 속도라는 지능적 영혼을 불어넣는 파워 일렉트로닉스의 기본 빌딩 블록'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Aggressive Reversing - Changing direction without high-fidelity zero-velocity crossing. High risk of mechanical stress and electrical spikes. Implement deceleration ramp"
         return "PASS: Validated State Machine and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(bridge_current_a=5.5, heat_sink_temp_c=45.0, dead_time_ns=500)
 print(engine.diagnose_bridge_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bridge_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data h-bridge-efficiency-and-dead-time-v2026`와 연동되어, 전 세계 주요 산업용 로봇 및 전동 휠체어의 드라이브 데이터를 실시간 분석하고 소자 폭발 및 제어 불능 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gate-drive-circuit-and-power-mosfet-switching-logic

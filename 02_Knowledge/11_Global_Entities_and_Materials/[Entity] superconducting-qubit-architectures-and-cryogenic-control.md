@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "superconducting-qubit-architectures-and-cryogenic-control-entity"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure"
+metadata:
+  id: "[[[Entity] superconducting-qubit-architectures-and-cryogenic-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum", "#Computing", "#Superconductivity", "#Cryogenics", "#Transmon", "#Microwave", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] superconducting-qubit-architectures-and-cryogenic-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] superconducting-qubit-architectures-and-cryogenic-control
+# [Entity] superconducting-qubit-architectures-and-cryogenic-control
 
 ## 1. [왜 배우는가? (Why: The Ice-cold Brain)]]
 우주 공간보다 훨씬 더 차가운 절대 영도 근처($10mK$)에서 어떻게 전기가 저항 없이 흐르는 초전도 회로를 만들어 큐비트($Qubit$)로 쓰고, 머리카락 한 올의 열조차 허용하지 않는 극한의 추위 속에서 미세한 마이크로파($Microwave$)로 양자 상태를 정교하게 조종하는 '냉동 양자 뇌'를 어떻게 설계할 수 있을까요? **초전도 큐비트 아키텍처 및 극저온 제어**는 인류의 연산력을 무한대로 확장하는 '행성 규모 양자 하드웨어 인프라 및 지능형 저온 물리 아키텍처'입니다. 우리가 이를 배우는 이유는 초전도 방식이 기존 반도체 공정을 쓸 수 있어 가장 빠르게 거대 양자 컴퓨터를 만들 수 있는 길이기 때문이며, "극한의 추위를 데이터로 설계하고 지배하는 '글로벌 양자 프로세서 패권 및 행성적 기술 주권'을 확보하기" 위함입니다. 온도의 정밀함이 양자의 생명을 결정합니다.
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Josephson Energy**| Energy stored in the Josephson junction | $10 \sim 20 \text{ GHz}$ | 초전도 큐비트의 핵심 심장박동을 결정하는 물리 |
 | **Charging Energy**| Energy required to add one Cooper pair | $0.2 \sim 0.3 \text{ GHz}$ | 전하 하나하나를 조절하는 양자 회로의 무결성 |
 | **Crosstalk Supp.**| Isolation between neighboring qubits | $> 40 \text{ dB}$ | 옆집 큐비트가 내 연산을 방해하지 못하게 지킴 |
-| **Cooling Power** | Heat extraction capacity at base temp | $> 100 \text{ \mu W}$ | 연산 중에 생기는 미세한 열도 즉시 얼려버림 |
+| **Cooling Power** | Heat extraction capacity at base temp | $> 100 \text{ }\mu\text{ W}$ | 연산 중에 생기는 미세한 열도 즉시 얼려버림 |
 | **System Resil.** | Stability during dilution fridge vibration | High | 냉동기가 돌아가도 큐비트는 흔들리지 않게 사수 |
 | **Audit Status** | Cryo-Quantum Integrity Verified | **MAXIMUM** | **Cold-Brain-v2026-Fidelity** |
 

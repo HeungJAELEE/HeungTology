@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-fan-and-aerodynamic-flow-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-fan-and-aerodynamic-flow-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine used to move air or gas for ventilation, cooling, or industrial processes (Industrial Fan) and the physical study of blade lift, pressure development, and fluid momentum (Aerodynamic Flow Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-fan", "aerodynamics", "flow-control", "bernoulli", "fan-laws", "centrifugal-fan", "axial-fan", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aerodynamic_Fidelity_Audit: Evaluate the ''System Curve'' matching to identify if the high-fidelity ''Operating Point'' is near the high-fidelity ''Stall Region'', causing unstable high-fidelity flow and noise.'
-    - 'Power_Integrity_Check: Analyze the high-fidelity ''Motor Load'' vs ''Air Density'' to ensure that cold high-fidelity startup doesn''t overload the drive due to increased air mass.'
-    - 'Vibration_Fidelity_Scan: Monitor the high-fidelity ''Balancing'' and ''Bearing Temperature'' to verify that high-fidelity ''Unbalance'' from dust buildup is not causing mechanical failure.'
-Trust Metrics:
+  description: "[Entity] industrial-fan-and-aerodynamic-flow-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Industrial Fan and Aerodynamic Flow Control Physics
+# [Entity] industrial-fan-and-aerodynamic-flow-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 공장의 공기를 밖으로 내보내고 신선한 공기를 쑤셔 넣는 힘은 어디서 올까요? **산업용 팬 및 공기역학 유동 제어 물리**는 날개(블레이드)를 돌려 보이지 않는 공기 입자들에 날카로운 발차기(운동량)를 날리는 **'공기의 추진기'** 기술입니다. 단순히 선풍기를 크게 만든 것이 아니라, 압력을 높여 수백 미터의 덕트 저항을 뚫고 공기를 배달해야 하는 정교한 기계 장치입니다. **'날개의 형상과 회전 속도를 수학적으로 제어하여 공장의 호흡과 냉각을 책임지는 지능형 유동 추진 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fan Stall Warning - High-fidelity aerodynamic instability detected. Operating point in high-fidelity 'Stall' region. Open bypass or increase RPM"
         return "PASS: Validated Stable Flow and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fan_rpm=1200.0, static_pressure_pa=1500.0, motor_amps=45.0)
 print(engine.diagnose_fan_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fan_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fan-performance-curves-and-static-pressure-v2026`와 연동되어, 전 세계 주요 화학 플랜트 및 터널 환기 시스템의 실시간 팬 데이터를 분석하고 모터 소손 및 유동 실속 사고 확률을 0.001% 이하로 억제함으로써 지능형 기류 문명의 운영 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-heating-ventilation-and-air-conditioning-hvac-logic

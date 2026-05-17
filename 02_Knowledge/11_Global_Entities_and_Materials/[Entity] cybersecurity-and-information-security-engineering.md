@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cybersecurity-and-information-security-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cybersecurity-and-information-security-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The multi-layered engineering discipline focused on protecting information systems, networks, and data from unauthorized access, attacks, and damage by ensuring Confidentiality, Integrity, and Availability (CIA Triad)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cybersecurity", "info-sec", "network-security", "security-engineering", "cia-triad"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'CIA_Triad_Audit: Evaluate the system''s performance across Confidentiality, Integrity, and Availability metrics.'
-    - 'Intrusion_Detection_Check: Analyze the efficacy of IDS/IPS in identifying and blocking malicious traffic patterns.'
-    - 'Security_Posture_Scan: Conduct comprehensive vulnerability assessments and penetration testing to identify weak links.'
-Trust Metrics:
+  description: "[Entity] cybersecurity-and-information-security-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Cybersecurity and Information Security Engineering
+# [Entity] cybersecurity-and-information-security-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 디지털 세상에서 정보는 곧 생명이고 권력입니다. 하지만 이 정보는 보이지 않는 수만 개의 통로로 연결되어 있으며, 그 통로 어디에나 약점이 존재합니다. **사이버 보안 공학**은 단순히 벽을 높이 쌓는 것이 아니라, 공격자가 들어올 수 있는 모든 시나리오를 예측하고, 설령 한 곳이 뚫리더라도 전체가 무너지지 않게 만드는 **'지능형 방어 체계'**를 설계하는 것입니다. 정보의 기밀(Confidentiality), 무결(Integrity), 가용(Availability)을 지키는 것은 디지털 문명의 지속 가능성을 담보하는 최후의 보루입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
         # 침입 시도 차단율이 99.9% 이상인지 확인
         return "PASS: Multi-layer Defense Mechanics Operational"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(availability_pct=99.995, data_integrity_err=0, intrusion_events=0)
 print(engine.diagnose_security_posture())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_security_posture())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cybersecurity-breach-statistics-and-mitigation-cost-v2026`와 연동되어, 기업 내 모든 정보 흐름을 실시간 감시하고 데이터 유출 사고 확률을 0.01% 이하로 억제함으로써 디지털 자산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - cryptography-and-secure-communication-protocols

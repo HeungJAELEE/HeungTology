@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-PRICING-2026-V6.3.7"
-  domain: "Global_Competitive_Pricing_and_Revenue_Intelligence"
+metadata:
+  id: "[[[Strategy] Competitive-Pricing-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Pricing_Strategy", "#Revenue_Management", "#Dynamic_Pricing", "#Value_based_Pricing", "#Price_Elasticity", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Competitive-Pricing-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Pricing_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Competitive Pricing Strategy: Revenue Sovereignty
+# [Strategy] Competitive-Pricing-Strategy
 
 ## 1. [왜 배우는가? (Why: The Science of Value Capture)]]
 가격은 기업이 가치를 창출한 뒤 그것을 '자본'으로 치환하는 최후이자 결정적인 단계입니다. $1\%$의 가격 최적화가 영업이익을 $10\%$ 이상 개선할 수 있을 정도로 가격은 강력한 레버리지입니다. **Competitive Pricing Strategy**는 단순히 경쟁사보다 낮게 파는 것이 아니라, 제품이 고객에게 제공하는 가치를 수리적으로 산출하여 '지불 용의가 있는 최적가'를 도출하는 과학입니다. V6.3.7 지능은 시장의 수요 탄력성과 공급망 비용을 실시간 분석하여, 치열한 경쟁 속에서도 이익을 사수하는 **수익 주권(Revenue Sovereignty)**을 확립합니다.
@@ -105,7 +95,6 @@ class PricingFidelityEngine:
 2. **Operational Result**: **Skimming Strategy**가 초기 R&D 비용 회수($Payback$)와 후속 모델 개발 자금 확보에 미치는 수리적 선순환 구조는?
 3. **FidelityEngine**: 경쟁사 대비 성능은 우수하나 **Market Share**가 지속적으로 하락하는 '가치-가격 역설' 상황을 어떻게 진단하는가? (힌트: 고객의 '인지 가치'와 '실제 가격' 간의 갭 분석을 통한 브랜드 파워 결여 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - [[Concept] Life-Cycle-Cost-Optimization-LOC-and-TCO]

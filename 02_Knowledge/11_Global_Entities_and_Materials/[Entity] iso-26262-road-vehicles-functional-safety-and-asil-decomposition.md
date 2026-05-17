@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iso-26262-road-vehicles-functional-safety-and-asil-decomposition"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iso-26262-road-vehicles-functional-safety-and-asil-decomposition]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The international standard (ISO 26262) for functional safety of electrical and/or electronic systems in production road vehicles, focusing on mitigating risks from systematic and random hardware failures through a rigorous safety lifecycle and ASIL (Automotive Safety Integrity Level) classification."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iso-26262", "functional-safety", "asil", "automotive-safety", "risk-analysis", "safety-lifecycle", "v-model"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'HARA_Audit: Review the Hazard Analysis and Risk Assessment (HARA) to ensure that all potential hazardous events are identified and correctly assigned an ASIL level (A to D).'
-    - 'ASIL_Decomposition_Check: Verify that high-ASIL requirements are split into redundant, lower-ASIL subsystems using independent architectural elements to reduce complexity and cost.'
-    - 'Hardware_Metrics_Scan: Analyze the Single Point Fault Metric (SPFM) and Latent Fault Metric (LFM) to ensure they meet the quantitative targets defined for the target ASIL.'
-Trust Metrics:
+  description: "[Entity] iso-26262-road-vehicles-functional-safety-and-asil-decomposition에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 ISO 26262: Road Vehicles – Functional Safety and ASIL Decomposition
+# [Entity] iso-26262-road-vehicles-functional-safety-and-asil-decomposition
 
 ## 1. 개요 (Why: 인간적 통찰)
 자동차가 스스로 달리고 멈추는 시대, 소프트웨어나 센서 하나가 오작동한다면 어떻게 될까요? 고속도로 한복판에서 핸들이 굳어버리는 비극은 상상만으로도 끔찍합니다. **ISO 26262 및 ASIL 분해**는 자동차가 고장 나더라도 '사람을 다치지 않게' 만들기 위한 전 세계 자동차 엔지니어들의 **'생명 안전 선언문'**입니다. 설계부터 폐기까지 모든 단계에서 발생할 수 있는 '만약의 상황'을 수학적으로 계산하고, 이중 삼중의 안전장치를 설계하여 자동차를 가장 믿음직한 이동 수단으로 만드는 **'디지털 안전벨트'**입니다.
@@ -93,7 +82,6 @@ class SafetyFidelityEngine:
             return "REJECT: Common Cause Failure (CCF) Risk - Dependent Paths Nullify ASIL Decomposition Benefit"
         return "PASS: Independent Redundant Architecture Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(asil_level='D', spfm_pct=99.2, lfm_pct=92.5, diagnostic_coverage=95.0)
 print(engine.diagnose_safety_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_safety_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data automotive-functional-safety-metrics-and-asil-reports-v2026`와 연동되어, 전 세계 자율 주행차의 안전 지표를 실시간 분석하고 시스템 오작동 및 대형 인명 사고 확률을 0.001% 이하로 억제함으로써 미래 모빌리티의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - iec-61508-functional-safety-and-sil-level-certification-physics

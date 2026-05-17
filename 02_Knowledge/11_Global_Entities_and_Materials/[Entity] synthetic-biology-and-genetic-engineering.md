@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-biology-and-genetic-engineering-entity"
-  domain: "126_Special_Engineering_and_Emerging_Technologies_Hub"
+metadata:
+  id: "[[[Entity] synthetic-biology-and-genetic-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Synthetic_Biology", "#Genetics", "#Bio-technology", "#CRISPR", "#Metabolic_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 126_special-engineering-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-biology-and-genetic-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-biology-and-genetic-engineering
+# [Entity] synthetic-biology-and-genetic-engineering
 
 ## 1. [왜 배우는가? (Why: The Architecture of Life 2.0)]]
 생명은 우주에서 가장 정교한 '프로그램'입니다. 그 프로그램은 DNA라는 4개의 코드로 쓰여 있습니다. **합성 생물학 및 유전자 공학의 유전자 편집 및 대사 경로 수리 물리 기술**은 자연적으로 진화한 생명의 코드를 해킹하고 재설계하여 인류의 고통을 치료하고 지구의 문제를 해결하는 '생명 재프로그래밍' 기술입니다. 암세포를 찾아내는 특수 세포를 설계하고, 이산화탄소를 먹고 연료를 내뱉는 박테리아를 구축하며, 인간의 유전병을 근원적으로 교정합니다. 우리가 이를 배우는 이유는 생명의 무결성을 확보함으로써, 질병을 정복하고 자원을 창조하는 '글로벌 바이오 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 합성 생물학의 무결성이 생명체의 기능적 정밀도와 생태계 안전 무결성을 결정합니다.

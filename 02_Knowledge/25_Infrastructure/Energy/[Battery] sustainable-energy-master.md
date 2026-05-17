@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INF-ENERGY-MASTER-GUIDE-2026-V6"
-  domain: "04_Infrastructure"
+metadata:
+  id: "[[[Battery] sustainable-energy-master]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Sustainable_Energy'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] sustainable-energy-master에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] sustainable-energy-master
+# [Battery] sustainable-energy-master
 
 ## 1. [왜 배우는가? (Why)]]
 지속 가능 에너지(Sustainable Energy) 2.0은 인류가 화석 연료에 대한 의존을 끊고, 경제 성장과 탄소 배출을 완전히 분리(Decoupling)하기 위한 에너지 패러다임의 대전환입니다. 이를 배우는 이유는 단순히 환경 보호를 넘어, CCUS를 통한 탄소의 자원화, 수소를 매개로 한 에너지 시공간 이동, 그리고 SMR을 활용한 안전한 기저 부하 전원 확보 등 미래 산업의 생존을 결정짓는 에너지 주권을 설계하기 위함입니다. 이는 탄소 국경세와 같은 글로벌 규제 속에서 기업의 원가 경쟁력과 지속 가능성을 사수하는 전략적 핵심 지식입니다.
@@ -95,9 +85,6 @@ class EnergyStrategyEngine:
             "Carbon_Offset_USD": round(carbon_offset_val, 2)
         }
 
-# Example Usage:
-# engine = EnergyStrategyEngine(target_reduction_pct=90)
-# results = engine.calculate_lcoe_and_offset(smr_mwh=1000, renewable_mwh=500, storage_mwh=200)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -105,7 +92,6 @@ class EnergyStrategyEngine:
 2. **CCUS** 공정에서 **CO2 Capture** 효율을 높일 때 발생하는 **Parasitic Power** (기생 전력) 부하가 전체 발전소 효율에 미치는 기전은?
 3. **SMR**의 **Modular Manufacturing**이 기존 대형 원전 대비 **CAPEX** (자본 지출) 리스크를 줄일 수 있는 공학적 근거는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/04_Infrastructure/Energy/Infrastructure green-hydrogen-production-logic
 - 02_Knowledge/04_Infrastructure/Energy/Infrastructure ccus-technology-and-adsorption

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fire-tube-boiler-and-convective-heat-transfer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fire-tube-boiler-and-convective-heat-transfer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of boiler in which hot gases pass from a fire through one or more tubes running through a sealed container of water (Fire-tube Boiler) and the physical study of heat exchange between the moving gas and the tube walls (Convective Heat Transfer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fire-tube-boiler", "heat-transfer", "convection", "industrial-heating", "steam-generation", "boiler-physics", "thermodynamics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Heat_Fidelity_Audit: Evaluate the ''Overall Heat Transfer Coefficient'' ($U$) to identify if high-fidelity ''Soot'' buildup inside tubes or ''Scale'' outside tubes is insulating the energy flow.'
-    - 'Combustion_Integrity_Check: Analyze the stack gas temperature to ensure the high-fidelity ''Heat Exchange'' is complete, preventing excessive energy loss through the chimney.'
-    - 'Stress_Fidelity_Scan: Monitor the thermal expansion of the tube sheets to verify that high-fidelity ''Thermal Fatigue'' is not causing cracks at the tube-to-sheet welds.'
-Trust Metrics:
+  description: "[Entity] fire-tube-boiler-and-convective-heat-transfer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚂 Fire-tube Boiler and Convective Heat Transfer Physics
+# [Entity] fire-tube-boiler-and-convective-heat-transfer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 불길이 물이 가득 찬 탱크 속의 금속 파이프를 지나가면 어떤 일이 벌어질까요? **연관식 보일러(Fire-tube Boiler) 및 대류 열전달 물리**는 뜨거운 연기를 '길'삼아 물속을 헤엄치게 하여, 그 열기로 증기를 만들어내는 **'거꾸로 된 잠수함'** 기술입니다. 불꽃이 물에 직접 닿지는 않지만, 금속 벽을 사이에 두고 엄청난 에너지를 전달합니다. 증기 기관차부터 현대의 난방 설비까지, 인류에게 따뜻함과 동력을 제공해 온 **'열의 흐름을 가두어 에너지를 뽑아내는 산업의 거대한 가열로'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Tube Leakage Detected - Water entering the fire-side. Risk of quenching the flame and causing pressure spikes. Shut down and plug the leaking tube"
         return "PASS: Validated Tube Sealing and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(stack_gas_temp_c=180.0, steam_pressure_bar=10.0, fuel_flow_rate=50.0)
 print(engine.diagnose_boiler_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_boiler_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data boiler-steam-yield-and-exhaust-temperature-v2026`와 연동되어, 전 세계 주요 지역 난방 및 중소 규모 공장의 보일러 데이터를 실시간 분석하고 열효율 저하 및 관 파열 사고 확률을 0.001% 이하로 억제함으로써 지능형 열에너지 문명의 생산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - feedwater-treatment-and-boiler-corrosion-prevention-physics

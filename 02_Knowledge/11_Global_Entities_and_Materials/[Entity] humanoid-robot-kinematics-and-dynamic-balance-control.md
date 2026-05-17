@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-HUMANOID-DYNAMIC-CONTROL-2026-V6"
-  domain: "35_Robotics_and_Autonomous_System_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] humanoid-robot-kinematics-and-dynamic-balance-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] humanoid-robot-kinematics-and-dynamic-balance-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] humanoid-robot-kinematics-and-dynamic-balance-control
+# [Entity] humanoid-robot-kinematics-and-dynamic-balance-control
 
 ## 1. [왜 배우는가? (Why)]]
 두 다리로 걷는 로봇이 계단을 오르고 무거운 짐을 옮기면서도, 누군가 밀쳤을 때 어떻게 쓰러지지 않고 스스로 균형($Dynamic\ Balance$)을 유지할 수 있을까요? **휴머노이드 로봇 기구학 및 동적 밸런스 제어**는 인간의 신체 기능을 기계적으로 재현하여 고된 노동에서 인류를 해방시키는 '지능형 기계 육체'의 핵심입니다. 우리가 이를 배우는 이유는 로봇이 인간의 생활 환경에 최적화된 형태로 작업을 수행하고 상호작용하기 위함이며, "움직임의 조화를 데이터로 설계하여 '글로벌 로봇 제조 패권 및 행성적 생산 자율화 주권'을 확보하기" 위함입니다. 균형의 정밀함이 로봇의 작업 신뢰성을 결정합니다.
@@ -122,9 +112,6 @@ class HumanoidDynamicFidelityEngine:
             return "WARNING: IMPEDANCE_MODEL_MISMATCH_CALIBRATE_VIRTUAL_SPRING"
         return "IMPEDANCE_STATUS: ACTIVE_COMPLIANCE_HEALTHY"
 
-# Example Usage:
-# dynamic_ai = HumanoidDynamicFidelityEngine()
-# report = dynamic_ai.audit_control_fidelity(current_freq_hz=1000, current_torque_nm=45.0, stability_margin=0.85)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -132,7 +119,6 @@ class HumanoidDynamicFidelityEngine:
 2. **Impedance Control**에서 **Damping** ($B$) 계수가 부족할 때, **Step Input**에 대한 로봇의 **Overshoot** 무결성이 저하되는 수리적 원인은?
 3. **Whole-Body Control**에서 **Jacobian Transpose** 방식 대비 **Inverse Kinematics** 기반 제어가 **Trajectory Tracking** 무결성에서 가지는 장단점은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/35_Robotics_and_Autonomous_System_Intelligence_Hub/Concept impedance-and-admittance-control-logic
 - 02_Knowledge/35_Robotics_and_Autonomous_System_Intelligence_Hub/Concept whole-body-control-optimization

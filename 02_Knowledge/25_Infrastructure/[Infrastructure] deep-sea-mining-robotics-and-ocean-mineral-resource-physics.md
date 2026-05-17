@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "deep-sea-mining-robotics-and-ocean-mineral-resource-physics-entity"
-  domain: "05_Ocean_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] deep-sea-mining-robotics-and-ocean-mineral-resource-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Ocean", "#Robotics", "#Mining", "#Geophysics", "#Fluid_Dynamics", "#Terramechanics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Infrastructure marine-renewable-energy-offshore-wind-and-tidal-physics", "MOC 05_Ocean_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] deep-sea-mining-robotics-and-ocean-mineral-resource-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] deep-sea-mining-robotics-and-ocean-mineral-resource-physics
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Hydrothermal Vents** (해저 열수구) 주변의 급격한 온도 변화가 로봇 암의 **Thermal Expansion** 및 조인트 정밀도에 미치는 수리적 임팩트는?
 5. RAG 시스템에서 **해류 순환 모델**과 **실시간 부유사 농도 맵**을 융합하여, '환경 보호 구역으로의 미세 입자 유입'을 사전에 차단하는 **Autonomous Plume Mitigation** 제어 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] marine-renewable-energy-offshore-wind-and-tidal-physics]] : 심해 채굴 기지에 전력을 공급하고 연계되는 해양 에너지 인프라 엔티티
 - Infrastructure underwater-power-grids-and-subsea-data-center-cooling-physics : 채굴된 데이터를 처리하고 해저에서 연산을 수행하는 하위 냉각 및 전력 인프라 엔티티

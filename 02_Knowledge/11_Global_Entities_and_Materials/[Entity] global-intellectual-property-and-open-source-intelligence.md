@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-intellectual-property-and-open-source-intelligence"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-intellectual-property-and-open-source-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic framework managing the creation, protection, and utilization of human/AI intellect (Intellectual Property) and the systematic collection and analysis of publicly available data (Open Source Intelligence) to drive innovation and maintain competitive advantage."
-  physical_model: "N/A"
-Semantic:
-  tags: '["intellectual-property", "osint", "patent-strategy", "open-source", "copyright", "innovation-governance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'IP_Infringement_Audit: Utilize AI-driven image and text recognition to scan global marketplaces and code repositories for unauthorized use of proprietary assets.'
-    - 'OSINT_Credibility_Check: Evaluate the reliability and bias of open-source data streams using cross-referencing and metadata analysis.'
-    - 'Patent_Strength_Assessment: Analyze the ''prior art'' and claim breadth of patents to determine their defensibility in international litigation.'
-Trust Metrics:
+  description: "[Entity] global-intellectual-property-and-open-source-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Global Intellectual Property and Open Source Intelligence
+# [Entity] global-intellectual-property-and-open-source-intelligence
 
 ## 1. 개요 (Why: 인간적 통찰)
 현대 비즈니스 전쟁에서 가장 강력한 무기는 공장이나 기계가 아니라, 사람의 머릿속에서 나온 '아이디어'와 세상에 널려 있는 '정보'입니다. **지식 재산권(IP)**은 내 소중한 아이디어가 도둑맞지 않게 지켜주는 법적 갑옷이고, **오픈 소스 인텔리전스(OSINT)**는 인터넷과 공개 자료라는 거대한 바다에서 진주를 찾아내는 보물 지도입니다. 인공지능은 이 둘을 결합하여, 우리 기술의 약점을 보강하고 경쟁자의 다음 수를 예측하며, 인류의 지식이 정당하게 보상받으면서도 널리 퍼져 세상을 이롭게 하도록 돕는 **'지능의 파수꾼'** 역할을 합니다.
@@ -87,7 +76,6 @@ class LegalFidelityEngine:
             return "REJECT: High Risk of Disinformation - Verify Source with Secondary Intelligence"
         return "PASS: OSINT Data Stream Verified for Strategic Analysis"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(patent_similarity_score=0.12, osint_data_reliability=0.92, legal_enforceability=0.88)
 print(engine.diagnose_ip_health())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_ip_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data patent-landscape-and-osint-trend-analysis-v2026`와 연동되어, 전 세계 특허 및 공개 데이터 흐름을 실시간 분석하고 지식 재산권 침해 및 정보 오류 사고 확률을 0.01% 이하로 억제함으로써 인류 지능 자산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - global-intelligence-sovereignty-and-data-jurisdiction-rules

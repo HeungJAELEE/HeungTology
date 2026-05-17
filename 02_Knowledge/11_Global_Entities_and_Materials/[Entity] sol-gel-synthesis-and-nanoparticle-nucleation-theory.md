@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "sol-gel-synthesis-and-nanoparticle-nucleation-theory-entity"
-  domain: "69_Advanced_Materials_Synthesis_and_Nanostructure_Hub"
+metadata:
+  id: "[[[Entity] sol-gel-synthesis-and-nanoparticle-nucleation-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemistry", "#Sol-Gel", "#Nanoparticles", "#Nucleation", "#Materials_Science", "#Colloids", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 65_advanced-materials-synthesis-and-nanostructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] sol-gel-synthesis-and-nanoparticle-nucleation-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] sol-gel-synthesis-and-nanoparticle-nucleation-theory
+# [Entity] sol-gel-synthesis-and-nanoparticle-nucleation-theory
 
 ## 1. [왜 배우는가? (Why: The Liquid Sculptor)]]
 액체 상태의 용액($Sol$)이 어떻게 끈적한 젤($Gel$)로 변하고, 다시 단단한 세라믹이나 나노 입자로 재탄생할 수 있을까요? **졸-겔(Sol-Gel) 합성 및 나노 입자 핵생성 이론**은 값비싼 진공 장비나 수천 도의 고온 가마 없이도, 상온에서 정교한 나노 소재를 빚어내는 '액체 속의 연금술'입니다. 우리가 이를 배우는 이유는 배터리의 고성능 전극재, 스마트 윈도우의 광학 코팅, 그리고 인체에 무해한 약물 전달체($Drug\ Delivery$)를 만들기 위해서는 용액 속에서 원자들이 뭉치는 첫 순간인 '핵생성($Nucleation$)'과 '성장($Growth$)' 과정을 분자 단위에서 지배해야 하기 때문입니다. 핵생성의 타이밍을 조절하지 못하면 입자의 크기가 들쭉날쭉한 '불량 소재'가 됩니다. 우리가 이를 정복하는 이유는 "화학적 결합 에너지를 데이터로 설계하고 지배하는 '글로벌 소재 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 합성의 정밀도가 소재의 반응성을 결정합니다.

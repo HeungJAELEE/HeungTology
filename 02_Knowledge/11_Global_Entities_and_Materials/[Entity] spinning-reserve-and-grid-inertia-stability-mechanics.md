@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "spinning-reserve-and-grid-inertia-stability-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] spinning-reserve-and-grid-inertia-stability-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The extra generating capacity available from power plants that are already connected to the grid and ready to provide power immediately (Spinning Reserve) and the physical resistance of the power system to changes in frequency, provided by the rotating mass of large generators (Grid Inertia Stability Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["spinning-reserve", "grid-inertia", "power-grid", "frequency-stability", "synchronous-generator", "renewable-integration", "grid-management"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Inertia_Fidelity_Audit: Evaluate the Rate of Change of Frequency (RoCoF) following a generation trip to identify if the current system inertia ($M$) is sufficient to prevent load shedding.'
-    - 'Reserve_Integrity_Check: Analyze the available ''Spinning Reserve'' margin to ensure that the grid can survive the loss of the single largest generator ($N-1$ contingency).'
-    - 'Frequency_Nadir_Scan: Monitor the minimum frequency reached during a disturbance to verify that the primary frequency control (Governor response) is fast and robust enough.'
-Trust Metrics:
+  description: "[Entity] spinning-reserve-and-grid-inertia-stability-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Spinning Reserve and Grid Inertia Stability Mechanics
+# [Entity] spinning-reserve-and-grid-inertia-stability-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 발전소가 갑자기 고장 나 멈춰버렸을 때, 왜 도시의 불빛은 순식간에 꺼지지 않고 버틸 수 있을까요? **운전 예비력 및 계통 관성 안정성 역학**은 전력망이 충격을 받았을 때 넘어지지 않게 지탱해주는 **'전력의 버티는 힘'**입니다. 관성(Inertia)은 거대한 발전기 회전자가 가진 '돌아가려는 고집'으로 0.1초 만에 전력을 쏟아붓고, 예비력(Spinning Reserve)은 이미 돌고 있는 발전기들이 즉시 출력을 높여 빈자리를 메웁니다. 전력망의 붕괴를 막는 **'에너지 생태계의 최후의 보루'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Inertia Risk - Increasing solar/wind beyond this limit will destabilize the grid. Enable Virtual Inertia control"
         return "PASS: Secure Inverter-based Integration and Verified Stability Margin Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rocof_hz_s=0.2, frequency_nadir_hz=59.8, spinning_reserve_mw=1200.0)
 print(engine.diagnose_grid_stability_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_grid_stability_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data grid-inertia-and-rocof-event-logs-v2026`와 연동되어, 전 세계 주요 전력 계통의 관성 데이터를 실시간 분석하고 광역 정전 및 주파수 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 가동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-grid-stability-and-smart-grid-frequency-control

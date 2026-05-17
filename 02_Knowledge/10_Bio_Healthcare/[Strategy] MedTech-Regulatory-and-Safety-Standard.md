@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] MedTech-Regulatory-and-Safety-Standard"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] MedTech-Regulatory-and-Safety-Standard]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] MedTech-Regulatory-and-Safety-Standard에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] MedTech-Regulatory-and-Safety-Standard
+# [Strategy] MedTech-Regulatory-and-Safety-Standard
 
 ## 1. [왜 배우는가? (Why)]]
 의료 기기는 사람의 생명을 다룹니다. 아주 작은 오작동이나 해킹 하나가 누군가의 생명을 앗아갈 수 있습니다. 의료 기술 규제 및 안전 표준(MedTech-Regulatory-and-Safety-Standard)은 기술이 '단순한 발명품'을 넘어 '안전한 의료 도구'가 되기 위한 엄격한 약속입니다. 공장에서 어떻게 만드는지(ISO 13485), 소프트웨어 코드를 어떻게 관리하는지(IEC 62304), 해킹을 어떻게 막는지에 대한 국제적인 규칙입니다. 이를 이해하는 것은 혁신적인 기술이 환자의 곁에 안전하게 도달할 수 있도록 길을 닦는 '의료 규제 전문가'이자 '안전의 설계자'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Regulatory Compliance & Risk Assessment Engine)]
 제품 개발 단계에서 발생할 수 있는 위험 요소를 식별하고 규제 표준(IEC 62304) 준수 여부를 체크하는 논리 구조입니다.
 ```python
-# 규제 준수(ISM) 기반 위험 관리 및 품질 감사 논리
 def conduct_medtech_compliance_audit(project_data, regulatory_standard):
     # 1. 소프트웨어 위험 등급 분류 (Safety Classification)
     # 기기 오작동 시 환자에게 미치는 영향에 따라 Class (A, B, C) 결정
@@ -95,5 +84,4 @@ def conduct_medtech_compliance_audit(project_data, regulatory_standard):
 2. 'FDA'의 'PCCP(사전 승인 변경 관리 계획)' 제도가 'AI 의료 기기'의 '지속적 성능 개선'과 '환자 안전' 사이의 균형을 맞추는 방법은?
 3. '의료 기기 소프트웨어' 개발에서 'IEC 62304' 표준이 '위험 등급(Class A, B, C)'에 따라 요구하는 '문서화 및 테스트'의 수준 차이는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

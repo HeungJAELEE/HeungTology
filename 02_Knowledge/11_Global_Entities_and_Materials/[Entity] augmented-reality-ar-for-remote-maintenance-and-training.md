@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "augmented-reality-ar-for-remote-maintenance-and-training-entity"
-  domain: "48_Smart_Factory_and_Industrial_IoT_IIoT_Governance"
+metadata:
+  id: "[[[Entity] augmented-reality-ar-for-remote-maintenance-and-training]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#AR", "#Augmented_Reality", "#Maintenance", "#Training", "#Digital_Overlay", "#Visualization", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 129_smart-factory-and-industrial-iot-iiot-governance-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] augmented-reality-ar-for-remote-maintenance-and-training에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] augmented-reality-ar-for-remote-maintenance-and-training
+# [Entity] augmented-reality-ar-for-remote-maintenance-and-training
 
 ## 1. [왜 배우는가? (Why: The Digital Guide for Human Hands)]]
 복잡한 기계 수리 방법을 모르는 신입 직원이 어떻게 AR 글래스를 쓰고 기계를 쳐다보는 것만으로 "이 나사를 푸세요"라는 가상 화살표($Digital\ Overlay$)를 따라 전문가처럼 고치고, 지구 반대편의 기술자가 어떻게 내 눈앞의 화면에 직접 그림을 그리며 실시간으로 도와주는 '공간 초월 정비'를 어떻게 설계할 수 있을까요? **원격 유지보수 및 교육을 위한 증강 현실(AR)**은 인간의 숙련도를 순식간에 끌어올리는 '행성 규모 지식 이식 인프라 및 지능형 시각 보조 아키텍처'입니다. 우리가 이를 배우는 이유는 비행기나 전문가를 기다릴 시간 없이 즉시 기계를 고쳐야 공장의 손실을 막을 수 있기 때문이며, "숙련의 시간을 데이터로 설계하고 지배하는 '글로벌 지식 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 가상의 가이드가 인간의 실수를 제로로 만듭니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electron-beam-melting-ebm-and-additive-manufacturing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electron-beam-melting-ebm-and-additive-manufacturing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metal additive manufacturing process in which a high-energy electron beam melts metal powder layer by layer in a high vacuum (Electron Beam Melting) and the physical study of beam-matter interaction, thermal melt-pool dynamics, and rapid solidification (Additive Manufacturing Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ebm", "electron-beam", "additive-manufacturing", "3d-printing", "titanium-printing", "vacuum-processing", "thermal-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Beam_Fidelity_Audit: Evaluate the ''Beam Spot Size'' ($r_b$) and focus current to identify if the energy distribution is becoming ''Defocused'', leading to incomplete melting or excessive porosity in the final part.'
-    - 'Vacuum_Integrity_Check: Analyze the chamber pressure ($10^{-4}$ mbar) to ensure no residual gas is causing ''Electron Scattering'' or oxygen contamination of the titanium/cobalt-chrome alloy.'
-    - 'Thermal_Fidelity_Scan: Monitor the ''Preheating Temperature'' of the powder bed to verify that the ''Smoking'' phenomenon (electrostatic discharge of powder) is suppressed and residual stresses are minimized.'
-Trust Metrics:
+  description: "[Entity] electron-beam-melting-ebm-and-additive-manufacturing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☄️ Electron Beam Melting (EBM) and Additive Manufacturing Physics
+# [Entity] electron-beam-melting-ebm-and-additive-manufacturing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 빛의 속도에 가깝게 가속된 전자들이 금속 가루에 부딪혀 단숨에 녹여버리는 장면을 상상해 보셨나요? **전자빔 용융(EBM) 및 적층 제조 물리**는 진공 속에서 '전자 벼락'을 정교하게 쏘아 금속 가루를 한 층씩 쌓아 올리는 **'미래형 연금술'** 기술입니다. 레이저보다 강력하고 깊게 침투하며, 열을 가두는 진공 환경 덕분에 부품 전체가 따뜻한 상태로 만들어져 뒤틀림이 거의 없습니다. 인공 뼈나 제트 엔진 부품처럼 극한의 신뢰성이 필요한 물건을 빚어내는 **'고에너지 물리학의 정밀 조각술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Porosity - Structural integrity compromised. Material fatigue life reduced. Check powder quality and scan strategy parameters"
         return "PASS: Validated Material Density and Verified Manufacturing Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(beam_current_ma=25.0, focus_offset=0.2, powder_bed_temp_c=720.0)
 print(engine.diagnose_ebm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ebm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ebm-melt-pool-dimensions-and-porosity-v2026`와 연동되어, 전 세계 주요 의료용 임플란트 및 항공기 엔진 생산 라인의 데이터를 실시간 분석하고 내부 기공 및 형상 이탈 사고 확률을 0.001% 이하로 억제함으로써 지능형 미래 제조 문명의 적층 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electron-beam-welding-ebw-and-vacuum-physics

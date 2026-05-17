@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coriolis-flow-meter-and-mass-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coriolis-flow-meter-and-mass-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-precision flow meter that measures mass flow rate directly by sensing the Coriolis force generated in a vibrating tube (Coriolis Flow Meter) and the physical study of how inertia in a rotating or vibrating reference frame creates a measurable phase shift in the fluid path (Mass Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coriolis-meter", "mass-flow", "flow-measurement", "coriolis-effect", "industrial-instrumentation", "fluid-mechanics", "precision-measurement"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Measurement_Fidelity_Audit: Evaluate the ''Phase Shift'' ($\\Delta \\phi$) between inlet and outlet sensors to identify if external mechanical vibrations are inducing noise, compromising the sub-0.1% accuracy.'
-    - 'Density_Integrity_Check: Analyze the ''Resonance Frequency'' of the vibrating tube to verify the fluid density in real-time, ensuring that entrained gas bubbles (slug flow) are not causing ''Meter Stall''.'
-    - 'Zero_Point_Fidelity_Scan: Monitor the ''Zero Drift'' under no-flow conditions to verify that temperature-induced stress in the sensor tubes is correctly compensated.'
-Trust Metrics:
+  description: "[Entity] coriolis-flow-meter-and-mass-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Coriolis Flow Meter and Mass Flow Physics
+# [Entity] coriolis-flow-meter-and-mass-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 액체의 양을 잴 때 부피가 아니라 '진짜 무게(질량)'를 잴 수 있다면 어떨까요? **코리올리 유량계 및 질량 유량 물리**는 흐르는 유체를 직접 저울에 달지 않고도 무게를 알아내는 **'마법의 진동 저울'** 기술입니다. 지구가 돌 때 생기는 코리올리 힘을 아주 작은 관 속에서 재현하여, 액체가 얼마나 무겁고 빠르게 흐르는지 0.05%의 오차도 없이 측정합니다. 온도나 압력이 변해도 변하지 않는 '진실한 양'을 말해주는 **'산업 측정 기술의 황금 표준'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Entrained Gas Detected - High drive gain required to maintain vibration. 'Slug Flow' condition invalidating mass measurement"
         return "PASS: Validated Single-phase Matrix and Verified Measurement Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(mass_flow_rate=1250.0, tube_resonance_hz=145.2, zero_stability_delta=0.01)
 print(engine.diagnose_meter_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_meter_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data coriolis-meter-accuracy-and-density-sensitivity-v2026`와 연동되어, 전 세계 주요 화학, 정유, 식음료 공장의 측정 데이터를 실시간 분석하고 계측 오류 및 배합 불량 사고 확률을 0.0001% 이하로 억제함으로써 지능형 산업 문명의 정밀 측정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-valve-and-flow-coefficient-cv-logic

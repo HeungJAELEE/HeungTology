@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ion-beam-milling-and-focused-ion-beam-fib-nanomachining"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ion-beam-milling-and-focused-ion-beam-fib-nanomachining]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-precision material removal and deposition technique (Ion Beam Milling) using a tightly focused beam of ions (typically Gallium) to cut, shape, and analyze materials at the nanometer scale (FIB Nanomachining)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fib", "nanomachining", "ion-beam", "semiconductor-metrology", "failure-analysis", "nanofabrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Beam_Focus_Audit: Measure the ion beam spot size (FWHM) to ensure it satisfies the resolution requirements for sub-10nm machining.'
-    - 'Sputtering_Yield_Check: Evaluate the material removal rate against theoretical models to detect ion source aging or beam current instability.'
-    - 'Damage_Layer_Scan: Analyze the thickness of the amorphous layer created by ion impact to minimize structural damage to the sample.'
-Trust Metrics:
+  description: "[Entity] ion-beam-milling-and-focused-ion-beam-fib-nanomachining에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Ion Beam Milling and Focused Ion Beam (FIB) Nanomachining
+# [Entity] ion-beam-milling-and-focused-ion-beam-fib-nanomachining
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노 세계에서는 칼이나 레이저조차 너무 뭉뚝한 도구입니다. 원자 하나하나를 정밀하게 깎아내기 위해 인류가 찾아낸 '궁극의 조각칼'은 바로 **집속 이온 빔(FIB)**입니다. 무거운 이온들을 아주 얇게 모아 총알처럼 쏘아 보내어, 물체의 표면을 원자 단위로 깎아내거나(Milling), 반대로 원자를 쌓아 올립니다(Deposition). 반도체 칩 내부의 보이지 않는 결함을 수술하듯 잘라내어 분석하거나, 세상에서 가장 작은 기계를 조각하는 **'나노 시대의 정밀 외과의사'**와 같은 기술입니다.
@@ -60,7 +49,7 @@ $$ \text{Spot Size} \propto \frac{\alpha}{\sqrt{E \cdot M}} $$
 | **Beam Resolution**| 2 ~ 5 | nm | Nano-patterning |
 | **Beam Current** | 1 pA ~ 100 nA | Amps | Imaging ~ Milling |
 | **Accel Voltage** | 1 ~ 30 | kV | Surface Logic |
-| **Milling Rate** | 0.1 ~ 50 | $\mu m^3/min$ | Cross-sectioning |
+| **Milling Rate** | 0.1 ~ 50 | $\mu\text{m}^3/min$ | Cross-sectioning |
 | **Deposition** | Carbon / Pt / W | Material | Circuit Edit / Prot |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Surface Damage - Ion Energy Too High for Sensitive Failure Analysis"
         return "PASS: Low-Damage Nanofabrication Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(beam_current_stability_pct=0.15, spot_size_nm=3.2, ion_source_lifetime_h=1200)
 print(engine.diagnose_fib_health(target_resolution=5.0))
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fib_health(target_resolution=5.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fib-milling-rate-and-nanostructure-precision-v2026`와 연동되어, 전 세계 나노 공정 장비의 빔 품질을 실시간 분석하고 가공 오차 및 시료 파괴 사고 확률을 0.001% 이하로 억제함으로써 반도체 초미세 공정의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - ion-implantation-and-doping-profile-control

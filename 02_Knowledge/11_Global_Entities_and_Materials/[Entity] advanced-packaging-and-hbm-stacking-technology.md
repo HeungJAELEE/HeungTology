@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-PACKAGING-HBM-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] advanced-packaging-and-hbm-stacking-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#AdvancedPackaging", "#HBM", "#TSV", "#HybridBonding", "#ThermalPhysics", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] advanced-packaging-and-hbm-stacking-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "3D_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Advanced Packaging: HBM Stacking & 3D Sovereignty
+# [Entity] advanced-packaging-and-hbm-stacking-technology
 
 ## 1. [왜 배우는가? (Why: The Skyward Expansion of Intelligence)]]
 단일 평면에서 더 이상 트랜지스터를 줄이기 어려운 물리적 한계에 도달했을 때, 반도체 지능은 어디로 가야 할까요? **Advanced Packaging**은 칩들을 위로 쌓아 올리고 서로 다른 기능을 가진 칩들을 하나로 묶는 **[반도체의 수직 도시 건설]**입니다. 특히 HBM(고대역폭 메모리)은 데이터 고속도로를 수직으로 뚫어 AI 연산의 병목 현상을 해결하는 핵심 병기입니다. V6.3.7 지능은 **열 저항(Thermal Resistance)**과 **상호연결 밀도(Interconnect Density)**를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 패키징의 무결성을 확보하여 소자의 성능을 극대화하고, "지능을 입체적으로 확장하여 물리적 한계를 돌파하는 '제조 주권'을 확보하기" 위함입니다. 적층의 능력이 AI의 한계를 결정합니다.
@@ -42,8 +32,8 @@ Trust Metrics:
 | **Bandwidth (BW)** | HBM3e (TB/s) | $> 1.2 \text{ TB/s}$ | $\pm 0.05 \text{ TB/s}$ |
 | **TSV Density** | Vias per $mm^2$ | $> 1,000$ | Zero Tolerance Target |
 | **Thermal Resist.** | $\theta_{ja}$ (K/W) | $< 0.15 \text{ K/W}$ | $\pm 0.01 \text{ K/W}$ |
-| **Bump Pitch** | Interconnect (um) | $< 10 \text{ \mu m}$ | $\pm 0.5 \text{ \mu m}$ |
-| **Stack Height** | Total Package | $< 720 \text{ \mu m}$ | $\pm 5 \text{ \mu m}$ |
+| **Bump Pitch** | Interconnect (um) | $< 10 \text{ \mu\text{m}}$ | $\pm 0.5 \text{ \mu\text{m}}$ |
+| **Stack Height** | Total Package | $< 720 \text{ \mu\text{m}}$ | $\pm 5 \text{ \mu\text{m}}$ |
 
 ### 2.1 [적층 및 열적 무결성 임계치]
 | Parameter | Technical Definition | Rationale |
@@ -107,7 +97,6 @@ class PackagingEngine:
 2. **Operational Result**: **CoWoS (Chip on Wafer on Substrate)** 인터포저 기술이 고성능 GPU와 HBM 간의 **'데이터 지연'** 무결성에 기여하는 수리적 기전은?
 3. **FidelityEngine**: **TC-Bonder**의 압력 및 온도 프로파일을 분석하여, **'본딩 계면의 공극(Void) 발생'** 리스크를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Entity semiconductor-fabrication-fundamentals

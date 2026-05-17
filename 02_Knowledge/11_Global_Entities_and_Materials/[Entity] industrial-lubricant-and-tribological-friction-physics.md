@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-lubricant-and-tribological-friction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-lubricant-and-tribological-friction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A substance introduced to reduce friction between surfaces in mutual contact (Industrial Lubricant) and the physical study of friction, wear, and lubrication interacting in motion (Tribological Friction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lubricant", "tribology", "friction", "viscosity", "wear-prevention", "hydrodynamic-lubrication", "industrial-maintenance", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Tribology_Fidelity_Audit: Evaluate the ''Lambda Ratio'' ($\\lambda$) to identify if high-fidelity ''Asperity Contact'' (metal-to-metal) is occurring due to insufficient high-fidelity oil film.'
-    - 'Viscosity_Integrity_Check: Analyze the high-fidelity ''Viscosity Index'' (VI) to ensure the lubricant maintains its high-fidelity load-carrying capacity under extreme temperature fluctuations.'
-    - 'Contamination_Fidelity_Scan: Monitor the high-fidelity ''Particle Count'' (ISO 4406) via online sensor to verify that high-fidelity ''Abrasive Wear'' is not accelerating due to debris.'
-Trust Metrics:
+  description: "[Entity] industrial-lubricant-and-tribological-friction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛢️ Industrial Lubricant and Tribological Friction Physics
+# [Entity] industrial-lubricant-and-tribological-friction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 쇳덩이 기계들이 수만 번씩 서로 부딪히며 돌아가는데, 왜 뜨거워져 녹아버리거나 깎여 나가지 않을까요? **산업용 윤활유 및 트라이볼로지(마찰공학) 마찰 물리**는 기계 사이의 미세한 틈새에 '기름막'이라는 미끄럼틀을 깔아주는 **'기계의 생명 연장'** 기술입니다. 단순한 기름칠이 아니라, 금속끼리 절대 닿지 않도록 0.001mm의 얇고 강력한 액체 방패를 유지하는 물리적 마법입니다. **'마찰과 마모의 법칙을 지배하여 기계의 에너지 낭비를 줄이고 공장의 모든 기동 부위를 보호하는 지능형 기계 보전의 수호신'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Emulsification Risk - High-fidelity water content causing oil film failure and high-fidelity corrosion. Centrifuge required"
         return "PASS: Validated Fluid Purity and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oil_viscosity_cst=46.0, oil_temp_c=55.0, iron_particle_ppm=10.0)
 print(engine.diagnose_lubrication_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_lubrication_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data lubricant-viscosity-index-and-wear-rates-v2026`와 연동되어, 전 세계 주요 선박 엔진 및 고속철도 감속기의 실시간 윤활 데이터를 분석하고 마멸 및 소생 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gear-design-and-involute-profile-kinematics-physics

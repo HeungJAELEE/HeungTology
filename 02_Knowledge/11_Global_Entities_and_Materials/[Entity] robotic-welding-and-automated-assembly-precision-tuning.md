@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-welding-and-automated-assembly-precision-tuning-entity"
-  domain: "46_Industrial_Robotics_and_Mechatronics_Mastery"
+metadata:
+  id: "[[[Entity] robotic-welding-and-automated-assembly-precision-tuning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Welding", "#Assembly", "#Automation", "#Precision", "#Manufacturing", "#Mechatronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 46_industrial-robotics-and-mechatronics-mastery-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-welding-and-automated-assembly-precision-tuning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-welding-and-automated-assembly-precision-tuning
+# [Entity] robotic-welding-and-automated-assembly-precision-tuning
 
 ## 1. [왜 배우는가? (Why: The Craftsmanship of Machines)]]
 머리카락보다 가는 틈새를 로봇이 어떻게 찾아내어 오차 없이 용접하고($Seam\ Tracking$), 아주 작은 나사를 구멍에 끼울 때 어떻게 힘의 반발을 느껴($Force\ Feedback$) 부러뜨리지 않고 완벽하게 조립하는 '기계의 장인정신'을 어떻게 공학적으로 구현할 수 있을까요? **로봇 용접 및 자동 조립 정밀도 튜닝**은 공장의 최종 품질을 책임지는 '행성 규모 정밀 제조 공정 및 지능형 생산 최적화 아키텍처'입니다. 우리가 이를 배우는 이유는 로봇이 정교해야 불량 없는 완벽한 제품이 탄생하기 때문이며, "조립의 감각을 데이터로 설계하고 지배하는 '글로벌 제조 패권 및 행성적 품질 주권'을 확보하기" 위함입니다. 조립의 정밀도가 브랜드의 신뢰를 결정합니다.
@@ -39,11 +29,11 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Assem. Precision**| Deviation from the nominal assembly position| $< 20 \text{ \mu m}$ | 전자제품의 미세 부품도 오차 없이 조립함을 입증함 |
+| **Assem. Precision**| Deviation from the nominal assembly position| $< 20 \text{ \mu\text{m}}$ | 전자제품의 미세 부품도 오차 없이 조립함을 입증함 |
 | **Cycle Time** | Time taken to complete one assembly task | $< 3.0 \text{ sec}$ | 사람보다 5배 빠르게 쉬지 않고 일함을 보여주는 물리 |
 | **First Pass Yield**| Percentage of products without defects | $> 99.5 \%$ | 한 번에 완벽하게 만들어 버리는 압도적 수율 입증 |
 | **Force Feedback** | Sensitivity to insertion resistance forces | $< 0.1 \text{ N}$ | 아주 미세한 걸림도 느껴서 동작을 보정함을 입증함 |
-| **Vision Align.** | Accuracy of matching part to target site | $< 10 \text{ \mu m}$ | 카메라로 보고 바늘구멍에 실을 꿰듯 조립함을 보여줌 |
+| **Vision Align.** | Accuracy of matching part to target site | $< 10 \text{ \mu\text{m}}$ | 카메라로 보고 바늘구멍에 실을 꿰듯 조립함을 보여줌 |
 | **Weld Consist.** | Uniformity of weld bead shape and strength | **MAXIMUM** | 모든 용접 부위가 똑같이 튼튼함을 입증하는 물리 |
 | **System Resil.** | Stability during part supply jitter | High | 부품 공급이 조금 늦어져도 전체 공정은 꼬이지 않음 |
 | **Audit Status** | Assembly Integrity Verified | **MAXIMUM** | **Precision-Craft-v2026-Fidelity** |

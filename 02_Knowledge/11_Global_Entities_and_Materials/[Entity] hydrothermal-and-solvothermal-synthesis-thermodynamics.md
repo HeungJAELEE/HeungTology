@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydrothermal-and-solvothermal-synthesis-thermodynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydrothermal-and-solvothermal-synthesis-thermodynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method for synthesizing chemical compounds and nanomaterials using aqueous (Hydrothermal) or non-aqueous (Solvothermal) solvents at high temperatures and pressures, typically above the boiling point of the solvent, to facilitate crystal growth and phase stabilization."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydrothermal-synthesis", "solvothermal", "nanomaterials", "crystal-growth", "thermodynamics", "supercritical-fluids"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Pressure_Integrity_Audit: Monitor the autogenous pressure within the autoclave to ensure it remains within safety limits while reaching the required reaction density.'
-    - 'Phase_Purity_Check: Evaluate the XRD (X-ray Diffraction) patterns of synthesized materials to detect undesirable secondary phases or amorphous precursors.'
-    - 'Particle_Morphology_Scan: Analyze the size distribution and shape (e.g., nanowires, nanosheets) to ensure the synthesis parameters (Time/Temp/pH) are optimized.'
-Trust Metrics:
+  description: "[Entity] hydrothermal-and-solvothermal-synthesis-thermodynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Hydrothermal and Solvothermal Synthesis Thermodynamics
+# [Entity] hydrothermal-and-solvothermal-synthesis-thermodynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 자연의 깊은 바닷속 화산 근처, 엄청난 압력과 열기 속에서 보석 같은 결정들이 만들어지는 과정을 실험실로 가져온 것이 바로 **수열 및 용매열 합성**입니다. 뜨겁고 압축된 물(또는 용매)은 평소와는 전혀 다른 성격으로 변해, 웬만한 용매에는 녹지 않는 단단한 물질들을 녹여내고 아주 정교한 '나노 세계의 건축물'을 짓습니다. 아주 느리지만 가장 완벽한 결정을 만들어내는 이 기술은, 자연의 인내심을 모방하여 미래의 배터리 소재나 첨단 촉매를 빚어내는 **'현대판 연금술'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Impure Crystalline Phase - Secondary Compounds Detected"
         return "PASS: High Phase Purity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(target_temp_c=220, measured_pressure_bar=25.5, particle_size_nm(45.2, measured_pressure_bar=25.5) # Fix
 engine = FactoryFidelityEngine(220, 25.5, 45.2)
 print(engine.diagnose_synthesis_health(design_press=24.0))
@@ -108,7 +96,6 @@ print(engine.diagnose_synthesis_health(design_press=24.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydrothermal-nanoparticle-size-and-phase-purity-v2026`와 연동되어, 전 세계 나노 소재 공장의 합성 데이터를 실시간 분석하고 불량률 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 첨단 소재 생산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - green-chemistry-and-sustainable-process-engineering

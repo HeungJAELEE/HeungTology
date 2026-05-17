@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "manufacturing-execution-system-mes-and-erp-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] manufacturing-execution-system-mes-and-erp-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The structural and logical framework for synchronizing high-level business planning (ERP, ISA-95 Level 4) with shop-floor execution (MES, ISA-95 Level 3), ensuring bidirectional data flow for order fulfillment, inventory management, and real-time performance tracking."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mes", "erp", "isa-95", "b2mml", "it-ot-convergence", "digital-twin", "supply-chain-sync", "smart-factory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Transaction_Integrity_Audit: Check for ''Ghost Orders'' or ''Missing Completions'' by cross-referencing Work Order IDs between MES and ERP tables.'
-    - 'Latency_Fidelity_Scan: Measure the time delta between shop-floor barcode scan and ERP inventory update to ensure decision-making agility.'
-    - 'B2MML_Schema_Validation: Verify that manufacturing attributes (Lot No, Batch Size) are correctly mapped to business attributes without data truncation.'
-Trust Metrics:
+  description: "[Entity] manufacturing-execution-system-mes-and-erp-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Manufacturing Execution System (MES) and ERP Integration
+# [Entity] manufacturing-execution-system-mes-and-erp-integration
 
 ## 1. 개요 (Why: 인간적 통찰)
 사무실의 주문서가 공장의 기계 소리로 바뀌는 순간을 상상해 보십시오. **MES 및 ERP 통합**은 기업의 '뇌(경영)'와 '근육(생산)'을 연결하는 **'신경망'**입니다. 경영진이 내리는 전략적 의사결정이 현장의 작업 지시로 즉시 변환되고, 현장에서 제품 하나가 완성될 때마다 전 세계 공급망의 재고 데이터가 실시간으로 숨 쉬듯 반응하게 만드는 기술입니다. 단순히 시스템을 붙이는 것이 아니라, "정보의 비대칭성을 제거하여 기업 전체가 하나의 유기체처럼 움직이게 만드는" **'전사적 지능의 일체화'**를 실현합니다.
@@ -93,7 +82,6 @@ class LogicFidelityEngine:
             return "REJECT: Traceability Broken - Disconnect between Business Order and Factory Execution. Audit Required"
         return "PASS: Seamless Order-to-Execution Flow Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(sync_delay_sec=0.5, data_mismatch_count=0, api_error_rate=0.001)
 print(engine.diagnose_integration_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_integration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mes-erp-integration-latency-and-transaction-logs-v2026`와 연동되어, 전 세계 하이테크 공장의 경영-생산 동기화 데이터를 실시간 분석하고 정보 지연 및 데이터 불일치 사고 확률을 0.001% 이하로 억제함으로써 지능형 전사 운영 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - manufacturing-execution-system-mes-and-shop-floor-logic

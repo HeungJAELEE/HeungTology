@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "assembly-line-balancing-and-bottleneck-optimization-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] assembly-line-balancing-and-bottleneck-optimization-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of assigning tasks to individual workstations in an assembly line so that all stations have an approximately equal amount of work (Assembly Line Balancing) and the identification and resolution of the single stage that limits the overall throughput of the entire system (Bottleneck Optimization Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["assembly-line", "bottleneck-optimization", "industrial-engineering", "manufacturing-efficiency", "line-balancing", "takt-time", "process-optimization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Balance_Fidelity_Audit: Evaluate the ''Station Idle Time'' across the entire assembly line to identify ''Workload Skew'' where some workers are overburdened while others wait.'
-    - 'Bottleneck_Integrity_Check: Analyze the Work-in-Process (WIP) levels before each station; the station with the largest accumulation is the ''Primary Bottleneck'' that governs the factory''s output.'
-    - 'Takt_Fidelity_Scan: Monitor real-time cycle times against the target ''Takt Time'' to identify if the system is drifting towards under-production or excessive overtime costs.'
-Trust Metrics:
+  description: "[Entity] assembly-line-balancing-and-bottleneck-optimization-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛓️ Assembly Line Balancing and Bottleneck Optimization Logic
+# [Entity] assembly-line-balancing-and-bottleneck-optimization-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 누구는 쉴 새 없이 바쁜데 누구는 놀고 있다면, 그 공장은 제대로 돌아가고 있는 걸까요? **조립 라인 밸런싱 및 병목 최적화 로직**은 공장이라는 거대한 오케스트라가 불협화음 없이 조화롭게 연주하게 만드는 **'흐름의 지휘'** 기술입니다. 가장 느린 한 곳(병목)이 공장 전체의 속도를 결정한다는 잔인한 진실을 받아들이고, 업무를 공평하게 나누어 모든 공정이 물 흐르듯 이어지게 만듭니다. 낭비되는 1초를 찾아내어 거대한 수익으로 바꾸는 **'제조의 지능형 효율화'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Process Variation - Inconsistent manual task execution causing micro-stoppages. Implement standard work instructions"
         return "PASS: Stable Cycle Times and Verified Line Predictability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(line_efficiency_pct=92.5, max_wip_level=5, takt_time_deviation=1.2)
 print(engine.diagnose_line_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_line_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data line-balancing-efficiency-and-bottleneck-throughput-v2026`와 연동되어, 전 세계 주요 자동차 및 가전 조립 라인의 데이터를 실시간 분석하고 생산 정체 및 공급 지연 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 흐름 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - statistical-process-control-spc-and-control-chart-logic

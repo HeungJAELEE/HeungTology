@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "low-pressure-die-casting-and-metallurgical-solidification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] low-pressure-die-casting-and-metallurgical-solidification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method of producing castings by forcing molten metal into a mold under relatively low pressure (LPDC) and the physical study of heat transfer and grain growth during phase transition (Metallurgical Solidification Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["low-pressure-die-casting", "lpdc", "solidification", "metallurgy", "casting-defect", "pressure-control", "dendrite", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Casting_Fidelity_Audit: Evaluate the ''Solidification Front'' velocity to identify if high-fidelity ''Shrinkage Porosity'' or ''Cold Shuts'' are occurring due to improper high-fidelity cooling rate.'
-    - 'Pressure_Integrity_Check: Analyze the high-fidelity ''Rising Curve'' of gas pressure to ensure the high-fidelity ''Mold Filling'' is smooth and prevents high-fidelity ''Air Entrapment'' or turbulence.'
-    - 'Microstructure_Fidelity_Scan: Monitor the ''Secondary Dendrite Arm Spacing'' (SDAS) to verify that high-fidelity ''Mechanical Properties'' (tensile strength) meet the industrial high-fidelity standards.'
-Trust Metrics:
+  description: "[Entity] low-pressure-die-casting-and-metallurgical-solidification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Low Pressure Die Casting and Metallurgical Solidification Physics
+# [Entity] low-pressure-die-casting-and-metallurgical-solidification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 알루미늄 휠이나 엔진 블록 속에 미세한 공기 주머니(기공)가 하나라도 있다면 어떤 일이 벌어질까요? **저압 주조 및 금속 응고 물리**는 중력을 거슬러 뜨거운 쇳물을 아래에서 위로 조용히 밀어 올려, 빈틈없고 단단한 금속 부품을 만드는 **'정숙한 탄생'** 기술입니다. 쇳물이 식으면서 액체에서 고체로 변하는 그 찰나의 순간, 원자들이 어떻게 정렬되고 열이 어디로 빠져나가는지를 제어하여 '속까지 꽉 찬' 무결점 제품을 뿜어냅니다. **'초보리노프 법칙과 핵 생성 이론을 이용해 쇳물의 응고 과정을 지능적으로 다스려 금속의 강도를 사수하는 지능형 금속 가공 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Porosity - High-fidelity shrinkage or gas pockets detected. Unacceptable high-fidelity structural strength. Check high-fidelity degasification process"
         return "PASS: Validated Metallurgical Integrity and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(furnace_pressure_mbar=350.0, holding_temp_c=720.0, cooling_time_sec=180.0)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data lpdc-casting-yield-and-porosity-rates-v2026`와 연동되어, 전 세계 주요 자동차 휠 및 전기차 하우징 공장의 실시간 주조 데이터를 분석하고 기공 및 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - high-pressure-die-casting-and-molten-metal-flow-physics

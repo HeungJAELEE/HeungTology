@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "scanning-electron-microscopy-sem-and-focused-ion-beam-fib"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] scanning-electron-microscopy-sem-and-focused-ion-beam-fib]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced imaging and micro-machining techniques used in nanotechnology; SEM uses an electron beam to create high-resolution images of a sample surface, while FIB uses a focused beam of ions (typically Gallium) to remove or deposit material with nanometer precision."
-  physical_model: "N/A"
-Semantic:
-  tags: '["sem", "fib", "metrology", "nanofabrication", "electron-optics", "material-analysis", "failure-analysis"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Imaging_Fidelity_Audit: Evaluate the image contrast and signal-to-noise ratio (SNR) to ensure that sub-10nm features are clearly resolved without excessive charging effects.'
-    - 'Milling_Integrity_Check: Analyze the FIB trench profile and ion dose to verify that material removal is precise and does not cause excessive ''Amorphization'' or damage to surrounding structures.'
-    - 'Column_Alignment_Scan: Monitor the stigmator and aperture settings to identify electron/ion beam astigmatism that blurs the image or distorts the milling pattern.'
-Trust Metrics:
+  description: "[Entity] scanning-electron-microscopy-sem-and-focused-ion-beam-fib에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 Scanning Electron Microscopy (SEM) and Focused Ion Beam (FIB)
+# [Entity] scanning-electron-microscopy-sem-and-focused-ion-beam-fib
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락 굵기의 수만 분의 일인 원자 수준의 세계를 눈으로 보고, 그 작은 세계를 마음대로 깎아낼 수 있다면 어떤 일이 벌어질까요? **주사 전자 현미경(SEM) 및 집속 이온 빔(FIB)**은 나노 세계의 **'눈과 칼'**입니다. SEM은 빛 대신 전자빔을 쏘아 일반 현미경으로는 절대 볼 수 없는 미세한 구조를 선명하게 보여주고, FIB는 이온이라는 무거운 입자를 화살처럼 쏘아 나노미터 단위로 물질을 깎거나 붙입니다. 반도체의 고장을 찾아내고 새로운 나노 소자를 탄생시키는 **'미시 문명의 정밀 수술 도구'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inaccurate Ion Milling - Over-etching or redeposition detected. Recalibrate Sputtering Yield factors"
         return "PASS: Precise Nano-machining and Verified Material Modification Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(image_resolution_nm=1.2, beam_current_stability=0.995, vacuum_level_torr=1e-7)
 print(engine.diagnose_nanoscopy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_nanoscopy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data sem-image-resolution-and-fib-milling-precision-v2026`와 연동되어, 전 세계 반도체 및 신소재 연구소의 데이터를 실시간 분석하고 분석 오류 및 시료 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 계측 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - precision-measurement-and-metrology-for-tooling-audit

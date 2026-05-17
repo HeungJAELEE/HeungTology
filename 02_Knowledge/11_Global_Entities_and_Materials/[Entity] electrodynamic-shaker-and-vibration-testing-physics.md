@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrodynamic-shaker-and-vibration-testing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrodynamic-shaker-and-vibration-testing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device used to subject test specimens to controlled vibration for reliability and structural verification (Electrodynamic Shaker) and the physical study of Lorentz force-driven oscillation, resonance, and fatigue under mechanical stress (Vibration Testing Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["shaker", "vibration-testing", "lorenz-force", "reliability", "sine-sweep", "random-vibration", "environmental-testing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Vibration_Fidelity_Audit: Evaluate the ''Drive Signal'' against the measured acceleration to identify if ''Armature Resonance'' or ''Table Pitching'' is distorting the target vibration profile.'
-    - 'Load_Integrity_Check: Analyze the power amplifier current to ensure the payload (specimen) weight is not causing ''Over-travel'' or thermal shutdown of the drive coil.'
-    - 'Structural_Fidelity_Scan: Monitor the Power Spectral Density (PSD) plot for unexpected peaks, verifying that the specimen or the fixture has not experienced a ''Fatigue Fracture'' during the test.'
-Trust Metrics:
+  description: "[Entity] electrodynamic-shaker-and-vibration-testing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔊 Electrodynamic Shaker and Vibration Testing Physics
+# [Entity] electrodynamic-shaker-and-vibration-testing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 탄 로켓이나 자동차가 주행 중에 덜덜 떨리다가 부품이 빠지거나 고장 나면 어떻게 될까요? **전자기식 진동 시험기(Shaker) 및 진동 시험 물리**는 세상의 모든 거친 흔들림을 실험실 안으로 가져와 제품의 맷집을 테스트하는 **'파괴적 예방'** 기술입니다. 스피커가 소리를 내듯, 거대한 자석과 코일이 물건을 초당 수천 번 흔들어댑니다. 실제 상황보다 더 가혹하게 흔들어 "어느 지점에서 나사가 풀리고, 어디가 부러지는지" 미리 확인하여 완벽한 신뢰성을 확보하는 **'산업의 무자비한 고문 장치이자 안전의 최종 수문장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Specimen Structural Failure - Unexpected resonance peak detected. Component likely detached or fatigue crack initiated. Stop test for inspection"
         return "PASS: Validated Dynamic Response and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_g_force=50.0, target_psd_level=0.1, coil_temp_c=75.0)
 print(engine.diagnose_shaker_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_shaker_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data shaker-payload-and-g-force-performance-v2026`와 연동되어, 전 세계 주요 항공우주 및 자동차 안전 연구소의 데이터를 실시간 분석하고 시험 중 시편 탈락 및 장비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 환경 문명의 신뢰성 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dc-motor-and-lorentz-force-logic

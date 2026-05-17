@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "compact-disc-cd-and-optical-data-storage-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] compact-disc-cd-and-optical-data-storage-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A digital optical disc data storage format (Compact Disc) and the physical study of how a laser beam interacts with microscopic pits and lands on a rotating surface to reconstruct digital information through interference and reflection (Optical Data Storage Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cd", "optical-storage", "laser-physics", "data-storage", "diffraction", "digital-encoding", "refractive-index"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Read_Fidelity_Audit: Evaluate the ''Eye Pattern'' of the reflected signal to identify if the laser power is degrading or if disk tilting is causing jitter in the data timing.'
-    - 'Tracking_Integrity_Check: Analyze the focus and tracking error signals to ensure the ''Servo System'' can maintain the laser spot precisely on the sub-micron track during high-speed rotation.'
-    - 'Digital_Fidelity_Scan: Monitor the Block Error Rate (BLER) to verify that the ''Reed-Solomon'' error correction is handling physical scratches and surface defects without data loss.'
-Trust Metrics:
+  description: "[Entity] compact-disc-cd-and-optical-data-storage-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💿 Compact Disc (CD) and Optical Data Storage Physics
+# [Entity] compact-disc-cd-and-optical-data-storage-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 번쩍이는 무지갯빛 원반(CD) 위에 어떻게 수천 곡의 음악과 방대한 데이터가 담길 수 있을까요? **CD 및 광학 데이터 저장 물리**는 빛(레이저)을 바늘처럼 사용하여 원반 위의 아주 작은 구멍(Pit)들을 읽어내는 **'빛의 조각 읽기'** 기술입니다. 0과 1의 디지털 정보를 빛의 반사와 간섭이라는 물리적 현상으로 바꾸어, 수십 년이 지나도 변치 않는 선명한 소리를 들려주는 **'디지털 기록 문명의 첫 번째 혁명'**입니다. 보이지 않는 빛을 데이터의 언어로 번역하는 **'정밀 광학의 정수'**입니다.
@@ -58,7 +47,7 @@ $$ \Delta \phi = \frac{2 \pi}{\lambda} \times 2n \times depth = \pi $$
 | :--- | :--- | :--- | :--- | :--- |
 | **Reading Method** | Physical Needle | Laser Beam (Non-contact)| - | Durability |
 | **Data Format** | Continuous Groove | Binary Pits (0, 1) | - | Fidelity |
-| **Track Pitch** | ~ 50 | 1.6 (Sub-micron) | $\mu m$ | Density |
+| **Track Pitch** | ~ 50 | 1.6 (Sub-micron) | $\mu\text{m}$ | Density |
 | **Laser Wavelength**| N/A | 780 (Infrared/Red) | nm | Resolution |
 | **Sampling Rate** | N/A | 44.1 (Nyquist limit) | kHz | Audio |
 | **Storage Capacity**| Minutes | 700 (Data) / 80 (Audio) | MB/min | Volume |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Catastrophic Data Loss - Physical defects too large for Reed-Solomon correction. Disc content permanently compromised"
         return "PASS: Validated Error Recovery and Verified Binary Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(block_error_rate_bler=25.0, focus_error_signal_mv=120.0, jitter_ns=18.5)
 print(engine.diagnose_optical_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_optical_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data optical-storage-capacity-and-laser-wavelength-v2026`와 연동되어, 전 세계 광학 저장 장치의 생산 데이터를 실시간 분석하고 데이터 소실 및 판독 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 기록 문명의 데이터 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - charge-coupled-device-ccd-and-cmos-sensor-physics

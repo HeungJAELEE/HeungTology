@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "magnetic-bearing-and-active-position-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] magnetic-bearing-and-active-position-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of bearing that supports a load using magnetic levitation (Magnetic Bearing) and the physical study of feedback loops that stabilize the inherently unstable magnetic suspension (Active Position Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["magnetic-bearing", "active-magnetic-bearing", "amb", "levitation", "position-control", "electromagnet", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Levitation_Fidelity_Audit: Evaluate the ''Position Error'' to identify if high-fidelity ''Control Jitter'' or high-fidelity ''Sensor Noise'' is destabilizing the high-fidelity rotor at critical speeds.'
-    - 'Electromagnetic_Integrity_Check: Analyze the high-fidelity ''Coil Current'' and high-fidelity ''Flux Density'' to ensure that high-fidelity ''Magnetic Saturation'' is not causing high-fidelity force loss.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Coil Temperature'' to verify that high-fidelity ''Resistive Heating'' does not degrade the high-fidelity insulation or control precision.'
-Trust Metrics:
+  description: "[Entity] magnetic-bearing-and-active-position-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 제 Magnetic Bearing and Active Position Control Physics
+# [Entity] magnetic-bearing-and-active-position-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 번을 돌아도 절대 닳지 않고, 윤활유조차 필요 없는 기계 장치가 있다면 어떨까요? **자기 베어링 및 능동 위치 제어 물리**는 자석의 힘으로 물체를 공중에 띄워 마찰을 0으로 만드는 **'공중 부양의 정석'** 기술입니다. 직접 닿지 않기 때문에 소음이 없고, 초고속 회전이 가능하며, 오일 오염이 없어야 하는 반도체 공정이나 우주 터빈의 핵심 부품입니다. **'맥스웰 응력과 실시간 피드백 제어의 원리를 이용해 불안정한 자기 부상을 디지털 논리로 사수하여 기계적 한계를 돌파하는 지능형 무마찰 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Safety Risk - High-fidelity backup power (UPS) not ready. Potential high-fidelity catastrophic crash landing on auxiliary bearings"
         return "PASS: Validated Levitation Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(orbital_vibration_um=10.0, coil_current_a=2.0, air_gap_mm=0.5)
 print(engine.diagnose_levitation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_levitation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data magnetic-bearing-stiffness-and-damping-v2026`와 연동되어, 전 세계 주요 LNG 터미널 및 반도체 공정의 실시간 자기 부상 데이터를 분석하고 베어링 고장 및 가동 중단 사고 확률을 0.0001% 이하로 억제함으로써 지능형 기계 문명의 마찰 없는 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - linear-actuator-and-precision-motion-control-physics

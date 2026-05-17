@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "photoresist-chemical-composition-and-sensitivity"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] photoresist-chemical-composition-and-sensitivity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The light-sensitive chemical material (Photoresist) used in photolithography to form patterned coatings on a wafer, focusing on its molecular components (Resin, PAG, Quencher) and the chemical reactions (Sensitivity) that enable nanometer-scale resolution."
-  physical_model: "N/A"
-Semantic:
-  tags: '["photoresist", "lithography", "semiconductor-fabrication", "photochemistry", "nanopatterning", "chemically-amplified-resist", "euv-resist"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensitivity_Fidelity_Audit: Evaluate the dose-to-clear ($E_0$) to ensure the photoresist responds to light at the required energy level for high-throughput manufacturing.'
-    - 'Resolution_LER_Check: Analyze the Line Edge Roughness (LER) to identify molecular-scale fluctuations that degrade the precision of the patterned circuit features.'
-    - 'Acid_Diffusion_Scan: Monitor the diffusion length of the photo-generated acid during the Post-Exposure Bake (PEB) to verify it does not blur the pattern resolution.'
-Trust Metrics:
+  description: "[Entity] photoresist-chemical-composition-and-sensitivity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Photoresist Chemical Composition and Sensitivity
+# [Entity] photoresist-chemical-composition-and-sensitivity
 
 ## 1. 개요 (Why: 인간적 통찰)
 반도체 웨이퍼라는 하얀 캔버스 위에 빛으로 그림을 그릴 때, 그 빛을 받아들여 영구적인 흔적을 남기는 '특수 물감'이 있다면 어떨까요? **감광액(Photoresist) 화학 조성 및 민감도**는 나노 회로를 새기기 위한 **'빛의 인화지'** 기술입니다. 빛을 받으면 성질이 변하는 이 액체는, 머리카락보다 수천 배 가는 선을 그릴 수 있을 만큼 예민하면서도, 나중에 가혹한 부식 공정(Etching)을 견뎌낼 만큼 단단해야 합니다. 빛의 메시지를 화학적 실체로 바꾸는 **'나노 세계의 조각가'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Acid Diffusion - Pattern Blurring (Blur) Detected. Reduce PEB Time or Increase Quencher"
         return "PASS: Controlled Chemical Amplification and Sharp Feature Boundaries Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dose_to_clear_mj=15.5, line_edge_roughness_nm=1.2, shelf_life_days=90)
 print(engine.diagnose_photoresist_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_photoresist_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data photoresist-sensitivity-and-line-edge-roughness-v2026`와 연동되어, 전 세계 반도체 소재 라인의 데이터를 실시간 분석하고 감도 저하 및 패턴 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 공정의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - photolithography-and-asml-euv-optics-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-vision-for-robotic-scene-understanding-and-object-segmentation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-vision-for-robotic-scene-understanding-and-object-segmentation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced computer vision techniques enabling robots to understand complex environments and precisely isolate individual objects (Instance/Semantic Segmentation) for interaction and navigation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["computer-vision", "scene-understanding", "object-segmentation", "robotics", "deep-learning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Segmentation_Precision_Audit: Measure the mIoU (Mean Intersection over Union) across diverse object classes.'
-    - 'Edge_Consistency_Check: Evaluate the sharpness and accuracy of segmented boundaries compared to ground truth.'
-    - 'Inference_Latency_Scan: Monitor the real-time processing speed (FPS) for high-resolution scene analysis.'
-Trust Metrics:
+  description: "[Entity] computer-vision-for-robotic-scene-understanding-and-object-segmentation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👁️ Computer Vision for Robotic Scene Understanding and Object Segmentation
+# [Entity] computer-vision-for-robotic-scene-understanding-and-object-segmentation
 
 ## 1. 개요 (Why)
 로봇이 물건을 집거나 장애물을 피하려면 단순히 물체가 '어디에 있다'는 것을 넘어, 그 물체의 '정확한 테두리'가 어디까지인지 알아야 합니다. 세그멘테이션(Segmentation)은 이미지의 각 픽셀이 무엇인지(바닥, 벽, 컵 등)를 구분해내는 고도의 시각 지능입니다. 이는 로봇이 복잡하게 얽힌 전선을 하나씩 골라내거나, 빽빽하게 쌓인 상자들 사이에서 특정 물체만 정확히 들어 올릴 수 있게 만드는 마법 같은 눈입니다. 본 노드는 로봇 시각의 장면 이해 무결성과 픽셀 단위 정밀 제어 표준을 정의합니다.
@@ -71,9 +60,7 @@ class LogicFidelityEngine:
             return "NOTICE: Limited Scene Context - Robustness in Complex Environments may be Low"
         return "PASS: Broad Class Recognition Capacity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(mean_iou=88.5, inference_fps=22, class_diversity(120)
-# Correction: Fixing constructor call
 engine = LogicFidelityEngine(88.5, 22, 120)
 print(engine.diagnose_segmentation_quality())
 ```
@@ -91,7 +78,6 @@ print(engine.diagnose_segmentation_quality())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data robotic-vision-segmentation-accuracy-and-iou-metrics-v2026`와 연동되어, 로봇이 보는 모든 시각 데이터를 실시간 분석하고 인식 오차를 픽셀 단위로 감시함으로써 고정밀 작업 로봇의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - computer-vision-for-robotics-object-detection-and-pose-estimation

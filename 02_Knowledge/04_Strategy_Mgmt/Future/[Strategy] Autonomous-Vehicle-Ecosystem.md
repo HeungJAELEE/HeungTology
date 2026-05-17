@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Autonomous-Vehicle-Ecosystem"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Autonomous-Vehicle-Ecosystem]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Autonomous-Vehicle-Ecosystem에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Autonomous-Vehicle-Ecosystem
+# [Strategy] Autonomous-Vehicle-Ecosystem
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 매일 운전을 하느라 귀중한 시간을 길 위에서 버리고 있습니다. 자율주행 생태계(Autonomous-Vehicle-Ecosystem)는 자동차를 단순한 이동 수단에서 '바퀴 달린 거실'이나 '움직이는 사무실'로 바꾸는 혁명입니다. 인간의 실수로 발생하는 수많은 교통 사고를 줄이고, 교통 체증을 최적화하며, 운전이 불가능한 사람들에게 이동의 자유를 선사합니다. 이를 이해하는 것은 자동차 산업이 '하드웨어 제조'에서 '소프트웨어 서비스(TaaS)'로 변화하는 거대한 흐름의 중심에서, 미래 도시의 혈관을 설계하는 설계자가 되는 것입니다.
@@ -100,5 +90,4 @@ def plan_autonomous_trajectory(current_state, sensor_data, map_data):
 2. '라이다(LiDAR)'와 '카메라(Vision)' 기반 자율주행 진영 간의 기술적 쟁점과 '센서 퓨전'이 가지는 궁극적인 우위는?
 3. 자율주행차가 마주치는 '엣지 케이스(Edge Case, 예측 불가능한 돌발 상황)'를 해결하기 위해 '시뮬레이션 기반 학습'이 가지는 기술적 한계와 돌파구는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

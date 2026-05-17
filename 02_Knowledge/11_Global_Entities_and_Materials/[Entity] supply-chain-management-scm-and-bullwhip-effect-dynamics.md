@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "supply-chain-management-scm-and-bullwhip-effect-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] supply-chain-management-scm-and-bullwhip-effect-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The management of the flow of goods and services, including all processes that transform raw materials into final products (Supply Chain Management) and the specific phenomenon of increasing fluctuations in inventory in response to customer demand as one moves further up the supply chain (Bullwhip Effect Dynamics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["scm", "supply-chain", "bullwhip-effect", "logistics", "inventory-control", "operations-management", "lean-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Supply_Chain_Fidelity_Audit: Evaluate the ''Bullwhip Ratio'' (Variance of Orders / Variance of Demand) to identify informational distortions that lead to excessive inventory or stockouts.'
-    - 'Lead-time_Integrity_Check: Analyze the actual vs. planned lead-time ($L$) across tiers to ensure that logistics delays are not causing cascaded disruptions in the production schedule.'
-    - 'Inventory_Health_Scan: Monitor the turnover ratio and ''Dead Stock'' levels to verify that the capital is being efficiently utilized across the global supply network.'
-Trust Metrics:
+  description: "[Entity] supply-chain-management-scm-and-bullwhip-effect-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚚 Supply Chain Management (SCM) and Bullwhip Effect Dynamics
+# [Entity] supply-chain-management-scm-and-bullwhip-effect-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 작은 소비자 수요의 변화가 왜 원재료 공장에서는 거대한 폭풍으로 변해 돌아올까요? **공급망 관리(SCM) 및 채찍 효과 역학**은 전 세계에 흩어진 수천 개의 공장과 창고를 하나의 유기체처럼 움직이게 만드는 **'자본의 혈관 공학'**입니다. 특히 채찍 효과(Bullwhip Effect)는 정보가 왜곡되면서 상류로 갈수록 변동성이 커지는 현상을 뜻합니다. 이 현상을 잡지 못하면 창고에는 재고가 쌓이고 고객은 물건을 못 받는 '비효율의 늪'에 빠지게 됩니다. 전 세계의 물자를 낭비 없이 흐르게 하는 **'지능형 물류 문명의 중추'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: High Supply Concentration Risk - Vulnerable to geo-political or disaster events. Diversify Multi-tier Sourcing"
         return "PASS: Resilient Supply Network and Verified Procurement Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(bullwhip_index=1.1, forecast_accuracy_pct=92.5, inventory_turns=15.0)
 print(engine.diagnose_scm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_scm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data supply-chain-latency-and-inventory-variance-v2026`와 연동되어, 전 세계 주요 기업의 물류 데이터를 실시간 분석하고 품절 및 재고 과다 사고 확률을 0.001% 이하로 억제함으로써 지능형 경제 문명의 물자 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - quality-management-systems-qms-and-iso-9001-compliance

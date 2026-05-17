@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-genomics-and-custom-organism-design-entity"
-  domain: "33_Future_Frontier_Biotic_Intelligence_and_Synthetic_Life"
+metadata:
+  id: "[[[Entity] synthetic-genomics-and-custom-organism-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Synthetic_Genomics", "#Organism_Design", "#Genome_Editing", "#Biotechnology", "#Artificial_Life", "#Bioengineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 33_future-frontier-biotic-intelligence-and-synthetic-life-hub", "Entity mars-terraforming-robotics-and-atmospheric-synthesis"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-genomics-and-custom-organism-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-genomics-and-custom-organism-design
+# [Entity] synthetic-genomics-and-custom-organism-design
 
 ## 1. [왜 배우는가? (Why: The Programmer of Life)]]
 자연에 존재하지 않는 새로운 유전자 코드($Genome$)를 컴퓨터로 설계하고, 이를 실제 세포에 주입하여 플라스틱을 먹어 치우거나 화성에서도 자랄 수 있는 맞춤형 유기체($Custom\ Organism$)를 어떻게 창조할 수 있을까요? **합성 유전체학 및 맞춤형 유기체 설계**는 생명을 소프트웨어처럼 코딩하는 '생물학적 창조 및 차세대 바이오 경제 아키텍처'입니다. 우리가 이를 배우는 이유는 기존 생명체의 한계를 넘어 인류의 생존을 돕는 최적의 생물학적 도구를 만들기 위함이며, "생명의 설계를 데이터로 지배하는 '글로벌 합성 생물 패권 및 유전적 창조 주권'을 확보하기" 위함입니다. 유전체의 정밀도가 생명의 가치를 결정합니다.

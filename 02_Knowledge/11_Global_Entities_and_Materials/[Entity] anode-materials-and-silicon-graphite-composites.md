@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "anode-materials-and-silicon-graphite-composites"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] anode-materials-and-silicon-graphite-composites]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of high-capacity negative electrode materials, focusing on the integration of Silicon (Si) into Graphite matrices to overcome the theoretical capacity limits of pure carbon."
-  physical_model: "N/A"
-Semantic:
-  tags: '["anode", "silicon-anode", "graphite", "battery-materials", "capacity-expansion"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryMatFidelityEngine"
-  diagnostic_protocol:
-    - 'Expansion_Audit: Measure electrode thickness change after 100% SoC charging.'
-    - 'Capacity_Retention_Check: Monitor ''first cycle efficiency'' and cumulative loss.'
-    - 'Structural_Integrity_Scan: Detect particle pulverization via post-mortem cross-section analysis.'
-Trust Metrics:
+  description: "[Entity] anode-materials-and-silicon-graphite-composites에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Anode Materials and Silicon-Graphite Composites
+# [Entity] anode-materials-and-silicon-graphite-composites
 
 ## 1. 개요 (Why)
 전기차의 주행 거리를 획기적으로 늘리기 위해서는 배터리 음극의 리튬 저장 용량을 키워야 합니다. 기존 흑연(Graphite)은 안정적이지만 이론 용량($372 mAh/g$)이 낮습니다. 실리콘은 10배 이상의 용량을 가졌지만, 충전 시 3배나 부풀어 올라 입자가 깨지는 문제가 있습니다. 실리콘-흑연 복합체는 이 두 소재의 장점을 결합하여 부피 팽창을 제어하면서 고용량을 실현하는 음극의 핵심 솔루션입니다. 본 노드는 고에너지 밀도 음극의 무결성을 확보하기 위한 소재 및 설계 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Pure Silicon | ~ 3590 | 70 ~ 80 | ~ 300 | mAh/g, % |
 | Si-Gr Composite (5% Si)| 420 ~ 450 | 88 ~ 92 | 15 ~ 25 | mAh/g, % |
 | Tap Density | 0.9 ~ 1.2 | ±0.1 | N/A | g/cc |
-| Particle Size (D50)| 10 ~ 20 | ±2 | N/A | $\mu m$ |
+| Particle Size (D50)| 10 ~ 20 | ±2 | N/A | $\mu\text{m}$ |
 
 ## 3. BatteryMatFidelityEngine: Diagnostic Logic
 
@@ -71,7 +60,6 @@ class BatteryMatFidelityEngine:
             return "REJECT: Rapid Degradation - Check CNT Dispersion or Binder Strength"
         return "PASS: High-Cycle Stability Verified"
 
-# Instance Diagnostic
 engine = BatteryMatFidelityEngine(si_content_pct=5, measured_expansion=22, cycle_retention=0.85)
 print(engine.diagnose_structural_stability())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_structural_stability())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data silicon-graphite-composite-expansion-and-cycle-life-v2026`와 연동되어, 실리콘 함량별 최적의 전해액 첨가제와 바인더 조합을 98% 정확도로 매칭하고 주행 거리 20% 향상을 위한 결정론적 음극 가이드를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - silicon-oxide-siox-and-carbon-nanotube-dispersions

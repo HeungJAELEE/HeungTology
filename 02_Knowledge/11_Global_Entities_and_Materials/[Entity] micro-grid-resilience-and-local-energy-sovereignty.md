@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "micro-grid-resilience-and-local-energy-sovereignty-entity"
-  domain: "39_Global_Unified_Governance_Global_Energy_and_Grid_Control"
+metadata:
+  id: "[[[Entity] micro-grid-resilience-and-local-energy-sovereignty]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Micro-grid", "#Energy_Resilience", "#Energy_Sovereignty", "#Governance", "#Community", "#Distributed_Energy", "#Energy_Autonomy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 39_global-unified-governance-global-energy-and-grid-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] micro-grid-resilience-and-local-energy-sovereignty에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] micro-grid-resilience-and-local-energy-sovereignty
+# [Entity] micro-grid-resilience-and-local-energy-sovereignty
 
 ## 1. [왜 배우는가? (Why: The Energy Fortress of the Community)]]
 국가 전력망이 끊겨도 우리 동네는 어떻게 전기를 계속 쓸 수 있게 스스로 발전하고 저장하는 '작은 전력망($Micro-grid$)'을 만들고, 마을 사람들이 직접 에너지의 주인이 되어($Sovereignty$) 어떻게 우리끼리 전기를 나누고 팔 수 있을까요? **마이크로그리드 회복력 및 지역 에너지 주권**은 어떤 위기에도 꺼지지 않는 '행성 규모 에너지 세포 및 지역 자립형 에너지 아키텍처'입니다. 우리가 이를 배우는 이유는 중앙 집중식 망은 한 번 무너지면 전체가 위험하지만, 작은 망들이 모이면 훨씬 튼튼하기 때문이며, "에너지의 자립을 데이터로 설계하고 지배하는 '글로벌 분산 에너지 패권 및 행성적 지역 주권'을 확보하기" 위함입니다. 자립의 능력이 공동체의 생존력을 결정합니다.

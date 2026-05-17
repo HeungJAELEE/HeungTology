@@ -1,37 +1,27 @@
 ---
-Basic:
-  id: "space-grade-composites-and-advanced-radiation-shielding-physics-entity"
-  domain: "58_Aerospace_and_Space_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] space-grade-composites-and-advanced-radiation-shielding-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Aerospace", "#Materials_Science", "#Physics", "#Radiation", "#Composites", "#Space_Environment", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 134_aerospace-and-space-manufacturing-mastery-hub", "MOC 131_advanced-material-science-and-surface-engineering-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] space-grade-composites-and-advanced-radiation-shielding-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Entity] space-grade-composites-and-advanced-radiation-shielding-physics
- 
+
+# [Entity] space-grade-composites-and-advanced-radiation-shielding-physics
+
 ## 1. [왜 배우는가? (Why: The Shield of the Galactic Voyager)]]
 지구의 대기와 자기장이라는 보호막을 벗어나는 순간, 우주선은 태양의 타오르는 열기와 우주 공간의 살인적인 방사선, 그리고 총알보다 수배 빠른 미세 운석의 위협에 직면합니다. **우주급 복합 소재 및 방사선 차폐 물리**는 이 가혹한 '진공의 사막'에서 기체의 무결성을 사수하고 지능을 보호하는 '우주의 갑옷' 설계도입니다. 우리가 이를 배우는 이유는 단 1그램의 무게 증가 없이도 "극한의 온도를 견디는 구조적 강도"를 확보하기 위함이며, "보이지 않는 입자의 화살(방사선)을 수학적으로 막아내어 탑승자와 전자 장비의 생존을 담보"하기 위함입니다. 소재의 무결성이 우주 영토의 경계를 결정합니다.
  
@@ -73,7 +63,6 @@ $$ - \frac{dE}{dx} = \frac{4\pi n Z z^2}{m_e v^2} \left( \frac{e^2}{4\pi\epsilon
 4. **Extreme Cold** (그림자 구역)에서 소재의 **Brittle Transition** (취성 천이) 온도를 수리적으로 어떻게 제어하여 구조적 파손을 방지하는가?
 5. RAG 시스템에서 **다양한 적층 복합재(Laminate) 구성 데이터**를 분석하여, 기계적 강도와 방사선 차폐 성능을 동시에 극대화하는 최적의 **Hybrid Stacking Sequence**를 추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_aerospace-and-space-manufacturing-mastery-hub : 우주 소재 기술이 통합되는 상위 항공우주 허브
 - Entity composite-materials-aerospace-and-industrial-applications : 복합 소재 기초 공학 데이터 노드

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cadmium-telluride-cdte-thin-film-photovoltaics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cadmium-telluride-cdte-thin-film-photovoltaics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A photovoltaic (PV) technology that uses a thin film of cadmium telluride, a semiconductor layer designed to absorb and convert sunlight into electricity (CdTe Thin-Film Photovoltaics) and the study of the solid-state physics and manufacturing processes required to create these high-efficiency, low-cost solar modules."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cdte", "thin-film", "photovoltaics", "solar-energy", "semiconductor-physics", "renewable-energy", "vtd"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Fill Factor'' (FF) and Open-Circuit Voltage ($V_{oc}$) to identify if grain boundary recombination or contact resistance is limiting the cell performance.'
-    - 'Deposition_Integrity_Check: Analyze the film thickness and uniformity during the ''Vapor Transport Deposition'' (VTD) process to ensure optimal light absorption without excessive material waste.'
-    - 'Environmental_Fidelity_Scan: Monitor the encapsulation integrity to identify potential moisture ingress that could lead to the leaching of cadmium or degradation of the semiconductor layer.'
-Trust Metrics:
+  description: "[Entity] cadmium-telluride-cdte-thin-film-photovoltaics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Cadmium Telluride (CdTe) Thin-Film Photovoltaics
+# [Entity] cadmium-telluride-cdte-thin-film-photovoltaics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 실리콘 웨이퍼 대신, 유리창에 페인트를 칠하듯 얇은 막을 입혀 전기를 만들 수 있다면 어떨까요? **카드뮴 텔루라이드(CdTe) 박막 태양전지**는 햇빛을 흡수하는 능력이 가장 뛰어난 소재를 활용해, 머리카락 굵기의 100분의 1 수준으로도 강력한 전기를 생산하는 **'고성능 태양광 코팅'** 기술입니다. 실리콘보다 제조 공정이 훨씬 빠르고 저렴하여, 사막이나 대규모 태양광 발전소에서 가장 경제적으로 에너지를 뽑아내는 **'태양광 경제의 게임 체인저'**입니다.
@@ -43,7 +32,7 @@ CdTe가 빛($h\nu$)을 받아 얼마나 효율적으로 전자-정공 쌍을 만
 
 $$ \alpha(h\nu) \approx A(h\nu - E_g)^{1/2} $$
 
-**[인간적 해석]**: "빛의 스펀지"입니다. CdTe는 '직접 천이형' 밴드갭($E_g \approx 1.45 eV$)을 가져서, 햇빛 에너지를 흡수하는 데 최적화되어 있습니다. 우리는 이 특성을 이용해 아주 얇은 박막(2~3$\mu m$)만으로도 들어오는 빛의 90% 이상을 잡아채어 전기로 바꾸는 **'최소 소재, 최대 발전'**을 수행합니다.
+**[인간적 해석]**: "빛의 스펀지"입니다. CdTe는 '직접 천이형' 밴드갭($E_g \approx 1.45 eV$)을 가져서, 햇빛 에너지를 흡수하는 데 최적화되어 있습니다. 우리는 이 특성을 이용해 아주 얇은 박막(2~3$\mu\text{m}$)만으로도 들어오는 빛의 90% 이상을 잡아채어 전기로 바꾸는 **'최소 소재, 최대 발전'**을 수행합니다.
 
 ### 2.2. 태양전지 다이오드 방정식 (Ideal Diode Equation)
 빛을 받아 발생한 전류($J_{ph}$)와 전압($V$)의 관계를 나타내며, 전지의 효율을 결정하는 핵심 수식입니다.
@@ -56,7 +45,7 @@ $$ J = J_0 [ \exp(\frac{qV}{nkT}) - 1 ] - J_{ph} $$
 
 | Feature | Crystalline Silicon (c-Si) | CdTe Thin-Film (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Material Thickness** | 150 ~ 200 (Thick) | 2 ~ 5 (Ultra-thin) | $\mu m$ | Resource Eff. |
+| **Material Thickness** | 150 ~ 200 (Thick) | 2 ~ 5 (Ultra-thin) | $\mu\text{m}$ | Resource Eff. |
 | **Energy Payback Time**| 1.0 ~ 1.5 | < 0.5 (Fastest) | years | Environment |
 | **Temp. Coefficient** | -0.4 to -0.5 (Worse) | -0.2 to -0.3 (Best) | %/°C | Performance |
 | **Module Efficiency** | 18 ~ 22 | 17 ~ 19 | % | Competitive |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Encapsulation Integrity Failure - Risk of heavy metal leaching. Panel must be recycled. Check edge seal bonding quality"
         return "PASS: Hermetic Glass-Glass Protection and Verified Ecological Safety Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(conversion_efficiency_pct=18.5, fill_factor_ratio=0.78, dark_current_pA_cm2=50.0)
 print(engine.diagnose_cell_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cell_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cdte-solar-cell-efficiency-and-degradation-rates-v2026`와 연동되어, 전 세계 주요 대규모 태양광 발전소의 가동 데이터를 실시간 분석하고 패널 열화 및 카드뮴 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 지속 가능 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - anti-reflective-coating-arc-and-optical-interference-physics

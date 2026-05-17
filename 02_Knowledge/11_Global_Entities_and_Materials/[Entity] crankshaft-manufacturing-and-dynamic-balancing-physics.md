@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crankshaft-manufacturing-and-dynamic-balancing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crankshaft-manufacturing-and-dynamic-balancing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of producing the primary rotating part of an engine that converts reciprocating motion into rotational motion (Crankshaft Manufacturing) and the physical study of eliminating centrifugal forces and moments that cause vibration during high-speed rotation (Dynamic Balancing Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crankshaft", "dynamic-balancing", "engine-mechanics", "precision-machining", "vibration-control", "forging", "rotational-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Balancing_Fidelity_Audit: Evaluate the ''Residual Unbalance'' (g-mm) at operational RPM to identify if the crankshaft will induce resonance, leading to bearing failure or catastrophic engine block fracture.'
-    - 'Manufacturing_Fidelity_Check: Analyze the ''Induction Hardening'' depth on the journals to ensure the wear resistance is sufficient for the engine''s 10-year durability target.'
-    - 'Geometrical_Fidelity_Scan: Monitor the ''Roundness'' and ''Cylindricity'' of the main and rod journals to verify that the oil film thickness is maintained under maximum combustion pressure.'
-Trust Metrics:
+  description: "[Entity] crankshaft-manufacturing-and-dynamic-balancing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ Crankshaft Manufacturing and Dynamic Balancing Physics
+# [Entity] crankshaft-manufacturing-and-dynamic-balancing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 엔진이 분당 수천 번 회전하는데도 자동차가 떨리지 않고 부드럽게 달리는 비결은 무엇일까요? **크랭크샤프트 제조 및 동적 밸런싱(Dynamic Balancing) 물리**는 엔진의 '척추'를 깎고, 미세한 무게 중심을 맞춰 진동을 없애는 **'회전의 무결성'** 기술입니다. 직선으로 오르내리는 피스톤의 힘을 회전력으로 바꾸는 이 부품은, 단 1g의 오차만 있어도 고속 회전 시 망치로 치는 것 같은 충격을 줍니다. 완벽한 균형으로 거침없는 질주를 가능케 하는 **'엔진 공학의 정점'**입니다.
@@ -60,7 +49,7 @@ $$ \sum M = 0 $$
 | **Manufacturing** | Casting (Mold) | Hot Forging + Machining | - | Precision |
 | **Balancing Grade** | G6.3 (Standard) | G1.0 ~ G2.5 (Precision) | - | Quality |
 | **Surface Hardness** | Induction Hardened | Nitrided / Hardened | HRC | Wear |
-| **Journal Tolerance** | ~ 5 | 1 ~ 2 (Ultra-precise) | $\mu m$ | Fit |
+| **Journal Tolerance** | ~ 5 | 1 ~ 2 (Ultra-precise) | $\mu\text{m}$ | Fit |
 | **Weight** | Heavy | Lightweight (Optimized) | kg | Performance |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Harmonics Overlap - Crankshaft natural frequency coincides with firing frequency. Destructive vibration expected at cruising speed"
         return "PASS: Validated Dynamic Response and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(residual_unbalance_gmm=0.5, journal_roundness_um=1.2, hardness_hrc=58.0)
 print(engine.diagnose_crank_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_crank_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crankshaft-unbalance-tolerances-and-vibration-v2026`와 연동되어, 전 세계 주요 고성능 엔진 및 레이싱 카 제조 라인의 데이터를 실시간 분석하고 파손 및 진동 불만 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 엔진 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-and-g-code-interpolation-logic

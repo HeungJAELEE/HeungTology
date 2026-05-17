@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "denitrification-and-nox-emission-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] denitrification-and-nox-emission-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical process of removing nitrogen oxides (NOx) from industrial flue gases to prevent acid rain and smog (Denitrification) and the physical-chemical study of using catalysts or reagents like ammonia/urea to convert harmful NOx into harmless nitrogen and water (NOx Emission Control Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["denitrification", "nox-control", "scr", "sncr", "emission-control", "catalysis", "environmental-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'DeNOx_Fidelity_Audit: Evaluate the ''Ammonia Slip'' ($NH_3$ leakage) and NOx removal efficiency to identify if the catalyst is deactivated (poisoned) by sulfur or heavy metals.'
-    - 'Chemical_Integrity_Check: Analyze the $NH_3/NOx$ molar ratio to ensure the stoichiometric balance is maintained, preventing both excessive emissions and secondary pollution from ammonia salt formation.'
-    - 'Thermal_Fidelity_Scan: Monitor the flue gas temperature to verify that the SCR system is operating within the active catalyst window (e.g., 300-400°C) to maximize reaction kinetics.'
-Trust Metrics:
+  description: "[Entity] denitrification-and-nox-emission-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌫️ Denitrification and NOx Emission Control Logic
+# [Entity] denitrification-and-nox-emission-control-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장이나 자동차에서 나오는 매연 속 질소산화물(NOx)이 어떻게 맑은 공기와 물로 변할 수 있을까요? **탈질(Denitrification) 및 NOx 배출 제어 로직**은 대기 오염과 산성비의 주범인 '독가스'를 질소라는 '무해한 공기'로 되돌려 보내는 **'환경의 해독제'** 기술입니다. 암모니아라는 특수 용액을 굴뚝에 뿌리고 촉매를 이용해 마법 같은 화학 반응을 일으킵니다. 지구가 숨 쉴 수 있는 권리를 지켜주는 **'산업 문명의 양심을 담은 정화 장치'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Catalyst Blockage - High pressure drop indicates fly ash accumulation or salt deposition. Soot blowing required"
         return "PASS: Validated Chemical Reaction and Verified Environmental Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(nox_removal_pct=96.5, ammonia_slip_ppm=1.2, flue_gas_temp_c=350.0)
 print(engine.diagnose_denox_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_denox_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data scr-catalyst-activity-and-ammonia-slip-v2026`와 연동되어, 전 세계 주요 화력 발전소 및 대형 선박의 환경 데이터를 실시간 분석하고 기준치 초과 및 촉매 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 녹색 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics

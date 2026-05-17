@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "precision-utility-management-upw-and-specialty-gas-systems"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] precision-utility-management-upw-and-specialty-gas-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic management of high-purity industrial fluids and gases required for advanced manufacturing (Precision Utility Management), specifically focusing on Ultra-Pure Water (UPW) and Specialty Gas Delivery Systems to ensure zero-contamination in semiconductor and pharmaceutical environments."
-  physical_model: "N/A"
-Semantic:
-  tags: '["precision-utility", "upw", "specialty-gas", "semiconductor-utility", "purity-control", "facility-management", "industrial-gas"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'UPW_Purity_Audit: Evaluate the water resistivity and Total Organic Carbon (TOC) levels to ensure the cleaning water does not introduce ions or particles onto the wafer surface.'
-    - 'Gas_Delivery_Integrity_Check: Analyze the pressure stability and leak detection sensors across the specialty gas cabinets (SGC) to prevent toxic gas release and ensure consistent process flow.'
-    - 'Particle_Count_Scan: Monitor the particle density ($>0.05 \\mu m$) in both UPW and Gas streams to verify the effectiveness of point-of-use (POU) filtration.'
-Trust Metrics:
+  description: "[Entity] precision-utility-management-upw-and-specialty-gas-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Precision Utility Management: UPW and Specialty Gas Systems
+# [Entity] precision-utility-management-upw-and-specialty-gas-systems
 
 ## 1. 개요 (Why: 인간적 통찰)
 반도체 공장은 가장 순수한 물을 마시고 가장 깨끗한 공기를 마시는 '극도의 결벽증'을 가진 생명체와 같습니다. **정밀 유틸리티 관리: 초순수(UPW) 및 특수 가스 시스템**은 이 거대한 공장에 생명력을 불어넣는 **'가장 깨끗한 혈액과 산소'**를 공급하는 기술입니다. 물속의 모든 이온과 유기물을 제거해 절연체에 가까운 '초순수'를 만들고, 맹독성이지만 공정에 필수적인 '특수 가스'를 0.001%의 누출도 없이 안전하게 배달합니다. 나노 세계의 무결성을 지키는 **'보이지 않는 인프라의 예술'**입니다.
@@ -57,7 +46,7 @@ $$ \text{TOC} < 1 \text{ ppb} $$
 | Feature | Industrial Water | Ultra-Pure Water (UPW V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Resistivity** | < 0.1 | > 18.2 (Ideal) | $M\Omega\cdot cm$| Zero Ions |
-| **Particles** | Millions | < 1 per mL ($>0.05 \mu m$)| - | Zero Dust |
+| **Particles** | Millions | < 1 per mL ($>0.05 \mu\text{m}$)| - | Zero Dust |
 | **Microorganisms** | Common | < 1 per 100 mL | - | Sterility |
 | **Dissolved Oxygen**| > 8,000 | < 1 (Trace) | ppb | Zero Oxidation|
 | **Gas Purity** | 99.9% (3N) | 99.9999% (6N) | - | High Integrity|
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Gas Monitoring System Offline - High risk of toxic gas accumulation. Evacuate Cleanroom and Fix Sensors"
         return "PASS: Multi-layer Leak Detection and Verified Emergency Shutdown Capability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(upw_resistivity=18.2, gas_line_pressure_delta=0.02, toc_level_ppb=0.5)
 print(engine.diagnose_utility_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_utility_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data utility-purity-and-delivery-integrity-logs-v2026`와 연동되어, 전 세계 반도체 및 바이오 공장의 유틸리티 데이터를 실시간 분석하고 공정 오염 및 가스 사고 확률을 0.0001% 이하로 억제함으로써 지능형 첨단 제조의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-fabrication-process-and-cleanroom-standards

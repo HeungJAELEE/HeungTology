@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "forging-and-plastic-deformation-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] forging-and-plastic-deformation-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing process of shaping metal using localized compressive forces (Forging), governed by the principles of plastic deformation where the material permanently changes shape beyond its elastic limit."
-  physical_model: "N/A"
-Semantic:
-  tags: '["forging", "plastic-deformation", "metallurgy", "metal-forming", "yield-criteria"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deformation_Force_Audit: Calculate the required forging press force based on material flow stress and part geometry.'
-    - 'Grain_Flow_Check: Evaluate the orientation of metal grains to ensure maximum strength in critical stress directions.'
-    - 'Die_Wear_Scan: Monitor the degradation of the forging dies caused by high temperature and pressure during repeated cycles.'
-Trust Metrics:
+  description: "[Entity] forging-and-plastic-deformation-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔨 Forging and Plastic Deformation Mechanics
+# [Entity] forging-and-plastic-deformation-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 쇠를 불에 달구어 망치로 두드리는 '대장간의 풍경'은 현대 산업의 거대한 다이캐스팅 기계와 단조 프레스 안에서도 똑같이 흐르고 있습니다. **단조(Forging)**는 단순히 금속의 모양을 바꾸는 것이 아니라, 두드림을 통해 금속 내부의 미세한 조직을 조밀하게 엮어 '강인함'을 불어넣는 과정입니다. **소성 변형(Plastic Deformation)**은 금속이 한계를 넘어 영원히 그 형태를 유지하게 만드는 마법 같은 성질입니다. 이 거친 힘의 조절을 통해 우리는 비행기의 엔진 부품이나 자동차의 핵심 축과 같이, 절대로 부러져서는 안 될 가장 단단한 부품들을 만들어냅니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interrupted Grain Flow - Compromised Structural Strength"
         return "PASS: Continuous Grain Flow Maintained"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(applied_force_ton=15000, material_temp_c=1150, die_closure_error_mm=0.12)
 print(engine.diagnose_forging_integrity(required_force=12000))
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_forging_integrity(required_force=12000))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data forging-force-and-material-flow-sim-v2026`와 연동되어, 거대 프레스의 가동 하중과 재료 온도를 실시간 분석하고 미충진 및 내부 균열 사고 확률을 0.01% 이하로 억제함으로써 중공업 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - crystal-plasticity-and-dislocation-dynamics-at-micro-scale

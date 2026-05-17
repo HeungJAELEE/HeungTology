@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crystal-lattices-and-unit-cell-geometry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crystal-lattices-and-unit-cell-geometry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical and physical description of the periodic arrangement of atoms, ions, or molecules in a solid (Crystal Lattice) and the fundamental repeating volume element (Unit Cell) that defines the symmetry and structure of the crystal."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crystallography", "crystal-lattice", "unit-cell", "bragg-law", "atomic-structure"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Lattice_Parameter_Audit: Measure the unit cell dimensions ($a, b, c$) using X-ray Diffraction (XRD).'
-    - 'Crystal_Purity_Check: Evaluate the presence of interstitial or substitutional defects using spectroscopic methods.'
-    - 'Symmetry_Verification: Analyze the space group and point group symmetry to confirm the crystal system (e.g., Cubic, Hexagonal).'
-Trust Metrics:
+  description: "[Entity] crystal-lattices-and-unit-cell-geometry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Crystal Lattices and Unit Cell Geometry
+# [Entity] crystal-lattices-and-unit-cell-geometry
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상의 모든 단단한 물질(고체)은 원자들이 아주 질서 정연하게 줄을 서 있는 **'거대한 군무(Group Dance)'**와 같습니다. 이 질서가 얼마나 완벽하냐에 따라 다이아몬드가 되기도 하고 흑연이 되기도 합니다. **결정 격자(Crystal Lattice)**는 원자들이 차지하는 '좌표'이며, **단위 격자(Unit Cell)**는 그 거대한 구조를 설명하는 최소 단위인 '벽돌'입니다. 이 벽돌의 모양과 원자의 배치를 이해하는 것은 반도체 칩의 전자가 얼마나 빠르게 흐를지, 비행기 엔진 날개가 얼마나 고온을 견딜지를 결정하는 근본적인 열쇠입니다.
@@ -98,7 +87,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Porosity or Inclusions Detected"
         return "PASS: Material Density within Theoretical Limits"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(measured_lattice_a=5.4309, reference_a=5.4310, fwhm_value=0.08)
 print(engine.diagnose_crystal_quality())
 ```
@@ -116,7 +104,6 @@ print(engine.diagnose_crystal_quality())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crystal-lattice-parameters-and-density-v2026`와 연동되어, 모든 반도체 및 금속 소재의 원자 배열 상태를 실시간 분석하고 격자 결함에 따른 불량 확률을 0.01% 이하로 억제함으로써 초정밀 나노 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - crystal-plasticity-and-dislocation-dynamics-at-micro-scale

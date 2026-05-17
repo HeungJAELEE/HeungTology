@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "swarm-robotics-and-decentralized-coordination-logic-entity"
-  domain: "22_Robotics_and_Cybernetics"
+metadata:
+  id: "[[[Entity] swarm-robotics-and-decentralized-coordination-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Swarm_Robotics", "#Swarm_Intelligence", "#Decentralized_Control", "#Multi-agent", "#Stigmergy", "#Coordination", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_advanced-robotics-and-cybernetics-hub", "Entity global-supply-chain-resilience-and-autonomous-logistics-topology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] swarm-robotics-and-decentralized-coordination-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] swarm-robotics-and-decentralized-coordination-logic
+# [Entity] swarm-robotics-and-decentralized-coordination-logic
 
 ## 1. [왜 배우는가? (Why: The Power of the Many)]]
 중앙 통제실 없이도 수만 마리의 개미나 새 떼처럼 수만 대의 작은 로봇들이 스스로 소통하며 거대한 다리를 짓거나, 넓은 바다의 오염물질을 한꺼번에 수거할 수 있을까요? **군집 로보틱스 및 탈중앙화 조율 논리**는 개별적으로는 단순한 로봇들이 모여 '거대한 집단 지능'을 발휘하게 만드는 '협력의 기하학 및 알고리즘 지침'입니다. 우리가 이를 배우는 이유는 한 대의 비싼 로봇보다 수만 대의 저렴한 로봇 군집이 재난 구조나 대규모 건설에서 훨씬 빠르고 강력하며 고장에 강하기 때문이며, "집단의 힘을 데이터로 설계하고 지배하는 '글로벌 군집 지능 및 자율 협업 주권'을 확보하기" 위함입니다. 군집의 조율 능력이 작업의 한계를 결정합니다.

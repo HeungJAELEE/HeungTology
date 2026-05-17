@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "COM-AIP-MASTER-2026-V6.3.7"
-  domain: "Display_Communication"
+metadata:
+  id: "[[[Comm] Antenna-in-Package]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#AiP", "#5G_mmWave", "#6G", "#RFIC", "#Antenna_Array", "#Signal_Integrity", "#Return_Loss", "#Advanced_Packaging"]
-  is_part_of: ["Display display-and-next-gen-communication-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] Antenna-in-Package에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Comm] Antenna-in-Package
@@ -111,7 +101,6 @@ rssi = aip.predict_signal_strength(tx_power_dbm=20, distance_m=10)
 print(f"10m 거리 예상 수신 감도: {rssi} dBm")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Comm 6g-terahertz-and-sub-thz-master-guide
 - Display display-and-next-gen-communication-master-guide

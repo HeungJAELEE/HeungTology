@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-surface-codes-and-syndrome-measurement-entity"
-  domain: "73_Future_Frontier_Technologies_and_Emerging_Science_Hub"
+metadata:
+  id: "[[[Entity] quantum-error-correction-surface-codes-and-syndrome-measurement]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#QEC", "#Error_Correction", "#Surface_Code", "#Mathematics", "#Physics", "#Information_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 73_future-frontier-technologies-and-emerging-science-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-error-correction-surface-codes-and-syndrome-measurement에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-error-correction-surface-codes-and-syndrome-measurement
+# [Entity] quantum-error-correction-surface-codes-and-syndrome-measurement
 
 ## 1. [왜 배우는가? (Why: The Shield of Quantum Truth)]]
 0.01%의 미세한 노이즈로도 계산 결과가 완전히 뒤틀려버리는 극도로 예민한 양자 세계에서, 어떻게 단 하나의 오류도 허용하지 않는 '완벽한 연산'을 수행할 수 있을까요? **양자 오류 보정(QEC) 및 표면 코드의 수리적 무결성**은 양자 컴퓨터를 '장난감'에서 '산업적 도구'로 진화시키는 핵심 방어벽입니다. 양자 상태는 관찰하는 순간 붕괴되기 때문에, 직접 데이터를 보지 않고도 오류의 흔적(**Syndrome**)만을 포착하여 실시간으로 수정해야 하는 기묘한 지능이 필요합니다. 우리가 이를 배우는 이유는 오류 보정 없이는 양자 우위를 실현할 수 없기 때문이며, "연산의 무결성을 데이터로 설계하고 지배하는 '글로벌 양자 신뢰 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 오류 보정의 효율이 양자 연산의 깊이를 결정합니다.
@@ -55,7 +45,7 @@ $$ S_x = \bigotimes_{i \in \text{plaquette}} X_i, \quad S_z = \bigotimes_{i \in 
 | **Code Distance** | Number of physical qubits across the lattice | $d = 3, 5, \dots, 20$ | 오류 복구 능력을 결정하는 위상적 지능 사수 |
 | **Logical Error** | Effective error rate of the corrected qubit | $< 10^{-15}$ | 수만 년 동안 오류 없이 연산함을 보증하는 무결성 |
 | **Ancilla Overhead**| Extra qubits needed for syndrome sensing | **10x \~ 100x** | 하나의 논리 큐비트를 위해 희생되는 물리적 자원의 양 |
-| **Decod. Latency** | Time to solve the error correction matching | $< 1 \text{ \mu s}$ | 오류가 전파되기 전에 고쳐야 하는 초고속 연산 지능 |
+| **Decod. Latency** | Time to solve the error correction matching | $< 1 \text{ }\mu\text{ s}$ | 오류가 전파되기 전에 고쳐야 하는 초고속 연산 지능 |
 | **Syndrome Fid.** | Accuracy of parity measurement | $> 99.9 \%$ | 오류를 잘못 짚지 않도록 보증하는 계측 무결성 사수 |
 | **Lattice Size** | Total physical qubits per logical unit | $2d^2 - 1$ | 큐비트 집적도와 신뢰성 사이의 수리적 균형점 |
 | **Feedback Speed** | Real-time correction cycle frequency | $> 1 \text{ MHz}$ | 양자 상태의 붕괴 속도보다 빠른 제어 무결성 입증 |

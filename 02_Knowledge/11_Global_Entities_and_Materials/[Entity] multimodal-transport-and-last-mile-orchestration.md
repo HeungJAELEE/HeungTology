@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "multimodal-transport-and-last-mile-orchestration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] multimodal-transport-and-last-mile-orchestration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated management of various transport modes (Sea, Air, Rail, Road) to move goods efficiently (Multimodal Transport) and the final stage of delivery from a distribution hub to the end destination (Last-mile Orchestration), utilizing real-time data and AI-driven routing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["multimodal-transport", "last-mile-delivery", "logistics-orchestration", "supply-chain", "smart-mobility", "intermodal", "autonomous-delivery"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Lead_Time_Audit: Evaluate the actual transit time against the planned schedule across all modes to identify bottlenecks in transfer hubs or urban traffic.'
-    - 'Last-mile_Efficiency_Check: Analyze the cost-per-delivery and success rate in the final mile to optimize courier routing and autonomous delivery deployment.'
-    - 'Intermodal_Synchronization_Scan: Verify the data flow between different transport operators to ensure seamless handovers and minimal idle time at terminals.'
-Trust Metrics:
+  description: "[Entity] multimodal-transport-and-last-mile-orchestration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚚 Multimodal Transport and Last-mile Orchestration
+# [Entity] multimodal-transport-and-last-mile-orchestration
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 반대편의 공장에서 만든 물건이 어떻게 단 며칠 만에 우리 집 문 앞까지 올 수 있을까요? **복합 운송 및 라스트마일 오케스트레이션**은 바다, 하늘, 철도, 도로라는 거대한 퍼즐 조각을 하나로 맞춰 물건을 흐르게 만드는 **'글로벌 혈관의 지휘자'**입니다. 거대한 컨테이너선에서 내린 물건이 기차와 트럭을 거쳐, 마지막에는 자율주행 로봇이나 드론이 내 손에 쥐여주는 이 과정은 고도의 수학적 설계와 실시간 통제가 결합한 **'물류의 예술'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fragile Logistics Network - Low Adaptability to Traffic or Weather Disruptions"
         return "PASS: Robust Logistics Orchestration and Dynamic Rerouting Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(transfer_delay_hours=2.5, last_mile_cost_ratio=0.45, real_time_visibility_pct=0.99)
 print(engine.diagnose_logistics_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_logistics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data logistics-lead-time-and-last-mile-cost-v2026`와 연동되어, 전 세계 물류 네트워크의 운송 데이터를 실시간 분석하고 배송 지연 및 경로 이탈 사고 확률을 0.001% 이하로 억제함으로써 글로벌 공급망의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - autonomous-heavy-duty-trucking-and-platooning-physics

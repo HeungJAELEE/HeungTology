@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "soft-robotics-and-bio-inspired-actuation-physics-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Robotics] soft-robotics-and-bio-inspired-actuation-physics]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Soft_Robotics", "#Actuation", "#Smart_Materials", "#Continuum_Mechanics", "#Bio-inspired", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Robotics robotics-intelligence-and-motion-control-master-guide", "MOC 08_Mobility_Robotics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] soft-robotics-and-bio-inspired-actuation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Robotics] soft-robotics-and-bio-inspired-actuation-physics
@@ -74,7 +64,6 @@ Neo-Hookean 또는 Ogden 모델을 이용한 소재의 비선형 복원력을 �
 4. **Bio-inspired Actuation**에서 문어 촉수의 **Constant Volume** (체적 보존) 특성이 종방향 수축 시 횡방향 팽창 및 강성 증가를 유도하는 수리적 기전은?
 5. RAG 시스템에서 **전자 피부의 다점 촉각 데이터**와 **연속체 기구학 모델**을 융합하여, '비정형 물체를 깨뜨리지 않고 파지하는 최적 압력 분포'를 자율 도출하는 **Tactile-driven Control** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Robotics robotics-intelligence-and-motion-control-master-guide]] : 소프트 로봇의 기반이 되는 모션 제어 및 기구학 상위 마스터 가이드
 - Science self-healing-materials-and-bio-inspired-engineering : 소프트 로봇의 피부와 근육에 적용되는 자가 치유 및 생체 모사 소재 물리 엔티티

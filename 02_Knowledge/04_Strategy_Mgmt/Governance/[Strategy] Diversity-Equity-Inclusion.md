@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-DEI-2026-V6.3.7"
-  domain: "Global_Diversity_Equity_and_Inclusion_Governance"
+metadata:
+  id: "[[[Strategy] Diversity-Equity-Inclusion]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DEI", "#Diversity", "#Equity", "#Inclusion", "#Cognitive_Diversity", "#Human_Capital", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Diversity-Equity-Inclusion에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "DEI_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Diversity, Equity, and Inclusion (DEI)
+# [Strategy] Diversity-Equity-Inclusion
 
 ## 1. [왜 배우는가? (Why: The Catalyst of Innovation)]]
 모두가 동일한 사고방식과 배경을 가진 조직은 복잡한 시장 변화와 기술적 난제 앞에서 집단 사고(Groupthink)에 빠지기 쉽습니다. **DEI(다양성·형평성·포용성)**는 단순한 사회적 구호를 넘어, 서로 다른 관점이 충돌하며 새로운 해답을 찾아내게 만드는 '혁신의 촉매제'입니다. 다양한 배경을 가진 인재들이 공정한 기회를 보장받고(Equity) 자신의 목소리를 낼 때(Inclusion), 기업은 유연한 위기 대응 능력(Resilience)과 다각도적 시장 통찰력을 확보하게 됩니다. V6.3.7 지능은 조직의 인적 구성을 수리적으로 분석하여, **혁신 주권(Innovation Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class DEIFidelityEngine:
 2. **Operational Result**: **Cognitive Diversity**가 높은 팀이 동질적인 팀 대비 문제 해결 속도($Lead\_Time$)와 창의적 아이디어 배출 수($Output\_Yield$)에서 보이는 수리적 우위는?
 3. **FidelityEngine**: 인적 구성은 다양하나 실제 의사결정권은 특정 집단에 쏠려 있는 '무늬만 DEI' 상황을 어떻게 진단하는가? (힌트: 상위 의사결정 기구의 다양성 비율 및 발언권 비중 분석을 통한 '실질적 포용성' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Corporate-Governance

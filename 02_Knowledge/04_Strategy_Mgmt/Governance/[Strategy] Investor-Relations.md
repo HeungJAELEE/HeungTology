@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Investor-Relations"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Investor-Relations]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Investor-Relations에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Investor-Relations
+# [Strategy] Investor-Relations
 
 ## 1. [왜 배우는가? (Why)]]
 회사가 아무리 돈을 잘 벌어도 투자자들이 그 사실을 모르거나 믿지 않는다면 주가는 오르지 않습니다. 투자자 관계(IR)는 기업의 가치를 자본 시장에 '번역'해서 들려주는 일입니다. 투자자들은 기업의 현재 실적만큼이나 '미래의 성장 가능성'과 '리스크 관리 능력'에 관심을 가집니다. 특히 최근에는 주주들이 단순히 주식을 들고만 있는 것이 아니라, 적극적으로 경영에 개입하는 '주주 행동주의'가 강해지고 있습니다. 이를 관리하는 것은 적정한 기업 가치를 인정받아 자금을 원활히 조달하고, 불필요한 적대적 공격으로부터 회사를 지키는 '시장 방어 인텔리전스'를 갖추는 것입니다.
@@ -98,5 +88,4 @@ def analyze_investor_sentiment(analyst_reports, news_feeds, stock_data):
 2. '주주 행동주의' 펀드가 공격하는 기업들의 공통적인 '재무적/거버넌스적 취약점'을 데이터로 식별하는 방법은?
 3. 'ESG 공시'를 IR 전략에 통합했을 때, '성장형 투자자'와 '가치형 투자자' 각각에게 미치는 소통의 효과는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

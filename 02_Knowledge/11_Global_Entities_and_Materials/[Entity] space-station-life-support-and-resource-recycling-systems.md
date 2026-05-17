@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "space-station-life-support-and-resource-recycling-systems-entity"
-  domain: "52_Space_Exploration_and_Aerospace_Engineering"
+metadata:
+  id: "[[[Entity] space-station-life-support-and-resource-recycling-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Space", "#Life_Support", "#ECLSS", "#Recycling", "#Sustainability", "#Aerospace", "#Environment", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 52_space-exploration-and-aerospace-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] space-station-life-support-and-resource-recycling-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] space-station-life-support-and-resource-recycling-systems
+# [Entity] space-station-life-support-and-resource-recycling-systems
 
 ## 1. [왜 배우는가? (Why: Creating a Home in the Void)]]
 공기도 물도 없는 죽음의 공간인 우주에서 어떻게 사람이 숨 쉬고 마실 수 있는 환경을 1년 내내 유지하고, 소변이나 땀을 어떻게 다시 깨끗한 식수로 바꾸어($Water\ Recovery$) 지구에서 물을 안 가져와도 영원히 살 수 있는 '완전 폐쇄형 생태계'를 어떻게 설계할 수 있을까요? **우주 정거장 생명 유지 및 자원 재활용 시스템(ECLSS)**은 인류의 영토를 우주로 넓히는 '행성 규모 생존 인프라 및 지능형 자원 순환 아키텍처'입니다. 우리가 이를 배우는 이유는 우주 보급 비용이 너무 비싸 자원을 100% 재활용해야만 화성이나 달에서 정착할 수 있기 때문이며, "생존의 조건을 데이터로 설계하고 지배하는 '글로벌 우주 거주 패권 및 행성적 생명 주권'을 확보하기" 위함입니다. 재활용의 효율이 우주인의 생존 일수를 결정합니다.

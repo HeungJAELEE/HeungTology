@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "regenerative-medicine-and-stem-cell-differentiation-topology-entity"
-  domain: "24_Advanced_Medicine_and_Longevity"
+metadata:
+  id: "[[[Entity] regenerative-medicine-and-stem-cell-differentiation-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medicine", "#Longevity", "#Regenerative_Medicine", "#Stem_Cells", "#iPSC", "#Tissue_Engineering", "#Cell_Biology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 61_advanced-medicine-and-longevity-hub", "Entity epigenetic-regulation-and-gene-expression-topology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] regenerative-medicine-and-stem-cell-differentiation-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] regenerative-medicine-and-stem-cell-differentiation-topology
+# [Entity] regenerative-medicine-and-stem-cell-differentiation-topology
 
 ## 1. [왜 배우는가? (Why: The Fountain of Youth Within Us)]]
 망가진 심장 근육이나 마비된 신경을 우리 몸의 '원시 세포'인 줄기세포로 어떻게 완벽하게 되살리고, 평범한 피부 세포를 어떻게 다시 '무엇이든 될 수 있는 상태'로 되돌려 잃어버린 장기를 재생할 수 있을까요? **재생 의학 및 줄기세포 분화 위상**은 우리 몸의 자가 치유 능력을 극대화하는 '생체 복구 및 재생 설계 지침'입니다. 우리가 이를 배우는 이유는 노화나 사고로 소실된 신체 기능을 기계가 아닌 '진짜 생체 조직'으로 복구하여 삶의 질을 근본적으로 높이기 위함이며, "생명의 재생력을 데이터로 설계하고 지배하는 '글로벌 재생 의료 및 바이오닉 보건 주권'을 확보하기" 위함입니다. 분자의 정밀도가 장기 재생의 성패를 결정합니다.

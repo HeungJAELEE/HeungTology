@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-mechanical-planarization-cmp-and-wafer-slurry-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-mechanical-planarization-cmp-and-wafer-slurry-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process used in semiconductor fabrication for smoothing surfaces with the combination of chemical and mechanical forces (CMP) and the complex fluid dynamics and abrasive interaction of the chemical liquid (Slurry) used to remove material from the silicon wafer (Wafer Slurry Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cmp", "semiconductor-manufacturing", "wafer-planarization", "slurry-physics", "nanopolishing", "tribology", "interconnect"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Planarization_Fidelity_Audit: Evaluate the ''Removal Rate'' (RR) and WIWNU (Within-Wafer Non-Uniformity) to identify if the pad conditioning or slurry flow is maintaining a deterministic polishing profile.'
-    - 'Tribology_Integrity_Check: Analyze the coefficient of friction and slurry film thickness ($h$) to ensure the wafer is not experiencing ''Direct Contact'' which leads to catastrophic scratching or dishing.'
-    - 'Chemical_Fidelity_Scan: Monitor the slurry pH and oxidant concentration to verify that the ''Chemical Softening'' layer is consistently formed before mechanical abrasion takes place.'
-Trust Metrics:
+  description: "[Entity] chemical-mechanical-planarization-cmp-and-wafer-slurry-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Chemical Mechanical Planarization (CMP) and Wafer Slurry Physics
+# [Entity] chemical-mechanical-planarization-cmp-and-wafer-slurry-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 축구장 크기의 면적을 단 1mm의 오차도 없이 평평하게 깎아낼 수 있을까요? 반도체 세계에서는 이것이 일상입니다. **화학적 기계적 연마(CMP) 및 웨이퍼 슬러리 물리**는 원자 단위로 표면을 깎아 거울처럼 매끄럽게 만드는 **'나노 단위의 대패질'** 기술입니다. 화학 약품으로 표면을 살짝 녹이고(Chemical), 아주 미세한 가루로 문질러 깎아내어(Mechanical), 수십 층으로 쌓이는 반도체 회로가 무너지지 않도록 완벽한 평면을 만듭니다. 나노 빌딩을 쌓기 위한 **'반도체 문명의 기초 공사'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Large Particle Contamination - Agglomerated abrasives detected. Risk of catastrophic wafer scratching (Micro-scratches)"
         return "PASS: Nano-dispersed Slurry and Verified Surface Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(removal_rate_nm_min=350.0, wiwnu_pct=2.1, pad_temperature_c=38.0)
 print(engine.diagnose_cmp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cmp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cmp-removal-rate-and-wafer-within-die-non-uniformity-v2026`와 연동되어, 전 세계 주요 파운드리 공장의 CMP 데이터를 실시간 분석하고 스크래치 및 평탄도 미달 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체 문명의 나노 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-extreme-ultraviolet-euv-physics

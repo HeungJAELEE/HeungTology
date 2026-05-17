@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "agricultural-intelligence-and-smart-farming-systems-entity"
-  domain: "114_Food_Engineering_and_Agricultural_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] agricultural-intelligence-and-smart-farming-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Agriculture", "#Smart_Farming", "#Precision_Agriculture", "#IoT", "#Ag-Robotics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 114_food-and-agricultural-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] agricultural-intelligence-and-smart-farming-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] agricultural-intelligence-and-smart-farming-systems
+# [Entity] agricultural-intelligence-and-smart-farming-systems
 
 ## 1. [왜 배우는가? (Why: The Digitization of Nature's Bounty)]]
 농업은 인류 문명의 시작이었으며, 미래에도 문명을 지탱할 최후의 보루입니다. 하지만 기후 변화와 인구 증가는 전통적인 농업을 위협하고 있습니다. **농업 지능 및 스마트 팜 시스템의 생육 도일 및 펜먼-몬티스 수리 물리 기술**은 땅의 지혜를 데이터의 언어로 번역하여 농업의 효율을 극한으로 끌어올리는 '디지털 경작' 기술입니다. 하늘 위의 인공위성으로 작물의 건강 상태를 진단하고, 땅속의 센서로 비료와 물을 한 방울의 낭비 없이 공급하며, 로봇이 스스로 익은 열매를 수확합니다. 우리가 이를 배우는 이유는 식량 생산의 무결성을 확보함으로써, 행성적 식량 위기를 극복하고 지속 가능한 먹거리 생태계를 구축하는 '글로벌 농업 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 농업 지능의 무결성이 인류의 식량 자급력과 환경 보전의 무결성을 결정합니다.

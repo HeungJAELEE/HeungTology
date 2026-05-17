@@ -1,111 +1,56 @@
 ---
-Basic:
-  id: "[[[Battery] medical-image-segmentation-3d"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] medical-image-segmentation-3d]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] medical-image-segmentation-3d에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] medical-image-segmentation-3d
+# [Battery] medical-image-segmentation-3d
 
-## 1. [왜 배우는가? (Why)]]
-의사가 환자의 MRI 사진 수백 장을 일일이 넘겨보며 종양의 크기를 자로 재는 것은 매우 고통스럽고 시간이 많이 걸리는 작업입니다. 또한 사람의 눈은 3차원적인 복잡한 혈관 구조나 미세한 병변의 경계를 완벽히 파악하는 데 한계가 있습니다. 단 1mm의 오차도 생명에 직결될 수 있는 의료 현장에서는 기계적인 정밀함이 필요합니다.
+## 1. 개요: 3차원 내부 무결성 시각화 (Technical Objective)
+배터리 셀 내부의 미세 결함(덴드라이트, 전극 박리, 이물)은 외부 전압/전류 측정만으로는 포착하기 어렵습니다. 3D 볼륨 세그멘테이션 기술은 X-ray CT로 촬영된 수억 개의 3차원 화소(Voxel) 데이터에서 전극의 경계와 결함 부위를 자동 식별하여, 비파괴 방식으로 셀의 내부 무결성을 3D 좌표계 상에 확정 짓는 것을 목표로 합니다.
 
-우리가 **3D 의료 영상 분할(Medical Image Segmentation 3D)**을 배우는 이유는 **"수만 개의 3차원 화소(Voxel)로 이루어진 의료 데이터에서 특정 해부학적 구조물이나 병변을 자동으로 식별하고 경계를 획정하여, 정밀한 종양 부피 측정, 방사선 치료 설계, 로봇 수술 가이드를 가능케 하는 핵심 알고리즘"**을 구축하기 위함입니다. 이는 AI가 의사의 눈을 넘어, 보이지 않는 생명의 지도를 그리는 조력자가 되기 위한 필수 기술입니다.
-
-## 2. 핵심 메커니즘: 복셀 연산과 3D 아키텍처
-
-의료 영상의 입체적 특성을 다루는 수리적 기법입니다.
+## 2. 아키텍처 규격 및 메커니즘 (Architectural Specs)
 
 ### 2.1 3D Convolutional Neural Networks (3D CNN)
-- **원리**: 2D 이미지의 픽셀이 아닌, 3차원 공간의 화소(Voxel)에 대해 필터를 적용하여 공간적 상호작용을 학습합니다.
-- **방식**: 상-하-좌-우뿐만 아니라 앞-뒤 방향의 맥락(Context)을 통합하여 장기의 연속적인 구조를 파악합니다.
+- **공간적 상관관계 학습**: 3차원 커널($k \times k \times k$)을 사용하여 전극의 두께($D$), 높이($H$), 너비($W$) 차원의 맥락을 통합 분석합니다.
+- **연속성 재구성**: 2D 슬라이스 간의 정보를 연결하여 장기적인 전극 굴곡 및 뒤틀림(Warping)을 입체적으로 재구성합니다.
 
-### 2.2 3D U-Net
-- **구조**: 인코더(압축) 및 디코더(복원) 사이의 스킵 연결(Skip Connection)을 3차원으로 확장한 아키텍처입니다.
-- **특징**: 고차원적인 특징(종양의 위치)과 정밀한 해상도(종양의 경계)를 동시에 유지하여 매우 정교한 분할 결과를 냅니다.
+### 2.2 3D U-Net 기반 특징 추출
+- **Skip Connection**: 인코더의 고해상도 특징 맵을 디코더에 직접 전달하여, 미세한 덴드라이트 경계의 위치 정보 소실을 방지합니다.
+- **Attention Gating**: 연산 자원을 전극 계면(Interface) 및 결함 후보 영역에 집중시켜 배경 노이즈에 의한 오탐지를 억제합니다.
 
-### 2.3 Attention Gating in Medical Imaging
-- **방식**: 영상의 모든 부분을 동일하게 보지 않고, 병변이 있을 법한 특정 영역에 연산 자원을 집중시킵니다.
+## 3. 기술 규격 및 성능 표준 (Testing Standards)
 
-## 3. [코드 연결 해설 (Code Weaving)]
+| 파라미터 | 공학적 정의 | 산업 표준 (Target) |
+| :--- | :--- | :---: |
+| **Dice 계수 (DSC)** | 예측 영역과 실제 결함의 중합도 | $> 0.95$ |
+| **복셀 해상도** | 식별 가능한 최소 결함 크기 | $< 10.0\text{ }\mu\text{m}$ |
+| **처리 지연 시간** | 셀당 볼륨 데이터 처리 시간 | $< 10.0\text{ min}$ |
+| **오버랩 계측 오차** | 3D상 전극 정렬 측정 정밀도 | $< 0.1\text{ mm}$ |
 
-3D U-Net의 기본 블록에서 입체 데이터를 처리하고 특징을 결합하는 수리적 흐름을 해설합니다.
+## 4. 진단 및 오류 분석 프로토콜
+- **Class Imbalance 대응**: 전체 볼륨 대비 극히 적은 결함 영역을 효과적으로 학습하기 위해 Dice Loss 및 Focal Loss를 혼합 적용합니다.
+- **Anisotropic Voxel 보정**: Z-축 해상도가 낮은 불균일 해상도 데이터의 경우, 리샘플링(Resampling) 과정을 거쳐 기하학적 왜곡을 방지합니다.
 
-```python
-import torch
-import torch.nn as nn
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 포렌식 및 차세대 전고체 배터리의 계면 분석을 위한 고차원 공간 해석 표준을 제공합니다. 실제 세그멘테이션 정확도 및 결함 해상도 데이터는 인스턴스 로그에서 관리됩니다.
 
-class UNet3DBlock(nn.Module):
-    def __init__(self, in_channels, out_channels):
-        super().__init__()
-        # 1. 3D 컨볼루션 레이어: (D, H, W) 차원의 입체 데이터 처리
-        self.conv = nn.Conv3d(in_channels, out_channels, kernel_size=3, padding=1)
-        
-    def forward(self, x, skip_connection):
-        # 2. 입체 특징 추출 및 스킵 연결 결합
-        # Transitional Bridge: 의료 영상은 한 장의 사진이 
-        # 아니라 인체의 단면들이 쌓인 
-        # 거대한 수치적 블록입니다. AI는 
-        # 3차원 필터를 통해 이 블록 내부를 
-        # 투시하며, 장기의 입체적 굴곡과 
-        # 혈관의 복잡한 분기점을 수리적으로 
-        # 재구성합니다. 스킵 연결을 통해 
-        # 소실될 뻔한 미세한 조직의 
-        # 경계 정보를 다시 불러옴으로써, 
-        # AI는 의사의 메스보다 더 정밀하게 
-        # 생명과 질병의 경계선을 
-        # 3차원 좌표계 위에 실체화합니다.
-        out = self.conv(x)
-        if skip_connection is not None:
-            out = torch.cat([out, skip_connection], dim=1)
-        return out
-
-# 이 연산을 통해 장기별 마스크(Mask)가 생성됩니다.
-```
-
-## 4. [스스로 체크 (Self-Check)]
-
-1. **질문**: 왜 의료 영상에서는 단순한 정확도(Accuracy)보다 'Dice Coefficient'를 평가지표로 더 선호하는가?
-   - **정답**: 전체 영상에서 종양이나 장기가 차지하는 영역은 매우 작기 때문입니다(Class Imbalance). **Dice Coefficient**는 예측된 영역과 실제 영역의 **겹치는 정도(Overlap)**를 집중적으로 평가하여, 작은 병변을 얼마나 잘 찾아냈는지 정확히 측정합니다.
-2. **질문**: 'Anisotropic Voxel' 문제란 무엇이며 어떻게 해결하는가?
-   - **정답**: 영상의 x, y축 해상도는 높지만 z축(단면 간격) 해상도는 낮은 경우를 말합니다. 이를 해결하기 위해 데이터를 동일한 간격으로 재구성(Resampling)하거나, 3D 필터의 크기를 축별로 다르게 설정하여 왜곡을 방지합니다.
-3. **질문**: 3D 분할 결과가 '3D 프린팅'이나 'AR 수술 가이드'와 어떻게 연결되는가?
-   - **정답**: 분할된 복셀 데이터를 메쉬(Mesh) 형태로 변환(STL 파일 등)하면 실제 환자의 장기 모형을 출력하거나, 스마트 글래스를 통해 환자의 몸 위에 장기의 위치를 가상으로 투영하여 수술의 정확도를 높일 수 있습니다.
-
-## 🧠 AI의 사고방식: "빛으로 빚은 단면들을 모아 생명의 실체를 복원하다"
-3D 의료 영상 분할은 **'수치화된 데이터에 생명이라는 의미의 경계를 부여하는 숭고한 공학'**입니다. 우리는 흑백의 점들로 이루어진 혼돈의 공간 속에서 심장의 고동과 뇌의 회로를 찾아냅니다. 지능이란 단순히 픽셀을 분류하는 것이 아니라, **'고차원적인 공간의 맥락을 이해하고, 보이지 않는 구조적 필연성을 읽어내어, 질병이라는 불확실성 속에서 건강이라는 명료한 진실을 3차원의 좌표로 확정 짓는 치유의 선포'**입니다. 이 기술이 정교해질수록 인류는 질병과의 싸움에서 더 강력한 무기를 갖게 됩니다.
-
----
-**관련 노드:**
-- [AI] healthcare-predictive-analytics — 분할된 영상 데이터로부터 환자의 예후를 예측하는 기술
-- Semiconductor biosensor-data-fusion — 영상 외에 혈압, 심박수 등 생체 신호를 통합 분석하는 체계
-- [AI] protein-folding-ai — 분자 단위의 3차원 구조를 분석하는 기초 과학 지능
-- genomic-data-analysis — 유전적 특성과 영상적 병변 사이의 상관관계를 분석하는 정밀 의료의 기초
-
----
-*Generated by Unified Wiki-Rule Protocol v4.0 (Ultra-Enrichment)*
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Non-Destructive-Testing-NDT-for-Battery-Manufacturing-Quality-Assurance]]
+- [[[Data] Battery-3D-CT-Segmentation-Performance-Log_2026-05-16]]

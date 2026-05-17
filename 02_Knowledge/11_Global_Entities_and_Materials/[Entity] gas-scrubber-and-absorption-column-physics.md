@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-scrubber-and-absorption-column-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-scrubber-and-absorption-column-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A group of air pollution control devices used to remove some particulates and/or gases from industrial exhaust streams (Gas Scrubber) and the physical study of counter-current mass transfer and gas-liquid contact efficiency (Absorption Column Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-scrubber", "absorption-column", "mass-transfer", "henrys-law", "packing-material", "pollution-control", "chemical-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Absorption_Fidelity_Audit: Evaluate the ''Number of Transfer Units'' (NTU) to identify if high-fidelity ''Channeling'' (liquid avoiding the gas) is reducing the effective removal efficiency.'
-    - 'Hydrodynamic_Integrity_Check: Analyze the high-fidelity ''Pressure Drop'' across the packing to ensure the column is not approaching the ''Flooding'' point, which would cause liquid to blow out the top.'
-    - 'Surface_Fidelity_Scan: Monitor the high-fidelity ''Wetted Surface Area'' ($a_w$) to verify that the high-fidelity packing material is effectively dispersing the liquid into a thin film for maximum contact.'
-Trust Metrics:
+  description: "[Entity] gas-scrubber-and-absorption-column-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🫧 Gas Scrubber and Absorption Column Physics
+# [Entity] gas-scrubber-and-absorption-column-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장 굴뚝에서 나오는 매캐한 암모니아나 산성 가스를 깨끗한 물로 씻어서 없앨 수 있을까요? **가스 세정기(Scrubber) 및 흡수탑 물리**는 오염된 가스와 깨끗한 액체를 서로 반대 방향으로 스쳐 지나가게 하여, 가스 속의 나쁜 성분들을 액체 속으로 '납치(흡수)'해버리는 **'가스 샤워'** 기술입니다. 좁은 탑 안에 미로 같은 충전물(Packing)을 채워 가스와 물이 만나는 면적을 수만 배로 넓힙니다. **'독성 가스를 액체 속에 가두어 공기를 정화하고 지구를 숨 쉬게 만드는 산업의 거대한 화학적 여과기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Liquid Channeling - Water not reaching center of packing. Gas escaping untreated through 'dry' zones. Re-align high-fidelity liquid distributor"
         return "PASS: Validated Uniform Wetting and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gas_pressure_drop=450.0, liquid_flow_rate=500.0, outlet_emission_ppm=5.0)
 print(engine.diagnose_scrubber_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_scrubber_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gas-absorption-efficiency-and-packing-pressure-drop-v2026`와 연동되어, 전 세계 주요 반도체 공장 및 화학 플랜트의 세정 데이터를 실시간 분석하고 유독 가스 누출 및 설비 마비 사고 확률을 0.001% 이하로 억제함으로써 지능형 환경 문명의 정화 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flue-gas-desulfurization-fgd-and-so2-removal-physics

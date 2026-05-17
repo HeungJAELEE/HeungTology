@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ballistic-missile-defense-bmd-and-interceptor-kinematics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ballistic-missile-defense-bmd-and-interceptor-kinematics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system, weapon, or technology involved in the detection, tracking, interception, and destruction of attacking missiles (Ballistic Missile Defense) and the study of the motion and trajectories of interceptor missiles as they engage high-speed incoming threats (Interceptor Kinematics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bmd", "interceptor", "missile-defense", "kinematics", "hit-to-kill", "hypersonic", "radar-tracking"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Intercept_Fidelity_Audit: Evaluate the ''Miss Distance'' and closing velocity ($V_c$) to identify if the guidance law ($N$) is optimized for the target''s evasive maneuvering or hypersonic speed.'
-    - 'Tracking_Integrity_Check: Analyze the radar hand-over accuracy between early warning and fire control radars to ensure the interceptor''s seeker has a high probability of target acquisition.'
-    - 'Kinematic_Fidelity_Scan: Monitor the divert-and-attitude control system (DACS) propellant levels to verify that the interceptor has enough ''Energy Margin'' for the final terminal engagement phase.'
-Trust Metrics:
+  description: "[Entity] ballistic-missile-defense-bmd-and-interceptor-kinematics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Ballistic Missile Defense (BMD) and Interceptor Kinematics
+# [Entity] ballistic-missile-defense-bmd-and-interceptor-kinematics
 
 ## 1. 개요 (Why: 인간적 통찰)
 날아오는 총알을 또 다른 총알로 맞혀 떨어뜨릴 수 있을까요? **탄도 미사일 방어(BMD) 및 요격기 역학**은 마하 10이 넘는 속도로 우주 공간에서 날아오는 위협을 정확히 타격하는 **'총알로 총알 맞히기'** 기술의 정점입니다. 단순히 폭발시키는 게 아니라, 요격기가 직접 몸을 부딪쳐(Hit-to-Kill) 그 엄청난 운동에너지만으로 목표물을 산산조각 냅니다. 0.001초의 판단이 국가의 운명을 가르는 **'지능형 안보 문명의 철갑 방패'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Intermittent Radar Lock - Target signal flickering due to jamming or low RCS. Engaging secondary passive sensors"
         return "PASS: Continuous Fire-Control Tracking and Verified Engagement Stability Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(miss_distance_cm=5.2, closing_velocity_mps=7500.0, target_discrimination_conf=0.98)
 print(engine.diagnose_intercept_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_intercept_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bmd-intercept-probability-and-reaction-time-v2026`와 연동되어, 전 세계 주요 방공망의 실시간 데이터를 분석하고 요격 실패 및 방어망 돌파 사고 확률을 0.00001% 이하로 억제함으로써 지능형 안보 문명의 평화 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - active-electronically-scanned-array-aesa-radar-physics

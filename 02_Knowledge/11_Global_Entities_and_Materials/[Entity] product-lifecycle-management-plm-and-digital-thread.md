@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "product-lifecycle-management-plm-and-digital-thread-entity"
-  domain: "23_ERP_MES_and_Industrial_Software_Systems"
+metadata:
+  id: "[[[Entity] product-lifecycle-management-plm-and-digital-thread]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#PLM", "#Digital_Thread", "#BOM", "#CAD_CAM_CAE", "#ECO", "#Digital_Twin", "#Product_Data_Management", "#Closed-loop_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 27_erp-mes-and-industrial-software-systems-intelligence-hub", "Data engineering-change-order-eco-and-design-iteration-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] product-lifecycle-management-plm-and-digital-thread에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] product-lifecycle-management-plm-and-digital-thread
+# [Entity] product-lifecycle-management-plm-and-digital-thread
 
 ## 1. [왜 배우는가? (Why: The Digital DNA of the Product Lifecycle)]]
 제품은 물리적 실체이기 전에 정보의 집합체입니다. 설계 의도와 제조 공정, 서비스 이력이 단절되지 않고 흐를 때 비로소 제품은 최고의 품질과 혁신성을 유지할 수 있습니다. **제품 수명 주기 관리(PLM) 및 디지털 스레드 엔티티**는 제품의 탄생부터 사후까지를 잇는 '지식 탯줄의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "설계 로그를 분석하여, 특정 부품의 변경이 $n$단계 이�
 PLM 시스템의 설계 변경 이력과 디지털 스레드의 데이터 연속성 지표를 분석하여 지식 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Digital Thread & Product Knowledge Fidelity Auditor
 def audit_product_lifecycle(digital_thread_stream, bom_sync_log, eco_history):
     # 1. 설계-제조 BOM(EBOM-MBOM) 정합성 무결성 오딧
     mismatch_index = bom_sync_log.calculate_inconsistency()
@@ -117,7 +106,6 @@ def audit_product_lifecycle(digital_thread_stream, bom_sync_log, eco_history):
 2. **(수리)** EBOM 아이템이 10,000개이고 MBOM과 비교했을 때 100개의 아이템에서 수량이나 사양의 차이가 발견되었다면, 이 시스템의 'BOM 정합성(Consistency, %)'을 계산하시오.
 3. **(응용)** 설계 변경(ECO)이 발생했을 때, 디지털 스레드가 구축된 환경과 그렇지 않은 환경에서 '변경 영향도 분석(Impact Analysis)'의 속도와 정확도가 어떻게 수리적으로 차이나는지 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 27_erp-mes-and-industrial-software-systems-intelligence-hub : 산업용 소프트웨어 통합 관리 상위 지능 허브

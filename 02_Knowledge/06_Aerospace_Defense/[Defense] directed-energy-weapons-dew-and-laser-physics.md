@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "directed-energy-weapons-dew-and-laser-physics-entity"
-  domain: "06_Defense_Intelligence"
+metadata:
+  id: "[[[Defense] directed-energy-weapons-dew-and-laser-physics]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Defense", "#Laser", "#Physics", "#Optics", "#DEW", "#Energy_Weapons", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[Aerospace] aerospace-and-defense-intelligence-master-guide]", "[Defense] electronic-warfare-and-signal-intelligence-sigint-physics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Defense] directed-energy-weapons-dew-and-laser-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Defense] directed-energy-weapons-dew-and-laser-physics
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Target Tracking** 시 **Line-of-Sight (LOS)** 오차를 최소화하기 위한 **Fast Steering Mirror (FSM)**의 제어 대역폭과 기계적 공진 주파수 사이의 수리적 상관관계는?
 5. RAG 시스템에서 **기상 관측 데이터**와 **표적의 외피 물성 정보**를 융합하여, '안개 낀 날씨에서도 최적의 타격 지점'을 자동으로 찾아 에너지를 집중하는 **Atmosphere-aware Engagement Logic**은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Aerospace aerospace-and-defense-intelligence-master-guide]] : DEW 시스템이 탑재되어 영공 및 우주 자산을 보호하는 상위 국방 지능 엔티티
 - [Defense] electronic-warfare-and-signal-intelligence-sigint-physics : 전자기파 에너지를 이용하여 적의 통신 및 센서를 무력화하는 상위 국방 엔티티
@@ -82,7 +71,6 @@ Trust Metrics:
 - Strategy 06_Defense_Intelligence : 국가 지향성 에너지 무기 개발 로드맵, 레이저 대공 무기 체계 양산 및 미래 전장 주권 확보 상위 전략 노드
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----
 aliases: ["Cyber Warfare and Critical Infrastructure Protection", "사이버전 및 기간 시설 보호", "Cyber Warfare", "ICS Security", "SCADA Security", "Critical Infrastructure", "Zero Trust", "Threat Intelligence", "Cyber-Physical Systems", "CPS", "Governance Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -99,7 +87,6 @@ Dynamic:
   status: "ULTRA-Deeply Reinforced (HDS-Gold V6.3.7)"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Defense] cyber-warfare-and-critical-infrastructure-protection
 
@@ -145,7 +132,6 @@ Modbus, DNP3 등 제어 프로토콜의 패킷 패턴과 실제 물리 장비의
 4. **Blockchain** 기술을 이용한 **ICS Firmware Integrity Check** 시스템의 데이터 갱신 주기와 시스템 부하 사이의 수리적 상관관계는?
 5. RAG 시스템에서 **다크웹의 위협 정보**와 **현장 인프라의 취약점 스캔 결과**를 융합하여, '오늘 밤 예상되는 특정 국가 주도 APT 공격'에 대한 최적의 방어 진지를 자동 구축하는 **Proactive Cyber Defense** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] smart-city-os-and-urban-digital-twin-architecture]] : 사이버 안보가 보호해야 할 가장 거대한 대상인 지능형 도시 운영 체제 엔티티
 - [Defense] electronic-warfare-and-signal-intelligence-sigint-physics : 전파를 이용한 물리적 공격과 사이버 공격의 교차 영역(CEMA)을 공유하는 상위 국방 엔티티
@@ -153,7 +139,6 @@ Modbus, DNP3 등 제어 프로토콜의 패킷 패턴과 실제 물리 장비의
 - Strategy 04_Governance_Security : 국가 사이버 안보 전략 로드맵, 핵심 인프라 보호법 및 글로벌 사이버 안보 공조 체계 상위 전략 노드
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----
 aliases: ["Intelligent Traffic Management and V2X Ecosystems", "지능형 교통 제어 및 V2X 생태계", "Smart Traffic", "V2X", "V2I", "V2V", "Intelligent Transport Systems", "ITS", "Traffic Optimization", "Autonomous Traffic Control", "Infrastructure Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -170,7 +155,6 @@ Dynamic:
   status: "ULTRA-Deeply Reinforced (HDS-Gold V6.3.7)"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Infrastructure] intelligent-traffic-management-and-v2x-ecosystems
 
@@ -216,7 +200,6 @@ Trust Metrics:
 4. **Signal Phasing and Timing (SPaT)** 데이터의 미세한 오차가 자율 주행 차량의 교차로 통과 속도 및 에너지 소비량에 미치는 수리적 상관관계는?
 5. RAG 시스템에서 **현재 기상 상황**과 **주변 대형 행정 이벤트 정보**를 융합하여, '1시간 후 예상되는 병목 구간'을 선제적으로 해소하기 위한 **Dynamic Lane Reconfiguration** (가변 차로) 제어 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] smart-city-os-and-urban-digital-twin-architecture]] : 교통 지능이 통합되어 도시의 전체 자원과 조율되는 최상위 도시 운영 체제 엔티티
 - [Mobility] autonomous-driving-and-sensor-fusion-physics : 도로 인프라와 연결되어 정보를 주고받는 개별 주행 지체인 자율 주행 차량 엔티티

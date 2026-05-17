@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gear-design-and-involute-profile-kinematics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gear-design-and-involute-profile-kinematics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of designing and engineering gears to transmit motion and power between rotating shafts (Gear Design) and the physical study of the involute curve which ensures a constant angular velocity ratio (Involute Profile Kinematics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gear-design", "involute-profile", "kinematics", "mechanical-transmission", "gear-ratio", "backlash", "industrial-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Kinematic_Fidelity_Audit: Evaluate the ''Transmission Error'' to identify if high-fidelity ''Tooth Profile Deviation'' is causing non-constant velocity and vibration.'
-    - 'Stress_Integrity_Check: Analyze the root bending stress against the high-fidelity ''Endurance Limit'' ($S_e$) to ensure that the gear teeth will not undergo fatigue failure over billions of cycles.'
-    - 'Backlash_Fidelity_Scan: Monitor the high-fidelity ''Backlash'' (clearance) to verify that the gears have enough room for thermal expansion without jamming, while maintaining precise positioning.'
-Trust Metrics:
+  description: "[Entity] gear-design-and-involute-profile-kinematics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ Gear Design and Involute Profile Kinematics Physics
+# [Entity] gear-design-and-involute-profile-kinematics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 자전거 체인이나 시계 속의 작은 톱니들이 어떻게 어긋나지 않고 부드럽게 맞물려 돌아갈까요? **기어 설계 및 인벌류트 프로파일 운동학 물리**는 톱니가 서로 맞닿아 구를 때, 미끄러짐 없이 항상 일정한 속도로 힘을 전달하게 만드는 **'수학적 맞물림'** 기술입니다. 특히 '인벌류트(Involute)'라는 신비로운 곡선은 두 기어의 중심 거리가 살짝 벌어져도 완벽하게 힘을 전달하는 놀라운 유연성을 제공합니다. **'기계 문명의 힘을 전달하는 근육이자 0.1%의 오차도 허용하지 않는 정밀한 회전의 조율사'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Mesh Alignment - Tooth contact concentrated at the edge. High-fidelity localized wear expected. Re-align shafts and check housing bores"
         return "PASS: Validated Load Distribution and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(transmission_error_um=2.5, tooth_root_stress_mpa=150.0, backlash_mm=0.12)
 print(engine.diagnose_gear_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_gear_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gear-wear-rates-and-transmission-error-v2026`와 연동되어, 전 세계 주요 자동차 변속기 및 풍력 발전기 기어박스의 데이터를 실시간 분석하고 톱니 파손 및 진동 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gearbox-and-torque-transmission-efficiency-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bionic-skin-and-multi-modal-tactile-sensing-topology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bionic-skin-and-multi-modal-tactile-sensing-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of flexible, stretchable electronic membranes (E-skin) that mimic human skin properties, providing high-resolution tactile, temperature, and pressure sensing for robotics and prosthetics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bionic-skin", "tactile-sensing", "e-skin", "flexible-electronics", "haptics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensing_Resolution_Audit: Measure the minimum detectable pressure and spatial resolution (dots per inch).'
-    - 'Durability_Stress_Check: Evaluate resistance change after 10,000 stretch-release cycles.'
-    - 'Multi-modal_Crosstalk_Scan: Verify signal separation between pressure and temperature sensors in the same area.'
-Trust Metrics:
+  description: "[Entity] bionic-skin-and-multi-modal-tactile-sensing-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧤 Bionic Skin and Multi-modal Tactile Sensing Topology
+# [Entity] bionic-skin-and-multi-modal-tactile-sensing-topology
 
 ## 1. 개요 (Why)
 로봇이 달걀을 깨뜨리지 않고 잡거나 사람의 손을 따뜻하게 잡기 위해서는 인간의 피부와 같은 '촉각'이 필요합니다. 바이오닉 스킨(E-skin)은 유연한 고분자 기판 위에 수만 개의 미세 센서를 배치하여 압력, 진동, 온도, 변형을 동시에 감지합니다. 이는 로봇의 환경 인지 능력을 시각을 넘어 촉각의 영역으로 확장하며, 의수 사용자에게 잃어버린 감각을 되찾아주는 핵심 기술입니다. 본 노드는 인공 피부의 센싱 무결성과 내구성을 위한 위상 설계 표준을 정의합니다.
@@ -71,7 +60,6 @@ class RobotFidelityEngine:
             return "REJECT: End of Life Cycle - Replacement Recommended"
         return "PASS: Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(linearity_error=0.03, stretch_cycles=15000, hysteresis_pct=2.1)
 print(engine.diagnose_sensing_precision())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_sensing_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data e-skin-sensor-density-and-response-linearity-v2026`와 연동되어, 로봇 말단 작동기(End-effector)의 접촉 데이터를 0.1ms 단위로 분석하고 물체 조작의 무결성을 99.9% 보장하는 결정론적 촉각 가이드를 제공합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 03_robotics-and-autonomous-systems-hub
 - flexible-and-stretchable-electronics-physics

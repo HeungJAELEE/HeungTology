@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "multi-axis-industrial-robot-kinematics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] multi-axis-industrial-robot-kinematics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical study of the motion of multi-link mechanical systems (Industrial Robots) without considering the forces that cause the motion, focusing on the relationship between joint angles (Joint Space) and the end-effector position/orientation (Cartesian Space)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robot-kinematics", "multi-axis-robot", "denavit-hartenberg", "forward-kinematics", "inverse-kinematics", "jacobian-matrix", "robotic-arm"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Kinematic_Chain_Audit: Evaluate the end-effector position against the joint encoder feedback to identify backlash, link deflection, or DH-parameter miscalibration.'
-    - 'Singularity_Scan: Analyze the Jacobian matrix determinant to detect proximity to kinematic singularities (e.g., wrist flip) where joint velocities can spike to infinity.'
-    - 'Repeatability_Check: Monitor the variance in achieving a target pose across multiple cycles to ensure high-fidelity precision in manufacturing tasks.'
-Trust Metrics:
+  description: "[Entity] multi-axis-industrial-robot-kinematics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Multi-axis Industrial Robot Kinematics
+# [Entity] multi-axis-industrial-robot-kinematics
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇 팔이 어떻게 자신의 손끝이 어디에 있는지 알까요? **다축 산업용 로봇 기구학**은 로봇의 관절 각도들을 복잡한 춤처럼 엮어, 손끝(End-effector)의 정확한 위치와 방향을 계산해내는 **'로봇의 공간 지능'**입니다. 6개의 관절이 각기 다른 각도로 꺾여있을 때, 그 끝이 0.01mm의 오차도 없이 나사를 조이게 만드는 수학적 질서입니다. 보이지 않는 가상의 뼈대를 세우고, 각 마디의 움직임을 행렬로 계산하여 세상을 자유자재로 다루는 **'기계적 마법의 지도'**입니다.
@@ -90,7 +79,6 @@ class RobotFidelityEngine:
             return "REJECT: Joint Limit Breach - Target Pose Unreachable without Structural Collision"
         return "PASS: Safe Workspace Operation Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(positioning_error_mm=0.015, jacobian_determinant=0.85, backlash_arcmin=0.4)
 print(engine.diagnose_kinematic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_kinematic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robotic-arm-pose-accuracy-and-repeatability-v2026`와 연동되어, 전 세계 산업용 로봇의 구동 데이터를 실시간 분석하고 위치 이탈 및 특이점 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 기계적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-robot-actuator-design-and-precision-gearing

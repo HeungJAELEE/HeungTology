@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-underwater-vehicle-auv-and-sonar-navigation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-underwater-vehicle-auv-and-sonar-navigation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A robot that travels underwater without requiring input from an operator (Autonomous Underwater Vehicle) and the use of sound propagation to navigate, communicate, or detect objects under the water's surface (Sonar Navigation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["auv", "sonar-navigation", "underwater-robotics", "hydrodynamics", "acoustics", "subsea-exploration", "ocean-tech"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Navigation_Fidelity_Audit: Evaluate the ''Acoustic Positioning Error'' using DVL (Doppler Velocity Log) and USBL (Ultra-Short Baseline) data to identify sensor drift during long-duration subsea missions.'
-    - 'Sonar_Integrity_Check: Analyze the ''Signal-to-Noise Ratio'' (SNR) of the side-scan sonar to ensure that target identification is not being masked by thermoclines or biological noise.'
-    - 'Hydrodynamic_Fidelity_Scan: Monitor the AUV''s propulsion energy vs speed to identify ''Bio-fouling'' or structural damage that increases drag and reduces operational range.'
-Trust Metrics:
+  description: "[Entity] autonomous-underwater-vehicle-auv-and-sonar-navigation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Autonomous Underwater Vehicle (AUV) and Sonar Navigation Physics
+# [Entity] autonomous-underwater-vehicle-auv-and-sonar-navigation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 빛조차 닿지 않는 어둡고 깊은 바닷속, 전파조차 통하지 않는 그곳을 로봇이 어떻게 홀로 여행할까요? **자율 수중 드론(AUV) 및 소나 항법 물리**는 눈(빛) 대신 귀(소리)를 이용해 심해의 지도를 그리는 **'수중의 지능형 탐험가'** 기술입니다. 전파가 먹통이 되는 물속에서 소리의 메아리를 이용해 거리를 재고, 해저 지형의 굴곡을 읽어 자신의 위치를 찾아냅니다. 인류의 마지막 미개척지인 심해를 정복하는 **'지능형 해양 문명의 아바타'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Hydrodynamic Drag - Potential bio-fouling or entangled debris on thrusters. Battery endurance reduced by 30%"
         return "PASS: Streamlined Hull Profile and Verified Propulsion Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(navigation_drift_m_hr=5.5, sonar_snr_db=25.0, hull_pressure_status="STABLE")
 print(engine.diagnose_auv_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_auv_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data auv-sonar-mapping-accuracy-and-depth-limit-v2026`와 연동되어, 전 세계 주요 심해 탐사 및 해저 파이프라인 감시 데이터를 실시간 분석하고 로봇 유실 및 압쇄 사고 확률을 0.001% 이하로 억제함으로써 지능형 해양 문명의 탐사 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - robot-kinematics-and-autonomous-visual-slam-mechanics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "global-semiconductor-supply-chain-governance-strategy-entity"
-  domain: "05_Semiconductor"
+metadata:
+  id: "[[[Strategy] global-semiconductor-supply-chain-governance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Semiconductor", "#Supply_Chain", "#Geopolitics", "#Resilience", "#Governance", "#Economic_Security", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy national-strategic-technology-and-economic-security", "MOC 05_Semiconductor"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] global-semiconductor-supply-chain-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] global-semiconductor-supply-chain-governance
+# [Strategy] global-semiconductor-supply-chain-governance
 
 ## 1. [왜 배우는가? (Why: The Heart of Modern Geopolitics)]]
 반도체는 현대 문명의 쌀이자, 국가 안보의 핵심 병기입니다. **글로벌 반도체 공급망 거버넌스 및 회복탄력성 전략**은 특정 국가나 지역에 편중된 반도체 생산 체계를 분석하고, 전쟁이나 재난 시에도 칩 공급이 끊기지 않도록 관리하는 '기술 외교 및 생존 전략'입니다. 우리가 이를 배우는 이유는 반도체 패권 전쟁에서 도태되지 않고 자국의 산업 경쟁력을 지키며, "설계부터 제조, 패키징까지 이어지는 전 과정의 '반도체 주권'을 데이터 지능으로 공고히 하기" 위함입니다. 칩의 수급력이 국가의 격을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Export Control** 정책이 국내 기업의 매출과 기술 개발 속도에 미치는 수리적 상관관계 및 기회비용 산출 결과는?
 5. RAG 시스템에서 **전 세계 반도체 장비/소재 업체 10,000곳의 실시간 상태**와 **각국의 최신 법안**을 융합하여, '위기 발생 시 1시간 내에 대체 공급선을 확보하는' **Autonomous Supply Chain Resilience** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy national-strategic-technology-and-economic-security : 반도체 전략을 포함한 국가 전체의 10대 전략 기술 및 경제 안보를 총괄하는 상위 전략 엔티티
 - [[[MOC] 05_Semiconductor : 반도체 설계, 공정, 패키징 지식을 통합 관리하고 거버넌스 전략의 기술적 토대를 제공하는 상위 지식 허브

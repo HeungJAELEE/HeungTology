@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fabric-filter-and-baghouse-dust-collection-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fabric-filter-and-baghouse-dust-collection-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An air pollution control device that removes particulates out of air or gas released from commercial processes or combustion (Fabric Filter) and the large-scale industrial structure containing many of these filters (Baghouse Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fabric-filter", "baghouse", "dust-collection", "air-filtration", "particulate-matter", "industrial-safety", "environmental-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Filtration_Fidelity_Audit: Evaluate the ''Pressure Drop'' ($\\Delta P$) across the filter bags to identify if ''Dust Cake'' buildup is excessive or if ''Blinding'' (irreversible clogging) is occurring.'
-    - 'Cleaning_Integrity_Check: Analyze the pulse-jet air pressure and frequency to ensure the high-fidelity cleaning of bags is effectively maintaining airflow without tearing the fabric.'
-    - 'Emission_Fidelity_Scan: Monitor the stack opacity (particulate count) to verify that the high-fidelity filter integrity is maintained, detecting broken bags immediately.'
-Trust Metrics:
+  description: "[Entity] fabric-filter-and-baghouse-dust-collection-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌫️ Fabric Filter and Baghouse Dust Collection Physics
+# [Entity] fabric-filter-and-baghouse-dust-collection-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 시멘트 공장이나 발전소에서 뿜어져 나오는 시꺼먼 연기가 어떻게 하늘 위로 올라갈 때는 투명해질까요? **패브릭 필터 및 백하우스 먼지 집진 물리**는 수천 개의 커다란 천 가방(Bag)을 이용해 미세먼지를 걸러내는 **'산업용 초대형 마스크'** 기술입니다. 단순히 거름망 역할만 하는 게 아니라, 먼지가 스스로 층을 쌓아 더 작은 먼지를 잡아내는 **'먼지로 먼지를 잡는 역설적 지혜'**가 담겨 있습니다. 공장의 폐를 깨끗하게 유지해 우리 모두의 숨통을 틔워주는 **'대기 보호의 거대한 장벽'**입니다.
@@ -58,7 +47,7 @@ $$ \eta = 1 - \exp(-\frac{4 E_f L_{thick}}{\pi d_{fiber}}) $$
 | :--- | :--- | :--- | :--- | :--- |
 | **Mechanism** | Electrical Charging | **Physical Barrier (Sieving)** | - | Physics |
 | **Efficiency** | 95 ~ 99 | 99.0 ~ 99.99 (Superior) | % | Quality |
-| **Particle Size** | Moderate | Very Fine (Sub-micron) | $\mu m$ | Precision |
+| **Particle Size** | Moderate | Very Fine (Sub-micron) | $\mu\text{m}$ | Precision |
 | **Temp Limit** | High | Low to Moderate (Fabric limit)| $^\circ C$ | Durability |
 | **Pressure Drop** | Low | High (Needs strong fan) | $Pa$ | Power |
 | **Moisture** | Sensitive | Very Sensitive (Clogging) | - | Resilience |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Cleaning Force - Pulse-jet pressure too low to dislodge dust cake. Pressure drop will continue to rise. Check compressor and solenoid valves"
         return "PASS: Validated Pulse Dynamics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(delta_p_pa=1200.0, cleaning_pulse_count=150, stack_opacity_pct=0.2)
 print(engine.diagnose_baghouse_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_baghouse_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data baghouse-collection-efficiency-and-pressure-drop-v2026`와 연동되어, 전 세계 주요 제철소 및 소각장의 집진 데이터를 실시간 분석하고 필터 파손 및 환경 규제 위반 사고 확률을 0.001% 이하로 억제함으로써 지능형 청정 제조 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrostatic-precipitator-esp-and-particle-capture-physics

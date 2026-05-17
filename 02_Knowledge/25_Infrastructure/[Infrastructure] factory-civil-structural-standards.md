@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] factory-civil-structural-standards"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] factory-civil-structural-standards]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] factory-civil-structural-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] factory-civil-structural-standards
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Slab Load (내하중)** | $\text{ton/m}^2$ | $2.5 \sim 5.0$ | 고중량 압연기 및 포메이션 지그 카트 지지력 |
 | **Clear Height (층고)** | m | $6.0 \sim 8.0$ | 코터 오븐, 덕트, 유틸리티 배관 설치 공간 |
 | **Column Span (간격)** | m | $12 \sim 18$ | 설비 배치(Layout) 직선성 및 간섭 회피 거리 |
-| **Vibration Limit** | $\mu m/s$ | $< 50$ | 정밀 스태킹 및 코팅을 위한 바닥 진동 억제 |
+| **Vibration Limit** | $\mu\text{m}/s$ | $< 50$ | 정밀 스태킹 및 코팅을 위한 바닥 진동 억제 |
 | **Flatness (평탄도)** | mm | $\pm 2.0 / 3\text{m}$ | AGV 및 물류 로봇 원활 주행을 위한 정밀도 |
 
 ## 3. [심층 분석 (Deep Analysis)]
@@ -67,5 +57,4 @@ Trust Metrics:
 - [ ] 코터 라인 배치 시 **Column Span**이 직선 배치를 방해할 경우, 생산 기술자가 취할 수 있는 레이아웃 대안은?
 - [ ] **Clear Height** 확보 실패 시 배기 효율과 설비 유지보수성에 미치는 영향은?
 
----
 *Created by Flash (HDS Gold v4.1 - Production Engineering Series)*

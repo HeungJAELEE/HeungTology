@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kers-kinetic-energy-recovery-systems-and-braking-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kers-kinetic-energy-recovery-systems-and-braking-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The automotive system designed to recover the kinetic energy usually lost as heat during braking (KERS) and store it in a reservoir (Battery, Supercapacitor, or Flywheel) for later use as a power boost during acceleration."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kers", "regenerative-braking", "energy-recovery", "hybrid-vehicle", "flywheel-storage", "braking-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Recovery_Efficiency_Audit: Calculate the ratio of recovered energy to total kinetic energy during a standard braking cycle to identify losses in the motor/inverter.'
-    - 'Braking_Torque_Blending_Check: Evaluate the smooth transition between regenerative braking and hydraulic friction braking to ensure safety and driver comfort.'
-    - 'Flywheel/Battery_State-of-Charge_Scan: Monitor the health and charging rate of the energy reservoir to prevent overheating or overcharging during aggressive braking.'
-Trust Metrics:
+  description: "[Entity] kers-kinetic-energy-recovery-systems-and-braking-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ KERS: Kinetic Energy Recovery Systems and Braking Physics
+# [Entity] kers-kinetic-energy-recovery-systems-and-braking-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 달리던 차가 멈출 때, 그 엄청난 에너지는 다 어디로 갈까요? 보통은 브레이크 패드가 뜨거워지며 공기 중으로 흩어져 버립니다. **운동 에너지 회수 시스템(KERS)**은 이 버려지는 열기를 붙잡아 다시 '달리는 힘'으로 바꾸는 **'에너지의 마술사'**입니다. 브레이크를 밟는 순간 모터가 발전기로 변해 전기를 만들거나, 거대한 팽이(Flywheel)를 돌려 에너지를 저장합니다. 낭비를 승리로 바꾸는 이 기술은, 자동차가 지구를 덜 아프게 하면서도 더 폭발적으로 달릴 수 있게 만드는 **'지능형 에너지 저금통'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inadequate Boost Power - Storage Depleted or Release Logic Malfunction"
         return "PASS: Powerful and Responsive Energy Release Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(regen_efficiency_pct=72.5, brake_blend_error_mm=0.5, reservoir_temp_c=45.0)
 print(engine.diagnose_kers_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_kers_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data energy-recovery-efficiency-and-braking-torque-logs-v2026`와 연동되어, 전 세계 하이전 고성능 차량의 에너지 회수 데이터를 실시간 분석하고 시스템 과열 및 브레이크 불능 사고 확률을 0.001% 이하로 억제함으로써 지능형 동력의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heavy-duty-ev-drivetrain-and-multi-speed-transmissions

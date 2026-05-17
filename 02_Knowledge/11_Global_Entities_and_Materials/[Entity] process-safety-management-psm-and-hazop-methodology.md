@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "process-safety-management-psm-and-hazop-methodology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] process-safety-management-psm-and-hazop-methodology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic framework for identifying, evaluating, and controlling highly hazardous chemicals and processes (Process Safety Management) and the structured brainstorming technique used to identify potential deviations from design intent (HAZOP Methodology) to prevent industrial disasters."
-  physical_model: "N/A"
-Semantic:
-  tags: '["psm", "hazop", "process-safety", "risk-assessment", "industrial-safety", "fmea", "safety-governance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Risk_Matrix_Audit: Evaluate the identified hazards against the severity and probability scales to ensure high-risk scenarios have sufficient independent layers of protection (IPL).'
-    - 'HAZOP_Consistency_Check: Analyze the process nodes and guide words (e.g., MORE FLOW, NO PRESSURE) to verify all potential deviations have been addressed in the safety design.'
-    - 'Safety_Integrity_Scan: Monitor the SIL (Safety Integrity Level) ratings of emergency shutdown systems to ensure they meet the target $PFD_{avg}$ for high-hazard operations.'
-Trust Metrics:
+  description: "[Entity] process-safety-management-psm-and-hazop-methodology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Process Safety Management (PSM) and HAZOP Methodology
+# [Entity] process-safety-management-psm-and-hazop-methodology
 
 ## 1. 개요 (Why: 인간적 통찰)
 화학 공장이나 정유 시설은 인류 문명의 연료를 만들지만, 자칫하면 거대한 재난의 현장이 될 수도 있습니다. **공정 안전 관리(PSM) 및 HAZOP 방법론**은 "만약에 이런 일이 벌어진다면?"이라는 수만 가지 질문을 던져 사고를 0%에 수렴하게 만드는 **'산업의 상상력 방패'**입니다. 단순히 조심하자는 구호를 넘어, 복잡한 공정을 잘게 쪼개어(HAZOP) 모든 변수(압력, 유량 등)가 정상 범위를 벗어날 때 어떤 안전장치가 작동해야 하는지 설계합니다. 인류의 기술이 재난이 아닌 축복으로만 남게 하는 **'보이지 않는 수호자'**입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
             return "REJECT: Incomplete HAZOP Study - Potential Deviations (e.g., Reverse Flow) not analyzed for Node-12"
         return "PASS: Thorough Hazard Identification and Verified Mitigation Strategy Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(high_risk_mitigation_pct=99.5, sis_test_overdue_days=2, moc_compliance_rate=1.0)
 print(engine.diagnose_process_safety_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_process_safety_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data psm-incident-rates-and-safety-integrity-v2026`와 연동되어, 전 세계 화학 및 정유 설비의 안전 데이터를 실시간 분석하고 중대 산업 사고 확률을 0.0001% 이하로 억제함으로써 지능형 제조 문명의 생존 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - industrial-safety-and-environmental-compliance-governance

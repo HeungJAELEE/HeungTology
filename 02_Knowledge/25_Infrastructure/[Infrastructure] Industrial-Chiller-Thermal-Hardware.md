@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "INF-CHILLER-MASTER-2026-V6.3.7"
-  domain: "Infrastructure_Thermal_Utility"
+metadata:
+  id: "[[[Infrastructure] Industrial-Chiller-Thermal-Hardware]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#Chiller", "#Thermodynamics", "#Cooling", "#COP", "#Refrigerant", "#Phase_Change", "#Precision_Cooling", "#v6.3.7"]
-  is_part_of: ["MOC 01_Infrastructure", "MOC 01_Semiconductor"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] Industrial-Chiller-Thermal-Hardware에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] Industrial-Chiller-Thermal-Hardware
@@ -106,7 +96,6 @@ report = engine.audit_thermal_stability(load_kw=1600, ambient_temp_c=32)
 print(f"Chiller Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 01_Infrastructure
 - Semiconductor Photolithography-System-and-Track-Intelligence

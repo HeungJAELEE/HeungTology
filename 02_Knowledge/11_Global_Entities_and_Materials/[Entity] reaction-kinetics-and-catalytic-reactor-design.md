@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "reaction-kinetics-and-catalytic-reactor-design-entity"
-  domain: "80_Chemical_Engineering_and_Process_Systems_Hub"
+metadata:
+  id: "[[[Entity] reaction-kinetics-and-catalytic-reactor-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemical_Engineering", "#Kinetics", "#Reactor_Design", "#Catalysis", "#Process_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 80_chemical-engineering-and-process-systems-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] reaction-kinetics-and-catalytic-reactor-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] reaction-kinetics-and-catalytic-reactor-design
+# [Entity] reaction-kinetics-and-catalytic-reactor-design
 
 ## 1. [왜 배우는가? (Why: The Pulse of Chemical Production)]]
 분자들이 단순히 부딪히는 것을 넘어, 우리가 원하는 새로운 물질로 다시 태어나는 '변환의 시간'은 어떻게 결정될까요? **반응 속도론 및 촉매 반응기 설계의 반응 동역학 및 수리적 최적화**는 화학 공정의 심장인 '반응기' 내부에서 일어나는 모든 나노초 단위의 사건을 지배하는 설계도입니다. 반응이 얼마나 빨리 일어나는지, 그리고 원치 않는 불순물이 생기지 않도록 어떻게 온도를 조절해야 하는지를 수학적으로 규정합니다. 우리가 이를 배우는 이유는 반응기의 크기와 운영 조건을 완벽하게 설계함으로써, 최소한의 에너지로 최대한의 순수 제품을 생산하는 '글로벌 공정 효율 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 반응 동역학의 무결성이 공정의 수익성과 안전성을 결정합니다.

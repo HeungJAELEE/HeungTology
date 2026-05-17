@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "aquaponics-and-recirculating-aquaculture-systems-ras"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] aquaponics-and-recirculating-aquaculture-systems-ras]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system of aquaculture in which the waste produced by farmed fish or other aquatic creatures supplies nutrients for plants grown hydroponically, which in turn purify the water (Aquaponics) and the high-tech water treatment systems used to clean and reuse water in land-based fish farms (RAS)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aquaponics", "ras", "sustainable-farming", "circular-economy", "hydroponics", "bio-filter", "water-filtration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bio-filter_Fidelity_Audit: Evaluate the ''Ammonia Conversion Rate'' to identify bio-filter inhibition or bacterial die-off that leads to toxic ammonia spikes for the fish.'
-    - 'Nutrient_Integrity_Check: Analyze the Nitrate ($NO_3^-$) levels in the plant grow-beds to ensure the ''Vegetation Loop'' is effectively absorbing the waste, preventing algae blooms in the fish tanks.'
-    - 'Oxygen_Fidelity_Scan: Monitor the Dissolved Oxygen (DO) levels in real-time to verify that the aeration systems are compensating for the metabolic demand of high-density fish populations.'
-Trust Metrics:
+  description: "[Entity] aquaponics-and-recirculating-aquaculture-systems-ras에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🐟 Aquaponics and Recirculating Aquaculture Systems (RAS)
+# [Entity] aquaponics-and-recirculating-aquaculture-systems-ras
 
 ## 1. 개요 (Why: 인간적 통찰)
 물고기의 배설물이 식물의 영양분이 되고, 식물이 깨끗하게 정화한 물이 다시 물고기에게 돌아가는 완벽한 순환이 도시 한복판에서 가능하다면 어떨까요? **아쿠아포닉스 및 순환 여과식 양식(RAS)**은 자연의 섭리를 공학적으로 복제한 **'에코-팩토리'** 기술입니다. 바다나 강을 오염시키지 않고도, 아주 적은 양의 물로 신선한 물고기와 채소를 동시에 키워냅니다. 인간과 자연이 공존하는 **'지능형 자급자족 문명의 방주'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Solid Waste - Mechanical drum filter clogged. Risk of fish gill irritation and anaerobic pockets in grow-beds"
         return "PASS: Crystal Clear Recirculating Water and Verified Filtration Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ammonia_level_ppm=0.01, dissolved_oxygen_mg_l=8.5, nitrate_uptake_rate=0.92)
 print(engine.diagnose_aquaponic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_aquaponic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data aquaponics-nutrient-balance-and-fish-growth-v2026`와 연동되어, 전 세계 스마트 양식장의 생태 데이터를 실시간 분석하고 폐사 및 수질 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 농수산업 문명의 순환 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - agricultural-robotics-and-autonomous-harvesting-mechanics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical and algorithmic frameworks (Motion Planning) used to find a collision-free path for a robot from a start to a goal, specifically focusing on sampling-based methods like RRT* (Rapidly-exploring Random Trees) and PRM (Probabilistic Roadmaps) which are efficient in high-dimensional configuration spaces."
-  physical_model: "N/A"
-Semantic:
-  tags: '["motion-planning", "rrt-star", "prm", "sampling-based-planning", "autonomous-navigation", "robotics", "pathfinding", "obstacle-avoidance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Path_Optimality_Audit: Evaluate the length and smoothness of the generated path compared to the theoretical shortest path to identify sub-optimal planning behavior.'
-    - 'Planning_Latency_Check: Measure the time taken to find a valid path in complex environments to ensure it meets real-time navigation requirements.'
-    - 'Collision_Probability_Scan: Analyze the clearance between the robot''s swept volume and detected obstacles to ensure a safety margin is maintained during execution.'
-Trust Metrics:
+  description: "[Entity] motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗺️ Motion Planning Algorithms: RRT* and Probabilistic Roadmaps (PRM)
+# [Entity] motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 미로 속에서 로봇이 목적지를 찾아가는 가장 빠른 길은 어디일까요? **경로 계획 알고리즘: RRT* 및 PRM**은 로봇에게 '길 찾기 지능'을 부여하는 **'디지털 길잡이'**입니다. 모든 길을 다 가보는 대신, 무작위로 점을 찍어보고(Sampling) 갈 수 있는 길들을 연결하여 최적의 경로를 찾아냅니다. 단순히 부딪히지 않는 것을 넘어, 가장 부드럽고 짧은 길을 찾아내는 이 기술은 로봇이 미지의 공간을 자유롭게 누비게 하는 **'자율 주행의 내비게이션'**입니다.
@@ -87,7 +76,6 @@ class RobotFidelityEngine:
             return "REJECT: Poor Map Connectivity - Disconnected Components Identified. Increase Samples"
         return "PASS: Robust Map Topology and Connectivity Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(planning_time_ms=120, path_length_m=15.5, obstacle_clearance_m=0.35)
 print(engine.diagnose_planning_health())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_planning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data motion-planning-path-optimality-and-time-to-solve-v2026`와 연동되어, 전 세계 자율 주행 및 물류 로봇의 계획 데이터를 실시간 분석하고 경로 고립 및 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 이동 문명의 경로 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - mobile-robotics-slam-simultaneous-localization-and-mapping-physics

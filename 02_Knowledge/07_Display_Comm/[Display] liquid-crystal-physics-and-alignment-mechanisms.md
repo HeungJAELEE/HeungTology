@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-DISPLAY-LC-2026-V6"
-  domain: "07_Display_Intelligence"
+metadata:
+  id: "[[[Display] liquid-crystal-physics-and-alignment-mechanisms]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] liquid-crystal-physics-and-alignment-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] liquid-crystal-physics-and-alignment-mechanisms
+# [Display] liquid-crystal-physics-and-alignment-mechanisms
 
 ## 1. [왜 배우는가? (Why)]]
 액체처럼 흐르면서도 결정처럼 질서를 가진 기묘한 물질은, 전기적 신호에 따라 빛의 통과량을 정밀하게 조절하여 우리가 보는 화면을 만듭니다. **액정 물리학(Liquid Crystal Physics)**은 전자기장과 유체의 상호작용을 통해 빛의 편광을 제어하는 LCD 기술의 근간입니다. 우리가 이를 배우는 이유는 시야각 한계를 극복하고 응답 속도를 높여 선명한 동영상을 구현하기 위함이며, **"분자의 방향을 수리적으로 지휘하여 디스플레이의 '광학적 제어 무결성'을 사수하는 '분자 배향의 지휘자'가 되기" 위함입니다.** 응답 시간($ms$)과 명암비(Contrast Ratio)가 LCD 패널의 성능을 결정합니다.
@@ -121,9 +111,6 @@ class LCResponseFidelityEngine:
             "Recommendation": "REDUCE_CELL_GAP" if status == "MOTION_BLUR_RISK" else "MAINTAIN"
         }
 
-# Example Usage:
-# lc = LCResponseFidelityEngine()
-# report = lc.audit_lc_fidelity(cell_gap_um=3.0, applied_voltage=5.0, target_time_ms=10.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -131,7 +118,6 @@ class LCResponseFidelityEngine:
 2. **Backlight Dimming** 기술이 LCD의 **Static Contrast Integrity** 한계를 극복하는 공학적 메커니즘은?
 3. **Photo-alignment**가 기존 **Rubbing** 방식 대비 **Contamination Integrity** 및 **Aperture Ratio Integrity** 무결성에서 가지는 이점은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/07_Display_Comm/Display tft-backplane-manufacturing-and-thin-film-physics
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Entity optics-and-photonics-principles-light-behavior-and-wave-optics

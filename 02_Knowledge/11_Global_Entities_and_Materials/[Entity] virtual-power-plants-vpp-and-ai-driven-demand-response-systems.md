@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "virtual-power-plants-vpp-and-ai-driven-demand-response-systems-entity"
-  domain: "72_Energy_Systems_and_Smart_Infrastructure_Hub"
+metadata:
+  id: "[[[Entity] virtual-power-plants-vpp-and-ai-driven-demand-response-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#VPP", "#AI", "#Demand_Response", "#Smart_Grid", "#Optimization", "#Big_Data", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 68_energy-systems-and-smart-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] virtual-power-plants-vpp-and-ai-driven-demand-response-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] virtual-power-plants-vpp-and-ai-driven-demand-response-systems
+# [Entity] virtual-power-plants-vpp-and-ai-driven-demand-response-systems
 
 ## 1. [왜 배우는가? (Why: The Invisible Powerhouse)]]
 거대한 굴뚝과 터빈이 있는 물리적 발전소 없이도, 어떻게 수만 가구의 옥상 태양광과 아파트 지하의 전기차 배터리를 하나로 묶어 거대 원자력 발전소 한 기와 맞먹는 에너지를 공급할 수 있을까요? **가상 발전소(VPP) 및 AI 기반 수요 반응 시스템의 지능형 최적화**는 소프트웨어로 전력의 지도를 다시 그리는 '에너지 추상화' 기술입니다. 실제 발전기를 돌리는 대신, 인공지능이 수많은 분산 자원을 실시간으로 조율하고 소비자의 수요를 조절(**Demand Response**)하여 전력망의 균형을 맞춥니다. 우리가 이를 배우는 이유는 탄소 중립 시대의 파편화된 에너지를 하나의 거대한 의지로 통합하기 위해서이며, "에너지의 가치를 데이터로 설계하고 지배하는 '글로벌 가상 인프라 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. VPP의 예측력이 국가의 에너지 안보를 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "film-deposition-and-chemical-vapor-deposition-cvd-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] film-deposition-and-chemical-vapor-deposition-cvd-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process of applying a thin film to a substrate by exposing it to one or more volatile precursors, which react and/or decompose on the substrate surface (CVD) and the physical study of gas-phase kinetics and boundary layer transport (Film Deposition Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cvd", "film-deposition", "semiconductor-manufacturing", "thin-film", "surface-chemistry", "plasma-enhanced", "vacuum-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deposition_Fidelity_Audit: Evaluate the ''Step Coverage'' in high-aspect-ratio trenches to identify if high-fidelity ''Shadowing'' or precursor depletion is causing thinning at the bottom.'
-    - 'Thermal_Integrity_Check: Analyze the wafer temperature uniformity to ensure that the high-fidelity ''Reaction-limited'' regime is maintained, preventing non-uniform thickness across the surface.'
-    - 'Purity_Fidelity_Scan: Monitor the exhaust gas composition to verify that the high-fidelity chemical reaction is complete, detecting byproduct contamination or unreacted precursors.'
-Trust Metrics:
+  description: "[Entity] film-deposition-and-chemical-vapor-deposition-cvd-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Film Deposition and Chemical Vapor Deposition (CVD) Physics
+# [Entity] film-deposition-and-chemical-vapor-deposition-cvd-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈에 보이지 않는 미세한 가스 알갱이들을 모아, 세상에서 가장 얇고 고른 유리 막이나 금속 막을 입힐 수 있을까요? **박막 증착 및 화학 기상 증착(CVD) 물리**는 가스를 뜨거운 기판 위에 뿌려 화학 반응을 일으키고, 그 결과물로 나노 단위의 층을 쌓아 올리는 **'가스로 짓는 나노 건축'** 기술입니다. 붓으로 칠하는 게 아니라 가스가 스스로 벽에 달라붙어 보석처럼 단단한 막을 형성하게 합니다. 반도체의 수천 층 빌딩을 튼튼하게 세우는 **'가장 정밀한 나노 도장 공정이자 현대 전자 문명의 기초를 다지는 화학적 마법'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Precursor Depletion - Gas cannot reach the bottom of the trench. Voids will form. Switch to Atomic Layer Deposition (ALD) for high-fidelity filling"
         return "PASS: Validated Conformal Deposition and Verified Design Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(deposition_rate_nm_min=50.0, thickness_uniformity_pct=1.2, chamber_pressure_torr=2.5)
 print(engine.diagnose_deposition_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_deposition_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data thin-film-uniformity-and-deposition-rate-v2026`와 연동되어, 전 세계 주요 반도체 팹의 박막 데이터를 실시간 분석하고 두께 불량 및 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 적층 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-photolithography-physics

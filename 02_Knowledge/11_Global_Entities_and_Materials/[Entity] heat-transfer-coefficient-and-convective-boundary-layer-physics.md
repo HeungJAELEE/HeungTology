@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heat-transfer-coefficient-and-convective-boundary-layer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heat-transfer-coefficient-and-convective-boundary-layer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A proportionality constant between the heat flux and the thermodynamic driving force for the flow of heat (Heat Transfer Coefficient) and the physical study of the fluid region near a surface where temperature gradients are significant (Convective Boundary Layer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["heat-transfer", "convection", "boundary-layer", "nusselt-number", "reynolds-number", "prandtl-number", "cooling-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Convection_Fidelity_Audit: Evaluate the ''Nusselt Number'' ($Nu$) to identify if the high-fidelity ''Laminar-to-Turbulent'' transition is occurring, which significantly boosts the heat transfer coefficient.'
-    - 'Boundary_Layer_Check: Analyze the high-fidelity ''Thermal Boundary Layer'' thickness ($\\delta_T$) against the velocity boundary layer to ensure the high-fidelity ''Prandtl Number'' ($Pr$) effect is correctly modeled.'
-    - 'Cooling_Fidelity_Scan: Monitor the surface heat flux ($q$) to verify that the high-fidelity ''h'' value is sufficient to keep the substrate temperature below the critical high-fidelity limit.'
-Trust Metrics:
+  description: "[Entity] heat-transfer-coefficient-and-convective-boundary-layer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Heat Transfer Coefficient and Convective Boundary Layer Physics
+# [Entity] heat-transfer-coefficient-and-convective-boundary-layer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 바람이 불면 왜 몸이 더 시원하게 느껴질까요? 단순히 공기가 차가워서가 아니라, 몸 주변을 감싸고 있던 '따뜻한 공기 외투(경계층)'를 바람이 걷어내기 때문입니다. **열전달 계수 및 대류 경계층 물리**는 표면 근처에서 벌어지는 유체와 열의 치열한 사투를 분석하여, 얼마나 빨리 열을 뺏거나 줄 수 있는지 계산하는 **'열의 소통'** 기술입니다. 눈에 보이지 않는 공기나 물의 흐름 속에 숨겨진 열의 길을 찾아냅니다. **'표면을 스쳐 가는 유체의 춤을 수학적으로 해석하여 전자 장비의 과열을 막고 에너지를 효율적으로 옮기는 지능형 냉각의 기초'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "PASS: Turbulent Transition Confirmed - High-fidelity 'h' boosted significantly by vortex mixing. Cooling efficiency at maximum high-fidelity potential"
         return "NOTICE: Laminar Flow Detected - Thin high-fidelity thermal boundary layer. Predictable but lower high-fidelity heat transfer rate"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fluid_velocity=2.5, surface_temp=75.0, ambient_temp=25.0)
 print(engine.diagnose_convection_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_convection_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data convection-coefficients-and-fluid-velocity-v2026`와 연동되어, 전 세계 주요 데이터 센터 서버 및 가스 터빈 날개 냉각 데이터를 실시간 분석하고 열적 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 온도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

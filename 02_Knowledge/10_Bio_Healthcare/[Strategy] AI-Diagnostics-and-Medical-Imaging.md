@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] AI-Diagnostics-and-Medical-Imaging"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] AI-Diagnostics-and-Medical-Imaging]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] AI-Diagnostics-and-Medical-Imaging에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] AI-Diagnostics-and-Medical-Imaging
+# [Strategy] AI-Diagnostics-and-Medical-Imaging
 
 ## 1. [왜 배우는가? (Why)]]
 의사도 사람입니다. 수천 장의 CT 영상을 하루 종일 보다 보면 피곤해서 아주 작은 암세포를 놓칠 수 있습니다. AI 진단 및 의료 영상(AI-Diagnostics-and-Medical-Imaging)은 잠들지 않고 지치지 않는 '디지털 눈'을 의사에게 선물하는 기술입니다. 인간의 눈으로는 보기 어려운 미세한 패턴을 찾아내어 암을 1~2년 더 빨리 발견하게 돕습니다. 이를 이해하는 것은 단순한 소프트웨어를 만드는 것이 아니라, 오진의 공포를 줄이고 전 세계 어디서나 최고 수준의 진단을 받을 수 있는 '평등하고 정밀한 의료 시스템'을 설계하는 '의료 지능 아키텍트'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Medical Image Segmentation & Classification)]
 입력된 DICOM 의료 영상 파일에서 장기를 분할(Segmentation)하고 병변을 분류(Classification)하는 논리 구조입니다.
 ```python
-# 의료 지능(ISM) 기반 영상 판독 및 병변 탐지 논리
 def analyze_medical_imaging(dicom_image, model_ensemble):
     # 1. 전처리 및 정규화 (Pre-processing)
     # 각 장비별(GE, Philips, Siemens) 밝기 차이를 표준화하고 노이즈 제거
@@ -93,5 +82,4 @@ def analyze_medical_imaging(dicom_image, model_ensemble):
 2. '합성 데이터(Synthetic Data)'를 이용한 AI 학습이 '의료 데이터 보안(HIPAA)' 문제와 '희귀 질환 진단' 능력을 동시에 해결하는 원리는?
 3. 'AI 판독 보조 도구'가 도입되었을 때 영상의학과 전문의의 역할은 어떻게 변화하며, '워크플로우 효율성'은 어느 정도 개선될 것으로 기대되는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

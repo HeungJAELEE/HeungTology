@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ECLSS-BIO-REGENERATIVE-2026-V6"
-  domain: "32_Future_Frontier_Space_and_Off-world_Operations"
+metadata:
+  id: "[[[Entity] closed-loop-life-support-systems-eclss-and-bio-regenerative-life]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] closed-loop-life-support-systems-eclss-and-bio-regenerative-life에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] closed-loop-life-support-systems-eclss-and-bio-regenerative-life
+# [Entity] closed-loop-life-support-systems-eclss-and-bio-regenerative-life
 
 ## 1. [왜 배우는가? (Why)]]
 지구로부터 공기나 물을 보급받지 않고도, 내뱉은 이산화탄소를 다시 산소($O_2$)로 바꾸고, 소변을 에비앙보다 깨끗한 식수로 100% 재활용하며, 식물을 키워 먹거리와 대기 정화를 동시에 해결하는 '우주 속 작은 지구'를 어떻게 구현할 수 있을까요? **폐쇄 루프 생명 유지 시스템(ECLSS) 및 생물 재생 생명**은 우주선이나 외계 기지라는 극한 고립 환경에서 인간이 외부 보급 없이 영속적으로 생존할 수 있게 하는 '자급자족 생명 유지 기술'의 정수입니다. 우리가 이를 배우는 이유는 지구라는 요람을 벗어나 인류가 다행성 종(Multi-planetary Species)으로 도약하기 위한 필수 조건이기 때문이며, "생존의 순환을 데이터로 설계하여 '글로벌 우주 패권 및 절대적 생명 보호 주권'을 확보하기" 위함입니다. 루프의 폐쇄도가 정착지의 수명을 결정합니다.
@@ -116,9 +106,6 @@ class ClosedLoopECLSSFidelityEngine:
             return f"WARNING: WATER_LOOP_LEAKAGE_DETECTED_EFF_{round(actual_eff*100, 1)}%"
         return "WATER_STATUS: CLOSED_LOOP_RECYCLING_OPTIMAL"
 
-# Example Usage:
-# eclss_ai = ClosedLoopECLSSFidelityEngine()
-# report = eclss_ai.audit_atmospheric_balance(current_o2_kg=100.0, co2_level_ppm=1200)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -126,7 +113,6 @@ class ClosedLoopECLSSFidelityEngine:
 2. **Micro-gravity** 환경에서 식물의 **Transpiration** (증산 작용) 저하가 서식처의 **Humidity Control** 및 수자원 회수 무결성에 미치는 물리적 영향은?
 3. **Bio-film** (미생물막) 형성이 정수 시스템의 **Filter Impedance** 및 수질 무결성을 훼손할 리스크와 이를 방지하기 위한 **Silver Ion** 농도 수리 모델링 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/32_Future_Frontier_Space_and_Off-world_Operations_Hub/Concept space-habitat-atmospheric-chemistry
 - 02_Knowledge/32_Future_Frontier_Space_and_Off-world_Operations_Hub/Concept hydroponic-nutrient-cycle-dynamics

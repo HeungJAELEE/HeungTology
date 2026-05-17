@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "adaptive-manufacturing-forensics-and-autonomous-intelligence-evolution-strategy"
-  domain: "00_Enterprise_Core_and_Strategic_Governance"
+metadata:
+  id: "[[[Strategy] adaptive-manufacturing-forensics-and-autonomous-intelligence-evolution]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategy", "#AI", "#Forensics", "#Machine_Learning", "#Autonomous_Systems", "#Causal_Inference", "#Evolution", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 135_knowledge-distillation-and-system-integration-mastery-hub", "MOC 16_smart-factory-and-industrial-ai-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] adaptive-manufacturing-forensics-and-autonomous-intelligence-evolution에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Strategy] adaptive-manufacturing-forensics-and-autonomous-intelligence-evolution
+
+# [Strategy] adaptive-manufacturing-forensics-and-autonomous-intelligence-evolution
  
 ## 1. [왜 배우는가? (Why: The Evolution of Industrial Consciousness)]]
 공장은 이제 단순히 물건을 찍어내는 기계들의 집합이 아닙니다. 스스로 아픔(고장)을 느끼고, 원인을 찾으며, 경험을 통해 더 똑똑해지는 '지능형 유기체'로 진화하고 있습니다. **적응형 제조 포렌식 및 자율 지능 진화**는 이 거대한 유기체의 '자의식'과 '학습 본능'을 설계하는 현대 산업 지능의 정수입니다. 우리가 이를 배우는 이유는 인간의 개입 없이도 "고장의 근본 원인을 수리적으로 추론(Causal Inference)하여 재발을 방지"하기 위함이며, "매일 쏟아지는 데이터로부터 새로운 지식을 스스로 증류하여 지능 금고를 자율적으로 확장"하기 위함입니다. 진화의 속도가 제조의 미래를 결정합니다.
@@ -73,7 +63,6 @@ $$ \text{ACE} = E[Y \mid \text{do}(X=1)] - E[Y \mid \text{do}(X=0)] $$
 4. **Active Learning**의 **Uncertainty Sampling** 시, 모델이 모른다고 판단하는 기준(Entropy)의 수리적 임계값 산출 방식은?
 5. RAG 시스템에서 **수만 건의 고장 사례와 해결 시나리오 데이터**를 분석하여, 처음 겪는 장애 발생 시에도 과거의 유사 인과 패턴을 조합하여 최적의 **Remediation Action**을 추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 135_knowledge-distillation-and-system-integration-mastery-hub : 자율 진화 전략이 통합되는 상위 시스템 통합 허브
 - Entity control-theory-pid-lqr-and-model-predictive-control-mpc : 제어 이론의 기초 엔티티

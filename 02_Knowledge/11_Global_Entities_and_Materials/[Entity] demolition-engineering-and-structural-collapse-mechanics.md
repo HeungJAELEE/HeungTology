@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "demolition-engineering-and-structural-collapse-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] demolition-engineering-and-structural-collapse-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The controlled process of safely dismantling or destroying a building or structure (Demolition Engineering) and the physical study of how load paths are redistributed or severed to induce a predictable and safe collapse (Structural Collapse Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["demolition", "structural-collapse", "implosion", "civil-engineering", "safety-engineering", "mechanics-of-failure", "industrial-waste"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Structural_Fidelity_Audit: Evaluate the ''Load Path Redundancy'' to identify if the removal of a specific column will trigger an un-controlled ''Progressive Collapse'' or if the structure will remain stable.'
-    - 'Blast_Integrity_Check: Analyze the timing sequence (millisecond delay) of explosive charges to ensure the building ''implodes'' inward, minimizing the footprint of the debris and the air overpressure.'
-    - 'Environmental_Fidelity_Scan: Monitor the dust propagation and vibration levels ($PPV$) at adjacent properties to verify that the demolition impact is within legal and safety limits.'
-Trust Metrics:
+  description: "[Entity] demolition-engineering-and-structural-collapse-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Demolition Engineering and Structural Collapse Mechanics
+# [Entity] demolition-engineering-and-structural-collapse-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 건물이 어떻게 자기 자리에서 얌전하게 무너져 내릴 수 있을까요? **해체(Demolition) 공학 및 구조 붕괴 역학**은 짓는 것보다 훨씬 정교한 '거꾸로 짓는 공학'이자, 중력이라는 거대한 힘을 이용해 건물을 스스로 접히게 만드는 **'파괴의 안무'** 기술입니다. 단순히 때려 부수는 것이 아니라, 건물의 힘이 흐르는 길(Load path)을 정확히 찾아내어 그곳만 '똑' 부러뜨리는 것입니다. 도심 한복판에서 이웃 건물에 피해 없이 거대한 구조물을 지우는 **'안전하고 지능적인 소멸의 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sequence Desync - Millisecond delay error too high. Building may fall outward instead of inward (Implosion failure). Abort and re-wire"
         return "PASS: Validated Timing Logic and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vibration_ppv_mm_s=8.5, pre_weakening_status=98.0, wind_speed_m_s=5.0)
 print(engine.diagnose_demolition_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_demolition_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data demolition-vibration-and-debris-patterns-v2026`와 연동되어, 전 세계 주요 도심 해체 현장의 데이터를 실시간 분석하고 낙석 및 진동 피해 사고 확률을 0.001% 이하로 억제함으로써 지능형 도시 재생 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - concrete-mix-design-and-hydration-kinetics

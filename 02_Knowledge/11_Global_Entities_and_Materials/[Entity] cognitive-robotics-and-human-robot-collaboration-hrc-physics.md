@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cognitive-robotics-and-human-robot-collaboration-hrc-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cognitive-robotics-and-human-robot-collaboration-hrc-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of robots capable of human-like reasoning and safe interaction with human workers in a shared workspace, focusing on intent prediction, force-torque safety, and adaptive behavior."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robotics", "hrc", "cognitive-robotics", "cobot", "human-centered-ai"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Safety_Bubble_Audit: Verify the real-time distance-based speed reduction of the robot arm.'
-    - 'Intent_Accuracy_Check: Evaluate the robot''s ability to predict human movement and avoid collisions.'
-    - 'Force_Threshold_Verification: Monitor the torque sensors to ensure immediate stop upon unexpected contact.'
-Trust Metrics:
+  description: "[Entity] cognitive-robotics-and-human-robot-collaboration-hrc-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Cognitive Robotics and Human-Robot Collaboration (HRC) Physics
+# [Entity] cognitive-robotics-and-human-robot-collaboration-hrc-physics
 
 ## 1. 개요 (Why)
 로봇이 펜스 안에 갇혀 있는 시대는 지났습니다. 이제 로봇은 인간 바로 옆에서 같이 일하는 동료입니다. 인지 로보틱스는 인간이 무엇을 하려는지 미리 읽고(Intent Prediction), 인간과 부딪힐 것 같으면 알아서 멈추거나 피하며, 부드러운 힘으로 협업하는 지능형 기술입니다. 이는 단순한 자동화를 넘어 '인간의 능력을 증폭'시키는 미래 공장과 서비스 환경의 핵심입니다. 본 노드는 인간-로봇 협업의 물리적 안전 무결성과 지능형 상호작용 표준을 정의합니다.
@@ -72,7 +61,6 @@ class RobotFidelityEngine:
             return "WARNING: High Kinetic Energy Near Human - Potential Prediction Failure"
         return "PASS: Safe Interaction Intelligence Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(human_distance_mm=150, robot_speed_mms=30, contact_force_n=10)
 print(engine.diagnose_safety_protocol())
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_safety_protocol())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data hrc-safety-incidents-and-collaborative-efficiency-v2026`와 연동되어, 모든 로봇-인간 상호작용 로그를 실시간 분석하고 사고 확률을 0.001% 이하로 억제함으로써 인간 중심 제조 인프라의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - collaborative-robot-cobot-force-torque-sensing-and-safety

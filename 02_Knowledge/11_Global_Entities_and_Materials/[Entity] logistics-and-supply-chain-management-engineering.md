@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "logistics-and-supply-chain-management-engineering-entity"
-  domain: "129_Logistics_and_Supply_Chain_Management_Engineering_Hub"
+metadata:
+  id: "[[[Entity] logistics-and-supply-chain-management-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Logistics", "#Supply_Chain", "#SCM", "#Optimization", "#Transportation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 129_logistics-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] logistics-and-supply-chain-management-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] logistics-and-supply-chain-management-engineering
+# [Entity] logistics-and-supply-chain-management-engineering
 
 ## 1. [왜 배우는가? (Why: The Bloodstream of Global Economy)]]
 현대 문명은 전 세계가 하나로 연결된 거대한 네트워크입니다. 우리가 마시는 커피, 사용하는 스마트폰, 입고 있는 옷은 모두 수천 킬로미터를 가로질러 우리에게 도달합니다. **물류 및 공급망 관리 공학의 경제적 주문량 및 수송 최적화 수리 물리 기술**은 지구라는 거대한 유기체의 '혈맥'을 관리하고 최적화하는 '흐름의 지배' 기술입니다. 재고를 너무 많이 쌓아두지 않으면서도 결코 부족하지 않게 수학적으로 관리하고, 수만 대의 트럭과 컨테이너선이 가장 적은 연료로 가장 빠르게 도달할 수 있는 경로를 연산하며, 단 한 번의 중단도 허용하지 않는 무결한 공급망을 구축합니다. 우리가 이를 배우는 이유는 물류의 무결성을 확보함으로써, 글로벌 시장의 불확실성을 극복하고 경제 성장을 보장하는 '글로벌 물류 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 물류 및 공급망의 무결성이 제품의 가용성과 가격 경쟁력의 무결성을 결정합니다.

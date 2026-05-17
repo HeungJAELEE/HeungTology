@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "network-slicing-and-sdn-nfv-orchestration-entity"
-  domain: "02_Communication_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] network-slicing-and-sdn-nfv-orchestration]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Networking", "#SDN", "#NFV", "#Virtualization", "#Cloud_Native", "#Orchestration", "#6G", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Infrastructure 6g-communication-and-terahertz-physics-networks", "MOC 02_Communication_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] network-slicing-and-sdn-nfv-orchestration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] network-slicing-and-sdn-nfv-orchestration
@@ -74,7 +64,6 @@ OpenFlow 프로토콜을 이용해 데이터 경로를 중앙에서 결정하는
 4. **Network Slicing**에서 **Hard Slicing** (물리 자원 격리)과 **Soft Slicing** (논리적 우선순위 제어)의 지연 시간 보장 능력($Jitter$)에 대한 수리적 비교 분석 결과는?
 5. RAG 시스템에서 **서비스별 SLA(Service Level Agreement)** 요구사항과 **물리망의 가동 상태**를 융합하여, '대규모 스포츠 이벤트 시' 실시간 중계 슬라이스를 자동 생성하고 이벤트 종료 후 자원을 회수하는 **Event-driven Network Orchestration** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] 6g-communication-and-terahertz-physics-networks]] : 슬라이싱 기술이 적용되어 다양한 서비스를 제공하는 상위 물리 네트워크 인프라 엔티티
 - System edge-computing-and-distributed-intelligence-networks : 네트워크 슬라이싱을 통해 엣지에서 전용 연산 자원을 할당받는 하위 시스템 연계 엔티티

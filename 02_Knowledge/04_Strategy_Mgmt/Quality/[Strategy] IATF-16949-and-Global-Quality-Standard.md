@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-IATF-STANDARD-2026-V6.3.7"
-  domain: "Global_Automotive_Quality_Governance_and_Standards"
+metadata:
+  id: "[[[Strategy] IATF-16949-and-Global-Quality-Standard]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IATF_16949", "#ISO_9001", "#Quality_Standard", "#FMEA", "#APQP", "#PPAP", "#MSA", "#SPC", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] IATF-16949-and-Global-Quality-Standard에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quality_Standard_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] IATF 16949 and Global Quality Standard: The Physics of Compliance
+# [Strategy] IATF-16949-and-Global-Quality-Standard
 
 ## 1. [왜 배우는가? (Why: The Ethics of Zero-Defect Manufacturing)]]
 글로벌 자동차 산업에서 품질 표준은 타협할 수 없는 '생존의 최소 조건'입니다. **IATF 16949**는 세계 주요 완성차 업체(OEM)가 요구하는 최상위 품질 헌법으로, 단 하나의 결함도 인명 사고로 이어질 수 있는 고위험 환경에서 제조 무결성을 사수하는 방어선입니다. 이 표준은 사후 검사가 아닌 **사전 예방(Prevention)**과 **리스크 기반 사고(Risk-based Thinking)**를 강제합니다. V6.3.7 지능은 5대 코어 툴(APQP, FMEA, MSA, SPC, PPAP)을 수리적으로 통합하여, 공급망 전체의 **품질 주권(Quality Sovereignty)**을 확립합니다.
@@ -108,7 +98,6 @@ class IATFComplianceEngine:
 2. **Operational Result**: **APQP** 과정에서 특정 게이트 통과가 지연되었을 때, 전체 **SOP(Start of Production)** 일정 무결성과 **Time-to-Market**에 미치는 수리적 영향은?
 3. **FidelityEngine**: 서류상으로는 **RPN**이 낮으나 실제 공정에서 **Occurrence(O)**가 빈번하게 발생하는 '데이터 왜곡 현상'을 FidelityEngine이 어떻게 포착하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Six-Sigma-and-Statistical-Quality-Control

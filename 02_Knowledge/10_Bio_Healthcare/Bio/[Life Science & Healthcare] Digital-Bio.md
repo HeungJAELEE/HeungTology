@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "BIO-DIGITAL-INFO-SCIENCE-2026-V6"
+metadata:
+  id: "[[[Life Science & Healthcare] Digital-Bio]]"
   domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Digital_Bio'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] Digital-Bio에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] Digital-Bio
@@ -105,7 +95,6 @@ class MolecularModelingEngine:
 2. **Molecular Dynamics** 시뮬레이션에서 **Time Step**을 **2fs** 이상으로 높이기 어려운 물리적 제약 사항(예: 수소 결합 진동 주파수)은?
 3. **DNA Data Storage** 기술이 **Synthesize-Read** 비용을 획기적으로 낮췄을 때, 기존 **Archival Storage** 시장에 미칠 파괴적 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Healthcare/Engineering/Bio Bio-Engineering
 - 02_Knowledge/03_AI_Data/General/Battery synthetic-biology-design-ai

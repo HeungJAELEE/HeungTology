@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "organic-thermoelectric-materials-and-waste-heat-recovery-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] organic-thermoelectric-materials-and-waste-heat-recovery-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of carbon-based polymers and small molecules (Organic Thermoelectric Materials) that convert temperature differences directly into electrical voltage (Seebeck Effect), specifically focusing on their use in recovering low-grade waste heat from industrial processes or the human body."
-  physical_model: "N/A"
-Semantic:
-  tags: '["organic-thermoelectrics", "waste-heat-recovery", "seebeck-effect", "thermoelectrics", "energy-harvesting", "flexible-electronics", "nanotechnology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermoelectric_Efficiency_Audit: Evaluate the Figure of Merit ($ZT$) to ensure the material provides sufficient power density for target waste heat recovery applications.'
-    - 'Doping_Stability_Check: Analyze the electrical conductivity ($\\sigma$) over time to identify de-doping or oxidation that degrades the organic material''s performance.'
-    - 'Thermal_Isolation_Scan: Monitor the thermal conductivity ($\\kappa$) to ensure the organic matrix effectively maintains the temperature gradient required for power generation.'
-Trust Metrics:
+  description: "[Entity] organic-thermoelectric-materials-and-waste-heat-recovery-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Organic Thermoelectric Materials and Waste Heat Recovery Physics
+# [Entity] organic-thermoelectric-materials-and-waste-heat-recovery-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 체온만으로 스마트 워치를 충전하거나, 공장의 뜨거운 파이프에서 나오는 열기를 전기로 바꿀 수 있다면 어떨까요? **유기 열전 소재 및 폐열 회수 물리**는 버려지는 열기를 붙잡아 다시 에너지로 바꾸는 **'열의 재활용술'**입니다. 딱딱한 금속 대신 플라스틱처럼 유연한 유기물(탄소 기반)을 사용하기 때문에, 우리 몸의 굴곡이나 복잡한 기계 표면에 착 달라붙어 에너지를 수확할 수 있습니다. 낭비되는 온기를 희망의 전기로 바꾸는 **'지속 가능한 에너지의 마법'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Mechanical Durability - Conductive Path Fracturing under Flexion. Add Polymer Plasticizers"
         return "PASS: Excellent Mechanical Resilience and Stable Energy Harvesting Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(power_factor_uw_m_k2=120, thermal_conductivity_wmk=0.25, degradation_rate_pct_month=0.5)
 print(engine.diagnose_thermoelectric_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_thermoelectric_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data organic-thermoelectric-efficiency-and-thermal-conductivity-v2026`와 연동되어, 전 세계 스마트 팩토리의 폐열 회수 데이터를 실시간 분석하고 소자 열화 및 출력 저하 사고 확률을 0.001% 이하로 억제함으로써 에너지 자립 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nanotechnology-and-smart-functional-materials

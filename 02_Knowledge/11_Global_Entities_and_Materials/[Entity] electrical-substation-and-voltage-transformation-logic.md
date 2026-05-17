@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrical-substation-and-voltage-transformation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrical-substation-and-voltage-transformation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A subsidiary station of an electricity generation, transmission, and distribution system where voltage is transformed from high to low or vice versa using transformers (Electrical Substation) and the physical-mathematical study of magnetic flux coupling and power flow control (Voltage Transformation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["substation", "voltage-transformation", "transformer", "power-grid", "switchgear", "circuit-breaker", "electrical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Transformation_Fidelity_Audit: Evaluate the ''Turns Ratio'' ($a$) and tap changer position to identify if the output voltage is deviating from the set-point, causing ''Over-voltage'' or ''Under-voltage'' in the distribution area.'
-    - 'Thermal_Integrity_Check: Analyze the Dissolved Gas Analysis (DGA) in the transformer oil to ensure no internal arcing or overheating is degrading the paper insulation (Class A/H).'
-    - 'Protection_Fidelity_Scan: Monitor the differential current between the primary and secondary busbars to verify that the ''Zone of Protection'' is maintained and no ''External Fault'' is causing an incorrect trip.'
-Trust Metrics:
+  description: "[Entity] electrical-substation-and-voltage-transformation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Electrical Substation and Voltage Transformation Logic
+# [Entity] electrical-substation-and-voltage-transformation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 발전소의 엄청난 고전압 전기가 어떻게 우리 집의 안전한 220V로 바뀔까요? **변전소(Substation) 및 전압 변환 로직**은 전력의 '압력(전압)'을 조절하여 멀리 보내기 좋게 높이거나, 쓰기 좋게 낮추는 **'전기에너지의 관문'** 기술입니다. 변전소는 단순히 전압만 바꾸는 곳이 아닙니다. 번개나 사고로부터 전력망을 지키는 '방패'이자, 전기가 어디로 흐를지 결정하는 '교차로'입니다. 국가의 혈관인 전력망에서 압력을 조절해 심장을 보호하는 **'에너지의 거대한 조율사'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Fault Detected within Zone - Internal fault in transformer or busbar. Circuit breakers triggered to prevent grid-wide collapse"
         return "PASS: Validated Fault Isolation and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(oil_temp_c=65.0, hydrogen_ppm=15.0, voltage_deviation_pct=1.2)
 print(engine.diagnose_substation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_substation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data substation-transformer-load-and-oil-health-v2026`와 연동되어, 전 세계 주요 국가 전력망의 변전 데이터를 실시간 분석하고 변압기 폭발 및 광역 정전 사고 확률을 0.0001% 이하로 억제함으로써 지능형 전력 문명의 관문 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electric-power-grid-and-load-balancing-logic

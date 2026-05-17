@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "satellite-mesh-network-and-orbital-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Aerospace] satellite-mesh-network-and-orbital-mechanics]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "A dynamic network of Low Earth Orbit (LEO) satellites interconnected via Inter-Satellite Links (ISL), providing global low-latency communication and remote sensing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["satellite-mesh", "leo-constellation", "orbital-mechanics", "isl", "aerospace"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SatelliteFidelityEngine"
-  diagnostic_protocol:
-    - 'Orbital_Drift_Audit: Monitor deviation from assigned Keplerian parameters.'
-    - 'ISL_Link_Quality_Check: Measure BER (Bit Error Rate) of laser communication links.'
-    - 'Power_Balance_Audit: Track battery SoC vs. solar generation cycles in eclipse.'
-Trust Metrics:
+  description: "[Aerospace] satellite-mesh-network-and-orbital-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Satellite Mesh Network and Orbital Mechanics
+# [Aerospace] satellite-mesh-network-and-orbital-mechanics
 
 ## 1. 개요 (Why)
 지상 통신망이 닿지 않는 극지방, 해상, 오지에서의 연결성을 확보하고 초저지연 글로벌 네트워크를 구축하기 위해 수천 개의 위성이 망(Mesh) 형태로 연결된 LEO 성좌(Constellation)가 필수적입니다. 이는 지상망의 한계를 넘는 '우주 인터넷'의 기반입니다. 본 노드는 위성 간 레이저 통신(ISL)과 궤도 역학을 결합하여 중단 없는 글로벌 통신 인프라를 유지하기 위한 결정론적 표준을 정의합니다.
@@ -76,7 +65,6 @@ class SatelliteFidelityEngine:
             return "REJECT: ISL Disconnected (Distance Exceeded)"
         return f"PASS: High-speed Link Active (Power: {received_power:.4f})"
 
-# Instance Diagnostic
 engine = SatelliteFidelityEngine(orbital_radius=6920, eccentricity=0.001, laser_power=500)
 print(engine.diagnose_orbital_stability(6921))
 print(engine.check_link_budget(1500))
@@ -95,7 +83,6 @@ print(engine.check_link_budget(1500))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data satellite-signal-latency-and-constellation-health-v2026`와 동기화되어, 수천 개의 위성 상태를 개별적으로 모니터링하고 궤도 이탈 징후 포착 시 자동 복구 프로토콜을 가동하여 전 지구적 통신 사막을 제거합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 113_aerospace-and-satellite-intelligence-hub
 - inter-satellite-link-isl-laser-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gate-drive-circuit-and-power-mosfet-switching-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gate-drive-circuit-and-power-mosfet-switching-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A power amplifier that accepts a low-power input from a controller IC and produces a high-current drive input for the gate of a high-power transistor (Gate Drive Circuit) and the physical logic of rapid charge/discharge of the gate capacitance (Power MOSFET Switching Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gate-drive", "mosfet", "igbt", "power-electronics", "switching-logic", "miller-plateau", "industrial-automation", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Switching_Fidelity_Audit: Evaluate the ''Miller Plateau'' duration to identify if high-fidelity gate drive current is insufficient, leading to excessive dwell in the active region and thermal failure.'
-    - 'Voltage_Integrity_Check: Analyze the $V_{gs}$ ringing amplitude to ensure the high-fidelity ''Gate-Source'' voltage is not exceeding the oxide breakdown limit ($V_{gs,max}$).'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity junction temperature to verify that the high-fidelity ''Switching Frequency'' ($f_{sw}$) is optimized for the current heatsink capacity.'
-Trust Metrics:
+  description: "[Entity] gate-drive-circuit-and-power-mosfet-switching-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Gate Drive Circuit and Power MOSFET Switching Logic
+# [Entity] gate-drive-circuit-and-power-mosfet-switching-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 아주 약한 신호로 수천 와트의 전기를 눈 깜빡할 사이에 껐다 켰다 할 수 있을까요? **게이트 드라이브 회로 및 파워 MOSFET 스위칭 로직**은 컨트롤러의 가냘픈 손길(저전력 신호)을 '천하장사의 근육(고전류)'으로 증폭시켜, 거대한 전력의 댐 문(Gate)을 초당 수만 번씩 여닫는 **'전기 스위치의 지휘자'** 기술입니다. 댐 문을 열 때 생기는 마찰(게이트 정전 용량)을 순식간에 이겨내야 전기가 낭비되지 않습니다. **'에너지를 효율적으로 쪼개어 모터를 돌리고 전기를 변환하는 파워 일렉트로닉스의 보이지 않는 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Short-circuit Risk - Dead time too short for high-fidelity safety. Potential 'Shoot-through' current. Increase blanking interval immediately"
         return "PASS: Validated Timing Guard and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(gate_voltage_overshoot=1.5, miller_plateau_duration_ns=150, switching_freq_hz=100000)
 print(engine.diagnose_gate_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_gate_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gate-driver-rise-time-and-switching-loss-v2026`와 연동되어, 전 세계 주요 전기차 인버터 및 산업용 로봇의 전력 데이터를 실시간 분석하고 소자 폭발 및 모터 제어 불능 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 전자 문명의 스위칭 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - field-effect-transistor-fet-and-semiconductor-gate-physics

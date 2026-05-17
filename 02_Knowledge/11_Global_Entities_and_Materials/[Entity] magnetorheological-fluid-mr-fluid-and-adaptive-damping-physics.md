@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "magnetorheological-fluid-mr-fluid-and-adaptive-damping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] magnetorheological-fluid-mr-fluid-and-adaptive-damping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of smart fluid in a carrier liquid (Magnetorheological Fluid) that increases its apparent viscosity greatly to the point of becoming a visco-elastic solid when subjected to a magnetic field, and the study of using this effect for real-time vibration suppression (Adaptive Damping Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mr-fluid", "smart-materials", "adaptive-damping", "bingham-plastic", "rheology", "vibration-control", "semi-active-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Rheological_Response_Fidelity_Audit: Evaluate the high-fidelity ''Yield Stress'' response time to identify if high-fidelity ''Carrier Fluid Oxidation'' or high-fidelity ''Particle Aggregation'' is delaying the high-fidelity damping switch.'
-    - 'Magnetic_Saturation_Fidelity_Check: Analyze the high-fidelity ''Flux Density'' within the fluid gap to ensure that high-fidelity ''Magnetic Saturation'' is not capping the maximum high-fidelity damping force.'
-    - 'Sedimentation_Fidelity_Scan: Monitor the high-fidelity ''Particle Distribution'' to verify that high-fidelity ''Settling'' is not causing high-fidelity non-homogeneous damping performance.'
-Trust Metrics:
+  description: "[Entity] magnetorheological-fluid-mr-fluid-and-adaptive-damping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# Magnetorheological Fluid (MR Fluid) and Adaptive Damping Physics
+# [Entity] magnetorheological-fluid-mr-fluid-and-adaptive-damping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기 스위치 하나로 액체가 순식간에 강철처럼 딱딱해질 수 있다면 어떨까요? **Magnetorheological Fluid (MR Fluid) and Adaptive Damping Physics**는 기계 시스템에 '가변적 근육'을 달아주는 **'액체형 카멜레온'** 기술입니다. 평소에는 물처럼 흐르다가 자기장이 가해지면 내부의 미세 철분들이 사슬처럼 엉겨 붙어 엄청난 저항을 만들어냅니다. 지진이 났을 때 건물의 흔들림을 실시간으로 흡수하거나, 럭셔리 카의 서스펜션을 노면 상태에 맞춰 0.001초 만에 조절하는 등 **'물질의 상태 변화를 이용해 에너지의 흐름을 지능적으로 차단하는 능동형 감쇠 엔진'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "NOTICE: High-fidelity Magnetic Saturation - Maximum high-fidelity yield stress reached. Additional current provides no extra damping"
         return "PASS: Validated high-fidelity Magnetic Control Range"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(damping_force_n=5000, field_current_a=2.0, fluid_temp_c=65.0)
 print(engine.diagnose_fluid_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_fluid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mr-fluid-viscosity-vs-magnetic-field-v2026`와 연동되어, 지진 다발 구역 초고층 빌딩의 제진 장치 및 고속철도 현가장치의 실시간 진동 데이터를 분석하고 구조적 피로 및 탈선 사고 확률을 0.0001% 이하로 억제함으로써 지능형 기계 문명의 동적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - non-newtonian-fluid-dynamics-and-rheology-physics

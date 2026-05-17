@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "assistive-robot-and-rehabilitation-systems-entity"
-  domain: "108_Robotic_Surgery_and_Assistive_Devices_Hub"
+metadata:
+  id: "[[[Entity] assistive-robot-and-rehabilitation-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medical_Engineering", "#Robotics", "#Assistive_Technology", "#Rehabilitation", "#Exoskeleton", "#HRI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 108_robotic-surgery-and-assistive-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] assistive-robot-and-rehabilitation-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] assistive-robot-and-rehabilitation-systems
+# [Entity] assistive-robot-and-rehabilitation-systems
 
 ## 1. [왜 배우는가? (Why: The Restoration of Mobility)]]
 걷지 못하던 사람이 다시 일어서고, 잃어버린 팔 대신 로봇 의수로 물건을 집는 것은 인간의 존엄성을 회복하는 가장 숭고한 공학적 실천입니다. **보조 로봇 및 재활 시스템의 인간-로봇 상호작용 및 임피던스 제어 수리 역학 기술**은 기계를 인체의 확장으로 만들어 신체적 한계를 극복하는 '신체 복원' 기술입니다. 인간의 근육 신호를 읽어 로봇의 관절 토크로 변환하고, 로봇이 인간의 움직임을 방해하지 않으면서도 필요한 힘을 보조하며, 뇌의 신경 가소성을 자극하여 마비된 기능을 다시 깨웁니다. 우리가 이를 배우는 이유는 인체-기계 융합의 무결성을 확보함으로써, 노약자와 장애인의 이동권을 보장하고 삶의 질을 혁신하는 '글로벌 보조 로봇 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 보조 로봇의 무결성이 신체 자유의 회복과 인류의 진화적 확장을 결정합니다.

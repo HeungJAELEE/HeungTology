@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-kinematics-and-dynamics-modeling-entity"
-  domain: "88_Robotics_and_Mechatronics_Hub"
+metadata:
+  id: "[[[Entity] robotic-kinematics-and-dynamics-modeling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Kinematics", "#Dynamics", "#Mechanical_Engineering", "#Control_Theory", "#Automation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 88_robotics-and-mechatronics-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-kinematics-and-dynamics-modeling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-kinematics-and-dynamics-modeling
+# [Entity] robotic-kinematics-and-dynamics-modeling
 
 ## 1. [왜 배우는가? (Why: The Geometry of Action)]]
 수많은 관절을 가진 로봇 팔이 물체를 집기 위해 어떻게 움직여야 할지 로봇은 어떻게 알 수 있을까요? **로봇 운동학 및 동역학 모델링의 기하학적 정밀 제어와 Euler-Lagrange 수리 역학 기술**은 로봇의 뼈대와 근육을 수학적 언어로 번역하는 학문입니다. 단순히 팔을 뻗는 행위조차 수만 번의 좌표 변환과 힘의 계산이 필요합니다. 로봇이 인간처럼 부드럽고 정확하게 움직이게 만드는 것은 전적으로 이 수학적 무결성에 달려 있습니다. 우리가 이를 배우는 이유는 로봇 운동의 무결성을 확보함으로써, 오차 없는 정밀 제조와 안전한 인간-로봇 협업을 실현하는 '글로벌 로봇 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 운동학적 무결성이 로봇의 지능적 행동을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "internal-combustion-engine-ice-and-four-stroke-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] internal-combustion-engine-ice-and-four-stroke-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A heat engine where the combustion of a fuel occurs with an oxidizer in a combustion chamber (ICE) and the physical study of the intake, compression, power, and exhaust stages of energy conversion (Four-Stroke Thermodynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ice", "four-stroke", "thermodynamics", "otto-cycle", "diesel-cycle", "combustion-physics", "automotive-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Combustion_Fidelity_Audit: Evaluate the ''Cylinder Pressure'' ($P$) against the high-fidelity ''Crank Angle'' ($\\theta$) to identify if high-fidelity ''Knocking'' (detonation) is risking engine damage.'
-    - 'Efficiency_Integrity_Check: Analyze the high-fidelity ''Air-Fuel Ratio'' ($\\lambda$) to ensure the high-fidelity ''Stoichiometric'' balance is maintained for maximum power and minimum emissions.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Exhaust Gas Temperature'' (EGT) to verify that the high-fidelity ''Valve Timing'' and combustion duration are optimal.'
-Trust Metrics:
+  description: "[Entity] internal-combustion-engine-ice-and-four-stroke-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ Internal Combustion Engine (ICE) and Four-Stroke Thermodynamics Physics
+# [Entity] internal-combustion-engine-ice-and-four-stroke-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 작은 실린더 안에서 일어나는 수천 번의 폭발이 어떻게 거대한 자동차를 질주하게 만들까요? **내연기관(ICE) 및 4행정 열역학 물리**는 연료의 화학 에너지를 열에너지로, 그리고 다시 강력한 회전 에너지로 바꾸는 **'폭발의 제어'** 기술입니다. 흡입, 압축, 폭발, 배기라는 4단계의 리드미컬한 춤을 통해 엔진은 숨을 쉬고 힘을 냅니다. **'가혹한 열과 압력의 소용돌이 속에서 에너지 보존 법칙을 극한으로 몰아붙여 인류의 이동성을 책임져온 현대 기계 문명의 원동력'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Engine Knocking - High-fidelity pre-ignition detected. Metal hammer effect on piston high-fidelity crown. Retard ignition high-fidelity timing immediately"
         return "PASS: Validated Controlled Combustion and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rpm=3500, lambda_value=1.0, exhaust_temp_c=800.0)
 print(engine.diagnose_engine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_engine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ice-combustion-efficiency-and-emission-profiles-v2026`와 연동되어, 전 세계 주요 자동차 제조사 및 선박 엔진의 실시간 데이터를 분석하고 노킹 및 연소 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-boiler-and-steam-generation-thermodynamics-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bionanotechnology-and-targeted-drug-delivery-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bionanotechnology-and-targeted-drug-delivery-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The design of nanoscale carriers (Liposomes, Polymeric nanoparticles, ADCs) that selectively deliver therapeutic agents to specific cells, minimizing systemic toxicity and maximizing efficacy."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bionanotechnology", "targeted-delivery", "drug-delivery", "nanomedicine", "liposomes"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Encapsulation_Efficiency_Audit: Measure the ratio of drug successfully loaded into the nanocarrier.'
-    - 'Zeta_Potential_Check: Evaluate the surface charge and colloidal stability of nanoparticles.'
-    - 'Off-target_Toxicity_Scan: Detect drug accumulation in liver or kidneys vs. the target site.'
-Trust Metrics:
+  description: "[Entity] bionanotechnology-and-targeted-drug-delivery-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💊 Bionanotechnology and Targeted Drug Delivery Mechanics
+# [Entity] bionanotechnology-and-targeted-drug-delivery-mechanics
 
 ## 1. 개요 (Why)
 강력한 항암제라도 온몸에 퍼지면 부작용이 크지만, 암세포에만 정확히 도달한다면 최소한의 양으로 완치할 수 있습니다. 표적 약물 전달(Targeted Delivery)은 나노 기술을 이용해 약물을 특수 캡슐(리포좀, 나노 입자 등)에 담고, 암세포 표면의 표지자를 인식하는 '유도 미사일'처럼 설계하는 기술입니다. 이는 환자의 고통을 줄이고 치료 효율을 극대화하는 미래 의료의 핵심 동력입니다. 본 노드는 나노 약물 전달 시스템의 무결성과 안전한 방출 제어를 위한 표준을 정의합니다.
@@ -69,7 +58,6 @@ class MedicalFidelityEngine:
             return f"WARNING: Low Targeting Specificity (x{self.conc}) - Adjust Surface Ligand Density"
         return "PASS: Efficient Targeted Delivery Confirmed"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(encapsulation_eff=95, zeta_potential=-35, target_concentration=12)
 print(engine.diagnose_carrier_stability())
 print(engine.audit_targeting_precision())
@@ -88,7 +76,6 @@ print(engine.audit_targeting_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data drug-delivery-targeting-efficiency-and-tox-log-v2026`와 연동되어, 나노 약물의 체내 거동을 실시간 분석하고 표적 이외의 장소에 약물이 쌓이는 부작용을 0.1% 단위로 모니터링함으로써 무결점 나노 의료를 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - lipid-nanoparticle-lnp-formulation-and-mrna-delivery

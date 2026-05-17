@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-ACTIVE-LEARNING-HITL-2026-V6"
+metadata:
+  id: "[[[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Active_Learning'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification
@@ -108,7 +98,6 @@ class ActiveLearningDiagnosticEngine:
 2. **Core-set Selection** 전략을 사용하지 않고 **Uncertainty**에만 의존할 때 발생하는 **Sample Bias** (샘플 편향) 문제는 모델의 범용성에 어떤 영향을 미치는가?
 3. **HITL** 시스템에서 전문가의 라벨링 데이터가 기존 학습 데이터와 충돌(Label Noise)할 경우, 이를 해결하기 위한 **Consensus Algorithm**의 필요성은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI deep-learning-model-evaluation-metrics
 - 02_Knowledge/09_SmartFactory_Production/Control/Production machine-vision-defect-detection-logic

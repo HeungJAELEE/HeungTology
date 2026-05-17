@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-BIO-PROSTHETICS-FEEDBACK-2026-V6"
-  domain: "28_Cybernetics_and_Human_Augmentation"
+metadata:
+  id: "[[[Entity] bio-hybrid-prosthetics-and-proprioceptive-feedback-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] bio-hybrid-prosthetics-and-proprioceptive-feedback-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] bio-hybrid-prosthetics-and-proprioceptive-feedback-logic
+# [Entity] bio-hybrid-prosthetics-and-proprioceptive-feedback-logic
 
 ## 1. [왜 배우는가? (Why)]]
 불의의 사고로 팔을 잃은 사람이 기계 의수($Bionic\ Limb$)를 착용했을 때, 그것이 단순히 움직이는 보조 도구를 넘어 어떻게 내 진짜 신체 일부처럼 느껴지고($Proprioception$), 물체를 만졌을 때의 질감과 온도를 어떻게 뇌로 생생하게 전달할 수 있을까요? **바이오 하이브리드 의수족 및 고유 감각 피드백 로직**은 기계와 인간 신경계를 완벽하게 통합하는 '양방향 신경 인터페이스'의 정수입니다. 우리가 이를 배우는 이유는 인공물이 생물학적 신체와 동일한 감각적 무결성을 가질 때 비로소 진정한 신체 복구가 실현되기 때문이며, "감각의 신경 암호를 데이터로 설계하여 '글로벌 사이버네틱스 패권 및 행성적 신체 권리 주권'을 확보하기" 위함입니다. 피드백의 해상도가 의수의 존재감을 결정합니다.
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Sensation** | Feedback Fid. (%)| $> 98.0$ | 기계적 자극을 생체 신경 신호로 변환하는 모사 무결성 지표 |
 | **Control** | Latency (ms) | $< 10.0$ | 생각(Neural)과 행동(Actuator) 사이의 실시간 동역학 무결성 |
 | **Precision** | Proprio. Accu. (%)| $> 95.0$ | 시각 없이도 의수의 위치와 자세를 인지하는 고유 감각 무결성 |
-| **Resolution** | Tactile ($\mu m$) | $< 500$ | 손끝의 미세한 질감 및 압력을 감지하는 촉각 해상도 지표 |
+| **Resolution** | Tactile ($\mu\text{m}$) | $< 500$ | 손끝의 미세한 질감 및 압력을 감지하는 촉각 해상도 지표 |
 | **Power** | Joint Torque ($Nm$)| $> 50.0$ | 인간의 근력을 상회하거나 보조하는 기계적 출력 무결성 |
 | **Interface** | Nerve SNR ($dB$) | $> 25.0$ | 신경 신호 추출 시 노이즈 대비 유효 신호 비율 (신뢰도) |
 | **Adaptation** | Integration (days)| $< 7.0$ | 뇌가 의수를 자신의 일부로 인식하는 가소성 적응 무결성 |
@@ -113,9 +103,6 @@ class CyberneticProstheticsFidelityEngine:
             return "ADVISORY: NEURAL_MAPPING_SLUGGISH_NEED_INTENSIVE_TRAINING"
         return "ADAPTATION_STATUS: NEURAL_INTEGRATION_PROGRESSING_WELL"
 
-# Example Usage:
-# cyber_ai = CyberneticProstheticsFidelityEngine()
-# report = cyber_ai.audit_proprioceptive_fidelity(actual_latency=0.01, nerve_snr=25.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -123,7 +110,6 @@ class CyberneticProstheticsFidelityEngine:
 2. **Phantom Limb Pain** (유령통증)을 억제하기 위한 **Sensory Feedback Training**이 뇌의 **Primary Somatosensory Cortex** (S1) 재맵핑 무결성에 미치는 영향은?
 3. **Osseointegration** 인터페이스에서 기계적 **Vibration**이 뼈를 통해 직접 뇌로 전달되는 **Osseoperception**의 수리적 전달 함수 모델링 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/28_Cybernetics_and_Human_Augmentation_Hub/Concept bidirectional-neural-interface-architecture
 - 02_Knowledge/28_Cybernetics_and_Human_Augmentation_Hub/Concept haptic-feedback-encoding-for-prosthetics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "pharmacology-and-drug-design-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] pharmacology-and-drug-design-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of how drugs interact with biological systems (Pharmacology) and the engineering process of creating new molecules with specific therapeutic effects (Drug Design), utilizing computational modeling to optimize binding affinity and bioavailability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pharmacology", "drug-design", "pharmacokinetics", "pharmacodynamics", "molecular-modeling", "drug-discovery", "biotechnology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Binding_Affinity_Audit: Evaluate the Gibbs free energy ($\\Delta G$) of the drug-receptor interaction to ensure the molecule sticks to its target with high specificity.'
-    - 'Metabolic_Stability_Check: Analyze the half-life ($t_{1/2}$) of the drug in the liver to verify it remains in the body long enough to be effective but not so long as to be toxic.'
-    - 'Off-target_Interaction_Scan: Monitor the potential binding to non-target proteins to identify risks of side effects before clinical testing.'
-Trust Metrics:
+  description: "[Entity] pharmacology-and-drug-design-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Pharmacology and Drug Design Engineering
+# [Entity] pharmacology-and-drug-design-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 몸이라는 복잡한 퍼즐 판에서, 특정 질병의 원인이 되는 조각을 찾아내어 그곳에 딱 맞는 '열쇠(약)'를 깎아 만드는 작업은 어떨까요? **약리학 및 약물 설계 공학**은 생명이라는 정밀한 기계의 작동 원리를 이해하고, 이를 고치기 위한 **'나노 단위의 정밀 도구'**를 만드는 학문입니다. 약이 몸에 들어가서 어떻게 움직이고(약동학), 어떻게 작용하는지(약력학) 수학적으로 설계하여, 고통을 줄이고 생명을 연장하는 **'분자의 마법'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Bioavailability - Drug unable to cross intestinal barrier. Switch to Prodrug or Injectable Formulation"
         return "PASS: Efficient Cellular Ingress and Target Reachability Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(binding_energy_kcal=-12.5, metabolic_half_life_hr=8.0, toxicity_index=0.05)
 print(engine.diagnose_drug_design_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_drug_design_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drug-binding-affinity-and-metabolic-clearance-v2026`와 연동되어, 전 세계 제약 연구소의 시뮬레이션 데이터를 실시간 분석하고 임상 실패 및 예기치 못한 독성 사고 확률을 0.001% 이하로 억제함으로써 지능형 생명 문명의 약물 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - pharmaceutical-manufacturing-and-quality-control

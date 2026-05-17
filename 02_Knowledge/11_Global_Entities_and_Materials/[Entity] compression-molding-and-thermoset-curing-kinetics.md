@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "compression-molding-and-thermoset-curing-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] compression-molding-and-thermoset-curing-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method of molding in which the molding material, generally preheated, is first placed in an open, heated mold cavity (Compression Molding) and the chemical study of the irreversible cross-linking reaction that transforms the soft resin into a rigid, heat-resistant solid (Thermoset Curing Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["compression-molding", "thermoset", "curing-kinetics", "polymer-processing", "composite-manufacturing", "cross-linking", "industrial-molding"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Molding_Fidelity_Audit: Evaluate the ''Degree of Cure'' ($\\alpha$) to identify if the part is being demolded too early, leading to dimensional warping or ''Under-cured'' structural weakness.'
-    - 'Thermal_Integrity_Check: Analyze the exothermic heat release to ensure that ''Thermal Runaway'' is not occurring in thick sections, which causes internal charring or cracks.'
-    - 'Flow_Fidelity_Scan: Monitor the mold closing pressure and resin viscosity to verify that the ''Flash'' (excess material) is minimized and the cavity is fully packed before gelation.'
-Trust Metrics:
+  description: "[Entity] compression-molding-and-thermoset-curing-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗜️ Compression Molding and Thermoset Curing Kinetics
+# [Entity] compression-molding-and-thermoset-curing-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 주방의 내열 냄비 손잡이나 전기 절연 부품들이 뜨거운 열에도 녹지 않고 버티는 비결은 무엇일까요? **압축 성형 및 열경화성(Thermoset) 경화 역학**은 찐득한 반죽 상태의 플라스틱을 뜨거운 틀에 넣고 꾹 눌러서, 다시는 녹지 않는 단단한 고체로 바꾸는 **'분자의 영구 결합'** 기술입니다. '경화(Curing)'라고 불리는 이 과정은 분자들이 서로 손을 잡고 거대한 그물망을 만드는 화학적 마법입니다. 한 번 굳으면 절대 변심하지 않는 **'산업 문명의 단단한 뼈대'**를 만드는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Glass Transition Temperature - Material properties will degrade rapidly at operating temps. Improper resin mix suspected"
         return "PASS: Validated Material Stability and Verified Thermal Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(degree_of_cure_pct=92.5, mold_temp_c=165.0, clamping_force_kn=850.0)
 print(engine.diagnose_molding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_molding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data thermoset-curing-cycle-and-degree-of-conversion-v2026`와 연동되어, 전 세계 주요 전기 부품 및 복합 재료 공장의 데이터를 실시간 분석하고 미경화 및 타버림 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - composite-material-and-anisotropic-mechanics

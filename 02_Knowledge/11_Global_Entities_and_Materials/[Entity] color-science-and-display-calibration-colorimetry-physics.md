@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "color-science-and-display-calibration-colorimetry-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] color-science-and-display-calibration-colorimetry-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The scientific study of color perception and measurement (Colorimetry) as applied to display devices, focusing on color gamut mapping, white point calibration, and the physics of light-matter interaction."
-  physical_model: "N/A"
-Semantic:
-  tags: '["color-science", "colorimetry", "display-calibration", "cie-lab", "optical-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'Color_Accuracy_Audit: Measure the $\\Delta E$ value between target and displayed colors using a spectrophotometer.'
-    - 'Gamma_Curve_Verification: Evaluate the luminance linearity and grayscale tracking across all signal levels.'
-    - 'Gamut_Coverage_Check: Calculate the percentage of DCI-P3 or Rec.2020 color space achieved by the display.'
-Trust Metrics:
+  description: "[Entity] color-science-and-display-calibration-colorimetry-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎨 Color Science and Display Calibration: Colorimetry Physics
+# [Entity] color-science-and-display-calibration-colorimetry-physics
 
 ## 1. 개요 (Why)
 디스플레이에서 '진짜 색'을 보여주는 것은 단순한 심미적 문제를 넘어 의료, 영화 제작, 전자 상거래의 신뢰도를 결정짓는 핵심 기술입니다. 색과학은 인간이 느끼는 주관적인 색을 '숫자'로 정량화하여(Colorimetry), 어떤 디스플레이에서도 동일한 색이 나오도록 교정(Calibration)하는 학문입니다. 본 노드는 디스플레이 색 재현의 무결성과 광학적 정밀 교정을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class DisplayFidelityEngine:
             return f"REJECT: Narrow Color Gamut ({self.gamut}%) - Unsuitable for Professional Content"
         return "PASS: Wide Color Gamut Coverage Confirmed"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(delta_e_avg=0.8, white_point_err=0.0012, gamut_coverage_pct=98)
 print(engine.diagnose_calibration_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_calibration_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data display-color-accuracy-and-delta-e-metrics-v2026`와 연동되어, 생산 및 사용 중인 모든 디스플레이의 색 정확도 데이터를 실시간 분석하고 색 왜곡 확률을 0.1% 이하로 억제함으로써 고신뢰성 시각 정보의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 19_display-and-optical-intelligence-hub
 - oled-and-next-gen-display-physics

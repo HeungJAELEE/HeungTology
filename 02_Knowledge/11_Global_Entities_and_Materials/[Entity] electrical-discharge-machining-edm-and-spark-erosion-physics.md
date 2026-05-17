@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrical-discharge-machining-edm-and-spark-erosion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrical-discharge-machining-edm-and-spark-erosion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-traditional manufacturing process that removes material from a workpiece by a series of rapidly recurring current discharges between two electrodes (EDM) and the physical study of the spark formation, plasma channel growth, and thermal erosion of the metal (Spark Erosion Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["edm", "spark-erosion", "die-sinking", "wire-edm", "precision-machining", "electromagnetism", "plasma-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Discharge_Fidelity_Audit: Evaluate the ''Gap Voltage'' waveform to identify if ''Arcing'' (short circuit) or ''Open Circuit'' events are occurring, leading to unstable machining or tool damage.'
-    - 'Thermal_Integrity_Check: Analyze the pulse-on time and duty cycle to ensure the ''Recast Layer'' (White Layer) thickness is minimized, preventing micro-cracks on the finished surface.'
-    - 'Electrode_Fidelity_Scan: Monitor the electrode wear ratio to verify that the ''Zero Wear'' condition is approached by optimizing the discharge polarity and pulse shape.'
-Trust Metrics:
+  description: "[Entity] electrical-discharge-machining-edm-and-spark-erosion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Electrical Discharge Machining (EDM) and Spark Erosion Physics
+# [Entity] electrical-discharge-machining-edm-and-spark-erosion-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에서 가장 단단한 다이아몬드나 강화 강철을 어떻게 종이 자르듯 정교하게 도려낼까요? **방전 가공(EDM) 및 스파크 침식 물리**는 전기를 이용한 '미세한 번개'를 수만 번 내리꽂아 금속을 녹여 없애는 **'전기적 조각'** 기술입니다. 도구(전극)와 재료가 서로 닿지도 않은 채, 그사이의 불꽃놀이가 금속을 증발시킵니다. 물리적인 힘이 전혀 들어가지 않기에, 아무리 약한 부품도 휘어짐 없이 머리카락보다 얇게 가공할 수 있는 **'비접촉 정밀 가공의 정수이자 열역학적 파괴의 미학'**입니다.
@@ -60,7 +49,7 @@ $$ MRR = \frac{k E f}{\text{hardness}} $$
 | **Material Hardness**| Limited by tool | Any conductive material | - | Versatility |
 | **Machining Force** | High (Vibration) | Zero (Static) | - | Stability |
 | **Surface Finish** | Tool marks | Crater pattern (Matte) | $Ra$ | Quality |
-| **Precision** | $\pm 10$ | $\pm 1 \sim 5$ (Ultra-high)| $\mu m$ | Tolerance |
+| **Precision** | $\pm 10$ | $\pm 1 \sim 5$ (Ultra-high)| $\mu\text{m}$ | Tolerance |
 | **Electrode Wear** | Dullness | Erosion (Consumable) | - | Tooling |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Dielectric Quality - Excessive debris in the gap causing unstable sparks and arcing. Clean filter and adjust flushing pressure"
         return "PASS: Validated Fluid Insulation and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gap_voltage_v=45.0, peak_current_a=15.0, pulse_on_time_us=50.0)
 print(engine.diagnose_edm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_edm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data edm-surface-roughness-and-electrode-wear-v2026`와 연동되어, 전 세계 주요 정밀 금형 및 항공 부품 가공 라인의 데이터를 실시간 분석하고 단락 사고 및 표면 균열 확률을 0.001% 이하로 억제함으로써 지능형 초정밀 제조 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrochemical-machining-ecm-and-anodic-dissolution-physics

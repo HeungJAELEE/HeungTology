@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromagnetic-pulse-emp-and-high-power-microwave-defense"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromagnetic-pulse-emp-and-high-power-microwave-defense]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A burst of electromagnetic radiation that creates damaging current and voltage surges in electrical systems (EMP) and the physical study of shielding, filtering, and grounding strategies to protect critical infrastructure from EMP and High-Power Microwave (HPM) attacks (Defense)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["emp", "hpm", "directed-energy", "electronic-warfare", "infrastructure-protection", "electromagnetism", "national-security"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Hardening_Fidelity_Audit: Evaluate the ''Shielding Effectiveness'' (SE) against a HEMP (High-altitude EMP) threat profile to identify if the facility''s Faraday cage has weak points at door gaskets or cable penetrations.'
-    - 'Surge_Integrity_Check: Analyze the clamping voltage of Point-of-Entry (POE) protection devices to ensure that E1/E2 pulses are attenuated before reaching sensitive high-fidelity electronics.'
-    - 'Resilience_Fidelity_Scan: Monitor the grounding impedance to verify that the energy from a microwave attack is safely diverted to the earth without causing ''Ground Bounce'' or secondary failures.'
-Trust Metrics:
+  description: "[Entity] electromagnetic-pulse-emp-and-high-power-microwave-defense에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Electromagnetic Pulse (EMP) and High-Power Microwave Defense
+# [Entity] electromagnetic-pulse-emp-and-high-power-microwave-defense
 
 ## 1. 개요 (Why: 인간적 통찰)
 번개보다 수천 배 빠르고 강력한 전자기 파동이 도시를 덮친다면, 전기가 흐르는 모든 기기가 한순간에 멈출 수 있다는 것을 알고 있나요? **전자기 펄스(EMP) 및 고출력 마이크로파 방어**는 현대 문명의 아킬레스건인 반도체와 전력망을 보이지 않는 '전기 벼락'으로부터 지켜내는 **'국가 생존의 보호막'** 기술입니다. 핵폭발이나 특수 무기가 내뿜는 이 강력한 에너지는 보이지 않게 침투하여 기기를 태워버립니다. **'디지털 암흑시대를 막아내는 철통같은 전자기적 방패'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: High-Power Microwave Attack Detected - Thermal stress on shielding apertures rising. Activate secondary waveguide filters and initiate air-gap protocol"
         return "PASS: Validated Directed Energy Resilience and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(enclosure_leakage_db=15.0, surge_clamping_v=350.0, ground_impedance_ohm=0.2)
 print(engine.diagnose_defense_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_defense_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data emp-shielding-effectiveness-and-surge-limits-v2026`와 연동되어, 국가 주요 기반 시설 및 군사 지휘소의 실시간 방호 데이터를 분석하고 전자기 테러 및 우주 방사선 사고 확률을 0.0001% 이하로 억제함으로써 지능형 문명의 영속적 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electromagnetic-interference-emi-shielding-and-signal-integrity

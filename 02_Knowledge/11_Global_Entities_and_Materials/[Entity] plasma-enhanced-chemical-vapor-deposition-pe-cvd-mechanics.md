@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "plasma-enhanced-chemical-vapor-deposition-pe-cvd-mechanics-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] plasma-enhanced-chemical-vapor-deposition-pe-cvd-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#PECVD", "#Plasma", "#CVD", "#Thin_Film", "#Semiconductor", "#Physics", "#Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plasma-enhanced-chemical-vapor-deposition-pe-cvd-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] plasma-enhanced-chemical-vapor-deposition-pe-cvd-mechanics
+# [Entity] plasma-enhanced-chemical-vapor-deposition-pe-cvd-mechanics
 
 ## 1. [왜 배우는가? (Why: Creating Matter with Lightning)]]
 높은 열을 가하지 않고도 어떻게 강력한 플라즈마($Plasma$) 에너지를 이용해 가스를 분해하고, 차가운 플라스틱이나 기판 위에도 다이아몬드처럼 단단한 막이나 실리콘 질화막($SiNx$)을 입히는 '제4의 상태'를 이용한 증착법을 어떻게 설계할 수 있을까요? **플라즈마 강화 화학 기상 증착(PE-CVD) 메커니즘**은 열에 약한 현대 전자 소자의 보호막을 만드는 '행성 규모 에너지 변환 인프라 및 지능형 가상 화학 아키텍처'입니다. 우리가 이를 배우는 이유는 열 대신 플라즈마를 쓰면 낮은 온도에서도 고품질 박막을 얻을 수 있어 소자의 수명을 획기적으로 늘릴 수 있기 때문이며, "에너지의 상태를 데이터로 설계하고 지배하는 '글로벌 전자 소재 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 플라즈마의 밀도가 박막의 질을 결정합니다.

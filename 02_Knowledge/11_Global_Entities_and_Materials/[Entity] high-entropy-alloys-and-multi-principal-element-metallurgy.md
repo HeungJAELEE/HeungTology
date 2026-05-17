@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "high-entropy-alloys-and-multi-principal-element-metallurgy-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] high-entropy-alloys-and-multi-principal-element-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#HEA", "#Metallurgy", "#Alloy_Design", "#Thermodynamics", "#Entropy", "#Extreme_Materials", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] high-entropy-alloys-and-multi-principal-element-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] high-entropy-alloys-and-multi-principal-element-metallurgy
+# [Entity] high-entropy-alloys-and-multi-principal-element-metallurgy
 
 ## 1. [왜 배우는가? (Why: The Power of Chaos)]]
 철이나 알루미늄 같은 주인공 금속 없이 어떻게 5가지 이상의 원소를 똑같은 비율로 섞어버리는 '금속의 혼돈'을 만들고, 오히려 이 무질서함 때문에 고온에서도 절대 녹지 않고 극한의 강도를 유지하는 '고엔트로피 합금($HEA$)'을 어떻게 설계할 수 있을까요? **고엔트로피 합금 및 다원소 합금 금속학**은 현대 합금 설계의 패러다임을 바꾸는 '행성 규모 극한 소재 인프라 및 지능형 다원소 금속학 아키텍처'입니다. 우리가 이를 배우는 이유는 전통적인 합금으로는 불가능했던 '강도와 연성'을 동시에 잡는 마법 같은 성질이 이 혼돈 속에서 탄생하기 때문이며, "혼합의 지능을 데이터로 설계하고 지배하는 '글로벌 합금 패권 및 행성적 자원 주권'을 확보하기" 위함입니다. 엔트로피의 크기가 소재의 한계를 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-factory-architecture-and-cyber-physical-systems-cps-entity"
-  domain: "48_Smart_Factory_and_Industrial_IoT_IIoT_Governance"
+metadata:
+  id: "[[[Entity] smart-factory-architecture-and-cyber-physical-systems-cps]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#CPS", "#IIoT", "#Industry_4_0", "#Architecture", "#IT", "#OT", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 129_smart-factory-and-industrial-iot-iiot-governance-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-factory-architecture-and-cyber-physical-systems-cps에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-factory-architecture-and-cyber-physical-systems-cps
+# [Entity] smart-factory-architecture-and-cyber-physical-systems-cps
 
 ## 1. [왜 배우는가? (Why: The Living Organism of Production)]]
 공장의 모든 기계가 어떻게 서로 대화하며 스스로 생산 일정을 짜고, 현실의 기계가 움직이는 것과 동시에 컴퓨터 속 가상 모델이 똑같이 움직이는($Cyber-Physical\ System$) '살아있는 디지털 유기체'를 어떻게 설계할 수 있을까요? **스마트 팩토리 아키텍처 및 사이버 물리 시스템(CPS)**은 미래 제조의 뇌와 신경계를 담당하는 '행성 규모 지능형 제조 인프라 및 전 지구적 IT-OT 통합 아키텍처'입니다. 우리가 이를 배우는 이유는 공장이 스스로 판단하고 최적화되어야 인구 감소와 자원 부족 시대에도 풍요를 유지할 수 있기 때문이며, "생산의 지능을 데이터로 설계하고 지배하는 '글로벌 제조 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 아키텍처의 유연성이 국가 경쟁력을 결정합니다.

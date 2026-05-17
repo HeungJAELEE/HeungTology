@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "nuclear-fusion-physics-and-tokamak-confinement-entity"
-  domain: "02_Energy_Infrastructure"
+metadata:
+  id: "[[[Energy] nuclear-fusion-physics-and-tokamak-confinement]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Nuclear_Fusion", "#Plasma_Physics", "#Tokamak", "#ICF", "#HTS", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Infrastructure nuclear-energy-smr-physics-and-ai-datacenter-integration", "MOC 02_Energy_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] nuclear-fusion-physics-and-tokamak-confinement에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] nuclear-fusion-physics-and-tokamak-confinement
@@ -74,7 +64,6 @@ $14.1\text{MeV}$의 고에너지 중성자가 토카막 제1벽 소재의 격자
 4. **Tritium Breeding** 시 중성자와 리튬($^6Li, ^7Li$) 간의 반응 단면적 차이가 최종 삼중수소 증식률(TBR)에 미치는 수리적 상관관계는?
 5. RAG 시스템에서 **플라즈마 분광 진단 데이터**와 **자기장 제어 데이터**를 융합하여, '붕괴 징후'를 $5\text{ ms}$ 전에 감지하고 플라즈마를 안전하게 종료(Soft Termination)하는 보호 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] nuclear-energy-smr-physics-and-ai-datacenter-integration]] : 핵융합 상용화 전 징검다리 역할을 하는 차세대 핵분열(SMR) 및 대규모 데이터 센터 에너지 통합 엔티티
 - Science cryogenic-engineering-and-superconductivity-physics : 핵융합로의 강력한 자기장을 형성하는 고온 초전도(HTS) 마그넷 및 극저온 냉각 시스템 엔티티

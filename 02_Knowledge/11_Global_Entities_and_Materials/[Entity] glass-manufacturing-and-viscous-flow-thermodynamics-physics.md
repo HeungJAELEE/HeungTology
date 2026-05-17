@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "glass-manufacturing-and-viscous-flow-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] glass-manufacturing-and-viscous-flow-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of producing glass from raw materials like silica sand, soda ash, and limestone (Glass Manufacturing) and the physical study of temperature-dependent viscosity, glass transition, and non-crystalline solidification (Viscous Flow Thermodynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["glass-manufacturing", "viscosity", "viscous-flow", "thermodynamics", "molten-glass", "annealing", "vogel-fulcher", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Viscosity_Fidelity_Audit: Evaluate the ''Working Range'' temperature against the high-fidelity VFT curve to identify if the molten glass is too stiff for the ''Gob'' formation.'
-    - 'Thermal_Integrity_Check: Analyze the ''Annealing'' rate to ensure the high-fidelity residual stress is minimized, preventing spontaneous glass fracture due to thermal shock.'
-    - 'Flow_Fidelity_Scan: Monitor the high-fidelity ''Refining'' (bubbling) process to verify that all gas bubbles are removed from the melt through proper temperature-viscosity control.'
-Trust Metrics:
+  description: "[Entity] glass-manufacturing-and-viscous-flow-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🥃 Glass Manufacturing and Viscous Flow Thermodynamics Physics
+# [Entity] glass-manufacturing-and-viscous-flow-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 액체이면서 동시에 차가운 고체인 물질이 있을까요? **유리 제조 및 점성 유동 열역학 물리**는 모래가 녹아 흐르는 끈적한 '액체' 상태에서, 결정이 생기지 않고 그대로 굳어 투명해지는 '비정질(Amorphous)' 고체가 되는 **'얼어붙은 액체'**의 기술입니다. 꿀보다 억만 배나 끈적거리는 그 흐름을 정교하게 조절하여, 얇은 스마트폰 화면부터 거대한 창유리까지 만들어냅니다. **'혼돈의 원자들을 질서 있게 멈춰 세워 빛을 통과시키는 투명한 장벽을 조조하는 지능형 고온 역학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Refining Quality - High-fidelity bubbles (seeds) detected. Gas extraction logic failing. Increase residence time or adjust chemical refiners"
         return "PASS: Validated Optical Clarity and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(glass_melt_viscosity=50.0, furnace_pull_rate=100.0, annealing_lehrt_temp=560.0)
 print(engine.diagnose_glass_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_glass_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data glass-forming-viscosity-and-temperature-v2026`와 연동되어, 전 세계 주요 디스플레이 및 건축 유리 공장의 데이터를 실시간 분석하고 기포 불량 및 자파(Self-explosion) 사고 확률을 0.001% 이하로 억제함으로써 지능형 투명 소재 문명의 가공 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - extrudate-swell-and-viscoelastic-polymer-physics

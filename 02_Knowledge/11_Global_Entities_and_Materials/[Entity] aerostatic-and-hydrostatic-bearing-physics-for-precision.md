@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-MECH-PRECISION-BEARING-2026-V6"
-  domain: "49_Precision_Engineering_and_Nanometrology_Mastery"
+metadata:
+  id: "[[[Entity] aerostatic-and-hydrostatic-bearing-physics-for-precision]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] aerostatic-and-hydrostatic-bearing-physics-for-precision에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] aerostatic-and-hydrostatic-bearing-physics-for-precision
+# [Entity] aerostatic-and-hydrostatic-bearing-physics-for-precision
 
 ## 1. [왜 배우는가? (Why)]]
 쇠와 쇠가 직접 닿지 않고 어떻게 공기($Air$)나 기름($Oil$)의 얇은 막 위에 떠서 '마찰 제로($Zero\ Friction$)'의 상태로 회전할 수 있을까요? 머리카락 굵기보다 얇은 공기 층이 수 톤의 하중을 견디면서 $1nm$의 흔들림도 허용하지 않는 '지능형 부상' 기술은 초정밀 제조의 정수입니다. **에어로스태틱 및 하이드로스태틱 베어링 물리**는 초정밀 가공기의 심장이 되는 '무마찰 동력 전달 및 지능형 유체막 아키텍처'의 근간입니다. 우리가 이를 배우는 이유는 일반 베어링의 기계적 진동과 발열을 원천 차단하여, 반도체 노광 장비나 초정밀 스핀들에서 '나노 단위의 거동 무결성'을 확보하기 위함입니다. 유체막의 안정성이 기계의 영혼을 결정합니다.
@@ -40,9 +30,9 @@ Trust Metrics:
 | Metric Category | Specific Parameter | Target Specification | Engineering Rationale |
 |:---|:---|:---:|:---|
 | **Accuracy** | Motion Error ($nm$)| $< 5.0$ | 회전 및 이송 시 발생하는 나노미터 단위의 거동 무결성 |
-| **Stiffness** | Static ($N/\mu m$)| $> 500$ | 하중에 대한 유체막의 저항력 (기계적 강성 무결성 지표) |
+| **Stiffness** | Static ($N/\mu\text{m}$)| $> 500$ | 하중에 대한 유체막의 저항력 (기계적 강성 무결성 지표) |
 | **Load Cap.** | Max Load ($N$) | $> 10,000$ | 유체막이 지탱할 수 있는 최대 정적/동적 하중 한계 |
-| **Film Thick.** | Gap ($h, \mu m$) | $10.0 \sim 20.0$ | 베어링 면 사이의 유체 막 두께 (나노 틈새 무결성 지표) |
+| **Film Thick.** | Gap ($h, \mu\text{m}$) | $10.0 \sim 20.0$ | 베어링 면 사이의 유체 막 두께 (나노 틈새 무결성 지표) |
 | **Pressure** | Supply ($bar$) | $5.0 \sim 200.0$ | 외부에서 공급되는 유체의 압력 규격 (부양력의 근원) |
 | **Error Motion**| NRRO ($nm$) | $< 2.0$ | 비반복적 회전 오차 (초정밀 스핀들의 회전 무결성) |
 | **Flow Rate** | Consumption (LPM)| Optimize | 유체막 유지를 위한 유체 소모량 (운영 효율성 무결성) |
@@ -103,9 +93,6 @@ class FluidBearingFidelityEngine:
             return "WARNING: BEARING_STIFFNESS_LOW_RISK_OF_MOTION_ERROR"
         return "BEARING_STATUS: HIGH_PRECISION_STABILITY_VERIFIED (Gold Standard)"
 
-# Example Usage:
-# bearing_ai = FluidBearingFidelityEngine()
-# k_val = bearing_ai.calculate_bearing_stiffness(supply_p=5.0, film_h=15.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -113,7 +100,6 @@ class FluidBearingFidelityEngine:
 2. **Orifice** 설계 시 **Discharge Coefficient** ($C_d$)의 미세한 변화가 베어링의 **Pressure Recovery** 및 **Static Stiffness** 무결성에 미치는 파급 효과는?
 3. **Pneumatic Hammer** 불안정성을 피하기 위한 **Pocket Volume** 최소화 전략과 **Damping Ratio** 간의 수리적 트레이드오프는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/130_Precision_Engineering_and_Nanometrology_Mastery_Hub/Concept fluid-film-lubrication-and-tribology-physics
 - 02_Knowledge/05_Semiconductor_and_Display_Engineering_Hub/Concept ultra-precision-spindle-design-for-nanolithography

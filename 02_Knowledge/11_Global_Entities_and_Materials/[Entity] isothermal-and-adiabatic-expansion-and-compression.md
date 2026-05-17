@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-THERMO-EXP-COMP-2026-V6"
-  domain: "01_Industrial_Physics_and_Thermodynamics"
+metadata:
+  id: "[[[Entity] isothermal-and-adiabatic-expansion-and-compression]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] isothermal-and-adiabatic-expansion-and-compression에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] isothermal-and-adiabatic-expansion-and-compression
+# [Entity] isothermal-and-adiabatic-expansion-and-compression
 
 ## 1. [왜 배우는가? (Why)]]
 산업용 압축기, 터빈, 엔진의 효율을 극대화하기 위해서는 작동 유체가 팽창하거나 압축될 때 발생하는 에너지 변환 경로를 정밀하게 설계해야 합니다. **등온(Isothermal) 및 단열(Adiabatic) 과정**은 열역학적 일(Work) 추출의 두 가지 극단적인 한계를 정의합니다. 우리가 이를 배우는 이유는 열 손실을 제어하면서 시스템이 수행하는 일을 수리적으로 예측하기 위함이며, "공정 속도와 단열 성능에 따른 경로의 무결성을 확보하여 에너지 효율의 이론적 한계를 사수하기" 위함입니다. 팽창과 압축의 경로($P-V$ Curve)가 기계의 출력을 결정합니다.
@@ -121,9 +111,6 @@ class ExpansionPathFidelityEngine:
             "Fidelity": 0.99 if abs(W) > 0 else 0
         }
 
-# Example Usage:
-# engine = ExpansionPathFidelityEngine(gamma=1.4)
-# result = engine.calculate_work(P1=101325, V1=0.001, V2=0.002, process_type='adiabatic')
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -131,7 +118,6 @@ class ExpansionPathFidelityEngine:
 2. **Isothermal Compression**을 달성하기 위해 필요한 무한소(Infinitesimal) 속도 조건과 **Entropy Production** 무결성 사이의 관계는?
 3. **Adiabatic Compression** 시 기체의 온도가 급격히 상승하는 기전을 **Molecular Kinetic Energy** 무결성 관점에서 설명하면?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Concept laws-of-thermodynamics-overview
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Entity isochoric-and-isobaric-thermodynamic-processes

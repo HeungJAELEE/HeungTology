@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-communication-protocols-modbus-profibus-ethernet-ip"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-communication-protocols-modbus-profibus-ethernet-ip]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The set of standardized rules and formats (Protocols) that enable data exchange between industrial devices (PLC, Sensors, Actuators), spanning legacy Fieldbus systems (Modbus, Profibus) and modern Industrial Ethernet (EtherNet/IP, PROFINET)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-communication", "modbus", "profibus", "ethernet-ip", "fieldbus", "industrial-ethernet", "smart-factory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Network_Determinism_Audit: Measure the jitter and latency of critical control frames to ensure they meet the real-time requirements of the process.'
-    - 'Packet_Error_Rate_Check: Evaluate the frequency of CRC errors and retransmissions to identify electrical noise or cable degradation.'
-    - 'Topology_Integrity_Scan: Monitor the health of ring or star topologies to ensure the network can withstand single-point failures without losing connectivity.'
-Trust Metrics:
+  description: "[Entity] industrial-communication-protocols-modbus-profibus-ethernet-ip에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔌 Industrial Communication Protocols (Modbus, Profibus, EtherNet/IP)
+# [Entity] industrial-communication-protocols-modbus-profibus-ethernet-ip
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장은 거대한 생명체와 같습니다. 뇌(PLC)가 명령을 내리면 근육(모터)이 움직이고 감각기관(센서)이 보고합니다. 이때 이들이 서로 소통하는 공통의 언어가 바로 **산업용 통신 프로토콜**입니다. 아주 단순한 신호부터(Modbus), 고집스럽게 자리를 지켜온 전통의 강자(Profibus), 그리고 인터넷 기술을 공장으로 가져온 현대적인 언어(EtherNet/IP)까지 다양합니다. 이 프로토콜들은 시끄러운 전기 노이즈 속에서도 "지금 당장 멈춰!"라는 명령을 단 0.001초의 오차도 없이 전달하는 **'공장의 신뢰할 수 있는 대화법'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Communication Corruption - Severe Physical Layer Issues Suspected"
         return "PASS: Data Frame Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cycle_time_jitter_ms=0.25, packet_loss_rate=0.0001, bus_utilization_pct(45.5, bus_utilization_pct=45.5) # Fix
 engine = FactoryFidelityEngine(0.25, 0.0001, 45.5)
 print(engine.diagnose_network_health())
@@ -108,7 +96,6 @@ print(engine.diagnose_network_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-network-latency-and-packet-reliability-v2026`와 연동되어, 공장 내 모든 통신 프레임을 실시간 분석하고 통신 두절 및 데이터 변조 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라의 신경망 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-internet-of-things-iiot-and-edge-analytics

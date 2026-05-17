@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "aircraft-electric-propulsion-and-superconducting-motor-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] aircraft-electric-propulsion-and-superconducting-motor-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technology of using electric motors and fans to provide thrust for flight, rather than traditional combustion engines (Aircraft Electric Propulsion) and the use of superconducting materials to achieve the extremely high power-to-weight ratios required for large-scale aviation (Superconducting Motor Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electric-propulsion", "superconducting-motor", "aeronautics", "evtol", "electromagnetism", "thermal-management", "zero-emission"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Propulsion_Fidelity_Audit: Evaluate the ''Power-to-Weight Ratio'' (kW/kg) of the electric motor to identify if it meets the critical threshold required for aircraft take-off without excessive battery weight.'
-    - 'Superconducting_Integrity_Check: Analyze the magnetic flux density and current density ($J_c$) to ensure the superconducting coils are operating safely below the ''Quench'' limit.'
-    - 'Cryogenic_Fidelity_Scan: Monitor the liquid nitrogen/hydrogen cooling system to verify that the motor windings remain at superconducting temperatures ($<77K$) during high-load ascent.'
-Trust Metrics:
+  description: "[Entity] aircraft-electric-propulsion-and-superconducting-motor-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ✈️ Aircraft Electric Propulsion and Superconducting Motor Physics
+# [Entity] aircraft-electric-propulsion-and-superconducting-motor-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 여객기가 기름 한 방울 쓰지 않고 전기 모터의 힘으로 조용하고 깨끗하게 하늘을 나는 꿈, 과연 가능할까요? **항공기 전기 추진 및 초전도 모터 물리**는 비행기의 고질적 문제인 '무게'와 '출력'의 한계를 **'초전도(Superconductivity)'**라는 물리학의 정수로 해결하는 **'하늘의 에너지 혁명'** 기술입니다. 저항이 0이 되는 초전도 현상을 이용해, 기존 모터보다 5배 가벼우면서도 대형 여객기를 띄울 수 있는 엄청난 힘을 내뿜습니다. 탄소 배출 없는 **'청정 하늘의 지능형 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Battery Stress - High C-rate causing thermal runaway risk. Inverters must limit peak current during climb"
         return "PASS: Validated Energy Delivery and Verified Safety Margin Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(motor_power_density=25.5, cooling_system_temp=70.5, magnetic_flux_t=3.2)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data superconducting-motor-power-density-and-cryogenic-load-v2026`와 연동되어, 전 세계 주요 전기 비행기 및 eVTOL의 추진 데이터를 실시간 분석하고 엔진 정지 및 냉각 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 항공 문명의 청정 항행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - aeronautical-engineering-and-supersonic-flight-physics

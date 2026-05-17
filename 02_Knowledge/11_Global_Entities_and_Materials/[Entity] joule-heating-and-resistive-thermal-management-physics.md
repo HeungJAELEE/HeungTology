@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "joule-heating-and-resistive-thermal-management-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] joule-heating-and-resistive-thermal-management-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process by which the passage of an electric current through a conductor produces heat (Joule Heating) and the physical logic of dissipating or utilizing this heat to maintain system stability (Resistive Thermal Management Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["joule-heating", "thermal-management", "resistance", "electric-heating", "power-dissipation", "heat-sink", "semiconductor-cooling", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Heating_Fidelity_Audit: Evaluate the ''Contact Resistance'' to identify if high-fidelity ''Hot Spots'' are forming at connections, risking high-fidelity fire or material high-fidelity melting.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Heat Sink'' efficiency against the Joule load to ensure the high-fidelity ''Junction Temperature'' ($T_j$) remains within safe semiconductor high-fidelity limits.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Leakage Current'' and insulation high-fidelity integrity to verify that high-fidelity ''Thermal Runaway'' is not occurring.'
-Trust Metrics:
+  description: "[Entity] joule-heating-and-resistive-thermal-management-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Joule Heating and Resistive Thermal Management Physics
+# [Entity] joule-heating-and-resistive-thermal-management-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기장판은 어떻게 따뜻해지고, 스마트폰은 왜 게임을 할 때 뜨거워질까요? **줄 가열 및 저항 열관리 물리**는 전기가 흐를 때 저항이라는 '마찰' 때문에 발생하는 열을 다루는 **'전기의 양날의 검'** 기술입니다. 어떤 때는 이 열을 이용해 물을 끓이거나 금속을 녹이고(히터), 어떤 때는 이 열 때문에 기계가 고장 나지 않도록 필사적으로 밖으로 내보냅니다(냉각). **'전류와 저항의 관계를 수학적으로 제어하여 에너지를 열로 변환하거나, 시스템의 파괴를 막기 위해 열을 배출하는 지능형 열/전기 관리 엔진'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Dielectric Breakdown - High-fidelity insulation failing due to high-fidelity thermal stress. Risk of high-fidelity short circuit"
         return "PASS: Validated Insulation Strength and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_amps=100.0, contact_resistance_mohm=5.0, heatsink_temp_c=65.0)
 print(engine.diagnose_thermal_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_thermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data conductor-resistivity-and-temperature-rise-v2026`와 연동되어, 전 세계 주요 전기차 충전소 및 슈퍼컴퓨터 센터의 실시간 열 데이터를 분석하고 화재 및 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 문명의 열적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - integrated-circuit-ic-packaging-and-thermal-management-physics

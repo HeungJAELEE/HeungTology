@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flame-retardant-material-and-thermal-decomposition-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flame-retardant-material-and-thermal-decomposition-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A substance that is used in thermoplastic, thermoset, textile and coating applications to inhibit, suppress, or delay the production of flames (Flame Retardant) and the physical study of polymer breakdown and gas-phase inhibition (Thermal Decomposition Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["flame-retardant", "thermal-decomposition", "fire-safety", "polymer-science", "char-formation", "intumescent", "physics", "material-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Time to Ignition'' (TTI) to identify if high-fidelity ''Endothermic Fillers'' (like $Al(OH)_3$) are effectively absorbing heat and releasing water vapor.'
-    - 'Char_Integrity_Check: Analyze the ''Char Yield'' and its high-fidelity thermal conductivity to ensure the protective carbonaceous layer is insulating the underlying material from heat.'
-    - 'Smoke_Fidelity_Scan: Monitor the smoke density and toxicity to verify that the high-fidelity ''Gas Phase'' inhibition is not resulting in excessive lethal byproducts during fire.'
-Trust Metrics:
+  description: "[Entity] flame-retardant-material-and-thermal-decomposition-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Flame Retardant Material and Thermal Decomposition Physics
+# [Entity] flame-retardant-material-and-thermal-decomposition-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 플라스틱 의자나 벽지가 불에 닿았을 때 활활 타오르는 대신 스르르 녹거나 까맣게 타면서 불길이 멈춘다면 어떨까요? **난연 재료 및 열분해 물리**는 가연성 물질이 불의 먹이가 되는 것을 방해하는 **'소리 없는 소방관'** 기술입니다. 물질이 뜨거워지면 스스로 수증기를 내뿜어 식히거나, 표면에 단단한 숯(Char) 층을 만들어 열의 침투를 막습니다. **'물질의 성질을 바꾸어 재앙이 번지는 속도를 늦추고 생명을 구할 시간을 벌어주는 산업의 보이지 않는 방패'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fire Spread Risk - Melting polymer is carrying flame to other areas. V-2 rating only. Need V-0 with high-fidelity anti-dripping agents (PTFE)"
         return "PASS: Validated Melt Control and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(heat_release_rate_kw_m2=85.0, tga_residue_pct=35.0, smoke_toxicity_index=0.2)
 print(engine.diagnose_material_safety())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_material_safety())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data polymer-flammability-and-char-yield-v2026`와 연동되어, 전 세계 주요 가전 및 건축 자재의 난연 데이터를 실시간 분석하고 대형 화재 및 유독 가스 질식 사고 확률을 0.001% 이하로 억제함으로써 지능형 주거 및 산업 문명의 화재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - epoxy-resin-and-thermosetting-polymer-physics

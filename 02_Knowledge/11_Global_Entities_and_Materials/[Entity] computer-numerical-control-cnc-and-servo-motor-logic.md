@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-numerical-control-cnc-and-servo-motor-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-numerical-control-cnc-and-servo-motor-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The automated control of machining tools via a computer (CNC) and the precise control of position, velocity, and acceleration through feedback-controlled actuators (Servo Motor Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnc", "servo-motor", "motion-control", "precision-engineering", "feedback-loop", "industrial-automation", "servo-tuning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Servo_Fidelity_Audit: Evaluate the ''Following Error'' (command vs. actual position) to identify if the PID gains are too low (sluggish response) or too high (oscillation/vibration).'
-    - 'Thermal_Integrity_Check: Analyze the motor winding temperature and current draw to ensure that the ''Duty Cycle'' is not exceeding the motor''s thermal limits during high-speed rapid moves.'
-    - 'Feedback_Fidelity_Scan: Monitor the encoder pulse counts and signal noise to verify that the ''Electronic Gearing'' and positional feedback are synchronized without lost steps.'
-Trust Metrics:
+  description: "[Entity] computer-numerical-control-cnc-and-servo-motor-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Computer Numerical Control (CNC) and Servo Motor Logic
+# [Entity] computer-numerical-control-cnc-and-servo-motor-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공작 기계가 어떻게 보이지 않는 힘을 다스려 마이크로미터 단위의 정확한 위치에 딱 멈출 수 있을까요? **CNC 및 서보 모터(Servo Motor) 로직**은 전기 에너지를 정밀한 '움직임'으로 바꾸는 **'기계의 근육과 신경'** 기술입니다. 일반 모터가 단순히 도는 것에 집중한다면, 서보 모터는 자신의 위치를 끊임없이 확인하며 목표 지점까지 0.001mm의 오차도 없이 달려갑니다. 디지털 명령을 물리적 실체로 구현하는 **'제조 문명의 정밀한 집행자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Encoder Signal Corruption - High electrical noise detected in feedback line. Risk of lost positional reference. Check shielding and grounding"
         return "PASS: Validated Positional Feedback and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(following_error_um=2.5, settling_time_ms=12.0, motor_temp_c=45.0)
 print(engine.diagnose_servo_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_servo_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data servo-motor-positional-accuracy-and-settling-time-v2026`와 연동되어, 전 세계 주요 반도체 본딩 장비 및 고정밀 공작 기계의 데이터를 실시간 분석하고 위치 이탈 및 탈조 사고 확률을 0.0001% 이하로 억제함으로써 지능형 정밀 문명의 동작 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-and-g-code-interpolation-logic

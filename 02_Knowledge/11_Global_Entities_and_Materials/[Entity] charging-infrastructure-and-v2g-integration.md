@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "charging-infrastructure-and-v2g-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] charging-infrastructure-and-v2g-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physical and digital infrastructure for EV charging, focusing on Vehicle-to-Grid (V2G) technology that allows EVs to return stored energy back to the power grid for stabilization."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ev-charging", "v2g", "smart-grid", "energy-storage", "bidirectional-charging"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BMSFidelityEngine"
-  diagnostic_protocol:
-    - 'Charging_Efficiency_Audit: Measure the AC-to-DC conversion losses during high-power charging.'
-    - 'V2G_Response_Check: Evaluate the latency and accuracy of the vehicle''s response to grid frequency signals.'
-    - 'Battery_Degradation_Scan: Analyze the impact of bidirectional cycling on battery SoH (State of Health).'
-Trust Metrics:
+  description: "[Entity] charging-infrastructure-and-v2g-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔌 Charging Infrastructure and V2G Integration
+# [Entity] charging-infrastructure-and-v2g-integration
 
 ## 1. 개요 (Why)
 전기차는 달리는 운송 수단인 동시에 거대한 '움직이는 배터리'입니다. 충전 인프라는 단순히 전기를 채워주는 역할을 넘어, 전력망이 불안정할 때 전기차에 저장된 전기를 다시 꺼내 쓰는 V2G(Vehicle-to-Grid) 기술을 통해 에너지 네트워크를 안정화합니다. 이는 신재생 에너지의 불확실성을 해결하고, 전기차 소유자에게는 새로운 수익 모델을 제공합니다. 본 노드는 스마트 충전 및 양방향 전력 전송의 무결성을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class BMSFidelityEngine:
             return f"REJECT: Low Conversion Efficiency ({self.eff}%) - Check Inverter/Cooling Status"
         return "PASS: High-Efficiency Power Transfer Confirmed"
 
-# Instance Diagnostic
 engine = BMSFidelityEngine(charging_efficiency=94.5, v2g_latency_ms=350, harmonic_distortion=2.1)
 print(engine.diagnose_grid_compliance())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_grid_compliance())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data charging-efficiency-and-v2g-grid-impact-v2026`와 연동되어, 모든 충전 세션의 전력 품질과 배터리 상태를 실시간 분석하고 전력망 사고 확률을 0.1% 이하로 억제함으로써 에너지 자율화의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - battery-management-system-bms-algorithms-and-safety

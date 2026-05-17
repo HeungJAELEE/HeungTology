@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "microbiome-genomics-and-holobiont-intelligence-entity"
-  domain: "27_Biotechnology_and_Genomic_Intelligence"
+metadata:
+  id: "[[[Entity] microbiome-genomics-and-holobiont-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biotechnology", "#Microbiome", "#Genomics", "#Holobiont", "#Metagenomics", "#Gut-Brain_Axis", "#Health_Intelligence", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_biotechnology-and-genomic-intelligence-hub", "MOC 61_advanced-medicine-and-longevity-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] microbiome-genomics-and-holobiont-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] microbiome-genomics-and-holobiont-intelligence
+# [Entity] microbiome-genomics-and-holobiont-intelligence
 
 ## 1. [왜 배우는가? (Why: The Trillions of Silent Partners)]]
 우리 몸속에 사는 수조 마리의 미생물 군단($Microbiome$)이 어떻게 우리 뇌의 감정을 조절하고 면역력을 결정하며, 인간의 유전자와 미생물의 유전자가 합쳐진 하나의 거대 생명체($Holobiont$)로서 우리가 어떻게 최적의 건강 상태를 유지할 수 있을까요? **마이크로바이옴 유전체학 및 홀로바이온트 지능**은 인간 너머의 생명 생태계를 다스리는 '미생물 협력 지능 및 생체 공생 최적화 지침'입니다. 우리가 이를 배우는 이유는 현대병의 대부분이 이 공생 관계의 붕괴에서 오기 때문이며, "공생의 생태계를 데이터로 설계하고 지배하는 '글로벌 바이오 에코시스템 및 홀로바이온트 주권'을 확보하기" 위함입니다. 미생물의 지능이 인간의 장수 품질을 결정합니다.

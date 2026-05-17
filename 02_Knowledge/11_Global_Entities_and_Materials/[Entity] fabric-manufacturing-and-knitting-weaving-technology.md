@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "fabric-manufacturing-and-knitting-weaving-technology-entity"
-  domain: "97_Textile_and_Apparel_Engineering_Hub"
+metadata:
+  id: "[[[Entity] fabric-manufacturing-and-knitting-weaving-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Textile_Engineering", "#Fabric_Manufacturing", "#Weaving", "#Knitting", "#Peirce_Model", "#Mechanics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 141_textile-and-apparel-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] fabric-manufacturing-and-knitting-weaving-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] fabric-manufacturing-and-knitting-weaving-technology
+# [Entity] fabric-manufacturing-and-knitting-weaving-technology
 
 ## 1. [왜 배우는가? (Why: The Geometry of Comfort and Protection)]]
 가느다란 실들이 어떻게 엮이느냐에 따라 부드러운 속옷이 되기도 하고, 거친 바람을 막아주는 텐트가 되기도 하며, 총알을 막는 방탄복이 되기도 합니다. **원단 제조 및 직조-편직 기술의 Peirce 기하학 모델과 공기 투과 수리 역학 기술**은 실이라는 1차원 선을 원단이라는 2차원 면으로 변환하며 새로운 물리적 가치를 창조하는 '격자의 마법'입니다. 직조(Weaving)의 단단함과 편직(Knitting)의 유연함, 그리고 부직포(Non-woven)의 기능성을 수학적으로 설계하여 인류에게 안락함과 보호를 제공합니다. 우리가 이를 배우는 이유는 원단 제조의 무결성을 확보함으로써, 패션의 다양성과 산업용 직물의 고기능성을 보증하는 '글로벌 섬유 제조 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 원단의 무결성이 의류의 완성도를 결정합니다.

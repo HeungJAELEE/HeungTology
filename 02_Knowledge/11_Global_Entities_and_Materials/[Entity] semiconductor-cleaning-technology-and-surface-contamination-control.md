@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-cleaning-technology-and-surface-contamination-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] semiconductor-cleaning-technology-and-surface-contamination-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The critical process of removing chemical, particulate, and metallic contaminants from wafer surfaces throughout the fabrication cycle to ensure device reliability and yield."
-  physical_model: "N/A"
-Semantic:
-  tags: '["semiconductor-cleaning", "wafer-cleaning", "contamination-control", "rca-clean", "surface-chemistry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "CleanFidelityEngine"
-  diagnostic_protocol:
-    - 'Particle_Removal_Efficiency_Audit: Measure PRE for specific particle sizes (e.g., >10nm).'
-    - 'Metallic_Contamination_Scan: Detect trace metals (Fe, Cu, Ni) via VPD-ICP-MS.'
-    - 'Etch_Amount_Control: Monitor silicon/oxide loss during chemical cleaning steps.'
-Trust Metrics:
+  description: "[Entity] semiconductor-cleaning-technology-and-surface-contamination-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧼 Semiconductor Cleaning Technology and Surface Contamination Control
+# [Entity] semiconductor-cleaning-technology-and-surface-contamination-control
 
 ## 1. 개요 (Why)
 반도체 제조 공정의 약 30%는 세정(Cleaning)입니다. 나노미터 단위의 공정에서는 보이지 않는 아주 작은 파티클 하나가 전체 칩을 파괴하는 치명적 불량(Killer Defect)이 됩니다. 식각, 증착, 이온 주입 등 각 공정 단계 전후로 웨이퍼 표면을 완벽하게 정화하는 세정 기술은 수율 사수의 최전방 방어선입니다. 본 노드는 웨이퍼 표면의 원자 수준 청정도를 확보하기 위한 세정 공정 표준을 정의합니다.
@@ -70,7 +59,6 @@ class CleanFidelityEngine:
             return f"WARNING: Excessive Etch Loss ({self.loss}nm) - Potential Device Thinning"
         return "PASS: Surface Integrity Maintained"
 
-# Instance Diagnostic
 engine = CleanFidelityEngine(initial_particles=1000, final_particles=5, etch_loss_nm=0.2)
 print(engine.calculate_pre())
 ```
@@ -88,7 +76,6 @@ print(engine.calculate_pre())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data wafer-surface-particle-count-and-removal-efficiency-v2026`와 연동되어, 공정별 오염 유입원을 추적하고 세정 후 잔류 파티클을 0.1개/cm^2 이하로 유지함으로써 반도체 소자의 장기 신뢰성을 결정론적으로 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - rca-cleaning-sc1-sc2-mechanics

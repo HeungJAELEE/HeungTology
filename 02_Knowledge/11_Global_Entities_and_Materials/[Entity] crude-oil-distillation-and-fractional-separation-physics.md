@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crude-oil-distillation-and-fractional-separation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crude-oil-distillation-and-fractional-separation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The first and most fundamental step in oil refining that separates raw crude into useful products like gasoline, jet fuel, and diesel (Crude Oil Distillation) and the physical study of separating components based on their different boiling points in a vertical column (Fractional Separation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crude-oil", "distillation", "fractional-separation", "refining", "thermodynamics", "chemical-engineering", "petroleum"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Distillation_Fidelity_Audit: Evaluate the ''Temperature Profile'' and reflux ratio to identify if ''Entrainment'' (liquid carrying to upper trays) or ''Weeping'' (liquid falling through vapor holes) is reducing the purity of the kerosene or diesel fractions.'
-    - 'Thermal_Integrity_Check: Analyze the furnace outlet temperature to ensure that ''Thermal Cracking'' (coking) is not occurring in the pipes, while maximizing the vaporization of the heavy residue.'
-    - 'Purity_Fidelity_Scan: Monitor the ''Cut Points'' (boiling ranges) to verify that each fraction meets the flash point and freeze point specifications for jet fuel and motor gasoline.'
-Trust Metrics:
+  description: "[Entity] crude-oil-distillation-and-fractional-separation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛢️ Crude Oil Distillation and Fractional Separation Physics
+# [Entity] crude-oil-distillation-and-fractional-separation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 검고 끈적한 원유가 어떻게 맑은 휘발유나 강력한 경유로 변할까요? **원유 증류 및 분별 증류 물리**는 혼란스럽게 섞여 있는 탄화수소들을 끓는점이라는 '개성'에 따라 한 줄로 세워 나누는 **'분자의 질서 정돈'** 기술입니다. 거대한 탑(Distillation Tower) 안에서 가열된 원유 증기는 위로 올라가며 식는데, 가벼운 녀석(휘발유)은 꼭대기까지, 무거운 녀석(아스팔트)은 바닥에 남습니다. 보이지 않는 끓는점의 차이를 이용해 문명의 연료를 빚어내는 **'현대 연금술의 시작점'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Column Flooding Imminent - Vapor velocity too high, pushing liquid upward. Separation lost. Reduce feed rate or furnace duty immediately"
         return "PASS: Validated Hydraulic Flow and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tower_top_temp_c=42.0, reflux_ratio=0.8, flash_point_jet_fuel_c=45.0)
 print(engine.diagnose_refinery_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_refinery_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crude-oil-assay-and-distillation-cut-points-v2026`와 연동되어, 전 세계 주요 정유 단지의 데이터를 실시간 분석하고 제품 불량 및 플랜트 폭발 사고 확률을 0.0001% 이하로 억제함으로써 지능형 에너지 문명의 연료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cetane-number-and-diesel-combustion-kinetics

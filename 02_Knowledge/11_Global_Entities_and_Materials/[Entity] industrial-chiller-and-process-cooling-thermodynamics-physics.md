@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-chiller-and-process-cooling-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-chiller-and-process-cooling-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine that removes heat from a liquid via a vapor-compression or absorption refrigeration cycle (Industrial Chiller) and the physical study of heat load management and refrigerant phase dynamics (Process Cooling Thermodynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["chiller", "process-cooling", "thermodynamics", "refrigeration", "cop", "industrial-cooling", "hvac", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cooling_Fidelity_Audit: Evaluate the ''Approach Temperature'' (Temp difference between refrigerant and liquid) to identify if high-fidelity ''Fouling'' is reducing the evaporator efficiency.'
-    - 'Load_Integrity_Check: Analyze the high-fidelity ''Part-load Efficiency'' (IPLV) to ensure the high-fidelity ''Variable Speed Drive'' (VSD) is optimizing energy consumption during fluctuating demands.'
-    - 'Stability_Fidelity_Scan: Monitor the high-fidelity ''Superheat'' and ''Subcooling'' to verify that high-fidelity ''Refrigerant Charge'' is optimal for preventing compressor liquid slugging.'
-Trust Metrics:
+  description: "[Entity] industrial-chiller-and-process-cooling-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Industrial Chiller and Process Cooling Thermodynamics Physics
+# [Entity] industrial-chiller-and-process-cooling-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 뜨겁게 달궈진 기계들을 식히기 위해 얼음물을 콸콸 쏟아부어야 한다면 그 에너지는 어디서 올까요? **산업용 칠러 및 공정 냉각 열역학 물리**는 거대한 냉장고처럼 물을 아주 차갑게 만들어 공장 구석구석으로 보내는 **'에너지의 냉기 배달'** 기술입니다. 단순한 시원함이 아니라, 반도체 장비나 사출기 등이 과열로 멈추지 않게 0.1도 단위의 정밀한 온도를 유지해야 하는 생명선입니다. **'열기를 낚아채어 밖으로 뿜어내고 정밀 공정의 적정 온도를 사수하는 지능형 산업용 냉각 요새'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Liquid Return Risk - Superheat too low for high-fidelity safety. Potential high-fidelity compressor damage. Adjust expansion valve high-fidelity gain"
         return "PASS: Validated Thermodynamic Cycle and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chilled_water_out=7.0, return_water_in=12.0, compressor_power_kw=150.0)
 print(engine.diagnose_chiller_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_chiller_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data chiller-efficiency-and-cooling-load-v2026`와 연동되어, 전 세계 주요 데이터 센터 및 첨단 팹(Fab)의 실시간 냉각 데이터를 분석하고 장비 과열 및 칠러 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 하이테크 제조 문명의 온도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-pump-and-refrigeration-cycle-thermodynamics-physics

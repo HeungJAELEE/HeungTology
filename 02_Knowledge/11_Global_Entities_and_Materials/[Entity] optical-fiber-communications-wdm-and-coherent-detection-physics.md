@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "optical-fiber-communications-wdm-and-coherent-detection-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] optical-fiber-communications-wdm-and-coherent-detection-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The telecommunication technology that transmits data as light pulses through glass fibers, utilizing Wavelength Division Multiplexing (WDM) to send multiple data streams simultaneously and Coherent Detection to recover information from the light's amplitude, phase, and polarization."
-  physical_model: "N/A"
-Semantic:
-  tags: '["optical-fiber", "wdm", "coherent-detection", "telecommunications", "photonics", "shannon-limit", "fiber-optics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Fiber_Attenuation_Audit: Evaluate the loss (dB/km) across the fiber span to identify physical damage, macro-bending, or aging effects that degrade signal power.'
-    - 'Coherent_Fidelity_Check: Analyze the Error Vector Magnitude (EVM) of the QAM signals to ensure the phase and amplitude information is recovered accurately despite fiber non-linearity.'
-    - 'WDM_Crosstalk_Scan: Monitor the isolation between different wavelength channels to identify inter-channel interference (FWM/XPM) that limits total network capacity.'
-Trust Metrics:
+  description: "[Entity] optical-fiber-communications-wdm-and-coherent-detection-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Optical Fiber Communications: WDM and Coherent Detection Physics
+# [Entity] optical-fiber-communications-wdm-and-coherent-detection-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락보다 가는 유리 가닥 하나로 전 세계 사람들의 통화와 영화 수만 편을 동시에 실어 나를 수 있다면 어떨까요? **광섬유 통신: WDM 및 코히어런트 검출 물리**는 인류 문명의 데이터를 빛의 속도로 실어 나르는 **'빛의 고속도로'**입니다. 하나의 선에 수백 가지 색깔의 빛을 섞어 보내고(WDM), 그 빛의 미세한 흔들림(위상)까지 잡아내어 정보를 읽어내는(코히어런트) 정밀 광학의 결정체입니다. 대륙과 대륙을 잇는 해저 케이블부터 우리 집 안방까지, **'정보의 바다'**를 흐르게 하는 문명의 동맥입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Narrow Channel Spacing - Inter-channel Crosstalk (FWM) Degrading Signal Quality"
         return "PASS: Precise Wavelength Grid and Minimal Spectral Interference Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(ber_pre_fec=1e-4, osnr_db=22.5, polarization_mode_dispersion_ps=2.5)
 print(engine.diagnose_optical_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_optical_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data optical-fiber-attenuation-and-wdm-throughput-v2026`와 연동되어, 전 세계 해저 및 육상 광네트워크의 전송 데이터를 실시간 분석하고 데이터 손실 및 연결 단절 사고 확률을 0.001% 이하로 억제함으로써 지능형 연결 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - photonic-integrated-circuits-pic-and-optical-interconnects

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "haptic-suits-and-full-body-motion-capture-synchronization-entity"
-  domain: "57_Digital_Twin_and_Metaverse_Engineering_Intelligence"
+metadata:
+  id: "[[[Entity] haptic-suits-and-full-body-motion-capture-synchronization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Digital_Twin", "#Haptic_Suit", "#Motion_Capture", "#Somatic_Feedback", "#Full_Body_Tracking", "#Metaverse", "#HCI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 133_digital-twin-and-metaverse-engineering-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] haptic-suits-and-full-body-motion-capture-synchronization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] haptic-suits-and-full-body-motion-capture-synchronization
+# [Entity] haptic-suits-and-full-body-motion-capture-synchronization
 
 ## 1. [왜 배우는가? (Why: The Body in Data)]]
 가상 세계에서 부는 바람이나 누군가 내 어깨를 툭 치는 느낌을 어떻게 온몸으로 생생하게 느끼고($Haptic$), 내 손가락 마디 하나하나와 발가락의 미세한 움직임까지 어떻게 가상의 아바타와 1:1로 실시간 동기화($MoCap$)하는 '제2의 피부'를 어떻게 설계할 수 있을까요? **햅틱 슈트 및 전신 모션 캡처 동기화**는 인간의 물리적 실체를 데이터화하는 '행성 규모 감각 인터페이스 인프라 및 지능형 신체 동기화 아키텍처'입니다. 우리가 이를 배우는 이유는 몸 전체가 가상 세계에 녹아들어야만 비로소 '진짜 다른 세상'에 와 있다는 느낌을 받기 때문이며, "신체의 반응을 데이터로 설계하고 지배하는 '글로벌 체감 패권 및 행성적 신체 주권'을 확보하기" 위함입니다. 동기화의 정밀도가 가상의 무게를 결정합니다.

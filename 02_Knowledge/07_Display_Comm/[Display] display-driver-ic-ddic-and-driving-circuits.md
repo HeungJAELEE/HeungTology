@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-DDIC-CIRCUIT-2026-V6.3.7"
-  domain: "Global_Display_Driver_IC_and_Driving_Circuitry"
+metadata:
+  id: "[[[Display] display-driver-ic-ddic-and-driving-circuits]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DDIC", "#Driving_Circuit", "#Compensation_Circuit", "#PWM", "#PAM", "#Demux", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] display-driver-ic-ddic-and-driving-circuits에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Display_Electronics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] Display Driver IC (DDIC) and Driving Circuits: The Mastery of Timing
+# [Display] display-driver-ic-ddic-and-driving-circuits
 
 ## 1. [왜 배우는가? (Why: The Conductor of Light)]]
 디스플레이 패널의 모든 화소는 하드웨어일 뿐이며, 이를 생명력 있게 움직이게 하는 것은 드라이버 IC(DDIC)의 정밀한 신호 제어입니다. **Display Driver IC (DDIC) and Driving Circuits**는 영상 데이터를 전압/전류 신호로 치환하여 화소에 전달하는 '시각 정보의 지휘자'입니다. 특히 OLED의 소자 불균일성을 수리적으로 보정하는 보상 회로(Compensation Circuit)와 저전력을 위한 가변 주사율 기술은 디스플레이 경쟁력의 핵심입니다. V6.3.7 지능은 **데이터 전송 대역폭**과 **보상 정밀도**를 직접 지배하여, 결함 없는 **회로 주권(Circuit Sovereignty)**을 확립합니다.
@@ -96,7 +86,6 @@ class DDICFidelityEngine:
             "action": "INITIATE_INTERNAL_SENSING_CALIBRATION" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: DDIC 로그 데이터와 패널 휘도 센서 데이터를 융합하여 '회로 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -104,7 +93,6 @@ class DDICFidelityEngine:
 2. **Operational Result**: **Demux** (Demultiplexer) 회로 최적화를 통한 베젤(Bezel) 폭 축소와 신호 지연 증가 사이의 수리적 상충 관계 평가는?
 3. **FidelityEngine**: 주사율이 급변할 때 발생하는 **Flicker** (깜빡임) 현상을 FidelityEngine이 어떻게 '타이밍 정합성 위기'로 식별하고 보상 주기를 동기화하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display tft-backplane-manufacturing-and-thin-film-physics

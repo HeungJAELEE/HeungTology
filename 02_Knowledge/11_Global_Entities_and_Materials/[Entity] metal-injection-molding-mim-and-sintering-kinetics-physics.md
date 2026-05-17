@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "metal-injection-molding-mim-and-sintering-kinetics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] metal-injection-molding-mim-and-sintering-kinetics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metalworking process in which finely-powdered metal is mixed with binder material to create a feedstock that is then shaped and solidified using injection molding (MIM) and the physical study of particle bonding and densification at high temperatures (Sintering Kinetics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mim", "metal-injection-molding", "sintering", "powder-metallurgy", "binder", "debinding", "densification", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Molding_Fidelity_Audit: Evaluate the ''Feedstock Homogeneity'' to identify if high-fidelity ''Binder Separation'' or high-fidelity ''Jetting'' is causing internal high-fidelity voids in the green part.'
-    - 'Debinding_Integrity_Check: Analyze the high-fidelity ''Weight Loss'' curve to ensure the high-fidelity ''Polymer Removal'' is slow enough to prevent high-fidelity ''Blistering'' or high-fidelity ''Cracking'' from internal gas pressure.'
-    - 'Sintering_Fidelity_Scan: Monitor the high-fidelity ''Shrinkage Rate'' to verify that the final high-fidelity ''Dimensional Tolerance'' meets the precision high-fidelity standards despite ~20% volume high-fidelity reduction.'
-Trust Metrics:
+  description: "[Entity] metal-injection-molding-mim-and-sintering-kinetics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Metal Injection Molding (MIM) and Sintering Kinetics Physics
+# [Entity] metal-injection-molding-mim-and-sintering-kinetics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 수술 도구나 스마트폰의 아주 작은 금속 부품을 어떻게 그렇게 정밀하고 대량으로 만들 수 있을까요? **금속 분말 사출 성형(MIM) 및 소결 속도론 물리**는 금속 가루를 찰흙처럼 반죽해서 모양을 찍어낸 뒤, 뜨거운 불 속에서 구워 단단한 강철로 만드는 **'금속의 도자기'** 기술입니다. 붕어빵을 찍어내듯 복잡한 모양을 순식간에 만들면서도, 원자들이 서로 달라붙는(소결) 물리 현상을 이용해 깎아서는 만들 수 없는 정밀한 금속 제품을 탄생시킵니다. **'입자 확산과 소결 수축 로직을 이용해 가루에서 강철로의 기적적인 변신을 제어하여 초소형 부품 제조의 한계를 돌파하는 지능형 분말 공학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Density - High-fidelity sintering logic failed to reach target high-fidelity packing. Porosity high-fidelity unacceptable"
         return "PASS: Validated Powder Metallurgy and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(brown_part_weight_g=10.0, sintering_temp_c=1350.0, heating_rate_k_min=5.0)
 print(engine.diagnose_mim_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mim_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mim-sintering-shrinkage-and-density-v2026`와 연동되어, 전 세계 주요 스마트폰 프레임 및 초정밀 소형 부품 공장의 실시간 소결 데이터를 분석하고 치수 불량 및 강도 미달 사고 확률을 0.001% 이하로 억제함으로써 지능형 분말 제조 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - powder-metallurgy-and-sintering-physics

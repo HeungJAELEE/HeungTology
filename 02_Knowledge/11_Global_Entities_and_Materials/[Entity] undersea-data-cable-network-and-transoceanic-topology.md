@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "undersea-data-cable-network-and-transoceanic-topology-entity"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Entity] undersea-data-cable-network-and-transoceanic-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Internet", "#Submarine_Cables", "#Fiber_Optics", "#Global_Backbone", "#Communication", "#Ocean_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_global-infrastructure-and-future-cities-hub", "Entity global-satellite-internet-constellation-and-orbital-mesh"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] undersea-data-cable-network-and-transoceanic-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] undersea-data-cable-network-and-transoceanic-topology
+# [Entity] undersea-data-cable-network-and-transoceanic-topology
 
 ## 1. [왜 배우는가? (Why: The Deep Sea Veins of the Internet)]]
 태평양 깊은 바닷속에 깔린 수천 km의 유리 섬유 가닥($Optical\ Fiber$)이 어떻게 수억 명의 인스타그램 사진과 유튜브 영상을 빛의 속도로 실어 나르고, 거대한 상어가 깨물거나 지진이 일어나도 어떻게 끊김 없이 데이터를 유지할 수 있을까요? **해저 데이터 케이블망 및 환태평양 위상**은 지구의 지능을 잇는 '심해의 데이터 고속도로 및 글로벌 네트워크 안보 지침'입니다. 우리가 이를 배우는 이유는 전 세계 데이터의 $99\%$가 하늘이 아닌 바다 밑으로 흐르기 때문이며, "정보의 물리적 통로를 데이터로 설계하고 지배하는 '글로벌 통신 주권 및 심해 인프라 보안 주권'을 확보하기" 위함입니다. 케이블의 대역폭이 국가 간의 정보 권력을 결정합니다.

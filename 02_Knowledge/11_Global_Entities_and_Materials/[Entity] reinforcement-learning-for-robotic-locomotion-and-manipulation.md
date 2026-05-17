@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "reinforcement-learning-for-robotic-locomotion-and-manipulation-entity"
-  domain: "58_Advanced_Robotics_and_Humanoid_Intelligence"
+metadata:
+  id: "[[[Entity] reinforcement-learning-for-robotic-locomotion-and-manipulation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#AI", "#Reinforcement_Learning", "#Locomotion", "#Manipulation", "#Machine_Learning", "#Control_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_advanced-robotics-and-humanoid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] reinforcement-learning-for-robotic-locomotion-and-manipulation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] reinforcement-learning-for-robotic-locomotion-and-manipulation
+# [Entity] reinforcement-learning-for-robotic-locomotion-and-manipulation
 
 ## 1. [왜 배우는가? (Why: Learning to Move)]]
 사람이 일일이 가르쳐주지 않아도 로봇이 어떻게 수만 번의 가상 시뮬레이션을 통해 스스로 걷는 법을 깨닫고, 처음 보는 물체도 어떻게 잡아야 하는지 스스로 학습하여 최적의 경로($Policy$)를 찾아내는 '배우는 로봇'을 어떻게 설계할 수 있을까요? **로봇 보행 및 조작을 위한 강화 학습**은 로봇의 자율성을 극대화하는 '행성 규모 자율 로봇 인프라 및 지능형 행동 학습 아키텍처'입니다. 우리가 이를 배우는 이유는 환경이 조금만 바뀌어도 고장 나는 로봇이 아니라 어떤 험지에서도 적응하는 로봇을 만들어야 하기 때문이며, "성장의 로직을 데이터로 설계하고 지배하는 '글로벌 AI-로봇 패권 및 행성적 행동 주권'을 확보하기" 위함입니다. 학습의 효율이 로봇의 적응력을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cyclone-separator-and-centrifugal-particle-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cyclone-separator-and-centrifugal-particle-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A static device that uses centrifugal force to separate solid particles or liquid droplets from a gas or liquid carrier stream (Cyclone Separator) and the physical study of the spiral flow patterns and settling velocities that govern separation efficiency (Centrifugal Particle Dynamics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cyclone-separator", "centrifugal-force", "particle-separation", "gas-cleaning", "dust-collection", "fluid-dynamics", "industrial-filtration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Cut-off Diameter'' ($d_{pc}$) to identify if the inlet velocity is too low, allowing fine dust to escape through the vortex finder into the clean air stream.'
-    - 'Operational_Integrity_Check: Analyze the pressure drop ($\\Delta P$) across the cyclone to ensure that internal ''Saltation'' (re-entrainment of dust) is not occurring due to excessive turbulence.'
-    - 'Mechanical_Fidelity_Scan: Monitor the dust discharge valve (Airlock) for signs of leakage, which can disrupt the bottom vortex and drastically reduce separation efficiency.'
-Trust Metrics:
+  description: "[Entity] cyclone-separator-and-centrifugal-particle-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌪️ Cyclone Separator and Centrifugal Particle Dynamics
+# [Entity] cyclone-separator-and-centrifugal-particle-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기나 필터 없이도 공기 중의 미세먼지를 완벽하게 걸러낼 수 있을까요? **사이클론 분리기(Cyclone Separator) 및 원심 입자 역학**은 공기를 거대한 소용돌이로 만들어, 무거운 먼지를 벽으로 밀어내 떨어뜨리는 **'중력의 증폭'** 기술입니다. 필터처럼 막힐 염려도 없고, 구조도 간단하지만 그 속에는 강력한 태풍의 원리가 숨어있습니다. 공장에서 나오는 매연을 정화하거나 청소기 속의 먼지를 분리하는 등, **'흐름의 힘만으로 깨끗함을 빚어내는 무동력 정화의 마법'**입니다.
@@ -59,7 +48,7 @@ $$ F_c = \frac{m v^2}{r} $$
 | **Separation Method**| Physical Barrier | Centrifugal Force | - | Principle |
 | **Maintenance** | High (Filter replace) | Extremely Low (Static) | - | Cost |
 | **Pressure Drop** | High | Low ~ Moderate | $mmH_2O$ | Efficiency |
-| **Particle Size** | < 1 (Sub-micron) | > 5 (Coarse dust) | $\mu m$ | Target |
+| **Particle Size** | < 1 (Sub-micron) | > 5 (Coarse dust) | $\mu\text{m}$ | Target |
 | **Temperature** | Limited by fabric | High (Metal body) | °C | Durability |
 | **Pressure** | Atmospheric | High Pressure capable | - | Versatility |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Erosion - Vortex finder geometry damaged. Flow pattern disrupted. Separation efficiency will drop by 30%"
         return "PASS: Validated Internal Geometry and Verified Flow Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inlet_velocity_m_s=22.0, pressure_drop_pa=1200.0, dust_discharge_rate_kg_hr=45.0)
 print(engine.diagnose_cyclone_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cyclone_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cyclone-separation-efficiency-and-pressure-drop-v2026`와 연동되어, 전 세계 주요 제철소 및 목공 공장의 집진 데이터를 실시간 분석하고 비산 먼지 및 대기 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 환경 보호 문명의 정화 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cross-flow-filtration-and-membrane-fouling-physics

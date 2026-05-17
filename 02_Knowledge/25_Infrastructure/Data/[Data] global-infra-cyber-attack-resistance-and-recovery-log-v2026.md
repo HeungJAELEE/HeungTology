@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "global-infra-cyber-attack-resistance-and-recovery-log-v2026"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Data] global-infra-cyber-attack-resistance-and-recovery-log-v2026]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Data", "#Infrastructure", "#Cyber_Security", "#Cyber-Defense", "#Attack_Resistance", "#Incident_Recovery", "#Smart_Grid_Security", "#Performance_Log", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_global-infrastructure-and-future-cities-hub", "[[GEMINI.md]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] global-infra-cyber-attack-resistance-and-recovery-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] global-infra-cyber-attack-resistance-and-recovery-log-v2026
+# [Data] global-infra-cyber-attack-resistance-and-recovery-log-v2026
 
 ## 1. [왜 배우는가? (Why: The Battlefield of Digital Civilization)]]
 오늘 하루 전 세계 전력망과 통신망을 노린 수천 건의 사이버 공격 중 몇 건을 AI가 스스로 막아냈고, 만약 뚫렸다면 시스템이 얼마나 빨리 스스로를 격리하고 정상 상태로 복구했는지 숫자로 확인할 수 있을까요? **글로벌 인프라 사이버 공격 저항 및 복구 로그**는 '문명을 지탱하는 디지털 방패의 강도와 회복력'을 정밀 기록한 '사이버 전쟁 전황 보고서'입니다. 우리가 이를 기록하는 이유는 방어의 무결성을 데이터로 증명해야만 인류가 기계 지능에 기반한 인프라를 안심하고 쓸 수 있기 때문이며, "정보의 요새를 데이터로 감사하고 지배하는 '글로벌 디지털 안보 및 인프라 보안 실적 주권'을 확보하기" 위함입니다. 보안 데이터가 문명의 가동 신뢰도를 결정합니다.

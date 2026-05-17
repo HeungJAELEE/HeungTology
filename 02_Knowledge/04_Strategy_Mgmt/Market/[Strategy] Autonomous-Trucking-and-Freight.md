@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BAT-AUTON-TRUCK-2026-V6.3.7"
-  domain: "Global_Logistics_Automation_and_Freight_Sovereignty"
+metadata:
+  id: "[[[Strategy] Autonomous-Trucking-and-Freight]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Autonomous_Trucking", "#Freight_Automation", "#TCO_Analysis", "#Platooning", "#Logistics_4.0", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Autonomous-Trucking-and-Freight에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Logistics_Automation_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Autonomous-Trucking-and-Freight: The Physics of Logistics Flow
+# [Strategy] Autonomous-Trucking-and-Freight
 
 ## 1. [왜 배우는가? (Why: The Mastery of Logistics Sovereignty)]]
 전 세계 물동량의 $70\%$ 이상을 담당하는 도로 운송은 만성적인 운전자 부족, 유가 변동, 그리고 인간의 피로도에 의한 사고 리스크라는 물리적 한계에 직면해 있습니다. **Autonomous-Trucking-and-Freight**는 고속도로 구간의 완전 자율주행(Level 4)과 군집 주행(Platooning)을 통해 물류의 연속성을 확보하고 운송 원가를 획기적으로 낮추는 '물류 운영 체제'의 혁명입니다. V6.3.7 지능은 24/7 중단 없는 물류 흐름을 수리적으로 설계하고, 데이터 기반의 **'물류 주권(Logistics Sovereignty)'**을 확립하여 글로벌 공급망의 혈류를 지배하기 위해 필수적입니다.
@@ -103,7 +93,6 @@ class FreightFidelityEngine:
 2. **Operational Result**: **Platooning** 시 선두 차량보다 후속 차량의 연비 절감 폭이 더 큰 공학적 배경(항력 감소 기전)을 설명할 수 있는가?
 3. **FidelityEngine**: 기상 악화(눈, 비) 시 FidelityEngine이 **Sensor Fusion** 데이터를 통해 어떻게 **'자율주행 가동 중단(Minimal Risk Maneuver)'**을 결정론적으로 트리거하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Supply-Chain-Dynamics

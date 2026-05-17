@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "phase-diagrams-and-gibbs-phase-rule-applications"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] phase-diagrams-and-gibbs-phase-rule-applications]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The graphical representation of the equilibrium states of a material system under varying temperature, pressure, and composition (Phase Diagrams), and the mathematical rule (Gibbs Phase Rule) that determines the number of independent variables (Degrees of Freedom) required to specify the state of the system."
-  physical_model: "N/A"
-Semantic:
-  tags: '["phase-diagram", "gibbs-phase-rule", "thermodynamics", "metallurgy", "eutectic", "alloy-design", "materials-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Phase_Stability_Audit: Evaluate the Gibbs Phase Rule ($F$) to determine if the system is at an invariant point (e.g., Triple point, Eutectic point) where conditions are fixed.'
-    - 'Composition_Precision_Check: Analyze the lever rule calculations on the phase diagram to predict the fraction of each phase present at a given temperature and composition.'
-    - 'Microstructure_Evolution_Scan: Monitor the cooling path on the phase diagram to identify potential precipitation or phase transformations that impact mechanical properties.'
-Trust Metrics:
+  description: "[Entity] phase-diagrams-and-gibbs-phase-rule-applications에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Phase Diagrams and Gibbs Phase Rule Applications
+# [Entity] phase-diagrams-and-gibbs-phase-rule-applications
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상의 모든 물질이 온도와 압력에 따라 얼음이 되었다가, 물이 되었다가, 수증기가 되는 과정을 하나의 '지도'로 그릴 수 있다면 어떨까요? **상평형도(Phase Diagram) 및 깁스 상 규칙**은 물질이 가질 수 있는 모든 상태를 보여주는 **'재료의 지도'**입니다. 이 지도를 통해 우리는 금속을 어떻게 섞어야 가장 단단해지는지, 쇳물이 몇 도에서 굳기 시작하는지 정확히 알 수 있습니다. 재료 공학자들이 물질의 미래를 예측하기 위해 가장 먼저 펼쳐보는 **'공학적 예언서'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Coarse Eutectic Microstructure - Cooling Rate Insufficient for High Strength. Refine Process"
         return "PASS: Fine Lamellar Structure and Verified Phase Transformation Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(composition_error_pct=0.1, cooling_rate_k_min=2.5, equilibrium_deviation=0.02)
 print(engine.diagnose_phase_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_phase_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data alloy-phase-stability-and-eutectic-points-v2026`와 연동되어, 전 세계 제련 및 합금 공장의 데이터를 실시간 분석하고 성분 불량 및 원치 않는 상 변화 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nucleation-and-growth-kinetics-in-solidification

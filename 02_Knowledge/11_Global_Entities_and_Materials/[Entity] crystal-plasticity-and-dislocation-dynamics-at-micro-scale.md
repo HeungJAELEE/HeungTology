@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crystal-plasticity-and-dislocation-dynamics-at-micro-scale"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crystal-plasticity-and-dislocation-dynamics-at-micro-scale]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The multiscale modeling and physical analysis of how crystalline materials deform permanently (Plasticity) through the movement and interaction of line defects (Dislocations) within specific slip systems at the micro and meso scale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crystal-plasticity", "dislocation-dynamics", "micro-mechanics", "strain-hardening", "slip-systems"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Dislocation_Density_Audit: Measure the density of line defects ($\\rho$) using Transmission Electron Microscopy (TEM) or EBSD.'
-    - 'Slip_System_Activity_Check: Identify active slip planes and directions based on crystal orientation and applied stress.'
-    - 'Strain_Hardening_Rate_Scan: Evaluate the material''s resistance to further deformation as dislocations tangle and multiply.'
-Trust Metrics:
+  description: "[Entity] crystal-plasticity-and-dislocation-dynamics-at-micro-scale에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Crystal Plasticity and Dislocation Dynamics at Micro-Scale
+# [Entity] crystal-plasticity-and-dislocation-dynamics-at-micro-scale
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속은 휘어지기는 하지만 쉽게 부러지지는 않습니다. 이 질긴 생명력의 비밀은 결정 내부의 **'전위(Dislocation)'**라는 원자 수준의 결함에 있습니다. 금속에 힘을 주면 이 결함들이 마치 카펫의 주름이 밀려나듯 결정 격자를 따라 이동하며 모양을 바꿉니다. **결정 소성(Crystal Plasticity)**은 이 미세한 움직임들이 모여 거대한 기계 부품의 형상이 변하는 과정을 설명하는 학문입니다. 전위가 어디로 흐르고 어디서 멈추는지를 아는 것은, 더 가볍고 더 튼튼한 미래형 자동차와 항공기 엔진을 설계하는 핵심 지도입니다.
@@ -94,7 +83,6 @@ class FactoryFidelityEngine:
             return "NOTICE: Annealed State - High Ductility, Low Strength"
         return "PASS: Work-hardened State within Operational Strength Limits"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_strain_rate=1e-3, dislocation_density=1e12, critical_shear_stress=150)
 print(engine.diagnose_plastic_stability(applied_tau=180))
 ```
@@ -112,7 +100,6 @@ print(engine.diagnose_plastic_stability(applied_tau=180))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data material-yield-strength-and-dislocation-density-v2026`와 연동되어, 생산 라인에서 가공되는 금속의 미세 조직 데이터를 실시간 분석하고 가공 불량 및 피로 파괴 확률을 0.1% 이하로 억제함으로써 고신뢰성 금속 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - crystal-lattices-and-unit-cell-geometry

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "human-ai-collaborative-governance-and-legal-interfaces"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] human-ai-collaborative-governance-and-legal-interfaces]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systemic framework for managing the co-existence of human decision-makers and AI agents (Collaborative Governance) and the legal structures that define liability, rights, and ethical boundaries (Legal Interfaces) for autonomous systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ai-governance", "legal-tech", "human-ai-collaboration", "ethics", "responsibility", "regulatory-framework"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'AI_Accountability_Audit: Trace the decision-making path of autonomous agents to assign clear human/corporate responsibility for outcomes.'
-    - 'Ethical_Boundary_Check: Monitor AI actions against predefined ''Red Lines'' to prevent discriminatory or harmful behaviors in real-time.'
-    - 'Human-in-the-loop_Verification: Evaluate the effectiveness and responsiveness of human oversight in critical AI-led processes (e.g., medical, judicial, military).'
-Trust Metrics:
+  description: "[Entity] human-ai-collaborative-governance-and-legal-interfaces에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Human-AI Collaborative Governance and Legal Interfaces
+# [Entity] human-ai-collaborative-governance-and-legal-interfaces
 
 ## 1. 개요 (Why: 인간적 통찰)
 인공지능이 스스로 판단하고 행동하는 시대, 가장 무서운 것은 "잘못됐을 때 누가 책임지는가?"라는 질문입니다. **인간-AI 협동 거버넌스 및 법률 인터페이스**는 기계와 인간이 함께 사는 세상의 **'디지털 헌법'**입니다. AI를 단순히 도구로 볼 것인지, 아니면 법적 책임을 질 수 있는 주체로 볼 것인지에 대한 답을 찾는 과정입니다. AI가 내린 결정이 왜 그렇게 나왔는지 설명할 수 있어야 하고(Explainability), 인간이 최종적인 통제권(Kill switch)을 가져야 하며, 사고가 났을 때 책임의 소재가 분명해야 합니다. 이는 AI를 더 강력하게 만들기보다, AI를 더 **'믿을 수 있게'** 만드는 인류의 지혜입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Legal Ambiguity - Liability for AI Action Not Clearly Assigned in Contract"
         return "PASS: Liability Interface Clearly Defined"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(ai_transparency_score=0.92, bias_detection_index=0.01, human_intervention_latency=800)
 print(engine.diagnose_ai_governance())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_ai_governance())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ai-governance-compliance-and-liability-audits-v2026`와 연동되어, 조직 내 가동 중인 모든 AI 에이전트의 판단 이력을 실시간 분석하고 법적 분쟁 및 윤리적 참사 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 법적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - ethics-by-design-and-moral-machine-logic-gates

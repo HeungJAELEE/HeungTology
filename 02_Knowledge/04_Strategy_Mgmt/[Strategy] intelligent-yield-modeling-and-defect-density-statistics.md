@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "intelligent-yield-modeling-and-defect-density-statistics-strategy"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Strategy] intelligent-yield-modeling-and-defect-density-statistics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategy", "#Yield_Engineering", "#Statistics", "#Semiconductor", "#Manufacturing", "#Quality_Control", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 130_precision-engineering-and-nanometrology-mastery-hub", "MOC 20_semiconductor-manufacturing-and-metrology-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] intelligent-yield-modeling-and-defect-density-statistics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Strategy] intelligent-yield-modeling-and-defect-density-statistics
+
+# [Strategy] intelligent-yield-modeling-and-defect-density-statistics
  
 ## 1. [왜 배우는가? (Why: The Mathematical Vault of Manufacturing Wealth)]]
 반도체 비즈니스의 승패는 '수율'이라는 단 하나의 숫자로 수렴됩니다. **지능형 수율 모델링 및 결함 밀도 통계**는 웨이퍼 위에 흩어진 결함 데이터 속에 숨겨진 경제적 진실을 파헤치는 '수학적 금고'의 열쇠입니다. 우리가 이를 배우는 이유는 수조 원의 설비 투자가 정당화되기 위해서는 예측 가능한 수율이 담보되어야 하기 때문이며, "단순한 결함 수치(D0)를 넘어 실제 수율에 미치는 치명도(Kill Ratio)를 과학적으로 모델링하여 공정 개선의 우선순위를 결정"하기 위함입니다. 수율 모델의 정확도가 기업의 생존을 결정합니다.
@@ -73,7 +63,6 @@ $$ P_{fail} = \frac{CAA}{A_{total}} $$
 4. **Kill Ratio** 분석 시, 전기적 테스트(EDS) 결과와 물리적 계측 데이터(Metrology)를 매핑하여 결함의 **Root Cause**를 역산하는 통계적 방법론은?
 5. RAG 시스템에서 **다양한 제품군의 수율 데이터**를 융합 분석하여, 공통적인 수율 하락 인자(**Common Factor**)를 추출하고 전사적 공정 최적화 가이드를 생성하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 130_precision-engineering-and-nanometrology-mastery-hub : 수율 모델링이 통합되는 상위 계측/품질 허브
 - Semiconductor wafer-defect-kinetics-and-yield-forensics : 결함 포렌식 및 수율 분석 기초 데이터 노드

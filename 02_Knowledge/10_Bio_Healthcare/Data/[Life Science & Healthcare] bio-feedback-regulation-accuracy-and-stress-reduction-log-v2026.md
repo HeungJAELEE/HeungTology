@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026"
-  domain: "28_Cybernetics_and_Human_Augmentation"
+metadata:
+  id: "[[[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Data", "#Cybernetics", "#Bio-feedback", "#Stress_Reduction", "#Homeostasis", "#Health_Automation", "#Neuro-feedback", "#Performance_Log", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 28_cybernetics-and-human-augmentation-hub", "Entity autonomous-bio-feedback-and-homeostatic-regulation-system"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026

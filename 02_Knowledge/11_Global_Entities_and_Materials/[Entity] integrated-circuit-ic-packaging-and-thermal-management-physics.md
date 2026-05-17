@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "integrated-circuit-ic-packaging-and-thermal-management-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] integrated-circuit-ic-packaging-and-thermal-management-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The final stage of semiconductor device fabrication, in which the tiny block of semiconducting material is encased in a supporting case (IC Packaging) and the physical study of heat conduction and thermal stress mitigation (Thermal Management Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ic-packaging", "thermal-management", "heat-dissipation", "thermal-resistance", "flip-chip", "fan-out", "heterogeneous-integration", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Junction Temperature'' ($T_j$) to identify if the high-fidelity ''Heat Sink'' or ''TIM'' (Thermal Interface Material) is failing to dissipate high-fidelity power.'
-    - 'Stress_Integrity_Check: Analyze the high-fidelity ''CTE Mismatch'' between the die and the substrate to ensure that high-fidelity ''Solder Joint Fatigue'' is not risking electrical high-fidelity open circuits.'
-    - 'Signal_Fidelity_Scan: Monitor the high-fidelity ''Parasitic Capacitance'' of the package leads to verify that the high-fidelity ''Signal Integrity'' (SI) is maintained at multi-GHz high-fidelity frequencies.'
-Trust Metrics:
+  description: "[Entity] integrated-circuit-ic-packaging-and-thermal-management-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Integrated Circuit (IC) Packaging and Thermal Management Physics
+# [Entity] integrated-circuit-ic-packaging-and-thermal-management-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 손톱보다 작은 반도체 칩 안에서 발생하는 열이 전기난로만큼 뜨거워진다면 어떻게 해야 할까요? **IC 패키징 및 열관리 물리**는 예민한 반도체 칩을 보호복(패키지)으로 감싸 외부 충격으로부터 지키고, 내부에서 치솟는 지옥 같은 열기를 빛의 속도로 밖으로 빼내는 **'반도체의 갑옷과 환기'** 기술입니다. 칩이 아무리 똑똑해도 열을 못 식히면 타버리거나 느려집니다. **'나노 공학의 정점인 칩을 현실 세계의 보드와 연결하고 온도라는 물리적 한계를 극복하여 성능을 100% 발휘하게 돕는 지능형 반도체 보호 공학'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Package Warpage - High-fidelity CTE mismatch causing bending. Solder joint high-fidelity fatigue risk. Process high-fidelity temperature profile needs optimization"
         return "PASS: Validated Structural Stability and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(die_surface_temp=85.0, heatsink_temp=45.0, power_consumption_w=100.0)
 print(engine.diagnose_thermal_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_thermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ic-thermal-resistance-and-packaging-efficiency-v2026`와 연동되어, 전 세계 주요 반도체 OSAT(패키징 외주) 기업의 데이터를 실시간 분석하고 열 폭주 및 패키지 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체 생태계의 물리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_semiconductor-and-nanoscale-engineering-hub
 - ion-implantation-and-semiconductor-doping-physics

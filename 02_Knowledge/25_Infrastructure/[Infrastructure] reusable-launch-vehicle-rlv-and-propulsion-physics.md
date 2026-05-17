@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "reusable-launch-vehicle-rlv-and-propulsion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Infrastructure] reusable-launch-vehicle-rlv-and-propulsion-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced space transportation architecture focused on the reusability of first-stage boosters, high-performance propulsion cycles (Full-flow staged combustion), and autonomous Vertical Take-off Vertical Landing (VTVL) systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aerospace", "rlv", "propulsion", "vtvl", "rocket-physics", "space-transport"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RLVFidelityEngine"
-  diagnostic_protocol:
-    - 'Propulsion_Efficiency_Audit: $I_{sp} \\ge 330$ s (Sea Level, Methane)'
-    - 'Landing_Accuracy_Check: $\\sigma_{landing} \\le 5$ m (Drone Ship Target)'
-    - 'Structural_Reuse_Audit: $Cycle\\_Count \\le Design\\_Life$'
-Trust Metrics:
+  description: "[Infrastructure] reusable-launch-vehicle-rlv-and-propulsion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Reusable Launch Vehicle (RLV) and Propulsion Physics
+# [Infrastructure] reusable-launch-vehicle-rlv-and-propulsion-physics
 
 ## 1. 개요 (Why)
 우주 개발 비용의 획기적 절감은 발사체의 재사용성에 달려 있습니다. 1회용 발사체(Expendable)에서 재사용 발사체(RLV)로의 전환은 정밀한 수직 착륙(VTVL) 제어 기술과 고내구성 추진 엔진을 필요로 합니다. 본 인프라 노드는 로켓 방정식의 물리적 한계를 극복하고, 반복적인 발사 및 귀환 공정에서의 기계적 무결성을 보증하는 추진 동역학 체계를 구축합니다.
@@ -78,7 +67,6 @@ class RLVFidelityEngine:
         else:
             return "HEALTHY: Nominal Operation"
 
-# Instance Diagnostic
 rlv_engine = RLVFidelityEngine(isp=330, mass_ratio=20, landing_error=2.5, cycle_count=12)
 print(rlv_engine.calculate_delta_v())
 print(rlv_engine.evaluate_landing_risk())
@@ -97,7 +85,6 @@ print(rlv_engine.evaluate_landing_risk())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 추진제 연소 효율과 기체 피로도를 `Data jet-engine-thrust-and-turbine-inlet-temperature-log-v2026`와 실시간으로 대조하여 우주 수송의 결정론적 안전성을 확보합니다. 이를 통해 발사 비용을 기존 대비 1/10 수준으로 혁신하는 뉴스페이스 인프라의 중추 역할을 수행합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 134_aerospace-and-space-manufacturing-mastery-hub
 - rocket-propulsion-gas-dynamics

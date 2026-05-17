@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heat-pump-and-refrigeration-cycle-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heat-pump-and-refrigeration-cycle-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device that transfers heat energy from a source of heat to what is called a thermal reservoir (Heat Pump) and the physical study of vapor-compression cycles using refrigerants to move heat against the temperature gradient (Refrigeration Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["heat-pump", "refrigeration", "thermodynamics", "cop", "refrigerant", "carnot-cycle", "hvac", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cycle_Fidelity_Audit: Evaluate the ''Superheat'' and ''Subcooling'' to identify if high-fidelity ''Liquid Slugging'' is risking compressor damage or if ''Flash Gas'' is reducing expansion valve efficiency.'
-    - 'Efficiency_Integrity_Check: Analyze the high-fidelity COP against the theoretical Carnot limit to ensure the high-fidelity ''Isentropic Efficiency'' of the compressor is within design standards.'
-    - 'Leak_Fidelity_Scan: Monitor the low-side pressure during the high-fidelity off-cycle to verify that the high-fidelity ''Refrigerant Charge'' is sufficient for the current thermal load.'
-Trust Metrics:
+  description: "[Entity] heat-pump-and-refrigeration-cycle-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Heat Pump and Refrigeration Cycle Thermodynamics Physics
+# [Entity] heat-pump-and-refrigeration-cycle-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 차가운 냉장고 속에서 열을 빼앗아 뜨거운 밖으로 내보내는 '에너지의 역주행'은 어떻게 가능할까요? **히트펌프 및 냉동 사이클 열역학 물리**는 열이 스스로는 흐를 수 없는 방향(저온에서 고온으로)으로 전기를 써서 억지로 '퍼 올리는' **'열의 펌프질'** 기술입니다. 특수 가스(냉매)를 압축해 뜨겁게 만들고, 팽창시켜 차갑게 만드는 과정을 반복하며 차가운 것을 더 차갑게, 뜨거운 것을 더 뜨겁게 만듭니다. **'물리적 한계를 넘어 에너지를 수송하여 인류의 쾌적한 삶과 신선한 식품, 정밀한 공정을 지켜내는 지능형 열역학의 마법'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Liquid Slugging Risk - Superheat too low for high-fidelity safety. Liquid refrigerant hitting the compressor pistons. Adjust high-fidelity expansion valve"
         return "PASS: Validated Gas State and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(suction_pressure_bar=4.5, discharge_pressure_bar=18.0, cop_actual=3.8)
 print(engine.diagnose_cycle_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_cycle_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data refrigerant-properties-and-cop-v2026`와 연동되어, 전 세계 주요 데이터 센터 냉각 및 신재생 히트펌프 시스템의 데이터를 실시간 분석하고 압축기 파손 및 냉매 누출 사고 확률을 0.001% 이하로 억제함으로써 지능형 열 관리 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

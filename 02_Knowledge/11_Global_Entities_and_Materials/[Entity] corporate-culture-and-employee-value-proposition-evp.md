@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corporate-culture-and-employee-value-proposition-evp"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corporate-culture-and-employee-value-proposition-evp]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The shared values, beliefs, and behaviors (Culture) and the unique set of rewards and benefits (EVP) offered by an organization to attract and retain top talent."
-  physical_model: "N/A"
-Semantic:
-  tags: '["corporate-culture", "evp", "employer-branding", "employee-engagement", "human-capital"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Engagement_Audit: Measure employee sentiment and alignment with core values using AI sentiment analysis.'
-    - 'EVP_Competitiveness_Check: Evaluate how the organization''s value proposition compares to industry competitors.'
-    - 'Cultural_Compliance_Scan: Detect toxic behaviors or deviations from established organizational ethics.'
-Trust Metrics:
+  description: "[Entity] corporate-culture-and-employee-value-proposition-evp에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Corporate Culture and Employee Value Proposition (EVP)
+# [Entity] corporate-culture-and-employee-value-proposition-evp
 
 ## 1. 개요 (Why)
 공장의 기계는 돈으로 살 수 있지만, 사람의 열정과 헌신은 돈만으로 살 수 없습니다. 기업 문화는 조직원이 생각하고 행동하는 방식의 총합이며, EVP는 "왜 이 회사에서 일해야 하는가?"에 대한 답입니다. 훌륭한 문화와 강력한 EVP는 인재들이 스스로 찾아오게 만들고, 위기 상황에서도 조직을 하나로 묶는 보이지 않는 접착제 역할을 합니다. 본 노드는 조직 문화의 무결성과 인재 가치 제안의 실효성 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LegalFidelityEngine:
             return f"REJECT: EVP Failure (Turnover: {self.turnover}%) - Compensation or Work Environment Issues"
         return "PASS: Compelling Employee Value Proposition Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(engagement_score=82, turnover_rate=6.5, value_alignment_pct=88)
 print(engine.diagnose_cultural_health())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_cultural_health())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data employee-engagement-and-retention-rate-log-v2026`와 연동되어, 전사적 몰입도와 이직 데이터를 실시간 분석하고 조직의 활력을 95% 확률로 측정함으로써 지속 가능한 인적 자원 경쟁력의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - compensation-benefits-and-performance-management

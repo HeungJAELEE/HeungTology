@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "process-analytical-technology-pat-and-real-time-quality-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] process-analytical-technology-pat-and-real-time-quality-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system for designing, analyzing, and controlling manufacturing through timely measurements of critical quality and performance attributes (Process Analytical Technology) to ensure final product quality in real-time (Real-time Quality Control), rather than testing at the end of the process."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pat", "real-time-qc", "quality-control", "pharmaceutical-manufacturing", "spectroscopy", "in-line-sensing", "process-understanding"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'PAT_Sensor_Audit: Evaluate the signal-to-noise ratio (SNR) of the in-line spectrometers to identify light source aging or fiber optic degradation.'
-    - 'Quality_Fidelity_Check: Analyze the predicted Critical Quality Attributes (CQA) in real-time to identify deviations from the ''Golden Batch'' profile before the product is wasted.'
-    - 'Chemometric_Model_Scan: Monitor the model error (RMSEP) to identify changes in raw material properties that require model recalibration.'
-Trust Metrics:
+  description: "[Entity] process-analytical-technology-pat-and-real-time-quality-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Process Analytical Technology (PAT) and Real-time Quality Control
+# [Entity] process-analytical-technology-pat-and-real-time-quality-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 빵을 구운 뒤에야 "아, 너무 짰네"라고 후회하는 대신, 반죽을 하는 동안 소금의 양을 실시간으로 확인하고 조절할 수 있다면 어떨까요? **공정 분석 기술(PAT) 및 실시간 품질 관리**는 제품이 다 만들어질 때까지 기다리지 않고, 만드는 도중에 성분을 계속 감시하여 '실시간 합격'을 내리는 **'제조의 투시경'** 기술입니다. 약품을 섞거나 화학 반응을 시키는 파이프 내부를 적외선 센서로 들여다보며(Spectroscopy), 단 1초도 불량품을 만들지 않는 **'완벽한 실시간 제조'**를 구현합니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Quality Attribute (CQA) out of Spec - Divert Product to Waste Loop Immediately"
         return "PASS: Continuous Quality Compliance and Verified Batch Uniformity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sensor_snr_db=45.0, prediction_confidence_interval=0.98, model_drift_sigma=0.5)
 print(engine.diagnose_pat_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_pat_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pat-sensor-fidelity-and-product-yield-v2026`와 연동되어, 전 세계 제약 및 정밀 화학 공장의 실시간 품질 데이터를 분석하고 불량품 생산 및 대량 폐기 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - process-automation-and-scada-system-architecture

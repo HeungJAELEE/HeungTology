@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-chromatography-gc-and-molecular-separation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-chromatography-gc-and-molecular-separation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A common type of chromatography used in analytical chemistry for separating and analyzing compounds that can be vaporized without decomposition (GC) and the physical study of differential partitioning between a moving gas phase and a stationary liquid/solid phase (Molecular Separation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-chromatography", "molecular-separation", "analytical-chemistry", "retention-time", "carrier-gas", "column-physics", "van-deemter", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Separation_Fidelity_Audit: Evaluate the ''Peak Resolution'' ($R_s$) to identify if high-fidelity ''Peak Tailing'' or ''Co-elution'' is occurring, preventing accurate quantification of the target compound.'
-    - 'Column_Integrity_Check: Analyze the high-fidelity ''Retention Time'' stability against a reference standard to detect column bleeding or carrier gas leaks that could bias the results.'
-    - 'Detection_Fidelity_Scan: Monitor the high-fidelity ''Signal-to-Noise Ratio'' (SNR) of the FID/TCD detector to verify that the high-fidelity detection limit is sufficient for trace-level impurity analysis.'
-Trust Metrics:
+  description: "[Entity] gas-chromatography-gc-and-molecular-separation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Gas Chromatography (GC) and Molecular Separation Physics
+# [Entity] gas-chromatography-gc-and-molecular-separation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡하게 뒤섞인 향수 냄새 속에서 장미 향과 레몬 향을 어떻게 따로 분리해낼 수 있을까요? **가스 크로마토그래피(GC) 및 분자 분리 물리**는 섞여 있는 기체 성분들을 아주 긴 미로(컬럼) 속에 통과시켜, 각 분자의 '성격(달리기 속도)' 차이로 하나씩 골라내는 **'분자들의 나노 마라톤'** 기술입니다. 벽면에 더 잘 달라붙는 끈적한 분자는 늦게 도착하고, 미끄러운 분자는 빨리 도착합니다. **'혼돈의 혼합물에서 순수한 성분들을 시간순으로 정렬하여 물질의 정체를 밝히는 지능적 분석의 필터'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Peak Tailing Detected - Column active sites or overload suspected. Quantitative high-fidelity area calculation will be biased. Trim the column head"
         return "PASS: Validated Chromatographic Efficiency and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(baseline_noise=10, injection_pressure_bar=2.0, column_temp_c=150.0)
 print(engine.diagnose_gc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_gc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gas-chromatography-retention-indices-v2026`와 연동되어, 전 세계 주요 화학 및 제약 공장의 분석 데이터를 실시간 분석하고 성분 오판 및 순도 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 화학 문명의 분석 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flame-spectroscopy-and-atomic-absorption-aas-physics

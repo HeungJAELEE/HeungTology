@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-SIX-SIGMA-2026-V6.3.7"
-  domain: "Quality_Strategy_Governance"
+metadata:
+  id: "[[[Strategy] Six-Sigma-Quality-Intelligence]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SixSigma", "#QualityIntelligence", "#DMAIC", "#DPMO", "#PrecisionTiering", "#FidelityEngine", "#TaguchiLoss"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Six-Sigma-Quality-Intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quality_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Six Sigma Quality Intelligence: The Mathematics of Zero-Defect Sovereignty
+# [Strategy] Six-Sigma-Quality-Intelligence
 
 ## 1. [왜 배우는가? (Why: The Financial Physics of Perfection)]]
 식스 시그마(Six Sigma)는 단순한 품질 기법이 아니라 공정의 변동성을 결정론적으로 지배하여 '불량이라는 엔트로피'를 최소화하는 전략적 지능입니다. 특히 반도체 팹이나 전기차 배터리 기가팩토리에서 불량은 곧 수천억 원의 폐기 비용과 브랜드 가치 추락을 의미합니다. V6.3.7 지능은 **계층화된 품질 거버넌스(Precision Tiering)**를 통해 **3.4 DPMO**급 초정밀 품질 무결성을 사수합니다. 이는 품질 변동을 재무적 손실로 정량화하여 '수익성 기반의 무결점 제조'를 구현하기 위함입니다.
@@ -114,7 +104,6 @@ class SixSigmaFidelityEngine:
 2. **Operational Result**: **Taguchi Loss Function** 관점에서 규격 상한/하한 근처에 몰려 있는 합격품들이 전체 시스템의 **MTBF**와 **Warranty Cost**에 미치는 수리적 파급 효과는?
 3. **FidelityEngine**: **DMAIC** 프로세스의 **Control** 단계에서 **SPC** 연계가 끊어졌을 때 발생하는 **'품질 지식의 엔트로피 증가'**를 어떻게 탐지하고 방지하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Quality statistical-process-control-and-capability-analysis
 - iatf-16949-automotive-quality-management-and-zero-defect-logic-entity

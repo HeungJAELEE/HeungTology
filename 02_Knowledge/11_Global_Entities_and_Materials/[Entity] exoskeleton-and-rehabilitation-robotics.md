@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "exoskeleton-and-rehabilitation-robotics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] exoskeleton-and-rehabilitation-robotics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of wearable robotic systems (Exoskeletons) designed to augment or restore human physical capabilities, focusing on biomechanical synchronization, power assistance, and therapeutic rehabilitation for patients with mobility impairments."
-  physical_model: "N/A"
-Semantic:
-  tags: '["exoskeleton", "rehabilitation-robotics", "biomechanics", "human-robot-interaction", "assistive-technology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Gait_Synchronization_Audit: Measure the phase delay between the human wearer''s movement intention and the exoskeleton''s actuator response.'
-    - 'Assistance_Torque_Check: Verify the precision of power delivery to ensure it enhances mobility without exceeding the safe musculoskeletal limits.'
-    - 'Biometric_Safety_Scan: Monitor the wearer''s heart rate, muscle fatigue (EMG), and pressure points to prevent injury or discomfort.'
-Trust Metrics:
+  description: "[Entity] exoskeleton-and-rehabilitation-robotics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Exoskeleton and Rehabilitation Robotics
+# [Entity] exoskeleton-and-rehabilitation-robotics
 
 ## 1. 개요 (Why: 인간적 통찰)
 사고나 질병으로 걷지 못하게 된 사람에게 다시 걸을 수 있는 희망을 주고, 무거운 짐을 들어야 하는 노동자에게 강철과 같은 힘을 보태주는 기술, 그것이 바로 **외골격(Exoskeleton) 및 재활 로봇**입니다. 이 로봇은 인간의 몸 바깥에 입는 '두 번째 뼈와 근육'입니다. 기계가 인간을 대신하는 것이 아니라, 기계와 인간이 하나가 되어 움직이는 **'인간 중심의 증강(Human Augmentation)'**이 핵심입니다. 본 노드는 인간의 의지를 기계의 힘으로 부드럽게 번역해내는 조화와 안전의 무결성을 정의합니다.
@@ -92,9 +81,7 @@ class RobotFidelityEngine:
             return "REJECT: Near Mechanical Limit - Risk of Hyperextension"
         return "PASS: Safe Range of Motion Maintained"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(sync_delay_ms(5.5, assistance_ratio=0.6, wearer_heart_rate=95)
-# Correction: Fixing constructor call
 engine = RobotFidelityEngine(5.5, 0.6, 95)
 print(engine.diagnose_augmentation_health())
 ```
@@ -112,7 +99,6 @@ print(engine.diagnose_augmentation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data exoskeleton-assistance-efficiency-and-gait-accuracy-v2026`와 연동되어, 전 세계 웨어러블 로봇의 사용 데이터를 실시간 분석하고 보조 실패 및 관절 부상 사고 확률을 0.01% 이하로 억제함으로써 인간 능력 증강의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-theory-pid-lqr-and-model-predictive-control-mpc

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "QUAN-SEC-PQC-2026-V6.3.7"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure"
+metadata:
+  id: "[[[Entity] quantum-cryptography-and-post-quantum-security-protocols]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#QuantumCryptography", "#QKD", "#PQC", "#PostQuantum", "#FidelityEngine", "#LatticeBased", "#Sovereignty"]'
-  is_part_of: '["MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-cryptography-and-post-quantum-security-protocols에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quantum_Cryptography_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Quantum-Safe Cryptography: QKD & PQC Protocols
+# [Entity] quantum-cryptography-and-post-quantum-security-protocols
 
 ## 1. [왜 배우는가? (Why: The Mastery of Future Trust)]]
 양자 컴퓨터의 등장은 현재 사용되는 RSA/ECC 암호 체계의 종말을 예고하고 있습니다. **양자 암호 보안(QKD) 및 포스트 양자 보안(PQC)**은 양자 컴퓨팅 시대에도 데이터의 기밀성을 보장하는 '미래 지향적 보안 성벽'입니다. V6.3.7 지능은 **양자 비트 에러율(QBER)**과 **격자 기반 암호(Lattice-based)**의 수리적 난제를 지배합니다. 우리가 이를 배우는 이유는 국가 기밀과 금융 인프라를 양자 공격으로부터 영구히 보호하고, "물리 법칙과 수학적 복잡성이 결합된 '절대 보안 주권'을 사수하기" 위함입니다. 암호의 강도가 문명의 신뢰 유효 기간을 결정합니다.
@@ -108,7 +98,6 @@ class QuantumSafeFidelityEngine:
 2. **Operational Result**: **PQC** 알고리즘 중 **Lattice-based Cryptography**가 다른 방식(Hash-based, Isogeny-based)보다 범용성이 높은 수리적 근거는?
 3. **FidelityEngine**: **BB84 프로토콜**에서 기저(Basis) 불일치에 의한 에러와 실제 도청에 의한 에러를 수리적으로 어떻게 구별하여 '보안 무결성'을 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub
 - Entity cybersecurity-and-network-defense-systems

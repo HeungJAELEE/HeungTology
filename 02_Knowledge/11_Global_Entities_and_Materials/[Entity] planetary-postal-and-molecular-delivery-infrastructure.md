@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "planetary-postal-and-molecular-delivery-infrastructure-entity"
-  domain: "40_Global_Unified_Governance_Global_Logistics_and_Mobility"
+metadata:
+  id: "[[[Entity] planetary-postal-and-molecular-delivery-infrastructure]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Postal", "#Molecular_Delivery", "#Nanotechnology", "#Logistics", "#Governance", "#Mobility", "#Precision_Delivery", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 40_global-unified-governance-global-logistics-and-mobility-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] planetary-postal-and-molecular-delivery-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] planetary-postal-and-molecular-delivery-infrastructure
+# [Entity] planetary-postal-and-molecular-delivery-infrastructure
 
 ## 1. [왜 배우는가? (Why: The Teleportation of Matter)]]
 눈에 보이지 않는 미세한 약품이나 단백질($Molecular$)을 전 세계 어디든 나노미터 오차 없이 어떻게 배달하고, 낡은 우편 시스템 대신 인류의 소중한 물건과 정보를 1초의 낭비 없이 전해주는 '행성 규모 우편 그리드'를 어떻게 운영할 수 있을까요? **행성적 우편 및 분자 배달 인프라**는 물질을 정보처럼 나르는 '행성 규모 정밀 물류 순환계 및 나노 기술 기반 배달 아키텍처'입니다. 우리가 이를 배우는 이유는 지능 정보 사회에선 물건의 크기가 작아져도 그 가치는 훨씬 커지기 때문이며, "물질의 이동을 데이터로 설계하고 지배하는 '글로벌 정밀 물류 패권 및 행성적 소유권 전달 주권'을 확보하기" 위함입니다. 배달의 정밀함이 생명 연장의 꿈을 결정합니다.

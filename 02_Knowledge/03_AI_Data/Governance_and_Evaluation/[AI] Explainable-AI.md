@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-XAI-2026-V6"
+metadata:
+  id: "[[[AI] Explainable-AI]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#XAI'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Explainable-AI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Explainable-AI
@@ -118,7 +108,6 @@ class XAIInterpreter:
 2. **Adversarial Explanation Attack** (해석 결과 조작 공격)에 대해 모델의 설명 가능성이 어떻게 취약할 수 있으며, 이를 방어하기 위한 기법은?
 3. **Fidelity-Interpretability Trade-off** 관점에서 모델의 정확도를 유지하면서도 높은 수준의 설명을 제공하기 위한 아키텍처 설계 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-Governance
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-TRiSM

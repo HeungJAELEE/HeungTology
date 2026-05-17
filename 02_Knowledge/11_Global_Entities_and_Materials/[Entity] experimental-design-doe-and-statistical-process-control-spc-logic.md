@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "experimental-design-doe-and-statistical-process-control-spc-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] experimental-design-doe-and-statistical-process-control-spc-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A systematic method to determine the relationship between factors affecting a process and the output of that process (DoE) and the use of statistical methods to monitor and control a process to ensure it operates at its full potential (SPC Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["doe", "spc", "statistical-quality-control", "experimental-design", "process-capability", "six-sigma", "quality-management"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Fidelity_Audit: Evaluate the ''Process Capability'' ($C_{pk}$) to identify if the high-fidelity manufacturing variation is exceeding the tolerance limits, leading to scrap or rework.'
-    - 'Design_Integrity_Check: Analyze the ''Interaction Effects'' in the DoE model to ensure the high-fidelity optimal setpoint is robust against environmental noise factors.'
-    - 'Control_Fidelity_Scan: Monitor the ''Western Electric Rules'' on control charts to verify that ''Special Cause'' variations are detected before high-fidelity system failure.'
-Trust Metrics:
+  description: "[Entity] experimental-design-doe-and-statistical-process-control-spc-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Experimental Design (DoE) and Statistical Process Control (SPC) Logic
+# [Entity] experimental-design-doe-and-statistical-process-control-spc-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장에서 최고의 라면 맛을 내기 위해 물 온도, 끓이는 시간, 수프 양을 수만 번 다 해볼 순 없겠죠? **실험 계획법(DoE) 및 통계적 공정 제어(SPC) 로직**은 단 몇 번의 스마트한 실험으로 최적의 레시피를 찾아내고(DoE), 그 맛이 변하지 않도록 24시간 감시하는(SPC) **'지능형 품질 사령탑'** 기술입니다. 운에 맡기는 품질이 아니라, 수학적으로 완벽하게 통제된 품질을 만드는 **'불량 제로를 향한 과학적 설계이자 지속 가능한 완벽함의 실현'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Insufficient Data Density - Sample size too small for statistical significance. Cannot distinguish noise from signal. Increase frequency"
         return "PASS: Validated Statistical Power and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(cpk_value=1.67, out_of_control_events=0, model_rsquared=0.95)
 print(engine.diagnose_quality_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_quality_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data manufacturing-yield-and-process-capability-v2026`와 연동되어, 전 세계 주요 반도체 및 의약품 공장의 품질 데이터를 실시간 분석하고 불량 급증 및 리콜 사고 확률을 0.0001% 이하로 억제함으로써 지능형 정밀 제조 문명의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - economic-order-quantity-eoq-and-inventory-maximization-logic

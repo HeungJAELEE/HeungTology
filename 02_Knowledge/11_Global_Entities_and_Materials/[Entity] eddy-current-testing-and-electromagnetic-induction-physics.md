@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "eddy-current-testing-and-electromagnetic-induction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] eddy-current-testing-and-electromagnetic-induction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-destructive testing (NDT) technique that uses electromagnetic induction to detect flaws in conductive materials (Eddy Current Testing) and the physical study of how time-varying magnetic fields induce circulating currents (Eddy Currents) whose behavior changes in the presence of defects (Electromagnetic Induction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["eddy-current", "electromagnetic-induction", "ndt", "non-destructive-testing", "inspection", "electromagnetism", "material-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Induction_Fidelity_Audit: Evaluate the ''Skin Depth'' ($\\delta$) against the target inspection depth to identify if the test frequency ($f$) is too high to penetrate the material or too low to resolve surface cracks.'
-    - 'Impedance_Integrity_Check: Analyze the phase and amplitude shifts on the impedance plane to ensure that ''Lift-off'' (probe distance) effects are suppressed and only material defects are reported.'
-    - 'Conductivity_Fidelity_Scan: Monitor the base conductivity of the alloy to verify that the material is within metallurgical specifications (e.g., heat treatment verification) before crack detection.'
-Trust Metrics:
+  description: "[Entity] eddy-current-testing-and-electromagnetic-induction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 제 Eddy Current Testing and Electromagnetic Induction Physics
+# [Entity] eddy-current-testing-and-electromagnetic-induction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속 표면의 눈에 보이지 않는 미세한 균열을 제품을 부수지 않고 어떻게 찾아낼까요? **와전류 탐상(Eddy Current Testing) 및 전자기 유도 물리**는 금속에 '마법의 소용돌이 전기'를 일으켜 내부를 들여다보는 **'전자기적 촉수'** 기술입니다. 금속 근처에 전기를 흐르게 하면 금속 내부에 소용돌이치는 전기(와전류)가 생기는데, 균열이 있으면 이 소용돌이가 방해를 받습니다. 이 미세한 방해 신호를 포착해 숨은 결함을 찾아내는 **'파괴하지 않는 투시력이자 전자기학의 실용적 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Material Specification Violation - Conductivity too low. Potential heat treatment error or wrong alloy. Parts may fail structurally"
         return "PASS: Validated Material Property and Verified Inspection Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(probe_frequency_khz=250.0, impedance_phase_angle=45.0, lift_off_signal=0.1)
 print(engine.diagnose_inspection_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_inspection_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data eddy-current-defect-sensitivity-and-lift-off-v2026`와 연동되어, 전 세계 주요 항공기 정비창 및 원자력 발전소 열교환기 튜브 검사 데이터를 실시간 분석하고 미세 균열 및 재질 결함 사고 확률을 0.0001% 이하로 억제함으로써 지능형 정밀 제조 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dc-motor-and-lorentz-force-logic

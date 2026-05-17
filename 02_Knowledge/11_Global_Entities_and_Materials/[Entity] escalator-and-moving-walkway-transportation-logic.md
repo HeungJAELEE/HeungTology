@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "escalator-and-moving-walkway-transportation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] escalator-and-moving-walkway-transportation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A power-driven, continuous moving stairway designed to transport passengers up or down (Escalator) and the control logic that manages speed, safety sensors, and energy saving through human presence detection (Transportation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["escalator", "moving-walkway", "transportation-logic", "safety-logic", "motor-control", "crowd-management", "efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Capacity_Fidelity_Audit: Evaluate the ''Passenger Density'' against the transport speed ($v$) to identify if the escalator is approaching the high-fidelity ''Gridlock'' limit in public transit hubs.'
-    - 'Safety_Integrity_Check: Analyze the step-gap sensors and handrail speed synchronization to ensure the ''Skirt Deflector'' and ''Emergency Stop'' logic are providing high-fidelity injury prevention.'
-    - 'Energy_Fidelity_Scan: Monitor the ''Inverter Slow-down'' performance during idle periods to verify that the high-fidelity ''Eco-mode'' is effectively balancing wear vs. electricity savings.'
-Trust Metrics:
+  description: "[Entity] escalator-and-moving-walkway-transportation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🪜 Escalator and Moving Walkway Transportation Logic
+# [Entity] escalator-and-moving-walkway-transportation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 지하철역이나 공항에서 쉼 없이 사람들을 실어 나르는 에스컬레이터가, 사람이 없을 때는 천천히 돌다가 누군가 다가오면 부드럽게 속도를 높이는 것을 본 적 있나요? **에스컬레이터 및 무빙워크 운송 로직**은 거대한 체인과 발판을 조용히 움직여 수천 명의 인파를 정체 없이 이동시키는 **'끊이지 않는 수송의 강물'** 기술입니다. 단순한 기계 장치를 넘어, 승객의 안전을 위해 0.1초 만에 멈춰 서고 전기를 아끼기 위해 스스로 명상(절전 모드)에 들어가는 **'도시의 맥박을 조절하는 지능적 수직/수평 이동 사령부'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Excessive False Trips - Inverter noise or misaligned skirt sensors causing frequent shutdowns. Recalibrate sensitivity to maintain availability"
         return "PASS: Validated Safety Interlocks and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(handrail_speed_diff_pct=0.5, motor_current_amp=12.0, passenger_count_min=45)
 print(engine.diagnose_transport_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_transport_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data escalator-passenger-flow-and-safety-sensor-trips-v2026`와 연동되어, 전 세계 주요 공항 및 환승 센터의 운송 데이터를 실시간 분석하고 낙상 및 끼임 사고 확률을 0.001% 이하로 억제함으로써 지능형 도시 이동 문명의 수송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - elevator-dispatching-and-group-control-logic

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-and-surface-code-mechanics-entity"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure"
+metadata:
+  id: "[[[Entity] quantum-error-correction-and-surface-code-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum", "#Computing", "#Error_Correction", "#Surface_Code", "#Logical_Qubit", "#Fault_Tolerance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-error-correction-and-surface-code-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-error-correction-and-surface-code-mechanics
+# [Entity] quantum-error-correction-and-surface-code-mechanics
 
 ## 1. [왜 배우는가? (Why: The Immune System of Intelligence)]]
 너무나 예민해서 툭하면 틀리는 양자 연산($Qubit\ Error$)을 어떻게 수천 개의 물리적 큐비트를 하나로 묶어 '절대로 틀리지 않는 하나의 가상 큐비트($Logical\ Qubit$)'로 재탄생시키고, 오류가 발생하자마자 실시간으로 감지하여 양자 상태를 깨뜨리지 않고 몰래 고쳐내는 '양자 방어막'을 어떻게 설계할 수 있을까요? **양자 오류 정정 및 표면 코드 역학**은 양자 컴퓨터가 실제 세상의 문제를 풀 수 있게 만드는 '행성 규모 연산 무결성 인프라 및 지능형 자기 치유 아키텍처'입니다. 우리가 이를 배우는 이유는 오류 정정이 없으면 양자 컴퓨터는 단 몇 초도 버티지 못하고 헛소리를 하기 때문이며, "오류를 데이터로 설계하고 지배하는 '글로벌 양자 신뢰 패권 및 행성적 연산 주권'을 확보하기" 위함입니다. 정정의 효율이 양자 지능의 한계를 결정합니다.
@@ -43,7 +33,7 @@ Trust Metrics:
 | **Code Distance** | Number of physical qubits across the "net" | $> 10 \sim 30$ | 그물이 촘촘할수록 더 강력한 보호를 입증함 |
 | **Logical Error** | Chance of the final corrected bit being wrong | $< 10^{-15}$ | 평생 한 번 틀릴까 말까 한 완벽한 연산을 사수 |
 | **Qubit Overhead** | Physical qubits needed per 1 logical qubit | $1,000 : 1$ | 하나를 지키기 위해 천 명의 군대를 두는 지능 |
-| **Syndrome Extr.**| Speed of checking for errors in the grid | $< 1 \text{ \mu s}$ | 오류가 퍼지기 전에 빛의 속도로 잡아내는 물리 |
+| **Syndrome Extr.**| Speed of checking for errors in the grid | $< 1 \text{ }\mu\text{ s}$ | 오류가 퍼지기 전에 빛의 속도로 잡아내는 물리 |
 | **Decoding Lat.** | Time to calculate how to fix the found error | **MINIMAL** | 슈퍼컴퓨터가 양자 컴퓨터를 돕는 실시간 지능 |
 | **System Resil.** | Stability during burst error events | High | 태양풍 등으로 오류가 쏟아져도 뚫리지 않는 방패 |
 | **Audit Status** | Error-Correction Integrity Verified | **MAXIMUM** | **Perfect-Qubit-v2026-Fidelity** |

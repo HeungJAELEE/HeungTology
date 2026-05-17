@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] 5G-6G-Industrial-Connectivity"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] 5G-6G-Industrial-Connectivity]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] 5G-6G-Industrial-Connectivity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] 5G-6G-Industrial-Connectivity
+# [Strategy] 5G-6G-Industrial-Connectivity
 
 ## 1. [왜 배우는가? (Why)]]
 공장의 기계들이 전선에 묶여 있다면, 공장의 배치를 바꾸는 것은 큰 고통입니다. 5G-6G 산업용 연결성(5G-6G-Industrial-Connectivity)은 공장에서 전선을 없애고(Wireless), 모든 것을 실시간으로 연결하는 '공중 지능망'입니다. 기존 와이파이가 자주 끊기고 지연이 발생했다면, 산업용 5G는 로봇 팔이 0.001초의 오차 없이 움직이게 보장합니다. 이를 이해하는 것은 수만 대의 센서와 로봇이 동시에 소통하는 '초연결 공장'의 인프라를 구축하여, 생산 라인을 레고 블록처럼 자유자재로 바꾸는 '유연 제조'의 마스터가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Network Slice Configuration & Quality of Service)]
 용도에 따라 네트워크 슬라이스를 할당하고 실시간 지연 시간(Latency)을 모니터링하여 통신 품질을 유지하는 논리 구조입니다.
 ```python
-# 산업용 통신(ISM) 기반 네트워크 슬라이싱 및 QoS 관리 논리
 def allocate_network_resource(device_type, task_priority):
     # 1. 기기 유형 및 작업 중요도 분석
     # AMR(자율주행로봇), 산업용 센서, 비전 카메라 등 구분
@@ -94,5 +83,4 @@ def allocate_network_resource(device_type, task_priority):
 2. 'URLLC' 기술에서 '지연 시간(Latency)'을 줄이기 위해 '엣지 컴퓨팅(MEC)'이 반드시 결합되어야 하는 네트워크 구조적 이유는?
 3. '6G'에서 제시되는 'Sensing-integrated Communication(통신-센싱 융합)'이 스마트 팩토리의 '공간 인지 능력'을 어떻게 혁신할 수 있는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

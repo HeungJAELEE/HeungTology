@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-EDGE-2026-V6"
+metadata:
+  id: "[[[AI] Edge-AI-R&D]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Edge_AI'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Edge-AI-R&D에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Edge-AI-R&D
@@ -113,7 +103,6 @@ class EdgeModelOptimizer:
 2. 엣지 디바이스의 **SRAM** 크기가 모델의 **Inference Speed**에 미치는 영향과 이를 극복하기 위한 **Tiling** 기법의 원리는?
 3. **Knowledge Distillation (지식 증류)** 기법을 사용하여 엣지용 경량 모델(Student)이 거대 모델(Teacher)의 성능을 계승하게 만드는 논리 구조는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Distributed-Computing-and-Edge-Systems
 - 02_Knowledge/03_AI_Data/Automation_and_Agents/AI Robotic-Process-Automation

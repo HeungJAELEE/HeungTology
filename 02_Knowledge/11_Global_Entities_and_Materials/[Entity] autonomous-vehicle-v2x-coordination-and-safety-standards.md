@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-vehicle-v2x-coordination-and-safety-standards"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-vehicle-v2x-coordination-and-safety-standards]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The communication and coordination framework between autonomous vehicles (V2V), infrastructure (V2I), and pedestrians (V2P), governed by functional safety standards (ISO 26262, ISO 21448)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["autonomous-vehicle", "v2x", "c-v2x", "functional-safety", "automotive-standards"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Latency_Audit: Measure end-to-end communication delay for safety-critical messages.'
-    - 'Coordination_Accuracy_Check: Verify inter-vehicle distance maintenance during platoon driving.'
-    - 'Functional_Safety_Scan: Audit ASIL-D compliance of the decision-making logic.'
-Trust Metrics:
+  description: "[Entity] autonomous-vehicle-v2x-coordination-and-safety-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 Autonomous Vehicle V2X Coordination and Safety Standards
+# [Entity] autonomous-vehicle-v2x-coordination-and-safety-standards
 
 ## 1. 개요 (Why)
 자율주행 차량이 완벽하게 작동하더라도, 센서의 사각지대에서 튀어나오는 보행자나 급정거하는 전방 차량을 피하는 데는 한계가 있습니다. V2X(Vehicle-to-Everything)는 차량이 도로 환경 전체와 소통하여 '보이지 않는 위험'을 사전에 공유하게 함으로써 안전을 비약적으로 높입니다. 본 노드는 자율주행의 사회적 수용성을 보장하기 위한 통신 지연성 및 기능 안전 표준을 정의합니다.
@@ -70,7 +59,6 @@ class SafetyFidelityEngine:
             return "REJECT: Functional Safety Violation (ASIL-D Not Met)"
         return "PASS: ASIL-D Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(comm_latency=15, perception_time=100, braking_dist=30)
 print(engine.diagnose_emergency_response(time_to_collision=0.5))
 ```
@@ -88,7 +76,6 @@ print(engine.diagnose_emergency_response(time_to_collision=0.5))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data v2x-latency-and-safety-critical-message-success-v2026`와 연동되어, 도로 위의 모든 개체 간의 '상호 신뢰성'을 실시간 계산하며, 사고 위험 징후 포착 시 0.02초 내로 긴급 회피 기동을 지시함으로써 무결점 도로 안전을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_supply-chain-management-and-logistics-intelligence-hub
 - c-v2x-5g-nr-sidelink-mechanics

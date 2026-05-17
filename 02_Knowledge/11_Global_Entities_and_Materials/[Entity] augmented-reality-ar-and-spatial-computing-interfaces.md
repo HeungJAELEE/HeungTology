@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "augmented-reality-ar-and-spatial-computing-interfaces"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] augmented-reality-ar-and-spatial-computing-interfaces]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integration of digital information into the user's physical environment through spatial awareness, 3D anchoring, and multi-modal interaction (Gesture, Eye-tracking, Voice)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ar", "spatial-computing", "hmi", "ux-design", "mixed-reality"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'Anchor_Stability_Audit: Measure the drift of 3D virtual objects relative to real-world features.'
-    - 'Interaction_Latency_Check: Monitor the delay between user gesture and UI response.'
-    - 'Occlusion_Accuracy_Scan: Verify that virtual objects are correctly hidden by real-world obstacles.'
-Trust Metrics:
+  description: "[Entity] augmented-reality-ar-and-spatial-computing-interfaces에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕶️ Augmented Reality (AR) and Spatial Computing Interfaces
+# [Entity] augmented-reality-ar-and-spatial-computing-interfaces
 
 ## 1. 개요 (Why)
 우리는 더 이상 평면적인 스크린 안에 갇혀 있지 않습니다. 공간 컴퓨팅(Spatial Computing)은 디지털 정보가 우리가 사는 현실 공간의 일부가 되게 합니다. 책상 위에 가상의 모니터를 띄우고, 벽면에 지도를 붙이며, 손짓만으로 데이터를 제어하는 AR 인터페이스는 인간의 인지 능력을 무한히 확장합니다. 본 노드는 공간적 무결성과 직관적 UX를 확보하기 위한 인터페이스 설계 표준을 정의합니다.
@@ -69,7 +58,6 @@ class DisplayFidelityEngine:
             return f"WARNING: High Latency ({self.tau}ms) - Risk of Motion Sickness"
         return "PASS: Fluid Spatial Interaction Maintained"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(anchor_drift_mm=2.5, latency_ms=12, mesh_density=5000)
 print(engine.diagnose_spatial_stability())
 ```
@@ -87,7 +75,6 @@ print(engine.diagnose_spatial_stability())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data ar-spatial-anchoring-precision-and-interaction-latency-v2026`와 연동되어, 사용자의 시선과 손의 움직임을 0.01초 단위로 분석하고 가상 인터페이스의 드리프트를 최소화함으로써 현실과 디지털이 완벽히 융합된 공간 경험의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_metaverse-spatial-computing-and-ux-hub
 - ar-vr-near-eye-display-optics-and-waveguide-design

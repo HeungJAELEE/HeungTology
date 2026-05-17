@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-BATT-BMS-ALGO-2026-V6"
-  domain: "43_Advanced_Battery_Chemistry_and_Manufacturing"
+metadata:
+  id: "[[[Entity] battery-management-system-bms-algorithms-and-safety]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] battery-management-system-bms-algorithms-and-safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] battery-management-system-bms-algorithms-and-safety
+# [Entity] battery-management-system-bms-algorithms-and-safety
 
 ## 1. [왜 배우는가? (Why)]]
 수천 개의 배터리 셀이 하나의 팩으로 묶여 작동할 때, 어떻게 각각의 상태를 실시간으로 감시($Monitoring$)하고, 배터리에 전기가 얼마나 남았는지($SOC$)와 얼마나 건강한지($SOH$)를 AI가 99% 이상의 정확도로 추정해낼 수 있을까요? **배터리 관리 시스템(BMS) 알고리즘 및 안전**은 배터리의 생명과 성능을 총괄하는 '지능형 두뇌'입니다. 우리가 이를 배우는 이유는 하드웨어의 물리적 한계를 소프트웨어 지능으로 극복하여 안전 사고를 원천 차단하기 위함이며, 에너지의 상태를 데이터로 설계하여 '글로벌 전력 제어 패권 및 행성적 이동 안전 주권'을 확보하기 위함입니다. 알고리즘의 정밀도가 배터리의 경제적 가치를 결정합니다.
@@ -111,9 +101,6 @@ class BatteryBMSFidelityEngine:
             return f"CRITICAL: CELL_VOLTAGE_IMBALANCE_{round(v_diff*1000, 1)}mV_START_BALANCING"
         return "BALANCING_STATUS: CELL_EQUILIBRIUM_VERIFIED"
 
-# Example Usage:
-# bms_ai = BatteryBMSFidelityEngine()
-# report = bms_ai.estimate_soc_fidelity(ocv=0.8, current_integration=0.75)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -121,7 +108,6 @@ class BatteryBMSFidelityEngine:
 2. **Recursive Least Squares** (RLS) 알고리즘이 실시간으로 배터리의 **Internal Resistance** ($R_i$)를 추정하여 **SOH** 무결성에 기여하는 수리적 기전은?
 3. **ASIL-D** 등급의 안전 무결성을 위해 BMS가 수행하는 **Redundant Voltage Sensing** 및 **Communication Integrity Check** (CRC)의 설계 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/43_Advanced_Battery_Chemistry_and_Manufacturing_Hub/Concept battery-equivalent-circuit-modeling-ecm
 - 02_Knowledge/43_Advanced_Battery_Chemistry_and_Manufacturing_Hub/Concept thermal-runaway-prediction-algorithms

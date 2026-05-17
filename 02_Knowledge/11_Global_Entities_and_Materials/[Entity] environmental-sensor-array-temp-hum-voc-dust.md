@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "environmental-sensor-array-temp-hum-voc-dust"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] environmental-sensor-array-temp-hum-voc-dust]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated electronic system designed to monitor key environmental parameters—Temperature (T), Humidity (H), Volatile Organic Compounds (VOC), and Particulate Matter (Dust)—to ensure safe and optimal conditions for human health and industrial processes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["environmental-sensors", "voc", "air-quality", "sensor-fusion", "metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Calibration_Audit: Verify the accuracy of each sensor against NIST-traceable reference standards to detect and compensate for measurement drift.'
-    - 'VOC_Threshold_Check: Monitor concentration levels of harmful organic gases to trigger ventilation and safety alarms.'
-    - 'Particulate_Analysis_Scan: Evaluate the distribution and concentration of dust particles (PM2.5/PM10) to ensure cleanroom and workplace safety standards.'
-Trust Metrics:
+  description: "[Entity] environmental-sensor-array-temp-hum-voc-dust에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Environmental Sensor Array: Temp, Hum, VOC, Dust
+# [Entity] environmental-sensor-array-temp-hum-voc-dust
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 숨 쉬는 공기는 눈에 보이지 않지만, 우리 건강과 정밀한 기계의 수명을 결정짓는 가장 중요한 환경 요소입니다. **환경 센서 어레이**는 이 보이지 않는 공기의 상태를 숫자로 바꾸어 보여주는 **'디지털 감각'**입니다. 온도가 너무 높으면 기계가 지치고, 습도가 높으면 녹이 슬며, 미세한 가스(VOC)와 먼지는 소리 없이 우리의 폐를 공격합니다. 이 센서들은 보이지 않는 위협을 실시간으로 감시하여, 인간과 기계가 모두 쾌적하고 안전하게 공존할 수 있는 최적의 공간을 지켜냅니다.
@@ -94,7 +83,6 @@ class FactoryFidelityEngine:
             return "NOTICE: High Humidity Environment - Applying Correction Factor for VOC Sensor Accuracy"
         return "PASS: Sensor Array Calibrated and Operational"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(temp_error=0.05, voc_level=120, dust_concentration=15.5)
 print(engine.diagnose_environmental_safety())
 ```
@@ -112,7 +100,6 @@ print(engine.diagnose_environmental_safety())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data environmental-sensor-accuracy-and-drift-logs-v2026`와 연동되어, 전 세계 지능형 건물의 공기질 데이터를 실시간 분석하고 유해 가스 누출 및 건강 사고 확률을 0.01% 이하로 억제함으로써 인간 친화적 공간 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - environmental-protection-and-sustainability-engineering

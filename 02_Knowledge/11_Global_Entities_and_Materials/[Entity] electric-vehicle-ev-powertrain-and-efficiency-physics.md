@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electric-vehicle-ev-powertrain-and-efficiency-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electric-vehicle-ev-powertrain-and-efficiency-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The group of components that generate and deliver power to the road surface in an electric vehicle (EV Powertrain) and the physical study of energy conversion from battery chemicals to wheel rotation, including losses in inverter, motor, and transmission (Efficiency Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ev-powertrain", "electric-vehicle", "efficiency", "battery", "inverter", "regenerative-braking", "mobility", "automotive-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''State of Health'' (SOH) of the battery against the range degradation to identify if the lithium-ion cells are experiencing high-fidelity capacity loss or impedance growth.'
-    - 'Inverter_Integrity_Check: Analyze the switching frequency and PWM harmonics to ensure that the SiC (Silicon Carbide) MOSFETs are operating at peak efficiency without excessive electromagnetic interference.'
-    - 'Recovery_Fidelity_Scan: Monitor the regenerative braking energy capture rate to verify that the ''One-Pedal Driving'' logic is maximizing the $kWh/km$ metric across various drive cycles.'
-Trust Metrics:
+  description: "[Entity] electric-vehicle-ev-powertrain-and-efficiency-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Electric Vehicle (EV) Powertrain and Efficiency Physics
+# [Entity] electric-vehicle-ev-powertrain-and-efficiency-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 엔진의 폭발음 대신 고요한 전기 소리가 도로를 지배하는 시대, 전기는 어떻게 바퀴를 굴릴까요? **전기차(EV) 파워트레인 및 효율 물리**는 배터리에 저장된 화학 에너지를 가장 손실 없이 바퀴의 회전으로 바꾸는 **'에너지의 순수한 변환'** 기술입니다. 가솔린 엔진이 에너지를 열로 낭비할 때, 전기차는 그 에너지를 고스란히 운동으로 바꾸고 심지어 브레이크를 밟을 때 다시 전기로 거둬들입니다. 1%의 효율을 위해 반도체와 모터가 벌이는 **'에너지 보존의 치열한 최적화 전쟁이자 미래 모빌리티의 핵심'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inefficient Energy Recovery - Regenerative braking limited by software or brake system fault. Energy being wasted as heat"
         return "PASS: Validated Exergy Recovery and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(battery_soc_pct=75.0, motor_efficiency_pct=94.5, inverter_temp_c=65.0)
 print(engine.diagnose_ev_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ev_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ev-range-and-energy-density-v2026`와 연동되어, 전 세계 주요 전기차 모델의 실제 주행 데이터를 실시간 분석하고 구동축 파손 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 친환경 모빌리티 문명의 구동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electric-motor-cooling-and-thermal-management-physics

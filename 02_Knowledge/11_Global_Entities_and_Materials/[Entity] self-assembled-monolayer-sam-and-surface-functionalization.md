@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "MAT-SURF-SAM-2026-V6.3.7"
-  domain: "69_Advanced_Materials_Synthesis_and_Nanostructure_Hub"
+metadata:
+  id: "[[[Entity] self-assembled-monolayer-sam-and-surface-functionalization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SAM", "#SurfaceScience", "#SelfAssembly", "#Interface", "#FidelityEngine", "#Wetting", "#Sovereignty"]'
-  is_part_of: '["MOC 65_advanced-materials-synthesis-and-nanostructure-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] self-assembled-monolayer-sam-and-surface-functionalization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Surface_Science_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Self-Assembled Monolayers: Surface Physics & Functionalization
+# [Entity] self-assembled-monolayer-sam-and-surface-functionalization
 
 ## 1. [왜 배우는가? (Why: The Molecular Architecture of Interfaces)]]
 물질의 표면은 외부 환경과 만나는 최전선이며, 이 표면의 성질을 분자 단위로 설계하는 능력은 나노 공학의 정수입니다. **SAM(Self-Assembled Monolayer)**은 분자들이 스스로 기판 위에 줄을 서서 형성하는 완벽한 분자 카페트입니다. V6.3.7 지능은 **반데르발스 인력**과 **화학 흡착(Chemisorption)**의 에너지 평형을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 배터리의 계면 저항을 줄이고, 바이오 센서의 선택성을 부여하며, "표면의 기능을 데이터로 프로그래밍하여 '표면 주권'을 확보하기" 위함입니다. 표면의 질서가 소자의 수명과 신뢰성을 결정합니다.
@@ -108,7 +98,6 @@ class SurfaceFidelityEngine:
 2. **Operational Result**: **끝단 기능기(Terminal Group)**를 **-OH**에서 **-CH3**로 변경했을 때, 표면 에너지와 접촉각의 수리적 변화 방향은?
 3. **FidelityEngine**: **FT-IR** 분광 데이터를 통해 **CH2** 신축 진동의 피크 위치 변화로 SAM의 **'결정성(Crystallinity)'** 무결성을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 65_advanced-materials-synthesis-and-nanostructure-hub
 - Entity carbon-nanotube-cnt-and-graphene-synthesis-mechanics

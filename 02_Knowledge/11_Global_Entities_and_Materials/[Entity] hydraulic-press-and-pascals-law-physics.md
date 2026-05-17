@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydraulic-press-and-pascals-law-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydraulic-press-and-pascals-law-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine using a hydraulic cylinder to generate a compressive force (Hydraulic Press) and the physical study of pressure transmission in a confined fluid where a change in pressure is transmitted undiminished (Pascal's Law Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydraulic-press", "pascals-law", "fluid-power", "force-amplification", "forging", "stamping", "industrial-hydraulics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Amplification_Fidelity_Audit: Evaluate the ''Output Force'' ($F_2$) against the high-fidelity ''Input Pressure'' to identify if high-fidelity ''Seal Friction'' or ''Internal Leakage'' is reducing the mechanical advantage.'
-    - 'Structural_Integrity_Check: Analyze the high-fidelity ''Cylinder Stress'' under peak tonnage to ensure the high-fidelity ''Factor of Safety'' (FoS) is maintained against fatigue cracking.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Oil Temperature'' to verify that high-fidelity ''Viscosity Drop'' is not leading to erratic press speeds and seal degradation.'
-Trust Metrics:
+  description: "[Entity] hydraulic-press-and-pascals-law-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Hydraulic Press and Pascal's Law Physics
+# [Entity] hydraulic-press-and-pascals-law-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 손가락 하나로 누르는 작은 힘이 어떻게 수만 톤의 철강을 종이처럼 구길 수 있을까요? **유압 프레스 및 파스칼의 법칙 물리**는 갇힌 액체에 가해진 압력은 어디서나 똑같다는 **'액체의 공정함'**을 이용해 힘을 수천 배로 불리는 **'힘의 증폭기'** 기술입니다. 작고 가벼운 피스톤으로 기름을 밀면, 크고 무거운 피스톤이 그 압력을 받아 거대한 괴력을 냅니다. **'비압축성 액체라는 강력한 힘의 전달자를 통해 인간의 한계를 넘어선 거대 하중을 창조하고 제어하는 지능형 압력 엔진'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Main Seal Degradation - High-fidelity oil bypass detected. Pressure holding capability compromised. Scheduled seal high-fidelity replacement required"
         return "PASS: Validated Fluid Confinement and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(main_cylinder_pressure=300.0, ram_position_mm=500.0, oil_temp_c=45.0)
 print(engine.diagnose_press_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_press_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydraulic-press-tonnage-and-seal-friction-v2026`와 연동되어, 전 세계 주요 항공기 단조 공장 및 자동차 패널 라인의 데이터를 실시간 분석하고 실린더 파손 및 압력 변동 사고 확률을 0.001% 이하로 억제함으로써 지능형 거대 하중 제조 문명의 정공 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydraulic-pump-and-fluid-displacement-physics

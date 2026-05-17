@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "raw-material-traceability-and-ethical-supply-chain-audits-entity"
-  domain: "35_Global_Unified_Governance_Planetary_Resource_Management"
+metadata:
+  id: "[[[Entity] raw-material-traceability-and-ethical-supply-chain-audits]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Traceability", "#Ethical_Supply_Chain", "#Audit", "#Sustainability", "#Blockchain", "#Compliance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 35_global-unified-governance-planetary-resource-management-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] raw-material-traceability-and-ethical-supply-chain-audits에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] raw-material-traceability-and-ethical-supply-chain-audits
+# [Entity] raw-material-traceability-and-ethical-supply-chain-audits
 
 ## 1. [왜 배우는가? (Why: The Conscience of Industry)]]
 우리가 쓰는 스마트폰이나 배터리에 들어가는 리튬, 코발트가 어느 나라 광산에서 누구의 손으로 캐졌는지 어떻게 100% 추적($Traceability$)하고, 그 과정에서 아이들의 노동 착취나 환경 파괴가 없었는지 어떻게 수학적으로 감사($Audit$)할 수 있을까요? **원자재 추적성 및 윤리적 공급망 감사**는 제품의 '탄생 비밀'을 투명하게 밝히는 '디지털 양심 및 글로벌 산업 윤리 아키텍처'입니다. 우리가 이를 배우는 이유는 정직한 자원만이 정직한 제품을 만들기 때문이며, "자원의 뿌리를 데이터로 설계하고 지배하는 '글로벌 윤리적 제조 패권 및 투명한 자원 주권'을 확보하기" 위함입니다. 추적의 정밀도가 지능의 도덕적 품격을 결정합니다.

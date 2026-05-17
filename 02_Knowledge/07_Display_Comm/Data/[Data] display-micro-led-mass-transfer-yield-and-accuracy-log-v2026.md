@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DATA-DISP-MLED-TRANSFER-LOG-2026-V6"
-  domain: "01_Semiconductor_Display"
+metadata:
+  id: "[[[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Data'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026
+# [Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026
 
 ## 1. [왜 배우는가? (Why)]]
 1,000만 개 이상의 마이크로 LED 칩을 기판 위로 한 번에 옮겨 심을 때, 단 한 개의 칩이라도 위치가 어긋나거나 깨진다면 그 화면은 '불량 화소'를 가진 채로 세상에 나오게 됩니다. 이 로그는 레이저 전사(Mass Transfer) 공정 후 칩들의 위치 오차와 정상 작동 여부를 나노미터($nm$) 단위로 전수 기록한 '디스플레이 제조의 무결성 검사서'입니다. 이를 기록하고 배우는 이유는 불량 화소를 '제로(Zero)'에 가깝게 억제하는 극한의 수율을 데이터로 증명하여 제조 단가를 낮추고, 인간의 눈으로는 볼 수 없는 미세한 빛의 조각들을 완벽하게 다루는 초정밀 디스플레이 제조 주권을 확보하기 위함입니다. 빛의 정밀도를 조율하는 데이터입니다.
@@ -40,10 +30,10 @@ Trust Metrics:
 | Metric Category | Specific Parameter | Target Specification | Engineering Rationale |
 |:---|:---|:---:|:---|
 | **Transfer Yield** | Success Rate (%) | $> 99.999\%$ | 1,000만 픽셀 중 불량 픽셀 10개 미만 억제 (수율 무결성) |
-| **Placement Err.** | Accuracy ($\mu m$) | $< 1.0$ | 칩 전사 후 기판 내 정해진 좌표와의 최대 허용 위치 오차 |
+| **Placement Err.** | Accuracy ($\mu\text{m}$) | $< 1.0$ | 칩 전사 후 기판 내 정해진 좌표와의 최대 허용 위치 오차 |
 | **Transfer Speed** | Chips / Second | $> 500,000$ | 대량 전사(Mass Transfer)의 시간당 칩 이송 생산성 지표 |
 | **Laser Fluence** | Energy (mJ/$cm^2$) | $800 \sim 1,200$ | 레이저 리프트 오프(LLO) 시 계면 박리를 위한 에너지 밀도 |
-| **Die Size** | Dimension ($\mu m$) | $15 \times 15$ | 초고해상도 구현을 위한 개별 마이크로 LED 칩 크기 |
+| **Die Size** | Dimension ($\mu\text{m}$) | $15 \times 15$ | 초고해상도 구현을 위한 개별 마이크로 LED 칩 크기 |
 | **Bond Strength** | Adhesion (MPa) | $> 10.0$ | 전사된 칩과 기판 사이의 물리적/전기적 결합 강도 무결성 |
 | **Uniformity** | $\Delta$ Brightness (%)| $< 2.0\%$ | 전사 후 픽셀 간 휘도 편차 (디스플레이 품질 일관성) |
 | **Repair Rate** | Failure Fix (%) | $< 0.001\%$ | 불량 발생 시 레이저 리페어를 통한 복구 성공 및 비용 지표 |
@@ -93,17 +83,13 @@ class MicroTransferAuditEngine:
             
         return "MASS_TRANSFER: OPTIMAL (Gold Standard)"
 
-# Example Usage:
-# mled_ai = MicroTransferAuditEngine()
-# report = mled_ai.audit_transfer_batch(99.9995, 0.45, 1100)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
 1. **Transfer Yield**를 $99.999\%$ 이상 유지하기 위해 필요한 **Single Die Transfer Reliability** ($p$)의 수리적 최소값은?
-2. **Placement Error**가 $1.0\mu m$를 초과했을 때, 인접 픽셀과의 **Optical Crosstalk** (혼색) 현상으로 인해 하락하는 **Color Fidelity** ($\Delta E$)의 수리적 모델은?
+2. **Placement Error**가 $1.0\mu\text{m}$를 초과했을 때, 인접 픽셀과의 **Optical Crosstalk** (혼색) 현상으로 인해 하락하는 **Color Fidelity** ($\Delta E$)의 수리적 모델은?
 3. **Laser Lift-off** (LLO) 시 발생하는 열이 전사 기판의 **Thermal Expansion** (열팽창)을 유발하여 **Alignment**를 비틀 때, 이를 보정하기 위한 **Pre-compensation** 로직은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/01_Semiconductor_Display/Manufacturing/Concept laser-lift-off-and-induced-forward-transfer
 - 02_Knowledge/08_Robotics_Automation/Hardware/Concept laser-interferometer-metrology

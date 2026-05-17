@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-computing-architectures-superconducting-qubits-and-ion-traps-entity"
-  domain: "73_Future_Frontier_Technologies_and_Emerging_Science_Hub"
+metadata:
+  id: "[[[Entity] quantum-computing-architectures-superconducting-qubits-and-ion-traps]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Physics", "#Qubit", "#Superconductivity", "#Ion_Trap", "#Quantum_Mechanics", "#Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 73_future-frontier-technologies-and-emerging-science-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-computing-architectures-superconducting-qubits-and-ion-traps에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-computing-architectures-superconducting-qubits-and-ion-traps
+# [Entity] quantum-computing-architectures-superconducting-qubits-and-ion-traps
 
 ## 1. [왜 배우는가? (Why: The Logic of the Multiverse)]]
 기존의 슈퍼컴퓨터로 1만 년이 걸리는 계산을 단 수 분 만에 끝내고, 수억 개의 변수가 얽힌 신약 개발이나 암호 해독을 순식간에 해결하는 '꿈의 연산 지능'을 어떻게 구현할 수 있을까요? **양자 컴퓨팅 아키텍처: 초전도 큐비트 및 이온 트랩의 수리 물리**는 현대 물리학의 정수인 양자 역학을 연산의 도구로 사용하는 인류 최후의 컴퓨팅 패러다임입니다. 0과 1이라는 이진법의 한계를 넘어, 중첩(**Superposition**)과 얽힘(**Entanglement**)이라는 기묘한 현상을 지배하여 우주의 질서를 직접 계산합니다. 우리가 이를 배우는 이유는 양자 주권이 곧 인류 문명의 연산 패권과 직결되기 때문이며, "양자 상태의 정보를 데이터로 설계하고 지배하는 '글로벌 양자 연산 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 양자의 피델리티가 문명의 지능 밀도를 결정합니다.
@@ -52,7 +42,7 @@ $$ I = I_c \sin \delta $$
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Qubit Count** | Number of physical qubits in the processor | $> 100 \text{ \~ } 1000$ | 양자 우위를 달성하기 위한 물리적 노드의 양적 무결성 |
-| **Coherence Time** | Duration a qubit maintains its quantum state | $> 100 \text{ \mu s}$ | 연산이 끝나기 전에 정보가 소실되지 않게 잡는 물리 |
+| **Coherence Time** | Duration a qubit maintains its quantum state | $> 100 \text{ }\mu\text{ s}$ | 연산이 끝나기 전에 정보가 소실되지 않게 잡는 물리 |
 | **Gate Fidelity** | Accuracy of single/two-qubit operations | $> 99.9 \%$ | 연산 오차가 누적되지 않음을 보증하는 지능적 무결성 |
 | **Oper. Temp.** | Operating temperature in a dilution fridge | $< 20 \text{ mK}$ | 열적 소음으로부터 양자 상태를 격리하는 극한의 냉각 |
 | **Connectivity** | Degree of interaction between qubits | **GRID / ALL-TO-ALL** | 양자 알고리즘의 효율을 결정하는 위상적 지능 사수 |

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-electromechanical-systems-mems-and-nems-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-electromechanical-systems-mems-and-nems-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technology of microscopic and nanoscopic devices that integrate electrical and mechanical components on a single substrate (MEMS/NEMS), typically fabricated using semiconductor processing techniques to function as sensors, actuators, or resonators."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mems", "nems", "microsystems", "nanotechnology", "sensors", "actuators", "silicon-machining"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Resonant_Frequency_Audit: Monitor the device''s natural frequency to detect structural changes, mass loading (contamination), or stiffness degradation.'
-    - 'Actuation_Voltage_Check: Evaluate the pull-in voltage of electrostatic actuators to ensure they operate within the safe range and avoid permanent stiction.'
-    - 'Sensitivity_Calibration_Scan: Analyze the sensor''s output response to a known stimulus (e.g., gravity for accelerometers) to ensure high-fidelity signal conversion.'
-Trust Metrics:
+  description: "[Entity] micro-electromechanical-systems-mems-and-nems-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📐 Micro-electromechanical Systems (MEMS) and NEMS Physics
+# [Entity] micro-electromechanical-systems-mems-and-nems-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰이 어떻게 당신의 걸음 수를 세고, 화면의 방향을 가늠하는지 궁금한 적이 있나요? 그 속에는 머리카락보다 얇은 톱니바퀴와 용스프링이 살아 움직이고 있습니다. **MEMS/NEMS(미세 기전 시스템)**는 반도체 칩 위에 기계적인 기구들을 새겨넣은 **'나노 규모의 기계 도시'**입니다. 보이지 않을 만큼 작지만, 아주 예민하게 세상을 느끼고(센서), 아주 정밀하게 움직이는(액추에이터) 이 장치들은, 디지털 세계에 '오감'을 부여하는 **'미세 세계의 근육과 감각'**입니다.
@@ -56,7 +45,7 @@ $$ f_0 = \frac{1}{2\pi} \sqrt{\frac{k}{m}} $$
 
 | Parameter | MEMS (Micro) | NEMS (Nano) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Feature Size** | 1 ~ 100 | < 1 | $\mu m / nm$ | Scale |
+| **Feature Size** | 1 ~ 100 | < 1 | $\mu\text{m} / nm$ | Scale |
 | **Material** | Silicon / Polymer | Graphene / CNT | - | Durability |
 | **Sensitivity** | $10^{-12}$ (pico) | $10^{-18}$ (atto) | g / N | Precision |
 | **Resonance** | kHz ~ MHz | MHz ~ GHz | Hz | Speed |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Packaging Leak - Air Damping Reducing Q-factor and Sensitivity. Recalibrate Seal Process"
         return "PASS: High-Q Vacuum Environment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(resonance_drift_hz=12, pull_in_voltage=12.5, stiction_events=0)
 print(engine.diagnose_mems_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mems_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mems-sensor-sensitivity-and-failure-modes-v2026`와 연동되어, 전 세계 스마트 기기의 센서 데이터를 실시간 분석하고 오작동 및 물리적 고착 사고 확률을 0.001% 이하로 억제함으로써 미세 지능 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - haptic-feedback-and-tactile-sensor-physics

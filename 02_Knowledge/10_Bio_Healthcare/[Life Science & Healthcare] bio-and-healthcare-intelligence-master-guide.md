@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "ENTITY-BIO-2026-V6.3.7"
-  domain: "Bio_and_Healthcare_Intelligence"
+metadata:
+  id: "[[[Life Science & Healthcare] bio-and-healthcare-intelligence-master-guide]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Bio", "#Healthcare", "#Drug_Discovery", "#CRISPR", "#Digital_Twin", "#Longevity", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 10_Bio_Healthcare"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] bio-and-healthcare-intelligence-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Bio_Healthcare_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] bio-and-healthcare-intelligence-master-guide
@@ -107,7 +97,6 @@ class BioHealthcareFidelityEngine:
 2. **Operational Result**: **Personalized Medicine**에서 **Genomic Data**의 무결성이 오진율을 $90\%$ 이상 낮추는 수리적 기전은?
 3. **FidelityEngine**: **Metabolic Flux** 데이터에서 특정 구간의 병목 현상을 감지하여, 이를 **'효소 결핍에 따른 대사 장애'**로 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 10_Bio_Healthcare
 - [[AI] ai-drug-discovery-physics]

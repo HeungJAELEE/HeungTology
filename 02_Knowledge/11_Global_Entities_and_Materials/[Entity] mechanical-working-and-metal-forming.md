@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "mechanical-working-and-metal-forming"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] mechanical-working-and-metal-forming]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing process of shaping metallic materials through plastic deformation induced by mechanical forces (Mechanical Working), including rolling, forging, and extrusion, governed by the theory of plasticity and flow stress."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metal-forming", "forging", "rolling", "extrusion", "plasticity", "mechanical-working", "metallurgy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Forming_Force_Audit: Monitor the load-stroke curves to ensure the applied force exceeds the yield strength but remains within the tool''s structural limits.'
-    - 'Grain_Structure_Check: Analyze the microstructure (e.g., through ultrasonic grain sizing) to verify that the mechanical working has achieved the desired grain refinement and strength.'
-    - 'Surface_Integrity_Scan: Evaluate the finished part for surface cracks, orange peel, or scale patterns that indicate improper lubrication or temperature control.'
-Trust Metrics:
+  description: "[Entity] mechanical-working-and-metal-forming에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔨 Mechanical Working and Metal Forming
+# [Entity] mechanical-working-and-metal-forming
 
 ## 1. 개요 (Why: 인간적 통찰)
 차가운 금속 덩어리에 엄청난 힘을 가해 원하는 모양으로 빚어내는 것, 이것은 현대 문명을 지탱하는 **'금속의 연금술'**입니다. **소성 가공 및 금속 성형**은 금속이 가진 '한 번 변하면 돌아오지 않는 성질(소성)'을 이용해, 자르고 깎는 대신 두드리고($Forging$), 밀고($Rolling$), 짜내어($Extrusion$) 제품을 만드는 **'힘의 예술'**입니다. 이 과정을 거친 금속은 내부의 불순물이 사라지고 결정이 치밀해져, 원래보다 훨씬 더 단단하고 질긴 **'강철의 근육'**을 갖게 됩니다. 자동차의 차체부터 비행기의 날개 뼈대까지, 우리 주변의 모든 튼튼한 것들은 이 거대한 압력을 견뎌낸 승리자들입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Friction - Risk of Galling and Overheating. Replenish Lubricant"
         return "PASS: Stable Tribological Conditions Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(forming_pressure_mpa=450, grain_size_microns=12.5, surface_roughness_ra=0.4)
 print(engine.diagnose_forming_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_forming_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data metal-forming-force-and-grain-refinement-logs-v2026`와 연동되어, 전 세계 주요 자동차 및 항공 부품 성형 라인의 데이터를 실시간 분석하고 성형 불량 및 장비 파손 사고 확률을 0.001% 이하로 억제함으로써 물리적 제조 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - martensitic-transformation-and-heat-treatment-physics

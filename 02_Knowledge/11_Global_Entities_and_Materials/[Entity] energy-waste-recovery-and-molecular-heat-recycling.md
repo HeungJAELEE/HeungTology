@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-waste-recovery-and-molecular-heat-recycling-entity"
-  domain: "39_Global_Unified_Governance_Global_Energy_and_Grid_Control"
+metadata:
+  id: "[[[Entity] energy-waste-recovery-and-molecular-heat-recycling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy_Waste", "#Heat_Recycling", "#Molecular_Heat", "#Governance", "#Energy_Efficiency", "#Thermodynamics", "#Circular_Economy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 39_global-unified-governance-global-energy-and-grid-control-hub", "Entity waste-to-energy-and-molecular-recycling-standards"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-waste-recovery-and-molecular-heat-recycling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-waste-recovery-and-molecular-heat-recycling
+# [Entity] energy-waste-recovery-and-molecular-heat-recycling
 
 ## 1. [왜 배우는가? (Why: The Second Life of Energy)]]
 공장이나 데이터 센터에서 버려지는 뜨거운 열기($Waste\ Heat$)를 어떻게 그냥 날려 보내지 않고 알뜰하게 회수하여, 분자 수준의 미세한 에너지까지 어떻게 다시 쓸 수 있는 에너지로 바꾸는($Recycling$) '에너지 무한 순환 시스템'을 어떻게 구축할 수 있을까요? **에너지 폐기물 회수 및 분자 열 재활용**은 에너지를 끝까지 쥐어짜는 '행성 규모 에너지 구두쇠 및 지능형 열 순환 아키텍처'입니다. 우리가 이를 배우는 이유는 전 세계 에너지의 절반 이상이 열로 그냥 버려지기 때문이며, "열의 흔적을 데이터로 설계하고 지배하는 '글로벌 에너지 효율 패권 및 행성적 자원 절약 주권'을 확보하기" 위함입니다. 회수의 정밀도가 에너지 경제성을 결정합니다.

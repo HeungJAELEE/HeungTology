@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-refrigerator-and-cryogenic-cooling-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-refrigerator-and-cryogenic-cooling-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized cooling system designed to maintain temperatures significantly below ambient (Industrial Refrigerator) and the physical study of reaching extreme low temperatures (Cryogenic Cooling Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["refrigerator", "cryogenics", "cooling", "liquid-nitrogen", "joule-thomson", "superconductivity", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cryogenic_Fidelity_Audit: Evaluate the ''Vacuum Integrity'' of the Dewar jacket to identify if high-fidelity ''Heat Leakage'' is causing excessive liquid high-fidelity ''Boil-off''.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Cooldown Rate'' to ensure the material transition through the high-fidelity ''Ductile-to-Brittle'' point is managed safely.'
-    - 'Phase_Fidelity_Scan: Monitor the high-fidelity ''Flash Gas'' percentage to verify that the high-fidelity ''Joule-Thomson'' expansion is optimized for maximum liquid yield.'
-Trust Metrics:
+  description: "[Entity] industrial-refrigerator-and-cryogenic-cooling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧊 Industrial Refrigerator and Cryogenic Cooling Physics
+# [Entity] industrial-refrigerator-and-cryogenic-cooling-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세포를 수십 년간 얼려 보관하거나, 전기 저항이 0이 되는 초전도 현상을 만들려면 얼마나 추운 곳이 필요할까요? **산업용 냉장 및 초저온 냉각 물리**는 영하 150도 이하의 극한의 추위를 창조하고 유지하는 **'절대 영도를 향한 도전'** 기술입니다. 단순히 시원한 것을 넘어, 공기를 액체로 만들고 금속을 유리처럼 부서지게 만드는 기묘한 물리적 세계를 다룹니다. **'열에너지를 극한까지 쥐어짜 내어 생명 연장, 양자 컴퓨팅, 우주 탐사의 토대를 만드는 지능형 극한 온도 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Overpressure Event - High-fidelity pressure exceeded safety limit. Emergency high-fidelity venting occurred. Check for heat exchanger breach"
         return "PASS: Validated Pressure Safety and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vacuum_pressure_torr=1e-5, boil_off_rate_lhr=0.5, supply_temp_k=77.0)
 print(engine.diagnose_cryogenic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cryogenic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cryogenic-fluid-properties-and-boiling-points-v2026`와 연동되어, 전 세계 주요 양자 컴퓨터 연구소 및 로켓 연료 저장소의 데이터를 실시간 분석하고 누설 및 용기 폭발 사고 확률을 0.000001% 이하로 억제함으로써 지능형 극한 기술 문명의 냉기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-pump-and-refrigeration-cycle-thermodynamics-physics

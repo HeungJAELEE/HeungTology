@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cast-iron-metallurgy-and-graphitization-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cast-iron-metallurgy-and-graphitization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A group of iron-carbon alloys with a carbon content greater than 2%, primarily known for their excellent castability and vibration damping (Cast Iron) and the study of how carbon precipitates into graphite flakes or nodules during cooling (Graphitization Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cast-iron", "metallurgy", "graphitization", "foundry", "gray-iron", "ductile-iron", "phase-transformation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metallurgy_Fidelity_Audit: Evaluate the ''Carbon Equivalent'' (CE) and silicon content to identify if the alloy will solidify with graphite (Gray/Ductile) or cementite (White Iron).'
-    - 'Graphitization_Integrity_Check: Analyze the graphite shape (nodularity) using image analysis to ensure the magnesium inoculation has successfully created spherical nodules for high ductility.'
-    - 'Mechanical_Fidelity_Scan: Monitor the cooling rate in the mold to verify that the ''Pearlite/Ferrite'' ratio in the matrix is meeting the required hardness and machinability specs.'
-Trust Metrics:
+  description: "[Entity] cast-iron-metallurgy-and-graphitization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Cast Iron Metallurgy and Graphitization Physics
+# [Entity] cast-iron-metallurgy-and-graphitization-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 주방의 무거운 프라이팬부터 거대한 기계의 몸체까지, 왜 무겁고 단단한 물건들은 주로 주철로 만들어질까요? **주철 야금 및 흑연화(Graphitization) 물리**는 쇠 속에 숨어있는 '연필심(흑연)'의 모양을 다스려 철의 성질을 바꾸는 **'내부 구조의 조율'** 기술입니다. 탄소가 길쭉한 조각(편상)으로 남으면 진동을 잘 흡수하고, 동그란 구슬(구상)로 변하면 강철처럼 질겨집니다. 쇳물을 붓는 것만으로도 복잡한 모양을 순식간에 만드는 **'주조 문명의 든든한 뿌리'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Shrinkage Porosity Detected - Inadequate feeding during solidification. Review riser design and thermal modulus"
         return "PASS: Dense Homogeneous Casting and Verified Soundness Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(carbon_equivalent=4.3, nodularity_pct=92.0, pearlite_content_pct=60.0)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cast-iron-microstructure-and-tensile-strength-v2026`와 연동되어, 전 세계 주요 엔진 공장 및 중장비 부품사의 데이터를 실시간 분석하고 내부 균열 및 구조 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 골격 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bessemer-process-and-modern-oxygen-steelmaking-physics

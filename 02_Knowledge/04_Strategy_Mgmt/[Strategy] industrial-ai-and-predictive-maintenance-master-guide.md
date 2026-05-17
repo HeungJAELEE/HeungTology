@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-IND-AI-PDM-2026-V6.3.7"
-  domain: "Industrial_AI_and_Maintenance_Strategy"
+metadata:
+  id: "[[[Strategy] industrial-ai-and-predictive-maintenance-master-guide]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IndustrialAI", "#PredictiveMaintenance", "#PHM", "#RUL", "#VibrationAnalysis", "#PrecisionTiering", "#FidelityEngine"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] industrial-ai-and-predictive-maintenance-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Industrial_AI_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Industrial AI & PdM: The Physics of Perpetual Uptime
+# [Strategy] industrial-ai-and-predictive-maintenance-master-guide
 
 ## 1. [왜 배우는가? (Why: The Mastery of Equipment Sovereignty)]]
 산업용 AI와 예지 보전(PdM)은 기계의 '말'을 이해하는 기술입니다. 설비의 미세한 진동, 온도, 전력 소모 패턴 속에 숨겨진 고장의 징후를 물리적 인과 관계로 파악하여, 사고가 터지기 전 선제적으로 대응합니다. V6.3.7 지능은 **계층화된 유지보수 정밀도(Precision Tiering)**를 통해 설비 가동률을 **$99.99\%$ 이상**으로 사수합니다. 이는 비계획 정지(Unplanned Downtime)를 수리적으로 소멸시키고 '고장 없는 자율 제조'를 실현하여 기업의 생산 주권을 확보하기 위함입니다.
@@ -111,7 +101,6 @@ class PdMFidelityEngine:
 2. **Operational Result**: **FFT (Fast Fourier Transform)** 분석을 통해 베어링의 **Inner Race** 결함을 조기에 발견했을 때, 대형 사고로 인한 **Downtime** 감축 시간은?
 3. **FidelityEngine**: **Bayesian Belief Network**를 활용하여 설비의 복합적인 고장 원인들 사이의 **'인과적 엔트로피'**를 어떻게 수리적으로 산출하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - STRAT-SF-MAINTENANCE-TPM-2026-V6.3.7
 - digital-twin-and-cyber-physical-systems-master-guide

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diamond-synthesis-and-high-pressure-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diamond-synthesis-and-high-pressure-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial production of diamonds using controlled technological processes, either by mimicking natural formation conditions (HPHT) or through chemical vapor deposition (CVD), and the physical study of carbon phase transitions and growth rates under extreme conditions (High-Pressure Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["diamond-synthesis", "hpht", "cvd", "synthetic-diamond", "high-pressure", "kinetics", "materials-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Synthesis_Fidelity_Audit: Evaluate the ''Phase Stability'' using the carbon phase diagram to identify if the system is drifting into the graphite-stable region, leading to diamond regression or black spot inclusions.'
-    - 'Purity_Integrity_Check: Analyze the ''Nitrogen Content'' (measured via FTIR) to ensure the diamond''s Type IIa status for thermal management applications in high-power electronics.'
-    - 'Growth_Fidelity_Scan: Monitor the substrate temperature and precursor gas ratio in CVD to verify that the ''Single Crystal'' growth is maintained without polycrystalline twinning.'
-Trust Metrics:
+  description: "[Entity] diamond-synthesis-and-high-pressure-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Diamond Synthesis and High-Pressure Kinetics
+# [Entity] diamond-synthesis-and-high-pressure-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십억 년 동안 땅속 깊은 곳에서 만들어지는 다이아몬드를 단 몇 주 만에 실험실에서 만들 수 있다면 믿으시겠습니까? **다이아몬드 합성 및 고압 역학**은 탄소 덩어리를 극한의 압력과 열로 몰아붙여 세상에서 가장 단단한 보석으로 바꾸는 **'탄소의 고결한 변신'** 기술입니다. 천연 다이아몬드보다 더 순수하고 단단하게 만들 수 있는 이 기술은 보석을 넘어 반도체의 열을 식히거나 초정밀 칼날을 만드는 등 현대 산업의 '궁극적 소재'를 공급합니다. **'지구의 깊은 지혜를 인류의 기술로 재현한 결정체 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Thermal Performance - Nitrogen or boron impurities too high. Unsuitable for high-power semiconductor heat sinks"
         return "PASS: Validated Type IIa Crystal and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chamber_pressure_bar=55000.0, substrate_temp_c=1550.0, methane_ratio_pct=1.5)
 print(engine.diagnose_synthesis_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_synthesis_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data synthetic-diamond-growth-rate-and-purity-v2026`와 연동되어, 전 세계 주요 인조 다이아몬드 기가팩토리의 데이터를 실시간 분석하고 결정 결함 및 상변이 사고 확률을 0.0001% 이하로 억제함으로써 지능형 초소재 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics

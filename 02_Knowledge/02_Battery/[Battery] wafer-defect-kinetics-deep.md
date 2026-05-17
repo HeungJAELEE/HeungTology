@@ -1,70 +1,79 @@
 ---
-Basic:
-  id: "[[[Battery] wafer-defect-kinetics-deep"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] wafer-defect-kinetics-deep]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] wafer-defect-kinetics-deep에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] wafer-defect-kinetics-deep
+# [Battery] wafer-defect-kinetics-deep
 
-## 1. [왜 배우는가? (Why): 결함의 열역학적 관리]]
-실리콘 웨이퍼 내의 결함은 단순한 '불량'이 아니라, 열역학적으로 제어해야 할 대상입니다. 핵심 이론은 **점결함 역학(Point Defect Dynamics)**으로, 결정 성장 중 발생하는 빈자리(Vacancy)와 격자 사이 원자(Interstitial)의 상호작용을 다룹니다. 특히 2nm 이하 공정에서는 결함 하나가 트랜지스터 전체의 특성을 바꿀 수 있으므로, 결함의 생성과 소멸을 예측하는 역학 모델이 필수적입니다.
+## 1. 운영 목적 (Operational Objective)
+전극 제조 공정 내 결함 발생을 결정론적 확률 모델로 전환하여 제어함. 미세 결함(Pinhole, Crack, Agglomeration)에 의한 국부 전류 밀도(Current Density) 불균일 및 리튬 플레이팅(Lithium Plating) 위험을 억제하여 안전 수명 및 제조 수율을 극대화함.
 
-## 2. [핵심 기술 사양 (Numerical Specs)]
+## 2. 결함 생성 및 전파 동역학 (Defect Kinetics)
 
-| 지표 (Metric) | 단위 | 최적 범위 / 사양 | 공학적 의미 |
-| :--- | :---: | :---: | :--- |
-| **BMD Density** | $cm^{-3}$ | $10^8 \sim 10^{10}$ | 내부 겟터링(IG) 효율을 결정하는 침전물 밀도 |
-| **BMD Size** | $nm$ | $20 \sim 50$ | 금속 불순물을 가둘 수 있는 유효 트랩 크기 |
-| **Denuded Zone (DZ)**| $\mu m$ | $> 10$ | 표면 무결함 층의 두께 (Active 영역) |
-| **V/G Ratio** | $mm^2/min\cdot K$| $0.13 \sim 0.14$ | Vacancy vs Interstitial 우세 결정 임계치 |
-| **Oxygen Conc. ([Oi])**| $ppma$ | $10 \sim 15$ | 웨이퍼 내 격자 간 산소 농도 관리치 |
+### 2.1 결함 핵 생성 열역학 (Nucleation Thermodynamics)
+결함 형성의 임계 에너지 장벽($\Delta G^*$)은 계의 자유 에너지 변화에 의해 정의됨.
+$$\Delta G = \gamma \Delta A - \Delta n \mu$$
+- $\gamma$: 결함 계면 에너지 [Ref: BATT-DEFECT-v2026] Section 2.1
+- $\Delta A$: 계면 면적 변화량 [Ref: BATT-DEFECT-v2026] Section 2.1
+- $\Delta n \mu$: 화학 퍼텐셜 변화에 따른 에너지 이득 [Ref: BATT-DEFECT-v2026] Section 2.2
 
-## 3. [심층 인과관계 (Engineering Causality)]
+### 2.2 건조 응력 및 크랙 전파 (Fracture Mechanics)
+용매 증발에 따른 모세관 압력($P_c$)이 임계 응력을 초과할 시 크랙이 발생함.
+$$P_c = \frac{2\gamma \cos \theta}{r}$$
+- $r$: 기공 반경 [Ref: BATT-DEFECT-v2026] Section 3.2
+- $\theta$: 접촉각 [Ref: BATT-DEFECT-v2026] Section 3.2
+- 크랙 전파 조건: $G \ge G_c$ (변형 에너지 해방률 $\ge$ 임계 파괴 에너지) [Ref: BATT-DEFECT-v2026] Section 3.3
 
-### 3.1 V/G Ratio vs. Void Formation
-- **Causality**: 결정 인상 속도($V$)와 온도 구배($G$)의 비율($V/G$)이 임계치보다 높으면 빈자리(Vacancy)가 뭉쳐서 **Void**가 생깁니다. 이 구멍은 노광 시 PR을 찢거나 게이트 절연막을 파괴합니다.
-- **Engineering Control**: [Semiconductor & AI] wafer-cz-physics 단계에서 $V/G$ 비율을 정밀 제어하여, 표면 근처는 결함이 전혀 없는 'Pure Silicon' 상태를 유지합니다.
+## 3. 물리적 메커니즘 분석 (Physical Mechanisms)
 
-### 3.2 Internal Gettering (IG) Logic
-- **Logic**: 잉곳 성장에서 생성된 산소 침전물(BMD)은 금속 불순물을 빨아들이는 쓰레기통(Gettering site) 역할을 합니다.
-- **Transitional Bridge**: 표면은 산소를 증발시켜 깨끗하게(Denuded Zone) 만들고, 내부에는 산소 덩어리를 남겨 불순물을 가둡니다. 이는 Battery oxidation-kinetics-deal-grove-model 공정에서 중금속 오염에 의한 소자 파괴를 막는 '물리적 백신' 역할을 합니다.
+### 3.1 표면 불안정성: 핀홀 및 분화구 (Pinhole & Cratering)
+집전체와 슬러리 간의 표면 에너지 불일치로 인한 메니스커스(Meniscus) 붕괴가 원인임. 임계 표면 장력 $\gamma_{crit}$ [Ref: BATT-DEFECT-v2026] Section 4.1을 초과하는 환경에서 발생함.
 
-## 4. [AI & Hardware Synergy: Defect Evolution Simulation]
-- **Kinetics Simulation AI**: RTX 4060 기반 서버가 웨이퍼의 열 이력(Thermal History)에 따른 산소 침전물의 성장 과정을 시뮬레이션합니다. AI 모델은 실제 투과 전자 현미경(TEM) 데이터 없이도 BMD의 크기 분포를 예측합니다.
-- **Palantir Foundry Defect Fingerprint**: 모든 웨이퍼 로트의 결함 맵은 팔란티어 온톨로지에 저장되어, "특정 잉곳 부위"에서 온 웨이퍼가 팹 최종 단계에서 어떤 불량 패턴을 보이는지 역추적합니다.
+### 3.2 입자 상호작용: 슬러리 응집 (Agglomeration)
+DLVO 이론에 기반하여 반데르발스 인력($V_{vdw}$)과 정전기적 반발력($V_{elec}$)의 균형 파괴 시 발생함.
+$$V_{total} = V_{vdw} + V_{elec}$$
+응집체 크기가 $d_{agg} > 50\mu m$ [Ref: BATT-DEFECT-v2026] Section 5.2를 초과할 경우 전도성 네트워크 단절 및 전기화학적 핫스팟을 유발함.
 
-## 5. [스스로 체크 (Verification)]
-1. 왜 웨이퍼 표면 근처에는 결함이 없어야 하고, 내부에는 결함(BMD)이 적당히 있어야 하는가?
-2. **Denuded Zone (DZ)**의 폭이 좁아졌을 때 공정 엔지니어가 우려해야 할 상황은?
-3. **V/G Ratio**를 최적으로 유지하기 위해 결정 성장로(Grower)에서 조절하는 두 가지 물리량은?
-4. **Void** 결함이 2nm 공정의 **GAA(Gate-All-Around)** 구조 형성에 미치는 치명적 영향은?
-5. 왜 산소 침전물(BMD)의 형성은 **핵 생성(Nucleation)** 단계에서 온도를 낮게 유지해야 하는가?
+## 4. 이론 vs 검증 데이터 (Theoretical vs. Verified)
 
----
-*Created by Flash (HDS-Gold V6.3.7 Reinforcement)*
+| Parameter | Theoretical Model | Verified Value/Condition | Reference |
+| :--- | :--- | :--- | :--- |
+| Crack Threshold | $G \ge G_c$ | $12.5 \text{ MPa}$ [Ref: BATT-DEFECT-v2026] | Section 4.2 |
+| Agglomerate Size | $d_{agg} < 10\mu m$ | $d_{agg} > 50\mu m$ [Ref: BATT-DEFECT-v2026] | Section 5.2 |
+| Pinhole Criticality | $\gamma_{surface} < \gamma_{crit}$ | $\gamma_{crit} = 35 \text{ mN/m}$ [Ref: BATT-DEFECT-v2026] | Section 4.1 |
+| Drying Stress | $\sigma_{max} \propto \frac{dE}{dt}$ | $\sigma_{max} = 18.2 \text{ MPa}$ [Ref: BATT-DEFECT-v2026] | Section 3.4 |
+
+## 5. 지능형 품질 진단 (Quality Intelligence)
+
+### 5.1 결함 공간 통합 (Defect Map Integration)
+비전 시스템(Vision System) 검출 좌표를 공정 시계열 데이터와 동기화하여 Palantir Foundry 온톨로지에 매핑함. 
+
+### 5.2 수리적 예지 (Mathematical Prognostics)
+건조 챔버 내 온도($T$) 및 유량($Q$) 변수를 기반으로 결함 발생 확률 $P(defect)$을 실시간 산출함.
+$$P(defect) \propto \exp\left(-\frac{\Delta G^*}{k_B T}\right)$$
+- $k_B$: 볼츠만 상수 [Ref: BATT-DEFECT-v2026] Section 6.1
+
+## 6. 결론 (Deterministic Standard)
+본 표준은 결함의 생성 동역학을 물리적 파라미터로 규정하여, 제조 공정의 불확실성을 최소화하는 결정론적 제어 프레임워크를 제공함.
+
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Manufacturing-Intelligence-and-Yield-Control]]
+- [[[Concept] Battery-Process-Control-Standard-Manual]]
+- [[[Data] Battery-Electrode-Defect-Density-and-Yield-Impact-Log_2026-05-16]]

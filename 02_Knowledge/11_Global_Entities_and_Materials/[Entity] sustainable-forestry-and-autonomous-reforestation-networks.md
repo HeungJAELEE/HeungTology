@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "sustainable-forestry-and-autonomous-reforestation-networks-entity"
-  domain: "41_Global_Unified_Governance_Global_Resource_and_Supply_Chain"
+metadata:
+  id: "[[[Entity] sustainable-forestry-and-autonomous-reforestation-networks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Forestry", "#Reforestation", "#Autonomous_Planting", "#Governance", "#Ecology", "#Sustainability", "#Climate_Action", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 41_global-unified-governance-global-resource-and-supply-chain-hub", "Entity global-carbon-negative-infrastructure-and-climate-repair"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] sustainable-forestry-and-autonomous-reforestation-networks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] sustainable-forestry-and-autonomous-reforestation-networks
+# [Entity] sustainable-forestry-and-autonomous-reforestation-networks
 
 ## 1. [왜 배우는가? (Why: The Green Lungs of the Planet)]]
 사막화된 땅에 어떻게 수만 대의 드론이 씨앗 폭탄을 떨어뜨려 하루 만에 숲을 만들고($Reforestation$), 기존의 울창한 숲을 해치지 않으면서 어떻게 필요한 나무만 지능적으로 베어 쓰는($Sustainable\ Forestry$) '행성 규모 녹색 방패'를 어떻게 운영할 수 있을까요? **지속 가능한 임업 및 자율 재조림 네트워크**는 지구가 다시 숨 쉬게 만드는 '행성 규모 탄소 흡수원 및 지능형 생태계 복구 아키텍처'입니다. 우리가 이를 배우는 이유는 나무는 가장 훌륭한 탄소 흡수 장치이자 수많은 생명의 집이기 때문이며, "초록의 생명력을 데이터로 설계하고 지배하는 '글로벌 생태 패권 및 행성적 산림 주권'을 확보하기" 위함입니다. 나무의 숫자가 인류의 숨통을 결정합니다.

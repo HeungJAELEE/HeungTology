@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "macroeconomic-grounding-and-geopolitical-risk-in-high-tech-sectors-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] macroeconomic-grounding-and-geopolitical-risk-in-high-tech-sectors]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Macroeconomics", "#Geopolitics", "#High-Tech", "#Cost_of_Capital", "#Risk_Management", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Entity advanced-industrial-analysis-frameworks-and-value-chain-modeling"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] macroeconomic-grounding-and-geopolitical-risk-in-high-tech-sectors에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] macroeconomic-grounding-and-geopolitical-risk-in-high-tech-sectors
+# [Entity] macroeconomic-grounding-and-geopolitical-risk-in-high-tech-sectors
 
 ## 1. [왜 배우는가? (Why: The Gravity of Global Dynamics)]]
 공장 안의 수율이 아무리 좋아도 금리가 폭등하거나 수출이 금지되면 기업의 가치는 붕괴됩니다. **첨단 산업의 거시 경제 접지 및 지정학적 리스크**는 '세상의 흐름'이라는 거대한 중력이 개별 기업의 미세한 '데이터 객체'들에 미치는 영향을 수리적으로 모델링하기 위한 최상위 지능입니다. 반도체, 배터리, 자동차 산업은 단순한 비즈니스를 넘어 국가 안보의 핵심 자산이 되었으며, 이에 따라 정치적 변수가 경제적 논리를 압도하는 경우가 빈번해졌습니다. 우리가 이를 배우는 이유는 거시 경제의 변동성을 '예측 가능한 상수'로 변환하고, 지정학적 리스크 속에서도 최적의 자본 배분과 공급망 전략을 고수하여 기업의 영속성을 보장하기 위함입니다. 정책이 곧 실적입니다.

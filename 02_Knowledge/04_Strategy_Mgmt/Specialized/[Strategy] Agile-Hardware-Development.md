@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Agile-Hardware-Development"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Agile-Hardware-Development]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Agile-Hardware-Development에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Agile-Hardware-Development
+# [Strategy] Agile-Hardware-Development
 
 ## 1. [왜 배우는가? (Why)]]
 하드웨어 개발은 보통 '폭포수(Waterfall)' 방식입니다. 설계가 끝나야 제작을 하고, 제작이 끝나야 테스트를 합니다. 하지만 이 방식은 시장 변화에 너무 느립니다. 애자일 하드웨어 개발(Agile-Hardware-Development)은 수년이 걸리던 개발 기간을 수개월로, 수개월이 걸리던 것을 수주로 단축하는 '속도의 마법'입니다. 설계를 조금씩 완성하면서 동시에 제작하고 테스트하는 반복 과정을 통해, 완벽하지 않더라도 핵심 기능을 가진 시제품을 빠르게 시장에 내놓습니다. 이를 이해하는 것은 하드웨어라는 무거운 실체를 소프트웨어처럼 가볍고 기민하게 다루어, 경쟁사보다 먼저 시장을 선점하는 '초속도 경쟁력'을 확보하는 것입니다.
@@ -99,5 +89,4 @@ def plan_hardware_sprint(backlog_items, team_capacity, supply_chain_status):
 2. 'Agile-Waterfall 하이브리드' 모델에서 '고정된 마일스톤(Waterfall)'과 '유연한 스프린트(Agile)' 사이의 충돌을 조율하는 핵심 관리 기제는?
 3. 'SpaceX'가 로켓 개발에 '애자일' 방식을 도입하여 '나사(NASA)'보다 훨씬 빠른 개발 속도를 낼 수 있었던 구체적인 공학적/조직적 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

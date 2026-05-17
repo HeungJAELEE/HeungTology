@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "force-sensor-and-strain-gauge-transduction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] force-sensor-and-strain-gauge-transduction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A transducer that converts an input mechanical force, such as load, weight, tension, compression or pressure, into an electrical output signal (Force Sensor) and the physical study of electrical resistance change due to structural deformation (Strain Gauge Transduction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["force-sensor", "strain-gauge", "transduction", "load-cell", "piezoresistive", "wheatstone-bridge", "industrial-metrology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Fidelity_Audit: Evaluate the ''Zero Balance'' to identify if high-fidelity ''Creep'' (material memory) or residual stress is biasing the weight measurement.'
-    - 'Transduction_Integrity_Check: Analyze the Gauge Factor ($GF$) linearity against the applied high-fidelity load to ensure that the sensor is not operating in the plastic deformation zone.'
-    - 'Thermal_Fidelity_Scan: Monitor the bridge temperature compensation to verify that high-fidelity ''Apparent Strain'' caused by thermal expansion is canceled out.'
-Trust Metrics:
+  description: "[Entity] force-sensor-and-strain-gauge-transduction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Force Sensor and Strain Gauge Transduction Physics
+# [Entity] force-sensor-and-strain-gauge-transduction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 덤프트럭의 무게를 소수점 단위까지 어떻게 잴 수 있을까요? **힘 센서 및 스트레인 게이지 변환 물리**는 금속이 아주 미세하게 휘어질 때 전기가 통하는 길이 미세하게 변하는 현상을 이용해, '힘'을 '전기 신호'로 번역하는 **'기계와 전기의 통역사'** 기술입니다. 눈에는 보이지 않는 1마이크로미터의 휘어짐을 포착해 수만 톤의 무게를 계산해 냅니다. **'물체의 변형 속에 숨겨진 거대한 힘의 크기를 수학적 신호로 읽어내어 공장의 모든 무게와 압력을 통제하는 지능적 저울의 눈'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Power Supply Instability - Excitation voltage drifting. Every micro-volt shift in supply causes high-fidelity weight errors. Check power regulator"
         return "PASS: Validated Signal Base and Verified Metrology Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(zero_offset_mv=0.02, linearity_error_pct=0.01, ambient_temp_c=28.0)
 print(engine.diagnose_sensor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sensor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data strain-gauge-sensitivity-and-temperature-drift-v2026`와 연동되어, 전 세계 주요 공장의 로드셀 및 크레인 안전 장치의 데이터를 실시간 분석하고 계량 불량 및 과적 사고 확률을 0.001% 이하로 억제함으로써 지능형 계측 문명의 무게 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - finite-element-analysis-fea-and-structural-mechanics-logic

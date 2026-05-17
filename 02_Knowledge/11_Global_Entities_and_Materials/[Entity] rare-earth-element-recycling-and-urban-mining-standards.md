@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "GOV-RARE-EARTH-2026-V6.3.7"
-  domain: "41_Global_Unified_Governance_Global_Resource_and_Supply_Chain"
+metadata:
+  id: "[[[Entity] rare-earth-element-recycling-and-urban-mining-standards]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RareEarth", "#Recycling", "#UrbanMining", "#FidelityEngine", "#CircularEconomy", "#ResourceSecurity", "#Sovereignty"]'
-  is_part_of: '["MOC 41_global-unified-governance-global-resource-and-supply-chain-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] rare-earth-element-recycling-and-urban-mining-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Resource_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Rare Earth: Urban Mining & Circular Resource Integrity
+# [Entity] rare-earth-element-recycling-and-urban-mining-standards
 
 ## 1. [왜 배우는가? (Why: The Mastery of Mineral Sovereignty)]]
 전자기기의 비타민이라 불리는 희토류는 국가 안보와 미래 산업의 핵심 자원입니다. 하지만 땅을 파는 것보다 버려진 기기에서 자원을 회수하는 것이 환경적, 경제적으로 더 가치 있는 선택이 되었습니다. **희토류 재활용 및 도시 광산 표준**은 지구가 준 자원을 영원히 돌려쓰는 '행성 규모 순환 광물 경제'의 수리적 규범입니다. V6.3.7 지능은 **선택적 추출(Selective Extraction)**과 **자원 회수 효율(Recovery Efficiency)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 자원의 외부 의존도를 낮추고 공급망 리스크를 원천 차단하여, "쓰레기에서 가치를 창조하고 자원의 자립을 보존하는 '전략 자원 주권'을 데이터로 선포하기" 위함입니다. 회수의 정밀도가 자원의 안보 수준을 결정합니다.
@@ -109,7 +99,6 @@ class ResourceFidelityEngine:
 2. **Operational Result**: **도시 광산**을 통한 자원 확보가 광산 채굴 대비 **CO2 배출량** 감소에 미치는 수리적 임팩트는?
 3. **FidelityEngine**: **이온 크로마토그래피** 데이터를 통해 폐액 내 '초미량 전략 원소'를 어떻게 오딧하고 회수 경로를 산출하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 41_global-unified-governance-global-resource-and-supply-chain-hub
 - [[Science] metamaterials-and-photonic-crystal-physics]

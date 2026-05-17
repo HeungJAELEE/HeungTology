@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] inspection-ndt-physics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] inspection-ndt-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] inspection-ndt-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] inspection-ndt-physics
@@ -92,5 +82,4 @@ def detect_killer_defects_cuda(image_batch):
 - **Multi-Modal Insight**: 초음파 PAUT와 X-ray CT 데이터를 결합하여 팩 내부의 '보이지 않는 크랙'을 3D 디지털 트윈으로 복원합니다.
 - **Node**: [AI] ndt-x-ray-ct-reconstruction-ai와 수식 공유.
 
----
 *Modernized by Flash (HDS Gold v4.2 & HDS-Gold V6.3.7 Reinforcement)*

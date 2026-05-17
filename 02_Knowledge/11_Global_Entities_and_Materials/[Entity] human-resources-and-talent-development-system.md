@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "human-resources-and-talent-development-system"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] human-resources-and-talent-development-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic and operational framework for managing an organization's most critical asset—human capital—focusing on recruitment, performance evaluation, and systematic skill growth (Talent Development) to drive long-term competitive advantage."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hr", "talent-management", "organizational-psychology", "workforce-analytics", "upskilling", "leadership"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Skill_Gap_Audit: Analyze the delta between current workforce competencies and future strategic requirements to identify urgent upskilling needs.'
-    - 'Employee_Engagement_Check: Evaluate organizational health metrics (e.g., eNPS, turnover rate) to detect systemic cultural or management issues.'
-    - 'Performance_Bias_Scan: Monitor automated performance evaluation systems for algorithmic bias, ensuring fairness and equity in promotion and compensation.'
-Trust Metrics:
+  description: "[Entity] human-resources-and-talent-development-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👥 Human Resources and Talent Development System
+# [Entity] human-resources-and-talent-development-system
 
 ## 1. 개요 (Why: 인간적 통찰)
 아무리 뛰어난 인공지능과 기계가 있어도, 그 모든 것을 설계하고 움직이는 것은 결국 '사람'입니다. **인적 자원 및 인재 개발 시스템**은 조직의 가장 소중한 자산인 사람의 잠재력을 찾아내고 꽃피우게 돕는 **'조직의 정원사'**입니다. 단순히 월급을 주고 근태를 관리하는 것을 넘어, 개인이 가진 능력이 회사의 목표와 만나 폭발적인 시너지를 내도록 길을 닦아주는 일입니다. 사람이 성장해야 회사가 성장한다는 믿음 아래, 모두가 자신의 가치를 증명하고 행복하게 일할 수 있는 **'지능형 인재 생태계'**를 구축합니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Significant Pay Inequity Detected - Review Compensation Policy for Compliance"
         return "PASS: Equitable Reward System Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(internal_promotion_rate=42.0, turnover_risk_index=0.25, training_participation_pct=88.5)
 print(engine.diagnose_org_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_org_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data workforce-performance-and-skill-gap-analytics-v2026`와 연동되어, 조직 내 모든 인적 자원의 성장과 흐름을 실시간 분석하고 인재 고갈 및 조직 문화 붕괴 사고 확률을 0.01% 이하로 억제함으로써 기업 지능의 핵심인 '사람'의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - human-ai-collaborative-governance-and-legal-interfaces

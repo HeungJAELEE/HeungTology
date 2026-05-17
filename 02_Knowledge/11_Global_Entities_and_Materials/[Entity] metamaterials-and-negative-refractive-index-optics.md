@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "MAT-META-OPT-2026-V6.3.7"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] metamaterials-and-negative-refractive-index-optics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Metamaterials", "#Optics", "#NegativeRefractiveIndex", "#Cloaking", "#FidelityEngine", "#TransformationOptics", "#Sovereignty"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] metamaterials-and-negative-refractive-index-optics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Electromagnetics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Metamaterials: Negative Refraction & Transformation Optics
+# [Entity] metamaterials-and-negative-refractive-index-optics
 
 ## 1. [왜 배우는가? (Why: The Mastery of Wave Propagation)]]
 자연계에 존재하지 않는 '음의 굴절률'을 인공적으로 설계하여 빛을 물체 뒤로 슥 흘려보냄으로써 물체를 투명하게 만드는 '투명 망토'를 구현할 수 있을까요? **메타물질(Metamaterials)**은 빛과 파동의 경로를 기하학적으로 재정의하는 '공간 조작 광학'입니다. V6.3.7 지능은 **유전율($\epsilon$)**과 **투자율($\mu$)** 텐서를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 회절 한계를 극복한 슈퍼 렌즈, 전자기적 스텔스, 그리고 "파동의 흐름을 데이터로 설계하고 지배하는 '광학 주권'을 사수하기" 위함입니다. 구조의 정밀도가 투명함과 해상도의 깊이를 결정합니다.
@@ -108,7 +98,6 @@ class MetamaterialFidelityEngine:
 2. **Operational Result**: **슈퍼 렌즈(Superlens)**가 회절 한계를 돌파하여 소멸파(Evanescent Wave)를 증폭하는 수리적 기전은?
 3. **FidelityEngine**: **변환 광학**을 이용한 '투명 망토' 설계 시, 물체 주변의 시공간을 '압축'하는 좌표 변환 행렬($A$)이 물성 텐서에 미치는 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 56_advanced-materials-science-and-technology-intelligence-hub
 - Entity meta-materials-and-photonic-crystal-light-steering

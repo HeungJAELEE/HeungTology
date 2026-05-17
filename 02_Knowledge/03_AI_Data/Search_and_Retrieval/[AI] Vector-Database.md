@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-VECTOR-DB-2026-V6"
+metadata:
+  id: "[[[AI] Vector-Database]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Vector_Database'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Vector-Database에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Vector-Database
@@ -110,7 +100,6 @@ class VectorDBManager:
 2. **Product Quantization (PQ)**과 **Scalar Quantization (SQ)** 중 정밀도(Recall) 유지와 연산 가속 측면에서 각각의 장단점은?
 3. **Pre-filtering**이 **Post-filtering**보다 벡터 데이터베이스의 검색 성능(Latency) 면에서 압도적으로 유리한 이유는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Search_and_Retrieval/AI RAG
 - 02_Knowledge/03_AI_Data/Industrial/AI R&D-Data-Lake

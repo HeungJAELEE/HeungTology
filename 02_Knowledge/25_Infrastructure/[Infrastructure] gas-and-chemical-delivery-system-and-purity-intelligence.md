@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "INF-GCDS-MASTER-2026-V6.3.7"
-  domain: "Infrastructure_Chemical_Delivery"
+metadata:
+  id: "[[[Infrastructure] gas-and-chemical-delivery-system-and-purity-intelligence]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#GCDS", "#Gas_Cabinet", "#VMB", "#Chemical_Supply", "#Purity", "#Bernoulli_Equation", "#Fab_Utility", "#v6.3.7"]
-  is_part_of: ["MOC 01_Infrastructure", "[Infrastructure advanced-industrial-infrastructure-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] gas-and-chemical-delivery-system-and-purity-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] gas-and-chemical-delivery-system-and-purity-intelligence
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Particle Filter**| Pore Size | $0.1 \mu\text{m}$ | **$< 3 \text{ nm}$ (Ultra-fine)** | Eliminating nano-particulates |
 | **Leak Detection** | Sens. Response | $< 5 \text{ sec}$ | **$< 1 \text{ sec}$ (Point-of-use)**| Mitigating toxic/fire risks |
 | **Flow Rate** | Capacity | $> 1,000 \text{ SLM}$ | $1 \sim 100 \text{ SLM}$ | Scaling from Tank to Tool |
-| **Surface Finish** | Ra (Interior) | $< 10 \text{ \mu in}$ | **$< 5 \text{ \mu in}$ (EP/Passiv)**| Preventing gas adsorption/outgas |
+| **Surface Finish** | Ra (Interior) | $< 10 \text{ }\mu\text{ in}$ | **$< 5 \text{ }\mu\text{ in}$ (EP/Passiv)**| Preventing gas adsorption/outgas |
 
 ## 3. [공학적 근거: 유체 역학 및 공급 무결성 모델]
 
@@ -107,7 +97,6 @@ report = engine.audit_delivery_fidelity(flow_slm=20, pipe_length_m=50)
 print(f"GCDS Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 01_Infrastructure
 - Infrastructure advanced-industrial-infrastructure-master-guide

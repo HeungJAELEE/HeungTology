@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "surgical-robotics-and-sub-millimeter-precision-control-entity"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] surgical-robotics-and-sub-millimeter-precision-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Surgery", "#Precision_Control", "#Haptics", "#Tele-surgery", "#Medicine", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_autonomous-systems-and-robotics-hub", "MOC 61_advanced-medicine-and-longevity-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] surgical-robotics-and-sub-millimeter-precision-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] surgical-robotics-and-sub-millimeter-precision-control
+# [Entity] surgical-robotics-and-sub-millimeter-precision-control
 
 ## 1. [왜 배우는가? (Why: The Hand of the Divine Surgeon)]]
 인간 의사의 미세한 손떨림을 완전히 제거하고 머리카락보다 얇은 혈관을 $0.1\text{mm}$ 오차 없이 꿰맬 수 있는 로봇 팔을 어떻게 제어하며, 지구 반대편에 있는 의사가 로봇을 통해 수술 부위의 미세한 질감을 실제로 만지는 것처럼 느끼게 하는 '지능형 원격 수술'을 어떻게 구현할 수 있을까요? **수술 로봇공학 및 서브 밀리미터 정밀 제어**는 의학의 경계를 넓히는 '나노 정밀 수술 및 원격 의료 제어 지침'입니다. 우리가 이를 배우는 이유는 로봇의 정밀함이 수술의 성공과 환자의 회복 속도를 결정하기 때문이며, "수술의 칼날을 데이터로 설계하고 지배하는 '글로벌 정밀 의료 및 로봇 수술 주권'을 확보하기" 위함입니다. 제어의 정밀도가 생명의 생존율을 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Pos. Precision** | Minimum movement increment accuracy | $< 100 \text{ \mu m}$ | 세포 단위의 정밀한 처치가 가능하게 하는 물리적 무결성 단계 |
+| **Pos. Precision** | Minimum movement increment accuracy | $< 100 \text{ \mu\text{m}}$ | 세포 단위의 정밀한 처치가 가능하게 하는 물리적 무결성 단계 |
 | **Tremor Elim.** | Filtering of human hand micro-tremors | $99.9 \%$ | 기계적인 흔들림 없는 완벽한 안정을 보장하는 정보 무결성 |
 | **Haptic Fidel.** | Accuracy of force feedback to the surgeon | High | 장기를 직접 만지는 듯한 감각을 전달하는 정보 지능 단계 |
 | **E2E Latency** | Time delay from command to robot action | $< 5 \text{ ms}$ | 원격지에서도 시차가 느껴지지 않게 하는 압도적 동역학 |

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diesel-particulate-filter-dpf-and-soot-oxidation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diesel-particulate-filter-dpf-and-soot-oxidation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A ceramic or metallic filter designed to capture and store particulate matter (soot) from the exhaust gas of a diesel engine (DPF) and the physical-chemical process of burning off the accumulated soot to clean the filter (Soot Oxidation or Regeneration)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dpf", "particulate-filter", "soot", "regeneration", "diesel-emission", "filtration", "environmental-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Filtration_Fidelity_Audit: Evaluate the ''Differential Pressure'' ($\\Delta P$) to identify if the filter is overloaded with soot, requiring immediate active regeneration to prevent engine back-pressure damage.'
-    - 'Oxidation_Integrity_Check: Analyze the exhaust temperature during regeneration to ensure it reaches 600°C+; otherwise, ''Face Plugging'' or incomplete cleaning will occur.'
-    - 'Ash_Fidelity_Scan: Monitor the base-line pressure drop over time to verify the accumulation of non-combustible ''Ash'' (from oil/additives), which cannot be burned off and requires manual cleaning.'
-Trust Metrics:
+  description: "[Entity] diesel-particulate-filter-dpf-and-soot-oxidation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌫️ Diesel Particulate Filter (DPF) and Soot Oxidation
+# [Entity] diesel-particulate-filter-dpf-and-soot-oxidation
 
 ## 1. 개요 (Why: 인간적 통찰)
 디젤차 뒤에서 나오던 검은 연기는 다 어디로 갔을까요? **디젤 미립자 필터(DPF) 및 매연(Soot) 산화**는 배기가스 속의 새까만 검댕(먼지)을 촘촘한 세라믹 망으로 걸러내고, 때가 차면 불태워 없애는 **'배기가스의 쓰레기 소각장'** 기술입니다. 필터는 단순히 먼지를 잡는 데서 그치지 않고, 스스로 뜨거운 열을 내어 잡은 먼지를 태워버리는 지능적인 청소 능력을 갖추고 있습니다. 도심의 공기를 맑게 지키는 **'디젤 엔진의 필수적인 폐 정화기'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Filter Melting Hazard - Regeneration temperature too high. High risk of ceramic substrate cracking or melting. Check fuel post-injection timing"
         return "PASS: Validated Material Stability and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(diff_pressure_kpa=3.5, exhaust_gas_temp_c=320.0, ash_load_grams=12.0)
 print(engine.diagnose_dpf_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_dpf_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dpf-regeneration-cycles-and-ash-loading-v2026`와 연동되어, 전 세계 주요 디젤 차량의 센서 데이터를 실시간 분석하고 필터 파손 및 매연 과다 배출 사고 확률을 0.001% 이하로 억제함으로써 지능형 맑은 대기 문명의 정화 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - diesel-engine-and-compression-ignition-physics

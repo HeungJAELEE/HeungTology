@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-genomics-and-minimal-genome-design-physics-entity"
-  domain: "17_Bio_Engineering"
+metadata:
+  id: "[[[Entity] synthetic-genomics-and-minimal-genome-design-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Bio_Engineering", "#Synthetic_Biology", "#Genomics", "#Minimal_Genome", "#DNA_Synthesis", "#Molecular_Biology", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 17_advanced-bio-engineering-and-synthetic-biology-hub", "Entity future-industrial-intelligence-singularity-readiness-framework"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-genomics-and-minimal-genome-design-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-genomics-and-minimal-genome-design-physics
+# [Entity] synthetic-genomics-and-minimal-genome-design-physics
 
 ## 1. [왜 배우는가? (Why: The Blueprint of Programmable Life)]]
 컴퓨터 코드를 짜듯이 생명체의 유전 정보를 처음부터 끝까지 설계하고 합성할 수 있다면 어떨까요? **합성 유전체학 및 최소 유전체 설계 물리**는 생명이 살아가는 데 필요한 최소한의 유전자만 남긴 '최적화된 생명체 설계 도면'입니다. 우리가 이를 배우는 이유는 불필요한 에너지를 쓰지 않는 효율적인 바이오 공장(Cell Factory)을 만들어 신약이나 에너지원을 대량 생산하기 위함이며, "생명의 운영체제를 완벽히 이해하고 재설계하는 '생명 공학 및 유전 주권'을 확보하기" 위함입니다. 인간이 쓴 DNA 코드가 새로운 생명을 움직입니다.

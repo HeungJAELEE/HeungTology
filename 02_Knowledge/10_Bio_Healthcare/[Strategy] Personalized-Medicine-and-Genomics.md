@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Personalized-Medicine-and-Genomics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Personalized-Medicine-and-Genomics]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Personalized-Medicine-and-Genomics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Personalized-Medicine-and-Genomics
+# [Strategy] Personalized-Medicine-and-Genomics
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 같은 병이면 누구에게나 같은 약을 처방했습니다. 하지만 어떤 사람에게는 명약이 다른 사람에게는 독이 되기도 합니다. 정밀 의료 및 유전체학(Personalized-Medicine-and-Genomics)은 우리 몸의 설계도인 'DNA'를 읽어, 나에게만 딱 맞는 '맞춤형 치료법'을 찾는 기술입니다. 암세포의 유전적 약점을 찾아 정밀 타격하고, 내 유전자가 싫어하는 성분의 약은 미리 피합니다. 이를 이해하는 것은 '평균의 의료'를 넘어 '단 한 사람을 위한 최적의 의료'를 구현하여, 질병을 근본적으로 정복하는 '생명 공학의 마스터'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Genomic Variant Analysis & Drug Matching)]
 NGS 로우 데이터에서 유전자 변이를 찾고 데이터베이스와 대조하여 최적 약물을 추천하는 논리 구조입니다.
 ```python
-# 정밀 의료(ISM) 기반 유전체 변이 분석 및 약물 매칭 논리
 def analyze_genomic_medicine(fastq_data, clinical_db):
     # 1. 시퀀싱 정렬 및 변이 호출 (Alignment & Variant Calling)
     # 읽어온 DNA 조각들을 표준 유전체 지도에 맞추고 변이(SNP, Indel) 추출
@@ -91,5 +80,4 @@ def analyze_genomic_medicine(fastq_data, clinical_db):
 2. '약물 유전체학(Pharmacogenomics)' 정보가 임상 현장에서 '최초 처방 성공률'을 높이고 '약물 부작용'을 줄이는 실제 메커니즘은?
 3. '액체 생검(Liquid Biopsy)' 기술이 기존 '조직 생검(Tissue Biopsy)'에 비해 '암 치료 과정'의 '연속적 모니터링' 측면에서 가지는 압도적 우위는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

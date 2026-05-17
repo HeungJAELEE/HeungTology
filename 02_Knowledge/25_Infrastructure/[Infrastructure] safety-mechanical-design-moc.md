@@ -1,36 +1,42 @@
 ---
-Basic:
-  id: "[Infrastructure] safety-mechanical-design-moc"
+metadata:
+  id: "[[[Infrastructure] safety-mechanical-design-moc]]"
   domain: "Unknown_Domain"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Concept"
   tier: 1
   description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#Unknown_Domain"]
+  expected_queries:
+    - "[Infrastructure] safety-mechanical-design-moc 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Infrastructure] safety-mechanical-design-moc"
+    predicate: "belongs_to"
+    object: "Unknown_Domain"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# [Infrastructure] safety-mechanical-design-moc
+# safety-mechanical-design-moc
 
 ## 1. [왜 배우는가? (Why): 극한 상황에서의 물리적 생존 보장]
 배터리 기구 설계의 목적은 외부 충격(Crash)으로부터 셀을 보호하는 것을 넘어, 내부 이상 발생 시 열 전이(Thermal Propagation)를 물리적으로 차단하여 시스템의 파멸적 붕괴를 막는 것입니다. 본 MOC는 셀 단위의 열폭주가 팩 전체로 번지는 것을 막기 위한 **'열적 고립(Thermal Isolation)'** 전략과 가스 배출(Venting) 거동을 제어하는 공학적 표준을 제시합니다.

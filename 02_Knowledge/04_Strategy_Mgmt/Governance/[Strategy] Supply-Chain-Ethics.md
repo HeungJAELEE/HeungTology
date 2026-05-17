@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Supply-Chain-Ethics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Supply-Chain-Ethics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Supply-Chain-Ethics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Supply-Chain-Ethics
+# [Strategy] Supply-Chain-Ethics
 
 ## 1. [왜 배우는가? (Why)]]
 과거에는 "우리 회사만 법을 잘 지키면 된다"고 생각했습니다. 하지만 지금은 협력사의 잘못이 곧 우리 회사의 잘못으로 간주됩니다. 만약 머나먼 이국땅의 협력사 공장에서 아동 노동이 발견된다면, 우리 제품은 전 세계에서 불매 운동의 대상이 되고 거액의 벌금을 물게 됩니다. 공급망 윤리(Supply-Chain-Ethics)는 우리 회사와 연결된 수천 개의 기업이 모두 하나의 '윤리적 기준'을 공유하도록 만드는 일입니다. 이는 리스크를 예방하는 것을 넘어, 전체 생태계의 품격을 높이고 지속 가능한 파트너십을 구축하는 '상생의 경영'입니다.
@@ -97,5 +87,4 @@ def assess_supplier_ethical_risk(supplier_id):
 2. 'CSDDD'와 같은 강력한 규제가 글로벌 제조 기업의 '공급망 재편(Reshoring/Friend-shoring)'에 미치는 영향은?
 3. 협력사의 '강제 노동'이나 '아동 노동'을 탐지하기 위해 '현장 감사' 외에 활용할 수 있는 '데이터 분석적 접근' 방법은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

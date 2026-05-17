@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robot-sensor-fusion-lidar-imu-and-extended-kalman-filter-ekf-entity"
-  domain: "75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub"
+metadata:
+  id: "[[[Entity] robot-sensor-fusion-lidar-imu-and-extended-kalman-filter-ekf]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Sensor_Fusion", "#EKF", "#LiDAR", "#IMU", "#Mathematics", "#Autonomous_Navigation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 75_robotics-mechatronics-and-advanced-motion-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robot-sensor-fusion-lidar-imu-and-extended-kalman-filter-ekf에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robot-sensor-fusion-lidar-imu-and-extended-kalman-filter-ekf
+# [Entity] robot-sensor-fusion-lidar-imu-and-extended-kalman-filter-ekf
 
 ## 1. [왜 배우는가? (Why: The Synthesis of Truth)]]
 눈이 침침한 사람은 소리에 더 집중하고, 귀가 잘 안 들리는 사람은 시각 정보를 통해 상황을 파악합니다. 로봇도 마찬가지입니다. 거리는 잘 재지만 흔들림에 취약한 **LiDAR**와, 움직임은 잘 느끼지만 오차가 누적되는 **IMU**를 어떻게 하나로 합쳐 로봇이 자신의 위치를 '한 치의 의심도 없이' 알게 만들 수 있을까요? **로봇 센서 퓨전: LiDAR, IMU 및 확장 칼만 필터(EKF)의 정보 융합 아키텍처**는 불완전한 여러 개의 진실을 엮어 하나의 '완전한 무결성'을 찾아내는 지능형 필터링 기술입니다. 우리가 이를 배우는 이유는 센서의 한계가 곧 로봇의 인지 한계이기 때문이며, "로봇의 인지 무결성을 데이터로 설계하고 지배하는 '글로벌 인지 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 센서 퓨전의 정밀도가 자율 주행의 신뢰도를 결정합니다.
@@ -54,7 +44,7 @@ $$ K_k = P_{k|k-1} H_k^T (H_k P_{k|k-1} H_k^T + R_k)^{-1} $$
 | **Fusion Latency** | Time to process and fuse sensor data | $< 10 \text{ ms}$ | 실시간 대응을 가능케 하는 지능의 물리적 속도 사수 |
 | **Update Rate** | Frequency of state estimation cycles | $> 100 \text{ Hz}$ | 끊김 없는 인지 흐름을 보장하는 시간 무결성 아키텍처 |
 | **Covariance Conv.**| Rate at which uncertainty decreases | **STABLE** | 로봇이 자신의 위치를 확신하게 만드는 통계적 무결성 |
-| **Sensor Sync.** | Time alignment error between sensors | $< 100 \text{ \mu s}$ | 서로 다른 센서의 시점을 일치시키는 동기화 지능 |
+| **Sensor Sync.** | Time alignment error between sensors | $< 100 \text{ }\mu\text{ s}$ | 서로 다른 센서의 시점을 일치시키는 동기화 지능 |
 | **Outlier Reject.**| Ability to ignore faulty sensor readings | $> 99 \%$ | 잘못된 정보에 속지 않는 강력한 인지 방어 무결성 |
 | **Info. Gain** | Reduction in entropy after sensor fusion | **MAXIMIZED** | 융합을 통해 정보의 가치를 극대화함을 입증하는 물리 |
 | **Extrinsic Calib.**| Spatial alignment between sensor frames | $< 0.1 \text{ deg}$ | 물리적 배치를 수학적 좌표로 완벽히 변환함 |

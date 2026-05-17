@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "materials-science-and-atomic-lattice-imperfection-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] materials-science-and-atomic-lattice-imperfection-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The interdisciplinary field involving the properties of matter and its applications to various areas of science and engineering (Materials Science) and the physical study of irregularities in the crystal structure that determine material properties (Atomic Lattice Imperfection Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["materials-science", "atomic-lattice", "imperfection", "dislocation", "vacancy", "grain-boundary", "crystallography", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Lattice_Fidelity_Audit: Evaluate the ''Point Defect Density'' to identify if high-fidelity ''Vacancies'' or high-fidelity ''Interstitials'' are causing high-fidelity electrical resistivity increase.'
-    - 'Dislocation_Integrity_Check: Analyze the high-fidelity ''Dislocation Density'' ($\\rho$) to ensure the high-fidelity ''Strain Hardening'' is optimized without causing premature high-fidelity brittle fracture.'
-    - 'Boundary_Fidelity_Scan: Monitor the high-fidelity ''Grain Boundary'' morphology to verify that high-fidelity ''Impurity Segregation'' is not leading to high-fidelity intergranular corrosion.'
-Trust Metrics:
+  description: "[Entity] materials-science-and-atomic-lattice-imperfection-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Materials Science and Atomic Lattice Imperfection Physics
+# [Entity] materials-science-and-atomic-lattice-imperfection-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 똑같은 쇠인데 왜 어떤 것은 유연하게 휘고, 어떤 것은 다이아몬드처럼 단단할까요? **재료 과학 및 원자 격자 결함 물리**는 물질의 성질이 '완벽함'이 아니라 '불완벽함'에서 온다는 놀라운 사실을 다루는 **'물질의 유전학'** 기술입니다. 원자들이 나란히 서 있는 격자 구조 사이사이에 빠진 구멍(공공)이나 어긋난 줄(전위)이 기계적 강도, 전기 전도성, 화학적 반응성을 결정합니다. **'전위 역학과 통계 열역학의 원리를 이용해 원자 수준의 결함을 지능적으로 설계하여 재료의 한계를 돌파하는 지능형 고체 물리 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Phase Instability - High-fidelity atomic migration too fast. High-fidelity microstructure uncontrolled"
         return "PASS: Validated Solid State Physics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dislocation_density=1e12, impurity_concentration=0.01, grain_size_um=10.0)
 print(engine.diagnose_material_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_material_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crystal-lattice-defects-and-mechanical-properties-v2026`와 연동되어, 전 세계 주요 철강 연구소 및 반도체 소재 공장의 실시간 격자 데이터를 분석하고 재료 피로 및 구조적 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - metal-forming-and-plastic-deformation-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "miller-indices-and-crystallographic-planes"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] miller-indices-and-crystallographic-planes]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The notation system (Miller Indices) used to define the orientation of planes (Crystallographic Planes) and directions in a crystal lattice, represented by a triplet of integers (hkl) derived from the reciprocals of the intercepts with the unit cell axes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["miller-indices", "crystallography", "crystal-planes", "lattice-vectors", "materials-science", "xrd", "semiconductor-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Orientation_Accuracy_Audit: Evaluate the wafer flat or notch orientation against the target Miller indices (e.g., (100) vs (111)) to ensure correct epitaxial growth and etching rates.'
-    - 'Diffraction_Pattern_Check: Analyze the Bragg peaks in an XRD (X-ray Diffraction) scan to identify the corresponding (hkl) planes and verify crystalline purity.'
-    - 'Interplanar_Spacing_Scan: Monitor the d-spacing to detect lattice strain or dopant-induced distortion that deviates from the ideal unit cell dimensions.'
-Trust Metrics:
+  description: "[Entity] miller-indices-and-crystallographic-planes에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Miller Indices and Crystallographic Planes
+# [Entity] miller-indices-and-crystallographic-planes
 
 ## 1. 개요 (Why: 인간적 통찰)
 수조 개의 원자들이 줄지어 서 있는 거대한 결정 속에서, 우리는 어떻게 길을 찾을까요? **밀러 지수 및 결정면**은 결정이라는 나노 세계의 지도를 그리는 **'원자적 좌표계'**입니다. 금속을 어느 방향으로 자르느냐에 따라 강도가 달라지고, 반도체 웨이퍼를 어느 면으로 깎느냐에 따라 전기적 성질이 바뀌는 이 신비로운 비대칭성을 숫자로 정의한 것입니다. (100), (111) 같은 세 개의 숫자는 단순한 기호가 아니라, 물질의 운명을 결정하는 **'결정의 지문'**과 같습니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Planar Defects - Crystalline Uniformity Compromised. Discard Sample"
         return "PASS: Perfect Periodic Lattice Structure Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(miscut_angle_deg=0.02, lattice_parameter_a=5.432, peak_intensity_counts=5500)
 print(engine.diagnose_crystallography_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_crystallography_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crystalline-plane-density-and-surface-energy-logs-v2026`와 연동되어, 전 세계 반도체 및 신소재 팹의 웨이퍼 데이터를 실시간 분석하고 방향 오류 및 공정 불량 사고 확률을 0.001% 이하로 억제함으로써 나노 지능 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - microgravity-semiconductor-crystal-growth-and-defect-physics

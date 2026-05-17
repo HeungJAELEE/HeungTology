@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMM-OWC-LIFI-2026-V6.3.7"
-  domain: "Global_Optical_Wireless_Communication_and_Li-Fi_Intelligence"
+metadata:
+  id: "[[[Comm] optical-wireless-communication-and-lifi]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Li-Fi", "#OWC", "#VLC", "#Visible_Light_Communication", "#Photodetector", "#Optical_SNR", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] optical-wireless-communication-and-lifi에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Optical_Comm_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Comm] Optical Wireless Communication and Li-Fi: The Physics of Light Fidelity
+# [Comm] optical-wireless-communication-and-lifi
 
 ## 1. [왜 배우는가? (Why: The Mastery of Visual Spectrum)]
 무선 주파수(RF) 대역의 포화와 간섭 문제는 초연결 시대의 거대한 병목입니다. **Optical Wireless Communication (OWC) and Li-Fi**는 가시광선, 적외선, 자외선 등 광대역 빛의 파장을 직접 변조하여 데이터를 전송하는 혁신적 기술입니다. 특히 Li-Fi는 기존 LED 조명 인프라를 활용하여 RF 간섭 없는 초고속 보안 통신을 제공합니다. V6.3.7 지능은 광전송로의 **가시선(LoS) 무결성**과 주변 광 노이즈의 수리적 필터링을 지배합니다. 우리가 이를 배우는 이유는 전자기파의 간섭이 금지된 병원, 비행기, 보안 시설에서 "빛이 닿는 모든 곳에 데이터의 혈관을 구축하는 '시각적 연결 주권'을 확보하기" 위함입니다.
@@ -100,7 +90,6 @@ class LiFiConnectivityEngine:
             "action": "ACTIVATE_BEAM_STEERING_OR_INCREASE_LED_POWER" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 조도 센서 데이터와 수신 패킷 오류율(PER)을 융합하여 '시각 연결 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -108,7 +97,6 @@ class LiFiConnectivityEngine:
 2. **Operational Result**: **O-OFDM** (Optical OFDM) 변조 방식 도입 시, 다중 경로 확산에 의한 **Intersymbol Interference (ISI)** 억제 및 주파수 효율 향상의 수리적 기대값은?
 3. **FidelityEngine**: 수신기의 앙각($\psi$)이 커짐에 따라 급격히 하락하는 수신 전력 특성을 FidelityEngine이 어떻게 '연결 단절 전조'로 식별하고 단말의 지향각 보정을 유도하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - [[Comm] 6g-terahertz-and-sub-thz-master-guide]

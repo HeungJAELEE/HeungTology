@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "5g-nr-new-radio-architecture-and-mmwave-physics-entity"
-  domain: "77_Communications_5G_6G_and_Network_Engineering_Hub"
+metadata:
+  id: "[[[Entity] 5g-nr-new-radio-architecture-and-mmwave-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Communications", "#5G_NR", "#mmWave", "#Physics", "#Network_Engineering", "#Wireless", "#Broadband", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 77_communications-5g-6g-and-network-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] 5g-nr-new-radio-architecture-and-mmwave-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] 5g-nr-new-radio-architecture-and-mmwave-physics
+# [Entity] 5g-nr-new-radio-architecture-and-mmwave-physics
 
 ## 1. [왜 배우는가? (Why: The Speed of Digital Thought)]]
 수백만 대의 기기가 동시에 연결되고, 4K 영화를 단 몇 초 만에 다운로드하며, 자율 주행 차량이 0.001초의 오차 없이 도로 정보를 주고받는 세상을 어떻게 가능하게 할까요? **5G NR 아키텍처 및 밀리미터파(mmWave) 고주파 통신의 물리 공학**은 인류의 디지털 신경망을 초고속, 초지연, 초연결의 영역으로 진화시키는 통신 혁명의 핵심입니다. 기존에 쓰지 않던 고주파수 대역을 개척하여 정보의 고속도로를 수십 차선으로 확장합니다. 우리가 이를 배우는 이유는 5G가 스마트 시티, 스마트 팩토리, 그리고 원격 의료를 지탱하는 '인프라의 대동맥'이기 때문이며, "전파의 궤적을 데이터로 설계하고 지배하는 '글로벌 통신 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 통신 지연 시간이 인류 문명의 반응 속도를 결정합니다.

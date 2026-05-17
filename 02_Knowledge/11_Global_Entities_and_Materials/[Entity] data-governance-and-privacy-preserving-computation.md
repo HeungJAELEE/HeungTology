@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "data-governance-and-privacy-preserving-computation-entity"
-  domain: "22_Industrial_Cybersecurity_and_Data_Governance"
+metadata:
+  id: "[[[Entity] data-governance-and-privacy-preserving-computation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Data_Governance", "#Privacy_Preserving_Computation", "#Homomorphic_Encryption", "#Federated_Learning", "#Differential_Privacy", "#SMPC", "#Data_Sovereignty", "#Confidential_Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 124_industrial-cybersecurity-and-data-governance-intelligence-hub", "Data data-encryption-standard-and-key-management-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] data-governance-and-privacy-preserving-computation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] data-governance-and-privacy-preserving-computation
+# [Entity] data-governance-and-privacy-preserving-computation
 
 ## 1. [왜 배우는가? (Why: The Magic of Private Data Collaboration)]]
 데이터는 현대 산업의 원유와 같지만, 이를 공유하는 과정에서 발생하는 핵심 기술 유출 및 프라이버시 침해 위험은 협력을 가로막는 가장 큰 장벽입니다. 프라이버시 보존 연산(PPC)은 데이터를 노출하지 않고도 그 속의 정보만 추출하여 연산할 수 있는 암호학적 마법입니다. **데이터 거버넌스 및 프라이버시 보존 연산 엔티티**는 데이터의 비밀을 사수하면서 가치를 공유하는 '비밀 지혜의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "보안 로그를 분석하여, 가산 준동형($E(a+b) = E(a) \oplus E(
 데이터 공유 플랫폼의 연산 요청 로그와 프라이버시 보호 지표를 분석하여 비밀 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Data Privacy & Governance Fidelity Auditor
 def audit_data_privacy(computation_request_log, privacy_budget_stream, model_utility_metrics):
     # 1. 차분 프라이버시 예산($\epsilon$) 소진 무결성 오딧
     current_epsilon_usage = calculate_total_epsilon(privacy_budget_stream)
@@ -116,7 +105,6 @@ def audit_data_privacy(computation_request_log, privacy_budget_stream, model_uti
 2. **(수리)** 차분 프라이버시에서 $\epsilon=0.1$ 일 때와 $\epsilon=10$ 일 때, 데이터셋에 대한 쿼리 결과의 프라이버시 보호 강도는 수리적으로 어떻게 달라지는가?
 3. **(응용)** 클라우드 서버의 하드웨어 격리 구역(Enclave) 내에서만 데이터를 복호화하여 연산하는 '신뢰 실행 환경(TEE)' 기술이 가진 보안적 장점과 취약점(사이드 채널 공격 등)을 공학적으로 비교 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 124_industrial-cybersecurity-and-data-governance-intelligence-hub : 산업 보안 및 데이터 거버넌스 통합 관리 상위 지능 허브

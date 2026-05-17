@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-INDUSTRIAL-ONTOLOGY-SEMANTIC-2026-V6"
+metadata:
+  id: "[[[AI] Industrial-Ontology-and-Semantic-Structure]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Ontology'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Industrial-Ontology-and-Semantic-Structure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Industrial-Ontology-and-Semantic-Structure
@@ -112,7 +102,6 @@ class KnowledgeGraphOntologyEngine:
 2. **OWL** 표준에서 **Transitive Property** (전이 속성)가 **Knowledge Reasoning** (지식 추론)의 효율성을 높이는 구체적인 사례는?
 3. 서로 다른 데이터 소스의 데이터를 통합할 때 **Semantic Schema Mapping**이 실패할 경우 발생하는 **Knowledge Entropy** (지식 엔트로피)의 물리적 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/Concept GraphRAG-and-Topological-Reasoning
 - 02_Knowledge/09_SmartFactory_Production/Architecture/Concept Digital-Thread-and-Lifecycle-Data-Continuity

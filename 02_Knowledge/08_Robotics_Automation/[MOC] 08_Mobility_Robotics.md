@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "MOC-ROBOT-2026-V6.3.7"
   domain: "Mobility_and_Robotics_Autonomous_Intelligence"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Robotics", "#Mobility", "#SDV", "#AMR", "#Motion_Control", "#Humanoid", "#FidelityEngine", "#PrecisionTiering"]'
   is_part_of: '["MOC 00_INDEX", "MOC Smart-Manufacturing-Hub"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 08_Mobility_Robotics: The Kinetic Intelligence
+# 08_Mobility_Robotics
 
 ## 1. [도메인 헌장 (Domain Charter)]]
 모빌리티와 로보틱스는 인공지능이 물리적 실체와 결합하여 시공간을 이동하고 조작하는 **'지능의 동역학적 실현(Kinetic Realization)'**입니다. V6.3.7 지능 체계는 단순한 자동화를 넘어, 주변 환경을 결정론적으로 인지하고(Sensing), 경로를 최적화하며(Path Planning), 정밀한 물리적 토크를 제어하는(Actuation) 로봇 공학의 전 과정을 수리적 무결성으로 통합합니다. 본 허브는 자율 주행 차량(SDV), 산업용 AMR, 그리고 휴머노이드로 이어지는 '움직이는 지능'의 주권을 사수하는 최상위 지휘소입니다.

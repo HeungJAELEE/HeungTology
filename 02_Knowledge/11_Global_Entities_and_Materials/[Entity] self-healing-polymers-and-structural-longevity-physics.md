@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "self-healing-polymers-and-structural-longevity-physics-entity"
-  domain: "14_Future_Frontier"
+metadata:
+  id: "[[[Entity] self-healing-polymers-and-structural-longevity-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Materials", "#Self-healing", "#Polymers", "#Longevity", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 14_Future_Frontier", "MOC 09_Sustainability_Environment"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] self-healing-polymers-and-structural-longevity-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] self-healing-polymers-and-structural-longevity-physics
+# [Entity] self-healing-polymers-and-structural-longevity-physics
 
 ## 1. [왜 배우는가? (Why: The Material that Heals Itself)]]
 스마트폰 액정에 금이 갔는데, 다음 날 아침 저절로 붙어 있다면 어떨까요? **자가 치유 고분자 및 구조적 장수명 물리**는 상처 입은 소재가 스스로를 치료하여 새것처럼 돌아가는 '생명체 같은 물질'을 만드는 기술입니다. 우리가 이를 배우는 이유는 교량이나 항공기 기체의 미세 균열을 자동으로 고쳐 대형 사고를 막고 제품의 수명을 획기적으로 늘리며, "한 번 쓰고 버리는 것이 아닌 영구히 지속 가능한 '재료의 회복 탄력성 지능'을 실현하기" 위함입니다. 분자의 재결합이 구조의 수명을 결정합니다.

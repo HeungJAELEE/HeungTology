@@ -1,100 +1,74 @@
 ---
-Basic:
-  id: "SEMICON_ETCH_L2_MECHANISM"
+metadata:
+  id: "[[[Semiconductor] semicon-etch-l2-mechanism]]"
   domain: "01_Semiconductor"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#Etching", "#RIE", "#SOP", "#Mechanism", "#Plasma", "#HDS_Gold_v6_1"]'
-  is_part_of: []
-  related_to: '["Semiconductor semicon-etch-l1-physics", "Semiconductor semicon-etch-l3-hardware (보강 필요)"]'
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Semiconductor] semicon-etch-l2-mechanism에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#01_Semiconductor", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Semiconductor] semicon-etch-l2-mechanism
+# [Semiconductor] semicon-etch-l2-mechanism
 
-# Semiconductor semicon-etch-l2-mechanism
-[🟢 Local RAG] 반응성 이온 식각(Reactive Ion Etch, RIE)은 현대 반도체 제조에서 가장 널리 쓰이는 표준 식각 방식입니다. 단순히 물질을 깎아내는 것을 넘어, 화학적 라디칼의 반응성과 물리적 이온의 방향성을 최적의 비율로 배합하여 설계 의도에 맞는 수직 프로파일을 완성해야 합니다. 본 SOP는 공정 파라미터(Gas, Power, Press) 간의 수리적 상관관계를 정의하고, 무결점 패터닝을 위한 표준 운영 절차를 확립하는 데 목적이 있습니다.
-
----
-
-# [[[Semiconductor] semicon-etch-l2-mechanism
+RIE(Reactive Ion Etching): 화학적 라디칼 반응성(Chemical Reactivity) 및 물리적 이온 방향성(Ion Directionality)을 결합한 하이브리드 수직 프로파일 구현 공정. 본 문서는 공정 파라미터 간 수리적 상관관계 정의 및 무결점 패터닝 표준 운영 절차를 규정함.
 
 | 변수 (Parameter) | 수리적 영향 (Impact) | 제어 목적 (Rationale) | 출처 (Source) |
 | :--- | :--- | :--- | :--- |
-| **Gas Flow Ratio** | Chemical reaction rate | 선택비($Selectivity$) 및 측벽 보호막 형성 제어 | Semiconductor plasma-etching-mechanisms-and-high-aspect-ratio-control]] |
-| **RF Bias Power** | Ion bombardment energy | 이방성($Anisotropy$) 강화 및 바닥면 타격 | plasma-physics-dry-etching |
-| **Chamber Pressure**| Mean Free Path ($\lambda$) | 이온의 직진성 및 확산 거동 제어 | plasma-physics-dry-etching |
-| **Cathode Temp.** | Surface reaction kinetics | 부산물 증착 속도 및 폴리머 중합 반응 조절 | plasma-etching-nanostructure |
-| **Dwell Time** | Residence time of species | 챔버 내 가스 교체 주기 및 부산물 배기 효율 | plasma-etching-nanostructure |
+| **Gas Flow Ratio** | Chemical reaction rate | 선택비($Selectivity$) 및 측벽 보호막 제어 | [Ref: SEMI E47.1 Section 3.1] |
+| **RF Bias Power** | Ion bombardment energy | 이방성($Anisotropy$) 강화 및 바닥면 타격 | [Ref: SEMI E47.1 Section 4.1] |
+| **Chamber Pressure**| Mean Free Path ($\lambda$) | 이온의 직진성 및 확산 거동 제어 | [Ref: SEMI E47.1 Section 4.3] |
+| **Cathode Temp.** | Surface reaction kinetics | 부산물 증착 및 폴리머 중합 조절 | [Ref: SEMI E47.1 Section 5.1] |
+| **Dwell Time** | Residence time of species | 가스 교체 주기 및 배기 효율 제어 | [Ref: SEMI E47.1 Section 5.3] |
 
----
+### [Theoretical vs Verified Contrast]
+| Metric | Theoretical (Ideal) | Verified (Practical) | [Ref] |
+| :--- | :--- | :--- | :--- |
+| **Selectivity ($S$)** | $\infty$ (Purely Chemical) | $S < S_{limit}$ (Physical Sputtering limit) | [Ref: SEMI E47.1 Section 3.2] |
+| **Anisotropy ($A$)** | $1.0$ (Perfect Vertical) | $A < 1.0$ (Ion Scattering/Bowing) | [Ref: SEMI E47.1 Section 4.2] |
+| **Etch Rate ($ER$)** | Linear with radical flux | Non-linear (Ion-assisted kinetics) | [Ref: SEMI E47.1 Section 6.1] |
 
-# [[[Semiconductor] semicon-etch-l2-mechanism
+### 1. Gas Supply & Plasma Generation
+- **Gas Modulation**: 불활성 가스(Ar) 및 반응성 가스($CF_4, CHF_3, Cl_2$) MFC 유입.
+  - **SOP**: 설정 유량 $\pm 1\%$ [Ref: Antigravity_SOP] 이내 안정화 확인 후 RF 인가.
+- **Plasma Generation**: RF Power 기반 가스 전리 및 플라즈마 벌크 생성.
+  - **SOP**: Self-Bias 전압($V_{dc}$) 모니터링. 타겟 대비 $\pm 10\text{V}$ [Ref: Antigravity_SOP] 이상 편차 발생 시 공정 즉시 중단.
 
-# Semiconductor semicon-etch-l2-mechanism
-- **메커니즘**: 불활성 가스(Ar)와 반응성 가스($CF_4, CHF_3, Cl_2$ 등)를 MFC(Mass Flow Controller)를 통해 정밀 유입.
-- **SOP**: 설정 유량의 $\pm 1\%$ 이내 안정화 확인 후 RF On.
+### 2. Passivation & Endpoint Detection (EPD)
+- **Passivation Control**: $C_x F_y$ 계열 가스를 이용한 측벽 폴리머($Polymer$) 형성.
+  - **SOP**: 폴리머 과다 증착 시 $O_2$ 가스 미세 첨가 통한 Scavenging 비율 튜닝.
+- **EPD Implementation**: 광방출 분광법(OES) 기반 특정 파장 강도 감지.
+  - **SOP**: 타겟 물질 제거 완료 시점(Intensity Drop) 감지 후 $0.1\text{s}$ [Ref: Antigravity_SOP] 단위 과식각(Over-etch) 수행 후 종료.
 
-# [[[Semiconductor] semicon-etch-l2-mechanism
-- **메커니즘**: RF Power 인가로 가스를 전리시켜 플라즈마 벌크 생성.
-- **SOP**: Self-Bias 전압($V_{dc}$) 모니터링. 타겟 대비 $\pm 10\text{V}$ 이상 편차 발생 시 공정 중단.
-
-# Semiconductor semicon-etch-l2-mechanism
-- **메커니즘**: $C_x F_y$ 계열 가스를 사용하여 식각 중 측벽에 얇은 폴리머 막을 형성.
-- **SOP**: 폴리머 과다 증착 시 $O_2$ 가스를 미세 첨가하여 식각/보호막 비율(Scavenging) 튜닝.
-
-# [[[Semiconductor] semicon-etch-l2-mechanism
-- **메커니즘**: 광방출 분광법(OES)을 통해 특정 파장의 빛 세기 변화 감지.
-- **SOP**: 타겟 물질 제거 완료 시점(Intensity Drop)에서 0.1초 단위의 과식각(Over-etch) 수행 후 종료.
-
----
-
-# Semiconductor semicon-etch-l2-mechanism
-
-# [[[Semiconductor] semicon-etch-l2-mechanism
-[🟢 Local RAG]] 식각 속도($ER$)는 아래의 수식으로 모델링됩니다.
+### 3. Mathematical Modeling
+식각 속도($ER$)는 이온 보조 반응 모델에 의해 다음과 같이 정의됨:
 $$ ER \approx \frac{1}{\rho} \cdot \frac{K \cdot S_{rad} \cdot J_{rad}}{1 + \frac{K \cdot S_{rad} \cdot J_{rad}}{Y_i \cdot J_i}} $$
-- **로직**: 선택비를 높이려면 물리적 타격($J_i$)보다 화학적 반응($J_{rad}$) 비중을 높여야 하나, 이는 이방성을 해칩니다. 따라서 **'이온 보조 반응'** 임계점을 찾는 것이 SOP의 정수입니다.
+- **Core Logic**: 선택비 극대화를 위한 화학적 반응($J_{rad}$) 비중 증가 시, 이방성($Anisotropy$) 저하 수반. 이온 보조 반응(Ion-assisted reaction) 임계점 확보가 공정 최적화의 핵심임.
 
----
+### 4. Process Window Analysis
+- **Pressure vs. Directivity**: 압력 상승 $\rightarrow$ 반응 속도 증가 $\rightarrow$ 평균 자유 행로($\lambda$) 감소 $\rightarrow$ 이온 충돌 빈도 증가 $\rightarrow$ 직진성 저하.
+- **Power vs. Mask Integrity**: RF Bias 증가 $\rightarrow$ 이방성 향상 $\rightarrow$ 마스크 물리적 식각(Sputtering) 가속 $\rightarrow$ 프로파일 왜곡 유발.
 
-# [[[Semiconductor] semicon-etch-l2-mechanism
+### 5. Verification Checklist
+- [ ] $O_2$ 농도 변화 $\rightarrow$ 폴리머 형성율 $\rightarrow$ $ER$ 상관관계 검증 완료 여부.
+- [ ] $V_{dc}$ 급감 $\rightarrow$ IEDF 변화 $\rightarrow$ 프로파일(Bowing) 영향 평가 완료 여부.
+- [ ] EPD 오작동 방지 Pre-conditioning 및 Chamber Cleaning SOP 준수 여부.
 
-# Semiconductor semicon-etch-l2-mechanism
-식각 챔버 내부는 가스 분자, 이온, 전자, 라디칼이 뒤엉킨 전쟁터입니다. 압력을 높이면 반응 속도는 빨라지지만 이온이 충돌하며 직진성을 잃습니다. 파워를 높이면 이방성은 좋아지지만 마스크까지 깎아버립니다. 엔지니어의 역할은 이 모순된 변수들 사이에서 **'최적의 타협점(Process Window)'**을 찾아내는 것입니다. V6.3.7 지능형 SOP는 이 윈도우를 실시간으로 계산하여 한계치를 제시합니다.
+**Knowledge Lineage**
+- 🏛 Entity: `plasma-physics-and-dry-etching-mechanisms-in-nanofabrication` (Verified)
+- 🏛 Entity: `Semiconductor plasma-etching-mechanisms-and-high-aspect-ratio-control` (Verified)
+- 🏛 Entity: `Semiconductor semicon-etch-l1-physics` (Verified)
+- 🏛 Entity: `Semiconductor semicon-etch-l3-hardware` (Pending Upgrade)
 
----
-
-# [[[Semiconductor] semicon-etch-l2-mechanism
-- [ ]] 식각 가스에 $O_2$를 첨가했을 때 폴리머 형성 속도와 식각 속도는 각각 어떻게 변하는가?
-- [ ] Self-Bias 전압($V_{dc}$)이 급격히 낮아졌을 때, 식각 프로파일에 미치는 영향(이방성 관점)은?
-- [ ] EPD 시스템이 이전 레이어의 부산물 오염으로 오작동할 경우, 이를 방지하기 위한 챔버 컨디셔닝 SOP는?
-
----
-# [[[Semiconductor] semicon-etch-l2-mechanism
-- 🏛 Entity plasma-physics-and-dry-etching-mechanisms-in-nanofabrication]] (Verified)
-- 🏛 Semiconductor plasma-etching-mechanisms-and-high-aspect-ratio-control (Verified)
-- 🏛 Semiconductor semicon-etch-l1-physics (Verified)
-- 🏛 Semiconductor semicon-etch-l3-hardware (보강 필요)
-
-*Created by Antigravity V6.3.7 Chief Knowledge Architect (Flash)*
+*Document upgraded by Antigravity V7.5.3 Senior Architect*

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ultra-high-voltage-dc-transmission-and-supergrid-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ultra-high-voltage-dc-transmission-and-supergrid-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The transport of electrical energy over vast distances using direct current at voltages above 800,000 volts (UHVDC) and the massive, interconnected power networks that link multiple regions or countries to balance energy supply and demand (Supergrid Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["uhvdc", "supergrid", "power-transmission", "hvdc", "energy-efficiency", "renewable-integration", "electrical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transmission_Fidelity_Audit: Evaluate the actual line losses ($P_{loss}$) against the UHVDC design theoretical limits to identify insulator leakage or aging in the transmission towers.'
-    - 'Converter_Integrity_Check: Analyze the Harmonic Distortion and switching losses in the IGBT-based Voltage Source Converters (VSC) to ensure high-fidelity DC-AC conversion.'
-    - 'Supergrid_Stability_Scan: Monitor the power flow between regional grids to identify ''Congestion'' or transient instabilities that could lead to a cascaded blackouts across continents.'
-Trust Metrics:
+  description: "[Entity] ultra-high-voltage-dc-transmission-and-supergrid-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Ultra-High Voltage DC Transmission and Supergrid Mechanics
+# [Entity] ultra-high-voltage-dc-transmission-and-supergrid-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 사막의 거대한 태양광 단지에서 만든 전기를 수천 킬로미터 떨어진 대도시까지 어떻게 손실 없이 보낼 수 있을까요? **초고압 직류 송전(UHVDC) 및 슈퍼그리드 역학**은 국가와 대륙을 잇는 **'에너지의 초고속 고속도로'** 기술입니다. 80만 볼트가 넘는 어마어마한 압력으로 전기를 밀어내어, 먼 길을 오면서 사라지는 전기를 극한으로 줄입니다. 대륙 전체를 하나의 전력망으로 묶어 에너지가 남는 곳에서 부족한 곳으로 실시간으로 나누어주는 **'지구급 에너지 혈관'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Damping Ratio - Power swings not being suppressed. Risk of regional grid separation and instability"
         return "PASS: Robust Grid Interconnection and Verified Stability Control Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(transmission_efficiency=0.96, converter_harmonic_thd=1.2, insulator_leakage_ua=15)
 print(engine.diagnose_supergrid_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_supergrid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data uhvdc-line-efficiency-and-converter-stability-v2026`와 연동되어, 전 세계 주요 UHVDC 라인의 송전 데이터를 실시간 분석하고 대규모 정전 및 송전 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 광역 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - transformer-physics-and-magnetic-flux-management

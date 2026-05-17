@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heavy-duty-ev-drivetrain-and-multi-speed-transmissions"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heavy-duty-ev-drivetrain-and-multi-speed-transmissions]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-torque propulsion system designed for electric heavy-duty vehicles (e.g., Trucks, Buses), incorporating multi-speed gearboxes to balance start-up torque requirements and high-speed cruising efficiency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ev-drivetrain", "heavy-duty-ev", "multi-speed-transmission", "electric-truck", "powertrain", "torque-optimization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Torque_Delivery_Audit: Analyze the motor torque response and gear ratio effectiveness during high-load hill starts ($Gradeability$).'
-    - 'Transmission_Efficiency_Check: Evaluate the energy losses within the multi-speed gearbox across different RPM and torque ranges.'
-    - 'Shift_Logic_Scan: Monitor the automated gear-shifting algorithms for smoothness and optimal energy consumption using reinforcement learning.'
-Trust Metrics:
+  description: "[Entity] heavy-duty-ev-drivetrain-and-multi-speed-transmissions에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚛 Heavy-duty EV Drivetrain and Multi-speed Transmissions
+# [Entity] heavy-duty-ev-drivetrain-and-multi-speed-transmissions
 
 ## 1. 개요 (Why: 인간적 통찰)
 승용차는 모터 하나로도 충분하지만, 40톤짜리 트레일러를 끄는 대형 전기 트럭은 이야기가 다릅니다. 가파른 언덕을 오를 때는 거대한 코끼리 같은 힘(Torque)이 필요하고, 고속도로를 달릴 때는 치타 같은 효율이 필요합니다. **헤비듀티 EV 파워트레인 및 다단 변속기**는 모터의 강력한 회전을 상황에 맞춰 변환해주는 **'전기 트럭의 근육과 기어'**입니다. 단순히 전기로만 가는 것을 넘어, 수십 톤의 짐을 싣고도 가장 적은 전기로 가장 멀리 갈 수 있도록 모터와 변속기가 완벽한 조화를 이루는 **'지능형 구동계'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Regeneration Efficiency - Review Brake-by-Wire Integration Logic"
         return "PASS: Regenerative Braking Optimized"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(actual_torque_nm(25000, demanded_torque=25000, inverter_temp_c=45.2) # Fixing call
 engine = FactoryFidelityEngine(25000, 45.2, 350)
 print(engine.diagnose_drivetrain_health(demanded_torque=25000))
@@ -109,7 +97,6 @@ print(engine.diagnose_drivetrain_health(demanded_torque=25000))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data heavy-duty-ev-torque-efficiency-and-gear-shift-logs-v2026`와 연동되어, 전 세계 전기 트럭의 구동 데이터를 실시간 분석하고 변속기 고장 및 모터 소실 사고 확률을 0.01% 이하로 억제함으로써 미래 물류 운송의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-design-and-thermal-management-physics

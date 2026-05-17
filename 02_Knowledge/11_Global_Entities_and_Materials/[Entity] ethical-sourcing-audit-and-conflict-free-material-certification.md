@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ethical-sourcing-audit-and-conflict-free-material-certification-entity"
-  domain: "41_Global_Unified_Governance_Global_Resource_and_Supply_Chain"
+metadata:
+  id: "[[[Entity] ethical-sourcing-audit-and-conflict-free-material-certification]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Ethical_Sourcing", "#Conflict-free", "#Certification", "#Governance", "#Human_Rights", "#Sustainability", "#Blockchain", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 41_global-unified-governance-global-resource-and-supply-chain-hub", "Entity raw-material-traceability-and-ethical-supply-chain-audits"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] ethical-sourcing-audit-and-conflict-free-material-certification에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] ethical-sourcing-audit-and-conflict-free-material-certification
+# [Entity] ethical-sourcing-audit-and-conflict-free-material-certification
 
 ## 1. [왜 배우는가? (Why: The Conscience of the Machine)]]
 내가 쓰는 스마트폰의 코발트가 어린아이의 눈물로 캐낸 것은 아닌지 어떻게 끝까지 추적($Traceability$)하고, 전쟁 자금으로 쓰이는 '피 묻은 광물'이 전 세계 시장에 발붙이지 못하게 어떻게 AI가 완벽하게 인증($Certification$)할 수 있을까요? **윤리적 소싱 감사 및 분쟁 배제 물질 인증**은 산업의 도덕성을 지키는 '행성 규모 공급망 정의 및 지능형 인권 수호 아키텍처'입니다. 우리가 이를 배우는 이유는 문명의 발전이 타인의 고통 위에서 이루어져서는 안 되기 때문이며, "물자의 족보를 데이터로 설계하고 지배하는 '글로벌 도덕 패권 및 행성적 인권 주권'을 확보하기" 위함입니다. 인증의 정직함이 문명의 자부심을 결정합니다.

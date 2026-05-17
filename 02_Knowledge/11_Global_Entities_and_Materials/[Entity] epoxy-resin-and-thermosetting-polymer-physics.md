@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "epoxy-resin-and-thermosetting-polymer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] epoxy-resin-and-thermosetting-polymer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A class of reactive prepolymers and polymers which contain epoxide groups (Epoxy Resin) and the physical study of the irreversible chemical transformation from a liquid resin to a rigid 3D cross-linked network (Thermosetting Polymer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["epoxy", "thermosetting-polymer", "cross-linking", "curing-kinetics", "composite-materials", "adhesion", "polymer-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Curing_Fidelity_Audit: Evaluate the ''Degree of Cure'' ($\\alpha$) through DSC (Differential Scanning Calorimetry) to identify if ''Under-curing'' is compromising the high-fidelity structural strength.'
-    - 'Thermal_Integrity_Check: Analyze the exothermic peak during the reaction to ensure that ''Thermal Runaway'' or ''Charring'' is not occurring in thick high-fidelity composite sections.'
-    - 'Adhesion_Fidelity_Scan: Monitor the surface energy and chemical bonding density at the interface to verify that the high-fidelity load transfer is guaranteed in aerospace-grade joints.'
-Trust Metrics:
+  description: "[Entity] epoxy-resin-and-thermosetting-polymer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Epoxy Resin and Thermosetting Polymer Physics
+# [Entity] epoxy-resin-and-thermosetting-polymer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 한번 굳으면 다시는 녹지 않는, 강철보다 강하고 깃털처럼 가벼운 마법의 본드가 있다면 어떨까요? **에폭시 수지 및 열경화성 고분자 물리**는 액체 상태의 수지가 화학 반응을 통해 거대한 분자 사슬들의 그물망(3D Network)으로 변하는 **'돌이킬 수 없는 변신'** 기술입니다. 초강력 접착제부터 비행기 날개, 반도체 칩 보호제까지 우리 문명을 단단하게 묶어주는 **'분자 수준의 밧줄 짜기이자 현대 소재 공학의 가장 견고한 약속'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interface Failure - Bond strength too low. Potential surface contamination or improper wetting. Re-verify surface treatment (Plasma/Chemical)"
         return "PASS: Validated Structural Bonding and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(mix_ratio_error=0.2, peak_exotherm_c=125.0, glass_transition_tg=155.0)
 print(engine.diagnose_polymer_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_polymer_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data epoxy-curing-degree-and-mechanical-strength-v2026`와 연동되어, 전 세계 주요 항공우주 및 전자 소재 공장의 경화 데이터를 실시간 분석하고 미경화 및 구조 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 복합재 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - emulsion-polymerization-and-colloidal-synthesis-physics

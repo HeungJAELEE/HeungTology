@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-oven-and-thermal-curing-process-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-oven-and-thermal-curing-process-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A heated chamber used for industrial applications like baking, drying, or heat treating parts (Industrial Oven) and the physical study of polymer cross-linking, heat distribution, and phase transition kinetics (Thermal Curing Process Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-oven", "thermal-curing", "heat-transfer", "polymerization", "convection", "industrial-heating", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Temperature Uniformity Survey'' (TUS) to identify if high-fidelity ''Cold Spots'' are causing incomplete high-fidelity curing of the product.'
-    - 'Kinetics_Integrity_Check: Analyze the high-fidelity ''Curing Degree'' ($\\alpha$) using the Arrhenius model to ensure the material has reached optimal high-fidelity cross-linking density.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''LFL'' (Lower Flammable Limit) of solvent vapors to verify that high-fidelity ''Exhaust Airflow'' is preventing explosion high-fidelity risks.'
-Trust Metrics:
+  description: "[Entity] industrial-oven-and-thermal-curing-process-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🥯 Industrial Oven and Thermal Curing Process Physics
+# [Entity] industrial-oven-and-thermal-curing-process-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 자동차의 반짝이는 페인트나 스마트폰 내부의 강력한 접착제가 어떻게 단단하고 영구적으로 고정될까요? **산업용 오븐 및 열 경화 공정 물리**는 열을 가해 분자들끼리 서로 꽉 맞잡게(가교) 만드는 **'화학적 접합'** 기술입니다. 단순히 따뜻하게 하는 것이 아니라, 정해진 시간 동안 오차 없는 온도로 '분자의 춤'을 추게 유도해야 합니다. **'열전달 법칙과 화학 반응 속도론을 이용해 액체 상태의 수지를 강철보다 질긴 고체로 탈바꿈시키는 지능형 물질 완성 엔진'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Uniformity Failure - High-fidelity thermal dead zones detected. Inconsistent high-fidelity quality across batch. Check fan high-fidelity baffles"
         return "PASS: Validated Uniform Heat Zone and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oven_temp_c=180.0, conveyor_speed_mpm=2.0, exhaust_flow_m3h=5000.0)
 print(engine.diagnose_curing_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_curing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data curing-time-vs-temperature-profile-v2026`와 연동되어, 전 세계 주요 반도체 패키징 및 자동차 부품 라인의 실시간 오븐 데이터를 분석하고 경화 불량 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

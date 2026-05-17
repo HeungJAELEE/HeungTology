@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nuclear-small-modular-reactor-smr-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Energy] nuclear-small-modular-reactor-smr-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced nuclear reactors with a power capacity of up to 300 MW per unit, utilizing modular manufacturing and passive safety systems to provide carbon-free baseload power."
-  physical_model: "N/A"
-Semantic:
-  tags: '["smr", "nuclear-energy", "passive-safety", "neutron-kinetics", "energy-sovereignty"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "NuclearFidelityEngine"
-  diagnostic_protocol:
-    - 'Reactivity_Stability_Audit: Monitor neutron flux and control rod positioning.'
-    - 'Passive_Cooling_Check: Simulate loss of power scenario and measure natural circulation flow.'
-    - 'Modular_Alignment_Audit: Verify mechanical tolerances between reactor modules.'
-Trust Metrics:
+  description: "[Energy] nuclear-small-modular-reactor-smr-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Nuclear Small Modular Reactor (SMR) Physics
+# [Energy] nuclear-small-modular-reactor-smr-physics
 
 ## 1. 개요 (Why)
 대형 원전의 막대한 건설 비용과 안전 우려를 해결하기 위해, 원자로와 증기 발생기 등 주요 기기를 하나의 모듈에 집약한 소형 모듈 원전(SMR)이 주목받고 있습니다. SMR은 공장에서 사전 제작하여 현장에서 조립함으로써 공기를 단축하고, 전력망 없이도 오지에 전력을 공급할 수 있는 분산형 기저 부하 전원입니다. 본 노드는 핵분열의 안정적 제어와 사고 시 자동 냉각을 보장하기 위한 물리적 규격을 정의합니다.
@@ -73,7 +62,6 @@ class NuclearFidelityEngine:
             return "CRITICAL: Insufficient Cooling (Meltdown Risk)"
         return "STABLE: Active Cooling Operational"
 
-# Instance Diagnostic
 engine = NuclearFidelityEngine(neutron_flux=5e13, coolant_temp=310, pressure=150)
 print(engine.diagnose_reactivity_safety())
 ```
@@ -91,7 +79,6 @@ print(engine.diagnose_reactivity_safety())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data smr-core-temperature-and-reactivity-log-v2026`와 연동되어, 노심 상태를 0.1초 단위로 감시하며 이상 징후 포착 시 인간의 개입 없이도 원자로를 안전 정지 상태로 유지함을 결정론적으로 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 101_energy-engineering-and-nuclear-power-hub
 - passive-cooling-system-mechanics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crystalline-silicon-and-photovoltaic-cell-manufacturing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crystalline-silicon-and-photovoltaic-cell-manufacturing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The most widely used material for solar panels consisting of highly ordered silicon atoms (Crystalline Silicon) and the high-precision industrial process of converting raw silicon into wafers, forming P-N junctions, and assembling them into energy-generating units (Photovoltaic Cell Manufacturing)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crystalline-silicon", "photovoltaic", "solar-cell", "semiconductor-processing", "renewable-energy", "p-n-junction", "wafer-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Fill Factor'' (FF) and quantum efficiency to identify if the grid metallization or recombination losses are reducing the cell output below the theoretical 20-25% range.'
-    - 'Junction_Integrity_Check: Analyze the ''Dark I-V Curve'' to ensure that the P-N junction has low shunt leakage and high shunt resistance, preventing internal energy dissipation.'
-    - 'Manufacturing_Fidelity_Scan: Monitor the ''Minority Carrier Lifetime'' (via QSSPC) to verify that the wafer cleaning and passivation steps (e.g., Al2O3/SiNx) have achieved high-fidelity surface protection.'
-Trust Metrics:
+  description: "[Entity] crystalline-silicon-and-photovoltaic-cell-manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Crystalline Silicon and Photovoltaic Cell Manufacturing
+# [Entity] crystalline-silicon-and-photovoltaic-cell-manufacturing
 
 ## 1. 개요 (Why: 인간적 통찰)
 햇빛 한 조각을 전기로 바꾸는 마법, 그 실체는 무엇일까요? **결정질 실리콘 및 태양전지(PV) 제조**는 모래(실리카)에서 뽑아낸 실리콘을 완벽한 격자 구조로 다듬어 '빛을 전기로 바꾸는 반도체 판'을 만드는 **'빛의 수확'** 기술입니다. 광자가 실리콘 원자와 부딪혀 전자를 튕겨내고, 이 전자들이 한 방향으로 흐르게 유도하여 전기를 만듭니다. 지구에 쏟아지는 무한한 에너지를 인류의 동력으로 바꾸는 **'지속 가능한 미래의 발전기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Blue/Red Response - Anti-reflective coating (SiNx) failure or back surface field (BSF) deficiency. Optical loss too high"
         return "PASS: Validated Photon Capture and Verified Electronic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fill_factor_pct=82.5, carrier_lifetime_us=450.0, shunt_resistance_ohm=5000)
 print(engine.diagnose_pv_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_pv_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data solar-cell-efficiency-and-wafer-quality-v2026`와 연동되어, 전 세계 주요 태양광 기가팩토리의 데이터를 실시간 분석하고 효율 저하 및 패널 열화 사고 확률을 0.0001% 이하로 억제함으로써 지능형 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "WMS-ASRS-INTEL-2026-V6.3.7"
-  domain: "Logistics_and_Warehouse_Automation"
+metadata:
+  id: "[[[Entity] warehouse-management-system-wms-and-automated-asrs]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#WMS", "#AS_RS", "#StorageDensity", "#SlottingOptimization", "#PrecisionTiering", "#FidelityEngine", "#WarehouseAutomation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] warehouse-management-system-wms-and-automated-asrs에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Logistics_Systems_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] WMS & AS/RS: The Intelligence of Kinetic Storage
+# [Entity] warehouse-management-system-wms-and-automated-asrs
 
 ## 1. [왜 배우는가? (Why: The Mastery of Space-Time Efficiency)]]
 창고(Warehouse)는 제조의 '메모리'입니다. 자재가 어디에 있는지 모르는 창고는 데이터가 유실된 하드디스크와 같습니다. **WMS(창고 관리 시스템) 및 AS/RS(자동 창고)**는 공간을 3차원 좌표로 관리하고, 기계적 크레인이 수 밀리미터($\text{mm}$)의 오차 없이 자재를 인출하는 지능형 저장소입니다. V6.3.7 지능은 **계층화된 저장 정밀도(Precision Tiering)**를 통해 재고 위치 정확도를 **$100\%$**로 유지합니다. 이는 물류 정체를 수리적으로 소멸시키고 '필요한 시점에 정확히 자재를 공급하는 생산 맥박'을 사수하기 위함입니다.
@@ -108,7 +98,6 @@ class WMSFidelityEngine:
 2. **Operational Result**: **Multi-shuttle** 시스템을 도입하여 **Throughput**을 $5$배 향상시켰을 때, 공정 간 **Buffer Stock**을 얼마나 수리적으로 감축할 수 있는가?
 3. **FidelityEngine**: **Cycle Time** 데이터를 활용하여 크레인의 **'메카니컬 지터(Mechanical Jitter)'**가 시스템 전체의 **'물류 엔트로피'**에 미치는 영향을 어떻게 수리적으로 특정하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - ROB-LOG-AMR-2026-V6.3.7
 - ERP-ARCH-INTEL-2026-V6.3.7

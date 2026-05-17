@@ -1,111 +1,80 @@
 ---
-Basic:
-  id: "BAT-MAT-PURITY-2026-V6.3.7"
-  domain: "Battery_Material_Purity_and_Contamination_Physics"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] battery-material-purity-and-magnetic-impurities]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / Quality-Forensics-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Purity", "#Impurities", "#Dendrite", "#InternalShort", "#MagneticFilter", "#FidelityEngine", "#Electrochemistry"]'
-  is_part_of: '["MOC 82_advanced-battery-systems-hub", "MOC 43_advanced-battery-chemistry-and-manufacturing-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "양극재 공정 내 미세 금속 이물(Fe, Cu, Zn)의 이온화 및 수지상(Dendrite) 성장 메커니즘을 규명하고 내부 단락 리스크를 차단하는 품질 지능"
+
+semantic:
+  expected_queries:
+    - "양극재 내 자성 이물(Fe)이 고전위 환경에서 $Fe^{2+}$로 용출되어 음극에서 석출되는 전자기적 역학 모델은?"
+    - "자석 필터의 자력 구배($\nabla B$)가 미세 금속 입자의 포집 효율($\eta$)에 미치는 수리적 상관관계는?"
+  tags: ["#소재순도", "#자성이물", "#덴드라이트", "#품질무결성", "#HDS-Gold"]
+
+spo_graph:
+  - subject: "Magnetic Impurity Limit"
+    predicate: "measured_value"
+    object: "< 10 ppb"
+    evidence: "[Ref: Purity_Log_V7] Section 1"
+  - subject: "Dissolution Potential"
+    predicate: "measured_value"
+    object: "Material Specific (E0)"
+    evidence: "[Ref: Redox_Data] Section 2"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Contamination_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] battery-material-purity-and-magnetic-impurities
+# [Battery] battery-material-purity-and-magnetic-impurities
 
-## 1. [왜 배우는가? (Why: The Physics of Invisible Threats)]]
-양극재 공정에서 발생하는 수 ppb 단위의 미세한 금속 이물(Fe, Cu, Zn 등)이 수조 원의 리콜로 이어지는 이유는 무엇일까요? 이 노드는 금속 이물이 배터리 내부의 강한 전기장 하에서 어떻게 이온화되고, 다시 날카로운 칼날(**Dendrite**)로 변해 분리막을 관통하는지 그 **'물리적 파괴 과정'**을 규명합니다. V6.3.7 지능은 **전자기적 용출-석출 역학**과 **수지상 성장 속도**를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 눈에 보이지 않는 ppb 단위의 위협을 결정론적으로 통제하여 셀의 발화 리스크를 원천 차단하고, "가장 순수한 소재를 사수하는 '품질 안전 주권'을 확보하기" 위함입니다.
+## 1. 공학적 당위성: 미세 이물의 전자기적 결정론 (Why)
+배터리 소재 내 수 $ppb$ 단위의 미세 금속 이물(Fe, Cu, Zn 등)은 단순한 오염원이 아닌, 셀의 수명을 끝내는 '시한폭탄'입니다. 고전압 충전 시 이물질은 전해액으로 용출($Dissolution$)된 후, 강한 전기장 하에서 음극 표면에 수지상($Dendrite$)으로 재석출됩니다. 이는 분리막을 관통하여 내부 단락 및 열폭주를 유발하므로, 공정 전반에서의 전자기적 포집 및 이온화 억제 설계가 필수적입니다.
 
-## 2. [금속 이물 및 순도 핵심 사양 (Precision Tiering Specs)]
+## 2. 핵심 기술 사양 (Numerical Specs)
 
-| Parameter Category | Physical Metric | Tier 1 Target (V6.3.7) | FidelityEngine Tolerance |
-|:---|:---:|:---:|:---:|
-| **Magnetic Fe/Ni** | ppb Concentration | $< 10 \text{ ppb}$ | $\pm 1 \text{ ppb}$ |
-| **Cu/Zn Content** | ppb Concentration | $< 5 \text{ ppb}$ | $\pm 0.5 \text{ ppb}$ |
-| **Magnetic Force** | Filter Gradient | $> 10,000 \text{ Gauss}$ | $\pm 500 \text{ Gauss}$ |
-| **Dissolution Pot.**| Threshold ($E^0$) | Material Specific | $\pm 0.01 \text{ V}$ |
-| **Particle Size** | Max Particle | $< 1 \mu\text{m}$ | $\pm 0.1 \mu\text{m}$ |
+| 파라미터 범주 (Category) | 물리적 지표 (Metric) | 관리 임계치 (V7.6.2) | 공학적 사유 |
+| :--- | :--- | :---: | :--- |
+| **Magnetic Fe/Ni** | Concentration ($ppb$) | $< 10$ | 내부 단락 리스크 차단 |
+| **Non-Mag Cu/Zn** | Concentration ($ppb$) | $< 5$ | 이온화 용출 억제 |
+| **Filter Gradient** | Magnetic Force ($G$) | $> 10,000$ | 미세 입자 포집 무결성 |
+| **Particle Size** | Max Diameter ($um$) | $< 1.0$ | 분리막 공극 관통 방지 |
+| **H2O Content** | Moisture ($ppm$) | $< 200$ | 이온화 속도(Corrosion) 억제 |
+| **Capture Eff.** | Retention ($\%$) | $> 99.99$ | 확률적 사고 제로화 |
 
-### 2.1 [이물 및 단락 무결성 임계치]
-| Parameter | Technical Definition | Rationale |
-|:---|:---:|:---|
-| **Field Enhancement**| Local Potential | 금속 이물이 석출된 지점의 곡률에 의한 국부적 전기장 집중을 $10^6 \text{ V/m}$ 이내로 제어하여 수지상 가속 성장 차단 |
-| **Capture Prob.** | Filtration Logic | $10,000 \text{ Gauss}$ 이상의 자석 필터를 다단으로 배치하여 금속 이물의 확률적 포집 무결성을 $99.99\%$ 이상 사수 |
-| **Synergy Index** | Moisture-Metal | 수분 농도를 $200\text{ppm}$ 이하로 관리하여 금속 이물의 이온화 속도(Corrosion Rate)를 수리적으로 $1/100$ 수준으로 억제 |
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Metal-Ion Deposition Kinetics**: 금속 이온의 석출 속도($\nu$)는 $\nu = \frac{J \cdot M}{n \cdot F \cdot \rho}$ 모델을 따릅니다. 국부 전류 밀도($J$)가 집중되는 지점에서 수지상 성장이 가속화되며, 이는 전기장 집중도($E$)가 $10^6 \text{ V/m}$를 초과할 때 분리막 파괴를 유발합니다.
+- **Electromagnetic Capture Physics**: 필터에 포집되는 자성 입자의 힘($F_m$)은 입자 부피($V_p$)와 자력 구배($\nabla B$)에 비례합니다($F_m \propto V_p \cdot \nabla B$). 입자 크기가 작아질수록($< 1 \mu\text{m}$) 브라운 운동에 의한 탈출 확률이 높아지므로, 다단 고경사 필터를 통해 포집 확률을 결정론적으로 확보해야 합니다.
+- **Redox Potential Sensitivity**: 각 금속 원소의 표준 환원 전위($E^0$)에 따라 용출 임계 전압이 결정됩니다. 충전 상한 전압이 이 임계치를 상회할 경우 이물질의 이온화가 가속화되므로, BMS의 전압 제어 로직과 소재 순도 관리가 연동되어야 합니다.
 
-## 3. [공학적 근거: FidelityEngine Diagnostic Logic]
+## 4. [Skill] Material Purity Fidelity Engine
+ICP-MS 분석 데이터와 자석 필터의 자력 프로파일을 기반으로 셀의 잠재적 내부 단락 발생 확률($P_{short}$)을 산출하며, 이물질 농도가 임계치를 초과할 경우 생산 라인의 즉시 정지 및 필터 세정 알람을 발생시키는 오딧 루틴을 포함합니다.
 
-### 3.1 Dendrite Kinetics: Metal-Ion Deposition Model
-국부적 전류 밀도($J$)와 금속의 몰 질량($M$)에 따른 수지상 성장 속도($\nu$) 모델입니다.
-$$ \nu_{growth} = \frac{J \cdot M}{n \cdot F \cdot \rho} $$
-*   **추론 로직**: 특정 로트(Lot)에서 미세 단락 징후가 감지될 경우, FidelityEngine은 **이물 농도 데이터**를 분석합니다. 전류 밀도가 $1.0\text{ mA/cm}^2$를 상회하고 금속 이온 농도가 ppb 임계치를 넘어서면, 이를 **'분리막 관통 임계 상태'**로 판정하고 해당 셀의 충전 상한 전압을 즉시 하향 제한합니다.
-
-### 3.2 Electromagnetic Physics: Magnetic Filter Efficiency
-입자 크기와 자력 구배($\nabla B$)에 따른 금속 이물 포집력 모델입니다.
-*   **진단 결과**: FidelityEngine은 필터 통과 전/후의 ICP-MS 데이터를 분석하여 **'포집 무결성 지수'**를 산출합니다. 필터의 가우스(Gauss) 저하가 감지되거나 포집 효율이 $90\%$ 미만으로 하락하면, 이를 **'잠재적 내부 단락 폭탄'**으로 판정하고 생산 라인의 자석 필터 세정 혹은 교체를 강제 지시합니다.
-
-## 4. [코드 연결 해설: Material Purity Fidelity Auditor]
-이 코드는 이물 농도 및 전위 데이터를 기반으로 셀의 내부 단락 리스크를 실시간 진단합니다.
-
-```python
-class MaterialPurityEngine:
-    """
-    HDS-Gold V6.3.7: 배터리 소재 순도 및 자성 이물 무결성 진단 엔진
-    """
-    def __init__(self, fe_limit=10.0, cu_limit=5.0):
-        self.FE_LIMIT = fe_limit # ppb
-        self.CU_LIMIT = cu_limit # ppb
-
-    def audit_purity_integrity(self, current_fe, current_cu, filter_gauss):
-        """
-        이물 농도 및 필터 자력 기반 안전 무결성 평가
-        """
-        fe_fidelity = 1.0 - (current_fe / self.FE_LIMIT)
-        
-        status = "PURITY_STABLE"
-        if current_fe > self.FE_LIMIT * 5.0 or current_cu > self.CU_LIMIT * 5.0:
-            status = "CRITICAL_CONTAMINATION_INTERNAL_SHORT_RISK"
-        elif filter_gauss < 10000:
-            status = "WARNING_MAGNETIC_FILTER_WEAKNESS"
-            
-        return {
-            "purity_fidelity": round(max(fe_fidelity, 0), 4),
-            "safety_status": "SECURE" if status == "PURITY_STABLE" else "VULNERABLE",
-            "status": status,
-            "action": "HALT_PRODUCTION_AND_CLEAN_FILTERS" if status.startswith("CRITICAL") else "NORMAL_OPS"
-        }
-```
-
-## 5. [스스로 체크 (Self-Audit)]
-1. **Precision Tiering**: 양극재 공정에서 **Magnetic Fe/Ni** 농도를 $10\text{ppb}$ 이하로 관리하는 것이 Tier 1 필수 요건인 이유는? (힌트: 고전압($>4.3V$)에서 이물의 이온화($Fe \to Fe^{2+}$) 및 음극 수지상($Dendrite$) 성장 메커니즘)
-2. **Operational Result**: **Magnetic Filter**의 단수가 증가함에 따라 입자 포집 효율이 수리적으로 어떻게 누적($\eta_{total} = 1 - \prod (1-\eta_i)$)되는가?
-3. **FidelityEngine**: **OCV (Open Circuit Voltage)** 정밀 모니터링 중 발생하는 미세 전압 낙폭($Voltage\ Drop$)을 통해 이물에 의한 **'미세 단락'**을 어떻게 결정론적으로 선별하는가?
+## 5. 검증 프로토콜 (Audit)
+1. **Magnetic Capture Audit**: 필터 전/후의 이물 농도 비교 분석을 통해 포집 효율($\eta$)이 $99.99\%$ 이상 유지되는지 실측 검증.
+2. **Ionization Stress Audit**: 고전위 가혹 조건($>4.35\text{V}$)에서 이물질의 용출 속도가 설계치를 상회하여 OCV 하락(Voltage Drop)을 유발하는지 정밀 모니터링.
+3. **Moisture-Impurity Synergy**: 전해액 내 수분 함량이 $200\text{ppm}$을 초과하여 이물질의 부식 및 이온화를 촉진하는지 환경 변수 무결성 확인.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- MOC 43_advanced-battery-chemistry-and-manufacturing-hub
-- Battery thermal-runaway-mechanism
-- Battery formation-and-sei-kinetics
+- [[[Concept] thermal-runaway-safety-mechanisms]]
+- [[[Concept] bms-system-architecture]]
 
-**[V6.3.7_MATERIAL_PURITY_MODERNIZATION_COMPLETE]**
-**[FIDELITY_ENGINE_STATUS: ACTIVE]**
-**[TIMESTAMP: 2026-05-10]**
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

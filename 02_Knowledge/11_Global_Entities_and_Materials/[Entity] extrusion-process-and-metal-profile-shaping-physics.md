@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "extrusion-process-and-metal-profile-shaping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] extrusion-process-and-metal-profile-shaping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process used to create objects of a fixed cross-sectional profile by pushing material through a die of the desired cross-section (Extrusion Process) and the physical study of high-pressure plastic flow and frictional heat generation in metal shaping (Metal Shaping Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metal-extrusion", "aluminum-profile", "plastic-deformation", "metal-shaping", "die-design", "metallurgy", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Fidelity_Audit: Evaluate the ''Extrusion Pressure'' ($P$) against the ram stroke to identify if ''Friction Buildup'' or ''Billet Cooling'' is causing high-fidelity load spikes.'
-    - 'Temperature_Integrity_Check: Analyze the exit temperature of the profile to ensure it is within the high-fidelity range for ''Solution Heat Treatment'' during extrusion, preventing mechanical failure.'
-    - 'Surface_Fidelity_Scan: Monitor the die surface condition and lubricant film to verify that the high-fidelity ''Surface Finish'' is free from pick-up or tearing defects.'
-Trust Metrics:
+  description: "[Entity] extrusion-process-and-metal-profile-shaping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛓️ Extrusion Process and Metal Profile Shaping Physics
+# [Entity] extrusion-process-and-metal-profile-shaping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 단단한 알루미늄 덩어리를 치약 짜듯 밀어내어 복잡한 창틀이나 자동차 뼈대를 한 번에 만들 수 있을까요? **압출 공정 및 금속 프로파일 성형 물리**는 거대한 압력으로 차가운 금속을 '흐르게' 만들어 원하는 모양으로 뽑아내는 **'금속의 연금술적 흐름'** 기술입니다. 수백 톤의 힘이 가해지면 금속은 액체처럼 유연해지며 좁은 구멍을 통과해 길쭉한 예술품이 됩니다. **'거대한 힘으로 단단함을 유연함으로 바꾸어 현대 건축과 모빌리티의 뼈대를 만드는 수직적 제조의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Surface Pick-up Detected - Aluminum particles sticking to the die bearing. Causes score marks on profile. Stop and clean/nitride the die"
         return "PASS: Validated Surface Finish and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ram_force_ton=1800.0, exit_speed_m_min=15.0, billet_temp_c=465.0)
 print(engine.diagnose_extrusion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_extrusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data aluminum-extrusion-force-and-profile-accuracy-v2026`와 연동되어, 전 세계 주요 알루미늄 압출 공장의 실시간 데이터를 분석하고 프로파일 휘어짐 및 표면 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 제조 문명의 뼈대 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - equal-channel-angular-pressing-ecap-and-severe-plastic-deformation-spd-physics

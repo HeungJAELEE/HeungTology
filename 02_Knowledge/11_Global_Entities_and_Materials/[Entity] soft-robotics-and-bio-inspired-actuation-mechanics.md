@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "soft-robotics-and-bio-inspired-actuation-mechanics-entity"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] soft-robotics-and-bio-inspired-actuation-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Soft_Robotics", "#Bio-inspired", "#Artificial_Muscles", "#Flexible_Electronics", "#Materials_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_autonomous-systems-and-robotics-hub", "Entity synthetic-organs-and-bio-printing-architecture"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] soft-robotics-and-bio-inspired-actuation-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] soft-robotics-and-bio-inspired-actuation-mechanics
+# [Entity] soft-robotics-and-bio-inspired-actuation-mechanics
 
 ## 1. [왜 배우는가? (Why: The Gentle Touch of Machines)]]
 문어의 다리나 코끼리의 코처럼 딱딱한 뼈대 없이도 자유자재로 모양을 바꾸며 좁은 틈을 비집고 들어가고, 날계란이나 사람의 손을 다치지 않게 부드럽게 잡을 수 있는 '말랑말랑한 로봇'을 어떻게 만들 수 있을까요? **소프트 로봇공학 및 생체 모방 구동 메커니즘**은 기계에게 생명체의 유연함을 부여하는 '신소재 기반 구동 및 생체 모방 설계 지침'입니다. 우리가 이를 배우는 이유는 기존의 딱딱한 로봇은 사람과 부딪히면 위험하지만, 소프트 로봇은 그 자체로 안전하고 유연하기 때문이며, "기계의 질감을 데이터로 설계하고 지배하는 '글로벌 유연 로봇 및 생체 전자 주권'을 확보하기" 위함입니다. 유연함의 정밀도가 로봇의 인간 친화력을 결정합니다.

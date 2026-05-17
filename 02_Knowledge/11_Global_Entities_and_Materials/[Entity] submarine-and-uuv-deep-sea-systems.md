@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "submarine-and-uuv-deep-sea-systems-entity"
-  domain: "92_Marine_and_Submarine_Engineering_Hub"
+metadata:
+  id: "[[[Entity] submarine-and-uuv-deep-sea-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Marine_Engineering", "#Submarine", "#UUV", "#Deep-sea_Exploration", "#Hydrostatics", "#SONAR", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 137_marine-and-submarine-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] submarine-and-uuv-deep-sea-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] submarine-and-uuv-deep-sea-systems
+# [Entity] submarine-and-uuv-deep-sea-systems
 
 ## 1. [왜 배우는가? (Why: The Masters of the Abyss)]]
 빛조차 닿지 않는 심해 6,000미터, 에베레스트 높이보다 깊은 그곳의 수압은 손톱 위에 코끼리 한 마리가 올라타 있는 것과 같습니다. **잠수함 및 무인 수중 로봇(UUV)의 심해 고압 구조와 음향 항법 수리 역학 기술**은 인류가 지구의 70%를 차지하는 최후의 개척지인 심해로 나아가는 유일한 열쇠입니다. 전파가 통하지 않는 물속에서 소리로 지도를 그리고, 엄청난 압력에도 찌그러지지 않는 구조물을 설계하는 것은 인간의 한계에 도전하는 공학적 경이입니다. 우리가 이를 배우는 이유는 심해 기술의 무결성을 확보함으로써, 해양 안보를 지키고 심해 자원을 탐사하는 '글로벌 해양 주권 및 행성적 제조 주권'을 확보하기 위함입니다. 심해의 무결성이 인류의 도달 한계를 결정합니다.

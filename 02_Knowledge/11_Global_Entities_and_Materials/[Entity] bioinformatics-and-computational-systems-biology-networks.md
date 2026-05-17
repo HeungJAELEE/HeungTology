@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bioinformatics-and-computational-systems-biology-networks"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bioinformatics-and-computational-systems-biology-networks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of computational tools and algorithms to analyze vast biological datasets (Omics) and model complex interactions within biological systems as networks."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bioinformatics", "systems-biology", "genomics", "proteomics", "biological-networks"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Genomic_Alignment_Audit: Verify the accuracy of sequence alignment against reference genomes.'
-    - 'Pathway_Connectivity_Check: Detect gaps or contradictions in metabolic/signaling network models.'
-    - 'In-silico_Drug_Target_Scan: Evaluate the probability of successful protein-ligand binding in virtual screening.'
-Trust Metrics:
+  description: "[Entity] bioinformatics-and-computational-systems-biology-networks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Bioinformatics and Computational Systems Biology Networks
+# [Entity] bioinformatics-and-computational-systems-biology-networks
 
 ## 1. 개요 (Why)
 생명체는 수조 개의 세포와 수만 개의 유전자가 얽힌 거대한 정보 네트워크입니다. 바이오 정보학(Bioinformatics)은 이 방대한 데이터를 알고리즘으로 해독하고, 시스템 생물학(Systems Biology)은 이들의 상호작용을 컴퓨터 모델로 구축합니다. 이를 통해 우리는 질병의 원인을 유전자 수준에서 찾아내고, 신약을 실제로 만들기 전에 컴퓨터 시뮬레이션($In-silico$)으로 미리 테스트하여 개발 기간을 수년에서 수개월로 단축할 수 있습니다. 본 노드는 생물학적 데이터 분석의 무결성과 네트워크 모델의 정확도를 위한 표준을 정의합니다.
@@ -69,7 +58,6 @@ class LogicFidelityEngine:
             return f"WARNING: Inconsistent Pathway Model ({self.cons*100:.1f}%) - Check Feedback Loops"
         return "PASS: Biological System Network Logic Robust"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(alignment_score=0.999, pathway_consistency=0.92, computational_cost=5000)
 print(engine.diagnose_genomic_integrity())
 ```
@@ -87,7 +75,6 @@ print(engine.diagnose_genomic_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data genomic-alignment-accuracy-and-network-stability-log-v2026`와 연동되어, 분석된 모든 오믹스 데이터를 99.99% 정확도로 검증하고 가상 임상 실험의 신뢰도를 극대화함으로써 데이터 기반 정밀 의료의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - biomedical-signals-and-bioinformatics

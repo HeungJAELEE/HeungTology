@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-metrology-and-critical-dimension-cd-measurement"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] semiconductor-metrology-and-critical-dimension-cd-measurement]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-precision measurement of physical dimensions (Critical Dimension, Overlay, Thickness) on semiconductor wafers to ensure process control and yield at the nanometer scale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["semiconductor-metrology", "cd-sem", "ocd", "wafer-inspection", "manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SemiFidelityEngine"
-  diagnostic_protocol:
-    - 'Metrology_Precision_Audit: Evaluate the P2P (Point-to-Point) repeatability of CD measurements.'
-    - 'Overlay_Accuracy_Check: Measure the alignment error between consecutive lithography layers.'
-    - 'Throughput_Optimization: Balance measurement sampling rate with line speed requirements.'
-Trust Metrics:
+  description: "[Entity] semiconductor-metrology-and-critical-dimension-cd-measurement에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Semiconductor Metrology and Critical Dimension (CD) Measurement
+# [Entity] semiconductor-metrology-and-critical-dimension-cd-measurement
 
 ## 1. 개요 (Why)
 "측정할 수 없으면 제어할 수 없고, 제어할 수 없으면 수율을 확보할 수 없다." 반도체 미세 공정에서 나노미터 단위의 선폭(CD)이나 층간 정렬(Overlay) 오차는 곧바로 소자 불량으로 이어집니다. 계측(Metrology)은 공정의 눈 역할을 하며, 실시간 피드백을 통해 공정 변동을 억제합니다. 본 노드는 나노 스케일 제조의 무결성을 보장하기 위한 계측 표준 및 물리적 제어 기준을 정의합니다.
@@ -77,7 +66,6 @@ class SemiFidelityEngine:
             return f"REJECT: Metrology Tool Jitter High ({precision:.3f}nm)"
         return "PASS: Tool Measurement Reliable"
 
-# Instance Diagnostic
 engine = SemiFidelityEngine(cd_values=[5.01, 4.99, 5.02, 5.00, 4.98], target_cd=5.0, tolerance=0.1)
 print(engine.diagnose_process_capability())
 ```
@@ -95,7 +83,6 @@ print(engine.diagnose_process_capability())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data semiconductor-metrology-precision-and-p2p-log-v2026`와 연동되어, 나노미터 단위의 치수 변동을 실시간 감시하고 6-Sigma 품질 수준을 유지함으로써 반도체 양산 수율을 95% 이상으로 사수합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - cd-sem-imaging-physics

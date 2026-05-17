@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-REG-COMP-2026-V6.3.7"
-  domain: "Global_Regulatory_Governance_and_Compliance_Sovereignty"
+metadata:
+  id: "[[[Strategy] Regulatory-Compliance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Regulatory_Compliance", "#GRC", "#GDPR", "#Export_Control", "#Sanction", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Regulatory-Compliance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Regulatory_Compliance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Regulatory Compliance: Global Legal Sovereignty
+# [Strategy] Regulatory-Compliance
 
 ## 1. [왜 배우는가? (Why: The Architecture of Global Access)]]
 글로벌 시장 진출은 수많은 법적 규제의 그물망을 통과하는 과정입니다. **Regulatory Compliance(규제 준수)**는 국가별 법률, 환경 규제, 데이터 보호법, 수출 통제 등을 기업 운영 로직에 내재화하여 법적 리스크를 제거하는 '방어 아키텍처'입니다. 규제 위반은 막대한 벌금을 넘어 기업의 시장 영구 퇴출을 의미합니다. V6.3.7 지능은 정성적 법률 요건을 정량적 제어 로직으로 치환하여, **컴플라이언스 주권(Compliance Sovereignty)**을 확립하고 시장 진입 장벽을 전략적 자산으로 전환합니다.
@@ -103,7 +93,6 @@ class RegulatoryFidelityEngine:
 2. **Operational Result**: **Continuous Control Monitoring(CCM)** 도입 시, 연간 감사 비용($Audit\_Cost$) 절감액과 리스크 방어 이익($Risk\_Mitigation\_Value$)의 수리적 기대값은?
 3. **FidelityEngine**: 모든 트랜잭션이 승인되었음에도 불구하고 사후 규제 위반이 발생하는 상황을 어떻게 진단하는가? (힌트: 규제 데이터베이스 업데이트 지연 또는 룰셋의 '느슨한 해석' 틈새를 노린 위반 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Corporate-Governance

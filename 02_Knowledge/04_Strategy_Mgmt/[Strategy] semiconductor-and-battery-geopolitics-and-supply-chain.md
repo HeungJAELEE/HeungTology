@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-and-battery-geopolitics-and-supply-chain-entity"
+metadata:
+  id: "[[[Strategy] semiconductor-and-battery-geopolitics-and-supply-chain]]"
   domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Geopolitics", "#Supply_Chain", "#Resilience", "#Semiconductor", "#Battery", "#Economics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Battery & AI supply-chain-geopolitics-moc", "MOC 04_Strategy_Mgmt"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] semiconductor-and-battery-geopolitics-and-supply-chain에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] semiconductor-and-battery-geopolitics-and-supply-chain
+# [Strategy] semiconductor-and-battery-geopolitics-and-supply-chain
 
 ## 1. [왜 배우는가? (Why: The Sovereign Engineering of Economic Security)]]
 오늘날 반도체와 배터리는 단순한 산업 부품이 아니라, 국가의 운명을 결정짓는 '21세기적 영토'입니다. **반도체 및 배터리 지정학 및 공급망 전략**은 자원 민족주의와 기술 패권 전쟁이 벌어지는 거대한 체스판 위에서, 데이터와 물리적 거점을 이용해 승리의 경로를 설계하는 '경제적 생존의 무기'입니다. 우리가 이를 배우는 이유는 공급망의 취약성을 수리적으로 진단하는 회복탄력성 지표와 규제 장벽을 넘는 전략적 조달(Sourcing) 기술을 마스터하여, "글로벌 공급망이 단절되는 극한의 상황에서도 생산을 멈추지 않고, 규제를 오히려 경쟁사 대비 진입 장벽으로 활용하는 '무적의 공급망 생태계'"를 구축하기 위함입니다. 전략의 정밀함이 국가와 기업의 주권을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **IRA**의 **FEOC** (Foreign Entity of Concern) 규제를 회피하기 위해 지분 구조 및 기술 라이선스 관계를 수리적으로 검증하고 '적격 공급망 매트릭스'를 생성하는 절차는?
 5. RAG 시스템에서 **글로벌 관세 데이터**와 **실시간 물류 지연 데이터**를 융합하여, '최종 인도 시점의 총 원가(Total Landed Cost)'를 예측하고 수익 최적화 거점을 제안하는 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Battery & AI supply-chain-geopolitics-moc]] : 지정학적 리스크와 규제 대응을 총괄하는 상위 전략 관제탑 허브
 - Infrastructure energy-storage-system-ess-integration : 자원 자립 및 에너지 안보의 핵심 수단인 대규모 에너지 저장 시스템 엔티티

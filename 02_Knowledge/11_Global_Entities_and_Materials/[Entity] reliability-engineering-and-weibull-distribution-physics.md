@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "reliability-engineering-and-weibull-distribution-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] reliability-engineering-and-weibull-distribution-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The sub-discipline of systems engineering that emphasizes the ability of equipment to function without failure (Reliability Engineering) and the specific statistical distribution used to model failure rates and lifespan of mechanical and electronic components (Weibull Distribution Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["reliability-engineering", "weibull-distribution", "failure-analysis", "mtbf", "predictive-maintenance", "statistical-reliability", "product-durability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Reliability_Fidelity_Audit: Evaluate the shape parameter ($\\beta$) of the failure data to identify if the components are suffering from ''Infant Mortality'', ''Random Failures'', or ''Wear-out''.'
-    - 'MTBF_Integrity_Check: Analyze the Mean Time Between Failures (MTBF) against the operational load to verify that the system meeting its design life expectations.'
-    - 'Survival_Probability_Scan: Monitor the reliability function $R(t)$ in real-time to identify when the probability of failure exceeds the acceptable risk threshold, triggering immediate replacement.'
-Trust Metrics:
+  description: "[Entity] reliability-engineering-and-weibull-distribution-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📉 Reliability Engineering and Weibull Distribution Physics
+# [Entity] reliability-engineering-and-weibull-distribution-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 "이 기계는 얼마나 오래 버틸 수 있을까요?"라는 질문에 가장 과학적으로 답하는 방법은 무엇일까요? **신뢰성 공학 및 와이블 분포 물리**는 기계나 부품의 '수명'을 숫자로 예측하는 **'고장의 예언서'** 기술입니다. 모든 물건은 시간이 지나면 망가지지만, 그 망가지는 패턴은 제각각입니다. 우리는 와이블 분포라는 마법의 수식을 통해, 이 부품이 처음부터 불량이었는지($\beta < 1$), 우연히 사고로 망가졌는지($\beta = 1$), 아니면 늙어서 수명을 다한 것인지($\beta > 1$)를 정확히 알아내어 미리 대처합니다. 멈추지 않는 세상을 만드는 **'영속성의 설계'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Single Point of Failure (SPOF) - System lacks redundancy. Critical failure will cause total stoppage"
         return "PASS: Robust Parallel Architecture and Verified Fault Tolerance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_shape_beta=2.5, characteristic_life_eta=10000, current_age_t=8000)
 print(engine.diagnose_reliability_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_reliability_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data component-failure-rates-and-mtbf-logs-v2026`와 연동되어, 전 세계 항공우주 및 스마트 팩토리의 부품 가동 데이터를 실시간 분석하고 갑작스러운 시스템 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 생존 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - predictive-maintenance-and-industrial-iot-iiot-analytics

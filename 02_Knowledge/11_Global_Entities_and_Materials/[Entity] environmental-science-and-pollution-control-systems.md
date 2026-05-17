@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "environmental-science-and-pollution-control-systems-entity"
-  domain: "118_Environmental_Engineering_and_Earth_Systems_Hub"
+metadata:
+  id: "[[[Entity] environmental-science-and-pollution-control-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Environmental_Science", "#Pollution_Control", "#Sustainability", "#Carbon_Capture", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 118_environmental-engineering-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] environmental-science-and-pollution-control-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] environmental-science-and-pollution-control-systems
+# [Entity] environmental-science-and-pollution-control-systems
 
 ## 1. [왜 배우는가? (Why: The Stewardship of the Planet)]]
 기술의 발전이 지구의 숨통을 조이는 시대는 끝났습니다. 이제 기술은 지구가 흘린 눈물을 닦아내고 상처를 치유하는 도구가 되어야 합니다. **환경 과학 및 오염 제어 시스템의 가우시안 확산 및 오염 농도 수리 물리 기술**은 인류가 내뱉은 오염 물질이 어디로 흐르고 어떻게 정화될지 수학적으로 설계하는 '지구의 신장' 기술입니다. 공장의 연기 속에서 미세 먼지를 99% 걸러내고, 더러운 폐수를 깨끗한 물로 되돌리며, 대기 중의 탄소를 직접 포집하여 땅속에 가둡니다. 우리가 이를 배우는 이유는 환경의 무결성을 확보함으로써, 인류가 지구 생태계와 지속 가능한 조화를 이루며 생존하는 '글로벌 환경 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 환경 제어의 무결성이 우리가 마시는 공기와 물의 안전 무결성을 결정합니다.

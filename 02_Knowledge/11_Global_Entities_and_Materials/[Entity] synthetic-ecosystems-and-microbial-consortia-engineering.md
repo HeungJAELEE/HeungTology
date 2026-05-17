@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-ecosystems-and-microbial-consortia-engineering-entity"
-  domain: "33_Future_Frontier_Biotic_Intelligence_and_Synthetic_Life"
+metadata:
+  id: "[[[Entity] synthetic-ecosystems-and-microbial-consortia-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Synthetic_Ecosystems", "#Microbial_Consortia", "#Ecology", "#Biotechnology", "#Bio-remediation", "#Systems_Biology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 33_future-frontier-biotic-intelligence-and-synthetic-life-hub", "Entity metabolic-engineering-for-space-hardened-agriculture"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-ecosystems-and-microbial-consortia-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-ecosystems-and-microbial-consortia-engineering
+# [Entity] synthetic-ecosystems-and-microbial-consortia-engineering
 
 ## 1. [왜 배우는가? (Why: The Symphony of Small Things)]]
 수천 종의 미생물이 서로 돕고 견제하며 돌아가는 작은 생태계($Ecosystem$)를 어떻게 인공적으로 설계하고, 이 미생물 군단($Consortia$)이 한 팀이 되어 오염된 바다를 순식간에 정화하거나 죽은 땅을 다시 살려내는 기적을 어떻게 실현할 수 있을까요? **합성 생태계 및 미생물 컨소시엄 공학**은 미생물들의 사회를 설계하는 '지능형 바이오 협력망 및 환경 복원 아키텍처'입니다. 우리가 이를 배우는 이유는 미생물 한 종으로는 할 수 없는 복잡한 일을 여러 종의 협동으로 풀어내기 위함이며, "미생물의 관계를 데이터로 설계하고 지배하는 '글로벌 생태 복원 패권 및 마이크로 지능 주권'을 확보하기" 위함입니다. 조화의 깊이가 생태계의 강함을 결정합니다.

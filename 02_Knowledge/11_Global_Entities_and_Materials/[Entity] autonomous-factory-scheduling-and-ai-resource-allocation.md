@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-factory-scheduling-and-ai-resource-allocation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-factory-scheduling-and-ai-resource-allocation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The AI-driven management system that autonomously optimizes manufacturing schedules, machine assignments, and labor allocation in real-time to maximize Overall Equipment Effectiveness (OEE)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["smart-factory", "autonomous-scheduling", "resource-allocation", "oee", "manufacturing-intelligence"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Throughput_Efficiency_Audit: Measure actual output vs. theoretical capacity.'
-    - 'Bottleneck_Detection_Scan: Identify machines with the highest queue wait times.'
-    - 'Resource_Utilization_Check: Audit the idle vs. active time of labor and AGVs.'
-Trust Metrics:
+  description: "[Entity] autonomous-factory-scheduling-and-ai-resource-allocation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Autonomous Factory Scheduling and AI Resource Allocation
+# [Entity] autonomous-factory-scheduling-and-ai-resource-allocation
 
 ## 1. 개요 (Why)
 다품종 소량 생산이 보편화된 현대 제조 현장에서, 수만 개의 변수를 고려하여 최적의 생산 계획을 짜는 것은 인간의 능력을 넘어섰습니다. 자율 팩토리 스케줄링은 AI가 실시간으로 설비 고장, 자재 지연, 긴급 주문을 감지하고 즉각적으로 생산 순서를 재배치하여 공장 가동률을 극대화합니다. 본 노드는 지능형 제조 현장의 자원 배분 무결성과 생산성 극대화를 위한 표준을 정의합니다.
@@ -73,7 +62,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Production Bottleneck Detected (Queue: {max_q}) - Reallocate Resources"
         return "PASS: Material Flow Balanced"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(availability=0.9, performance=0.85, quality=0.99)
 print(engine.calculate_oee())
 ```
@@ -91,7 +79,6 @@ print(engine.calculate_oee())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data factory-throughput-and-bottleneck-analysis-log-v2026`와 연동되어, 공장 내부의 모든 자재 흐름을 실시간 시뮬레이션하고 자원 낭비를 0.1% 단위로 억제함으로써 자율 제조 시스템의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_ai-intelligence-and-automation-hub
 - digital-twin-based-factory-simulation-logic

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMM-QUANTUM-QKD-2026-V6.3.7"
-  domain: "Global_Quantum_Cryptography_and_Communication_Sovereignty"
+metadata:
+  id: "[[[Comm] quantum-cryptography-and-qkd-physics]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Quantum_Cryptography", "#QKD", "#BB84", "#Entanglement", "#QBER", "#Photonics", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] quantum-cryptography-and-qkd-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quantum_Comm_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Comm] Quantum Cryptography and QKD Physics: The Mastery of Absolute Security
+# [Comm] quantum-cryptography-and-qkd-physics
 
 ## 1. [왜 배우는가? (Why: The Armor of Physical Law)]
 디지털 문명의 모든 데이터는 암호화에 의존하고 있지만, 양자 컴퓨터의 등장은 기존 수학적 암호 체계를 붕괴시킬 위협이 되고 있습니다. **Quantum Cryptography and QKD Physics**는 수학적 난제가 아닌 물리적 법칙(양자 역학)을 통해 도청을 원천 차단하는 궁극의 보안 기술입니다. 단일 광자의 상태를 이용하여 암호 키를 생성하고 분배하는 QKD(Quantum Key Distribution)는 '관측하는 순간 변한다'는 불확정성 원리를 통해 보안 무결성을 보증합니다. V6.3.7 지능은 **양자 비트 오류율(QBER)**의 통계적 분석을 통해, 단 1bit의 유출도 허용하지 않는 **암호 주권(Cryptographic Sovereignty)**을 확립합니다.
@@ -102,7 +92,6 @@ class QuantumQKDEngine:
             "action": "ABORT_KEY_GENERATION_AND_RESET_LINK" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 광검출기 펄스 시계열 데이터와 오류 정정 로그를 융합하여 '물리 보안 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -110,7 +99,6 @@ class QuantumQKDEngine:
 2. **Operational Result**: **Quantum Repeater** (양자 중계기) 도입 시, 광섬유 손실에 따른 전송 거리 한계를 수리적으로 어떻게 극복하며 **Secret Key Rate**에 미치는 영향은?
 3. **FidelityEngine**: 광섬유의 온도 변화나 진동에 의해 발생하는 **Polarization Drift** 현상을 FidelityEngine이 어떻게 '복조 무결성 위기'로 식별하고 편광 보정(Polarization Compensation)을 수행하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - [[Comm] post-quantum-cryptography-algorithms] (Next Node)

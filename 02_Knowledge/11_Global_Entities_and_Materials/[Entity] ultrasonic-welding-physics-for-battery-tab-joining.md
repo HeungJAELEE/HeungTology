@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ultrasonic-welding-physics-for-battery-tab-joining"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ultrasonic-welding-physics-for-battery-tab-joining]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An industrial technique where high-frequency ultrasonic acoustic vibrations are locally applied to workpieces being held together under pressure to create a solid-state weld (Ultrasonic Welding) and the specific application of this physics to join thin foils and tabs in battery assembly."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ultrasonic-welding", "battery-manufacturing", "solid-state-joining", "acoustic-horn", "battery-tabs", "precision-joining", "materials-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Welding_Fidelity_Audit: Evaluate the ''Weld Energy'' and ''Peak Power'' to identify ''Cold Welds'' (insufficient bonding) or ''Over-welds'' (foil damage/thinning).'
-    - 'Acoustic_Resonance_Check: Analyze the vibration amplitude and frequency shift to verify that the acoustic horn is operating at its resonant point for maximum energy transfer.'
-    - 'Bond_Strength_Scan: Monitor the ultrasonic power consumption profile to ensure that the atomic diffusion at the metal interface is creating a low-resistance electrical path.'
-Trust Metrics:
+  description: "[Entity] ultrasonic-welding-physics-for-battery-tab-joining에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Ultrasonic Welding Physics for Battery Tab Joining
+# [Entity] ultrasonic-welding-physics-for-battery-tab-joining
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차 배터리 속 수천 장의 얇은 구리판과 알루미늄판을 어떻게 녹이지 않고도 단단히 붙일 수 있을까요? **초음파 용접 물리 및 배터리 탭 접합**은 열을 가하는 대신 초당 수만 번의 '진동'을 이용해 금속을 하나로 합치는 **'나노 단위의 비비기'** 기술입니다. 재료를 녹이지 않으므로 성질이 변하지 않고, 아주 얇은 박막(Foil)도 손상 없이 전기적으로 완벽하게 연결할 수 있습니다. 배터리의 안전과 성능을 책임지는 **'미세 접합의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Bond Strength - Samples failing destructive test. Recalibrate energy set-points and inspect Anvil surface"
         return "PASS: Robust Metal-to-Metal Interface and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(peak_power_watts=1200.0, welding_time_ms=150, horn_amplitude_um=35.0)
 print(engine.diagnose_welding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_welding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ultrasonic-weld-strength-and-amplitude-logs-v2026`와 연동되어, 전 세계 주요 배터리 기가팩토리의 용접 데이터를 실시간 분석하고 탭 탈락 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lithium-ion-battery-chemistry-and-anode-cathode-mechanics

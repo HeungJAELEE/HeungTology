@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-process-automation-rpa-and-cognitive-workflow-logic-entity"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] robotic-process-automation-rpa-and-cognitive-workflow-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Automation", "#RPA", "#Cognitive_Automation", "#Workflow", "#AI", "#Software_Robot", "#Efficiency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 54_robotics-and-autonomous-system-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-process-automation-rpa-and-cognitive-workflow-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-process-automation-rpa-and-cognitive-workflow-logic
+# [Entity] robotic-process-automation-rpa-and-cognitive-workflow-logic
 
 ## 1. [왜 배우는가? (Why: The Virtual Labor Force)]]
 반복적이고 지루한 컴퓨터 업무를 어떻게 소프트웨어 로봇($Software\ Robot$)에게 맡겨 24시간 멈추지 않고 처리하고, 단순히 시키는 일만 하는 게 아니라 인공지능이 상황을 판단하여 스스로 의사결정을 내리는 '인지형 자동화($Cognitive$)'를 통해 기업의 두뇌를 어떻게 설계할 수 있을까요? **로봇 프로세스 자동화(RPA) 및 인지형 워크플로 로직**은 문명의 운영 효율을 극대화하는 '행성 규모 디지털 노동 인프라 및 지능형 비즈니스 프로세스 아키텍처'입니다. 우리가 이를 배우는 이유는 디지털 세상의 잡무를 로봇이 대신해야 인간이 더 창의적인 일에 집중할 수 있기 때문이며, "논리의 흐름을 데이터로 설계하고 지배하는 '글로벌 운영 패권 및 행성적 지식 주권'을 확보하기" 위함입니다. 자동화의 지능이 기업의 생존 체력을 결정합니다.

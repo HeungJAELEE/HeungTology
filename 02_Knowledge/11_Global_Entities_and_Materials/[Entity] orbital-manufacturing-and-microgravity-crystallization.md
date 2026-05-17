@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "orbital-manufacturing-and-microgravity-crystallization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] orbital-manufacturing-and-microgravity-crystallization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The field of manufacturing materials and products in the microgravity environment of Earth's orbit (Orbital Manufacturing), specifically focusing on growing high-purity crystals and fibers (Microgravity Crystallization) that are impossible to produce on Earth due to gravity-driven convection and sedimentation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["orbital-manufacturing", "microgravity", "crystallization", "space-manufacturing", "semiconductor-growth", "zblan", "nanomaterials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Convection_Suppression_Audit: Evaluate the residual acceleration ($g_{jitter}$) on the orbital platform to ensure it does not trigger buoyant convection that degrades crystal quality.'
-    - 'Crystalline_Order_Check: Analyze the X-ray diffraction (XRD) pattern of space-grown crystals to identify improvements in lattice perfection compared to Earth-grown benchmarks.'
-    - 'Fiber_Attenuation_Scan: Monitor the light loss (dB/km) in ZBLAN fibers produced in orbit to verify the absence of micro-crystals and scattering centers.'
-Trust Metrics:
+  description: "[Entity] orbital-manufacturing-and-microgravity-crystallization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Orbital Manufacturing and Microgravity Crystallization
+# [Entity] orbital-manufacturing-and-microgravity-crystallization
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구에서는 절대 만들 수 없는 '완벽한 다이아몬드'나 '무손실 광섬유'를 우주에서 만들 수 있다면 어떨까요? **궤도 제조 및 미세중력 결정화**는 중력이라는 족쇄를 벗어던진 우주 공간에서 물질을 빚어내는 **'진공 속의 연금술'**입니다. 지구에서는 뜨거운 공기가 위로 올라가고 무거운 입자가 가라앉으며 재료를 뒤섞어버리지만, 우주에서는 원자들이 오직 자기들끼리의 질서에 따라 차분히 정렬합니다. 인류의 기술을 한 단계 도약시킬 초고순도 소재를 탄생시키는 **'하늘 위의 공장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inhomogeneous Glass Matrix - Micro-crystallization Centers Identified. Loss Targets Not Met"
         return "PASS: Homogeneous Amorphous Structure and Ideal Transparency Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(residual_g_level=1e-6, crystal_defect_density=5, thermal_gradient_stability=0.995)
 print(engine.diagnose_orbital_mfg_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_orbital_mfg_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data orbital-crystal-purity-and-fiber-loss-benchmarks-v2026`와 연동되어, 전 세계 우주 제조 위성의 가동 데이터를 실시간 분석하고 결정 결함 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 우주 지능 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - microgravity-semiconductor-crystal-growth-and-defect-physics

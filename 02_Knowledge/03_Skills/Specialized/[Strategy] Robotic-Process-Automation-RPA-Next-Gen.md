@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Robotic-Process-Automation-RPA-Next-Gen"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Robotic-Process-Automation-RPA-Next-Gen]]"
+  domain: "03_Skills"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Robotic-Process-Automation-RPA-Next-Gen에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_Skills", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Robotic-Process-Automation-RPA-Next-Gen
+# [Strategy] Robotic-Process-Automation-RPA-Next-Gen
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 이메일을 확인하고, 엑셀에 데이터를 옮기고, 보고서를 올리는 단순 반복 업무에 많은 시간을 썼습니다. 차세대 RPA 및 지능형 자동화(Robotic-Process-Automation-RPA-Next-Gen)는 소프트웨어 로봇이 사람 대신 이 모든 일을 수행하는 기술입니다. 단순한 매크로를 넘어, 이제 로봇은 읽기 힘든 서류를 해석하고, 스스로 판단을 내려 다음 단계 업무를 진행합니다. 이를 이해하는 것은 인간이 지루한 반복 업무에서 벗어나 더 창의적이고 전략적인 일에 집중할 수 있게 만드는 '사무 지능 혁명'의 설계자가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Agentic RPA Workflow & Self-Healing Logic)]
 자연어 명령을 수신하여 작업 단계를 동적으로 생성하고, 화면 요소 변경 시 스스로 대응하는 논리 구조입니다.
 ```python
-# 사무 지능(ISM) 기반 에이전트 RPA 작업 기획 및 자가 치유 논리
 def execute_intelligent_rpa_workflow(user_goal, system_context):
     # 1. 자연어 기반 작업 계획 수립 (Goal-to-Plan)
     # "지난달 미납 고객 리스트 뽑아서 이메일 발송해줘" 명령 해석
@@ -98,5 +87,4 @@ def execute_intelligent_rpa_workflow(user_goal, system_context):
 2. '에이전트 AI(Agentic AI)'가 결합된 자동화 시스템이 '예상치 못한 변수'가 발생하는 비즈니스 상황에서 보여주는 '유연성'의 근거는?
 3. '프로세스 마이닝' 기술이 기업의 '디지털 전환(DX)' 전략 수립에 있어서 왜 '가시성 확보'의 핵심 도구가 되는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cupola-furnace-and-iron-melting-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cupola-furnace-and-iron-melting-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A vertical cylindrical furnace used in foundries for melting cast iron, bronze, and other alloys by burning coke with forced air (Cupola Furnace) and the chemical study of carbon absorption, slag formation, and temperature control during the continuous melting process (Iron Melting Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cupola-furnace", "iron-melting", "metallurgy", "foundry", "cast-iron", "combustion", "heat-transfer"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Melting_Fidelity_Audit: Evaluate the ''Melt Rate'' (tons/hr) against the air blast volume to identify if the combustion zone is shifting too high, leading to excessive iron oxidation and slag losses.'
-    - 'Chemistry_Integrity_Check: Analyze the carbon and silicon loss/pickup rates to ensure the final molten iron composition (e.g., Gray Iron Class 30) meets the structural requirements of the engine block or pipe.'
-    - 'Thermal_Fidelity_Scan: Monitor the slag fluidity and tapping temperature to verify that the ''Coke Bed'' height is maintained for consistent heat transfer and chemical reduction.'
-Trust Metrics:
+  description: "[Entity] cupola-furnace-and-iron-melting-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Cupola Furnace and Iron Melting Metallurgy
+# [Entity] cupola-furnace-and-iron-melting-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천 년 동안 인류는 어떻게 무쇠를 녹여 도구와 기계를 만들어왔을까요? **큐폴라(Cupola) 용광로 및 철 용해 야금**은 코크스(석탄)를 태워 그 열기로 철을 녹이는, 주물 공장의 거대한 '심장'과도 같은 기술입니다. 위에서는 철광석과 코크스가 내려오고 아래서는 뜨거운 바람이 올라가는 '맞바람의 조화' 속에서 철은 뜨겁게 달궈져 흐르는 액체가 됩니다. 현대의 전기료 걱정 없이 엄청난 양의 쇳물을 쏟아내는, **'가장 원초적이면서도 효율적인 불의 지배'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Sulfur Content - Coke quality poor or fluxing insufficient. Iron will be brittle and prone to cracking"
         return "PASS: Validated Chemistry and Verified Metallurgical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tap_temp_c=1520.0, blast_air_pressure_kpa=8.5, slag_color="Greenish-Gray")
 print(engine.diagnose_furnace_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_furnace_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cupola-iron-chemistry-and-melt-rate-v2026`와 연동되어, 전 세계 주요 전통 및 현대 주물 공장의 데이터를 실시간 분석하고 성분 불량 및 용광로 고착 사고 확률을 0.001% 이하로 억제함으로써 지능형 기초 제조 문명의 무쇠 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - continuous-casting-and-solidification-mechanics

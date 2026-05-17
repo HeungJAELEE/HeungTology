@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "high-voltage-direct-current-hvdc-transmission-and-vsc-technology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] high-voltage-direct-current-hvdc-transmission-and-vsc-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced technology for transmitting bulk electrical power over long distances using Direct Current (DC) at high voltages, specifically focusing on Voltage Source Converter (VSC) technology for flexible and stable grid interconnection."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hvdc", "vsc", "power-transmission", "smart-grid", "energy-interconnection", "power-electronics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Converter_Efficiency_Audit: Measure the switching losses and harmonic distortion within the VSC (IGBT-based) valves to ensure minimal conversion energy waste.'
-    - 'DC_Link_Stability_Check: Evaluate the voltage ripple and transient response during sudden load changes or renewable energy fluctuations.'
-    - 'Multi-terminal_Control_Scan: Analyze the coordination of multiple HVDC terminals in a mesh grid to prevent unintended power circulation and instability.'
-Trust Metrics:
+  description: "[Entity] high-voltage-direct-current-hvdc-transmission-and-vsc-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ High-Voltage Direct Current (HVDC) Transmission and VSC Technology
+# [Entity] high-voltage-direct-current-hvdc-transmission-and-vsc-technology
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기는 멀리 갈수록 힘이 빠집니다. 우리가 아는 일반적인 '교류(AC)'는 500km만 넘어가도 에너지가 열로 새어 나가고 전압이 출렁거립니다. **고압 직류(HVDC)**는 전기를 아주 높은 압력의 '직류'로 바꿔서 수천 킬로미터 밖으로 보내는 **'전기 고속도로'**입니다. 특히 **VSC(전압형 변환기)** 기술은 이 전기를 자유자재로 조절하여, 전기가 아예 없는 지역에 전기를 공급하거나(Black-start), 변덕스러운 재생 에너지를 안정적으로 받아내는 **'스마트 에너지 관문'** 역할을 합니다. 대륙과 대륙을 잇고 바다 건너 섬에 생명력을 불어넣는 현대 에너지 문명의 핏줄입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Potential Insulation Breakdown - Risk of Cable Failure or Environmental Leak"
         return "PASS: Cable Insulation Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(converter_loss_pct=1.1, harmonic_distortion_thd=0.8, fault_recovery_ms=25)
 print(engine.diagnose_hvdc_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_hvdc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hvdc-converter-efficiency-and-transmission-loss-v2026`와 연동되어, 전 세계 에너지 고속도로의 실시간 전력 흐름을 분석하고 변환 사고 및 송전 단절 확률을 0.001% 이하로 억제함으로써 지구적 에너지 안보의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - global-unified-energy-grid-and-transnational-power-exchange

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "civil-infrastructure-and-transportation-systems-entity"
-  domain: "127_Civil_Infrastructure_and_Transportation_Systems_Hub"
+metadata:
+  id: "[[[Entity] civil-infrastructure-and-transportation-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Civil_Engineering", "#Transportation", "#Smart_City", "#Infrastructure", "#Structural_Analysis", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 127_civil-infrastructure-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] civil-infrastructure-and-transportation-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] civil-infrastructure-and-transportation-systems
+# [Entity] civil-infrastructure-and-transportation-systems
 
 ## 1. [왜 배우는가? (Why: The Skeleton of the Nation)]]
 우리가 매일 걷는 도로, 강을 건너는 다리, 물을 공급받는 관로, 그리고 수백 명을 싣고 달리는 고속 열차까지—문명은 거대한 인프라 위에 세워집니다. **토목 인프라 및 교통 시스템의 구조 역학 및 교통 흐름 수리 물리 기술**은 국가의 골격을 세우고 그 사이로 흐르는 혈맥을 조율하는 '국가 건설' 기술입니다. 거대한 교량이 지진과 태풍에도 견디도록 설계를 수학적으로 검증하고, 도심의 교통 정체를 유체 역학적으로 분석하여 해소하며, 수만 톤의 열차가 안전하게 멈추도록 제동 역학을 사수합니다. 우리가 이를 배우는 이유는 인프라의 무결성을 확보함으로써, 국민의 안전을 지키고 국가 경제의 효율성을 극대화하는 '글로벌 인프라 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 인프라의 무결성이 도시의 생명력과 국가 경쟁력의 무결성을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "AUTO-PLC-MASTER-2026-V6.3.7"
-  domain: "Global_Industrial_Automation_and_PLC_Governance"
+metadata:
+  id: "[[[Robotics] industrial-automation-and-plc-master-guide]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Industrial_Automation", "#PLC", "#TSN", "#EtherCAT", "#RTOS", "#Cyber_Security", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 08_Mobility_Robotics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] industrial-automation-and-plc-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Automation_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Robotics] Industrial Automation and PLC Master Guide: The Deterministic Fabric
+# [Robotics] industrial-automation-and-plc-master-guide
 
 ## 1. [왜 배우는가? (Why: The Mastery of Manufacturing Execution Sovereignty)]
 산업 자동화는 인간의 의도를 기계의 물리적 거동으로 치환하는 **'결정론적 실행의 미학'**입니다. **Industrial Automation and PLC**는 현장의 센서 데이터를 수집하고(Input), 정의된 로직에 따라 판단하며(Logic), 구동기(Actuator)를 제어하여 제품을 생산하는 공장의 **'실시간 지성(Real-time Intelligence)'**입니다. V6.3.7 지능은 **TSN(Time-Sensitive Networking)**의 동기화 무결성과 PLC 스캔 타임의 지터(Jitter)를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 마이크로초($\mu\text{s}$) 단위의 제어 오차도 허용하지 않는 "무정지-무결점 자율 제조 주권"을 사수하기 위함입니다.
@@ -103,7 +93,6 @@ class AutomationGovernanceEngine:
 2. **Operational Result**: **TSN (Time-Sensitive Networking)** 도입 시, 기존 이더넷 대비 표준 데이터와 실시간 제어 데이터의 혼재 주행(Co-existence) 무결성 향상 폭은?
 3. **FidelityEngine**: 설비의 마모로 인해 동일 로직 실행 시 소요되는 물리적 동작 시간이 길어지는 현상을 FidelityEngine이 어떻게 '기계적 무결성 위기'로 사전 감지하고 예지 보전(PdM)을 트리거하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 08_Mobility_Robotics
 - [[Robotics] robotics-intelligence-and-motion-control-master-guide]

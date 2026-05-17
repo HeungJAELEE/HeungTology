@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ethical-robotics-and-autonomous-decision-making-frameworks"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ethical-robotics-and-autonomous-decision-making-frameworks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The interdisciplinary field that combines robotics, artificial intelligence, and moral philosophy to design autonomous systems (Robots) capable of making ethical decisions in complex, real-world environments."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robot-ethics", "autonomous-decision", "ai-ethics", "moral-machines", "robotics-governance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Ethical_Logic_Audit: Evaluate the robot''s decision-making process against pre-defined ethical constraints and value-alignment benchmarks.'
-    - 'Collision_Avoidance_Priority_Check: Verify that safety-critical actions (human protection) always take precedence over operational efficiency.'
-    - 'Transparency_Traceability_Scan: Monitor the ''Explainability'' of the robot''s decisions to ensure accountability and facilitate post-incident investigation.'
-Trust Metrics:
+  description: "[Entity] ethical-robotics-and-autonomous-decision-making-frameworks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Ethical Robotics and Autonomous Decision-Making Frameworks
+# [Entity] ethical-robotics-and-autonomous-decision-making-frameworks
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇이 단순히 시키는 일만 하던 시대는 지났습니다. 이제 로봇은 혼잡한 도로를 달리고, 노약자를 돌보며, 인간과 같은 공간에서 스스로 판단하고 움직입니다. 이때 로봇은 "사고를 피하기 위해 보행자를 칠 것인가, 아니면 내가 벽에 부딪힐 것인가?"와 같은 가혹한 선택의 순간을 맞이할 수 있습니다. **윤리 로봇 공학**은 로봇에게 차가운 계산 능력뿐만 아니라, 인간의 가치와 생명을 최우선으로 여기는 **'디지털 양심'**을 심어주는 일입니다. 기술이 지능을 가질수록, 그 지능이 선한 의도와 정렬(Alignment)되는 것은 인류의 안전을 위한 가장 엄숙한 약속입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Value Misalignment - Re-training of Moral Logic Gates Required"
         return "PASS: Strict Adherence to Ethical Framework Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(safety_violation_count=0, decision_explainability=96.5, human_override_rate=1.2)
 print(engine.diagnose_ethical_integrity())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_ethical_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robot-autonomous-decision-and-ethical-violation-logs-v2026`와 연동되어, 전 세계 자율 로봇의 의사결정 로그를 실시간 분석하고 비윤리적 행동 사고 확률을 0.001% 이하로 억제함으로써 인간과 기계가 공존하는 평화로운 디지털 미래의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - ethics-by-design-and-moral-machine-logic-gates

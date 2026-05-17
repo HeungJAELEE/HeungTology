@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "concrete-mix-design-and-hydration-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] concrete-mix-design-and-hydration-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of determining the right proportions of cement, water, and aggregates to produce concrete with desired properties (Concrete Mix Design) and the chemical study of the exothermic reaction between cement and water that leads to the setting and hardening of the concrete (Hydration Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["concrete", "mix-design", "hydration-kinetics", "civil-engineering", "construction-materials", "curing", "strength-development"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Strength_Fidelity_Audit: Evaluate the ''Water-Cement Ratio'' ($w/c$) to identify if excessive water is creating porous capillary networks, leading to low structural durability and ''Carbonation'' risk.'
-    - 'Thermal_Integrity_Check: Analyze the adiabatic temperature rise during mass concrete pouring to ensure that ''Thermal Cracking'' is prevented through controlled cooling or fly-ash substitution.'
-    - 'Hydration_Fidelity_Scan: Monitor the ''Ultrasonic Pulse Velocity'' (UPV) to verify that the ''Degree of Hydration'' ($\\alpha$) is progressing according to the design curve for safe formwork removal.'
-Trust Metrics:
+  description: "[Entity] concrete-mix-design-and-hydration-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Concrete Mix Design and Hydration Kinetics
+# [Entity] concrete-mix-design-and-hydration-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 인류가 만든 재료 중 물 다음으로 많이 쓰이는 것은 무엇일까요? 바로 콘크리트입니다. **콘크리트 배합 설계 및 수화(Hydration) 역학**은 돌 가루(시멘트)와 물이 만나 바위처럼 단단해지는 **'인공 암석의 조리법'** 기술입니다. 시멘트는 물을 만나면 단순히 젖는 것이 아니라, 화학적으로 결합하며 열을 내뿜고 결정 구조를 만들어냅니다. 배합비와 온도에 따라 수천 년을 견딜 성곽이 될 수도, 금방 부서지는 모래성이 될 수도 있는 **'현대 문명의 단단한 토대'**를 만드는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Maturity - Concrete has not reached safe strength for structural loading. Do not remove formwork"
         return "PASS: Structural Integrity Confirmed and Verified Hardening Matrix"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(water_cement_ratio=0.45, hydration_heat_c=45.0, slump_value_mm=120.0)
 print(engine.diagnose_concrete_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_concrete_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data concrete-strength-evolution-and-curing-temp-v2026`와 연동되어, 전 세계 주요 건설 현장의 데이터를 실시간 분석하고 강도 미달 및 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 도시 문명의 인프라 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cement-manufacturing-and-clinker-chemistry

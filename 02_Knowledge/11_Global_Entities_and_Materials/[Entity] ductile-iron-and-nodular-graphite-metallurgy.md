@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ductile-iron-and-nodular-graphite-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ductile-iron-and-nodular-graphite-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of cast iron characterized by its high strength, ductility, and toughness, achieved by treating molten iron with magnesium or cerium to cause carbon to form spherical nodules (Ductile Iron) and the metallurgical study of the growth and distribution of these graphite spheres (Nodular Graphite Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ductile-iron", "nodular-graphite", "cast-iron", "metallurgy", "spherical-graphite", "mechanical-properties", "foundry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Nodularity_Fidelity_Audit: Evaluate the ''Nodularity Index'' ($f$) using image analysis to identify if ''Chunky Graphite'' or ''Flake-like'' shapes are appearing, which drastically reduce the material''s impact toughness.'
-    - 'Inoculation_Integrity_Check: Analyze the fading time of the magnesium treatment to ensure that the ''Spheroidizing'' effect is maintained throughout the entire pouring process.'
-    - 'Metallurgical_Fidelity_Scan: Monitor the cooling rate to verify that the ''Pearlite/Ferrite'' ratio is optimized for the required balance between hardness and ductility.'
-Trust Metrics:
+  description: "[Entity] ductile-iron-and-nodular-graphite-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔘 Ductile Iron and Nodular Graphite Metallurgy
+# [Entity] ductile-iron-and-nodular-graphite-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 깨지기 쉬운 무쇠(주철)가 어떻게 고무처럼 휘어질 수 있을까요? **연성 주철(Ductile Iron) 및 구상 흑연 야금**은 주철 내부의 탄소 모양을 '뾰족한 가시'에서 '둥근 구슬'로 바꾸어, 금속의 질긴 성질을 극적으로 끌어올리는 **'탄소의 모양 교정'** 기술입니다. 일반 주철이 유리처럼 깨진다면, 연성 주철은 강철처럼 버팁니다. 이는 마법의 가루(마그네슘) 한 줌으로 철의 성격 자체를 바꾸는 **'야금학적 연금술이자 현대 산업의 뼈대를 만드는 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Chill - Iron carbide forming at edges. Tools will break during machining. Increase silicon or inoculant amount"
         return "PASS: Validated Solidification Pattern and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(residual_magnesium_pct=0.045, nodularity_score_pct=92.0, pearlite_ratio_pct=40.0)
 print(engine.diagnose_iron_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_iron_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ductile-iron-mechanical-properties-and-nodularity-v2026`와 연동되어, 전 세계 주요 자동차 및 인프라 부품 공장의 데이터를 실시간 분석하고 구상화 불량 및 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cupola-furnace-and-iron-melting-metallurgy

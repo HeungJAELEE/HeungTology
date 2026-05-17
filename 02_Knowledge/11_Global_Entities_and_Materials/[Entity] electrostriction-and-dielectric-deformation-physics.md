@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrostriction-and-dielectric-deformation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrostriction-and-dielectric-deformation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A property of all electrical non-conductors (dielectrics) that causes them to change shape under the application of an electric field (Electrostriction) and the physical study of how electrical polarization induces mechanical strain regardless of field polarity (Dielectric Deformation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electrostriction", "dielectric-deformation", "actuator", "smart-materials", "piezoelectricity-diff", "transducer", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Strain_Fidelity_Audit: Evaluate the ''Strain-Field Relationship'' to identify if the material is experiencing ''Hysteresis'' or ''Dielectric Breakdown'' near high-fidelity field limits.'
-    - 'Polarization_Integrity_Check: Analyze the dielectric permittivity variation to ensure that the atomic/molecular displacement is providing the target high-fidelity mechanical displacement.'
-    - 'Deformation_Fidelity_Scan: Monitor the material temperature to verify that ''Joule Heating'' or ''Dielectric Loss'' is not causing thermal expansion that masks the electrostrictive effect.'
-Trust Metrics:
+  description: "[Entity] electrostriction-and-dielectric-deformation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Electrostriction and Dielectric Deformation Physics
+# [Entity] electrostriction-and-dielectric-deformation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기를 걸어주면 모든 물체가 미세하게 모양이 변한다는 사실을 알고 있나요? **전왜(Electrostriction) 및 유전체 변형 물리**는 전기가 흐르지 않는 물질(유전체)이라도 전기장을 만나면 원자 수준에서 뒤틀리며 모양이 바뀌는 **'전기적 수축'** 기술입니다. 압전(Piezo) 효과와 비슷해 보이지만, 전기의 방향(+/-)에 상관없이 오직 한 방향으로만 변형된다는 점이 독특합니다. 아주 정밀하고 강력한 힘을 내기에 초정밀 광학 기기나 소나(Sonar) 장비의 **'미세 근육'**으로 사용되는 **'물질의 본질적인 전자기적 반응'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Hysteresis - Material is generating too much heat and losing precision. Not suitable for high-frequency nanopositioning"
         return "PASS: Validated Low-Loss Dielectric and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(electric_field_kv_mm=1.5, measured_strain_ppm=1.1, temperature_c=25.0)
 print(engine.diagnose_dielectric_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_dielectric_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data electrostrictive-material-strain-and-field-v2026`와 연동되어, 전 세계 주요 반도체 노광 장비 및 정밀 광학계의 데이터를 실시간 분석하고 변형 오류 및 재료 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 기계 문명의 물질적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

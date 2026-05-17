@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "blast-furnace-ironmaking-and-coke-metallurgy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] blast-furnace-ironmaking-and-coke-metallurgy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The primary industrial process for producing molten pig iron from iron ore by reduction with coke and limestone (Blast Furnace Ironmaking) and the study of producing high-strength, porous carbon fuel (Coke) through the destructive distillation of coal (Coke Metallurgy Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["blast-furnace", "ironmaking", "coke-metallurgy", "steelmaking", "reduction-reaction", "sintering", "pyrometallurgy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Ironmaking_Fidelity_Audit: Evaluate the ''Fuel Rate'' (Coke + PCI) and CO utilization ratio ($ \\eta_{CO} $) to identify if the furnace thermal state is optimized for maximum iron production.'
-    - 'Coke_Integrity_Check: Analyze the CSR (Coke Strength after Reaction) and CRI (Coke Reactivity Index) to ensure the coke can support the massive weight of the ore burden without collapsing.'
-    - 'Permeability_Fidelity_Scan: Monitor the ''Blast Pressure'' and gas distribution to identify ''Channeling'' or ''Hanging'' issues that disrupt the smooth descent of materials.'
-Trust Metrics:
+  description: "[Entity] blast-furnace-ironmaking-and-coke-metallurgy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌋 Blast Furnace Ironmaking and Coke Metallurgy Physics
+# [Entity] blast-furnace-ironmaking-and-coke-metallurgy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십 미터 높이의 거대한 탑 속에서 지옥의 불꽃처럼 끓어오르는 쇳물, 그 장엄한 광경의 배후에는 어떤 과학이 숨어 있을까요? **고로(용광로) 제선 및 코크스 야금 물리**는 인류 문명의 기초인 '철'을 대량으로 뽑아내는 **'거대한 화학 반응기'** 기술입니다. 돌덩이(철광석)에서 산소를 떼어내기 위해 석탄을 쪄서 만든 단단한 뼈대(코크스)를 넣고 뜨거운 바람을 불어넣습니다. 365일 24시간 쉬지 않고 흐르는 쇳물은 **'산업 문명의 거대한 심장 박동'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Weak Coke Structure - Risk of furnace permeability collapse. Fines will block gas flow. Improve coal blending in coke oven"
         return "PASS: High-Strength Metallurgical Coke and Verified Support Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(co_utilization_pct=50.5, blast_pressure_kpa=350.0, hot_metal_temp_c=1510.0)
 print(engine.diagnose_furnace_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_furnace_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data blast-furnace-fuel-rate-and-molten-iron-purity-v2026`와 연동되어, 전 세계 주요 제철소의 실시간 조업 데이터를 분석하고 고로 셧다운 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 철강 문명의 동맥 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bessemer-process-and-modern-oxygen-steelmaking-physics

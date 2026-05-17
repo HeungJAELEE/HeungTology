@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] li-ion-standard-evolution"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] li-ion-standard-evolution]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] li-ion-standard-evolution에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] li-ion-standard-evolution
@@ -67,5 +57,4 @@ Trust Metrics:
 - [ ] **UN38.3** 테스트를 통과하지 못한 제품의 상업적 리스크는?
 - [ ] **Crush Force ($100\text{kN}$)** 테스트 시 화재가 발생하지 않기 위한 내부 구조 설계 전략은?
 
----
 *Reference: UN Manual of Tests, IEC 62133, UL 9540A Standards, Antigravity Battery-Safety Lab.*

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Drug-Discovery"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Drug-Discovery]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Drug-Discovery에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Drug-Discovery
@@ -91,5 +81,4 @@ def evaluate_drug_candidate(smiles_structure):
 2. 약물의 'ADMET' 속성 중 하나라도 실패했을 때 신약 승인이 불가능한 약리학적 이유는?
 3. '디지털 트윈' 기반의 임상 시험 시뮬레이션이 실제 환자 대상 임상 시험의 윤리적 문제를 어떻게 완화하는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

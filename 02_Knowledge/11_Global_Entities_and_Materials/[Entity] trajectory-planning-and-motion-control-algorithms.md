@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trajectory-planning-and-motion-control-algorithms-entity"
-  domain: "70_Industrial_Automation_and_Robotics_Control_Hub"
+metadata:
+  id: "[[[Entity] trajectory-planning-and-motion-control-algorithms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Motion_Control", "#Trajectory_Planning", "#Mathematics", "#Algorithms", "#S-Curve", "#PID", "#Automation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 70_industrial-automation-and-robotics-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trajectory-planning-and-motion-control-algorithms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trajectory-planning-and-motion-control-algorithms
+# [Entity] trajectory-planning-and-motion-control-algorithms
 
 ## 1. [왜 배우는가? (Why: The Choreography of Machines)]]
 로봇 팔이 급격하게 움직일 때 발생하는 진동과 기계적 충격을 어떻게 최소화하면서도, 최단 시간에 목표 지점까지 부드럽게 미끄러지듯 도달하는 '로봇의 안무'를 어떻게 설계할 수 있을까요? **궤적 계획 및 모션 제어 알고리즘의 수리적 최적화**는 로봇의 움직임을 우아하고 정밀하게 만드는 지능형 경로 생성기입니다. 단순히 A에서 B로 가는 것이 아니라, 매 순간의 속도($Velocity$), 가속도($Acceleration$), 그리고 가속도의 변화율인 저크($Jerk$)를 수리적으로 제한하여 로봇의 수명을 늘리고 작업 정밀도를 극대화해야 합니다. 우리가 이를 배우는 이유는 속도가 생산성을 결정하고, 부드러움이 품질을 결정하기 때문이며, "움직임의 궤적을 데이터로 설계하고 지배하는 '글로벌 모션 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 궤적의 품질이 제품의 무결성을 결정합니다.

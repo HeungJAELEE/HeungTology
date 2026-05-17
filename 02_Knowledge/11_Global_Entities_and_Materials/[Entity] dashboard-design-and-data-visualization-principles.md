@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "dashboard-design-and-data-visualization-principles"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] dashboard-design-and-data-visualization-principles]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic application of cognitive psychology and design principles to transform complex data into intuitive, actionable visual displays (Dashboards) for decision-making support."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dashboard-design", "data-visualization", "ui-ux", "visual-analytics", "information-design"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Visual_Clutter_Audit: Measure the density of non-data elements and whitespace to ensure focus on key metrics.'
-    - 'Decision_Latency_Check: Evaluate the time taken for a user to identify an outlier or trend from the dashboard.'
-    - 'Interactivity_Response_Scan: Analyze the performance of drill-downs and filters to ensure seamless data exploration.'
-Trust Metrics:
+  description: "[Entity] dashboard-design-and-data-visualization-principles에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Dashboard Design and Data Visualization Principles
+# [Entity] dashboard-design-and-data-visualization-principles
 
 ## 1. 개요 (Why: 인간적 통찰)
 숫자는 차갑고 딱딱하지만, 그림은 직관적이고 따뜻합니다. 데이터 시각화는 산더미 같은 숫자들 속에 숨어있는 **'진실의 패턴'**을 끄집어내어 인간의 눈에 보여주는 작업입니다. 훌륭한 대시보드는 정보를 나열하는 판이 아니라, **"지금 무엇이 문제인가?"**와 **"무엇을 해야 하는가?"**를 3초 안에 알려주는 결단력 있는 비서와 같습니다. 본 노드는 데이터의 범람 속에서 명확한 통찰을 추출하는 시각 지능의 무결성을 정의합니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return f"REJECT: Complex Dashboard ({self.time}s) - Simplify Visual Hierarchy and Grouping"
         return "PASS: Intuitive Dashboard Design Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(data_ink_ratio=0.85, lie_factor=1.01, user_insight_time_sec=3.2)
 print(engine.diagnose_visualization_integrity())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_visualization_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dashboard-usability-and-decision-speed-metrics-v2026`와 연동되어, 전사적 데이터 활용 현황을 실시간 분석하고 의사결정 지연 확률을 20% 이상 개선함으로써 지능형 비즈니스 경영의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - data-science-and-predictive-analytics-for-business

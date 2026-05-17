@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bayer-process-and-alumina-refining-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bayer-process-and-alumina-refining-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial means of refining bauxite to produce alumina ($Al_2O_3$), the primary raw material for aluminum smelting (Bayer Process) and the chemical study of dissolving aluminum minerals in sodium hydroxide while removing impurities like iron and silica (Alumina Refining Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bayer-process", "alumina-refining", "aluminum", "bauxite", "chemical-engineering", "caustic-soda", "extractive-metallurgy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Refining_Fidelity_Audit: Evaluate the ''Alumina Concentration'' in the pregnant liquor to identify if the digestion temperature and caustic concentration are optimized for maximum extraction from bauxite.'
-    - 'Purity_Integrity_Check: Analyze the silica and iron content in the refined alumina to ensure it meets the strict ppm-level requirements for high-purity aluminum smelting.'
-    - 'Residue_Fidelity_Scan: Monitor the ''Red Mud'' (Bauxite Residue) filtration and neutralization process to verify environmental compliance and minimize caustic soda loss.'
-Trust Metrics:
+  description: "[Entity] bayer-process-and-alumina-refining-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Bayer Process and Alumina Refining Chemistry
+# [Entity] bayer-process-and-alumina-refining-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 알루미늄 캔이나 비행기 날개가 되기 전, 그들은 원래 빨간 흙(보크사이트)이었습니다. **베이어 공정 및 알루미나 정련 화학**은 이 흔한 흙 속에서 보석(사파이어/루비)의 성분인 하얀 '알루미나' 가루를 뽑아내는 **'대지의 정제술'**입니다. 강력한 양성(염기성) 액체로 흙을 녹여 알루미늄만 쏙 빼내고, 나머지는 버립니다. 거친 흙을 문명의 기초 소재로 바꾸는 **'화학 공학의 위대한 첫 번째 여정'**입니다.
@@ -57,7 +46,7 @@ $$ \text{Yield} = \frac{C_{pregnant} - C_{spent}}{C_{pregnant}} \times 100 $$
 | Feature | Raw Bauxite | Refined Alumina (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Alumina Content** | 30 ~ 60 (Impure) | > 99.5 (Ultra-pure) | % | Quality |
-| **Particle Size** | Irregular (Mud/Rock) | 45 ~ 100 (Sandy) | $\mu m$ | Flowability |
+| **Particle Size** | Irregular (Mud/Rock) | 45 ~ 100 (Sandy) | $\mu\text{m}$ | Flowability |
 | **Silica Content** | High | < 0.015 (Critical) | % | Impurity |
 | **Iron Content** | High (Red Color) | < 0.02 | % | Clarity |
 | **Processing Temp** | Ambient | 140 ~ 250 (Digestion) | °C | Energy |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Residue Alkalinity - Caustic recovery failing. Environmental hazard and chemical loss detected. Improve washing cycle"
         return "PASS: Neutralized Bauxite Residue and Verified Environmental Compliance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(alumina_extraction_rate=96.5, pregnant_liquor_ratio=0.75, silica_content_ppm=120.0)
 print(engine.diagnose_refining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_refining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bayer-process-alumina-purity-and-red-mud-logs-v2026`와 연동되어, 전 세계 주요 알루미나 정련소의 가동 데이터를 실시간 분석하고 품질 저하 및 환경 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 원료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - aluminum-smelting-and-hall-heroult-process-electrolysis

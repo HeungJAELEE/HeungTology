@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "haptic-feedback-and-tactile-actuation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] haptic-feedback-and-tactile-actuation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The use of touch to communicate with users through vibrations, forces, or motions (Haptic Feedback) and the physical study of mechanical wave propagation and skin mechanoreceptor stimulation (Tactile Actuation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["haptic-feedback", "tactile-actuation", "vibrotactile", "force-feedback", "piezoelectric", "lra", "erm", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Actuation_Fidelity_Audit: Evaluate the ''Acceleration G-load'' to identify if high-fidelity ''Tactile Sharpness'' is being lost due to excessive mechanical damping or loose mounting.'
-    - 'Resonance_Integrity_Check: Analyze the drive frequency against the high-fidelity ''Natural Frequency'' ($f_{res}$) to ensure the LRA is operating at peak efficiency, minimizing power consumption.'
-    - 'Latency_Fidelity_Scan: Monitor the high-fidelity ''Start/Stop Time'' to verify that the haptic response is synchronized with user interaction within 20ms to prevent high-fidelity ''Cognitive Lag''.'
-Trust Metrics:
+  description: "[Entity] haptic-feedback-and-tactile-actuation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🖐️ Haptic Feedback and Tactile Actuation Physics
+# [Entity] haptic-feedback-and-tactile-actuation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 매끄러운 유리 화면을 누르는데 왜 진짜 버튼을 누르는 것 같은 '딸깍' 소리와 느낌이 손가락에 전달될까요? **햅틱 피드백 및 촉각 구동 물리**는 기계적 진동을 아주 정교하게 조절하여, 우리 뇌가 '질감'이나 '충격'으로 착각하게 만드는 **'촉각의 마법'** 기술입니다. 단순히 덜덜 떠는 게 아니라, 가죽의 거칠기나 버튼의 반발력을 수학적 파동으로 재현합니다. **'디지털 정보를 육체적인 촉감으로 번역하여 기계와 인간 사이의 감각적 연결을 완성하는 지능형 감각 인터페이스'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mechanical Rattling - Internal components loose or enclosure vibrating. High-fidelity tactile 'Texture' corrupted by high-frequency noise"
         return "PASS: Validated Waveform Fidelity and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(acceleration_peak_g=1.2, start_up_time_ms=15.0, drive_frequency_hz=175.0)
 print(engine.diagnose_haptic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_haptic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data haptic-actuator-latency-and-vibration-amplitude-v2026`와 연동되어, 전 세계 주요 스마트폰 및 VR 컨트롤러의 데이터를 실시간 분석하고 감각 이질감 및 조작 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 인간-기계 상호작용 문명의 촉각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-sensor-and-strain-gauge-transduction-physics

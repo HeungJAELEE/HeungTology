@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hall-effect-sensor-and-magnetic-field-transduction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hall-effect-sensor-and-magnetic-field-transduction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device that varies its output voltage in response to a magnetic field (Hall Effect Sensor) and the physical study of charge carrier deflection by the Lorentz force in a conductive or semiconductor material (Magnetic Field Transduction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hall-effect", "magnetic-sensor", "transduction", "lorentz-force", "current-sensing", "proximity-sensor", "industrial-metrology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transduction_Fidelity_Audit: Evaluate the ''Hall Voltage'' ($V_H$) against the target magnetic flux density ($B$) to identify if high-fidelity ''Carrier Mobility'' degradation is occurring due to temperature spikes.'
-    - 'Linearity_Integrity_Check: Analyze the high-fidelity output against a reference gaussmeter to ensure the sensor is not operating in the ''Saturation'' zone of its high-fidelity ferromagentic concentrator.'
-    - 'Offset_Fidelity_Scan: Monitor the ''Zero-field Voltage'' (Offset) to verify that the high-fidelity ''Piezo-resistive Effect'' (stress from packaging) is not biasing the magnetic measurements.'
-Trust Metrics:
+  description: "[Entity] hall-effect-sensor-and-magnetic-field-transduction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 제 Hall Effect Sensor and Magnetic Field Transduction Physics
+# [Entity] hall-effect-sensor-and-magnetic-field-transduction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 보이지 않는 자기장을 어떻게 전압이라는 숫자로 바꿀 수 있을까요? **홀 효과 센서 및 자기장 변환 물리**는 전기가 흐르는 길에 자석을 갖다 대면, 흐르던 전자들이 옆으로 슥 밀려나면서 생기는 '전압의 불균형'을 이용해 자기장을 읽어내는 **'전자의 쏠림 현상'** 기술입니다. 직접 닿지 않고도 모터가 얼마나 빨리 도는지, 문이 열렸는지 닫혔는지를 찰나의 순간에 알아냅니다. **'보이지 않는 자력의 힘을 전기의 언어로 번역하여 기계의 위치와 전류를 감시하는 지능형 감각 기관'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Magnetic Saturation - Input field exceeding high-fidelity linear range. Output clipped. Use a high-fidelity 'Flux Concentrator' with air gap"
         return "PASS: Validated Measurement Range and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(hall_output_v=2.5, supply_current_ma=10.0, case_temperature_c=45.0)
 print(engine.diagnose_sensor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sensor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hall-sensor-sensitivity-and-temperature-stability-v2026`와 연동되어, 전 세계 주요 전기차 모터 및 산업용 전류 센서의 데이터를 실시간 분석하고 위치 오판 및 과전류 감지 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 제어 문명의 감각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-sensor-and-strain-gauge-transduction-physics

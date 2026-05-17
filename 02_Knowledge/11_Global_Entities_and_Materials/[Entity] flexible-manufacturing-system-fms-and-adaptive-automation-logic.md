@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flexible-manufacturing-system-fms-and-adaptive-automation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flexible-manufacturing-system-fms-and-adaptive-automation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method for producing goods that is readily adaptable to changes in the product being manufactured, both in type and quantity (FMS) and the control logic that enables machines to adjust their parameters in real-time based on environmental feedback (Adaptive Automation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fms", "adaptive-automation", "smart-factory", "robotics", "agv", "as-rs", "industrial-ai", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Automation_Fidelity_Audit: Evaluate the ''Machine Utilization'' ($OEE$) to identify if high-fidelity ''Bottlenecks'' are shifting dynamically between cells during product mix changes.'
-    - 'Adaptivity_Integrity_Check: Analyze the ''Changeover Time'' to ensure that the high-fidelity ''Self-reconfiguration'' logic is minimizing idle periods when switching from Product A to Product B.'
-    - 'Logistics_Fidelity_Scan: Monitor the AGV/AMR pathfinding and docking precision to verify that high-fidelity ''Material Flow'' is synchronized with the production heartbeat.'
-Trust Metrics:
+  description: "[Entity] flexible-manufacturing-system-fms-and-adaptive-automation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Flexible Manufacturing System (FMS) and Adaptive Automation Logic
+# [Entity] flexible-manufacturing-system-fms-and-adaptive-automation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 주문이 들어올 때마다 공장의 기계들이 스스로 모양을 바꾸고, 서로 대화하며 알아서 물건을 만들어낸다면 어떨까요? **유연 생산 시스템(FMS) 및 적응형 자동화 로직**은 하나의 물건만 대량으로 뽑아내던 과거의 공장을, 수백 가지 제품을 즉각적으로 만들어낼 수 있는 '변신 로봇' 같은 존재로 바꾸는 **'공장의 뇌와 신경'** 기술입니다. 기계가 상황에 맞춰 스스로 학습하고 경로를 수정합니다. **'다품종 소량 생산 시대에 대응하여 공장 전체를 하나의 거대하고 유연한 생명체로 만드는 지능형 제조의 오케스트라'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Flexibility Gap - Changeover taking too long for real-time demand response. Manual intervention detected. Automate high-fidelity jig adjustments"
         return "PASS: Validated Agility Metrics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(oee_utilization_pct=82.5, average_wait_time_sec=120, variant_success_rate=0.995)
 print(engine.diagnose_fms_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fms-utilization-and-changeover-efficiency-v2026`와 연동되어, 전 세계 주요 스마트 팩토리의 운영 데이터를 실시간 분석하고 생산 정체 및 오작동 사고 확률을 0.001% 이하로 억제함으로써 지능형 맞춤 제조 문명의 유연 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - enterprise-resource-planning-erp-and-business-process-integration-logic

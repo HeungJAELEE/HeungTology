@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "BIO-DIGITAL-HEALTHCARE-CARE-ECO-2026-V6"
+metadata:
+  id: "[[[Life Science & Healthcare] Digital-Healthcare]]"
   domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Digital_Healthcare'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] Digital-Healthcare에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] Digital-Healthcare
@@ -109,7 +99,6 @@ class VitalSignDiagnosticEngine:
 2. **FHIR** 표준의 **Resource** 구조가 기존의 **HL7 v2/v3** 대비 **Interoperability** (상호운용성) 구현 속도를 비약적으로 높이는 기술적 이유는?
 3. **RPM** (원격 모니터링) 환경에서 **Edge Computing**이 네트워크 장애 발생 시에도 환자의 안전을 보장하는 **Fail-safe** 로직은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Healthcare/Bio/Bio Bio-Manufacturing
 - 02_Knowledge/10_Bio_Healthcare/Governance/Bio Bio-Governance

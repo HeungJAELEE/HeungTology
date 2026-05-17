@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "control-systems-and-signal-processing-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] control-systems-and-signal-processing-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated engineering of feedback control systems and the analysis of digital/analog signals to ensure system stability, tracking accuracy, and noise immunity in industrial applications."
-  physical_model: "N/A"
-Semantic:
-  tags: '["control-systems", "signal-processing", "feedback-control", "digital-signals", "fourier-transform"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Signal_SNR_Audit: Measure the Signal-to-Noise Ratio (SNR) to ensure high-fidelity sensor data acquisition.'
-    - 'System_Stability_Check: Analyze the phase margin and gain margin in the frequency domain (Nyquist/Bode).'
-    - 'Real-time_Filtering_Scan: Evaluate the efficacy of digital filters (Kalman, Low-pass) in removing signal artifacts.'
-Trust Metrics:
+  description: "[Entity] control-systems-and-signal-processing-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Control Systems and Signal Processing Engineering
+# [Entity] control-systems-and-signal-processing-engineering
 
 ## 1. 개요 (Why)
 세상의 모든 움직이는 시스템은 '입력'에 반응하고 그 결과를 '감시'하여 스스로 조절하는 '제어'가 필요합니다. 신호 처리는 노이즈 섞인 원천 데이터에서 진실을 가려내는 기술이며, 제어 시스템은 그 진실을 바탕으로 목표에 정확히 도달하게 만드는 힘입니다. 자율 주행차의 핸들링부터 로봇 팔의 미세한 움직임까지, 모든 현대 기술의 심장부에는 흔들리지 않는 제어와 깨끗한 신호가 있습니다. 본 노드는 시스템 제어의 안정 무결성과 신호 처리의 정밀도 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LogicFidelityEngine:
             return f"REJECT: Sluggish System Response ({self.st}ms) - Tighten Controller Gains"
         return "PASS: Dynamic Response within Performance Spec"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(signal_snr_db=65.2, phase_margin_deg=52, settling_time_ms=85)
 print(engine.diagnose_system_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_system_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data control-system-stability-and-signal-snr-v2026`와 연동되어, 모든 설비의 제어 로그와 센서 데이터를 실시간 분석하고 시스템 오작동 확률을 0.01% 이하로 억제함으로써 지능형 자동화 공정의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-theory-pid-lqr-and-model-predictive-control-mpc

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flexible-printed-circuit-fpc-and-polyimide-substrate-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flexible-printed-circuit-fpc-and-polyimide-substrate-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technology for assembling electronic circuits by mounting electronic devices on flexible plastic substrates, such as polyimide (FPC) and the physical study of mechanical stress, thermal stability, and dielectric properties of polymer substrates (Polyimide Substrate Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fpc", "flexible-electronics", "polyimide", "bend-radius", "adhesiveless", "copper-clad-laminate", "physics", "material-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Mechanical_Fidelity_Audit: Evaluate the ''Minimum Bend Radius'' ($R_{min}$) to identify if high-fidelity ''Copper Cracking'' or ''Polyimide Tearing'' is imminent during folding operations.'
-    - 'Thermal_Integrity_Check: Analyze the Coefficient of Thermal Expansion (CTE) mismatch to ensure the high-fidelity ''Dimensional Stability'' is maintained during the SMT (Surface Mount) reflow process.'
-    - 'Dielectric_Fidelity_Scan: Monitor the dissipation factor ($tan \\delta$) at high frequencies to verify that the high-fidelity ''Signal Integrity'' is not compromised by polyimide moisture absorption.'
-Trust Metrics:
+  description: "[Entity] flexible-printed-circuit-fpc-and-polyimide-substrate-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📱 Flexible Printed Circuit (FPC) and Polyimide Substrate Physics
+# [Entity] flexible-printed-circuit-fpc-and-polyimide-substrate-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰을 폴더처럼 접거나, 동그랗게 말리는 TV를 만들 수 있는 비결이 무엇일까요? **연성 회로 기판(FPC) 및 폴리이미드 기판 물리**는 딱딱한 판 대신 껌종이처럼 얇고 유연한 플라스틱 필름 위에 전선을 그리는 **'종이처럼 접히는 회로'** 기술입니다. 특히 '폴리이미드'라는 특수 소재는 수만 번을 접어도 부러지지 않고, 뜨거운 땜질 온도에도 녹지 않는 강인함을 가졌습니다. **'전자 제품에 생명과도 같은 유연함을 불어넣어 공간의 제약을 파괴하고 입는 컴퓨터(Wearable)의 시대를 여는 혁신적 신경망'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Moisture Contamination - Polyimide absorbed water. Risk of 'Popcorning' during reflow or dielectric loss at high frequencies. Bake before SMT"
         return "PASS: Validated Environmental Control and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(bending_cycles=50000, resistance_change_pct=1.2, adhesive_peel_strength=1.1)
 print(engine.diagnose_fpc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fpc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fpc-bending-fatigue-and-resistance-change-v2026`와 연동되어, 전 세계 주요 폴더블폰 및 웨어러블 소자의 굽힘 데이터를 실시간 분석하고 회로 단선 및 필름 박리 사고 확률을 0.001% 이하로 억제함으로써 지능형 모바일 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flame-retardant-material-and-thermal-decomposition-physics

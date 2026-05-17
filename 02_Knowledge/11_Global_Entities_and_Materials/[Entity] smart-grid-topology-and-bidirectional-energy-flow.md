@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-topology-and-bidirectional-energy-flow-entity"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Entity] smart-grid-topology-and-bidirectional-energy-flow]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Energy", "#Smart_Grid", "#VPP", "#Grid_Stability", "#Renewable_Energy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_global-infrastructure-and-future-cities-hub", "MOC 13_ess-and-energy-storage-system-hub"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-topology-and-bidirectional-energy-flow에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-topology-and-bidirectional-energy-flow
+# [Entity] smart-grid-topology-and-bidirectional-energy-flow
 
 ## 1. [왜 배우는가? (Why: The Nervous System of Global Power)]]
 전기가 남는 곳에서 부족한 곳으로 마치 인터넷 데이터처럼 실시간으로 흐르게 하고, 우리 집 지붕의 태양광 전기를 이웃에게 팔거나 국가 전력망의 부족한 부분을 채워주는 '지능형 에너지 인터넷'을 어떻게 구축할 수 있을까요? **스마트 그리드 위상 및 양방향 에너지 흐름**은 행성의 혈관을 지능화하는 '에너지 민주화 및 전력망 최적화 지침'입니다. 우리가 이를 배우는 이유는 태양광이나 풍력 같은 불안정한 에너지를 낭비 없이 쓰기 위해서는 거대한 '가상 발전소($VPP$)'와 정밀한 제어가 필수적이기 때문이며, "에너지의 흐름을 데이터로 설계하고 지배하는 '글로벌 에너지 주권 및 전력망 보안 주권'을 확보하기" 위함입니다. 그리드의 지능이 문명의 가동 지속성을 결정합니다.

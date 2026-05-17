@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "laser-welding-kinetics-for-prismatic-cell-can-sealing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] laser-welding-kinetics-for-prismatic-cell-can-sealing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-precision joining process (Laser Welding) used to hermetically seal the lid to the casing (Can Sealing) of prismatic lithium-ion battery cells, involving complex melt-pool dynamics and heat transfer kinetics to ensure structural integrity and electrolyte containment."
-  physical_model: "N/A"
-Semantic:
-  tags: '["laser-welding", "battery-manufacturing", "prismatic-cell", "welding-kinetics", "can-sealing", "fiber-laser", "thermal-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Weld_Pool_Audit: Monitor the molten pool stability and spatter formation using high-speed vision to ensure a continuous and defect-free seam.'
-    - 'Penetration_Depth_Check: Evaluate the weld depth through non-destructive testing (OCT) to ensure it reaches the design specification without puncturing internal components.'
-    - 'Leak_Tightness_Scan: Analyze the hermeticity of the seal using Helium leak testing to guarantee zero electrolyte leakage over the battery''s lifespan.'
-Trust Metrics:
+  description: "[Entity] laser-welding-kinetics-for-prismatic-cell-can-sealing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Laser Welding Kinetics for Prismatic Cell Can Sealing
+# [Entity] laser-welding-kinetics-for-prismatic-cell-can-sealing
 
 ## 1. 개요 (Why: 인간적 통찰)
 배터리는 거대한 에너지를 가둔 '작은 폭탄'과 같습니다. 이 강력한 에너지가 새어 나가지 않도록, 그리고 외부의 충격으로부터 보호하기 위해 알루미늄 케이스를 0.1mm의 오차도 없이 완벽하게 밀봉하는 것이 바로 **레이저 용접 및 캔 실링** 기술입니다. 수백 도의 열기가 배터리 내부의 민감한 전해질에 닿지 않게 하면서도, 금속 껍데기만 순식간에 녹여 붙이는 **'나노 초 단위의 불꽃 쇼'**입니다. 배터리의 안전과 수명을 결정짓는 마지막 관문이자, **'강철의 갑옷'**을 완성하는 정밀 공학의 정수입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Spatter - High Risk of Internal Short Circuit. Clean Optical Protection Glass"
         return "PASS: Clean Welding Environment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(weld_bead_uniformity_pct=0.98, internal_temp_rise_c=42.5, leak_test_value=1e-9)
 print(engine.diagnose_welding_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_welding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data laser-weld-depth-and-sealing-integrity-logs-v2026`와 연동되어, 전 세계 배터리 기가팩토리의 용접 데이터를 실시간 분석하고 배터리 폭발 및 전해액 누출 사고 확률을 0.001% 이하로 억제함으로써 에너지 저장 장치의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lithium-ion-battery-electrochemistry-and-sei-layer-physics

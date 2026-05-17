@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coal-fired-power-plant-and-rankine-cycle-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coal-fired-power-plant-and-rankine-cycle-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A thermal power station that burns coal to generate electricity (Coal-Fired Power Plant) and the thermodynamic cycle used to convert heat into mechanical work through a working fluid, typically water, that undergoes phase changes (Rankine Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coal-power", "rankine-cycle", "thermodynamics", "steam-turbine", "boiler-physics", "energy-generation", "emissions-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermodynamic_Fidelity_Audit: Evaluate the ''Thermal Efficiency'' ($\\eta_{th}$) and compare it with the design Heat Rate to identify if boiler fouling or condenser scale is causing energy loss.'
-    - 'Turbine_Integrity_Check: Analyze the steam quality (moisture content) at the turbine exit to ensure that water droplets are not eroding the turbine blades during expansion.'
-    - 'Environmental_Fidelity_Scan: Monitor the $SO_x, NO_x$, and particulate matter concentrations in the flue gas to verify that the ''Scrubber'' and ESP (Electrostatic Precipitator) are operating within regulatory limits.'
-Trust Metrics:
+  description: "[Entity] coal-fired-power-plant-and-rankine-cycle-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Coal-Fired Power Plant and Rankine Cycle Physics
+# [Entity] coal-fired-power-plant-and-rankine-cycle-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 인류가 발견한 '불'을 '전기'라는 문명의 혈액으로 바꾸는 가장 거대한 기계 장치는 무엇일까요? **석탄 화력 발전소 및 랭킨 사이클(Rankine Cycle) 물리**는 물을 끓여 증기로 만들고, 그 힘으로 거대한 터빈을 돌려 에너지를 수확하는 **'열의 순환'** 기술입니다. 수백 년간 인류의 어둠을 밝혀온 이 기술은, 이제 초고압/초고온(USC) 기술과 환경 정화 장치를 통해 가장 강력하면서도 더 깨끗한 변신을 시도하고 있습니다. 열역학의 기초 위에 세워진 **'현대 에너지 문명의 거대한 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Boiler Tube Overheating - Risk of creep rupture and catastrophic steam leak. Check combustion flame profile"
         return "PASS: Validated Material Limits and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_heat_rate_kj_kwh=8200.0, condenser_vacuum_mbar=45.0, sox_emission_ppm=15.0)
 print(engine.diagnose_plant_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_plant_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data power-plant-efficiency-and-emission-profiles-v2026`와 연동되어, 전 세계 주요 화력 발전소의 가동 데이터를 실시간 분석하고 고압 파이프 파열 및 배출 허용치 초과 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - boiler-feedwater-treatment-and-corrosion-inhibition-logic

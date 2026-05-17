@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "material-fatigue-and-crack-propagation-fracture-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] material-fatigue-and-crack-propagation-fracture-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The weakening of a material caused by cyclic loading that results in progressive structural damage (Material Fatigue) and the physical study of how cracks grow and eventually lead to catastrophic failure (Crack Propagation Fracture Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["material-fatigue", "crack-propagation", "fracture-mechanics", "paris-law", "stress-intensity", "fatigue-life", "failure-analysis", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Fatigue_Fidelity_Audit: Evaluate the ''Stress Cycle'' to identify if high-fidelity ''Mean Stress'' or high-fidelity ''Stress Ratios'' are accelerating the high-fidelity crack initiation process.'
-    - 'Crack_Integrity_Check: Analyze the high-fidelity ''Critical Crack Size'' ($a_c$) to ensure the high-fidelity ''Remaining Useful Life'' (RUL) is calculated before high-fidelity ''Catastrophic Fracture''.'
-    - 'Fracture_Fidelity_Scan: Monitor the ''Stress Intensity Factor'' ($K_{max}$) against the material''s ''Fracture Toughness'' ($K_{IC}$) to verify the high-fidelity safety factor.'
-Trust Metrics:
+  description: "[Entity] material-fatigue-and-crack-propagation-fracture-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💔 Material Fatigue and Crack Propagation Fracture Mechanics
+# [Entity] material-fatigue-and-crack-propagation-fracture-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 멀쩡해 보이던 비행기 날개가 왜 하늘 위에서 갑자기 찢어지거나, 튼튼한 다리가 수십 년을 버티다 하루아침에 무너질까요? **재료 피로 및 균열 진전 파괴 역학**은 반복적인 힘을 받는 기계가 '지쳐서' 서서히 금이 가고 결국 박살 나는 과정을 다루는 **'기계의 노화와 사망'** 기술입니다. 처음에는 눈에 보이지도 않는 아주 작은 흠집(균열)이 매번 힘을 받을 때마다 조금씩 벌어지다, 어느 순간 한계를 넘으면 폭탄처럼 터져버립니다. **'파리스의 법칙과 응력 확대 계수의 원리를 이용해 미세한 균열의 성장을 수학적으로 추적하여 예기치 못한 재앙을 사수하는 지능형 파괴 공학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Accelerated Fatigue - High-fidelity environmental corrosion or high-fidelity overloading suspected. Re-evaluate high-fidelity service intervals"
         return "PASS: Validated Fracture Mechanics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_crack_length_mm=2.0, max_stress_mpa=200.0, cycles_applied=1e6)
 print(engine.diagnose_fatigue_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fatigue_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data material-fatigue-limit-and-crack-growth-rates-v2026`와 연동되어, 전 세계 주요 교량 및 항공기, 고속 열차의 실시간 구조 데이터를 분석하고 갑작스러운 파손 및 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라 문명의 수명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - materials-science-and-atomic-lattice-imperfection-physics

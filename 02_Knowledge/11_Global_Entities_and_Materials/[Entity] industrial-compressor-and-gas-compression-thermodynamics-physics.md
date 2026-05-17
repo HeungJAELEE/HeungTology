@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-compressor-and-gas-compression-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-compressor-and-gas-compression-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A mechanical device that increases the pressure of a gas by reducing its volume (Industrial Compressor) and the physical study of work-to-pressure conversion and thermal energy accumulation (Gas Compression Thermodynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["compressor", "gas-compression", "thermodynamics", "isentropic-efficiency", "polytropic-compression", "compressed-air", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Compression_Fidelity_Audit: Evaluate the ''Isentropic Efficiency'' ($\\eta_{iso}$) to identify if high-fidelity ''Internal Leakage'' or valve losses are increasing the energy consumption.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Discharge Temperature'' ($T_2$) to ensure it remains below the oil degradation high-fidelity limit (typically $100-110^\\circ C$).'
-    - 'Surge_Fidelity_Scan: Monitor the high-fidelity ''Pressure-Flow'' map (for centrifugal compressors) to verify that the high-fidelity ''Surge'' limit is not breached during part-load operations.'
-Trust Metrics:
+  description: "[Entity] industrial-compressor-and-gas-compression-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Industrial Compressor and Gas Compression Thermodynamics Physics
+# [Entity] industrial-compressor-and-gas-compression-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기를 꽉 눌러서 탱크에 담아두었다가 필요할 때 쏟아붓는 '압축 공기'는 공장의 제4의 유틸리티라고 불립니다. **산업용 압축기 및 가스 압축 열역학 물리**는 보이지 않는 가스 분자들을 좁은 공간으로 몰아넣어 거대한 잠재 에너지를 만드는 **'기체의 에너지 농축'** 기술입니다. 가스를 누르면 무조건 뜨거워진다는 자연의 법칙(단열 압축)을 어떻게 다스려 시원하고 강력한 힘을 뽑아낼지가 핵심입니다. **'기체의 부피를 줄여 압력이라는 강력한 동력을 창조하고 공장의 모든 자동화 기기에 생명력을 불어넣는 지능형 기체 엔진'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Centrifugal Surge Detected - High-fidelity backflow causing mechanical vibration. System operating near high-fidelity surge line. Open bypass or increase flow"
         return "PASS: Validated Stable Flow and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inlet_pressure_bar=1.0, discharge_pressure_bar=8.5, discharge_temp_c=95.0)
 print(engine.diagnose_compressor_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_compressor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data compressor-power-consumption-and-discharge-temp-v2026`와 연동되어, 전 세계 주요 화학 플랜트 및 대형 공장의 압축기 데이터를 실시간 분석하고 화재 및 서지(Surge) 사고 확률을 0.001% 이하로 억제함으로써 지능형 기체 동력 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - pneumatic-system-and-air-logic-control-physics

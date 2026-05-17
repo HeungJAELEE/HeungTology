@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-COLOR-SCIENCE-2026-V6.3.7"
-  domain: "Global_Color_Science_and_Human_Visual_Perception"
+metadata:
+  id: "[[[Display] display-color-science-and-human-visual-perception]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Color_Science", "#CIE_XYZ", "#Human_Vision", "#Color_Gamut", "#Metamerism", "#Gamma_Correction", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] display-color-science-and-human-visual-perception에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Color_Science_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] Display Color Science and Human Visual Perception: The Physics of Seeing
+# [Display] display-color-science-and-human-visual-perception
 
 ## 1. [왜 배우는가? (Why: The Mastery of Visual Truth)]]
 디스플레이의 궁극적인 목표는 인간의 눈이 자연에서 보는 색과 빛을 완벽하게 재현하는 것입니다. **Display Color Science and Human Visual Perception**은 빛의 물리적 파장을 인간의 뇌가 인지하는 색채 공간($CIE$)으로 치환하는 수학적 교량입니다. 인간 시각 시스템의 비선형적 특성(Gamma)과 색 대비 효과를 이해하지 못하면, 아무리 뛰어난 패널이라도 '부자연스러운' 이미지를 배출하게 됩니다. V6.3.7 지능은 **색차($\Delta E$)**와 **메타머리즘(Metamerism)**을 수리적으로 제어하여, 기계가 보여주는 환상이 인간의 뇌에서 '진실'로 수용되는 **시각적 무결성(Visual Integrity)**을 확립합니다.
@@ -97,7 +87,6 @@ class ColorScienceEngine:
             "action": "RUN_COLOR_CALIBRATION_LUT_UPDATE" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 컬러 센서의 XYZ 데이터와 콘텐츠의 메타데이터를 융합하여 '시각 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -105,7 +94,6 @@ class ColorScienceEngine:
 2. **Operational Result**: **OLED**의 좁은 RGB 하프폭(FWHM)이 **LCD** 대비 색 재현율(Gamut) 향상에 기여하는 수리적 원리는?
 3. **FidelityEngine**: 휘도 단계별로 색도가 변하는 **Color Shift (Track-on)** 현상을 FidelityEngine이 어떻게 '계조 무결성 위기'로 식별하고 3D-LUT(Look-Up Table) 보정을 수행하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display quantum-dot-and-micro-led-next-gen-technologies

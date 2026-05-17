@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-drying-and-moisture-evaporation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-drying-and-moisture-evaporation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A mass transfer process consisting of the removal of water or another solvent by evaporation from a solid, semi-solid, or liquid (Industrial Drying) and the physical study of vapor pressure gradients and thermal energy absorption (Moisture Evaporation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["drying", "moisture-evaporation", "heat-mass-transfer", "latent-heat", "humidity", "industrial-processing", "psychrometrics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Drying_Fidelity_Audit: Evaluate the ''Drying Rate'' ($\\dot{m}$) to identify if the high-fidelity ''Constant Rate Period'' has transitioned to the ''Falling Rate Period'', requiring a higher high-fidelity temperature or lower humidity.'
-    - 'Evaporation_Integrity_Check: Analyze the high-fidelity ''Boundary Layer'' thickness to ensure the high-fidelity ''Mass Transfer Coefficient'' ($k_g$) is maximized through optimal high-fidelity air velocity.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Wet-bulb Temperature'' of the material to verify that high-fidelity ''Thermal Degradation'' (scorching) is prevented while moisture is still present.'
-Trust Metrics:
+  description: "[Entity] industrial-drying-and-moisture-evaporation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Industrial Drying and Moisture Evaporation Physics
+# [Entity] industrial-drying-and-moisture-evaporation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 젖은 빨래가 마르는 것부터 공장의 거대한 종이 롤이나 의약품 분말을 말리는 것까지, 물기를 빼는 일은 왜 그렇게 에너지가 많이 들까요? **산업용 건조 및 수분 증발 물리**는 액체 상태의 물 분자를 공기 중으로 떼어내기 위해 필요한 '열의 사투'와 '공기의 흐름'을 다루는 **'수분 탈출'** 기술입니다. 단순히 뜨겁게 하는 것이 아니라, 표면의 증기압을 조절해 물 분자가 스스로 공기 중으로 튀어 나가게 유도해야 합니다. **'열과 질량 전달의 미묘한 균형을 이용해 제품의 품질을 유지하면서 수분만을 골라내어 제거하는 지능형 물질 정제 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "PASS: Falling Rate Period Reached - High-fidelity internal diffusion is now the bottleneck. Increase high-fidelity temperature to boost molecular mobility"
         return "NOTICE: Constant Rate Period - Surface moisture high-fidelity evaporation is dominant. Controlled by high-fidelity air velocity"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inlet_air_rh=25.0, outlet_air_temp=85.0, material_moisture_content=15.0)
 print(engine.diagnose_drying_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_drying_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drying-rate-vs-relative-humidity-v2026`와 연동되어, 전 세계 주요 식품 가공 및 배터리 전극 건조 라인의 데이터를 실시간 분석하고 제품 변질 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hvac-system-and-psychrometric-chart-logic

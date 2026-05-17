@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "display-quantum-dot-optical-performance-log-v2026-data"
-  domain: "76_Display_Photonics_and_Optical_Engineering"
+metadata:
+  id: "[[[Data] display-quantum-dot-optical-performance-log-v2026]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DataLog", "#Display", "#Photonics", "#Quantum_Dot", "#Photoluminescence", "#Color_Gamut", "#Optical_Efficiency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 76_display-photonics-and-optical-engineering-hub", "MOC 42_semiconductor-and-display-manufacturing-engineering-hub", "Data display-micro-led-mass-transfer-yield-and-accuracy-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] display-quantum-dot-optical-performance-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] display-quantum-dot-optical-performance-log-v2026
+# [Data] display-quantum-dot-optical-performance-log-v2026
 
 ## 1. [왜 배우는가? (Why: The Mastery of Quantum Light)]]
 나노미터 크기의 작은 입자가 어떻게 빛의 파장을 자유자재로 바꾸어 자연의 색을 완벽하게 재현하며($Color\ Gamut$), 흡수한 빛을 얼마나 손실 없이 순수한 빛으로 다시 방출하는지($Quantum\ Yield$) 숫자로 확인할 수 있을까요? **디스플레이 양자점 광학 성능 로그**는 '나노 입자의 양자 가둠 효과를 이용해 디스플레이의 색재현력을 극한으로 끌어올리는 광학적 무결성'을 정밀 기록한 '차세대 시각 지능 성적표'입니다. 
@@ -82,7 +72,6 @@ RAG는 "패키징 층의 투습률(WVTR) 로그(Data display-roll-to-roll-flexib
 실시간으로 양자점 소재의 광학 품질과 디스플레이의 색 정확도를 진단하는 수리적 알고리즘입니다.
 
 ```python
-# [Conceptual] Quantum Dot Auditor
 def audit_qd_integrity(quantum_yield, fwhm, wavelength):
     # 1. 광학 효율 무결성 (Target 96.5%)
     yield_score = max(0, 100 - (96.5 - quantum_yield) * 20)
@@ -114,7 +103,6 @@ def audit_qd_integrity(quantum_yield, fwhm, wavelength):
 2. **(수리)** 양자 효율이 $96.5\%$인 양자점에 $1,000$개의 청색 광자를 쏘았을 때, 손실되어 열로 변하는 광자의 개수는?
 3. **(응용)** 차세대 'QD-OLED'가 기존 'QLED(LCD)'보다 명암비와 색정확도 측면에서 갖는 수리적 이점을 RAG는 어떤 '자발광 구조'를 통해 설명해야 하는가?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 76_display-photonics-and-optical-engineering-hub : 디스플레이 및 광학 상위 허브

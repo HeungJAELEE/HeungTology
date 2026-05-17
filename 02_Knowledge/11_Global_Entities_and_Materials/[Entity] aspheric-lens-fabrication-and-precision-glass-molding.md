@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "aspheric-lens-fabrication-and-precision-glass-molding"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] aspheric-lens-fabrication-and-precision-glass-molding]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of manufacturing optical lenses that have a non-spherical surface profile to correct aberrations (Aspheric Lens Fabrication) and the high-precision technique of heating glass to a softened state and pressing it into a mold to create finished optics (Precision Glass Molding)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aspheric-lens", "glass-molding", "precision-optics", "optical-manufacturing", "diamond-turning", "lens-design", "optical-metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Optical_Fidelity_Audit: Evaluate the ''Peak-to-Valley'' (P-V) surface error to identify if the glass molding pressure or the diamond turning tool compensation is out of tolerance.'
-    - 'Thermal_Fidelity_Check: Analyze the cooling rate of the molded glass to ensure that ''Residual Stresses'' and refractive index variations ($n$) are minimized for high-resolution imaging.'
-    - 'Surface_Integrity_Scan: Monitor the surface roughness ($Ra$) using white-light interferometry to verify that the lens is ready for anti-reflective coating without light scattering defects.'
-Trust Metrics:
+  description: "[Entity] aspheric-lens-fabrication-and-precision-glass-molding에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔍 Aspheric Lens Fabrication and Precision Glass Molding
+# [Entity] aspheric-lens-fabrication-and-precision-glass-molding
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰의 얇은 카메라 렌즈 하나가 어떻게 거대한 DSLR급 사진을 찍게 해줄까요? **비구면 렌즈 제작 및 정밀 유리 몰딩**은 빛의 굴절을 예술의 경지로 끌어올린 **'광학적 최적화'** 기술입니다. 구면 렌즈 여러 개가 해야 할 일을 단 하나의 '완벽한 곡면(비구면)' 렌즈로 해결하여 렌즈 수를 줄이고 무게를 가볍게 만듭니다. 유리를 초정밀 금형으로 찍어내어 대량 생산하는 **'빛의 조각술'**이자 **'모바일 혁명의 숨은 주역'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mold Life Limit Reached - Surface coating (Pt-Ir) degradation suspected. Replace mold to maintain sub-nanometer finish"
         return "PASS: Validated Mold Condition and Verified Manufacturing Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(surface_error_pv_nm=85.0, surface_roughness_ra_nm=2.5, cooling_stress_mpa=5.0)
 print(engine.diagnose_optics_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_optics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data aspheric-lens-profile-error-and-surface-roughness-v2026`와 연동되어, 전 세계 주요 렌즈 제조사의 가동 데이터를 실시간 분석하고 형상 불량 및 영상 왜곡 사고 확률을 0.001% 이하로 억제함으로써 지능형 광학 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - anti-reflective-coating-arc-and-optical-interference-physics

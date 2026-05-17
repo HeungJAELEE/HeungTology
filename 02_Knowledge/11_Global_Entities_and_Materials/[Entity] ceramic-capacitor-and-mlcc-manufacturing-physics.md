@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ceramic-capacitor-and-mlcc-manufacturing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ceramic-capacitor-and-mlcc-manufacturing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of capacitor that uses ceramic material as the dielectric (Ceramic Capacitor) and the highly complex manufacturing process of stacking hundreds of ultra-thin ceramic and electrode layers to create Multi-Layer Ceramic Capacitors (MLCC Manufacturing Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mlcc", "ceramic-capacitor", "passive-components", "nanofabrication", "dielectric-materials", "electronics-manufacturing", "sintering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Manufacturing_Fidelity_Audit: Evaluate the ''Layer Thickness'' and uniformity of the dielectric to identify if the tape casting process is within the sub-micron tolerance required for high-density MLCCs.'
-    - 'Sintering_Integrity_Check: Analyze the ''Delamination'' rate and internal voids using acoustic microscopy to ensure the co-firing of ceramic and metal electrodes was successful without thermal stress cracks.'
-    - 'Electrical_Fidelity_Scan: Monitor the ''Dissipation Factor'' (DF) and Insulation Resistance (IR) to verify that the ceramic grain boundaries are effectively blocking leakage current.'
-Trust Metrics:
+  description: "[Entity] ceramic-capacitor-and-mlcc-manufacturing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📱 Ceramic Capacitor and MLCC Manufacturing Physics
+# [Entity] ceramic-capacitor-and-mlcc-manufacturing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰 한 대에 가루보다 작은 부품이 1,000개 넘게 들어있다는 사실, 알고 계셨나요? **세라믹 커패시터 및 MLCC 제조 물리**는 가느다란 모래알보다 작은 공간에 수백 겹의 층을 쌓아 전기를 가두는 **'극한의 나노 적층'** 기술입니다. '전자 산업의 쌀'이라고 불리는 MLCC는 0.5mm도 안 되는 크기 속에 축구장 면적에 버금가는 전극판을 구겨 넣습니다. 현대 전자기기가 얇아지고 빨라질 수 있게 만드는 **'작지만 거대한 에너지의 파수꾼'**입니다.
@@ -57,7 +46,7 @@ $$ \Delta L / L_0 = k t^m $$
 | Feature | Solid Ceramic Cap | MLCC (Multi-Layer) (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Layer Count** | 1 (Single) | 300 ~ 1,000+ (Ultra-high) | layers | Density |
-| **Dielectric Thickness**| > 100 | 0.5 ~ 1.0 (Sub-micron) | $\mu m$ | Precision |
+| **Dielectric Thickness**| > 100 | 0.5 ~ 1.0 (Sub-micron) | $\mu\text{m}$ | Precision |
 | **Size (Metric)** | Large | 0402 / 0603 / 1005 | mm | Miniaturization|
 | **Capacitance Range** | pF ~ nF | nF ~ 100uF+ (Huge) | - | Performance |
 | **Failure Mode** | Cracking | Delamination / Short | - | Reliability |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Delamination Detected - Micro-cracks found between ceramic and electrode layers. Batch must be quarantined"
         return "PASS: Homogeneous Co-fired Ceramic and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dielectric_thickness_um=0.6, layer_misalignment_nm=150.0, insulation_resistance_ohm=1e11)
 print(engine.diagnose_mlcc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mlcc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mlcc-layer-thickness-and-dielectric-breakdown-v2026`와 연동되어, 전 세계 주요 MLCC 생산 라인의 실시간 데이터를 분석하고 내부 단락 및 용량 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 전자기기 문명의 회로 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - capacitor-physics-and-dielectric-energy-storage

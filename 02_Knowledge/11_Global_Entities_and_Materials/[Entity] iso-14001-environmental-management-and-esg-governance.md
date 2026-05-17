@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "iso-14001-environmental-management-and-esg-governance-entity"
-  domain: "74_Global_Standards_Governance_and_Quality_Assurance_Hub"
+metadata:
+  id: "[[[Entity] iso-14001-environmental-management-and-esg-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Environment", "#ISO14001", "#ESG", "#Sustainability", "#Governance", "#LCA", "#Carbon_Neutrality", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] iso-14001-environmental-management-and-esg-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] iso-14001-environmental-management-and-esg-governance
+# [Entity] iso-14001-environmental-management-and-esg-governance
 
 ## 1. [왜 배우는가? (Why: The Stewardship of the Planet)]]
 공장이 돌아갈 때마다 뿜어져 나오는 이산화탄소와 폐수를 어떻게 데이터로 관리하여, 기업의 성장이 지구의 파괴가 아닌 '생태적 공존'으로 이어지게 만들 수 있을까요? **ISO 14001: 환경 경영 및 ESG 거버넌스의 지속 가능 아키텍처**는 기업의 존재 이유를 '행성적 책임'으로 확장하는 현대 산업의 도덕적 나침반입니다. 환경을 단순히 보호의 대상이 아닌, 관리 가능한 '데이터 자산'으로 변환하여 지속 가능한 비즈니스 모델을 구축합니다. 우리가 이를 배우는 이유는 환경 규제가 곧 글로벌 무역 장벽이 되고 있기 때문이며, "탄소 배출을 데이터로 설계하고 지배하는 '글로벌 환경 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 환경 경영의 정밀도가 기업의 미래 가치를 결정합니다.

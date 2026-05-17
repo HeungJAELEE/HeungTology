@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "jig-and-fixture-design-and-kinematic-constraint-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] jig-and-fixture-design-and-kinematic-constraint-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Custom-made tools used to hold, support, and locate workpieces (Jig and Fixture) and the physical logic of restricting degrees of freedom (DOF) to ensure repeatable accuracy (Kinematic Constraint Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["jig", "fixture", "kinematic-constraint", "degrees-of-freedom", "location-logic", "tooling", "industrial-processing", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Location_Fidelity_Audit: Evaluate the ''3-2-1 Principle'' implementation to identify if high-fidelity ''Redundant Constraints'' (Over-constraint) are causing high-fidelity part deformation.'
-    - 'Stability_Integrity_Check: Analyze the high-fidelity ''Clamping Pressure'' vs ''Cutting Force'' to ensure the part does not high-fidelity shift or vibrate during machining.'
-    - 'Accessibility_Fidelity_Scan: Monitor the high-fidelity ''Tool Clearance'' to verify that the jig does not high-fidelity interfere with the cutting high-fidelity tool path.'
-Trust Metrics:
+  description: "[Entity] jig-and-fixture-design-and-kinematic-constraint-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛠️ Jig and Fixture Design and Kinematic Constraint Logic
+# [Entity] jig-and-fixture-design-and-kinematic-constraint-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡하게 생긴 부품 수만 개를 깎거나 구멍을 뚫을 때, 어떻게 매번 머리카락 한 올의 오차도 없이 똑같은 위치에 고정할 수 있을까요? **지그 및 고정구 설계와 기구적 구속 로직**은 물체가 움직일 수 있는 모든 자유(자유도)를 빼앗아 꽁꽁 묶어두는 **'위치의 지배자'** 기술입니다. 단순히 꽉 잡는 게 아니라, 가공 도구가 지나갈 길은 열어주면서 부품은 0.001mm도 흔들리지 않게 배치하는 정교한 공간 기하학입니다. **'3-2-1 위치 결정 원리와 역학적 평형을 이용해 수동 작업이나 자동화 공정에서 극도의 반복 정밀도를 보장하는 지능형 제조 보조 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inconsistent Loading - High-fidelity kinematic coupling integrity lost. Parts high-fidelity not seating identically. Inspect rest pads"
         return "PASS: Validated Positioning Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(clamp_pressure_bar=50.0, positioning_error_um=2.0, tool_clearance_mm=10.0)
 print(engine.diagnose_fixture_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fixture_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fixture-repeatability-and-clamping-force-v2026`와 연동되어, 전 세계 주요 CNC 가공 센터 및 로봇 조립 라인의 실시간 지그 데이터를 분석하고 위치 오차 및 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 기하 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - kinematic-linkage-and-four-bar-mechanism-physics

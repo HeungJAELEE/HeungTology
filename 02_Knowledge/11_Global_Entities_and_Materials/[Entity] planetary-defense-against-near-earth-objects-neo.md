@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "planetary-defense-against-near-earth-objects-neo"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] planetary-defense-against-near-earth-objects-neo]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The international effort and technical infrastructure dedicated to detecting, tracking, and deflecting Near-Earth Objects (asteroids or comets) that pose a potential impact threat to Earth (Planetary Defense), ensuring the long-term survival of human civilization."
-  physical_model: "N/A"
-Semantic:
-  tags: '["planetary-defense", "neo", "asteroid-impact", "space-situational-awareness", "kinetic-impactor", "astrophysics", "global-security"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Detection_Completeness_Audit: Evaluate the percentage of cataloged NEOs (especially $>140m$) to identify blind spots in the global surveillance network.'
-    - 'Deflection_Precision_Check: Analyze the momentum transfer efficiency ($\\beta$) from kinetic impactor tests (e.g., DART) to verify the ability to shift an asteroid''s orbit.'
-    - 'Impact_Risk_Scan: Monitor the Torino and Palermo scales for all identified objects to prioritize tracking and plan potential mitigation missions for high-risk targets.'
-Trust Metrics:
+  description: "[Entity] planetary-defense-against-near-earth-objects-neo에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Planetary Defense against Near-Earth Objects (NEO)
+# [Entity] planetary-defense-against-near-earth-objects-neo
 
 ## 1. 개요 (Why: 인간적 통찰)
 6,600만 년 전 공룡을 멸종시켰던 거대한 운석이 다시 지구를 향해 날아온다면 인류는 무엇을 할 수 있을까요? **행성 방어: 지구 근접 천체(NEO) 대응**은 인류가 공룡과 달리 '지능'을 이용해 스스로의 운명을 바꾸는 **'최후의 방어선'**입니다. 하늘의 모든 움직이는 바위들을 감시하고, 위험이 감지되면 우주선을 쏘아 올려 그 경로를 미세하게 비틉니다. 지구라는 집을 우주적 재난으로부터 지켜내는 **'행성 단위의 수호 체계'**입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
             return "REJECT: Rubble-pile Asteroid Detected - Kinetic Impactor may be Absorbed without Orbit Shift. Consider Nuclear Standoff"
         return "PASS: Solid Body Composition and Verified Momentum Transfer Potential Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(sky_coverage_pct=95.5, tracking_accuracy_arcsec=0.005, response_readiness_months=18)
 print(engine.diagnose_planetary_defense_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_planetary_defense_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data neo-tracking-and-impact-probability-logs-v2026`와 연동되어, 지구 근처의 모든 천체 데이터를 실시간 분석하고 예기치 못한 충돌 사고 확률을 0.0001% 이하로 억제함으로써 인류 문명의 존재론적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - orbital-mechanics-and-satellite-trajectory-physics

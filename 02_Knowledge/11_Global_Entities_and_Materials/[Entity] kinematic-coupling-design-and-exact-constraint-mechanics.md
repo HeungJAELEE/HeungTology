@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kinematic-coupling-design-and-exact-constraint-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kinematic-coupling-design-and-exact-constraint-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mechanical design principle (Exact Constraint) that uses the minimum number of contact points (Six) to uniquely and repeatably define the position of one body relative to another (Kinematic Coupling), ensuring high precision and sub-micron repeatability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kinematic-coupling", "exact-constraint", "precision-engineering", "repeatability", "maxwell-coupling", "kelvin-coupling", "mechanics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Constraint_Audit: Verify that the coupling provides exactly six points of contact to avoid over-constraint (internal stress) or under-constraint (instability).'
-    - 'Repeatability_Check: Measure the position variance after multiple mating cycles to ensure it remains within the sub-micron target range.'
-    - 'Contact_Stress_Scan: Analyze the Hertzian stress at the contact points to ensure it does not exceed the material''s yield strength and cause permanent deformation.'
-Trust Metrics:
+  description: "[Entity] kinematic-coupling-design-and-exact-constraint-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔗 Kinematic Coupling Design and Exact Constraint Mechanics
+# [Entity] kinematic-coupling-design-and-exact-constraint-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 물건을 떼었다가 다시 붙였을 때, 단 0.001mm의 오차도 없이 똑같은 자리에 오게 하려면 어떻게 해야 할까요? 나사로 꽉 조이는 것만으로는 부족합니다. **키네마틱 커플링 및 정밀 구속 역학**은 물체의 6가지 자유도(앞뒤, 좌우, 위아래, 회전 등)를 단 6개의 점으로 완벽하게 제어하는 **'기계 공학의 기하학'**입니다. 억지로 끼워 맞추는 것이 아니라, 기하학적 원리에 의해 물체가 스스로 '가장 편안한 정답의 위치'를 찾아가게 만드는 **'자연스러운 정밀함'**의 정수입니다. 반도체 노광 장비나 초정밀 측정기에서 "한 번 잡은 위치는 영원히 똑같아야 한다"는 약속을 지켜주는 **'무언의 약속'**과 같은 기술입니다.
@@ -56,9 +45,9 @@ $$ \delta \propto \frac{F^{2/3}}{R^{1/3} E^{2/3}} $$
 
 | Coupling Type | Structure | Contacts | Repeatability | Best For |
 | :--- | :--- | :--- | :--- | :--- |
-| **Maxwell** | 3 Grooves (V-shape) | 6 Points | < 0.1 $\mu m$ | High Precision |
-| **Kelvin** | Hole + Groove + Flat| 3+2+1 Points | < 1 $\mu m$ | High Stability |
-| **Canoe Sphere** | High Curvature Ball | 6 Points | < 0.01 $\mu m$ | Extreme Payload |
+| **Maxwell** | 3 Grooves (V-shape) | 6 Points | < 0.1 $\mu\text{m}$ | High Precision |
+| **Kelvin** | Hole + Groove + Flat| 3+2+1 Points | < 1 $\mu\text{m}$ | High Stability |
+| **Canoe Sphere** | High Curvature Ball | 6 Points | < 0.01 $\mu\text{m}$ | Extreme Payload |
 | **Stiffness** | Normal Force / Defl | Variable | N/A | Stability |
 | **Material** | Carbide / Ceramic | High E / Yield | N/A | Durability |
 
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Friction - Stick-slip during Mating Compromising Precision"
         return "PASS: Low-friction Precision Contact Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(repeatability_nm=45, hertz_stress_mpa=850, contact_point_count=6)
 print(engine.diagnose_coupling_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_coupling_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data kinematic-coupling-repeatability-and-contact-stiffness-v2026`와 연동되어, 전 세계 반도체 및 우주 항공 장비의 결합 정밀도를 실시간 분석하고 위치 이탈 및 기구 파손 사고 확률을 0.001% 이하로 억제함으로써 초정밀 제조 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-metrology-3d-scanning-and-lidar-physics

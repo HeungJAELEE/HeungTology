@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "in-situ-resource-utilization-isru-chemical-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] in-situ-resource-utilization-isru-chemical-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical engineering processes and technologies used to harness resources directly from extraterrestrial environments (In-Situ), such as producing oxygen from lunar regolith or fuel from the Martian atmosphere, to reduce mission mass and cost."
-  physical_model: "N/A"
-Semantic:
-  tags: '["isru", "space-exploration", "chemical-engineering", "sabatier-reaction", "lunar-resources", "mars-colonization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Chemical_Yield_Audit: Calculate the conversion efficiency of the Sabatier reactor and compare it to theoretical equilibrium at low gravity and varying temperatures.'
-    - 'Regolith_Processing_Check: Evaluate the extraction rate of oxygen from lunar soil through molten salt electrolysis or hydrogen reduction.'
-    - 'System_Self-Sustainability_Scan: Analyze the energy-mass balance to ensure the ISRU plant produces more usable energy/fuel than it consumes from local solar/nuclear sources.'
-Trust Metrics:
+  description: "[Entity] in-situ-resource-utilization-isru-chemical-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 In-Situ Resource Utilization (ISRU) Chemical Engineering
+# [Entity] in-situ-resource-utilization-isru-chemical-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구에서 화성까지 물 한 병, 연료 한 방울을 실어 나르는 데는 그 무게의 수십 배에 달하는 연료가 듭니다. 이것은 마치 이사를 가면서 이삿짐보다 기름값을 더 많이 내는 것과 같습니다. **현지 자원 활용(ISRU)**은 화성의 공기(이산화탄소)로 로켓 연료를 만들고, 달의 흙(레골리스)에서 숨 쉴 산소를 뽑아내는 **'우주판 자급자족 기술'**입니다. 외계 행성의 거친 환경을 거대한 화학 공장으로 바꾸어, 인류가 지구라는 요람을 벗어나 우주로 영구히 뻗어 나가게 돕는 **'행성 정착의 열쇠'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inefficient ISRU - Logistics Cost Benefit Too Low to Justify Operation"
         return "PASS: Strategic Resource Leverage Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chemical_conversion_pct=94.5, thermal_loss_watts=120.0, resource_purity_pct=99.9)
 print(engine.diagnose_isru_health(target_yield_kg_day=2.0))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_isru_health(target_yield_kg_day=2.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data isru-chemical-yield-and-resource-purity-v2026`와 연동되어, 달과 화성 기지에서 가동 중인 화학 공장의 데이터를 실시간 분석하고 자원 고갈 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 인류의 행성 간 생존 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - green-hydrogen-electrolysis-and-water-splitting-thermodynamics

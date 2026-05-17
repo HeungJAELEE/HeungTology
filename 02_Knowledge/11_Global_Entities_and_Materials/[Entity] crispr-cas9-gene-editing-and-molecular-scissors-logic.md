@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "crispr-cas9-gene-editing-and-molecular-scissors-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] crispr-cas9-gene-editing-and-molecular-scissors-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced biotechnology enabling precise, programmable editing of DNA sequences using a guide RNA (gRNA) to direct the Cas9 nuclease (Molecular Scissors) to a specific genomic location for cutting and modification."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crispr-cas9", "gene-editing", "molecular-scissors", "genomics", "bio-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Editing_Efficiency_Audit: Measure the percentage of successful genomic modifications at the target site.'
-    - 'Off-target_Detection_Check: Analyze the genome for unintended DNA cuts at locations similar to the target sequence.'
-    - 'PAM_Site_Verification: Ensure the presence of the Protospacer Adjacent Motif (PAM) required for Cas9 binding.'
-Trust Metrics:
+  description: "[Entity] crispr-cas9-gene-editing-and-molecular-scissors-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 CRISPR-Cas9 Gene Editing and Molecular Scissors Logic
+# [Entity] crispr-cas9-gene-editing-and-molecular-scissors-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 인간의 유전 정보인 DNA는 30억 개의 문자로 이루어진 거대한 '생명의 설계도'입니다. 과거에는 이 설계도의 오타(유전병)를 고치는 것이 불가능에 가까웠지만, **CRISPR-Cas9**이라는 '분자 가위'의 발견으로 우리는 이제 설계도를 정교하게 수정할 수 있게 되었습니다. 이는 단순히 과학적 성과를 넘어, 난치병을 치료하고 식량 위기를 해결하며 인류의 진화에 직접 개입할 수 있는 **'생명의 편집권'**을 획득했음을 의미합니다. 본 노드는 이 강력한 도구의 정밀도와 윤리적 무결성을 정의합니다.
@@ -90,7 +79,6 @@ class MedicalFidelityEngine:
             return "REJECT: Inconsistent PAM Recognition - Potential for Non-specific Binding"
         return "PASS: Strict Target Recognition Logic Maintained"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(editing_efficiency=85.5, off_target_count=1, pam_consistency=100)
 print(engine.diagnose_genomic_integrity())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_genomic_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crispr-editing-efficiency-and-off-target-rate-v2026`와 연동되어, 모든 유전자 교정 프로토콜의 정밀도를 실시간 분석하고 치명적인 오프 타겟 변이 확률을 0.001% 이하로 억제함으로써 지능형 바이오 공학의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - crop-science-and-precision-agriculture-biophysics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "propulsion-physics-and-ion-thruster-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] propulsion-physics-and-ion-thruster-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The branch of physics that studies the production of thrust to accelerate a vehicle (Propulsion Physics) and the specific mechanics of accelerating ions through an electric field to generate high-efficiency, low-thrust propulsion for spacecraft (Ion Thruster Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["propulsion", "ion-thruster", "aerospace", "electric-propulsion", "plasma-dynamics", "space-exploration", "rocketry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thrust_Fidelity_Audit: Evaluate the actual thrust ($F$) against the ion beam current and voltage to identify beam divergence or grid erosion issues.'
-    - 'Specific_Impulse_Check: Analyze the fuel consumption rate ($\\dot{m}$) and exhaust velocity ($v_e$) to verify the thruster is operating at peak $I_{sp}$ efficiency.'
-    - 'Plasma_Stability_Scan: Monitor the magnetic field containment within the discharge chamber to prevent high-energy ion impact on the thruster walls, ensuring long-term mission durability.'
-Trust Metrics:
+  description: "[Entity] propulsion-physics-and-ion-thruster-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Propulsion Physics and Ion Thruster Mechanics
+# [Entity] propulsion-physics-and-ion-thruster-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우주선이 연료를 거의 쓰지 않고도 명왕성 너머 먼 우주까지 항해할 수 있는 비결은 무엇일까요? **추진 물리학 및 이온 엔진 역학**은 거대한 불꽃을 내뿜는 전통적인 로켓 대신, 전기의 힘으로 입자(이온)를 총알보다 수십 배 빠르게 쏘아 보내는 **'우주의 미세 엔진'** 기술입니다. 힘은 약하지만, 아주 적은 연료로 오랫동안 밀어주기 때문에 은하계 끝까지 도달할 수 있는 지구력을 가집니다. 인류가 행성을 넘어 성간 문명으로 나아가는 **'긴 여정의 추진력'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Propellant Reserve - Insufficient fuel for planned orbital maneuvers. Terminate secondary mission"
         return "PASS: Sufficient Propellant and Verified Mission Continuity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(beam_current_amp=2.5, grid_leakage_ma=5.2, chamber_pressure_torr=1e-6)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ion-thruster-specific-impulse-and-efficiency-v2026`와 연동되어, 전 세계 심우주 탐사선의 추진 데이터를 실시간 분석하고 엔진 고장 및 궤도 이탈 사고 확률을 0.001% 이하로 억제함으로써 지능형 우주 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - plasma-physics-and-industrial-plasma-processing

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-resistant-cryptography-and-industrial-security-physics-entity"
-  domain: "12_Information_Computing"
+metadata:
+  id: "[[[Entity] quantum-resistant-cryptography-and-industrial-security-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Cybersecurity", "#Quantum-resistant", "#Cryptography", "#PQC", "#Information_Security", "#Physics", "#Zero_Trust", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[[MOC] 12_Information_Computing", "SOP supply-chain-cyber-security-and-hardware-trojan-detection]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-resistant-cryptography-and-industrial-security-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-resistant-cryptography-and-industrial-security-physics
+# [Entity] quantum-resistant-cryptography-and-industrial-security-physics
 
 ## 1. [왜 배우는가? (Why: Defending the Future Secrets)]]
 언젠가 등장할 양자 컴퓨터가 현재의 모든 암호를 단 몇 초 만에 풀어버린다면, 우리의 공장 설계도나 국가 기밀은 어떻게 지켜야 할까요? **양자 내성 암호 및 산업 보안 물리**는 양자 컴퓨터의 초고속 연산으로도 풀 수 없는 복잡한 수학적 문제(격자 기반 등)를 이용한 '미래 방어용 자물쇠 기술'입니다. 우리가 이를 배우는 이유는 미래의 해킹 위협으로부터 현재의 데이터를 선제적으로 보호하고(Harvest Now, Decrypt Later 방지), "어떤 기술적 진보에도 뚫리지 않는 '영구적인 정보 주권 및 사이버 물리 안보'를 확보하기" 위함입니다. 암호의 수학적 난이도가 보안의 영원함을 결정합니다.

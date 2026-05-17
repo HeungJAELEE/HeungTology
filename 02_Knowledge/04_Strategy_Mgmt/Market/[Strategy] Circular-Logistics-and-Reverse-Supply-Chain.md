@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BAT-REV-LOG-2026-V6.3.7"
-  domain: "Global_Reverse_Logistics_and_Circular_SCM_Optimization"
+metadata:
+  id: "[[[Strategy] Circular-Logistics-and-Reverse-Supply-Chain]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Reverse_Logistics", "#Circular_SCM", "#Disposition_Engine", "#EPR", "#Returns_Management", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Circular-Logistics-and-Reverse-Supply-Chain에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Reverse_Logistics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Circular-Logistics-and-Reverse-Supply-Chain: The Physics of Value Recovery
+# [Strategy] Circular-Logistics-and-Reverse-Supply-Chain
 
 ## 1. [왜 배우는가? (Why: The Mastery of Reverse Entropy)]]
 이커머스의 팽창과 제품 수명 주기의 단축으로 인해, 고객으로부터 되돌아오는 반품과 수명이 다한 제품의 회수는 공급망 비용의 최대 $20\%$를 차지하는 '보이지 않는 블랙홀'이 되었습니다. **Circular-Logistics-and-Reverse-Supply-Chain**은 거꾸로 흐르는 물류의 엔트로피를 수리적으로 제어하고, 회수된 자산을 재판매, 재제조, 또는 재활용으로 연결하여 가치를 복원하는 '역방향 최적화' 기술입니다. V6.3.7 지능은 생산자 책임(EPR)을 완벽히 이행하고 버려지는 가치를 수익으로 전환하는 **역물류 주권(Reverse Logistics Sovereignty)**을 확립하기 위해 필수적입니다.
@@ -109,7 +99,6 @@ class ReverseLogisticsEngine:
 2. **Operational Result**: **Closed-loop SCM** 설계 시, 제품의 '분해 용이성'(Strategy Circular-Economy-Business)이 역물류의 '수리 원가($C_{repair}$)'에 미치는 수리적 파급 효과는?
 3. **FidelityEngine**: **EPR** 규제 준수를 위해 FidelityEngine이 어떻게 '폐기물 매립량' 데이터를 추적하여 기업의 **'그린 워싱(Greenwashing)'** 리스크를 사전에 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Circular-Economy-Business

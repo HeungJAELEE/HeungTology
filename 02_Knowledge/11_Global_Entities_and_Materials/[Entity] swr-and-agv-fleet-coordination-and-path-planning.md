@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "swr-and-agv-fleet-coordination-and-path-planning-entity"
-  domain: "46_Industrial_Robotics_and_Mechatronics_Mastery"
+metadata:
+  id: "[[[Entity] swr-and-agv-fleet-coordination-and-path-planning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#AGV", "#AMR", "#Fleet_Management", "#Path_Planning", "#Logistics", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 46_industrial-robotics-and-mechatronics-mastery-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] swr-and-agv-fleet-coordination-and-path-planning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] swr-and-agv-fleet-coordination-and-path-planning
+# [Entity] swr-and-agv-fleet-coordination-and-path-planning
 
 ## 1. [왜 배우는가? (Why: The Ants of the Future Factory)]]
 수백 대의 무인 운반 로봇($AGV$)들이 어떻게 공장 안에서 서로 부딪히지 않고 개미 군단처럼 일사불란하게 움직이고, 지도를 스스로 그리며($SLAM$) 목적지까지 가장 빠른 길을 찾아내는 '지능형 무인 물류' 기술을 어떻게 공학적으로 설계할 수 있을까요? **군집 로봇 및 AGV 함대 협동과 경로 계획**은 스마트 팩토리의 혈관을 흐르는 '행성 규모 무인 물류 체계 및 지능형 군집 자율 제어 아키텍처'입니다. 우리가 이를 배우는 이유는 물류 로봇이 똑똑해야 공장이 막힘없이 돌아가고 낭비되는 시간이 사라지기 때문이며, "이동의 최적화를 데이터로 설계하고 지배하는 '글로벌 물류 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 군집의 지능이 공장의 처리 능력을 결정합니다.

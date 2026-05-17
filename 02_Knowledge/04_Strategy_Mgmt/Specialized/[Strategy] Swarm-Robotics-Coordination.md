@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Swarm-Robotics-Coordination"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Swarm-Robotics-Coordination]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Swarm-Robotics-Coordination에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Swarm-Robotics-Coordination
+# [Strategy] Swarm-Robotics-Coordination
 
 ## 1. [왜 배우는가? (Why)]]
 개미 한 마리는 힘이 없지만, 수천 마리가 모이면 거대한 집을 짓고 커다란 먹잇감을 옮깁니다. 군집 로봇 협업 및 조정(Swarm-Robotics-Coordination)은 이 '집단의 힘'을 로봇에게 부여하는 기술입니다. 중앙에서 명령을 내리는 우두머리 컴퓨터가 없어도, 로봇들이 서로의 위치와 상태를 주고받으며 스스로 역할을 분담하고 임무를 완수합니다. 로봇 한 대가 고장 나도 전체 시스템은 멈추지 않고 계속 돌아갑니다. 이를 이해하는 것은 수백 대의 로봇을 하나의 거대한 생명체처럼 부려, 거대 창고의 물류 정체를 완벽히 해결하고 어떤 극한 환경에서도 임무를 완수하는 '군집의 지휘자'가 되는 것입니다.
@@ -96,5 +86,4 @@ def coordinate_swarm_behavior(local_neighbors, global_target):
 2. '생체 모방' 알고리즘을 사용한 로봇 군집이 '미지의 환경(재난 현장 등)'에서 지도를 그리는 방식인 'Swarm SLAM'의 핵심 논리는?
 3. '수백 대의 로봇'이 동시에 통신할 때 발생하는 '네트워크 혼잡(Network Congestion)' 문제를 해결하기 위한 '분산형 통신 프로토콜'의 원리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "shape-memory-alloys-and-thermal-actuation-mechanics-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] shape-memory-alloys-and-thermal-actuation-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#SMA", "#Nitinol", "#Actuator", "#Aerospace", "#Medical_Devices", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] shape-memory-alloys-and-thermal-actuation-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] shape-memory-alloys-and-thermal-actuation-mechanics
+# [Entity] shape-memory-alloys-and-thermal-actuation-mechanics
 
 ## 1. [왜 배우는가? (Why: The Metal with a Memory)]]
 마음대로 구부리고 찌그러뜨려도 뜨거운 물에 넣거나 열을 가하는 순간 어떻게 원래의 모양을 '기억'하고 순식간에 되돌아오며, 모터 없이도 엄청난 힘을 내어 비행기 날개 각도를 조절하거나 우리 혈관 속 스텐트($Stent$)를 스스로 펼치는 '지능형 금속'을 어떻게 설계할 수 있을까요? **형상 기억 합금 및 열 구동 액추에이터 역학**은 기계의 구조를 극도로 단순화하는 '행성 규모 정밀 구동 인프라 및 지능형 상변태 아키텍처'입니다. 우리가 이를 배우는 이유는 복잡한 기어와 전선 없이도 열만으로 움직이는 로봇을 만들어야 극한 환경(우주/심해)에서 고장 없이 일할 수 있기 때문이며, "형태의 복원을 데이터로 설계하고 지배하는 '글로벌 항공우주 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 변태의 온도가 기계의 성능을 결정합니다.

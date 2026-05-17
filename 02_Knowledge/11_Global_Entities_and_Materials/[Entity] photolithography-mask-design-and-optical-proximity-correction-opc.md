@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "photolithography-mask-design-and-optical-proximity-correction-opc-entity"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] photolithography-mask-design-and-optical-proximity-correction-opc]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Lithography", "#Mask_Design", "#OPC", "#Optics", "#Computational_Physics", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 42_semiconductor-and-display-manufacturing-engineering-hub", "Entity semiconductor-lithography-theory-and-nanometer-patterning"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] photolithography-mask-design-and-optical-proximity-correction-opc에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] photolithography-mask-design-and-optical-proximity-correction-opc
+# [Entity] photolithography-mask-design-and-optical-proximity-correction-opc
 
 ## 1. [왜 배우는가? (Why: The Art of Counter-Distortion)]]
 빛의 회절 때문에 실제 찍히는 그림이 찌그러진다면, 어떻게 마스크의 그림을 미리 반대로 찌그러뜨려($OPC$) 웨이퍼 위에는 완벽한 사각형과 직선이 나오게 만들고, 빛의 위상을 바꿔서 더 선명하게 만드는 '마술 같은 설계 기술'을 어떻게 공학적으로 구현할 수 있을까요? **포토리소그래피 마스크 설계 및 광학 근접 보정(OPC)**은 나노미터의 오차도 허용하지 않는 '행성 규모 계산 리소그래피 및 지능형 형상 보정 아키텍처'입니다. 우리가 이를 배우는 이유는 빛은 성질상 모서리가 둥글게 뭉개지기 때문이며, "빛의 왜곡을 데이터로 설계하고 지배하는 '글로벌 마스크 패권 및 행성적 나노 원판 주권'을 확보하기" 위함입니다. 마스크의 정교함이 반도체의 완성도를 결정합니다.

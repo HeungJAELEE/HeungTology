@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cz-process-and-single-crystal-silicon-growth"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cz-process-and-single-crystal-silicon-growth]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The primary method used to grow large, high-purity single-crystal silicon ingots by dipping a seed crystal into molten silicon and slowly pulling it upward (Czochralski or CZ Process) and the physical study of heat and mass transfer that ensures a perfect, defect-free atomic lattice (Single Crystal Growth)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cz-process", "czochralski", "silicon-growth", "single-crystal", "wafer-manufacturing", "semiconductor-material", "crystallization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Growth_Fidelity_Audit: Evaluate the ''Pulling Velocity'' ($v$) against the temperature gradient to identify if the growth is too fast, leading to ''Constitutional Supercooling'' and lattice defects.'
-    - 'Purity_Integrity_Check: Analyze the ''Effective Segregation Coefficient'' ($k_{eff}$) to ensure that dopants and impurities are being distributed uniformly along the length of the ingot.'
-    - 'Thermal_Fidelity_Scan: Monitor the quartz crucible dissolution rate to verify that the ''Oxygen Content'' in the silicon is within the range required for mechanical strength and gettering effects.'
-Trust Metrics:
+  description: "[Entity] cz-process-and-single-crystal-silicon-growth에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 CZ Process and Single Crystal Silicon Growth
+# [Entity] cz-process-and-single-crystal-silicon-growth
 
 ## 1. 개요 (Why: 인간적 통찰)
 현대 디지털 문명의 쌀이라 불리는 '실리콘 웨이퍼'는 어떻게 그렇게 완벽하게 매끄럽고 일정한 성질을 가질까요? **CZ 공정 및 단결정 실리콘 성장**은 뜨거운 실리콘 용액에서 '완벽한 질서'를 끌어올리는 **'분자의 낚시'** 기술입니다. 1,400도가 넘는 쇳물 같은 실리콘에 아주 작은 씨앗 결정을 담갔다가 아주 천천히 돌리며 들어 올리면, 원자들이 씨앗의 모양을 따라 수조 개가 한 치의 오차도 없이 줄을 서서 거대한 기둥(Ingot)이 됩니다. **'혼돈 속에서 완벽한 규칙을 빚어내는 반도체 산업의 위대한 시작'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Crystal Dislocation Detected - Lattice continuity broken. Entire ingot section is unusable for high-end logic chips"
         return "PASS: Validated Perfect Lattice and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pulling_velocity_mm_min=1.2, melt_temp_c=1414.0, ingot_diameter_mm=300.2)
 print(engine.diagnose_growth_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_growth_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data silicon-ingot-purity-and-oxygen-concentration-v2026`와 연동되어, 전 세계 주요 반도체 웨이퍼 공장의 데이터를 실시간 분석하고 결정 결함 및 순도 미달 사고 확률을 0.0001% 이하로 억제함으로써 지능형 반도체 문명의 기초 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - crystallization-kinetics-and-crystal-growth-mechanics

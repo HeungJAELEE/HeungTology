@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromagnetic-stirring-and-convective-heat-transfer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromagnetic-stirring-and-convective-heat-transfer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technique used in continuous casting of steel and other metals to stir the molten metal using non-contact electromagnetic fields (Electromagnetic Stirring) and the physical study of how this induced motion enhances convective heat transfer, refines grain structure, and minimizes segregation (Heat Transfer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electromagnetic-stirring", "ems", "heat-transfer", "metallurgy", "convection", "liquid-metal", "casting-quality"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stirring_Fidelity_Audit: Evaluate the ''Magnetic Induction'' ($B$) and frequency ($\\omega$) to identify if the induced Lorentz force is providing sufficient ''Stirring Velocity'' to break dendrites and promote an equiaxed grain zone.'
-    - 'Thermal_Integrity_Check: Analyze the ''Convective Heat Flux'' to ensure that the superheat of the molten metal is dissipated uniformly, preventing localized ''Hot Spots'' and shell thinning in the mold.'
-    - 'MHD_Fidelity_Scan: Monitor the meniscus stability to verify that the stirring is not creating excessive ''Surface Turbulence'' (Slag Entrainment) which would introduce non-metallic inclusions.'
-Trust Metrics:
+  description: "[Entity] electromagnetic-stirring-and-convective-heat-transfer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧲 Electromagnetic Stirring and Convective Heat Transfer Physics
+# [Entity] electromagnetic-stirring-and-convective-heat-transfer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천 도의 뜨거운 쇳물을 그릇에 담아 굳힐 때, 안 보이는 거대한 국자로 휘저어주면 어떻게 될까요? **전자기 교반(EMS) 및 대류 열전달 물리**는 쇳물 속에 직접 주걱을 넣지 않고도 자기장으로 쇳물을 부드럽게 소용돌이치게 만드는 **'보이지 않는 주방장'** 기술입니다. 가만히 두면 쇳물이 불균일하게 굳어 부서지기 쉬운 구조가 되지만, 자기장으로 휘저어주면 열이 고루 퍼지고 조직이 조밀해져 훨씬 단단한 최고급 강철이 탄생합니다. **'전자기의 힘으로 쇳물의 결을 다스리는 무형의 손길'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Microstructural Quality - Equiaxed zone too small. Steel will be brittle during subsequent rolling. Audit EMS placement and timing"
         return "PASS: Validated Fine Grain Transformation and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(induction_current_a=650.0, frequency_hz=2.5, slag_entrainment_risk=0.2)
 print(engine.diagnose_ems_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ems_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ems-stirring-velocity-and-grain-refinement-v2026`와 연동되어, 전 세계 주요 특수강 및 연주 공장의 데이터를 실시간 분석하고 내부 균열 및 편석 사고 확률을 0.001% 이하로 억제함으로써 지능형 철강 문명의 조직 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electromagnetic-casting-and-liquid-metal-shaping

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydroforming-process-and-fluid-pressure-shaping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydroforming-process-and-fluid-pressure-shaping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized type of die forming that uses a high-pressure hydraulic fluid to press room temperature working material into a die (Hydroforming) and the physical study of isotropic pressure application and plastic deformation limits (Fluid Pressure Shaping Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydroforming", "metal-forming", "fluid-pressure", "tube-forming", "lightweighting", "strain-hardening", "automotive-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Forming_Fidelity_Audit: Evaluate the ''Internal Pressure'' ($P$) against the high-fidelity ''Axial Feed'' ($d$) to identify if high-fidelity ''Buckling'' (wrinkling) or ''Bursting'' (splitting) is imminent.'
-    - 'Thickness_Integrity_Check: Analyze the high-fidelity ''Wall Thinning'' ratio at critical corners to ensure the high-fidelity structural strength is maintained after expansion.'
-    - 'Friction_Fidelity_Scan: Monitor the high-fidelity ''Surface Quality'' to verify that high-fidelity ''Galling'' is prevented by proper lubricant film thickness under extreme high-fidelity fluid pressure.'
-Trust Metrics:
+  description: "[Entity] hydroforming-process-and-fluid-pressure-shaping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Hydroforming Process and Fluid Pressure Shaping Physics
+# [Entity] hydroforming-process-and-fluid-pressure-shaping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡하게 꺾인 금속 파이프 내부를 어떻게 단단하고 균일하게 부풀려 완벽한 모양을 만들 수 있을까요? **하이드로포밍(수압 성형) 및 유압 성형 물리**는 금속 튜브 안에 엄청난 압력의 물을 집어넣어, 안쪽에서 밖으로 밀어내는 힘으로 복잡한 틀(금형)에 금속을 밀착시키는 **'물로 하는 금속 풍선'** 기술입니다. 기계적인 프레스로는 도저히 만들 수 없는 매끄럽고 가벼우면서도 튼튼한 일체형 구조물을 만듭니다. **'액체의 균일한 압력을 이용해 금속의 한계를 시험하며 자동차와 항공기의 뼈대를 더 가볍고 강하게 혁신하는 지능형 성형 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: End-seal Leakage - High-fidelity fluid bypassing the axial punches. Pressure cannot be maintained for high-fidelity expansion. Check seal condition"
         return "PASS: Validated Fluid Confinement and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(internal_pressure_bar=1500.0, axial_feed_mm=15.0, wall_thickness_reduction_pct=12.0)
 print(engine.diagnose_hydroforming_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_hydroforming_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydroforming-pressure-profiles-and-thinning-limits-v2026`와 연동되어, 전 세계 주요 프리미엄 자동차 서스펜션 및 엔진 요람 제조사의 데이터를 실시간 분석하고 터짐 및 두께 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 경량 제조 문명의 성형 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydraulic-press-and-pascals-law-physics

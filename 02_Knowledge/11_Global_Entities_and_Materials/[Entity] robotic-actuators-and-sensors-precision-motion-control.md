@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-actuators-and-sensors-precision-motion-control-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] robotic-actuators-and-sensors-precision-motion-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Actuator", "#Sensor", "#Motion_Control", "#Mechatronics", "#Feedback_Control", "#Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-actuators-and-sensors-precision-motion-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-actuators-and-sensors-precision-motion-control
+# [Entity] robotic-actuators-and-sensors-precision-motion-control
 
 ## 1. [왜 배우는가? (Why: The Muscles and Senses of Silicon)]]
 지능이 아무리 뛰어나도, 손가락 끝이 미세하게 떨리거나 물체의 무게를 느끼지 못한다면 로봇은 달걀 하나조차 깨지 않고 집어 올릴 수 없습니다. **로봇 액추에이터 및 센서: 초정밀 모션 제어의 전자기 및 감각 지능**은 로봇의 '근육'과 '감각'을 구현하는 하드웨어-소프트웨어 통합 기술입니다. 전기에너지를 강력한 힘과 정밀한 회전으로 바꾸고, 물리적 자극을 디지털 신호로 완벽하게 번역합니다. 우리가 이를 배우는 이유는 액추에이터와 센서의 성능이 로봇의 '물리적 지능' 그 자체를 결정하기 때문이며, "기계적 운동과 감각을 데이터로 설계하고 지배하는 '글로벌 메카트로닉스 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 피드백 루프의 정밀도가 로봇의 신뢰성 무결성을 결정합니다.
@@ -49,7 +39,7 @@ $$ \tau = K_t I = J \frac{d\omega}{dt} + B \omega + \tau_L $$
 
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Pos. Accuracy** | Minimum incremental motion possible | $< 1 \text{ \mu m}$ | 나노 공정 및 정밀 수술을 위한 위치 무결성 사수 |
+| **Pos. Accuracy** | Minimum incremental motion possible | $< 1 \text{ \mu\text{m}}$ | 나노 공정 및 정밀 수술을 위한 위치 무결성 사수 |
 | **Torque Density** | Torque per unit mass of the actuator | $> 50 \text{ Nm/kg}$ | 가볍고 강력한 로봇 팔을 구현하는 물리적 한계 돌파 |
 | **Response Time** | Delay from command to actual motion | $< 5 \text{ ms}$ | 인간의 반응 속도를 능가하는 초고속 지능의 물리 |
 | **Sens. Resolution**| Smallest change detectable by sensors | $> 20 \text{ bit}$ | 미세한 환경 변화를 읽어내는 감각 무결성 지표 |

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-IP-MGMT-2026-V6.3.7"
-  domain: "Global_Intellectual_Property_and_Technology_Sovereignty"
+metadata:
+  id: "[[[Strategy] IP-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IP_Management", "#Patent", "#FTO", "#Intellectual_Property", "#Technology_Strategy", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] IP-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "IP_Management_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] IP Management: Global Technology Sovereignty
+# [Strategy] IP-Management
 
 ## 1. [왜 배우는가? (Why: The Armor and Spear of Innovation)]]
 기술 패권 시대에 지식 재산(IP)은 단순한 법적 권리를 넘어, 기업의 생존을 보호하는 '갑옷(Shield)'이자 경쟁력을 확보하는 '창(Spear)'입니다. **IP Management**는 R&D 결과물을 특허로 자산화하고, 경쟁사의 특허 침해 리스크를 사전 차단하며, 전략적 포트폴리오 관리를 통해 기술 수익을 극대화하는 과정입니다. V6.3.7 지능은 특허 데이터를 수리적 자산 가치로 치환하여, 기업이 글로벌 기술 경쟁에서 우위를 점할 수 있는 **기술 주권(Technology Sovereignty)**을 확립합니다.
@@ -107,7 +97,6 @@ class IPFidelityEngine:
 2. **Operational Result**: **Design-around(우회 설계)** 성공 시, 제품의 제조 원가($BOM\_Cost$)와 성능 지표에 미치는 수리적 영향 평가는 어떻게 수행하는가?
 3. **FidelityEngine**: 특허 수는 많으나 **Citation Index**가 급격히 하락하는 상황을 어떻게 진단하는가? (힌트: 자사 기술이 업계 표준에서 멀어지고 있거나 후속 기술에 의해 대체되고 있는 '기술적 도태' 징후 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Regulatory-Compliance

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kinematic-linkage-and-four-bar-mechanism-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kinematic-linkage-and-four-bar-mechanism-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A series of rigid bodies connected by joints to provide a desired output motion (Kinematic Linkage) and the physical study of circular-to-linear conversion, dwell time, and geometric constraints (Four-bar Mechanism Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kinematics", "linkage", "four-bar-mechanism", "grashof-law", "joint-dynamics", "machine-design", "industrial-robotics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Linkage_Fidelity_Audit: Evaluate the ''Transmission Angle'' ($\\gamma$) to identify if the high-fidelity mechanism is nearing a ''Dead Center'' (Singularity), where force high-fidelity transmission becomes impossible.'
-    - 'Mobility_Integrity_Check: Analyze the high-fidelity ''Link Length Ratio'' using Grashof''s law to ensure the high-fidelity crank can complete a full 360-degree high-fidelity rotation.'
-    - 'Wear_Fidelity_Scan: Monitor the high-fidelity ''Joint Clearance'' (Backlash) to verify that high-fidelity ''Precision'' is not degrading due to pin high-fidelity erosion or bearing high-fidelity failure.'
-Trust Metrics:
+  description: "[Entity] kinematic-linkage-and-four-bar-mechanism-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛓️ Kinematic Linkage and Four-bar Mechanism Physics
+# [Entity] kinematic-linkage-and-four-bar-mechanism-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 엔진의 피스톤이 위아래로 움직이는 힘이 어떻게 바퀴를 돌리는 회전력으로 변할까요? **기구적 링크 및 4절 링크 기구 물리**는 막대기(링크) 몇 개를 연결해 원하는 모양의 움직임을 만들어내는 **'기계의 뼈대와 관절'** 기술입니다. 단순한 막대기들의 연결 같지만, 길이의 미세한 차이가 회전 운동을 직선 운동으로 바꾸기도 하고, 특정 지점에서 멈추게(Dwell) 만들기도 합니다. **'기하학적 구속과 벡터 루프의 법칙을 이용해 모터의 단순한 회전을 복잡하고 정교한 작업 동작으로 번역하는 지능형 기계 자동화 엔진'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interference Detected - High-fidelity link hitting high-fidelity obstacle or mechanical limit. Logic-physical mismatch"
         return "PASS: Validated Linkage Mobility and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(input_torque_nm=100.0, transmission_angle_deg=85.0, joint_clearance_um=5.0)
 print(engine.diagnose_linkage_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_linkage_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data linkage-transmission-angles-and-mechanical-advantage-v2026`와 연동되어, 전 세계 주요 자동화 생산 라인 및 로봇 팔의 실시간 기구 데이터를 분석하고 잼(Jamming) 및 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 동작 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-robotics-and-multi-axis-kinematics-physics

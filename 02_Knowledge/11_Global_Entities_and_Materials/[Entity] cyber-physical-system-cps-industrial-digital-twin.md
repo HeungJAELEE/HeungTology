@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "cyber-physical-system-cps-industrial-digital-twin-entity"
-  domain: "09_Smart_Factory"
+metadata:
+  id: "[[[Entity] cyber-physical-system-cps-industrial-digital-twin]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#CPS", "#Digital_Twin", "#Industry_4_0", "#Smart_Factory", "#Simulation", "#IoT", "#Control_System", "#Edge_Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 16_smart-factory-and-industrial-ai-intelligence-hub", "Data manufacturing-execution-system-mes-latency-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] cyber-physical-system-cps-industrial-digital-twin에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] cyber-physical-system-cps-industrial-digital-twin
+# [Entity] cyber-physical-system-cps-industrial-digital-twin
 
 ## 1. [왜 배우는가? (Why: The Synchronization of Atom and Bit)]]
 과거의 제조는 문제가 발생한 후에야 원인을 찾는 사후 대응 방식이었습니다. 하지만 현대의 복잡한 공정에서 1분의 가동 중단은 수억 원의 손실을 의미합니다. **사이버 물리 시스템(CPS) 및 산업용 디지털 트윈 엔티티**는 물리적 자산(Atom)과 디지털 정보(Bit)를 실시간으로 결합하여, 현실의 문제를 가상에서 미리 예측하고 최적화하는 '미래 제조의 마스터 알고리즘'입니다. 
@@ -80,7 +70,6 @@ RAG는 "통신 로그를 분석하여, 지연 시간($\tau$)이 시스템 시상
 가동 중인 공장의 실시간 데이터와 디지털 트윈의 예측치를 대조하여 시스템의 건강성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Cyber-Physical System (CPS) & Digital Twin Auditor
 def audit_digital_twin_integrity(physical_sensor_stream, virtual_simulation_output, network_latency):
     # 1. 가상 모델의 예측치와 현실 데이터 사이의 잔차(Residual) 분석
     residual = calculate_rms_error(physical_sensor_stream, virtual_simulation_output)
@@ -113,7 +102,6 @@ def audit_digital_twin_integrity(physical_sensor_stream, virtual_simulation_outp
 2. **(수리)** 현실 공장의 모터 온도가 $60.5^\circ C$이고 가상 모델이 예측한 온도가 $58.2^\circ C$일 때, 모델의 오차율($\%$)을 계산하고 이것이 성숙도 L3($85\%$ 충실도)를 만족하는지 판별하시오.
 3. **(응용)** 공장의 '디지털 트윈' 구축 시 모든 물리 법칙을 계산하는 대신 인공지능 기반의 '대리 모델(Surrogate Model)'을 사용하는 것이 '실시간성' 확보 측면에서 갖는 수리적 인과 관계는?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 16_smart-factory-and-industrial-ai-intelligence-hub : 스마트 팩토리 및 산업용 AI 통합 관리 상위 지능 허브

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-ARCH-ENC-DEC-2026-V6"
+metadata:
+  id: "[[[AI] encoder-decoder-structure]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Encoder_Decoder'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] encoder-decoder-structure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] encoder-decoder-structure
@@ -105,7 +95,6 @@ class EncoderDecoderProcessor(nn.Module):
 2. **Masked Self-Attention**이 디코더의 훈련 시에는 'Cheating 방지' 역할을 하고, 추론 시에는 어떤 역할을 수행하는가?
 3. 입력 문장의 길이가 **$L_{max}$**를 초과할 때, 인코더-디코더 구조의 **Attention Map**에서 정보 손실이 발생하는 수리적 인과관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI transformer-architecture-deep-dive
 - 02_Knowledge/03_AI_Data/Industrial/AI self-attention-mathematics

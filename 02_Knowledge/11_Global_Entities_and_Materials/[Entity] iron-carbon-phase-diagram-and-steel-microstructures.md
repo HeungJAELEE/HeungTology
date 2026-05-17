@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iron-carbon-phase-diagram-and-steel-microstructures"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iron-carbon-phase-diagram-and-steel-microstructures]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The map of thermodynamic equilibrium states (Phase Diagram) for iron-carbon alloys and the resulting physical arrangements of atoms (Microstructures) at varying temperatures and carbon concentrations, determining the mechanical properties of steel."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metallurgy", "phase-diagram", "iron-carbon", "austenite", "martensite", "ferrite", "heat-treatment", "microstructure"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Phase_Constituent_Audit: Calculate the mass fraction of Ferrite and Cementite using the Lever Rule at specified temperatures to predict hardness.'
-    - 'Grain_Size_Analysis: Evaluate the microstructure through microscopy to ensure grain refinement for high-toughness requirements.'
-    - 'Transformation_Rate_Check: Analyze the cooling curves (TTT/CCT diagrams) to ensure the desired phase (e.g., Martensite for high strength) is achieved.'
-Trust Metrics:
+  description: "[Entity] iron-carbon-phase-diagram-and-steel-microstructures에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗺️ Iron-Carbon Phase Diagram and Steel Microstructures
+# [Entity] iron-carbon-phase-diagram-and-steel-microstructures
 
 ## 1. 개요 (Why: 인간적 통찰)
 똑같은 쇳덩이인데 왜 어떤 것은 유연하게 휘어지고, 어떤 것은 칼날처럼 단단할까요? 그 비밀은 눈에 보이지 않는 금속 내부의 '원자 지형도'에 있습니다. **철-탄소 상태도 및 미세 조직**은 온도와 탄소량에 따라 철 원자들이 어떤 모양으로 줄을 서는지 보여주는 **'금속의 설계도'**입니다. 열을 가하고 식히는 미세한 조절(열처리)을 통해 부드러운 솜털(페라이트)부터 다이아몬드처럼 단단한 바늘(마르텐사이트)까지 자유자재로 만들어내는 **'금속의 조물주가 보는 지도'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Quenching Rate - Failed to Achieve Full Martensitic Transformation"
         return "PASS: Effective Heat Treatment Cycle Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pearlite_lamellar_spacing_nm=80, martensite_volume_pct=98.5, grain_size_num=8)
 print(engine.diagnose_microstructure_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_microstructure_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data steel-microstructure-and-mechanical-property-correlation-v2026`와 연동되어, 전 세계 특수강 제조 라인의 조직 데이터를 실시간 분석하고 강도 미달 및 균열 사고 확률을 0.001% 이하로 억제함으로써 인프라 강재의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - iron-and-steel-making-metallurgy

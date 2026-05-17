@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Extreme-Environment-Materials-Aerospace"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Extreme-Environment-Materials-Aerospace]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Extreme-Environment-Materials-Aerospace에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Extreme-Environment-Materials-Aerospace
+# [Strategy] Extreme-Environment-Materials-Aerospace
 
 ## 1. [왜 배우는가? (Why)]]
 우주선이 대기권으로 들어올 때 표면 온도는 태양 표면 온도의 절반에 가까운 3,000도까지 치솟습니다. 반대로 액체 수소 연료 탱크는 영하 253도의 살인적인 추위를 견뎌야 합니다. 우주항공 극한 환경 소재(Extreme-Environment-Materials-Aerospace)는 이 양극단의 지옥 같은 환경에서 기체와 인간을 지켜주는 유일한 방패입니다. 일반적인 금속은 종이처럼 녹아내리거나 유리처럼 깨져버리는 상황에서, 이 소재들은 꿋꿋이 제 형태와 강도를 유지합니다. 이를 이해하는 것은 인류가 지구라는 요람을 넘어 더 먼 우주로 나아가기 위한 가장 단단한 '기초 체력'을 설계하는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Extreme Material Integrity & Life Prediction)]
 온도와 압력, 방사선 노출 누적량을 분석하여 소재의 수명을 예측하고 교체 시점을 알리는 논리 구조입니다.
 ```python
-# 극한 소재(ISM) 기반 건전성 감시 및 잔여 수명 예측 논리
 def predict_extreme_material_lifespan(sensor_data, operational_log):
     # 1. 누적 열 부하 계산 (Thermal Fatigue)
     # 비행 중 노출된 온도 데이터의 적분 값을 통해 열 피로도 산출
@@ -98,5 +87,4 @@ def predict_extreme_material_lifespan(sensor_data, operational_log):
 2. '액체 수소 연료 탱크' 제작 시 '복합소재'를 사용할 때 발생하는 '미세 균열(Micro-cracking)' 문제와 이를 방지하기 위한 '극저온 인성' 강화 기술은?
 3. '우주 방사선' 차단을 위해 '납'과 같은 무거운 금속보다 '수소'가 풍부한 '고분자 소재'가 더 효율적인 공학적 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

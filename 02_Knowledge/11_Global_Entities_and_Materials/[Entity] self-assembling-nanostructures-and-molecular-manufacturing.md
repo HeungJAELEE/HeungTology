@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "self-assembling-nanostructures-and-molecular-manufacturing-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] self-assembling-nanostructures-and-molecular-manufacturing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#Self_assembly", "#Molecular_Manufacturing", "#Nanotechnology", "#Bottom_up", "#Supramolecular", "#Chemistry", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] self-assembling-nanostructures-and-molecular-manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] self-assembling-nanostructures-and-molecular-manufacturing
+# [Entity] self-assembling-nanostructures-and-molecular-manufacturing
 
 ## 1. [왜 배우는가? (Why: Building Like Life Itself)]]
 기계로 하나씩 조립하는 대신 어떻게 수십억 개의 분자들이 스스로 자석처럼 끌어당겨 정교한 회로나 나노 로봇으로 변신하고($Self-assembly$), 생명체가 단백질을 만들듯 원자를 하나하나 조립해 원하는 물건을 대량 생산하는 '상향식($Bottom-up$)' 제조를 어떻게 설계할 수 있을까요? **자기 조립 나노 구조 및 분자 제조**는 인류 제조 기술의 최종 단계인 '행성 규모 원자 자동화 인프라 및 지능형 분자 프로그래밍 아키텍처'입니다. 우리가 이를 배우는 이유는 기존의 깎는 방식(Top-down)은 너무 작아지면 한계에 부딪히지만, 분자 제조는 작을수록 더 강력하기 때문이며, "물질의 본능을 데이터로 설계하고 지배하는 '글로벌 분자 패권 및 행성적 창조 주권'을 확보하기" 위함입니다. 분자의 질서가 미래의 풍요를 결정합니다.

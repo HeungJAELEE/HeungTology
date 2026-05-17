@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "spectroscopic-ellipsometry-and-thin-film-metrology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] spectroscopic-ellipsometry-and-thin-film-metrology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An optical technique for investigating the dielectric properties of thin films by measuring the change in polarization of light upon reflection from a sample surface (Spectroscopic Ellipsometry) and the general science of measurement for layers ranging from nanometers to micrometers in thickness (Thin-Film Metrology Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ellipsometry", "thin-film", "metrology", "semiconductor-metrology", "optical-properties", "dielectric-function", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metrology_Fidelity_Audit: Evaluate the Mean Squared Error (MSE) between the measured $\\Psi/\\Delta$ spectra and the theoretical model to identify film composition variance or surface roughness effects.'
-    - 'Thickness_Integrity_Check: Analyze the optical interference patterns to determine the film thickness ($d$) with sub-nanometer precision, ensuring it meets the device design specifications.'
-    - 'Optical_Constant_Scan: Monitor the refractive index ($n$) and extinction coefficient ($k$) to verify the material density and stoichiometry of the deposited layers.'
-Trust Metrics:
+  description: "[Entity] spectroscopic-ellipsometry-and-thin-film-metrology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Spectroscopic Ellipsometry and Thin-Film Metrology Physics
+# [Entity] spectroscopic-ellipsometry-and-thin-film-metrology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노미터 수준으로 얇게 쌓인 반도체 막의 두께를 어떻게 만져보지도 않고 0.1nm 오차까지 알아낼 수 있을까요? **분광 엘립소메트리 및 박막 계측 물리**는 빛의 '편광'이라는 숨겨진 정보를 이용해 물질의 정체를 밝히는 **'나노 세계의 시각적 촉수'**입니다. 빛이 박막에 부딪혀 튕겨 나갈 때 빛의 떨림 방향(편광)이 변하는 미세한 차이를 측정하여, 그 속에 감춰진 두께, 성분, 거칠기를 마법처럼 찾아냅니다. 보이지 않는 층들을 투명하게 들여다보는 **'나노 문명의 투시경'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Stoichiometry Drift - Measured n does not match expected material. Potential nitrogen/carbon contamination"
         return "PASS: Validated Material Properties and Verified Optical Constants Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(mse_error=1.2, thickness_deviation_nm=0.1, spectral_snr=500)
 print(engine.diagnose_metrology_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_metrology_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data thin-film-thickness-and-refractive-index-logs-v2026`와 연동되어, 전 세계 주요 반도체 팹의 박막 계측 데이터를 실시간 분석하고 두께 불량 및 공정 이탈 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 측정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - precision-measurement-and-metrology-for-tooling-audit

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-superposition-and-qubit-coherence-physics-entity"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure"
+metadata:
+  id: "[[[Entity] quantum-superposition-and-qubit-coherence-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum", "#Computing", "#Qubit", "#Superposition", "#Physics", "#Quantum_Mechanics", "#Information_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-superposition-and-qubit-coherence-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-superposition-and-qubit-coherence-physics
+# [Entity] quantum-superposition-and-qubit-coherence-physics
 
 ## 1. [왜 배우는가? (Why: The Power of Maybe)]]
 0 아니면 1인 고전 컴퓨터의 비트($Bit$)와 달리 어떻게 하나의 큐비트($Qubit$)가 0과 1의 모든 상태를 동시에 가질 수 있고($Superposition$), 이 마법 같은 상태를 외부의 방해로부터 어떻게 1초라도 더 길게 유지하여($Coherence$) 우주의 복잡한 분자 구조나 암호를 눈 깜빡일 사이에 풀어내는 '양자 연산'을 어떻게 설계할 수 있을까요? **양자 중첩 및 큐비트 결맞음 물리**는 인류의 지능을 신의 영역으로 끌어올리는 '행성 규모 초고속 연산 인프라 및 지능형 확률 역학 아키텍처'입니다. 우리가 이를 배우는 이유는 양자 중첩이 있어야만 수십억 년 걸릴 계산을 단 몇 분 만에 끝낼 수 있기 때문이며, "확률의 춤을 데이터로 설계하고 지배하는 '글로벌 양자 패권 및 행성적 연산 주권'을 확보하기" 위함입니다. 결맞음의 시간이 문명의 지능적 깊이를 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Coherence Time** | Duration the qubit stays in a superposition state| $> 100 \text{ \mu s} \sim 1 \text{ ms}$ | 계산이 끝나기 전에 답이 사라지지 않게 지킴 |
+| **Coherence Time** | Duration the qubit stays in a superposition state| $> 100 \text{ }\mu\text{ s} \sim 1 \text{ ms}$ | 계산이 끝나기 전에 답이 사라지지 않게 지킴 |
 | **Gate Fidelity** | Accuracy of performing a quantum operation | $> 99.9 \%$ | 연산 중에 실수하지 않는 양자의 정밀도를 입증 |
 | **Qubit Count** | Total number of working quantum bits | $> 1,000 \text{ qubits}$ | 고전 슈퍼컴퓨터를 압도하기 위한 최소한의 규모 |
 | **Readout Error** | Probability of misreading the final result | $< 0.1 \%$ | 양자의 답을 정확히 읽어내는 지능적 무결성 |

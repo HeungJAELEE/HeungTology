@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Science] Computational-Fluid-Dynamics-CFD"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[AI] Computational-Fluid-Dynamics-CFD]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Computational-Fluid-Dynamics-CFD에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Computational-Fluid-Dynamics-CFD
@@ -98,5 +88,4 @@ def predict_fluid_behavior(inlet_velocity, fluid_viscosity, geometry_params):
 2. '물리 기반 신경망(PINNs)'이 일반적인 '블랙박스 AI' 모델보다 '유체 역학' 문제 해결에서 신뢰도가 높은 이유는?
 3. 배터리 '급속 충전' 시 발생하는 '줄 열(Joule Heat)'을 효과적으로 배출하기 위해 CFD로 분석해야 할 '핵심 물리 파라미터' 3가지는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

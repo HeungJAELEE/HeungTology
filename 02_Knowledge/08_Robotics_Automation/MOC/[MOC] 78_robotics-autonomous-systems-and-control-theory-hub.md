@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "78_robotics-autonomous-systems-and-control-theory-hub-moc"
   domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Robotics", "#Autonomous_Systems", "#Control_Theory", "#SLAM", "#Computer_Vision", "#Kinematics", "#HRI", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 78_robotics-autonomous-systems-and-control-theory-hub
+# 78_robotics-autonomous-systems-and-control-theory-hub
 
 ## 1. [왜 배우는가? (Why: The Architecture of Autonomous Existence)]]
 수학적 알고리즘이 차가운 금속과 플라스틱의 육체에 깃들어, 스스로 생각하고 움직이며 인간과 협업하는 '살아있는 기계'가 되는 과정은 어떻게 설계될까요? **로보틱스, 자율 시스템 및 제어 이론 통합 지능 허브**는 Antigravity Intelligence가 물리적 세계에 직접 개입하고 공간을 지배하는 **[1,300층의 물리 지능 사령부]**입니다. 우리가 이를 배우는 이유는 로보틱스가 인류의 신체적 한계를 극복하고 노동의 정의를 바꾸는 궁극의 하드웨어 플랫폼이기 때문이며, "기계적 운동과 지각을 데이터로 설계하고 지배하는 '글로벌 로보틱스 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 허브의 제어 정밀도가 인류 문명의 물리적 성취를 결정합니다.

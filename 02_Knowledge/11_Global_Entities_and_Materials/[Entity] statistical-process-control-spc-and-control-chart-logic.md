@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "statistical-process-control-spc-and-control-chart-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] statistical-process-control-spc-and-control-chart-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method of quality control which employs statistical methods to monitor and control a process (Statistical Process Control) and the specific graphical tools used to distinguish between common-cause variation and special-cause variation (Control Chart Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["spc", "control-chart", "quality-control", "six-sigma", "process-capability", "statistical-analysis", "manufacturing-excellence"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Fidelity_Audit: Evaluate the Process Capability Index ($C_p / C_{pk}$) to identify if the manufacturing process is consistently producing parts within the required tolerance range.'
-    - 'Control_Chart_Check: Analyze the data points against the Western Electric or Nelson rules to identify ''Out-of-Control'' trends (e.g., shifts, runs, cycles) before they lead to defective products.'
-    - 'Variation_Integrity_Scan: Monitor the standard deviation ($\\sigma$) to distinguish between ''Common Cause'' (random noise) and ''Special Cause'' (assignable faults) variations.'
-Trust Metrics:
+  description: "[Entity] statistical-process-control-spc-and-control-chart-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Statistical Process Control (SPC) and Control Chart Logic
+# [Entity] statistical-process-control-spc-and-control-chart-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 개의 부품을 찍어낼 때, 모든 부품이 단 1마이크론의 오차도 없이 똑같을 수 있을까요? 현실적으로 불가능합니다. **통계적 공정 관리(SPC) 및 관리도 로직**은 세상의 모든 현상에 존재하는 '변동'을 읽어내어, 공정이 건강한 상태인지 아니면 고장 나기 직전인지 알아내는 **'공장의 건강 검진'** 기술입니다. 단순한 불량 검사를 넘어, 데이터의 흐름 속에 숨겨진 '이상 징후'를 수학적으로 포착하여 사고를 미리 막습니다. 제조의 우연을 필연으로 바꾸는 **'품질 완벽주의의 근간'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inreliable Measurement System - Variation caused by gauge/operator is too high. Measurement data cannot be trusted"
         return "PASS: Robust Metrology Foundation and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_cpk=1.67, nelson_rule_violations=0, sigma_level=5.0)
 print(engine.diagnose_process_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_process_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data spc-control-limits-and-out-of-control-events-v2026`와 연동되어, 전 세계 자동차 및 반도체 공장의 품질 데이터를 실시간 분석하고 불량 폭증 및 공정 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - quality-management-systems-qms-and-iso-9001-compliance

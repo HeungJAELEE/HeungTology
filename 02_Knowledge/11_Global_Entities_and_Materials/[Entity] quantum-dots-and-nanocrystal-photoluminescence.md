@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "quantum-dots-and-nanocrystal-photoluminescence"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] quantum-dots-and-nanocrystal-photoluminescence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Semiconductor particles a few nanometers in size that have optical and electronic properties that differ from larger particles due to quantum mechanics (Quantum Dots) and the specific phenomenon of light emission after absorbing photons (Photoluminescence), which is size-dependent."
-  physical_model: "N/A"
-Semantic:
-  tags: '["quantum-dots", "photoluminescence", "nanotechnology", "semiconductor-nanocrystals", "display-technology", "quantum-confinement", "photonics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectral_Purity_Audit: Evaluate the Full Width at Half Maximum (FWHM) of the emission spectrum to identify size distribution variance (Polydispersity) that degrades color purity.'
-    - 'Quantum_Yield_Check: Analyze the ratio of photons emitted to photons absorbed to verify the surface passivation quality and internal radiative efficiency of the nanocrystals.'
-    - 'Photo-stability_Scan: Monitor the ''Blinking'' behavior or bleaching rate of the quantum dots under continuous excitation to ensure long-term stability in display or sensing applications.'
-Trust Metrics:
+  description: "[Entity] quantum-dots-and-nanocrystal-photoluminescence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌈 Quantum Dots and Nanocrystal Photoluminescence
+# [Entity] quantum-dots-and-nanocrystal-photoluminescence
 
 ## 1. 개요 (Why: 인간적 통찰)
 크기에 따라 색깔이 변하는 보석이 있다면 어떨까요? **양자점(Quantum Dots) 및 나노 결정 광발광**은 물질의 크기를 머리카락 굵기의 수만 분의 일인 나노미터(nm) 단위로 조절하여, 세상에 없던 가장 순수한 색을 만들어내는 **'색의 나노 연금술'**입니다. 똑같은 재료라도 크게 만들면 빨간색, 작게 만들면 파란색 빛을 내뿜습니다. 자연이 정해놓은 색의 한계를 인간이 마음대로 조절할 수 있게 된 것입니다. TV 화면을 더 선명하게, 암세포를 더 밝게 찾아내는 **'빛의 나노 혁명'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Photo-stability - Rapid intensity drop under light exposure. Enhance Shell-growth and Passivation"
         return "PASS: Robust Nanocrystal Structure and Verified Long-term Operational Life Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fwhm_nm=22.0, quantum_yield_pct=98.5, emission_wavelength_nm=531.0)
 print(engine.diagnose_quantum_dot_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_quantum_dot_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data quantum-dot-quantum-yield-and-spectral-purity-v2026`와 연동되어, 전 세계 양자점 생산 라인의 데이터를 실시간 분석하고 색상 불일치 및 품질 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 디스플레이 문명의 색채 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - semiconductor-device-physics-and-band-gap-engineering

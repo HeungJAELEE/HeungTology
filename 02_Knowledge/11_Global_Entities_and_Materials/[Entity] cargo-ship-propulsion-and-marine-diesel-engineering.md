@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cargo-ship-propulsion-and-marine-diesel-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cargo-ship-propulsion-and-marine-diesel-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systems used to generate force to move a ship across water (Cargo Ship Propulsion) and the specialized engineering of large-scale, low-speed diesel engines that provide high torque and efficiency for global maritime trade (Marine Diesel Engineering)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cargo-ship", "marine-diesel", "propulsion-system", "shipbuilding", "two-stroke-engine", "propeller-physics", "imo-tier-iii"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Propulsion_Fidelity_Audit: Evaluate the ''Specific Fuel Oil Consumption'' (SFOC) and propeller slip to identify if the engine is operating at its maximum thermal efficiency point for the current sea state.'
-    - 'Mechanical_Integrity_Check: Analyze the cylinder pressure and exhaust temperature distribution to ensure ''Thermal Overload'' is not occurring in the giant two-stroke pistons.'
-    - 'Emission_Fidelity_Scan: Monitor the NOx/SOx scrubber performance and SCR (Selective Catalytic Reduction) efficiency to verify compliance with IMO Tier III environmental standards.'
-Trust Metrics:
+  description: "[Entity] cargo-ship-propulsion-and-marine-diesel-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Cargo Ship Propulsion and Marine Diesel Engineering
+# [Entity] cargo-ship-propulsion-and-marine-diesel-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 아파트 한 동 높이의 거대한 엔진이 수만 톤의 화물을 싣고 전 세계 대양을 가로지르는 광경을 상상해 보셨나요? **화물선 추진 및 선박용 디젤 공학**은 인류 문명의 90%를 옮기는 **'지구의 거대한 근육'** 기술입니다. 단 한 개의 실린더가 성인 남성 키보다 큰 이 거대한 엔진은, 가장 지독한 연료로도 지구상에서 가장 높은 효율을 뽑아내며 멈추지 않고 전진합니다. 세계 경제의 혈관을 흐르게 하는 **'해상 물류의 강력한 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe Propeller Cavitation - Risk of blade erosion and structural fatigue. Adjust ship speed or propeller pitch settings"
         return "PASS: Smooth Hydrodynamic Flow and Verified Propulsion Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sfoc_g_kwh=165.0, cylinder_max_pressure_bar=190.0, scrubber_efficiency_pct=99.0)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data marine-diesel-fuel-consumption-and-nox-emissions-v2026`와 연동되어, 전 세계 주요 컨테이너선 및 유조선의 항해 데이터를 실시간 분석하고 엔진 고장 및 환경 법규 위반 사고 확률을 0.001% 이하로 억제함으로써 지능형 해상 문명의 수송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - autonomous-underwater-vehicle-auv-and-sonar-navigation-physics

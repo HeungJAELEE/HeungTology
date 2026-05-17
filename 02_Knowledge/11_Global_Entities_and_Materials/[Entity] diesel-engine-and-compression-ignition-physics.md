@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diesel-engine-and-compression-ignition-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diesel-engine-and-compression-ignition-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An internal combustion engine in which ignition of the fuel is caused by the elevated temperature of the air in the cylinder due to mechanical compression (Diesel Engine) and the physical study of the high-pressure auto-ignition and power stroke cycles (Compression Ignition Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["diesel-engine", "compression-ignition", "thermodynamics", "internal-combustion", "efficiency", "torque", "industrial-drive"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Combustion_Fidelity_Audit: Evaluate the ''Compression Ratio'' ($r$) and fuel injection timing to identify if ''Diesel Knock'' or incomplete combustion is occurring, leading to excessive soot and efficiency loss.'
-    - 'Injection_Integrity_Check: Analyze the Common Rail pressure and nozzle spray pattern to ensure the fuel is atomized correctly for rapid auto-ignition at top dead center.'
-    - 'Thermal_Fidelity_Scan: Monitor the exhaust gas temperature (EGT) to verify that the turbocharger and emission control systems are operating within their stable thermal windows.'
-Trust Metrics:
+  description: "[Entity] diesel-engine-and-compression-ignition-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚚 Diesel Engine and Compression Ignition Physics
+# [Entity] diesel-engine-and-compression-ignition-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 불꽃 점화 장치(점화 플러그) 없이 어떻게 기름을 태워 거대한 트럭을 움직일 수 있을까요? **디젤 엔진 및 압축 점화(Compression Ignition) 물리**는 공기를 엄청난 압력으로 눌러서 생기는 '열기'만으로 연료를 스스로 터뜨리는 **'압력의 마찰 열역학'** 기술입니다. 가솔린 엔진보다 훨씬 강력한 힘(토크)과 뛰어난 연비를 자랑하는 이 기술은 인류의 물류와 산업을 지탱하는 거대한 '근육'입니다. 공기를 으깨어 불을 지피는 **'극한 압착의 에너지 변환'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Combustion Delay - High ignition lag detected. Risk of mechanical stress on connecting rods and bearings"
         return "PASS: Validated Ignition Timing and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rail_pressure_bar=1800.0, compression_psi=420.0, boost_pressure_psi=22.0)
 print(engine.diagnose_diesel_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_diesel_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data diesel-engine-torque-and-bsfc-v2026`와 연동되어, 전 세계 주요 상용차 및 건설 기계의 엔진 데이터를 실시간 분석하고 엔진 소손 및 연비 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 물류 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cetane-number-and-diesel-combustion-kinetics

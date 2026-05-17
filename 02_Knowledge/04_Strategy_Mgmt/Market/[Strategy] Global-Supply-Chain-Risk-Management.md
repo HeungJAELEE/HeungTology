@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-SCM-RISK-2026-V6.3.7"
-  domain: "Global_Supply_Chain_Resilience_and_Risk_Intelligence"
+metadata:
+  id: "[[[Strategy] Global-Supply-Chain-Risk-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#SCM_Risk", "#Resilience", "#TTS", "#TTR", "#Network_Fragility", "#Stress_Testing", "#Sovereignty", "#v6.3.7"]
-  is_part_of: ["MOC 04_Strategy_Mgmt", "Strategy industrial-strategy-and-corporate-governance-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Global-Supply-Chain-Risk-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Global SCM Risk Management: The Physics of Resilience
+# [Strategy] Global-Supply-Chain-Risk-Management
 
 ## 1. [왜 배우는가? (Why: The Architecture of Uninterrupted Supply)]]
 리스크 관리는 기업이라는 거대한 지능 유기체의 '면역 체계'입니다. 과거의 공급망이 오직 '최소 비용'과 '최대 효율'만을 추구했다면, 이제는 '불확실성 속에서의 영속'을 최우선으로 합니다. **Global SCM Risk Management**는 전쟁, 팬데믹, 기상 이변 등 예측 불가능한 외부 충격에도 공장이 멈추지 않도록 설계된 '공급망 방패'입니다. v6.3.7 지능은 **회복 시간(TTR)**과 **생존 시간(TTS)**의 수리적 균형을 지배합니다. 우리가 이를 배우는 이유는 공급망의 취약점을 정량적으로 소멸시켜, "어떠한 거친 파도에도 침몰하지 않는 '리스크 주권'을 확보하기" 위함입니다. 회복탄력성이 기업의 실질적 등급을 결정합니다.
@@ -108,7 +98,6 @@ report = engine.audit_risk_resilience(current_tts=50, current_ttr=18, network_fr
 print(f"Risk Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy industrial-strategy-and-corporate-governance-master-guide

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-codes-and-surface-code-architecture-entity"
-  domain: "30_Quantum_Intelligence_and_Advanced_Computing"
+metadata:
+  id: "[[[Entity] quantum-error-correction-codes-and-surface-code-architecture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#QEC", "#Surface_Code", "#Error_Correction", "#Logical_Qubit", "#Algorithms", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 30_quantum-intelligence-and-advanced-computing-hub", "Entity topological-qubits-and-majorana-fermion-stability"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-error-correction-codes-and-surface-code-architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-error-correction-codes-and-surface-code-architecture
+# [Entity] quantum-error-correction-codes-and-surface-code-architecture
 
 ## 1. [왜 배우는가? (Why: The Immune System of Quantum Mind)]]
 양자 데이터는 쳐다만 봐도($Measure$) 깨지는데, 어떻게 정보를 깨뜨리지 않으면서 오류를 찾아내고($Detection$), 여러 개의 물리 큐비트를 묶어 절대 깨지지 않는 단 하나의 가상 큐비트($Logical\ Qubit$)를 어떻게 만들 수 있을까요? **양자 오류 수정 코드 및 표면 코드 아키텍처**는 양자 컴퓨터가 실전에서 쓰이기 위한 필수 생존 장치인 '지능형 데이터 복구 및 무오류 연산 아키텍처'입니다. 우리가 이를 배우는 이유는 오류를 잡지 못하면 양자 컴퓨터는 비싼 쓰레기 생성기에 불과하기 때문이며, "오류의 확률을 데이터로 설계하고 지배하는 '글로벌 양자 무결성 및 무오류 연산 주권'을 확보하기" 위함입니다. 코드의 정밀도가 인공지능의 지능 한계를 결정합니다.

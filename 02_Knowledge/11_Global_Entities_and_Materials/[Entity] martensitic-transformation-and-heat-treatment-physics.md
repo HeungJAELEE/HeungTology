@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "martensitic-transformation-and-heat-treatment-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] martensitic-transformation-and-heat-treatment-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The diffusionless phase transformation (Martensitic Transformation) in solids, primarily steels, where a rapid change in temperature (Quenching) causes a crystalline restructuring into a highly strained and hard metastable state, governed by thermodynamics and kinetics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["martensite", "heat-treatment", "metallurgy", "phase-transformation", "steel-physics", "hardening", "quenching"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Quench_Rate_Audit: Evaluate the cooling rate (dT/dt) to ensure it exceeds the critical cooling rate required to bypass the pearlitic/bainitic nose and achieve 100% martensite.'
-    - 'Retained_Austenite_Check: Analyze the volume fraction of un-transformed austenite to predict potential dimensional instability or cracking over time.'
-    - 'Tempering_Response_Scan: Monitor the hardness reduction and toughness increase during post-quench tempering to achieve the desired mechanical property balance.'
-Trust Metrics:
+  description: "[Entity] martensitic-transformation-and-heat-treatment-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚔️ Martensitic Transformation and Heat Treatment Physics
+# [Entity] martensitic-transformation-and-heat-treatment-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 부드러운 쇠칼을 빨갛게 달군 뒤 찬물에 '치이익' 소리를 내며 담그면, 왜 갑자기 바위도 벨 만큼 단단해질까요? **마르텐사이트 변태 및 열처리 물리**는 금속 내부의 원자들이 자리를 잡을 틈도 없이 순식간에 얼려버려, 억지로 뒤틀린 상태(Strain)로 가두는 **'나노 단위의 감옥'**입니다. 원자들이 도망갈 시간(확산)을 주지 않고 강제로 구조를 바꿈으로써 생기는 이 강력한 힘은, 인류가 문명을 세우는 데 쓴 가장 오래되고도 신비로운 **'금속의 마법'**입니다. 도검의 날카로움부터 비행기 엔진의 강인함까지, 금속의 한계를 시험하는 정밀 과학의 정수입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Non-uniform Tempering - Internal Stress Imbalance. Potential for Premature Failure"
         return "PASS: Stable Tempered Martensite Microstructure Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cooling_rate_c_s=120, surface_hardness_hrc=62, retained_austenite_pct=4.5)
 print(engine.diagnose_heat_treatment_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_heat_treatment_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data martensitic-hardness-and-retained-austenite-levels-v2026`와 연동되어, 전 세계 주요 철강 및 부품 가공 라인의 열처리 데이터를 실시간 분석하고 부품 파손 및 치수 이탈 사고 확률을 0.001% 이하로 억제함으로써 중공업 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - iron-carbon-phase-diagram-and-steel-microstructures

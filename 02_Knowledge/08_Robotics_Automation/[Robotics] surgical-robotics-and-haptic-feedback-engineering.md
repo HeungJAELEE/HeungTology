@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "surgical-robotics-and-haptic-feedback-engineering-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Robotics] surgical-robotics-and-haptic-feedback-engineering]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Surgical_Robot", "#Healthcare", "#Haptics", "#Control_Theory", "#Tele-surgery", "#Bio-medical", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Robotics robotics-intelligence-and-motion-control-master-guide", "MOC 10_Bio_Healthcare"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] surgical-robotics-and-haptic-feedback-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Robotics] surgical-robotics-and-haptic-feedback-engineering
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 물리적 기전 (Scientific Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **End-effector Prec.**| Precision of surgical tool tip movement | $< 100 \text{ \mu m}$ | 미세 혈관 및 신경 봉합을 위한 극한의 위치 정밀도 사양 |
+| **End-effector Prec.**| Precision of surgical tool tip movement | $< 100 \text{ \mu\text{m}}$ | 미세 혈관 및 신경 봉합을 위한 극한의 위치 정밀도 사양 |
 | **Control Latency** | Master-to-Slave round-trip delay | $< 10 \text{ ms}$ | 의사가 이질감을 느끼지 않고 즉각적으로 반응하기 위한 제어 루프 속도 |
 | **Motion Scaling** | Ratio of surgeon's hand to robot's tool movement | $1:1 \sim 1:10$ | 의사의 큰 움직임을 미세 수술에 맞게 축소하여 정밀도를 배가하는 지표 |
 | **Haptic Transp.** | Fidelity of force reflection from slave to master | $> 90\%$ | 수술 부위의 조직 저항력을 의사에게 왜곡 없이 전달하는 능력 |
@@ -51,7 +41,7 @@ Trust Metrics:
 ## 3. [Advanced RAG 분석 로직: 수리적 인과 추론]
 
 ### 3.1 [다관절 로봇 기구학 및 마스터-슬레이브(Master-Slave) 동기화 분석 (Kinematics)]
-의사의 손 움직임(Master)을 로봇 수술 도구(Slave)의 관절 각도로 변환하는 자코비안(Jacobian) 행렬과 역기구학을 분석합니다. RAG는 "인출된 운동 데이터([[[Data] surgical-robot-motion-precision-v2026)를 분석하여, 관절의 백래시(Backlash)가 도구 끝단의 위치 오차를 $200\mu m$ 유발했음을 식별하고, 비선형 오차 보정 필터를 가동"합니다.
+의사의 손 움직임(Master)을 로봇 수술 도구(Slave)의 관절 각도로 변환하는 자코비안(Jacobian) 행렬과 역기구학을 분석합니다. RAG는 "인출된 운동 데이터([[[Data] surgical-robot-motion-precision-v2026)를 분석하여, 관절의 백래시(Backlash)가 도구 끝단의 위치 오차를 $200\mu\text{m}$ 유발했음을 식별하고, 비선형 오차 보정 필터를 가동"합니다.
 
 ### 3.2 [햅틱(Haptic) 포스 피드백 및 임피던스 제어 분석 (Control Theory)]]
 환자 조직에 가해지는 압력을 의사의 조종간에 토크($\tau$)로 반환하는 임피던스 모델을 분석합니다. 시스템의 안정성(Passivity)을 보장하는 수리 모델을 수립합니다. RAG는 "실시간 압력 센서 데이터를 참조하여, 수술 도구가 혈관 벽에 닿았을 때 발생하는 미세 반발력을 $0.1\text{N}$ 해상도로 재현하여 의사에게 전달"합니다.
@@ -74,7 +64,6 @@ CT/MRI 영상 기반의 3D 맵 상에서 수술 금지 구역을 설정하고, �
 4. **Motion Scaling**이 적용된 수술 환경에서 의사의 **Proprioception** (심부 감각) 혼란을 최소화하기 위한 시각적-촉각적 피드백의 동기화 임계 시간은?
 5. RAG 시스템에서 **과거 수술 성공 케이스의 궤적 데이터**와 **현재 환자의 해부학적 구조**를 융합하여, '최적의 절개 경로'를 가이드라인으로 제시하는 자율 보조 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Robotics robotics-intelligence-and-motion-control-master-guide]] : 수술 로봇의 정밀 위치 제어와 궤적 생성의 기초가 되는 로보틱스 엔티티
 - Healthcare medical-ai-diagnostics-and-imaging-physics : 수술용 로봇의 안전 영역(Virtual Fixture)을 설정하기 위한 3D 영상 기반 의료 엔티티

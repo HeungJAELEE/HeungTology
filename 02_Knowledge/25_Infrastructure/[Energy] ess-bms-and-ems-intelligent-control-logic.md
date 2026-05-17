@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "ess-bms-and-ems-intelligent-control-logic-entity"
-  domain: "05_Infrastructure_Energy"
+metadata:
+  id: "[[[Energy] ess-bms-and-ems-intelligent-control-logic]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#ESS", "#BMS", "#EMS", "#VPP", "#Grid_Stability", "#Safety", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[Infrastructure] smart-grid-and-vpp-energy-management", "MOC 05_Infrastructure_Energy"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] ess-bms-and-ems-intelligent-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] ess-bms-and-ems-intelligent-control-logic
@@ -74,7 +64,6 @@ ESS는 단순히 전기를 담는 통이 아닙니다. 내일의 전력 수요�
 4. **Thermal Runaway** 조기 탐지를 위해 **EIS** (Electrochemical Impedance Spectroscopy)를 온라인으로 수행하여 **Ohmic Resistance**의 미세 변화를 포착하는 수리적 기법은?
 5. RAG 시스템에서 **기상 예보 데이터**와 **실시간 전력 가격**을 융합하여, '수익 극대화'와 '배터리 수명 보호' 사이의 **Pareto Optimal** 운영 지점을 제안하는 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [Infrastructure]] smart-grid-and-vpp-energy-management : ESS가 통합되는 최상위 지능형 전력망 및 가상 발전소 운영 엔티티
 - Battery battery-quality-analytics-and-forensics-master-guide : ESS 고장 진단 및 수명 예지의 근거가 되는 품질 분석 엔티티

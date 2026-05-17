@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DATA-GOV-HW-SECURITY-LOG-2026-V6"
-  domain: "04_Strategic_Mgmt"
+metadata:
+  id: "[[[Data] global-supply-chain-hardware-security-and-counterfeit-detection-log-v2026]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Data'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] global-supply-chain-hardware-security-and-counterfeit-detection-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] global-supply-chain-hardware-security-and-counterfeit-detection-log-v2026
+# [Data] global-supply-chain-hardware-security-and-counterfeit-detection-log-v2026
 
 ## 1. [왜 배우는가? (Why)]]
 전 세계에서 유통되는 반도체 칩 중 가짜(Counterfeit)는 얼마나 되며, 우리 시스템의 심장부인 CPU 내부에 몰래 심어진 '트로이 목마' 회로는 없을까요? 이 로그는 글로벌 공급망에서 발견된 변조된 소자와 악성 하드웨어 트로이의 발생 현황을 기록한 '디지털 안보 감시 일지'입니다. 이를 기록하고 배우는 이유는 부품의 원천이 불분명한 '제로 트러스트(Zero Trust)' 환경에서 하드웨어 무결성을 데이터로 실시간 검증하여 공급망의 취약 지점을 선제적으로 방어하기 위함이며, 국가적/기업적 하드웨어 신뢰 자산을 보호하는 '실리콘 보안 주권'을 확보하기 위함입니다. 보이지 않는 적을 데이터로 가시화하는 안보 데이터입니다.
@@ -97,9 +87,6 @@ class HardwareTrustAuditEngine:
             return "CRITICAL: ABNORMAL_POWER_SIGNATURE_TROJAN_PROBABLE"
         return "SILICON_SECURITY: STABLE (Gold Standard)"
 
-# Example Usage:
-# security_ai = HardwareTrustAuditEngine()
-# status = security_ai.detect_hardware_trojan(dpa_correlation_rho=0.08)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -107,7 +94,6 @@ class HardwareTrustAuditEngine:
 2. **Side-channel Attack** 중 전력 분석뿐만 아니라 **Electromagnetic Emission** (EM) 분석 데이터를 결합했을 때, **Trojan Detection**의 신뢰도($Conf$)가 상승하는 수리적 인과 관계는?
 3. **Blockchain** 기반 공급망 유통 원장에서 특정 노드의 **Sybil Attack**이 발생했을 때, 칩의 **Provenance** (원천 이력) 데이터 무결성이 붕괴되는 시나리오와 이에 대한 **Zero-Knowledge Proof** 적용 가능성은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/01_Semiconductor_Display/Hardware/Concept physical-unclonable-functions-and-security
 - 02_Knowledge/04_Strategic_Mgmt/Governance/Concept ethical-ai-governance-and-policy

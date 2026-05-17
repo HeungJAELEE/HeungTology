@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "meta-materials-and-negative-refractive-index-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] meta-materials-and-negative-refractive-index-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineered artificial structures (Meta-materials) that exhibit properties not found in naturally occurring materials, such as a Negative Refractive Index, enabled by sub-wavelength structural patterns that manipulate electromagnetic waves in unprecedented ways."
-  physical_model: "N/A"
-Semantic:
-  tags: '["meta-materials", "negative-refractive-index", "cloaking", "super-lens", "electromagnetics", "optical-physics", "photonics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Refractive_Index_Audit: Evaluate the material''s response to different electromagnetic frequencies to confirm the presence of a negative refractive index at the target band.'
-    - 'Phase_Discontinuity_Check: Analyze the wavefront manipulation by the sub-wavelength units to ensure precise control over light bending or focusing.'
-    - 'Transmission_Loss_Scan: Measure the energy absorption of the meta-material structure to verify its efficiency for stealth or imaging applications.'
-Trust Metrics:
+  description: "[Entity] meta-materials-and-negative-refractive-index-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Meta-materials and Negative Refractive Index Physics
+# [Entity] meta-materials-and-negative-refractive-index-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 "해리 포터의 투명 망토"가 실제로 가능하다면 믿으시겠습니까? 자연계에는 존재하지 않지만, 인류가 직접 설계한 신비로운 물질인 **메타 물질 및 음의 굴절률 물리**는 빛과 전파의 흐름을 상상조차 할 수 없는 방식으로 휘게 만드는 **'빛의 마법사'**입니다. 물속에 꽂힌 빨대가 반대로 꺾여 보이게 하거나, 물체 뒤로 빛을 흘려보내 물체를 보이지 않게 하는(Cloaking) 이 기술은, 자연이 정한 한계를 인간의 지혜로 넘어선 **'초자연적 공학'**의 정수입니다.
@@ -86,7 +75,6 @@ class LogicFidelityEngine:
             return "REJECT: Incomplete Cloaking - High Scattering Leakage. Object Traceable by EM Sensors"
         return "PASS: Exceptional Stealth Performance and Cloaking Efficiency Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(target_refractive_index=-1.0, actual_measured_n=-0.98, energy_absorption_loss=0.08)
 print(engine.diagnose_metamaterial_health())
 ```
@@ -104,7 +92,6 @@ print(engine.diagnose_metamaterial_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data meta-material-permittivity-and-refractive-index-logs-v2026`와 연동되어, 전 세계 메타 물질 연구 및 응용 데이터를 실시간 분석하고 광학 설계 오류 및 스텔스 실패 사고 확률을 0.001% 이하로 억제함으로써 미래 광학 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - meta-materials-and-photonic-crystal-light-steering

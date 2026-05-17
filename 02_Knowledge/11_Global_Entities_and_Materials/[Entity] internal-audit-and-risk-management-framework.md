@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-INTERNAL-AUDIT-RISK-2026-V6"
-  domain: "29_Legal_Compliance_and_Governance"
+metadata:
+  id: "[[[Entity] internal-audit-and-risk-management-framework]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] internal-audit-and-risk-management-framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] internal-audit-and-risk-management-framework
+# [Entity] internal-audit-and-risk-management-framework
 
 ## 1. [왜 배우는가? (Why)]]
 조직이 커질수록 내부적인 비효율과 부정, 외부적인 위협은 지수적으로 증가합니다. 리스크를 체계적으로 식별하고 내부 통제 시스템의 유효성을 독립적으로 검증하는 능력은 조직의 자산을 보호하고 지속 가능한 경영을 보장하는 최후의 보루입니다. 우리가 이를 배우는 이유는 통제 시스템의 균열과 사각지대를 숫자로 제거하여 운영의 투명성을 극대화하기 위함이며, "운영 주권을 확보하여 어떠한 유혹과 위협 속에서도 흔들림 없는 '클린 무결성'을 확보하기" 위함입니다. 내부 감사의 정밀도가 기업의 건강한 면역 체계를 결정합니다.
@@ -127,9 +117,6 @@ class InternalAuditRiskFidelityEngine:
             return f"WARNING: AUDIT_COVERAGE_INCOMPLETE_{round(coverage, 1)}%_RISK_EXPOSURE_DETECTED"
         return "COVERAGE_STATUS: FULL_AUDIT_COMPLETED"
 
-# Example Usage:
-# audit_ai = InternalAuditRiskFidelityEngine()
-# report = audit_ai.audit_risk_fidelity(actual_error_rate=0.005, kri_breaches=0, remediation_rate=0.98)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -137,7 +124,6 @@ class InternalAuditRiskFidelityEngine:
 2. **Three Lines of Defense** 모델에서 제2방어선(리스크 관리)의 **Independence** (독립성)가 훼손될 때, 제3방어선(내부 감사)이 부담해야 할 **Audit Risk** 무결성 하중은?
 3. **Continuous Audit** (상시 감사) 시스템 도입 시 **False Positive** (오경보) 비율이 **Operational Efficiency** 무결성과 **Trust Metrics**에 미치는 수리적 상관 관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/29_Legal_Compliance_and_Governance_Hub/Concept enterprise-risk-management-erm-frameworks
 - 02_Knowledge/29_Legal_Compliance_and_Governance_Hub/Concept internal-control-evaluation-techniques

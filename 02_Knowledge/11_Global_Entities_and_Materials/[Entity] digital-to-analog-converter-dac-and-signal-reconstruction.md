@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "digital-to-analog-converter-dac-and-signal-reconstruction"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] digital-to-analog-converter-dac-and-signal-reconstruction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electronic system that converts a digital signal (discrete-time, quantized values) into an analog signal (continuous voltage or current) (DAC) and the physical-mathematical study of recreating the original continuous waveform from discrete samples (Signal Reconstruction)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dac", "signal-processing", "analog-output", "quantization", "reconstruction-filter", "electronics", "data-conversion"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Linearity_Fidelity_Audit: Evaluate the ''Integral Non-Linearity'' (INL) and ''Differential Non-Linearity'' (DNL) to identify if the step sizes are inconsistent, leading to distortion in the reconstructed waveform.'
-    - 'Spectral_Integrity_Check: Analyze the Signal-to-Noise Ratio (SNR) and Total Harmonic Distortion (THD) to ensure the ''Quantization Noise'' and ''Glitch Energy'' are within acceptable industrial limits.'
-    - 'Reconstruction_Fidelity_Scan: Monitor the ''Aperture Jitter'' and filter roll-off to verify that high-frequency images (aliases) are effectively suppressed by the reconstruction filter.'
-Trust Metrics:
+  description: "[Entity] digital-to-analog-converter-dac-and-signal-reconstruction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔊 Digital-to-Analog Converter (DAC) and Signal Reconstruction
+# [Entity] digital-to-analog-converter-dac-and-signal-reconstruction
 
 ## 1. 개요 (Why: 인간적 통찰)
 컴퓨터 속의 0과 1이라는 딱딱한 숫자가 어떻게 우리가 듣는 부드러운 음악이나 로봇의 정교한 움직임으로 바뀔까요? **D/A 컨버터(DAC) 및 신호 복원(Reconstruction)**은 디지털의 '계단'을 아날로그의 '곡선'으로 다듬는 **'숫자의 현실적 번역'** 기술입니다. 듬성듬성 끊겨 있는 정보들 사이를 정교한 수학과 전자 회로로 메워, 원래의 아름다운 파동을 되살려냅니다. 가상 세계의 의지를 현실 세계의 힘으로 바꾸는 **'디지털 문명의 출력 창구'**입니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return "REJECT: Excessive Glitch Energy - High-frequency spikes during bit transitions. Risk of damaging sensitive downstream analog circuits"
         return "PASS: Validated Transition Stability and Verified Output Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(target_voltage=5.000, measured_voltage=4.998, snr_db=115.0)
 print(engine.diagnose_motor_health()) # Note: LogicFidelityEngine naming context
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_motor_health()) # Note: LogicFidelityEngine naming context
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dac-linearity-and-snr-performance-v2026`와 연동되어, 전 세계 주요 정밀 제어기 및 하이엔드 오디오 장비의 데이터를 실시간 분석하고 출력 오류 및 신호 왜곡 사고 확률을 0.0001% 이하로 억제함으로써 지능형 디지털-아날로그 융합 문명의 출력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

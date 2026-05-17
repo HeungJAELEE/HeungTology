@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrolytic-cell-and-faradays-laws-of-electrolysis"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrolytic-cell-and-faradays-laws-of-electrolysis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrochemical device that uses electrical energy to drive a non-spontaneous chemical reaction (Electrolytic Cell) and the physical laws that quantify the relationship between the amount of electricity passed and the mass of substance altered at the electrodes (Faraday's Laws)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electrolysis", "electrolytic-cell", "faraday-law", "electrochemistry", "aluminum-smelting", "electroplating", "energy-storage"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Electrolysis_Fidelity_Audit: Evaluate the ''Current Efficiency'' ($\\eta$) by comparing the actual mass produced against Faraday''s theoretical value to identify if ''Side Reactions'' (like hydrogen evolution) are wasting energy.'
-    - 'Potential_Integrity_Check: Analyze the cell voltage ($E_{cell}$) to ensure that the ''Overpotential'' is minimized, reducing heat generation and maximizing the high-fidelity chemical conversion.'
-    - 'Transport_Fidelity_Scan: Monitor the electrolyte concentration and temperature to verify that the ''Mass Transport'' of ions to the electrode surface is not limiting the production rate.'
-Trust Metrics:
+  description: "[Entity] electrolytic-cell-and-faradays-laws-of-electrolysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Electrolytic Cell and Faraday's Laws of Electrolysis
+# [Entity] electrolytic-cell-and-faradays-laws-of-electrolysis
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기를 부어서 금속을 만들거나 물을 쪼개어 수소를 만드는 일이 어떻게 가능할까요? **전해조(Electrolytic Cell) 및 패러데이 전기분해 법칙**은 전기에너지를 화학에너지로 '강제로' 가두는 **'에너지의 물질화'** 기술입니다. 자연은 원래대로 있으려 하지만, 우리는 전기의 힘으로 그 고집을 꺾어 알루미늄을 뽑아내고 금을 입힙니다. 전기가 흐른 만큼 정확히 물질이 변한다는 자연의 정직한 약속을 이용한 **'현대 연금술의 물리적 토대'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Overpotential - Energy being wasted as heat at the electrode surface. Check for surface oxide films or insufficient catalyst activity"
         return "PASS: Validated Electrode Kinetics and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(applied_current_a=1000.0, theoretical_mass_g=37.3, actual_mass_g=35.5)
 print(engine.diagnose_electrolysis_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_electrolysis_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data electrolytic-efficiency-and-current-yield-v2026`와 연동되어, 전 세계 주요 수전해 및 금속 제련 플랜트의 데이터를 실시간 분석하고 에너지 낭비 및 전극 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지-물질 변환 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electroless-plating-and-autocatalytic-deposition-physics

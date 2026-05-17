@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "nanoparticle-targeting-precision-and-bio-distribution-log-v2026"
-  domain: "24_Advanced_Medicine_and_Longevity"
+metadata:
+  id: "[[[Life Science & Healthcare] nanoparticle-targeting-precision-and-bio-distribution-log-v2026]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Data", "#Medicine", "#Longevity", "#Nanomedicine", "#Targeting_Precision", "#Bio-distribution", "#Drug_Delivery", "#Performance_Log", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 61_advanced-medicine-and-longevity-hub", "Entity nanomedicine-and-targeted-drug-delivery-kinetics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] nanoparticle-targeting-precision-and-bio-distribution-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] nanoparticle-targeting-precision-and-bio-distribution-log-v2026
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Target. Accur.**| Percentage of dose reaching the tumor | $18.5 \%$ | 기존 방식($<1\%$) 대비 비약적인 명중률 상승을 보여주는 무결성 |
 | **Liver Accum.** | Percentage of dose sequestered in liver | $32.0 \%$ | 간에 쌓이는 독성을 획기적으로 낮췄음을 보여주는 방어 무결성 |
 | **Circul. t1/2** | Duration of active presence in blood | $24.8 \text{ hr}$ | 목표지에 도착할 때까지 충분히 오래 버팀을 보여주는 동역학 |
-| **Infilt. Depth** | Micrometers penetrated into solid tumor | $150 \text{ \mu m}$ | 겉만 때리는 게 아니라 속까지 침투했음을 보여주는 물리 무결성 |
+| **Infilt. Depth** | Micrometers penetrated into solid tumor | $150 \text{ \mu\text{m}}$ | 겉만 때리는 게 아니라 속까지 침투했음을 보여주는 물리 무결성 |
 | **Immune Escape** | Survival rate against macrophage phagocytosis| $98.1 \%$ | 면역 경찰의 눈을 완벽히 피해 다녔음을 보여주는 정보 지능 |
 | **Excretion R.** | Rate of clearance from the body | $15.0 \% \text{/day}$ | 일을 마친 유도탄이 몸 밖으로 잘 나감을 보여주는 안전 무결성 |
 | **Batch Consist.**| Variance in particle size between batches | $< 3.0 \%$ | 대량 생산 시에도 똑같은 성능이 나옴을 입증하는 제조 무결성 |

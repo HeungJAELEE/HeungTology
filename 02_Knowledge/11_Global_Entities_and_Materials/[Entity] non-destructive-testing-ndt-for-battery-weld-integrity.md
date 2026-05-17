@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "non-destructive-testing-ndt-for-battery-weld-integrity"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] non-destructive-testing-ndt-for-battery-weld-integrity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The set of inspection techniques (Non-Destructive Testing) used to evaluate the quality and reliability of electrical connections and structural welds in batteries without damaging the sample, focusing on detecting internal defects like pores, cracks, or insufficient penetration."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ndt", "battery-manufacturing", "weld-integrity", "ultrasonic-testing", "x-ray-inspection", "eddy-current", "laser-welding", "metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Defect_Detection_Audit: Evaluate the Signal-to-Noise Ratio (SNR) of the NDT sensor to ensure sub-millimeter defects in the weld bead are reliably identified.'
-    - 'Penetration_Depth_Check: Analyze the X-ray or Ultrasonic scan profile to verify that the weld has reached the required depth for stable electrical conductivity.'
-    - 'Throughput_Alignment_Scan: Monitor the inspection speed of the NDT system to ensure it matches the high-speed production line without creating a metrology bottleneck.'
-Trust Metrics:
+  description: "[Entity] non-destructive-testing-ndt-for-battery-weld-integrity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔍 Non-Destructive Testing (NDT) for Battery Weld Integrity
+# [Entity] non-destructive-testing-ndt-for-battery-weld-integrity
 
 ## 1. 개요 (Why: 인간적 통찰)
 배터리를 다 만들었는데, 안쪽 깊숙한 곳의 용접이 살짝 떨어져 있다면 어떻게 알 수 있을까요? 뜯어서 확인할 수도 없고 말이죠. **배터리 용접 무결성을 위한 비파괴 검사(NDT)**는 제품을 망가뜨리지 않고 속을 들여다보는 **'배터리용 투시력'**입니다. 초음파나 X-레이를 이용해 금속 내부에 숨은 미세한 공기 방울이나 금(Cracks)을 찾아내는 기술입니다. 단 한 군데의 부실한 용접이 화재나 폭발로 이어질 수 있는 배터리 산업에서, NDT는 인류의 안전을 지키는 **'나노 단위의 파수꾼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Signal Attenuation - Unable to Confirm Full Weld Penetration. Connection Weak"
         return "PASS: Clear Signal Contrast and Verified Weld Depth Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(detection_sensitivity_mm=0.08, false_call_rate=0.012, scan_throughput_uph=1200)
 print(engine.diagnose_ndt_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ndt_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data battery-weld-defect-rate-and-ndt-accuracy-v2026`와 연동되어, 전 세계 배터리 기가팩토리의 검사 데이터를 실시간 분석하고 불량품 유출 및 화재 사고 확률을 0.001% 이하로 억제함으로써 에너지 저장 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 06_battery-and-energy-storage-intelligence-hub
 - laser-welding-physics-and-battery-tab-joining

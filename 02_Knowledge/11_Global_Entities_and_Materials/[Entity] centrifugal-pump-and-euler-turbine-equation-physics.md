@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "centrifugal-pump-and-euler-turbine-equation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] centrifugal-pump-and-euler-turbine-equation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine that uses a rotating impeller to increase the pressure and flow of a fluid (Centrifugal Pump) and the fundamental physical law that relates the change in angular momentum of the fluid to the energy transferred by the impeller (Euler Turbine Equation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["centrifugal-pump", "euler-equation", "pump-physics", "fluid-mechanics", "impeller", "bernoulli", "hydraulic-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Hydraulic_Fidelity_Audit: Evaluate the ''Operating Point'' on the H-Q curve to identify if the pump is running far from the Best Efficiency Point (BEP), which leads to excessive vibration and heat.'
-    - 'Euler_Integrity_Check: Analyze the velocity triangles at the impeller exit to ensure the fluid is gaining the intended angular momentum without internal ''Slip'' or recirculation.'
-    - 'Structural_Fidelity_Scan: Monitor the shaft power and torque to verify that the ''Mechanical Efficiency'' is maintained and no internal friction or bearing wear is occurring.'
-Trust Metrics:
+  description: "[Entity] centrifugal-pump-and-euler-turbine-equation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Centrifugal Pump and Euler Turbine Equation Physics
+# [Entity] centrifugal-pump-and-euler-turbine-equation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 물속에서 숟가락을 빠르게 휘저으면 물이 밖으로 튀어나가려는 힘을 느껴본 적 있으신가요? **원심 펌프 및 오일러 터빈 방정식 물리**는 바로 그 '휘두르는 힘'을 이용해 물을 수백 미터 높이로 쏘아 올리는 **'액체의 회전 추진'** 기술입니다. 펌프의 심장인 임펠러가 춤을 추듯 돌면서 액체에 에너지를 불어넣으면, 액체는 엄청난 속도와 압력을 얻어 우리 집 수도꼭지까지 달려옵니다. 인류 문명의 물과 피를 돌게 하는 **'유체 이동의 위대한 조력자'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mechanical Seal Integrity Failure - Liquid leakage detected at the shaft. Risk of bearing contamination and environmental hazard"
         return "PASS: Tight Sealing Integrity and Verified System Safety Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(actual_head_m=45.0, theoretical_head_m=55.0, bep_deviation_pct=5.5)
 print(engine.diagnose_pump_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_pump_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data centrifugal-pump-performance-curve-and-efficiency-v2026`와 연동되어, 전 세계 주요 플랜트의 실시간 펌프 데이터를 분석하고 효율 저하 및 베어링 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 유체 문명의 순환 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cavitating-pump-and-npsh-optimization-logic

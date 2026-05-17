@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Autonomous-Driving-Architecture"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Autonomous-Driving-Architecture]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Autonomous-Driving-Architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Autonomous-Driving-Architecture
+# [Strategy] Autonomous-Driving-Architecture
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 더 이상 운전대를 잡지 않아도 되는 시대로 가고 있습니다. 자율주행 아키텍처(Autonomous-Driving-Architecture)는 자동차를 단순한 운송 수단에서 '바퀴 달린 컴퓨터'로 바꾸는 기술입니다. 수십 개의 카메라와 레이더가 쏟아내는 기가바이트 단위의 데이터를 0.1초 만에 분석하여, 보행자를 피하고 신호를 지키며 목적지까지 가장 안전하게 이동합니다. 이를 이해하는 것은 단순한 주행 보조를 넘어, 도시 전체의 교통 흐름을 최적화하고 운전의 고통에서 인류를 해방시키는 '모빌리티 혁명'의 핵심 두뇌를 설계하는 것입니다.
@@ -96,5 +86,4 @@ def process_autonomous_driving_loop(sensor_data, current_velocity):
 2. 'LiDAR-less' 비전 중심 전략(예: 테슬라 점유)과 'LiDAR-inclusive' 전략의 비용 대비 '인지 신뢰성'의 트레이드오프는?
 3. 'V2X(차량-사물 통신)'가 '온보드 센서(카메라/라이다)'만으로 해결할 수 없는 '비가시권(NLOS) 위험'을 어떻게 제거하는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

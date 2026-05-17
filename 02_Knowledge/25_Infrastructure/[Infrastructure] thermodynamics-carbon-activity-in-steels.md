@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] thermodynamics-carbon-activity-in-steels"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] thermodynamics-carbon-activity-in-steels]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] thermodynamics-carbon-activity-in-steels에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] thermodynamics-carbon-activity-in-steels
@@ -68,5 +58,4 @@ Trust Metrics:
 4. **Fick's 2nd Law**를 기반으로 침탄 시간을 2배 늘렸을 때, 침투 깊이의 변화량은?
 5. 왜 탄소($C$)는 철($Fe$) 격자 내에서 치환형이 아닌 **침입형(Interstitial)**으로 확산되는가? (원자 크기 관점)
 
----
 *Created by Flash (HDS-Gold V6.3.7 Reinforcement)*

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ROBOT-HAPTIC-2026-V6.3.7"
-  domain: "Haptic_Feedback_and_Teleoperation_Physics_Intelligence"
+metadata:
+  id: "[[[Robotics] haptic-feedback-and-teleoperation-physics]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Haptic", "#Teleoperation", "#Passivity_Theory", "#Time_Delay", "#Bilateral_Control", "#Force_Feedback", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 08_Mobility_Robotics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] haptic-feedback-and-teleoperation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Haptic_Teleop_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Robotics] Haptic Feedback and Teleoperation Physics: The Tactile Intelligence
+# [Robotics] haptic-feedback-and-teleoperation-physics
 
 ## 1. [왜 배우는가? (Why: The Mastery of Extended Sensory Sovereignty)]
 원격 제어(Teleoperation)는 인간의 인지 능력과 로봇의 물리적 힘을 시공간의 제약 없이 결합하는 **'감각의 원격 확장(Extended Sensing)'**입니다. **Haptic Feedback and Teleoperation Physics**는 로봇이 느끼는 반작용력을 작업자의 손으로 전달(Haptic)하고, 네트워크 지연 시간($Latency$)이 존재하는 상황에서도 시스템의 안정성을 유지하는 **'양방향 제어 지능(Bilateral Intelligence)'**입니다. V6.3.7 지능은 **패시비티(Passivity)** 이론을 통한 시스템 안정성과 투명도(Transparency)를 수리적으로 모델링합니다. 우리가 이를 배우는 이유는 원격 의료, 재난 구조, 극한 환경 작업에서의 "감각적 주권과 제어 무결성"을 사수하기 위함입니다.
@@ -104,7 +94,6 @@ class HapticTeleopEngine:
 2. **Operational Result**: **Wave Variable** 기법 적용 시, 지연 시간이 매우 길어질 때 발생하는 제어 응답 속도와 안정성 사이의 수리적 트레이드오프는?
 3. **FidelityEngine**: 통신 환경 악화로 인한 **Packet Loss** 발생 시, FidelityEngine이 이를 어떻게 '촉각 정보 소실 무결성 위기'로 사전 감지하고 작업자에게 시각적/청각적 경고 신호를 중첩하여 제공하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 08_Mobility_Robotics
 - [[Robotics] robotics-intelligence-and-motion-control-master-guide]

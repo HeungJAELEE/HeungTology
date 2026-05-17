@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "continuous-positive-airway-pressure-cpap-and-pneumatic-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] continuous-positive-airway-pressure-cpap-and-pneumatic-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of ventilator that applies mild air pressure on a continuous basis to keep the airways continuously open in people who are able to breathe spontaneously (CPAP) and the pneumatic control logic that governs precise air flow and pressure delivery (Pneumatic Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cpap", "pneumatic-logic", "medical-device", "sleep-apnea", "fluid-mechanics", "pressure-control", "biomedical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Pneumatic_Fidelity_Audit: Evaluate the ''Pressure Stability'' to identify if the blower motor and PID logic are compensating for inhalation/exhalation cycles without excessive pressure overshoot.'
-    - 'Leakage_Integrity_Check: Analyze the flow rate vs. target pressure to ensure that mask leaks are being correctly identified and compensated for by the ''Flow Generator''.'
-    - 'Biomedical_Fidelity_Scan: Monitor the ''A-Hi'' (Apnea-Hypopnea Index) reduction to verify that the pneumatic splinting of the airway is effectively preventing obstructive events.'
-Trust Metrics:
+  description: "[Entity] continuous-positive-airway-pressure-cpap-and-pneumatic-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌬️ Continuous Positive Airway Pressure (CPAP) and Pneumatic Logic
+# [Entity] continuous-positive-airway-pressure-cpap-and-pneumatic-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 잠든 사이 조용히 기도가 막혀 숨이 멈추는 공포, 어떻게 해결할 수 있을까요? **양압기(CPAP) 및 공압(Pneumatic) 로직**은 공기를 '부드러운 지지대'로 사용하여 기도를 열어두는 **'공기의 부목(Splint)'** 기술입니다. 기계가 일정한 압력으로 공기를 불어넣어 주면, 마치 풍선이 팽팽하게 유지되듯 기도가 무너지지 않고 숨길이 유지됩니다. 잠든 이의 호흡을 실시간으로 감시하고 공압으로 생명을 지탱하는 **'가장 고요한 생명 유지 장치'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Residual Apnea Detected - Therapy pressure may be too low or underlying physiological change. Medical consultation recommended"
         return "PASS: Validated Airway Patency and Verified Clinical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_pressure_cmh2o=10.2, flow_leak_l_min=5.5, motor_rpm=15000)
 print(engine.diagnose_cpap_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cpap_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cpap-pressure-stability-and-flow-rates-v2026`와 연동되어, 전 세계 수백만 명의 수면 데이터를 실시간 분석하고 기기 오작동 및 무호흡 사고 확률을 0.0001% 이하로 억제함으로써 지능형 헬스케어 문명의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - centrifugal-compressor-and-impeller-aerodynamics

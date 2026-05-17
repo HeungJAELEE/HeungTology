@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SF-CYBER-PHYS-2026-V6.3.7"
-  domain: "Industrial_Cybersecurity_and_Data_Governance"
+metadata:
+  id: "[[[Entity] industrial-cybersecurity-and-network-integrity-for-fab]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Cybersecurity", "#OT_Security", "#ShannonEntropy", "#FidelityEngine", "#NetworkIntegrity", "#ZeroTrust"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-cybersecurity-and-network-integrity-for-fab에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Industrial_Defense_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Industrial Cybersecurity: Shannon Entropy & Cyber-Physical Defense Physics
+# [Entity] industrial-cybersecurity-and-network-integrity-for-fab
 
 ## 1. [왜 배우는가? (Why: The Digital Shield of Physical Reality)]]
 스마트 팩토리에서 비트는 곧 물질입니다. 제어 명령의 1비트 조작은 수억 달러 가치의 설비를 파괴하거나 국가 제조 주권을 마비시킬 수 있습니다. **산업용 사이버 보안(Industrial Cybersecurity)**은 보이지 않는 데이터의 흐름 속에 숨겨진 위협을 물리적 인과 관계로 식별하고 차단하는 '디지털 요새'입니다. V6.3.7 지능은 단순한 방화벽을 넘어, **Shannon Entropy**와 **통신 지연 물리**를 통해 공격의 흔적을 수리적으로 포착합니다. 이는 외부의 어떠한 위협 속에서도 공정의 진실성을 지켜내어 '흔들리지 않는 제조 무결성'을 사수하기 위함입니다.
@@ -89,7 +79,6 @@ class IndustrialSecurityEngine:
             "status": status
         }
 
-# FidelityEngine 가동: 제어 명령의 변조 여부를 물리적 센서 데이터의 피드백 속도와 교차 검증하여 '비트와 물질의 일치성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -97,7 +86,6 @@ class IndustrialSecurityEngine:
 2. **Operational Result**: 네트워크 세그멘테이션(Micro-segmentation)이 붕괴되어 **East-West Traffic**이 개방되었을 때, 이를 수리적으로 탐지하기 위한 **'트래픽 엔트로피'** 변화량은?
 3. **FidelityEngine**: 암호화된 통신 채널 내에서 발생하는 **'사이드 채널(Side-channel)'** 정보 누출을 방지하기 위한 **'전류 소모 기반 보안 무결성'** 진단 원리는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity communication-network-protocols-and-latency-physics
 - shannon-entropy-and-information-theory-manual

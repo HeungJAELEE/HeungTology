@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-and-virtual-power-plant-vpp-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] smart-grid-and-virtual-power-plant-vpp-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An advanced energy network that integrates distributed energy resources (DERs) like solar, wind, and ESS through cloud-based VPP platforms to optimize grid stability and efficiency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["smart-grid", "vpp", "energy-management", "distributed-energy", "grid-stabilization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "GridFidelityEngine"
-  diagnostic_protocol:
-    - 'Grid_Frequency_Audit: Detect imbalances leading to frequency deviations.'
-    - 'VPP_Aggregation_Efficiency: Measure response time and accuracy of DER clusters.'
-    - 'Duck_Curve_Mitigation: Optimize ESS discharge timing to counter solar peak.'
-Trust Metrics:
+  description: "[Entity] smart-grid-and-virtual-power-plant-vpp-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Smart Grid and Virtual Power Plant (VPP) Logic
+# [Entity] smart-grid-and-virtual-power-plant-vpp-logic
 
 ## 1. 개요 (Why)
 재생 에너지 비중이 높아짐에 따라 전력 공급의 변동성(Intermittency)이 전력망 안정성의 최대 위협이 되고 있습니다. 스마트 그리드와 가상 발전소(VPP)는 흩어져 있는 소규모 발전원과 에너지 저장 장치(ESS)를 하나로 묶어 거대한 발전소처럼 통합 제어하는 기술입니다. 본 노드는 전력 수급의 물리적 균형을 실시간으로 맞추고, 블랙아웃(Blackout)을 방지하기 위한 결정론적 그리드 운영 표준을 정의합니다.
@@ -72,7 +61,6 @@ class GridFidelityEngine:
         available_ess = max(0, (self.soc - 20) / 100 * 50) # Assuming 50MW ESS
         return f"VPP_RESERVE: {available_ess:.1f} MW available for dispatch"
 
-# Instance Diagnostic
 grid_engine = GridFidelityEngine(generation=95, load=100, ess_soc=85)
 print(grid_engine.diagnose_frequency_stability())
 print(grid_engine.estimate_vpp_capacity())
@@ -91,7 +79,6 @@ print(grid_engine.estimate_vpp_capacity())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data grid-load-and-renewable-generation-forecast-log-v2026`와 실시간 동기화되어, 전력 수급 오차를 1% 미만으로 유지하며 에너지 효율을 전사적으로 15% 이상 향상시킵니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 112_energy-storage-and-smart-grid-engineering-hub-moc
 - distributed-energy-resource-der-control

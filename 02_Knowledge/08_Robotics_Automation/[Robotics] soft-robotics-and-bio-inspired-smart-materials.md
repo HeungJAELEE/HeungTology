@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "soft-robotics-and-bio-inspired-smart-materials-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Robotics] soft-robotics-and-bio-inspired-smart-materials]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Soft_Robotics", "#Smart_Materials", "#Bio-inspired", "#Continuum_Mechanics", "#Actuator", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Robotics robotics-intelligence-and-motion-control-master-guide", "MOC 08_Mobility_Robotics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] soft-robotics-and-bio-inspired-smart-materials에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Robotics] soft-robotics-and-bio-inspired-smart-materials
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Self-healing Material**에서 **Reversible Covalent Bond** (가역적 공유 결합)의 열적 해리 및 재결합 속도가 로봇의 정비 시간(Downtime)에 미치는 수리적 임팩트는?
 5. RAG 시스템에서 **생물학적 근육의 Hill-type 모델**과 **소프트 액추에이터 데이터**를 융합하여, '생체 모방형 보행 로봇'의 에너지 효율을 극대화하는 보행 패턴 최적화 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Robotics robotics-intelligence-and-motion-control-master-guide]] : 소프트 로봇 제어의 기초가 되는 고전 로보틱스 및 모션 제어 엔티티
 - Science synthetic-biology-and-protein-design-ai : 소프트 로봇의 구동 소재를 분자 단위에서 설계하는 상위 과학 엔티티

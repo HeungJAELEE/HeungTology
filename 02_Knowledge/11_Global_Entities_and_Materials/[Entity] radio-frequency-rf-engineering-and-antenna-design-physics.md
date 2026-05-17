@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "radio-frequency-rf-engineering-and-antenna-design-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] radio-frequency-rf-engineering-and-antenna-design-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of electromagnetic principles to design circuits that operate in the radio frequency spectrum (RF Engineering) and the engineering of devices that convert electric power into radio waves and vice versa (Antenna Design Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["rf-engineering", "antenna-design", "electromagnetics", "impedance-matching", "wireless-communication", "signal-integrity", "telecommunications"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'RF_Signal_Fidelity_Audit: Evaluate the Voltage Standing Wave Ratio (VSWR) to identify impedance mismatches that cause signal reflection and power loss in the transmission line.'
-    - 'Antenna_Efficiency_Check: Analyze the radiation pattern and gain ($G$) to verify the antenna is directing energy effectively toward the target receiver without excessive side-lobe leakage.'
-    - 'Spectrum_Cleanliness_Scan: Monitor the harmonics and spurious emissions to ensure the RF system complies with regulatory standards and does not interfere with other wireless services.'
-Trust Metrics:
+  description: "[Entity] radio-frequency-rf-engineering-and-antenna-design-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📶 Radio Frequency (RF) Engineering and Antenna Design Physics
+# [Entity] radio-frequency-rf-engineering-and-antenna-design-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰이 보이지 않는 공기 중에서 어떻게 수 기가비트(Gbps)의 데이터를 전선 하나 없이 주고받을 수 있을까요? **무선 주파수(RF) 공학 및 안테나 설계 물리**는 전선을 벗어난 전기를 파동의 형태로 공중에 쏘아 보내고 다시 잡아내는 **'무선 문명의 마술'**입니다. 보이지 않는 전자기파가 가장 멀리, 가장 정확하게 도달할 수 있도록 회로의 저항을 맞추고(매칭), 특정 방향으로 에너지를 집중시키는 안테나를 설계합니다. 전 세계를 하나로 연결하는 **'보이지 않는 거대한 신경망'**의 핵심입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Signal Quality - SNR below required threshold for stable communication. Increase Gain or TX Power"
         return "PASS: Robust Wireless Link and Verified Signal Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(vswr_value=1.1, antenna_efficiency_pct=85.0, harmonic_distortion_db=-60.0)
 print(engine.diagnose_rf_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_rf_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data rf-signal-fidelity-and-antenna-efficiency-logs-v2026`와 연동되어, 전 세계 이동통신 기지국 및 위성 통신망의 RF 데이터를 실시간 분석하고 통신 두절 및 신호 왜곡 사고 확률을 0.001% 이하로 억제함으로써 지능형 무선 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - radar-systems-and-synthetic-aperture-radar-sar-physics

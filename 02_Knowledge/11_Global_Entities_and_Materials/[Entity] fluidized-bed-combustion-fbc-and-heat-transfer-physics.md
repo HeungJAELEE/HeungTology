@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fluidized-bed-combustion-fbc-and-heat-transfer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fluidized-bed-combustion-fbc-and-heat-transfer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A combustion technology used to burn solid fuels by suspending them on upward-blowing jets of air during the combustion process (FBC) and the physical study of solid-gas heat exchange and turbulent mixing (Fluidized Bed Heat Transfer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fbc", "fluidized-bed", "combustion", "heat-transfer", "boiler", "low-emission", "biomass-burning", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Fluidization_Fidelity_Audit: Evaluate the ''Superficial Gas Velocity'' ($u_0$) against the high-fidelity $u_{mf}$ to identify if ''Defluidization'' (bed collapse) or ''Elutriation'' (excessive carryover) is occurring.'
-    - 'Thermal_Integrity_Check: Analyze the bed temperature uniformity to ensure that the high-fidelity ''Combustion Stability'' is maintained between $800 \\sim 900^\\circ C$, minimizing $NO_x$ and $SO_x$ formation.'
-    - 'Erosion_Fidelity_Scan: Monitor the tube wall thickness inside the bed to verify that high-fidelity ''Particle Impingement'' is not causing premature erosion and leakage.'
-Trust Metrics:
+  description: "[Entity] fluidized-bed-combustion-fbc-and-heat-transfer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Fluidized Bed Combustion (FBC) and Heat Transfer Physics
+# [Entity] fluidized-bed-combustion-fbc-and-heat-transfer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 모래 알갱이들이 뜨거운 바람을 타고 물처럼 출렁거리며 그 안에서 연료가 활활 타오른다면 어떨까요? **유동층 연소(FBC) 및 열전달 물리**는 고체 연료를 마치 액체처럼 취급하여, 공중에 띄운 채로 태우는 **'춤추는 불꽃의 연소'** 기술입니다. 일반 보일러보다 낮은 온도에서 타면서도 열은 더 잘 전달하고, 공해 물질은 획기적으로 줄여줍니다. **'쓰레기부터 고품질 석탄까지 가리지 않고 태우는 산업의 강인한 위장이자 환경과 효율을 동시에 잡은 지능형 열에너지 생산 장치'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: SOx Capture Failure - In-bed desulfurization failing. Check limestone quality or bed pH/temperature balance. Environmental risk"
         return "PASS: Validated In-situ Cleaning and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(superficial_velocity=1.5, bed_temperature_c=860.0, o2_in_flue_gas=3.5)
 print(engine.diagnose_fbc_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_fbc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fbc-combustion-efficiency-and-sox-reduction-v2026`와 연동되어, 전 세계 주요 바이오매스 발전소 및 폐기물 소각장의 데이터를 실시간 분석하고 불완전 연소 및 대기 오염 위반 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 순환 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fluid-catalytic-cracking-fcc-and-petroleum-refining-physics

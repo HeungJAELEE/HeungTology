@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brazing-and-soldering-capillary-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brazing-and-soldering-capillary-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Thermal joining processes where a filler metal is melted and distributed between two or more close-fitting parts by capillary action, with soldering occurring below 450°C and brazing above (Brazing and Soldering) and the fluid dynamics study of how the molten filler flows into narrow gaps (Capillary Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["brazing", "soldering", "capillary-flow", "joining-technology", "surface-tension", "wetting", "metallurgy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Joining_Fidelity_Audit: Evaluate the ''Wetting Angle'' ($\\theta$) to identify if the surface cleaning (Flux) or atmosphere (Vacuum/Inert) is sufficient to allow the filler to spread.'
-    - 'Flow_Integrity_Check: Analyze the filler penetration depth versus time to ensure that the joint gap ($b$) is optimized for maximum capillary suction without causing ''Starved Joints''.'
-    - 'Metallurgical_Fidelity_Scan: Monitor the cooling rate to identify the formation of brittle ''Intermetallic Compounds'' (IMC) that reduce the structural integrity of the brazed/soldered joint.'
-Trust Metrics:
+  description: "[Entity] brazing-and-soldering-capillary-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕯️ Brazing and Soldering Capillary Flow Physics
+# [Entity] brazing-and-soldering-capillary-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속판 사이의 아주 좁은 틈새로 녹은 금속 액체가 빨려 들어가 마치 하나처럼 단단하게 붙여버리는 마법, 보신 적 있나요? **브레이징(경납땜), 솔더링(연납땜) 및 모세관 유동 물리**는 액체 금속의 '표면 장력'을 이용해 중력을 거스르고 좁은 틈을 완벽하게 채우는 **'액체의 침투술'** 기술입니다. 용접처럼 모재를 녹이지 않으면서도, 꿀처럼 흐르는 납재가 틈새를 메워 공기 한 방울 통하지 않는 완벽한 결합을 만듭니다. 냉장고 배관부터 반도체 칩까지 문명의 모든 연결 부위를 책임지는 **'미세 결합의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Void Density - Gas trapped in joint area. Potential for crack initiation. Improve flux outgassing or vacuum level"
         return "PASS: Dense Homogeneous Filler and Verified Leak-proof Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(wetting_angle_deg=15.5, joint_penetration_pct=98.0, peak_temp_c=720.0)
 print(engine.diagnose_joining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_joining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data brazing-joint-strength-and-filler-flow-logs-v2026`와 연동되어, 전 세계 주요 항공기 부품 및 전자 기판의 결합 데이터를 실시간 분석하고 누설 및 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 결속 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - ball-grid-array-bga-and-flip-chip-interconnect-physics

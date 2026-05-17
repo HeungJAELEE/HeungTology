@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "biosensors-and-molecular-diagnostics-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] biosensors-and-molecular-diagnostics-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of analytical devices that convert biological responses (Binding, Catalysis) into electrical or optical signals, and the kinetics of molecular assays for disease detection."
-  physical_model: "N/A"
-Semantic:
-  tags: '["biosensor", "molecular-diagnostics", "pcr", "elisa", "point-of-care", "kinetics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensitivity_Audit: Measure the Limit of Detection (LoD) for target biomolecules.'
-    - 'Selectivity_Check: Evaluate the sensor''s ability to distinguish between target and interfering molecules.'
-    - 'Kinetics_Verification: Analyze the association/dissociation rates ($k_{on}, k_{off}$) of molecular binding.'
-Trust Metrics:
+  description: "[Entity] biosensors-and-molecular-diagnostics-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Biosensors and Molecular Diagnostics Kinetics
+# [Entity] biosensors-and-molecular-diagnostics-kinetics
 
 ## 1. 개요 (Why)
 질병을 조기에 발견하려면 혈액 한 방울에 든 아주 적은 양의 바이러스나 암 표지자를 정확히 찾아내야 합니다. 바이오 센서는 생체 분자의 결합을 전기나 빛 신호로 바꿔주는 장치로, 복잡한 검사실 장비 없이도 현장(Point-of-Care)에서 즉시 진단할 수 있게 합니다. 특히 분자 진단은 유전자를 증폭하여 정확도를 극대화합니다. 본 노드는 진단 기기의 정밀도와 신뢰성을 확보하기 위한 수리적 및 공학적 표준을 정의합니다.
@@ -70,7 +59,6 @@ class MedicalFidelityEngine:
             return f"WARNING: High Cross-reactivity ({self.cr*100:.1f}%) - Potential False Positive Risk"
         return "PASS: High-Specific Molecular Recognition Verified"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(current_signal=15.2, background_noise=2.1, cross_reactivity=0.02)
 print(engine.diagnose_snr_limit())
 ```
@@ -88,7 +76,6 @@ print(engine.diagnose_snr_limit())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data biosensor-sensitivity-and-limit-of-detection-v2026`와 연동되어, 진단 센서의 모든 보정 데이터를 실시간 분석하고 오진율을 0.1% 이하로 억제함으로써 디지털 헬스케어의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - digital-microfluidics-and-lab-on-a-chip-physics

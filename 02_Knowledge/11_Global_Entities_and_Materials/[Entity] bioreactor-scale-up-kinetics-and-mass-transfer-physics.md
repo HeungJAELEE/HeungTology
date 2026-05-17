@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bioreactor-scale-up-kinetics-and-mass-transfer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bioreactor-scale-up-kinetics-and-mass-transfer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of biological reaction vessels, focusing on maintaining optimal growth conditions (Oxygen, Nutrients, pH) during the transition from laboratory scale to industrial production."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bioreactor", "scale-up", "mass-transfer", "oxygen-transfer-rate", "bio-process"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Oxygen_Transfer_Audit: Verify that $k_L a$ is sufficient to meet the biological oxygen demand (OUR).'
-    - 'Shear_Stress_Check: Evaluate the impact of impeller speed on delicate cell membranes.'
-    - 'Mixing_Time_Scan: Identify localized nutrient depletion zones in large-scale vessels.'
-Trust Metrics:
+  description: "[Entity] bioreactor-scale-up-kinetics-and-mass-transfer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Bioreactor Scale-up Kinetics and Mass Transfer Physics
+# [Entity] bioreactor-scale-up-kinetics-and-mass-transfer-physics
 
 ## 1. 개요 (Why)
 실험실의 작은 비이커에서 성공한 배양 결과가 수만 리터의 거대 배양기(Bioreactor)에서도 똑같이 재현되기는 매우 어렵습니다. 규모가 커질수록 산소 공급이 부족해지거나, 교반 날개의 물리적 충격(Shear Stress)으로 세포가 파괴되기 때문입니다. 바이오 리액터 스케일업은 유체 역학과 생물학적 대사 속도를 일치시켜, 고부가가치 의약품이나 배양육을 대량 생산하기 위한 핵심 공정 공학입니다. 본 노드는 바이오 공정의 생산성 무결성을 사수하기 위한 물리적 설계 표준을 정의합니다.
@@ -70,7 +59,6 @@ class FactoryFidelityEngine:
             return f"WARNING: High Shear Stress ({self.v_tip}m/s) - Risk of Cell Membrane Rupture"
         return "PASS: Hydrodynamic Environment Safe for Cells"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(kla=40, our=25, tip_speed=3.2)
 print(engine.diagnose_oxygen_limitation(do_sat_pct=30))
 print(engine.audit_shear_damage())
@@ -89,7 +77,6 @@ print(engine.audit_shear_damage())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data bioreactor-kla-and-cell-density-yield-v2026`와 연동되어, 배양기 내부의 물리적 변수를 실시간 분석하고 스케일업 시 생산성 하락을 10% 이내로 방어함으로써 바이오 의약품 대량 생산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - biotechnology-and-bio-process-engineering

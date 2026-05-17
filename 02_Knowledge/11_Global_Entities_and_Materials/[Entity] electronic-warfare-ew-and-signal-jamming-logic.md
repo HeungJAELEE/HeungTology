@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electronic-warfare-ew-and-signal-jamming-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electronic-warfare-ew-and-signal-jamming-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Military action involving the use of the electromagnetic spectrum to deny the opponent's use of it and ensure friendly use (Electronic Warfare) and the control logic used to transmit noise or deceptive signals to disrupt enemy communications and radar (Signal Jamming)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electronic-warfare", "ew", "signal-jamming", "radar-jamming", "elint", "spectrum-dominance", "national-defense"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectrum_Fidelity_Audit: Evaluate the ''Noise Power Density'' against the target radar/communication frequency to identify if the ''Jamming Margin'' is sufficient to obscure friendly assets.'
-    - 'Deception_Integrity_Check: Analyze the Digital Radio Frequency Memory (DRFM) response time to ensure that ''False Target Generation'' is coherent with the actual radar pulse, creating high-fidelity ghost images.'
-    - 'Stealth_Fidelity_Scan: Monitor the Low Probability of Intercept (LPI) characteristics of friendly signals to verify that ''Frequency Hopping'' and spread-spectrum techniques are preventing enemy detection.'
-Trust Metrics:
+  description: "[Entity] electronic-warfare-ew-and-signal-jamming-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Electronic Warfare (EW) and Signal Jamming Logic
+# [Entity] electronic-warfare-ew-and-signal-jamming-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈을 가린 채 싸우는 기분을 아시나요? 현대 전쟁터에서 전파를 잃는다는 것은 바로 시력과 청력을 잃는 것과 같습니다. **전자전(EW) 및 신호 재밍(Jamming) 로직**은 보이지 않는 전자기 스펙트럼을 지배하여 적의 눈(레이더)을 속이고 입(통신)을 막는 **'전자기적 유령 전쟁'** 기술입니다. 단순히 노이즈를 뿌려 방해하는 것을 넘어, 가짜 목표물을 만들어내거나 적의 전파를 가로채 분석하는 등 보이지 않는 전파의 세계에서 벌어지는 **'첨단 지능의 수싸움이자 국가 방위의 보이지 않는 방패'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Incoherent Ghost Signal - Delay too high to simulate real echo. Enemy radar will filter out the fake target. Calibrate high-speed logic"
         return "PASS: Validated Signal Coherence and Verified Deception Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(jamming_power_dbw=35.0, target_radar_lock_status="SEARCHING", signal_purity_pct=98.5)
 print(engine.diagnose_ew_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ew_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ew-spectrum-utilization-and-jamming-effectiveness-v2026`와 연동되어, 국가 방위 네트워크의 전파 데이터를 실시간 분석하고 통신 단절 및 피격 사고 확률을 0.0001% 이하로 억제함으로써 지능형 안보 문명의 전자기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electromagnetic-pulse-emp-and-high-power-microwave-defense

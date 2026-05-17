@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-nanotube-cnt-and-graphene-synthesis-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-nanotube-cnt-and-graphene-synthesis-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical and physical processes for synthesizing high-purity carbon nanotubes and graphene, focusing on Chemical Vapor Deposition (CVD), catalyst engineering, and growth kinetics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnt", "graphene", "cvd", "nanomanufacturing", "carbon-materials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Synthesis_Yield_Audit: Measure the mass of carbon nanomaterials produced relative to the feedstock gas.'
-    - 'Defect_Density_Check: Analyze the $I_D/I_G$ ratio via Raman spectroscopy to evaluate crystalline quality.'
-    - 'Catalyst_Efficiency_Scan: Detect residual metal nanoparticles in the final product.'
-Trust Metrics:
+  description: "[Entity] carbon-nanotube-cnt-and-graphene-synthesis-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Carbon Nanotube (CNT) and Graphene Synthesis Mechanics
+# [Entity] carbon-nanotube-cnt-and-graphene-synthesis-mechanics
 
 ## 1. 개요 (Why)
 꿈의 신소재라 불리는 CNT와 그래핀을 실험실 수준이 아니라 산업 현장에서 쓸 수 있게 하는 핵심은 '대량 생산 기술'입니다. 섭씨 1,000도에 육박하는 고온에서 가스를 분해하여 탄소 원자를 하나하나 쌓아 올리는 화학 기상 증착법(CVD)은 가장 정밀하면서도 효율적인 생산 방식입니다. 본 노드는 나노 소재 합성 공정의 수율과 품질 무결성을 사수하기 위한 물리적 설계 표준을 정의합니다.
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Low Purity ({self.purity}%) - Enhance Acid Leaching/Purification"
         return "PASS: Industrial Grade Purity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(id_ig_ratio=0.08, purity_pct=99.2, growth_rate=15)
 print(engine.diagnose_structural_quality())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_structural_quality())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cnt-graphene-yield-and-defect-density-v2026`와 연동되어, 합성 장비의 환경 변수를 실시간 분석하고 불량 소재 생산을 0.1% 이하로 억제함으로써 첨단 나노 소재 공급망의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - carbon-nanotubes-cnt-and-graphene-synthesis-logic

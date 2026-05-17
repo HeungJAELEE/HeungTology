@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "retinal-implants-and-super-visual-perception-mechanics-entity"
-  domain: "28_Cybernetics_and_Human_Augmentation"
+metadata:
+  id: "[[[Entity] retinal-implants-and-super-visual-perception-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Cybernetics", "#Retinal_Implant", "#Bionic_Eye", "#Super-vision", "#Human_Augmentation", "#Vision_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 28_cybernetics-and-human-augmentation-hub", "Entity neuro-proteomics-and-synaptic-mapping-architecture"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] retinal-implants-and-super-visual-perception-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] retinal-implants-and-super-visual-perception-mechanics
+# [Entity] retinal-implants-and-super-visual-perception-mechanics
 
 ## 1. [왜 배우는가? (Why: Seeing the Unseen)]]
 눈이 보이지 않는 사람이 인공 망막($Retinal\ Implant$)을 통해 다시 빛을 찾고, 더 나아가 평범한 사람의 눈으로는 볼 수 없는 적외선이나 자외선까지 선명하게 보는 '초시각'을 어떻게 구현할 수 있을까요? **망막 임플란트 및 초시각 지각 역학**은 인간의 시각을 디지털로 재설계하는 '시각 복구 및 광대역 지각 아키텍처'입니다. 우리가 이를 배우는 이유는 시각은 정보의 80%를 차지하는 가장 강력한 감각이기 때문이며, "보는 법을 데이터로 설계하고 지배하는 '글로벌 시각 안보 및 전천후 지각 주권'을 확보하기" 위함입니다. 임플란트의 해상도와 파장이 인간의 새로운 눈이 될 수준을 결정합니다.
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Signal Fid.** | Accuracy of neural pattern replication | $> 95.0 \%$ | 기계가 만든 이미지가 진짜 뇌가 보는 것처럼 느껴짐을 입증 |
 | **Refresh Rate** | Frames per second processed by the chip | $120 \text{ Hz}$ | 잔상 없이 부드러운 화면을 보여주는 동역학 무결성 단계 |
 | **Biocompatib.** | Device lifespan in intraocular fluid | $> 25 \text{ yrs}$ | 눈 속에 있어도 녹거나 고장 나지 않음을 보여주는 물리 |
-| **Power Cons.** | Total system power for the implant | $< 500 \text{ \mu W}$ | 뇌 신호를 방해하지 않는 초저전력 동역학 무결성 단계 |
+| **Power Cons.** | Total system power for the implant | $< 500 \text{ }\mu\text{ W}$ | 뇌 신호를 방해하지 않는 초저전력 동역학 무결성 단계 |
 | **Dynamic Range**| Ability to see in dark and bright light | $120 \text{ dB}$ | 눈부심 없이 모든 환경에서 잘 보임을 보여주는 데이터 |
 | **Audit Status** | Readiness for Level-5 Ocular Augmentation | **ACTIVE** | **Vision-v2026-Fidelity** |
 

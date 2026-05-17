@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Virtual-Power-Plant-VPP"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Virtual-Power-Plant-VPP]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Virtual-Power-Plant-VPP에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Virtual-Power-Plant-VPP
+# [Strategy] Virtual-Power-Plant-VPP
 
 ## 1. [왜 배우는가? (Why)]]
 과거에는 전기가 부족하면 거대한 발전소를 새로 지어야 했습니다. 하지만 이제는 수만 개의 가정용 태양광과 전기차 배터리를 똑똑하게 연결하는 것만으로도 거대한 발전소 하나를 지은 것과 같은 효과를 낼 수 있습니다. 가상 발전소(Virtual-Power-Plant-VPP)는 물리적인 벽돌과 기계 대신 '소프트웨어와 데이터'로 전기를 만드는 기술입니다. 이를 통해 전력망의 부담을 줄이고, 자원을 가진 개인들에게 수익을 돌려주며, 가장 친환경적으로 전력을 공급하는 '디지털 에너지 생태계'를 구축하는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (VPP Resource Dispatching)]
 전력 거래소의 명령을 받아 분산된 자원들에 방전 지시를 내리고 정산 데이터를 생성하는 논리 구조입니다.
 ```python
-# 가상 발전소(ISM) 기반 자원 통합 및 시장 대응 논리
 def dispatch_vpp_resources(grid_demand_request, market_price):
     # 1. 가용 자원 풀(Pool) 스캔 및 필터링
     # 연결된 태양광, ESS, 전기차(V2G) 중 즉시 제어 가능한 자원 파악
@@ -100,5 +89,4 @@ def dispatch_vpp_resources(grid_demand_request, market_price):
 2. 'OpenADR' 프로토콜이 VPP 운영에서 '이기종 기기 간의 상호 운용성'을 보장하기 위해 정의하는 주요 데이터 구조와 보안 계층은?
 3. VPP 운영 시 발생할 수 있는 '사용자의 개인정보 및 기기 제어권 침해' 리스크를 기술적으로 방어하고 '참여 인센티브'를 설계하는 방법은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

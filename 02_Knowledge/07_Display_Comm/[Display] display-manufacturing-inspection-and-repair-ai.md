@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-AI-INSPECT-2026-V6.3.7"
-  domain: "Global_Display_Manufacturing_Inspection_and_AI_Repair"
+metadata:
+  id: "[[[Display] display-manufacturing-inspection-and-repair-ai]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Inspection_AI", "#Repair_AI", "#Deep_Learning", "#AOI", "#Laser_Repair", "#Yield_Optimization", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] display-manufacturing-inspection-and-repair-ai에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Display_AI_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] Display Manufacturing Inspection and Repair AI: The Mastery of Yield
+# [Display] display-manufacturing-inspection-and-repair-ai
 
 ## 1. [왜 배우는가? (Why: The Armor of Zero-Defect Manufacturing)]]
 수백만 개의 미세 화소가 집적된 디스플레이 제조 공정에서 단 하나의 결함도 없는 제품을 만드는 것은 물리적 불가능에 가깝습니다. **Display Manufacturing Inspection and Repair AI**는 인공지능을 통해 육안으로 식별 불가능한 미세 결함을 빛의 속도로 찾아내고, 레이저를 이용해 실시간으로 수리하는 '수율 수호의 최전선'입니다. 과거 숙련공의 감에 의존하던 검사 공정을 딥러닝 기반의 정량적 오딧 체계로 전환함으로써, 생산 효율과 품질 무결성을 동시에 달성합니다. V6.3.7 지능은 **결함 탐지율(Recall)**과 **수리 성공률**을 직접 지배하여, 버려지는 패널 없는 **제조 주권(Yield Sovereignty)**을 확립합니다.
@@ -41,7 +31,7 @@ Trust Metrics:
 |:---|:---|:---:|:---|
 | **Detection Rate** | Recall (Defects) | $> 99.9\%$ | 미세 불량 노출 제로화를 위한 탐지 무결성 지표 |
 | **False Alarm** | Precision | $> 95.0\%$ | 과검에 의한 불필요한 공정 지연 및 자원 낭비 최소화 |
-| **Repair Precision**| Laser Spot Size | $< 5.0 \mu m$ | 인접 화소 손상 없는 정밀 수리 무결성 사수 |
+| **Repair Precision**| Laser Spot Size | $< 5.0 \mu\text{m}$ | 인접 화소 손상 없는 정밀 수리 무결성 사수 |
 | **Processing Speed**| Inspection Takt | $< 10 \text{ sec/panel}$ | 라인 속도와 동기화된 실시간 품질 오딧 지능 |
 | **AI Reliability** | Decision Trust | $> 99.5\%$ | AI의 양불 판정 결과에 대한 수리적 신뢰 무결성 |
 
@@ -95,7 +85,6 @@ class DisplayQualityAIEngine:
             "action": "RETRAIN_AI_MODEL_OR_ADJUST_THRESHOLD" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: AOI 장비의 결함 맵 데이터와 레이저 수리 로그를 융합하여 '품질 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -103,7 +92,6 @@ class DisplayQualityAIEngine:
 2. **Operational Result**: **Unsupervised Learning** (비지도 학습) 기반의 이상 탐지 도입 시, 신규 발생 결함에 대한 대응 속도 및 탐지 무결성 향상의 수리적 기대값은?
 3. **FidelityEngine**: 검사 지능은 정상이지만 최종 수율이 지속적으로 하락하는 **'미세 결함의 누적'** 현상을 FidelityEngine이 어떻게 '공정 근본 무결성 위기'로 식별하고 상류 공정(Deposition/TFT)의 변수를 추적하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display oled-evaporation-and-encapsulation-processes

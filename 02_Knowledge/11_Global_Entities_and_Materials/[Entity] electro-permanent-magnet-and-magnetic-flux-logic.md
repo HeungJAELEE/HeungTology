@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electro-permanent-magnet-and-magnetic-flux-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electro-permanent-magnet-and-magnetic-flux-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of magnet that can be switched on or off by a short pulse of electric current, but once switched, requires no power to maintain its magnetic state (Electro-Permanent Magnet) and the control logic of manipulating magnetic flux circuits to latch or release heavy loads (Magnetic Flux Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electro-permanent-magnet", "magnetic-flux", "actuator", "energy-efficiency", "industrial-robotics", "electromagnetism", "latching-magnet"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Switching_Fidelity_Audit: Evaluate the ''Magnetic Flux'' state after a current pulse to identify if the Alnico core has been fully polarized or if partial de-magnetization is reducing the holding force.'
-    - 'Safety_Integrity_Check: Analyze the flux leakage during the ''OFF'' state to ensure the internal cancellation logic is working correctly, preventing accidental lifting of small metallic debris.'
-    - 'Energy_Fidelity_Scan: Monitor the capacitor discharge energy used for switching to verify that the EPM is maintaining its ''Zero Power'' holding advantage over traditional electromagnets.'
-Trust Metrics:
+  description: "[Entity] electro-permanent-magnet-and-magnetic-flux-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧲 Electro-Permanent Magnet and Magnetic Flux Logic
+# [Entity] electro-permanent-magnet-and-magnetic-flux-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기를 껐는데도 무거운 철판을 계속 들고 있고, 다시 전기를 살짝 주면 톡 하고 떨어뜨리는 마법 같은 자석이 있을까요? **전자영구자석(EPM) 및 자기 유속 로직**은 '전자기석'의 편리함과 '영구자석'의 끈질김을 결합한 **'지능형 자력 스위치'** 기술입니다. 평소에는 전기를 전혀 쓰지 않고도 무거운 짐을 안전하게 들고 있다가, 오직 켤 때와 끌 때만 0.1초 정도의 전기를 씁니다. 에너지는 아끼면서도 정전이 되어도 짐을 떨어뜨리지 않는 **'절대 안전과 초효율의 전자기 공학'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Incomplete Flux Cancellation - OFF-state magnetic field too high. Parts will stick to the gripper. Re-calibrate the de-magnetizing pulse"
         return "PASS: Validated Flux Shunting and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(pulse_current_peak=450.0, magnetic_flux_weber=0.085, holding_time_hours=240)
 print(engine.diagnose_epm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_epm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data epm-holding-force-and-pulse-energy-v2026`와 연동되어, 전 세계 주요 지능형 로봇 그리퍼 및 중량물 운반 시스템의 데이터를 실시간 분석하고 낙하 및 오작동 사고 확률을 0.0001% 이하로 억제함으로써 지능형 자동화 문명의 전자기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dc-motor-and-lorentz-force-logic

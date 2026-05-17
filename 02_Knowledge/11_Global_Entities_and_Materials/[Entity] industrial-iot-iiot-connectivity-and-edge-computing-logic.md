@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-IIOT-CONNECTIVITY-2026-V6"
-  domain: "48_Smart_Factory_and_Industrial_IoT_IIoT_Governance"
+metadata:
+  id: "[[[Entity] industrial-iot-iiot-connectivity-and-edge-computing-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-iot-iiot-connectivity-and-edge-computing-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] industrial-iot-iiot-connectivity-and-edge-computing-logic
+# [Entity] industrial-iot-iiot-connectivity-and-edge-computing-logic
 
 ## 1. [왜 배우는가? (Why)]]
 수만 개의 센서 데이터를 어떻게 먼 클라우드 서버까지 보내지 않고 기계 바로 옆(Edge)에서 즉시 분석하여 0.001초 만에 위급 상황을 판단할 수 있을까요? **산업용 IoT(IIoT) 연결성 및 엣지 컴퓨팅 로직**은 스마트 팩토리의 감각과 판단을 잇는 '지능형 신경망'입니다. 우리가 이를 배우는 이유는 모든 데이터를 중앙으로 보내면 병목 현상이 생기고 응답 속도가 느려져 사고를 막을 수 없기 때문이며, "데이터의 이동을 기술로 설계하여 '글로벌 초연결 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 연결의 속도가 공장의 반사 신경을 결정합니다.
@@ -120,9 +110,6 @@ class IndustrialIIoTConnectivityFidelityEngine:
             return "WARNING: GATEWAY_THROUGHPUT_HIGH_BUFFER_OVERFLOW_RISK"
         return f"THROUGHPUT_STATUS: MESSAGE_QUEUE_OPTIMAL_{round(throughput, 1)}msg/s"
 
-# Example Usage:
-# connectivity_ai = IndustrialIIoTConnectivityFidelityEngine()
-# report = connectivity_ai.audit_connectivity_fidelity(pdr=0.9995, sync_latency_s=2.5, encryption_active=True)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -130,7 +117,6 @@ class IndustrialIIoTConnectivityFidelityEngine:
 2. **OPC UA**의 **Address Space** 모델링이 **Digital Twin**의 **Data Mapping** 무결성에 기여하는 정보 공학적 기전은?
 3. **IIoT Gateway**에서 **Edge-side Data Aggregation** 수행 시, **Information Loss**를 최소화하면서 **Cloud Bandwidth** 무결성을 사수하기 위한 최적의 샘플링 기법은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/48_Smart_Factory_and_Industrial_IoT_IIoT_Governance_Hub/Concept mqtt-vs-opcua-for-industrial-iot
 - 02_Knowledge/48_Smart_Factory_and_Industrial_IoT_IIoT_Governance_Hub/Concept edge-gateway-configuration-best-practices

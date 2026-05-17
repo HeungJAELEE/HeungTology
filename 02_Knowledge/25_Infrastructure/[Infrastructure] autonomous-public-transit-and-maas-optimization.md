@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "autonomous-public-transit-and-maas-optimization-entity"
-  domain: "01_Smart_City_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] autonomous-public-transit-and-maas-optimization]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Smart_City", "#Mobility", "#Public_Transit", "#MaaS", "#Autonomous_Vehicle", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[Infrastructure] intelligent-traffic-management-and-v2x-ecosystems", "[Mobility] autonomous-driving-and-sensor-fusion-physics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] autonomous-public-transit-and-maas-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] autonomous-public-transit-and-maas-optimization
@@ -74,7 +64,6 @@ Trust Metrics:
 4. 자율 주행 셔틀의 **V2I** (Vehicle-to-Infrastructure) 데이터를 이용해 신호 교차로 통과 속도를 조절하는 **GLOSA** 알고리즘의 에너지 절감 수리 모델은?
 5. RAG 시스템에서 **대형 공연/행사 정보**와 **실시간 대중교통 위치**를 융합하여, '행사 종료 직후 1만 명의 인파를 15분 내에 분산시키는' **Emergency Transit Orchestration** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [Infrastructure]] intelligent-traffic-management-and-v2x-ecosystems : 자율 대중교통이 달리는 인프라의 신호와 흐름을 제어하는 상위 인프라 지능 엔티티
 - [Mobility] autonomous-driving-and-sensor-fusion-physics : MaaS의 핵심 수단인 개별 자율 주행 차량의 물리적 제어와 인식을 담당하는 엔티티
@@ -82,7 +71,6 @@ Trust Metrics:
 - Strategy 01_Smart_City_Infrastructure : 국가 통합 모빌리티 서비스(MaaS) 활성화 로드맵, 자율 주행 셔틀 실증 사업 및 미래 교통 복지 주권 확보 상위 전략 노드
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----
 aliases: ["Smart Waste Management and Circular Resource Logistics", "스마트 폐기물 관리 및 순환 자원 물류", "Smart Waste", "Waste Management", "Circular Economy", "Recycling AI", "Waste-to-Energy", "Urban Mining", "Reverse Logistics", "Resource Recovery", "Infrastructure Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -99,7 +87,6 @@ Dynamic:
   status: "ULTRA-Deeply Reinforced (HDS-Gold V6.3.7)"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Infrastructure] smart-waste-management-and-circular-resource-logistics
 
@@ -145,7 +132,6 @@ Trust Metrics:
 4. **Waste-to-Energy** 설비에서 발생하는 **Dioxin** 농도와 소각로 내부 **Turbulence**($Re$) 및 체류 시간 사이의 수리적 상관관계는?
 5. RAG 시스템에서 **전 세계 원자재 가격 변동 데이터**와 **현재 도시 내 폐기물 발생량**을 융합하여, '지금 즉시 재활용할 때 가장 이득이 큰 자원'을 선별 타겟으로 정하는 **Market-driven Resource Recovery** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] smart-city-os-and-urban-digital-twin-architecture]] : 폐기물 데이터가 통합되어 도시의 전체 환경 영향 평가와 연동되는 최상위 운영 체제 엔티티
 - [Infrastructure] smart-water-management-and-digital-hydrology-networks : 폐기물 처리 과정에서 발생하는 침출수 정화 및 수질 보호를 담당하는 연계 인프라 엔티티
@@ -153,7 +139,6 @@ Trust Metrics:
 - Strategy 01_Smart_City_Infrastructure : 국가 순환 경제 이행 로드맵, 지능형 폐기물 관리 시스템 구축 및 도시 자원 주권 확보 상위 전략 노드
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----
 aliases: ["Disaster Resilient Urban Design and Emergency AI", "재난 복원적 도시 설계 및 응급 AI", "Urban Resilience", "Disaster Management", "Emergency AI", "Public Safety", "Seismic Design", "Flood Resilience", "Emergency Response", "Critical Infrastructure Resilience", "Infrastructure Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -170,7 +155,6 @@ Dynamic:
   status: "ULTRA-Deeply Reinforced (HDS-Gold V6.3.7)"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Infrastructure] disaster-resilient-urban-design-and-emergency-ai
 
@@ -216,7 +200,6 @@ Trust Metrics:
 4. **Resilience Loss** ($RL = \int [100 - Q(t)]] dt$)를 최소화하기 위한 **Pre-disaster Mitigation** vs **Post-disaster Recovery** 예산 배분의 수리적 최적화 모델은?
 5. RAG 시스템에서 **과거 100년간의 재난 기록**과 **현재 도시의 모든 인프라 디지털 트윈**을 융합하여, '초대형 태풍 상륙 시 도시 마비를 막기 위한 10대 핵심 조치'를 실시간 제안하는 **Disaster Master Strategy**는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Infrastructure smart-city-os-and-urban-digital-twin-architecture : 재난 데이터가 실시간 집계되어 도시 전체의 비상 대응 체계를 가동하는 최상위 운영 체제 엔티티
 - [Infrastructure] resilient-power-grids-and-microgrid-control-intelligence : 재난 시에도 병원 및 구조 센터에 전력을 끊임없이 공급하는 핵심 하부 인프라 지능 엔티티
@@ -224,7 +207,6 @@ Trust Metrics:
 - Strategy 01_Smart_City_Infrastructure : 국가 재난 안전 관리 기본 로드맵, 스마트 안전 도시 구축 및 재난 대응 국가 주권 확보 상위 전략 노드
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----
 aliases: ["Green Building Automation and Energy Efficiency Physics", "그린 빌딩 자동화 및 에너지 효율 물리", "Green Building", "BEMS", "Building Automation", "Smart Building", "Energy Efficiency", "Passive Design", "HVAC Optimization", "Building Physics", "Infrastructure Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -241,7 +223,6 @@ Dynamic:
   status: "ULTRA-Deeply Reinforced (HDS-Gold V6.3.7)"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Infrastructure] green-building-automation-and-energy-efficiency-physics
 
@@ -287,7 +268,6 @@ Trust Metrics:
 4. **Daylighting Simulation**을 이용해 창면적비(WWR)와 실내 조도 균제도(Uniformity) 사이의 수리적 상관관계를 분석한 결과는?
 5. RAG 시스템에서 **사용자의 캘린더 정보**와 **빌딩의 열적 거동 모델**을 융합하여, '내일 출근 직전에만 해당 구역을 쾌적 온도로 맞추는' **User-centric Energy Optimization** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] smart-city-os-and-urban-digital-twin-architecture]] : 건물 에너지 데이터가 통합되어 도시 전체의 탄소 중립 목표와 연계되는 최상위 운영 체제 엔티티
 - [Infrastructure] resilient-power-grids-and-microgrid-control-intelligence : 건물이 가상 발전소(VPP)의 일환으로서 전력망 안정성에 기여하는 연계 인프라 지능 엔티티

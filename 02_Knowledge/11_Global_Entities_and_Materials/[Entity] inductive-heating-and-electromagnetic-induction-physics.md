@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "inductive-heating-and-electromagnetic-induction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] inductive-heating-and-electromagnetic-induction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of heating an electrically conducting object by electromagnetic induction (Inductive Heating) and the physical study of Faraday's law, eddy currents, and Joule heating (Electromagnetic Induction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["inductive-heating", "electromagnetic-induction", "eddy-current", "skin-effect", "industrial-heating", "furnace", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Heating_Fidelity_Audit: Evaluate the ''Skin Depth'' ($\\delta$) to identify if the high-fidelity ''Hardening Depth'' is matching the target metallurgical high-fidelity spec for surface-only treatment.'
-    - 'Power_Integrity_Check: Analyze the high-fidelity ''Inverter Frequency'' and current to ensure the high-fidelity ''Coupling Efficiency'' between the coil and the workpiece is maximized.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Surface Temperature'' via pyrometer to verify that high-fidelity ''Overheating'' or melting is prevented during the rapid high-fidelity heating cycle.'
-Trust Metrics:
+  description: "[Entity] inductive-heating-and-electromagnetic-induction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Inductive Heating and Electromagnetic Induction Physics
+# [Entity] inductive-heating-and-electromagnetic-induction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속에 직접 불을 붙이지 않고도, 단 몇 초 만에 벌겋게 달구거나 녹여버리는 마법 같은 기술의 정체는 무엇일까요? **유도 가열 및 전자기 유도 물리**는 눈에 보이지 않는 전자기력을 이용해 금속 내부에서 스스로 열이 나게 만드는 **'무선 에너지 전송'** 가열 기술입니다. 금속을 감싸는 코일 주위에 전류를 흘리면, 금속 내부에서 '와전류(Eddy Current)'라는 소용돌이가 생기고 이들이 마찰을 일으켜 엄청난 열을 냅니다. **'빛의 속도로 에너지를 전달하여 금속의 겉면만 단단하게 하거나 거대한 쇳덩이를 순식간에 녹여내는 지능형 비접촉 가열 엔진'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Coil Thermal Failure - High-fidelity cooling water flow too low. Copper coil high-fidelity melting risk due to Joule heating. Shutdown high-fidelity power"
         return "PASS: Validated Coil Protection and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inverter_frequency_khz=50.0, coil_current_a=1500.0, surface_temp_c=850.0)
 print(engine.diagnose_induction_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_induction_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data induction-heating-depth-and-frequency-v2026`와 연동되어, 전 세계 주요 철강 가공 및 자동차 부품 라인의 데이터를 실시간 분석하고 가열 불량 및 코일 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 가열 문명의 물리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-treatment-process-and-microstructural-transformation-physics

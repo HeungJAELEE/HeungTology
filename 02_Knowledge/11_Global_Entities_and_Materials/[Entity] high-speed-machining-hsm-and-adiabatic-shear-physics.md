@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "high-speed-machining-hsm-and-adiabatic-shear-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] high-speed-machining-hsm-and-adiabatic-shear-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metal cutting process characterized by high cutting speeds and feed rates (HSM) and the physical study of localized plastic deformation where heat generation exceeds heat dissipation (Adiabatic Shear Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hsm", "machining", "adiabatic-shear", "cutting-speed", "thermal-softening", "chip-formation", "precision-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Machining_Fidelity_Audit: Evaluate the ''Cutting Speed'' ($v_c$) to identify if the high-fidelity ''Adiabatic Transition'' point is reached, where material softens faster than it hardens, reducing cutting forces.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Chip Temperature'' to ensure that the majority of heat is carried away by the chips, preventing thermal damage to the high-fidelity workpiece.'
-    - 'Vibration_Fidelity_Scan: Monitor the high-fidelity ''Spindle Harmonics'' to verify that the high-speed operation is within the ''Stability Lobe'' window, preventing high-fidelity chatter.'
-Trust Metrics:
+  description: "[Entity] high-speed-machining-hsm-and-adiabatic-shear-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ High-Speed Machining (HSM) and Adiabatic Shear Physics
+# [Entity] high-speed-machining-hsm-and-adiabatic-shear-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속을 깎을 때 속도를 엄청나게 높이면 왜 오히려 힘이 덜 들고 깨끗하게 깎일까요? **고속 가공(HSM) 및 단열 전단 물리**는 열이 빠져나갈 틈도 없이 순식간에 금속을 깎아내어, 깎이는 부위만 일시적으로 엿가락처럼 말랑하게(단열 연화) 만드는 **'속도의 승리'** 기술입니다. 발생한 열의 90% 이상을 깎여나가는 찌꺼기(칩)에 실어 보내기 때문에 본체는 차갑게 유지됩니다. **'물리적 한계를 넘어서는 초고속 회전을 통해 거울 같은 표면과 정밀한 형상을 빛의 속도로 깎아내는 지능형 절삭 공학'**입니다.
@@ -58,7 +47,7 @@ $$ \dot{\gamma} = \frac{v}{h} $$
 | **Spindle Speed** | 1,000 ~ 5,000 | **15,000 ~ 60,000+** | $RPM$ | Power |
 | **Cutting Force** | High | **Low (Decreases at high speed)**| - | Physics |
 | **Heat Distribution**| 50% Tool / 50% Chip | **~90% Chip / <10% Tool** | - | Logic |
-| **Surface Finish** | $Ra$ 1.6 ~ 6.3 | **$Ra$ 0.1 ~ 0.8 (Mirror)** | $\mu m$ | Precision |
+| **Surface Finish** | $Ra$ 1.6 ~ 6.3 | **$Ra$ 0.1 ~ 0.8 (Mirror)** | $\mu\text{m}$ | Precision |
 | **Tool Life** | Standard | **Variable (Requires coating)**| - | Economy |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Coating Failure - High-fidelity ceramic/CBN coating delaminated due to thermal shock. Tool failure imminent. Check high-speed cycle parameters"
         return "PASS: Validated Tool Integrity and Verified Surface Quality Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(spindle_rpm=45000, vibration_amplitude_um=5.0, chip_color="Straw Yellow")
 print(engine.diagnose_machining_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_machining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hsm-cutting-parameters-and-surface-finish-v2026`와 연동되어, 전 세계 주요 반도체 금형 및 항공기 부품 공장의 데이터를 실시간 분석하고 공구 파손 및 가공 오차 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 제조 문명의 속도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - grinding-process-and-abrasive-machining-physics

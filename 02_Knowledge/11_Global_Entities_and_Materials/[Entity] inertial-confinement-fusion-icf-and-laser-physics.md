@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "inertial-confinement-fusion-icf-and-laser-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] inertial-confinement-fusion-icf-and-laser-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of achieving nuclear fusion by compressing a fuel pellet (Deuterium-Tritium) to extreme densities and temperatures using powerful lasers (Inertial Confinement), aiming to achieve a 'burning plasma' and net energy gain."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nuclear-fusion", "icf", "laser-physics", "plasma-physics", "energy-gain", "hohlraum"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Laser_Sync_Audit: Verify the sub-nanosecond timing and spatial alignment of 192+ laser beams to ensure symmetric compression of the fuel capsule.'
-    - 'Ignition_Threshold_Check: Evaluate the fuel density and temperature reached during a ''shot'' to determine proximity to the ignition point ($Q > 1$).'
-    - 'Plasma_Instability_Scan: Monitor Rayleigh-Taylor (RT) instabilities during compression to minimize fuel-capsule mixing and energy loss.'
-Trust Metrics:
+  description: "[Entity] inertial-confinement-fusion-icf-and-laser-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎆 Inertial Confinement Fusion (ICF) and Laser Physics
+# [Entity] inertial-confinement-fusion-icf-and-laser-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 태양은 거대한 중력으로 수소를 짓눌러 빛과 열을 냅니다. 지구상에서 이 태양의 불꽃을 재현하는 방법 중 하나는, 아주 강력한 레이저로 수소 알갱이를 순식간에 때려 '인위적인 중력'을 만드는 것입니다. **관성 제어 핵융합(ICF)**은 후추 알갱이만 한 연료통에 전 세계 전력망보다 더 큰 에너지를 10억 분의 1초 동안 집중시켜 **'작은 태양'**을 만드는 기술입니다. 연료는 바닷물에 널려 있고 폐기물은 거의 없는, 인류가 화석 연료 시대를 끝내고 도달할 수 있는 **'궁극의 에너지 에너지'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Beam Off-target - Energy Not Properly Focused on Hohlraum/Pellet"
         return "PASS: Precise Multi-beam Target Alignment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(laser_timing_jitter_ps=8.5, implosion_symmetry_pct=98.2, neutron_yield=3.2e17)
 print(engine.diagnose_fusion_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_fusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data icf-fusion-shot-yield-and-laser-precision-v2026`와 연동되어, 전 세계 핵융합 연구 시설의 샷 데이터를 실시간 분석하고 점화 실패 및 시설 파손 사고 확률을 0.001% 이하로 억제함으로써 인류 에너지 자립의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - fluid-dynamics-in-chemical-processes-bernoulli-and-reynolds

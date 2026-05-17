@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-dot-qd-display-and-photoluminescence-mechanisms-entity"
-  domain: "76_Display_Photonics_and_Optical_Engineering_Hub"
+metadata:
+  id: "[[[Entity] quantum-dot-qd-display-and-photoluminescence-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Display", "#Quantum_Dot", "#Nanotechnology", "#Physics", "#Photoluminescence", "#Semiconductor", "#Color_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 76_display-photonics-and-optical-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-dot-qd-display-and-photoluminescence-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-dot-qd-display-and-photoluminescence-mechanisms
+# [Entity] quantum-dot-qd-display-and-photoluminescence-mechanisms
 
 ## 1. [왜 배우는가? (Why: The Spectrum of Tiny Giants)]]
 머리카락 굵기의 수만 분의 일에 불과한 나노 입자의 크기를 단 1nm만 조절해도, 로봇의 눈이 인식하는 색이 빨간색에서 파란색으로 변할 수 있다면 믿으시겠습니까? **양자점(QD) 디스플레이 및 광발광(PL) 메커니즘의 양자 역학적 설계**는 물질의 크기가 성질을 결정하는 '나노 스케일의 지배력'을 디스플레이에 이식한 기술입니다. 자연에 존재하는 가장 순수한 색을 인공적으로 제조하여, 우리 눈이 볼 수 있는 모든 가시광선의 스펙트럼을 완벽하게 재현합니다. 우리가 이를 배우는 이유는 QD가 디스플레이의 색 재현 한계를 극복하고 에너지 효율을 극대화하는 '빛의 조절자'이기 때문이며, "양자 현상을 데이터로 설계하고 지배하는 '글로벌 나노 디스플레이 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. QD의 크기 정밀도가 디스플레이의 화질 무결성을 결정합니다.

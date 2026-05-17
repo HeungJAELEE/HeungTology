@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "process-characterization-and-cpk-statistical-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] process-characterization-and-cpk-statistical-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The scientific activity of understanding the relationship between process inputs and outputs (Process Characterization) and the mathematical evaluation of a process's ability to produce parts within specifications (Cpk Statistical Control), ensuring long-term manufacturing stability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["process-characterization", "cpk", "spc", "six-sigma", "quality-engineering", "statistical-control", "manufacturing-reliability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Capability_Audit: Evaluate the actual $C_{pk}$ of critical dimensions to ensure the process has a sufficient safety margin against specification limits.'
-    - 'Transfer_Function_Check: Analyze the sensitivity of outputs ($y$) to variations in inputs ($x$) to identify which parameters require tightest control (Golden Parameters).'
-    - 'Stability_Monitoring_Scan: Monitor the Nelson Rules (e.g., points out of $3\\sigma$) in real-time control charts to identify ''Special Cause'' variations before they produce scrap.'
-Trust Metrics:
+  description: "[Entity] process-characterization-and-cpk-statistical-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Process Characterization and Cpk Statistical Control
+# [Entity] process-characterization-and-cpk-statistical-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장에서 물건을 100만 개 만들었을 때, 그중 단 하나도 불량이 나오지 않게 하려면 어떻게 해야 할까요? **공정 특성 분석 및 Cpk 통계적 제어**는 공정의 '실력'을 숫자로 측정하고 관리하는 **'제조의 성적표'** 기술입니다. 기계가 가진 미세한 떨림이나 온도의 변화가 최종 제품에 어떤 영향을 주는지(특성 분석) 파악하고, 우리 공정이 불량을 내지 않을 만큼 충분한 여유(Cpk)를 가지고 있는지 수학적으로 감시합니다. 우연에 기대지 않는 '필연적인 완벽함'을 만드는 **'확률의 지배술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Unreliable Measurement System - Variation from Gage/Operator exceeds Process Variation. Recalibrate Metrology"
         return "PASS: Precise Measurement System and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_cpk=1.67, sigma_level=5.0, out_of_control_alerts=0)
 print(engine.diagnose_process_stability_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_process_stability_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data process-cpk-and-yield-stability-logs-v2026`와 연동되어, 전 세계 반도체 및 자동차 부품 라인의 통계 데이터를 실시간 분석하고 불량률 폭증 및 공정 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 품질 신뢰성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

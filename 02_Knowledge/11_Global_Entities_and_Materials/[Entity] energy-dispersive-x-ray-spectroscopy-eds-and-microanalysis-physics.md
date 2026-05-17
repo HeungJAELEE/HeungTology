@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "energy-dispersive-x-ray-spectroscopy-eds-and-microanalysis-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] energy-dispersive-x-ray-spectroscopy-eds-and-microanalysis-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An analytical technique used for the elemental analysis or chemical characterization of a sample (EDS) and the physical study of characteristic X-ray generation through electron-matter interactions (Microanalysis Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["eds", "edx", "spectroscopy", "microanalysis", "elemental-analysis", "sem", "x-ray-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectral_Fidelity_Audit: Evaluate the ''Peak-to-Background'' ratio and Resolution (Mn-K$\\alpha$) to identify if the silicon drift detector (SDD) is experiencing electronic noise or pile-up artifacts.'
-    - 'Composition_Integrity_Check: Analyze the k-ratio and ZAF (Atomic Number, Absorption, Fluorescence) factors to ensure the high-fidelity elemental quantification is accurate within $\\pm 1\\%$.'
-    - 'Spatial_Fidelity_Scan: Monitor the interaction volume size at the chosen accelerating voltage to verify that the ''Microanalysis'' signal is coming from the target high-fidelity feature, not the surrounding matrix.'
-Trust Metrics:
+  description: "[Entity] energy-dispersive-x-ray-spectroscopy-eds-and-microanalysis-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 Energy-Dispersive X-ray Spectroscopy (EDS) and Microanalysis Physics
+# [Entity] energy-dispersive-x-ray-spectroscopy-eds-and-microanalysis-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈에 보이지 않는 아주 작은 먼지 하나가 어떤 원소로 이루어져 있는지 어떻게 알 수 있을까요? **에너지 분산형 X선 분광법(EDS) 및 미세 분석 물리**는 전자빔이라는 '화살'을 쏘아 물질이 내뱉는 고유한 'X선 비명'을 듣고 그 정체를 밝혀내는 **'나노 세계의 지문 감식'** 기술입니다. 모든 원소는 자신만의 고유한 X선 에너지를 가집니다. 우리는 이 에너지를 측정해 "이것은 금이다, 저것은 철이다"라고 즉석에서 판별합니다. **'물질의 정체를 원자 수준에서 꿰뚫어 보는 지능적 수사관'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Peak Overlap Ambiguity - Mo-L and S-K lines overlapping. Quantitative result is unreliable. Use deconvolution or switch to higher energy lines"
         return "PASS: Validated Spectral Deconvolution and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dead_time_pct=25.0, resolution_ev=128.5, peak_to_background=85.0)
 print(engine.diagnose_spectroscopy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_spectroscopy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data eds-detection-limits-and-peak-identification-v2026`와 연동되어, 전 세계 주요 반도체 불량 분석 센터 및 금속 연구소의 데이터를 실시간 분석하고 성분 오류 및 미량 원소 누락 사고 확률을 0.001% 이하로 억제함으로써 지능형 미세 분석 문명의 성분 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electron-beam-melting-ebm-and-additive-manufacturing-physics

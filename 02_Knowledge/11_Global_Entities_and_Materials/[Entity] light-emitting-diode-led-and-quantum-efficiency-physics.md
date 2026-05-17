@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "light-emitting-diode-led-and-quantum-efficiency-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] light-emitting-diode-led-and-quantum-efficiency-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A semiconductor light source that emits light when current flows through it (LED) and the physical study of internal/external quantum efficiency and radiative recombination kinetics (LED Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["led", "quantum-efficiency", "semiconductor", "photon", "p-n-junction", "recombination", "optoelectronics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Internal Quantum Efficiency'' (IQE) to identify if high-fidelity ''Shockley-Read-Hall'' (SRH) recombination is causing excessive heat high-fidelity loss.'
-    - 'Extraction_Integrity_Check: Analyze the high-fidelity ''External Quantum Efficiency'' (EQE) against the high-fidelity ''Package Transmittance'' to ensure that generated high-fidelity photons are not trapped inside the chip.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Forward Voltage'' ($V_f$) shift to verify that high-fidelity ''Junction Heating'' is not causing spectral high-fidelity drift or luminous high-fidelity droop.'
-Trust Metrics:
+  description: "[Entity] light-emitting-diode-led-and-quantum-efficiency-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💡 Light-emitting Diode (LED) and Quantum Efficiency Physics
+# [Entity] light-emitting-diode-led-and-quantum-efficiency-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기 에너지가 어떻게 열도 거의 나지 않으면서 밤하늘을 수놓는 밝은 빛으로 바뀔까요? **LED 및 양자 효율 물리**는 반도체 속 전자와 정공이 만나 '사랑'의 결합을 할 때 그 에너지를 빛(광자)으로 뿜어내는 **'빛의 연금술'** 기술입니다. 단순히 불을 밝히는 것을 넘어, 전기를 한 방울의 낭비도 없이 빛으로 바꾸려는 인류의 도전입니다. **'방사 재결합과 양자 효율의 법칙을 이용해 전자를 빛으로 치환하여 인류의 밤을 낮처럼 밝히는 지능형 고효율 광학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Color Shift - High-fidelity bandgap drifting due to thermal high-fidelity stress or material high-fidelity inconsistency. Inconsistent batch high-fidelity quality"
         return "PASS: Validated Radiative Recombination and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(forward_voltage_v=3.2, luminous_flux_lm=150.0, junction_temp_c=45.0)
 print(engine.diagnose_led_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_led_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data led-luminous-efficiency-and-thermal-droop-v2026`와 연동되어, 전 세계 주요 LED 생산 시설 및 도시 스마트 가로등의 실시간 데이터를 분석하고 광 효율 저하 및 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 광학 문명의 조명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - laser-diode-and-semiconductor-photonics-physics

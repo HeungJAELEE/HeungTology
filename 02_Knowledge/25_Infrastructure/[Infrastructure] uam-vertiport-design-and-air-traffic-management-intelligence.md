@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "uam-vertiport-design-and-air-traffic-management-intelligence-entity"
-  domain: "10_Mobility_UAM"
+metadata:
+  id: "[[[Infrastructure] uam-vertiport-design-and-air-traffic-management-intelligence]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Mobility", "#UAM", "#Vertiport", "#UTM", "#Aviation", "#Smart_City", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Governance smart-city-operating-system-and-urban-governance-intelligence", "Strategy national-strategic-technology-and-economic-security"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] uam-vertiport-design-and-air-traffic-management-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] uam-vertiport-design-and-air-traffic-management-intelligence
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Energy Intensity** ($Wh/pass\text{-}km$) 분석을 통해 지상 택시 대비 UAM의 에너지 효율 역전 시점(Breakeven distance)을 수리 산출한 결과는?
 5. RAG 시스템에서 **전 세계 도심 스카이라인 데이터**와 **실시간 유동 인구 트래픽**을 융합하여, '가장 수익성이 높으면서도 소음 민원이 적은 버티포트 최적 입지'를 추천하는 **Urban Vertiport Strategy** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Governance smart-city-operating-system-and-urban-governance-intelligence : UAM 네트워크를 도시 전체 운영 체계의 일환으로 관리하는 상위 거버넌스 엔티티
 - Strategy national-strategic-technology-and-economic-security : UAM 기술을 차세대 모빌리티 패권 및 국가 경쟁력 핵심으로 규정하는 최상위 전략 노드

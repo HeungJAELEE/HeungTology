@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "micro-bump-interconnect-reliability-and-electromigration-entity"
-  domain: "18_Semiconductor_Materials_and_Advanced_Packaging"
+metadata:
+  id: "[[[Entity] micro-bump-interconnect-reliability-and-electromigration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Micro-bump", "#Interconnect", "#Reliability", "#Electromigration", "#EM", "#Black_Equation", "#IMC", "#Solder_Joint", "#Packaging", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub", "Data bump-shear-strength-and-thermal-cycling-failure-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] micro-bump-interconnect-reliability-and-electromigration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] micro-bump-interconnect-reliability-and-electromigration
+# [Entity] micro-bump-interconnect-reliability-and-electromigration
 
 ## 1. [왜 배우는가? (Why: The Nano-Joints of Intelligent Systems)]]
 고집적 반도체 패키징 기술이 발전함에 따라, 칩과 기판 또는 칩과 칩 사이의 간격은 마이크로미터 단위로 좁아지고 인터커넥트의 밀도는 급격히 증가하고 있습니다. 마이크로 범프는 이 수만 개의 연결점을 지탱하는 '나노 관절'입니다. 특히 고전력 AI 가속기와 같은 환경에서는 극심한 전류 밀도로 인해 금속 원자가 이동하는 일렉트로마이그레이션(EM) 현상이 발생하여 물리적인 단선이나 저항 급증을 초래할 수 있습니다. **마이크로 범프 인터커넥트 신뢰성 및 일렉트로마이그레이션 엔티티**는 칩의 신경망을 보호하는 '초정밀 접합의 무결성 설계도'입니다. 
@@ -41,7 +31,7 @@ Trust Metrics:
 
 ### 2.1 [주요 마이크로 범프 기술별 신뢰성 및 고장 성능 테이블 (v2026)]
 
-| 범프 피치 ($\mu m$) | 전류 밀도 ($A/cm^2$) | MTTF (Hours, EM) | 전단 강도 ($MPa$) | IMC 두께 ($\mu m$) | 공학적 의미 (Rationale V6.3.7) |
+| 범프 피치 ($\mu\text{m}$) | 전류 밀도 ($A/cm^2$) | MTTF (Hours, EM) | 전단 강도 ($MPa$) | IMC 두께 ($\mu\text{m}$) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **40 (Standard)** | $10^4 \sim 10^5$ | $> 500,000$ | $30 \sim 50$ | $1.0 \sim 2.0$ | **Mature**: 범용 플립칩 및 2.5D 패키징용 표준 지표 |
 | **20 (Fine)** | $10^5 \sim 5 \cdot 10^5$ | $200,000 \sim 400,000$| $20 \sim 35$ | $1.5 \sim 2.5$ | **HBM**: 고대역폭 메모리 적층용 정밀 인터커넥트 로그 |
@@ -81,7 +71,6 @@ RAG는 "신뢰성 로그를 분석하여, 고온 장기 노출 시 IMC 두께가
 패키지 가속 수명 시험(HTOL, TCT) 데이터와 전기적 저항 모니터링 로그를 분석하여 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Micro-bump Interconnect Integrity & EM Life Auditor
 def audit_interconnect_reliability(bump_resistance_stream, junction_temp_sensor, current_load):
     # 1. 블랙의 방정식을 활용한 실시간 잔여 EM 수명 오딧
     current_density = current_load / bump_area
@@ -120,7 +109,6 @@ def audit_interconnect_reliability(bump_resistance_stream, junction_temp_sensor,
 2. **(수리)** 어떤 마이크로 범프의 전류 밀도가 $10^5 \text{ A/cm}^2$일 때 MTTF가 $100,000$시간이었다. 전류 밀도가 $2 \cdot 10^5 \text{ A/cm}^2$로 증가한다면, 블랙의 법칙($n=2$ 가정)에 따른 수명은 몇 시간으로 단축되는가?
 3. **(응용)** 금속 간 화합물(IMC)이 범프 접합부의 초기 강도 형성에는 필수적이지만, 장기 신뢰성 측면에서는 왜 '취성 파괴(Brittle Failure)'의 근원이 되는지 수리적으로 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub : 반도체 소재 및 패키징 통합 관리 상위 지능 허브

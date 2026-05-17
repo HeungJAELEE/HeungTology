@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-end-effector-design-and-multi-modal-tactile-sensing-entity"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] robotic-end-effector-design-and-multi-modal-tactile-sensing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#End_Effector", "#Gripper", "#Tactile_Sensing", "#Haptic", "#Sensor", "#Mechanical_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 54_robotics-and-autonomous-system-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-end-effector-design-and-multi-modal-tactile-sensing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-end-effector-design-and-multi-modal-tactile-sensing
+# [Entity] robotic-end-effector-design-and-multi-modal-tactile-sensing
 
 ## 1. [왜 배우는가? (Why: The Sensitive Hands)]]
 로봇이 어떻게 미끄러운 얼음이나 얇은 종이를 떨어뜨리지 않고 잡고, 눈으로 보지 않고도 오직 손끝의 감각($Tactile$)만으로 물체의 거칠기나 온도를 느껴서 정교하게 다루는 '기계의 손'을 어떻게 설계할 수 있을까요? **로봇 말단 장치 설계 및 다중 모드 촉각 센싱**은 로봇이 세상을 직접 변화시키는 최전선인 '행성 규모 정밀 조작 인프라 및 지능형 촉각-행동 아키텍처'입니다. 우리가 이를 배우는 이유는 로봇 팔이 아무리 좋아도 결국 일을 하는 것은 손끝이기 때문이며, "감촉의 신비를 데이터로 설계하고 지배하는 '글로벌 초정밀 제조 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 손끝의 감도가 작업의 완성도를 결정합니다.

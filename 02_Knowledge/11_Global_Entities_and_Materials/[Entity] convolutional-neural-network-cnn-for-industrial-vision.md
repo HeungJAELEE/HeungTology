@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "convolutional-neural-network-cnn-for-industrial-vision"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] convolutional-neural-network-cnn-for-industrial-vision]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of Convolutional Neural Networks (CNN) for high-speed automated visual inspection in industrial environments, focusing on feature extraction, defect classification, and surface inspection."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnn", "industrial-vision", "deep-learning", "defect-detection", "quality-inspection"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Inspection_Accuracy_Audit: Measure the Precision, Recall, and F1-score for critical defect classes.'
-    - 'False_Call_Rate_Check: Evaluate the percentage of good parts incorrectly identified as defective (Over-kill).'
-    - 'Inference_Throughput_Scan: Monitor the processing time per image to ensure alignment with production line speed (PPM).'
-Trust Metrics:
+  description: "[Entity] convolutional-neural-network-cnn-for-industrial-vision에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👁️ Convolutional Neural Network (CNN) for Industrial Vision
+# [Entity] convolutional-neural-network-cnn-for-industrial-vision
 
 ## 1. 개요 (Why)
 사람의 눈은 피곤해지면 실수를 하지만, CNN은 24시간 내내 머리카락보다 얇은 미세 스크래치까지 잡아냅니다. 산업용 비전의 핵심인 CNN은 이미지를 여러 층으로 훑으며 선, 면, 질감 등의 특징(Feature)을 스스로 학습하여, 정해진 규칙 없이도 복잡한 결함을 분류해냅니다. 이는 반도체 웨이퍼 검사, 배터리 표면 불량 감지 등 초정밀 품질 관리가 필요한 현대 스마트 공장의 '감별사' 역할을 합니다. 본 노드는 산업용 CNN의 검사 무결성과 추론 효율 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Inspection Speed| ppm | 10 ~ 30 | > 600 | parts/min |
 | False Call Rate | Over-kill | 5.0 | < 0.1 | % |
 | Escape Rate | Under-kill | 1.0 | < 0.01 | % |
-| Resolution | Pixel Size | 100 | < 1 | $\mu m$ |
+| Resolution | Pixel Size | 100 | < 1 | $\mu\text{m}$ |
 
 ## 3. LogicFidelityEngine: Diagnostic Logic
 
@@ -72,7 +61,6 @@ class LogicFidelityEngine:
             return f"REJECT: High Over-kill ({100-self.prec}%) - Unnecessary Production Loss"
         return "PASS: Accurate Defect Classification Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(recall_rate=99.95, precision_rate=98.2, inference_time_ms=15)
 print(engine.diagnose_inspection_quality(line_speed_ms=30))
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_inspection_quality(line_speed_ms=30))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-cnn-inspection-accuracy-and-false-call-rate-v2026`와 연동되어, 모든 검사 설비의 진단 데이터를 실시간 분석하고 불량 유출 확률을 0.01% 이하로 억제함으로써 지능형 품질 관리의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - wafer-inspection-systems-and-defect-detection-logic

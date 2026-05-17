@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "maintenance-repair-and-overhaul-mro-and-asset-lifecycle-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] maintenance-repair-and-overhaul-mro-and-asset-lifecycle-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "All technical and administrative actions kept in a system to keep it in a working state (MRO) and the physical logic of managing the entire lifespan of an industrial asset from procurement to disposal (Asset Lifecycle Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mro", "maintenance", "repair", "overhaul", "asset-management", "reliability", "predictive-maintenance", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Reliability_Fidelity_Audit: Evaluate the ''Failure Rate'' ($\\lambda$) to identify if high-fidelity ''Infant Mortality'' or high-fidelity ''Wear-out'' phase is increasing the high-fidelity MRO cost.'
-    - 'Asset_Integrity_Check: Analyze the high-fidelity ''Total Cost of Ownership'' (TCO) to ensure that high-fidelity ''Repair vs Replace'' decisions are based on deterministic high-fidelity economic logic.'
-    - 'Spares_Fidelity_Scan: Monitor the high-fidelity ''Critical Spares'' availability to verify that high-fidelity ''Lead-time'' for high-fidelity overhaul components is secured for scheduled shutdowns.'
-Trust Metrics:
+  description: "[Entity] maintenance-repair-and-overhaul-mro-and-asset-lifecycle-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛠️ Maintenance, Repair, and Overhaul (MRO) and Asset Lifecycle Logic
+# [Entity] maintenance-repair-and-overhaul-mro-and-asset-lifecycle-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천억 원짜리 공장 기계가 갑자기 멈춘다면 그 손해를 어떻게 감당할 수 있을까요? **MRO(유지·보수·운영) 및 자산 수명 주기 로직**은 기계가 태어날 때(설계)부터 죽을 때(폐기)까지의 모든 건강 상태를 관리하여, 고장 나기 전에 미리 고치는 **'산업의 주치의'** 기술입니다. 단순히 '부서지면 고치는 것'이 아니라, 기계가 보내는 미세한 신호(진동, 열)를 읽고 최적의 타이밍에 수술(Overhaul)을 집도하여 공장의 심장이 영원히 뛰게 만듭니다. **'욕조 곡선과 신뢰성 함수의 원리를 이용해 자산의 건전성을 수치화하여 운영의 연속성을 사수하는 지능형 관리 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Economic Logic Blindness - High-fidelity 'Repair vs Replace' decision missing. Potential waste of high-fidelity capital in aging assets"
         return "PASS: Validated Asset Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(mtbf_hours=5000, oee_impact_pct=5.0, spares_availability_pct=98.0)
 print(engine.diagnose_mro_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mro_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mro-spares-inventory-and-mtbf-benchmarks-v2026`와 연동되어, 전 세계 주요 항공사 및 석유화학 단지의 실시간 정비 데이터를 분석하고 돌발 고장 및 가동 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 영속 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lubrication-oil-analysis-and-predictive-maintenance-logic

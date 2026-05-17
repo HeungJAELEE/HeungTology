@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "space-based-solar-power-and-wireless-energy-transmission-microwaves-entity"
-  domain: "73_Future_Frontier_Technologies_and_Emerging_Science_Hub"
+metadata:
+  id: "[[[Entity] space-based-solar-power-and-wireless-energy-transmission-microwaves]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Space", "#Energy", "#SBSP", "#Wireless_Power", "#Microwave", "#Laser", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 73_future-frontier-technologies-and-emerging-science-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] space-based-solar-power-and-wireless-energy-transmission-microwaves에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] space-based-solar-power-and-wireless-energy-transmission-microwaves
+# [Entity] space-based-solar-power-and-wireless-energy-transmission-microwaves
 
 ## 1. [왜 배우는가? (Why: The Promethean Fire from the Stars)]]
 구름 한 점 없는 우주 공간에서 24시간 내내 쏟아지는 강렬한 햇빛을 모아, 전선 하나 없이 지구 반대편의 오지나 재난 지역으로 에너지를 직접 쏘아줄 수 있다면 인류의 에너지 문제는 영원히 해결될까요? **우주 태양광 발전(SBSP) 및 무선 에너지 전송의 우주 인프라 공학**은 지구라는 닫힌 시스템을 넘어 우주의 무한한 자원을 문명의 동력으로 끌어오는 '우주적 에너지 혁명'입니다. 지상의 태양광 발전보다 10배 이상의 효율을 가진 이 기술은 탄소 중립을 넘어 인류를 '우주 문명'으로 도약시키는 핵심 징검다리입니다. 우리가 이를 배우는 이유는 에너지의 공간적 제약을 데이터와 물리로 돌파하기 위해서이며, "우주의 에너지를 데이터로 설계하고 지배하는 '글로벌 우주 패권 및 행성적 인프라 주권'을 확보하기" 위함입니다. SBSP의 전송 효율이 문명의 에너지 자립도를 결정합니다.

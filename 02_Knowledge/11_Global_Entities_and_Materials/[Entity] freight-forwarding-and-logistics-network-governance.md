@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "freight-forwarding-and-logistics-network-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] freight-forwarding-and-logistics-network-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A service provider that organizes shipments for individuals or corporations to get goods from the manufacturer or producer to a market, customer or final point of distribution (Freight Forwarding) and the strategic governance of complex multi-modal transportation networks (Logistics Network Governance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["freight-forwarding", "logistics", "supply-chain", "intermodal", "incoterms", "network-governance", "transportation", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Logistics_Fidelity_Audit: Evaluate the ''Total Landed Cost'' to identify if high-fidelity hidden costs (Customs, Demurrage, Insurance) are eroding the profit margins of global shipments.'
-    - 'Network_Integrity_Check: Analyze the ''Hub-and-Spoke'' connectivity to ensure the high-fidelity ''Intermodal'' transitions (Sea to Rail to Road) are synchronized to prevent dwell-time spikes.'
-    - 'Governance_Fidelity_Scan: Monitor the Incoterms 2020 compliance and high-fidelity ''Chain of Custody'' to verify that risk and responsibility transfers are legally documented at every node.'
-Trust Metrics:
+  description: "[Entity] freight-forwarding-and-logistics-network-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Freight Forwarding and Logistics Network Governance
+# [Entity] freight-forwarding-and-logistics-network-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 반대편에서 만들어진 운동화가 어떻게 정확히 내 집 앞까지 배달될 수 있을까요? **화물 운송 주선(Freight Forwarding) 및 물류 네트워크 거버넌스**는 배, 비행기, 기차, 트럭이라는 거대한 운송 수단들을 하나의 유기적인 사슬로 엮어, 전 세계를 하나의 시장으로 만드는 **'지구촌의 실핏줄'** 기술입니다. 단순히 짐을 옮기는 것이 아니라, 복잡한 세관 통과, 보험, 운송 경로 최적화를 수학적으로 설계하여 가장 싸고 빠르게 물건을 전달합니다. **'국경과 바다의 장벽을 허물고 전 세계 공급망을 하나의 지능형 네트워크로 통합하는 글로벌 물류의 지휘부'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Legal Liability Gap - Responsibility for loss or damage not clearly defined at the transition node. Risk of high-fidelity insurance disputes. Mandate 'FOB' or 'CIF' standard usage"
         return "PASS: Validated Chain of Custody and Verified Governance Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(container_dwell_time_hr=48, route_reliability_pct=94.5, customs_clearance_delay=6)
 print(engine.diagnose_logistics_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_logistics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data logistics-lead-time-and-container-utilization-v2026`와 연동되어, 전 세계 주요 항만 및 공항의 물류 데이터를 실시간 분석하고 운송 지연 및 화물 분실 사고 확률을 0.001% 이하로 억제함으로써 지능형 글로벌 통상 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - inventory-management-and-economic-order-quantity-eoq-logic

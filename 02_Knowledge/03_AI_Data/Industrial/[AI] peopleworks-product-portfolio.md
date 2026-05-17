@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "PW-PROD-PORT-2026-V6.3.7"
-  domain: "Industrial_Electronic_Assets"
+metadata:
+  id: "[[[AI] peopleworks-product-portfolio]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Peopleworks", "#ProductPortfolio", "#BMS", "#ECU", "#HUD", "#PrecisionTiering", "#FidelityEngine", "#SmartFactory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] peopleworks-product-portfolio에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Strategic_Industrial_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] peopleworks-product-portfolio
@@ -101,7 +91,6 @@ class PeopleworksProductFidelityEngine:
 2. **Operational Result**: HUD 광학 모듈의 **LED 고휘도 제어** 효율이 $5\%$ 상승했을 때, 차량용 전장 시스템 전체의 **Power Consumption** 절감 효과는?
 3. **FidelityEngine**: **MCM(Mobile Camera Module)**의 OIS 액추에이터 제어 로그를 통해 조립 공정의 **'광축 정렬(Optical Alignment)'** 오차를 어떻게 역산하여 감지하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy peopleworks-illinois-matteson-ess-hub
 - bms-hardware-deep-design-and-isolation

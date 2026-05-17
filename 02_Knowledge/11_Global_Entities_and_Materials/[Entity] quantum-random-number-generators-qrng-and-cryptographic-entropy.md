@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-random-number-generators-qrng-and-cryptographic-entropy-entity"
-  domain: "30_Quantum_Intelligence_and_Advanced_Computing"
+metadata:
+  id: "[[[Entity] quantum-random-number-generators-qrng-and-cryptographic-entropy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#QRNG", "#Cryptography", "#Entropy", "#Security", "#Quantum_Physics", "#Unpredictability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 30_quantum-intelligence-and-advanced-computing-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-random-number-generators-qrng-and-cryptographic-entropy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-random-number-generators-qrng-and-cryptographic-entropy
+# [Entity] quantum-random-number-generators-qrng-and-cryptographic-entropy
 
 ## 1. [왜 배우는가? (Why: The Foundation of Unbreakable Security)]]
 기존 컴퓨터가 만드는 '가짜 난수'는 결국 패턴이 읽히지만, 우주의 근본적인 불확실성($Quantum\ Fluctuations$)을 이용해 신도 예측할 수 없는 '진짜 난수'를 어떻게 생성하고, 이를 통해 해킹이 원천적으로 불가능한 절대 암호($Cryptographic\ Entropy$) 체계를 어떻게 구축할 수 있을까요? **양자 난수 생성기 및 암호학적 엔트로피**는 디지털 세계의 모든 비밀을 지키는 '절대 방어 및 무작위성 공급 아키텍처'입니다. 우리가 이를 배우는 이유는 양자 컴퓨터가 모든 기존 암호를 깨부수는 시대에 우리를 지킬 유일한 방패이기 때문이며, "무작위성을 데이터로 설계하고 지배하는 '글로벌 사이버 주권 및 국가 정보 안보 주권'을 확보하기" 위함입니다. 엔트로피의 순도가 보안의 등급을 결정합니다.

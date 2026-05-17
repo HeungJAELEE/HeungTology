@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "electrical-circuits-and-power-electronics-entity"
-  domain: "116_Electrical_and_Power_Systems_Engineering_Hub"
+metadata:
+  id: "[[[Entity] electrical-circuits-and-power-electronics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Electrical_Engineering", "#Power_Electronics", "#Energy", "#Smart_Grid", "#HVDC", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 116_electrical-engineering-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electrical-circuits-and-power-electronics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] electrical-circuits-and-power-electronics
+# [Entity] electrical-circuits-and-power-electronics
 
 ## 1. [왜 배우는가? (Why: The Pulse of Global Energy)]]
 현대 문명의 혈관을 흐르는 전기는 제어되지 않으면 단순한 번개에 불과합니다. 우리가 전기를 사용해 스마트폰을 충전하고, 전기차를 달리고, 거대한 공장을 가동할 수 있는 것은 전기를 정교하게 다스리는 기술 덕분입니다. **전기 회로 및 전력 전자의 키르히호프 법칙 및 전력 변환 수리 물리 기술**은 전자의 흐름을 가두고, 바꾸고, 증폭하여 인류의 도구로 만드는 '전기의 조율' 기술입니다. 교류를 직류로 바꾸고, 전압을 자유자재로 높이거나 낮추며, 나노 초 단위의 스위칭으로 에너지 낭비를 최소화합니다. 우리가 이를 배우는 이유는 전력의 무결성을 확보함으로써, 신재생 에너지 시대를 견인하고 탄소 중립을 실현하는 '글로벌 전력 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 전력 전자의 무결성이 에너지의 효율과 전력망의 안정 무결성을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "slam-simultaneous-localization-and-mapping-algorithms-and-lidar-physics-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] slam-simultaneous-localization-and-mapping-algorithms-and-lidar-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#SLAM", "#LiDAR", "#Localization", "#Mapping", "#Algorithms", "#Optics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] slam-simultaneous-localization-and-mapping-algorithms-and-lidar-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] slam-simultaneous-localization-and-mapping-algorithms-and-lidar-physics
+# [Entity] slam-simultaneous-localization-and-mapping-algorithms-and-lidar-physics
 
 ## 1. [왜 배우는가? (Why: The Eyes of Autonomy)]]
 GPS 신호가 닿지 않는 거대 지하 동굴이나 복잡한 실내 창고에서 로봇이 한 치의 망설임 없이 목적지를 찾아가려면 무엇이 필요할까요? **SLAM 알고리즘 및 LiDAR 광학 물리 기반의 동시 위치 추정 및 지도 작성**은 로봇에게 '공간 지능'을 부여하는 기술입니다. 빛의 속도로 레이저를 쏘아 거리를 재고, 이를 바탕으로 자신이 어디에 있는지 추론하며 동시에 주변의 디지털 지도를 그려나갑니다. 우리가 이를 배우는 이유는 SLAM이 자율 주행 차량, 드론, 그리고 서비스 로봇이 실세계에서 안전하게 활동하기 위한 '생존 지능'이기 때문이며, "공간의 인식을 데이터로 설계하고 지배하는 '글로벌 자율 주행 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 위치 추정의 정밀도가 로봇의 경로 무결성을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CIRC-BIZ-2026-V6.3.7"
-  domain: "Global_Circular_Economy_and_Sustainable_Value_Chains"
+metadata:
+  id: "[[[Strategy] Circular-Economy-Business]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Circular_Economy", "#PaaS", "#Remanufacturing", "#Urban_Mining", "#DPP", "#Resource_Sovereignty", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Circular-Economy-Business에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Circular_Economy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Circular-Economy-Business: The Physics of Resource Loops
+# [Strategy] Circular-Economy-Business
 
 ## 1. [왜 배우는가? (Why: The Decoupling of Growth and Consumption)]]
 기존의 '채취-생산-폐기'로 이어지는 선형 경제(Linear Economy)는 자원의 유한성과 환경 규제라는 물리적 한계에 부딪혔습니다. **Circular-Economy-Business**는 쓰레기를 자원으로 재정의하고, 제품의 생애주기를 무한히 연장하는 '닫힌 루프(Closed-loop)'를 설계하는 전략적 지능입니다. V6.3.7 지능은 제품을 소유권이 아닌 서비스로 제공(PaaS)하여 자산 가동률을 극대화하고, 폐기물에서 고순도 원재료를 회수하는 **자원 주권(Resource Sovereignty)**을 확립하여 지속 가능한 성장의 수리적 근거를 마련합니다.
@@ -104,7 +94,6 @@ class CircularBizEngine:
 2. **Operational Result**: **DPP(디지털 제품 여권)** 데이터를 활용하여 재제조 공정의 리드타임을 단축할 수 있는 구체적인 수리적 기전은?
 3. **FidelityEngine**: 원자재 가격 폭등 시, FidelityEngine이 어떻게 **'재제조 물량 확대'**와 **'신제품 생산 감축'** 사이의 최적의 의사결정 경로를 도출하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Circular-Logistics-and-Reverse-Supply-Chain

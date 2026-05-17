@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diesel-exhaust-fluid-def-and-scr-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diesel-exhaust-fluid-def-and-scr-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An aqueous urea solution (32.5% high-purity urea and 67.5% deionized water) used as a consumable in Selective Catalytic Reduction (SCR) systems to reduce nitrogen oxide (NOx) emissions from diesel engines (Diesel Exhaust Fluid) and the chemical decomposition and reduction reactions involved (SCR Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["def", "urea", "scr", "diesel-emission", "adblue", "denitrification", "environmental-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Chemical_Fidelity_Audit: Evaluate the ''Urea Concentration'' (refractometer check) to identify if the fluid has degraded or been diluted, preventing the required NOx reduction rate.'
-    - 'Reaction_Integrity_Check: Analyze the exhaust gas temperature to ensure it is above 200°C for proper urea thermolysis; otherwise, ''Urea Deposits'' (crystallization) will block the exhaust pipe.'
-    - 'Dosing_Fidelity_Scan: Monitor the DEF pump pressure and injector duty cycle to verify that the $NH_3/NOx$ molar ratio is optimized, minimizing ''Ammonia Slip''.'
-Trust Metrics:
+  description: "[Entity] diesel-exhaust-fluid-def-and-scr-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Diesel Exhaust Fluid (DEF) and SCR Chemistry
+# [Entity] diesel-exhaust-fluid-def-and-scr-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 디젤차가 뿜어내는 독한 가스를 어떻게 투명한 물과 질소로 바꿀까요? **요소수(DEF) 및 SCR 화학**은 엔진 밖으로 나가는 뜨거운 가스에 '비료 성분(요소)'을 뿌려 독성을 해독하는 **'배기가스의 정화 연금술'** 기술입니다. 요소수는 배기 파이프 안에서 암모니아로 변신해 독가스(NOx)와 싸우고, 결국 우리 몸에 무해한 공기로 되돌려 보냅니다. 디젤 엔진의 강력한 힘은 유지하면서도 대기를 깨끗하게 지키는 **'산업 문명의 푸른 약속'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: DEF Injection Pressure Low - Urea spray will not atomize. Poor mixing with exhaust gas expected. Inspect pump and filters"
         return "PASS: Validated Dosing Pressure and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(def_concentration_pct=32.4, exhaust_temp_c=310.0, nox_reduction_pct=95.5)
 print(engine.diagnose_scr_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_scr_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data def-quality-standards-and-scr-efficiency-v2026`와 연동되어, 전 세계 주요 디젤 상용차 및 건설 기계의 데이터를 실시간 분석하고 배출가스 위반 및 설비 파손 사고 확률을 0.0001% 이하로 억제함으로써 지능형 친환경 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - denitrification-and-nox-emission-control-logic

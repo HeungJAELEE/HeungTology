@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "hazardous-chemical-management-and-process-safety-entity"
-  domain: "25_Industrial_Safety_Health_and_Environment_SHE"
+metadata:
+  id: "[[[Entity] hazardous-chemical-management-and-process-safety]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Chemical_Safety", "#PSM", "#GHS", "#SDS", "#Containment", "#Toxicology", "#Process_Safety", "#Leak_Detection", "#Hazardous_Materials", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 28_industrial-safety-health-and-environment-she-intelligence-hub", "Data chemical-spill-and-hazardous-material-leak-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] hazardous-chemical-management-and-process-safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] hazardous-chemical-management-and-process-safety
+# [Entity] hazardous-chemical-management-and-process-safety
 
 ## 1. [왜 배우는가? (Why: The Mastery of Industrial Alchemy)]]
 현대 제조 공정에서 화학 물질은 필수적인 도구이자 가장 위험한 위협입니다. 화학 물질을 안전하게 다루는 지능은 단순히 사고를 막는 것을 넘어, 공장의 물리적 무결성을 보장하는 핵심 역량입니다. **유해 화학 물질 관리 및 공정 안전 엔티티**는 독성 물질을 지배하고 공정의 폭주를 막는 '화학적 방어 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "화학 로그를 분석하여, 산(Acid)과 염기(Base)의 비의도적
 화학 탱크의 레벨 센서와 가스 감지 센서, 그리고 공정 제어 시스템(DCS)의 데이터를 분석하여 화학 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Hazardous Chemical & Process Safety Fidelity Auditor
 def audit_chemical_integrity(gas_detector_stream, tank_level_log, psm_interlock_status):
     # 1. 가스 누출(Leak) 정밀 감지 및 농도 무결성 오딧
     current_ppm = gas_detector_stream.get_max_ppm()
@@ -117,7 +106,6 @@ def audit_chemical_integrity(gas_detector_stream, tank_level_log, psm_interlock_
 2. **(수리)** 인화성 액체의 폭발 하한계(LEL)가 $2.0\%$이고 현재 현장 가스 농도가 $0.1\%$($1,000 \text{ ppm}$)일 때, 현재의 'LEL 대비 비중(%)'을 계산하고 폭발 위험도를 판정하시오.
 3. **(응용)** 화학 물질 저장소의 '방류벽(Secondary Containment)' 설계 시, 왜 주 저장 탱크 용량의 $110\%$ 이상을 확보해야 하는지 수리적/안전적 관점에서 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 28_industrial-safety-health-and-environment-she-intelligence-hub : 산업 안전, 보건 및 환경 통합 관리 상위 지능 허브

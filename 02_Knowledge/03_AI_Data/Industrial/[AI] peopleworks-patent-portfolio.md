@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "PW-PATENT-STRAT-2026-V6.3.7"
-  domain: "Intellectual_Property_Strategy"
+metadata:
+  id: "[[[AI] peopleworks-patent-portfolio]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Peopleworks", "#Patent", "#IP_Strategy", "#PrecisionTiering", "#FidelityEngine", "#LaserWelding", "#BMS_Safety"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] peopleworks-patent-portfolio에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Strategic_IP_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] peopleworks-patent-portfolio
@@ -102,7 +92,6 @@ class PatentFidelityEngine:
 2. **Operational Result**: **가스 센서 통합 BMS** 특허의 권리 범위가 '전압/전류 제어'를 포함하도록 확장되었을 때, **침해 회피(Design-around)** 리스크를 수리적으로 얼마나 낮출 수 있는가?
 3. **FidelityEngine**: **PQI** 모델을 통해 분석된 특허의 가치가 실제 라이선스 로열티 수익과 맺는 상관관계의 수리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - AI peopleworks-illinois-matteson-ess-hub
 - peopleworks-core-technologies-tco-welding-and-bms-evolution

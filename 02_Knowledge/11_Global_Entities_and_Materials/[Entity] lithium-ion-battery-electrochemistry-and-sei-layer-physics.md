@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "lithium-ion-battery-electrochemistry-and-sei-layer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] lithium-ion-battery-electrochemistry-and-sei-layer-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The electrochemical system (Lithium-ion Battery) that stores energy through the reversible intercalation of lithium ions between an anode and a cathode, involving the critical formation and evolution of a Solid Electrolyte Interphase (SEI) layer on the anode surface."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lithium-ion-battery", "electrochemistry", "sei-layer", "intercalation", "solid-electrolyte-interphase", "battery-aging", "anode-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'SEI_Layer_Stability_Audit: Evaluate the growth rate and impedance of the SEI layer using Electrochemical Impedance Spectroscopy (EIS) to predict battery aging and capacity loss.'
-    - 'Lithium_Plating_Check: Analyze the charging profile for signs of lithium metal deposition on the anode, which poses a severe internal short-circuit and fire risk.'
-    - 'Thermal_Runaway_Scan: Monitor the cell temperature and pressure for early indicators of exothermic side reactions (SEI decomposition) that could lead to thermal runaway.'
-Trust Metrics:
+  description: "[Entity] lithium-ion-battery-electrochemistry-and-sei-layer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Lithium-ion Battery Electrochemistry and SEI Layer Physics
+# [Entity] lithium-ion-battery-electrochemistry-and-sei-layer-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰부터 전기차까지, 우리 시대를 움직이는 가장 강력한 '에너지 주머니'는 어떻게 작동할까요? **리튬 이온 배터리 및 SEI 층 물리**는 리튬이라는 가벼운 금속 이온이 전극 사이를 바쁘게 오가며(Intercalation) 전기를 저장하고 내뱉는 **'이온의 탁구 게임'**입니다. 특히 음극 표면에는 **SEI(Solid Electrolyte Interphase)**라는 아주 얇고 신비로운 보호막이 생기는데, 이것은 이온만 통과시키고 전해액은 막아주는 **'지능형 검문소'**와 같습니다. 이 검문소가 얼마나 튼튼하고 깨끗하게 유지되느냐에 따라 배터리의 수명과 안전이 결정됩니다. 우리 문명의 에너지를 가두는 **'나노 단위의 화학적 성벽'**을 이해하는 일입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Plating Risk - Dendrite Formation Likely to Puncture Separator"
         return "PASS: Safe Charging Profile Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dcr_m_ohm=22.5, capacity_retention_pct=92.0, sei_impedance_rise=1.15)
 print(engine.diagnose_battery_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_battery_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data lithium-battery-capacity-retention-and-sei-growth-v2026`와 연동되어, 전 세계 전기차의 배터리 데이터를 실시간 분석하고 갑작스러운 화재 및 성능 급락 사고 확률을 0.001% 이하로 억제함으로써 에너지 저장 문명의 화학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lfp-lithium-iron-phosphate-battery-chemistry

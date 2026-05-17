@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "topological-insulators-and-spin-orbit-coupling-physics-entity"
-  domain: "18_Advanced_Materials"
+metadata:
+  id: "[[[Entity] topological-insulators-and-spin-orbit-coupling-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Advanced_Materials", "#Topological_Insulator", "#Spintronics", "#Quantum_Physics", "#Spin-orbit_Coupling", "#Nanotechnology", "#Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "MOC 16_quantum-computing-and-hardware-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] topological-insulators-and-spin-orbit-coupling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] topological-insulators-and-spin-orbit-coupling-physics
+# [Entity] topological-insulators-and-spin-orbit-coupling-physics
 
 ## 1. [왜 배우는가? (Why: The Highway with No Resistance)]]
 내부는 전기가 통하지 않는 절연체인데, 껍데기(표면)만 전기가 아주 잘 통하고 심지어 장애물에 부딪혀도 속도가 줄지 않는 기적의 소재가 있다면 어떨까요? **위상 절연체 및 스핀-궤도 결합 물리**는 소재의 '위상적(Topological)' 성질 때문에 외부 방해에도 굴하지 않고 정보(스핀)를 전달하는 '차세대 저전력 연산의 물리적 지침'입니다. 우리가 이를 배우는 이유는 전력 소모가 거의 없는 초고성능 컴퓨터를 만들거나 양자 컴퓨터의 오류를 원천 차단하기 위함이며, "물리학적 보호 기전을 공학적으로 이용하는 '글로벌 양자 소재 및 초저전력 연산 주권'을 확보하기" 위함입니다. 표면을 흐르는 스핀의 흐름이 미래 지능의 효율을 결정합니다.

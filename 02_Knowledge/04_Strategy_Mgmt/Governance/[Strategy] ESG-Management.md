@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] ESG-Management"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] ESG-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] ESG-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] ESG-Management
+# [Strategy] ESG-Management
 
 ## 1. [왜 배우는가? (Why)]]
 과거에는 이익만 많이 내면 훌륭한 기업이었으나, 이제는 지구 환경(E)을 파괴하거나 사회적(S) 책임을 다하지 않고 투명한 지배구조(G)를 갖추지 못한 기업은 시장에서 퇴출당하는 시대입니다. ESG는 단순한 홍보 수단이 아니라, 글로벌 투자자들이 투자를 결정하는 핵심 지표(ISSB)이며, 탄소 국경세(CBAM)처럼 직접적인 관세 장벽으로 작용합니다. ESG를 이해하는 것은 기업의 비재무적 리스크를 관리하고, 환경적 가치를 경제적 경쟁력으로 전환하는 지속 가능한 성장 논리를 수립하는 것입니다.
@@ -95,5 +85,4 @@ def calculate_corporate_emissions(energy_data, supply_chain_data):
 2. '이중 중대성(Double Materiality)' 원칙이 기존의 재무 중심 공시 대비 투자자에게 제공하는 정보의 가치는?
 3. 유럽의 'CBAM' 제도가 한국의 철강 및 배터리 수출 기업에 미치는 실질적인 경제적/전략적 위협은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

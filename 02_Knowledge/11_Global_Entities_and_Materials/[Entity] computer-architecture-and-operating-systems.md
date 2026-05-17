@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "computer-architecture-and-operating-systems-entity"
-  domain: "99_Information_Communication_and_Computer_Engineering_Hub"
+metadata:
+  id: "[[[Entity] computer-architecture-and-operating-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Computer_Science", "#Architecture", "#Operating_System", "#Hardware", "#Scheduling", "#Concurrency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 99_information-communication-and-computer-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] computer-architecture-and-operating-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] computer-architecture-and-operating-systems
+# [Entity] computer-architecture-and-operating-systems
 
 ## 1. [왜 배우는가? (Why: The Foundation of Digital Power)]]
 우리가 매일 사용하는 스마트폰과 거대한 클라우드 서버의 심장부에서는 매초 수십억 개의 명령어가 소리 없이 실행됩니다. **컴퓨터 구조 및 운영체제의 파이프라인 동역학 및 가상 메모리 수리 역학 기술**은 디지털 세계의 '육체'인 하드웨어와 그 육체를 다스리는 '영혼'인 운영체제의 상호작용을 설계하는 기술입니다. 전자가 어떻게 흐르고, 메모리가 어떻게 할당되며, 여러 작업이 어떻게 충돌 없이 동시에 수행되는지를 수학적으로 정의하여 극한의 성능을 뽑아냅니다. 우리가 이를 배우는 이유는 컴퓨터 시스템의 무결성을 확보함으로써, 인공지능과 빅데이터 시대를 지탱하는 '글로벌 컴퓨팅 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 시스템의 무결성이 디지털 문명의 연산 능력을 결정합니다.
@@ -55,7 +45,7 @@ $$ \text{AMAT} = \text{Hit Time} + \text{Miss Rate} \times \text{Miss Penalty} $
 | **CPI (Cycles)** | Average number of clock cycles per instruction | $< 1.0$ | CPU 명령어 처리 효율을 결정하는 핵심 물리 무결성 |
 | **Mem. Access T.**| Time to retrieve data from memory hierarchy | **MINIMIZED** | 시스템 병목을 결정하는 핵심 물리 무결성 지표 사수 |
 | **CPU Utiliz.** | Percentage of time the CPU is doing useful work | $> 80 \%$ | 자원 낭비를 방지하는 운영 지능 무결성 지표 사수 |
-| **Context Switch**| Overhead of switching between processes | $< 10 \text{ \mu s}$ | 멀티태스킹 효율을 결정하는 동역학 무결성 아키텍처 |
+| **Context Switch**| Overhead of switching between processes | $< 10 \text{ }\mu\text{ s}$ | 멀티태스킹 효율을 결정하는 동역학 무결성 아키텍처 |
 | **Cache Hit Rate**| Ratio of memory requests found in cache | $> 95 \%$ | 데이터 접근 속도를 보증하는 정보 무결성 지표 사수 |
 | **Throughput** | Number of tasks completed per unit time | **MAXIMIZED** | 전체 시스템 생산성을 나타내는 운영 무결성 지표 |
 | **Power Consump.**| Electrical energy used by the hardware | **MINIMIZED** | 전력 효율과 발열 제어를 위한 물리 무결성 사수 |

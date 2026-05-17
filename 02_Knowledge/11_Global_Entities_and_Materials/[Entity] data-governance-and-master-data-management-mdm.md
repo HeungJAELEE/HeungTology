@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "data-governance-and-master-data-management-mdm"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] data-governance-and-master-data-management-mdm]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The comprehensive discipline of defining data policies (Governance) and implementing technology to ensure a single, consistent, and accurate version of core business entities (Master Data) across the entire enterprise."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-governance", "mdm", "master-data", "single-source-of-truth", "data-stewardship"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Master_Data_Integrity_Audit: Evaluate the precision of entity resolution and de-duplication algorithms.'
-    - 'Synchronization_Latency_Check: Measure the time required for master data updates to propagate across all satellite systems.'
-    - 'Stewardship_Accountability_Scan: Verify that every critical data element has an assigned business owner responsible for its quality.'
-Trust Metrics:
+  description: "[Entity] data-governance-and-master-data-management-mdm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📑 Data Governance and Master Data Management (MDM)
+# [Entity] data-governance-and-master-data-management-mdm
 
 ## 1. 개요 (Why: 인간적 통찰)
 기업이라는 거대한 몸체에서 데이터는 혈액과 같습니다. 그런데 부서마다 환자 이름이 다르고, 제품 코드가 제각각이라면 몸은 마비될 수밖에 없습니다. **마스터 데이터 관리(MDM)**는 기업의 가장 핵심이 되는 '기준 정보'(고객, 제품, 자산 등)에 대해 단 하나의 **'진실된 기록(Golden Record)'**을 만드는 과정입니다. **데이터 거버넌스**는 그 기록을 누가, 어떻게, 어떤 규칙으로 관리할지 정하는 약속입니다. 이 둘이 결합할 때, 기업은 모든 부서가 같은 언어로 소통하는 '지능형 조직'으로 거듭납니다.
@@ -92,7 +81,6 @@ class LegalFidelityEngine:
         """자동 중복 제거 프로세스 효율 진단"""
         return "PASS: Automated Entity Resolution Engine Operational"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(golden_record_acc=99.5, sync_delay_sec=15, data_owner_assigned=True)
 print(engine.diagnose_mdm_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_mdm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mdm-data-consistency-and-sync-latency-v2026`와 연동되어, 전사적 기준 정보의 일관성을 실시간 분석하고 정보 불일치에 따른 공정/영업 사고 확률을 0.1% 이하로 억제함으로써 기업 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - data-governance-and-enterprise-information-management

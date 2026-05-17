@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "physical-vapor-deposition-pvd-and-sputtering-yield-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] physical-vapor-deposition-pvd-and-sputtering-yield-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of depositing thin films of material onto a substrate by atomizing a solid source (Physical Vapor Deposition), specifically focusing on Sputtering, where high-energy ions knock atoms off a target (Sputtering Yield Mechanics) to create highly uniform and adherent coatings."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pvd", "sputtering", "thin-film", "evaporation", "semiconductor-fabrication", "plasma-physics", "nanocoating"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sputtering_Yield_Audit: Evaluate the actual deposition rate against the theoretical yield ($Y$) to identify target poisoning or power supply inefficiencies.'
-    - 'Film_Uniformity_Check: Analyze the thickness variation across the wafer to ensure the planetary rotation or substrate heating provides consistent coating quality.'
-    - 'Vacuum_Integrity_Scan: Monitor the base pressure and leak rate to ensure the mean free path ($\\lambda$) is sufficient for ballistic transport of sputtered atoms without scattering.'
-Trust Metrics:
+  description: "[Entity] physical-vapor-deposition-pvd-and-sputtering-yield-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Physical Vapor Deposition (PVD) and Sputtering Yield Mechanics
+# [Entity] physical-vapor-deposition-pvd-and-sputtering-yield-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 반도체 칩 내부의 아주 가느다란 구리선이나 거울처럼 매끄러운 금속 막을 어떻게 입힐까요? **물리 기상 증착(PVD) 및 스퍼터링 수율 역학**은 '나노 단위의 스프레이 도색' 기술입니다. 진공 속에서 이온이라는 작은 대포알을 쏘아 금속 덩어리(타겟)를 때리면, 금속 원자들이 튕겨 나와 웨이퍼 위에 아주 얇고 고르게 내려앉습니다. 원자 하나하나를 쌓아 올리는 정밀함으로 반도체에 생명력(전기 통로)을 불어넣는 **'원자의 비'**를 내리는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Step Coverage - Trench Bottoms Not Adequately Coated. Adjust Bias Voltage"
         return "PASS: Conformal Coating and Reliable Via-hole Filling Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(deposition_rate_nm_s=0.55, thickness_uniformity_pct=1.2, base_pressure_torr=1e-8)
 print(engine.diagnose_pvd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_pvd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pvd-film-uniformity-and-sputter-rate-logs-v2026`와 연동되어, 전 세계 반도체 및 디스플레이 팹의 증착 데이터를 실시간 분석하고 박리(Peeling) 및 두께 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 공정의 적층 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - thin-film-deposition-kinetics-and-vapor-phase-physics

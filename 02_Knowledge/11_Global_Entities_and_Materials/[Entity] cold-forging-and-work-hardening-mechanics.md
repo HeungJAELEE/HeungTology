@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cold-forging-and-work-hardening-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cold-forging-and-work-hardening-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process in which metal is shaped at room temperature through high-pressure plastic deformation (Cold Forging) and the physical phenomenon where the metal becomes stronger and harder as it is deformed due to the buildup of dislocations within the crystal lattice (Work Hardening Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cold-forging", "work-hardening", "plastic-deformation", "metallurgy", "forging", "dislocation-density", "net-shape-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Forging_Fidelity_Audit: Evaluate the ''True Strain'' ($\\epsilon$) and flow stress to identify if the material is reaching its ductility limit, which causes internal ''Chevron'' cracking.'
-    - 'Hardening_Integrity_Check: Analyze the post-forging hardness profile to ensure that the ''Work Hardening'' effect has provided the required structural strength without excessive embrittlement.'
-    - 'Die_Fidelity_Scan: Monitor the forging force and friction to verify that the ''Lubrication Barrier'' is preventing tool wear and ensuring precise net-shape dimensions.'
-Trust Metrics:
+  description: "[Entity] cold-forging-and-work-hardening-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔨 Cold Forging and Work Hardening Mechanics
+# [Entity] cold-forging-and-work-hardening-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 차가운 금속 덩어리를 엄청난 힘으로 눌러서 정교한 볼트나 기어를 순식간에 만들어낼 수 있을까요? **냉간 단조 및 가공 경화(Work Hardening) 역학**은 금속을 달구지 않고 상온에서 '억지로' 구겨 넣어서 모양을 만드는 **'상온의 소생술'** 기술입니다. 놀랍게도 금속은 두드려 맞고 모양이 변할수록 점점 더 단단해지는 '가공 경화' 성질을 가지고 있습니다. 재료를 아끼면서도 강철보다 단단한 부품을 만드는 **'금속의 잠재력을 깨우는 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interrupted Grain Flow - Internal structure not following the part geometry. Weak spots detected. Structural integrity compromised"
         return "PASS: Continuous Fiber Matrix and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(forming_load_kn=7500.0, surface_hardness_hv=380.0, lubrication_film_thick_um=1.2)
 print(engine.diagnose_forging_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_forging_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cold-forging-force-and-material-hardness-profiles-v2026`와 연동되어, 전 세계 주요 자동차 부품 및 체결류 공장의 데이터를 실시간 분석하고 금형 파손 및 내부 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 강도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - body-in-white-biw-and-automotive-stamping-mechanics

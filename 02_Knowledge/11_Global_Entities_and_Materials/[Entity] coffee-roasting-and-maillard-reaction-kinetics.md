@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coffee-roasting-and-maillard-reaction-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coffee-roasting-and-maillard-reaction-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The thermal process that transforms green coffee beans into roasted products through complex chemical changes (Coffee Roasting) and the study of the non-enzymatic browning reaction between amino acids and reducing sugars that produces the characteristic aroma and color of roasted coffee (Maillard Reaction Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coffee-roasting", "maillard-reaction", "food-science", "chemical-kinetics", "flavor-chemistry", "heat-transfer", "beverage-industry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Roasting_Fidelity_Audit: Evaluate the ''Rate of Rise'' (RoR) to identify if the bean''s internal temperature is increasing too quickly, which leads to ''Scorching'' (surface charring) before internal development.'
-    - 'Reaction_Integrity_Check: Analyze the color development (Agtron scale) to ensure the Maillard reaction and Strecker degradation have achieved the target flavor precursors.'
-    - 'Aroma_Fidelity_Scan: Monitor the emission of volatile organic compounds (VOCs) to verify that the ''First Crack'' and ''Second Crack'' timings are aligned with the intended roast profile.'
-Trust Metrics:
+  description: "[Entity] coffee-roasting-and-maillard-reaction-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☕ Coffee Roasting and Maillard Reaction Kinetics
+# [Entity] coffee-roasting-and-maillard-reaction-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 아무런 향도 나지 않는 딱딱한 초록색 씨앗(생두)이 어떻게 황홀한 커피 향을 내는 원두로 바뀔까요? **커피 로스팅 및 마이야르 반응(Maillard Reaction) 역학**은 뜨거운 열로 생두 속의 화학 성분을 재배치하여 수천 가지 향기 분자를 창조하는 **'분자의 오케스트라'** 기술입니다. 빵이 구워질 때의 고소함과 고기가 익을 때의 감칠맛을 만드는 '마이야르 반응'을 나노 초 단위로 조절하여, 한 잔의 예술을 빚어내는 **'미각의 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Moisture Loss - Bean structure compromised. Likely over-roasted or flash-heated. Brittle texture and poor shelf life"
         return "PASS: Validated Structural Expansion and Verified Roasting Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rate_of_rise_c_min=8.5, crack_timing_sec=540, final_color_agtron=55.0)
 print(engine.diagnose_roast_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_roast_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data coffee-roasting-profile-and-chemical-composition-v2026`와 연동되어, 전 세계 주요 스페셜티 로스터리의 데이터를 실시간 분석하고 불량 로스팅 및 향미 소실 사고 확률을 0.001% 이하로 억제함으로써 지능형 기호 문명의 미각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - biological-wastewater-treatment-and-activated-sludge-process

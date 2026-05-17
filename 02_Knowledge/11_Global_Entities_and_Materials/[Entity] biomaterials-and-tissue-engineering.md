@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "biomaterials-and-tissue-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] biomaterials-and-tissue-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of synthetic or natural materials (Biomaterials) to interact with biological systems for the purpose of tissue repair, replacement, or regeneration (Tissue Engineering)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["biomaterials", "tissue-engineering", "scaffold", "regenerative-medicine", "biocompatibility"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Biocompatibility_Audit: Evaluate the immune response and cellular toxicity of the material.'
-    - 'Degradation_Rate_Check: Monitor the mechanical strength loss of the scaffold over time in-vivo.'
-    - 'Cell_Proliferation_Scan: Verify the density and viability of cells growing within the 3D scaffold.'
-Trust Metrics:
+  description: "[Entity] biomaterials-and-tissue-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦴 Biomaterials and Tissue Engineering
+# [Entity] biomaterials-and-tissue-engineering
 
 ## 1. 개요 (Why)
 사고나 질병으로 손상된 장기를 '교체'하는 것이 아니라 '재생'시키는 것이 생체 재료와 조직 공학의 목표입니다. 세포가 집을 짓고 자랄 수 있는 '지지체(Scaffold)'를 특수 소재로 만들고, 여기에 줄기세포를 심어 체내에서 스스로 인공 장기가 자라나게 합니다. 본 노드는 인체 내 이식되는 소재의 생체 적합성과 조직 재생 무결성을 위한 표준을 정의합니다.
@@ -42,7 +31,7 @@ Trust Metrics:
 | :--- | :--- | :--- | :--- | :--- |
 | Elastic Modulus| Hydrogel / Bone | 0.01 ~ 10^4 | ±10% | MPa |
 | Porosity | Scaffold | 60 ~ 90 | ±5 | % |
-| Pore Size | Interconnected | 100 ~ 500 | ±50 | $\mu m$ |
+| Pore Size | Interconnected | 100 ~ 500 | ±50 | $\mu\text{m}$ |
 | Degradation | Time | 1 ~ 12 | ±1 | months |
 | Cell Viability | In-scaffold | > 95 | ±2 | % |
 
@@ -71,7 +60,6 @@ class MedicalFidelityEngine:
             return f"REJECT: Chronic Inflammatory Response Detected ({self.immune}) - Material Revision Required"
         return "PASS: Biocompatibility Verified"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(cell_adhesion_density=5500, immune_marker_level=0.15, degradation_sync=0.9)
 print(engine.diagnose_tissue_growth())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_tissue_growth())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data biomaterial-biocompatibility-and-degradation-log-v2026`와 연동되어, 이식된 소재의 상태와 세포 성장 데이터를 실시간 분석하고 부작용 발생 확률을 1% 이내로 제어함으로써 재생 의료의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - bioreactor-scale-up-kinetics-and-mass-transfer-physics

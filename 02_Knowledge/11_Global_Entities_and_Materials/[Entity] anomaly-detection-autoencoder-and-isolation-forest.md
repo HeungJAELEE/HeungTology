@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "anomaly-detection-autoencoder-and-isolation-forest"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] anomaly-detection-autoencoder-and-isolation-forest]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced machine learning techniques for identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data."
-  physical_model: "N/A"
-Semantic:
-  tags: '["anomaly-detection", "autoencoder", "isolation-forest", "unsupervised-learning", "outlier-detection"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Reconstruction_Error_Audit: Monitor error threshold for signal vs. noise separation.'
-    - 'Contamination_Rate_Check: Adjust the expected ratio of anomalies in the dataset.'
-    - 'Latent_Space_Visualization: Inspect the distribution of normal data clusters.'
-Trust Metrics:
+  description: "[Entity] anomaly-detection-autoencoder-and-isolation-forest에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔍 Anomaly Detection: Autoencoder and Isolation Forest
+# [Entity] anomaly-detection-autoencoder-and-isolation-forest
 
 ## 1. 개요 (Why)
 방대한 데이터 속에서 '정상'이 아닌 아주 희귀한 '이상(Anomaly)'을 찾아내는 것은 금융 사기 적발, 공정 불량 탐지, 보안 침입 감지 등에서 생명과 직결되는 기술입니다. 이상 데이터는 보통 라벨링이 부족하므로, 데이터의 특징을 압축했다 복원하는 '오토인코더(Autoencoder)'나 데이터를 고립시키는 속도를 측정하는 '아이솔레이션 포레스트(Isolation Forest)'와 같은 비지도 학습 기법이 핵심적인 역할을 합니다. 본 노드는 이상 탐지의 무결성과 정밀도를 확보하기 위한 알고리즘 표준을 정의합니다.
@@ -74,7 +63,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Feature Separation - Model Failing to Isolate Anomalies"
         return "PASS: Clear Outlier Isolation Verified"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(recon_errors=[0.1, 0.15, 0.2, 5.5, 0.12], anomaly_scores=[0.4, 0.45, 0.42, 0.9, 0.41])
 print(engine.diagnose_model_sensitivity(threshold=1.0))
 ```
@@ -92,7 +80,6 @@ print(engine.diagnose_model_sensitivity(threshold=1.0))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data anomaly-detection-precision-and-recall-log-v2026`와 연동되어, 매분 유입되는 스트리밍 데이터의 이상 징후를 99% 정확도로 포착하고 공정 사고를 미연에 방지하기 위한 결정론적 경보 시스템을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_ai-intelligence-and-automation-hub
 - industrial-defect-detection-ai-logic

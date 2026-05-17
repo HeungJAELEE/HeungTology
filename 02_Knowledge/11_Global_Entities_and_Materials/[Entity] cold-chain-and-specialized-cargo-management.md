@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cold-chain-and-specialized-cargo-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cold-chain-and-specialized-cargo-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The end-to-end temperature-controlled supply chain system for sensitive goods (food, vaccines, chemicals), focusing on thermal integrity monitoring and real-time environment control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cold-chain", "logistics", "temperature-control", "pharmaceutical-logistics", "smart-cargo"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Temperature_Excursion_Audit: Detect and log any instance where the cargo temperature fell outside the required range.'
-    - 'Insulation_Integrity_Check: Evaluate the heat leakage rate ($U$-value) of the specialized containers.'
-    - 'Cooling_Unit_Health_Scan: Monitor the power consumption and vibration of the refrigeration system to predict failure.'
-Trust Metrics:
+  description: "[Entity] cold-chain-and-specialized-cargo-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Cold Chain and Specialized Cargo Management
+# [Entity] cold-chain-and-specialized-cargo-management
 
 ## 1. 개요 (Why)
 백신이나 신선식품은 이동 중 단 한 번만 온도가 올라도 무용지물이 되거나 독이 됩니다. 콜드체인은 생산부터 소비자 손에 닿을 때까지 '단절 없는 냉장/냉동' 상태를 유지하는 고도의 물류 시스템입니다. 이는 단순히 에어컨을 트는 것이 아니라, IoT 센서로 실시간 온도를 감시하고, 배터리와 단열재 성능을 극한까지 끌어올려 외부의 열기가 침투할 틈을 주지 않는 열역학적 전쟁입니다. 본 노드는 콜드체인 물류의 무결성과 환경 제어 최적화 표준을 정의합니다.
@@ -73,7 +62,6 @@ class SafetyFidelityEngine:
             return "NOTICE: Extreme Ambient Heat - High Power Consumption Mode Active"
         return "PASS: Cooling System Capacity Adequate"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(current_temp=4.5, target_range_min=2.0, target_range_max=8.0, battery_pct=42)
 print(engine.diagnose_thermal_integrity())
 ```
@@ -91,7 +79,6 @@ print(engine.diagnose_thermal_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cold-chain-temperature-compliance-and-waste-v2026`와 연동되어, 전 세계 콜드체인 네트워크의 온도 데이터를 실시간 분석하고 폐기율을 1% 이하로 억제함으로써 고부가가치 화물 물류의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 05_logistics-and-supply-chain-intelligence-hub
 - blockchain-for-industrial-supply-chain-traceability

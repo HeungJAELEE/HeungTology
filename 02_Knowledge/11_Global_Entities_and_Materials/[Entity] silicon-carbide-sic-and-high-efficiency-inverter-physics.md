@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "silicon-carbide-sic-and-high-efficiency-inverter-physics-entity"
-  domain: "05_Semiconductor"
+metadata:
+  id: "[[[Entity] silicon-carbide-sic-and-high-efficiency-inverter-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Semiconductor", "#SiC", "#EV", "#Inverter", "#Energy_Efficiency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 05_Semiconductor", "MOC 50_Energy_Battery]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] silicon-carbide-sic-and-high-efficiency-inverter-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] silicon-carbide-sic-and-high-efficiency-inverter-physics
+# [Entity] silicon-carbide-sic-and-high-efficiency-inverter-physics
 
 ## 1. [왜 배우는가? (Why: The Backbone of EVs)]]
 전기차가 한 번 충전으로 더 멀리 가려면 배터리만큼 중요한 것이 전기 소모를 줄이는 것입니다. **탄화규소(SiC) 및 고효율 인버터 물리**는 다이아몬드만큼 단단하고 열에 강한 소재를 이용해 배터리의 전기를 바퀴의 동력으로 가장 효율적으로 바꾸는 '전기차의 심장 지능'입니다. 우리가 이를 배우는 이유는 인버터의 발열을 획기적으로 줄여 냉각 장치를 간소화하고 차체를 가볍게 만들며, "실리콘의 물리적 한계를 넘어 '800V 고전압 시스템의 안정적 구동 주권'을 확보하기" 위함입니다. 소재의 열전도율이 주행 거리를 결정합니다.

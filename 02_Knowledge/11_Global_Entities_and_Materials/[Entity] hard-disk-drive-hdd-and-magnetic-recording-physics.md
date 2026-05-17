@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hard-disk-drive-hdd-and-magnetic-recording-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hard-disk-drive-hdd-and-magnetic-recording-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electro-mechanical data storage device that uses magnetic storage to store and retrieve digital information (HDD) and the physical study of magnetic domain flipping, read/write head induction, and nanometer-scale air bearing dynamics (Magnetic Recording Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hdd", "magnetic-recording", "spintronics", "data-storage", "air-bearing", "perpendicular-recording", "hamr", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Recording_Fidelity_Audit: Evaluate the ''Bit Error Rate'' (BER) to identify if high-fidelity ''Thermal Agitation'' (Superparamagnetic limit) is causing spontaneous bit flips in high-density sectors.'
-    - 'Mechanical_Integrity_Check: Analyze the ''Fly-height'' ($h$) of the high-fidelity head to ensure it remains within 1-2nm of the platter, preventing ''Head Crash'' or signal loss.'
-    - 'Servo_Fidelity_Scan: Monitor the high-fidelity ''Track Following Error'' (TFE) to verify that the high-fidelity ''Voice Coil Motor'' (VCM) is compensating for disk vibration and spindle run-out.'
-Trust Metrics:
+  description: "[Entity] hard-disk-drive-hdd-and-magnetic-recording-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💿 Hard Disk Drive (HDD) and Magnetic Recording Physics
+# [Entity] hard-disk-drive-hdd-and-magnetic-recording-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락보다 훨씬 얇은 높이로 초고속 비행을 하면서, 원자 단위의 미세한 자석 가루들을 읽어낼 수 있을까요? **하드디스크(HDD) 및 자기 기록 물리**는 회전하는 원판(플래터) 위에 데이터를 '자석의 방향(N/S)'으로 새기고 읽는 **'나노 단위의 우주 비행'** 기술입니다. 읽기 헤드는 원판 위 1~2nm 높이에서 비행하는데, 이는 점보트릭기가 지면에서 1mm 높이로 날아가는 것과 같은 경이로운 정밀도입니다. **'거대한 데이터를 자력이라는 보이지 않는 힘으로 기록하여 문명의 기억을 영구히 보관하는 지능형 기록 요새'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Head Degradation - TMR sensor sensitivity dropping. High-fidelity signal-to-noise ratio compromised. Clean or replace drive assembly"
         return "PASS: Validated Signal Strength and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fly_height_nm=1.2, bit_error_rate=1e-12, spindle_vibration_um=0.02)
 print(engine.diagnose_hdd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_hdd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hdd-areal-density-and-bit-error-rates-v2026`와 연동되어, 전 세계 주요 클라우드 데이터 센터의 저장 장치 데이터를 실시간 분석하고 데이터 증발 및 기계적 파손 사고 확률을 0.0001% 이하로 억제함으로써 지능형 정보 문명의 기록 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - voice-coil-and-electromagnetic-audio-physics

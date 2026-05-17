@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "machine-vision-and-image-processing-algorithm-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] machine-vision-and-image-processing-algorithm-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technology and method used to provide imaging-based automatic inspection and analysis (Machine Vision) and the physical logic of manipulating digital images to extract useful information (Image Processing Algorithm Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["machine-vision", "image-processing", "computer-vision", "pattern-matching", "edge-detection", "deep-learning", "industrial-inspection", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Image_Fidelity_Audit: Evaluate the ''Image Contrast'' and high-fidelity ''Signal-to-Noise Ratio'' to identify if high-fidelity ''Lighting Variation'' or high-fidelity ''Sensor Noise'' is causing high-fidelity detection failure.'
-    - 'Algorithm_Integrity_Check: Analyze the high-fidelity ''Confusion Matrix'' to ensure that high-fidelity ''False Negatives'' (missing defects) are minimized below the industrial high-fidelity safety threshold.'
-    - 'Latency_Fidelity_Scan: Monitor the high-fidelity ''Inference Time'' per frame to verify that the high-fidelity ''Processing Pipeline'' can keep up with the high-speed high-fidelity conveyor belt.'
-Trust Metrics:
+  description: "[Entity] machine-vision-and-image-processing-algorithm-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👁️ Machine Vision and Image Processing Algorithm Logic
+# [Entity] machine-vision-and-image-processing-algorithm-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 개의 스마트폰 부품이 전광석화처럼 지나가는 생산 라인에서, 머리카락보다 얇은 흠집 하나를 어떻게 0.01초 만에 찾아낼 수 있을까요? **머신 비전 및 영상 처리 알고리즘 로직**은 기계에게 '눈'과 '뇌'를 달아주어, 사람보다 빠르고 정확하게 사물을 판단하게 만드는 **'디지털 감별사'** 기술입니다. 단순히 사진을 찍는 것을 넘어, 빛의 신호를 숫자로 바꾸고 수학적 필터를 통과시켜 불필요한 정보는 버리고 오직 '불량'이나 '위치' 같은 핵심 정보만 추려냅니다. **'합성곱(Convolution)과 에지 검출의 원리를 이용해 픽셀의 바다에서 유의미한 패턴을 찾아내어 무인 제조의 정확도를 사수하는 지능형 시각 제어 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Model Drift - High-fidelity AI segmentation accuracy dropped. High-fidelity re-training with new high-fidelity samples required"
         return "PASS: Validated Vision Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(processing_time_ms=8.0, confidence_score=0.95, false_reject_rate=1.0)
 print(engine.diagnose_vision_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vision_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data machine-vision-accuracy-and-inference-latency-v2026`와 연동되어, 전 세계 주요 반도체 검사 장비 및 자율 주행 로봇의 실시간 시각 데이터를 분석하고 판독 오류 및 불량 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - image-sensor-and-photon-to-electron-conversion-physics

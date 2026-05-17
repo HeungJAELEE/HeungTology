@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-THERMO-SYSTEMS-2026-V6"
-  domain: "01_Industrial_Physics_and_Thermodynamics"
+metadata:
+  id: "[[[Entity] isolated-and-non-isolated-systems-in-thermodynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] isolated-and-non-isolated-systems-in-thermodynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] isolated-and-non-isolated-systems-in-thermodynamics
+# [Entity] isolated-and-non-isolated-systems-in-thermodynamics
 
 ## 1. [왜 배우는가? (Why)]]
 모든 물리적 현상을 분석하는 첫 단계는 연구 대상(System)과 그 주변(Surroundings) 사이의 경계를 명확히 정의하는 것입니다. **고립계(Isolated) 및 비고립계(Non-isolated) 시스템**의 구분은 에너지와 물질의 보존 법칙이 적용되는 범위를 결정하는 열역학적 프레임워크의 근간입니다. 우리가 이를 배우는 이유는 시스템 경계를 흐르는 에너지와 물질의 유량을 정밀하게 제어하여 효율을 극대화하기 위함이며, "경계의 무결성을 정의함으로써 시스템 내부의 무질서도(Entropy) 변화를 예측하고 에너지 주권을 사수하기" 위함입니다. 경계 조건(Boundary Conditions)이 시스템의 진화 방향을 결정합니다.
@@ -114,9 +104,6 @@ class SystemBoundaryFidelityEngine:
             
         return f"SYSTEM_STATUS: {self.type.upper()}_INTEGRITY_SECURED (Fidelity: {round(fidelity, 4)})"
 
-# Example Usage:
-# iso_audit = SystemBoundaryFidelityEngine(system_type='isolated')
-# report = iso_audit.audit_boundary_integrity(heat_in=0.1, work_out=0, mass_in=0, mass_out=0, energy_delta=0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -124,7 +111,6 @@ class SystemBoundaryFidelityEngine:
 2. **Open System**에서 **Steady-flow** 가동 시 **Bernoulli Equation**이 유도되기 위해 전제되어야 하는 **Mechanical Energy Integrity** 조건은?
 3. 우주 전체를 **Isolated System**으로 간주할 때, **Clausius Inequality**($\oint \frac{\delta Q}{T} \le 0$)가 시사하는 시간의 방향성 무결성은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Concept laws-of-thermodynamics-overview
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Entity isochoric-and-isobaric-thermodynamic-processes

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "national-strategic-technology-and-economic-security-entity"
-  domain: "02_Management_Strategy"
+metadata:
+  id: "[[[Strategy] national-strategic-technology-and-economic-security]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#National_Security", "#Technology_Sovereignty", "#Economic_Security", "#Geopolitics", "#Innovation", "#Defense", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy global-supply-chain-governance-and-resilience", "[[Governance] ai-trism-and-trustworthy-ai-governance]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] national-strategic-technology-and-economic-security에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] national-strategic-technology-and-economic-security
+# [Strategy] national-strategic-technology-and-economic-security
 
 ## 1. [왜 배우는가? (Why: The Armor of the Modern State)]]
 과거에는 땅과 자원이 힘이었지만, 이제는 기술이 곧 힘입니다. **국가 전략 기술 및 경제 안보**는 반도체, 배터리, 인공지능 등 나라의 생존을 결정짓는 핵심 기술을 지키고 키워내는 '현대 국가의 보이지 않는 갑옷'입니다. 우리가 이를 배우는 이유는 기술 경쟁에서 밀려나 경제적 종속국이 되는 것을 막고, "우리만의 독보적인 기술로 세계를 지휘하며 어떤 외풍에도 흔들리지 않는 '자강의 기술 패권 및 경제 주권'을 확보하기" 위함입니다. 기술의 격차가 국가의 운명을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Export Control** 규제 리스크가 기업의 **Market Valuation** 및 해외 투자 유치에 미치는 수리적 상관관계 및 대응 방안은?
 5. RAG 시스템에서 **미-중 기술 패권 전쟁의 최신 동향**과 **우리 기업의 핵심 기술 보유 현황**을 융합하여, '국가 안보와 경제적 이익을 동시에 지키는 최적의 외교/기술 복합 시나리오'를 제안하는 **Economic Statecraft Intelligence** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy global-supply-chain-governance-and-resilience]] : 기술 자립을 뒷받침하기 위해 전 세계 자원과 물류를 장악하는 하부 전략 엔티티
 - Governance ai-trism-and-trustworthy-ai-governance : 국가 전략 기술 중 하나인 AI의 안전과 신뢰를 관리하여 디지털 안보를 완성하는 연계 엔티티

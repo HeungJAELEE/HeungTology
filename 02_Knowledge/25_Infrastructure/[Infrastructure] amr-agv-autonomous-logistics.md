@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "amr-agv-autonomous-logistics-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Infrastructure] amr-agv-autonomous-logistics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Robotics", "#Logistics", "#AMR", "#AGV", "#Smart_Factory", "#Swarm_Intelligence", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Digital Twin & Smart Factory smart-factory-automation-standard-master-guide", "MOC 08_Mobility_Robotics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] amr-agv-autonomous-logistics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] amr-agv-autonomous-logistics
@@ -74,7 +64,6 @@ AMR 한 대의 지능은 보잘것없지만, 500대가 네트워크로 엮인 �
 4. **MAPF (Multi-Agent Path Finding)** 문제에서 **Conflict-Based Search (CBS)** 알고리즘이 로봇 대수 증가에 따라 계산 복잡도를 제어하는 수리적 기전은?
 5. RAG 시스템에서 **주변 로봇들의 실시간 LiDAR 데이터**를 공유(V2V)하여, '코너 뒤의 보이지 않는 사람'을 예측하고 속도를 줄이는 **Cooperative Perception** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Digital Twin & Smart Factory smart-factory-automation-standard-master-guide]] : 자율 물류 로봇이 통합되어 작동하는 지능형 제조 인프라 최상위 마스터 가이드
 - [Infrastructure] automated-storage-and-retrieval-systems-asrs-and-warehouse-intelligence : 로봇이 물자를 입고/출고하는 자동 창고 시스템 연계 엔티티

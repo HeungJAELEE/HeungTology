@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-EV-VALUE-CHAIN-2026-V6"
-  domain: "38_Global_Unified_Governance_Global_Finance_and_Value_Economy"
+metadata:
+  id: "[[[Entity] battery-and-automotive-convergence-and-ev-value-chain-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] battery-and-automotive-convergence-and-ev-value-chain-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] battery-and-automotive-convergence-and-ev-value-chain-intelligence
+# [Entity] battery-and-automotive-convergence-and-ev-value-chain-intelligence
 
 ## 1. [왜 배우는가? (Why)]]
 자동차는 이제 단순한 기계 장치를 넘어 '거대한 에너지 저장 장치($ESS$)'이자 '바퀴 달린 데이터 센터($SDV$)'로 진화하고 있습니다. **배터리 및 자동차 융합과 EV 가치 사슬 지능**은 이 거대한 에너지/모빌리티 전환 속에서 어떻게 산업 생태계가 재편되고, 배터리 원가와 소프트웨어 역량이 기업의 생존을 어떻게 결정하는지를 다루는 '산업 전략 지능'의 정수입니다. 우리가 이를 배우는 이유는 배터리 광물 수급(Upstream)부터 재활용(Recycling)에 이르는 순환 경제의 무결성을 확보하기 위함이며, 소프트웨어로 차량의 가치를 지속적으로 상승시키는 새로운 비즈니스 모델을 선점하기 위함입니다. 이동의 효율이 문명의 속도를 결정합니다.
@@ -112,9 +102,6 @@ class MobilityIntelligenceFidelityEngine:
             return "CRITICAL: IRA_CRMA_COMPLIANCE_RISK_LOW_LOCAL_CONTENT"
         return f"SCM_STATUS: REGULATORY_SAFE_ZONE (Local: {round(local_ratio, 1)}%)"
 
-# Example Usage:
-# mobility_ai = MobilityIntelligenceFidelityEngine()
-# report = mobility_ai.calculate_tco_fidelity(current_battery_cost=130.0, fuel_cost_per_km=0.15, annual_km=20000)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -122,7 +109,6 @@ class MobilityIntelligenceFidelityEngine:
 2. **SDV** 아키텍처에서 **Centralized Computing Unit**의 고장이 전체 차량 안전 무결성에 미치는 영향을 최소화하기 위한 **Fail-operational** 설계 방식은?
 3. **V2G** (Vehicle-to-Grid) 통합 시 차량 배터리의 **Cycle Life** 열화 가속화와 그리드 보상 가격 사이의 **Economic Equilibrium** 수리 모델링 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/38_Global_Unified_Governance_Global_Finance_and_Value_Economy_Hub/Concept battery-supply-chain-geopolitics-and-ira
 - 02_Knowledge/38_Global_Unified_Governance_Global_Finance_and_Value_Economy_Hub/Concept sdv-software-architecture-and-ota-logic

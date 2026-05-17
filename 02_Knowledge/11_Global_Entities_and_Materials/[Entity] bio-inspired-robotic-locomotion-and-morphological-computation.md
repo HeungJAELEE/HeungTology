@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bio-inspired-robotic-locomotion-and-morphological-computation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bio-inspired-robotic-locomotion-and-morphological-computation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of robotic movement inspired by animal locomotion (walking, swimming, flying) and the concept of morphological computation, where the robot's physical structure performs part of the control logic."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bio-inspired", "locomotion", "morphological-computation", "soft-robotics", "robot-gait"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Gait_Stability_Audit: Measure the Zero Moment Point (ZMP) or Center of Mass (CoM) trajectory for balance.'
-    - 'Energy_Efficiency_Check: Calculate the Cost of Transport (CoT) to evaluate the efficiency of the physical design.'
-    - 'Morphological_Control_Audit: Verify how much of the stabilization is handled by physical damping vs. active software control.'
-Trust Metrics:
+  description: "[Entity] bio-inspired-robotic-locomotion-and-morphological-computation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🐆 Bio-inspired Robotic Locomotion and Morphological Computation
+# [Entity] bio-inspired-robotic-locomotion-and-morphological-computation
 
 ## 1. 개요 (Why)
 바퀴가 없는 거친 산악 지대나 좁은 잔해 속에서 로봇이 이동하려면 동물의 걸음걸이가 최고의 정답입니다. 생체 모방 항행(Bio-inspired Locomotion)은 치타의 질주, 문어의 유연함, 새의 비행을 로봇에 이식합니다. 특히 '형태 연산(Morphological Computation)'은 뇌(Software)가 모든 것을 계산하는 대신, 다리의 스프링 구조나 날개의 유연성(Hardware)이 물리적으로 충격을 흡수하고 균형을 잡게 하여 제어 부하와 에너지를 획기적으로 줄입니다. 본 노드는 지능형 이동체의 물리적 제어 무결성과 효율성을 위한 표준을 정의합니다.
@@ -72,7 +61,6 @@ class RobotFidelityEngine:
             return "WARNING: Unstable Gait Detected - Increase Active Compensation"
         return "PASS: Dynamic Stability Verified"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(power_consumption=150, weight_kg=30, velocity=2.5, stability_score=0.85)
 print(engine.calculate_cot())
 ```
@@ -90,7 +78,6 @@ print(engine.calculate_cot())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data robotic-locomotion-cot-and-stability-metrics-v2026`와 연동되어, 로봇의 주행 데이터를 물리적-에너지 관점에서 실시간 분석하고 이송 효율을 생명체 수준으로 끌어올리기 위한 결정론적 항법 가이드를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 03_robotics-and-autonomous-systems-hub
 - bio-inspired-robotics-soft-robotics-and-biomimetic-actuators

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "precision-mold-design-and-injection-molding-physics-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering"
+metadata:
+  id: "[[[Entity] precision-mold-design-and-injection-molding-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Manufacturing", "#Mold", "#Injection_Molding", "#Polymer", "#Mechanical_Engineering", "#Thermodynamics", "#Fluid_Dynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] precision-mold-design-and-injection-molding-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] precision-mold-design-and-injection-molding-physics
+# [Entity] precision-mold-design-and-injection-molding-physics
 
 ## 1. [왜 배우는가? (Why: The Blueprint of Mass Production)]]
 뜨겁게 녹은 플라스틱($Molten\ Polymer$)을 어떻게 좁은 금형 틈새로 빈틈없이 밀어 넣고, 제품이 굳었을 때 휘거나 쪼그라들지 않게($Warpage/Shrinkage$) 어떻게 냉각 통로와 밀핀($Ejector$)을 배치하는 '지능형 틀'을 어떻게 공학적으로 설계할 수 있을까요? **초정밀 금형 설계 및 사출 성형 물리**는 현대 문명의 모든 플라스틱 제품을 탄생시키는 '행성 규모 복제 인프라 및 지능형 유동 제어 아키텍처'입니다. 우리가 이를 배우는 이유는 금형이 정밀해야 싸고 좋은 제품을 수백만 개씩 안정적으로 찍어낼 수 있기 때문이며, "형상의 복제를 데이터로 설계하고 지배하는 '글로벌 제조 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 금형의 설계가 제품의 외관과 원가를 결정합니다.
@@ -39,12 +29,12 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Dimen. Accu.** | Deviation from the target size of the part | $< 10 \text{ \mu m}$ | 머리카락 굵기보다 정밀하게 크기를 맞춤을 입증함 |
+| **Dimen. Accu.** | Deviation from the target size of the part | $< 10 \text{ \mu\text{m}}$ | 머리카락 굵기보다 정밀하게 크기를 맞춤을 입증함 |
 | **Cycle Time** | Time to produce one finished plastic part | $< 15 \text{ sec}$ | 눈 깜빡일 때마다 제품이 튀어나옴을 보여주는 물리 |
 | **Mold Life** | Number of parts produced before mold repair| $> 1,000,000$ | 백만 번을 찍어도 망가지지 않는 내구성을 입증함 |
 | **Injec. Press.** | Pressure used to push polymer into mold | $50 \sim 150 \text{ MPa}$ | 고압으로 구석구석 빈틈없이 채움을 보여주는 유체물리 |
 | **Cooling Eff.** | Ability to remove heat from the mold cavity | $> 90 \%$ | 빨리 식혀서 생산 속도를 올림을 입증하는 열역학 |
-| **Surface Finish**| Smoothness of the molded part surface | $< 0.1 \text{ \mu m}$ | 거울처럼 반짝이는 표면을 만들어냄을 보여주는 물리 |
+| **Surface Finish**| Smoothness of the molded part surface | $< 0.1 \text{ \mu\text{m}}$ | 거울처럼 반짝이는 표면을 만들어냄을 보여주는 물리 |
 | **System Resil.** | Stability during raw material variation | High | 플라스틱 종류가 조금 바뀌어도 불량 없이 찍어냄 |
 | **Audit Status** | Mold Integrity Verified | **MAXIMUM** | **Plastic-Origin-v2026-Fidelity** |
 

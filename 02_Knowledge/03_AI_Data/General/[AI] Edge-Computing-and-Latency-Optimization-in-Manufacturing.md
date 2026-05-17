@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-EDGE-COMPUTING-LATENCY-OPT-2026-V6"
+metadata:
+  id: "[[[AI] Edge-Computing-and-Latency-Optimization-in-Manufacturing]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Edge_Computing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Edge-Computing-and-Latency-Optimization-in-Manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Edge-Computing-and-Latency-Optimization-in-Manufacturing
@@ -115,7 +105,6 @@ class EdgeInferenceDiagnosticEngine:
 2. **AI Model Quantization** (양자화) 공정에서 발생할 수 있는 **Accuracy Drop**을 최소화하면서 **Inference Speed**를 높이는 공학적 타협점(Trade-off)은?
 3. 네트워크가 완전히 단절된 **Isolation** 상황에서 에지 노드가 **Local Survival** (단독 생존) 모드로 전환될 때 필수적으로 유지해야 하는 **Safety Interlock**은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/09_SmartFactory_Production/Architecture/Concept Cyber-Physical-System-CPS-Foundations
 - 02_Knowledge/03_AI_Data/General/AI edge-computing-ai-acceleration

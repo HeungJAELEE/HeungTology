@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fast-fourier-transform-fft-and-signal-spectrum-analysis-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fast-fourier-transform-fft-and-signal-spectrum-analysis-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An algorithm that computes the Discrete Fourier Transform (DFT) of a sequence, or its inverse (FFT) and the mathematical logic that decomposes a signal into its constituent frequencies for diagnostics and characterization (Signal Spectrum Analysis Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fft", "fourier-transform", "signal-processing", "spectrum-analysis", "vibration-analysis", "frequency-domain", "digital-signal-processing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectral_Fidelity_Audit: Evaluate the ''Signal-to-Noise Ratio'' (SNR) across the frequency bins to identify if high-fidelity ''Aliasing'' or ''Leakage'' artifacts are compromising the diagnostic accuracy.'
-    - 'Resolution_Integrity_Check: Analyze the frequency resolution ($\\Delta f$) against the target machine harmonics to ensure the high-fidelity detection of sub-Hz vibration peaks.'
-    - 'Windowing_Fidelity_Scan: Monitor the choice of window function (Hanning/Hamming/Flat-top) to verify that the high-fidelity amplitude accuracy is maintained for transient vs. stationary signals.'
-Trust Metrics:
+  description: "[Entity] fast-fourier-transform-fft-and-signal-spectrum-analysis-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Fast Fourier Transform (FFT) and Signal Spectrum Analysis Logic
+# [Entity] fast-fourier-transform-fft-and-signal-spectrum-analysis-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 시끄러운 소음 속에서 기계의 특정 베어링이 고장 났다는 것을 어떻게 알 수 있을까요? **고속 푸리에 변환(FFT) 및 신호 스펙트럼 분석 로직**은 복잡하게 섞인 신호를 각각의 '색깔(주파수)'로 나누어 보여주는 **'소리의 프리즘'** 기술입니다. 시간의 흐름에 따라 변하는 복잡한 파동을 '어떤 음들이 섞여 있는지'로 번역해 줍니다. **'기계의 비명을 정교한 악보로 번역하여 보이지 않는 병을 찾아내는 지능적 청력'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Aliasing Detected - Ghost frequencies appearing in spectrum. Sampling rate too low for the signal. Implement high-fidelity 'Anti-aliasing' analog filters"
         return "PASS: Validated Nyquist Compliance and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(snr_db=45.0, spectral_leakage_score=0.1, max_freq_hz=5000.0)
 print(engine.diagnose_spectral_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_spectral_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data signal-noise-floor-and-fft-resolution-v2026`와 연동되어, 전 세계 주요 발전소 및 정밀 가공 장비의 진동 데이터를 실시간 분석하고 돌발 고장 및 장비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 상태 감시 문명의 진단 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrodynamic-shaker-and-vibration-testing-physics

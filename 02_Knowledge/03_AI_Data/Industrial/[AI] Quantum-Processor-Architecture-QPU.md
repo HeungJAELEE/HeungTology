@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-QPU-ARCH-2026-V6"
+metadata:
+  id: "[[[AI] Quantum-Processor-Architecture-QPU]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#QPU'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Quantum-Processor-Architecture-QPU에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Quantum-Processor-Architecture-QPU
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Connectivity** | Qubit-to-Qubit | Heavy-hex / Grid | 회로 매핑 시 추가 게이트(SWAP) 삽입 오버헤드 감소 |
 | **Operating Freq.** | Control Frequency | $4 \sim 8 \text{ GHz}$ | 큐비트 에너지 전이 조절을 위한 극고주파 제어 |
 | **Crosstalk** | Neighboring Error | $< 0.1\%$ | 인접 큐비트 연산 시 의도치 않은 상태 변화 억제 |
-| **Cooling Power** | Cryogenic Load | $10 \sim 100 \text{ \mu W}$ | 연산 중 발생하는 미세 열을 20mK 이하에서 제거 |
+| **Cooling Power** | Cryogenic Load | $10 \sim 100 \text{ }\mu\text{ W}$ | 연산 중 발생하는 미세 열을 20mK 이하에서 제거 |
 | **Quantum Volume** | $V_Q$ Score | $> 2^{10}$ | 큐비트 수와 오류율을 결합한 유효 연산 능력 지표 |
 | **Scale-up** | Physical Integration | $> 1,000 \text{ Qubits}$ | 상용 수준의 NISQ 장치 도달을 위한 집적도 목표 |
 
@@ -109,7 +99,6 @@ class QPUArchitectureManager:
 2. **Ion Trap** 아키텍처가 **Superconducting** 방식 대비 '큐비트 간 연결성(All-to-all)' 측면에서 압도적 우위를 점하는 물리적 원리는?
 3. QPU의 **Readout** 과정에서 **Parametric Amplifier**를 사용하여 신호를 증폭해야만 하는 하드웨어적 필연성은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Error-Correction-QEC
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Computing-R&D

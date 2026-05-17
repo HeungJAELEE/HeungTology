@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "textile-science-and-polymer-fiber-technology-entity"
-  domain: "113_Textile_and_High-performance_Material_Engineering_Hub"
+metadata:
+  id: "[[[Entity] textile-science-and-polymer-fiber-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Textile_Science", "#Polymer", "#Fibers", "#Materials_Science", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 113_textile-engineering-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] textile-science-and-polymer-fiber-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] textile-science-and-polymer-fiber-technology
+# [Entity] textile-science-and-polymer-fiber-technology
 
 ## 1. [왜 배우는가? (Why: The Second Skin and Beyond)]]
 섬유는 단순히 옷을 만드는 재료를 넘어섰습니다. 이제 섬유는 비행기의 날개(탄소 섬유), 방탄복(아라미드), 그리고 인공 혈관(고분자 섬유)이 됩니다. **섬유 과학 및 고분자 섬유 기술의 결정화도 및 배향 수리 물리 기술**은 분자 수준에서 실을 직조하여 인류에게 필요한 최적의 강도와 기능을 부여하는 '고분자 건축' 기술입니다. 고분자 사슬을 한 방향으로 정렬시켜 강철보다 강한 실을 만들고, 공기가 통하면서 물은 막는 투습 방수 기능을 설계하며, 전기가 통하는 스마트 섬유를 개발합니다. 우리가 이를 배우는 이유는 섬유의 물리적 무결성을 확보함으로써, 의류를 넘어 산업용 특수 소재 분야의 경쟁력을 사수하는 '글로벌 섬유 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 섬유의 무결성이 소재의 인장 강도와 기능적 신뢰성을 결정합니다.

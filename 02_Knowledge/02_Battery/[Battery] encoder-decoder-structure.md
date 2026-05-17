@@ -1,117 +1,57 @@
 ---
-Basic:
-  id: "[[[Battery] encoder-decoder-structure"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] encoder-decoder-structure]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] encoder-decoder-structure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] encoder-decoder-structure
+# [Battery] encoder-decoder-structure
 
-## 1. [왜 배우는가? (Why)]]
-우리가 외국어를 번역하거나 복잡한 질문에 답변할 때, 뇌는 두 가지 단계를 거칩니다. 먼저 상대방의 말을 끝까지 듣고 그 '본질적 의미'를 파악하며, 그다음 그 의미를 내가 출력하려는 언어의 문법에 맞춰 하나씩 내뱉습니다. 이 '이해'와 '생성'의 분리된 과정을 공학적으로 완벽히 구현한 것이 바로 **인코더-디코더 구조**입니다.
+## 1. 개요: 배터리 시퀀스 데이터의 추상화 및 재구축
+인코더-디코더 아키텍처는 배터리의 과거 센서 데이터(전압, 전류, 온도 시퀀스)를 고차원 잠재 공간으로 압축(Encoding)하고, 이를 바탕으로 미래의 퇴화 궤적이나 잔존 수명(RUL)을 재구성(Decoding)하는 분리형 패러다임을 제공합니다.
 
-우리가 **인코더-디코더**를 배우는 이유는 **"입력 데이터의 맥락을 응축하는 지능(인코더)과 응축된 정보를 바탕으로 새로운 가치를 창출하는 지능(디코더) 사이의 상호작용"**을 이해하기 위함입니다. 단순히 데이터를 변환하는 것을 넘어, 한 도메인의 지식을 다른 도메인(번역, 요약, 이미지 캡셔닝 등)으로 전이시키는 현대 멀티모달 AI의 근본 틀이 이 구조에 담겨 있습니다. 이 이중 체계를 이해하는 것은 AI가 어떻게 세상의 정보를 재구성하는지 이해하는 것과 같습니다.
+## 2. 기술 규격 및 성능 지표 표준 (Architectural Standards)
 
-## 2. [시스템 성능 사양 (System Specs)]
-| 제어 파라미터 | 정밀 타겟 / 수치 | 비고 |
-| :--- | :--- | :--- |
-| **Information Compression Ratio** | $1/16 \sim 1/4$ | 입력 문맥 대비 메모리(Z) 벡터의 압축 효율 |
-| **Cross-Attention Alignment Error** | $< 0.15$ | 정답 토큰과 어텐션 집중 포인트 간의 거리 편차 |
-| **Memory Usage / Block** | $\approx 2 \cdot d_{model}^2$ | 인코더 대비 디코더의 추가 메모리 점유 배수 (Cross-Attn 포함) |
-| **Latency Overhead** | $+20 \sim 30\%$ | 단일 인코더/디코더 모델 대비 복합 구조의 연산 부하 |
-| **Training Stability Epsilon** | $10^{-8}$ | 이중 지능 체계의 역전파 수치 안정성 상수 |
+| 파라미터 | 물리적 의미 | 설계 목표 (Target) |
+| :--- | :--- | :---: |
+| **정보 압축률** | 원본 시퀀스 대비 잠재 벡터 크기 | $1/16 \sim 1/4$ |
+| **크로스-어텐션 오차** | 인코더-디코더 정렬 정확도 | $< 0.15$ |
+| **훈련 안정성 ($\epsilon$)** | 수치적 정밀도 하한선 | $10^{-8}$ |
+| **추론 지연 시간** | 실시간 BMS 적용 임계치 | $< 50\text{ ms}$ |
 
-## 3. 핵심 아키텍처와 정보의 흐름
+## 3. 계층적 토폴로지 및 정보 흐름 (Information Flow)
 
-트랜스포머에서의 인코더-디코더 구조는 **Cross-Attention**이라는 강력한 다리를 통해 연결됩니다.
+### 3.1 인코더 (Semantic Abstraction Layer)
+과거의 충방전 시퀀스를 입력받아 배터리의 현재 '건강 상태'를 상징하는 문맥 벡터(Context Vector)를 생성합니다. 양방향 셀프-어텐션을 통해 데이터 간의 장기 의존성을 추출합니다.
 
-### 2.1 인코더 (The Understander)
-- **역할**: 입력 시퀀스를 받아 양방향(Bidirectional)으로 맥락을 훑어 고차원적인 '문맥화된 표현'을 생성합니다.
-- **특징**: 모든 단어가 서로를 참조할 수 있도록 마스킹을 하지 않는 셀프 어텐션을 사용합니다.
+### 3.2 디코더 (Generative Reconstruction Layer)
+인코더가 생성한 문맥 벡터를 바탕으로 미래의 용량 감쇠 곡선을 자기회귀(Autoregressive) 방식으로 예측합니다. 미래 정보의 유출을 방지하기 위해 마스크드 셀프-어텐션(Masked Self-Attention)을 적용합니다.
 
-### 2.2 디코더 (The Generator)
-- **역할**: 인코더가 만든 정보와 지금까지 자신이 생성한 단어들을 참조하여 다음 단어를 하나씩 예측합니다.
-- **특징**: 미래의 단어를 미리 보지 못하게 차단하는 **Masked Self-Attention**과, 인코더의 출력값을 참조하는 **Cross-Attention** 층을 포함합니다.
+### 3.3 크로스-어텐션 (Inter-layer Interface)
+디코더의 현재 예측 시점과 인코더의 특정 과거 시점 간의 상관관계를 계산하여, 수명 예측에 가장 중요한 이벤트를 강조합니다.
 
-### 2.3 Cross-Attention: 두 지능의 대화
-- **수리적 기전**: 디코더의 현재 상태가 **Query($Q$)**가 되고, 인코더의 결과물이 **Key($K$)**와 **Value($V$)**가 됩니다.
-- **의미**: "내가 지금 이런 단어를 뱉으려는데(Q), 원래 문장의 어떤 부분(K)을 가장 중요하게 참고해서 내용(V)을 가져와야 할까?"를 매 순간 결정합니다.
+## 4. 진단 및 검증 프로토콜
+- **인과성 마스킹 검증**: 미래 토큰이 현재 예측에 영향을 주지 않는지 수치적으로 확인.
+- **소스 기여도 분석**: 예측 결과에 영향을 미친 과거 센서 데이터 포인트(예: 급격한 전압 강하 지점)의 기여도 역추적.
 
-## 3. [코드 연결 해설 (Code Weaving)]
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 수명 예측 AI의 핵심 구조적 표준을 정의합니다. 데이터셋별 예측 정확도 및 수렴 속도는 실측 로그에서 관리됩니다.
 
-PyTorch 스타일의 슈도코드를 통해 인코더와 디코더 사이의 텐서 흐름을 해설합니다.
-
-```python
-import torch.nn as nn
-
-class TransformerSeq2Seq(nn.Module):
-    def __init__(self, encoder, decoder):
-        super().__init__()
-        self.encoder = encoder
-        self.decoder = decoder
-
-    def forward(self, src, trg):
-        # 1. 인코더: 입력 문장의 '의미 지도'를 생성
-        # memory shape: (batch, src_len, d_model)
-        memory = self.encoder(src)
-        
-        # 2. 디코더: 생성 중인 타겟 문장(trg)과 인코더 지도를 교차 참조
-        # Transitional Bridge: 여기서 memory는 디코더의 모든 층에 
-        # Key와 Value로 주입되어, 디코더가 길을 잃지 않고 
-        # 원문의 맥락에 충실한 결과를 내놓게 돕습니다.
-        output = self.decoder(trg, memory)
-        
-        return output
-
-# 응용 분야: 이 구조는 기계 번역뿐만 아니라, 
-# '이미지(Encoder) -> 설명문(Decoder)'과 같은 
-# 멀티모달 생성의 핵심 엔진으로 쓰입니다.
-```
-
-## 4. [스스로 체크 (Self-Check)]
-
-1. **질문**: 디코더에만 존재하는 'Masked Self-Attention'의 목적은 무엇인가?
-   - **정답**: 모델이 훈련 과정에서 정답 문장을 미리 보고 다음 단어를 커닝(Cheating)하는 것을 방지하기 위함입니다. 현재 시점 이전의 정보만을 사용하도록 **미래 토큰에 대한 어텐션 스코어를 -inf로 가려버립니다.**
-2. **질문**: Cross-Attention 연산에서 Query, Key, Value는 각각 어디서 오는가?
-   - **정답**: **Query는 디코더**의 이전 층 출력에서 오고, **Key와 Value는 인코더**의 최종 출력(Memory)에서 옵니다.
-3. **질문**: 왜 BERT는 인코더만 사용하고, GPT는 디코더만 사용하는가?
-   - **정답**: BERT는 문장의 전체 맥락을 이해하고 특징을 추출하는 **'이해'** 작업(분류, 개체명 인식 등)에 특화되어 인코더만 쓰며, GPT는 이전 단어들로부터 다음 단어를 순차적으로 뽑아내는 **'생성'** 작업에 특화되어 디코더만 사용합니다.
-
-## 🧠 AI의 사고방식: "번역은 재창조의 과정이다"
-인코더와 디코더의 관계는 **'통역사'**와 같습니다. 인코더는 화자의 말을 듣고 메모장에 핵심 내용을 적는 과정이고, 디코더는 그 메모장을 보며 청자에게 적절한 문장으로 다시 들려주는 과정입니다. 인코더가 아무리 훌륭해도 메모가 엉성하면 디코더는 엉뚱한 말을 하게 되고, 메모가 완벽해도 디코더의 표현력이 부족하면 감동을 줄 수 없습니다. 이 두 지능이 Cross-Attention이라는 끈으로 긴밀하게 소통할 때, 비로소 언어의 장벽을 넘는 진정한 지능이 탄생합니다.
-
----
-**관련 노드:**
-- [AI] transformer-architecture — 인코더와 디코더가 결합된 전체 구조
-- [AI] self-attention — 인코더와 디코더 내부에서 각자 작동하는 핵심 원리
-- [[[Battery] attention-mechanism — 두 구조를 연결하는 수리적 근간
-- [AI]] bert-encoder-only — 인코더 구조만 극대화하여 이해 능력을 높인 모델
-- Battery seq2seq-attention — 트랜스포머 이전의 고전적인 인코더-디코더 기반 어텐션 구조
-
----
-*Generated by Unified Wiki-Rule Protocol v4.0 (Ultra-Enrichment)*
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Management-System-BMS-and-Safety-Intelligence]]
+- [[[Data] NASA-Battery-RUL-Prediction-Log_2026-05-16]]

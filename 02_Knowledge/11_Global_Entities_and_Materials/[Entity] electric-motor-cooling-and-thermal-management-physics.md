@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electric-motor-cooling-and-thermal-management-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electric-motor-cooling-and-thermal-management-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systems and strategies used to dissipate heat generated within an electric motor due to copper and iron losses (Electric Motor Cooling) and the physical study of temperature distribution, fluid dynamics of coolants, and thermal aging of insulation materials (Thermal Management Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["motor-cooling", "thermal-management", "electric-motor", "heat-transfer", "coolant", "insulation-failure", "industrial-drive"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Winding Temperature'' against the insulation class (Class H/F/N) to identify if the motor is operating near the ''Thermal Trip'' point, leading to irreversible insulation degradation.'
-    - 'Cooling_Integrity_Check: Analyze the coolant flow rate and temperature delta to ensure the heat exchanger is effectively removing the Joule heating ($I^2R$) from the stator slots.'
-    - 'Aging_Fidelity_Scan: Monitor the cumulative thermal stress using the Arrhenius model to verify the remaining useful life (RUL) of the motor''s dielectric system.'
-Trust Metrics:
+  description: "[Entity] electric-motor-cooling-and-thermal-management-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Electric Motor Cooling and Thermal Management Physics
+# [Entity] electric-motor-cooling-and-thermal-management-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 강력한 모터가 돌아갈 때 발생하는 뜨거운 열을 식히지 못하면 어떻게 될까요? **전기 모터 냉각 및 열 관리 물리**는 모터 내부의 '보이지 않는 화재(열)'를 끄고 최상의 성능을 유지하게 하는 **'엔진의 에어컨'** 기술입니다. 모터는 전기를 힘으로 바꾸지만, 그 과정에서 필연적으로 열이 발생합니다. 이 열이 쌓이면 전선 피복이 녹아 합선이 일어나고 모터는 타버립니다. 모터의 수명을 결정하는 것은 전기가 아니라 '온도'입니다. **'동력의 파괴를 막는 지능적 냉각의 물리학'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insulation Fatigue - Dielectric system has reached its thermal aging limit. Overhaul recommended to prevent catastrophic failure"
         return "PASS: Validated Dielectric Integrity and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(winding_temp_c=85.0, coolant_flow_lpm=5.5, ambient_temp_c=25.0)
 print(engine.diagnose_thermal_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_thermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data motor-winding-temperature-and-life-expectancy-v2026`와 연동되어, 전 세계 주요 전기차 및 산업용 대형 드라이브의 데이터를 실시간 분석하고 모터 소손 및 절연 파괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 동력 문명의 열적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dc-motor-and-lorentz-force-logic

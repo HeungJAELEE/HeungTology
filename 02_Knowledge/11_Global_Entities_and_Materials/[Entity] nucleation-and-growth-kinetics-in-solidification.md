@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nucleation-and-growth-kinetics-in-solidification"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] nucleation-and-growth-kinetics-in-solidification]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The fundamental process by which a liquid phase transforms into a solid phase (Solidification), governed by the initial formation of stable solid clusters (Nucleation) and their subsequent enlargement (Growth), which determines the final microstructure and properties of the material."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nucleation", "crystal-growth", "solidification", "kinetics", "metallurgy", "phase-transformation", "materials-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Nucleation_Barrier_Audit: Evaluate the critical radius ($r^*$) and undercooling ($\\Delta T$) to predict the nucleation density and the resulting grain size of the material.'
-    - 'Growth_Stability_Check: Analyze the solid-liquid interface stability (Mullins-Sekerka stability) to identify transitions from planar to dendritic growth, which impact macro-segregation.'
-    - 'Cooling_Rate_Scan: Monitor the heat extraction rate during solidification to ensure the desired microstructure (e.g., fine-grained vs. coarse-grained) is achieved.'
-Trust Metrics:
+  description: "[Entity] nucleation-and-growth-kinetics-in-solidification에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Nucleation and Growth Kinetics in Solidification
+# [Entity] nucleation-and-growth-kinetics-in-solidification
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 쇳물이 굳어 단단한 강철이 될 때, 그 안에서는 어떤 일이 벌어질까요? **응고에서의 핵생성 및 성장 역학**은 액체라는 무질서의 세계에서 고체라는 질서의 세계가 탄생하는 **'물질의 창조 드라마'**입니다. 아주 작은 씨앗(핵)이 생겨나고, 그 씨앗이 주변의 원자들을 끌어모으며 몸집을 불리는(성장) 과정입니다. 이 찰나의 순간에 결정되는 원자들의 배열과 크기가 건물의 뼈대부터 자동차의 엔진까지, 우리가 쓰는 모든 물건의 '강도'와 '성질'을 결정짓습니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Large Dendrite Spacing - Risk of Internal Porosity and Brittleness. Enhance Heat Extraction"
         return "PASS: Fine Dendritic Network and Excellent Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cooling_rate_k_s=10.5, grain_size_microns=15.0, segregation_index=0.05)
 print(engine.diagnose_solidification_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_solidification_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data metal-solidification-grain-size-and-cooling-rate-v2026`와 연동되어, 전 세계 제강 및 주조 공장의 응고 데이터를 실시간 분석하고 결정 결함 및 내부 크랙 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - microgravity-semiconductor-crystal-growth-and-defect-physics

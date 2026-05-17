@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cetane-number-and-diesel-combustion-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cetane-number-and-diesel-combustion-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A measurement of the combustion speed of diesel fuel and the compression needed for ignition (Cetane Number) and the study of the complex chemical reactions occurring between fuel and oxygen under high-pressure conditions in a diesel engine (Diesel Combustion Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cetane-number", "diesel-combustion", "ignition-delay", "combustion-kinetics", "internal-combustion-engine", "fuel-quality", "knocking"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Combustion_Fidelity_Audit: Evaluate the ''Ignition Delay'' ($ID$) to identify if the fuel''s Cetane Number is too low, causing rough idling, cold-start issues, and excessive ''Diesel Knock''.'
-    - 'Injection_Integrity_Check: Analyze the fuel spray atomization and droplet size to ensure the combustion kinetics are optimized for complete carbon oxidation with minimal soot.'
-    - 'Performance_Fidelity_Scan: Monitor the peak cylinder pressure and heat release rate to verify that the ''Premixed Combustion'' phase is not becoming too violent due to poor fuel quality.'
-Trust Metrics:
+  description: "[Entity] cetane-number-and-diesel-combustion-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛽ Cetane Number and Diesel Combustion Kinetics
+# [Entity] cetane-number-and-diesel-combustion-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 디젤 엔진이 왜 가솔린 엔진처럼 스파크 플러그(점화플러그) 없이도 강력한 힘을 낼 수 있을까요? **세탄가(Cetane Number) 및 디젤 연소 역학**은 기름이 압축되는 순간 스스로 불이 붙는 '자연 발화'의 성질을 다스리는 **'불꽃 없는 폭발의 과학'** 기술입니다. 세탄가는 디젤유가 얼마나 '빨리' 스스로 불이 붙느냐를 나타내는 지표입니다. 적절한 타이밍에 스스로 터지는 연료는 소음을 줄이고 힘을 극대화하는 **'거대 엔진의 부드러운 폭발력'**을 결정합니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Exhaust Opacity - Fuel not mixing properly or poor combustion kinetics. Check fuel-air ratio and injector spray pattern"
         return "PASS: Clean Diffusion Flame and Verified Emission Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ignition_delay_ms=0.8, peak_pressure_rise_bar_deg=3.2, fuel_cetane_index=52.0)
 print(engine.diagnose_combustion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_combustion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data diesel-cetane-number-and-nox-emissions-v2026`와 연동되어, 전 세계 주요 상용차 및 선박 엔진의 가동 데이터를 실시간 분석하고 엔진 파손 및 대기 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cargo-ship-propulsion-and-marine-diesel-engineering

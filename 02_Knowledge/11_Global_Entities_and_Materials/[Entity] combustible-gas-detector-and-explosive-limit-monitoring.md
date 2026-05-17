@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "combustible-gas-detector-and-explosive-limit-monitoring"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] combustible-gas-detector-and-explosive-limit-monitoring]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A sensor device that detects the presence of flammable gases in the air to prevent fires and explosions (Combustible Gas Detector) and the critical safety logic of monitoring the concentration relative to the Lower Explosive Limit (LEL Monitoring)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-detector", "explosive-limit", "lel", "industrial-safety", "sensors", "hazardous-environments", "monitoring-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Fidelity_Audit: Evaluate the ''Zero Drift'' and ''Span Sensitivity'' to identify if the sensor is poisoned (by silicones) or if the infrared source is aging, leading to false-negative readings.'
-    - 'Explosion_Integrity_Check: Analyze the gas concentration against the ''LEL Thresholds'' (e.g., 10% LEL for Warning, 25% LEL for Alarm) to ensure that automated shutdown or ventilation is triggered before an explosive mixture forms.'
-    - 'Environmental_Fidelity_Scan: Monitor the ambient humidity and temperature to verify that ''False Alarms'' are minimized and the sensor''s cross-sensitivity is correctly compensated.'
-Trust Metrics:
+  description: "[Entity] combustible-gas-detector-and-explosive-limit-monitoring에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚨 Combustible Gas Detector and Explosive Limit Monitoring
+# [Entity] combustible-gas-detector-and-explosive-limit-monitoring
 
 ## 1. 개요 (Why: 인간적 통찰)
 보이지도 않고 냄새도 없는 가스가 조용히 차올라, 작은 정전기 한 번에 모든 것을 집어삼키는 폭발로 이어진다면 얼마나 끔찍할까요? **가연성 가스 검지기 및 폭발 한계 모니터링**은 우리 문명의 위험한 아랫배를 지키는 **'나노 규모의 코'** 기술입니다. 가스가 폭발할 수 있는 최소 농도(LEL)에 도달하기 훨씬 전부터 위험을 감지하여 경보를 울리고 가스를 차단하는 **'사고 제로의 마지막 파수꾼'**입니다. 보이지 않는 위협을 숫자로 바꿔 안전을 보장하는 **'생명 보호의 지능형 센서'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sluggish Sensor Response - Potential catalyst poisoning detected. Sensor head needs cleaning or replacement for life-safety compliance"
         return "PASS: Validated Detection Dynamics and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(lel_reading_pct=2.5, sensor_drift_pct=1.2, calibration_age_days=45)
 print(engine.diagnose_gas_safety())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_gas_safety())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-gas-sensor-calibration-and-lel-thresholds-v2026`와 연동되어, 전 세계 주요 화학 플랜트 및 지하 밀폐 공간의 센서 데이터를 실시간 분석하고 가스 폭발 사고 확률을 0.0001% 이하로 억제함으로써 지능형 산업 문명의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-safety-and-environmental-compliance-governance

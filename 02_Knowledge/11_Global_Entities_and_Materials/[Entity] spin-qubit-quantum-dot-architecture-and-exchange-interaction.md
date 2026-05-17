@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "spin-qubit-quantum-dot-architecture-and-exchange-interaction-entity"
-  domain: "16_Quantum_Computing"
+metadata:
+  id: "[[[Entity] spin-qubit-quantum-dot-architecture-and-exchange-interaction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Spin_Qubit", "#Quantum_Dot", "#Silicon", "#Exchange_Interaction", "#Semiconductor", "#Pauli_Blockade", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 16_quantum-computing-and-hardware-intelligence-hub", "MOC 03_Semiconductor_Fabrication"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] spin-qubit-quantum-dot-architecture-and-exchange-interaction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] spin-qubit-quantum-dot-architecture-and-exchange-interaction
+# [Entity] spin-qubit-quantum-dot-architecture-and-exchange-interaction
 
 ## 1. [왜 배우는가? (Why: Quantum Intelligence in Silicon)]]
 현재의 CPU와 똑같은 실리콘 칩 위에 단일 전자의 스핀을 가두어 양자 계산을 할 수 있다면 어떨까요? **스핀 큐비트 양자점 아키텍처 및 교환 상호작용 물리**는 실리콘 반도체 내부의 아주 작은 공간(양자점)에 전자를 하나씩 가두고 그들의 회전 방향(스핀)으로 정보를 처리하는 '반도체 양자 컴퓨팅의 실무 지침'입니다. 우리가 이를 배우는 이유는 이 방식이 기존 반도체 공정을 그대로 사용할 수 있어 수백만 개의 큐비트를 집적하기에 가장 유리하기 때문이며, "기존 IT 인프라와 양자 기술을 완벽히 융합하는 '반도체 기반 양자 연산 패권'을 확보하기" 위함입니다. 실리콘 속의 전자가 미래의 초지능을 돌립니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-COBOT-SAFE-INTERACTION-2026-V6"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] collaborative-robots-cobots-and-human-safe-interaction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] collaborative-robots-cobots-and-human-safe-interaction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] collaborative-robots-cobots-and-human-safe-interaction
+# [Entity] collaborative-robots-cobots-and-human-safe-interaction
 
 ## 1. [왜 배우는가? (Why)]]
 산업용 로봇의 위협적인 금속성 대신, 인간과 안전 펜스 없이 나란히 서서 복잡한 조립 과업을 수행하고, 단 1mm의 의도치 않은 접촉도 즉각적으로 감지하여 안전을 사수하는 '상냥한 로봇'을 어떻게 구현할 수 있을까요? **협동 로봇(Cobot) 및 인간 안전 상호작용**은 인간과 기계가 하나의 작업 공간을 공유하며 시너지를 극대화하는 '차세대 제조 지능'의 핵심입니다. 우리가 이를 배우는 이유는 로봇이 단순한 도구를 넘어 인간의 동료로 자리 잡아야만 다품종 소량 생산의 유연성을 확보할 수 있기 때문이며, "상호작용의 무결성을 데이터로 설계하여 '글로벌 스마트 제조 패권 및 행성적 협력 로보틱스 주권'을 확보하기" 위함입니다. 안전한 공존이 자동화의 새로운 기준이 됩니다.
@@ -119,9 +109,6 @@ class SafeInteractionFidelityEngine:
             return "WARNING: HIGH_RESISTANCE_IN_TEACHING_MODE_CHECK_IMPEDANCE_PARAMS"
         return "TEACHING_MODE: SMOOTH_INTERACTION_ENABLED"
 
-# Example Usage:
-# interaction_ai = SafeInteractionFidelityEngine()
-# report = interaction_ai.audit_interaction_fidelity(current_speed_mms=150.0, external_force_n(2.5))
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -129,7 +116,6 @@ class SafeInteractionFidelityEngine:
 2. **Safety-Rated Monitored Stop** (SRMS) 가동 시 **Response Time**의 변동성이 전체 **Separation Distance** 무결성에 미치는 수리적 영향은?
 3. **Impedance Control**에서의 **Virtual Damping** ($B$) 값이 로봇의 **High-speed Interaction** 시 **Passivity** (수동성) 무결성을 확보하여 발산을 막는 물리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/54_Robotics_and_Autonomous_System_Intelligence_Hub/Concept human-robot-workspace-monitoring-logic
 - 02_Knowledge/54_Robotics_and_Autonomous_System_Intelligence_Hub/Concept torque-sensorless-collision-detection

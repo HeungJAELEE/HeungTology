@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "climate-engineering-and-planetary-thermostat-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] climate-engineering-and-planetary-thermostat-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The large-scale intervention in Earth’s natural systems to counteract climate change, focusing on Solar Radiation Management (SRM) and Carbon Dioxide Removal (CDR) to regulate the planetary temperature."
-  physical_model: "N/A"
-Semantic:
-  tags: '["climate-engineering", "geoengineering", "solar-radiation-management", "carbon-removal", "planetary-thermostat"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Albedo_Change_Audit: Measure the increase in Earth''s reflectivity due to aerosol injection or cloud brightening.'
-    - 'Side_Effect_Scan: Evaluate unintended impacts on regional precipitation patterns and the ozone layer.'
-    - 'Carbon_Drawdown_Check: Verify the net removal rate of atmospheric $CO_2$ by industrial/biological CDR.'
-Trust Metrics:
+  description: "[Entity] climate-engineering-and-planetary-thermostat-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Climate Engineering and Planetary Thermostat Mechanics
+# [Entity] climate-engineering-and-planetary-thermostat-mechanics
 
 ## 1. 개요 (Why)
 탄소 배출 감축만으로는 지구 온난화를 막기에 늦었을 수도 있다는 공포가 커지고 있습니다. 기후 공학(Geoengineering)은 지구가 받는 열을 직접 반사하거나(SRM), 대기 중 탄소를 진공청소기처럼 빨아들이는(CDR) '지구의 온도 조절기(Thermostat)'를 만드는 대담한 시도입니다. 이는 인류의 마지막 보루가 될 수도 있지만, 자칫 생태계 전체에 돌이킬 수 없는 부작용을 낳을 수도 있는 양날의 검입니다. 본 노드는 기후 공학의 물리적 무결성과 전 지구적 안전 통제 표준을 정의합니다.
@@ -71,7 +60,6 @@ class SafetyFidelityEngine:
             return "REJECT: Excessive Albedo Increase - Risk of Rapid Global Cooling (Snowball Effect)"
         return "PASS: Radiative Forcing within Targeted Safe Range"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(albedo_delta=1.2, carbon_drawdown_rate=5.5, side_effect_index=0.15)
 print(engine.diagnose_climate_regulation())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_climate_regulation())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data geoengineering-impact-on-albedo-and-global-temp-v2026`와 연동되어, 지구 전체의 반사율과 탄소 농도를 실시간 분석하고 기후 조절 오차를 5% 이내로 제어함으로써 인류 문명 보호를 위한 최후의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 24_global-security-and-geopolitics-intelligence-hub
 - carbon-capture-and-utilization-ccu-chemical-kinetics

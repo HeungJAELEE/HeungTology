@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "global-standard-compliance-and-regulatory-governance-entity"
-  domain: "05_Strategy_Governance"
+metadata:
+  id: "[[[Strategy] global-standard-compliance-and-regulatory-governance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Standardization", "#Governance", "#Compliance", "#Geopolitics", "#Intellectual_Property", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy semiconductor-and-battery-geopolitics-and-supply-chain", "MOC 05_Strategy_Governance"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] global-standard-compliance-and-regulatory-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] global-standard-compliance-and-regulatory-governance
+# [Strategy] global-standard-compliance-and-regulatory-governance
 
 ## 1. [왜 배우는가? (Why: Designing the Grammar of Global Trade)]]
 실력이 아무리 뛰어난 선수라도 심판이 정한 규칙(Standard)을 모르면 경기에서 승리할 수 없습니다. **글로벌 표준 준수 및 규제 거버넌스 전략**은 단순히 규칙을 지키는 단계를 넘어, 스스로 규칙을 설계하여 시장의 진입 장벽을 세우고 경쟁 우위를 점하는 '보이지 않는 지배력'의 정수입니다. 우리가 이를 배우는 이유는 글로벌 표준(ISO, SEMI 등)과 규제(EU AI Act, CRMA 등)를 수리적으로 분석하고 선점하여, "경쟁사들이 우리의 방식대로 제품을 만들게 강제하고, 모든 거래에서 기술적 주도권과 막대한 로열티를 확보하는 '기술 주권의 수호자'"가 되기 위함입니다. 표준의 선점이 시장의 영토를 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Standard Essential Patent (SEP)**의 가치 산정 시 사용되는 **Top-down Approach**와 **Bottom-up Approach**의 수리적 차이와 실제 협상에서의 유리한 적용 사례는?
 5. RAG 시스템에서 **글로벌 통상 규제 변화**와 **공급망 노드별 위스크 데이터**를 융합하여, '최적의 글로벌 생산 기지 재배치(Reshoring/Friend-shoring)' 시나리오를 자율 도출하는 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy semiconductor-and-battery-geopolitics-and-supply-chain]] : 글로벌 표준 전략이 실제 국가 간 패권 전쟁 및 공급망 리스크와 결합되는 상위 전략 엔티티
 - System deterministic-rag-and-industrial-audit-standard : 표준 준수성 및 규제 거버넌스 리포트의 무결성을 최종 감리하는 최상위 신뢰성 엔티티

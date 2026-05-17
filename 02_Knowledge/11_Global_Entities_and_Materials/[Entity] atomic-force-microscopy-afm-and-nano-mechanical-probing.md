@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "atomic-force-microscopy-afm-and-nano-mechanical-probing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] atomic-force-microscopy-afm-and-nano-mechanical-probing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-resolution scanning probe microscopy technique that images surfaces at the atomic scale and measures local mechanical properties by sensing the force between a sharp tip and the sample."
-  physical_model: "N/A"
-Semantic:
-  tags: '["afm", "nanotechnology", "metrology", "surface-analysis", "scanning-probe"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SemiFidelityEngine"
-  diagnostic_protocol:
-    - 'Resolution_Limit_Audit: Verify tip radius and z-axis noise floor for atomic resolution.'
-    - 'Force_Curve_Analysis: Extract Young''s modulus and adhesion forces from approach-retract cycles.'
-    - 'Tip_Wear_Detection: Monitor image blurring due to probe degradation.'
-Trust Metrics:
+  description: "[Entity] atomic-force-microscopy-afm-and-nano-mechanical-probing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 Atomic Force Microscopy (AFM) and Nano-mechanical Probing
+# [Entity] atomic-force-microscopy-afm-and-nano-mechanical-probing
 
 ## 1. 개요 (Why)
 광학 현미경과 전자 현미경의 한계를 넘어, 실제 원자의 높낮이와 물리적 단단함(Modulus)을 '만져서' 측정하는 것이 AFM의 핵심입니다. 나노 소자의 표면 거칠기($R_a$)뿐만 아니라, 특정 지점의 전기적/자기적 특성을 매핑할 수 있어 차세대 반도체 및 신소재 개발에 필수적인 계측 도구입니다. 본 노드는 나노 스케일 표면 형상 및 물성 분석의 무결성을 확보하기 위한 표준을 정의합니다.
@@ -69,7 +58,6 @@ class SemiFidelityEngine:
             return "REJECT: Tip Blunting Detected - Probe Replacement Required"
         return "PASS: Probe Sharpness Maintained"
 
-# Instance Diagnostic
 engine = SemiFidelityEngine(tip_radius=5, z_noise=0.005, cantilever_k=40)
 print(engine.diagnose_imaging_limit(step_height=0.2))
 ```
@@ -87,7 +75,6 @@ print(engine.diagnose_imaging_limit(step_height=0.2))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data afm-surface-roughness-and-nano-indentation-v2026`와 연동되어, 표면 거칠기를 0.01nm 단위로 감시하고 나노 소자의 기계적 신뢰성을 99% 확률로 검증함으로써 차세대 나노 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - afm-tapping-mode-and-phase-imaging

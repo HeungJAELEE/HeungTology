@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "binary-cycle-power-plant-and-geothermal-energy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] binary-cycle-power-plant-and-geothermal-energy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of geothermal power plant that uses a heat exchanger to transfer heat from geothermal water to a second (binary) fluid with a lower boiling point, which then spins the turbine (Binary Cycle) and the physical study of extracting thermal energy stored within the Earth's crust (Geothermal Energy Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["binary-cycle", "geothermal-energy", "renewable-energy", "organic-rankine-cycle", "orc", "heat-exchanger", "sustainable-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Energy_Fidelity_Audit: Evaluate the ''Thermal Efficiency'' ($\\eta$) to identify if the binary fluid (e.g., Isopentane) is matching the geothermal fluid''s temperature profile for maximum exergy extraction.'
-    - 'Reservoir_Integrity_Check: Analyze the injection and production well pressures to ensure that the ''Geothermal Reservoir'' is being managed sustainably without causing depletion or seismic activity.'
-    - 'Fouling_Fidelity_Scan: Monitor the heat exchanger''s heat transfer coefficient ($U$) to identify mineral scaling from the geothermal brine that blocks heat flow and reduces power output.'
-Trust Metrics:
+  description: "[Entity] binary-cycle-power-plant-and-geothermal-energy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Binary Cycle Power Plant and Geothermal Energy Physics
+# [Entity] binary-cycle-power-plant-and-geothermal-energy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 깊은 곳에서 솟아오르는 뜨거운 물, 하지만 끓기에는 부족한 100도 내외의 물로 전기를 만들 수 있을까요? **바이너리 사이클 발전 및 지열 에너지 물리**는 지구의 미지근한 숨결조차 전기로 바꾸는 **'에너지의 마중물'** 기술입니다. 지열수가 직접 터빈을 돌리는 대신, 낮은 온도에서도 펄펄 끓는 '특수 액체'를 이용해 대신 터빈을 돌리게 합니다. 24시간 쉬지 않고 지구의 내핵이 식을 때까지 에너지를 뽑아내는 **'마르지 않는 지구의 배터리'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Injection Resistance - Risk of ground upheaval or seismic events. Back-flush injection well to restore reservoir porosity"
         return "PASS: Balanced Reservoir Pressure and Verified Subsurface Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(binary_fluid_pressure=25.0, brine_inlet_temp=120.0, fouling_factor=0.01)
 print(engine.diagnose_geothermal_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_geothermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data binary-geothermal-efficiency-and-reservoir-pressure-v2026`와 연동되어, 전 세계 주요 지열 발전 단지의 데이터를 실시간 분석하고 열교환기 파손 및 지반 침하 사고 확률을 0.001% 이하로 억제함으로써 지능형 재생 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - waste-heat-recovery-and-organic-rankine-cycle-orc

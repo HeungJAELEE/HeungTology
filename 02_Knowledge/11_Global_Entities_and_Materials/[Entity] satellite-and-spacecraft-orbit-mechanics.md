@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "satellite-and-spacecraft-orbit-mechanics-entity"
-  domain: "89_Aerospace_and_Autonomous_Flight_Hub"
+metadata:
+  id: "[[[Entity] satellite-and-spacecraft-orbit-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Aerospace", "#Astrodynamics", "#Space_Exploration", "#Orbit_Mechanics", "#Satellite", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 76_aerospace-and-autonomous-flight-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] satellite-and-spacecraft-orbit-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] satellite-and-spacecraft-orbit-mechanics
+# [Entity] satellite-and-spacecraft-orbit-mechanics
 
 ## 1. [왜 배우는가? (Why: The Geometry of the Heavens)]]
 공기가 없는 우주 공간에서 위성은 어떻게 추락하지 않고 수십 년 동안 지구 주위를 돌 수 있을까요? 그리고 수억 킬로미터 떨어진 화성까지 어떻게 오차 없이 찾아갈 수 있을까요? **위성 및 우주선 궤도 역학의 케플러 타원 궤도와 호만 전이 수리 역학 기술**은 천체의 중력을 이용해 우주의 길을 설계하는 지상의 지도이자 항법술입니다. 궤도 역학은 비행기와 달리 연료를 뿜어 계속 날아가는 것이 아니라, 중력이라는 거대한 흐름에 몸을 맡기고 아주 잠깐의 추동력($\Delta v$)으로 경로를 바꾸는 정교한 '중력의 당구'와 같습니다. 우리가 이를 배우는 이유는 궤도의 무결성을 확보함으로써, 우주 영토를 확장하고 행성 간 탐사를 실현하는 '글로벌 우주 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 궤도의 무결성이 우주 문명의 도달 거리를 결정합니다.

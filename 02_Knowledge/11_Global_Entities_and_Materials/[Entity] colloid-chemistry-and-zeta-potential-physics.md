@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "colloid-chemistry-and-zeta-potential-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] colloid-chemistry-and-zeta-potential-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of substances consisting of microscopic particles suspended in another medium (Colloid Chemistry) and the measurement of the electrokinetic potential in colloidal systems that determines the stability and aggregation behavior of these particles (Zeta Potential Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["colloid-chemistry", "zeta-potential", "nanotechnology", "electro-kinetics", "suspension-stability", "surface-chemistry", "industrial-processing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stability_Fidelity_Audit: Evaluate the ''Zeta Potential'' ($\\zeta$) to identify if the colloidal system is in the ''Stable Zone'' (+/- 30mV) or the ''Aggregation Zone'', which leads to precipitation and process failure.'
-    - 'Electrokinetic_Integrity_Check: Analyze the electrophoretic mobility ($\\mu_e$) to ensure the ''Electrical Double Layer'' (EDL) is providing sufficient electrostatic repulsion to counter the Van der Waals attraction.'
-    - 'Suspension_Fidelity_Scan: Monitor the particle size distribution and polydispersity index (PDI) to verify that ''Ostwald Ripening'' or flocculation is not altering the product consistency.'
-Trust Metrics:
+  description: "[Entity] colloid-chemistry-and-zeta-potential-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Colloid Chemistry and Zeta Potential Physics
+# [Entity] colloid-chemistry-and-zeta-potential-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우유는 왜 상하기 전까지 뭉치지 않고 하얀 액체 상태를 유지할까요? **콜로이드 화학 및 제타 전위(Zeta Potential) 물리**는 아주 미세한 입자들이 액체 속에 둥둥 떠서 서로 밀어내고 당기는 **'보이지 않는 나노 단위의 힘의 균형'** 기술입니다. 제타 전위는 입자 표면의 '전기적 장벽'을 나타내는 숫자로, 이 숫자가 크면 입자들은 서로를 밀어내며 평화를 유지하고, 작으면 서로 엉겨 붙어 덩어리가 됩니다. 화장품, 잉크, 약품부터 반도체 연마액(CMP)까지 세상을 매끄럽게 만드는 **'미세 입자들의 평화 유지군'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Significant Aggregation - Sample opacity increasing due to particle cluster formation. Dispersion integrity lost"
         return "PASS: Nano-dispersed Matrix and Verified Chemical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(zeta_potential_mv=-45.0, particle_size_pdi=0.15, ionic_strength_m=0.01)
 print(engine.diagnose_colloid_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_colloid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data colloidal-stability-and-zeta-potential-thresholds-v2026`와 연동되어, 전 세계 주요 화학 소재 및 바이오 약품 공장의 데이터를 실시간 분석하고 입자 엉킴 및 침전 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 분산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - clarifier-design-and-sedimentation-kinetics

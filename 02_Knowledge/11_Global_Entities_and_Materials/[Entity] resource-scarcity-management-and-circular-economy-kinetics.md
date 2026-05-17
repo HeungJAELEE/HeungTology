@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "resource-scarcity-management-and-circular-economy-kinetics-entity"
-  domain: "20_Planetary_Governance"
+metadata:
+  id: "[[[Entity] resource-scarcity-management-and-circular-economy-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Governance", "#Resource_Management", "#Circular_Economy", "#Sustainability", "#Recycling", "#Optimization", "#Economics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 20_planetary-governance-and-bio-defense-hub", "MOC 13_Industrial_Sustainability_and_Circular_Economy_MOC"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] resource-scarcity-management-and-circular-economy-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] resource-scarcity-management-and-circular-economy-kinetics
+# [Entity] resource-scarcity-management-and-circular-economy-kinetics
 
 ## 1. [왜 배우는가? (Why: The Art of Living with Limits)]]
 지구의 자원이 바닥나고 있는데, 우리가 쓴 모든 물건이 쓰레기가 되지 않고 다시 새 물건의 재료가 되어 무한히 순환하는 세상이 가능할까요? **자원 희소성 관리 및 순환 경제 동역학**은 버려지는 자원을 제로(Zero)로 만들고 한정된 자원을 인류가 가장 공평하게 나누어 쓰는 '지속 가능한 행성 경제의 설계 지침'입니다. 우리가 이를 배우는 이유는 자원 전쟁을 막고 미래 세대가 쓸 자원을 남기기 위해 '선형적 소비'에서 '순환적 배양'으로 경제 체질을 바꿔야 하기 때문이며, "행성의 물질 흐름을 데이터로 지배하는 '글로벌 자원 및 생태 경제 주권'을 확보하기" 위함입니다. 자원의 순환 속도가 문명의 영속성을 결정합니다.

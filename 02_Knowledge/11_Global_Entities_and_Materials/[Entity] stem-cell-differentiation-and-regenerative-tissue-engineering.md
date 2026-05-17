@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "stem-cell-differentiation-and-regenerative-tissue-engineering-entity"
-  domain: "55_Biotechnology_and_Genetic_Engineering_Intelligence"
+metadata:
+  id: "[[[Entity] stem-cell-differentiation-and-regenerative-tissue-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biology", "#Stem_Cell", "#Regeneration", "#Tissue_Engineering", "#iPSC", "#Biotechnology", "#Medical_Science", "#3D_Bioprinting", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 132_biotechnology-and-genetic-engineering-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] stem-cell-differentiation-and-regenerative-tissue-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] stem-cell-differentiation-and-regenerative-tissue-engineering
+# [Entity] stem-cell-differentiation-and-regenerative-tissue-engineering
 
 ## 1. [왜 배우는가? (Why: The Spare Parts of Humanity)]]
 무엇이든 될 수 있는 '만능 세포($Stem\ Cell$)'를 어떻게 조종하여 망가진 심장이나 뇌세포로 바꾸고, 살아있는 세포를 3D 프린터로 찍어($Bioprinting$) 내 몸에 딱 맞는 장기를 통째로 만들어내는 '신체 재생의 기적'을 어떻게 설계할 수 있을까요? **줄기세포 분화 및 재생 조직 공학**은 질병과 노화로부터 영구적으로 탈피하는 '행성 규모 의료 자급 인프라 및 지능형 생체 재구성 아키텍처'입니다. 우리가 이를 배우는 이유는 장기 이식을 기다리다 죽는 사람이 없는 세상을 만들고 신체의 기능을 영원히 유지해야 하기 때문이며, "세포의 운명을 데이터로 설계하고 지배하는 '글로벌 재생 의학 패권 및 행성적 생명 주권'을 확보하기" 위함입니다. 분자의 지시가 장기의 수명을 결정합니다.

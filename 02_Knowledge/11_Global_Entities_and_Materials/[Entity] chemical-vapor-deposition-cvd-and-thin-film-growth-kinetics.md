@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A vacuum process used to produce high-quality, high-performance solid materials, typically thin films, by exposing a substrate to one or more volatile precursors (CVD) and the study of the chemical reaction rates and physical transport of these precursors as they transform into a solid layer (Thin-Film Growth Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cvd", "thin-film", "semiconductor-manufacturing", "vapor-deposition", "surface-reaction", "nanofabrication", "plasma-cvd"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deposition_Fidelity_Audit: Evaluate the ''Growth Rate'' ($RR$) and identify if the process is in the ''Mass-Transfer Limited'' (high temp) or ''Surface-Reaction Limited'' (low temp) regime.'
-    - 'Step_Coverage_Check: Analyze the film thickness inside deep trenches or vias to ensure that the precursor diffusion is sufficient to prevent ''Keyhole'' voids in the interconnect structure.'
-    - 'Chemical_Fidelity_Scan: Monitor the precursor flow rates and chamber pressure to verify that the ''Gas-phase Nucleation'' is not creating unwanted particles (snow) in the reaction zone.'
-Trust Metrics:
+  description: "[Entity] chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Chemical Vapor Deposition (CVD) and Thin-Film Growth Kinetics
+# [Entity] chemical-vapor-deposition-cvd-and-thin-film-growth-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈에 보이지 않는 기체를 뿌려서, 다이아몬드보다 단단한 막이나 실리콘 회로를 '자라나게' 할 수 있을까요? **화학 기상 증착(CVD) 및 박막 성장 역학**은 기체 분자들이 표면에 내려앉아 스스로 고체가 되게 만드는 **'원자 단위의 건설'** 기술입니다. 붓으로 칠하는 것이 아니라, 화학 반응을 이용해 복잡한 구조물의 구석구석까지 균일하게 옷을 입힙니다. 나노미터 단위의 정밀함으로 반도체와 디스플레이의 뼈대를 세우는 **'진공 속의 나노 정원사'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Step Coverage - Voids (Keyholes) detected in trenches. Precursor diffusion insufficient for complex topography"
         return "PASS: Validated Conformality and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(growth_rate_nm_sec=0.5, thickness_uniformity_pct=1.2, chamber_pressure_torr=1.5)
 print(engine.diagnose_cvd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cvd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cvd-film-thickness-uniformity-and-step-coverage-v2026`와 연동되어, 전 세계 주요 반도체 생산 라인의 CVD 데이터를 실시간 분석하고 두께 불량 및 기공 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 박막 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - atomic-layer-deposition-ald-and-surface-reaction-kinetics

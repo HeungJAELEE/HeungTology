@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "control-theory-pid-lqr-and-model-predictive-control-mpc"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] control-theory-pid-lqr-and-model-predictive-control-mpc]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical foundations of system control, ranging from classical PID controllers to advanced optimal (LQR) and predictive (MPC) strategies for maintaining stability and achieving target performance."
-  physical_model: "N/A"
-Semantic:
-  tags: '["control-theory", "pid", "lqr", "mpc", "automation", "optimal-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Steady-state_Error_Audit: Measure the final deviation from the target setpoint after the system stabilizes.'
-    - 'Control_Effort_Check: Evaluate the actuator energy consumption ($u^2$) to prevent over-saturation or wear.'
-    - 'Prediction_Horizon_Scan: For MPC, analyze the accuracy of the future state prediction vs. actual trajectory.'
-Trust Metrics:
+  description: "[Entity] control-theory-pid-lqr-and-model-predictive-control-mpc에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕹️ Control Theory: PID, LQR, and Model Predictive Control (MPC)
+# [Entity] control-theory-pid-lqr-and-model-predictive-control-mpc
 
 ## 1. 개요 (Why)
 복잡한 기계나 공정이 우리가 원하는 대로 움직이게 하려면 정교한 '조종(Control)' 기술이 필요합니다. 가장 고전적이고 널리 쓰이는 PID부터, 수학적으로 최적의 효율을 찾아내는 LQR, 그리고 미래를 예측하며 미리 움직이는 MPC까지, 제어 이론은 현대 문명의 자율성을 가능하게 하는 수학적 근간입니다. 어떤 제어 방식을 선택하느냐에 따라 에너지 효율은 30% 이상, 작업 정밀도는 나노 단위까지 차이 날 수 있습니다. 본 노드는 제어 알고리즘의 무결성과 최적화 성능 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LogicFidelityEngine:
             return "REJECT: Excessive Control Effort - Risk of Actuator Saturation or Mechanical Fatigue"
         return "PASS: Energy-efficient Control Action Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(steady_state_error=0.002, control_effort_n=450, settling_time_sec=1.2)
 print(engine.diagnose_control_performance(target_st=1.0))
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_control_performance(target_st=1.0))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data control-algorithm-performance-and-error-minimization-v2026`와 연동되어, 모든 공정의 제어 이력을 실시간 분석하고 제어 실패 확률을 0.1% 이하로 억제함으로써 고집적 자율 시스템의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-systems-and-signal-processing-engineering

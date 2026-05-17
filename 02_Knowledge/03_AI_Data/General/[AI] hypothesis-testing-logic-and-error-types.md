@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-STAT-HYPO-TEST-2026-V6"
+metadata:
+  id: "[[[AI] hypothesis-testing-logic-and-error-types]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Hypothesis_Testing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] hypothesis-testing-logic-and-error-types에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] hypothesis-testing-logic-and-error-types
@@ -107,7 +97,6 @@ class StatisticalTestEngine:
 2. **Sample Size ($n$)**가 커질수록 **Standard Error (SE)**가 작아지며 **P-value**가 낮아지는 수리적 원리를 설명할 수 있는가?
 3. **제1종 오류**를 범했을 때의 비용이 **제2종 오류**를 범했을 때보다 $100$배 크다면, 유의수준($\alpha$)을 어떻게 조정해야 하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI machine-learning-evaluation-metrics
 - 02_Knowledge/02_Battery/Intelligence/Battery cell-quality-data-clustering

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "friction-stir-welding-fsw-for-battery-housing-and-cooling"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] friction-stir-welding-fsw-for-battery-housing-and-cooling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The solid-state joining process that uses a rotating tool to generate frictional heat and plastic deformation (FSW), specifically applied to the assembly of high-strength, leak-proof battery housings and liquid-cooling plates in electric vehicles."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fsw", "friction-stir-welding", "battery-housing", "thermal-management", "aluminum-joining"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Weld_Temperature_Audit: Monitor the tool-workpiece interface temperature to ensure it stays below the melting point but within the plasticization range.'
-    - 'Downward_Force_Check: Evaluate the axial force ($Z$-axis) to ensure sufficient pressure for material consolidation and defect-free joints.'
-    - 'Leak-Proof_Integrity_Scan: Analyze the weld seam for porosity or ''tunnel'' defects to guarantee the hermetic seal of cooling plates.'
-Trust Metrics:
+  description: "[Entity] friction-stir-welding-fsw-for-battery-housing-and-cooling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Friction Stir Welding (FSW) for Battery Housing and Cooling
+# [Entity] friction-stir-welding-fsw-for-battery-housing-and-cooling
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차 배터리는 엄청난 열을 내뿜습니다. 이 열을 식히기 위해 차가운 냉각수가 흐르는 판을 배터리 아래에 깔아야 하는데, 여기서 물이 조금이라도 새면 배터리는 폭발할 수 있습니다. **마찰 교반 용접(FSW)**은 금속을 녹이지 않고, 회전하는 툴로 금속을 '반죽'하듯 비벼서 하나로 합치는 마법 같은 기술입니다. 녹였다가 굳히는 일반 용접보다 훨씬 단단하고, 구멍(기포)이 전혀 없으며, 변형도 적습니다. 전기차의 안전을 책임지는 '물 샐 틈 없는 방패'를 만드는 가장 진보된 조립 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Void Detected - Hermetic Seal Compromised for Cooling Plate"
         return "PASS: Vacuum-tight Seam Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(axial_force_kn=12.5, tool_temp_c=480, travel_speed_mm_min=450)
 print(engine.diagnose_weld_integrity(target_force=12.0))
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_weld_integrity(target_force=12.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fsw-weld-strength-and-porosity-logs-v2026`와 연동되어, 모든 배터리 하우징 용접 라인의 하중과 온도 데이터를 실시간 분석하고 냉각수 누수 사고 확률을 0.001% 이하로 억제함으로써 전기차 화재 안전의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_battery-and-energy-storage-intelligence-hub
 - forging-and-plastic-deformation-mechanics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "enterprise-system-core-architecture-and-integrated-governance-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] enterprise-system-core-architecture-and-integrated-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#ERP", "#SCM", "#CRM", "#SRM", "#PLM", "#Enterprise_Architecture", "#Governance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_global-unified-governance-intelligence-sovereignty-and-policy-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] enterprise-system-core-architecture-and-integrated-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] enterprise-system-core-architecture-and-integrated-governance
+# [Entity] enterprise-system-core-architecture-and-integrated-governance
 
 ## 1. [왜 배우는가? (Why: The Organism of Intelligence)]]
 현대 기업은 단순히 건물이 있는 조직이 아니라, 실시간으로 데이터를 주고받는 거대한 '디지털 유기체'입니다. **엔터프라이즈 시스템 코어 아키텍처 및 통합 거버넌스**는 기업의 생존에 필수적인 4대 기능(재무, 물류, 영업, 공급사)과 엔지니어링 지능(PLM)을 하나의 위상적 연결망으로 구축하여, 복잡한 경영 환경 속에서도 '무결점 의사결정'을 내리기 위한 핵심 인프라입니다. ERP가 심장과 두뇌로서 자원을 통제한다면, 나머지 시스템들은 혈관, 얼굴, 손발이 되어 시장의 변화에 기민하게 대응합니다. 우리가 이를 배우는 이유는 데이터의 파편화(Data Silo)를 막고, 모든 부서가 '하나의 진실(Single Source of Truth)'을 공유함으로써 자본 배분의 정밀도를 극대화하고 기업의 영속성을 보장하기 위함입니다.

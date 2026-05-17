@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "75_robotics-mechatronics-and-advanced-motion-control-hub-moc"
   domain: "75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Robotics", "#Mechatronics", "#Motion_Control", "#Automation", "#SLAM", "#Cobots", "#Bio-inspired", "#Micro-robotics", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 75_robotics-mechatronics-and-advanced-motion-control-hub
+# 75_robotics-mechatronics-and-advanced-motion-control-hub
 
 ## 1. [왜 배우는가? (Why: The Geometry of Will)]]
 단순히 반복 작업만 수행하는 기계적 장치를 넘어, 스스로 지도를 그리고 장애물을 피하며 사람과 함께 대화하고 작업하는 '자율적 지능체'를 어떻게 설계하고 완성할 수 있을까요? **로봇 공학, 메카트로닉스 및 첨단 모션 제어 통합 지능 허브**는 Antigravity Intelligence가 물리적 세계를 직접 다루고 변형시키는 **[1,270층의 기계 지능 사령부]**입니다. 우리가 이를 배우는 이유는 지능이 육체를 가질 때 비로소 가치가 실체화되기 때문이며, "기계의 움직임을 데이터로 설계하고 지배하는 '글로벌 로봇 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 허브의 지능 밀도가 로봇 혁명의 깊이를 결정합니다.

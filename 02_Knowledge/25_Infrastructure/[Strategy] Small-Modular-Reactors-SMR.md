@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Small-Modular-Reactors-SMR"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Small-Modular-Reactors-SMR]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Small-Modular-Reactors-SMR에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Small-Modular-Reactors-SMR
+# [Strategy] Small-Modular-Reactors-SMR
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 탄소를 배출하지 않는 깨끗하고 안정적인 전기가 필요합니다. 하지만 전통적인 대형 원자력 발전소는 짓는 데 너무 오래 걸리고, 한번 사고가 나면 영향이 너무 큽니다. 소형 모듈 원자로(Small-Modular-Reactors-SMR)는 이 문제를 '크기를 줄여서' 해결합니다. 공장에서 미리 만들어 배에 실어 나를 수 있고, 크기가 작아 안전 관리가 훨씬 쉽습니다. 특히 전기를 엄청나게 쓰는 AI 데이터 센터 옆에 바로 지어서 전기를 공급할 수 있다는 점이 가장 큰 매력입니다. 이를 이해하는 것은 원자력을 위험한 괴물이 아닌, 우리 삶 가까이에서 묵묵히 에너지를 만드는 '작고 안전한 배터리'처럼 다루는 기술을 배우는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (SMR Thermal Dispatch)]
 원자로에서 생성된 열을 전력 생산과 수소 생산에 어떻게 배분할지 최적화하는 논리 구조입니다.
 ```python
-# SMR(ISM) 기반 열-전력 복합 에너지 배분 최적화 논리
 def optimize_smr_energy_dispatch(reactor_output_temp, power_demand, h2_demand):
     # 1. 원자로 가동 상태 모니터링
     # 노심 온도, 압력, 중성자 속 데이터를 수집하여 안전성 확인
@@ -102,5 +91,4 @@ def optimize_smr_energy_dispatch(reactor_output_temp, power_demand, h2_demand):
 2. '모듈형 제작(Modular Construction)' 방식이 원자력 발전소의 '경제성'과 '건설 기간' 문제를 어떻게 해결하는가?
 3. SMR을 'AI 데이터 센터'와 '공동 설치(Co-location)' 했을 때 얻을 수 있는 '송전 비용' 및 '에너지 효율' 측면의 구체적 이득은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

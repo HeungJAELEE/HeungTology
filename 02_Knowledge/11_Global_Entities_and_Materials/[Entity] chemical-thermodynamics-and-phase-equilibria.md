@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-thermodynamics-and-phase-equilibria"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-thermodynamics-and-phase-equilibria]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The fundamental study of energy transformation and the equilibrium state of chemical systems, focusing on Gibbs free energy, phase transitions, and the distribution of components between phases."
-  physical_model: "N/A"
-Semantic:
-  tags: '["thermodynamics", "phase-equilibria", "enthalpy", "entropy", "chemical-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Gibbs_Free_Energy_Audit: Evaluate the spontaneity of chemical reactions and phase changes ($\\Delta G < 0$).'
-    - 'Phase_Stability_Check: Determine the number of coexisting phases under specific $P, T, x$ conditions.'
-    - 'Energy_Balance_Verification: Audit the conservation of energy (First Law) across a defined system boundary.'
-Trust Metrics:
+  description: "[Entity] chemical-thermodynamics-and-phase-equilibria에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Chemical Thermodynamics and Phase Equilibria
+# [Entity] chemical-thermodynamics-and-phase-equilibria
 
 ## 1. 개요 (Why)
 세상의 모든 변화는 '에너지'의 흐름에 따라 결정됩니다. 어떤 반응이 일어날지, 액체가 기체로 변할지, 배터리가 얼마나 많은 에너지를 담을 수 있을지는 모두 열역학이 결정합니다. 열역학은 우리가 가고자 하는 방향(평형 상태)을 알려주는 나침반과 같습니다. 본 노드는 화학 시스템의 에너지적 무결성과 상태 변화의 결정론적 예측을 위한 표준을 정의합니다.
@@ -75,7 +64,6 @@ class LogicFidelityEngine:
             return "ERROR: Over-specified System - Physical Impossibility"
         return f"STABLE: System has {f} Degrees of Freedom"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(delta_h=-50, delta_s=150, temperature_k=298)
 print(engine.diagnose_reaction_spontaneity())
 ```
@@ -93,7 +81,6 @@ print(engine.diagnose_reaction_spontaneity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data chemical-phase-diagram-and-equilibrium-constants-v2026`와 연동되어, 시스템의 모든 에너지 상태를 실시간 분석하고 물리적 한계를 99.9% 확률로 예측함으로써 화학 및 에너지 시스템의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - battery-aging-and-self-discharge-analytics

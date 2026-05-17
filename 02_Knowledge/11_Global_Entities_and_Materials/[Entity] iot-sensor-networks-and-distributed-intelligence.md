@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iot-sensor-networks-and-distributed-intelligence"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iot-sensor-networks-and-distributed-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The interconnected system of sensing devices (IoT Sensors) and the decentralized processing architecture (Distributed Intelligence) that enables real-time data collection, analysis, and autonomous decision-making at the edge of the network."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iot", "sensor-networks", "distributed-intelligence", "edge-computing", "lpwan", "mesh-networking", "smart-factory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Calibration_Audit: Compare the readings from distributed sensors with a high-precision reference to identify drift or environmental interference.'
-    - 'Network_Topology_Check: Evaluate the connectivity and routing efficiency of the mesh network to identify potential bottlenecks or isolated nodes.'
-    - 'Distributed_Intelligence_Scan: Analyze the local decision-making accuracy at the edge to ensure it aligns with the global system objectives and safety constraints.'
-Trust Metrics:
+  description: "[Entity] iot-sensor-networks-and-distributed-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌐 IoT Sensor Networks and Distributed Intelligence
+# [Entity] iot-sensor-networks-and-distributed-intelligence
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장, 도시, 그리고 우리가 사는 집이 '감각'을 가지게 된다면 어떨까요? **IoT 센서 네트워크 및 분산 지능**은 세상의 모든 사물에 신경세포(센서)를 심어, 스스로 느끼고 판단하게 만드는 **'지구적 인텔리전스'**입니다. 모든 데이터를 중앙 서버로 보내느라 시간을 낭비하는 대신, 각 말단 기기(Edge)가 옆의 기기와 대화하며 즉시 문제를 해결하는 **'똑똑한 자율 신경계'**입니다. 인류의 손길이 닿지 않는 곳까지 지능을 퍼뜨려, 세상을 더 안전하고 효율적으로 관리하는 **'보이지 않는 지능형 망'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Network Fragmentation Risk - Critical Coverage Gaps in Sensor Field"
         return "PASS: Robust Node Population Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sensor_drift_pct=1.2, packet_loss_rate=0.005, avg_latency_ms=120.0)
 print(engine.diagnose_network_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_network_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data iot-sensor-reliability-and-network-latency-v2026`와 연동되어, 전 세계 수조 개의 센서 데이터를 실시간 분석하고 데이터 변조 및 시스템 마비 사고 확률을 0.001% 이하로 억제함으로써 지능형 행성의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-internet-of-things-iiot-and-edge-analytics

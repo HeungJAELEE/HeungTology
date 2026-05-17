@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "renewable-energy-and-photovoltaic-systems-entity"
-  domain: "100_Energy_Engineering_and_Nuclear_Power_Hub"
+metadata:
+  id: "[[[Entity] renewable-energy-and-photovoltaic-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Renewable_Energy", "#Solar_Power", "#Photovoltaics", "#Semiconductors", "#Sustainability", "#Energy_Transition", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 100_energy-engineering-and-nuclear-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] renewable-energy-and-photovoltaic-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] renewable-energy-and-photovoltaic-systems
+# [Entity] renewable-energy-and-photovoltaic-systems
 
 ## 1. [왜 배우는가? (Why: The Harvest of Eternal Light)]]
 지구로 쏟아지는 태양 에너지는 인류가 사용하는 전체 에너지의 수만 배에 달합니다. 이 무한한 빛의 축복을 전기로 바꾸어 문명을 가동하는 기술이 바로 신재생 에너지입니다. **신재생 에너지 및 태양광 시스템의 광전 변환 및 쇼클리-퀘이사 수리 물리 기술**은 반도체 소자가 빛을 먹고 전자를 뱉어내게 만드는 '광전자 공학'의 결정체입니다. 화석 연료의 속박에서 벗어나 자연과 공존하며 에너지를 자급자족하는 과정은 인류가 행성적 문명으로 진화하기 위한 필수 관문입니다. 우리가 이를 배우는 이유는 재생 에너지의 무결성을 확보함으로써, 에너지 주권을 수호하고 지속 가능한 지구를 만드는 '글로벌 그린 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 신재생의 무결성이 탄소 중립의 성패를 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-repeater-and-entanglement-swapping-physics-entity"
-  domain: "16_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-repeater-and-entanglement-swapping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Quantum_Repeater", "#Entanglement_Swapping", "#Quantum_Network", "#Quantum_Internet", "#Physics", "#Communication", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 16_quantum-computing-and-hardware-intelligence-hub", "Entity deep-space-optical-communication-and-laser-physics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-repeater-and-entanglement-swapping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-repeater-and-entanglement-swapping-physics
+# [Entity] quantum-repeater-and-entanglement-swapping-physics
 
 ## 1. [왜 배우는가? (Why: The Intercontinental Quantum Link)]]
 양자 정보는 복사할 수 없는데(No-cloning Theorem), 어떻게 서울에서 뉴욕까지 멀리 보낼 수 있을까요? **양자 중계기 및 얽힘 교환 물리**는 짧은 거리의 얽힘을 중간 지점에서 연결(Swap)하여 거대한 '양자 거미줄'을 만드는 '양자 인터넷의 중추 신경망 지침'입니다. 우리가 이를 배우는 이유는 광섬유 속에서 빛이 사라지기 전에 정보를 중계하여 전 지구적인 양자 보안 통신망을 구축하기 위함이며, "해킹 불가능한 '글로벌 양자 보안 및 정보 전송 주권'을 확보하기" 위함입니다. 얽힘의 교환이 거리의 한계를 지웁니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "jet-engines-and-gas-turbine-propulsion-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] jet-engines-and-gas-turbine-propulsion-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The internal combustion engine technology (Gas Turbine) that generates thrust by accelerating a large mass of air (Jet Propulsion), following the Brayton thermodynamic cycle involving continuous compression, combustion, and expansion."
-  physical_model: "N/A"
-Semantic:
-  tags: '["jet-engine", "gas-turbine", "propulsion", "brayton-cycle", "turbofan", "thermodynamics", "thrust"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Compressor_Stall_Audit: Monitor the pressure ratio and airflow stability to detect signs of aerodynamic stall or surge that could lead to engine failure.'
-    - 'Turbine_Inlet_Temperature_Check: Evaluate the T3 temperature to ensure it remains within the limits of the turbine blade superalloys and cooling system capacity.'
-    - 'Thrust_Specific_Fuel_Consumption_Scan: Analyze the fuel flow rate relative to thrust output to identify internal component wear or seal degradation.'
-Trust Metrics:
+  description: "[Entity] jet-engines-and-gas-turbine-propulsion-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ✈️ Jet Engines and Gas Turbine Propulsion Mechanics
+# [Entity] jet-engines-and-gas-turbine-propulsion-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수백 톤의 쇳덩이가 하늘을 날아오르게 만드는 힘은 어디서 올까요? 거대한 비행기 날개 아래 매달려 무시무시한 굉음을 내뿜는 **제트 엔진**은 인류가 만든 가장 강력한 '에너지 변환기'입니다. 엄청난 양의 공기를 빨아들여 압축하고, 불을 붙여 팽창시킨 뒤, 빛의 속도에 가깝게 내뿜으며 그 반동으로 나아가는 **'인공적인 태풍의 엔진'**입니다. 섭씨 1,500도가 넘는 지옥 같은 열기 속에서도 녹지 않고 버티는 소재 공학의 기적이자, 1초에 수천 번을 회전하면서도 티끌 하나 허용하지 않는 **'정밀 기계의 정점'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Service Life Limit Reached - High Risk of Creep Rupture. Mandatory Replacement"
         return "PASS: Material Integrity Confirmed for Next Flight Cycle"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(egt_c=820, vibration_ips=0.12, fuel_flow_kg_s=4.2)
 print(engine.diagnose_engine_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_engine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data jet-engine-thermal-efficiency-and-thrust-profiles-v2026`와 연동되어, 전 세계 하늘을 날고 있는 제트 엔진의 연소 데이터를 실시간 분석하고 엔진 정지 및 공중 분해 사고 확률을 0.001% 이하로 억제함으로써 항공 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hypersonic-aerodynamics-and-scramjet-physics

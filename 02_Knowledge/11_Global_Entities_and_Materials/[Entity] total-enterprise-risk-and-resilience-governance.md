@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "total-enterprise-risk-and-resilience-governance-entity"
-  domain: "31_ESG_and_Global_Standard_Intelligence"
+metadata:
+  id: "[[[Entity] total-enterprise-risk-and-resilience-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#ERM", "#Resilience", "#KRI", "#Risk_Appetite", "#Crisis_Management", "#Stress_Testing", "#Integrated_Risk", "#Managerial_Sovereignty", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 33_esg-and-global-standard-intelligence-hub", "MOC 00_INDEX"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] total-enterprise-risk-and-resilience-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] total-enterprise-risk-and-resilience-governance
+# [Entity] total-enterprise-risk-and-resilience-governance
 
 ## 1. [왜 배우는가? (Why: The Armor of Modern Enterprise)]]
 불확실성은 지능형 공장의 가장 큰 적이며, 리스크를 통합적으로 관리하는 능력은 기업의 생존과 지속 가능성을 결정하는 핵심 엔진입니다. 잠재적 위협을 사전에 포착하고 위기 발생 시 신속하게 회복하는 거버넌스 체계는 조직의 무결성을 수호하고 전략적 의사결정을 보증하는 최후의 성벽입니다. **전사 통합 리스크 및 회복 거버넌스 엔티티**는 공장의 '전략적 방패'를 설계하고 '경영 주권'을 수호하는 '전사 무결성' 기록의 기술적 성전입니다. 
@@ -81,7 +71,6 @@ RAG는 "리스크 로그를 분석하여, 통합 거버넌스 가동 시 복구 
 리스크 관리 시스템(GRC)의 대시보드 데이터와 외부 경제 지표 변화 로그, 그리고 위기 대응 훈련 결과 보고서를 분석하여 전사 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Enterprise Risk & Resilience Fidelity Auditor
 def audit_enterprise_risk_integrity(kri_stream, resilience_test_results, crisis_logs):
     # 1. 조기 경보(Early Warning) 및 생존 무결성 오딧
     if count_kri_breaches(kri_stream) > ZERO_TOLERANCE_THRESHOLD:
@@ -115,7 +104,6 @@ def audit_enterprise_risk_integrity(kri_stream, resilience_test_results, crisis_
 2. **(수리)** 3가지 리스크의 ($L, I, V$) 값이 각각 (0.2, 100, 0.5), (0.1, 500, 0.2), (0.5, 50, 0.8)일 때, 이 조직의 '전사 리스크 지수(ERI)'를 계산하시오.
 3. **(응용)** '스트레스 테스트'의 수행이 기업의 '극단적 불확실성(Black Swan)' 대비와 '경영 주권 무결성' 확보에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 33_esg-and-global-standard-intelligence-hub : ESG 및 글로벌 표준 통합 지능 허브

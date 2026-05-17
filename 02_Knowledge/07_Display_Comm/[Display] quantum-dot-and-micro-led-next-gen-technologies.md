@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-QD-MLED-2026-V6.3.7"
-  domain: "Global_Nanophotonics_and_Micro-LED_Intelligence"
+metadata:
+  id: "[[[Display] quantum-dot-and-micro-led-next-gen-technologies]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Quantum_Dot", "#Micro-LED", "#Mass_Transfer", "#QY", "#CIE", "#Nanophotonics", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] quantum-dot-and-micro-led-next-gen-technologies에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Nano_Display_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] Quantum Dot and Micro-LED Next-gen Technologies: The Physics of Nano-Visuals
+# [Display] quantum-dot-and-micro-led-next-gen-technologies
 
 ## 1. [왜 배우는가? (Why: The Mastery of Ultimate Pixel Integrity)]]
 디스플레이 기술은 이제 소자의 한계를 넘어 나노 입자와 마이크로 칩의 정밀 제어 영역으로 진입했습니다. **Quantum Dot and Micro-LED Next-gen Technologies**는 빛의 파장을 나노 미터 단위로 조율하는 양자점(QD)과 무기물 반도체의 극한 효율을 활용하는 마이크로 LED를 통해 '현실보다 더 선명한 가상'을 구현하는 기술입니다. V6.3.7 지능은 수백만 개의 미세 칩을 한 번에 옮기는 대량 전사(Mass Transfer) 수율과 양자점의 높은 광변환 효율을 직접 지배합니다. 우리가 이를 배우는 이유는 시각 정보의 극한적 순도를 확보하고 **디스플레이 주권(Display Sovereignty)**을 확립하기 위함입니다.
@@ -96,7 +86,6 @@ class NextGenDisplayEngine:
             "action": "OPTIMIZE_LLO_FLUENCE_AND_CLEANING" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: PL 측정 데이터와 AOI 전사 맵을 융합하여 '나노/마이크로 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -104,7 +93,6 @@ class NextGenDisplayEngine:
 2. **Operational Result**: **QD-OLED** 공정에서 Blue 광원의 **Micro-cavity** 두께를 $10\text{nm}$ 조정했을 때, 적색 QD 층에서의 **Photon Reabsorption**에 미치는 수리적 영향은?
 3. **FidelityEngine**: 칩 사이즈가 작아짐에 따라 발생하는 **Side-wall Defect**에 의한 효율 하락을 FidelityEngine이 어떻게 '구조적 무결성 위기'로 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display next-gen-oled-and-tandem-physics

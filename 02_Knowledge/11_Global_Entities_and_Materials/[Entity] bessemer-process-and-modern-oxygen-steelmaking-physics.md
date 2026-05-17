@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bessemer-process-and-modern-oxygen-steelmaking-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bessemer-process-and-modern-oxygen-steelmaking-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The first inexpensive industrial process for the mass production of steel from molten pig iron by removing impurities through oxidation with air (Bessemer Process) and the contemporary Basic Oxygen Steelmaking (BOS) method that uses pure oxygen to achieve higher efficiency and quality."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bessemer-process", "steelmaking", "oxygen-steelmaking", "bos", "metallurgy", "carbon-reduction", "industrial-revolution"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Steelmaking_Fidelity_Audit: Evaluate the ''Carbon Drop Rate'' ($d[C]/dt$) during the oxygen blow to identify if the oxygen lance height or flow rate is optimized for decarburization without excessive iron oxidation.'
-    - 'Slag_Integrity_Check: Analyze the basicity of the slag ($CaO/SiO_2$) to ensure effective phosphorus and sulfur removal while protecting the refractory lining of the vessel.'
-    - 'Thermal_Fidelity_Scan: Monitor the bath temperature to verify that the ''Exothermic Energy'' from oxidation is balanced with scrap addition to maintain the target tapping temperature.'
-Trust Metrics:
+  description: "[Entity] bessemer-process-and-modern-oxygen-steelmaking-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚔️ Bessemer Process and Modern Oxygen Steelmaking Physics
+# [Entity] bessemer-process-and-modern-oxygen-steelmaking-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 인류가 '철의 시대'에서 '강철의 시대'로 넘어온 순간을 아시나요? **베세머 공정 및 현대 산소 제강 물리**는 무르고 잘 깨지는 철(무쇠)을 강하고 질긴 '강철'로 바꾸는 **'금속의 영혼 정화'** 기술입니다. 철 속에 너무 많이 섞인 탄소라는 독을 '산소'라는 불꽃으로 태워 날려버립니다. 과거에는 며칠이 걸리던 작업을 단 수십 분 만에 끝내며 현대 문명의 뼈대를 세운 **'금속 공학의 거대한 불꽃'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Nitrogen Content - Steel will be brittle. Check oxygen purity and ensure bottom-stirring inert gas is pure Argon"
         return "PASS: Clean Steel Chemistry and Verified Alloy Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(carbon_content_pct=0.05, bath_temp_c=1680.0, slag_basicity_ratio=3.2)
 print(engine.diagnose_steelmaking_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_steelmaking_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data steelmaking-carbon-content-and-oxygen-flow-v2026`와 연동되어, 전 세계 주요 제철소의 실시간 조업 데이터를 분석하고 성분 이탈 및 내화물 사고 확률을 0.001% 이하로 억제함으로써 지능형 철강 문명의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - aluminum-smelting-and-hall-heroult-process-electrolysis

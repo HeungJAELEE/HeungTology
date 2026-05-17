@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-internet-of-things-iiot-and-sensor-fusion"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-internet-of-things-iiot-and-sensor-fusion]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced network of connected industrial assets, sensors, and controllers that leverage sensor fusion algorithms to provide a high-fidelity, real-time view of industrial processes and asset health."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iiot", "sensor-fusion", "smart-sensors", "connectivity", "industrial-iot", "data-integration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "IIoTFidelityEngine"
-  diagnostic_protocol:
-    - 'Data_Freshness_Audit: $\\tau_{latency} \\le 100$ ms (Process monitoring limit).'
-    - 'Sensor_Reliability_Check: $MTBF \\ge 20,000$ hours.'
-    - 'Fusion_Accuracy_Audit: Error variance $\\sigma_{fused}^2 < \\min(\\sigma_i^2)$.'
-Trust Metrics:
+  description: "[Entity] industrial-internet-of-things-iiot-and-sensor-fusion에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Industrial Internet of Things (IIoT) and Sensor Fusion
+# [Entity] industrial-internet-of-things-iiot-and-sensor-fusion
 
 ## 1. 개요 (Why)
 스마트 팩토리의 모든 의사결정은 데이터에서 시작됩니다. 하지만 개별 센서의 데이터는 항상 노이즈와 오차를 포함하고 있습니다. IIoT와 센서 융합은 서로 다른 위치와 종류의 센서(예: 가속도, 온도, 전류)를 결합하여 물리적 시스템의 실제 상태를 수학적으로 추정(Estimation)해냅니다. 이는 '데이터'를 '정보'로, 그리고 '지능'으로 승화시켜 공장의 자율적 운영을 가능케 하는 신경계입니다.
@@ -78,8 +67,6 @@ class IIoTFidelityEngine:
         capacity = bandwidth_hz * np.log2(1 + snr_linear)
         return {"max_capacity_bps": capacity}
 
-# Instance Diagnostic
-# Two sensors measuring the same value: 10.5 (var 0.1) and 10.7 (var 0.2)
 iiot_engine = IIoTFidelityEngine(sensor_readings=[10.5, 10.7], sensor_variances=[0.1, 0.2])
 print(iiot_engine.weighted_sensor_fusion())
 print(iiot_engine.check_communication_capacity(bandwidth_hz=1e6, snr_db=20))
@@ -98,7 +85,6 @@ print(iiot_engine.check_communication_capacity(bandwidth_hz=1e6, snr_db=20))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data sensor-data-precision-and-noise-log-v2026`와 연계되어 산업 데이터의 신뢰도를 $99.9\%$ 이상으로 유지합니다. `IIoTFidelityEngine`을 통해 노이즈를 필터링하고 결정론적 상태 정보를 제공함으로써, 고신뢰성 자율 제조 시스템의 데이터 토대를 구축합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 117_smart-factory-and-industrial-automation-hub
 - wireless-sensor-networks-wsn-logic

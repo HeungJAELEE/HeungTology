@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ethics-by-design-and-moral-machine-logic-gates"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ethics-by-design-and-moral-machine-logic-gates]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering methodology that integrates ethical principles directly into the design phase of AI and robotic systems (Ethics-by-Design), using formal logic and hard-coded constraints (Moral Logic Gates) to prevent unethical outcomes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ethics-by-design", "moral-machines", "ai-ethics", "logic-gates", "responsible-ai"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Moral_Logic_Verification: Use formal methods (e.g., Model Checking) to prove that the system can never reach an unethical state defined by the guardrails.'
-    - 'Bias_Detection_Audit: Analyze the AI''s training data and outputs for systematic unfairness or discrimination against specific groups.'
-    - 'Accountability_Trace_Check: Ensure that every decision can be traced back to its underlying data and logic to establish responsibility.'
-Trust Metrics:
+  description: "[Entity] ethics-by-design-and-moral-machine-logic-gates에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Ethics-by-Design and Moral Machine Logic Gates
+# [Entity] ethics-by-design-and-moral-machine-logic-gates
 
 ## 1. 개요 (Why: 인간적 통찰)
 사고가 난 뒤에 후회하는 것은 늦습니다. 인공지능이 세상을 지배하기 시작한 지금, 우리는 AI가 태어날 때부터 윤리적 유전자를 갖도록 설계해야 합니다. **디자인에 의한 윤리(Ethics-by-Design)**는 기술을 다 만든 뒤에 윤리라는 옷을 입히는 것이 아니라, 설계도의 첫 줄부터 윤리적인 제약 조건을 못 박는 혁신적인 방법론입니다. **도덕적 논리 게이트**는 AI의 뇌 속에 설치된 '절대 넘을 수 없는 철창'과 같습니다. 기술이 아무리 똑똑해져도 인간의 생명, 존엄성, 공정성을 해치는 결정만큼은 물리적으로 불가능하게 만드는 기술적 양심입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Black-box Decision Logic - Non-compliant with Responsible AI Standards"
         return "PASS: Transparent and Explainable Decision Pipeline Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(algorithmic_bias_score=0.02, safety_gate_integrity=100.0, accountability_index=0.96)
 print(engine.diagnose_ethical_compliance())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_ethical_compliance())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ai-ethical-audit-and-bias-mitigation-logs-v2026`와 연동되어, 모든 지능형 시스템의 의사결정 경로를 실시간 분석하고 비윤리적 사고 및 사회적 물의 발생 확률을 0.001% 이하로 억제함으로써 인간과 기술이 공명하는 고결한 디지털 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - ethical-robotics-and-autonomous-decision-making-frameworks

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bus-rapid-transit-brt-and-urban-transit-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bus-rapid-transit-brt-and-urban-transit-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-capacity bus-based transit system that delivers fast and cost-effective services at the quality of a rail-based system (Bus Rapid Transit) and the mathematical modeling of passenger flow, headway optimization, and priority signaling to maximize urban mobility (Urban Transit Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["brt", "urban-transit", "public-transport", "traffic-engineering", "mass-transit", "smart-mobility", "transit-oriented-development"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Transit_Fidelity_Audit: Evaluate the ''Average Headway'' ($h$) and reliability of bus arrival times to identify if ''Bus Bunching'' is occurring due to traffic perturbations.'
-    - 'Capacity_Integrity_Check: Analyze the passenger load factor during peak hours to ensure the system capacity ($C$) meets demand without excessive station dwell times ($t_{dwell}$).'
-    - 'Priority_Fidelity_Scan: Monitor the ''Transit Signal Priority'' (TSP) success rate at intersections to verify that BRT vehicles are being given deterministic green lights to maintain schedule.'
-Trust Metrics:
+  description: "[Entity] bus-rapid-transit-brt-and-urban-transit-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚌 Bus Rapid Transit (BRT) and Urban Transit Logic
+# [Entity] bus-rapid-transit-brt-and-urban-transit-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 지하철을 짓기에는 돈이 너무 많이 들고, 일반 버스는 차가 막혀서 답답할 때 우리는 어떤 선택을 할 수 있을까요? **간선급행버스체계(BRT) 및 도시 교통 로직**은 도로 위의 버스를 '지하철'처럼 운영하는 **'지상의 메트로'** 기술입니다. 전용 차로, 지하철식 정류장, 신호 우선 시스템을 결합하여 버스에 날개를 달아줍니다. 가장 적은 비용으로 가장 많은 시민의 시간을 아껴주는 **'도시 이동성의 민주화'**이자 지능형 교통망의 핵심입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Station Overcrowding - Demand exceeding platform safety limits. Deploy extra articulated buses immediately"
         return "PASS: Balanced Passenger Flow and Verified Service Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(avg_headway_seconds=180.0, signal_priority_success_rate=95.0, dwell_time_seconds=15.0)
 print(engine.diagnose_transit_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_transit_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data brt-passenger-throughput-and-signal-priority-v2026`와 연동되어, 전 세계 주요 스마트 시티의 BRT 가동 데이터를 실시간 분석하고 배차 실패 및 승객 안전 사고 확률을 0.001% 이하로 억제함으로써 지능형 도시 문명의 이동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - smart-city-infrastructure-and-urban-mobility-logic

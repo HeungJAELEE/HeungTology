@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "planetary-governance-and-global-decision-support-systems-entity"
-  domain: "20_Planetary_Governance"
+metadata:
+  id: "[[[Entity] planetary-governance-and-global-decision-support-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Governance", "#DSS", "#Global_Management", "#Crisis_Management", "#Artificial_Intelligence", "#Geopolitics", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 20_planetary-governance-and-bio-defense-hub", "MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] planetary-governance-and-global-decision-support-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] planetary-governance-and-global-decision-support-systems
+# [Entity] planetary-governance-and-global-decision-support-systems
 
 ## 1. [왜 배우는가? (Why: The Architect of World Order)]]
 기후 위기, 전염병, 자원 고갈처럼 어느 한 나라가 해결할 수 없는 전 지구적 난제가 닥쳤을 때, 데이터에 기반해 가장 공정하고 효율적인 해결책을 제시하는 시스템이 있다면 어떨까요? **행성 거버넌스 및 전역 의사결정 지원 시스템**은 지구 전체의 자원과 위험을 실시간 모니터링하고 최적의 정책을 제안하는 '행성 사령부의 지능적 뇌'입니다. 우리가 이를 배우는 이유는 파편화된 국가 간의 이해관계를 넘어 인류 전체의 생존과 번영을 위한 객관적인 지침이 필요하기 때문이며, "행성 단위의 질서를 데이터로 설계하고 유지하는 '글로벌 초국가적 거버넌스 및 지능 주권'을 확보하기" 위함입니다. 시스템이 제안하는 정책의 정밀도가 행성의 평화를 결정합니다.

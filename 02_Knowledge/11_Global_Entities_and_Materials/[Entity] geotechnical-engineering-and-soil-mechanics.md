@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "geotechnical-engineering-and-soil-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] geotechnical-engineering-and-soil-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The branch of engineering concerned with the behavior of earth materials (Soil, Rock) and their interaction with structures, focusing on load-bearing capacity, settlement, and slope stability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["geotechnical", "soil-mechanics", "foundation-engineering", "civil-engineering", "stability-analysis"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Bearing_Capacity_Audit: Calculate the ultimate load a soil foundation can support without shear failure or excessive settlement.'
-    - 'Slope_Stability_Check: Evaluate the Factor of Safety (FoS) against landslides or embankment collapses using limit equilibrium methods.'
-    - 'Pore_Water_Pressure_Scan: Monitor the water pressure ($u$) within soil pores to predict and prevent soil liquefaction during seismic events.'
-Trust Metrics:
+  description: "[Entity] geotechnical-engineering-and-soil-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Geotechnical Engineering and Soil Mechanics
+# [Entity] geotechnical-engineering-and-soil-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 빌딩이나 공장이 무너지지 않고 서 있을 수 있는 이유는 눈에 보이지 않는 땅속 깊은 곳이 단단히 받쳐주고 있기 때문입니다. **지반 공학 및 토질 역학**은 '땅의 성질'을 읽어내어 건물의 기초를 설계하는 **'대지의 언어'**입니다. 겉보기엔 단단해 보여도 물이 차면 진흙처럼 변하거나, 지진이 나면 액체처럼 흐르기도 하는 땅의 변화무쌍함을 수학적으로 통제하는 일입니다. 인류가 세운 모든 문명의 시작점은 바로 이 '발밑의 안전'을 확인하는 데서 시작됩니다.
@@ -94,7 +83,6 @@ class SafetyFidelityEngine:
             return "REJECT: High Liquefaction Risk - Soil May Turn Liquid during Earthquake"
         return "PASS: Soil Dynamic Integrity Reliable"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(factor_of_safety=2.1, settlement_mm=12.5, water_table_depth_m=8.0)
 print(engine.diagnose_geotech_safety(limit_settlement=25.0))
 ```
@@ -112,7 +100,6 @@ print(engine.diagnose_geotech_safety(limit_settlement=25.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data soil-bearing-capacity-and-settlement-audit-v2026`와 연동되어, 전 세계 주요 건설 현장의 지반 데이터를 실시간 분석하고 지반 붕괴 및 침하 사고 확률을 0.01% 이하로 억제함으로써 인류 기반 시설의 절대적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - environmental-protection-and-sustainability-engineering

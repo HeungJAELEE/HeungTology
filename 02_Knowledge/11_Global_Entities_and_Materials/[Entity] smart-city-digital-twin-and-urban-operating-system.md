@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-city-digital-twin-and-urban-operating-system-entity"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Entity] smart-city-digital-twin-and-urban-operating-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Smart_City", "#Digital_Twin", "#Urban_OS", "#AI", "#City_Planning", "#IoT", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_global-infrastructure-and-future-cities-hub", "MOC 21_industrial-ai-and-predictive-maintenance-hub"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-city-digital-twin-and-urban-operating-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-city-digital-twin-and-urban-operating-system
+# [Entity] smart-city-digital-twin-and-urban-operating-system
 
 ## 1. [왜 배우는가? (Why: The Brain of the Megalopolis)]]
 도시 전체를 가상 세계에 똑같이 복제한 '디지털 트윈'으로 오늘 발생할 교통 체증을 미리 예측하고, 화재나 사고 발생 시 도시 운영 체제($Urban\ OS$)가 신호등과 구급차를 자동으로 제어해 골든타임을 확보하는 '지능형 도시'를 어떻게 설계할 수 있을까요? **스마트 시티 디지털 트윈 및 도시 운영 체제**는 문명의 거처를 지능화하는 '도시 지능화 및 인프라 운영 설계 지침'입니다. 우리가 이를 배우는 이유는 인구 밀도가 높아질수록 자원 낭비와 사고를 막기 위해 도시 전체를 하나의 유기체처럼 관리해야 하기 때문이며, "도시의 삶을 데이터로 설계하고 지배하는 '글로벌 스마트 시티 및 거주 지능 주권'을 확보하기" 위함입니다. 도시 지능의 해상도가 시민의 행복과 안전을 결정합니다.

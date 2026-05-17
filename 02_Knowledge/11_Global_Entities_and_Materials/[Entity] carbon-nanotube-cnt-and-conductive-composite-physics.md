@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-nanotube-cnt-and-conductive-composite-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-nanotube-cnt-and-conductive-composite-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of integrating carbon nanotubes into polymers or electrodes to enhance electrical conductivity, focusing on the percolation threshold and electron tunneling mechanics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnt", "carbon-nanotube", "conductive-composites", "percolation-theory", "nano-electronics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryMatFidelityEngine"
-  diagnostic_protocol:
-    - 'Percolation_Audit: Measure the electrical conductivity vs. CNT loading to identify the threshold ($\\phi_c$).'
-    - 'Dispersion_Homogeneity_Check: Evaluate the uniformity of the CNT network using SEM or rheological analysis.'
-    - 'Contact_Resistance_Scan: Analyze the electron transfer efficiency at CNT-particle interfaces.'
-Trust Metrics:
+  description: "[Entity] carbon-nanotube-cnt-and-conductive-composite-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Carbon Nanotube (CNT) and Conductive Composite Physics
+# [Entity] carbon-nanotube-cnt-and-conductive-composite-physics
 
 ## 1. 개요 (Why)
 배터리 전극 내부에서 전자들이 더 빠르게 흐를 수 있도록 돕는 '초전도 고속도로'가 바로 CNT입니다. 아주 적은 양으로도 전극 전체에 전도성 네트워크를 형성하여 에너지 밀도를 높이고 고속 충전을 가능하게 합니다. 특히 CNT의 높은 종횡비(Aspect Ratio)는 소량의 첨가물로도 임계점(Percolation)에 도달하게 하는 물리적 이점을 제공합니다. 본 노드는 CNT 도전재의 전기적 무결성과 네트워크 최적화를 위한 표준을 정의합니다.
@@ -72,7 +61,6 @@ class BatteryMatFidelityEngine:
             return f"REJECT: Poor Dispersion (Index: {self.di}) - Risk of Local Short or Resistance Hotspots"
         return "PASS: Uniform Nano-network Verified"
 
-# Instance Diagnostic
 engine = BatteryMatFidelityEngine(conductivity=2.5, loading_wt=0.3, dispersion_index=0.85)
 print(engine.diagnose_percolation_efficiency())
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_percolation_efficiency())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cnt-conductive-network-threshold-and-conductivity-log-v2026`와 연동되어, 배터리 전극의 저항 맵을 실시간 분석하고 도전재 네트워크의 결함을 99% 확률로 찾아냄으로써 고출력 배터리의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - conductive-additives-for-battery-electrodes

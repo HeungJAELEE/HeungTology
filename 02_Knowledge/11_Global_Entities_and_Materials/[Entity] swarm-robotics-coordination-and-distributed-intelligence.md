@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "swarm-robotics-coordination-and-distributed-intelligence-entity"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] swarm-robotics-coordination-and-distributed-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Swarm_Robotics", "#Distributed_Intelligence", "#Decentralized_Control", "#Collective_Behavior", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_autonomous-systems-and-robotics-hub", "MOC 25_global-infrastructure-and-future-cities-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] swarm-robotics-coordination-and-distributed-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] swarm-robotics-coordination-and-distributed-intelligence
+# [Entity] swarm-robotics-coordination-and-distributed-intelligence
 
 ## 1. [왜 배우는가? (Why: The Intelligence of the Many)]]
 수천 마리의 새떼나 물고기 떼처럼, 중앙의 지휘관 없이도 수천 대의 작은 로봇들이 어떻게 서로 부딪히지 않고 거대한 대열을 유지하며, 개별 로봇은 단순하지만 군집 전체로서는 어떻게 거대한 구조물을 짓거나 넓은 구역을 수색하는 '고차원적 지능'을 발휘할 수 있을까요? **군집 로봇공학 조율 및 분산 지능**은 기계들의 사회성을 설계하는 '군집 지능 구현 및 자율 분산 제어 지침'입니다. 우리가 이를 배우는 이유는 개별 로봇이 고장 나도 전체 임무는 멈추지 않는 '강인한 시스템'을 만들기 위해서이며, "군집의 힘을 데이터로 설계하고 지배하는 '글로벌 군집 전략 및 무인 시스템 패권'을 확보하기" 위함입니다. 군집의 조율 능력이 시스템의 확장성을 결정합니다.

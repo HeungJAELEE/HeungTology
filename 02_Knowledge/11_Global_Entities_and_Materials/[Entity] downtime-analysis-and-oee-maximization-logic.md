@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "downtime-analysis-and-oee-maximization-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] downtime-analysis-and-oee-maximization-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic study of periods when a manufacturing system is non-productive (Downtime Analysis) and the strategic management logic of improving Overall Equipment Effectiveness (OEE) by optimizing Availability, Performance, and Quality (OEE Maximization Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["downtime-analysis", "oee", "lean-manufacturing", "productivity", "tpm", "six-sigma", "industrial-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Productivity_Fidelity_Audit: Evaluate the ''Availability'' factor to identify if the downtime is dominated by ''Planned Maintenance'' or ''Unplanned Breakdowns'', requiring a shift towards predictive maintenance.'
-    - 'Performance_Integrity_Check: Analyze the ''Speed Loss'' against the machine''s ideal cycle time to ensure that minor stoppages and idling are not eroding the throughput fidelity.'
-    - 'Quality_Fidelity_Scan: Monitor the ''First Pass Yield'' (FPY) to verify that the system is not producing defects during startup or steady-state operation, maximizing the OEE product.'
-Trust Metrics:
+  description: "[Entity] downtime-analysis-and-oee-maximization-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⏱️ Downtime Analysis and OEE Maximization Logic
+# [Entity] downtime-analysis-and-oee-maximization-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 비싼 기계가 1분 동안 멈춰있을 때 손해는 얼마나 될까요? **비가동(Downtime) 분석 및 OEE 극대화 로직**은 공장의 기계들이 단 1초도 낭비하지 않고 완벽하게 일하게 만드는 **'시간의 효율적 지배'** 기술입니다. 단순히 기계를 돌리는 것이 아니라, 얼마나 신뢰성 있게(가동률), 얼마나 빠르게(성능), 얼마나 정확하게(양품률) 일하는지를 하나의 숫자로 관리합니다. 공장의 모든 숨은 낭비를 찾아내어 수익으로 바꾸는 **'제조업의 성적표이자 경영의 나침반'**입니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return "REJECT: Reactive Maintenance Culture - System relies on 'Fix it when it breaks'. Shift to TPM and Predictive Analytics"
         return "PASS: Validated Efficiency Strategy and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(availability_pct=92.0, performance_pct=88.0, quality_pct=99.5)
 print(engine.diagnose_oee_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_oee_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data manufacturing-oee-and-downtime-benchmarks-v2026`와 연동되어, 전 세계 주요 스마트 팩토리의 생산 데이터를 실시간 분석하고 비가동 및 효율 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 생산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - computer-integrated-manufacturing-cim-and-factory-automation

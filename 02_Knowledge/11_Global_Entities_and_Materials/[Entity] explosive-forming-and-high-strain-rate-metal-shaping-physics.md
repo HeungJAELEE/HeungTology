@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "explosive-forming-and-high-strain-rate-metal-shaping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] explosive-forming-and-high-strain-rate-metal-shaping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metalworking technique in which an explosive charge is used to shape metal sheets or plates into large, complex forms (Explosive Forming) and the physical study of material behavior under extreme impact velocities and shock-wave propagation (High-Strain-Rate Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["explosive-forming", "high-strain-rate", "metal-shaping", "shock-wave", "herf", "adiabatic-shear", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Shaping_Fidelity_Audit: Evaluate the ''Peak Shock Pressure'' against the material yield strength to identify if ''Spallation'' or ''Scabbing'' (internal fractures) is compromising high-fidelity structural integrity.'
-    - 'Strain_Integrity_Check: Analyze the high-strain-rate ($10^3$ to $10^6 s^{-1}$) behavior to ensure the ''Adiabatic Heating'' is aiding formability without causing high-fidelity melting or localized failure.'
-    - 'Energy_Fidelity_Scan: Monitor the standoff distance and underwater shock propagation to verify that the energy transfer is uniform across the high-fidelity large-scale workpiece.'
-Trust Metrics:
+  description: "[Entity] explosive-forming-and-high-strain-rate-metal-shaping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💥 Explosive Forming and High-Strain-Rate Metal Shaping Physics
+# [Entity] explosive-forming-and-high-strain-rate-metal-shaping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 우주 로켓의 머리 부분이나 잠수함의 두꺼운 선체를 단 한 번의 타격으로 만들 수 있을까요? **폭발 성형 및 고변형률 금속 성형 물리**는 화약이 터지는 거대한 충격파를 물속에서 전달해, 금속판을 단숨에 금형 속으로 밀어 넣는 **'번개 같은 가공'** 기술입니다. 수백 톤의 프레스기로도 꿈쩍 않는 두꺼운 판을 0.001초 만에 찰흙처럼 주무르는 이 기술은 **'파괴의 에너지를 창조의 도구로 바꾼 극한의 금속 공예이자 대형 구조물 제조의 정점'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Surface Damage - Cavitation or micro-jetting from bubbles causing pitting. Improve water degassing or use protective buffers"
         return "PASS: Validated Surface Integrity and Verified Operational Fidelity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(standoff_distance_cm=50.0, charge_mass_kg=1.5, final_thickness_mm=3.2)
 print(engine.diagnose_forming_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_forming_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data explosive-forming-pressure-and-sheet-deformation-v2026`와 연동되어, 전 세계 주요 항공우주 및 특수 선박 제조사의 성형 데이터를 실시간 분석하고 소재 파손 및 금형 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 거대 구조물 제조 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - emulsion-explosives-and-detonation-kinetics

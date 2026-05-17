@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-metering-and-volumetric-flow-measurement-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-metering-and-volumetric-flow-measurement-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized flow meter used to measure the volume of fuel gases such as natural gas and propane (Gas Metering) and the physical study of compressibility, pressure/temperature compensation, and gas dynamics (Volumetric Flow Measurement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-metering", "flow-measurement", "ideal-gas-law", "positive-displacement", "turbine-meter", "ultrasonic-meter", "custody-transfer", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metering_Fidelity_Audit: Evaluate the ''Super-compressibility'' (Z-factor) to identify if high-fidelity ''Real Gas'' behavior at high pressures is causing volume measurement bias.'
-    - 'Compensation_Integrity_Check: Analyze the Pressure and Temperature (PT) compensation loop to ensure that the high-fidelity ''Standard Volume'' ($Nm^3$) is calculated correctly regardless of weather changes.'
-    - 'Flow_Fidelity_Scan: Monitor the high-fidelity ''Ultrasonic Transducer'' signal strength or ''Turbine Blade'' rotation frequency to verify that the high-fidelity sensing is stable without mechanical drag.'
-Trust Metrics:
+  description: "[Entity] gas-metering-and-volumetric-flow-measurement-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Gas Metering and Volumetric Flow Measurement Physics
+# [Entity] gas-metering-and-volumetric-flow-measurement-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기처럼 가벼운 가스를 정확히 몇 리터 썼는지 어떻게 잴 수 있을까요? 액체와 달리 가스는 누르면 쭈그러들고 따뜻해지면 부풀어 오르는 '변덕쟁이'입니다. **가스 계량 및 부피 유량 측정 물리**는 온도와 압력에 따라 변하는 가스의 부피를 일정한 기준(표준 상태)으로 번역하여, 공정하게 값을 매기고 에너지를 관리하는 **'가스의 가계부'** 기술입니다. 1리터의 가스가 겨울과 여름에 서로 다른 가치를 갖지 않도록 수학적으로 공평하게 맞춥니다. **'보이지 않는 기체의 흐름을 압축과 팽창의 법칙으로 다스려 에너지 거래의 신뢰를 구축하는 지능적 유체 계측'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Composition Shift - High CO2/N2 levels detected. Default Z-factor model no longer accurate. Update high-fidelity gas composition index"
         return "PASS: Validated Gas Quality and Verified Metrology Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(meter_raw_flow=1200.0, line_pressure_bar=40.0, line_temp_c=15.0)
 print(engine.diagnose_metering_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_metering_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gas-compressibility-and-metering-accuracy-v2026`와 연동되어, 전 세계 주요 도시 가스망 및 국가 간 가스관의 데이터를 실시간 분석하고 계측 누락 및 과다 청구 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 통상 문명의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flow-metering-and-differential-pressure-measurement-physics

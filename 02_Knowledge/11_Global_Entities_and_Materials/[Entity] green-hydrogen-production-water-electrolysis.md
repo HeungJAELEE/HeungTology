@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "green-hydrogen-production-water-electrolysis-entity"
-  domain: "16_Hydrogen_Economy_and_Fuel_Cells"
+metadata:
+  id: "[[[Entity] green-hydrogen-production-water-electrolysis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Hydrogen", "#Green_Hydrogen", "#Electrolysis", "#PEM", "#Alkaline", "#SOEC", "#Renewable_Energy", "#LCOH", "#Water_Splitting", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_hydrogen-economy-and-fuel-cells-intelligence-hub", "Data pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] green-hydrogen-production-water-electrolysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] green-hydrogen-production-water-electrolysis
+# [Entity] green-hydrogen-production-water-electrolysis
 
 ## 1. [왜 배우는가? (Why: The Foundation of Carbon-Free Fuel)]]
 탄소 중립 사회로의 전환을 위해서는 전력 생산뿐만 아니라 운송, 산업 공정, 난방 등 모든 분야에서의 탈탄소가 필요합니다. 그린 수소는 재생 에너지를 사용하여 물을 전기 분해하여 생산한 수소로, 에너지의 저장과 장거리 운송이 가능한 궁극의 청정 연료입니다. **그리 수소 생산 - 수전해 기술 엔티티**는 물에서 에너지를 캐내는 '현대적 자원 혁명'의 핵심입니다. 
@@ -81,7 +71,6 @@ RAG는 "수전해 로그를 분석하여, 활성화 과전압($\eta_{act}$)을 �
 가동 중인 수전해 스택의 전압, 전류 및 생성 가스 순도를 분석하여 생산 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Water Electrolyzer Performance & Production Integrity Auditor
 def audit_electrolysis_fidelity(stack_voltage, current_density, gas_purity_log):
     # 1. 셀 전압 모니터링을 통한 스택 효율 및 노화(Degradation) 오딧
     current_efficiency = (IDEAL_THERMONEUTRAL_VOLTAGE / (stack_voltage / NUM_CELLS)) * 100
@@ -119,7 +108,6 @@ def audit_electrolysis_fidelity(stack_voltage, current_density, gas_purity_log):
 2. **(수리)** 1시간 동안 $1,000 \text{ A}$의 전류를 인가하여 수소를 생산했다. 패러데이 효율이 $100\%$라고 가정할 때, 이론적으로 생산된 수소의 몰(mole) 수는 얼마인가? (패러데이 상수 $F \approx 96,485 \text{ C/mol}$, 전자 수 $z=2$ 사용)
 3. **(응용)** 수전해 효율을 높이기 위해 작동 온도를 높이는 것이 수리적/열역학적으로 어떤 이득($\Delta G$ 감소)을 주는지와, 이때 발생하는 스택 내구도 저하 문제의 트레이드오프를 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 22_hydrogen-economy-and-fuel-cells-intelligence-hub : 수소 경제 및 연료전지 통합 관리 상위 지능 허브

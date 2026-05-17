@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-vision-for-robotics-object-detection-and-pose-estimation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-vision-for-robotics-object-detection-and-pose-estimation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The computer vision algorithms enabling robots to identify target objects and estimate their precise 3D position and orientation (6D Pose) for pick-and-place and interaction tasks."
-  physical_model: "N/A"
-Semantic:
-  tags: '["computer-vision", "object-detection", "pose-estimation", "6d-pose", "robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Detection_Precision_Audit: Measure the Mean Average Precision (mAP) for target objects in cluttered environments.'
-    - '6D_Pose_Accuracy_Check: Evaluate the translation and rotation error (Add-S metric) against the ground truth.'
-    - 'Robustness_Scan: Analyze the performance under varying lighting conditions and partial occlusions.'
-Trust Metrics:
+  description: "[Entity] computer-vision-for-robotics-object-detection-and-pose-estimation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Computer Vision for Robotics: Object Detection and Pose Estimation
+# [Entity] computer-vision-for-robotics-object-detection-and-pose-estimation
 
 ## 1. 개요 (Why)
 로봇이 상자 속에 뒤섞인 부품을 집으려면 단순히 '부품이 있다'는 것을 아는 것만으로는 부족합니다. 그 부품이 어떤 각도로 놓여 있는지(Orientation), 거리는 얼마나 떨어져 있는지(Distance)를 6자유도(6D Pose)로 정확히 알아야 합니다. 객체 탐지(Object Detection)와 포즈 추정(Pose Estimation)은 로봇이 세상을 입체적으로 이해하고 상호작용하게 만드는 가장 핵심적인 시각 기능입니다. 본 노드는 로봇 시각의 객체 인식 무결성과 3차원 위치 추정 정밀도 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LogicFidelityEngine:
             return "NOTICE: Performance Degradation in Cluttered Scene - Enhance Feature Matching Model"
         return "PASS: Vision Robustness within Operational Limit"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(mean_ap=94.2, pose_error_mm=2.5, rotation_error_deg=1.1)
 print(engine.diagnose_vision_precision())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_vision_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data robotic-object-detection-mAP-and-pose-error-v2026`와 연동되어, 로봇이 수행하는 모든 피킹 작업의 시각 데이터를 실시간 분석하고 작업 실패 확률을 0.1% 이하로 억제함으로써 고지능 자동화 라인의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - computer-vision-for-robotic-scene-understanding-and-object-segmentation

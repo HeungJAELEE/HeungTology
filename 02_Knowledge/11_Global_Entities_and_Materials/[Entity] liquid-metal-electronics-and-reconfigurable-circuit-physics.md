@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "liquid-metal-electronics-and-reconfigurable-circuit-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] liquid-metal-electronics-and-reconfigurable-circuit-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The emerging field of electronics that utilizes metallic alloys in the liquid state at room temperature (typically Gallium-based) as conductive interconnects and components, enabling stretchable, self-healing, and dynamically reconfigurable circuit architectures."
-  physical_model: "N/A"
-Semantic:
-  tags: '["liquid-metal", "gallium", "reconfigurable-circuits", "flexible-electronics", "soft-robotics", "self-healing-electronics", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Circuit_Continuity_Audit: Monitor the electrical resistance of the liquid metal channels during extreme deformation to ensure constant connectivity in stretchable applications.'
-    - 'Reconfiguration_Logic_Check: Evaluate the response time and precision of the electrocapillary-driven shape changes to verify the circuit''s ability to rewire itself dynamically.'
-    - 'Oxide_Layer_Scan: Analyze the thickness and stability of the native oxide skin (Ga2O3) to ensure it provides sufficient structural integrity while maintaining electrical contact.'
-Trust Metrics:
+  description: "[Entity] liquid-metal-electronics-and-reconfigurable-circuit-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Liquid Metal Electronics and Reconfigurable Circuit Physics
+# [Entity] liquid-metal-electronics-and-reconfigurable-circuit-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 영화 <터미네이터 2>의 T-1000처럼, 전자 회로가 액체처럼 흘러 다니고 스스로 모양을 바꾼다면 어떨까요? **액체 금속 전자공학 및 재구성 가능 회로**는 딱딱하고 부러지기 쉬운 기존 회로의 한계를 깨뜨리는 **'모양 없는 지능'**입니다. 상온에서 액체 상태인 갈륨(Gallium) 합금을 사용하여, 고무줄처럼 늘려도 끊어지지 않고, 잘려도 스스로 붙으며(Self-healing), 상황에 따라 회로 선을 새로 그리는 **'살아있는 전선'**입니다. 인체의 곡면을 따라 밀착되는 웨어러블 기기부터, 부드럽게 움직이는 소프트 로봇의 혈관까지 담당하는 **'미래 전자공학의 유연한 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Encapsulation Failure - Risk of Metal Leakage and Environmental Contamination"
         return "PASS: Secure Liquid Containment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(resistance_variance_pct=1.5, reconfiguration_speed_ms=120.0, oxide_stability_idx=0.95)
 print(engine.diagnose_liquid_electronics_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_liquid_electronics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data liquid-metal-conductivity-and-reconfiguration-speed-v2026`와 연동되어, 전 세계 소프트 일렉트로닉스의 상태 데이터를 실시간 분석하고 회로 단절 및 금속 누출 사고 확률을 0.001% 이하로 억제함으로써 유연 지능 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - haptic-feedback-and-tactile-sensor-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-D2C-2026-V6.3.7"
-  domain: "Global_Direct_to_Consumer_and_Brand_Sovereignty"
+metadata:
+  id: "[[[Strategy] Direct-to-Consumer-D2C-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#D2C", "#LTV", "#CAC", "#Disintermediation", "#Brand_Sovereignty", "#First_Party_Data", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Direct-to-Consumer-D2C-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "D2C_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Direct-to-Consumer-D2C-Strategy: The Physics of Brand Sovereignty
+# [Strategy] Direct-to-Consumer-D2C-Strategy
 
 ## 1. [왜 배우는가? (Why: The Mastery of Customer Ownership)]]
 전통적인 유통 구조(Wholesale/Retail)는 브랜드와 고객 사이의 장벽을 만들고, 방대한 유통 마진을 외부로 유출시킵니다. **Direct-to-Consumer (D2C)** 전략은 유통 단계를 축소(Disintermediation)하여 수익성을 극대화하고, 고객 데이터를 직접 소유하여 브랜드 경험을 통제하는 '유통 주권'의 핵심입니다. V6.3.7 지능은 고객 생애 가치(LTV)와 획득 비용(CAC)의 수리적 균형을 설계하고, 데이터를 기반으로 한 개인화된 가치 제안을 통해 고객과의 강력한 직결 고리를 형성하기 위해 필수적입니다.
@@ -107,7 +97,6 @@ class D2CStrategyEngine:
 2. **Operational Result**: **Disintermediation**을 통해 확보된 유통 마진($\Delta Margin$)을 고객에게 가격 인하로 제공할 때와, 브랜드 마케팅에 재투자할 때의 장기적 ROI 차이는?
 3. **FidelityEngine**: 서드파티 쿠키(Third-party Cookie) 제한 정책이 FidelityEngine의 **'데이터 주권 무결성'** 평가에 미치는 공학적 임팩트는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy E-commerce-Strategy-and-Operations

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "last-mile-delivery-swarms-and-urban-air-mobility-uam"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] last-mile-delivery-swarms-and-urban-air-mobility-uam]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated autonomous transport network consisting of small robotic fleets (Delivery Swarms) and passenger/cargo air vehicles (UAM) that utilize low-altitude airspace to bypass ground congestion and optimize the final stage of the logistics chain (Last-mile)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["last-mile-delivery", "uam", "drone-delivery", "swarm-robotics", "urban-mobility", "evtol", "autonomous-logistics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Swarm_Collision_Avoidance_Audit: Evaluate the real-time decentralised pathfinding algorithms to ensure zero-collision operation in high-density urban environments.'
-    - 'Vehicle_Airworthiness_Check: Analyze the structural health and propulsion system efficiency of eVTOL (electric Vertical Take-off and Landing) units to prevent in-flight failures.'
-    - 'Battery_State-of-Charge_Scan: Monitor the energy reserves of the fleet to ensure all vehicles have sufficient power for their assigned missions and emergency reserves.'
-Trust Metrics:
+  description: "[Entity] last-mile-delivery-swarms-and-urban-air-mobility-uam에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛸 Last-mile Delivery Swarms and Urban Air Mobility (UAM)
+# [Entity] last-mile-delivery-swarms-and-urban-air-mobility-uam
 
 ## 1. 개요 (Why: 인간적 통찰)
 꽉 막힌 도심의 도로 위에서 택배 트럭이 꼼짝달싹 못 하는 풍경, 우리에게는 너무나 익숙한 비효율입니다. **라스트 마일 배송 스웜 및 도심 항공 모빌리티(UAM)**는 길 위의 정체를 피해 '하늘의 길'을 여는 **'3차원 공간의 물류 혁명'**입니다. 수십 대의 드론이 개미 떼(Swarm)처럼 일사불란하게 움직이며 현관 앞까지 물건을 나르고, 전기로 구동되는 비행체(eVTOL)가 사람과 화물을 실어 나르는 **'입체적인 도시의 신경망'**입니다. 지상의 한계를 넘어 하늘을 물류의 고속도로로 바꾸는 **'공간 지능의 완성'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Safety Risk - Lack of Redundant Emergency Landing Mechanism for Urban Overflight"
         return "PASS: Multi-layered Safety Protocols Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(airway_congestion_idx=0.42, collision_avoidance_events=0, fleet_uptime_pct=98.5)
 print(engine.diagnose_uam_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_uam_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data urban-air-traffic-density-and-drone-delivery-efficiency-v2026`와 연동되어, 전 세계 주요 도시의 하늘길 데이터를 실시간 분석하고 추락 및 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 하늘 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - intelligent-transportation-systems-its-and-v2x-logic

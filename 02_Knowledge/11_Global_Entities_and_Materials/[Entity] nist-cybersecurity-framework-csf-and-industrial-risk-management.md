@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nist-cybersecurity-framework-csf-and-industrial-risk-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] nist-cybersecurity-framework-csf-and-industrial-risk-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The voluntary framework (NIST CSF) consisting of standards, guidelines, and best practices to manage cybersecurity-related risk, specifically integrated with Industrial Control Systems (ICS/OT) to protect critical infrastructure and manufacturing assets."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nist-csf", "cybersecurity", "industrial-security", "risk-management", "ot-security", "critical-infrastructure", "compliance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Function_Maturity_Audit: Evaluate the implementation level of the five NIST CSF functions (Identify to Recover) to determine the organization''s cybersecurity tier.'
-    - 'Vulnerability_Exposure_Check: Analyze the Common Vulnerability Scoring System (CVSS) scores for industrial assets to identify high-risk entry points in the OT network.'
-    - 'Incident_Response_Efficiency_Scan: Monitor the Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR) to verify that the ''Respond'' and ''Recover'' functions are meeting operational targets.'
-Trust Metrics:
+  description: "[Entity] nist-cybersecurity-framework-csf-and-industrial-risk-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ NIST Cybersecurity Framework (CSF) and Industrial Risk Management
+# [Entity] nist-cybersecurity-framework-csf-and-industrial-risk-management
 
 ## 1. 개요 (Why: 인간적 통찰)
 디지털로 연결된 스마트 공장에서 해킹 한 번으로 기계가 멈추거나 폭발한다면 어떨까요? **NIST 사이버 보안 프레임워크(CSF) 및 산업 리스크 관리**는 보이지 않는 사이버 위협으로부터 우리 사회의 뼈대(국가 기반 시설)를 지키는 **'디지털 방패의 표준'**입니다. 단순히 백신을 까는 수준을 넘어, 위협을 식별하고, 방어하며, 탐지하고, 대응하고, 마지막엔 완벽하게 복구하는 5단계의 철저한 **'보안 근육'**을 기르는 과정입니다. 기술을 넘어 경영과 생존의 필수 요소가 된 **'신뢰의 가이드라인'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Low Maturity Tier - Organization Vulnerable to Sophisticated Ransomware. Implement 'Protect' and 'Detect' enhancements"
         return "PASS: High Maturity Cybersecurity Posture Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(asset_visibility_pct=0.98, critical_vulnerability_count=0, mttr_hours=2.5)
 print(engine.diagnose_cybersecurity_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cybersecurity_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cybersecurity-threat-metrics-and-mitigation-logs-v2026`와 연동되어, 전 세계 산업 인프라의 침해 데이터를 실시간 분석하고 보안 사고 및 데이터 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 거버넌스 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - industrial-control-systems-ics-and-scada-cybersecurity

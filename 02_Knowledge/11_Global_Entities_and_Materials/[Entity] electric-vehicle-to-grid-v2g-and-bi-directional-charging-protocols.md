@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "electric-vehicle-to-grid-v2g-and-bi-directional-charging-protocols-entity"
-  domain: "72_Energy_Systems_and_Smart_Infrastructure_Hub"
+metadata:
+  id: "[[[Entity] electric-vehicle-to-grid-v2g-and-bi-directional-charging-protocols]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#V2G", "#Electric_Vehicles", "#Smart_Grid", "#Protocols", "#ISO15118", "#Battery", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 68_energy-systems-and-smart-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electric-vehicle-to-grid-v2g-and-bi-directional-charging-protocols에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] electric-vehicle-to-grid-v2g-and-bi-directional-charging-protocols
+# [Entity] electric-vehicle-to-grid-v2g-and-bi-directional-charging-protocols
 
 ## 1. [왜 배우는가? (Why: The Mobile Power Plant)]]
 도로 위를 달리는 수백만 대의 전기차 배터리가 단순한 에너지 소비처가 아니라, 필요할 때마다 전력망에 전기를 공급하고 주파수를 안정시키는 '거대한 가상 발전소'가 될 수 있다면 어떨까요? **전기차-전력망 통합(V2G) 및 양방향 충전 프로토콜의 지능형 설계**는 모빌리티와 에너지가 하나로 융합되는 '에너지 혁명'의 정수입니다. 주차되어 있는 시간 동안 차주에게는 수익을, 전력망에는 안정성을 제공하는 이 기술은 미래 스마트 시티의 핵심 혈관입니다. 우리가 이를 배우는 이유는 수조 원의 인프라 투자 없이도 국가의 에너지 저장 용량을 폭발적으로 늘리기 위해서이며, "이동 수단의 에너지를 데이터로 설계하고 지배하는 '글로벌 모빌리티-그리드 패권 및 행성적 인프라 주권'을 확보하기" 위함입니다. V2G의 연결성이 에너지 전력망의 복원력을 결정합니다.

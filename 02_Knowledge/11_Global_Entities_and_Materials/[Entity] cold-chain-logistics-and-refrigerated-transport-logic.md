@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cold-chain-logistics-and-refrigerated-transport-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cold-chain-logistics-and-refrigerated-transport-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A temperature-controlled supply chain that involves an uninterrupted series of refrigerated production, storage, and distribution activities (Cold Chain Logistics) and the specialized engineering of vehicles and containers equipped with refrigeration units to maintain specific thermal conditions during transit (Refrigerated Transport Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cold-chain", "refrigerated-transport", "logistics", "temperature-control", "food-safety", "pharmaceutical-logistics", "iot-monitoring"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Temperature_Fidelity_Audit: Evaluate the ''Temperature Excursion'' duration and magnitude to identify if the product''s thermal integrity has been compromised beyond the TTT safety limits.'
-    - 'Logistics_Integrity_Check: Analyze the door-opening frequency and duration during loading/unloading to ensure that ''Thermal Shock'' is minimized and the refrigeration unit can recover quickly.'
-    - 'Hardware_Fidelity_Scan: Monitor the refrigeration unit''s power consumption and compressor cycles to verify that the insulation ($U$-value) is not degraded by moisture or physical damage.'
-Trust Metrics:
+  description: "[Entity] cold-chain-logistics-and-refrigerated-transport-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Cold Chain Logistics and Refrigerated Transport Logic
+# [Entity] cold-chain-logistics-and-refrigerated-transport-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 반대편에서 온 신선한 생선이나 생명을 구하는 백신이 어떻게 상하지 않고 우리 손에 닿을 수 있을까요? **콜드체인 물류 및 냉장 운송 로직**은 제품이 만들어진 순간부터 소비될 때까지 차가운 온도를 단 1초도 놓치지 않고 유지하는 **'온도의 끊김 없는 고리'** 기술입니다. 단순한 배달이 아니라, 시간과 열역학에 맞서 생명과 신선함을 수호하는 **'지능형 냉각 보존망'**입니다. 문명의 풍요로움과 건강을 지탱하는 **'차가운 혈관'**입니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return "REJECT: Incomplete Thermal Audit Trail - Gaps found in temperature logs. Product cannot be certified as safe for pharmaceutical use"
         return "PASS: Continuous Monitoring Validated and Verified Delivery Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_temp_c=-15.0, set_point_c=-20.0, excursion_duration_min=45)
 print(engine.diagnose_cold_chain_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_cold_chain_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cold-chain-temperature-excursion-and-product-spoilage-v2026`와 연동되어, 전 세계 주요 신선 식품 및 의약품 물류망의 데이터를 실시간 분석하고 변질 및 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 유통 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - chilled-water-system-and-thermal-storage-logic

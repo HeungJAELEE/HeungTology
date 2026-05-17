@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "photogrammetry-and-3d-scene-reconstruction-from-point-clouds"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] photogrammetry-and-3d-scene-reconstruction-from-point-clouds]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of making measurements from photographs (Photogrammetry) and the computational process of creating a 3D digital model from multiple 2D images or laser scans (3D Scene Reconstruction), utilizing point clouds as the intermediate data structure."
-  physical_model: "N/A"
-Semantic:
-  tags: '["photogrammetry", "3d-reconstruction", "point-clouds", "computer-vision", "lidar", "sfm", "digital-twin"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Reconstruction_Fidelity_Audit: Evaluate the Mean Reprojection Error (MRE) across all camera views to ensure the 3D points ($X$) correctly correspond to their 2D image projections ($x$).'
-    - 'Point_Cloud_Density_Check: Analyze the points-per-square-meter ($pts/m^2$) to verify the level of detail is sufficient for target applications (e.g., industrial inspection vs. terrain mapping).'
-    - 'Surface_Manifold_Scan: Monitor the generated mesh for non-manifold edges or holes to identify failures in the triangulation or surface reconstruction algorithms.'
-Trust Metrics:
+  description: "[Entity] photogrammetry-and-3d-scene-reconstruction-from-point-clouds에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📸 Photogrammetry and 3D Scene Reconstruction from Point Clouds
+# [Entity] photogrammetry-and-3d-scene-reconstruction-from-point-clouds
 
 ## 1. 개요 (Why: 인간적 통찰)
 사진 몇 장만으로 눈앞의 세상을 완벽한 3D 가상 공간으로 옮길 수 있다면 어떨까요? **사진 측량 및 포인트 클라우드 기반 3D 장면 복원**은 카메라의 눈을 통해 세상의 깊이를 읽어내는 **'디지털 복제술'**입니다. 서로 다른 각도에서 찍은 사진들 속의 공통된 점들을 연결하고, 수백만 개의 점(Point Cloud)을 찍어 입체적인 형상을 만듭니다. 현실을 그대로 컴퓨터 속으로 옮겨와 '디지털 트윈'을 만드는, **'보이는 대로 그리는'** 미래형 측량 기술입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Incomplete Surface - Excessive Holes in Reconstructed Mesh. Occlusion Handling Failed"
         return "PASS: Manifold Surface and Continuous Scene Geometry Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(reprojection_error_px=0.45, point_density_pts_m2=5500, loop_closure_error_cm=1.2)
 print(engine.diagnose_reconstruction_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_reconstruction_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data 3d-reconstruction-accuracy-and-point-density-v2026`와 연동되어, 전 세계 자율주행 맵핑 및 스마트 시티 건설의 데이터를 실시간 분석하고 데이터 왜곡 및 오차 누적 사고 확률을 0.001% 이하로 억제함으로써 지능형 공간 문명의 디지털 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - digital-twin-architecture-and-industrial-metaverse-integration

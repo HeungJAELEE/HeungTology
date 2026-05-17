@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "haptic-feedback-and-tactile-sensor-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] haptic-feedback-and-tactile-sensor-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of systems that simulate or measure the sense of touch (Haptics), utilizing actuators to provide tactile feedback and sensors to detect pressure, vibration, and texture, enabling intuitive human-machine interaction and robotic dexterity."
-  physical_model: "N/A"
-Semantic:
-  tags: '["haptics", "tactile-sensor", "force-feedback", "human-computer-interaction", "piezoelectric", "soft-robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Tactile_Sensitivity_Audit: Measure the minimum detectable pressure and spatial resolution of the sensor array to verify high-fidelity touch sensing.'
-    - 'Haptic_Latency_Check: Evaluate the ''loop-back'' time between a user''s contact and the system''s force feedback response to ensure a seamless ''real-world'' feel.'
-    - 'Actuator_Vibration_Scan: Analyze the frequency response of haptic actuators (LRA, Piezo) to confirm their ability to simulate diverse textures (e.g., Sandpaper vs. Silk).'
-Trust Metrics:
+  description: "[Entity] haptic-feedback-and-tactile-sensor-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🖐️ Haptic Feedback and Tactile Sensor Physics
+# [Entity] haptic-feedback-and-tactile-sensor-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리는 눈으로 보지 않아도 주머니 속의 동전과 열쇠를 구분할 수 있습니다. 이것이 바로 '촉각'의 힘입니다. **햅틱 피드백 및 촉각 센서** 기술은 기계와 로봇에게 이 섬세한 손길을 선물하는 기술입니다. 화면 속의 버튼을 누를 때 진짜 버튼처럼 느껴지게 하고, 로봇이 달걀을 으깨지 않고 부드럽게 쥐게 만들며, 멀리 떨어진 의사가 마치 환자의 몸을 직접 만지는 것처럼 수술을 하게 돕습니다. 디지털의 차가운 벽을 넘어, 인간의 감각과 기계의 지능이 가장 밀접하게 만나는 **'디지털 촉각'**의 완성입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Significant Sensor Drift - Force Measurement Unreliable"
         return "PASS: Sensor Baseline Stable"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(tactile_res_mm=0.5, force_feedback_latency_ms=8, vibration_purity=0.95)
 print(engine.diagnose_tactile_fidelity())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_tactile_fidelity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data haptic-response-latency-and-tactile-precision-v2026`와 연동되어, 전 세계 웨어러블 및 로봇 촉각 장치의 성능을 실시간 분석하고 감각 오류 및 반응 지연 사고 확률을 0.01% 이하로 억제함으로써 디지털-물리 상호작용의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-control-algorithms-and-impedance-control-mechanics

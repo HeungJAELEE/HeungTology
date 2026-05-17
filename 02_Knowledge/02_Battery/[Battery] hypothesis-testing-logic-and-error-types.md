@@ -1,75 +1,58 @@
 ---
-Basic:
-  id: "[[[Battery] hypothesis-testing-logic-and-error-types"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] hypothesis-testing-logic-and-error-types]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] hypothesis-testing-logic-and-error-types에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] hypothesis-testing-logic-and-error-types
+# [Battery] hypothesis-testing-logic-and-error-types
 
-## 1. [왜 배우는가? (Why)]]
-"새로운 공법이 기존보다 더 효율적인가?"라는 주장을 단순한 평균 비교로만 결론 내리는 것은 위험합니다. 데이터의 변동성(Variance)으로 인한 '우연한 결과'에 속을 수 있기 때문입니다. **가설 검정(Hypothesis Testing)**은 데이터라는 증거를 통해 연구자의 주장이 우연이 아님을 수학적으로 입증하는 과정입니다. 이는 신기술 도입의 타당성을 검증하고 무분별한 의사결정으로 인한 자원 낭비를 방지하는 최후의 필터입니다.
+## 1. 개요: 배터리 제조의 통계적 의사결정
+배터리 제조 현장에서의 단순 평균 비교는 데이터의 변동성(Variance)으로 인한 확률적 노이즈를 걸러내지 못합니다. 가설 검정은 신규 소재 도입이나 공정 파라미터 변경이 실제 배터리 수명이나 안전성에 유의미한 차이를 만드는지 수학적으로 판정하는 최후의 통계적 필터입니다.
 
-## 2. [핵심 기술 사양 (Numerical Specs)]
+## 2. 가설 이원론 및 오류 분석 (Error Analysis)
 
-### 2.1 가설의 이원론
-*   **귀무가설 ($H_0$)**: "차이가 없다", "효과가 없다". 보수적 관점에서의 수비수 역할.
-*   **대립가설 ($H_1$)**: "차이가 있다", "혁신적이다". 우리가 입증하고자 하는 공격수 역할.
+### 2.1 가설 설정 표준
+- **귀무가설 ($H_0$)**: "공정 변경 전후의 품질 차이가 없다." (보수적 유지)
+- **대립가설 ($H_1$)**: "신규 공정이 배터리 에너지 밀도를 유의미하게 향상시킨다." (연구/개선 목적)
 
-### 2.2 가설 검정 5단계 프로토콜
-1.  **가설 설정**: $H_0$와 $H_1$의 명확한 정의.
-2.  **유의수준 ($\alpha$) 설정**: 제1종 오류의 최대 허용치 (통상 0.05).
-3.  **기각역(Critical Region) 설정**: 검정 방식(양측/단측)에 따른 임계치 산출.
-4.  **검정통계량 계산**: 표본 데이터를 기반으로 $Z$-score, $t$-score 등 산출.
-5.  **의사결정**: **P-value $\le \alpha$** 이면 $H_0$ 기각 $\rightarrow$ "통계적으로 유의미한 차이 있음".
+### 2.2 배터리 특화 오류 정의
+- **제1종 오류 ($\alpha$, Producer's Risk)**: 실제로는 정상 공정인데 불량으로 판단하여 폐기하는 리스크. (생산성 저하)
+- **제2종 오류 ($\beta$, Consumer's Risk)**: **실제로는 불량(예: 내부 단락 전조)인데 정상으로 판단하여 출하하는 리스크.** (화재 및 리콜 직결, **치명적**)
 
-## 3. [심층 분석 (Deep Analysis)]
+## 3. 기술 규격 및 검정 성능 표준 (Testing Standards)
 
-### 3.1 P-value의 정확한 정의와 오해
-*   **Logic**: P-value는 "내 주장이 맞을 확률"이 아닙니다. **"귀무가설($H_0$)이 참이라고 가정했을 때, 현재와 같은 극단적인 데이터가 관찰될 확률"**입니다.
-*   **Insight**: 이 확률이 극히 낮다면($< 0.05$), "우연이라고 하기엔 너무 이상하므로 귀무가설이 틀렸다"고 결론 내리는 귀류법적 논리입니다.
+| 파라미터 | 공학적 정의 | 산업 표준 (Target) |
+| :--- | :--- | :---: |
+| **유의 수준 ($\alpha$)** | 1종 오류의 최대 허용 한계 | $0.05$ |
+| **검정력 ($1-\beta$)** | 실제 차이를 찾아낼 확률 | $> 0.90$ |
+| **P-value** | 귀무가설 하에서 현재 데이터가 나올 확률 | $\le \alpha$ 시 유의함 |
+| **효과 크기 (Effect Size)** | 물리적으로 의미 있는 차이의 정도 | 도메인별 상이 |
 
-### 3.2 검정의 방향성: 양측 vs 단측
-*   **양측 검정 ($\neq$)**: "기존과 다르다"는 것을 증명. 기각역이 양쪽으로 나뉘어 더 엄격함.
-*   **단측 검정 ($>, <$)**: "기존보다 더 좋다(또는 나쁘다)"는 방향성 증명. 기각역이 한쪽에 집중되어 발견 확률이 높으나 비판의 여지가 있음.
+## 4. 분석 실행 프로토콜 (Execution SOP)
+1. **가설 수립**: $H_0$ 및 $H_1$을 에너지 밀도($Wh/kg$) 또는 수율($\%$) 등의 지표로 수리화.
+2. **검정 방식 선택**: 단측 검정(개선 확인) 또는 양측 검정(유지 여부 확인) 결정.
+3. **P-value 산출**: RTX 가속 통계 엔진을 통해 실시간 산출.
+4. **의사결정**: $P \le 0.05$인 경우에만 신규 공정 정식 승인.
 
-## 4. [AI & Hardware Synergy: 실시간 가설 검증]
-*   **Real-time A/B Testing**: RTX 4060 기반 분석 엔진이 스트리밍 데이터의 P-value를 실시간으로 업데이트하여, 실험의 조기 종료(Early Stopping) 또는 연장 여부를 판단합니다.
-*   **Bayesian Hypothesis Testing**: 빈도주의적 가설 검정의 한계를 넘어, 사전 지식(Prior)을 결합하여 가설의 사후 확률을 계산하는 베이지안 추론 가속화.
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 제조 수율 최적화와 안전 무결성 확보를 위한 통계적 판단 기준을 제공합니다. 실제 공정 검정 결과 및 오류율 데이터는 인스턴스 로그에서 관리됩니다.
 
-## 5. [스스로 체크 (Verification)]
-- [ ] **P-value**가 $0.05$보다 낮다는 사실이 "효과 크기(Effect Size)가 크다"는 것을 보장하는가?
-- [ ] 현재 설정한 가설이 **양측 검정**과 **단측 검정** 중 도메인 논리에 적합한 방식인가?
-- [ ] **제1종 오류**를 줄이기 위해 유의수준을 낮췄을 때, **제2종 오류**가 증가하는 리스크를 어떻게 관리할 것인가?
-
----
-### 🧠 AI의 사고방식:
-"가설 검정은 '아니오'라고 말하기 위한 도구입니다. 귀무가설을 기각하는 데 실패했다고 해서 그것이 참이라는 뜻은 아닙니다. 단지 '현재의 증거로는 틀렸다고 말할 수 없다'는 겸손한 보류일 뿐입니다. 데이터 과학자는 이 미묘한 수리적 뉘앙스를 비즈니스의 확실성으로 번역하는 번역가입니다."
-
----
-*Created by Flash (HDS-Gold V6.3.7 - Data Science Series)*
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Manufacturing-Intelligence-and-Yield-Control]]
+- [[[Data] Battery-Process-Significance-Test-Log_2026-05-16]]

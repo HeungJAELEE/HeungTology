@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "data-sovereignty-and-decentralized-intelligence-networks"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] data-sovereignty-and-decentralized-intelligence-networks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The legal and technical framework for ensuring that individuals, organizations, and nations maintain control over their data (Sovereignty) through decentralized architectures (Blockchain, IPFS) and autonomous intelligence networks."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-sovereignty", "decentralized-ai", "blockchain", "data-ownership", "sovereign-intelligence"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Ownership_Integrity_Audit: Verify the cryptographic signatures and smart contract locks governing data access.'
-    - 'Decentralization_Ratio_Check: Evaluate the distribution of data storage across nodes to ensure no single-point-of-failure or control.'
-    - 'Compliance_Geography_Scan: Ensure data storage and processing locations align with national data sovereignty laws (e.g., Data Residency).'
-Trust Metrics:
+  description: "[Entity] data-sovereignty-and-decentralized-intelligence-networks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌐 Data Sovereignty and Decentralized Intelligence Networks
+# [Entity] data-sovereignty-and-decentralized-intelligence-networks
 
 ## 1. 개요 (Why: 인간적 통찰)
 "데이터는 새로운 원유"라고 하지만, 그 기름을 누가 소유하고 어디에 저장하느냐는 주권의 문제입니다. 지금까지 우리의 데이터는 거대 플랫폼의 창고에 갇혀 있었습니다. **데이터 주권(Data Sovereignty)**은 내 데이터의 운명을 내가 결정하는 권리입니다. **탈중앙화 지능망**은 블록체인과 분산 저장 기술을 통해, 데이터가 거대 서버가 아닌 우리 모두의 네트워크 속에 흩어져 있으면서도 오직 주인만이 열 수 있게 만드는 '디지털 영토'입니다. 내 정보가 어디에 있든 내가 주권을 갖는 세상을 만드는 것이 목표입니다.
@@ -91,7 +80,6 @@ class LegalFidelityEngine:
             return "REJECT: Data Residency Violation - Potential Legal Conflict with National Sovereignty Laws"
         return "PASS: Geographic Data Sovereignty Compliant"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(owner_control_ratio=0.98, node_distribution_entropy=4.2, sovereignty_compliance=100)
 print(engine.diagnose_data_sovereignty())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_data_sovereignty())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data data-sovereignty-index-and-network-decentralization-v2026`와 연동되어, 전 세계 분산 지능망의 노드 상태와 데이터 소유권 트랜잭션을 실시간 분석하고 주권 침해 확률을 0.01% 이하로 억제함으로써 디지털 독립과 정보 자결권의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - decentralized-ai-and-federated-learning-topology

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "satellite-communications-and-6g-orbital-networks-entity"
-  domain: "02_Information_Computing"
+metadata:
+  id: "[[[Communication] satellite-communications-and-6g-orbital-networks]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Communication", "#Satellite", "#LEO", "#6G", "#Space", "#Network", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[Governance] space-law-and-orbital-resource-governance]", "Strategy national-strategic-technology-and-economic-security"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Communication] satellite-communications-and-6g-orbital-networks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Communication] satellite-communications-and-6g-orbital-networks
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Phased Array Antenna**의 소자 개수($N$)와 빔 조향 각도($\theta$)가 **Side-lobe** 간섭 및 전력 효율에 미치는 수리적 상관관계 분석 결과는?
 5. RAG 시스템에서 **전 세계 선박/항공기/UAM의 이동 데이터**와 **실시간 위성 궤도 DB**를 융합하여, '이동체별로 가장 안정적인 위성을 실시간으로 배정'하는 **Orbital Resource Orchestration** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Governance space-law-and-orbital-resource-governance]] : 위성 궤도 점유 및 주파수 할당을 관리하는 상위 국제 규제 및 거버넌스 엔티티
 - Strategy national-strategic-technology-and-economic-security : 차세대 6G 위성 통신 기술을 국가 안보 및 경제 경쟁력의 핵심으로 관리하는 상위 전략 노드

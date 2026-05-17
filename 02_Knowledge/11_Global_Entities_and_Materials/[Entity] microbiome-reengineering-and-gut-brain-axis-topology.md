@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "microbiome-reengineering-and-gut-brain-axis-topology-entity"
-  domain: "24_Advanced_Medicine_and_Longevity"
+metadata:
+  id: "[[[Entity] microbiome-reengineering-and-gut-brain-axis-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medicine", "#Longevity", "#Microbiome", "#Gut-Brain_Axis", "#Psychobiotics", "#Mental_Health", "#Metabolism", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 61_advanced-medicine-and-longevity-hub", "Entity metagenomics-and-planetary-microbiome-mapping"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] microbiome-reengineering-and-gut-brain-axis-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] microbiome-reengineering-and-gut-brain-axis-topology
+# [Entity] microbiome-reengineering-and-gut-brain-axis-topology
 
 ## 1. [왜 배우는가? (Why: The Second Brain in Your Belly)]]
 우리의 장 속에 사는 수조 마리의 미생물들을 어떻게 재설계하여 우울증을 치료하고, 다이어트를 하지 않아도 살이 안 찌는 체질로 만들며, 나아가 뇌의 노화를 막을 수 있을까요? **마이크로바이옴 재설계 및 장-뇌 축 위상**은 우리 몸의 '또 다른 뇌'이자 '화학 공장'인 장내 미생물을 제어하는 '생체 최적화 및 정신 건강 조율 지침'입니다. 우리가 이를 배우는 이유는 미생물이 뿜어내는 신호 물질이 우리 기분과 면역의 $70\%$ 이상을 결정하기 때문이며, "내 몸속 생태계를 데이터로 설계하고 지배하는 '글로벌 유기적 헬스 및 심리 보안 주권'을 확보하기" 위함입니다. 미생물의 조합이 삶의 행복도를 결정합니다.

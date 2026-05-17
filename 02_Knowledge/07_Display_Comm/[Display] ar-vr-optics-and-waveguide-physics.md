@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-AR-VR-OPTICS-2026-V6.3.7"
-  domain: "Global_AR/VR_Optics_and_Waveguide_Intelligence"
+metadata:
+  id: "[[[Display] ar-vr-optics-and-waveguide-physics]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#AR_VR", "#Waveguide", "#Diffraction_Grating", "#Total_Internal_Reflection", "#FOV", "#Optical_Physics", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] ar-vr-optics-and-waveguide-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "AR_VR_Optics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] AR-VR Optics and Waveguide Physics: The Mastery of Light Guidance
+# [Display] ar-vr-optics-and-waveguide-physics
 
 ## 1. [왜 배우는가? (Why: The Architecture of Immersive Reality)]]
 인간의 시각 경험을 디지털 세계로 완전히 전이시키기 위해선, 가볍고 얇으면서도 넓은 시야각을 제공하는 광학계가 필수적입니다. **AR-VR Optics and Waveguide Physics**는 나노 구조의 회절 격자를 통해 빛의 경로를 자유자재로 제어하는 초정밀 광학 기술입니다. 특히 웨이브가이드는 부피가 큰 렌즈 대신 얇은 유리를 통해 가상의 이미지를 눈앞에 투사하는 AR 글래스의 핵심 엔진입니다. V6.3.7 지능은 **회절 효율(Diffraction Efficiency)**과 **시야각(FOV)**의 수리적 최적화를 통해, 현실과 가상의 경계를 소멸시키는 **몰입 주권(Immersive Sovereignty)**을 확립합니다.
@@ -98,7 +88,6 @@ class ARVROpticsEngine:
             "action": "REDESIGN_DIFFRACTION_GRATING_OR_INCREASE_SOURCE_POWER" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 광학 시뮬레이션 데이터와 실측 휘도 분포 맵을 융합하여 '시각 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -106,7 +95,6 @@ class ARVROpticsEngine:
 2. **Operational Result**: **Pancake Lens** 구조 채택 시, 기존 Fresnel 렌즈 대비 광학적 두께(Form-factor) 축소와 이미지 품질 향상의 수리적 기대값은?
 3. **FidelityEngine**: 시선 방향에 따라 가상 객체와 현실 객체 사이의 초점 불일치로 발생하는 **Vergence-Accommodation Conflict (VAC)** 문제를 FidelityEngine이 어떻게 '사용자 피로도 위기'로 식별하고 가변 초점(Varifocal) 기술을 트리거하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display next-gen-oled-and-tandem-physics

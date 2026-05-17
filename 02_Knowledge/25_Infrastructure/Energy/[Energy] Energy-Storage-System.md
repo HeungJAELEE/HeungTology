@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "CONCEPT-INF-ESS-MASTER-2026-V6"
-  domain: "05_Infrastructure"
+metadata:
+  id: "[[[Energy] Energy-Storage-System]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Energy'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] Energy-Storage-System에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] Energy-Storage-System
@@ -120,7 +110,6 @@ class ESSFidelityAuditEngine:
 2. **Sodium-ion** 배터리가 **LFP** 대비 낮은 **Energy Density**에도 불구하고 **Long-duration ESS** 시장에서 가지는 **LCOS** 측면의 수리적 우위는?
 3. **Round-Trip Efficiency** (RTE)가 $1\%$ 하락할 때, $100MWh$ 규모 ESS의 10년 운영 시 발생하는 **Economic Loss**의 수리적 산출 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/06_Battery_Manufacturing_Process_and_Equipment_Intelligence_Hub/Concept battery-energy-storage-system-bess-architecture
 - 02_Knowledge/05_Infrastructure/Energy/Concept smart-grid-and-vpp-virtual-power-plant

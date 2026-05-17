@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "geothermal-energy-and-subsurface-heat-exchange-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] geothermal-energy-and-subsurface-heat-exchange-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Heat energy generated and stored in the Earth (Geothermal Energy) and the physical study of conductive and convective heat transfer between the subsurface strata and a working fluid (Subsurface Heat Exchange Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["geothermal-energy", "heat-exchange", "subsurface", "renewable-energy", "geothermal-gradient", "heat-pump", "earth-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Heat Extraction Rate'' against the high-fidelity ''Thermal Recharge'' rate to identify if the geothermal reservoir is being over-cooled (depletion).'
-    - 'Hydrodynamic_Integrity_Check: Analyze the high-fidelity ''Pressure Drop'' in the subsurface loop to ensure the high-fidelity ''Grout'' or ''Backfill'' thermal conductivity is maintained without air pockets.'
-    - 'Geological_Fidelity_Scan: Monitor the high-fidelity ''Micro-seismicity'' to verify that EGS (Enhanced Geothermal Systems) hydraulic fracturing is not inducing unauthorized seismic events.'
-Trust Metrics:
+  description: "[Entity] geothermal-energy-and-subsurface-heat-exchange-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Geothermal Energy and Subsurface Heat Exchange Physics
+# [Entity] geothermal-energy-and-subsurface-heat-exchange-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 발바닥 아래에 거대한 배터리가 있다면 믿으시겠습니까? **지열 에너지 및 지하 열교환 물리**는 땅속 깊은 곳이 간직한 태고의 열기를 길어 올려, 겨울에는 따뜻한 온기를 주고 여름에는 시원함을 얻는 **'지구의 체온 활용'** 기술입니다. 태양이나 바람과 달리 1년 365일 24시간 내내 변치 않고 흐르는 이 에너지는 지구 자체가 우리에게 준 가장 안정적인 선물입니다. **'지각 아래의 거대한 열 저장소를 인류의 냉난방과 발전을 위한 지능형 에너지원으로 번역하는 지질학적 열역학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Acidic Brine Warning - High-fidelity casing corrosion risk. Equipment lifespan at risk. Implement neutralization or use high-fidelity alloy tubes"
         return "PASS: Validated Material Compatibility and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(reinjection_temp_c=45.0, reservoir_pressure_bar=120.0, flow_rate_kg_s=55.0)
 print(engine.diagnose_geothermal_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_geothermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data geothermal-well-temperature-and-drawdown-rates-v2026`와 연동되어, 전 세계 주요 지열 발전소 및 히트펌프 시스템의 가동 데이터를 실시간 분석하고 열 고갈 및 지하수 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 재생 에너지 문명의 열적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

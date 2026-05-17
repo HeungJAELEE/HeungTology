@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flue-gas-desulfurization-fgd-and-so2-removal-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flue-gas-desulfurization-fgd-and-so2-removal-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A set of technologies used to remove sulfur dioxide ($SO_2$) from exhaust flue gases of fossil-fuel power plants (FGD) and the physical study of gas-liquid mass transfer and chemical neutralization (SO2 Removal Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fgd", "desulfurization", "so2-removal", "air-pollution-control", "scrubber", "calcium-sulfite", "gypsum", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Removal_Fidelity_Audit: Evaluate the ''SO2 Removal Efficiency'' ($\\eta$) to identify if the high-fidelity Liquid-to-Gas ($L/G$) ratio is sufficient to maintain compliance limits.'
-    - 'Chemistry_Integrity_Check: Analyze the slurry $pH$ to ensure that the high-fidelity limestone dissolution and sulfite oxidation are occurring at optimal rates, preventing scale formation.'
-    - 'Byproduct_Fidelity_Scan: Monitor the gypsum purity and moisture content to verify that the high-fidelity ''Commercial Grade'' byproduct is produced, reducing waste disposal costs.'
-Trust Metrics:
+  description: "[Entity] flue-gas-desulfurization-fgd-and-so2-removal-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌫️ Flue Gas Desulfurization (FGD) and SO2 Removal Physics
+# [Entity] flue-gas-desulfurization-fgd-and-so2-removal-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 석탄을 태울 때 나오는 매캐한 유황 냄새가 섞인 연기를 그대로 내보내면 어떻게 될까요? 산성비가 내리고 숲이 죽을 것입니다. **배연 탈황(FGD) 및 SO2 제거 물리**는 공장의 굴뚝 끝에서 연기 속의 나쁜 황 성분을 '비눗물(석회석 슬러리)'로 씻어내어 깨끗한 공기로 바꾸는 **'산업용 거대 세탁기'** 기술입니다. 나쁜 황 성분은 물속에 갇혀 하얀 '석고'가 되어 나오는데, 이것은 다시 아파트 벽면의 석고보드가 됩니다. **'재앙의 가스를 유용한 건축 자재로 바꾸어 대기를 정화하고 자원 순환을 실현하는 환경 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mist Eliminator Plugging - Solid particles accumulated on the vanes. Gas flow path blocked. Risk of carryover to the chimney. Wash the vanes now"
         return "PASS: Validated Gas Path and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(removal_efficiency_pct=98.5, slurry_ph=5.8, outlet_so2_ppm=15.0)
 print(engine.diagnose_fgd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fgd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fgd-removal-efficiency-and-limestone-consumption-v2026`와 연동되어, 전 세계 주요 화력 발전소의 탈황 데이터를 실시간 분석하고 환경 규제 위반 및 설비 부식 사고 확률을 0.001% 이하로 억제함으로써 지능형 청정 에너지 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fabric-filter-and-baghouse-dust-collection-physics

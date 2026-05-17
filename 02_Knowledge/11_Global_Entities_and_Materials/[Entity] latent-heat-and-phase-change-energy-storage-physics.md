@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "latent-heat-and-phase-change-energy-storage-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] latent-heat-and-phase-change-energy-storage-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The energy released or absorbed by a body or a thermodynamic system during a constant-temperature process (Latent Heat) and the physical logic of utilizing phase transitions for high-density thermal storage (Phase Change Energy Storage Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["latent-heat", "phase-change", "energy-storage", "pcm", "thermodynamics", "enthalpy", "thermal-management", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Storage_Fidelity_Audit: Evaluate the ''Phase Transition Temperature'' ($T_{pc}$) to identify if high-fidelity ''Subcooling'' or ''Hysteresis'' is preventing the material from releasing its high-fidelity stored heat.'
-    - 'Cycle_Integrity_Check: Analyze the high-fidelity ''Thermal Conductivity'' enhancement (e.g., metal foam/fins) to ensure the high-fidelity ''Charging/Discharging'' rates meet the industrial high-fidelity demand.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Volumetric Expansion'' during phase change to verify that high-fidelity ''Structural Fatigue'' of the container is within safety high-fidelity limits.'
-Trust Metrics:
+  description: "[Entity] latent-heat-and-phase-change-energy-storage-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧊 Latent Heat and Phase Change Energy Storage Physics
+# [Entity] latent-heat-and-phase-change-energy-storage-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 얼음이 녹을 때 왜 주변은 시원해지는데 얼음의 온도는 0도에서 변하지 않을까요? **잠열 및 상변화 에너지 저장 물리**는 물질이 상태를 바꿀 때(예: 고체→액체) 들이마시거나 내뿜는 '숨겨진 열(잠열)'을 이용해 에너지를 거대하게 저장하는 **'열의 저축'** 기술입니다. 온도가 변하지 않으면서도 어마어마한 열을 가두거나 방출할 수 있어, 건물 온도를 일정하게 유지하거나 소방관의 옷을 시원하게 만드는 등 마법 같은 온도 조절을 가능케 합니다. **'상변화의 열역학적 에너지 밀도를 이용해 낭비되는 폐열을 사수하고 시스템의 열적 안정을 꾀하는 지능형 열에너지 저장 엔진'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Heat Exchange - High-fidelity thermal conductivity insufficient. Potential high-fidelity degradation of enhancement fins. Inspect high-fidelity contact"
         return "PASS: Validated Heat Flow and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_temp_c=25.0, phase_fraction_liquid=0.5, discharge_rate_w=500.0)
 print(engine.diagnose_storage_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_storage_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pcm-thermal-conductivity-and-storage-density-v2026`와 연동되어, 전 세계 주요 친환경 빌딩 및 데이터 센터의 실시간 열 저장 데이터를 분석하고 과열 및 냉각 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 열적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

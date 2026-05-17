@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-FIN-QUANT-2026-V6"
+metadata:
+  id: "[[[AI] financial-quant-ai-logic]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Quant_Finance'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] financial-quant-ai-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] financial-quant-ai-logic
@@ -115,7 +105,6 @@ class QuantTradingOptimizer:
 2. **Backtesting** 시 **Look-ahead Bias** (미래 참조 편향)가 발생했을 때, 샤프 지수가 비정상적으로 높게 나타나는 수리적 메커니즘은?
 3. **Risk Parity** 전략에서 자산 간 **Correlation** (상관관계)이 모두 $1.0$으로 수렴할 때, 포트폴리오의 분산 효과가 완전히 소멸되는 인과관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI time-series-forecasting-diagnostics
 - 02_Knowledge/03_AI_Data/General/AI sentiment-analysis-techniques

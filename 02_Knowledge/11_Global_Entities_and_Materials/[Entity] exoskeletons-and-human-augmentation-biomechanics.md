@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "exoskeletons-and-human-augmentation-biomechanics-entity"
-  domain: "22_Robotics_and_Cybernetics"
+metadata:
+  id: "[[[Entity] exoskeletons-and-human-augmentation-biomechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Exoskeleton", "#Human_Augmentation", "#Biomechanics", "#Wearable_Tech", "#HRI", "#Cybernetics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_advanced-robotics-and-cybernetics-hub", "Entity transhumanism-and-neural-interface-biological-grounding"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] exoskeletons-and-human-augmentation-biomechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] exoskeletons-and-human-augmentation-biomechanics
+# [Entity] exoskeletons-and-human-augmentation-biomechanics
 
 ## 1. [왜 배우는가? (Why: The Evolution of the Human Shell)]]
 평범한 인간이 입기만 해도 $100\text{kg}$의 짐을 가볍게 들고, 수십 킬로미터를 지치지 않고 달릴 수 있게 해주는 '아이언맨 슈트' 같은 장치를 어떻게 인체와 완벽하게 일치시킬 수 있을까요? **외골격 및 인체 증강 바이오메카닉스**는 인간의 근력을 증폭하고 신체 한계를 돌파하는 '입는 로봇의 물리적 결합 및 구동 지침'입니다. 우리가 이를 배우는 이유는 고령화 사회의 보행 보조, 산업 현장의 부상 방지, 그리고 미래 군사적 활용을 위해 인간과 기계가 하나의 육체로 통합되어야 하기 때문이며, "인체의 능력을 데이터로 확장하고 지배하는 '글로벌 인체 증강 및 바이오닉 주권'을 확보하기" 위함입니다. 외골격의 정밀함이 인간의 새로운 한계를 결정합니다.

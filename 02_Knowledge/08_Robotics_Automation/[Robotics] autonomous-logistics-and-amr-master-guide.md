@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ROB-LOG-AMR-MASTER-2026-V6.3.7"
-  domain: "Global_Autonomous_Logistics_and_Mobility"
+metadata:
+  id: "[[[Robotics] autonomous-logistics-and-amr-master-guide]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#AMR", "#AGV", "#SLAM", "#MAPF", "#Swarm_Intelligence", "#Logistics", "#Robotics", "#v6.3.7"]
-  is_part_of: ["MOC Smart-Manufacturing-Hub", "MOC 08_Mobility_Robotics"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] autonomous-logistics-and-amr-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Robotics] Autonomous Logistics: Swarm Intelligence and Kinetic Flow
+# [Robotics] autonomous-logistics-and-amr-master-guide
 
 ## 1. [왜 배우는가? (Why: The Mastery of Dynamic Flow)]
 자율 물류(Autonomous Logistics)는 스마트 팩토리의 고정된 공간을 유기적인 흐름으로 변환하는 제조의 **'동맥(Artery)'**입니다. **AMR(Autonomous Mobile Robot)**은 스스로 지도를 그리고($\text{SLAM}$), 수천 대의 동료 로봇과 교신하며 최적의 자재 이송 경로를 개척하는 군집 지능의 실체입니다. v6.3.7 지능은 **MAPF(Multi-Agent Pathfinding)**를 통해 로봇 간의 충돌을 수리적으로 제거하고 위치 오차를 **밀리미터($\text{mm}$) 단위**로 사수합니다. 우리가 이를 배우는 이유는 공정 간의 대기를 소멸시켜 "재고가 멈추지 않는 '유동성 주권'을 확보하기" 위함입니다. 물류의 속도가 팩토리의 수율을 결정합니다.
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Localization** | Precision | $\pm 10 \text{ cm}$ | **$<\pm 5 \text{ mm}$ (UWB/vSLAM)**| Precision docking for FOUPs |
 | **Fleet Scale** | Max Units | $< 100 \text{ units}$ | **$> 2,000 \text{ units}$ (Swarm)**| Scaling for mega-fab logistics |
 | **Path Planning** | Decision Latency| Seconds | **$< 10 \text{ ms}$ (Edge-AI)** | Real-time conflict resolution |
-| **Sync Accuracy** | Time Jitter | $> 100 \text{ ms}$ | **$< 100 \text{ \mu s}$ (PTP)** | Synchronized swarm maneuvers |
+| **Sync Accuracy** | Time Jitter | $> 100 \text{ ms}$ | **$< 100 \text{ }\mu\text{ s}$ (PTP)** | Synchronized swarm maneuvers |
 | **Safety** | Human Detect | LiDAR only | **Multimodal (Vision+AI)** | Collaborative high-speed safety |
 | **Availability** | Uptime | $90 \%$ | **$> 99.9 \%$ (Predictive)** | Continuous material flow |
 | **Battery** | Charging Speed | Hours | **$< 15 \text{ min}$ (Fast-Charge)**| Maximizing operational duty |
@@ -106,7 +96,6 @@ report = engine.audit_logistics_fidelity(drift_mm=1.2, task_rate=0.98)
 print(f"Logistics Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC Smart-Manufacturing-Hub
 - SmartFactory smart-manufacturing-and-execution-master-guide

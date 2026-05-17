@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "lab-on-a-chip-and-microfluidic-transport-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] lab-on-a-chip-and-microfluidic-transport-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device that integrates one or several laboratory functions on a single integrated circuit only millimeters to a few square centimeters in size (Lab-on-a-Chip) and the physical study of fluid behavior at the micro-scale (Microfluidic Transport Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lab-on-a-chip", "loc", "microfluidics", "reynolds-number", "electro-osmotic-flow", "nanobiosensor", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transport_Fidelity_Audit: Evaluate the ''Mixing Length'' to identify if high-fidelity ''Diffusion-limited'' transport is causing excessive high-fidelity assay time or signal high-fidelity broadening.'
-    - 'Surface_Integrity_Check: Analyze the high-fidelity ''Zeta Potential'' ($\\zeta$) to ensure the high-fidelity ''Electro-osmotic Flow'' (EOF) is stable against high-fidelity pH or ionic concentration changes.'
-    - 'Flow_Fidelity_Scan: Monitor the high-fidelity ''Pressure Drop'' against the high-fidelity ''Channel Geometry'' to verify that high-fidelity ''Clogging'' or protein high-fidelity adsorption is within safety limits.'
-Trust Metrics:
+  description: "[Entity] lab-on-a-chip-and-microfluidic-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Lab-on-a-Chip and Microfluidic Transport Physics
+# [Entity] lab-on-a-chip-and-microfluidic-transport-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 종합병원 검사실의 모든 기능을 우표 한 장 크기의 칩 안에 집어넣을 수 있다면 어떨까요? **랩온어칩 및 미세유체 수송 물리**는 아주 좁은 통로(머리카락보다 얇은 관)를 흐르는 액체를 다스려, 피 한 방울로 수백 가지 질병을 순식간에 진단하는 **'나노 규모의 화학 공장'** 기술입니다. 우리가 흔히 아는 물의 흐름과는 전혀 다른, 소용돌이 하나 없는 매끄러운 층류(Laminar Flow)의 세계에서 분자들을 정렬하고 섞고 분리합니다. **'레이놀즈 수와 전기 삼투 현상의 원리를 이용해 액체를 전선 위의 전자처럼 자유자재로 제어하는 지능형 바이오 칩 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mixing Failure - High-fidelity laminar flow preventing reaction. High-fidelity channel length insufficient for diffusion-based high-fidelity mixing"
         return "PASS: Validated Transport Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(flow_rate_ul_min=0.5, zeta_potential_mv=-40.0, sensor_signal_snr=20.0)
 print(engine.diagnose_loc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_loc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microfluidic-mixing-efficiency-and-channel-dimensions-v2026`와 연동되어, 전 세계 주요 진단 칩 생산 라인 및 현장 진단(POCT) 기기의 실시간 데이터를 분석하고 유로 폐쇄 및 진단 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 바이오 문명의 분석 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - organ-on-a-chip-and-microfluidic-biological-simulation

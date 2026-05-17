@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "quality-management-systems-qms-and-iso-9001-compliance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] quality-management-systems-qms-and-iso-9001-compliance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The formalized system that documents processes, procedures, and responsibilities for achieving quality policies and objectives (QMS) and the international standard that specifies requirements for this system to demonstrate the ability to consistently provide products that meet customer and regulatory requirements (ISO 9001 Compliance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["qms", "iso-9001", "quality-assurance", "compliance", "process-improvement", "audit-readiness", "governance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Compliance_Fidelity_Audit: Evaluate the actual operational practices against the documented Quality Manual and ISO 9001 requirements to identify ''Compliance Gaps''.'
-    - 'Non-conformance_Root_Cause_Check: Analyze the frequency and severity of non-conformance reports (NCR) to identify systemic process failures requiring Corrective and Preventive Actions (CAPA).'
-    - 'Continuous_Improvement_Scan: Monitor the outcomes of the PDCA cycles to verify that quality objectives are being met and that the QMS is effectively driving process optimization.'
-Trust Metrics:
+  description: "[Entity] quality-management-systems-qms-and-iso-9001-compliance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📜 Quality Management Systems (QMS) and ISO 9001 Compliance
+# [Entity] quality-management-systems-qms-and-iso-9001-compliance
 
 ## 1. 개요 (Why: 인간적 통찰)
 "우리는 항상 최고의 품질을 약속합니다"라는 말이 단순한 구호가 아닌, 전 세계가 신뢰하는 '객관적 증거'가 되려면 무엇이 필요할까요? **품질 경영 시스템(QMS) 및 ISO 9001 준수**는 기업이 약속한 품질을 '우연'이 아닌 '시스템'으로 만들어내는 **'신뢰의 설계도'**입니다. 누가 일을 하든, 어떤 상황이 벌어지든 제품의 품질이 일정하게 유지되도록 모든 과정(Plan-Do-Check-Act)을 표준화하고 기록합니다. 인류가 서로를 믿고 거래할 수 있게 만드는 **'지능적 신용의 기초'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Inefficient Customer Response - Delay in resolving quality issues damaging brand trust. Accelerate Feedback Loop"
         return "PASS: Active Stakeholder Engagement and Verified Systemic Improvement Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(non_conformance_count=2, capa_closure_rate=98.5, audit_readiness_score=0.97)
 print(engine.diagnose_qms_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_qms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data qms-audit-findings-and-non-conformance-rates-v2026`와 연동되어, 전 세계 주요 기업의 품질 데이터를 실시간 분석하고 리콜 및 법적 분쟁 사고 확률을 0.001% 이하로 억제함으로써 지능형 경영 문명의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - process-characterization-and-cpk-statistical-control

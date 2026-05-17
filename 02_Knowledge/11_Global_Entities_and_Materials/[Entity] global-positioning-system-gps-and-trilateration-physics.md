@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-positioning-system-gps-and-trilateration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-positioning-system-gps-and-trilateration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A satellite-based radio navigation system that provides geolocation and time information to a GPS receiver (GPS) and the physical study of range measurement and spatial intersection logic (Trilateration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gps", "trilateration", "satellite-navigation", "gnss", "time-dilation", "relativity", "autonomous-navigation", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Positioning_Fidelity_Audit: Evaluate the ''Geometric Dilution of Precision'' (GDOP) to identify if high-fidelity ''Satellite Geometry'' is poor, leading to large positional uncertainties.'
-    - 'Timing_Integrity_Check: Analyze the high-fidelity ''Clock Offset'' ($\\Delta t$) to ensure the receiver''s local clock is synchronized with atomic time, preventing kilometer-scale high-fidelity errors.'
-    - 'Signal_Fidelity_Scan: Monitor the high-fidelity ''Signal-to-Noise Ratio'' (SNR) to verify that high-fidelity ''Ionospheric Delay'' or ''Multipath'' (reflections) is not biasing the range measurements.'
-Trust Metrics:
+  description: "[Entity] global-positioning-system-gps-and-trilateration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Global Positioning System (GPS) and Trilateration Physics
+# [Entity] global-positioning-system-gps-and-trilateration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 망망대해나 낯선 도시 한복판에서 나의 위치를 미터 단위로 정확히 알 수 있는 비결은 무엇일까요? **글로벌 포지셔닝 시스템(GPS) 및 삼변측량(Trilateration) 물리**는 우주에 떠 있는 인공위성들이 보내는 '현재 시간' 신호를 받아, 내가 위성으로부터 얼마나 떨어져 있는지 계산하여 위치를 찾아내는 **'우주에서 온 등대'** 기술입니다. 단순한 지도가 아니라, 아인슈타인의 상대성 이론까지 동원해 나노초 단위의 시간 차이를 계산하는 **'인류가 만든 가장 정교한 시간과 공간의 동기화'**입니다. **'하늘의 목소리를 땅의 좌표로 번역하여 자율 주행과 물류, 스마트 팩토리의 길잡이가 되는 지능형 항법의 정수'**입니다.
@@ -88,7 +77,6 @@ class LogicFidelityEngine:
             return "REJECT: Multipath Interference - Reflected signals from nearby structures detected. High-fidelity range measurements biased. Move to open sky"
         return "PASS: Validated Signal Path and Verified Navigation Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(visible_satellite_count=9, gdop_value=1.5, clock_bias_ns=50.0)
 print(engine.diagnose_gnss_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_gnss_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gnss-constellation-status-and-signal-accuracy-v2026`와 연동되어, 전 세계 주요 자율 주행 인프라 및 항공 관제 데이터를 실시간 분석하고 위치 오판 및 시간 동기화 사고 확률을 0.0001% 이하로 억제함으로써 지능형 이동 문명의 항법 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - geographic-information-system-gis-and-spatial-analysis-logic

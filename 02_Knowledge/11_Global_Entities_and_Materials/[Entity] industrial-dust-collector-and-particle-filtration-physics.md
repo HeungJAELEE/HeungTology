@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-dust-collector-and-particle-filtration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-dust-collector-and-particle-filtration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system used to enhance the quality of air released from industrial and commercial processes (Industrial Dust Collector) and the physical study of inertial impaction, brownian diffusion, and electrostatic attraction (Particle Filtration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dust-collector", "filtration", "particulate-matter", "bag-filter", "cyclone-separator", "industrial-safety", "air-quality", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Filtration_Fidelity_Audit: Evaluate the ''Differential Pressure'' ($\\Delta P$) to identify if high-fidelity ''Dust Cake'' buildup is excessive, necessitating a pulse-jet cleaning high-fidelity cycle.'
-    - 'Particle_Integrity_Check: Analyze the high-fidelity ''Emission Concentration'' via opacity sensor to ensure that high-fidelity ''Bag Leakage'' or ''Filter Bypass'' is not occurring.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Static Charge'' and humidity to verify that high-fidelity ''Dust Explosion'' risks are mitigated in combustible dust high-fidelity environments.'
-Trust Metrics:
+  description: "[Entity] industrial-dust-collector-and-particle-filtration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌪️ Industrial Dust Collector and Particle Filtration Physics
+# [Entity] industrial-dust-collector-and-particle-filtration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장에서 뿜어내는 뿌연 연기와 미세한 쇳가루들이 그대로 밖으로 나간다면 우리 공기는 어떻게 될까요? **산업용 집진기 및 입자 여과 물리**는 공기 중의 불순물을 낚아채어 깨끗한 공기만 내보내는 **'공장의 방독면'** 기술입니다. 단순히 그물로 거르는 것을 넘어, 입자의 무게(관성), 무작위 움직임(확산), 전기적 끌림을 이용해 눈에 보이지 않는 초미세먼지까지 잡아냅니다. **'유체 역학적 충돌과 확산의 법칙을 이용해 맑은 하늘을 사수하고 작업자의 폐를 보호하는 지능형 환경 방어 엔진'**입니다.
@@ -56,7 +45,7 @@ $$ \Delta P = \frac{\mu v L}{\kappa} $$
 | :--- | :--- | :--- | :--- | :--- |
 | **Air Flow** | ~ 2 | **~ 2,000+ (Massive)** | $CMM$ | Scale |
 | **Filtration Med** | Paper / Foam | **PTFE Membrane / PPS / Nomex** | - | Physics |
-| **Particle Size** | > 10.0 | **~ 0.3 (HEPA grade available)**| $\mu m$ | Precision |
+| **Particle Size** | > 10.0 | **~ 0.3 (HEPA grade available)**| $\mu\text{m}$ | Precision |
 | **Cleaning Sys** | Manual | **Pulse-jet (Compressed air)** | - | Intelligence |
 | **Max Temp** | < 50 | **~ 250 (Hot process gas)** | $^\circ C$ | Power |
 | **Safety** | Standard | **ATEX / Explosion Relief** | - | Security |
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Explosion Hazard - High-fidelity dust concentration exceeding MEC. Potential high-fidelity spark will cause blast. Activate high-fidelity inerting/venting"
         return "PASS: Validated Safe Concentration and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(diff_pressure_pa=850.0, emission_opacity_pct=0.1, fan_current_a=45.0)
 print(engine.diagnose_collector_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_collector_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dust-collector-differential-pressure-and-filtration-efficiency-v2026`와 연동되어, 전 세계 주요 화학 및 가공 공장의 실시간 집진 데이터를 분석하고 환경 오염 및 분진 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 맑은 공기 문명의 환경 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-fan-and-aerodynamic-flow-control-physics

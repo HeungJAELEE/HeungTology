@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "program-management-and-enterprise-resource-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] program-management-and-enterprise-resource-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic application of knowledge, skills, and principles to a group of related projects to achieve benefits not available from managing them individually (Program Management) and the centralized oversight of enterprise-wide assets, talent, and capital to maximize strategic ROI (Enterprise Resource Governance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["program-management", "resource-governance", "strategic-alignment", "enterprise-risk", "resource-allocation", "portfolio-management", "leadership"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Strategic_Alignment_Audit: Evaluate the program''s objectives against the enterprise''s long-term goals to identify ''Zombie Projects'' that consume resources without providing strategic value.'
-    - 'Resource_Conflict_Check: Analyze the resource allocation across multiple programs to identify ''Bottleneck Talents'' or shared assets that are over-committed beyond 100% capacity.'
-    - 'Governance_Compliance_Scan: Monitor the decision-making gates and audit trails to ensure program execution adheres to corporate ethics, legal regulations, and financial transparency.'
-Trust Metrics:
+  description: "[Entity] program-management-and-enterprise-resource-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Program Management and Enterprise Resource Governance
+# [Entity] program-management-and-enterprise-resource-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 수많은 프로젝트가 각자 열심히 일하고 있는데, 왜 회사의 전체 목표는 달성되지 않을까요? **프로그램 관리 및 전사 자원 거버넌스**는 개별 프로젝트라는 '나무'가 아닌, 기업 전체라는 '숲'을 가꾸는 **'전략적 오케스트레이션'**입니다. 서로 관련된 프로젝트들을 하나의 묶음(프로그램)으로 관리하여 시너지($1+1>2$)를 만들고, 기업의 한정된 자원(인재, 자본, 장비)을 가장 중요한 곳에 우선 배치합니다. 혼란 속에서 질서를 찾고 기업의 미래를 설계하는 **'경영의 최고 지휘부'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Fragile Benefit Tracking - Program outcomes are not quantitatively linked to Financial Growth. Improve Reporting"
         return "PASS: Robust Value Capture and Verified Enterprise ROI Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(strategic_alignment_score=0.95, resource_overload_pct=95.0, governance_transparency=0.98)
 print(engine.diagnose_program_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_program_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data enterprise-resource-utilization-and-program-roi-v2026`와 연동되어, 전 세계 글로벌 기업의 전략 실행 데이터를 분석하고 경영 자원 낭비 및 전략 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 경영 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - project-management-body-of-knowledge-pmbok-and-agile-frameworks

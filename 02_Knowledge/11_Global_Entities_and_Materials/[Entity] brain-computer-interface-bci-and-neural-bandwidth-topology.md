@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brain-computer-interface-bci-and-neural-bandwidth-topology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brain-computer-interface-bci-and-neural-bandwidth-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The direct communication pathway between a brain and an external device, focusing on the high-bandwidth recording and encoding of neural signals to restore motor function or enhance cognition."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bci", "neuralink", "neuro-engineering", "signal-decoding", "brain-bandwidth"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Neural_Signal_SNR_Audit: Monitor the quality of action potential recordings against background noise.'
-    - 'Decoding_Latency_Check: Measure the time from neural firing to cursor/actuator movement.'
-    - 'Electrode_Impedance_Scan: Detect scarring or degradation at the brain-electrode interface.'
-Trust Metrics:
+  description: "[Entity] brain-computer-interface-bci-and-neural-bandwidth-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Brain-computer Interface (BCI) and Neural Bandwidth Topology
+# [Entity] brain-computer-interface-bci-and-neural-bandwidth-topology
 
 ## 1. 개요 (Why)
 생각만으로 기계를 움직이거나, 기계의 정보를 뇌로 직접 전달하는 BCI는 인간 진화의 새로운 장입니다. 마비 환자가 의수를 제어하고, 시각 장애인이 카메라를 통해 세상을 보는 것을 넘어, 인간과 AI의 직접적인 결합을 가능하게 합니다. 핵심은 뇌의 방대한 뉴런 활동을 얼마나 손실 없이(Bandwidth), 실시간으로(Latency) 읽고 쓸 수 있느냐에 있습니다. 본 노드는 뇌-기계 연결의 무결성과 신경망 보안을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class MedicalFidelityEngine:
             return f"REJECT: Bandwidth Insufficient for Motor Control ({self.bps} bps)"
         return "PASS: Neural Bandwidth Sufficient for High-Precision Task"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(snr_db=18.2, bits_per_second=250, noise_level=0.01)
 print(engine.diagnose_neural_clarity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_neural_clarity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data bci-neural-bandwidth-and-decoding-latency-v2026`와 연동되어, 뇌-기계 인터페이스의 모든 패킷을 실시간 검사하고 디코딩 정확도를 99% 이상으로 유지함으로써 인간과 디지털 기술의 완전한 융합 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - brain-computer-interface-bci-neural-signal-decoding-and-encoding

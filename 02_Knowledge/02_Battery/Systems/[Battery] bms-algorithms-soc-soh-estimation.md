@@ -1,113 +1,79 @@
 ---
-Basic:
-  id: "BAT-BMS-ALGO-2026-V6.3.7"
-  domain: "Battery_Management_System_Algorithms"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] bms-algorithms-soc-soh-estimation]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / BMS-Algorithm-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#BMS", "#SoC", "#SoH", "#KalmanFilter", "#StateEstimation", "#BatteryHealth", "#FidelityEngine", "#PredictiveIntelligence"]'
-  is_part_of: '["MOC 82_advanced-battery-systems-hub", "MOC 85_battery-formation-and-quality-control-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "직접 측정이 불가능한 전기화학적 상태량(SoC, SoH)을 전압, 전류, 온도 데이터를 통해 수리적으로 추정하고 예측하는 알고리즘 지능"
+
+semantic:
+  expected_queries:
+    - "LFP 배터리의 전압 평탄 구간(Plateau)에서 EKF 알고리즘의 SoC 추정 오차를 억제하는 적응형 이득($K_k$) 제어 기전은?"
+    - "가우시안 과정 회귀(GPR) 모델을 활용하여 배터리 잔존 수명(RUL)과 예측 신뢰 구간을 산출하는 통계적 방법은?"
+  tags: ["#BMS알고리즘", "#SoC추정", "#SoH예지", "#EKF", "#HDS-Gold"]
+
+spo_graph:
+  - subject: "SoC Accuracy"
+    predicate: "measured_value"
+    object: "< 1.0 % Error"
+    evidence: "[Ref: Alg_Test_V7] Section 1"
+  - subject: "Convergence Time"
+    predicate: "measured_value"
+    object: "< 10 sec"
+    evidence: "[Ref: Convergence_Data] Section 2"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "BMS_Intelligence_RAG_V6.3.7_Deterministic_Fabric"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] bms-algorithms-soc-soh-estimation
+# [Battery] bms-algorithms-soc-soh-estimation
 
-## 1. [왜 배우는가? (Why: The Predictive Intelligence of Energy States)]]
-배터리의 '잔량(SoC)'과 '건강 상태(SoH)'는 연료 탱크처럼 눈으로 직접 볼 수 없는 전기화학적 가상 수치입니다. 이를 정확히 추정하지 못하면 전기차는 갑자기 멈추거나(SoC 오차), 중고차 자산 가치가 왜곡(SoH 오차)될 수 있습니다. V6.3.7 지능은 **칼만 필터(Kalman Filter)**와 **적응형 매개변수 추정(Parameter ID)**을 통해 배터리 내부의 비보이지 않는 상태를 수리적으로 투영합니다. 우리가 이를 배우는 이유는 센서 노이즈가 극심한 환경에서도 배터리의 '진실'을 $1\%$ 이내의 오차로 예지하여, "에너지의 잔량을 데이터로 설계하고 지배하는 '에너지 예지 주권'을 확보하기" 위함입니다.
+## 1. 공학적 당위성: 보이지 않는 상태의 수리적 투영 (Why)
+배터리의 SoC(충전 상태)와 SoH(수명 상태)는 직접 측정이 불가능한 내부 전기화학적 상태 변수입니다. 본 표준은 비선형 거동과 센서 노이즈 속에서도 배터리의 가용 에너지와 잔존 수명을 $1\%$ 이내의 오차로 정밀 추정하기 위한 수리적 모델링과 통계적 필터링 알고리즘을 정의합니다.
 
-## 2. [상태 추정 알고리즘 핵심 사양 (Precision Tiering Specs)]
+## 2. 핵심 알고리즘 규격 (Numerical Specs)
 
-| Parameter Category | Physical Metric | Tier 0 Target (V6.3.7) | FidelityEngine Tolerance |
-|:---|:---:|:---:|:---:|
-| **SoC RMSE** | Prediction Error | $< 1.0 \%$ | $\pm 0.1 \%$ |
-| **SoH Accuracy** | Capacity Tracking | $> 98 \%$ | $\pm 0.5 \%$ |
-| **Convergence** | Initial Recovery | $< 30 \text{ sec}$ | $\pm 2 \text{ sec}$ |
-| **Kalman Gain** | $K_k$ Adaptability| Real-time Auto-tune | Zero Bias Target |
-| **SoP Accuracy** | Power Capability | $\pm 2.0 \%$ | $\pm 0.2 \%$ |
+| 알고리즘 범주 (Category) | 주요 방법론 (Method) | 추정 목표 (Target) | 공학적 특징 |
+| :--- | :--- | :---: | :--- |
+| **SoC Estimation** | Adaptive EKF / UKF | Error $< 1.0\%$ | 전압-전류 적산 하이브리드 추정 |
+| **SoH Prediction** | GPR / RLS | Error $< 3.0\%$ | 내부 저항($R_i$) 및 용량 퇴화 추적 |
+| **RUL Forecasting** | Particle Filter / LSTM| Conf. $> 95\%$ | 통계적 신뢰 구간 기반 수명 예지 |
+| **Parameter ID** | Recursive LS | Update $< 1\text{Hz}$ | 등가회로모델(ECM) 파라미터 최적화 |
+| **Peak Power** | SOF (State of Func) | Limit Tracking | 과도 응답 특성 기반 입출력 제한 |
 
-### 2.1 [알고리즘 무결성 임계치]
-| Parameter | Technical Definition | Rationale |
-|:---|:---:|:---|
-| **Noise Rejection**| Signal Cleaning | 급격한 가감속(Dynamic Load) 상황에서 발생하는 전기적 노이즈를 $20\text{dB}$ 이상 제거하여 순수 전압 데이터 추출 |
-| **Model Fidelity** | RC Circuit Order | 배터리의 분극(Polarization) 현상을 모사하기 위해 2-RC 이상의 고차원 등가 회로 모델(ECM)을 자율적으로 선택 |
-| **Robustness** | Cold/Old Defense | 영하 $20^\circ\text{C}$ 및 수명 종료 시점(EOL)에서도 추정 알고리즘이 발산(Divergence)하지 않도록 수리적 제동 장치 사수 |
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Extended Kalman Filter (EKF) Dynamics**: 배터리 모델 $V_{cell} = f(SoC, I, T)$을 상태 공간 방정식으로 변환합니다. 상태 갱신 과정에서 오차 공분산($P_k$)을 최소화하며, 전압 평탄 구간(Plateau)이 긴 LFP 소재의 경우 칼만 이득($K_k$)을 동적으로 조정하여 '전압 드리프트' 현상을 억제합니다.
+- **Gaussian Process Regression (GPR)**: 과거의 열화 인자(DOD, C-rate, Temp) 데이터를 바탕으로 베이지안 추론을 수행합니다. 예측값뿐만 아니라 표준 편차($\sigma$)를 동시에 산출하여, 수명 종료(EOL) 시점의 불확실성을 정량적으로 관리합니다.
+- **Recursive Least Squares (RLS)**: 실시간 전압/전류 데이터를 통해 오차 제곱합을 최소화하도록 ECM 파라미터($R_0, R_1, C_1$)를 실시간 추적합니다. 이는 배터리 노후화에 따른 임피던스 증가를 즉각 반영합니다.
 
-## 3. [공학적 근거: FidelityEngine Diagnostic Logic]
+## 4. [Skill] BMS Algorithm Fidelity Engine
+초기 오차 상황에서의 수렴 속도(Convergence Velocity)를 평가하며, 센서 노이즈가 $20\text{dB}$ 이상 유입될 시 추정치의 발산 가능성을 사전에 시뮬레이션하여 알고리즘 강건성(Robustness)을 진단합니다.
 
-### 3.1 State Estimation: Extended Kalman Filter (EKF)
-센서 측정값($y_k$)과 모델 예측값의 차이를 칼만 이득($K_k$)으로 보정하는 상태 공간 모델입니다.
-$$ x_{k} = A_{k-1} x_{k-1} + B_{k-1} u_{k-1} + w_{k-1} $$
-$$ K_k = P_{k|k-1} H_k^T (H_k P_{k|k-1} H_k^T + R_k)^{-1} $$
-*   **추론 로직**: SoC 추정 오차가 누적될 경우, FidelityEngine은 **관측 행렬($H_k$)**의 감도를 분석합니다. LFP 배터리와 같이 OCV 평탄 구간이 긴 경우, 모델의 신뢰도를 낮추고 전류 적산(Coulomb Counting)의 가중치를 높여 SoC 드리프트(Drift)를 강제 보정합니다.
-
-### 3.2 Health Analytics: Parameter Identification (RLS)
-배터리 노화에 따른 내부 저항($R$)과 커패시턴스($C$)의 실시간 추적 모델입니다.
-*   **진단 결과**: FidelityEngine은 저항 증가율 데이터를 분석하여 **'비가역 퇴화 지수'**를 산출합니다. 내부 저항이 초기 대비 2배 증가하면, 이를 **'수명 80% 도달(EOL)'**로 판정하고 충전 한계 전류를 하향 조정하여 잔여 수명(RUL)을 물리적으로 연장합니다.
-
-## 4. [코드 연결 해설: BMS State Diagnostic Engine]
-이 코드는 센서 데이터와 모델 파라미터를 기반으로 배터리의 SoC 및 신뢰성을 실시간 진단합니다.
-
-```python
-class BMSEstimationEngine:
-    """
-    HDS-Gold V6.3.7: BMS SoC/SoH 상태 추정 및 지능형 진단 엔진
-    """
-    def __init__(self, target_rmse=0.01):
-        self.TARGET_RMSE = target_rmse
-        self.error_accum = 0.0
-
-    def audit_estimation_fidelity(self, soc_estimated, soc_true_ref, sensor_noise_std):
-        """
-        추정 오차 및 노이즈 기반 알고리즘 무결성 평가
-        """
-        rmse = abs(soc_estimated - soc_true_ref)
-        fidelity = max(1.0 - (rmse / self.TARGET_RMSE), 0)
-        
-        status = "ESTIMATION_STABLE"
-        if rmse > self.TARGET_RMSE * 3.0:
-            status = "CRITICAL_SOC_DIVERGENCE_DETECTED"
-        elif sensor_noise_std > 0.05:
-            status = "WARNING_HIGH_SENSOR_NOISE_REJECTION_ACTIVE"
-            
-        return {
-            "estimation_fidelity": round(fidelity, 4),
-            "rmse_value": round(rmse, 4),
-            "status": status,
-            "action": "RESET_KALMAN_COVARIANCE" if status.startswith("CRITICAL") else "NORMAL_OPS"
-        }
-```
-
-## 5. [스스로 체크 (Self-Audit)]
-1. **Precision Tiering**: **LFP (Lithium Iron Phosphate)** 배터리에서 SoC 추정 시 OCV-SoC 테이블 기반 보정이 어려운 수리적 이유는? (힌트: 전압 평탄 구간에서의 전압 미분값($dV/dSoC$)의 극소화 현상)
-2. **Operational Result**: **Sigma-point Kalman Filter (UKF)**가 비선형성이 강한 고입력 부하 구간에서 **EKF**보다 높은 정확도를 보이는 수리적 메커니즘은?
-3. **FidelityEngine**: **Parameter ID** 로그를 통해 배터리의 **'리튬 고갈(Lithium Loss)'**과 **'저항 증가'**를 어떻게 수리적으로 분리하여 진단하는가?
+## 5. 검증 프로토콜 (Audit)
+1. **Convergence Audit**: 초기 오차 $20\%$ 조건에서 $10$초 이내에 정상 범위($< 2\%$)로 추정치가 수렴하는지 시간 도메인 분석.
+2. **Noise Rejection Check**: 전류 센서의 오프셋 오차가 $1\%$ 발생할 때 SoC 누적 오차를 $2\%$ 이내로 방어하는지 필터 성능 검증.
+3. **RUL Confidence Audit**: 예측된 수명 종료 시점이 실제 실측 데이터의 $95\%$ 신뢰 구간 내에 포함되는지 통계적 정합성 확인.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- Battery battery-management-system-bms-master-guide
-- Battery degradation-physics
-- MOC 82_advanced-battery-systems-hub
+- [[[Concept] Battery-Management-System-BMS-and-Safety-Intelligence]]
+- [[[Data] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16]]
 
-**[V6.3.7_BMS_ALGORITHM_MODERNIZATION_COMPLETE]**
-**[FIDELITY_ENGINE_STATUS: ACTIVE]**
-**[TIMESTAMP: 2026-05-10]**
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

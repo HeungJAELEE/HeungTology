@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hardenability-and-jominy-end-quench-metallurgy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hardenability-and-jominy-end-quench-metallurgy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The capability of a metal alloy to be hardened by the formation of martensite as a result of a given heat treatment (Hardenability) and the standardized physical test used to measure this property by spraying water on one end of a heated steel bar (Jominy End-Quench Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hardenability", "jominy-test", "metallurgy", "heat-treatment", "martensite", "quenching", "steel-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Hardenability_Fidelity_Audit: Evaluate the ''Jominy Hardness Profile'' to identify if the high-fidelity ''Critical Diameter'' ($D_i$) is sufficient for the target part''s cross-section to reach full hardness at the core.'
-    - 'Phase_Integrity_Check: Analyze the high-fidelity ''Austenite'' grain size before quenching; large grains increase high-fidelity hardenability but reduce toughness, causing potential cracking.'
-    - 'Quench_Fidelity_Scan: Monitor the water spray pressure and temperature during the high-fidelity Jominy test to verify that the cooling rate matches the ASTM A255 standard exactly.'
-Trust Metrics:
+  description: "[Entity] hardenability-and-jominy-end-quench-metallurgy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗡️ Hardenability and Jominy End-Quench Metallurgy Physics
+# [Entity] hardenability-and-jominy-end-quench-metallurgy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 똑같은 철이라도 어떤 것은 속까지 단단하고, 어떤 것은 겉만 단단할까요? **경화능(Hardenability) 및 조미니 시험 금속학 물리**는 금속을 달구었다가 식힐 때, 얼마나 깊은 곳까지 '강철의 근육(마르텐사이트)'이 생기는지를 결정하는 **'금속의 잠재력 측정'** 기술입니다. 조미니 시험은 뜨거운 철 막대기의 '끝부분'에만 물을 뿌려, 거리에 따라 변하는 단단함을 한눈에 보여주는 우아한 실험입니다. **'재료의 깊숙한 곳까지 강인함을 전달하여 거대한 기어와 샤프트가 부러지지 않게 만드는 금속 열처리의 유전자 지도'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Standard Violation - Jominy test water too warm. High-fidelity cooling rate inconsistent with ASTM A255. Result is logically invalid"
         return "PASS: Validated Test Conditions and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(jominy_distance_mm=10.0, measured_hrc=45.0, alloy_factor_cr_ni=1.5)
 print(engine.diagnose_hardenability_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_hardenability_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data jominy-hardenability-curves-for-alloy-steels-v2026`와 연동되어, 전 세계 주요 자동차 및 중장비 부품사의 재료 데이터를 실시간 분석하고 부품 파손 및 열처리 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 강인함 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-treatment-process-and-microstructural-transformation-physics

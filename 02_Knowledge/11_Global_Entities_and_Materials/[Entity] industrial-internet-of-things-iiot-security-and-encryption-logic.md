@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-internet-of-things-iiot-security-and-encryption-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-internet-of-things-iiot-security-and-encryption-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The practice of protecting interconnected industrial devices and networks from cyber threats (IIoT Security) and the physical logic of data scrambling using cryptographic algorithms (Encryption Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iiot-security", "encryption", "industrial-cybersecurity", "pki", "tls", "zero-trust", "ot-security", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Security_Fidelity_Audit: Evaluate the ''Authentication Latency'' to identify if high-fidelity ''Certificate Validation'' is slowing down real-time high-fidelity control commands.'
-    - 'Encryption_Integrity_Check: Analyze the high-fidelity ''Encryption Algorithm Strength'' (e.g., AES-256) to ensure the high-fidelity ''Brute-force Resistance'' meets the 20-year industrial lifecycle.'
-    - 'Trust_Fidelity_Scan: Monitor the high-fidelity ''Device Identity'' via TPM (Trusted Platform Module) to verify that no high-fidelity ''Man-in-the-Middle'' (MITM) spoofing is occurring.'
-Trust Metrics:
+  description: "[Entity] industrial-internet-of-things-iiot-security-and-encryption-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Industrial Internet of Things (IIoT) Security and Encryption Logic
+# [Entity] industrial-internet-of-things-iiot-security-and-encryption-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 로봇 센서 하나가 해킹되어 가짜 데이터를 보낸다면 어떤 일이 벌어질까요? **IIoT 보안 및 암호화 로직**은 공장의 모든 데이터에 '디지털 자물쇠'를 채우고, 오직 허락된 기계들끼리만 속삭이게 만드는 **'공장의 방탄조끼'** 기술입니다. 일반 컴퓨터 보안과 달리, 0.001초의 지연도 허용하지 않으면서도 수만 개의 기기가 뿜어내는 데이터를 안전하게 지켜야 합니다. **'데이터의 무결성을 암호학적으로 증명하여 해커의 침입으로부터 제조 현장의 물리적 안전을 사수하는 지능형 사이버-물리 방어막'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Firmware Corruption - High-fidelity hash check failed. Device may have been high-fidelity tampered or corrupted. Quarantine node immediately"
         return "PASS: Validated Secure Boot and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(encrypt_latency_ms=2.0, auth_failure_count=0, cert_expiry_days=90)
 print(engine.diagnose_security_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_security_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data iiot-vulnerability-and-encryption-overhead-v2026`와 연동되어, 전 세계 주요 스마트 팩토리의 사이버 위협 데이터를 실시간 분석하고 해킹 침입 및 데이터 위조 사고 확률을 0.001% 이하로 억제함으로써 지능형 초연결 제조 문명의 사이버 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-internet-of-things-iiot-and-edge-computing-logic

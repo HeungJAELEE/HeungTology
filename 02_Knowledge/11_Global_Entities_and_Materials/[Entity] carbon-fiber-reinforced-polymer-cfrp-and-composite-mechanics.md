@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-fiber-reinforced-polymer-cfrp-and-composite-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-fiber-reinforced-polymer-cfrp-and-composite-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A lightweight, extremely strong, and rigid plastic which contains carbon fibers (Carbon Fiber Reinforced Polymer) and the study of how these combined materials distribute stress and resist deformation based on fiber orientation and matrix bonding (Composite Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cfrp", "carbon-fiber", "composite-materials", "aerospace", "structural-mechanics", "lightweighting", "anisotropy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Material_Fidelity_Audit: Evaluate the ''Fiber Volume Fraction'' ($V_f$) and void content to identify if the manufacturing process (Autoclave/RTM) has achieved optimal structural density.'
-    - 'Failure_Integrity_Check: Analyze the ''Interlaminar Shear Stress'' to ensure the risk of ''Delamination'' (layer separation) is minimized under complex loading conditions.'
-    - 'Anisotropy_Fidelity_Scan: Monitor the fiber orientation during layup to verify that the ''Stiffness Matrix'' aligns with the primary load paths of the aerospace or automotive component.'
-Trust Metrics:
+  description: "[Entity] carbon-fiber-reinforced-polymer-cfrp-and-composite-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧵 Carbon Fiber Reinforced Polymer (CFRP) and Composite Mechanics
+# [Entity] carbon-fiber-reinforced-polymer-cfrp-and-composite-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철보다 5배 튼튼하면서 무게는 알루미늄보다 가벼운 꿈의 소재가 있다면 어떨까요? **탄소 섬유 강화 플라스틱(CFRP) 및 복합재 역학**은 머리카락보다 얇은 탄소 실을 엮어 세상에서 가장 가볍고 강력한 '뼈대'를 만드는 **'소재의 오케스트라'** 기술입니다. 단순한 플라스틱이 아니라, 힘의 방향에 따라 섬유를 배치하여 원하는 부분만 극도로 튼튼하게 만드는 **'맞춤형 강도 설계'**입니다. 하늘을 나는 비행기부터 초고속 자동차까지 가벼움의 한계를 돌파하는 **'지능형 경량화의 혁명'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal Delamination Detected - Layer separation found via ultrasonic/acoustic scan. Part structurally unsafe for flight"
         return "PASS: Solid Laminate Integration and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fiber_volume_fraction=0.62, void_content_pct=0.5, curing_pressure_bar=7.0)
 print(engine.diagnose_cfrp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cfrp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cfrp-tensile-strength-and-delamination-risk-v2026`와 연동되어, 전 세계 주요 항공기 및 우주선 부품의 생산 데이터를 실시간 분석하고 보이지 않는 내부 균열 및 구조 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 경량 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - boeing-787-dreamliner-and-composite-airframe-engineering

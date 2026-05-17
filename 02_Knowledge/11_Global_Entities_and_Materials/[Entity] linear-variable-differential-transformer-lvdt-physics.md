@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "linear-variable-differential-transformer-lvdt-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] linear-variable-differential-transformer-lvdt-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrical transformer used for measuring linear displacement (LVDT) and the physical study of magnetic flux coupling between a primary coil and two secondary coils (Differential Transformer Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lvdt", "linear-sensor", "differential-transformer", "displacement-measurement", "inductive-sensor", "metrology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Fidelity_Audit: Evaluate the ''Linearity Error'' to identify if high-fidelity ''Magnetic Saturation'' or ''Core Misalignment'' is distorting the displacement high-fidelity reading.'
-    - 'Signal_Integrity_Check: Analyze the high-fidelity ''Phase Shift'' between primary and secondary signals to ensure the high-fidelity ''Demodulation'' is correctly identifying the high-fidelity ''Direction'' of motion.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Winding Resistance'' change to verify that high-fidelity ''Thermal Drift'' is compensated by the differential high-fidelity architecture.'
-Trust Metrics:
+  description: "[Entity] linear-variable-differential-transformer-lvdt-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Linear Variable Differential Transformer (LVDT) Physics
+# [Entity] linear-variable-differential-transformer-lvdt-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 항공기의 날개가 1mm 휠 때나, 거대한 발전기 터빈의 미세한 떨림을 어떻게 수십 년 동안 고장 없이 잴 수 있을까요? **LVDT 및 차동 변압기 물리**는 직접 닿지 않고도 위치를 알아내는 **'자석의 눈'** 기술입니다. 부품끼리 서로 비비지 않기 때문에 마찰이 없고 수명이 무한에 가까워, 극저온의 우주 공간부터 가혹한 엔진 내부까지 가장 믿음직한 위치 센서로 사용됩니다. **'전자기 유도와 차동 전압의 원리를 이용해 물리적 이동을 전기적 신호로 완벽하게 치환하는 지능형 고정밀 변위 계측 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Linearity Loss - High-fidelity magnetic core damage or high-fidelity housing deformation. Sensor high-fidelity accuracy compromised"
         return "PASS: Validated Displacement Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(output_voltage=5.0, phase_angle_deg=0.5, excitation_freq_hz=2500.0)
 print(engine.diagnose_lvdt_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_lvdt_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data lvdt-linearity-and-resolution-benchmarks-v2026`와 연동되어, 전 세계 주요 항공기 비행 제어 시스템 및 원자력 발전소의 실시간 센서 데이터를 분석하고 신호 왜곡 및 센서 고장 사고 확률을 0.000001% 이하로 억제함으로써 지능형 제어 문명의 위치 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - linear-actuator-and-precision-motion-control-physics

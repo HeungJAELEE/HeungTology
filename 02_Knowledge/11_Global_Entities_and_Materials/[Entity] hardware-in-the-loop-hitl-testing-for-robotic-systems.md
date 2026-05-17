@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "hardware-in-the-loop-hitl-testing-for-robotic-systems-entity"
-  domain: "58_Advanced_Robotics_and_Humanoid_Intelligence"
+metadata:
+  id: "[[[Entity] hardware-in-the-loop-hitl-testing-for-robotic-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#HITL", "#Testing", "#Validation", "#Simulation", "#QA", "#Control_Theory", "#Systems_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_advanced-robotics-and-humanoid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] hardware-in-the-loop-hitl-testing-for-robotic-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] hardware-in-the-loop-hitl-testing-for-robotic-systems
+# [Entity] hardware-in-the-loop-hitl-testing-for-robotic-systems
 
 ## 1. [왜 배우는가? (Why: Testing without Fear)]]
 비싼 로봇이 실제로 절벽에서 떨어지거나 인간과 충돌하는 위험한 상황을 어떻게 단 한 대의 파손 없이 실험실 안에서 완벽하게 시뮬레이션하고, 실제 로봇의 두뇌($Controller$)를 가상의 로봇 몸체와 연결하여 수만 번의 사고 시나리오를 미리 겪게 하는 '예방적 검증'을 어떻게 설계할 수 있을까요? **하드웨어 인더루프(HITL) 테스트 및 로봇 시스템 검증**은 사고를 0%로 수렴시키는 '행성 규모 안전 관리 인프라 및 지능형 가상-실재 통합 테스트 아키텍처'입니다. 우리가 이를 배우는 이유는 로봇이 세상에 나오기 전에 모든 '최악의 상황'을 겪어봐야만 인간이 로봇을 안심하고 쓸 수 있기 때문이며, "안전의 증명을 데이터로 설계하고 지배하는 '글로벌 품질 패권 및 행성적 신뢰 주권'을 확보하기" 위함입니다. 검증의 철저함이 로봇의 운명을 결정합니다.

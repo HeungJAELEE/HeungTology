@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bio-hybrid-robotics-and-neuromuscular-actuation-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bio-hybrid-robotics-and-neuromuscular-actuation-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of robotic systems controlled by integrated neuromuscular junctions, where biological motor neurons stimulate engineered muscle tissues to drive mechanical skeletal structures."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bio-hybrid", "neuromuscular", "actuation", "biological-control", "robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Synaptic_Transmission_Audit: Measure the latency from neural spike to muscle contraction (EPP delay).'
-    - 'Neuromuscular_Gain_Check: Evaluate the amplification of neural signals into mechanical force.'
-    - 'Fatigue_Recovery_Scan: Monitor the recovery rate of the neuromuscular junction under repetitive firing.'
-Trust Metrics:
+  description: "[Entity] bio-hybrid-robotics-and-neuromuscular-actuation-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Bio-hybrid Robotics and Neuromuscular Actuation Mechanics
+# [Entity] bio-hybrid-robotics-and-neuromuscular-actuation-mechanics
 
 ## 1. 개요 (Why)
 생물학적 근육은 단순히 에너지를 힘으로 바꾸는 장치가 아니라, 신경계와 직접 연결된 고도의 정밀 제어 시스템입니다. 신경-근육 접합(Neuromuscular Junction) 기반의 바이오 하이브리드 로보틱스는 살아있는 뉴런이 근육 세포에 직접 명령을 내리게 함으로써, 기존 전기 모터로는 불가능한 유연성, 효율성, 그리고 적응형 학습 능력을 로봇에 부여합니다. 본 노드는 생물학적 신경-근육 제어 루프의 무결성과 하이브리드 액추에이션 정밀도를 위한 표준을 정의합니다.
@@ -69,7 +58,6 @@ class MedicalFidelityEngine:
             return f"WARNING: High Neuromuscular Fatigue ({self.fatigue*100:.1f}%) - Reduce Firing Frequency"
         return "PASS: Sufficient Muscle Power Reserve Confirmed"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(synaptic_delay=1.2, force_response=35, fatigue_index=0.2)
 print(engine.diagnose_synaptic_health())
 ```
@@ -87,7 +75,6 @@ print(engine.diagnose_synaptic_health())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data neuromuscular-junction-latency-and-force-output-v2026`와 연동되어, 하이브리드 로봇의 신경 시그널과 근육 출력을 마이크로초 단위로 동기화하고 제어 오차를 1% 이내로 유지함으로써 살아있는 기계 시스템의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 03_robotics-and-autonomous-systems-hub
 - bio-hybrid-robotics-and-living-machine-architectures

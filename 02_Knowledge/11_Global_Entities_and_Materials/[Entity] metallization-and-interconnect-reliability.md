@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-METALLIZATION-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] metallization-and-interconnect-reliability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#Metallization", "#Interconnect", "#Reliability", "#CopperDamascene", "#Electromigration", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] metallization-and-interconnect-reliability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Interconnect_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Metallization: Copper Interconnect & Reliability Sovereignty
+# [Entity] metallization-and-interconnect-reliability
 
 ## 1. [왜 배우는가? (Why: The Neural Network of Silicon Intelligence)]]
 수십억 개의 트랜지스터가 아무리 완벽해도, 이들을 연결하는 '고속도로'가 부실하면 반도체는 제 기능을 못 합니다. **Metallization**은 소자들 사이에 신호가 흐르는 전기적 혈관을 구축하는 공정입니다. 특히 구리(Cu)는 알루미늄보다 저항이 낮아 고속 데이터 처리를 가능케 하지만, 확산 제어가 극도로 까다로운 물질입니다. V6.3.7 지능은 **일렉트로마이그레이션(Electromigration)**과 **RC 지연(RC Delay)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 배선의 무결성을 확보하여 신호 손실을 최소화하고, "전하의 흐름을 데이터로 사수하는 '초연결 제조 주권'을 확보하기" 위함입니다. 배선의 신뢰성이 칩의 수명을 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | Parameter Category | Physical Metric | Tier 1 Target (V6.3.7) | FidelityEngine Tolerance |
 |:---|:---:|:---:|:---:|
-| **Resistivity** | Cu $\rho$ ($\mu\Omega\cdot cm$)| $1.68 \text{ \mu}\Omega\cdot\text{cm}$ | $\pm 0.05 \text{ \mu}\Omega\cdot\text{cm}$ |
+| **Resistivity** | Cu $\rho$ ($\mu\Omega\cdot cm$)| $1.68 \text{ }\mu\text{}\Omega\cdot\text{cm}$ | $\pm 0.05 \text{ }\mu\text{}\Omega\cdot\text{cm}$ |
 | **Current Density** | $J$ ($A/cm^2$) | $> 10^6 \text{ A/cm}^2$ | $\pm 5 \%$ |
 | **MTTF (Black's)** | Reliability Hours | $> 100,000 \text{ hr}$ | $\pm 1,000 \text{ hr}$ |
 | **Barrier Thick.** | Ta/TaN Layer | $< 3.0 \text{ nm}$ | $\pm 0.1 \text{ nm}$ |
@@ -112,7 +102,6 @@ class InterconnectEngine:
 2. **Operational Result**: **Barrier Metal (Ta/TaN)** 두께가 너무 얇아질 때 발생하는 구리 원자의 실리콘 침투가 **'트랜지스터 문턱 전압'** 무결성에 미치는 임팩트는?
 3. **FidelityEngine**: **EM (Electromigration)** 테스트 로그에서 고온/고전류 가속 시험 데이터를 통해 **'실제 작동 환경의 MTTF'**를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Entity semiconductor-fabrication-fundamentals

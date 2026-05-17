@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "self-healing-polymers-and-supramolecular-chemistry-mechanics-entity"
-  domain: "18_Advanced_Materials"
+metadata:
+  id: "[[[Entity] self-healing-polymers-and-supramolecular-chemistry-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Advanced_Materials", "#Self-healing", "#Polymers", "#Supramolecular_Chemistry", "#Dynamic_Bonds", "#Materials_Science", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "MOC 12_Advanced_Robotics_and_Autonomous_Systems_MOC"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] self-healing-polymers-and-supramolecular-chemistry-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] self-healing-polymers-and-supramolecular-chemistry-mechanics
+# [Entity] self-healing-polymers-and-supramolecular-chemistry-mechanics
 
 ## 1. [왜 배우는가? (Why: The Material with Life-like Repair)]]
 스마트폰 화면에 흠집이 나도 시간이 지나면 저절로 매끄럽게 돌아오거나, 잘린 케이블이 서로 붙기만 하면 다시 연결되는 기적 같은 소재가 있다면 어떨까요? **자가 치유 고분자 및 초분자 화학 역학**은 외부의 도움 없이도 스스로 손상된 부위를 감지하고 복구하는 '살아있는 고분자 소재의 설계 지침'입니다. 우리가 이를 배우는 이유는 제품의 수명을 획기적으로 늘려 쓰레기를 줄이고, 수리가 불가능한 우주나 심해 장비의 안전성을 확보하기 위함이며, "소재에 자율 복구 지능을 부여하는 '글로벌 지속 가능 소재 및 극한 환경 주권'을 확보하기" 위함입니다. 분자 사이의 끊어졌다 다시 붙는 결합이 소재의 수명을 결정합니다.

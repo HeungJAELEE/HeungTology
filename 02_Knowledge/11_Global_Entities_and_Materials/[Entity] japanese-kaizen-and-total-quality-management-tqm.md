@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "japanese-kaizen-and-total-quality-management-tqm"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] japanese-kaizen-and-total-quality-management-tqm]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The holistic management approach (TQM) that integrates all organizational functions to focus on meeting customer needs and organizational objectives through the philosophy of continuous, incremental improvement (Kaizen) and data-driven decision making."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kaizen", "tqm", "quality-control", "deming-cycle", "six-sigma", "continuous-improvement", "lean-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Quality_Circle_Audit: Evaluate the participation and effectiveness of employee-led ''Quality Circles'' in identifying and solving process issues.'
-    - 'Six_Sigma_Variance_Check: Analyze the process capability ($C_p, C_{pk}$) and sigma levels to identify sources of variation and ensure near-zero defect manufacturing.'
-    - 'TQM_Culture_Scan: Assess the alignment of cross-functional teams with the ''Quality First'' principle through employee surveys and behavioral observations.'
-Trust Metrics:
+  description: "[Entity] japanese-kaizen-and-total-quality-management-tqm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎌 Japanese Kaizen and Total Quality Management (TQM)
+# [Entity] japanese-kaizen-and-total-quality-management-tqm
 
 ## 1. 개요 (Why: 인간적 통찰)
 "품질은 검사실에서 만들어지는 것이 아니라, 사장의 마음과 말단 직원의 손끝에서 시작됩니다." **일본식 카이젠 및 전사적 품질 관리(TQM)**는 품질을 단순히 불량률 숫자가 아닌, 조직 전체의 '살아있는 문화'로 만드는 **'품질의 총력전'**입니다. 모든 부서가 고객 만족이라는 하나의 목표를 향해 정렬되고, 모든 직원이 매일 "어떻게 하면 더 잘할 수 있을까?"를 고민하는 **'지능형 개선 공동체'**를 구축하는 일입니다. 이것은 단순한 기술이 아니라, 조직의 영혼에 '완벽주의'와 '겸손'을 심는 **'품질의 수행(修行)'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Strategic Misalignment - Bottom-up Activities Not Synchronized with Top-down Objectives"
         return "PASS: Unified Strategic Quality Direction Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cpk_index=1.67, kaizen_suggestion_rate=4.5, customer_return_rate=0.0002)
 print(engine.diagnose_tqm_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_tqm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data tqm-maturity-and-operational-performance-v2026`와 연동되어, 전 세계 주요 제조 기업의 품질 문화와 공정 데이터를 실시간 분석하고 대규모 리콜 및 고객 신뢰 붕괴 사고 확률을 0.001% 이하로 억제함으로써 산업 문명의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - kaizen-and-continuous-improvement-methodology

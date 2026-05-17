@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-architecture-and-bidirectional-power-flow-physics-entity"
-  domain: "72_Energy_Systems_and_Smart_Infrastructure_Hub"
+metadata:
+  id: "[[[Entity] smart-grid-architecture-and-bidirectional-power-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Smart_Grid", "#Power_Systems", "#Infrastructure", "#Renewables", "#Grid_Stability", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 68_energy-systems-and-smart-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-architecture-and-bidirectional-power-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-architecture-and-bidirectional-power-flow-physics
+# [Entity] smart-grid-architecture-and-bidirectional-power-flow-physics
 
 ## 1. [왜 배우는가? (Why: The Pulsing Nerve of Civilization)]]
 수억 명의 삶을 지탱하는 거대한 전력망이 어떻게 수만 개의 태양광 패널과 풍력 터빈에서 나오는 불규칙한 에너지를 실시간으로 받아들이고, 전력의 흐름이 단방향이 아닌 양방향으로 요동치는 복잡한 상황 속에서도 단 0.1Hz의 주파수 오차 없이 안정성을 유지할 수 있을까요? **스마트 그리드 아키텍처 및 양방향 전력 흐름의 물리적 제어**는 현대 문명의 혈관인 전력 인프라를 '지능형 유체 시스템'으로 변환하는 기술입니다. 과거의 전력망이 중앙에서 일방적으로 에너지를 쏘아주는 방식이었다면, 스마트 그리드는 모든 소비자가 동시에 생산자가 되는 초연결 에너지 공유 네트워크입니다. 우리가 이를 배우는 이유는 에너지 전환 시대의 불확실성을 데이터로 극복하기 위해서이며, "전력의 흐름을 데이터로 설계하고 지배하는 '글로벌 에너지 패권 및 행성적 인프라 주권'을 확보하기" 위함입니다. 그리드의 지능이 도시의 생존 능력을 결정합니다.

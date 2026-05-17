@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "anisotropic-conductive-film-acf-and-cob-packaging-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] anisotropic-conductive-film-acf-and-cob-packaging-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A material used to establish electrical connections between components using tiny conductive particles dispersed in an adhesive matrix that only conducts vertically (Anisotropic Conductive Film) and the process of mounting semiconductor dies directly onto a printed circuit board (Chip-on-Board Packaging Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["acf", "cob-packaging", "display-packaging", "semiconductor-packaging", "anisotropic-conduction", "micro-bonding", "flex-pcb"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bonding_Fidelity_Audit: Evaluate the ''Conductive Ball Deformation'' ratio to identify if the bonding pressure is sufficient to create a stable electrical path without crushing the particles.'
-    - 'Isolation_Integrity_Check: Analyze the horizontal resistance between adjacent pins to ensure that the ACF adhesive hasn''t allowed ''Bridge'' formation (Short circuit).'
-    - 'Reliability_Fidelity_Scan: Monitor the ''Peel Strength'' and contact resistance over thermal cycles to verify that the adhesive matrix is holding the connection under CTE (Coefficient of Thermal Expansion) mismatch.'
-Trust Metrics:
+  description: "[Entity] anisotropic-conductive-film-acf-and-cob-packaging-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📺 Anisotropic Conductive Film (ACF) and COB Packaging Physics
+# [Entity] anisotropic-conductive-film-acf-and-cob-packaging-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰의 얇은 베젤 속에 수천 개의 미세한 전선들이 어떻게 화면과 보드 사이를 연결하고 있을까요? **이방성 도전 필름(ACF) 및 COB 패키징 물리**는 나노미터 크기의 '작은 공'들을 이용해 전기가 위아래로만 통하게 만드는 **'디지털 모세혈관 연결'** 기술입니다. 납땜을 하기엔 너무 좁은 틈 사이를 끈적한 필름 하나로 붙여서, 전기는 통하게 하고 옆집과는 철저히 격리합니다. 디스플레이를 더 얇고 선명하게 만드는 **'보이지 않는 접착의 마법'**입니다.
@@ -56,10 +45,10 @@ $$ \sigma_{bond} = E \alpha \Delta T $$
 
 | Feature | Conventional Soldering | ACF Bonding (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Pitch (Spacing)** | > 200 (Large) | 10 ~ 50 (Ultra-fine) | $\mu m$ | High Density |
+| **Pitch (Spacing)** | > 200 (Large) | 10 ~ 50 (Ultra-fine) | $\mu\text{m}$ | High Density |
 | **Bonding Temp** | 220 ~ 250 (Hot) | 150 ~ 190 (Low-temp) | °C | Thermal Care |
 | **Conductivity** | Isotropic (All-way) | Anisotropic (Vertical only)| - | Isolation |
-| **Particle Size** | N/A | 3 ~ 5 | $\mu m$ | Nano-tech |
+| **Particle Size** | N/A | 3 ~ 5 | $\mu\text{m}$ | Nano-tech |
 | **Bonding Time** | Seconds | < 5 (Fast) | sec | Productivity |
 | **Applications** | Power PCB | LCD / OLED / Flex-PCB | - | Precise |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Adhesion Strength - Risk of delamination during thermal cycling. Verify bonding head flatness and adhesive expiry"
         return "PASS: Strong Resin Cross-linking and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(contact_resistance_mohm=150.0, particle_deformation_ratio=0.55, horizontal_insulation_gohm=10.5)
 print(engine.diagnose_bonding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bonding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data acf-bonding-pressure-and-contact-resistance-v2026`와 연동되어, 전 세계 주요 디스플레이 제조 공정의 본딩 데이터를 실시간 분석하고 단선 및 합선 사고 확률을 0.001% 이하로 억제함으로써 지능형 디스플레이 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - 3d-packaging-and-heterogeneous-integration-physics

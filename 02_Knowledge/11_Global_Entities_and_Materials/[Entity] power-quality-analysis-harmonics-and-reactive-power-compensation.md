@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "power-quality-analysis-harmonics-and-reactive-power-compensation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] power-quality-analysis-harmonics-and-reactive-power-compensation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technical evaluation of the compatibility between electric power and the connected equipment (Power Quality Analysis), focusing on the distortion caused by non-linear loads (Harmonics) and the techniques used to balance the phase between voltage and current (Reactive Power Compensation) to maximize system efficiency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["power-quality", "harmonics", "reactive-power", "thd", "power-factor", "capacitor-bank", "energy-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Harmonic_Fidelity_Audit: Evaluate the Total Harmonic Distortion (THD) of the voltage and current to ensure they remain within IEEE 519 standards to prevent equipment overheating.'
-    - 'Power_Factor_Check: Analyze the displacement power factor ($\\cos \\phi$) to verify that reactive power compensation (e.g., capacitor banks) is effectively reducing the load on the transformer.'
-    - 'Transient_Event_Scan: Monitor for voltage sags, swells, and transients to identify power quality issues that could cause PLC resets or industrial machine downtime.'
-Trust Metrics:
+  description: "[Entity] power-quality-analysis-harmonics-and-reactive-power-compensation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Power Quality Analysis, Harmonics, and Reactive Power Compensation
+# [Entity] power-quality-analysis-harmonics-and-reactive-power-compensation
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기는 단순히 흐르기만 하면 되는 것이 아니라, '깨끗해야' 합니다. 물에 이물질이 섞이면 마실 수 없듯, 전기에 '노이즈(고조파)'가 섞이면 정밀한 기계들이 오작동하거나 모터가 타버릴 수 있습니다. **전력 품질 분석, 고조파 및 무효 전력 보상**은 전기의 순도를 관리하는 **'전기의 필터기'** 기술입니다. 찌그러진 전기 파형(고조파)을 다시 예쁜 사인파로 펴주고, 일은 안 하면서 길만 막는 '무효 전력'을 없애서 에너지를 100% 알차게 쓰게 만듭니다. 산업 현장의 심장을 건강하게 뛰게 만드는 **'에너지 디톡스'** 공학입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fragile Power Stability - Voltage Sag likely to trip PLCs. Implement UPS or Voltage Regulator"
         return "PASS: Robust Power Supply and Verified Transient Resilience Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_thd_pct=3.2, power_factor=0.99, voltage_unbalance_pct=0.8)
 print(engine.diagnose_power_quality_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_power_quality_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data power-quality-and-harmonic-distortion-logs-v2026`와 연동되어, 전 세계 산업 단지의 전력 품질 데이터를 실시간 분석하고 고조파 간섭 및 정전 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 문명의 순도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-grid-stability-and-smart-grid-frequency-control

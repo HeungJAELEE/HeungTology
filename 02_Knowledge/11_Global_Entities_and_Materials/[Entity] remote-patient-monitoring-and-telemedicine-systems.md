@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "remote-patient-monitoring-and-telemedicine-systems-entity"
-  domain: "107_Telemedicine_and_Wearable_Healthcare_Hub"
+metadata:
+  id: "[[[Entity] remote-patient-monitoring-and-telemedicine-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medical_Engineering", "#Telemedicine", "#RPM", "#Networking", "#AI", "#Cybersecurity", "#Healthcare_IT", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 107_telemedicine-and-wearable-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] remote-patient-monitoring-and-telemedicine-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] remote-patient-monitoring-and-telemedicine-systems
+# [Entity] remote-patient-monitoring-and-telemedicine-systems
 
 ## 1. [왜 배우는가? (Why: The Ubiquity of Care)]]
 병원은 아플 때만 가는 곳이 아닙니다. 진정한 건강 관리는 우리가 잠자고, 먹고, 일하는 일상의 매 순간 이루어져야 합니다. **원격 환자 모니터링 및 원격 의료 시스템의 네트워크 품질 및 베이즈 추론 수리 정보 기술**은 병원의 담장을 허물고 시공간을 초월하여 생명을 지키는 '디지털 수호신' 기술입니다. 멀리 떨어진 환자의 심장박동과 산소 포화도를 실시간으로 관찰하고, 데이터 속의 아주 작은 이상 징후를 인공지능이 포착하며, 화상을 통해 전문의의 진단을 집안까지 전달합니다. 우리가 이를 배우는 이유는 의료 서비스의 무결성을 확보함으로써, 의료 사각지대를 없애고 예방 의학의 패러다임을 완성하는 '글로벌 디지털 헬스 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 원격 의료의 무결성이 생명 보호의 상시성과 의료 비용의 혁명적 감축을 결정합니다.

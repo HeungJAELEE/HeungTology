@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "CONCEPT-INF-RENEWABLE-MASTER-2026-V6"
-  domain: "05_Infrastructure"
+metadata:
+  id: "[[[Energy] Renewable-Energy]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Energy'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] Renewable-Energy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] Renewable-Energy
@@ -111,7 +101,6 @@ class RenewableInfrastructureFidelityEngine:
 2. **Betz's Law**에 따라 풍력 터빈이 바람 에너지의 $59.3\%$ 이상을 추출할 수 없는 물리적 이유는 공기의 **Continuity Equation** (연속 방정식) 관점에서 무엇인가?
 3. 해상 풍력의 **Wake Effect** (후류 효과)가 단지 내 후방 터빈의 발전 무결성에 미치는 수리적 감쇄 모델과 배치 최적화 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/05_Infrastructure/Energy/Concept photovoltaic-physics-and-semiconductor-junctions
 - 02_Knowledge/05_Infrastructure/Energy/Concept wind-turbine-aerodynamics-and-betz-limit

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-EDGE-ARCH-2026-V6"
+metadata:
+  id: "[[[AI] Edge-Computing-Architecture]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Edge_Computing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Edge-Computing-Architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Edge-Computing-Architecture
@@ -115,7 +105,6 @@ class EdgeTrafficOrchestrator:
 2. 엣지 노드 간의 **Clock Synchronization (시간 동기화)** 오류가 다중 로봇 협업(Multi-robot Collaboration) 시스템에서 발생시키는 물리적 충돌 리스크는?
 3. **Serverless Computing (FaaS)** 모델을 엣지에 적용했을 때, **Cold Start** 문제가 실시간 제어 성능에 미치는 영향과 해결 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Distributed-Computing-and-Edge-Systems
 - 02_Knowledge/03_AI_Data/Industrial/AI Edge-AI-R&D

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "battery-recycling-kinetics-hydrometallurgy-and-direct-recycling"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] battery-recycling-kinetics-hydrometallurgy-and-direct-recycling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical and mechanical processes for recovering high-purity battery materials (Li, Ni, Co, Mn) from spent cells, focusing on acid leaching kinetics and electrode rejuvenation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["recycling", "hydrometallurgy", "pyrometallurgy", "direct-recycling", "lithium-recovery"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SustainabilityFidelityEngine"
-  diagnostic_protocol:
-    - 'Leaching_Efficiency_Audit: Monitor acid concentration and temperature for optimal metal dissolution.'
-    - 'Impurity_Level_Scan: Detect residual Cu, Al, or Fe in the recovered precursor solution.'
-    - 'Direct_Recycling_Integrity_Check: Verify the electrochemical performance of rejuvenated cathode particles.'
-Trust Metrics:
+  description: "[Entity] battery-recycling-kinetics-hydrometallurgy-and-direct-recycling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ♻️ Battery Recycling Kinetics: Hydrometallurgy and Direct Recycling
+# [Entity] battery-recycling-kinetics-hydrometallurgy-and-direct-recycling
 
 ## 1. 개요 (Why)
 배터리는 '움직이는 광산'입니다. 폐배터리에서 리튬, 니켈, 코발트와 같은 핵심 광물을 회수하는 것은 자원 안보와 환경 보호를 위한 필수 공정입니다. 고온으로 녹이는 건식(Pyrometallurgy)보다 에너지 효율이 높고 회수율이 좋은 습식(Hydrometallurgy)과 소재의 구조를 유지하며 재생하는 직접 재활용(Direct Recycling) 기술이 차세대 표준으로 자리잡고 있습니다. 본 노드는 폐배터리 자원 회수 무결성을 확보하기 위한 화학적 및 공정 표준을 정의합니다.
@@ -71,7 +60,6 @@ class SustainabilityFidelityEngine:
             return "REJECT: High Carbon Intensity Process - Optimize Energy Consumption"
         return "PASS: Low-Carbon Recovery Verified"
 
-# Instance Diagnostic
 engine = SustainabilityFidelityEngine(leaching_yield=92, impurity_ppm=15, carbon_footprint=4.5)
 print(engine.diagnose_recovery_performance())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_recovery_performance())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data metal-recovery-yield-and-purity-metrics-v2026`와 연동되어, 재활용 금속의 품질을 실시간 추적하고 탄소 이익을 극대화함으로써 지속 가능한 배터리 가치 사슬의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - circular-economy-and-advanced-battery-recycling

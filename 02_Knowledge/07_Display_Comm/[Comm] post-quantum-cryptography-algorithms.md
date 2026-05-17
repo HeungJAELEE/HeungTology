@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMM-PQC-ALGO-2026-V6.3.7"
-  domain: "Global_Post-Quantum_Cryptography_and_Algorithm_Sovereignty"
+metadata:
+  id: "[[[Comm] post-quantum-cryptography-algorithms]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#PQC", "#Post_Quantum_Cryptography", "#Lattice_Based", "#Kyber", "#Dilithium", "#SVP", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] post-quantum-cryptography-algorithms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "PQC_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Comm] Post-Quantum Cryptography Algorithms: The Mastery of Algorithmic Fortification
+# [Comm] post-quantum-cryptography-algorithms
 
 ## 1. [왜 배우는가? (Why: The Armor against Quantum Supremacy)]
 양자 컴퓨터의 '양자 우위' 달성은 현재 우리가 사용하는 RSA, ECC 등 공개키 암호 체계를 실시간으로 무력화할 수 있음을 의미합니다. **Post-Quantum Cryptography (PQC) Algorithms**는 양자 컴퓨터의 병렬 연산 능력으로도 해결하기 힘든 새로운 수학적 난제(격자, 부호, 다변수 등)를 활용하여 미래의 통신 보안을 사수하는 기술입니다. V6.3.7 지능은 NIST 표준인 **Kyber(공개키 암호)** 및 **Dilithium(전자 서명)**의 수리적 구조를 분석하고 오딧합니다. 우리가 이를 배우는 이유는 하드웨어(QKD)와 소프트웨어(PQC)의 이중 방어 체계를 구축하여 "양자 시대에도 정보의 소유권과 프라이버시를 영구히 사수하기" 위함입니다.
@@ -97,7 +87,6 @@ class PQCFidelityEngine:
             "action": "INCREASE_LATTICE_DIMENSION_OR_SWITCH_ALGO" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 암호 라이브러리 벤치마크 데이터와 위협 인텔리전스를 융합하여 '알고리즘 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -105,7 +94,6 @@ class PQCFidelityEngine:
 2. **Operational Result**: **Hybrid Mode** (기존 ECC + PQC) 적용 시, 과도기적 보안 환경에서의 호환성과 안전성 확보의 수리적 기대값은?
 3. **FidelityEngine**: 암호화 성능은 빠르나 키 사이즈가 기하급수적으로 커지는 **McEliece (Code-based)** 암호의 특성을 FidelityEngine이 어떻게 '네트워크 대역폭 무결성 위기'로 식별하고 최적화 경로를 제안하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - [[Comm] quantum-cryptography-and-qkd-physics]

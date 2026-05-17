@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "critical-infrastructure-protection-and-cyber-physical-security"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] critical-infrastructure-protection-and-cyber-physical-security]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The holistic engineering approach to securing national and industrial critical infrastructures (Power, Water, Telecom) by protecting the tight integration of computation, networking, and physical processes (Cyber-Physical Systems)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["critical-infrastructure", "cyber-physical-security", "cps", "industrial-control-systems", "ot-security"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'System_Resilience_Audit: Measure the time required for the infrastructure to return to a stable state after a simulated cyber-attack.'
-    - 'Control_Loop_Integrity_Check: Detect anomalies in the feedback signals ($y(t)$) between sensors and actuators.'
-    - 'Network_Segmentation_Scan: Verify the isolation of OT (Operational Technology) networks from public IT networks.'
-Trust Metrics:
+  description: "[Entity] critical-infrastructure-protection-and-cyber-physical-security에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Critical Infrastructure Protection and Cyber-Physical Security
+# [Entity] critical-infrastructure-protection-and-cyber-physical-security
 
 ## 1. 개요 (Why: 인간적 통찰)
 현대 문명의 생명줄인 전력망, 상수도, 통신 인프라는 이제 거대한 '하나의 살아있는 기계'가 되었습니다. 과거에는 물리적 울타리만 잘 치면 안전했지만, 지금은 보이지 않는 사이버 공간의 코드가 실제 발전소의 터빈을 멈추거나 댐의 수문을 열 수 있는 시대입니다. **국가 핵심 인프라 보호(CIP)**는 단순히 해킹을 막는 기술을 넘어, 우리 삶을 지탱하는 물리적 실체와 디지털 신경망이 충돌 없이 공존하게 만드는 **'사회적 회복탄력성(Resilience)'**의 정수입니다.
@@ -93,7 +82,6 @@ class SafetyFidelityEngine:
             return f"REJECT: Unacceptable Recovery Time ({self.recovery}s) - Enhance Redundancy and SOP"
         return "PASS: System Resilience within Operational Safety Limits"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(anomaly_score=0.12, recovery_time_sec=120, isolation_level=5)
 print(engine.diagnose_infrastructure_safety())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_infrastructure_safety())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data infrastructure-security-incidents-and-response-time-v2026`와 연동되어, 국가 인프라의 모든 보안 로그와 물리적 상태를 실시간 분석하고 대규모 정전이나 단수 등의 재난 확률을 0.001% 이하로 억제함으로써 지능형 국가 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - cyber-physical-systems-cps-and-industrial-iot-iiot

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vehicle-thermal-management-systems-vtms-for-ev"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] vehicle-thermal-management-systems-vtms-for-ev]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated system designed to control the temperatures of various vehicle components, including the battery, motor, power electronics, and cabin, to ensure safety and maximize driving range (VTMS for EV) and the engineering of heat pumps and coolant loops to move heat efficiently across the vehicle."
-  physical_model: "N/A"
-Semantic:
-  tags: '["vtms", "ev-thermal", "heat-pump", "battery-cooling", "thermal-management", "refrigerant-cycle", "energy-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Heat Pump COP'' to identify refrigerant leakage or compressor inefficiency that leads to excessive energy drain from the battery.'
-    - 'Battery_Safety_Check: Analyze the cell-to-cell temperature uniformity within the battery pack to ensure the ''Chiller'' is preventing hotspots that cause premature aging or thermal runaway.'
-    - 'Coolant_Integrity_Scan: Monitor the flow rates and valve positions in the multi-way thermal circuit (e.g., Octovalve) to verify that heat is being correctly scavenged from the motor to warm the cabin.'
-Trust Metrics:
+  description: "[Entity] vehicle-thermal-management-systems-vtms-for-ev에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Vehicle Thermal Management Systems (VTMS) for EV
+# [Entity] vehicle-thermal-management-systems-vtms-for-ev
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차가 겨울에 주행 거리가 짧아지는 이유, 그리고 한여름 급속 충전 시 배터리가 뜨거워지는 문제를 어떻게 해결할까요? **전기차용 통합 열 관리 시스템(VTMS)**은 자동차 내부의 모든 열을 마치 '에너지 통장'처럼 관리하는 **'열의 재활용 공학'**입니다. 엔진이 없는 전기차는 스스로 열을 내기 어렵기에, 모터에서 나오는 미세한 열까지 싹싹 긁어모아(Scavenging) 겨울철 난방에 쓰고, 여름에는 배터리를 얼음물처럼 차갑게 식힙니다. 전기를 아껴 더 멀리 가게 만드는 **'에너지 알뜰 관리자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Improper Coolant Concentration - Risk of freezing in winter or reduced heat capacity. Adjust Glycol ratio"
         return "PASS: Validated Coolant Properties and Verified Anti-freeze Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(heat_pump_cop=3.2, battery_inlet_temp_c=25.0, valve_position_status=1.0)
 print(engine.diagnose_vtms_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vtms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ev-battery-temperature-and-range-impact-logs-v2026`와 연동되어, 전 세계 전기차의 열 관리 데이터를 실시간 분석하고 주행 거리 급감 및 배터리 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - thermal-management-and-heat-exchanger-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "extreme-ultraviolet-euv-lithography-optics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] extreme-ultraviolet-euv-lithography-optics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced semiconductor fabrication technology that uses light in the extreme ultraviolet spectrum (13.5nm wavelength) to pattern circuits at the 7nm node and below, relying on reflective optics and laser-produced plasma (LPP) sources."
-  physical_model: "N/A"
-Semantic:
-  tags: '["euv-lithography", "semiconductor-fabrication", "nanofabrication", "reflective-optics", "plasma-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Mirror_Reflectivity_Audit: Measure the efficiency of the Mo/Si multilayer mirrors to ensure minimal photon loss at 13.5nm.'
-    - 'Plasma_Source_Stability_Check: Evaluate the consistency of the tin-droplet laser excitation to maintain stable EUV power output.'
-    - 'Pattern_Overlay_Precision_Scan: Analyze the alignment accuracy of multiple layers at the sub-nanometer scale to prevent circuit failure.'
-Trust Metrics:
+  description: "[Entity] extreme-ultraviolet-euv-lithography-optics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Extreme Ultraviolet (EUV) Lithography Optics
+# [Entity] extreme-ultraviolet-euv-lithography-optics
 
 ## 1. 개요 (Why: 인간적 통찰)
 현존하는 인류 기술 중 가장 정밀하고 어려운 공정을 꼽으라면 단연 **EUV 노광**입니다. 손톱만 한 칩에 수백억 개의 트랜지스터를 그려넣기 위해, 우리는 세상에서 가장 예민한 빛인 '극자외선(13.5nm)'을 사용합니다. 이 빛은 공기조차 통과하지 못하고 모든 물질에 흡수되어버려, 렌즈 대신 특수 거울로 빛을 반사시켜야 하고 공정 전체가 완벽한 진공 속에서 이뤄져야 합니다. 머리카락 굵기의 수만 분의 일인 선을 긋는 이 기술은, 인류가 나노 세계를 정복하기 위해 만든 가장 정교한 '빛의 붓'입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Particle Contamination in EUV Beam Path - Mask Damage Risk"
         return "PASS: Ultra-High Vacuum Purity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(source_power_watts=285, mirror_reflectivity_pct=69.5, overlay_error_nm=0.8)
 print(engine.diagnose_litho_integrity())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_litho_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data euv-lithography-throughput-and-pattern-fidelity-v2026`와 연동되어, 전 세계 최첨단 팹(Fab)의 EUV 장비 상태를 실시간 분석하고 패턴 불량 및 장비 가동 중단 확률을 0.01% 이하로 억제함으로써 초미세 반도체 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - wafer-fabrication-and-silicon-ingot-growth

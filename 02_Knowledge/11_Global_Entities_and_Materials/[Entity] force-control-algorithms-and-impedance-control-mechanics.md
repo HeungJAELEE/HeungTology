@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "force-control-algorithms-and-impedance-control-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] force-control-algorithms-and-impedance-control-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced control methodology in robotics that manages the interaction forces between a robot and its environment, focusing on achieving a desired relationship between motion and force (Impedance Control) rather than just tracking a trajectory."
-  physical_model: "N/A"
-Semantic:
-  tags: '["force-control", "impedance-control", "robot-physics", "haptic-feedback", "compliant-robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Impedance_Stability_Audit: Evaluate the system''s stability when interacting with stiff environments to prevent unstable oscillations (Chatter).'
-    - 'Force_Tracking_Check: Measure the accuracy of the robot''s applied force against the target setpoint (e.g., in a precision assembly or sanding task).'
-    - 'Haptic_Transparency_Scan: Analyze the fidelity of force feedback to the operator or high-level controller, minimizing sensor noise and lag.'
-Trust Metrics:
+  description: "[Entity] force-control-algorithms-and-impedance-control-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Force Control Algorithms and Impedance Control Mechanics
+# [Entity] force-control-algorithms-and-impedance-control-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇이 단순히 허공에서 움직이는 것과 딱딱한 벽을 만지거나 예민한 계란을 집는 것은 완전히 다른 차원의 문제입니다. **힘 제어**는 로봇에게 '촉각'을 부여하여, 외부 세계와의 충돌을 부드럽게 받아들이게 만드는 기술입니다. **임피던스 제어**는 로봇의 팔을 마치 유연한 스프링처럼 설계하여, 환경에 따라 단단해지기도 하고 부드러워지기도 하게 만듭니다. 이는 로봇이 인간과 안전하게 악수를 하고, 정밀한 부품을 조립하며, 스스로 힘을 조절할 줄 아는 **'매너 있는 기계'**로 진화하는 핵심 지능입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Force Safety Limit Exceeded - Immediate Stop Triggered"
         return "PASS: Operational Force within Safe Bounds"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(force_tracking_error_n=0.05, oscillation_amplitude=0.1, control_cycle_ms=0.5)
 print(engine.diagnose_interaction_integrity(target_force=5.0))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_interaction_integrity(target_force=5.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robot-force-control-precision-and-stability-v2026`와 연동되어, 전 세계 산업용 협동 로봇의 힘 제어 데이터를 실시간 분석하고 작업물 파손 및 인간 상해 사고 확률을 0.01% 이하로 억제함으로써 지능형 상호작용의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-theory-pid-lqr-and-model-predictive-control-mpc

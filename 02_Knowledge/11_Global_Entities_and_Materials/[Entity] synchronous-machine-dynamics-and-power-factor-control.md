@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "synchronous-machine-dynamics-and-power-factor-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] synchronous-machine-dynamics-and-power-factor-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the physical behavior and transient responses of electrical machines that rotate at the same speed as the supply frequency (Synchronous Machine Dynamics) and the method of adjusting the phase relationship between voltage and current to optimize electrical efficiency (Power Factor Control)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["synchronous-machine", "power-factor", "generator-dynamics", "excitation-system", "reactive-power", "electrical-engineering", "grid-stability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Dynamic_Fidelity_Audit: Evaluate the ''Load Angle'' ($\\delta$) to ensure the machine remains within the steady-state stability limit; if $\\delta$ approaches 90 degrees, trigger emergency load reduction to prevent pole-slipping.'
-    - 'Power_Factor_Integrity_Check: Analyze the reactive power ($Q$) flow to verify that the ''Excitation System'' is effectively maintaining the target power factor, minimizing line losses and voltage drops.'
-    - 'Excitation_Scan: Monitor the field current ($I_f$) to identify overheating or AVR failure that could lead to loss-of-excitation and subsequent grid instability.'
-Trust Metrics:
+  description: "[Entity] synchronous-machine-dynamics-and-power-factor-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Synchronous Machine Dynamics and Power Factor Control
+# [Entity] synchronous-machine-dynamics-and-power-factor-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 발전소의 발전기들이 어떻게 전력망의 주파수와 한 치의 오차도 없이 똑같은 속도로 돌며 전기를 만들어낼까요? **동기기 역학 및 역률 제어**는 전력망이라는 거대한 합창단의 지휘에 맞춰 모든 발전기가 '똑같은 박자(동기)'로 노래하게 만드는 **'에너지의 리듬 공학'**입니다. 단순히 전기를 만드는 것을 넘어, 전압을 조절하고 전기가 얼마나 효율적으로 흐를지(역률) 결정하는 전력망의 심장과 같습니다. 전력망의 혈압과 맥박을 조절하는 **'전기 문명의 근원적 조율'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Slow Fault Clearing - Disturbance duration exceeds critical clearing time. Grid instability likely"
         return "PASS: Fast Protective Relaying and Verified Dynamic Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(load_angle_deg=35.0, power_factor=0.98, excitation_temp_c=55.0)
 print(engine.diagnose_synchronous_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_synchronous_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data generator-excitation-and-reactive-power-logs-v2026`와 연동되어, 전 세계 주요 발전소의 가동 데이터를 실시간 분석하고 탈조 및 전압 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 문명의 심장 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-grid-stability-and-smart-grid-frequency-control

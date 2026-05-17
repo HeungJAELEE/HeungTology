@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "intelligent-yield-modeling-and-defect-density-statistics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Strategy] Yield-Modeling-and-Defect-Density-Analysis]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced statistical modeling and strategic analysis of semiconductor yield, focusing on defect density distributions and economic optimization of manufacturing processes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["yield-modeling", "defect-density", "statistical-process-control", "semiconductor-economics", "manufacturing-strategy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "StrategicFidelityEngine"
-  diagnostic_protocol:
-    - 'Yield_Curve_Audit: Compare actual vs. theoretical ramp-up curves.'
-    - 'Economic_Sensitivity_Analysis: Assess impact of yield fluctuations on quarterly gross margins.'
-    - 'Strategic_Intervention_Check: Identify high-ROI nodes for defect reduction investment.'
-Trust Metrics:
+  description: "[Strategy] Yield-Modeling-and-Defect-Density-Analysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📈 Intelligent Yield Modeling and Defect Density Statistics
+# [Strategy] Yield-Modeling-and-Defect-Density-Analysis
 
 ## 1. 개요 (Why)
 반도체 제조에서 수율은 단순한 기술적 지표가 아닌, 기업의 영업 이익과 시장 지배력을 결정하는 핵심 전략 변수입니다. 미세 공정 도입 초기(Ramp-up)의 수율 안정화 속도가 곧 시장 선점 가능성을 의미합니다. 본 노드는 결함 밀도의 통계적 분포를 모델링하여 미래 수율을 예측하고, 수율 향상을 위한 투자의 경제적 타당성을 결정론적으로 분석하기 위한 프레임워크를 제공합니다.
@@ -96,7 +85,6 @@ print(strat_engine.diagnose_investment_priority(upgrade_cost=5_000_000))
 ## 6. 결론 (Deterministic Outcome)
 본 프레임워크는 `Data historical-yield-curves-and-defect-density-trends-v2026`를 기반으로 차세대 공정의 수익성을 시뮬레이션하며, 수율 드리프트 발생 시 즉각적인 전략 수정을 통해 연간 수조 원 규모의 의사결정 무결성을 확보합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 31_strategic-management-and-financial-intelligence-hub
 - statistical-process-control-spc-logic

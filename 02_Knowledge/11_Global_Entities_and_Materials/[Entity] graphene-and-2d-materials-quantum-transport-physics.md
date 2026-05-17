@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gangle-and-2d-materials-quantum-transport-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] graphene-and-2d-materials-quantum-transport-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of electronic transport in graphene and other two-dimensional (2D) materials, focusing on quantum phenomena such as Dirac fermions, ballistic transport, and the Quantum Hall Effect resulting from their unique atomic-scale structures."
-  physical_model: "N/A"
-Semantic:
-  tags: '["graphene", "2d-materials", "quantum-transport", "nanotechnology", "condensed-matter-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Carrier_Mobility_Audit: Measure the electron and hole mobility ($\\mu$) at cryogenic temperatures to verify the ballistic transport quality.'
-    - 'Dirac_Point_Check: Evaluate the charge neutrality point (Dirac point) through gate-voltage sweeps to determine doping levels and impurity concentration.'
-    - 'Quantum_Oscillation_Scan: Analyze Shubnikov–de Haas (SdH) oscillations to map the Fermi surface and verify the 2D nature of the charge carriers.'
-Trust Metrics:
+  description: "[Entity] graphene-and-2d-materials-quantum-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕸️ Graphene and 2D Materials: Quantum Transport Physics
+# [Entity] graphene-and-2d-materials-quantum-transport-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에서 가장 얇으면서도 가장 단단하고, 전기가 가장 잘 통하는 물질. 연필심의 재료인 흑연에서 테이프로 한 층만 떼어낸 **그래핀**은 인류가 발견한 '꿈의 신소재'입니다. 원자 한 층 두께($2D$)의 이 공간에서 전자는 질량이 없는 것처럼 빛의 속도에 가깝게 달립니다. **양자 수송 물리**는 이 기묘한 나노 세계에서 전자가 어떻게 파동처럼 움직이고, 장애물을 무시하며 흐르는지를 탐구합니다. 반도체의 한계를 뛰어넘어 초고속 컴퓨터, 휘어지는 화면, 그리고 전력 손실 없는 미래를 여는 **'나노 세계의 고속도로'** 설계도입니다.
@@ -92,7 +81,6 @@ class LogicFidelityEngine:
             return "REJECT: Lattice Defects Detected - Band Structure Distorted"
         return "PASS: Honeycomb Lattice Symmetry Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(electron_mobility=180000, dirac_point_voltage=2.5, quantum_osc_detected=True)
 print(engine.diagnose_graphene_quality())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_graphene_quality())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data graphene-electron-mobility-and-quantum-transport-logs-v2026`와 연동되어, 생산되는 모든 그래핀 웨이퍼의 전자 특성을 실시간 분석하고 격리 결함 및 성능 저하 사고 확률을 0.01% 이하로 억제함으로써 나노 시대 핵심 소재의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - gallium-nitride-gan-and-power-semiconductor-physics

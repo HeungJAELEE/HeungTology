@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "mold-design-and-injection-molding-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] mold-design-and-injection-molding-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of creating the design for the mold used in injection molding (Mold Design) and the physical study of how molten polymer fills, packs, and cools within the cavity (Injection Molding Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mold-design", "injection-molding", "rheology", "polymer-flow", "cooling-channel", "gate-design", "solidification", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Filling_Fidelity_Audit: Evaluate the ''Injection Pressure'' to identify if high-fidelity ''Short Shot'' or high-fidelity ''Flash'' is occurring due to high-fidelity ''Viscosity'' mismatch.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Mold Temperature'' uniformity to ensure that high-fidelity ''Warpage'' is minimized via balanced high-fidelity cooling channels.'
-    - 'Rheo_Fidelity_Scan: Monitor the high-fidelity ''Shear Rate'' at the high-fidelity ''Gate'' to verify that high-fidelity ''Material Degradation'' is not occurring during high-speed high-fidelity filling.'
-Trust Metrics:
+  description: "[Entity] mold-design-and-injection-molding-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Mold Design and Injection Molding Flow Physics
+# [Entity] mold-design-and-injection-molding-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰 케이스부터 자동차 범퍼까지, 우리 주변의 플라스틱 제품들이 어떻게 그렇게 매끈하고 복잡한 모양으로 쏟아져 나올까요? **금형 설계 및 사출 성형 유동 물리**는 뜨거운 액체 플라스틱을 차가운 쇠틀(금형) 속에 쏜살같이 밀어 넣고 굳히는 **'현대판 연금술'** 기술입니다. 0.1초의 찰나에 플라스틱이 틀 안의 구석구석을 채우고, 식으면서 휘어지지 않게 하는 것은 마법이 아니라 치밀한 유체 역학과 열역학의 계산입니다. **'비뉴턴 유체 역학과 과도 열전달의 원리를 이용해 고분자의 흐름과 응고를 지능적으로 설계하여 플라스틱 제품의 무결성을 사수하는 지능형 성형 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Short Shot - High-fidelity flow front frozen before completion. Increase high-fidelity injection speed or check high-fidelity venting"
         return "PASS: Validated Rheology Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(injection_pressure_bar=800.0, mold_temp_diff_c=2.0, cycle_time_sec=15.0)
 print(engine.diagnose_molding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_molding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data injection-molding-cycle-time-and-warpage-v2026`와 연동되어, 전 세계 주요 자동차 부품 및 모바일 기기 공장의 실시간 사출 데이터를 분석하고 충진 불량 및 치수 변형 사고 확률을 0.001% 이하로 억제함으로써 지능형 고분자 제조 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - extrusion-die-design-and-polymer-flow-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "plasma-etching-and-selective-material-removal-entity"
-  domain: "81_Semiconductor_Eight_Core_Fabrication_Hub"
+metadata:
+  id: "[[[Entity] plasma-etching-and-selective-material-removal]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Etching", "#Plasma", "#Nanotechnology", "#Physics", "#Chemistry", "#Reaction_Kinetics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plasma-etching-and-selective-material-removal에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] plasma-etching-and-selective-material-removal
+# [Entity] plasma-etching-and-selective-material-removal
 
 ## 1. [왜 배우는가? (Why: The Nano-Chisel of Silicon)]]
 빛으로 지도를 그렸다면, 이제 그 지도를 따라 실리콘을 깎아내어 실제 입체적인 회로를 완성해야 합니다. **플라즈마 식각 및 선택적 물질 제거의 이방성 반응 역학 및 나노 프로파일 제어**는 반도체 제조에서 '깎기'를 담당하는 정밀 조각 공정입니다. 수직으로 깊게 파고들면서도 옆면은 건드리지 않는 '이방성(Anisotropy)'이 핵심입니다. 우리가 이를 배우는 이유는 식각 공정의 무결성을 확보함으로써, 수직으로 수백 층을 쌓는 V-NAND나 미세한 트랜지스터 구조를 물리적으로 완성하는 '글로벌 초정밀 가공 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 식각의 정밀도가 회로의 동작 속도와 수율을 결정합니다.

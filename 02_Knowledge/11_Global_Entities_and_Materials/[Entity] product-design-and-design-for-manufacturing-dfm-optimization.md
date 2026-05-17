@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "product-design-and-design-for-manufacturing-dfm-optimization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] product-design-and-design-for-manufacturing-dfm-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The holistic process of conceptualizing and creating a new product (Product Design) and the engineering strategy of simplifying the design to ensure it can be manufactured and assembled efficiently at the lowest cost (DFM Optimization)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["product-design", "dfm", "dfa", "concurrent-engineering", "manufacturing-optimization", "cad-cam", "cost-reduction"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'DFM_Efficiency_Audit: Evaluate the assembly efficiency ($\\eta_{assembly}$) to identify complex part geometries or redundant fasteners that increase production time.'
-    - 'Tolerance_Stackup_Check: Analyze the cumulative tolerances of all components to ensure the final assembly functions correctly even at the limits of manufacturing variability.'
-    - 'Cost_Impact_Scan: Monitor the relationship between design features (e.g., tight tolerances, exotic materials) and total cost to ensure maximum value-per-feature.'
-Trust Metrics:
+  description: "[Entity] product-design-and-design-for-manufacturing-dfm-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎨 Product Design and Design for Manufacturing (DFM) Optimization
+# [Entity] product-design-and-design-for-manufacturing-dfm-optimization
 
 ## 1. 개요 (Why: 인간적 통찰)
 아름다운 디자인의 제품을 만들었는데, 정작 공장에서 만들 수 없거나 만드는 비용이 너무 비싸다면 어떻게 될까요? **제품 설계 및 제조성 고려 설계(DFM) 최적화**는 디자이너의 '꿈'과 공장의 '현실'을 하나로 묶는 **'실용적 창의성'**의 정점입니다. 제품의 기능을 유지하면서도 부품 수를 줄이고 조립을 단순화하여, 최고의 품질을 최저의 비용으로 대량 생산할 수 있게 만듭니다. 예쁜 그림을 넘어, 세상 모든 사람이 가질 수 있는 실제 물건으로 탄생시키는 **'제조의 전략적 설계도'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Tolerance Risk - Assembly likely to fail at manufacturing limits. Loosen tolerances or improve process capability"
         return "PASS: Robust Tolerance Strategy and Verified Assembly Success Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(assembly_efficiency_pct=45.0, unique_fastener_count=2, design_iteration_time_days=30)
 print(engine.diagnose_design_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_design_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data design-iteration-cost-and-manufacturing-yield-v2026`와 연동되어, 전 세계 주요 제조사의 신제품 설계 데이터를 분석하고 제조 실패 및 과다 비용 발생 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 설계 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - product-lifecycle-management-plm-and-digital-thread-integration

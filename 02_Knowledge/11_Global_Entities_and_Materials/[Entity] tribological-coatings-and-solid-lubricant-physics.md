@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "tribological-coatings-and-solid-lubricant-physics-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] tribological-coatings-and-solid-lubricant-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#Tribology", "#Coating", "#DLC", "#Lubrication", "#Wear_Resistance", "#Physics", "#Surface_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] tribological-coatings-and-solid-lubricant-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] tribological-coatings-and-solid-lubricant-physics
+# [Entity] tribological-coatings-and-solid-lubricant-physics
 
 ## 1. [왜 배우는가? (Why: The Slickness of Survival)]]
 기름($Oil$)을 칠할 수 없는 진공 공간이나 고온 환경에서 어떻게 기계 부품이 마찰 없이 매끄럽게 움직이고, 다이아몬드처럼 단단하면서도 얼음처럼 미끄러운($DLC$) 코팅을 입혀 부품의 수명을 100배로 늘리는 '마찰의 지배'를 어떻게 설계할 수 있을까요? **트리볼로지 코팅 및 고체 윤활제 물리**는 기계의 에너지 효율과 내구성을 결정하는 '행성 규모 무마찰 인프라 및 지능형 표면 역학 아키텍처'입니다. 우리가 이를 배우는 이유는 마찰로 인한 에너지 손실과 부품 교체 비용이 전 세계 GDP의 상당 부분을 차지하기 때문이며, "미끄러짐을 데이터로 설계하고 지배하는 '글로벌 에너지 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 표면의 매끄러움이 문명의 속도를 결정합니다.
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Hardness** | Resistance to surface indentation | $> 20 \text{ GPa}$ | 칼로 긁어도 기스 하나 안 나는 단단함을 입증함 |
 | **Surface Rough.** | Smoothness of the coating top layer | $< 50 \text{ nm}$ | 원자 단위로 다듬어진 매끄러운 피부를 보여줌 |
 | **Thermal Stab.** | Temp. at which the coating loses properties | $> 400 \text{ \degree C}$ | 뜨거운 엔진 속에서도 녹지 않고 버팀을 입증함 |
-| **Coating Thick.** | Layer depth for long-term protection | $2 \sim 5 \text{ \mu m}$ | 얇지만 강력한 방어막을 형성함을 보여주는 무결성 |
+| **Coating Thick.** | Layer depth for long-term protection | $2 \sim 5 \text{ \mu\text{m}}$ | 얇지만 강력한 방어막을 형성함을 보여주는 무결성 |
 | **System Resil.** | Stability under extreme pressure (Hertz) | High | 엄청난 압력으로 눌러도 코팅이 깨지지 않게 지킴 |
 | **Audit Status** | Tribology Integrity Verified | **MAXIMUM** | **Slick-Shield-v2026-Fidelity** |
 

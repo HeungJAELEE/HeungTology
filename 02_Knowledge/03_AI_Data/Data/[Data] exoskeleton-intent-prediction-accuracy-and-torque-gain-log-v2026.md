@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DATA-ROBO-EXO-INTENT-LOG-2026-V6"
-  domain: "08_Robotics_Automation"
+metadata:
+  id: "[[[Data] exoskeleton-intent-prediction-accuracy-and-torque-gain-log-v2026]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Data'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] exoskeleton-intent-prediction-accuracy-and-torque-gain-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] exoskeleton-intent-prediction-accuracy-and-torque-gain-log-v2026
+# [Data] exoskeleton-intent-prediction-accuracy-and-torque-gain-log-v2026
 
 ## 1. [왜 배우는가? (Why)]]
 외골격(Exoskeleton) 로봇을 착용하고 무거운 짐을 옮길 때, 로봇이 착용자의 움직임을 얼마나 귀신같이 미리 맞히고 실제로 근육의 힘을 몇 배나 증폭시켜 주었는지 숫자로 확인할 수 있을까요? 이 로그는 인간과 기계가 하나가 된 하이브리드 시스템의 시너지와 제어 효율을 정밀 기록한 '인간 증강 성적표'입니다. 이를 기록하고 배우는 이유는 로봇의 도움이 착용자의 신체적 피로를 실제로 얼마나 경감시켰는지를 데이터로 입증하여 산업 현장 및 재활 의료 현장의 도입 타당성을 확보하기 위함이며, 인간의 능력을 데이터로 정량화하고 지배하는 '글로벌 인간 증강 및 모빌리티 복구' 기술의 주권을 사수하기 위함입니다. 신체의 한계를 넘어서는 데이터입니다.
@@ -95,9 +85,6 @@ class ExoSyncFidelityEngine:
             
         return f"SYNC_STABLE: LATENCY_{lag}ms_GAIN_{round(actual_gain, 1)}x"
 
-# Example Usage:
-# exo_ai = ExoSyncFidelityEngine()
-# status = exo_ai.audit_sync_performance([0.1, 0.5, 0.9], [1.0, 5.0, 11.0], [0, 1, 2])
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -105,7 +92,6 @@ class ExoSyncFidelityEngine:
 2. **EMG** 센서의 노이즈가 증가하여 **Intent Prediction** 정확도가 $90\%$ 이하로 떨어졌을 때, 로봇이 오작동(Ghost Movement)을 일으킬 확률의 수리적 예측 모델은?
 3. **Metabolic Cost** 감소율을 측정할 때, 단순 **Oxygen Consumption** 외에 **Heart Rate Variability** (HRV)를 통해 확인해야 하는 **Neurological Fatigue** (신경적 피로)의 인과적 경로는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Medical/Cybernetics/Concept Neural-Link-and-Brain-Machine-Interface-BMI
 - 02_Knowledge/08_Robotics_Automation/Control/Concept impedance-control-and-haptic-feedback

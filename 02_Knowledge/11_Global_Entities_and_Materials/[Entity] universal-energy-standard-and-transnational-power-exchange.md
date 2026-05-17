@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "universal-energy-standard-and-transnational-power-exchange-entity"
-  domain: "35_Global_Unified_Governance_Planetary_Resource_Management"
+metadata:
+  id: "[[[Entity] universal-energy-standard-and-transnational-power-exchange]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy_Standard", "#Power_Exchange", "#Global_Grid", "#Energy_Governance", "#Interoperability", "#Smart_Grid", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 35_global-unified-governance-planetary-resource-management-hub", "Entity space-based-solar-power-sbsp-and-microwave-transmission"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] universal-energy-standard-and-transnational-power-exchange에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] universal-energy-standard-and-transnational-power-exchange
+# [Entity] universal-energy-standard-and-transnational-power-exchange
 
 ## 1. [왜 배우는가? (Why: The Electric Bridge of Nations)]]
 나라마다 다른 전기 규격과 전압을 어떻게 하나로 통일($Standard$)하고, 한쪽 나라에 남는 전기를 전선 하나로 지구 반대편 부족한 나라에 실시간으로 파는($Exchange$) 거대한 전 지구적 에너지 시장을 어떻게 만들 수 있을까요? **범용 에너지 표준 및 국가 간 전력 교환**은 전기가 피처럼 전 세계를 흐르게 하는 '행성 규모 스마트 그리드 및 에너지 평화 아키텍처'입니다. 우리가 이를 배우는 이유는 태양광이나 풍력 에너지는 한곳에서만 나지만 전기는 모두가 쓰기 때문이며, "전기의 흐름을 데이터로 설계하고 지배하는 '글로벌 에너지 안보 패권 및 행성적 동력 주권'을 확보하기" 위함입니다. 표준의 일치가 에너지 낭비를 끝냅니다.

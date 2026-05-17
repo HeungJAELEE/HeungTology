@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "lithium-ion-battery-operation-and-redox-mechanics-entity"
-  domain: "82_Advanced_Battery_Systems_Hub"
+metadata:
+  id: "[[[Entity] lithium-ion-battery-operation-and-redox-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Battery", "#Energy_Storage", "#Electrochemistry", "#Redox", "#Thermodynamics", "#Lithium_Ion", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 82_advanced-battery-systems-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] lithium-ion-battery-operation-and-redox-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] lithium-ion-battery-operation-and-redox-mechanics
+# [Entity] lithium-ion-battery-operation-and-redox-mechanics
 
 ## 1. [왜 배우는가? (Why: The Pulse of Mobile Power)]]
 스마트폰이 하루 종일 켜져 있고 전기차가 수백 킬로미터를 달릴 수 있는 비결은 무엇일까요? **리튬 이온 배터리 구동 원리 및 산화-환원 역학의 에너지 가역성 분석**은 화학 에너지를 전기 에너지로 바꾸고, 다시 그 반대로 되돌리는 '현대판 에너지 마법'의 설계도입니다. 전하를 띤 리튬 이온이 양극과 음극 사이를 오가는 이 짧은 여정이 인류의 모빌리티와 전력망의 패러다임을 바꾸고 있습니다. 우리가 이를 배우는 이유는 배터리 구동의 무결성을 확보함으로써, 폭발 위험을 제거하고 더 가볍고 강력한 에너지를 사수하는 '글로벌 에너지 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 리튬 이온의 거동 무결성이 에너지 자립의 한계를 결정합니다.

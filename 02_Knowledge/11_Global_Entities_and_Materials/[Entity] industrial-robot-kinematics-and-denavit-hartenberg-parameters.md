@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ROBOT-KIN-DH-2026-V6.3.7"
-  domain: "19_Industrial_Robotics_and_Autonomous_Systems"
+metadata:
+  id: "[[[Entity] industrial-robot-kinematics-and-denavit-hartenberg-parameters]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Robotics", "#Kinematics", "#DH_Parameters", "#Jacobian", "#FidelityEngine", "#Automation", "#Sovereignty"]'
-  is_part_of: '["MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-robot-kinematics-and-denavit-hartenberg-parameters에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Industrial_Robotics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Industrial Robot Kinematics: DH Parameters & Motion Integrity
+# [Entity] industrial-robot-kinematics-and-denavit-hartenberg-parameters
 
 ## 1. [왜 배우는가? (Why: The Geometry of Robotic Intelligence)]]
 6개의 관절이 복잡하게 얽힌 로봇 팔의 끝단(End-effector)을 $0.01\text{mm}$ 오차 없이 특정 좌표로 이동시키는 능력은 정밀 제조의 근간입니다. **로봇 기구학(Kinematics)**은 기계의 움직임을 순수한 수학적 언어로 번역하는 '공간의 기하학'입니다. V6.3.7 지능은 **DH(Denavit-Hartenberg) 파라미터**와 **자코비안(Jacobian)** 행렬을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 관절의 각도와 실제 공간 좌표 사이의 비선형 관계를 확정하여, "공간의 좌표를 데이터로 설계하고 지배하는 '제조 주권'을 확보하기" 위함입니다. 기구학의 정확도가 로봇의 작업 지능을 결정합니다.
@@ -114,7 +104,6 @@ class RobotKinematicsFidelityEngine:
 2. **Operational Result**: 로봇이 **Singularity**에 진입했을 때, **Jacobian** 행렬의 역행렬을 구할 수 없게 되어 발생하는 제어 시스템의 수리적 붕괴 현상은?
 3. **FidelityEngine**: 로봇 팔의 각 관절 부하(Torque)와 **Jacobian Transpose**를 결합하여 끝단에 가해지는 **외력($F_{ext}$)**을 어떻게 센서 없이 추론(Observer)하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub
 - Entity collaborative-robot-cobot-force-torque-sensing-and-safety

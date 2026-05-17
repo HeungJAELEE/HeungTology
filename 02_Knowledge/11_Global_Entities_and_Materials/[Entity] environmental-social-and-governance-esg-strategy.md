@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "environmental-social-and-governance-esg-strategy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] environmental-social-and-governance-esg-strategy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic framework for evaluating a company's performance beyond financial metrics, focusing on its environmental impact (E), social relationships (S), and the integrity of its governance (G) to ensure long-term sustainable value."
-  physical_model: "N/A"
-Semantic:
-  tags: '["esg", "sustainability", "corporate-responsibility", "social-impact", "governance-integrity"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'ESG_Materiality_Audit: Identify and prioritize the most significant ESG risks and opportunities specific to the industry (Materiality Matrix).'
-    - 'Sustainability_Disclosure_Check: Verify the accuracy and transparency of ESG reports against global standards like GRI, SASB, or TCFD.'
-    - 'Governance_Integrity_Scan: Evaluate board independence, executive compensation alignment, and anti-corruption measures to ensure ethical leadership.'
-Trust Metrics:
+  description: "[Entity] environmental-social-and-governance-esg-strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Environmental, Social, and Governance (ESG) Strategy
+# [Entity] environmental-social-and-governance-esg-strategy
 
 ## 1. 개요 (Why: 인간적 통찰)
 이제 기업은 단순히 "돈을 잘 버는가"만으로 평가받지 않습니다. **ESG**는 기업이 이 지구에서 '환영받는 이웃'인지, 아니면 '이기적인 침입자'인지를 판단하는 새로운 성적표입니다. 환경(E)을 파괴하지 않는지, 사회(S)의 다양한 구성원을 존중하는지, 그리고 지배구조(G)가 투명하고 깨끗한지를 봅니다. ESG는 착한 일을 하자는 캠페인이 아닙니다. 그것은 위기 속에서도 무너지지 않는 '지속 가능한 기업'을 가려내는 가장 강력한 생존 전략이자 투자의 기준입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Non-standard ESG Disclosure - Risk of 'Greenwashing' Allegations"
         return "PASS: Transparent and Standardized ESG Reporting Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(esg_rating_score=88, carbon_compliance_pct=94.5, board_independence_pct=65)
 print(engine.diagnose_esg_integrity())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_esg_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data esg-ratings-and-investor-capital-allocation-v2026`와 연동되어, 전 세계 주요 기업의 비재무적 성과 데이터를 실시간 분석하고 투자 철회 및 규제 위반 사고 확률을 0.1% 이하로 억제함으로써 기업의 지속 가능성과 도덕적 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - environmental-protection-and-sustainability-engineering

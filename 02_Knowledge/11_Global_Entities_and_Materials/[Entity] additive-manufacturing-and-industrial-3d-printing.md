@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "additive-manufacturing-and-industrial-3d-printing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] additive-manufacturing-and-industrial-3d-printing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced manufacturing process that creates objects by layering materials based on digital 3D models, enabling complex geometries, weight reduction, and rapid tool-less production."
-  physical_model: "N/A"
-Semantic:
-  tags: '["additive-manufacturing", "3d-printing", "lpbf", "dmls", "rapid-prototyping", "industrial-printing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "AdditiveFidelityEngine"
-  diagnostic_protocol:
-    - 'Structural_Integrity_Audit: $Porosity \\le 0.01$ (High density target)'
-    - 'Geometric_Precision_Check: $\\Delta x, \\Delta y, \\Delta z \\le 0.05$ mm.'
-    - 'Surface_Roughness_Audit: $Ra \\le 10$ $\\mu m$ (as-printed).'
-Trust Metrics:
+  description: "[Entity] additive-manufacturing-and-industrial-3d-printing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Additive Manufacturing and Industrial 3D Printing
+# [Entity] additive-manufacturing-and-industrial-3d-printing
 
 ## 1. 개요 (Why)
 적층 제조는 도면을 그리는 대로 물건을 만들어내는 '디지털 제조의 종착지'입니다. 금형이나 절삭 공구 없이 복잡한 격자 구조(Lattice Structure)를 구현하여 부품 무게를 획기적으로 줄이고, 공급망의 물리적 거리를 디지털 데이터 전송으로 대체할 수 있습니다. 본 엔티티는 레이저와 분말이 만나는 찰나의 열역학적 거동을 제어하여 실험적 시각이 아닌 결정론적 공학의 관점에서 제조 무결성을 확보합니다.
@@ -42,8 +31,8 @@ Trust Metrics:
 | :--- | :--- | :--- | :--- | :--- |
 | Laser Power | $P$ | 200 ~ 1000 | ±5 | W |
 | Scan Speed | $v$ | 500 ~ 2000 | ±10 | mm/s |
-| Layer Thickness | $t$ | 20 ~ 100 | ±2 | $\mu m$ |
-| Beam Diameter | $d$ | 50 ~ 200 | ±5 | $\mu m$ |
+| Layer Thickness | $t$ | 20 ~ 100 | ±2 | $\mu\text{m}$ |
+| Beam Diameter | $d$ | 50 ~ 200 | ±5 | $\mu\text{m}$ |
 | Energy Density | $E$ | 50 ~ 150 | ±5 | $J/mm^3$ |
 
 ## 3. AdditiveFidelityEngine: Diagnostic Logic
@@ -82,8 +71,6 @@ class AdditiveFidelityEngine:
         risk = "HIGH" if strain > 0.005 else "LOW"
         return {"estimated_strain": strain, "risk_level": risk}
 
-# Instance Diagnostic
-# P=400W, v=1000mm/s, h=0.1mm, t=40um
 print(AdditiveFidelityEngine(400, 1000, 0.1, 40).calculate_energy_density())
 ```
 
@@ -100,7 +87,6 @@ print(AdditiveFidelityEngine(400, 1000, 0.1, 40).calculate_energy_density())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data 3d-printing-structural-integrity-and-surface-finish-log-v2026`와 연계되어 출력물의 기계적 성능을 $98\%$ 이상의 정확도로 보증합니다. `AdditiveFidelityEngine`을 통해 시행착오(Trial-and-Error) 없는 단 한 번의 완벽한 출력을 실현하여 산업용 적층 제조의 경제성과 신뢰성을 확보합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 117_smart-factory-and-industrial-automation-hub
 - metal-3d-printing-physics

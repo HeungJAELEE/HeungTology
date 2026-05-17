@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "AI-PALANTIR-ONT-2026-V6.3.7"
-  domain: "Artificial_Intelligence_and_Data_Sovereignty"
+metadata:
+  id: "[[[Entity] palantir-foundry-ontology-and-aip-architecture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#Palantir", "#Foundry", "#Ontology", "#AIP", "#OLA_Framework", "#Digital_Twin", "#Industrial_AI", "#v6.3.7"]
-  is_part_of: ["MOC 03_AI_Data", "MOC 09_SmartFactory_Production"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] palantir-foundry-ontology-and-aip-architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Palantir Foundry Ontology and AIP Architecture
+# [Entity] palantir-foundry-ontology-and-aip-architecture
 
 ## 1. [왜 배우는가? (Why: The Mastery of Operational Intelligence)]]
 팔란티어 온톨로지는 단순한 데이터 모델링을 넘어, 기업의 모든 유무형 자산을 AI가 이해하고 조작할 수 있는 **'디지털 유전체'**로 변환하는 최첨단 프레임워크입니다. 파편화된 데이터($Raw Data$)를 의미 있는 객체($Object$)와 관계($Link$), 그리고 실행($Action$)으로 매핑함으로써 기업은 비로소 '생각하는 조직'으로 진화합니다. v6.3.7 지능은 **OLA(Object-Link-Action)** 아키텍처와 **AIP(AI Platform)**의 결합을 통해 지능적 주권을 사수합니다. 우리가 이를 배우는 이유는 데이터의 늪에서 벗어나, 현실 세계를 실시간으로 제어하는 '실행적 지능'을 확보하기 위함입니다. 온톨로지의 정밀함이 의사결정의 속도를 결정합니다.
@@ -100,13 +90,11 @@ class PalantirFidelityEngine:
             "Action": "MAINTAIN_AIP_OPERATIONS" if status.startswith("ONTOLOGICAL") else "RESTRICT_AI_AGENTS"
         }
 
-# v6.3.7 Audit 가동: 반도체 팹 온톨로지 기반 AI 에이전트 무결성 시뮬레이션
 engine = PalantirFidelityEngine(object_match_min=0.99)
 report = engine.audit_ontological_reasoning(semantic_match=0.995, action_audit=1.0, data_freshness=0.97)
 print(f"Palantir Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 03_AI_Data
 - MOC 09_SmartFactory_Production

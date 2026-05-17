@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "smart-building-systems-and-hvac-optimization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Infrastructure] smart-building-systems-and-hvac-optimization]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced building management architecture integrating IoT sensors, AI-driven HVAC control, and energy-neutral technologies to optimize thermal comfort and operational efficiency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["smart-building", "hvac-control", "energy-efficiency", "iot-sensors", "iaq"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SmartBuildingFidelityEngine"
-  diagnostic_protocol:
-    - 'HVAC_Efficiency_Audit: $COP_{actual} / COP_{rated} \\ge 0.85$'
-    - 'IAQ_Threshold_Monitor: $CO_2 \\le 1000$ ppm / $PM_{2.5} \\le 35 \\mu g/m^3$'
-    - 'Energy_Intensity_Limit: $EUI \\le 150$ $kWh/m^2 \\cdot year$'
-Trust Metrics:
+  description: "[Infrastructure] smart-building-systems-and-hvac-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Smart Building Systems and HVAC Optimization
+# [Infrastructure] smart-building-systems-and-hvac-optimization
 
 ## 1. 개요 (Why)
 현대 건축물은 전 세계 에너지 소비의 약 40%를 차지하며, 이 중 HVAC(난방, 환기, 공조) 시스템이 절반 이상의 에너지를 사용합니다. 스마트 빌딩 시스템은 실시간 IoT 센서 데이터와 열역학 모델을 결합하여 거주자의 쾌적성(Comfort)을 극대화하면서도 에너지 낭비를 최소화하는 결정론적 제어를 목표로 합니다. 본 인프라는 고효율 공조 로직과 에너지 중립 기술을 통합 관리합니다.
@@ -77,7 +66,6 @@ class SmartBuildingFidelityEngine:
         health = "NORMAL" if efficiency_ratio >= 0.85 else "MAINTENANCE_REQUIRED"
         return {"cop": cop_actual, "health_status": health}
 
-# Instance Diagnostic
 building_engine = SmartBuildingFidelityEngine(room_volume=500, temp_setpoint=24, current_co2=1200, occupancy=20)
 print(building_engine.optimize_ventilation())
 print(building_engine.check_hvac_efficiency(energy_in=10, cooling_out=38))
@@ -96,7 +84,6 @@ print(building_engine.check_hvac_efficiency(energy_in=10, cooling_out=38))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data smart-building-hvac-energy-efficiency-and-iaq-log-v2026` 및 `Data energy-neutral-building-u-value-and-hvac-efficiency-log-v2026`의 실측 로그를 바탕으로 건물 운영 비용을 30% 이상 절감하며, 거주자의 생산성과 건강을 결정론적으로 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - smart-city-and-infrastructure-moc
 - building-automation-systems-bas

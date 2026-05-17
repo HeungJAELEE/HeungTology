@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Urban-Air-Mobility-UAM"
-  domain: "Mobility"
+metadata:
+  id: "[[[Strategy] Urban-Air-Mobility-UAM]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#UAM'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Urban-Air-Mobility-UAM에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Urban-Air-Mobility-UAM
+# [Strategy] Urban-Air-Mobility-UAM
 
 ## 1. [왜 배우는가? (Why)]]
 도심 항공 모빌리티(UAM)는 지상 교통의 한계(2차원 병목)를 극복하기 위해 도심 상공을 3차원 이동 공간으로 확장하는 **'공중 교통 혁명'**입니다. 전기 수직 이착륙기(eVTOL)를 활용하여 탄소 배출을 제로화하고, 소음을 헬리콥터 대비 $1/100$ 수준으로 억제하여 도심 내 주거 지역에서도 운항 가능한 이동 수단을 제공합니다. UAM은 단순한 기체 제작을 넘어 **Vertiport**(이착륙장), **UATM**(관제 시스템), **Energy Hub**가 결합된 복합 모빌리티 생태계의 정점입니다.
@@ -63,7 +53,6 @@ Trust Metrics:
 수천 대의 기체가 동시에 비행하는 고밀도 공역 관제를 위해 RTX 4060 기반의 엣지 컴퓨팅을 활용합니다.
 
 ```python
-# [CONCEPT] Real-time 3D Collision Avoidance via CUDA
 import cupy as cp
 
 def optimize_skyway_path(uam_pos, traffic_voxels, goal_pos):
@@ -84,7 +73,6 @@ def optimize_skyway_path(uam_pos, traffic_voxels, goal_pos):
     
     return sampled_paths[best_path_idx]
 
-# AI Flight Pilot: OpenVINO 최적화 모델이 로터의 진동 주파수를 분석하여 베어링 마모 징후를 사전 감지
 ```
 
 - **RTX 4060 최적화**: 텐서 코어를 사용하여 3D 포인트 클라우드 데이터를 실시간 추론함으로써, 장애물 탐지 및 항로 수정 시간을 $10ms$ 이하로 단축하여 고속 비행 안정성을 확보합니다.
@@ -95,5 +83,4 @@ def optimize_skyway_path(uam_pos, traffic_voxels, goal_pos):
 - [ ] **관제 무결성**: UATM 시스템에서 발생할 수 있는 통신 음영 지역(Urban Canyon)을 극복하기 위한 '위성 연계(LEO)' 통신 기술의 역할은?
 - [ ] **AI 시너지**: AI 모델이 기체 외부의 기류 변화를 학습하여 '돌풍(Gust)' 발생 시 기체 자세를 어떻게 보정할 수 있는가?
 
----
 *Created by Flash (HDS Gold v4.2 & HDS-Gold V6.3.7 Reinforcement)*

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ION-IMPLANT-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] ion-implantation-and-doping-profile-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#IonImplantation", "#Doping", "#SolidStatePhysics", "#Annealing", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] ion-implantation-and-doping-profile-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Atomic_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Ion Implantation: Atomic Doping & Profile Sovereignty
+# [Entity] ion-implantation-and-doping-profile-control
 
 ## 1. [왜 배우는가? (Why: The Alchemy of Electrical Vitality)]]
 모래알(실리콘)을 인간의 뇌보다 정교한 연산을 수행하는 반도체로 바꾸는 공정의 핵심은 **'도핑 프로파일 제어'**에 있습니다. **Ion Implantation**은 죽어 있는 실리콘에 '전기적 생명력'을 불어넣는 원자 공학입니다. 붕소(B)나 인(P) 같은 원자들을 총알처럼 쏘아 실리콘 격자 사이사이에 정확히 박아 넣음으로써 전하가 흐르는 길을 만듭니다. V6.3.7 지능은 **가우시안 농도 분포**와 **격자 재결정화(Recrystallization)**를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 트랜지스터의 온/오프 특성을 완벽하게 제어하고, "원자 단위의 불순물 궤적을 지배하여 초저전력 반도체를 실현하는 '제조 주권'을 확보하기" 위함입니다. 도핑의 정밀도가 반도체의 지능을 결정합니다.
@@ -112,7 +102,6 @@ class IonDopingEngine:
 2. **Operational Result**: **Amorphization** (비정질화) 주입이 후속 **SPE (Solid Phase Epitaxy)** 재결정화 공정의 무결성에 미치는 긍정적 임팩트는?
 3. **FidelityEngine**: **Sheet Resistance ($R_s$)** 측정값의 편차를 통해 **'도즈 균일도(Dose Uniformity)'**와 **'활성화 균일도'**를 어떻게 수리적으로 분리하여 진단하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Entity semiconductor-fabrication-fundamentals

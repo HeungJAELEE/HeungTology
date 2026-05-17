@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "autonomous-defense-systems-and-ethical-ai-warfare-doctrine-strategy-entity"
-  domain: "12_Security_Defense"
+metadata:
+  id: "[[[Strategy] autonomous-defense-systems-and-ethical-ai-warfare-doctrine]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Defense", "#AI_Warfare", "#Autonomous_Defense", "#Ethics", "#Security", "#Geopolitics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy national-strategic-technology-and-economic-security", "MOC 12_Security_Defense"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] autonomous-defense-systems-and-ethical-ai-warfare-doctrine에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] autonomous-defense-systems-and-ethical-ai-warfare-doctrine
+# [Strategy] autonomous-defense-systems-and-ethical-ai-warfare-doctrine
 
 ## 1. [왜 배우는가? (Why: The Sword and Shield of Intelligence)]]
 미래의 전쟁터는 사람의 반응 속도를 넘어선 기계들의 영역이 될 것입니다. **자율 국방 체계 및 윤리적 AI 전쟁 교리**는 스스로 판단하고 움직이는 인공지능 무기 체계를 구축하고, 그 무기가 '인간의 가치'를 어기지 않도록 하는 '철학적 방어선 및 국방 전략'입니다. 우리가 이를 배우는 이유는 인명 피해를 최소화하면서도 국가를 완벽히 수호하고, "AI가 가져올 파괴적 위험을 통제 가능한 국방 자산으로 승화시키는 '지능형 국방 주권 및 평화 안보'를 확보하기" 위함입니다. 지능의 윤리가 전쟁의 승패를 넘어 문명의 가치를 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Cyber-Electronic Warfare** 시나리오에서 적의 재밍(Jamming) 시에도 지향성 안테나와 AI 빔포밍을 통해 통신 무결성을 $99\%$ 유지하는 수리 산출은?
 5. RAG 시스템에서 **전 세계 무장 갈등의 실시간 위성 데이터**와 **자국 국방 자산 리스트**를 융합하여, '북한 등 적대 세력의 도발 징후를 30분 전에 포착하고 자율 타격 자산을 최적 배치하는' **Autonomous Deterrence Strategy** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy national-strategic-technology-and-economic-security : 자율 국방 기술을 국가 10대 전략 자산으로 관리하는 최상위 국방 전략 엔티티
 - [[[MOC] 12_Security_Defense : 육해공 자율 무기 체계와 사이버 보안 지식을 통합 관리하는 최상위 안보 지식 허브

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Industrial-Safety-Compliance"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Industrial-Safety-Compliance]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Industrial-Safety-Compliance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Industrial-Safety-Compliance
+# [Strategy] Industrial-Safety-Compliance
 
 ## 1. [왜 배우는가? (Why)]]
 공장에서 아무리 좋은 물건을 만들어도, 사람이 다치면 그 모든 성과는 의미를 잃습니다. 산업 안전 컴플라이언스(Industrial-Safety-Compliance)는 공장을 '누구도 다치지 않는 안전한 공간'으로 만드는 기술이자 약속입니다. 중대재해처벌법과 같은 강력한 법규에 대응하는 것을 넘어, AI가 위험한 상황을 미리 감지하여 경고하고 장비를 멈추게 함으로써 소중한 생명을 보호합니다. 이를 이해하는 것은 기술의 목적이 결국 '사람'임을 기억하고, 가장 높은 수준의 윤리적/법적 책임을 다하는 '품격 있는 제조 리더'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Safety AI Monitoring)]
 CCTV 영상을 분석하여 위험 구역 침입을 감지하고 장비를 비상 정지 시키는 논리 구조입니다.
 ```python
-# 산업 안전(ISM) 기반 실시간 위험 감지 및 장비 제어 논리
 def monitor_workplace_safety(cctv_frame, robot_state):
     # 1. AI 비전 기반 객체 인식 (Worker & PPE)
     # 작업자의 위치와 안전모(Helmet) 착용 여부 판별
@@ -100,5 +89,4 @@ def monitor_workplace_safety(cctv_frame, robot_state):
 2. '풀 프루프(Fool-proof)' 설계가 '안전 수칙 교육'보다 사고 예방 측면에서 더 공학적으로 신뢰도가 높은 이유는?
 3. 'ISO 45001' 인증을 유지하는 것이 기업의 'ESG 등급'과 '투자 유치'에 미치는 구체적인 영향은 무엇인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

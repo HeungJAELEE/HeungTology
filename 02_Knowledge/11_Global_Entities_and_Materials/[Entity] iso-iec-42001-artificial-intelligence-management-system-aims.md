@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iso-iec-42001-artificial-intelligence-management-system-aims"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iso-iec-42001-artificial-intelligence-management-system-aims]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The international standard (ISO/IEC 42001) that specifies requirements for establishing, implementing, maintaining, and continually improving an Artificial Intelligence Management System (AIMS), focusing on the responsible development, deployment, and operation of AI systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iso-42001", "aims", "ai-governance", "ai-ethics", "ai-safety", "responsible-ai", "standardization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'AI_Risk_Assessment_Audit: Evaluate the system''s risk assessment process for AI-specific hazards such as bias, hallucination, security vulnerabilities (e.g., adversarial attacks), and privacy breaches.'
-    - 'Data_Quality_Check: Analyze the data used for training and validation to ensure it is representative, high-quality, and free from prohibited biases according to the AIMS policy.'
-    - 'Transparency_and_Explainability_Scan: Verify that AI decisions are explainable (XAI) and that stakeholders are provided with clear information regarding the AI system''s capabilities and limitations.'
-Trust Metrics:
+  description: "[Entity] iso-iec-42001-artificial-intelligence-management-system-aims에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 ISO/IEC 42001: Artificial Intelligence Management System (AIMS)
+# [Entity] iso-iec-42001-artificial-intelligence-management-system-aims
 
 ## 1. 개요 (Why: 인간적 통찰)
 인공지능이 우리 삶의 모든 결정을 내리기 시작한 시대, 우리는 그 지능을 완전히 믿어도 될까요? AI가 누군가를 차별하거나, 가짜 정보를 사실처럼 말하거나, 블랙박스처럼 내부를 알 수 없는 존재가 된다면 인류는 통제력을 잃게 됩니다. **ISO/IEC 42001 및 AIMS**는 인공지능을 '책임감 있게' 길들이기 위한 **'지능의 가이드레일'**입니다. 단순히 성능 좋은 AI를 만드는 것을 넘어, AI가 공정하고 안전하며 설명 가능하게 작동하도록 조직 전체의 관리 체계를 세우는 일입니다. AI의 '천재성'에 '도덕성'과 '투명성'이라는 고삐를 채워, 인류와 AI가 공존할 수 있는 **'기술적 신뢰의 토대'**를 만드는 최신 표준입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Autonomy Risk - Lack of Manual Kill-switch or Oversight in High-Stakes Decisions"
         return "PASS: Robust Human-AI Collaboration Framework Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(model_explainability_score=0.88, detected_bias_delta=0.012, safety_incident_count=0)
 print(engine.diagnose_aims_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_aims_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ai-model-performance-and-ethical-compliance-audit-v2026`와 연동되어, 전 세계 주요 기업의 AI 운영 데이터를 실시간 분석하고 알고리즘 독재 및 AI 폭주 사고 확률을 0.001% 이하로 억제함으로써 인류와 인공지능 공존의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - information-ethics-and-ai-governance-industrial-framework

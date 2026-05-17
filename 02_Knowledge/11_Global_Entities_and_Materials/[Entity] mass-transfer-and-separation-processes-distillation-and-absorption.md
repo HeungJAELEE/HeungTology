@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "mass-transfer-and-separation-processes-distillation-and-absorption"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] mass-transfer-and-separation-processes-distillation-and-absorption]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The unit operations in chemical engineering that involve the movement of matter from one phase to another (Mass Transfer) to separate components based on differences in volatility (Distillation) or solubility (Absorption)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mass-transfer", "separation-process", "distillation", "absorption", "chemical-engineering", "ficks-law", "column-design"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Column_Efficiency_Audit: Evaluate the actual number of theoretical plates (HETP) compared to the design to identify fouling or bypass issues in the separation column.'
-    - 'Mass_Balance_Check: Verify that the sum of inputs equals the sum of outputs for all components to ensure the integrity of the measurement and control system.'
-    - 'Flooding_and_Weeping_Scan: Monitor the pressure drop across the column to detect signs of liquid flooding or excessive weeping that compromise separation purity.'
-Trust Metrics:
+  description: "[Entity] mass-transfer-and-separation-processes-distillation-and-absorption에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Mass Transfer and Separation Processes: Distillation and Absorption
+# [Entity] mass-transfer-and-separation-processes-distillation-and-absorption
 
 ## 1. 개요 (Why: 인간적 통찰)
 섞여 있는 것들을 다시 순수한 상태로 갈라놓는 일, 이것은 마법이 아니라 치열한 분자들의 '이동 전쟁'입니다. **물질 전달 및 분리 공정**은 끓는점의 차이로 기름에서 휘발유를 뽑아내고(**증류**), 나쁜 가스를 액체에 녹여 공기를 정화하는(**흡수**) 등 우리 문명에 필요한 모든 '순수한 물질'을 만드는 **'화학적 필터링'**입니다. 보이지 않는 분자들이 한쪽에서 다른 쪽으로 건너가려는 성질(농도 차)을 이용해, 거대한 탑 속에서 수조 개의 분자들을 정렬시키는 **'물질의 오케스트라'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Energy Waste Identified - Check Heat Exchanger Fouling or Column Insulation Integrity"
         return "PASS: Sustainable Separation Energy Profile Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(reflux_ratio_actual=1.8, product_purity_pct=99.9, column_pressure_drop=2.2)
 print(engine.diagnose_separation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_separation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data chemical-separation-efficiency-and-energy-consumption-v2026`와 연동되어, 전 세계 정유 및 화학 공장의 분리 데이터를 실시간 분석하고 순도 저하 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 산업 소재 생산의 화학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydrogen-fuel-cells-and-future-transport-propulsion

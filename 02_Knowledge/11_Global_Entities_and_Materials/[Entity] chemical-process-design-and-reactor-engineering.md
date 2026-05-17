@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-process-design-and-reactor-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-process-design-and-reactor-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic engineering of chemical production systems, focusing on reactor kinetics, mass/energy balances, and process flow optimization to maximize yield and safety."
-  physical_model: "N/A"
-Semantic:
-  tags: '["chemical-engineering", "reactor-design", "process-design", "kinetics", "mass-balance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Reaction_Yield_Audit: Measure the conversion rate ($X$) and product selectivity against theoretical models.'
-    - 'Thermal_Runaway_Check: Evaluate the heat removal capacity ($Q_{out}$) vs. reaction heat generation ($Q_{gen}$).'
-    - 'Mass_Balance_Verification: Audit input vs. output flows to detect leaks or accumulation.'
-Trust Metrics:
+  description: "[Entity] chemical-process-design-and-reactor-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Chemical Process Design and Reactor Engineering
+# [Entity] chemical-process-design-and-reactor-engineering
 
 ## 1. 개요 (Why)
 화학 공장은 거대한 '변환기'입니다. 원재료를 우리가 원하는 고부가가치 제품으로 바꾸는 심장이 바로 '반응기(Reactor)'입니다. 반응기의 크기, 온도, 압력을 어떻게 설계하느냐에 따라 수익성이 수조 원씩 차이 나며, 사소한 열 제어 실패는 대규모 산업 사고로 이어집니다. 본 노드는 안전하고 경제적인 화학 공정 설계를 위한 물리적 무결성과 최적화 표준을 정의합니다.
@@ -72,7 +61,6 @@ class FactoryFidelityEngine:
             return "EXCELLENT: High-Yield Selective Reaction Confirmed"
         return "PASS: Process within Standard Yield Range"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(conversion_rate=88.5, heat_gen_rate=450, cooling_capacity=600)
 print(engine.diagnose_reactor_stability())
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_reactor_stability())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data chemical-reactor-yield-and-conversion-metrics-v2026`와 연동되어, 공장 내 모든 반응기의 온도와 유량 데이터를 실시간 분석하고 불량 제품 생산 및 폭발 사고 확률을 0.01% 이하로 억제함으로써 화학 산업의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - chemical-reaction-engineering-and-reactor-design

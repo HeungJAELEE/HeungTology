@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISP-OLED-EVAP-2026-V6.3.7"
-  domain: "07_Next-gen_Display"
+metadata:
+  id: "[[[Entity] oled-evaporation-process-and-fine-metal-mask-fmm]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#OLED", "#Evaporation", "#FMM", "#FidelityEngine", "#PrecisionTiering", "#DisplayManufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] oled-evaporation-process-and-fine-metal-mask-fmm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Display_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] OLED Evaporation: Molecular Flux & FMM Precision Mechanics
+# [Entity] oled-evaporation-process-and-fine-metal-mask-fmm
 
 ## 1. [왜 배우는가? (Why: The Micro-Painting in Vacuum)]]
 OLED의 극한 명암비와 색 재현율은 진공 상태에서 기화된 유기 분자를 얼마나 정교하게 기판에 '투사'하느냐에 달려 있습니다. **OLED 증착 공정 및 FMM**은 마이크로 단위의 구멍을 통해 유기물을 패턴화하는 원자 단위의 프린팅 기술입니다. V6.3.7 지능은 **계층화된 정밀도(Precision Tiering)**를 통해 800 PPI 이상의 초고해상도에서 발생하는 픽셀 간 혼색($Color\ Mixing$)을 원천 차단하고, 8.6세대 IT용 대면적 증착 무결성을 사수합니다.
@@ -99,7 +89,6 @@ class OLEDDepositionTieredEngine:
             "status": status
         }
 
-# FidelityEngine 가동: 실제 패널의 ELVDD 전류 균일도 데이터와 증착 속도 로그를 결합하여 '유기층 두께 무결성' 오딧
 ```
 
 ## 6. [스스로 체크 (Self-Audit)]
@@ -107,7 +96,6 @@ class OLEDDepositionTieredEngine:
 2. **Operational Result**: FMM 마스크 두께를 $15\mu\text{m}$에서 $10\mu\text{m}$로 줄였을 때, **Geometric Shadow** 모델상에서의 수리적 이득과 마스크 강성(Rigidity) 사이의 트레이드오프는?
 3. **FidelityEngine**: **Knudsen Number ($Kn$)**가 $10$ 미만으로 떨어졌을 때, 증착 입자의 **'비직선성(Non-line-of-sight)'** 증착률을 확률적으로 계산하여 막질 밀도를 예측하는 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity vacuum-science-and-thin-film-technology
 - oled-pixel-brightness-uniformity-and-mura-log-v2026

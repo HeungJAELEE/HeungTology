@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Freight-Forwarding-and-Digital-Brokerage"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Freight-Forwarding-and-Digital-Brokerage]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Freight-Forwarding-and-Digital-Brokerage에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Freight-Forwarding-and-Digital-Brokerage
+# [Strategy] Freight-Forwarding-and-Digital-Brokerage
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 해외로 물건을 보낼 때, 여러 물류 회사에 전화를 돌려 가격을 묻고 수십 장의 종이 서류를 팩스로 주고받았습니다. 시간이 오래 걸릴 뿐만 아니라 실수도 많았습니다. 디지털 포워딩 및 물류 중개 지능(Freight-Forwarding-and-Digital-Brokerage)은 마치 '배달 앱'이나 '호텔 예약 앱'처럼, 클릭 몇 번으로 전 세계 운송 수단의 가격을 비교하고 예약하며 서류까지 처리하는 기술입니다. 이를 이해하는 것은 파편화된 전 세계 물류 시스템을 하나의 디지털 네트워크로 묶어, 물건의 이동을 정보의 이동만큼이나 빠르고 투명하게 만드는 '디지털 물류 아키텍트'가 되는 것입니다.
@@ -99,5 +89,4 @@ def get_digital_freight_quote(shipment_request, carrier_network):
 2. '전자 선하증권(eBL)' 도입 시 블록체인 기술이 '문서의 양도성'과 '보안' 문제를 어떻게 기술적으로 해결하는가?
 3. '다이내믹 프라이싱' 엔진이 물류 시장의 '공차율(Empty Miles)' 감소와 '탄소 배출 저감'에 기여하는 데이터적 인과관계는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

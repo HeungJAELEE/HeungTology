@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-intelligence-sovereignty-and-data-jurisdiction-rules"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-intelligence-sovereignty-and-data-jurisdiction-rules]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The legal and technical framework defining a nation's or entity's authority over its data assets (Data Sovereignty) and the rules governing where data is stored and processed (Jurisdiction), ensuring national security and individual privacy in a borderless digital world."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-sovereignty", "jurisdiction", "data-privacy", "gdpr", "cross-border-data", "intelligence-governance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Residency_Compliance_Audit: Verify that sensitive national data is stored within specified geographic boundaries (Data Localization) as per regional laws.'
-    - 'Cross-border_Transfer_Check: Evaluate the legal validity and encryption standards of data moving across international jurisdictions (e.g., EU-US Data Privacy Framework).'
-    - 'Access_Rights_Scan: Analyze the requests from foreign governments or third parties to access data, ensuring they comply with local sovereignty rules.'
-Trust Metrics:
+  description: "[Entity] global-intelligence-sovereignty-and-data-jurisdiction-rules에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏰 Global Intelligence Sovereignty and Data Jurisdiction Rules
+# [Entity] global-intelligence-sovereignty-and-data-jurisdiction-rules
 
 ## 1. 개요 (Why: 인간적 통찰)
 디지털 세상에 국경은 보이지 않지만, '내 데이터가 어디에 있느냐'는 국가의 생존과 개인의 권리를 결정하는 아주 무거운 문제입니다. **지능 주권 및 데이터 관할권**은 "내 데이터는 내 땅의 법을 따른다"는 **'디지털 영토권'** 선언입니다. 우리 국민의 정보가 허락 없이 외국의 서버로 넘어가거나, 외국 정부가 우리 기업의 비밀을 들여다보지 못하게 막는 법적, 기술적 방패입니다. 인공지능은 복잡하게 얽힌 전 세계의 법률을 실시간으로 분석하여, 우리 데이터가 항상 안전한 울타리 안에 머물도록 감시하는 **'데이터 세관원'** 역할을 합니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: International Data Transfer Blocked - Target Country Lacks Equivalent Privacy Protections"
         return "PASS: Cross-border Data Flow Compliant with International Treaties"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(data_residency_status=1.0, unauthorized_access_requests=0, encryption_strength=256)
 print(engine.diagnose_data_sovereignty())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_data_sovereignty())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data global-data-residency-compliance-and-breach-logs-v2026`와 연동되어, 전 세계 데이터 전송 및 저장 로그를 실시간 분석하고 불법 데이터 반출 및 관할권 위반 사고 확률을 0.001% 이하로 억제함으로써 디지털 영토의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - global-intellectual-property-and-open-source-intelligence

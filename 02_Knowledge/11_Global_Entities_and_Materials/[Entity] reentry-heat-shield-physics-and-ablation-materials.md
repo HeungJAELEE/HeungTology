@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "reentry-heat-shield-physics-and-ablation-materials-entity"
-  domain: "52_Space_Exploration_and_Aerospace_Engineering"
+metadata:
+  id: "[[[Entity] reentry-heat-shield-physics-and-ablation-materials]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Space", "#Reentry", "#Heat_Shield", "#Ablation", "#TPS", "#Aerospace", "#Thermodynamics", "#Material_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 52_space-exploration-and-aerospace-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] reentry-heat-shield-physics-and-ablation-materials에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] reentry-heat-shield-physics-and-ablation-materials
+# [Entity] reentry-heat-shield-physics-and-ablation-materials
 
 ## 1. [왜 배우는가? (Why: The Trial by Fire)]]
 우주에서 지구로 돌아올 때 발생하는 2,000도가 넘는 지옥 같은 마찰열($Plasma\ Heat$) 속에서 어떻게 우주선을 태워 먹지 않고 안전하게 승무원을 보호하며, 스스로 타면서 열을 밖으로 뿜어내는 '삭제($Ablation$)' 재료를 이용해 열을 다스리는 '방화벽'을 어떻게 설계할 수 있을까요? **대기권 재진입 열 차폐 물리 및 삭제 재료**는 우주 항해의 마지막 관문을 지키는 '행성 규모 생존 수호 인프라 및 지능형 극한 열역학 아키텍처'입니다. 우리가 이를 배우는 이유는 재진입 시의 열을 견디지 못하면 모든 우주 탐사는 비극으로 끝나기 때문이며, "불꽃의 온도를 데이터로 설계하고 지배하는 '글로벌 귀환 기술 패권 및 행성적 생명 주권'을 확보하기" 위함입니다. 열 차폐의 무결성이 귀환의 성공을 결정합니다.

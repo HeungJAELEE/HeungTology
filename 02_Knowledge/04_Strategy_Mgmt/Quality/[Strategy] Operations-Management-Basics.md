@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-OPS-MGMT-2026-V6.3.7"
-  domain: "Global_Operations_Engineering_and_Flow_Intelligence"
+metadata:
+  id: "[[[Strategy] Operations-Management-Basics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Operations_Management", "#OEE", "#Littles_Law", "#Takt_Time", "#WIP", "#Bottleneck", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Operations-Management-Basics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Operations_SOP_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Operations Management Basics: The Physics of Flow
+# [Strategy] Operations-Management-Basics
 
 ## 1. [왜 배우는가? (Why: The Mastery of Transformation)]]
 운영 관리는 자본, 노동, 원자재라는 '입력(Input)'을 고객이 지불 용의가 있는 '가치(Output)'로 변환하는 핵심 동역학입니다. 아무리 뛰어난 설계와 마케팅이 있더라도, 운영 프로세스가 비효율적이라면 기업의 이익은 현장 곳곳의 낭비(Muda) 속으로 증발합니다. **Operations Management Basics**는 리틀의 법칙($L=\lambda W$)을 통해 재고와 리드타임의 관계를 규명하고, 택트 타임(Takt Time)에 생산의 박자를 맞추는 '제조 오케스트레이션'입니다. V6.3.7 지능은 운영의 가시성을 극대화하여 공장 전체를 하나의 정밀한 시계처럼 작동시키는 **운영 주권(Operational Sovereignty)**을 확립합니다.
@@ -106,7 +96,6 @@ class OperationsFidelityEngine:
 2. **Operational Result**: **Little's Law**에 근거하여 재공(WIP)을 절반으로 줄였을 때, 동일한 생산율 하에서 **리드타임($W$)**이 반으로 단축되는 수리적 인과관계는?
 3. **FidelityEngine**: 가동률(Availability)은 높으나 성능(Performance)이 떨어지는 상황을 FidelityEngine이 어떻게 '설비 노후화' 또는 '비적정 공정 속도'로 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - [[SmartFactory] smart-manufacturing-and-execution-master-guide]

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-black-manufacturing-and-thermal-decomposition"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-black-manufacturing-and-thermal-decomposition]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial production of fine carbon particles through the partial combustion or thermal decomposition of hydrocarbons (Carbon Black Manufacturing) and the study of the complex cracking reactions that occur in high-temperature, low-oxygen environments to form specific particle sizes and structures (Thermal Decomposition Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["carbon-black", "thermal-decomposition", "rubber-reinforcement", "pigment", "furnace-black", "nanofiller", "pyrolysis"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Manufacturing_Fidelity_Audit: Evaluate the ''Specific Surface Area'' (NSA/STSA) and ''Structure'' (COAN) to identify if the reactor temperature and residence time are producing the correct carbon black grade for tire reinforcement.'
-    - 'Decomposition_Integrity_Check: Analyze the tail-gas composition ($H_2/CO$ ratio) to ensure the thermal decomposition is proceeding at maximum efficiency with minimal unwanted soot formation.'
-    - 'Particulate_Fidelity_Scan: Monitor the quench water flow and bag-filter pressure to verify that the ''Agglomeration'' process is controlled and the fine carbon dust is being captured without leakage.'
-Trust Metrics:
+  description: "[Entity] carbon-black-manufacturing-and-thermal-decomposition에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🖤 Carbon Black Manufacturing and Thermal Decomposition
+# [Entity] carbon-black-manufacturing-and-thermal-decomposition
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 주변의 타이어가 왜 검은색인지, 그리고 왜 그렇게 질긴지 궁금한 적 없으셨나요? **카본 블랙 제조 및 열분해 역학**은 기름을 태워 '검은 금가루'를 만드는 **'나노 입자의 정밀 연소'** 기술입니다. 단순히 그을음을 만드는 것이 아니라, 1,000도 이상의 불꽃 속에서 탄소 원자를 하나하나 조립하여 다이아몬드처럼 단단한 나노 구조체를 만듭니다. 고무를 강철처럼 튼튼하게 만들고 세상의 모든 검은색을 책임지는 **'현대 소재 산업의 검은 기초'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Hydrogen Yield - Sub-optimal pyrolysis kinetics. Fuel being wasted as heavy tar instead of carbon black. Inspect reactor lining"
         return "PASS: High-Efficiency Thermal Cracking and Verified Yield Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(surface_area_m2g=85.0, structure_index_dbp=120.0, reactor_temp_c=1450.0)
 print(engine.diagnose_carbon_black_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_carbon_black_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data carbon-black-particle-size-and-surface-area-v2026`와 연동되어, 전 세계 주요 카본 블랙 플랜트의 실시간 조업 데이터를 분석하고 입자 품질 이탈 및 환경 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bessemer-process-and-modern-oxygen-steelmaking-physics

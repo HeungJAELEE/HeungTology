@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-carbon-negative-infrastructure-and-climate-repair"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-carbon-negative-infrastructure-and-climate-repair]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The planetary-scale engineering and infrastructure system designed to actively remove $CO_2$ from the atmosphere (Carbon Negative) and restore stable climatic conditions (Climate Repair) using Direct Air Capture (DAC), ocean alkalization, and biomass-based sequestration."
-  physical_model: "N/A"
-Semantic:
-  tags: '["carbon-negative", "climate-repair", "dac", "beccs", "carbon-sequestration", "planetary-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Negative_Emission_Audit: Verify the net removal of carbon dioxide ($CO_2$) by accounting for the energy and material lifecycle of the sequestration infrastructure.'
-    - 'Planetary_Boundary_Check: Evaluate the impact of large-scale climate repair interventions (e.g., Albedo enhancement) on regional weather patterns and biodiversity.'
-    - 'Sequestration_Permanence_Scan: Analyze the long-term stability (e.g., > 1,000 years) of stored carbon in geological or oceanic reservoirs.'
-Trust Metrics:
+  description: "[Entity] global-carbon-negative-infrastructure-and-climate-repair에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Global Carbon Negative Infrastructure and Climate Repair
+# [Entity] global-carbon-negative-infrastructure-and-climate-repair
 
 ## 1. 개요 (Why: 인간적 통찰)
 인류는 지난 수백 년간 지구가 수만 년 동안 쌓아온 탄소를 순식간에 대기 중으로 뿜어냈습니다. 이제 단순히 탄소를 '적게 내뿜는' 것만으로는 부족합니다. 대기 중에 이미 퍼진 탄소를 다시 '빨아들여야' 합니다. **카본 네거티브 인프라**는 거대한 '지구의 공기 청정기'를 만드는 프로젝트입니다. 거대한 팬으로 공기를 걸러 탄소를 돌로 만들거나 땅속 깊이 묻고, 숲과 바다의 능력을 인위적으로 강화하는 이 기술은 인류가 망가뜨린 지구의 온도계를 다시 거꾸로 돌리는 **'행성적 치료(Climate Repair)'**의 유일한 희망입니다.
@@ -87,7 +76,6 @@ class SafetyFidelityEngine:
             return "REJECT: Storage Integrity Compromised - Carbon Returning to Atmosphere Too Fast"
         return "PASS: Geological/Chemical Sequestration Permanent"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(net_removal_tons=1000000, capture_energy_efficiency=1.8, ecosystem_impact_score=0.15)
 print(engine.diagnose_climate_repair_integrity())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_climate_repair_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data atmospheric-co2-concentration-and-removal-efficiency-v2026`와 연동되어, 전 세계 탄소 제거 시설의 가동 데이터를 실시간 분석하고 탄소 누출 및 생태계 교란 사고 확률을 0.001% 이하로 억제함으로써 지구 기후 복구 프로젝트의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - global-carbon-market-and-emission-quota-trading-ai

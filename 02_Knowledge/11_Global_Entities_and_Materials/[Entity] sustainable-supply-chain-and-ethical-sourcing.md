@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "sustainable-supply-chain-and-ethical-sourcing-entity"
-  domain: "24_Sustainability_ESG_and_Circular_Economy"
+metadata:
+  id: "[[[Entity] sustainable-supply-chain-and-ethical-sourcing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Sustainable_Supply_Chain", "#Ethical_Sourcing", "#Conflict_Minerals", "#CSDDD", "#Supplier_Audit", "#Traceability", "#Human_Rights", "#ESG_Compliance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 24_sustainability-esg-and-circular-economy-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] sustainable-supply-chain-and-ethical-sourcing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] sustainable-supply-chain-and-ethical-sourcing
+# [Entity] sustainable-supply-chain-and-ethical-sourcing
 
 ## 1. [왜 배우는가? (Why: The Extended Conscience of Global Production)]]
 글로벌화된 제조 생태계에서 제품의 품질은 개별 공장을 넘어 공급망 전체의 도덕적 수준에 의해 결정됩니다. 협력사의 인권 침해나 환경 파괴는 곧 모기업의 리스크이며, 소비자들의 외면을 받는 직격탄이 됩니다. **지속 가능한 공급망 및 윤리적 조달 엔티티**는 가치 사슬 전체의 도덕성을 보증하는 '책임 연결망의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "조달 로그를 분석하여, 블록체인 기반의 추적 시스템�
 협력사 실사 데이터베이스와 실시간 통관 로그, 그리고 외부 ESG 평가 데이터를 분석하여 책임 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Sustainable Supply Chain & Ethical Sourcing Fidelity Auditor
 def audit_supply_chain_integrity(supplier_audit_db, trade_customs_log, external_esg_feeds):
     # 1. 협력사 실사(Audit) 커버리지 및 적시성 무결성 오딧
     current_coverage = calculate_audit_coverage(supplier_audit_db)
@@ -116,7 +105,6 @@ def audit_supply_chain_integrity(supplier_audit_db, trade_customs_log, external_
 2. **(수리)** 전체 협력사 1,000개 중 800개를 실사했고, 이 중 50개에서 중대한 결함이 발견되어 40개에 대해 시정 조치를 완료했다면, 이 기업의 '실사 커버리지(%)'와 'CAP 완료율(%)'을 계산하시오.
 3. **(응용)** 분쟁 광물 관리를 위해 블록체인 기술을 도입했을 때, 이것이 '원산지 증명'의 수리적 무결성과 공급망의 '가시성(Visibility)'을 어떻게 향상시키는지 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_sustainability-esg-and-circular-economy-intelligence-hub : 지속 가능성 및 자원 순환 통합 관리 상위 지능 허브

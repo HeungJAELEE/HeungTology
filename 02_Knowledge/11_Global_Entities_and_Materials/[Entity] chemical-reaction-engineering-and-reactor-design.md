@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "chemical-reaction-engineering-and-reactor-design-entity"
-  domain: "111_Chemical_Engineering_and_Process_Automation_Hub"
+metadata:
+  id: "[[[Entity] chemical-reaction-engineering-and-reactor-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Chemical_Engineering", "#Reactor_Design", "#Reaction_Kinetics", "#Thermodynamics", "#Catalysis", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 106_chemical-engineering-and-process-automation-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] chemical-reaction-engineering-and-reactor-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] chemical-reaction-engineering-and-reactor-design
+# [Entity] chemical-reaction-engineering-and-reactor-design
 
 ## 1. [왜 배우는가? (Why: The Heart of Transformation)]]
 화학 공학의 정수는 물질을 섞는 것이 아니라, 물질을 '변화'시키는 것입니다. **화학 반응 공학 및 반응기 설계의 아레니우스 방정식 및 반응기 설계 수리 물리 기술**은 원료 분자가 우리가 원하는 제품으로 재탄생하는 '변환의 성소'를 설계하는 기술입니다. 분자들이 충돌하여 새로운 결합을 형성하는 속도를 예측하고, 수만 리터의 거대한 탱크 안에서 모든 분자가 균일하게 반응하도록 제어하며, 폭발적인 반응열을 안전하게 관리합니다. 우리가 이를 배우는 이유는 반응의 무결성을 확보함으로써, 에너지 효율을 극대화하고 환경 오염을 최소화하는 '글로벌 화학 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 반응기의 무결성이 생산의 수율과 공장의 안전 무결성을 결정합니다.

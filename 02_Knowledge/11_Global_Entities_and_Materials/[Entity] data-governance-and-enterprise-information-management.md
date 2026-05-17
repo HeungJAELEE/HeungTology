@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "data-governance-and-enterprise-information-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] data-governance-and-enterprise-information-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The holistic management of data availability, usability, integrity, and security in an enterprise, supported by Information Management strategies to ensure data is treated as a strategic asset."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-governance", "information-management", "master-data", "data-quality", "stewardship"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Data_Quality_Audit: Measure the accuracy, completeness, and consistency of critical master data (e.g., Customer, Product).'
-    - 'Metadata_Lineage_Check: Verify the end-to-end traceability of data from source systems to reporting dashboards.'
-    - 'Access_Control_Scan: Analyze user permissions and data masking to ensure compliance with ''Need-to-Know'' principles.'
-Trust Metrics:
+  description: "[Entity] data-governance-and-enterprise-information-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Data Governance and Enterprise Information Management
+# [Entity] data-governance-and-enterprise-information-management
 
 ## 1. 개요 (Why: 인간적 통찰)
 데이터는 현대 기업의 '원유'라고 불립니다. 하지만 원유를 정제하지 않으면 엔진이 망가지듯, 관리되지 않는 데이터는 쓰레기에 불과합니다. **데이터 거버넌스**는 기업 내의 모든 데이터가 "누구의 소유이며, 얼마나 믿을 수 있고, 어떻게 쓰여야 하는가?"에 대한 규칙과 헌법을 세우는 작업입니다. 잘 관리된 데이터는 의사결정의 강력한 무기가 되지만, 방치된 데이터는 법적 소송과 비즈니스 실패를 부르는 시한폭탄이 됩니다. 본 노드는 기업 정보 자산의 도덕적/기술적 무결성을 정의합니다.
@@ -92,7 +81,6 @@ class LegalFidelityEngine:
             return "REJECT: Unauthorized Data Access Detected - Immediate Revocation and Audit Required"
         return "PASS: Strict Data Access Controls Maintained"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(data_completeness=98.2, lineage_coverage=92, access_violation_flag=False)
 print(engine.diagnose_governance_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_governance_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data data-quality-metrics-and-governance-compliance-v2026`와 연동되어, 기업 내 모든 정보 자산의 생애 주기를 실시간 감시하고 데이터 오염에 따른 비즈니스 손실 확률을 1% 이하로 낮춤으로써 정보 자산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - data-privacy-and-protection-regulations-gdpr-ccpa

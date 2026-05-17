@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "turbine-blade-aerodynamics-and-high-temperature-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] turbine-blade-aerodynamics-and-high-temperature-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of airfoil shapes to extract maximum energy from a fluid flow (Turbine Blade Aerodynamics) and the development of advanced materials, such as single-crystal superalloys, that can withstand extreme mechanical stress at temperatures near their melting point (High-Temperature Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["turbine-blade", "aerodynamics", "metallurgy", "superalloys", "jet-engine", "power-generation", "creep-resistance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aerodynamic_Fidelity_Audit: Evaluate the pressure distribution and lift/drag ratio of the blade profile to identify boundary layer separation or shock wave losses in supersonic stages.'
-    - 'Creep_Integrity_Check: Analyze the total operating hours and peak temperature ($T$) using the Larson-Miller model to identify the remaining useful life (RUL) before catastrophic fatigue failure.'
-    - 'Cooling_Efficiency_Scan: Monitor the internal cooling hole airflow and thermal barrier coating (TBC) integrity to ensure the blade metal temperature remains below the oxidation threshold.'
-Trust Metrics:
+  description: "[Entity] turbine-blade-aerodynamics-and-high-temperature-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌪️ Turbine Blade Aerodynamics and High-Temperature Metallurgy
+# [Entity] turbine-blade-aerodynamics-and-high-temperature-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 제트 엔진이나 발전소의 핵심부에서, 1,500도라는 녹는점에 가까운 뜨거운 가스를 견디며 초속 수백 미터로 회전하는 부품이 있다면 믿기시나요? **터빈 블레이드 공기역학 및 고온 금속학**은 인류가 만든 기계 중 가장 가혹한 환경에서 버티는 **'금속의 한계 돌파'** 기술입니다. 가스에서 거대한 에너지를 뽑아내는 정교한 날개 모양(Aerodynamics)과, 그 열기 속에서도 녹거나 늘어나지 않는 특수 합금(Metallurgy)의 만남입니다. 하늘을 날고 전기를 만드는 문명의 거대한 회전력을 지탱하는 **'현대 공학의 왕관'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Casting Defect - Grain boundaries detected in single-crystal structure. High vulnerability to intergranular creep"
         return "PASS: Perfect Monocrystalline Lattice and Verified High-Temperature Strength Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(creep_strain_mm=0.2, film_cooling_efficiency=0.85, peak_temp_k=1550.0)
 print(engine.diagnose_turbine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_turbine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data turbine-blade-creep-strain-and-thermal-profile-v2026`와 연동되어, 전 세계 주요 항공기 및 발전소 터빈의 가동 데이터를 실시간 분석하고 날개 파손 및 엔진 정지 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 회전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-casting-and-investment-molding-metallurgy

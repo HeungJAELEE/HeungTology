@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brain-computer-interface-bci-neural-signal-decoding-and-encoding"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brain-computer-interface-bci-neural-signal-decoding-and-encoding]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The dual-process technology for converting complex neural activity into actionable commands for external devices (Decoding) and translating external sensor data back into neural stimuli for the brain (Encoding)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bci", "decoding", "encoding", "neural-signal", "signal-processing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Decoding_Accuracy_Audit: Measure the correlation between intended and executed movements.'
-    - 'Encoding_Fidelity_Check: Verify the specificity of sensory feedback evoked by electrical stimulation.'
-    - 'Neural_Adaptation_Scan: Detect shifts in neural tuning curves due to plastic changes in the brain.'
-Trust Metrics:
+  description: "[Entity] brain-computer-interface-bci-neural-signal-decoding-and-encoding에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Brain-computer Interface (BCI): Neural Signal Decoding and Encoding
+# [Entity] brain-computer-interface-bci-neural-signal-decoding-and-encoding
 
 ## 1. 개요 (Why)
 BCI의 핵심은 뇌와 기계 사이의 '언어 번역'입니다. 뇌의 전기 신호(Spikes)를 읽어 의도를 파악하는 '디코딩(Decoding)'과, 기계가 느낀 감각 정보를 뇌가 이해할 수 있는 전기 자극으로 바꿔 전달하는 '인코딩(Encoding)'이 완벽히 조화를 이루어야 합니다. 이를 통해 사용자는 자신의 손처럼 자연스럽게 로봇 팔을 움직이고, 그 팔이 물체에 닿는 촉감까지 느낄 수 있습니다. 본 노드는 신경 신호 번역의 무결성과 양방향 통신 정밀도를 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class MedicalFidelityEngine:
             return f"REJECT: Sensory Mismatch ({self.match*100:.1f}%) - Risk of Ghost Sensations"
         return "PASS: Authentic Sensory Encoding Confirmed"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(r_squared=0.96, signal_drift_pct=2.5, stimulus_response_match=0.92)
 print(engine.diagnose_decoding_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_decoding_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data bci-signal-decoding-accuracy-and-error-rate-v2026`와 연동되어, 뇌와 기계 간의 데이터 패킷을 0.1ms 단위로 검사하고 번역 오차를 5% 이내로 유지함으로써 완벽한 양방향 신경 통신의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - brain-computer-interface-bci-and-neural-bandwidth-topology

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "drag-conveying-and-bulk-material-transport-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] drag-conveying-and-bulk-material-transport-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A mechanical system that moves bulk materials (grains, ash, minerals) by dragging them along a trough using paddles or flights attached to a continuous chain (Drag Conveying) and the physical study of internal friction and wall friction in granular transport (Bulk Material Transport Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["drag-conveyor", "bulk-handling", "material-transport", "friction", "chain-conveyor", "industrial-logistics", "solid-mechanics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Friction_Fidelity_Audit: Evaluate the ''Drag Force'' ($F_{drag}$) against the motor current to identify if the material is jamming or if the trough liner is excessively worn, increasing the friction coefficient.'
-    - 'Chain_Integrity_Check: Analyze the chain tension and link elongation to ensure that the ''Flight'' paddles are not bending or breaking under the heavy bulk load.'
-    - 'Flow_Fidelity_Scan: Monitor the discharge rate to verify that the ''En-masse'' flow (where material moves as a single block) is maintained without internal shearing or stagnation.'
-Trust Metrics:
+  description: "[Entity] drag-conveying-and-bulk-material-transport-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛓️ Drag Conveying and Bulk Material Transport Mechanics
+# [Entity] drag-conveying-and-bulk-material-transport-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 곡물 창고나 화력 발전소의 재(Ash)를 어떻게 한꺼번에 옮길까요? **드래그 컨베이어(Drag Conveyor) 및 벌크 화물 수송 역학**은 바닥에 놓인 물건을 빗자루로 쓸어내듯, 튼튼한 체인과 날개(Flight)를 이용해 뭉텅이로 끌고 가는 **'강인한 견인'** 기술입니다. 벨트 컨베이어가 물건을 태우고 가는 부드러운 방식이라면, 드래그 컨베이어는 거친 재료들을 억지로 밀어붙이는 터프한 방식입니다. 좁은 공간에서 엄청난 양의 가루와 알갱이를 묵묵히 옮기는 **'산업 물류의 든든한 일꾼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe Trough Wear - Liner thickness below safety threshold. High risk of material leakage and structure failure"
         return "PASS: Validated Wear Protection and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(motor_current_amps=32.5, chain_tension_kn=12.0, vibration_mm_s=2.5)
 print(engine.diagnose_conveyor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_conveyor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drag-conveyor-capacity-and-chain-wear-v2026`와 연동되어, 전 세계 주요 곡물 터미널 및 제철소의 데이터를 실시간 분석하고 체인 파손 및 라인 막힘 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 물류 문명의 수송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - belt-conveyor-and-tension-mechanics

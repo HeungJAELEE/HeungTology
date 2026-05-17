@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "battery-thermal-runaway-physics-and-fire-suppression-mechanisms"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] battery-thermal-runaway-physics-and-fire-suppression-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The scientific study of the chain reactions leading to uncontrollable temperature increases in batteries (Thermal Runaway) and the engineering of active/passive mechanisms to mitigate and suppress resulting fires."
-  physical_model: "N/A"
-Semantic:
-  tags: '["thermal-runaway", "battery-fire", "safety-engineering", "venting", "fire-suppression"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Temperature_Gradient_Audit: Monitor for localized ''Hot Spots'' that deviate from neighbor cells.'
-    - 'Venting_Pressure_Scan: Identify sudden pressure drops or gas release signatures.'
-    - 'Propagation_Speed_Check: Evaluate the thermal resistance between adjacent cells in a module.'
-Trust Metrics:
+  description: "[Entity] battery-thermal-runaway-physics-and-fire-suppression-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔥 Battery Thermal Runaway Physics and Fire Suppression Mechanisms
+# [Entity] battery-thermal-runaway-physics-and-fire-suppression-mechanisms
 
 ## 1. 개요 (Why)
 배터리 안전의 가장 큰 적은 '열 폭주'입니다. 내부 단락이나 과열로 인해 한 번 발생한 열이 연쇄적인 발열 반응을 일으켜 수 초 내에 1,000도 이상으로 치솟는 현상입니다. 이 과정에서 발생하는 가연성 가스는 폭발의 위험을 동반합니다. 본 노드는 열 폭주의 물리적 기전을 분석하고, 이를 조기에 감지하여 확산을 막는 소화 및 냉각 시스템의 표준을 정의합니다.
@@ -71,7 +60,6 @@ class SafetyFidelityEngine:
             return "REJECT: Hazardous Gas Detected - Open Ventilation Flaps"
         return "PASS: No Abnormal Gas Evolution"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(temp_rise_rate=25, gas_concentration=1200, cell_voltage=1.8)
 print(engine.diagnose_runaway_onset())
 print(engine.audit_gas_venting())
@@ -90,7 +78,6 @@ print(engine.audit_gas_venting())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data thermal-runaway-propagation-speed-and-gas-composition-v2026`와 연동되어, 팩 내부의 온도와 가스 농도를 실시간 감시하고 열 폭주 발생 시 0.1초 내로 소화 시스템을 가동함으로써 대형 화재 사고를 원천 봉쇄합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - battery-venting-and-gas-evolution-kinetics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Industrial-Cybersecurity-Framework"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Industrial-Cybersecurity-Framework]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Industrial-Cybersecurity-Framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Industrial-Cybersecurity-Framework
+# [Strategy] Industrial-Cybersecurity-Framework
 
 ## 1. [왜 배우는가? (Why)]]
 공장이 인터넷에 연결되면서 편리해졌지만, 동시에 해커들의 표적이 되었습니다. 산업 사이버 보안 프레임워크(Industrial-Cybersecurity-Framework)는 공장을 멈추거나 장비를 파괴하려는 공격으로부터 제조 지능을 지키는 '철벽 방어선'입니다. 일반적인 컴퓨터 보안과 달리, 공장 보안은 '장비가 멈추지 않는 것(Availability)'이 최우선입니다. 보안 패치 하나 잘못 했다가 공장이 멈추면 수십억 원의 손해가 나기 때문입니다. 이를 이해하는 것은 초연결 공장의 신경망을 외부 위협으로부터 보호하여, 24시간 끊김 없는 지능형 제조를 가능하게 하는 '디지털 안전의 파수꾼'이 되는 것입니다.
@@ -97,5 +87,4 @@ def detect_ics_threats(network_packets, process_baseline):
 2. '랜섬웨어' 공격이 제조 공장의 '디지털 트윈' 서버를 공격했을 때, 실제 공장 가동에 미칠 수 있는 '물리적 위협'의 시나리오는?
 3. 'NIST SP 800-82' 프레임워크가 제안하는 '방어 깊이(Defense-in-depth)' 전략이 '단일 방화벽' 방식보다 보안 사고 예방에 효과적인 논리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "CONCEPT-INF-SMR-MASTER-2026-V6"
-  domain: "05_Infrastructure"
+metadata:
+  id: "[[[Energy] Nuclear-SMR]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Energy'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] Nuclear-SMR에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] Nuclear-SMR
@@ -109,7 +99,6 @@ class NuclearInfrastructureFidelityEngine:
 2. **Integral PWR** 설계에서 **Steam Generator**의 관벽 파손 시 발생할 수 있는 **Primary-to-Secondary** 누설의 수리적 감지 모델과 **Redundancy** 전략은?
 3. SMR의 **Modular Manufacturing** 방식이 현장 건설 방식 대비 **Quality Assurance** (QA) 및 **Cost Learning Curve** 무결성에 미치는 파급 효과는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/05_Infrastructure/Energy/Concept nuclear-energy-and-fission-physics
 - 02_Knowledge/05_Infrastructure/Energy/Concept small-modular-reactor-smr-design-standards

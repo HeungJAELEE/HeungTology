@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "remote-sensing-and-multispectral-imaging-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] remote-sensing-and-multispectral-imaging-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of acquiring information about the Earth's surface without physical contact (Remote Sensing) and the specific technique of capturing image data within specific wavelength ranges across the electromagnetic spectrum (Multispectral Imaging Physics) to identify materials and objects by their spectral signatures."
-  physical_model: "N/A"
-Semantic:
-  tags: '["remote-sensing", "multispectral", "hyperspectral", "satellite-imaging", "spectral-signature", "aerospace", "environmental-monitoring"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectral_Fidelity_Audit: Evaluate the Signal-to-Noise Ratio (SNR) across each spectral band to ensure that material identification (Spectral Unmixing) is not corrupted by sensor noise.'
-    - 'Atmospheric_Correction_Check: Analyze the radiance model to verify that atmospheric scattering and absorption effects have been removed, revealing the true surface reflectance ($\\rho$).'
-    - 'Classification_Accuracy_Scan: Monitor the mapping accuracy between spectral signatures and ground truth to identify misidentification of land use or crop health status.'
-Trust Metrics:
+  description: "[Entity] remote-sensing-and-multispectral-imaging-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Remote Sensing and Multispectral Imaging Physics
+# [Entity] remote-sensing-and-multispectral-imaging-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 눈에는 그저 똑같은 초록색 숲으로 보이지만, 인공위성의 눈으로 보면 어느 나무가 병들었는지, 어느 땅에 수분이 부족한지 한눈에 알 수 있는 비결은 무엇일까요? **원격 탐사 및 다중 분광 영상 물리**는 보이지 않는 색깔(적외선 등)까지 읽어내어 지구의 상태를 진찰하는 **'행성용 건강검진'** 기술입니다. 물질마다 빛을 반사하는 고유한 패턴(지문)이 있다는 점을 이용해, 수백 km 상공에서 지구상의 모든 사물의 정체를 밝혀냅니다. 지구를 더 깊이 이해하고 보호하는 **'지능형 행성 감시망'**의 핵심입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fragile Change Detection - Shadows or clouds being misidentified as ground changes. Apply Temporal Filtering"
         return "PASS: Robust Temporal Analysis and Verified Planet-scale Monitoring Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(spectral_snr_db=45.0, atmospheric_correction_rmse=0.8, classification_kappa=0.92)
 print(engine.diagnose_remote_sensing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_remote_sensing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data multispectral-band-fidelity-and-classification-accuracy-v2026`와 연동되어, 전 세계 관측 위성의 분광 데이터를 실시간 분석하고 분석 오류 및 자원 오판 사고 확률을 0.001% 이하로 억제함으로써 지능형 행성 관리의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - radar-systems-and-synthetic-aperture-radar-sar-physics

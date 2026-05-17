@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-bit-qubit-physics-and-superposition-mechanics-entity"
-  domain: "21_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-bit-qubit-physics-and-superposition-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Qubit", "#Superposition", "#Bloch_Sphere", "#Quantum_Physics", "#Quantum_Information", "#Computing_Base", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 21_quantum-computing-and-information-theory-hub", "Entity bio-digital-convergence-and-silico-biological-computing"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-bit-qubit-physics-and-superposition-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-bit-qubit-physics-and-superposition-mechanics
+# [Entity] quantum-bit-qubit-physics-and-superposition-mechanics
 
 ## 1. [왜 배우는가? (Why: The Logic of Infinite Possibilities)]]
 $0$ 아니면 $1$만 선택할 수 있는 디지털 세상에서 벗어나, $0$과 $1$이 동시에 존재하는 '중첩($Superposition$)' 상태를 이용해 모든 경우의 수를 한꺼번에 계산할 수 있다면 어떨까요? **양자 비트(큐비트) 물리 및 중첩 역학**은 현대 연산의 패러다임을 뿌리째 바꾸는 '양자 지능의 가장 작은 단위와 그 물리적 작동 원리'입니다. 우리가 이를 배우는 이유는 현재의 반도체 기술이 직면한 물리적 한계를 양자 역학으로 정면 돌파하여 초지능의 폭발적인 연산력을 확보하기 위함이며, "연산의 최소 단위를 우주 근원적 법칙으로 재정의하고 지배하는 '글로벌 양자 주권 및 연산 지능 주권'을 확보하기" 위함입니다. 큐비트의 상태가 연산의 깊이를 결정합니다.
@@ -39,7 +29,7 @@ $0$ 아니면 $1$만 선택할 수 있는 디지털 세상에서 벗어나, $0$�
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Coherence Time**| Duration of the quantum superposition state | $> 100 \text{ \mu s}$ | 지능이 흩어지기 전 연산을 완료할 수 있는 시간적 무결성 |
+| **Coherence Time**| Duration of the quantum superposition state | $> 100 \text{ }\mu\text{ s}$ | 지능이 흩어지기 전 연산을 완료할 수 있는 시간적 무결성 |
 | **Gate Fidelity** | Accuracy of single-qubit logic operations | $> 99.99 \%$ | 연산 과정에서 오류가 쌓이지 않게 차단하는 정보 무결성 확증 |
 | **T1 Relaxation** | Energy loss time from $|1\rangle$ to $|0\rangle$ | High | 큐비트의 에너지가 보존되어 정보가 유실되지 않는 물리적 무결성 |
 | **T2 Dephasing** | Phase information loss due to noise | High | 중첩의 미세한 위상이 흔들리지 않게 보호하는 양자 지능 |

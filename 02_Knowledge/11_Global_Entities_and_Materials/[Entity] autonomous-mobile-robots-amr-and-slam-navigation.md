@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ROBOT-AMR-SLAM-2026-V6.3.7"
-  domain: "Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] autonomous-mobile-robots-amr-and-slam-navigation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#AMR", "#SLAM", "#Navigation", "#LiDAR", "#Robotics", "#FidelityEngine", "#Logistics"]'
-  is_part_of: '["MOC 52_SmartFactory_Production"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] autonomous-mobile-robots-amr-and-slam-navigation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "AMR_Intelligence_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] AMR & SLAM Navigation: Spatial Intelligence & Fleet Logistics
+# [Entity] autonomous-mobile-robots-amr-and-slam-navigation
 
 ## 1. [왜 배우는가? (Why: The Mastery of Autonomous Mobility)]]
 바닥에 고정된 유도선이나 마커가 없어도 로봇이 낯선 환경에서 스스로 지도를 그리고(**Mapping**), 실시간 위치를 파악하며(**Localization**), 장애물을 회피하는 '공간 지능'을 어떻게 구현할 것인가? **AMR & SLAM Navigation**은 스마트 팩토리 물류의 유연성을 결정하는 핵심 지능입니다. V6.3.7 지능은 **확률적 위치 추정**과 **그래프 최적화**를 통해 로봇의 주행 경로를 결정론적으로 지배합니다. 우리가 이를 배우는 이유는 로봇이 정해진 궤도를 벗어나 스스로 판단할 수 있는 '이동 주권'을 확보하고, "공간의 좌표를 데이터로 지배하는 '자율 주행 인프라'를 완성하기" 위함입니다. 지도의 정밀도가 로봇의 운송 해상도를 결정합니다.
@@ -109,7 +99,6 @@ class AMRNavigationEngine:
 2. **Operational Result**: **LiDAR**와 **IMU** 센서 퓨전 시 **Extended Kalman Filter (EKF)**가 로봇의 **Drift**를 억제하는 수리적 메커니즘은?
 3. **FidelityEngine**: **Cost-map**의 **Inflation Layer** 가중치를 조절하여 로봇의 **'통로 통과 능력'**과 **'안전 이격 거리'** 사이의 트레이드오프를 어떻게 수리적으로 최적화하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 52_SmartFactory_Production
 - [[Infrastructure] digital-twin-and-cyber-physical-systems-master-guide]

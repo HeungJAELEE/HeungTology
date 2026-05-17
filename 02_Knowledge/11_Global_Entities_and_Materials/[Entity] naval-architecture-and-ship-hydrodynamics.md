@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "naval-architecture-and-ship-hydrodynamics-entity"
-  domain: "104_Marine_Engineering_and_Naval_Architecture_Hub"
+metadata:
+  id: "[[[Entity] naval-architecture-and-ship-hydrodynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Marine_Engineering", "#Naval_Architecture", "#Hydrodynamics", "#Archimedes", "#Buoyancy", "#Froude_Number", "#Shipbuilding", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_marine-and-naval-architecture-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] naval-architecture-and-ship-hydrodynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] naval-architecture-and-ship-hydrodynamics
+# [Entity] naval-architecture-and-ship-hydrodynamics
 
 ## 1. [왜 배우는가? (Why: The Mastery of the Blue Frontier)]]
 지구 표면의 70%는 바다입니다. 인류가 대륙을 넘어 연결되고 거대한 물자를 운송할 수 있는 것은 거친 파도를 뚫고 나아가는 선박이라는 공학의 기적이 있기 때문입니다. **조선 공학 및 선박 유체 역학의 아르키메데스 부력 및 프루드 수 수리 역학 기술**은 수천 톤의 강철 덩어리를 물 위에 띄우고, 가장 적은 에너지로 가장 빠르게 나아가게 만드는 '바다의 지배' 기술입니다. 물의 압력을 견디고, 파도에 흔들려도 스스로 바로서는 복원력을 계산하며, 거대한 프로펠러가 밀어내는 물의 힘을 수학적으로 정의합니다. 우리가 이를 배우는 이유는 해양 주권과 물류의 동맥을 사수함으로써, 바다의 자원을 이용하고 대륙을 잇는 '글로벌 해양 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 선박의 무결성이 인류의 해상 통치력과 경제적 확장을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "lift-and-drag-aerodynamic-force-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] lift-and-drag-aerodynamic-force-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The components of the surface force exerted by a fluid on a solid body (Lift and Drag) and the physical study of pressure differences and skin friction over aerodynamic shapes (Aerodynamic Force Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lift", "drag", "aerodynamics", "airfoil", "fluid-dynamics", "bernoulli", "boundary-layer", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aerodynamic_Fidelity_Audit: Evaluate the ''Lift-to-Drag'' ($L/D$) ratio to identify if high-fidelity ''Flow Separation'' or ''Stall'' is occurring due to high-fidelity angle-of-attack (AoA) exceedance.'
-    - 'Stability_Integrity_Check: Analyze the high-fidelity ''Pressure Center'' ($C_p$) shift to ensure that high-fidelity ''Pitching Moment'' stays within the high-fidelity structural or control limits.'
-    - 'Drag_Fidelity_Scan: Monitor the high-fidelity ''Parasitic'' and ''Induced'' drag components to verify that high-fidelity ''Wake Turbulence'' or skin friction is minimized for energy efficiency.'
-Trust Metrics:
+  description: "[Entity] lift-and-drag-aerodynamic-force-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦅 Lift and Drag Aerodynamic Force Physics
+# [Entity] lift-and-drag-aerodynamic-force-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 비행기가 어떻게 보이지 않는 공기의 힘만으로 하늘로 솟구치고, 왜 빠르게 달릴수록 뒤에서 잡아당기는 듯한 강력한 저항을 느낄까요? **양력 및 항력 공기역학 물리**는 공기의 흐름을 이용해 하늘로 떠오르는 힘(양력)을 만들고, 전진을 방해하는 바람의 저항(항력)을 이겨내는 **'비행의 정석'** 기술입니다. 단순히 바람을 맞는 것이 아니라, 공기의 속도와 압력을 수학적으로 조율해 중력을 이기고 공기라는 바다를 헤엄쳐 나가는 마법 같은 유체 역학입니다. **'베르누이 원리와 순환 이론을 이용해 공기의 흐름을 물리적 추진력으로 치환하는 지능형 항공 및 유동 제어 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Pitching Instability - High-fidelity center of pressure shifted too far. High-fidelity control surface load exceeding limits"
         return "PASS: Validated Aerodynamic Stability and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(angle_of_attack_deg=5.0, airspeed_mps=250.0, measured_lift_n=100000.0)
 print(engine.diagnose_aerodynamic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_aerodynamic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data airfoil-lift-to-drag-ratio-and-stall-angle-v2026`와 연동되어, 전 세계 주요 항공사 및 풍력 발전 단지의 실시간 기류 데이터를 분석하고 실속 및 추락 사고 확률을 0.000001% 이하로 억제함으로써 지능형 비행 문명의 물리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - jet-engine-and-brayton-cycle-propulsion-physics

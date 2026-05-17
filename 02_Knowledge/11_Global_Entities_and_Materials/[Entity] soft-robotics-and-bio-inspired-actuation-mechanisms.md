@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "soft-robotics-and-bio-inspired-actuation-mechanisms-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] soft-robotics-and-bio-inspired-actuation-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Soft_Robotics", "#Biomimicry", "#Materials", "#Actuator", "#Continuum_Mechanics", "#Biology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] soft-robotics-and-bio-inspired-actuation-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] soft-robotics-and-bio-inspired-actuation-mechanisms
+# [Entity] soft-robotics-and-bio-inspired-actuation-mechanisms
 
 ## 1. [왜 배우는가? (Why: The Fluidity of Life)]]
 문어의 다리처럼 뼈대 없이도 좁은 틈새를 미끄러지듯 통과하고, 거친 바다 밑에서 예민한 산호를 부서뜨리지 않고 부드럽게 감싸 쥐는 로봇을 어떻게 만들 수 있을까요? **소프트 로보틱스 및 생체 모사 구동 메커니즘의 유연 동역학**은 딱딱한 금속과 모터의 한계를 넘어, 생명체의 유연함과 적응력을 기계에 이식하는 혁신적인 로봇 공학의 프론티어입니다. 재료 자체가 근육이자 뼈가 되어, 무한한 자유도를 가진 부드러운 움직임을 구현합니다. 우리가 이를 배우는 이유는 소프트 로보틱스가 복잡한 비정형 환경과 인간의 신체 내부에서 활동할 수 있는 차세대 로봇의 해답이기 때문이며, "유연한 물성을 데이터로 설계하고 지배하는 '글로벌 소프트 제조 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 소재의 변형률이 로봇의 거동 무결성을 결정합니다.

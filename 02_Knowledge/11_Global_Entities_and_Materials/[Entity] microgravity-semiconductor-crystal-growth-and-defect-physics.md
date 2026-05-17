@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "microgravity-semiconductor-crystal-growth-and-defect-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] microgravity-semiconductor-crystal-growth-and-defect-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science and engineering of growing high-purity semiconductor crystals in a microgravity environment (Space Manufacturing), which eliminates buoyancy-driven convection and sedimentation, allowing for near-perfect lattice structures and precise dopant distribution."
-  physical_model: "N/A"
-Semantic:
-  tags: '["microgravity", "semiconductor-growth", "space-manufacturing", "crystal-defect", "convection", "stokes-law", "marangoni-flow"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Convection_Suppression_Audit: Verify the residual gravity levels ($g$-jitter) to ensure they do not induce buoyancy-driven convection that disrupts the diffusion boundary layer.'
-    - 'Dopant_Uniformity_Check: Analyze the radial and axial dopant distribution to verify the ''Pure Diffusion'' growth mode, ensuring zero segregation patterns.'
-    - 'Dislocation_Density_Scan: Evaluate the crystalline perfection (e.g., via X-ray topography) to confirm the reduction of lattice defects compared to Earth-grown benchmarks.'
-Trust Metrics:
+  description: "[Entity] microgravity-semiconductor-crystal-growth-and-defect-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌌 Microgravity Semiconductor Crystal Growth and Defect Physics
+# [Entity] microgravity-semiconductor-crystal-growth-and-defect-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구에서는 절대 만들 수 없는 '완벽한 다이아몬드'를 우주에서 만든다면 어떨까요? **무중력 반도체 결정 성장 및 결함 물리**는 중력이라는 족쇄를 벗어던지고, 원자들이 스스로 가장 편안한 자리를 찾아가게 만드는 **'우주의 정밀 제조'**입니다. 지구에서는 뜨거운 공기가 위로 올라가려는 성질(대류) 때문에 결정이 엉키고 불순물이 섞이지만, 중력이 거의 없는 우주에서는 오직 분자들의 느긋한 움직임(확산)만 존재합니다. 이 고요한 환경에서 자라난 결정은 결함이 거의 없는 **'신의 반도체'**가 되어, 미래 양자 컴퓨팅과 초고속 통신의 핵심 소자가 됩니다.
@@ -59,7 +48,7 @@ $$ \frac{\partial c}{\partial t} = D \nabla^2 c $$
 | **Dislocation Density**| $10^2 \sim 10^4$ | < 10 | $cm^{-2}$ | Mobility |
 | **Dopant Uniformity** | 5.0% ~ 10.0% | < 0.5% | % | Yield |
 | **Carrier Mobility** | Baseline | 1.5x ~ 3x Boost | $cm^2/Vs$ | Speed |
-| **Convection Velocity**| mm/s scale | $\mu m/s$ scale | Velocity | Stability |
+| **Convection Velocity**| mm/s scale | $\mu\text{m}/s$ scale | Velocity | Stability |
 | **Crystal Diameter** | Limited by Stress | 2x ~ 3x Larger | mm | Productivity |
 | **Residual Gravity** | 1.0 | $10^{-6} \sim 10^{-4}$ | g | Environment |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Significant Marangoni Flow - Convection-like Instability at Free Surface. Optimize Temp Gradient"
         return "PASS: Suppressed Surface Flow and Stable Melt Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(micro_g_level=1e-6, dopant_striation_index=0.01, dislocation_count_per_cm2=2)
 print(engine.diagnose_space_growth_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_space_growth_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microgravity-crystal-dislocation-density-vs-earth-v2026`와 연동되어, 지구 궤도 공장의 결정 성장 데이터를 실시간 분석하고 격자 결함 및 품질 저하 사고 확률을 0.001% 이하로 억제함으로써 우주 지능 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - molecular-beam-epitaxy-mbe-and-atomic-layer-precision-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "calcium-carbide-and-acetylene-production-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] calcium-carbide-and-acetylene-production-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An industrial process where lime and coke are reacted in an electric arc furnace to produce calcium carbide ($CaC_2$) (Calcium Carbide Production) and the subsequent chemical reaction with water to generate acetylene gas ($C_2H_2$), a highly reactive hydrocarbon used for welding and chemical synthesis (Acetylene Production Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["calcium-carbide", "acetylene", "chemical-manufacturing", "welding-gas", "carbide-lamps", "carbon-chemistry", "electric-arc-furnace"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Synthesis_Fidelity_Audit: Evaluate the ''Power Consumption'' per ton of $CaC_2$ and the $CaO/C$ ratio to identify if the electric arc furnace is operating at the thermodynamic optimal for high-purity carbide.'
-    - 'Acetylene_Integrity_Check: Analyze the gas purity and impurities (e.g., $PH_3, H_2S$) in the generated acetylene to ensure the cleaning/scrubbing system is meeting industrial welding standards.'
-    - 'Safety_Fidelity_Scan: Monitor the moisture levels in the carbide storage area to identify potential ''Slow Hydrolysis'' which could lead to explosive gas accumulation.'
-Trust Metrics:
+  description: "[Entity] calcium-carbide-and-acetylene-production-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Calcium Carbide and Acetylene Production Chemistry
+# [Entity] calcium-carbide-and-acetylene-production-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 물만 부으면 즉석에서 강력한 폭발력을 가진 가스가 뿜어져 나오는 돌덩이, 들어보셨나요? **칼슘 카바이드 및 아세틸렌 생산 화학**은 돌(석회)과 숯(코크스)을 뜨거운 전기로 구워 '에너지를 머금은 돌'을 만드는 **'고온의 화학 저장'** 기술입니다. 이 돌은 물과 만나는 순간, 금속을 두부 자르듯 녹이는 수천 도의 불꽃을 만드는 '아세틸렌' 가스를 뿜어냅니다. 전기를 화학 에너지로 꽁꽁 묶어 두었다가 필요할 때 폭발적으로 해방하는 **'산업용 에너지의 기계적 보관소'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Toxic Phosphine Levels Detected - Risk of brittle welds and health hazards. Inspect scrubbing tower and chemical reagents"
         return "PASS: High-Purity Welding Grade Acetylene and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(carbide_purity_pct=82.0, gas_yield_l_kg=305.0, generator_temp_c=55.0)
 print(engine.diagnose_carbide_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_carbide_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data acetylene-yield-and-carbide-purity-metrics-v2026`와 연동되어, 전 세계 주요 화학 공장 및 제철소의 카바이드 조업 데이터를 실시간 분석하고 가스 누출 및 전기로 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 에너지 저장 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bessemer-process-and-modern-oxygen-steelmaking-physics

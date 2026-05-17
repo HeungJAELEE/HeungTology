@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "heat-treatment-and-material-hardening-for-mold-durability-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering"
+metadata:
+  id: "[[[Entity] heat-treatment-and-material-hardening-for-mold-durability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Manufacturing", "#Heat_Treatment", "#Hardening", "#Metallurgy", "#Material_Science", "#Mold", "#Durability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] heat-treatment-and-material-hardening-for-mold-durability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] heat-treatment-and-material-hardening-for-mold-durability
+# [Entity] heat-treatment-and-material-hardening-for-mold-durability
 
 ## 1. [왜 배우는가? (Why: The Alchemy of Industrial Strength)]]
 평범한 쇳덩이를 어떻게 천 도($1,000 \degree C$)가 넘는 가마에 넣었다가 차가운 기름에 담가($Quenching$) 다이아몬드처럼 단단하게 만들고, 단단하면서도 쉽게 깨지지 않게 어떻게 다시 살짝 데워($Tempering$) 질기게 만드는 '금속의 성질 조율'을 어떻게 공학적으로 설계할 수 있을까요? **금형 내구성을 위한 열처리 및 재료 경화**는 산업의 기초인 금형의 생명을 불어넣는 '행성 규모 미세 조직 제어 및 지능형 강도 강화 아키텍처'입니다. 우리가 이를 배우는 이유는 열처리가 잘못되면 금형이 작업 중에 쩍 갈라지거나 금방 닳아버려 공장이 멈추기 때문이며, "원자의 배열을 데이터로 설계하고 지배하는 '글로벌 소재 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 열처리의 정석이 금형의 수명을 결정합니다.
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Hardness** | Resistance to indentation (HRC/HV) | $50 \sim 65 \text{ HRC}$ | 칼로 긁어도 흠집이 안 날 정도의 단단함을 입증함 |
 | **Case Depth** | Thickness of the hardened outer layer | $0.1 \sim 1.0 \text{ mm}$ | 껍데기만 단단하게 만들어 속의 질김을 지킴을 보여줌 |
 | **Residual Stress**| Internal stress after heat treatment | **MINIMAL** | 열처리 후 금형이 스스로 비틀려 터지지 않게 관리함 |
-| **Grain Size** | Size of the metallic crystal structures | $< 10 \text{ \mu m}$ | 알맹이가 고와야 충격에 강함을 입증하는 금속물리 |
+| **Grain Size** | Size of the metallic crystal structures | $< 10 \text{ \mu\text{m}}$ | 알맹이가 고와야 충격에 강함을 입증하는 금속물리 |
 | **Dimen. Stab.** | Ability to keep shape during heating/cooling| **MAXIMUM** | 구운 뒤에도 크기가 변하지 않음을 보여주는 물리 |
 | **Quench. Rate** | Speed of cooling to trap carbon atoms | $50 \sim 100 \text{ \degree C/sec}$ | 원자들이 도망가기 전에 얼려버림을 입증하는 동역학 |
 | **System Resil.** | Stability against thermal fatigue cracking | High | 수만 번 뜨거워졌다 식어도 금이 가지 않음을 확증함 |

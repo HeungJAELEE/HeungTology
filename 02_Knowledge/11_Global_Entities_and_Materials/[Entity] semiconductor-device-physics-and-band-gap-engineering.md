@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-device-physics-and-band-gap-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] semiconductor-device-physics-and-band-gap-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the physical principles governing the behavior of semiconductor materials and electronic devices (Semiconductor Device Physics) and the technique of intentionally modifying the energy levels of electrons in these materials to create specific optical or electronic properties (Band Gap Engineering)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["semiconductor", "device-physics", "band-gap", "p-n-junction", "mosfet", "carrier-dynamics", "electronics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Device_Fidelity_Audit: Evaluate the threshold voltage ($V_{th}$) and leakage current to ensure the semiconductor device operates within the defined power and switching speed limits.'
-    - 'Carrier_Mobility_Check: Analyze the drift-diffusion current ($J$) to verify that material doping and lattice quality are providing the required electron/hole mobility.'
-    - 'Band-gap_Integrity_Scan: Monitor the photon emission or absorption spectrum to verify that the ''Engineering'' of the band gap (e.g., using AlGaAs/GaAs) is achieving the target wavelength.'
-Trust Metrics:
+  description: "[Entity] semiconductor-device-physics-and-band-gap-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Semiconductor Device Physics and Band Gap Engineering
+# [Entity] semiconductor-device-physics-and-band-gap-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기는 흐르거나 멈추는 것뿐인데, 어떻게 스마트폰이 복잡한 계산을 하고 인공지능이 생각을 할 수 있을까요? **반도체 소자 물리 및 밴드갭 엔지니어링**은 전기의 흐름을 '원자 수준에서 제어'하는 **'현대 전자 문명의 마법'**입니다. 반도체는 도체(흐름)와 부도체(멈춤) 사이의 경계에 서 있습니다. 우리는 이 경계의 높이(밴드갭)를 깎거나 높여서 전자가 언제 달리고 언제 멈출지, 혹은 빛을 내뿜을지 결정합니다. 모든 디지털 지능을 실현하는 **'실리콘 위의 물리학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Bandgap Engineering Failure - Composition ratio (e.g., Al/Ga) is incorrect. Spectrum shift identified"
         return "PASS: Precise Heterostructure Lattice and Verified Energy State Control Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(threshold_voltage_v=0.72, leakage_current_na=5.0, carrier_lifetime_us=150.0)
 print(engine.diagnose_device_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_device_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data semiconductor-carrier-mobility-and-leakage-current-v2026`와 연동되어, 전 세계 반도체 생산 라인의 물리 데이터를 실시간 분석하고 소자 불량 및 전력 폭주 사고 확률을 0.001% 이하로 억제함으로써 지능형 전자 문명의 근원적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - semiconductor-fabrication-process-and-cleanroom-standards

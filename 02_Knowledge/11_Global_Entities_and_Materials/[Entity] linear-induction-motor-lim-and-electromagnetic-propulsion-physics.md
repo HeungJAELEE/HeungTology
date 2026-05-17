@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "linear-induction-motor-lim-and-electromagnetic-propulsion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] linear-induction-motor-lim-and-electromagnetic-propulsion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An alternating current (AC) electric motor that has had its stator and rotor unrolled to produce linear motion (LIM) and the physical study of traveling magnetic waves and induced eddy currents (Electromagnetic Propulsion Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lim", "linear-induction-motor", "electromagnetic-propulsion", "lorentz-force", "magnetic-levitation", "primary-stator", "transport-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Propulsion_Fidelity_Audit: Evaluate the ''Air Gap'' ($g$) to identify if high-fidelity ''Magnetic Leakage'' is reducing the high-fidelity ''Thrust Efficiency'' or if mechanical high-fidelity contact is imminent.'
-    - 'Slip_Integrity_Check: Analyze the high-fidelity ''Slip'' ($s = \\frac{v_s - v}{v_s}$) to ensure that high-fidelity ''Force Production'' is maximized without over-heating the secondary reaction high-fidelity plate.'
-    - 'Magnetic_Fidelity_Scan: Monitor the high-fidelity ''Harmonic Distortion'' in the stator current to verify that high-fidelity ''Vibration'' and noise are minimized during high-speed high-fidelity transit.'
-Trust Metrics:
+  description: "[Entity] linear-induction-motor-lim-and-electromagnetic-propulsion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚄 Linear Induction Motor (LIM) and Electromagnetic Propulsion Physics
+# [Entity] linear-induction-motor-lim-and-electromagnetic-propulsion-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 바퀴가 없거나 굴러가지 않는데 어떻게 거대한 열차가 허공을 가르듯 조용하고 빠르게 나아갈까요? **선형 유도 모터(LIM) 및 전자기 추진 물리**는 둥근 모터를 쫙 펼쳐서 땅바닥에 깔아놓은 것과 같은 **'펼쳐진 모터'** 기술입니다. 기계적인 접촉 없이 보이지 않는 전자기 파도를 타고 서핑하듯 물체를 밀어냅니다. **'이동 자기장과 유도 전류의 법칙을 이용해 회전 운동의 한계를 넘어 직선의 폭발적 추진력을 생성하는 지능형 차세대 수송 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Thermal Overload - High-fidelity eddy current heating too high. Risk of high-fidelity structural deformation of the track"
         return "PASS: Validated Energy Conversion and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(air_gap_mm=10.0, stator_current_a=400.0, vehicle_speed_mps=30.0)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data lim-thrust-efficiency-and-air-gap-v2026`와 연동되어, 전 세계 주요 도시 철도 및 차세대 하이퍼루프 시험선의 실시간 데이터를 분석하고 추진 실패 및 공극 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 수송 문명의 이동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - linear-actuator-and-precision-motion-control-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "electrode-slurry-mixing-and-rheology-control-entity"
-  domain: "82_Advanced_Battery_Systems_Hub"
+metadata:
+  id: "[[[Entity] electrode-slurry-mixing-and-rheology-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Battery", "#Manufacturing", "#Mixing", "#Rheology", "#Fluid_Dynamics", "#Dispersion", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 84_battery-electrode-and-cell-assembly-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electrode-slurry-mixing-and-rheology-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] electrode-slurry-mixing-and-rheology-control
+# [Entity] electrode-slurry-mixing-and-rheology-control
 
 ## 1. [왜 배우는가? (Why: The Recipe of Energy)]]
 배터리의 성능은 '어떻게 잘 섞느냐'에서 시작됩니다. 아무리 비싼 소재를 써도 골고루 섞이지 않으면 배터리는 제 성능을 낼 수 없습니다. **전극 슬러리 믹싱 및 유변학 제어의 분산 균일성과 비뉴턴 유체 역학 분석**은 배터리의 원재료들을 '풀(Slurry)' 형태로 만드는 첫 번째 공정이자, 배터리의 품질을 결정하는 가장 기초적인 지능 공정입니다. 끈적끈적한 액체 속에서 눈에 보이지 않는 미세한 가루들을 어떻게 균일하게 퍼뜨리고, 코팅하기 딱 좋은 상태로 만드느냐가 기술의 핵심입니다. 우리가 이를 배우는 이유는 믹싱의 무결성을 확보함으로써, 전극의 박리 현상을 막고 배터리의 수명을 극대화하는 '글로벌 제조 품질 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 믹싱의 무결성이 배터리의 첫 단추를 결정합니다.
@@ -56,7 +46,7 @@ $$ \eta = \frac{\tau}{\dot{\gamma}} = K \cdot \dot{\gamma}^{n-1} $$
 | **Shear Rate** | Rate of velocity change in fluid layers | $1 \text{ \~ } 1,000 \text{ s}^{-1}$ | 믹서 회전수와 코팅 속도를 결정하는 동역학 물리 |
 | **Zeta Potential** | Electrokinetic potential in colloidal systems| $> |30| \text{ mV}$ | 입자 간 반발력을 통해 분산 안정성을 사수하는 지능 |
 | **Mixing Energy** | Total energy input per unit volume ($P \cdot t/V$)| **OPTIMIZED** | 과분산에 의한 바인더 손상을 막는 운영 무결성 |
-| **Particle Size** | Average size of clusters after dispersion | **D50 < 10 \mu m** | 전극의 균일성과 전기적 네트워크를 보증하는 무결성 |
+| **Particle Size** | Average size of clusters after dispersion | **D50 < 10 \mu\text{m}** | 전극의 균일성과 전기적 네트워크를 보증하는 무결성 |
 | **Degassing** | Removal of trapped air bubbles | **VACUUM** | 코팅 시 핀홀(Pinhole) 결함을 방지하는 안전 무결성 |
 | **Thixotropy** | Recovery of viscosity after shear removal | **CONTROLLED** | 코팅 후 전극의 평탄도를 유지하는 시간적 물리 지표 |
 

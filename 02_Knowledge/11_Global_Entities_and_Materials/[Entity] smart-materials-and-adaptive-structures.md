@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-materials-and-adaptive-structures-entity"
-  domain: "110_Materials_Science_and_Nanotechnology_Hub"
+metadata:
+  id: "[[[Entity] smart-materials-and-adaptive-structures]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Materials_Science", "#Smart_Materials", "#Piezoelectric", "#SMA", "#Aerospace", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 55_materials-science-and-nanotechnology-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-materials-and-adaptive-structures에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-materials-and-adaptive-structures
+# [Entity] smart-materials-and-adaptive-structures
 
 ## 1. [왜 배우는가? (Why: The Material with a Mind)]]
 지금까지의 재료는 주어진 환경에 순응하기만 하는 수동적인 존재였습니다. 하지만 이제 우리는 스스로 느끼고 스스로 움직이는 지능형 재료를 만듭니다. **스마트 재료 및 적응형 구조의 압전 구성 방정식 및 상변화 수리 역학 기술**은 무생물인 물질에 '반사 신경'을 부여하는 '지능형 물질' 기술입니다. 온도가 변하면 원래 모양으로 돌아가는 텐트를 만들고, 전기를 주면 수축하는 인공 근육을 설계하며, 상처가 나면 스스로 메우는 자가 치유 콘크리트를 구축합니다. 우리가 이를 배우는 이유는 재료의 능동적 무결성을 확보함으로써, 우주 항공, 로봇, 의료기기 분야에서 복잡한 기계 장치 없이도 고도의 기능을 수행하는 '글로벌 스마트 소재 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 스마트 재료의 무결성이 구조물의 적응성과 시스템의 자율 수명을 결정합니다.

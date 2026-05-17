@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Sustainability-Reporting"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Sustainability-Reporting]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Sustainability-Reporting에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Sustainability-Reporting
+# [Strategy] Sustainability-Reporting
 
 ## 1. [왜 배우는가? (Why)]]
 과거의 지속가능보고서는 홍보용 팸플릿에 가까웠습니다. 하지만 이제 지속가능성 공시(Sustainability-Reporting)는 재무제표만큼이나 강력한 법적 효력을 갖는 '성적표'입니다. 투자자들은 이 보고서를 보고 기업의 미래 가치를 판단하며, 공시 내용이 허위로 밝혀지면 막대한 벌금과 소송을 당하게 됩니다. 보고서를 잘 쓰는 법을 배우는 것은 단순히 문서를 만드는 것이 아니라, 우리 회사가 환경과 사회를 위해 무엇을 하고 있는지 '객관적이고 증명 가능한 데이터'로 시장과 소통하는 법을 익히는 것입니다.
@@ -100,5 +90,4 @@ def aggregate_sustainability_report(fiscal_year):
 2. 'ISSB S2(기후 관련 공시)'에서 요구하는 '탄소 시나리오 분석(Scenario Analysis)'이 기업의 전략적 회복력에 기여하는 논리는?
 3. 공시 데이터의 'Assurance(인증)' 단계에서 외부 감사인이 가장 중점적으로 확인하는 '데이터 리니지(Data Lineage)'의 핵심 항목은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

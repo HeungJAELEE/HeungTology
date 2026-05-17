@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-MAT-2D-TMD-2026-V6"
-  domain: "29_Advanced_Materials_and_Nanotechnology"
+metadata:
+  id: "[[[Entity] 2d-materials-and-transition-metal-dichalcogenides-tmds]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] 2d-materials-and-transition-metal-dichalcogenides-tmds에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] 2d-materials-and-transition-metal-dichalcogenides-tmds
+# [Entity] 2d-materials-and-transition-metal-dichalcogenides-tmds
 
 ## 1. [왜 배우는가? (Why)]]
 종이보다 10만 배 얇은 원자 한 겹의 두께이면서도 반도체의 성질을 완벽하게 갖춘 $MoS_2, WSe_2$ 같은 2D 소재($TMD$)를 어떻게 한 층씩 정밀하게 쌓아 올리고, 투명하면서도 마음대로 휘어지는 유리창 컴퓨터나 초미세 인공지능 칩을 구현할 수 있을까요? **2D 소재 및 전이 금속 디칼코게나이드**는 실리콘($Si$)의 물리적 한계를 돌파할 '원자층 반도체 및 나노 광소자 아키텍처'의 근간입니다. 우리가 이를 배우는 이유는 더 이상 작아질 수 없는 실리콘의 자리를 원자 한 겹이 대신하여 반도체 미세화의 역사를 새로 써야 하기 때문이며, 원자 수준의 물질 제어 기술을 통해 '글로벌 초미세 반도체 및 차세대 디스플레이 주권'을 확보하기 위함입니다. 원자 한 층의 균일함이 곧 미래 산업의 해상도입니다.
@@ -45,7 +35,7 @@ Trust Metrics:
 | **Thickness** | Layer ($nm$) | $< 0.7$ | 단일 원자층 두께 (초미세/초경량 소자 구현의 물리 한계) |
 | **Transparency**| Optical (%) | $> 95.0$ | 투명 소자 응용을 위한 가시광선 투과율 무결성 |
 | **Exciton Bind.**| Energy ($meV$) | $300 \sim 500$ | 상온에서도 안정적인 엑시톤 결합 (광전 변환 무결성) |
-| **Contact Res.** | $R_c$ ($\Omega\cdot\mu m$)| $< 100$ | 금속 전극과의 계면 저항 최소화 수준 (전력 효율 지표) |
+| **Contact Res.** | $R_c$ ($\Omega\cdot\mu\text{m}$)| $< 100$ | 금속 전극과의 계면 저항 최소화 수준 (전력 효율 지표) |
 | **Scale-up** | Wafer Size (inch) | $> 12$ | 대면적 CVD 성장을 통한 양산 가능성 무결성 지표 |
 
 ## 3. [공학적 근거 (Scientific Rationale)]
@@ -104,10 +94,6 @@ class TMDIntelligenceFidelityEngine:
             return f"WARNING: MOBILITY_DEGRADED_INDEX_{round(mobility_index, 2)}_HIGH_DEFECT_DENSITY"
         return f"MATERIAL_STATUS: HIGH_PURITY_TMD_VERIFIED (Index: {round(mobility_index, 2)})"
 
-# Example Usage:
-# tmd_ai = TMDIntelligenceFidelityEngine()
-# gap_report = tmd_ai.calculate_bandgap_transition(layer_count=1)
-# mobility_report = tmd_ai.audit_mobility_fidelity(defect_density_cm2=1e10)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -115,7 +101,6 @@ class TMDIntelligenceFidelityEngine:
 2. **Van der Waals Heterostructure** 제작 시 **Lattice Mismatch**가 소자의 **Interlayer Charge Transfer** 무결성에 미치는 영향은?
 3. **Valley Hall Effect**를 이용한 정보 처리가 기존 **Charge-based** 소자 대비 **Energy Dissipation** 측면에서 가지는 수리적 우위는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/29_Advanced_Materials_and_Nanotechnology_Hub/Concept 2d-materials-and-graphene-physics
 - 02_Knowledge/05_Semiconductor_and_Display_Engineering_Hub/Concept post-silicon-semiconductor-materials

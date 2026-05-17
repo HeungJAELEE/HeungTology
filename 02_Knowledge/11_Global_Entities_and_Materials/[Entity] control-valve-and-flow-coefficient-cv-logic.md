@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "control-valve-and-flow-coefficient-cv-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] control-valve-and-flow-coefficient-cv-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A valve used to control fluid flow by varying the size of the flow passage as directed by a signal from a controller (Control Valve) and the numerical representation of the valve's capacity to pass flow at a given pressure drop (Flow Coefficient Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["control-valve", "flow-coefficient", "cv", "process-control", "fluid-dynamics", "actuator", "industrial-piping"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sizing_Fidelity_Audit: Evaluate the ''Cv'' at the maximum and minimum flow rates to identify if the valve is ''Oversized'', which leads to poor control resolution and hunting behavior near the seat.'
-    - 'Cavitation_Integrity_Check: Analyze the pressure drop against the ''Critical Delta P'' to ensure that bubbles are not forming and collapsing within the trim, causing erosion and noise.'
-    - 'Actuator_Fidelity_Scan: Monitor the ''Dead-band'' and ''Stiction'' (static friction) to verify that the valve positioner is responding linearly to the controller signal.'
-Trust Metrics:
+  description: "[Entity] control-valve-and-flow-coefficient-cv-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚰 Control Valve and Flow Coefficient (Cv) Logic
+# [Entity] control-valve-and-flow-coefficient-cv-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 화학 공장이나 원자력 발전소에서 흐르는 수천 톤의 액체를 누가 그렇게 정교하게 조절할까요? **제어 밸브 및 유량 계수(Cv) 로직**은 산업 문명의 '수도꼭지'를 스마트하게 다스리는 **'흐름의 정밀 조정'** 기술입니다. Cv는 밸브가 얼마나 많은 유량을 통과시킬 수 있는지를 나타내는 '능력치'입니다. 너무 크면 제어가 안 되고, 너무 작으면 막힙니다. 딱 맞는 크기를 찾아 소음과 파손 없이 부드럽게 흐름을 지배하는 **'지능형 유체 게이트키퍼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Dead-band - Large lag in response to signal changes. Process variability will increase beyond limits"
         return "PASS: Validated Actuator Movement and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(valve_opening_pct=45.0, pressure_drop_bar=3.2, friction_stiction_pct=1.2)
 print(engine.diagnose_valve_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_valve_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data control-valve-sizing-and-performance-curves-v2026`와 연동되어, 전 세계 주요 플랜트의 밸브 데이터를 실시간 분석하고 유량 제어 실패 및 밸브 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 유체 문명의 제어 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - check-valve-and-fluid-backflow-prevention-logic

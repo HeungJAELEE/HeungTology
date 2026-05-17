@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Electric-Vehicle-Platform-EV"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Electric-Vehicle-Platform-EV]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Electric-Vehicle-Platform-EV에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Electric-Vehicle-Platform-EV
+# [Strategy] Electric-Vehicle-Platform-EV
 
 ## 1. [왜 배우는가? (Why)]]
 전기차는 단순히 엔진을 떼고 모터를 단 차가 아닙니다. 완전히 새로운 판 위에서 설계되어야 합니다. 전기차 전용 플랫폼(Electric-Vehicle-Platform-EV)은 자동차의 뼈대 자체를 전기차에 맞게 최적화하여, 더 멀리 가고, 더 빨리 충전하며, 더 넓은 실내 공간을 만드는 기술입니다. 배터리를 바닥에 깔아 무게 중심을 낮추고, 부품을 모듈화하여 세단부터 SUV까지 뚝딱 만들어낼 수 있게 합니다. 이를 이해하는 것은 자동차를 거대한 '이동형 보조 배터리'이자 '고성능 컴퓨터'로 재정의하여, 미래 모빌리티 시장의 표준을 선점하는 '모빌리티 아키텍트'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (EV Energy Management & V2L Control)]
 배터리 상태(SoC)를 분석하여 주행 가능 거리를 계산하고 외부 기기에 전력을 공급(V2L)하는 논리 구조입니다.
 ```python
-# 전동화 플랫폼(ISM) 기반 에너지 관리 및 V2L 제어 논리
 def manage_ev_energy_flow(battery_soc, discharge_request):
     # 1. 실시간 배터리 상태 진단 (SoC & SoH)
     # 팩 전압, 전류, 온도를 기반으로 가용 에너지 산출
@@ -93,5 +82,4 @@ def manage_ev_energy_flow(battery_soc, discharge_request):
 2. '800V 고전압 시스템' 도입 시 '충전 시간'은 줄어들지만, '절연 설계'와 '부품 단가' 측면에서 발생하는 공학적 도전 과제는?
 3. 'V2G(Vehicle to Grid)' 기술이 '스마트 그리드' 환경에서 전기차를 '이동형 ESS'로 기능하게 함으로써 얻는 '전력망 안정화'의 가치는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

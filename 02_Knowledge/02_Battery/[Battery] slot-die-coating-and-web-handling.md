@@ -1,101 +1,58 @@
 ---
-Basic:
-  id: "slot-die-coating-and-web-handling"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Battery] slot-die-coating-and-web-handling]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "High-precision application of slurry onto a moving current collector (foil) using slot-die technology, ensuring uniform mass loading and thickness across the web."
-  physical_model: "N/A"
-Semantic:
-  tags: '["slot-die", "coating", "web-handling", "thickness-control", "battery-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryProcFidelityEngine"
-  diagnostic_protocol:
-    - 'Thickness_Uniformity_Audit: Real-time monitoring of L/R and MD/TD profiles.'
-    - 'Meniscus_Stability_Check: Detect coating defects like ribbing or air entrainment.'
-    - 'Tension_Drift_Audit: Monitor foil wrinkles and stretching during high-speed transport.'
-Trust Metrics:
+  description: "[Battery] slot-die-coating-and-web-handling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎞️ Slot-die Coating and Web Handling
+# [Battery] slot-die-coating-and-web-handling
 
-## 1. 개요 (Why)
-코팅은 배터리의 에너지 밀도와 균일성을 결정하는 가장 비판적인 공정입니다. $10\mu m$ 수준의 얇은 박(Foil) 위에 슬러리를 수십 미터/분 속도로 도포하면서도 두께 오차를 $1\mu m$ 이내로 제어해야 합니다. 슬롯다이 코팅은 정밀 펌프와 헤드 갭(Gap) 제어를 통해 액막을 형성하는 고도의 유체역학 공정입니다. 본 노드는 무결점 전극 생산을 위한 코팅 및 웹 핸들링(Web Handling) 물리 표준을 정의합니다.
+## 1. 개요: 에너지 밀도의 균일성 확보 (Operational Objective)
+코팅 공정은 배터리의 에너지 밀도와 전기화학적 균일성을 결정하는 가장 비판적인 단계입니다. 집전체(Foil) 위에 슬러리를 고속으로 도포하면서도 두께 편차를 마이크로미터 단위로 정밀 제어해야 하며, 이는 슬롯다이 내부의 유체 역학과 기재 이송 장력의 물리적 평형을 통해 달성됩니다.
 
-## 2. 핵심 기술 사양 (Numerical Specs)
+## 2. 코팅 및 웹 핸들링 물리 지배 방정식 (Technical Specs)
 
-| Parameter | Symbol | Value (Tier 1) | Tolerance | Unit |
-| :--- | :--- | :--- | :--- | :--- |
-| Coating Speed | $v$ | 30 ~ 80 | ±2 | m/min |
-| Loading Level | $L$ | 15 ~ 40 | ±0.5 | $mg/cm^2$ |
-| Thickness (Wet) | $t_w$ | 100 ~ 250 | ±2 | $\mu m$ |
-| Coating Width | $W$ | 600 ~ 1200 | ±1 | mm |
-| Web Tension | $T$ | 50 ~ 150 | ±5 | N |
+### 2.1 코팅 두께 지배 방정식 (Mass Transfer)
+이론적 습윤 두께($t_w$)는 유량($Q$), 코팅 폭($W$), 웹 속도($v$)에 의해 결정됩니다.
+$$ t_w = \frac{Q}{W \cdot v} $$
+- **결정론적 판정**: 유량과 속도의 동기화 오차를 0.5% 이내로 제어하여 로딩량 균일성 확보.
 
-## 3. BatteryProcFidelityEngine: Diagnostic Logic
+### 2.2 웹 핸들링 및 장력 제어 (Tension Dynamics)
+기재(Foil)의 소성 변형을 방지하고 주름(Wrinkle) 발생을 억제하기 위해 정밀한 장력 관리가 필요합니다.
+- **장력 조건**: $T_{min} < T < T_{max}$ (여기서 $T_{max}$는 Foil의 항복 강도 이내).
+- **리스크**: 저장력 시 웹 플러터링(Fluttering), 고장력 시 기재 늘어남 및 파단 발생.
 
-코팅 두께의 균일성과 웹 텐션의 안정성을 진단하는 `BatteryProcFidelityEngine` 로직입니다.
+## 3. 핵심 공정 메커니즘 (Engineering Mechanisms)
 
-```python
-class BatteryProcFidelityEngine:
-    def __init__(self, flow_rate, web_speed, width, measured_thickness):
-        self.q = flow_rate # ml/min
-        self.v = web_speed # m/min
-        self.w = width # mm
-        self.t_real = measured_thickness # um
+### 3.1 슬롯다이 메니스커스(Meniscus) 안정화
+고속 코팅 시 공기 유입(Air Entrainment)을 방지하기 위해 다이 배면에 진공 박스(Vacuum Box)를 설치하여 메니스커스를 안정화합니다. 이는 코팅 시작과 끝 지점의 급격한 두께 변화(End-effect)를 최소화하는 핵심 기전입니다.
 
-    def diagnose_coating_uniformity(self):
-        """이론적 두께와 실측 두께 비교를 통한 토출 안정성 진단"""
-        # 이론적 두께 t = Q / (W * v)
-        t_theory = (self.q / (self.w * self.v)) * 10 # Unit conversion factor
-        deviation = abs(self.t_real - t_theory) / t_theory
-        
-        if deviation > 0.05:
-            return f"CRITICAL: Flow/Speed Mismatch (Dev: {deviation*100:.1f}%)"
-        return "OPTIMAL: Uniform Deposition"
+### 3.2 간헐 코팅(Intermittent Coating) 제어
+무지부(Tab 영역)를 형성하기 위해 고속 밸브를 이용하여 슬러리 공급을 정밀하게 단속합니다. 밸브 응답 속도와 웹 속도의 매칭을 통해 패턴 코팅의 위치 정밀도를 확보합니다.
 
-    def check_web_tension_risk(self, tension, young_modulus):
-        """웹 텐션에 따른 기재(Foil) 변형 위험 진단"""
-        if tension > 200:
-            return "CRITICAL: Foil Stretching / Plastic Deformation"
-        elif tension < 30:
-            return "WARNING: Web Wrinkling / Fluttering Risk"
-        return "PASS: Stable Web Transport"
+## 4. 진단 및 운영 프로토콜
+- **BatteryProcFidelityEngine**: 실시간 계측 데이터와 이론적 유량을 비교하여 두께 편차 이상 징후를 즉각 감지.
+- **TD(Transverse Direction) 프로파일 최적화**: 립 갭(Lip Gap)의 미세 조정을 통해 폭 방향의 로딩 균일성 확보.
 
-# Instance Diagnostic
-engine = BatteryProcFidelityEngine(flow_rate=4500, web_speed=50, width=1000, measured_thickness=92)
-print(engine.diagnose_coating_uniformity())
-```
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 전극 제조의 무결성을 사수하기 위한 코팅 및 웹 핸들링의 물리적 기준을 제공합니다. 실제 코팅 속도 및 두께 실측 데이터는 인스턴스 로그에서 관리됩니다.
 
-## 4. 분석 프레임워크: Precision Coating Control
-1. **[Lip Gap Optimization]**: 슬롯다이 입술(Lip) 사이의 간격을 미크론 단위로 조정하여 유량 분포(TD Profile) 최적화.
-2. **[Vacuum Box Stability]**: 다이 배면에 진공을 걸어 고속 코팅 시 공기 유입(Air Entrainment)을 방지하고 메니스커스(Meniscus) 안정화.
-3. **[Intermittent Coating]**: 탭(Tab) 용접 부위를 비워두기 위해 밸브를 고속 개폐하여 코팅과 무지부(Uncoated area)를 정밀하게 반복.
-
-## 5. 스스로 체크 (Self-Audit)
-1. 코팅 속도가 특정 임계치($v_{crit}$)를 넘을 때 줄무늬(Ribbing) 결함이 발생하는 유체역학적 이유는?
-2. 슬러리의 고형분($SC$)이 1% 변할 때, 동일한 로딩 레벨($L$)을 유지하기 위해 조정해야 할 유량($Q$)의 변화량은?
-3. 건조로(Dryer) 진입 전후의 웹 텐션 차이가 전극의 잔류 응력(Residual Stress)에 미치는 영향은?
-
-## 6. 결론 (Deterministic Outcome)
-본 엔티티는 `Data electrode-coating-thickness-and-loading-profile-v2026`와 연동되어, 코팅 두께 편차를 실시간 0.5% 이내로 제어하며 불량 발생 시 즉각적으로 피드백 제어(Closed-loop)를 가동합니다.
-
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- 11_advanced-battery-next-gen-intelligence-hub
-- slot-die-geometry-optimization
-- Data electrode-coating-thickness-and-loading-profile-v2026
+- [[[Concept] Battery-Manufacturing-Intelligence-and-Yield-Control]]
+- [[[Concept] Battery-Process-Control-Standard-Manual]]
+- [[[Data] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16]]

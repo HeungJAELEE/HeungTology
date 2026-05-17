@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-FEA-STRUCT-2026-V6"
+metadata:
+  id: "[[[AI] finite-element-analysis-fea-ai]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#FEA'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] finite-element-analysis-fea-ai에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] finite-element-analysis-fea-ai
@@ -108,7 +98,6 @@ class FeaSyntheticEngine(torch.nn.Module):
 2. **PINN** (Physics-Informed Neural Network) 학습 시 **Physics Loss** ($\mathcal{L}_{physics}$)의 가중치($\lambda$)를 너무 크게 설정했을 때 발생할 수 있는 **Stability-Accuracy** 트레이드오프는?
 3. **Topology Optimization** 과정에서 AI가 생성한 '유기적 형상'이 전통적인 **CNC** 가공으로 제작 불가능할 때, 이를 해결하기 위한 **Additive Manufacturing** (3D 프린팅)과의 연계 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI physics-informed-neural-networks-pinn
 - 02_Knowledge/01_Semiconductor/Process/Semiconductor wafer-warpage-simulation

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "seismic-design-and-structural-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] seismic-design-and-structural-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced engineering framework for analyzing structural responses to seismic loading, focusing on modal analysis, damping mechanisms, and performance-based design (PBD)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["seismic-design", "structural-dynamics", "earthquake-engineering", "vibration-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SeismicFidelityEngine"
-  diagnostic_protocol:
-    - 'Resonance_Audit: $|f_{force} - f_{natural}| / f_{natural} \\ge 0.15$'
-    - 'Inter-story_Drift_Limit: $\\Delta / h \\le 0.015$ (Seismic Zone 4)'
-    - 'Damping_Ratio_Check: $\\zeta \\ge 0.05$ (Reinforced Concrete)'
-Trust Metrics:
+  description: "[Entity] seismic-design-and-structural-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌋 Seismic Design and Structural Dynamics
+# [Entity] seismic-design-and-structural-dynamics
 
 ## 1. 개요 (Why)
 지진은 건축물에 비결정론적이고 강력한 동적 수평 하중을 가하여 심각한 인명 및 재산 피해를 초래합니다. 내진 설계의 목적은 단순히 건물의 붕괴를 막는 것을 넘어, 지진동 에너지를 효과적으로 분산(Dissipation)시키고 감쇠(Damping)시켜 구조물의 동적 응답을 허용 범위 내로 제어하는 것입니다. 본 엔티티는 구조 동역학 원리에 기반하여 지진에 대한 결정론적 방어 체계를 구축합니다.
@@ -79,7 +68,6 @@ class SeismicFidelityEngine:
         status = "SAFE" if max_u <= limit else "UNSAFE"
         return {"max_displacement_m": max_u, "limit_m": limit, "status": status}
 
-# Instance Diagnostic
 seismic_engine = SeismicFidelityEngine(m=500000, k=2e8, c=1e6, pga=0.3)
 print(seismic_engine.calculate_modal_properties())
 print(seismic_engine.evaluate_max_displacement())
@@ -98,7 +86,6 @@ print(seismic_engine.evaluate_max_displacement())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 구조 동역학 모델과 `Data seismic-wave-velocity-and-earthquake-magnitude-log-v2026`의 실측 데이터를 결합하여 지진 하중 하에서의 구조적 생존성을 수치적으로 보증합니다. 이를 통해 극한 상황에서의 붕괴 모드를 예측하고 사전 보강 시나리오를 수립합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - civil-engineering-moc
 - base-isolation-systems

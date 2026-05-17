@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-factory-automation-standard-and-connectivity-entity"
-  domain: "86_Digital_Twin_and_Smart_Factory_Hub"
+metadata:
+  id: "[[[Entity] smart-factory-automation-standard-and-connectivity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#Automation", "#Connectivity", "#IIoT", "#Communication_Protocols", "#Standardization", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 74_digital-twin-and-smart-factory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-factory-automation-standard-and-connectivity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-factory-automation-standard-and-connectivity
+# [Entity] smart-factory-automation-standard-and-connectivity
 
 ## 1. [왜 배우는가? (Why: The Universal Language of Industry)]]
 수백 개의 서로 다른 제조사에서 만든 기계들이 한 공장에 모여 있을 때, 이들이 서로 대화하지 못한다면 어떤 일이 벌어질까요? 공장은 단순히 기계들의 집합소일 뿐, 하나의 지능체로 작동할 수 없습니다. **스마트 팩토리 자동화 표준 및 연결성의 데이터 상호운용성과 지능형 통신 프로토콜 공학**은 파편화된 기계 언어들을 하나로 통합하는 '공장의 공용어'이자 신경망입니다. 장비와 장비, 공장과 클라우드가 실시간으로 데이터를 주고받으며 협력할 때 비로소 진정한 자율 제조가 시작됩니다. 우리가 이를 배우는 이유는 통신 표준의 무결성을 확보함으로써, 어떤 장비라도 즉시 지능망에 연결되는 '글로벌 연결 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 표준의 무결성이 제조 지능의 확장성을 결정합니다.

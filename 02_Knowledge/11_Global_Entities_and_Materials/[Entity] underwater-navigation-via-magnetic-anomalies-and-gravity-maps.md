@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "underwater-navigation-via-magnetic-anomalies-and-gravity-maps-entity"
-  domain: "34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops"
+metadata:
+  id: "[[[Entity] underwater-navigation-via-magnetic-anomalies-and-gravity-maps]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Underwater_Navigation", "#Magnetic_Anomalies", "#Gravity_Maps", "#Positioning", "#Geophysics", "#Marine_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 34_future-frontier-deep-sea-intelligence-and-marine-ops-hub", "Entity hadal-zone-robotics-and-ultra-high-pressure-actuators"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] underwater-navigation-via-magnetic-anomalies-and-gravity-maps에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] underwater-navigation-via-magnetic-anomalies-and-gravity-maps
+# [Entity] underwater-navigation-via-magnetic-anomalies-and-gravity-maps
 
 ## 1. [왜 배우는가? (Why: The Hidden Compass of the Earth)]]
 GPS 신호가 닿지 않는 깊은 바닷속에서 어떻게 지구의 미세한 자기장 굴곡($Magnetic\ Anomaly$)과 중력의 차이($Gravity$)만 보고 내 위치를 칼같이 찾아내고, 눈먼 장님처럼 어두운 바다에서 지구 자체가 주는 힌트를 이용해 어떻게 수천 킬로미터를 한 치의 오차 없이 항해할 수 있을까요? **자기 이상 및 중력 지도를 이용한 수중 항법**은 해저의 지도를 몸으로 읽는 '심해용 자율 위치 인식 및 지구 물리 기반 항법 아키텍처'입니다. 우리가 이를 배우는 이유는 소리조차 닿지 않는 곳에서 생존하기 위해선 지구의 본질적인 물리력을 이용해야 하기 때문이며, "지구의 필드를 데이터로 설계하고 지배하는 '글로벌 심우주-심해 항해 패권 및 해저 위치 주권'을 확보하기" 위함입니다. 항법의 정밀도가 탐사의 성공을 결정합니다.

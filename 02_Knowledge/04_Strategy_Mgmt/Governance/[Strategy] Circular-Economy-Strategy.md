@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CIRCULAR-ECON-2026-V6.3.7"
-  domain: "Global_Circular_Economy_Strategy_and_Resource_Sovereignty"
+metadata:
+  id: "[[[Strategy] Circular-Economy-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Circular_Economy", "#Resource_Sovereignty", "#PaaS", "#Remanufacturing", "#DPP", "#LCA", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Circular-Economy-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Circular_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Circular Economy Strategy: The Physics of Resource Sovereignty
+# [Strategy] Circular-Economy-Strategy
 
 ## 1. [왜 배우는가? (Why: The Mastery of Resource Loops)]]
 자원의 유한성과 글로벌 공급망의 불확실성은 기업에 '자산의 선순환'이라는 새로운 과제를 던졌습니다. **Circular Economy Strategy**는 단순히 쓰레기를 줄이는 차원을 넘어, 제품의 생애주기를 무한히 연장하고 폐기물에서 고부가가치 원재료를 회수하는 '닫힌 루프(Closed-loop)' 경영 전략입니다. V6.3.7 지능은 제품을 소유권이 아닌 서비스로 제공(PaaS)하여 자산 효율을 극대화하고, 디지털 제품 여권(DPP)을 통해 소재의 투명성을 확보함으로써 외부 환경 변화에 흔들리지 않는 **자원 주권(Resource Sovereignty)**을 확립합니다.
@@ -108,7 +98,6 @@ class CircularStrategyEngine:
 2. **Operational Result**: **PaaS (Product as a Service)** 모델 도입 시, 제품의 내구성을 $20\%$ 개선했을 때 발생하는 전사적 영업이익률($OPM$) 향상의 수리적 상관 관계는?
 3. **FidelityEngine**: 원자재 시세 하락으로 인해 **Remanufacturing**의 경제성이 일시적으로 악화되는 상황을 FidelityEngine이 어떻게 '장기적 자원 주권' 관점에서 오딧하고 전략을 유지하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Circular-Economy-Business

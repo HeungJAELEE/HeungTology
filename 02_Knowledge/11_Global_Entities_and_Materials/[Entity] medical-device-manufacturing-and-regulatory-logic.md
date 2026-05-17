@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "medical-device-manufacturing-and-regulatory-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] medical-device-manufacturing-and-regulatory-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The specialized manufacturing principles and regulatory frameworks (ISO 13485, FDA 21 CFR Part 820) governing the production of medical devices, ensuring safety, effectiveness, and comprehensive traceability through validation protocols."
-  physical_model: "N/A"
-Semantic:
-  tags: '["medical-device", "iso-13485", "regulatory-compliance", "validation", "iq-oq-pq", "gmp", "quality-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Validation_Fidelity_Audit: Assess the high-fidelity ''IQ/OQ/PQ'' status to ensure that high-fidelity process parameters are within validated limits and documented properly.'
-    - 'Traceability_Fidelity_Check: Verify the high-fidelity ''Device History Record (DHR)'' to ensure 100% component-to-patient traceability.'
-    - 'Risk_Fidelity_Scan: Evaluate the high-fidelity ''Residual Risk'' post-manufacturing according to ISO 14971 to ensure patient safety.'
-Trust Metrics:
+  description: "[Entity] medical-device-manufacturing-and-regulatory-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# Medical Device Manufacturing and Regulatory Logic
+# [Entity] medical-device-manufacturing-and-regulatory-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 의료기기 제조는 일반적인 제품 생산과는 결이 다릅니다. 이는 누군가의 가족, 친구, 그리고 우리 자신의 생명을 지키는 도구를 만드는 행위이기 때문입니다. **Medical Device Manufacturing and Regulatory Logic**은 "실수해도 괜찮은" 범위를 허용하지 않습니다. 모든 공정은 사전에 검증(Validation)되어야 하며, 모든 부품은 어디서 왔는지 추적 가능해야 합니다. ISO 13485와 FDA 규제는 단순한 장벽이 아니라, 인류의 건강을 담보하기 위한 최후의 **'품질 안전망'**이자 **'윤리적 논리'**입니다. 우리는 이 노드를 통해 "규제를 넘어선 신뢰"를 제조합니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
 Traceability Breach - high-fidelity UDI synchronization error. Risk of high-fidelity recall"
         return "STABLE: Verified high-fidelity Medical Regulatory Compliance and Safety"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(validation_status=1.0, capas_open=2, traceability_score=0.9999)
 print(engine.diagnose_regulatory_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_regulatory_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fda-pma-510k-regulatory-standards-v2026`와 연동되어, 인공 심박동기부터 스마트 헬스케어 기기에 이르기까지 모든 의료기기가 **'Zero-Defect Safety'**를 달성하도록 보장합니다. 규제 준수는 비용이 아니라, 글로벌 시장에서 항구적인 경쟁력을 확보하기 위한 **'신뢰의 인프라'**입니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - sterilization-technology-and-microbial-control-physics

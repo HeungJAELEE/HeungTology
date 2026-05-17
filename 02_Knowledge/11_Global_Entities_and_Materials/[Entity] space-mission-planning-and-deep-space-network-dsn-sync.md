@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "space-mission-planning-and-deep-space-network-dsn-sync"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] space-mission-planning-and-deep-space-network-dsn-sync]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic process of defining objectives, trajectories, and resource allocations for space exploration (Space Mission Planning) and the global infrastructure of giant radio antennas that provide continuous communication and navigation data for deep space spacecraft (DSN Sync)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["space-mission", "dsn", "mission-planning", "space-communication", "telemetry", "nav-sync", "aerospace"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Link_Fidelity_Audit: Evaluate the Signal-to-Noise Ratio (SNR) of the downlink from Jupiter or Mars to ensure that critical telemetry data is not lost due to cosmic background noise or antenna misalignment.'
-    - 'Clock_Sync_Check: Analyze the round-trip light time (RTLT) and apply ''Relativistic Corrections'' to ensure that the spacecraft''s internal clock is perfectly synchronized with Earth time for precise navigation maneuvers.'
-    - 'Resource_Conflict_Scan: Monitor the DSN scheduling grid to identify ''Antenna Over-subscription'' where multiple high-priority missions are competing for the same radio window.'
-Trust Metrics:
+  description: "[Entity] space-mission-planning-and-deep-space-network-dsn-sync에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛸 Space Mission Planning and Deep Space Network (DSN) Sync
+# [Entity] space-mission-planning-and-deep-space-network-dsn-sync
 
 ## 1. 개요 (Why: 인간적 통찰)
 화성이나 목성 너머로 떠난 탐사선이 수십억 킬로미터 밖에서도 지구와 끊임없이 대화하고, 자신이 어디 있는지 정확히 알 수 있는 비결은 무엇일까요? **우주 미션 기획 및 심우주 통신망(DSN) 동기화**는 인류의 지능을 태양계 끝까지 연결하는 **'우주적 대화의 기술'**입니다. 미지의 공간으로 향하는 항로(Trajectory)를 치밀하게 기획하고, 지구 곳곳에 배치된 거대 안테나(DSN)를 지휘자처럼 조율하여 탐사선이 단 1초도 외롭지 않게 만듭니다. 지구라는 요람을 벗어나 우주로 나아가는 인류의 **'지능형 생명선'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Communication Gap - Handover between Madrid and Canberra stations failed. Potential loss of Telemetry"
         return "PASS: Seamless Global Coverage and Verified Network Continuity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(downlink_snr_db=12.5, clock_drift_ms=0.5, orbital_insertion_error_km=15.0)
 print(engine.diagnose_mission_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mission_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dsn-link-availability-and-telemetry-latency-v2026`와 연동되어, 전 세계 DSN 안테나 및 보이저, 화성 탐사선의 통신 데이터를 실시간 분석하고 미션 실패 및 통신 두절 사고 확률을 0.001% 이하로 억제함으로써 지능형 우주 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - satellite-constellation-design-and-orbital-mechanics

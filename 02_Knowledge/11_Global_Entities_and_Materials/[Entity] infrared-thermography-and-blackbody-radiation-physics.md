@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "infrared-thermography-and-blackbody-radiation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] infrared-thermography-and-blackbody-radiation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-destructive testing method that detects infrared energy emitted from an object and converts it to temperature (Infrared Thermography) and the physical study of ideal thermal emitters and spectral energy distribution (Blackbody Radiation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["infrared-thermography", "blackbody-radiation", "thermal-imaging", "emissivity", "stefan-boltzmann", "wiens-law", "non-destructive-testing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Radiance_Fidelity_Audit: Evaluate the ''Surface Emissivity'' ($\\epsilon$) to identify if high-fidelity ''Reflected Temperature'' is causing false high-fidelity hotspots on shiny metallic surfaces.'
-    - 'Spectral_Integrity_Check: Analyze the high-fidelity ''Wavelength Range'' (MWIR vs LWIR) to ensure the high-fidelity sensor is optimized for the target temperature and atmospheric high-fidelity transmission.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Delta-T'' (Temperature difference) to verify that high-fidelity ''Insulation Failure'' or ''Electrical Overheating'' is detected before failure.'
-Trust Metrics:
+  description: "[Entity] infrared-thermography-and-blackbody-radiation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Infrared Thermography and Blackbody Radiation Physics
+# [Entity] infrared-thermography-and-blackbody-radiation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 보이지 않는 열기를 어떻게 눈으로 볼 수 있을까요? **적외선 열화상 및 흑체 복사 물리**는 모든 물체가 온도에 따라 내뿜는 보이지 않는 빛(적외선)을 포착하여 온도로 번역하는 **'열의 시각화'** 기술입니다. 절대 0도 이상의 모든 물체는 에너지를 사방으로 내뿜고 있습니다. **'물리적 접촉 없이 멀리서도 기계의 고통(과열)이나 건물의 냉기 누출을 한눈에 파악하여 산업 현장의 안전과 효율을 사수하는 지능형 열 감각 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Atmospheric Obscuration - High-fidelity infrared energy absorbed by moisture or smoke. Measurement high-fidelity precision compromised"
         return "PASS: Validated Clear Path and Verified Imaging Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pixel_temp_c=125.0, ambient_temp_c=25.0, emissivity_setting=0.95)
 print(engine.diagnose_thermography_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_thermography_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data emissivity-factors-and-thermal-imaging-precision-v2026`와 연동되어, 전 세계 주요 발전소 및 데이터 센터의 실시간 열화상 데이터를 분석하고 화재 및 설비 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 안전 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

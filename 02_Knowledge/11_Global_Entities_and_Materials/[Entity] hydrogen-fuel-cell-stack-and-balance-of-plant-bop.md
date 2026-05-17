@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydrogen-fuel-cell-stack-and-balance-of-plant-bop"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydrogen-fuel-cell-stack-and-balance-of-plant-bop]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The core power generation unit that converts hydrogen and oxygen into electricity (Fuel Cell Stack) and the auxiliary systems (Balance of Plant, BoP) required for its operation, including air/thermal/water management."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fuel-cell", "pemfc", "fuel-cell-stack", "bop", "hydrogen-energy", "electrochemistry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Polarization_Curve_Audit: Analyze the voltage-current relationship to identify activation, ohmic, or concentration losses (Flooding/Drying).'
-    - 'BoP_Subsystem_Check: Evaluate the performance of the air compressor, coolant pump, and humidifier to ensure optimal stack operating conditions.'
-    - 'Durability_Integrity_Scan: Monitor the degradation rate (micro-volts per hour) and identify potential catalyst poisoning or membrane thinning.'
-Trust Metrics:
+  description: "[Entity] hydrogen-fuel-cell-stack-and-balance-of-plant-bop에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Hydrogen Fuel Cell Stack and Balance of Plant (BoP)
+# [Entity] hydrogen-fuel-cell-stack-and-balance-of-plant-bop
 
 ## 1. 개요 (Why: 인간적 통찰)
 수소를 전기로 바꾸는 과정은 연소가 아니라 '마법 같은 화학 반응'입니다. **수소 연료전지 스택 및 BoP**는 수소와 공기를 만나게 하여 조용히 전기를 뽑아내고 물만 배출하는 **'깨끗한 심장'**입니다. 하지만 이 심장이 뛰려면 공기를 불어넣고(Air), 열을 식히고(Thermal), 습도를 조절하는(Water) 복잡한 조연들인 **BoP(주변 장치)**의 완벽한 서포트가 필요합니다. 마치 사람의 폐와 심장이 유기적으로 움직이듯, 수백 장의 얇은 막(Stack)과 정교한 기계 장치들이 어우러져 소음과 공해 없는 미래 동력을 만드는 **'전기화학적 예술품'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Membrane Drying Detected - Humidifier Failure or Low Flow"
         return "PASS: Ideal Membrane Hydration Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(avg_cell_voltage=0.68, stoichiometry_ratio=2.1, coolant_inlet_temp=72.5)
 print(engine.diagnose_stack_health(target_volt=0.72))
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_stack_health(target_volt=0.72))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fuel-cell-efficiency-and-degradation-logs-v2026`와 연동되어, 전 세계 수소차와 발전소 심장의 전압 데이터를 실시간 분석하고 스택 고장 및 출력 저하 사고 확률을 0.01% 이하로 억제함으로써 지능형 수소 동력의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - heat-exchanger-design-and-thermal-management-physics

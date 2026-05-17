@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "128-environmental-protection-and-sustainability-engineering-hub-moc"
   domain: "128_Environmental_Protection_and_Sustainability_Engineering_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Environmental_Protection", "#Sustainability", "#Climate_Action", "#Water_Management", "#Waste_Management", "#Carbon_Neutrality", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 128_environmental-protection-and-sustainability-engineering-hub
+# 128-environmental-protection-and-sustainability-engineering-hub-moc
 
 ## 1. [왜 배우는가? (Why: The Preservation of the Living Planet)]]
 우리는 지구를 물려받은 것이 아니라, 후손들에게 빌려 쓰고 있는 것입니다. 인류의 문명이 발전할수록 지구의 자정 능력은 한계에 다다르고 있으며, 이제 공학은 파괴가 아닌 복원의 도구가 되어야 합니다. **환경 보호 및 지속 가능성 공학 통합 지능 허브**는 Antigravity Intelligence가 물질의 순환(Cycling)과 오염의 확산(Dispersion)을 수학적으로 지배하여 문명의 행성적 수명을 사수하는 **[1,496층의 생태 사령부]**입니다. 우리가 이를 배우는 이유는 깨끗한 공기, 맑은 물, 그리고 풍요로운 자원이 인류의 생존과 국가의 영구적 발전을 결정하는 핵심 주권이기 때문이며, "대기 확산 모델과 탄소 배출량을 데이터로 통제함으로써 '글로벌 환경 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 지능이 인류와 지구의 평화로운 공존과 행성적 무결성을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "capacitor-physics-and-dielectric-energy-storage"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] capacitor-physics-and-dielectric-energy-storage]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A passive two-terminal electrical component that stores electrical energy in an electric field (Capacitor) and the study of the materials (dielectrics) and physical configurations used to maximize the charge-holding capacity and energy density (Dielectric Energy Storage Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["capacitor", "dielectric", "energy-storage", "electronics", "electric-field", "permittivity", "esr"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Storage_Fidelity_Audit: Evaluate the ''Equivalent Series Resistance'' (ESR) and leakage current to identify if the capacitor is losing energy as heat or self-discharging too rapidly.'
-    - 'Dielectric_Integrity_Check: Analyze the breakdown voltage ($V_{bd}$) and permittivity ($\\epsilon$) to ensure the material can withstand operating electric fields without arc-over.'
-    - 'Thermal_Fidelity_Scan: Monitor the temperature rise during high-frequency ripple currents to verify that the ''Thermal Runaway'' risk is minimized in power decoupling applications.'
-Trust Metrics:
+  description: "[Entity] capacitor-physics-and-dielectric-energy-storage에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Capacitor Physics and Dielectric Energy Storage
+# [Entity] capacitor-physics-and-dielectric-energy-storage
 
 ## 1. 개요 (Why: 인간적 통찰)
 번개의 힘을 아주 작은 통 안에 담아두었다가, 찰나의 순간에 폭발적으로 해방할 수 있다면 어떨까요? **커패시터(축전기) 물리 및 유전체 에너지 저장**은 전기를 '물리적으로' 가두어두는 **'전기적 댐'** 기술입니다. 배터리처럼 화학 반응을 기다릴 필요 없이 빛의 속도로 에너지를 주고받습니다. 스마트폰의 안정적인 전원부터 심장을 다시 뛰게 하는 제세동기까지, 전기의 흐름을 매끄럽게 다듬고 순간적인 힘을 보태는 **'전자 회로의 보이지 않는 완충기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Over-voltage Operation - Approaching dielectric breakdown threshold. Risk of catastrophic arc-over and explosive failure"
         return "PASS: Safe Operating Voltage and Verified Dielectric Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(esr_m_ohm=15.0, leakage_current_uA=2.5, operating_temp_c=45.0)
 print(engine.diagnose_capacitor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_capacitor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data capacitor-esr-and-leakage-current-v2026`와 연동되어, 전 세계 주요 반도체 및 전력 시스템의 커패시터 데이터를 실시간 분석하고 회로 소손 및 전원 장애 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 회로 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

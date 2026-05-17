@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "precision-machining-and-cnc-tribology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] precision-machining-and-cnc-tribology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced manufacturing process of removing material with high accuracy using computer-controlled tools (Precision Machining) and the study of friction, wear, and lubrication in the interaction of these moving parts (CNC Tribology), specifically focusing on spindle stability and measurement integrity."
-  physical_model: "N/A"
-Semantic:
-  tags: '["precision-machining", "cnc", "tribology", "metrology", "spindle-dynamics", "manufacturing-precision", "mechanical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Machining_Precision_Audit: Evaluate the actual part dimensions against the G-code target to identify thermal expansion errors or lead-screw backlash.'
-    - 'Spindle_Vibration_Check: Analyze the FFT spectrum of the spindle vibration to identify bearing wear or imbalance before it degrades the surface finish.'
-    - 'Tribological_Lubrication_Scan: Monitor the lubricant film thickness and temperature to ensure hydrodynamic lubrication is maintained, preventing metal-to-metal contact.'
-Trust Metrics:
+  description: "[Entity] precision-machining-and-cnc-tribology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ Precision Machining and CNC Tribology
+# [Entity] precision-machining-and-cnc-tribology
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철 덩어리에서 머리카락 굵기의 1/100 오차도 없이 비행기 부품을 깎아내는 기계의 비결은 무엇일까요? **정밀 가공 및 CNC 트라이볼로지**는 금속을 깎는 '힘'과 움직이는 부품 사이의 '마찰'을 다스리는 **'기계의 정석'**입니다. 1분에 수만 번 회전하는 주축(스핀들)이 흔들리지 않게 공기로 띄우고, 공구가 금속을 깎을 때 발생하는 엄청난 열과 마찰을 기름(윤활)으로 다스려 거울처럼 매끄러운 표면을 만듭니다. 기계가 가진 물리적 한계를 극한으로 끌어올리는 **'정밀 기계 문명의 심장'**입니다.
@@ -56,9 +45,9 @@ $$ \omega_c = \sqrt{\frac{k}{m}} $$
 
 | Feature | Standard CNC | Precision Machining (V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Tolerance** | $\pm 10 \sim 50$ | $\pm 0.1 \sim 1.0$ | $\mu m$ | High Accuracy |
+| **Tolerance** | $\pm 10 \sim 50$ | $\pm 0.1 \sim 1.0$ | $\mu\text{m}$ | High Accuracy |
 | **Spindle Speed** | 6,000 ~ 12,000 | 40,000 ~ 100,000 | RPM | High Speed |
-| **Positioning Res** | 1.0 | 0.01 (10nm) | $\mu m$ | Nano-scale |
+| **Positioning Res** | 1.0 | 0.01 (10nm) | $\mu\text{m}$ | Nano-scale |
 | **Bearing Type** | Rolling Element | Air / Hydrostatic | - | Low Friction |
 | **Lubrication** | Grease / Flood Oil | Oil-Air / MQL | - | Minimum Quant. |
 | **Metrology Sync** | Post-process | On-machine (Probing) | - | Real-time Audit|
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Backlash - Mechanical Wear in Lead-screw or Coupling. Compensate in CNC Controller"
         return "PASS: Precise Positional Tracking and Verified Mechanical Repeatability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(spindle_runout_um=0.5, tool_tip_vibration_g=0.05, lubricant_temp_c=35.0)
 print(engine.diagnose_machining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_machining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data machining-tolerance-and-tool-wear-telemetry-v2026`와 연동되어, 전 세계 하이엔드 CNC 기계의 가동 데이터를 실시간 분석하고 형상 오차 및 기계 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

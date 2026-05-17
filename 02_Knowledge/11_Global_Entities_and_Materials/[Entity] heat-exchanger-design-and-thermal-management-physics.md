@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heat-exchanger-design-and-thermal-management-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heat-exchanger-design-and-thermal-management-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of devices designed to transfer heat between two or more fluids (Heat Exchanger) and the systematic control of temperature in electronic or mechanical systems (Thermal Management), utilizing conduction, convection, and radiation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["heat-exchanger", "thermal-management", "heat-transfer", "convection", "cooling-systems", "thermodynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Efficiency_Audit: Measure the heat transfer rate ($Q$) and compare it to the theoretical maximum to determine the exchanger''s effectiveness ($\\epsilon$).'
-    - 'Fouling_Resistance_Check: Evaluate the increase in pressure drop and decrease in overall heat transfer coefficient ($U$) to detect scale or sediment buildup.'
-    - 'Temperature_Gradient_Scan: Analyze the temperature distribution across the exchanger surfaces to identify localized hot spots or flow maldistribution.'
-Trust Metrics:
+  description: "[Entity] heat-exchanger-design-and-thermal-management-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Heat Exchanger Design and Thermal Management Physics
+# [Entity] heat-exchanger-design-and-thermal-management-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 엔진이 너무 뜨거워지면 멈추고, 스마트폰이 과열되면 느려집니다. 열은 기계의 가장 큰 적이자, 동시에 우리가 다루어야 할 가장 소중한 에너지이기도 합니다. **열교환기 설계 및 열관리**는 뜨거운 쪽의 열을 차가운 쪽으로 가장 효율적으로 '배달'하는 **'에너지의 우체부'**입니다. 단순히 차갑게 식히는 것을 넘어, 버려지는 열을 다시 회수하여 에너지로 쓰고 시스템의 온도를 1도 단위로 정밀하게 다스리는 이 기술은, 모든 기계가 지치지 않고 최상의 성능을 낼 수 있게 돕는 **'체온 조절 시스템'**과 같습니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Internal/External Leakage Detected - Risk of Cross-contamination"
         return "PASS: Seal Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(actual_heat_transfer_rate=45.2, pressure_drop_bar=0.8, fouling_factor=0.0001)
 print(engine.diagnose_thermal_health(design_q=50.0))
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_thermal_health(design_q=50.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data heat-exchanger-efficiency-and-fouling-logs-v2026`와 연동되어, 산업 현장 및 데이터 센터의 모든 열관리 장치 상태를 실시간 분석하고 과열 사고 및 냉각 효율 저하 사고 확률을 0.01% 이하로 억제함으로써 시스템의 안정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fluid-dynamics-in-chemical-processes-bernoulli-and-reynolds

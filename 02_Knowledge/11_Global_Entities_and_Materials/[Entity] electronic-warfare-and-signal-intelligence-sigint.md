@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electronic-warfare-and-signal-intelligence-sigint"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electronic-warfare-and-signal-intelligence-sigint]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Comprehensive engineering framework for dominating the electromagnetic spectrum (EMS) through Electronic Attack (EA), Electronic Protection (EP), and Electronic Support (ES), combined with intelligence gathering via Signal Intelligence (SIGINT)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["defense", "electronic-warfare", "sigint", "jamming", "spectrum-dominance", "radar-countermeasures"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "EWFidelityEngine"
-  diagnostic_protocol:
-    - 'Jamming_Effectiveness_Audit: $J/S \\ge 10.0$ dB for effective screening.'
-    - 'Detection_Probability_Check: $P_d \\ge 0.90$ for threat emitters.'
-    - 'Signal_Classification_Accuracy: $\\ge 0.95$ for known waveform types.'
-Trust Metrics:
+  description: "[Entity] electronic-warfare-and-signal-intelligence-sigint에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Electronic Warfare and Signal Intelligence (SIGINT)
+# [Entity] electronic-warfare-and-signal-intelligence-sigint
 
 ## 1. 개요 (Why)
 현대 전장은 전자기 스펙트럼(EMS)을 장악하는 자가 지배합니다. 전자전(EW)은 적의 지휘 통제 및 정밀 유도 무기를 전자기적으로 무력화하는 '보이지 않는 전쟁'입니다. 또한 신호 정보(SIGINT)는 적의 통신(COMINT)과 전자 신호(ELINT)를 수집 및 분석하여 적의 위치와 의도를 파악하는 전략적 자산입니다. 본 엔티티는 신호 처리 알고리즘과 물리적 전파 모델을 결합하여 전자기적 우위를 결정론적으로 확보합니다.
@@ -81,8 +70,6 @@ class EWFidelityEngine:
         # 이 거리는 모델에 따라 R^2 또는 R^4 관계가 달라질 수 있음 (여기선 자가 보호 재밍 기준)
         return {"estimated_bt_range_m": "Complex calculation based on radar type"}
 
-# Instance Diagnostic
-# Pt=1MW, Pj=10kW, R=50km, RCS=5m^2
 ew_engine = EWFidelityEngine(target_power=1e6, jammer_power=1e4, distance_r=50000, radar_rcs=5)
 print(ew_engine.calculate_js_ratio())
 ```
@@ -100,7 +87,6 @@ print(ew_engine.calculate_js_ratio())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data electronic-warfare-and-signal-intelligence-sigint-log-v2026`와 연동되어 전자기 환경의 변화를 실시간으로 분석합니다. `EWFidelityEngine`을 통해 최적의 재밍 기법을 선정하고, 적의 전자기적 사각지대를 결정론적으로 노출시켜 작전 성공률을 극대화합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_defense-and-strategic-systems-command-center
 - radar-jamming-and-spoofing-logic

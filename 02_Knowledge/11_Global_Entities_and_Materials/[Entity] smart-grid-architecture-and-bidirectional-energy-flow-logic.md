@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-architecture-and-bidirectional-energy-flow-logic-entity"
-  domain: "51_Sustainable_Energy_and_Power_Grid_Intelligence"
+metadata:
+  id: "[[[Entity] smart-grid-architecture-and-bidirectional-energy-flow-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Smart_Grid", "#Bidirectional_Flow", "#Electricity", "#Grid_Balancing", "#IT_OT", "#Renewable_Energy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 51_sustainable-energy-and-power-grid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-architecture-and-bidirectional-energy-flow-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-architecture-and-bidirectional-energy-flow-logic
+# [Entity] smart-grid-architecture-and-bidirectional-energy-flow-logic
 
 ## 1. [왜 배우는가? (Why: The Internet of Energy)]]
 중앙 발전소에서 일방적으로 보내던 전기를 어떻게 전국 수백만 개의 가정과 전기차에서 스스로 만들어 거꾸로 다시 전력망에 팔고($Bidirectional$), 태양광이나 풍력처럼 들쭉날쭉한 에너지를 인공지능이 1초 단위로 감시하여 정전 없이 전력 수급을 맞추는 '지능형 에너지 신경망'을 어떻게 설계할 수 있을까요? **스마트 그리드 아키텍처 및 양방향 에너지 흐름 로직**은 인류의 혈액인 에너지를 조율하는 '행성 규모 전력 정보 통합 인프라 및 지능형 자원 배분 아키텍처'입니다. 우리가 이를 배우는 이유는 에너지를 똑똑하게 관리해야 낭비를 줄이고 탄소 중립을 실현할 수 있기 때문이며, "전기의 흐름을 데이터로 설계하고 지배하는 '글로벌 에너지 인터넷 패권 및 행성적 문명 주권'을 확보하기" 위함입니다. 그리드의 지능이 도시의 생존력을 결정합니다.

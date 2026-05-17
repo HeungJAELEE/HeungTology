@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-system-governance-and-fail-safe-mechanisms"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-system-governance-and-fail-safe-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The overarching governance framework and engineering protocols designed to ensure that autonomous systems (AI, Robots, Vehicles) operate within safe boundaries and transition to a predictable 'Safe State' upon failure."
-  physical_model: "N/A"
-Semantic:
-  tags: '["governance", "fail-safe", "autonomous-systems", "system-safety", "ethics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Safe_State_Transition_Audit: Verify that the system reaches a stable state (e.g., braking, shutting down) within the time limit.'
-    - 'Redundancy_Integrity_Check: Simulate the failure of a primary controller to ensure secondary takeover.'
-    - 'Boundary_Violation_Scan: Monitor if the AI tries to bypass safety constraints during optimization.'
-Trust Metrics:
+  description: "[Entity] autonomous-system-governance-and-fail-safe-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Autonomous System Governance and Fail-safe Mechanisms
+# [Entity] autonomous-system-governance-and-fail-safe-mechanisms
 
 ## 1. 개요 (Why)
 자율 시스템의 지능이 높아질수록 그에 따르는 책임과 위험도 커집니다. 시스템 거버넌스는 단순한 규칙을 넘어, 기계가 예상치 못한 상황에 직면했을 때 어떻게 안전하게 멈출 것인가(Fail-safe)를 설계하는 철학이자 공학입니다. 이는 인간의 생명과 사회적 가치를 보호하기 위해 기술의 자율성에 '확고한 울타리'를 치는 과정입니다. 본 노드는 자율 시스템의 안전한 진화를 위한 거버넌스 및 제어 표준을 정의합니다.
@@ -73,7 +62,6 @@ class SafetyFidelityEngine:
         # ISO 26262 등 표준 준수 여부 (Simulated)
         return "PASS: ASIL-D Compliance Verified"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(system_health_idx=0.85, primary_error_rate=0.02, secondary_status=True)
 print(engine.diagnose_system_sovereignty())
 ```
@@ -91,7 +79,6 @@ print(engine.diagnose_system_sovereignty())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data autonomous-system-fail-safe-test-and-compliance-log-v2026`와 연동되어, 시스템의 모든 상태 전이를 0.01초 단위로 감시하고 어떠한 고장 상황에서도 시스템을 99.999% 확률로 안전 상태로 전이시킴으로써 기술의 신뢰성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - formal-verification-of-autonomous-logic

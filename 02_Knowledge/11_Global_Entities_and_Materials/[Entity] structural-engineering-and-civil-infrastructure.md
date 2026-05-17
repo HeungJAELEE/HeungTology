@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "structural-engineering-and-civil-infrastructure-entity"
-  domain: "102_Infrastructure_and_Transportation_Engineering_Hub"
+metadata:
+  id: "[[[Entity] structural-engineering-and-civil-infrastructure]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Structural_Engineering", "#Civil_Engineering", "#Mechanics", "#Steel", "#Concrete", "#Seismic", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 102_infrastructure-and-transportation-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] structural-engineering-and-civil-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] structural-engineering-and-civil-infrastructure
+# [Entity] structural-engineering-and-civil-infrastructure
 
 ## 1. [왜 배우는가? (Why: The Bone of Human Habitation)]]
 우리가 사는 아파트, 강을 가로지르는 거대한 교량, 하늘 높이 솟은 마천루는 결코 우연히 서 있는 것이 아닙니다. **구조 공학 및 토목 인프라의 오일러-베르누이 보 이론 및 폰 미제스 응력 수리 역학 기술**은 보이지 않는 힘의 흐름을 계산하여 중력과 지진, 바람의 위협으로부터 인류를 보호하는 '문명의 뼈대' 기술입니다. 재료가 언제 휘어지고 부서지는지 수학적으로 예측하고, 가장 적은 재료로 가장 튼튼한 구조를 설계하는 과정은 공학적 효율과 안전의 극치입니다. 우리가 이를 배우는 이유는 사회 기반 시설의 무결성을 확보함으로써, 재난으로부터 안전한 도시를 만들고 지속 가능한 주거 환경을 제공하는 '글로벌 인프라 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 구조의 무결성이 인류의 물리적 생존 공간과 안위를 결정합니다.

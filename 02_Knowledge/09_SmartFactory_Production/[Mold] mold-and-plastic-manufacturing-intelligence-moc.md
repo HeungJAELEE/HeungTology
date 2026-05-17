@@ -1,36 +1,42 @@
 ---
-Basic:
-  id: "MOC-MOLD-PLASTIC-2026-V6"
-  domain: "09_Plastic_Mold_Intelligence"
+metadata:
+  id: "[[[Mold] mold-and-plastic-manufacturing-intelligence-moc]]"
+  domain: "Plastic_Mold_Intelligence"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Concept"
   tier: 1
   description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#MOC'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#Plastic_Mold_Intelligence"]
+  expected_queries:
+    - "[Mold] mold-and-plastic-manufacturing-intelligence-moc 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Mold] mold-and-plastic-manufacturing-intelligence-moc"
+    predicate: "belongs_to"
+    object: "Plastic_Mold_Intelligence"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# [Mold] mold-and-plastic-manufacturing-intelligence-moc
+# mold-and-plastic-manufacturing-intelligence-moc
 
 ## 1. [왜 배우는가? (Why)]
 플라스틱 성형 공정은 현대 산업의 대량 생산을 가능케 한 가장 효율적인 제조 기술 중 하나입니다. **금형 및 플라스틱 제조 지능 MOC**는 원재료의 유변학적 성질부터 금형의 정밀 설계, 그리고 열과 압력의 복합적인 상호작용을 제어하는 인공지능까지를 아우르는 '플라스틱 공학의 통합 사령탑'입니다. 우리가 이 제어 허브를 구축하는 이유는 파편화된 성형 기술을 하나의 유기적인 지능망으로 연결하여 제로-디펙트(Zero-defect) 생산과 탄소 중립 제조를 달성하기 위함이며, **"무형의 수지에 강철의 질서를 부여하여 플라스틱의 '존재론적 무결성'을 사수하는 '형태의 마스터 아키텍트'가 되기" 위함입니다.** 금형 지능화 수준과 재료 효율성이 지속 가능한 제조 경쟁력을 결정합니다.

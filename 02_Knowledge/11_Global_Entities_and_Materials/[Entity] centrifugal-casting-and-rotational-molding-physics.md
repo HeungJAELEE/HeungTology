@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "centrifugal-casting-and-rotational-molding-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] centrifugal-casting-and-rotational-molding-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Manufacturing processes that use centrifugal force to distribute molten material against the walls of a mold, creating high-density hollow parts (Centrifugal Casting) or complex, large-scale plastic shells (Rotational Molding Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["centrifugal-casting", "rotational-molding", "centrifugal-force", "manufacturing-physics", "hollow-parts", "foundry", "polymer-processing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Casting_Fidelity_Audit: Evaluate the ''G-Factor'' to identify if the rotational speed is sufficient to separate impurities (slag) and create a dense, void-free metal structure.'
-    - 'Molding_Integrity_Check: Analyze the mold heating/cooling cycle to ensure the plastic resin has fully ''Sintered'' on the mold walls without thermal degradation or uneven thickness.'
-    - 'Dynamic_Fidelity_Scan: Monitor the vibration levels during rotation to verify that the mold is ''Balanced'' and the centrifugal force is being applied uniformly to the molten material.'
-Trust Metrics:
+  description: "[Entity] centrifugal-casting-and-rotational-molding-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Centrifugal Casting and Rotational Molding Physics
+# [Entity] centrifugal-casting-and-rotational-molding-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 파이프나 튼튼한 물탱크를 어떻게 안이 텅 빈 상태로, 그러면서도 결함 하나 없이 균일하게 만들 수 있을까요? **원심 주조 및 회전 성형 물리**는 중력보다 수십 배 강한 '회전의 힘'을 이용해 재료를 벽면으로 밀어붙이는 **'회전의 조형술'** 기술입니다. 쇳물이나 플라스틱 가루를 회전하는 틀에 넣으면, 원심력이 불순물은 안으로 몰아내고 깨끗한 재료만 겉으로 밀어내어 아주 단단하고 매끄러운 껍질을 만듭니다. 완벽한 원통과 속이 빈 거대 구조물을 만드는 **'회전하는 제조 지능'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Polymer Sintering - Plastic powder not fully melted on mold walls. Structural weakness and rough interior finish detected"
         return "PASS: Validated Thermal Cycle and Verified Shell Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(g_factor=85.0, mold_vibration_mm=0.1, cooling_rate_c_min=45.0)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data centrifugal-casting-density-and-surface-finish-v2026`와 연동되어, 전 세계 주요 파이프 라인 및 물류 용기 제조 공장의 데이터를 실시간 분석하고 불균일 파손 및 기공 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cast-iron-metallurgy-and-graphitization-physics

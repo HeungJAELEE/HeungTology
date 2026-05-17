@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "metal-casting-and-solidification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] metal-casting-and-solidification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing process of pouring molten metal into a mold (Casting) and the physical phenomena of transforming from liquid to solid state (Solidification), involving heat transfer, nucleation, and grain growth kinetics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metal-casting", "solidification", "metallurgy", "foundry", "cooling-rate", "chvorinov-rule", "dendrite-growth"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Time_Audit: Evaluate the cooling curve to ensure it follows Chvorinov''s Rule, identifying potential hotspots or premature solidification (cold shuts).'
-    - 'Shrinkage_and_Porosity_Check: Analyze the casting''s density and internal structure (X-ray/CT) to detect gas porosity or shrinkage cavities formed during the phase transition.'
-    - 'Grain_Growth_Scan: Monitor the cooling rate to control the dendrite arm spacing (DAS), ensuring a fine and uniform grain structure for superior mechanical strength.'
-Trust Metrics:
+  description: "[Entity] metal-casting-and-solidification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧊 Metal Casting and Solidification Physics
+# [Entity] metal-casting-and-solidification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 액체 금속을 틀에 부어 굳히는 것, 이것은 인류 역사상 가장 오래된 제조 기술이자 가장 까다로운 **'상태 변화의 마법'**입니다. **금속 주조 및 응고 물리**는 액체가 고체가 되는 찰나에 벌어지는 원자들의 격렬한 재정렬을 통제하는 **'열과 시간의 조련'**입니다. 금속이 식으면서 줄어드는 성질(수축)과 공기가 갇히는 현상(기공)을 이겨내고, 복잡한 모양을 단 한 번에 만들어내는 **'형태의 창조'**입니다. 거대한 선박의 프로펠러부터 자동차 엔진 블록까지, 모든 단단한 물체의 '태초의 순간'을 다루는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Mold Erosion - Sand Inclusion or Surface Roughness Out of Tolerance"
         return "PASS: Robust Mold Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(solidification_time_sec=120, porosity_vol_pct=0.005, pouring_temp_c=1580)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data casting-solidification-time-and-porosity-metrics-v2026`와 연동되어, 전 세계 주요 주조 라인의 데이터를 실시간 분석하고 내부 균열 및 기공 사고 확률을 0.001% 이하로 억제함으로써 물리적 제조 문명의 원천적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - mechanical-working-and-metal-forming

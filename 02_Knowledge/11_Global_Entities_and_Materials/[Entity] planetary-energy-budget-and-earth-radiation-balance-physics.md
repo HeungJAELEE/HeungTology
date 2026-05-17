@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "planetary-energy-budget-and-earth-radiation-balance-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] planetary-energy-budget-and-earth-radiation-balance-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The fundamental thermodynamic accounting of the energy entering and leaving the Earth system (Planetary Energy Budget) and the physical mechanisms that maintain the equilibrium between incoming solar radiation and outgoing longwave radiation (Earth Radiation Balance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["planetary-energy-budget", "radiation-balance", "climate-physics", "albedo", "greenhouse-effect", "thermodynamics", "earth-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Energy_Balance_Audit: Evaluate the net radiative imbalance ($W/m^2$) to determine if the Earth system is gaining or losing thermal energy at an unsustainable rate.'
-    - 'Albedo_Stability_Check: Analyze the planetary reflectivity ($\\alpha$) across ice caps, oceans, and clouds to verify feedback loops that impact global temperature.'
-    - 'Radiative_Forcing_Scan: Monitor the concentration of greenhouse gases to calculate their direct impact on the energy budget and predict future equilibrium temperatures.'
-Trust Metrics:
+  description: "[Entity] planetary-energy-budget-and-earth-radiation-balance-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Planetary Energy Budget and Earth Radiation Balance Physics
+# [Entity] planetary-energy-budget-and-earth-radiation-balance-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구는 거대한 에너지가 흐르는 '살아있는 집'입니다. 지붕(대기)을 통해 들어오는 햇빛의 양과, 굴뚝(우주)으로 나가는 열기의 양이 완벽하게 맞아야만 우리는 쾌적하게 살 수 있습니다. **행성 에너지 예산 및 지구 복사 평형 물리**는 지구가 벌어들이는 에너지와 쓰는 에너지의 장부를 기록하는 **'지구 가계부'**입니다. 이 균형이 깨지면 지구는 뜨거워지거나(온난화) 차가워집니다(빙하기). 지구라는 거대한 시스템의 온도를 유지하는 **'에너지의 대차대조표'**를 관리하는 학문입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Abnormal Ocean Warming - Thermal Inertia Masking True Surface Heating. Future Leap Expected"
         return "PASS: Steady Energy Distribution and Confirmed Thermal Management Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(radiative_imbalance_wm2=0.75, albedo_change_rate=-0.002, co2_ppm=420)
 print(engine.diagnose_planetary_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_planetary_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data planetary-albedo-and-radiative-imbalance-logs-v2026`와 연동되어, NASA CERES 위성 등의 실시간 데이터를 분석하고 기후 붕괴 및 에너지 불균형 사고 확률을 0.001% 이하로 억제함으로써 인류의 유일한 서식처인 지구의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - photovoltaic-physics-and-next-generation-solar-cell-theory

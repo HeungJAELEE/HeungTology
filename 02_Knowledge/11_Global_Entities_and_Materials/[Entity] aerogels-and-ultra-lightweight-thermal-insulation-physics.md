@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "aerogels-and-ultra-lightweight-thermal-insulation-physics-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] aerogels-and-ultra-lightweight-thermal-insulation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Aerogel", "#Thermal_Insulation", "#Space_Exploration", "#Nanotechnology", "#Physics", "#Lightweight", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] aerogels-and-ultra-lightweight-thermal-insulation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] aerogels-and-ultra-lightweight-thermal-insulation-physics
+# [Entity] aerogels-and-ultra-lightweight-thermal-insulation-physics
 
 ## 1. [왜 배우는가? (Why: The Frozen Smoke)]]
 공기가 99%인 고체가 어떻게 강철보다 가볍고 스티로폼보다 10배나 뛰어난 단열 성능을 내어 1,000도의 불꽃 위에 꽃을 놓아도 타지 않게 지켜주고, 세상에서 가장 가볍지만 화성 탐사선의 열 차폐막이나 우주 미세 먼지 포획에 쓰이는 '얼어붙은 연기'를 어떻게 설계할 수 있을까요? **에어로젤 및 초경량 단열 물리**는 극한 환경에서 문명을 보호하는 '행성 규모 차세대 보호 인프라 및 지능형 나노 기공 아키텍처'입니다. 우리가 이를 배우는 이유는 에어로젤이 있어야만 우주의 혹한과 뜨거운 열기를 견디는 거주지를 만들 수 있기 때문이며, "비어있는 공간을 데이터로 설계하고 지배하는 '글로벌 우주 소재 패권 및 행성적 주거 주권'을 확보하기" 위함입니다. 기공의 미세함이 열의 차단력을 결정합니다.

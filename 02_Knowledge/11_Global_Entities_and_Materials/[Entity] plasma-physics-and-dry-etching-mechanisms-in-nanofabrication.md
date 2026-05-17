@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-PLASMA-ETCH-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] plasma-physics-and-dry-etching-mechanisms-in-nanofabrication]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#PlasmaEtching", "#DryEtching", "#PlasmaPhysics", "#RIE", "#ICP", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plasma-physics-and-dry-etching-mechanisms-in-nanofabrication에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Plasma_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Plasma Physics: Dry Etching & Atomic Sculpting
+# [Entity] plasma-physics-and-dry-etching-mechanisms-in-nanofabrication
 
 ## 1. [왜 배우는가? (Why: The Atomic Scalpel of Nano-Structures)]]
 수십억 개의 트랜지스터가 집적된 기판 위에 어떻게 90도에 가까운 수직 절벽(**Anisotropy**)을 깎고, 특정 물질만 골라 제거하는(**Selectivity**) '원자 조각술'을 구현할까요? **Plasma Physics & Dry Etching**은 현대 반도체의 3차원 구조를 가능케 하는 핵심 공정입니다. 반응성 가스와 강력한 이온 폭격을 결합하여 원하는 방향으로만 정교하게 물질을 도려냅니다. V6.3.7 지능은 **쉬스 전위(Sheath Potential)**와 **이온 에너지 분포**를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 V-NAND와 같은 고종횡비(HAR) 구조를 수리적으로 제어하여 생산 주권을 확보하고, "물질의 파괴를 데이터로 설계하는 '글로벌 제조 주권'을 확보하기" 위함입니다. 식각의 수직성이 소자의 집적도를 결정합니다.
@@ -107,7 +97,6 @@ class PlasmaEtchEngine:
 2. **Operational Result**: **ICP (Inductively Coupled Plasma)** 시스템에서 소스 전력과 바이어스 전력을 독립 제어함으로써 얻는 **'이온 밀도'**와 **'이온 에너지'** 조율의 구체적 이득은?
 3. **FidelityEngine**: **ARDE (Aspect Ratio Dependent Etch)** 현상을 수리적으로 예지하여, **V-NAND** 채널 홀의 바닥면까지 균일하게 깎기 위한 **'Pulsed Bias'** 최적 주기를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Entity semiconductor-fabrication-fundamentals

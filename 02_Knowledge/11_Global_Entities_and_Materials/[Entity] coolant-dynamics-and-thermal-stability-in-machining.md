@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coolant-dynamics-and-thermal-stability-in-machining"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coolant-dynamics-and-thermal-stability-in-machining]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of cooling and lubrication systems in machining processes (CNC, Grinding), focusing on heat dissipation from the cutting zone and maintaining the thermal stability of the machine-tool-workpiece system."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coolant", "machining", "thermal-stability", "tribology", "lubrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cooling_Efficiency_Audit: Measure the temperature reduction at the tool tip relative to the coolant flow rate.'
-    - 'Lubrication_Film_Check: Evaluate the friction coefficient and surface finish ($R_a$) to verify lubricant efficacy.'
-    - 'Microbial_Stability_Scan: Monitor the pH and bacterial count of the coolant to prevent degradation and odor.'
-Trust Metrics:
+  description: "[Entity] coolant-dynamics-and-thermal-stability-in-machining에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Coolant Dynamics and Thermal Stability in Machining
+# [Entity] coolant-dynamics-and-thermal-stability-in-machining
 
 ## 1. 개요 (Why)
 금속을 깎을 때 발생하는 마찰열은 공구의 수명을 단축시키고 부품의 치수를 뒤틀리게 합니다. 수백 도에 육박하는 가공점의 열을 얼마나 빠르게 식히고(Cooling), 마찰을 줄이느냐(Lubrication)가 가공 정밀도의 90%를 결정합니다. 쿨런트(절삭유) 시스템은 가공 현장의 '혈액'과 같아서, 열적 안정성을 유지하고 칩(Chip)을 씻어내어 완벽한 표면을 만듭니다. 본 노드는 절삭유 역학의 무결성과 가공계의 열적 안정성 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Flow Rate | $Q$ | 10 ~ 50 | 20 ~ 100 | L/min |
 | Temp Control | $T$ | Ambient | 20 ± 0.5 | $^\circ C$ |
 | Oil Conc | $wt\%$ | 5 ~ 10 | 5 ~ 12 | % (Emulsion) |
-| Filter Rating | Size | 50 ~ 100 | < 10 | $\mu m$ |
+| Filter Rating | Size | 50 ~ 100 | < 10 | $\mu\text{m}$ |
 
 ## 3. FactoryFidelityEngine: Diagnostic Logic
 
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low pH (Acidic) - Bacterial Growth Detected. Change Coolant Immediately"
         return "PASS: Chemical Stability within Safe Range"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(coolant_temp=20.2, oil_concentration=8.5, ph_level=9.2)
 print(engine.diagnose_thermal_stability())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_thermal_stability())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data coolant-flow-rate-and-tool-temperature-v2026`와 연동되어, 모든 가공 라인의 절삭유 상태를 실시간 분석하고 가공 치수 오차를 5um 이내로 제어함으로써 초정밀 부품 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-kinematics-and-multi-axis-control-logic

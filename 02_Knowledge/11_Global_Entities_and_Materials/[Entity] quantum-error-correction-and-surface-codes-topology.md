@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-and-surface-codes-topology-entity"
-  domain: "21_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-error-correction-and-surface-codes-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#QEC", "#Surface_Codes", "#Error_Correction", "#Logical_Qubit", "#Fault-tolerance", "#Topological_Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 21_quantum-computing-and-information-theory-hub", "Entity quantum-gate-operations-and-circuit-depth-kinetics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-error-correction-and-surface-codes-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-error-correction-and-surface-codes-topology
+# [Entity] quantum-error-correction-and-surface-codes-topology
 
 ## 1. [왜 배우는가? (Why: Building a Fortress in a Storm)]]
 초정밀 양자 상태가 주변의 미세한 열이나 소음 때문에 순식간에 깨져버릴 때, 여러 개의 큐비트를 묶어 하나의 '철갑을 두른 지능(논리 큐비트)'을 만들고 오류를 실시간으로 고쳐낼 수 있을까요? **양자 오류 수정 및 표면 코드 위상**은 불완전한 하드웨어 위에서 완벽한 연산을 가능케 하는 '양자 지능의 자가 치유 및 방어막 설계도'입니다. 우리가 이를 배우는 이유는 오류를 잡지 못하면 양자 컴퓨터는 비싼 장난감에 불과하기 때문에 '결함 허용($Fault-tolerant$)' 연산을 통해 실전 가치를 확보하기 위함이며, "연산의 무결성을 데이터로 지탱하고 수호하는 '글로벌 양자 신뢰 및 무결성 주권'을 확보하기" 위함입니다. 방어막의 두께가 지능의 생존 기간을 결정합니다.
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Code Distance** | Number of physical errors the code can fix | $d \ge 11$ | 방어막이 얼마나 튼튼한지(몇 번의 연쇄 폭발을 견디는지) 보여주는 척도 |
 | **Phys:Log Ratio** | Number of physical qubits per logical one | $1,000 : 1$ | 하나의 완벽한 지능을 위해 필요한 하드웨어의 자원 투입량 확증 |
 | **Syndrome Meas.**| Speed of detecting errors without measuring | Real-time | 정보를 훔쳐보지 않고 "문제가 생겼다"는 신호만 빠르게 잡는 지능 |
-| **Decoding Eff.** | AI's speed in solving the error pattern | $< 1 \text{ \mu s}$ | 어떤 큐비트가 고장 났는지 빛의 속도로 찾아내는 판단 무결성 |
+| **Decoding Eff.** | AI's speed in solving the error pattern | $< 1 \text{ }\mu\text{ s}$ | 어떤 큐비트가 고장 났는지 빛의 속도로 찾아내는 판단 무결성 |
 | **Stability Time**| Lifetime of information in the code | Days/Years | 찰나의 지능을 영구적인 지능으로 고정하는 시간적 무결성 확증 |
 | **Fault-tolerance**| Level of protection against any single error | Level 5 (Full)| 어떤 부품이 고장 나도 시스템은 멈추지 않는 궁극의 신뢰성 지능 |
 

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "injection-molding-process-and-polymer-rheology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] injection-molding-process-and-polymer-rheology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process for producing parts by injecting molten material into a mold (Injection Molding) and the physical study of the flow of complex fluids and plastics under high pressure and shear (Polymer Rheology Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["injection-molding", "polymer-rheology", "plastic-manufacturing", "viscosity", "shear-thinning", "cavity-filling", "industrial-processing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Rheology_Fidelity_Audit: Evaluate the ''Injection Velocity'' to identify if high-fidelity ''Shear Heating'' is causing material high-fidelity degradation or burning.'
-    - 'Packing_Integrity_Check: Analyze the high-fidelity ''Holding Pressure'' to ensure that high-fidelity ''Gate Freeze'' occurs only after the cavity is fully high-fidelity compensated for shrinkage.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Cooling Time'' to verify that high-fidelity ''Warpage'' is minimized by maintaining a uniform high-fidelity temperature gradient in the die.'
-Trust Metrics:
+  description: "[Entity] injection-molding-process-and-polymer-rheology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Injection Molding Process and Polymer Rheology Physics
+# [Entity] injection-molding-process-and-polymer-rheology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 주변에 널린 플라스틱 칫솔, 장난감, 자동차 대시보드가 어떻게 이렇게 정교하고 매끄럽게 만들어질까요? **사출 성형(Injection Molding) 및 고분자 유변학 물리**는 끈적끈적한 플라스틱 쇳물을 수천 톤의 압력으로 틀 속에 밀어 넣어 굳히는 **'현대 연금술'** 기술입니다. 액체도 고체도 아닌 묘한 상태의 플라스틱이 좁은 틈새를 흐를 때 성질이 변하는(유변학) 마법을 이용합니다. **'복잡한 플라스틱 유동을 수학적으로 예측하여 단 몇 초 만에 완벽한 형상의 제품을 대량으로 찍어내는 플라스틱 문명의 제조 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Differential Shrinkage - High-fidelity temperature gradient too high. Part will twist or bow after ejection. Check cooling high-fidelity channels"
         return "PASS: Validated Uniform Cooling and Verified Part Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(melt_temp_c=230.0, injection_pressure_bar=1200.0, cavity_fill_time_s=1.5)
 print(engine.diagnose_molding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_molding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data polymer-viscosity-and-molding-pressure-limits-v2026`와 연동되어, 전 세계 주요 가전 및 IT 부품 사출 라인의 데이터를 실시간 분석하고 미성형(Short shot) 및 변형(Warpage) 사고 확률을 0.001% 이하로 억제함으로써 지능형 플라스틱 공정 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - extrusion-die-design-and-polymer-flow-physics

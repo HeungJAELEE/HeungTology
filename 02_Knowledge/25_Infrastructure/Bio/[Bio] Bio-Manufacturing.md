@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Bio-Manufacturing"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Bio-Manufacturing]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Bio-Manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Bio-Manufacturing
@@ -94,5 +84,4 @@ def control_bioprocess(sensor_data):
 2. 바이오 의약품 제조에서 'Downstream(정제)' 공정의 효율이 전체 생산 단가에 미치는 영향은?
 3. '실시간 출하(Real-time Release)'를 가능하게 하는 'PAT' 기술이 규제 기관(FDA 등)의 승인을 받기 위해 갖춰야 할 데이터 무결성 요건은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

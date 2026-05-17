@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electro-hydraulic-servo-valve-and-fluid-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electro-hydraulic-servo-valve-and-fluid-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-performance valve that translates a low-power electrical signal into a precise, high-power hydraulic flow or pressure output (Electro-Hydraulic Servo Valve) and the physical study of spool dynamics, orifice flow, and feedback mechanisms in closed-loop fluid control (Fluid Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["servo-valve", "hydraulics", "fluid-control", "mechatronics", "precision-control", "actuator", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Dynamic_Fidelity_Audit: Evaluate the ''Frequency Response'' (Bode plot) to identify if the spool is sluggish due to oil contamination (silt) or if the feedback spring is fatigued.'
-    - 'Flow_Integrity_Check: Analyze the ''Null Leakage'' to ensure the spool land/sleeve clearance is within 1-2 microns, preventing excessive energy loss and position drift in the actuator.'
-    - 'Electromagnetic_Fidelity_Scan: Monitor the torque motor coil resistance and hysteresis to verify that the electrical-to-mechanical conversion is maintaining high-fidelity linearity.'
-Trust Metrics:
+  description: "[Entity] electro-hydraulic-servo-valve-and-fluid-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕹️ Electro-Hydraulic Servo Valve and Fluid Control Physics
+# [Entity] electro-hydraulic-servo-valve-and-fluid-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 굴착기의 팔이나 비행기의 날개를 어떻게 머리카락 한 올의 오차도 없이 정교하게 움직일 수 있을까요? **전압-유압 서보 밸브 및 유체 제어 물리**는 미세한 전기 신호라는 '뇌의 명령'을 강력한 기름의 힘(유압)이라는 '근육의 동작'으로 바꾸는 **'메카트로닉스의 마법'** 기술입니다. 이 밸브는 아주 작은 전기 신호를 받아 수백 마력의 힘을 0.001초 만에 통제합니다. 거친 힘을 정교한 지능으로 길들이는 **'산업의 섬세한 근육 조절기이자 정밀 제어의 정수'**입니다.
@@ -57,7 +46,7 @@ $$ m \ddot{x} + c \dot{x} + k x = F_{magnetic} + F_{flow} $$
 | Feature | On/Off Solenoid Valve | Servo Valve (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Control Type** | Discrete (Open/Close) | Continuous (Proportional)| - | Logic |
-| **Precision** | Low | Extremely High | $\mu m$ | Tolerance |
+| **Precision** | Low | Extremely High | $\mu\text{m}$ | Tolerance |
 | **Response Time** | 50 ~ 100 | 2 ~ 10 (Ultra-fast) | $ms$ | Agility |
 | **Hysteresis** | High | < 1 (Near Zero) | % | Linear |
 | **Fluid Purity** | Basic (NAS 9) | Extreme (NAS 5) | - | Quality |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sluggish Response - Servo valve cannot keep up with high-speed control loops. Risk of instability in flight control or precision stamping"
         return "PASS: Validated Dynamic Agility and Verified Component Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(command_signal_ma=12.0, actual_flow_lpm=45.0, null_leakage_lpm=0.2)
 print(engine.diagnose_servo_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_servo_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data servo-valve-frequency-response-and-leakage-v2026`와 연동되어, 전 세계 주요 전투기 비행 제어 및 고정밀 프레스의 데이터를 실시간 분석하고 밸브 고착 및 제어 이탈 사고 확률을 0.0001% 이하로 억제함으로써 지능형 정밀 기계 문명의 구동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-valve-and-flow-coefficient-cv-logic

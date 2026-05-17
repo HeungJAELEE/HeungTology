@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Collaborative-Robots-Cobots-Safety"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Collaborative-Robots-Cobots-Safety]]"
+  domain: "03_Skills"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Collaborative-Robots-Cobots-Safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_Skills", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Collaborative-Robots-Cobots-Safety
+# [Strategy] Collaborative-Robots-Cobots-Safety
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 로봇을 '위험한 괴물'로 보았습니다. 그래서 로봇 주위에는 항상 철조망(펜스)을 쳤고, 사람이 들어가면 로봇은 멈춰야 했습니다. 하지만 협동 로봇 및 협업 안전(Collaborative-Robots-Cobots-Safety)은 펜스를 걷어치우고 로봇과 사람이 짝을 지어 함께 일하는 기술입니다. 로봇이 무거운 짐을 들고 있으면, 사람이 옆에서 정밀하게 조립합니다. 살짝만 닿아도 로봇이 즉시 멈추므로 안전합니다. 이를 이해하는 것은 로봇을 단순한 도구가 아닌 '든든한 동료'로 만들고, 사람의 지능과 로봇의 힘이 시너지를 내는 '조화로운 작업장'을 설계하는 '협업 로봇 전문가'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Cobot Collision Detection & Speed Scaling)]
 주변 센서 데이터를 수신하여 사람과의 거리에 따라 로봇의 작동 속도를 동적으로 조절하는 논리 구조입니다.
 ```python
-# 로봇 지능(ISM) 기반 협동 로봇 안전 제어 및 속도 최적화 논리
 def execute_safe_collaboration(robot_arm, human_sensor_data):
     # 1. 사람과의 거리 측정 (Distance Monitoring)
     # 레이저 스캐너나 AI 카메라를 통해 가장 가까운 사람과의 거리(D) 산출
@@ -97,5 +86,4 @@ def execute_safe_collaboration(robot_arm, human_sensor_data):
 2. '속도 및 간격 감시(SSM)' 기술이 '산업용 펜스'를 대체함으로써 얻을 수 있는 '공정 유연성'과 '설비 종합 효율(OEE)'의 인과관계는?
 3. '협동 로봇' 도입 시 '위험성 평가(Risk Assessment)'를 통해 로봇뿐만 아니라 '그리퍼(End-effector)'와 '작업물'의 날카로움까지 고려해야 하는 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

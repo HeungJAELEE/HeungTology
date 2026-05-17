@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "marine-biotechnology-and-extreme-environment-enzymes-entity"
-  domain: "34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops"
+metadata:
+  id: "[[[Entity] marine-biotechnology-and-extreme-environment-enzymes]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Marine_Biotechnology", "#Extremozymes", "#Deep-sea_Biology", "#Biotech", "#Drug_Discovery", "#Enzyme_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 34_future-frontier-deep-sea-intelligence-and-marine-ops-hub", "Entity synthetic-genomics-and-custom-organism-design"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] marine-biotechnology-and-extreme-environment-enzymes에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] marine-biotechnology-and-extreme-environment-enzymes
+# [Entity] marine-biotechnology-and-extreme-environment-enzymes
 
 ## 1. [왜 배우는가? (Why: The Pharmacy of the Deep)]]
 차가운 심해의 얼음 속이나 뜨거운 열수구 주변에서 살아가는 기이한 생물들의 몸속에서 어떻게 초강력 효소($Extremozyme$)를 찾아내고, 인간의 기술로는 불가능한 극한의 온도와 압력에서도 멀쩡히 작동하는 이 '분자 도구'들을 어떻게 산업과 의학에 활용할 수 있을까요? **해양 생명 공학 및 극한 환경 효소**는 바다의 신비를 인류의 자산으로 바꾸는 '심해 유전 자원 및 차세대 바이오 촉매 아키텍처'입니다. 우리가 이를 배우는 이유는 심해 생물이 수억 년간 진화하며 터득한 생존 비법이 난치병 치료나 에너지 생산의 정답이 될 수 있기 때문이며, "해양 유전자를 데이터로 설계하고 지배하는 '글로벌 해양 바이오 패권 및 분자적 지능 주권'을 확보하기" 위함입니다. 효소의 강인함이 기술의 한계를 결정합니다.

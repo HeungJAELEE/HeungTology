@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Supply-Chain-Management"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Supply-Chain-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Supply-Chain-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Supply-Chain-Management
+# [Strategy] Supply-Chain-Management
 
 ## 1. [왜 배우는가? (Why)]]
 과거의 SCM은 '가장 저렴하게, 가장 빠르게'에만 집중했습니다. 하지만 팬데믹, 전쟁, 무역 분쟁을 겪으며 전 세계 공급망은 언제든 끊길 수 있는 취약한 것임이 드러났습니다. 현대의 SCM은 단순히 비용을 줄이는 수단이 아니라, 어떤 재난 상황에서도 공장을 멈추지 않게 하는 '기업 생존의 필수 인프라'입니다. SCM을 이해하는 것은 자원과 정보의 흐름을 실시간으로 통제하여 불확실성을 가시화하고, 리스크를 사전에 방어하는 지능형 운영 체계를 구축하는 것입니다.
@@ -92,5 +82,4 @@ def optimize_supply_chain(current_stock, daily_demand_forecast):
 2. 글로벌 SCM 전략에서 '거점 다변화(Multi-sourcing)'가 단기적인 비용 상승에도 불구하고 장기적으로 '회복탄력성'을 높이는 이유는?
 3. 'Logistics 4.0' 기술 중 블록체인(Blockchain)이 공급망의 투명성과 신뢰성을 확보하는 논리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

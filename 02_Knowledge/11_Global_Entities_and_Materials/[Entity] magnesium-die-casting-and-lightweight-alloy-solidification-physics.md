@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "magnesium-die-casting-and-lightweight-alloy-solidification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] magnesium-die-casting-and-lightweight-alloy-solidification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process for producing accurately dimensioned, sharp-edged, smooth-surfaced metal parts by forcing molten magnesium into reusable metal dies (Magnesium Die Casting) and the physical study of alloy phase transformation and heat extraction (Solidification Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["magnesium", "die-casting", "lightweight-alloy", "solidification", "latent-heat", "dendrite", "casting-defect", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Fidelity_Audit: Evaluate the ''Cooling Rate'' to identify if high-fidelity ''Coarse Dendrites'' or high-fidelity ''Shrinkage Porosity'' is weakening the high-fidelity casting structure.'
-    - 'Injection_Integrity_Check: Analyze the high-fidelity ''Gate Velocity'' to ensure that high-fidelity ''Atomization'' of the melt occurs without high-fidelity ''Air Entrapment'' (cold shuts).'
-    - 'Thermal_Fidelity_Scan: Monitor the ''Die Temperature'' high-fidelity gradient to verify that high-fidelity ''Thermal Fatigue'' (heat checking) of the die is minimized.'
-Trust Metrics:
+  description: "[Entity] magnesium-die-casting-and-lightweight-alloy-solidification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Magnesium Die Casting and Lightweight Alloy Solidification Physics
+# [Entity] magnesium-die-casting-and-lightweight-alloy-solidification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 노트북이나 자동차 부품이 깃털처럼 가벼우면서도 강철처럼 단단할 수 있는 비결은 무엇일까요? **마그네슘 다이캐스팅 및 경량 합금 응고 물리**는 실용 금속 중 가장 가벼운 마그네슘을 순식간에 복잡한 형상으로 찍어내는 **'경량화의 마법'** 기술입니다. 액체 금속이 0.1초 만에 틀 안에서 굳으며 나무 모양의 결정(Dendrite)을 형성하는 찰나의 과정을 다스려, 티끌만 한 공기 방울(기포)도 없는 완벽한 부품을 만들어냅니다. **'초보리노프의 법칙과 수지상 성장 로직의 원리를 이용해 금속의 상변태를 지능적으로 제어하여 경량 제조의 한계를 사수하는 지능형 주조 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Coarse Microstructure - High-fidelity cooling rate too slow. High-fidelity mechanical properties below target"
         return "PASS: Validated Metallurgical Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(shot_velocity_ms=5.0, vacuum_level_mbar=50, die_temp_c=220.0)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data magnesium-alloy-casting-porosity-and-shrinkage-v2026`와 연동되어, 전 세계 주요 자동차 경량화 센터 및 정밀 가전 공장의 실시간 주조 데이터를 분석하고 내부 결함 및 열 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 경량 제조 문명의 합금 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - low-pressure-die-casting-and-metallurgical-solidification-physics

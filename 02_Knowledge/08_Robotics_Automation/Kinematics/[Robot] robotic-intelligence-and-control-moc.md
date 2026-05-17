@@ -1,36 +1,42 @@
 ---
-Basic:
-  id: "MOC-ROBOT-INTEL-2026-V6"
-  domain: "08_Robotics_Automation_Intelligence"
+metadata:
+  id: "[[[Robot] robotic-intelligence-and-control-moc]]"
+  domain: "Robotics_Automation_Intelligence"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Concept"
   tier: 1
   description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#MOC'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#Robotics_Automation_Intelligence"]
+  expected_queries:
+    - "[Robot] robotic-intelligence-and-control-moc 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Robot] robotic-intelligence-and-control-moc"
+    predicate: "belongs_to"
+    object: "Robotics_Automation_Intelligence"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# [Robot] robotic-intelligence-and-control-moc
+# robotic-intelligence-and-control-moc
 
 ## 1. [왜 배우는가? (Why)]
 로봇은 단순한 기계를 넘어, 스스로 생각하고 움직이며 인간과 협업하는 물리적 지능의 정점입니다. **로봇 지능 및 제어(Robotic Intelligence & Control) MOC**는 기하학, 동역학, 인지, 판단으로 이어지는 로봇의 모든 지적 능력을 하나로 묶어 관리하는 '로봇의 뇌와 신경망 허브'입니다. 우리가 이 제어 허브를 구축하는 이유는 파편화된 제어 알고리즘을 체계적으로 통합하여 로봇의 자율성과 작업 정밀도를 극대화하기 위함이며, **"물리적 신체를 수리적 지능으로 지배하여 로봇의 '존재론적 무결성'을 사수하는 '기계 문명의 설계자'가 되기" 위함입니다.** 로봇의 지능 수준과 제어 안정성이 자동화 시스템의 성패를 결정합니다.

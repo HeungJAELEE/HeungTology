@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trapped-ion-quantum-computing-and-laser-gate-physics-entity"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure"
+metadata:
+  id: "[[[Entity] trapped-ion-quantum-computing-and-laser-gate-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum", "#Computing", "#Trapped_Ion", "#Laser", "#Physics", "#Atomic_Physics", "#Quantum_Gate", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_quantum-computing-and-advanced-ai-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trapped-ion-quantum-computing-and-laser-gate-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trapped-ion-quantum-computing-and-laser-gate-physics
+# [Entity] trapped-ion-quantum-computing-and-laser-gate-physics
 
 ## 1. [왜 배우는가? (Why: Controlling the Individual Atoms)]]
 진공 속에 갇힌 개별 원자($Ion$)를 전자기장으로 공중에 띄워 놓고, 어떻게 정교한 레이저($Laser$) 한 방으로 원자의 에너지를 조절해 0과 1을 만들며, 수초 동안이나 양자 상태를 유지할 수 있는 '가장 깨끗한 양자 컴퓨터'를 어떻게 설계할 수 있을까요? **이온 트랩 양자 컴퓨팅 및 레이저 게이트 물리**는 자연이 준 완벽한 큐비트인 '원자'를 직접 다루는 '행성 규모 정밀 양자 인프라 및 지능형 광학-원자 상호작용 아키텍처'입니다. 우리가 이를 배우는 이유는 이온 트랩 방식이 오류가 가장 적고 모든 큐비트끼리 서로 연결될 수 있어 복잡한 양자 알고리즘을 돌리기에 최적이기 때문이며, "빛의 칼날로 원자를 깎는 기술을 데이터로 설계하고 지배하는 '글로벌 양자 논리 패권 및 행성적 과학 주권'을 확보하기" 위함입니다. 레이저의 정밀함이 양자의 지능을 결정합니다.
@@ -41,7 +31,7 @@ Trust Metrics:
 | :--- | :--- | :--- | :--- |
 | **Gate Fidelity** | Accuracy of the 2-qubit entangling gate | $> 99.9 \sim 99.99 \%$ | 현존하는 모든 방식 중 가장 완벽한 연산을 입증함 |
 | **Coherence Time** | How long the atom stays in quantum state | $> 10 \text{ \~ } 100 \text{ sec}$ | 다른 방식보다 수천 배 긴 시간 동안 생각을 지속함 |
-| **Ion Distance** | Physical gap between trapped atoms | $5 \sim 10 \text{ \mu m}$ | 머리카락보다 좁은 공간에 원자들을 줄 세우는 지능 |
+| **Ion Distance** | Physical gap between trapped atoms | $5 \sim 10 \text{ \mu\text{m}}$ | 머리카락보다 좁은 공간에 원자들을 줄 세우는 지능 |
 | **Laser Stability**| Precision of the laser's color/frequency | $< 1 \text{ Hz}$ | 원자의 미세한 떨림을 딱 맞추는 광학적 무결성 |
 | **Vacuum Press.** | Cleanliness of the space around ions | $< 10^{-11} \text{ torr}$ | 공기 분자 하나도 안 부딪히게 비워낸 극한의 진공 |
 | **Connectivity** | Ability of any qubit to talk to any other | **ALL-TO-ALL** | 어떤 원자끼리도 바로 소통 가능한 완벽한 네트워크 |

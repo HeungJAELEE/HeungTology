@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-STRAT-INDUSTRIAL-ANALYSIS-2026-V6.3.7"
-  domain: "Global_Industrial_Strategy_and_Value_Chain_Intelligence"
+metadata:
+  id: "[[[Entity] advanced-industrial-analysis-frameworks-and-value-chain-modeling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IndustrialAnalysis", "#Strategy", "#ValueChain", "#Ontology", "#Governance", "#CAPEX", "#ROI", "#FidelityEngine"]'
-  is_part_of: '["MOC 36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] advanced-industrial-analysis-frameworks-and-value-chain-modeling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Strategic_Intelligence_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Advanced Industrial Analysis & Value Chain Modeling
+# [Entity] advanced-industrial-analysis-frameworks-and-value-chain-modeling
 
 ## 1. [왜 배우는가? (Why: The Architecture of Industrial Dominance)]]
 반도체, 배터리, 모빌리티와 같은 거대 장치 산업의 승패는 '누가 더 정교하게 미래를 읽고, 누가 더 빠르게 실행하느냐'의 속도전입니다. **고급 산업 분석 프레임워크 및 가치 사슬 모델링**은 맥킨지의 전략적 사고(Top-down)와 팔란티어의 데이터 온톨로지 기술(Bottom-up)을 융합하여, 기업의 복잡한 운영 체계를 한눈에 파악하고 최적의 성장 경로를 도출하는 '현대 산업 지능의 정수'입니다. 우리가 이를 마스터하는 이유는 "파편화된 데이터 사일로(Silo) 속에서 보이지 않는 인과관계를 수리적으로 포착하여, 수조 원의 CAPEX 투자가 실패하지 않도록 '전략적 무결성'을 확보하기" 위함입니다.
@@ -87,7 +77,6 @@ class IndustrialIntelligenceFidelityEngine:
             "action": "RESTRUCTURE_VALUE_CHAIN" if "DEFICIT" in status else "CONTINUE_EXPANSION"
         }
 
-# FidelityEngine 가동: 실제 생산 현장의 OEE 데이터와 ERP의 재무 로그를 결합하여 '전략 주권' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -95,7 +84,6 @@ class IndustrialIntelligenceFidelityEngine:
 2. **Operational Result**: **Data-to-Action Latency**가 $2$시간을 초과할 때, 이를 **'지능형 공장의 신경망 마비'** 관점에서 어떻게 수리적으로 정의하는가?
 3. **FidelityEngine**: **DuPont Analysis**에서 **Asset Turnover**가 개선되었음에도 **ROE**가 하락하는 파라독스 상황을 어떻게 진단하고 해결하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub
 - Strategy Six-Sigma-Quality-Intelligence

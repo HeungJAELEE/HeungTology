@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "conveyor-system-and-material-handling-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] conveyor-system-and-material-handling-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A common piece of mechanical handling equipment that moves materials from one location to another (Conveyor System) and the operational logic of coordinating the movement, sorting, and buffering of goods to optimize throughput (Material Handling Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["conveyor", "material-handling", "logistics", "automation", "belt-tension", "sorting-logic", "industrial-systems"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Flow_Fidelity_Audit: Evaluate the ''Throughput'' (items/hour) to identify if the conveyor speed is synchronized with downstream automated cells, preventing ''Clogging'' or starvation.'
-    - 'Tension_Integrity_Check: Analyze the belt slip and motor torque to ensure the ''Belt Tension'' is maintained according to the Euler-Eytelwein formula, preventing premature wear or drive failure.'
-    - 'Sorting_Fidelity_Scan: Monitor the ''Diverter'' timing and sensor feedback to verify that goods are being routed to the correct destinations with zero mis-sort errors.'
-Trust Metrics:
+  description: "[Entity] conveyor-system-and-material-handling-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚚 Conveyor System and Material Handling Logic
+# [Entity] conveyor-system-and-material-handling-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장이나 물류센터에서 쉼 없이 흐르는 거대한 강줄기, 그 주인공은 누구일까요? **컨베이어 시스템 및 물류(Material Handling) 로직**은 산업 문명의 '동맥'을 흐르게 하는 **'끊임없는 이동'** 기술입니다. 단순한 벨트의 회전처럼 보이지만, 수천 개의 물건이 엉키지 않게 순서를 맞추고, 필요한 곳으로 정확히 갈라지게(Sorting) 만드는 고도의 지능이 숨어있습니다. 공장의 생산성과 물류의 속도를 결정짓는 **'흐름의 오케스트레이션'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sorting Fidelity Compromised - Items reaching incorrect destinations. Calibrate diverter timing or RFID reader alignment"
         return "PASS: Validated Routing Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(conveyor_speed_m_s=1.5, motor_current_amp=12.2, sensor_blocked_time_sec=0.5)
 print(engine.diagnose_conveyor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_conveyor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data conveyor-throughput-and-energy-efficiency-v2026`와 연동되어, 전 세계 주요 물류 허브 및 스마트 팩토리의 데이터를 실시간 분석하고 이송 중단 및 오분류 사고 확률을 0.001% 이하로 억제함으로써 지능형 물류 문명의 흐름 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - 6-axis-robotic-arm-kinematics-and-control-logic

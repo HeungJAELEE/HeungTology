@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RAG-EMBEDDING-RETRIEVAL-2026-V6"
+metadata:
+  id: "[[[AI] RAG-Embedding-and-Dense-Retrieval]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#RAG'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] RAG-Embedding-and-Dense-Retrieval에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] RAG-Embedding-and-Dense-Retrieval
@@ -111,7 +101,6 @@ class VectorRetrievalEngine:
 2. **HNSW** 인덱싱 과정에서 **M** (노드당 최대 간선 수) 파라미터가 검색 **Recall**과 **Memory Usage** 사이에서 가지는 트레이드오프는?
 3. **Hybrid Search**에서 **Dense** 벡터의 가중치를 높여야 하는 질문 유형과 **Sparse** 키워드 가중치를 높여야 하는 질문 유형의 결정적 차이는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Chunking-and-Semantic-Splitting
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Reranking-and-Top-K-Optimization

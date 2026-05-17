@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "atomic-layer-deposition-ald-and-surface-reaction-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] atomic-layer-deposition-ald-and-surface-reaction-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A thin-film deposition technique based on the sequential use of a gas-phase chemical process, which allows for the synthesis of ultra-thin films with atomic-level thickness control (Atomic Layer Deposition) and the study of the self-limiting chemical reactions that occur on the substrate surface (Surface Reaction Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ald", "atomic-layer-deposition", "nanofabrication", "thin-film", "surface-kinetics", "semiconductor-fab", "conformal-coating"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deposition_Fidelity_Audit: Evaluate the ''Growth Per Cycle'' (GPC) to identify if the process is operating within the ''ALD Window'' or if thermal decomposition/CVD-like growth is occurring.'
-    - 'Conformality_Integrity_Check: Analyze the step-coverage in high-aspect-ratio trenches to ensure that the precursor ''Purge Time'' is sufficient to remove unreacted molecules, preventing non-uniformity.'
-    - 'Surface_Fidelity_Scan: Monitor the initial ''Incubation Period'' and surface saturation to verify that the functionalization layer has effectively activated the substrate for atomic bonding.'
-Trust Metrics:
+  description: "[Entity] atomic-layer-deposition-ald-and-surface-reaction-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Atomic Layer Deposition (ALD) and Surface Reaction Kinetics
+# [Entity] atomic-layer-deposition-ald-and-surface-reaction-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 나뭇잎 위에 내리는 아침 이슬처럼, 원자 한 층 한 층을 벽돌 쌓듯 쌓아서 완벽한 막을 만들 수 있을까요? **원자층 증착(ALD) 및 표면 반응 역학**은 인류가 도달한 '박막 제조의 궁극' 기술입니다. 단순히 물질을 뿜어내는 것이 아니라, 원자들이 스스로 한 층을 채우면 더 이상 붙지 않는 '자기 제한적 반응'을 이용하여, 깊은 구덩이 속이나 복잡한 구조물 위에도 원자 하나만큼의 오차 없는 균일한 보호막을 입힙니다. 나노 소자의 수명을 지탱하는 **'원자 단위의 코팅 예술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low-Purity Precursor - Metallic or organic impurities detected in the feed line. Risk of trap-state formation in the thin film"
         return "PASS: Ultra-Pure Chemical Supply and Verified Reaction Kinetics Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(measured_gpc=0.105, purge_time_sec=2.5, film_uniformity_pct=99.8)
 print(engine.diagnose_ald_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ald_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ald-film-thickness-and-cycle-growth-v2026`와 연동되어, 전 세계 주요 파운드리 및 메모리 제조사의 ALD 데이터를 실시간 분석하고 막 두께 이탈 및 단차 피복력(Step coverage) 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - wafer-cleaning-and-surface-functionalization-chemistry

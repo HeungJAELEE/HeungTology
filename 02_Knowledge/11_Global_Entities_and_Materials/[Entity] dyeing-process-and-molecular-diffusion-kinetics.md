@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "dyeing-process-and-molecular-diffusion-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] dyeing-process-and-molecular-diffusion-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of adding color to textile products like fibers, yarns, and fabrics (Dyeing Process) and the chemical-physical study of how dye molecules migrate from the solution into the fiber structure and bond with the polymer chains (Molecular Diffusion Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dyeing", "textile-manufacturing", "diffusion", "adsorption", "color-physics", "kinetics", "chemical-treatment"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Diffusion_Fidelity_Audit: Evaluate the ''Dye Exhaustion'' rate to identify if the dye molecules are staying in the water rather than penetrating the fiber, leading to poor color depth and high wastewater load.'
-    - 'Levelness_Integrity_Check: Analyze the temperature ramp-up profile to ensure ''Even Dyeing'' (levelness), preventing spots or streaks caused by localized rapid adsorption.'
-    - 'Fixation_Fidelity_Scan: Monitor the pH and electrolyte concentration to verify that the chemical bonds (Ionic, Covalent, or Van der Waals) are forming correctly for high-fidelity color fastness.'
-Trust Metrics:
+  description: "[Entity] dyeing-process-and-molecular-diffusion-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎨 Dyeing Process and Molecular Diffusion Kinetics
+# [Entity] dyeing-process-and-molecular-diffusion-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 밋밋한 하얀 천이 어떻게 세탁해도 빠지지 않는 선명한 색을 입게 될까요? **염색(Dyeing) 공정 및 분자 확산 역학**은 물에 녹은 색소 분자들이 실(섬유)이라는 좁은 미로 속으로 파고들어, 섬유 분자와 단단히 손을 잡게 만드는 **'분자 단위의 침투와 결합'** 기술입니다. 단순히 겉에 칠하는 것이 아니라 속까지 물들이는 과정입니다. 온도를 높여 섬유의 문을 열고, 화학적 힘으로 색을 가두는 **'나노 규모의 확산과 화학 결합의 예술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Color Off-shade - Delta E exceeded tolerance. Batch does not match master sample. Check dye weighing or water quality"
         return "PASS: Validated Spectral Fidelity and Verified Production Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dye_bath_temp_c=125.0, ph_level=4.8, bath_conductivity_ms=15.0)
 print(engine.diagnose_dyeing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_dyeing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dye-exhaustion-rates-and-color-fastness-v2026`와 연동되어, 전 세계 주요 의류 및 텍스타일 공장의 데이터를 실시간 분석하고 색상 불량 및 폐수 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 패션 문명의 색채 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - diffusion-bonding-and-solid-state-metallurgy

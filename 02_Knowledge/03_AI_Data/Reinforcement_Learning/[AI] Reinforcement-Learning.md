@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RL-CORE-2026-V6"
+metadata:
+  id: "[[[AI] Reinforcement-Learning]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Reinforcement_Learning'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Reinforcement-Learning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Reinforcement-Learning
@@ -118,7 +108,6 @@ class ReinforcementLearningAgent:
 2. **Exploration**을 위해 **Epsilon-Greedy** 전략 대신 정책의 **Entropy**를 최대화하는 방식이 가지는 공학적 이점은?
 3. 실제 하드웨어를 사용하지 않고 **NVIDIA Isaac Sim** 등 가상 환경(Simulation)에서 먼저 학습시킨 후 이식하는 **Sim-to-Real** 기술의 핵심 난제는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Robotic-Process-Automation
 - 02_Knowledge/03_AI_Data/Data_Science_and_MLOps/AI MLOps

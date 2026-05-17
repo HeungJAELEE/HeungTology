@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corrosion-inhibitor-and-surface-passivation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corrosion-inhibitor-and-surface-passivation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A chemical substance that, when added to a liquid or gas, decreases the corrosion rate of a material, typically a metal (Corrosion Inhibitor) and the physical process of forming a protective film of corrosion products on the metal surface that renders the surface 'passive' or unreactive (Surface Passivation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["corrosion-inhibitor", "passivation", "electrochemistry", "surface-chemistry", "material-protection", "industrial-maintenance", "chemical-barrier"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Corrosion_Fidelity_Audit: Evaluate the ''Inhibitor Efficiency'' ($\\eta$) using Electrochemical Impedance Spectroscopy (EIS) to identify if the protective layer is intact or experiencing localized breakdown.'
-    - 'Passivation_Integrity_Check: Analyze the ''Flade Potential'' to ensure that the metal surface remains in the passive region, preventing ''Pitting'' or ''Crevice Corrosion'' in aggressive environments.'
-    - 'Chemical_Fidelity_Scan: Monitor the inhibitor concentration and pH level to verify that ''Precipitation'' or degradation of the chemical barrier is not occurring.'
-Trust Metrics:
+  description: "[Entity] corrosion-inhibitor-and-surface-passivation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Corrosion Inhibitor and Surface Passivation Logic
+# [Entity] corrosion-inhibitor-and-surface-passivation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철로 된 배관이나 거대한 선박이 바닷물 속에서도 녹슬지 않고 버티는 비결은 무엇일까요? **부식 억제제 및 표면 부동태(Passivation) 로직**은 금속 표면에 '나노 수준의 방패'를 씌우는 **'금속의 생명 연장'** 기술입니다. 억제제는 금속 표면에 달라붙어 전기가 흐르는 길을 막고, 부동태는 금속 스스로 얇은 산화막을 만들어 외부 공격을 차단하게 유도합니다. 보이지 않는 화학적 장벽으로 거대한 산업 설비를 지켜내는 **'부식과의 전쟁에서 승리하는 지능형 방어선'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Pitting Initiation Detected - Localized electrochemical activity high. Risk of sudden pipe perforation. Inspect for crevice corrosion"
         return "PASS: Validated Surface Integrity and Verified Chemical Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inhibitor_concentration_ppm=150.0, corrosion_rate_mpy=0.8, ph_level=7.5)
 print(engine.diagnose_corrosion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_corrosion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data corrosion-inhibitor-efficiency-and-ph-profiles-v2026`와 연동되어, 전 세계 주요 배관망 및 화학 플랜트의 부식 데이터를 실시간 분석하고 관통 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 인프라 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - chilled-water-system-and-thermal-storage-logic

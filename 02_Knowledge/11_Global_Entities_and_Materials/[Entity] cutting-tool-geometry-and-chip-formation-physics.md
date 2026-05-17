@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cutting-tool-geometry-and-chip-formation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cutting-tool-geometry-and-chip-formation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The specific design and angles of a machining tool that interact with the workpiece (Cutting Tool Geometry) and the physical study of how material is deformed, sheared, and removed in the form of small fragments (Chip Formation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cutting-tool", "geometry", "chip-formation", "machining", "tribology", "shear-stress", "manufacturing-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cutting_Fidelity_Audit: Evaluate the ''Shear Angle'' ($\\phi$) and chip thickness ratio to identify if the tool is pushing material instead of cutting, leading to excessive heat and ''Built-up Edge'' (BUE).'
-    - 'Chip_Integrity_Check: Analyze the chip shape (continuous, segmented, or discontinuous) to ensure the ''Rake Angle'' and ''Chip Breaker'' design are optimized for safe removal and surface finish.'
-    - 'Tribological_Fidelity_Scan: Monitor the cutting force components ($F_c, F_t$) to verify that the friction coefficient at the tool-chip interface is minimized by coating or lubrication.'
-Trust Metrics:
+  description: "[Entity] cutting-tool-geometry-and-chip-formation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔪 Cutting Tool Geometry and Chip Formation Physics
+# [Entity] cutting-tool-geometry-and-chip-formation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 왜 칼날의 각도 하나가 수억 원짜리 공작 기계의 성능을 결정할까요? **절삭 공구 기하학 및 칩(Chip) 형성 물리**는 금속을 '깎는' 것이 아니라 '밀어내어 찢는' 과정의 정밀한 계산입니다. 아주 미세한 칼날의 경사(Rake)와 여유(Clearance) 각도가 금속 가루(Chip)를 어떻게 뱉어내느냐에 따라 매끄러운 거울 같은 표면이 될지, 울퉁불퉁한 쇳덩이가 될지 결정됩니다. 금속을 부드러운 버터처럼 다스리는 **'가공의 최첨단 예리함'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Tool Wear - Clearance angle lost. Dimensional accuracy will fail. Replace insert immediately"
         return "PASS: Validated Edge Integrity and Verified Machining Precision Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cutting_force_n=850.0, chip_thickness_ratio=0.6, surface_roughness_um=1.2)
 print(engine.diagnose_machining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_machining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data tool-wear-and-surface-finish-vs-geometry-v2026`와 연동되어, 전 세계 주요 항공 및 자동차 부품 가공 라인의 데이터를 실시간 분석하고 불량 및 공구 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 제조 문명의 절삭 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-and-g-code-interpolation-logic

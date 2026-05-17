@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "zone-refining-and-ultra-pure-silicon-crystallization-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] zone-refining-and-ultra-pure-silicon-crystallization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technique used to purify materials, especially semiconductors, by moving a molten zone along a solid ingot to segregate impurities (Zone Refining) and the study of the solid-liquid interface dynamics during the growth of large, defect-free single-crystal silicon ingots (Ultra-Pure Silicon Crystallization Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["zone-refining", "silicon-purification", "crystal-growth", "semiconductor-materials", "wafer-manufacturing", "solidification-physics", "materials-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Purification_Fidelity_Audit: Evaluate the ''Impurity Profile'' along the silicon ingot using the Scheil equation to identify if the segregation coefficient ($k$) is being optimized for maximum purity.'
-    - 'Crystallization_Integrity_Check: Analyze the pull rate and rotation speed of the silicon ingot to ensure the ''Solid-Liquid Interface'' is flat, preventing internal stresses and dislocations.'
-    - 'Thermal_Fidelity_Scan: Monitor the temperature gradient across the melt to identify ''Oxygen Concentration'' levels, ensuring the silicon has the correct internal gettering properties.'
-Trust Metrics:
+  description: "[Entity] zone-refining-and-ultra-pure-silicon-crystallization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Zone Refining and Ultra-Pure Silicon Crystallization Physics
+# [Entity] zone-refining-and-ultra-pure-silicon-crystallization-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 현대 문명의 뇌가 되는 반도체 칩을 만들기 위해 필요한 '실리콘'은 얼마나 깨끗해야 할까요? **존 정제 및 초고순도 실리콘 결정화 물리**는 99.999999999%(일명 11-Nine)라는 말도 안 되는 순도를 달성하는 **'물질의 극한 정제'** 기술입니다. 불순물이 고체보다 액체 속에 머물고 싶어 하는 성질을 이용해, 뜨거운 열선으로 실리콘 기둥의 한쪽 끝에서 다른 쪽 끝으로 불순물을 '밀어내어' 한곳에 몰아넣고 잘라냅니다. 세상에서 가장 순수한 물질을 빚어내는 **'현대판 연금술의 극치'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Crystal Dislocation Detected - Mechanical stress at interface too high. Ingot unsuitable for prime wafer production"
         return "PASS: Perfect Monocrystalline Ingot and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(impurity_concentration_ppb=0.001, crystal_pull_rate_mm_hr=1.05, melt_temp_stability_c=0.1)
 print(engine.diagnose_crystallization_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_crystallization_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data silicon-ingot-purity-and-crystal-defect-logs-v2026`와 연동되어, 전 세계 주요 웨이퍼 제조사의 잉곳 생산 데이터를 실시간 분석하고 결정 결함 및 순도 이탈 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - wafer-cleaning-and-surface-functionalization-chemistry

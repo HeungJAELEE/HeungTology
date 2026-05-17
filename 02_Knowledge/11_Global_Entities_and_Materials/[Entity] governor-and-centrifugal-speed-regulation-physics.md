@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "governor-and-centrifugal-speed-regulation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] governor-and-centrifugal-speed-regulation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device used to measure and regulate the speed of a machine, such as an engine (Governor) and the physical study of utilizing centrifugal force to provide mechanical feedback for throttle or valve adjustment (Centrifugal Speed Regulation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["governor", "centrifugal-speed", "speed-regulation", "feedback-control", "watt-governor", "engine-speed", "mechanical-control", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Regulation_Fidelity_Audit: Evaluate the ''Speed Droop'' to identify if high-fidelity ''Hunting'' (oscillation) is occurring due to excessive sensitivity or mechanical play in the linkages.'
-    - 'Force_Integrity_Check: Analyze the centrifugal force ($F_c$) against the high-fidelity ''Spring Preload'' to ensure the governor starts regulating at the target high-fidelity setpoint.'
-    - 'Damping_Fidelity_Scan: Monitor the high-fidelity ''Overshoot'' during load changes to verify that the high-fidelity ''Dashpot'' (damper) is effectively suppressing mechanical resonance.'
-Trust Metrics:
+  description: "[Entity] governor-and-centrifugal-speed-regulation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Governor and Centrifugal Speed Regulation Physics
+# [Entity] governor-and-centrifugal-speed-regulation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 증기기관이나 거대한 엔진이 짐을 많이 실었을 때는 헐떡거리고, 짐이 없을 때는 미친 듯이 빨리 돌아 폭발해버리면 어떻게 할까요? **조속기(Governor) 및 원심 속도 조절 물리**는 기계가 스스로 자신의 속도를 감시하고, 너무 빠르면 연료를 줄이고 느리면 더 넣어주는 **'기계의 자율 신경계'** 기술입니다. 제임스 와트가 발명한 '플라이볼(Flyball)'은 속도가 빨라지면 공이 위로 들리면서 밸브를 닫는 아주 단순하고 우아한 방식으로 피드백 제어의 시대를 열었습니다. **'물리적 원심력을 지능적 명령으로 번역하여 기계의 폭주를 막고 평온한 회전을 유지하는 제어 공학의 원조'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Mechanical Play - Backlash in the governor linkages causing high-fidelity delay in response. Precision regulation impossible. Replace pins and bushings"
         return "PASS: Validated Mechanical Transmission and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_rpm=1505, target_rpm=1500, governor_arm_angle=45.0)
 print(engine.diagnose_governor_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_governor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data governor-droop-and-speed-stability-metrics-v2026`와 연동되어, 전 세계 주요 선박 엔진 및 발전소 터빈의 데이터를 실시간 분석하고 과속 파손 및 불시 정지 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 운영 문명의 속도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gas-engine-and-otto-cycle-thermodynamics-physics

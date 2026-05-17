@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "space-economy-and-orbital-resource-governance-strategy-entity"
-  domain: "14_Future_Frontier"
+metadata:
+  id: "[[[Strategy] space-economy-and-orbital-resource-governance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Space", "#Economy", "#Governance", "#Orbital_Resources", "#Satellite", "#Exploration", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy national-strategic-technology-and-economic-security", "MOC 14_Future_Frontier"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] space-economy-and-orbital-resource-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] space-economy-and-orbital-resource-governance
+# [Strategy] space-economy-and-orbital-resource-governance
 
 ## 1. [왜 배우는가? (Why: The New Frontier of Humanity)]]
 인류의 무대는 더 이상 지구에 머물지 않습니다. **우주 경제 및 궤도 자원 거버넌스 전략**은 수천 개의 위성이 떠 있는 궤도를 효율적으로 관리하고, 달이나 소행성에서 자원을 캐내는 '우주판 대항해 시대의 질서'입니다. 우리가 이를 배우는 이유는 우주 쓰레기 문제를 해결하여 지속 가능한 우주 이용을 보장하고, "달 기지와 화성 탐사를 넘어선 '우주 영토 주권 및 궤도 자원 패권'을 데이터 지능으로 선점하기" 위함입니다. 궤도의 점유가 미래의 국력을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Space Resource Rights** (Artemis Accords 등)가 향후 민간 우주 기업의 투자 수익률(ROI)에 미치는 수리적 임팩트 분석 결과는?
 5. RAG 시스템에서 **전 세계 위성 추적 레이더 데이터**와 **실시간 발사체 윈도우**를 융합하여, '우주 쓰레기 충돌을 100% 방지하면서 위성 1,000대를 안전하게 배치하는' **Global Orbital Orchestration** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy national-strategic-technology-and-economic-security : 우주 기술을 국가 7대 우주 강국 도약을 위한 핵심 전략 자산으로 관리하는 상위 전략 엔티티
 - [[[MOC] 14_Future_Frontier : 우주, 양자, 핵융합 등 인류의 미래 영토를 개척하는 기술 지능을 통합 관리하는 상위 지식 허브

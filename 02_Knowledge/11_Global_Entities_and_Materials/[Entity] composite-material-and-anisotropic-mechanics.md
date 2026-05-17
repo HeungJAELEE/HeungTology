@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "composite-material-and-anisotropic-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] composite-material-and-anisotropic-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Materials made from two or more constituent materials with significantly different physical or chemical properties (Composite Material) and the study of their mechanical behavior where properties vary depending on the direction of applied load (Anisotropic Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["composite-materials", "anisotropy", "cfrp", "material-science", "mechanics", "lamination", "structural-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Structural_Fidelity_Audit: Evaluate the ''ABD Matrix'' components (Stiffness, Coupling, Bending) to identify if the laminate stacking sequence is achieving the intended anisotropic response without unwanted twisting.'
-    - 'Failure_Integrity_Check: Analyze the Tsai-Wu or Hashin failure criteria to ensure that the multi-axial stress state does not exceed the ''First-Ply Failure'' threshold.'
-    - 'Manufacturing_Fidelity_Scan: Monitor the ''Void Content'' and fiber volume fraction ($V_f$) to verify that the consolidation process (Autoclave/Vacuum) has achieved the theoretical design properties.'
-Trust Metrics:
+  description: "[Entity] composite-material-and-anisotropic-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Composite Material and Anisotropic Mechanics
+# [Entity] composite-material-and-anisotropic-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 철보다 강하면서 종이처럼 가벼운 재료를 만들 수 있을까요? **복합 재료 및 비등방성(Anisotropic) 역학**은 서로 다른 장점을 가진 두 재료(섬유와 플라스틱 등)를 섞어 세상에 없던 '초능력 소재'를 만드는 **'소재의 하이브리드'** 기술입니다. 특히 방향에 따라 강도가 달라지는 '비등방성'은 복합 재료만의 매력이자 숙제입니다. 힘이 많이 실리는 방향으로 섬유를 정렬하여, 필요한 곳에만 강철 같은 힘을 주는 **'맞춤형 소재의 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fiber Misalignment - Stacking sequence deviation leading to unintended coupling effects (twisting). Part out of tolerance"
         return "PASS: Validated Lamination Geometry and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fiber_volume_fraction_pct=62.5, void_content_pct=0.8, inter_laminar_shear_strength_mpa=85.0)
 print(engine.diagnose_composite_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_composite_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data composite-material-stiffness-and-failure-criteria-v2026`와 연동되어, 전 세계 주요 항공우주 및 풍력 발전 블레이드 제조사의 데이터를 실시간 분석하고 내부 결함 및 구조 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 구조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - carbon-fiber-reinforced-polymer-cfrp-and-composite-mechanics

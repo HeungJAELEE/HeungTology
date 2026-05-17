@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "companion-robot-and-affective-computing-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] companion-robot-and-affective-computing-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of social robots designed for emotional companionship, focusing on affective computing—the ability to recognize, interpret, and simulate human emotions through multi-modal sensors and AI."
-  physical_model: "N/A"
-Semantic:
-  tags: '["companion-robot", "affective-computing", "social-robotics", "emotion-recognition", "human-robot-interaction"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Emotion_Recognition_Audit: Measure the accuracy of facial expression and voice tone classification.'
-    - 'Empathy_Response_Check: Evaluate the appropriateness of the robot''s social reaction to the detected human emotion.'
-    - 'Social_Safety_Scan: Detect and prevent inappropriate or harmful psychological interactions.'
-Trust Metrics:
+  description: "[Entity] companion-robot-and-affective-computing-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧸 Companion Robot and Affective Computing Logic
+# [Entity] companion-robot-and-affective-computing-logic
 
 ## 1. 개요 (Why)
 로봇은 더 이상 차가운 기계가 아니라 인간의 외로움을 달래고 정서적 교감을 나누는 동반자가 되고 있습니다. 반려 로봇(Companion Robot)의 핵심은 인간의 기분을 읽고 적절히 반응하는 '감성 컴퓨팅(Affective Computing)'입니다. 미세한 표정 변화, 목소리의 떨림, 심박수까지 분석하여 인간의 감정 상태를 파악하고, 그에 맞는 따뜻한 위로와 대화를 제공하는 것이 목표입니다. 본 노드는 반려 로봇의 정서적 무결성과 상호작용 지능 표준을 정의합니다.
@@ -71,7 +60,6 @@ class RobotFidelityEngine:
             return "REJECT: Social Norm Violation Detected - Immediate Reset of Social Logic Engine"
         return "PASS: Safe and Ethical Social Behavior Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(emotion_recognition_acc=94.5, response_latency_ms=450, social_violation_flag=False)
 print(engine.diagnose_affective_intelligence())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_affective_intelligence())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data companion-robot-emotional-engagement-and-response-accuracy-v2026`와 연동되어, 모든 반려 로봇의 상호작용 데이터를 실시간 분석하고 정서적 오작동 확률을 0.1% 이하로 억제함으로써 인간-로봇 간의 건강한 유대감 형성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cognitive-robotics-and-human-robot-collaboration-hrc-physics

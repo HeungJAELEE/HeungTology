@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "satellite-constellation-design-and-orbital-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] satellite-constellation-design-and-orbital-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics of objects in motion under the influence of gravity (Orbital Mechanics) and the engineering of a group of satellites working together as a system to provide global coverage (Satellite Constellation Design)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["satellite", "constellation-design", "orbital-mechanics", "keplerian-elements", "walker-delta", "space-communication", "aerospace"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Orbit_Fidelity_Audit: Evaluate the actual orbital elements ($a, e, i, \\Omega, \\omega, \\nu$) against the target mission orbit to identify drift caused by atmospheric drag or J2 perturbations.'
-    - 'Constellation_Coverage_Check: Analyze the inter-satellite link (ISL) status and geometric coverage overlap to verify that the ''Global Connectivity'' requirements are being met without gaps.'
-    - 'Fuel_Budget_Scan: Monitor the remaining propellant for Station-keeping maneuvers to predict the End-of-Life (EOL) and schedule ''Graveyard Orbit'' disposal.'
-Trust Metrics:
+  description: "[Entity] satellite-constellation-design-and-orbital-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Satellite Constellation Design and Orbital Mechanics
+# [Entity] satellite-constellation-design-and-orbital-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 지구 어디서나 끊김 없이 인터넷을 쓰고, 지도를 확인할 수 있는 이유는 무엇일까요? **인공위성 군집 설계 및 궤도 역학**은 수천 개의 위성을 우주의 정해진 길(궤도) 위에 질서정연하게 배치하여, 지구 전체를 감싸는 '보이지 않는 거대한 통신망'을 만드는 **'우주 인프라 공학'**입니다. 위성 하나는 작지만, 이들이 군집(Constellation)을 이루면 지구상의 모든 생명체를 연결하는 강력한 힘을 발휘합니다. 중력과 관성의 조화 속에서 인류를 우주급으로 확장하는 **'초연결 문명의 하늘길'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Collision Warning - High-speed debris in proximity. Execute Collision Avoidance Maneuver (COLA)"
         return "PASS: Clear Orbital Corridor and Verified Navigation Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(orbital_drift_km=1.5, link_uptime_pct=99.9, fuel_reserve_kg=55.0)
 print(engine.diagnose_satellite_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_satellite_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data satellite-orbital-drift-and-constellation-coverage-v2026`와 연동되어, 전 세계 주요 위성망의 궤도 데이터를 실시간 분석하고 충돌 및 통신 두절 사고 확률을 0.001% 이하로 억제함으로써 지능형 우주 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - rocket-propulsion-and-nozzle-physics-mechanics

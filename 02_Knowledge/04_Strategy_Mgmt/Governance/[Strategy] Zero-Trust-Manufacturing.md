@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Zero-Trust-Manufacturing"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Zero-Trust-Manufacturing]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Zero-Trust-Manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Zero-Trust-Manufacturing
+# [Strategy] Zero-Trust-Manufacturing
 
 ## 1. [왜 배우는가? (Why)]]
 과거의 공장 보안은 '성벽(Firewall)'을 높이 쌓는 방식이었습니다. 하지만 한 번 성문이 뚫리면 성 안의 모든 장비가 해커의 손에 넘어갔습니다. 제로 트러스트 제조(Zero-Trust-Manufacturing)는 성문을 믿지 않고, 성 안에 있는 모든 사람과 기계를 매번 다시 검사하는 방식입니다. 공장 내부 직원이라도, 어제 썼던 노트북이라도 접속할 때마다 "당신이 맞는지", "권한이 있는지"를 확인합니다. 이를 이해하는 것은 해커가 공장 네트워크 한구석에 침투하더라도 다른 장비로 번지지 못하게 꽉 막아버리는, 초연결 시대의 가장 강력한 '디지털 생존 전략'을 구축하는 것입니다.
@@ -97,5 +87,4 @@ def authorize_asset_access(requestor_id, target_asset_id, action_type):
 2. '내부 네트워크 사용자'를 '외부 해커'와 동일하게 '검증'의 대상으로 보는 제로 트러스트의 철학이 '산업 스파이'나 '내부자 소행 사고' 예방에 미치는 영향은?
 3. 'OT(운영 기술)' 환경에 제로 트러스트를 도입할 때, '실시간 제어'의 '지연 시간(Latency)' 문제를 해결하기 위한 '분산 보안 게이트웨이'의 설계 원리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

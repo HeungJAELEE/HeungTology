@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Digital-Therapeutics-DTx-Standard"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Digital-Therapeutics-DTx-Standard]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Digital-Therapeutics-DTx-Standard에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Digital-Therapeutics-DTx-Standard
+# [Strategy] Digital-Therapeutics-DTx-Standard
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 질병을 치료하기 위해 화학 물질인 '약'을 먹거나 몸을 가르는 '수술'을 했습니다. 하지만 불면증, 우울증, 당뇨 같은 만성 질환은 생활 습관과 마음의 문제가 더 큽니다. 디지털 치료제(Digital-Therapeutics-DTx-Standard)는 스마트폰 앱이나 VR 소프트웨어 자체가 '의사'가 되어 환자를 치료하는 기술입니다. 엄격한 임상 시험을 통과해 국가로부터 '치료제'로 인정받은 소프트웨어입니다. 이를 이해하는 것은 화학과 수술의 한계를 넘어, 데이터와 알고리즘으로 사람의 뇌와 신체를 치유하는 '디지털 의학의 설계자'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (DTx Patient Engagement & Feedback Loop)]
 환자의 활동 데이터를 수집하여 현재 치료 단계를 평가하고 다음 미션을 개인화하여 제공하는 논리 구조입니다.
 ```python
-# 디지털 치료(ISM) 기반 환자 참여 및 치료 알고리즘 논리
 def execute_dtx_therapy_session(patient_data, clinical_protocol):
     # 1. 환자 상태 모니터링 (Adherence Check)
     # 수면 시간, 활동량, 기분 점수 등 디지털 바이오마커 수집
@@ -96,5 +85,4 @@ def execute_dtx_therapy_session(patient_data, clinical_protocol):
 2. 'RCT(무작위 대조 시험)'와 'RWE(실제 임상 근거)'가 DTx의 '인허가' 및 '수가 결정'에 미치는 각각의 역할은?
 3. '소프트웨어 강화 약물'이 '기존 약물 단독 요법'보다 '만성 질환 관리'에서 높은 성과를 낼 수 있는 공학적 근거는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

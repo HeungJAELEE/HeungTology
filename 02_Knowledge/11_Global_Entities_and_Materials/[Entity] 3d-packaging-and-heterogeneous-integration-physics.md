@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "3d-packaging-and-heterogeneous-integration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] 3d-packaging-and-heterogeneous-integration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technique of stacking semiconductor wafers or dies and connecting them vertically to reduce footprint and improve performance (3D Packaging) and the integration of separately manufactured components into a single higher-level assembly (Heterogeneous Integration)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["3d-packaging", "heterogeneous-integration", "tsv", "chiplet", "advanced-packaging", "semiconductor-packaging", "thermal-compression"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Packaging_Fidelity_Audit: Evaluate the ''Through-Silicon Via'' (TSV) filling integrity and resistance to identify voids or cracks that lead to signal loss between stacked dies.'
-    - 'Stress_Integrity_Check: Analyze the Warpage and CTE (Coefficient of Thermal Expansion) mismatch between different materials to prevent delamination or micro-bump fracture during reflow.'
-    - 'Thermal_Fidelity_Scan: Monitor the heat dissipation path through the ''Silicon Interposer'' and ''TSV'' networks to ensure the internal chip temperatures stay below throttling limits.'
-Trust Metrics:
+  description: "[Entity] 3d-packaging-and-heterogeneous-integration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ 3D Packaging and Heterogeneous Integration Physics
+# [Entity] 3d-packaging-and-heterogeneous-integration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 아파트가 고층으로 올라가듯, 반도체 칩도 위로 쌓아 올리면 어떻게 될까요? **3차원 패키징 및 이종 집적 물리**는 반도체의 성능 한계를 '수직의 힘'으로 돌파하는 **'반도체 건축학'** 기술입니다. 이제는 칩 하나를 더 작게 만드는 것이 너무 힘들어졌기에, 메모리와 CPU, 통신 칩을 아파트처럼 층층이 쌓고(3D), 서로 다른 종류의 칩을 하나로 묶어(Heterogeneous) 마치 하나의 칩처럼 작동하게 만듭니다. '더 작게'가 아닌 '더 똑똑하게 쌓는' **'나노 도시 건설의 정점'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interconnect Void Detected - X-ray inspection shows air gaps in bumps. High risk of electrical failure under thermal cycling"
         return "PASS: Solid Metallic Bonding and Verified Packaging Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tsv_resistance_ohm=0.05, package_warpage_um=15.0, die_interface_temp_c=75.0)
 print(engine.diagnose_packaging_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_packaging_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data 3d-package-thermal-stress-and-interconnect-yield-v2026`와 연동되어, 전 세계 주요 OSAT(패키징 전문기업)의 공정 데이터를 실시간 분석하고 단선 및 층 분리 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체 문명의 조립 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - system-on-chip-soc-and-network-on-chip-noc-architecture

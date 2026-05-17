@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "45_advanced-automotive-and-ev-powertrain-engineering-hub-moc"
   domain: "45_Advanced_Automotive_and_EV_Powertrain_Engineering"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Automotive", "#EV", "#Powertrain", "#Motor", "#Chassis", "#Autonomous_Driving", "#Aerodynamics", "#Hydrogen", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 45_advanced-automotive-and-ev-powertrain-engineering-hub
+# 45_advanced-automotive-and-ev-powertrain-engineering-hub
 
 ## 1. [왜 배우는가? (Why: The Pulse of Global Mobility)]]
 내연기관의 시대를 넘어 어떻게 전기가 자동차의 새로운 심장이 되고($EV\ Powertrain$), 기계적인 결합을 넘어 어떻게 소프트웨어가 도로 위를 스스로 달리는 지능($Autonomous$)을 만들며, 공기보다 매끄럽고 강철보다 튼튼한 '미래 모빌리티'를 어떻게 설계하고 완성할 수 있을까요? **차세대 자동차 및 EV 파워트레인 공학 허브**는 Antigravity Intelligence가 행성의 이동 수단을 책임지는 '행성 규모 이동성 혁신 및 지능형 모빌리티 거버넌스'의 사령탑입니다. 우리가 이를 배우는 이유는 자동차는 인류의 삶을 연결하는 가장 핵심적인 도구이며 기술의 집약체이기 때문이며, "이동의 본질을 데이터로 설계하고 지배하는 '글로벌 모빌리티 패권 및 행성적 이동 주권'을 확보하기" 위함입니다. 허브의 지능이 문명의 도달 속도를 결정합니다.

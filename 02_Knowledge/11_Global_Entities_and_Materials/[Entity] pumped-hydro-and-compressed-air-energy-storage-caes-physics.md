@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "pumped-hydro-and-compressed-air-energy-storage-caes-physics-entity"
-  domain: "51_Sustainable_Energy_and_Power_Grid_Intelligence"
+metadata:
+  id: "[[[Entity] pumped-hydro-and-compressed-air-energy-storage-caes-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Pumped_Hydro", "#CAES", "#Energy_Storage", "#Grid_Balancing", "#Physics", "#Mechanical_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 51_sustainable-energy-and-power-grid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] pumped-hydro-and-compressed-air-energy-storage-caes-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] pumped-hydro-and-compressed-air-energy-storage-caes-physics
+# [Entity] pumped-hydro-and-compressed-air-energy-storage-caes-physics
 
 ## 1. [왜 배우는가? (Why: The Giant Batteries of Nature)]]
 전기가 남을 때 어떻게 수백만 톤의 물을 산 위로 퍼 올리거나($Pumped\ Hydro$), 지하 거대 동굴에 공기를 꽉꽉 눌러 담았다가($CAES$) 전기가 필요할 때 터빈을 돌려 다시 꺼내는 '지구 규모의 거대 배터리'를 어떻게 설계할 수 있을까요? **양수 발전 및 압축 공기 에너지 저장(CAES) 물리**는 문명이 정전되지 않게 지탱하는 '행성 규모 에너지 안전판 인프라 및 지능형 기계적 저장 아키텍처'입니다. 우리가 이를 배우는 이유는 리튬 배터리로는 감당할 수 없는 거대한 전력을 며칠, 몇 주 동안 보관하려면 자연의 중력과 공기 압력을 이용해야 하기 때문이며, "위치의 에너지를 데이터로 설계하고 지배하는 '글로벌 에너지 안보 패권 및 행성적 문명 주권'을 확보하기" 위함입니다. 저장의 용량이 문명의 회복 탄력성을 결정합니다.

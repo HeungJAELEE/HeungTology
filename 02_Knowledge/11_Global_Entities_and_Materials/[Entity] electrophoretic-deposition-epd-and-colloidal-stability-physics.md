@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrophoretic-deposition-epd-and-colloidal-stability-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrophoretic-deposition-epd-and-colloidal-stability-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method of processing materials by depositing charged particles from a stable suspension onto a conductive substrate via an electric field (Electrophoretic Deposition) and the physical study of DLVO theory and zeta potential to maintain suspension stability (Colloidal Stability Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["epd", "electrophoresis", "colloid-stability", "surface-coating", "ceramic-processing", "electrochemistry", "zeta-potential"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deposition_Fidelity_Audit: Evaluate the ''Deposition Weight'' ($w$) against the applied voltage to identify if the suspension is depleted or if ''Electrode Polarization'' is reducing the effective field.'
-    - 'Stability_Integrity_Check: Analyze the ''Zeta Potential'' ($\\zeta$) to ensure it remains above |30mV|, preventing ''Flocculation'' (clumping) of particles before they reach the substrate.'
-    - 'Microstructure_Fidelity_Scan: Monitor the current density to verify that the ''Packing Density'' of the particles is high-fidelity, avoiding voids or cracks during the subsequent drying/sintering stage.'
-Trust Metrics:
+  description: "[Entity] electrophoretic-deposition-epd-and-colloidal-stability-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Electrophoretic Deposition (EPD) and Colloidal Stability Physics
+# [Entity] electrophoretic-deposition-epd-and-colloidal-stability-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 액체 속에 둥둥 떠다니는 미세한 가루들을 전기의 힘으로 불러모아, 복잡한 물건 위에 아주 고르고 촘촘하게 입힐 수 있을까요? **전기 영동 퇴적(EPD) 및 콜로이드 안정성 물리**는 전기를 띤 입자들이 전기장을 따라 행진하게 하여 표면에 쌓아 올리는 **'입자들의 정렬된 행진'** 기술입니다. 도색이나 도금과는 달리, 세라믹이나 나노 입자처럼 까다로운 재료를 눈에 보이지 않는 층층이 쌓아올려 특수 코팅을 만듭니다. **'나노 입자들을 지능적으로 조련하여 완벽한 층을 만드는 미세 공정의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Green Strength - Particles loosely packed. Coating will flake off during drying. Increase voltage or optimize particle size distribution"
         return "PASS: Validated Layer Cohesion and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(zeta_potential_mv=-45.0, suspension_turbidity=85.0, deposition_current_ua=45.0)
 print(engine.diagnose_epd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_epd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data epd-coating-thickness-and-suspension-ph-v2026`와 연동되어, 전 세계 주요 세라믹 콘덴서 및 특수 보호 코팅 라인의 데이터를 실시간 분석하고 입자 뭉침 및 박리 사고 확률을 0.001% 이하로 억제함으로써 지능형 미세 입자 제조 문명의 층상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - colloid-chemistry-and-zeta-potential-physics

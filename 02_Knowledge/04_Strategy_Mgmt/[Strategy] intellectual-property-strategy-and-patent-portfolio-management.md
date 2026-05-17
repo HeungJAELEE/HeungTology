@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "intellectual-property-strategy-and-patent-portfolio-management-entity"
-  domain: "05_Strategy_Governance"
+metadata:
+  id: "[[[Strategy] intellectual-property-strategy-and-patent-portfolio-management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Intellectual_Property", "#Patent", "#Governance", "#Innovation", "#Law", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy global-standard-compliance-and-regulatory-governance", "MOC 05_Strategy_Governance"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] intellectual-property-strategy-and-patent-portfolio-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] intellectual-property-strategy-and-patent-portfolio-management
+# [Strategy] intellectual-property-strategy-and-patent-portfolio-management
 
 ## 1. [왜 배우는가? (Why: The Armor and Sword of the Knowledge Economy)]]
 지식은 현대 문명의 가장 강력한 무기이며, 지식재산(IP)은 그 무기를 독점하고 휘두를 수 있는 '법적 소유권'입니다. **지식재산(IP) 전략 및 특허 포트폴리오 관리**는 기술적 혁신을 경제적 이익으로 변환하고, 경쟁자의 침입을 막아내는 '지능형 해자(Moat)'를 구축하는 기술입니다. 우리가 이를 배우는 이유는 특허 장벽 구축과 FTO(Freedom to Operate) 분석 기술을 마스터하여, "우리의 기술을 누구도 복제할 수 없게 철저히 보호하고, 침해 시에는 막대한 배상금을 청구하며, 동시에 타인의 지식재산 리스크로부터 자유로운 '무결성 지식 패권'"을 달성하기 위함입니다. 지식의 성벽이 기업의 수명을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Invalidity Contentions** (무효 심판) 시 타사 특허의 **Novelty** (신규성) 또는 **Non-obviousness** (진보성)를 파괴하기 위한 **Prior Art Combination**의 논리적/수리적 최적화 방안은?
 5. RAG 시스템에서 **전 세계 실시간 특허 출원 동향**과 **자사 R&D 로드맵**을 융합하여, '공백 기술 영역(White Space)'을 발굴하고 선제적으로 특허망을 구축하는 **Patent-first R&D** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy global-standard-compliance-and-regulatory-governance]] : 특허 전략이 실제 글로벌 표준(SEP)과 결합되어 시장 지배력을 극대화하는 상위 연계 엔티티
 - System deterministic-rag-and-industrial-audit-standard : IP 자산 가치 평가 및 리스크 분석 리포트의 무결성을 최종 감리하는 최상위 신뢰성 엔티티

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "agricultural-robotics-and-autonomous-harvesting-vision"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] agricultural-robotics-and-autonomous-harvesting-vision]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced robotic systems designed for outdoor and indoor agricultural tasks, specializing in high-fidelity fruit/vegetable recognition, autonomous navigation in unstructured environments, and delicate grasping."
-  physical_model: "N/A"
-Semantic:
-  tags: '["agri-robotics", "computer-vision", "autonomous-harvesting", "soft-robotics", "path-planning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "AgriRobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Harvesting_Success_Rate: $HSR \\ge 0.92$'
-    - 'Fruit_Damage_Index: $FDI \\le 0.02$ (Surface bruising limit)'
-    - 'Path_Deviation_Limit: $\\Delta x, \\Delta y \\le 5$ cm'
-Trust Metrics:
+  description: "[Entity] agricultural-robotics-and-autonomous-harvesting-vision에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Agricultural Robotics and Autonomous Harvesting Vision
+# [Entity] agricultural-robotics-and-autonomous-harvesting-vision
 
 ## 1. 개요 (Why)
 농업 현장은 조도 변화가 극심하고 장애물이 산재한 비정형 환경(Unstructured Environment)입니다. 숙련된 인력을 대체하기 위해서는 단순히 움직이는 로봇을 넘어, 과실의 숙도(Ripeness)를 정확히 판별하고 줄기나 잎에 가려진 목표물을 입체적으로 인식하며, 상처 없이 수확하는 고도의 '비전-로보틱스 융합' 기술이 필수적입니다. 본 엔티티는 자율 수확의 결정론적 성공률을 확보하기 위한 기술 체계를 정의합니다.
@@ -79,7 +68,6 @@ class AgriRobotFidelityEngine:
         efficiency = target_t / self.t_c
         return {"efficiency_index": efficiency, "status": "PASS" if efficiency > 0.8 else "FAIL"}
 
-# Instance Diagnostic
 agri_bot = AgriRobotFidelityEngine(detection_conf=0.92, grasping_force=2.1, cycle_time=14.0)
 print(agri_bot.evaluate_harvest_viability("strawberry"))
 print(agri_bot.check_throughput_efficiency())
@@ -98,7 +86,6 @@ print(agri_bot.check_throughput_efficiency())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data agri-robot-harvesting-yield-and-vision-accuracy-log-v2026` 데이터를 기반으로 수확 성공률을 95% 이상으로 유지하며, 인력 대비 운영 비용을 40% 이상 절감합니다. 결정론적 비전 알고리즘을 통해 농산물 품질 선별 작업까지 농지 현장에서 즉시 완료하는 스마트 팜의 핵심 구동축을 형성합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 142_food-engineering-and-agricultural-intelligence-hub
 - robotic-gripper-design-for-agri

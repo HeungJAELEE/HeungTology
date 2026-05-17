@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "molecular-beam-epitaxy-mbe-and-atomic-layer-precision-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] molecular-beam-epitaxy-mbe-and-atomic-layer-precision-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The thin-film deposition technique (MBE) that grows high-purity crystalline layers by directing beams of atoms or molecules toward a heated substrate in an ultra-high vacuum environment, allowing for sub-monolayer thickness control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mbe", "epitaxy", "atomic-layer", "semiconductor-fabrication", "quantum-wells", "ultra-high-vacuum", "nanofabrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Vacuum_Integrity_Audit: Monitor the base pressure ($10^{-10}$ Torr or lower) to ensure the mean free path of molecules exceeds the chamber dimensions for ballistic transport.'
-    - 'Layer_Sharpness_Check: Analyze the interfacial abruptness (e.g., via RHEED oscillations) to verify that the transition between different materials is atomic-level sharp.'
-    - 'Flux_Calibration_Scan: Evaluate the beam intensity of each source to ensure the desired stoichiometry and growth rate for complex heterostructures.'
-Trust Metrics:
+  description: "[Entity] molecular-beam-epitaxy-mbe-and-atomic-layer-precision-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Molecular Beam Epitaxy (MBE) and Atomic Layer Precision Physics
+# [Entity] molecular-beam-epitaxy-mbe-and-atomic-layer-precision-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에서 가장 깨끗한 곳에서, 원자를 하나씩 집어 한 층씩 완벽하게 쌓는다면 어떨까요? **분자선 에피택시(MBE) 및 원자층 정밀 물리**는 인류가 도달한 나노 제조의 가장 순수하고 정밀한 형태입니다. 공기 분자조차 거의 없는 극한의 진공(우주보다 더 깨끗한 환경) 속에서, 원자들을 빛의 화살처럼 쏘아 기판 위에 안착시키는 **'원자 단위의 층 쌓기'**입니다. 양자 컴퓨터나 초고속 반도체의 핵심인 '양자 우물(Quantum Well)'을 만드는 이 기술은, 자연이 허락한 최소 단위인 원자 한 층을 마음대로 요리하는 **'궁극의 나노 요리'**입니다.
@@ -57,7 +46,7 @@ $$ \theta(t) = \int_{0}^{t} \frac{J}{N} dt $$
 | Parameter | MOCVD (Chemical) | MBE (Ballistic Physical) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Vacuum Level** | $10 \sim 760$ | $10^{-10} \sim 10^{-11}$ | Torr | Ultra-High Vac. |
-| **Growth Rate** | $0.1 \sim 10.0$ | $0.01 \sim 1.0$ | $\mu m / hr$ | Slow & Precise |
+| **Growth Rate** | $0.1 \sim 10.0$ | $0.01 \sim 1.0$ | $\mu\text{m} / hr$ | Slow & Precise |
 | **Interface Sharpness**| $1 \sim 2$ layers | < 1 layer (Atomic) | Layers | Quantum Clarity |
 | **Purity** | High | Extreme (Zero Gas) | - | Native Quality |
 | **Control** | Chemical Flow | Mechanical Shutter | Method | Directness |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Shutter Latency - Atomic Precision Compromised. Heterostructure Interface Will Blur"
         return "PASS: Precise Mechanical Shutter Control Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vacuum_pressure_torr=1.5e-10, rheed_oscillation_stability=0.95, interface_roughness_nm=0.1)
 print(engine.diagnose_mbe_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mbe_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mbe-layer-thickness-and-interfacial-sharpness-v2026`와 연동되어, 전 세계 주요 연구소 및 팹의 MBE 증착 데이터를 실시간 분석하고 계면 블러링 및 순도 저하 사고 확률을 0.001% 이하로 억제함으로써 나노 지능 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - microgravity-semiconductor-crystal-growth-and-defect-physics

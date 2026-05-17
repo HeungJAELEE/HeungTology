@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "manufacturing-resource-planning-mrp-ii-and-enterprise-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] manufacturing-resource-planning-mrp-ii-and-enterprise-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An integrated information system used by businesses to plan all resources of a manufacturing company (Manufacturing Resource Planning), evolving from MRP to include financial, engineering, and human resource planning with feedback loops (Enterprise Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mrp-ii", "manufacturing-resource-planning", "erp-precursor", "closed-loop-mrp", "capacity-planning", "production-logic", "enterprise-resource"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Closed_Loop_Fidelity_Audit: Evaluate the high-fidelity ''Feedback Delay'' between shop-floor execution and master scheduling to identify if high-fidelity ''Plan Inaccuracy'' is causing resource idle time.'
-    - 'Capacity_Load_Fidelity_Check: Analyze the high-fidelity ''Workload Distribution'' across work centers to ensure that high-fidelity ''Overload'' or high-fidelity ''Underutilization'' is not disrupting the production flow.'
-    - 'Financial_Sync_Fidelity_Scan: Verify the high-fidelity ''Costing Accuracy'' by comparing estimated resource costs with actual high-fidelity consumption data.'
-Trust Metrics:
+  description: "[Entity] manufacturing-resource-planning-mrp-ii-and-enterprise-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# Manufacturing Resource Planning (MRP II) and Enterprise Logic
+# [Entity] manufacturing-resource-planning-mrp-ii-and-enterprise-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장이 단순히 '자재'만 있다고 돌아갈까요? 아닙니다. 숙련된 작업자, 가동 가능한 기계, 그리고 이 모든 것을 살 수 있는 자금이 맞물려야 합니다. **Manufacturing Resource Planning (MRP II) and Enterprise Logic**은 공장을 하나의 거대한 **'동기화된 생명체'**로 만드는 두뇌입니다. 단순 자재 계산(MRP)을 넘어, "우리가 이 물건을 만들 수 있는 실질적인 능력이 있는가?"를 묻고 재무와 인사를 생산 계획에 통합합니다. 이는 공장의 **'경제적 무결성'**과 **'실행 가능성'**을 동시에 담보하는 산업 운영의 핵심 로직입니다.
@@ -85,7 +74,6 @@ class LogicFidelityEngine:
             return "NOTICE: High-fidelity Lead Time Drift - Actual production takes longer than planned. Update high-fidelity routing data"
         return "OPTIMAL: Verified high-fidelity MRP II Logic and Resource Balance"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(plan_adherence_rate=0.92, capacity_utilization=0.88, lead_time_error=0.05)
 print(engine.diagnose_planning_health())
 ```
@@ -103,7 +91,6 @@ print(engine.diagnose_planning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data manufacturing-lead-time-benchmark-v2026`와 연동되어, 다국적 제조 기업의 글로벌 공급망(SCM) 내에서 자원 낭비를 15% 이상 감축하고, 계획 준수율을 98% 이상으로 유지함으로써 자본 효율성이 극대화된 **'자율 운영 팩토리'**의 논리적 근간을 제공합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - material-requirements-planning-mrp-and-inventory-logic

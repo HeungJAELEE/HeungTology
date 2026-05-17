@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "6g-communication-and-terahertz-physics-networks-entity"
-  domain: "02_Communication_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] 6g-communication-and-terahertz-physics-networks]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Communication", "#6G", "#Terahertz", "#Wireless", "#Satellite", "#Signal_Processing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Infrastructure satellite-constellation-and-orbital-mesh-networks", "MOC 02_Communication_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] 6g-communication-and-terahertz-physics-networks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] 6g-communication-and-terahertz-physics-networks
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Non-Terrestrial Networks (NTN)**에서 위성의 전송 전력 제한과 **Free Space Path Loss**를 고려할 때, 지상 단말의 **Link Budget**을 확보하기 위한 최소 안테나 이득($G$) 수리 산출 방식은?
 5. RAG 시스템에서 **전 세계 위성 궤도 맵**과 **지상 기지국 트래픽 데이터**를 융합하여, '대규모 재난 시' 통신이 단절된 지역에 위성 빔을 집중 투사하는 **Autonomous Disaster Response Connectivity** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] satellite-constellation-and-orbital-mesh-networks]] : 6G의 커버리지를 지구 전역 및 우주로 확장하는 상위 위성 인프라 엔티티
 - System edge-computing-and-distributed-intelligence-networks : 6G의 초저지연 성능을 활용하여 실시간 분산 AI 연산을 수행하는 하위 컴퓨팅 엔티티

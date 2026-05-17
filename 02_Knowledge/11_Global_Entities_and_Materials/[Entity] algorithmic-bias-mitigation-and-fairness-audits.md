@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-AI-FAIRNESS-MASTER-2026-V6"
-  domain: "31_System_Governance_and_Ethics"
+metadata:
+  id: "[[[Entity] algorithmic-bias-mitigation-and-fairness-audits]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] algorithmic-bias-mitigation-and-fairness-audits에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] algorithmic-bias-mitigation-and-fairness-audits
+# [Entity] algorithmic-bias-mitigation-and-fairness-audits
 
 ## 1. [왜 배우는가? (Why)]]
 인공지능이 과거의 잘못된 편견이 투영된 데이터를 학습하여 특정 인종이나 계층을 차별하는 결정을 내리지 않도록 어떻게 사전에 감지($Detection$)하고 교정($Mitigation$)할 수 있을까요? 알고리즘의 결정이 사법, 채용, 금융 등 삶의 핵심 영역에 침투함에 따라 수학적인 공정성 공식($Fairness\ Metrics$)으로 지능을 정화하는 것은 선택이 아닌 필수입니다. **알고리즘 편향 완화 및 공정성 감사**는 데이터 속의 독을 제거하는 '디지털 정의 구현 및 지능 정화 아키텍처'의 근간입니다. 우리가 이를 배우는 이유는 AI의 결정에 억울한 피해자가 생기지 않도록 보장하기 위함이며, 공정함을 데이터로 설계하여 '글로벌 AI 인권 및 공평 연산 주권'을 확보하기 위함입니다. 감사의 투명성이 지능의 도덕적 해상도를 결정합니다.
@@ -112,9 +102,6 @@ class BiasIntelligenceFidelityEngine:
             return "WARNING: PROBABILISTIC_CALIBRATION_ERROR_HIGH_CHECK_MODEL_BIAS"
         return "CALIBRATION_STATUS: STATISTICAL_FAITHFULNESS_CONFIRMED"
 
-# Example Usage:
-# bias_ai = BiasIntelligenceFidelityEngine()
-# report = bias_ai.audit_disparate_impact(privileged_group_results=[1, 0, 1, 1], unprivileged_group_results=[0, 1, 0, 0])
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -122,7 +109,6 @@ class BiasIntelligenceFidelityEngine:
 2. **Adversarial Debiasing** 과정에서 **Fairness**와 **Accuracy** 사이의 **Pareto Frontier**를 최적화하기 위한 수리적 가중치 조절 방식은?
 3. **Counterfactual Fairness** 관점에서 특정 민감 속성(예: 성별)이 바뀌었을 때 AI의 결과가 변하지 않음을 입증하기 위한 **Causal Graph** 모델링의 무결성 확보 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/31_System_Governance_and_Ethics_Hub/Concept algorithmic-fairness-and-equity-standards
 - 02_Knowledge/31_System_Governance_and_Ethics_Hub/Concept xai-explainable-ai-and-transparency-audits

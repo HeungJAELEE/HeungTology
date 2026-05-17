@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Neural-Interface-Hardware-BCI"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Neural-Interface-Hardware-BCI]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Neural-Interface-Hardware-BCI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Neural-Interface-Hardware-BCI
+# [Strategy] Neural-Interface-Hardware-BCI
 
 ## 1. [왜 배우는가? (Why)]]
 우리의 생각은 뇌 속 전기의 흐름입니다. 만약 이 전기를 직접 기계에 연결할 수 있다면 어떨까요? 뇌-컴퓨터 인터페이스 하드웨어(Neural-Interface-Hardware-BCI)는 생각만으로 로봇 팔을 움직이고, 컴퓨터에 글을 쓰고, 시각을 잃은 사람에게 새로운 세상을 보여주는 '의식의 통로'를 만드는 기술입니다. 뇌 세포 하나하나의 목소리를 듣기 위해 원자 단위로 얇은 전극을 심거나, 머리카락보다 가느다란 실을 뇌 속에 수천 개 배치합니다. 이를 이해하는 것은 생물학적 인간의 한계를 넘어 '의식과 기계가 공생하는 시대'의 물리적 기반을 설계하는 '신경 공학자'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Neural Signal Capture & Pre-processing)]
 전극에서 수집된 아날로그 전압 신호를 디지털로 변환하고, 근육 노이즈나 60Hz 전원 노이즈를 필터링하는 논리 구조입니다.
 ```python
-# 신경 하드웨어(ISM) 기반 뇌 신호 캡처 및 필터링 논리
 def capture_neural_stream(electrode_array, filter_config):
     # 1. 다채널 아날로그 신호 수집 (ADC Sampling)
     # 1,024개 채널의 미세 전압(uV)을 30kHz 속도로 샘플링
@@ -94,5 +83,4 @@ def capture_neural_stream(electrode_array, filter_config):
 2. 뇌 속에 전극을 심었을 때 발생하는 '글리아 세포의 흉터 형성(Glial Scarring)'이 '신경 신호 수집'에 미치는 부정적 영향은?
 3. 'Neuralink'와 같은 차세대 BCI 기기에서 '유연 전극(Sewing Machine)' 기술이 '기존의 딱딱한 실리콘 전극(Utah Array)'보다 '장기 생체 적합성' 면에서 뛰어난 근거는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

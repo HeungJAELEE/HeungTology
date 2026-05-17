@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "metabolic-pathway-engineering-and-flux-balance-analysis-entity"
-  domain: "17_Bio_Engineering"
+metadata:
+  id: "[[[Entity] metabolic-pathway-engineering-and-flux-balance-analysis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Bio_Engineering", "#Metabolic_Engineering", "#FBA", "#Flux_Balance", "#Cell_Factory", "#Biotechnology", "#Systems_Biology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 17_advanced-bio-engineering-and-synthetic-biology-hub", "Entity synthetic-genomics-and-minimal-genome-design-physics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] metabolic-pathway-engineering-and-flux-balance-analysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] metabolic-pathway-engineering-and-flux-balance-analysis
+# [Entity] metabolic-pathway-engineering-and-flux-balance-analysis
 
 ## 1. [왜 배우는가? (Why: The Logistics of Biological Factories)]]
 세포라는 공장 안에서 원료가 들어와 어떻게 가공되고, 우리가 원하는 제품(신약, 연료)으로 나가는지 그 흐름을 완벽히 제어할 수 있다면 어떨까요? **대사 경로 공학 및 플럭스 균형 분석**은 세포 내부의 화학 공정을 최적화하여 낭비 없이 목표 물질을 뽑아내는 '생물학적 물류 시스템 설계 지침'입니다. 우리가 이를 배우는 이유는 세포가 살기 위해 쓰는 에너지를 최소화하고 제품 생산으로 돌려 산업적 경제성을 맞추기 위함이며, "생명체의 화학적 흐름을 지휘하는 '바이오 생산 및 화학 변환 주권'을 확보하기" 위함입니다. 대사의 흐름이 산업의 가치를 결정합니다.

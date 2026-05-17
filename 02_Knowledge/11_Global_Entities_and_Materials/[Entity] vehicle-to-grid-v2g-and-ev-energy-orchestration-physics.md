@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vehicle-to-grid-v2g-and-ev-energy-orchestration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] vehicle-to-grid-v2g-and-ev-energy-orchestration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system in which plug-in electric vehicles communicate with the power grid to sell demand response services by either returning electricity to the grid or by throttling their charging rate (Vehicle-to-Grid) and the complex physical and algorithmic balancing of thousands of mobile batteries to stabilize the power system (EV Energy Orchestration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["v2g", "ev-grid", "energy-orchestration", "bi-directional-charging", "v2x", "smart-grid", "distributed-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Orchestration_Fidelity_Audit: Evaluate the ''Aggregated Response'' of the EV fleet to a grid frequency event to identify latency or communication failures in the V2G network.'
-    - 'Battery_Integrity_Check: Analyze the additional ''Cycle Aging'' caused by V2G discharging to ensure that the compensation paid to the vehicle owner covers the battery degradation cost.'
-    - 'Bidirectional_Safety_Scan: Monitor the islanding protection and harmonic distortion at the EV-Grid interface to prevent localized power quality issues during mass discharge events.'
-Trust Metrics:
+  description: "[Entity] vehicle-to-grid-v2g-and-ev-energy-orchestration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Vehicle-to-Grid (V2G) and EV Energy Orchestration Physics
+# [Entity] vehicle-to-grid-v2g-and-ev-energy-orchestration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 주차장에 세워둔 전기차가 공장의 정전을 막거나, 우리 집의 전기요금을 벌어다 줄 수 있다면 어떨까요? **V2G 및 전기차 에너지 오케스트레이션**은 수만 대의 전기차를 하나의 거대한 '가상 발전소'로 묶는 **'바퀴 달린 에너지 혁명'** 기술입니다. 전력망이 힘들 때는 차에 담긴 전기를 조금 나눠주고(Discharging), 전기가 남을 때는 저렴하게 충전(Charging)합니다. 수만 명의 차주가 참여하여 전력망의 주파수를 맞추는 거대한 연주, 즉 **'에너지의 민주적 조율'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Anti-islanding Failure - Risk of electrocuting utility workers during grid maintenance. Disable V2G discharge immediately"
         return "PASS: Secure Grid-Isolation Logic and Verified Public Safety Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fleet_response_time_ms=85, avg_battery_deg_rate=1.05, grid_revenue_yield=2.5)
 print(engine.diagnose_v2g_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_v2g_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data v2g-discharge-cycles-and-grid-frequency-impact-v2026`와 연동되어, 전 세계 V2G 네트워크의 에너지 흐름 데이터를 실시간 분석하고 배터리 조기 수명 종료 및 전력망 불안정 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 공유 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - utility-scale-battery-energy-storage-system-bess

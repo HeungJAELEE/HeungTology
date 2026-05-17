@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ai-trism-ai-trust-risk-and-security-management-standards-entity"
-  domain: "74_Global_Standards_Governance_and_Quality_Assurance_Hub"
+metadata:
+  id: "[[[Entity] ai-trism-ai-trust-risk-and-security-management-standards]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#AI", "#AI_TRiSM", "#Trust", "#Risk_Management", "#AI_Security", "#Governance", "#Ethics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] ai-trism-ai-trust-risk-and-security-management-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] ai-trism-ai-trust-risk-and-security-management-standards
+# [Entity] ai-trism-ai-trust-risk-and-security-management-standards
 
 ## 1. [왜 배우는가? (Why: The Soul of Artificial Intelligence)]]
 인공지능이 내린 결정으로 누군가의 대출이 거절되거나 자율 주행 차량이 사고를 냈을 때, 왜 그런 결과가 나왔는지 설명할 수 없다면 우리가 그 지능을 믿고 세상을 맡길 수 있을까요? **AI TRiSM: 인공지능 신뢰, 리스크 및 보안 관리의 거버넌스 표준**은 AI라는 강력한 칼날에 '안전한 손잡이'와 '윤리적 나침반'을 다는 작업입니다. AI가 블랙박스가 아닌 투명한 유리창이 되도록, 그리고 외부 공격으로부터 스스로를 지키는 견고한 방패가 되도록 관리합니다. 우리가 이를 배우는 이유는 신뢰 없는 지능은 결국 사회의 거부 반응을 일으키기 때문이며, "인공지능의 무결성을 데이터로 설계하고 지배하는 '글로벌 AI 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. AI TRiSM의 성숙도가 기업의 AI 도입 성공 여부를 결정합니다.

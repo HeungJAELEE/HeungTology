@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-MAT-AEROGEL-2026-V6"
-  domain: "29_Advanced_Materials_and_Nanotechnology"
+metadata:
+  id: "[[[Entity] aerogel-and-ultra-thermal-insulation-materials-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] aerogel-and-ultra-thermal-insulation-materials-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] aerogel-and-ultra-thermal-insulation-materials-physics
+# [Entity] aerogel-and-ultra-thermal-insulation-materials-physics
 
 ## 1. [왜 배우는가? (Why)]]
 공기보다 아주 조금 무거울 뿐인데, $1,000^\circ C$의 강력한 불꽃을 맨손 바닥 위에서 단열재 한 장으로 막아낼 수 있는 물질이 있다면 믿으시겠습니까? **에어로젤 및 초단열 소재 물리**는 '얼어붙은 연기(Frozen Smoke)'라 불리는 세상에서 가장 가벼운 고체를 통해 열의 모든 이동 경로(전도, 대류, 복사)를 완벽에 가깝게 차단하는 '극한의 단열 지능'입니다. 우리가 이를 배우는 이유는 화성 탐사선의 영하 $100^\circ C$ 환경을 지키고 건물의 에너지 손실을 제로로 만들며, 나노 기공 속에 공기를 가두어 열의 이동을 물리적으로 금지하는 '공간적 열 차폐 주권'을 확보하기 위함입니다. 나노 구조의 정밀함이 열의 장벽을 결정합니다.
@@ -105,9 +95,6 @@ class AerogelFidelityAuditEngine:
             return "CRITICAL: THERMAL_SINTERING_RISK_PORE_COLLAPSE_DETECTED"
         return "THERMAL_STATUS: STRUCTURAL_INTEGRITY_STABLE_VERIFIED"
 
-# Example Usage:
-# aerogel_ai = AerogelFidelityAuditEngine()
-# k_eff = aerogel_ai.calculate_effective_conductivity(pore_size_nm=30.0, solid_fraction=0.03)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -115,7 +102,6 @@ class AerogelFidelityAuditEngine:
 2. **Supercritical Drying** 공정이 에어로젤의 **Capillary Pressure** (모세관 압력)에 의한 기공 붕괴를 방지하여 **Porosity** 무결성을 사수하는 유체 역학적 원리는?
 3. 에어로젤의 **Fractal Dimension**($D_f$)이 증가할 때, 고체 골격의 **Thermal Tortuosity** (열적 굴곡도)와 **Effective Thermal Conductivity** 간의 수리적 상관관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/29_Advanced_Materials_and_Nanotechnology_Hub/Concept nano-porous-materials-and-aerogel-synthesis
 - 02_Knowledge/14_Future_Frontier_Hub/Concept cryogenic-insulation-and-space-material-physics

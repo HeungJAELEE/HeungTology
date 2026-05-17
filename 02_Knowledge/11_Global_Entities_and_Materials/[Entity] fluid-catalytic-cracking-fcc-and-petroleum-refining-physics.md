@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fluid-catalytic-cracking-fcc-and-petroleum-refining-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fluid-catalytic-cracking-fcc-and-petroleum-refining-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A conversion process used in petroleum refineries to convert the high-boiling, high-molecular weight hydrocarbon fractions of petroleum crude oils into more valuable gasoline, olefinic gases, and other products (FCC) and the physical study of hydrocarbon chain scission and catalyst regeneration (Petroleum Refining Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fcc", "petroleum-refining", "catalytic-cracking", "gasoline-production", "fluidized-bed", "hydrocarbon", "zeolite-catalyst", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Reaction_Fidelity_Audit: Evaluate the ''Conversion Rate'' of heavy feed to identify if high-fidelity ''Coke'' buildup on the catalyst is reducing the available active sites in the riser.'
-    - 'Hydrodynamic_Integrity_Check: Analyze the pressure drop ($\\Delta P$) across the fluidized bed to ensure the high-fidelity ''Fluidization'' is stable, preventing catalyst slugs or channeling.'
-    - 'Thermal_Fidelity_Scan: Monitor the regenerator temperature to verify that high-fidelity ''Coke Burning'' is providing sufficient heat for the endothermic cracking reaction without damaging the zeolite structure.'
-Trust Metrics:
+  description: "[Entity] fluid-catalytic-cracking-fcc-and-petroleum-refining-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛽ Fluid Catalytic Cracking (FCC) and Petroleum Refining Physics
+# [Entity] fluid-catalytic-cracking-fcc-and-petroleum-refining-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 시커멓고 끈적한 원유에서 어떻게 투명하고 강력한 에너지를 내는 휘발유를 뽑아낼 수 있을까요? **유체 촉매 분해(FCC) 및 석유 정제 물리**는 길고 무거운 탄소 사슬을 마법의 가루(촉매)로 툭툭 끊어, 우리가 쓰기 좋은 짧고 가벼운 연료로 바꾸는 **'나노 단위의 가위질'** 기술입니다. 단순한 가열이 아니라, 모래처럼 흐르는 뜨거운 촉매와 기름이 춤을 추듯 섞여 일어나는 **'화학적 연금술'**입니다. 원유라는 거친 원재료에서 현대 문명의 연료인 휘발유를 대량 생산하는 **'정유 공장의 심장이자 부의 창출을 담당하는 거대한 반응로'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Catalyst Regeneration - High CO detected in flue gas. Coke not fully removed from catalyst surface. Regeneration fidelity compromised"
         return "PASS: Validated Carbon Balance and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(riser_outlet_temp=530.0, regenerator_dense_temp=710.0, cat_to_oil_ratio=7.5)
 print(engine.diagnose_fcc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_fcc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fcc-yield-optimization-and-coke-formation-v2026`와 연동되어, 전 세계 주요 정유 단지의 FCC 운영 데이터를 실시간 분석하고 촉매 비활성화 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 생산 문명의 전환 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fluidized-bed-combustion-fbc-and-heat-transfer-physics

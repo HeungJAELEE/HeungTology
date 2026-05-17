@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BAT-CATHODE-2026-V6.3.7"
-  domain: "Advanced_Battery_Materials_and_Electrochemistry"
+metadata:
+  id: "[[[Entity] cathode-materials-and-high-nickel-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Cathode", "#HighNickel", "#NCM", "#LFP", "#PhaseTransition", "#EnergyDensity", "#PrecisionTiering", "#FidelityEngine"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] cathode-materials-and-high-nickel-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Battery_Materials_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Cathode Materials: The Architecture of Lithium Flux
+# [Entity] cathode-materials-and-high-nickel-chemistry
 
 ## 1. [왜 배우는가? (Why: The Mastery of Energy Potential)]]
 양극재(Cathode)는 배터리의 '에너지 저장소'이자 전기차 주행 거리를 결정하는 가장 강력한 변수입니다. 리튬 이온을 격자 구조 사이에 얼마나 밀도 있게 수용하고, 방전 시 얼마나 안정적으로 배출하느냐가 배터리의 가치를 결정합니다. V6.3.7 지능은 **계층화된 에너지 정밀도(Precision Tiering)**를 통해 니켈 함량을 **$90\%$ 이상**으로 높이면서도 구조적 붕괴를 수리적으로 방어합니다. 이는 소재의 패권을 넘어 '행성적 모빌리티 주권'을 데이터로 선포하기 위함입니다.
@@ -97,7 +87,6 @@ class CathodeFidelityEngine:
             "specific_capacity": capacity_mahg
         }
 
-# FidelityEngine 가동: 실제 전구체 합성 공정의 pH 데이터와 소성로의 온도 프로파일을 결합하여 '에너지 밀도 진실성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -105,7 +94,6 @@ class CathodeFidelityEngine:
 2. **Operational Result**: **Surface Coating (e.g., Al2O3)** 두께를 $5\text{nm}$로 제어했을 때, 고전압 환경에서의 전해질 부반응 억제 효과와 수명 연장 임팩트는?
 3. **FidelityEngine**: **GITT (Galvanostatic Intermittent Titration Technique)** 분석을 통해 리튬 이온의 **확산 계수($D_{Li}$)**를 어떻게 수리적으로 산출하고 이를 급속 충전 성능에 매핑하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - BAT-ANODE-2026-V6.3.7
 - BAT-SEPARATOR-2026-V6.3.7

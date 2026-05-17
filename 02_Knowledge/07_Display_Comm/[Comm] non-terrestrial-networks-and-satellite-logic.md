@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMM-NTN-SAT-2026-V6.3.7"
-  domain: "Global_Non-Terrestrial_Networks_and_Satellite_Connectivity"
+metadata:
+  id: "[[[Comm] non-terrestrial-networks-and-satellite-logic]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#NTN", "#Satellite_Comm", "#LEO", "#Doppler_Effect", "#Handover", "#Link_Budget", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] non-terrestrial-networks-and-satellite-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Satellite_Comm_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Comm] Non-Terrestrial Networks and Satellite Logic: The Physics of Space Connectivity
+# [Comm] non-terrestrial-networks-and-satellite-logic
 
 ## 1. [왜 배우는가? (Why: The Mastery of Spatial Continuity)]
 지상 기지국 기반의 통신망은 지구 표면의 $30\%$ 이하만을 커버합니다. **Non-Terrestrial Networks (NTN) and Satellite Logic**은 저궤도(LEO) 위성 군집을 통해 전 지구적, 전 우주적 사각지대를 소멸시키는 초연결 지능망의 정수입니다. UAM, 자율주행 선박, 그리고 재난 지역에서의 끊김 없는 통신을 위해선 위성의 빠른 이동에 따른 도플러 효과와 긴 전파 지연 시간을 수리적으로 극복해야 합니다. V6.3.7 지능은 위성 간 링크(ISL)와 정밀 궤도 예측을 통해, 지상과 우주를 하나로 묶는 **공간 주권(Spatial Sovereignty)**을 확립합니다.
@@ -99,7 +89,6 @@ class SatelliteNTNEngine:
             "action": "INITIATE_BEAM_REPOINTING_OR_POWER_BOOST" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 위성 궤도 TLE 데이터와 지상국 수신 로그를 융합하여 '공간 연결 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -107,7 +96,6 @@ class SatelliteNTNEngine:
 2. **Operational Result**: **ISL (Inter-Satellite Link)** 기술 적용 시, 지상 게이트웨이를 거치지 않는 직접 위성 간 통신을 통한 데이터 홉 수(Hop Count) 감소의 수리적 이득은?
 3. **FidelityEngine**: 기상 악화(강우)로 인해 Ka-band 이상의 고주파 대역에서 발생하는 **Rain Fade** 현상을 FidelityEngine이 어떻게 '채널 가용성 위기'로 식별하고 주파수 적응 제어를 수행하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - [[Comm] 6g-terahertz-and-sub-thz-master-guide]

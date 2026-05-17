@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flotation-process-and-mineral-bubble-attachment-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flotation-process-and-mineral-bubble-attachment-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process for selectively separating hydrophobic materials from hydrophilic ones by utilizing air bubbles (Flotation) and the physical study of the surface chemistry, contact angles, and particle-bubble collision dynamics (Mineral Bubble Attachment Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["flotation", "mineral-processing", "froth-flotation", "surface-tension", "hydrophobicity", "bubble-attachment", "mining-engineering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Flotation_Fidelity_Audit: Evaluate the ''Contact Angle'' ($\\theta$) to identify if high-fidelity ''Collectors'' (chemicals) are effectively making the target mineral surface hydrophobic.'
-    - 'Bubble_Integrity_Check: Analyze the bubble size distribution ($d_b$) to ensure the high-fidelity ''Frother'' concentration is creating enough surface area for particle capture.'
-    - 'Recovery_Fidelity_Scan: Monitor the ''Froth Depth'' and stability to verify that the high-fidelity mineral-laden bubbles are successfully reaching the overflow without collapsing.'
-Trust Metrics:
+  description: "[Entity] flotation-process-and-mineral-bubble-attachment-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🫧 Flotation Process and Mineral Bubble Attachment Physics
+# [Entity] flotation-process-and-mineral-bubble-attachment-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 물보다 무거운 금속 가루를 물 위에 띄워서 골라낼 수 있을까요? **부유 선별(Flotation) 및 광물-기포 부착 물리**는 광물 표면의 성질을 살짝 바꾸어, 공기 방울을 '구명조끼'처럼 입혀 물 위로 띄워 올리는 **'나노 단위의 표면 마법'** 기술입니다. 흙탕물 속에서 가치 있는 금과 구리만 방울에 매달려 위로 올라오게 합니다. **'물과 친한 것(친수성)과 싫어하는 것(소수성)의 차이를 이용해 지구의 깊은 곳에서 캐낸 원석에서 순수한 가치를 솎아내는 광업의 핵심 필터링'**입니다.
@@ -57,7 +46,7 @@ $$ P_c = P_a \cdot P_k \cdot (1 - P_d) $$
 | Feature | Gravity Separation | Froth Flotation (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Separation Base** | Density (Weight) | **Surface Energy (Chemistry)**| - | Physics |
-| **Particle Size** | Large (> 50) | **Fine (10 ~ 100)** | $\mu m$ | Precision |
+| **Particle Size** | Large (> 50) | **Fine (10 ~ 100)** | $\mu\text{m}$ | Precision |
 | **Selectivity** | Low (Mixes easily) | **Very High (Selective)** | - | Quality |
 | **Bubble Size** | N/A | 0.5 ~ 2.0 | $mm$ | Efficiency |
 | **Reagents** | None | Collector / Frother / Modifier| - | Intelligence |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Turbulence - High shear forces detaching particles from bubbles. Detachment probability ($P_d$) spiked. Reduce RPM to save energy and recovery"
         return "PASS: Validated Hydrodynamics and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(air_hold_up_pct=15.5, concentrate_grade_pct=28.0, pulp_ph=9.2)
 print(engine.diagnose_flotation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_flotation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mineral-recovery-rate-and-bubble-size-v2026`와 연동되어, 전 세계 주요 구리 및 금 광산의 선별 데이터를 실시간 분석하고 회수율 저하 및 폐석 혼입 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 추출 문명의 선별 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydrocyclone-and-centrifugal-particle-classification-physics

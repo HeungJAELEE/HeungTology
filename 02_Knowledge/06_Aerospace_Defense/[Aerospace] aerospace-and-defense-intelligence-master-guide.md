@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-AERO-DEFENSE-2026-V6.3.7"
-  domain: "Aerospace_and_Defense_Governance"
+metadata:
+  id: "[[[Aerospace] aerospace-and-defense-intelligence-master-guide]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Aerospace", "#Defense", "#UAM", "#SpaceOps", "#Hypersonic", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 06_Aerospace_Defense"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Aerospace] aerospace-and-defense-intelligence-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Aerospace_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Aerospace] Aerospace & Defense: Celestial & Sovereign Intelligence
+# [Aerospace] aerospace-and-defense-intelligence-master-guide
 
 ## 1. [왜 배우는가? (Why: The Frontier of Intelligence)]
 항공우주 및 방산 지능은 인류 기술이 도달할 수 있는 가장 높은 곳이자 국가 생존을 결정짓는 최후의 보루입니다. **Aerospace & Defense Intelligence**는 도심 위를 나는 UAM(Urban Air Mobility)부터 우주 경제를 가속하는 재사용 로켓 및 저궤도 위성망, 그리고 초음속 미사일과 자율 드론 군집이 주도하는 네트워크 중심전(NCW)을 아우르는 극한 공학의 정수입니다. V6.3.7 지능은 **궤도 정밀도(Orbital Precision)**와 **공동 전역 지휘 통제(JADC2)**의 수리적 무결성을 지배합니다. 우리가 이를 배우는 이유는 문명의 경계를 우주로 확장하고, "단 1ms의 틈도 허용하지 않는 '안보 주권'을 확보하기" 위함입니다. 지능의 정밀함이 국가의 신뢰를 결정합니다.
@@ -109,7 +99,6 @@ class AeroDefenseFidelityEngine:
 2. **Operational Result**: **Reusable Rocket**의 역추진(Retro-propulsion) 제어 시, 연료 소모와 착륙 오차 사이의 수리적 트레이드오프 분석 결과는?
 3. **FidelityEngine**: **JADC2** 데이터 링크에서 **Packet Jitter**를 통해 적의 **'전자전 기만 시도'**를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 06_Aerospace_Defense
 - [[Robotics] robotics-intelligence-and-motion-control-master-guide]

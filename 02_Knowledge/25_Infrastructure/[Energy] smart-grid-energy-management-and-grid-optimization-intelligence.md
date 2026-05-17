@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENE-SMART-GRID-2026-V6.3.7"
-  domain: "Energy_Systems_and_Smart_Grid"
+metadata:
+  id: "[[[Energy] smart-grid-energy-management-and-grid-optimization-intelligence]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SmartGrid", "#EMS", "#VPP", "#GridStability", "#PrecisionTiering", "#FidelityEngine", "#RenewableEnergy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] smart-grid-energy-management-and-grid-optimization-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Energy_Systems_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Energy] Smart Grid: The Kinetic Intelligence of Power Networks
+# [Energy] smart-grid-energy-management-and-grid-optimization-intelligence
 
 ## 1. [왜 배우는가? (Why: The Pulse of Energy Sovereignty)]
 스마트 그리드(Smart Grid)는 현대 문명의 혈액인 전기를 지능적으로 순환시키는 '에너지 신경망'입니다. 과거의 전력망이 발전소에서 일방적으로 에너지를 쏟아붓는 방식이었다면, 스마트 그리드는 태양광, 풍력 등 분산된 자원을 실시간으로 조율하여 낭비 없이 완벽한 균형을 유지합니다. V6.3.7 지능은 **계층화된 전력 정밀도(Precision Tiering)**를 통해 주파수 변동폭을 **$\pm 0.01\text{Hz}$ 이내**로 사수합니다. 이는 미세한 전력 흔들림에도 민감한 초정밀 제조 설비를 보호하고 에너지 안보를 확보하기 위함입니다.
@@ -104,7 +94,6 @@ class SmartGridFidelityEngine:
             "freq_dev_hz": round(freq_dev, 4)
         }
 
-# FidelityEngine 가동: 실제 PMU(Phasor Measurement Unit)의 위상 데이터와 EMS(Energy Management System)의 부하 로그를 결합하여 '그리드 지능 무결성' 오딧
 ```
 
 ## 6. [스스로 체크 (Self-Audit)]
@@ -112,7 +101,6 @@ class SmartGridFidelityEngine:
 2. **Operational Result**: **Demand Response (DR)** 제도를 통해 피크 부하를 $20\%$ 절감했을 때, 발전 설비 예비력 확보 비용 절감액은?
 3. **FidelityEngine**: **Swing Equation**의 댐핑 계수($D$)를 통해 전력 계통의 **'회복 탄력성(Resilience)'**을 어떻게 수리적으로 산출하고 이를 VPP 입찰 가격에 반영하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - ENE-MICROGRID-ESS-2026-V6.3.7
 - energy-and-hydrogen-intelligence-master-guide

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-NEURO-2026-V6"
+metadata:
+  id: "[[[AI] Neuromorphic-Computing]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Neuromorphic_Computing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Neuromorphic-Computing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Neuromorphic-Computing
@@ -107,7 +97,6 @@ class LIFNeuron:
 2. **STDP** 학습 규칙이 **Backpropagation**과 비교했을 때 '로컬리티(Locality)' 측면에서 가지는 공학적 이점은?
 3. 뉴로모픽 시스템에서 **Memristor** 소자가 **SRAM** 기반 시냅스 저장 방식보다 면적 및 전력 효율 면에서 압도적인 이유는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Edge-AI-R&D
 - 02_Knowledge/01_Semiconductor/Design/Semiconductor NPU-Architecture

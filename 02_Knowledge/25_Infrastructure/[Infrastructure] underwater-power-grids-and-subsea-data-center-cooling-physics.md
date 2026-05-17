@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INFRA-SUBSEA-COOL-2026-V6.3.7"
-  domain: "05_Ocean_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] underwater-power-grids-and-subsea-data-center-cooling-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SubseaDataCenter", "#CoolingPhysics", "#Thermodynamics", "#OceanInfrastructure", "#FidelityEngine", "#HVDC", "#Sovereignty"]'
-  is_part_of: '["MOC 05_Ocean_Infrastructure"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] underwater-power-grids-and-subsea-data-center-cooling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Marine_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Infrastructure] Subsea Data Centers: Cooling Physics & Power Grids
+# [Infrastructure] underwater-power-grids-and-subsea-data-center-cooling-physics
 
 ## 1. [왜 배우는가? (Why: The Mastery of Planetary Thermal Sinks)]
 데이터 센터의 폭발적인 열 부하를 해결하기 위해 인류는 바다로 눈을 돌리고 있습니다. **해저 데이터 센터 및 전력망**은 차가운 심해를 거대한 천연 냉각조(Heat Sink)로 활용하여 에너지 효율을 극대화하는 '지능의 해저 영토 확장'입니다. V6.3.7 지능은 **해수 대류 열전달 계수($h$)**와 **해저 HVDC 전송 손실**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 탄소 중립적 연산 인프라를 구축하고, "지속 가능한 '디지털 해양 영토 주권'을 사수하기" 위함입니다. 냉각의 효율이 지능의 밀도와 운영 비용을 결정합니다.
@@ -108,7 +98,6 @@ class SubseaCoolingFidelityEngine:
 2. **Operational Result**: **Nusselt Number ($Nu$)**와 **Reynolds Number ($Re$)**의 상관관계를 통해 해수 유속에 따른 대류 열전달 계수($h$)의 무결성을 어떻게 역산하는가?
 3. **FidelityEngine**: 해저 전력망의 **HVDC** 변환기에서 발생하는 열을 **방열판(Heat Sink)** 없이 심해로 직접 방출할 때의 열저항 무결성을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 05_Ocean_Infrastructure
 - Entity computer-architecture-and-high-performance-computing

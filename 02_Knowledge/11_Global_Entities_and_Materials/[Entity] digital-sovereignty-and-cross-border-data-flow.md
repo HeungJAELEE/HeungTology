@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "digital-sovereignty-and-cross-border-data-flow-entity"
-  domain: "22_Industrial_Cybersecurity_and_Data_Governance"
+metadata:
+  id: "[[[Entity] digital-sovereignty-and-cross-border-data-flow]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Digital_Sovereignty", "#Cross-border_Data", "#Data_Residency", "#GDPR", "#Compliance", "#Data_Localization", "#Data_Governance", "#Legal_Risk", "#Sovereign_Cloud", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 124_industrial-cybersecurity-and-data-governance-intelligence-hub", "Data regulatory-compliance-audit-and-legal-risk-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] digital-sovereignty-and-cross-border-data-flow에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] digital-sovereignty-and-cross-border-data-flow
+# [Entity] digital-sovereignty-and-cross-border-data-flow
 
 ## 1. [왜 배우는가? (Why: The Legal Boundaries of Global Intelligence)]]
 디지털 시대의 데이터는 국경 없이 흐르는 것처럼 보이지만, 그 권리와 통제권은 국가의 주권과 밀접하게 연계되어 있습니다. 국가별로 상이한 데이터 보호법과 현지화 요구사항을 준수하지 못할 경우, 글로벌 기업은 막대한 과징금뿐만 아니라 해당 시장에서의 운영 권한을 상실할 수 있습니다. **디지털 주권 및 국가 간 데이터 이동 엔티티**는 데이터의 국경과 주권을 지키는 '디지털 영토의 관리 지침서'입니다. 
@@ -81,7 +71,6 @@ RAG는 "정책 로그를 분석하여, 데이터 이동 경로가 사법권이 �
 글로벌 데이터 흐름의 지리적 궤적과 국가별 규제 데이터베이스를 분석하여 주권 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Digital Sovereignty & Data Flow Fidelity Auditor
 def audit_digital_sovereignty(data_flow_trajectory, residency_map, regulatory_update_feed):
     # 1. 데이터 레지던시(Residency) 위반 여부 무결성 오딧
     mismatched_location = residency_map.verify_geographic_compliance()
@@ -117,7 +106,6 @@ def audit_digital_sovereignty(data_flow_trajectory, residency_map, regulatory_up
 2. **(수리)** 어떤 데이터 자산의 $80\%$가 적법한 위치에 있고 $20\%$가 부적절한 위치에 있을 때, 중요도 가중치가 동일하다면 이 시스템의 '레지던시 준수율($C_{res}$)'을 계산하시오.
 3. **(응용)** EU의 GDPR과 미국의 CCPA 등 서로 다른 데이터 보호 체계 사이에서 발생하는 '법적 충돌'을 해결하기 위해 '표준 계약 조항(SCCs)'이 어떻게 기술적/법률적 가속기 역할을 하는지 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 124_industrial-cybersecurity-and-data-governance-intelligence-hub : 산업 보안 및 데이터 거버넌스 통합 관리 상위 지능 허브

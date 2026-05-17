@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "solar-cell-physics-and-photovoltaic-efficiency"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] solar-cell-physics-and-photovoltaic-efficiency]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physical principles of converting light energy directly into electricity using semiconductor materials (Solar Cell Physics) and the ratio of electrical power output to the incident solar energy (Photovoltaic Efficiency), including losses and optimization techniques."
-  physical_model: "N/A"
-Semantic:
-  tags: '["solar-cell", "photovoltaic", "energy-conversion", "renewable-energy", "p-n-junction", "quantum-efficiency", "photonics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the Fill Factor (FF) and Open-circuit Voltage ($V_{oc}$) to identify series resistance or shunt losses that reduce the conversion efficiency.'
-    - 'Quantum_Efficiency_Check: Analyze the External Quantum Efficiency (EQE) across the solar spectrum to identify specific wavelength regions where photons are not being effectively converted into carriers.'
-    - 'Recombination_Integrity_Scan: Monitor the dark current and ideality factor ($n$) to identify non-radiative recombination at the surface or grain boundaries that compromises cell performance.'
-Trust Metrics:
+  description: "[Entity] solar-cell-physics-and-photovoltaic-efficiency에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Solar Cell Physics and Photovoltaic Efficiency
+# [Entity] solar-cell-physics-and-photovoltaic-efficiency
 
 ## 1. 개요 (Why: 인간적 통찰)
 하늘에서 쏟아지는 공짜 에너지인 햇빛을 어떻게 우리가 쓸 수 있는 전기로 바꿀 수 있을까요? **태양전지 물리 및 광전 변환 효율**은 빛 알갱이(광자)가 실리콘 판에 부딪혀 전자들을 깨우고, 그 전자들이 질서 있게 흘러가게 만드는 **'빛의 수확 기술'**입니다. 단순히 전기를 만드는 것을 넘어, 단 한 방울의 햇빛도 낭비하지 않고 최대한 많은 에너지로 바꾸기 위해 반도체의 밴드갭을 조율하고 반사를 막는 고도의 정밀 공학이 집약되어 있습니다. 화석 연료 없는 세상을 여는 **'에너지 문명의 새로운 태양'**입니다.
@@ -60,7 +49,7 @@ $$ I = I_0 (e^{qV/nkT} - 1) - I_L $$
 | **Lab Efficiency** | 26.7 | > 25.0 (Rapid Growth) | % | Record |
 | **Fill Factor (FF)** | 0.80 ~ 0.85 | 0.70 ~ 0.80 | - | Rectangularity|
 | **Band Gap ($E_g$)** | 1.12 | 1.5 ~ 2.3 (Tunable) | eV | Matching |
-| **Thickness** | 150 ~ 200 | < 1 (Thin Film) | $\mu m$ | Resource |
+| **Thickness** | 150 ~ 200 | < 1 (Thin Film) | $\mu\text{m}$ | Resource |
 | **Operational Life** | > 25 years | < 5 years (Improving) | years | Durability |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Degradation Rate - PID (Potential Induced Degradation) or moisture ingress suspected. Seal audit required"
         return "PASS: Stable Long-term Performance and Verified Material Durability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(open_circuit_voltage_v=0.72, series_resistance_ohm=0.1, quantum_efficiency_pct=92.0)
 print(engine.diagnose_solar_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_solar_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data solar-cell-quantum-efficiency-and-fill-factor-v2026`와 연동되어, 전 세계 주요 태양광 단지의 발전 데이터를 실시간 분석하고 발전 효율 저하 및 패널 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 청정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-device-physics-and-band-gap-engineering

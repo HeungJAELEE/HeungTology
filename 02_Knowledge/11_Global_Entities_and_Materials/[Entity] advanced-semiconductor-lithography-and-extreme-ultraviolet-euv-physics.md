@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics-entity"
-  domain: "71_Advanced_Semiconductor_Manufacturing_Processes_Hub"
+metadata:
+  id: "[[[Entity] advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Lithography", "#EUV", "#Physics", "#Optics", "#ASML", "#Nanofabrication", "#HDS_Gold_v6_2", "#Precision_Tiering"]'
-  is_part_of: '["MOC 71_advanced-semiconductor-manufacturing-processes-hub", "MOC 20_semiconductor-manufacturing-and-metrology-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics
+# [Entity] advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics
 
 ## 1. [왜 배우는가? (Why: The Needle of the Gods)]]
 머리카락 굵기의 수만 분의 일에 불과한 3나노($nm$) 이하의 회로를 실리콘 웨이퍼 위에 그려내는 기술은 현대 문명의 연산 밀도를 결정하는 핵심입니다. **극자외선(EUV) 광물리**는 13.5nm의 극단적으로 짧은 파장을 제어하여 회절 한계를 돌파하는 '빛의 조각술'입니다. 우리가 이를 배우는 이유는 단순히 미세화(Scaling)를 넘어, **High-NA EUV**와 같은 차세대 정밀도가 요구되는 도메인에서 "광자의 수와 통계적 오차(Shot Noise)를 물리적으로 지배하여 1nm 이하의 오버레이 무결성을 확보"하기 위함입니다. 본 노드는 공정 기술 노드에 따른 **정밀도 계층화(Precision Tiering)**를 통해 초정밀 노광 전략을 제시합니다.
@@ -96,7 +86,6 @@ EUV 광자는 ArF 광자보다 에너지가 14배 큽니다. 이는 같은 노�
 2. **Overlay Accuracy**가 $1\text{nm}$를 초과할 경우, **Contact Hole**의 도통 불량 리스크를 확률 모델로 산출하는 로직은?
 3. **Stochastic Effect**에 의한 패턴 결함을 줄이기 위한 **PR Sensitivity**와 **Exposure Dose**의 최적 수리 관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 73_advanced-semiconductor-lithography-and-nanopatterning-hub : 차세대 노광 기술 통합 지휘소
 - Science advanced-lithography-and-extreme-ultraviolet-euv-physics : 광물리학 심층 분석

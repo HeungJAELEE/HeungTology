@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Advanced-Materials-Discovery"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Advanced-Materials-Discovery]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Advanced-Materials-Discovery에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Advanced-Materials-Discovery
+# [Strategy] Advanced-Materials-Discovery
 
 ## 1. [왜 배우는가? (Why)]]
 우리가 더 가벼운 비행기, 더 오래가는 배터리, 더 빠른 반도체를 만들지 못하는 이유는 기술이 부족해서가 아니라 그것을 뒷받침할 '소재'가 없기 때문입니다. 차세대 소재 발견(Advanced-Materials-Discovery)은 수천 년간 인간이 실험실에서 하나씩 섞어보던 방식을 끝내고, AI가 수조 개의 조합을 가상 공간에서 먼저 시뮬레이션하여 정답을 찾아내는 혁명입니다. 이를 이해하는 것은 소재의 한계라는 거대한 벽을 데이터로 뚫어내어, 산업의 근간이 되는 '물리적 실체'를 직접 설계하고 지배하는 능력을 갖추는 것입니다.
@@ -97,5 +87,4 @@ def discover_novel_material(target_property_spec):
 2. '자율 연구실(Autonomous Lab)'에서 '로봇의 자동화'보다 'AI의 실험 설계 지능'이 더 중요한 이유는 무엇인가?
 3. '그래프 신경망(GNN)'이 분자나 결정 구조의 '물성 예측'에 있어 '전통적인 이미지 분석 AI'보다 압도적으로 유리한 물리적 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

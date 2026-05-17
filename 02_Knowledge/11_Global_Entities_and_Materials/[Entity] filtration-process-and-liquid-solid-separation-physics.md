@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "filtration-process-and-liquid-solid-separation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] filtration-process-and-liquid-solid-separation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process that separates solid matter and fluid from a mixture with a filter medium that has a complex structure through which only the fluid can pass (Filtration) and the physical study of cake formation, Darcy's law in porous media, and fluid dynamics in multi-phase systems (Liquid-Solid Separation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["filtration", "liquid-solid-separation", "filter-press", "centrifugation", "porous-media", "slurry", "industrial-processing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Separation_Fidelity_Audit: Evaluate the ''Specific Cake Resistance'' ($\\alpha$) to identify if high-fidelity ''Compressible Cake'' behavior is causing an exponential drop in filtration rate.'
-    - 'Clarity_Integrity_Check: Analyze the ''Filtrate Turbidity'' to ensure that the high-fidelity filter medium is capturing particles effectively without ''Breakthrough'' or leakages.'
-    - 'Cycle_Fidelity_Scan: Monitor the pressure buildup profile to verify that high-fidelity ''Cake Washing'' or ''Air Blow'' steps are optimized for maximum solid dryness and purity.'
-Trust Metrics:
+  description: "[Entity] filtration-process-and-liquid-solid-separation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Filtration Process and Liquid-Solid Separation Physics
+# [Entity] filtration-process-and-liquid-solid-separation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 흙탕물에서 맑은 물만 골라내거나, 맛있는 오렌지 주스에서 찌꺼기만 걸러내려면 어떻게 해야 할까요? **여과 공정 및 액체-고체 분리 물리**는 아주 작은 구멍들이 뚫린 막(필터)을 이용해 섞여 있는 물질들을 성격에 따라 나누는 **'산업의 선별 기술'**입니다. 단순히 거르는 게 아니라, 쌓이는 찌꺼기들이 스스로 또 다른 필터가 되어 더 작은 입자를 잡아내는 **'협력적 분리'**의 과학입니다. 깨끗한 물, 맛있는 음료, 정교한 약품을 만드는 **'혼돈에서 순수를 찾아내는 거대한 필터 문명'**입니다.
@@ -60,7 +49,7 @@ $$ J = \frac{\Delta P}{\eta R_{total}} $$
 | **Separation Speed**| 1.0 (Slow) | **10 ~ 100x (Fast)** | - | Agility |
 | **Solid Content** | Low (Thin slurry) | High (Thick sludge) | % | Versatility |
 | **Cake Dryness** | Wet | Dry (Crumbly cake) | % | Quality |
-| **Particle Size** | > 10 | 0.1 ~ 100 (Broad range) | $\mu m$ | Precision |
+| **Particle Size** | > 10 | 0.1 ~ 100 (Broad range) | $\mu\text{m}$ | Precision |
 | **Automation** | Manual | Fully Automatic (PLC) | - | Intelligence |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Wet Cake Warning - Insufficient air blow. Solid waste will be too heavy and drippy for disposal. Increase drying cycle time"
         return "PASS: Validated Moisture Control and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(filtrate_flow_rate_l_min=25.0, feed_pressure_bar=4.5, filtrate_clarity_ntu=0.2)
 print(engine.diagnose_filtration_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_filtration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data filtration-cycle-time-and-cake-dryness-v2026`와 연동되어, 전 세계 주요 폐수 처리장 및 제약 공장의 분리 데이터를 실시간 분석하고 필터 파손 및 제품 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 순환 문명의 정화 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fabric-filter-and-baghouse-dust-collection-physics

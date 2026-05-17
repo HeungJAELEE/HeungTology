@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trans-border-crime-detection-and-prevention-network-entity"
-  domain: "37_Global_Unified_Governance_Global_Security_and_Planetary_Defense"
+metadata:
+  id: "[[[Entity] trans-border-crime-detection-and-prevention-network]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Crime_Detection", "#Crime_Prevention", "#Global_Policing", "#Governance", "#Public_Safety", "#Security", "#AI_Justice", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 37_global-unified-governance-global-security-and-planetary-defense-hub", "Entity global-intelligence-sovereignty-and-data-jurisdiction-rules"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trans-border-crime-detection-and-prevention-network에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trans-border-crime-detection-and-prevention-network
+# [Entity] trans-border-crime-detection-and-prevention-network
 
 ## 1. [왜 배우는가? (Why: The Global Net of Justice)]]
 나라를 옮겨 다니며 법망을 피하는 범죄자들을 어떻게 전 세계 데이터망을 연결해 1초 만에 찾아내고($Detection$), 범죄가 일어나기 전에 AI가 미리 낌새를 채고 경찰 로봇을 보내 어떻게 사고를 막는($Prevention$) '거대한 정의의 그물'을 만들 수 있을까요? **초국가적 범죄 감지 및 예방 네트워크**는 국경 없는 범죄를 국경 없는 지능으로 잡는 '행성 규모 치안 유지 및 자율 범죄 차단 아키텍처'입니다. 우리가 이를 배우는 이유는 범죄가 갈수록 지능화되고 나라를 넘나들기 때문에 인류의 안전을 위해선 더 똑똑한 그물이 필요하기 때문이며, "범죄의 패턴을 데이터로 설계하고 지배하는 '글로벌 치안 패권 및 행성적 시민 안전 주권'을 확보하기" 위함입니다. 감지의 정밀도가 범죄율 0의 세상을 결정합니다.

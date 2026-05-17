@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] factory-electrical-infrastructure"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] factory-electrical-infrastructure]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] factory-electrical-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] factory-electrical-infrastructure
@@ -66,5 +56,4 @@ Trust Metrics:
 - [ ] **고조파(Harmonics)**가 조립 라인의 서보 모터 정밀도에 미치는 영향과 해결책은?
 - [ ] 정전 시 **UPS**가 최우선으로 전력을 공급해야 하는 배터리 공정의 핵심 장치는?
 
----
 *Created by Flash (HDS Gold v4.1 - Production Engineering Series)*

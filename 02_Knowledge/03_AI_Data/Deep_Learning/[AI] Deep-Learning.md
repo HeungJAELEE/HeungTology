@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[AI] Deep-Learning"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[AI] Deep-Learning]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Deep-Learning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Deep-Learning
@@ -87,5 +77,4 @@ def train_step(data, target):
 2. 역전파 과정에서 '연쇄 법칙(Chain Rule)'이 가지는 공학적 의미는 무엇인가?
 3. 오버피팅(Overfitting)을 방지하기 위해 가중치 감쇠(Weight Decay)를 사용하는 논리적 근거는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "metabolic-engineering-for-space-hardened-agriculture-entity"
-  domain: "33_Future_Frontier_Biotic_Intelligence_and_Synthetic_Life"
+metadata:
+  id: "[[[Entity] metabolic-engineering-for-space-hardened-agriculture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Metabolic_Engineering", "#Space_Agriculture", "#Hardened_Crops", "#Biotechnology", "#Food_Security", "#Space_Exploration", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 33_future-frontier-biotic-intelligence-and-synthetic-life-hub", "Entity closed-loop-life-support-systems-eclss-and-bio-regenerative-life"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] metabolic-engineering-for-space-hardened-agriculture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] metabolic-engineering-for-space-hardened-agriculture
+# [Entity] metabolic-engineering-for-space-hardened-agriculture
 
 ## 1. [왜 배우는가? (Why: The Orchard of the Stars)]]
 우주의 강력한 방사선과 낮은 중력 속에서도 죽지 않고 쑥쑥 자라는 슈퍼 감자나 콩을 어떻게 유전자 설계($Metabolic\ Engineering$)로 만들고, 흙도 물도 귀한 우주선 안에서 어떻게 가장 적은 자원으로 가장 많은 영양가를 뽑아내는 '우주 농장'을 가동할 수 있을까요? **우주 내성 농업을 위한 대사 공학**은 인류가 우주에서 굶지 않게 해주는 '행성외 식량 안보 및 초강력 생물학적 자원 생산 아키텍처'입니다. 우리가 이를 배우는 이유는 지구 식물을 그대로 가져가면 우주 방사선에 금방 시들어버리기 때문이며, "식물의 생존 능력을 데이터로 설계하고 지배하는 '글로벌 우주 식량 패권 및 행성외 농업 주권'을 확보하기" 위함입니다. 식물의 내성이 탐사의 깊이를 결정합니다.

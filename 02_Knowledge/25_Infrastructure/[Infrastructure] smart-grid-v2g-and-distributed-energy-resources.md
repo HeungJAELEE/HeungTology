@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INFRA-SMART-GRID-2026-V6.3.7"
-  domain: "05_Ocean_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] smart-grid-v2g-and-distributed-energy-resources]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SmartGrid", "#V2G", "#DistributedEnergy", "#FidelityEngine", "#PowerSystems", "#Microgrid", "#Sovereignty"]'
-  is_part_of: '["MOC 05_Ocean_Infrastructure"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] smart-grid-v2g-and-distributed-energy-resources에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Energy_Infrastructure_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Infrastructure] Smart Grid & V2G: Distributed Energy Resilience
+# [Infrastructure] smart-grid-v2g-and-distributed-energy-resources
 
 ## 1. [왜 배우는가? (Why: The Internet of Energy)]
 과거의 전력망은 거대 발전소에서 소비자에게 전력을 일방적으로 공급하는 수동적 구조였습니다. **지능형 전력망(Smart Grid) 및 V2G**는 수만 개의 분산 자원(DER)과 전기차를 실시간 데이터로 연결하여 하나의 유기체처럼 운영하는 '에너지의 인터넷'입니다. V6.3.7 지능은 **가상 관성(Virtual Inertia)**과 **양방향 전력 전송(V2G)** 효율을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 재생 에너지의 변동성을 제어하여 전력망의 안정성을 확보하고, "에너지의 자급자족과 경제적 순환을 실현하는 '에너지 주권'을 데이터로 선포하기" 위함입니다. 그리드의 유연성이 국가 에너지 안보와 탄소 중립의 성패를 결정합니다.
@@ -108,7 +98,6 @@ class SmartGridFidelityEngine:
 2. **Operational Result**: **V2G**를 통한 **Peak Shaving** 시, 전력망 부하 평탄화가 전체 계통 운영 비용 절감에 기여하는 무결성을 어떻게 증명하는가?
 3. **FidelityEngine**: **분산 에너지 자원 관리 시스템(DERMS)**에서 수만 개의 노드를 실시간으로 최적화하기 위한 **최적 조류 계산(Optimal Power Flow)**의 수렴 성능을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 05_Ocean_Infrastructure
 - Entity electric-vehicle-powertrain-and-motor-control

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electronic-differential-and-torque-vectoring-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electronic-differential-and-torque-vectoring-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system that uses software and sensors to distribute torque to each wheel independently, replacing or enhancing mechanical differentials (Electronic Differential) and the control logic that actively manipulates the torque split to improve cornering and stability (Torque Vectoring Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electronic-differential", "torque-vectoring", "ev-control", "stability", "vehicle-dynamics", "automotive-engineering", "traction-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Vectoring_Fidelity_Audit: Evaluate the ''Yaw Rate'' response to the torque delta ($\\Delta T$) to identify if the vehicle is understeering (pushing out) or oversteering (spinning) beyond the high-fidelity stability envelope.'
-    - 'Slip_Integrity_Check: Analyze the individual wheel slip ratios to ensure that torque is being diverted from the wheel with low traction to the wheel with high-fidelity grip in real-time.'
-    - 'Response_Fidelity_Scan: Monitor the inverter/actuator latency to verify that the torque redistribution is happening within 10-20ms, which is critical for high-speed dynamic stability.'
-Trust Metrics:
+  description: "[Entity] electronic-differential-and-torque-vectoring-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ Electronic Differential and Torque Vectoring Logic
+# [Entity] electronic-differential-and-torque-vectoring-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 급커브를 돌 때 안쪽 바퀴는 천천히, 바깥쪽 바퀴는 더 빠르게 돌려주는 것만으로 차가 레일 위를 달리듯 매끄럽게 회전한다면 어떨까요? **전자식 차동 장치(e-Diff) 및 토크 벡터링 로직**은 기계적인 톱니바퀴 대신 소프트웨어의 지능으로 각 바퀴의 힘을 따로따로 조절하는 **'지능형 구동 배분'** 기술입니다. 특히 바퀴마다 모터가 달린 전기차에서는, 각 바퀴가 독자적인 '뇌'를 가진 것처럼 움직여 물리 법칙을 거스르는 듯한 날카로운 코너링을 가능하게 합니다. **'바퀴 하나하나에 생명력을 불어넣는 디지털 핸들링의 정수'**입니다.
@@ -92,7 +81,6 @@ class LogicFidelityEngine:
             return "REJECT: Ineffective Traction Logic - Torque not being redistributed fast enough. Energy wasted as heat and tire wear. Audit inverter response time"
         return "PASS: Validated Grip Management and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(steering_angle_deg=30.0, yaw_rate_measured=4.2, torque_dist_ratio=0.65)
 print(engine.diagnose_vectoring_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_vectoring_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data torque-vectoring-response-and-lateral-g-v2026`와 연동되어, 전 세계 주요 고성능 전기차의 주행 데이터를 실시간 분석하고 스핀 사고 및 구동축 과부하 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 주행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - differential-gears-and-rotational-kinematics

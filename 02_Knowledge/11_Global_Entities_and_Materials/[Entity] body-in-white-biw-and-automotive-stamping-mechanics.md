@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "body-in-white-biw-and-automotive-stamping-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] body-in-white-biw-and-automotive-stamping-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The stage in automobile manufacturing in which a car body's sheet metal components have been welded together but before moving parts or trim are added (Body-in-White) and the mechanical study of forming these complex metal sheets using high-pressure presses and dies (Automotive Stamping Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["biw", "stamping", "automotive-manufacturing", "sheet-metal", "die-design", "formability", "crashworthiness"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stamping_Fidelity_Audit: Evaluate the ''Thinning Ratio'' and ''Wrinkling'' patterns on the stamped panels to identify if the blank holder pressure or lubrication is within the Forming Limit Diagram (FLD) safety zone.'
-    - 'BIW_Integrity_Check: Analyze the dimensional accuracy of the welded body frame (Gap/Flush) using laser trackers to ensure that ''Springback'' compensations in the die design were effective.'
-    - 'Welding_Fidelity_Scan: Monitor the ''Nugget Diameter'' and squeeze pressure of spot welds to verify that the structural skeleton meets the safety requirements for crashworthiness.'
-Trust Metrics:
+  description: "[Entity] body-in-white-biw-and-automotive-stamping-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 Body-in-White (BIW) and Automotive Stamping Mechanics
+# [Entity] body-in-white-biw-and-automotive-stamping-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 종이 한 장보다 얇은 철판이 어떻게 톤 단위의 무게를 버티고, 사고 시 사람의 목숨을 구하는 튼튼한 방패가 될까요? **차체(BIW) 및 자동차 프레스(Stamping) 역학**은 종이 접기처럼 철판을 접고 찍어서 세상에서 가장 튼튼한 '뼈대'를 만드는 **'철의 조형술'** 기술입니다. 거대한 프레스기가 수천 톤의 힘으로 내리칠 때, 철판이 찢어지지도 울지도 않게 달래면서 원하는 모양을 만듭니다. 자동차의 성능과 안전을 결정짓는 **'모빌리티의 보이지 않는 골격'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Die Surface Wear Detected - Burrs and dimensional drift increasing. Surface re-polishing and hardening required"
         return "PASS: Validated Tooling Geometry and Verified Manufacturing Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(panel_thinning_pct=15.5, springback_error_mm=0.2, weld_nugget_size_mm=5.5)
 print(engine.diagnose_stamping_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_stamping_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data biw-stamping-precision-and-weld-point-integrity-v2026`와 연동되어, 전 세계 주요 자동차 제조사의 프레스 및 BIW 데이터를 실시간 분석하고 차체 비틀림 및 충돌 안전성 미달 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bessemer-process-and-modern-oxygen-steelmaking-physics

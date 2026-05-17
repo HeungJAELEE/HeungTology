@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrostatic-spray-painting-and-atomization-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrostatic-spray-painting-and-atomization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A painting method that uses an electric field to charge paint droplets, which are then attracted to the grounded workpiece (Electrostatic Spray Painting) and the physical study of liquid breakup into fine droplets and their motion in an electric field (Atomization Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electrostatic-painting", "atomization", "surface-coating", "paint-efficiency", "automotive-painting", "electrostatics", "rayleigh-instability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Atomization_Fidelity_Audit: Evaluate the ''Droplet Size'' distribution against the rotary bell speed to identify if ''Over-atomization'' is causing paint misting or if large drops are creating ''Orange Peel'' defects.'
-    - 'Charge_Integrity_Check: Analyze the electrostatic voltage and current leakage to ensure the paint particles are reaching the ''Rayleigh Limit'' for high-fidelity Coulombic attraction to the workpiece.'
-    - 'Transfer_Fidelity_Scan: Monitor the ''Wrap-around Effect'' to verify that the paint is successfully coating the hidden back-side of the object, maximizing the $m_{deposited}$ metric.'
-Trust Metrics:
+  description: "[Entity] electrostatic-spray-painting-and-atomization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎨 Electrostatic Spray Painting and Atomization Physics
+# [Entity] electrostatic-spray-painting-and-atomization-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 자동차 차체를 페인트로 칠할 때, 페인트가 마법처럼 구석구석을 스스로 찾아가 달라붙고 심지어 보이지 않는 뒷면까지 감싸 안으며 칠해진다면 믿으시겠습니까? **정전 도장 및 원자화(Atomization) 물리**는 페인트 알갱이에 전기를 입혀 제품이라는 '자석'에 찰싹 달라붙게 만드는 **'지능형 자석 도색'** 기술입니다. 공중에 뿌려져 버려지는 페인트를 최소화하고, 거울처럼 매끄러운 광택을 완성하는 **'버려지는 페인트 제로화와 완벽한 외관의 미학'**입니다.
@@ -59,7 +48,7 @@ $$ \eta_{TE} = \frac{m_{deposited}}{m_{sprayed}} $$
 | **Driving Force** | Air Pressure | Electric Field (Coulomb) | - | Physics |
 | **Transfer Eff** | 30 ~ 50 (Low) | 85 ~ 95 (Extreme) | % | Efficiency |
 | **Wrap-around** | None (Shadows) | High (Auto-coating) | - | Quality |
-| **Droplet Size** | 50 ~ 100 (Coarse) | 5 ~ 30 (Ultra-fine) | $\mu m$ | Precision |
+| **Droplet Size** | 50 ~ 100 (Coarse) | 5 ~ 30 (Ultra-fine) | $\mu\text{m}$ | Precision |
 | **Overspray** | Very High | Minimal | - | Environment |
 | **Voltage** | N/A | 30 ~ 100 (High DC) | $kV$ | Power |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Uneven Coating - Spray pattern instability or inconsistent fluid flow. Risk of runs, sags, or transparent spots"
         return "PASS: Validated Uniform Deposition and Verified Appearance Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(bell_speed_rpm=45000, electrostatic_voltage_kv=85.0, humidity_pct=55.0)
 print(engine.diagnose_painting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_painting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data electrostatic-painting-transfer-efficiency-v2026`와 연동되어, 전 세계 주요 자동차 및 가전제품 자동 도장 라인의 데이터를 실시간 분석하고 불균일 도색 및 페인트 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 표면 예술 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dip-coating-and-viscous-film-mechanics

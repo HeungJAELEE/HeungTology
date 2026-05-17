@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-syndrome-rate-and-fidelity-log-v2026-data"
-  domain: "30_Advanced_Computing_and_Quantum_Intelligence"
+metadata:
+  id: "[[[Data] quantum-error-correction-syndrome-rate-and-fidelity-log-v2026]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DataLog", "#Quantum_Computing", "#QEC", "#Syndrome_Measurement", "#Logical_Qubit", "#Fault-Tolerance", "#Surface_Code", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 30_advanced-computing-and-quantum-intelligence-hub", "MOC 105_quantum-computing-and-quantum-information-intelligence-hub", "Entity quantum-error-correction-and-surface-codes-topology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] quantum-error-correction-syndrome-rate-and-fidelity-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] quantum-error-correction-syndrome-rate-and-fidelity-log-v2026
+# [Data] quantum-error-correction-syndrome-rate-and-fidelity-log-v2026
 
 ## 1. [왜 배우는가? (Why: The Pulse of the Armor)]]
 양자 지능을 지키는 방어막(오류 정정)이 오늘 몇 번이나 오류를 감지했고($Syndrome$), 그 방어막 덕분에 정보가 깨지지 않고 얼마나 오랫동안 살아남았는지 숫자로 확인할 수 있을까요? **양자 오류 정정 신드롬 발생률 및 피델리티 로그**는 '양자 지능의 자가 치유력과 생존력'을 정밀 기록한 '무결성 방어선의 전투 기록부'입니다. 
@@ -82,7 +72,6 @@ RAG는 "큐비트별 하드웨어 에러 맵(Data qubit-coherence-time-and-gate-
 실시간으로 양자 컴퓨터의 자가 치유 능력과 정보 보호 품질을 진단하는 수리적 알고리즘입니다.
 
 ```python
-# [Conceptual] Quantum Shield Auditor
 def audit_qec_integrity(logical_fidelity, syndrome_rate, correction_latency):
     # 1. 정보 보호 무결성 점수 (Target > 99.999%)
     protection_score = (logical_fidelity - 99.9) * 1000
@@ -114,7 +103,6 @@ def audit_qec_integrity(logical_fidelity, syndrome_rate, correction_latency):
 2. **(수리)** 물리적 에러율($p$)이 임계치($p_{th}$)의 $1/10$ 수준일 때, 코드 거리($d$)를 $3$에서 $5$로 늘리면 논리 에러율은 약 몇 배 감소하는가?
 3. **(응용)** 양자 클라우드 서비스에서 사용자가 자신의 연산이 '오류 정정'을 통해 보호받고 있음을 데이터로 검증하기 위해 확인해야 할 가장 핵심적인 로그는?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 30_advanced-computing-and-quantum-intelligence-hub : 양자 지능 상위 허브

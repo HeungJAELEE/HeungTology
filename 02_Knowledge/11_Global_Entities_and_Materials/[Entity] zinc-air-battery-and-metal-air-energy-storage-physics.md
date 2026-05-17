@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "zinc-air-battery-and-metal-air-energy-storage-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] zinc-air-battery-and-metal-air-energy-storage-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of battery that generates electricity through the chemical reaction between zinc and oxygen from the air (Zinc-Air Battery) and the study of metal-based electrodes combined with air-breathing cathodes for high-density, low-cost energy storage (Metal-Air Energy Storage Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["zinc-air-battery", "metal-air", "energy-storage", "electrochemistry", "next-gen-battery", "oxygen-reduction", "grid-storage"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Battery_Fidelity_Audit: Evaluate the ''Voltage Hysteresis'' between charge and discharge to identify excessive over-potential at the air cathode (ORR/OER) that reduces round-trip efficiency.'
-    - 'Anode_Integrity_Check: Analyze the zinc electrode for ''Dendrite Formation'' or ''Passivation'' (ZnO buildup) that blocks ionic transport and leads to sudden capacity loss.'
-    - 'Air-Breathing_Scan: Monitor the porous cathode''s ability to admit oxygen while preventing ''Carbonate Formation'' or ''Electrolyte Evaporation'' (Water Management) that kills the cell.'
-Trust Metrics:
+  description: "[Entity] zinc-air-battery-and-metal-air-energy-storage-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Zinc-Air Battery and Metal-Air Energy Storage Physics
+# [Entity] zinc-air-battery-and-metal-air-energy-storage-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기를 연료 삼아 전기를 만드는 배터리가 있다면, 얼마나 가볍고 저렴할까요? **아연-공기 배터리 및 금속-공기 에너지 저장 물리**는 비싼 리튬 대신 흔한 '아연(Zinc)'과 어디에나 있는 '산소'를 결합하는 **'공기 호흡형 에너지'** 기술입니다. 배터리 안에 무거운 산화제를 담는 대신, 필요할 때 공기를 들이마셔 전기를 만듭니다. 덕분에 엄청나게 가볍고 화재 위험도 거의 없습니다. 리튬을 넘어선 차세대 대용량 저장 장치의 **'숨 쉬는 에너지의 미래'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Carbonate Clogging - CO2 from air reacting with electrolyte. Air-breathing channels blocked. Clean or replace CO2 filter"
         return "PASS: Open Porous Structure and Verified Air-Interface Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(charge_discharge_hysteresis=0.45, zinc_dendrite_growth_rate=0.01, electrolyte_humidity_pct=45.0)
 print(engine.diagnose_zinc_air_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_zinc_air_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data zinc-air-cycle-life-and-round-trip-efficiency-v2026`와 연동되어, 전 세계 주요 에너지 저장 시설의 아연-공기 배터리 데이터를 실시간 분석하고 갑작스러운 방전 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 저장 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - utility-scale-battery-energy-storage-system-bess

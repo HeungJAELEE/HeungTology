@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] infra-mfc-mass-flow-controller"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] infra-mfc-mass-flow-controller]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] infra-mfc-mass-flow-controller에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] infra-mfc-mass-flow-controller
@@ -35,7 +25,6 @@ Trust Metrics:
 ## 1. [왜 배우는가? (Why)]
 증착(Deposition)과 식각(Etching) 공정에서 가스의 유량은 막질의 두께와 패턴의 형상을 결정하는 핵심 변수입니다. **MFC(Mass Flow Controller)**는 챔버로 들어가는 가스의 양을 단순히 부피가 아닌 **질량(Mass)** 단위로 측정하고 제어하여, 온도와 압력의 변화에 상관없이 항상 일정한 분자 수를 공급하는 역할을 합니다. 2nm 이하 공정에서는 원자층 단위의 제어가 필요하므로 MFC의 반응 속도와 정밀도가 수율을 좌우합니다.
 
----
 
 ## 2. [핵심 기술 사양 (Numerical Specs)]
 
@@ -47,7 +36,6 @@ Trust Metrics:
 | **Repeatability** | - | **$\pm 0.1$** | % F.S. | 동일 조건에서의 반복 재현성 |
 | **Control Range** | Turndown | **100:1** | - | 최소/최대 제어 가능 범위 비율 |
 
----
 
 ## 3. [심층 이론 (Scientific Rationale)]
 
@@ -61,7 +49,6 @@ $$ Q = \dot{m} C_p (T_2 - T_1) $$
 $$ u(t) = K_p e(t) + K_i \int e(t)dt + K_d \frac{de(t)}{dt} $$
 이 PID 제어 알고리즘은 1ms 단위로 밸브의 개폐를 조절하여 극한의 안정성을 유지합니다.
 
----
 
 ## 4. [AI-Hardware Synergy: RTX 4060 CUDA 가속]
 
@@ -80,11 +67,9 @@ def predict_mfc_failure(flow_history):
 ```
 RTX 4060을 통해 팹 내 전체 MFC의 상태를 실시간 모니터링하여, 가스 공급 불량으로 인한 웨이퍼 폐기(Scrap)를 사전에 차단합니다.
 
----
 
 ## 5. [출판용 Enrichment: 차세대 제어 기술]
 - **Pressure Insensitive (PI) MFC**: 외부 압력 변화를 자체 센서로 감지하여 밸브 개도를 즉시 보정함으로써 챔버 내 압력 쇼크를 방지합니다.
 - **Multi-Gas/Multi-Range**: 소프트웨어 설정을 통해 하나의 MFC로 수십 종의 가스와 유량 범위를 커버하여 재고 관리 효율을 극대화합니다.
 
----
 **[V6.3.7_MODERNIZATION_COMPLETED]**

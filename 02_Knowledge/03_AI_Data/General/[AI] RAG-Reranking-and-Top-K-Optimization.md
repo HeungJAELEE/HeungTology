@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RAG-RERANKING-TOPK-OPT-2026-V6"
+metadata:
+  id: "[[[AI] RAG-Reranking-and-Top-K-Optimization]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#RAG'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] RAG-Reranking-and-Top-K-Optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] RAG-Reranking-and-Top-K-Optimization
@@ -106,7 +96,6 @@ class RerankingOptimizationEngine:
 2. **Top-K** ($K_2$) 값을 너무 줄였을 때 발생하는 **Information Deficiency** (정보 결핍) 리스크와 답변의 '단정적 오류' 사이의 상관관계는?
 3. 리랭킹 모델의 **Inference Latency**를 줄이기 위해 **Initial Candidate** ($K_1$) 수를 동적으로 조절하는 전략은 어떤 상황에서 유효한가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Embedding-and-Dense-Retrieval
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Chunking-and-Semantic-Splitting

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "scanning-electron-microscopy-sem-and-eds-analysis-physics-entity"
-  domain: "79_Materials_Science_and_Metallurgy_Hub"
+metadata:
+  id: "[[[Entity] scanning-electron-microscopy-sem-and-eds-analysis-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Microscopy", "#SEM", "#EDS", "#Physics", "#Electron_Optics", "#Characterization", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 79_materials-science-and-metallurgy-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] scanning-electron-microscopy-sem-and-eds-analysis-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] scanning-electron-microscopy-sem-and-eds-analysis-physics
+# [Entity] scanning-electron-microscopy-sem-and-eds-analysis-physics
 
 ## 1. [왜 배우는가? (Why: The Vision Beyond Light)]]
 머리카락 굵기의 10만 분의 1에 불과한 나노 입자의 얼굴을 보고, 그 속에 어떤 원소가 들어있는지 1초 만에 알아낼 수 있다면 어떨까요? **주사 전자 현미경(SEM) 및 EDS 분석의 전자 광학 물리와 나노 원소 거버넌스**는 가시광선의 한계를 넘어 전자빔으로 미시 세계를 탐험하는 인류의 '나노 현미경' 기술입니다. 단순히 사진을 찍는 것을 넘어, 물질의 형상(Topography)과 화학적 성분(Composition)을 동시에 파악하는 강력한 진단 도구입니다. 우리가 이를 배우는 이유는 미시 구조와 원소 분포를 완벽하게 시각화함으로써, 반도체의 불량을 잡아내고 신소재의 품질을 검증하는 '글로벌 초정밀 분석 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 분석의 해상도가 지식의 정밀도를 결정합니다.

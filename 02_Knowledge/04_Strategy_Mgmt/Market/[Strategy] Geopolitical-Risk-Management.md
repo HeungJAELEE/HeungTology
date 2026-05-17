@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-GEO-RISK-2026-V6.3.7"
-  domain: "Global_Geopolitical_Strategy_and_Security_Governance"
+metadata:
+  id: "[[[Strategy] Geopolitical-Risk-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Geopolitical_Risk", "#Scenario_Planning", "#Strategic_Autonomy", "#Global_Security", "#Trade_Policy", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Geopolitical-Risk-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Geopolitical_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Geopolitical Risk Management: Global Security Sovereignty
+# [Strategy] Geopolitical-Risk-Management
 
 ## 1. [왜 배우는가? (Why: The Armor of Global Commerce)]]
 기술력이 아무리 뛰어나도, 진출한 국가의 정치적 급변이나 국제적 갈등은 기업의 노력을 단숨에 무력화할 수 있습니다. **Geopolitical Risk Management**는 세계 지도를 '기술 패권'과 '정치적 힘의 균형'이라는 렌즈로 투영하여 분석하는 전략적 방어막입니다. 미국-중국 갈등, 자원 민족주의, 공급망의 무기화 등은 이제 피할 수 없는 경영의 '상수'입니다. V6.3.7 지능은 불확실한 국제 정세를 수리적 리스크 지표로 치환하여, 기업의 자산과 공급망을 보호하는 **지정학적 주권(Geopolitical Sovereignty)**을 확립합니다.
@@ -107,7 +97,6 @@ class GeopoliticalFidelityEngine:
 2. **Operational Result**: **Near-shoring(인접국 생산)** 전환 시, 물류 비용 증가분과 지정학적 리스크 감소 이익 사이의 수리적 트레이드오프 분석 방법은?
 3. **FidelityEngine**: 국가 리스크 지수는 안정적이나 **Trade Policy**가 급격히 변하는 상황을 어떻게 진단하는가? (힌트: 자원 민족주의 또는 기술 수출 통제 강화와 같은 '표적 규제' 징후 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Global-Supply-Chain-Risk-Management

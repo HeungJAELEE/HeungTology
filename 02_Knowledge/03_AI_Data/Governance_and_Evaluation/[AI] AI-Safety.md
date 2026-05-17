@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-SAFE-2026-V6"
+metadata:
+  id: "[[[AI] AI-Safety]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#AI_Safety'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] AI-Safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] AI-Safety
@@ -124,7 +114,6 @@ class AISafetyPipeline:
 2. **Prompt Injection** 공격에서 '입력값과 지시어의 분리(Separation of Data and Instruction)'가 왜 전통적인 SQL Injection 방어 원리와 유사한가?
 3. **RLAIF** 과정에서 AI 피드백 모델 자체가 편향되었을 경우 발생하는 'Feedback Loop Collapse' 리스크를 방지하기 위한 정적 신뢰도 측정 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-Governance
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI Explainable-AI

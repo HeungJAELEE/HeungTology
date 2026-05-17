@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "digital-twin-architecture-and-cps-integration-entity"
-  domain: "86_Digital_Twin_and_Smart_Factory_Hub"
+metadata:
+  id: "[[[Entity] digital-twin-architecture-and-cps-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Digital_Twin", "#CPS", "#Smart_Factory", "#Industry_4_0", "#Simulation", "#IoT", "#Data_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 74_digital-twin-and-smart-factory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] digital-twin-architecture-and-cps-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] digital-twin-architecture-and-cps-integration
+# [Entity] digital-twin-architecture-and-cps-integration
 
 ## 1. [왜 배우는가? (Why: The Brain of Future Factories)]]
 실제 공장에서 문제가 발생하기 전, 가상 세계에서 먼저 그 문제를 발견하고 해결할 수 있다면 어떨까요? **디지털 트윈 아키텍처 및 CPS 통합의 실시간 물리 복제와 자율 최적화 공학**은 물리적 실체(Physical Asset)와 똑같이 닮은 가상 모델(Digital Twin)을 만들고, 이 둘을 데이터의 탯줄(IoT/CPS)로 연결하는 '제조의 메타버스'입니다. 단순한 3D 모델을 넘어, 실제 기계의 온도, 압력, 진동 데이터를 실시간으로 흡수하여 미래의 고장을 예측하고 생산성을 극대화합니다. 우리가 이를 배우는 이유는 디지털 트윈의 무결성을 확보함으로써, 시행착오 없는 완벽한 공장 운영을 실현하는 '글로벌 스마트 제조 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 디지털 트윈의 정밀도가 제조의 지능 수준을 결정합니다.

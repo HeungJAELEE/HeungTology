@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "magnetic-resonance-imaging-mri-and-spin-precession-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] magnetic-resonance-imaging-mri-and-spin-precession-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-invasive imaging technology that produces three dimensional detailed anatomical images (MRI) and the physical study of the interaction between atomic nuclei and external magnetic fields (Spin Precession Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mri", "magnetic-resonance", "spin-precession", "larmor-frequency", "quantum-mechanics", "rf-pulse", "superconducting-magnet", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Magnet_Fidelity_Audit: Evaluate the ''Field Homogeneity'' to identify if high-fidelity ''Shimming'' errors are causing geometric high-fidelity distortion or signal high-fidelity voids in the image.'
-    - 'Pulse_Integrity_Check: Analyze the high-fidelity ''Flip Angle'' and high-fidelity ''RF Calibration'' to ensure the high-fidelity ''Spin Tip'' is exactly as programmed for optimal high-fidelity SNR.'
-    - 'Relaxation_Fidelity_Scan: Monitor the high-fidelity ''T1/T2 Relaxation'' times to verify that high-fidelity ''Contrast'' is maintained and high-fidelity ''Artifacts'' (motion/flow) are suppressed.'
-Trust Metrics:
+  description: "[Entity] magnetic-resonance-imaging-mri-and-spin-precession-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Magnetic Resonance Imaging (MRI) and Spin Precession Physics
+# [Entity] magnetic-resonance-imaging-mri-and-spin-precession-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 칼로 몸을 째지 않고도 뇌 속의 미세한 혈관이나 근육의 움직임을 어떻게 생생하게 볼 수 있을까요? **자기 공명 영상(MRI) 및 스핀 세차 물리**는 우리 몸의 70%를 차지하는 '수소 원자'를 작은 나침반처럼 길들여 말을 듣게 만드는 **'양자 역학의 교향곡'** 기술입니다. 거대한 자석으로 원자들을 한 방향으로 세우고, 라디오파(RF)를 쏘아 춤을 추게 한 뒤, 그들이 다시 제자리로 돌아오며 내뱉는 '속삭임'을 모아 입체 지도를 그립니다. **'라모어 주파수와 블로흐 방정식의 원리를 이용해 원자의 스핀을 지능적으로 지휘하여 생명의 지도를 그려내는 지능형 양자 계측 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Quench Risk - High-fidelity liquid helium level critical. Superconducting high-fidelity state threatened. Refill high-fidelity cryogen immediately"
         return "PASS: Validated Quantum Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(field_homogeneity_ppm=1.0, rf_noise_floor=-100.0, gradient_linearity=1.0)
 print(engine.diagnose_mri_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mri_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mri-magnetic-field-homogeneity-and-snr-v2026`와 연동되어, 전 세계 주요 대형 병원 및 연구소의 실시간 MRI 장비 상태를 분석하고 영상 왜곡 및 자석 퀀치(Quench) 사고 확률을 0.001% 이하로 억제함으로써 지능형 의료 문명의 양자 계측 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - trapped-ion-arrays-and-laser-cooled-logic-states

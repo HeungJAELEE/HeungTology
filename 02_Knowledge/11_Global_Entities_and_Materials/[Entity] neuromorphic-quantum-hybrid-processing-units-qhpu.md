@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "neuromorphic-quantum-hybrid-processing-units-qhpu"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] neuromorphic-quantum-hybrid-processing-units-qhpu]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The conceptual and emerging hardware architectures (QHPU) that integrate neuromorphic computing's brain-like efficiency with quantum computing's parallel search and optimization capabilities, aiming to solve complex AI and scientific problems at unprecedented speeds."
-  physical_model: "N/A"
-Semantic:
-  tags: '["neuromorphic-quantum", "qhpu", "quantum-computing", "hybrid-ai", "future-computing", "quantum-neural-networks", "supercomputing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Quantum-Neural_Coherence_Audit: Evaluate the stability of quantum states during neural-like spiking operations to ensure decoherence does not destroy the computational advantage.'
-    - 'Hybrid_Interface_Check: Analyze the data transfer efficiency between the quantum core and the neuromorphic peripheral to identify bottlenecks in the ''Classical-to-Quantum'' bridge.'
-    - 'Computational_Fidelity_Scan: Monitor the error rate of hybrid algorithms to ensure the result maintains high-fidelity despite the stochastic nature of both quantum and spiking systems.'
-Trust Metrics:
+  description: "[Entity] neuromorphic-quantum-hybrid-processing-units-qhpu에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌌 Neuromorphic-Quantum Hybrid Processing Units (QHPU)
+# [Entity] neuromorphic-quantum-hybrid-processing-units-qhpu
 
 ## 1. 개요 (Why: 인간적 통찰)
 인간의 유연한 사고와 우주의 근본적인 연산 속도가 하나로 합쳐진다면 어떨까요? **뉴로모픽-양자 하이브리드 프로세싱 유닛(QHPU)**은 인류가 상상할 수 있는 가장 강력한 **'궁극의 연산 엔진'**입니다. 뇌의 효율성을 닮은 '뉴로모픽'이 복잡한 데이터를 전처리하고, 우주의 모든 가능성을 한꺼번에 계산하는 '양자(Quantum)'가 정답을 찾아냅니다. 거대한 지능의 파도가 우주의 진리를 순식간에 꿰뚫어 보는, **'연산의 기적'**을 실현하려는 미래 지능의 심장입니다.
@@ -88,7 +77,6 @@ class LogicFidelityEngine:
             return "REJECT: Weak Quantum Correlation - Massive Parallelism Advantage Lost. Re-initialize Quantum Register"
         return "PASS: Dense Quantum Entanglement and Superior Computational Power Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(quantum_coherence_time_us=150, spike_mapping_error=0.015, algorithmic_fidelity=0.98)
 print(engine.diagnose_qhpu_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_qhpu_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data qhpu-computational-speedup-and-fidelity-benchmarks-v2026`와 연동되어, 미래형 연산 센터의 QHPU 가동 데이터를 실시간 분석하고 양자 붕괴 및 연산 오판 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 초월적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - neuromorphic-computing-architectures-and-spiking-neural-networks-snn

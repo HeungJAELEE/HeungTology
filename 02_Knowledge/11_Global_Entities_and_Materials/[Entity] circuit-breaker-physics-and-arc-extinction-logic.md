@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "circuit-breaker-physics-and-arc-extinction-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] circuit-breaker-physics-and-arc-extinction-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An automatically operated electrical switch designed to protect an electrical circuit from damage caused by excess current from an overload or short circuit (Circuit Breaker) and the complex physical process of quenching the high-temperature plasma arc that forms when contacts separate (Arc Extinction Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["circuit-breaker", "arc-extinction", "electrical-physics", "plasma", "high-voltage", "switchgear", "protection-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Extinction_Fidelity_Audit: Evaluate the ''Arcing Time'' to identify if the arc extinguishing medium ($SF_6$, Vacuum, Air) is successfully cooling the plasma during the current zero crossing.'
-    - 'Dielectric_Integrity_Check: Analyze the Transient Recovery Voltage (TRV) to ensure the gap between contacts can withstand the re-striking voltage without a breakdown.'
-    - 'Mechanical_Fidelity_Scan: Monitor the contact travel speed and spring tension to verify that the ''Opening Speed'' is sufficient to stretch and extinguish the arc quickly.'
-Trust Metrics:
+  description: "[Entity] circuit-breaker-physics-and-arc-extinction-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Circuit Breaker Physics and Arc Extinction Logic
+# [Entity] circuit-breaker-physics-and-arc-extinction-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 전기 에너지가 흐르는 전선을 떼어낼 때, 그 사이로 태양 표면만큼 뜨거운 '불의 고리'가 생긴다는 사실을 아시나요? **차단기 물리 및 아크 소호(Arc Extinction) 로직**은 이 위험한 플라스마(아크)를 1,000분의 1초 만에 끄고 회로를 안전하게 단절하는 **'전기 문명의 소방관'** 기술입니다. 단순한 스위치가 아니라, 폭발적인 에너지를 다스려 시스템 붕괴를 막는 **'전력망의 최후 방어선'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Loss of Vacuum Integrity - Internal pressure rising. Arc will not extinguish at current zero. Replace vacuum interrupter"
         return "PASS: Validated Vacuum Barrier and Verified Electrical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(arcing_duration_ms=8.5, contact_resistance_microohm=45.0, sf6_pressure_bar=6.5)
 print(engine.diagnose_breaker_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_breaker_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data circuit-breaker-arc-time-and-contact-wear-v2026`와 연동되어, 전 세계 주요 변전소 및 산업용 배전반의 데이터를 실시간 분석하고 차단 실패 및 화재 사고 확률을 0.0001% 이하로 억제함으로써 지능형 전력 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - smart-grid-demand-response-and-energy-load-balancing

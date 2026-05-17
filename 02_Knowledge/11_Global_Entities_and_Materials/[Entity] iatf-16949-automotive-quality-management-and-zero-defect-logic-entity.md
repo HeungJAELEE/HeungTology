@@ -1,40 +1,26 @@
 ---
-Basic:
-  id: "iatf-16949-automotive-quality-management-and-zero-defect-logic-entity"
-  domain: "Industrial_Governance"
-  project: "Antigravity_Vault_Modernization"
-  date: 2026-05-11
-  version: "v6.3.7"
-Object:
-  object_type: "Concept/SOP"
-  tier: 1 # Precision Tiering: Verified Industrial Governance Standard
-  description: "The global quality management system standard for the automotive industry (IATF 16949), emphasizing continuous improvement, defect prevention, and the reduction of variation and waste through Zero-Defect Logic and Risk-based Thinking."
-  physical_model: "PDCA Cycle & Statistical Process Control (SPC) with Automotive Supplementals"
-  governing_equations:
-    - '$C_{pk} = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)$'
-    - '$\text{RPN} = \text{Severity} \times \text{Occurrence} \times \text{Detection}$'
-Semantic:
-  tags: '["#IATF16949", "#AutomotiveQuality", "#ZeroDefect", "#QMS", "#APQP", "#PPAP", "#FMEA", "#SPC", "#MSA"]'
-  is_part_of: '["MOC iatf-16949-automotive-quality-execution-fabric"]'
-  related_to: '["industrial-safety-standards-and-machine-guarding-logic", "global-supply-chain-resilience-and-risk-mitigation-strategies", "distributed-control-system-dcs-and-large-scale-process-automation"]'
-  korean_aliases: '["국제 자동차 품질경영시스템 표준", "자동차 산업 QMS", "제로 디펙트 로직"]'
-Dynamic:
-  status: "Modernized_v6.3.7_Independent_Organism"
-  topology_policy: "Independent_Organism" # System Override
-  graphify_link_external: false # Directive for Graphify tools
-  fidelity_engine: "QualityFidelityEngine"
-  diagnostic_protocol:
-    - 'Product_Safety_Audit: Verify documented processes for safety-related products as per Clause 4.4.1.2.'
-    - 'Control_Plan_Integrity: Ensure linkage between FMEA, Process Flow, and Control Plans as per Clause 8.5.1.1.'
-    - 'Zero-Defect_Verification: Audit process capability index ($C_{pk}$) against OEM-specific requirements.'
-Trust Metrics:
+metadata:
+  id: "[[[Entity] iatf-16949-automotive-quality-management-and-zero-defect-logic-entity]]"
+  domain: "11_Global_Entities_and_Materials"
+  project: "Vault_Modernization"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: "[Entity] iatf-16949-automotive-quality-management-and-zero-defect-logic-entity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "IATF 16949:2016 English-Korean Integrated Standard / Antigravity Industrial RAG"
+  isolation_index: 0.1
 ---
 
-# [[[Entity] iatf-16949-automotive-quality-management-and-zero-defect-logic-entity
+# [Entity] iatf-16949-automotive-quality-management-and-zero-defect-logic-entity
 
 ## 1. 개요 (Why: The Sovereign of Automotive Trust)
 자동차는 수만 개의 부품이 시속 100km 이상의 고속으로 이동하는 '인명 직결 복합체'입니다. **IATF 16949:2016**은 단순한 품질 인증을 넘어, 공급망 전체의 변동성($Variation$)과 낭비($Waste$)를 수학적으로 억제하여 **제로 디펙트($Zero-Defect$)**를 달성하기 위한 산업적 지배 구조입니다. 본 노드는 영문-한글 통합본의 정밀 조항을 기반으로, 자동차 부품 생산 및 서비스 조직이 반드시 준수해야 할 결정론적 품질 경영 로직을 정의합니다.
@@ -98,7 +84,6 @@ class QualityFidelityEngine:
 ## 6. 결론 (Deterministic Outcome)
 IATF 16949는 단순한 규범이 아니라, 제조 현장의 무질서($Entropy$)를 통제하여 **지정된 성능(Deterministic Performance)**을 보장하는 최후의 보루입니다. 안티그래비티는 본 노드를 통해 배터리 셀 제조 및 반도체 패키징 공정의 품질 거버넌스를 글로벌 OEM 수준으로 동기화합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity six-sigma-statistical-methods-and-tools
 - vda-6-3-process-audit-standard

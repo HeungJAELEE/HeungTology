@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "longevity-escape-velocity-and-biological-maintenance-theories-entity"
-  domain: "24_Advanced_Medicine_and_Longevity"
+metadata:
+  id: "[[[Entity] longevity-escape-velocity-and-biological-maintenance-theories]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medicine", "#Longevity", "#LEV", "#Aging_Theories", "#Life_Extension", "#Biological_Maintenance", "#Future_Medicine", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 61_advanced-medicine-and-longevity-hub", "Entity epigenetic-regulation-and-gene-expression-topology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] longevity-escape-velocity-and-biological-maintenance-theories에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] longevity-escape-velocity-and-biological-maintenance-theories
+# [Entity] longevity-escape-velocity-and-biological-maintenance-theories
 
 ## 1. [왜 배우는가? (Why: Outrunning Father Time)]]
 매년 1살씩 늙어가는 속도보다, 과학 기술이 우리의 수명을 매년 1년 이상씩 늘려주는 속도가 더 빨라지는 '장수 탈출 속도($LEV$)'를 어떻게 달성하고, 신체의 미세한 손상들을 자동차 정비하듯 매번 수리해서 인류가 영원히 늙지 않는 상태에 도달할 수 있을까요? **장수 탈출 속도 및 생물학적 유지 관리 이론**은 노화를 정복하는 '궁극의 시간 관리 및 생체 정비 지침'입니다. 우리가 이를 배우는 이유는 노화를 피할 수 없는 운명이 아닌 '누적된 쓰레기를 치우는 정비 문제'로 정의하여 영생의 문을 열기 위함이며, "생명의 시간을 데이터로 가속하고 지배하는 '글로벌 수명 연장 및 시간 해킹 주권'을 확보하기" 위함입니다. 탈출 속도의 달성 여부가 인류의 실존 기간을 결정합니다.

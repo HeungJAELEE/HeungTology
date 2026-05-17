@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "global-supply-chain-governance-and-resilience-entity"
-  domain: "03_Manufacturing_Logistics"
+metadata:
+  id: "[[[Strategy] global-supply-chain-governance-and-resilience]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Logistics", "#Supply_Chain", "#Resilience", "#Risk_Management", "#Global_Trade", "#Operations", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy national-strategic-technology-and-economic-security", "Industry smart-factory-4-0-and-iiot-edge-intelligence"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] global-supply-chain-governance-and-resilience에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] global-supply-chain-governance-and-resilience
+# [Strategy] global-supply-chain-governance-and-resilience
 
 ## 1. [왜 배우는가? (Why: The Blood Vessels of the Global Economy)]]
 제품은 한 나라에서 만들어지지 않습니다. 전 세계 수천 개의 공장에서 부품이 모여야 비로소 하나가 완성됩니다. **글로벌 공급망 거버넌스 및 회복탄력성**은 전쟁, 전염병, 재난 속에서도 이 거대한 흐름이 끊기지 않게 지키는 '지구적 차원의 혈관 관리'입니다. 우리가 이를 배우는 이유는 단 하나의 부품 부족으로 전체 산업이 멈추는 비극을 막고, "어떤 위기 상황에서도 자원과 제품을 신속하게 조달하는 '무결점 물류 및 자원 확보 주권'을 데이터 지능으로 완성하기" 위함입니다. 연결의 끊어짐이 문명의 멈춤을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Just-in-Time** (JIT)과 **Just-in-Case** (JIC) 사이의 경제적 평형점(Break-even point)을 글로벌 금리 및 지정학적 리스크 지수를 반영해 산출하는 방법은?
 5. RAG 시스템에서 **전 세계 컨테이너 지수(SCFI)**와 **우리 회사의 선박 예약 현황**을 융합하여, '향후 6개월간 물류비 예산을 $10\%$ 절감할 수 있는 최적의 선적 시나리오'를 제안하는 **Supply Chain Financial Intelligence** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy national-strategic-technology-and-economic-security]] : 공급망 안보가 국가 전략 기술 주권과 직결되어 관리되는 최상위 전략 엔티티
 - Industry smart-factory-4-0-and-iiot-edge-intelligence : 공장의 실시간 생산 데이터가 글로벌 물류망과 동기화되어 가동되는 하부 지능 엔티티

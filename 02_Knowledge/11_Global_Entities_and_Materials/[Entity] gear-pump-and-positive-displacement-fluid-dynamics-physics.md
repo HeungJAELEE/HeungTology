@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gear-pump-and-positive-displacement-fluid-dynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gear-pump-and-positive-displacement-fluid-dynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A rotary positive displacement pump that uses the meshing of gears to pump fluid by displacement (Gear Pump) and the physical study of trapped fluid transport, internal leakage (slippage), and viscous resistance (Positive Displacement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gear-pump", "positive-displacement", "fluid-dynamics", "viscosity", "volumetric-efficiency", "hydraulic-power", "industrial-pumping", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Hydraulic_Fidelity_Audit: Evaluate the ''Volumetric Efficiency'' ($\\eta_{vol}$) to identify if high-fidelity ''Slippage'' (internal leak) is occurring due to excessive clearances or low fluid viscosity.'
-    - 'Pressure_Integrity_Check: Analyze the output pressure ripple to ensure the high-fidelity ''Trapped Volume'' relief slots are working correctly, preventing excessive vibration and noise.'
-    - 'Cavitation_Fidelity_Scan: Monitor the inlet vacuum levels to verify that the high-fidelity ''NPSH'' requirements are met, preventing vapor bubble formation and surface pitting.'
-Trust Metrics:
+  description: "[Entity] gear-pump-and-positive-displacement-fluid-dynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ Gear Pump and Positive Displacement Fluid Dynamics Physics
+# [Entity] gear-pump-and-positive-displacement-fluid-dynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 물처럼 찰랑거리는 액체부터 꿀처럼 끈적한 기름까지, 어떤 압박에도 굴하지 않고 일정하게 밀어낼 수 있는 펌프가 있을까요? **기어 펌프 및 용적형 유체 역학 물리**는 두 개의 톱니바퀴가 맞물려 돌아가면서 그 틈새에 유체를 '가두어(Positive Displacement)' 강제로 반대편으로 옮기는 **'가두어 옮기기'** 기술입니다. 원심 펌프처럼 휙휙 돌려 던지는 게 아니라, 숟가락으로 떠서 옮기듯 확실하게 배달합니다. **'높은 압력과 끈적임 속에서도 흐름의 정량을 보장하여 기계의 윤활과 유압 동력을 지탱하는 산업의 강직한 심장'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inlet Cavitation Detected - Fluid not filling the gear teeth quickly enough. High-fidelity 'Pitting' damage occurring on gear surfaces. Clear the inlet filter"
         return "PASS: Validated Intake Flow and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(actual_flow_lpm=45.0, motor_rpm=1500, system_pressure_bar=120.0)
 print(engine.diagnose_pump_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_pump_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gear-pump-efficiency-and-fluid-viscosity-v2026`와 연동되어, 전 세계 주요 유압 장비 및 정유 설비의 펌프 데이터를 실시간 분석하고 효율 저하 및 소자 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 유압 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gear-design-and-involute-profile-kinematics-physics

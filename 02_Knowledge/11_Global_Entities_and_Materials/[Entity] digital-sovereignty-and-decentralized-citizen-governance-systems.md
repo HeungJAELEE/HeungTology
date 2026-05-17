@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "digital-sovereignty-and-decentralized-citizen-governance-systems-entity"
-  domain: "20_Planetary_Governance"
+metadata:
+  id: "[[[Entity] digital-sovereignty-and-decentralized-citizen-governance-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Governance", "#Digital_Sovereignty", "#Decentralized_Governance", "#Blockchain", "#Direct_Democracy", "#Digital_Identity", "#Governance_AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 20_planetary-governance-and-bio-defense-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] digital-sovereignty-and-decentralized-citizen-governance-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] digital-sovereignty-and-decentralized-citizen-governance-systems
+# [Entity] digital-sovereignty-and-decentralized-citizen-governance-systems
 
 ## 1. [왜 배우는가? (Why: The Power of the Digital Individual)]]
 내 데이터와 권리를 국가나 거대 기업에 맡기지 않고, 내가 직접 소유하며 세상의 중요한 결정에 투표 한 번으로 즉각 참여할 수 있는 시스템이 있다면 어떨까요? **디지털 주권 및 탈중앙화 시민 거버넌스 시스템**은 블록체인과 AI를 결합해 투명하고 조작 불가능한 '디지털 민주주의의 설계 지침'입니다. 우리가 이를 배우는 이유는 중앙 집중화된 권력의 부패와 정보 왜곡을 막고, 개개인이 자신의 주권을 데이터로 행사하는 진정한 시민 지배를 구현하기 위함이며, "정치와 행정을 데이터로 투명화하는 '글로벌 디지털 주권 및 직접 민주주의 주권'을 확보하기" 위함입니다. 시스템의 투명성이 시민의 자유를 결정합니다.

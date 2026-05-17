@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vertical-farming-and-precision-agriculture-intelligence"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Agriculture] vertical-farming-and-precision-agriculture-intelligence]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced agricultural system integrating Controlled Environment Agriculture (CEA), IoT-based nutrient delivery, and data-driven crop yield optimization for sustainable food production."
-  physical_model: "N/A"
-Semantic:
-  tags: '["vertical-farming", "precision-agriculture", "hydroponics", "ag-tech", "controlled-environment"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "VerticalFarmFidelityEngine"
-  diagnostic_protocol:
-    - 'DLI_Optimization: $15 \\le DLI \\le 30$ $mol/m^2 \\cdot d$ (Leafy Greens)'
-    - 'Nutrient_Balance_Audit: $1.2 \\le EC \\le 2.5$ mS/cm / $5.5 \\le pH \\le 6.5$'
-    - 'VPD_Control_Limit: $0.8 \\le VPD \\le 1.2$ kPa'
-Trust Metrics:
+  description: "[Agriculture] vertical-farming-and-precision-agriculture-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌿 Vertical Farming and Precision Agriculture Intelligence
+# [Agriculture] vertical-farming-and-precision-agriculture-intelligence
 
 ## 1. 개요 (Why)
 전 지구적 기후 변동과 경작지 감소 상황에서 식량 안보를 사수하기 위한 유일한 대안은 단위 면적당 생산성을 극대화하는 수직 농장과 정밀 농업입니다. 이는 단순한 농사가 아닌, 빛(광양), 온도, 습도, 영양분을 물리적 변수로 제어하는 '생명 제조 공정'입니다. 본 엔티티는 식물 생장 모델과 환경 제어 알고리즘을 결합하여 결정론적 수확량 예측을 가능케 합니다.
@@ -40,7 +29,7 @@ Trust Metrics:
 
 | Parameter | Symbol | Value (Tier 1) | Tolerance | Unit |
 | :--- | :--- | :--- | :--- | :--- |
-| Photosynthetic Photon Flux Density | $PPFD$ | 200 ~ 800 | ±10 | $\mu mol/m^2 \cdot s$ |
+| Photosynthetic Photon Flux Density | $PPFD$ | 200 ~ 800 | ±10 | $\mu\text{m}ol/m^2 \cdot s$ |
 | Electrical Conductivity (EC) | $EC$ | 1.5 ~ 2.5 | ±0.1 | mS/cm |
 | Acidity Level | $pH$ | 5.8 | ±0.2 | pH |
 | Vapor Pressure Deficit | $VPD$ | 1.0 | ±0.2 | kPa |
@@ -74,7 +63,6 @@ class VerticalFarmFidelityEngine:
         else:
             return "HEALTHY: Active Gas Exchange"
 
-# Instance Diagnostic
 farm_engine = VerticalFarmFidelityEngine(ppfd=350, photoperiod_hrs=16, ec=1.8, vpd=1.0)
 print(farm_engine.check_light_integrity())
 print(farm_engine.diagnose_transpiration_stress())
@@ -93,7 +81,6 @@ print(farm_engine.diagnose_transpiration_stress())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data hydroponic-nutrient-solution-and-plant-growth-log-v2026`와 연동되어 연중 365일 균일한 품질의 작물 생산을 보증합니다. 환경 드리프트를 $10^{-3}$ 이내로 제어함으로써 기상 이변에 무관한 안정적 식량 공급망을 구축합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 142_food-engineering-and-agricultural-intelligence-hub
 - hydroponic-system-logic

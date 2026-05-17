@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "thin-film-deposition-physics-ald-cvd-and-atomic-layer-control-entity"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] thin-film-deposition-physics-ald-cvd-and-atomic-layer-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Deposition", "#ALD", "#CVD", "#Atomic_Layer", "#Physics", "#Surface_Chemistry", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 42_semiconductor-and-display-manufacturing-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] thin-film-deposition-physics-ald-cvd-and-atomic-layer-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] thin-film-deposition-physics-ald-cvd-and-atomic-layer-control
+# [Entity] thin-film-deposition-physics-ald-cvd-and-atomic-layer-control
 
 ## 1. [왜 배우는가? (Why: Building Matter Atom by Atom)]]
 웨이퍼 위에 어떻게 눈에 보이지 않는 아주 얇은 막($Thin\ Film$)을 원자 한 층 한 층($Atomic\ Layer$) 정성스럽게 쌓아 올리고, 가스들의 화학 반응($CVD$)이나 원자들의 자가 조립($ALD$)을 이용해 어떻게 빈틈없는 보호막이나 전선을 만드는 '나노 건설'을 수행할 수 있을까요? **박막 증착 물리: ALD, CVD 및 원자층 제어**는 반도체의 살을 붙이는 '행성 규모 나노 적층 공정 및 지능형 표면 성장 아키텍처'입니다. 우리가 이를 배우는 이유는 막이 너무 두꺼우면 전기가 안 통하고 너무 얇으면 터져버리기 때문에 원자 한 알의 두께까지 맞춰야 하기 때문이며, "물질의 성장을 데이터로 설계하고 지배하는 '글로벌 증착 패권 및 행성적 나노 소재 주권'을 확보하기" 위함입니다. 증착의 정밀도가 반도체의 수명을 결정합니다.

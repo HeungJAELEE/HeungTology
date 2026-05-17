@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "satellite-constellation-management-and-mesh-networking-entity"
-  domain: "52_Space_Exploration_and_Aerospace_Engineering"
+metadata:
+  id: "[[[Entity] satellite-constellation-management-and-mesh-networking]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Space", "#Satellite_Constellation", "#Mesh_Network", "#LEO", "#Connectivity", "#Internet", "#Aerospace", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 52_space-exploration-and-aerospace-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] satellite-constellation-management-and-mesh-networking에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] satellite-constellation-management-and-mesh-networking
+# [Entity] satellite-constellation-management-and-mesh-networking
 
 ## 1. [왜 배우는가? (Why: The Sky Network)]]
 수천 개의 위성을 저궤도($LEO$)에 띄워 지구 어디서나 끊김 없는 초고속 인터넷을 어떻게 제공하고, 지상의 기지국 없이 위성들끼리 레이저로 대화하며($ISL$) 데이터를 빛의 속도로 실어 나르는 '우주 인터넷 인프라'를 어떻게 설계할 수 있을까요? **위성 군집 관리 및 메쉬 네트워킹**은 전 지구를 하나의 데이터망으로 묶는 '행성 규모 초연결 인프라 및 지능형 위성 네트워크 아키텍처'입니다. 우리가 이를 배우는 이유는 위성 군집이 있어야만 오지나 바다 위에서도 자율주행과 통신이 가능하기 때문이며, "하늘의 길을 데이터로 설계하고 지배하는 '글로벌 통신 패권 및 행성적 정보 주권'을 확보하기" 위함입니다. 네트워크의 밀도가 정보의 자유를 결정합니다.

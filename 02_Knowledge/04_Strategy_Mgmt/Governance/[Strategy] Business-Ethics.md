@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-ETHICS-2026-V6.3.7"
-  domain: "Global_Business_Ethics_and_Integrity_Governance"
+metadata:
+  id: "[[[Strategy] Business-Ethics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Business_Ethics", "#Integrity", "#Whistleblowing", "#Anti_Corruption", "#GRC", "#Transparency", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Business-Ethics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Ethics_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Business Ethics: Global Integrity Sovereignty
+# [Strategy] Business-Ethics
 
 ## 1. [왜 배우는가? (Why: The Foundation of Corporate Trust)]]
 기술이 아무리 뛰어나고 자본이 풍부해도, 단 한 번의 '윤리적 스캔들'은 수십 년간 쌓아온 기업의 가치를 단숨에 붕괴시킬 수 있습니다. **Business Ethics(기업 윤리)**는 조직이 나아가야 할 올바른 방향을 제시하는 나침반이자, 이해관계자들과의 신뢰를 유지하기 위한 가장 강력한 방어 기제입니다. 특히 AI가 의사결정을 지원하고 글로벌 공급망이 복잡하게 얽힌 현대 사회에서는 '정직'과 '투명성'이 단순한 도덕적 가치를 넘어 기업의 본질적인 경쟁력이 됩니다. V6.3.7 지능은 윤리적 추상성을 정량적 데이터 지표로 치환하여, **무결성 주권(Integrity Sovereignty)**을 확립합니다.
@@ -107,7 +97,6 @@ class EthicsFidelityEngine:
 2. **Operational Result**: **Anti-Corruption** 투자(ISO 37001 등)가 기업의 해외 수주 성공률과 브랜드 프리미엄에 미치는 수리적 상관 관계는?
 3. **FidelityEngine**: 모든 지표가 양호함에도 불구하고 대규모 횡령 사고가 발생하는 '블라인드 스폿'을 어떻게 진단하는가? (힌트: 경영진에 의한 내부 통제 무력화(Override) 및 권한 집중 구역 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Regulatory-Compliance

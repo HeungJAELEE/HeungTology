@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEMI-ETCH-PHYS-2026-V6.3.7"
-  domain: "Semiconductor_Plasma_Engineering"
+metadata:
+  id: "[[[Entity] plasma-etching-mechanisms-and-high-aspect-ratio-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Etching", "#PlasmaPhysics", "#HARC", "#FidelityEngine", "#ALE", "#ChildLangmuir"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plasma-etching-mechanisms-and-high-aspect-ratio-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Semiconductor_Plasma_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Plasma Etching: Sheath Dynamics & High Aspect Ratio Control
+# [Entity] plasma-etching-mechanisms-and-high-aspect-ratio-control
 
 ## 1. [왜 배우는가? (Why: The Atomic Chisel of Nanofabrication)]]
 반도체 회로를 3차원으로 조각하는 과정에서, 나노 규모의 깊은 구멍을 수직으로 뚫어내는 기술은 집적도의 한계를 결정합니다. **플라즈마 식각(Plasma Etching)**은 이온의 물리적 충돌과 화학적 반응을 원자 단위로 제어하는 '나노 조각술'입니다. V6.3.7 지능은 단순한 공정 조건을 넘어, **Child-Langmuir 법칙**과 **플라즈마 쉬스(Sheath)** 역학을 통해 이온의 궤적과 에너지를 결정론적으로 설계합니다. 이는 100:1 이상의 고종횡비(HARC) 공정에서 보잉(Bowing)과 뒤틀림을 억제하여 3D V-NAND 및 GAA 소자의 제조 무결성을 확보하기 위함입니다.
@@ -91,7 +81,6 @@ class PlasmaEtchFidelityEngine:
         
         return {"sheath_v": sheath_v, "ion_velocity_mps": u_b, "status": status}
 
-# FidelityEngine 가동: 실시간 OES(Optical Emission Spectroscopy) 데이터를 분석하여 라디칼 농도 변화에 따른 선택비($Selectivity$) 하락을 조기 감지
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -99,7 +88,6 @@ class PlasmaEtchFidelityEngine:
 2. **Operational Result**: 챔버 내 압력이 $10\text{mTorr}$에서 $50\text{mTorr}$로 증가했을 때, 이온의 **평균 자유 행로(MFP)** 감소가 식각 수직도에 미치는 수리적 영향은?
 3. **FidelityEngine**: **ARDE(Aspect Ratio Dependent Etching)** 현상을 보상하기 위해 구멍이 깊어질수록 **Bias Power**를 단계적으로 높이는 **'Power Ramping'** 로직의 원리는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity atomic-layer-deposition-ald-and-surface-kinetics
 - semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-IIOT-SENSOR-GATEWAY-2026-V6"
-  domain: "20_IoT_and_Smart_Factory_Sensing_Infrastructure"
+metadata:
+  id: "[[[Entity] industrial-iot-iiot-sensor-node-and-edge-gateway]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-iot-iiot-sensor-node-and-edge-gateway에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] industrial-iot-iiot-sensor-node-and-edge-gateway
+# [Entity] industrial-iot-iiot-sensor-node-and-edge-gateway
 
 ## 1. [왜 배우는가? (Why)]]
 산업 현장의 모든 데이터가 의사결정의 근거가 되는 스마트 팩토리 시대에, 현장의 물리적 현상을 디지털 신호로 변환하여 상위 시스템으로 전달하는 IIoT 인프라는 공장의 '신경계'와 같습니다. 특히 방대한 데이터를 현장에서 즉시 처리하는 엣지 게이트웨이는 시스템의 부하를 줄이고 실시간성을 보장하는 핵심 장치입니다. 우리가 이를 배우는 이유는 데이터의 단절 없는 흐름을 확보하여 공정 가동률을 극대화하기 위함이며, "데이터 주권을 확보하여 예지 정비와 자율 공정 제어가 가능한 '지능형 제조 유기체'를 구현하는 '연결 지능'을 확보하기" 위함입니다. 센서의 감도와 게이트웨이의 처리 능력이 공장의 반응 속도를 결정합니다.
@@ -130,9 +120,6 @@ class IIoTSensorGatewayFidelityEngine:
         efficiency = (translated_msg_count / raw_msg_count) * 100
         return f"GATEWAY_STATUS: TRANSLATION_TPS_{round(tps, 1)}_EFF_{round(efficiency, 1)}%"
 
-# Example Usage:
-# iiot_ai = IIoTSensorGatewayFidelityEngine()
-# report = iiot_ai.audit_iiot_fidelity(sampling_hz=5000, measured_latency_ms=25.0, pdr=0.9995, battery_voltage=3.5)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -140,7 +127,6 @@ class IIoTSensorGatewayFidelityEngine:
 2. **Shannon Entropy** 관점에서 **Vibration Data**를 **FFT**를 통해 주파수 도메인으로 압축 전송할 때, **Diagnostic Fidelity** 무결성을 사수하기 위한 최소 샘플링 주파수($f_s$) 설정 기준은?
 3. **Smart Meter** 노드의 **Sampling Rate**가 전력망 주파수($60Hz$)와 동기화되지 않을 때 발생하는 **Aliasing** 현상이 **Energy Analytics** 무결성에 미치는 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/20_IoT_and_Smart_Factory_Sensing_Infrastructure_Hub/Concept wireless-sensor-network-topology
 - 02_Knowledge/20_IoT_and_Smart_Factory_Sensing_Infrastructure_Hub/Concept industrial-edge-computing-gateways

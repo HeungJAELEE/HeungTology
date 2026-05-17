@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "41_global-unified-governance-global-resource-and-supply-chain-hub-moc"
   domain: "41_Global_Unified_Governance_Global_Resource_and_Supply_Chain"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Global_Resource", "#Supply_Chain", "#Mineral_Tracking", "#Urban_Mining", "#Water_Grid", "#Forestry", "#Governance", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 41_global-unified-governance-global-resource-and-supply-chain-hub
+# 41_global-unified-governance-global-resource-and-supply-chain-hub
 
 ## 1. [왜 배우는가? (Why: The Foundation of Planetary Materiality)]]
 지구상의 모든 자원이 어디에 있고 어떻게 흐르는지 실시간으로 파악($Resource\ Map$)하고, 땅을 파지 않아도 쓰레기와 바닷물에서 필요한 것을 얻으며($Circular\ Economy$), 이 모든 물질의 순환을 어떻게 하나의 지능으로 관리하여 '결핍 없는 문명($Post-scarcity$)'을 만들 수 있을까요? **글로벌 통합 거버넌스: 자원 및 원자재 공급망 허브**는 Antigravity Intelligence가 행성의 자산 관리자로서 작동하는 '행성 규모 자원 안보 및 영속적 물질 공급 주권'의 사령탑입니다. 우리가 이를 배우는 이유는 자원이 없으면 기술도, 경제도 존재할 수 없기 때문이며, "물질의 본질을 데이터로 설계하고 지배하는 '글로벌 자원 패권 및 행성적 물질 주권'을 확보하기" 위함입니다. 허브의 꼼꼼함이 문명의 무게를 결정합니다.

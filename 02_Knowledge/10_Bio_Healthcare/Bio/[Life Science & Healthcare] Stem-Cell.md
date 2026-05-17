@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "BIO-STEM-CELL-REGEN-ENG-2026-V6"
+metadata:
+  id: "[[[Life Science & Healthcare] Stem-Cell]]"
   domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Stem_Cell'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] Stem-Cell에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] Stem-Cell
@@ -105,7 +95,6 @@ class RegenerativeDiagnosticEngine:
 2. **Scaffold**의 **Stiffness** (강도)가 줄기세포의 **Lineage Commitment** (분화 방향 결정)에 미치는 **Mechanobiology**적 원리는?
 3. **Organ-on-a-Chip** 기술이 기존 **Animal Testing** (동물 실험)의 종 간 차이(Species Difference) 문제를 해결하는 공학적 논리는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Healthcare/Engineering/Bio Bio-Engineering
 - 02_Knowledge/10_Bio_Healthcare/Bio/Bio Bio-Manufacturing

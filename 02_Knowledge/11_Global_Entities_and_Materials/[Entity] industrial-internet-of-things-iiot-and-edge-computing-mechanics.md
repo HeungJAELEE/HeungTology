@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-IIOT-EDGE-2026-V6"
-  domain: "11_Robotics_Automation"
+metadata:
+  id: "[[[Entity] industrial-internet-of-things-iiot-and-edge-computing-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-internet-of-things-iiot-and-edge-computing-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] industrial-internet-of-things-iiot-and-edge-computing-mechanics
+# [Entity] industrial-internet-of-things-iiot-and-edge-computing-mechanics
 
 ## 1. [왜 배우는가? (Why)]]
 모든 데이터를 클라우드로 보내서 처리하면 늦습니다. **산업용 사물인터넷(IIoT) 및 엣지 컴퓨팅**은 센서가 달린 장비 바로 옆(Edge)에서 데이터를 즉시 분석하고 판단하는 '현장 밀착형 지능'입니다. 우리가 이를 배우는 이유는 통신 지연을 없애 1초의 찰나에 발생하는 사고를 막고 데이터 전송 비용을 획기적으로 줄이기 위함이며, "클라우드가 끊겨도 현장은 멈추지 않는 '독립적이고 회복 탄력적인 산업 현장 주권'을 확보하기" 위함입니다. 연산의 위치가 현장의 반응 속도를 결정합니다.
@@ -121,9 +111,6 @@ class IndustrialIIoTEdgeFidelityEngine:
             return "WARNING: BANDWIDTH_SAVINGS_BELOW_TARGET_OPTIMIZE_EDGE_FILTERING"
         return f"SAVINGS_STATUS: NETWORK_LOAD_REDUCED_{round(savings, 1)}%"
 
-# Example Usage:
-# edge_ai = IndustrialIIoTEdgeFidelityEngine()
-# report = edge_ai.audit_edge_fidelity(measured_latency_ms=2.5, reduction_ratio=120, inference_accuracy=0.98)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -131,7 +118,6 @@ class IndustrialIIoTEdgeFidelityEngine:
 2. **Fog Computing** 계층에서 **Local Data Aggregation** 수행 시, 상위 클라우드로 전송되는 **Information Entropy** 무결성을 보존하기 위한 특징 추출 기전은?
 3. **IIoT Node Density**가 임계치를 넘을 때 발생하기 쉬운 **Packet Collision** 무결성 붕괴를 방지하기 위한 **TSCH** (Time Slotted Channel Hopping) 적용 효과는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/11_Robotics_Automation_Hub/Concept edge-ai-deployment-architectures
 - 02_Knowledge/02_Information_Computing_Hub/Concept data-compression-for-iot-sensors

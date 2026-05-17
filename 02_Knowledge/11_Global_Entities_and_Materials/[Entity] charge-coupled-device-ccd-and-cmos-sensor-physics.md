@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "charge-coupled-device-ccd-and-cmos-sensor-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] charge-coupled-device-ccd-and-cmos-sensor-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Semiconductor devices that capture light and convert it into electrical signals for digital imaging, with CCDs using a bucket-brigade charge transfer and CMOS sensors using per-pixel amplification (CCD and CMOS Sensors) and the solid-state physics governing the photoelectric effect and charge transport within these pixels (Image Sensor Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ccd", "cmos-sensor", "image-sensor", "photodetector", "semiconductor-physics", "digital-imaging", "quantum-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Imaging_Fidelity_Audit: Evaluate the ''Quantum Efficiency'' ($\\eta$) across different wavelengths to identify if the sensor''s spectral response is optimized for the target imaging application (e.g., NIR for industrial inspection).'
-    - 'Noise_Integrity_Check: Analyze the ''Dark Current'' and ''Read Noise'' levels to ensure the sensor can maintain a high Signal-to-Noise Ratio (SNR) in low-light or long-exposure conditions.'
-    - 'Pixel_Fidelity_Scan: Monitor the ''Full Well Capacity'' and dynamic range to verify that ''Blooming'' or clipping is not losing critical highlight information in high-contrast scenes.'
-Trust Metrics:
+  description: "[Entity] charge-coupled-device-ccd-and-cmos-sensor-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📸 Charge-Coupled Device (CCD) and CMOS Sensor Physics
+# [Entity] charge-coupled-device-ccd-and-cmos-sensor-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰 카메라가 세상을 보는 '눈'은 어떻게 빛을 디지털 데이터로 바꿀까요? **CCD 및 CMOS 센서 물리**는 빛의 입자(광자)를 전기라는 언어로 번역하는 **'나노 광학의 번역기'** 기술입니다. 수천만 개의 작은 우물(픽셀)이 빛을 받아 전자로 채우고, 이를 정밀하게 읽어내어 우리가 보는 사진과 영상으로 만듭니다. 칠흑 같은 어둠 속에서도 사물을 식별하고 초고속의 찰나를 포착하는 **'디지털 영상 문명의 망막'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Narrow Dynamic Range - Pixels saturating too quickly. Risk of highlight clipping in high-contrast industrial environments"
         return "PASS: Validated Tone Mapping and Verified Imaging Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(quantum_efficiency_pct=75.0, read_noise_electrons=1.5, pixel_defect_rate=0.0001)
 print(engine.diagnose_sensor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sensor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data image-sensor-quantum-efficiency-and-read-noise-v2026`와 연동되어, 전 세계 주요 반도체 검사 및 자율주행 센서의 데이터를 실시간 분석하고 불량 픽셀 및 노이즈 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 영상 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

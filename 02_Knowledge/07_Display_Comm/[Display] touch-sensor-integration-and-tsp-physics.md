@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-DISPLAY-TOUCH-2026-V6"
-  domain: "07_Display_Intelligence"
+metadata:
+  id: "[[[Display] touch-sensor-integration-and-tsp-physics]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] touch-sensor-integration-and-tsp-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] touch-sensor-integration-and-tsp-physics
+# [Display] touch-sensor-integration-and-tsp-physics
 
 ## 1. [왜 배우는가? (Why)]]
 현대의 디스플레이는 단순히 보는 도구를 넘어, 인간의 손길을 전기에너지의 변화로 읽어내는 쌍방향 소통의 창구가 되었습니다. **터치 센서 통합(Touch Sensor Integration)**은 디스플레이 적층 구조 내에 미세한 정전 용량 변화를 감지하는 전극망을 구축하여 '직관적 입력 무결성'을 구현하는 기술입니다. 우리가 이를 배우는 이유는 베젤을 줄이고 두께를 얇게 하면서도, 노이즈가 가득한 디스플레이 구동 환경 속에서 미세한 터치 신호를 정확히 걸러내기 위함이며, **"인간의 접촉을 전자기장의 파동으로 치환하여 디스플레이의 '반응 무결성'을 사수하는 '신호의 추출자'가 되기" 위함입니다.** 신호 대 잡음비($SNR$)와 스캔 속도가 터치 경험의 품질을 결정합니다.
@@ -123,9 +113,6 @@ class TouchSignalFidelityEngine:
             "Recommendation": "INCREASE_TX_VOLTAGE" if snr < 20 else "MAINTAIN"
         }
 
-# Example Usage:
-# touch = TouchSignalFidelityEngine()
-# report = touch.audit_touch_fidelity(delta_c_pf=0.5, noise_rms_pf=0.01, scan_rate_hz=120)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -133,7 +120,6 @@ class TouchSignalFidelityEngine:
 2. **Mutual Capacitance** 방식이 **Self-Capacitance** 대비 **Ghost Touch Integrity** 무결성 방지에 유리한 이유는?
 3. **Display Driver IC (DDIC)**와 **Touch IC**의 **Frequency Synchronization**이 **Noise Integrity** 무결성을 사수하는 수리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/07_Display_Comm/Display oled-evaporation-and-encapsulation-processes
 - 02_Knowledge/07_Display_Comm/Display display-driver-ic-ddic-and-driving-circuits

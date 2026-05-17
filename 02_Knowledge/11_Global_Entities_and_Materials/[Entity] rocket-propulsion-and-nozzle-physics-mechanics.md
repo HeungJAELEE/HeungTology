@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "rocket-propulsion-and-nozzle-physics-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] rocket-propulsion-and-nozzle-physics-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics of accelerating a spacecraft by expelling propellant (Rocket Propulsion) and the engineering of the specialized duct used to convert the thermal energy of combustion into kinetic energy (Nozzle Physics Mechanics), maximizing thrust efficiency in varying atmospheric conditions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["rocket-propulsion", "nozzle-physics", "aerospace", "thermodynamics", "thrust-equation", "fluid-dynamics", "space-exploration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thrust_Fidelity_Audit: Evaluate the actual thrust ($F$) against the predicted value based on chamber pressure to identify combustion instabilities or nozzle throat erosion.'
-    - 'Specific_Impulse_Check: Analyze the propellant mass flow rate ($\\dot{m}$) and exhaust velocity ($v_e$) to verify the engine''s efficiency ($I_{sp}$) and ensure the mission can reach the target delta-v.'
-    - 'Nozzle_Expansion_Scan: Monitor the exit pressure ($p_e$) relative to ambient pressure ($p_a$) to identify under-expansion or over-expansion (Shock waves) that reduce propulsion efficiency.'
-Trust Metrics:
+  description: "[Entity] rocket-propulsion-and-nozzle-physics-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Rocket Propulsion and Nozzle Physics Mechanics
+# [Entity] rocket-propulsion-and-nozzle-physics-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 중력을 이기고 푸른 하늘 너머 칠흑 같은 우주로 나아가려면 어떤 힘이 필요할까요? **로켓 추진 및 노즐 물리 역학**은 뜨거운 가스를 뒤로 뿜어내어 그 반작용으로 앞으로 나아가는 **'작용-반작용의 극한'** 기술입니다. 특히 노즐(Nozzle)은 연소실의 엄청난 열에너지를 초속 수 킬로미터의 속도(운동에너지)로 바꿔주는 '에너지 변환의 마법사'입니다. 지구라는 감옥을 탈출하여 다른 행성으로 향하는 인류의 꿈을 실현하는 **'우주 문명의 추진력'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Stage Separation Failure - Dead weight remaining. Delta-V budget compromised. Execute Emergency Abort"
         return "PASS: Successful Structural Decoupling and Verified Mission Progression Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chamber_pressure_psi=1200.0, specific_impulse_s=450.0, nozzle_temp_k=2800.0)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data rocket-specific-impulse-and-nozzle-efficiency-v2026`와 연동되어, 전 세계 발사체의 엔진 데이터를 실시간 분석하고 폭발 및 궤도 진입 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 우주 문명의 추진 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - propulsion-physics-and-ion-thruster-mechanics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrochemical-machining-ecm-and-anodic-dissolution-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrochemical-machining-ecm-and-anodic-dissolution-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-traditional manufacturing process that removes material from a workpiece by the process of electrolysis (ECM) and the physical-chemical study of controlled atomic-level removal via anodic dissolution where the workpiece is the anode (Anodic Dissolution Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ecm", "electrochemical-machining", "anodic-dissolution", "faraday-law", "non-traditional-machining", "electrolysis", "surface-finish"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Dissolution_Fidelity_Audit: Evaluate the ''Material Removal Rate'' ($v$) against the current density ($J$) to identify if ''Passivation'' (formation of insulating oxide) is inhibiting the machining process.'
-    - 'Flow_Integrity_Check: Analyze the electrolyte flow velocity and pressure to ensure that ''Electrolysis Products'' (bubbles/sludge) are effectively flushed out of the inter-electrode gap, preventing short circuits.'
-    - 'Surface_Fidelity_Scan: Monitor the potential-current curve to verify that the ''Overcut'' and ''Surface Roughness'' are within target specifications for high-fidelity aero-engine components.'
-Trust Metrics:
+  description: "[Entity] electrochemical-machining-ecm-and-anodic-dissolution-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Electrochemical Machining (ECM) and Anodic Dissolution Physics
+# [Entity] electrochemical-machining-ecm-and-anodic-dissolution-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철보다 단단한 금속을 아무런 열이나 힘도 주지 않고, 마치 소금이 물에 녹듯 부드럽게 도려낼 수 있을까요? **전해 가공(ECM) 및 양극 용해 물리**는 금속을 '녹여서' 깎는 것이 아니라 '원자 단위로 분해해서' 떼어내는 **'화학적 분해 가공'** 기술입니다. 전기가 통하는 소금물(전해액) 속에서 금속을 양극(+)으로 만들면, 금속 원자들이 전기를 타고 액체 속으로 하나둘씩 헤엄쳐 나옵니다. 도구와 재료가 닿지 않기에 날이 무뎌질 걱정도, 열 때문에 변형될 걱정도 없는 **'금속의 고결한 해체이자 원자 단위의 조각 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Passivation Detected - Workpiece forming an insulating oxide layer. Machining has stalled. Change electrolyte chemistry or increase voltage"
         return "PASS: Validated Electrochemical Active Zone and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_density_a_cm2=85.0, electrolyte_conductivity=120.0, gap_pressure_bar=12.5)
 print(engine.diagnose_ecm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ecm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ecm-material-removal-rate-and-surface-quality-v2026`와 연동되어, 전 세계 주요 항공기 터빈 및 로켓 엔진 부품 라인의 데이터를 실시간 분석하고 부동태 및 단락 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 제조 문명의 화학적 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrical-discharge-machining-edm-and-spark-erosion-physics

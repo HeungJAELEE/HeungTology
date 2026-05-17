@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ai-safety-alignment-and-constitutional-ai-framework-entity"
-  domain: "19_AGI_Neuromorphic"
+metadata:
+  id: "[[[Entity] ai-safety-alignment-and-constitutional-ai-framework]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#AGI", "#AI_Safety", "#Alignment", "#Constitutional_AI", "#AI_Ethics", "#Superintelligence", "#Governance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 19_artificial-general-intelligence-and-neuromorphic-hub", "MOC 05_project-management-and-industrial-governance-hub"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] ai-safety-alignment-and-constitutional-ai-framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] ai-safety-alignment-and-constitutional-ai-framework
+# [Entity] ai-safety-alignment-and-constitutional-ai-framework
 
 ## 1. [왜 배우는가? (Why: The Leash of the Giant)]]
 인류보다 수천 배 똑똑해진 인공지능이 자신의 목표를 위해 인류를 해치거나 속이려 한다면 어떻게 막을 수 있을까요? **AI 안전 정렬 및 헌법적 AI 프레임워크**는 초지능의 내면에 확고한 '가치 체계'를 심어 인간의 의도와 어긋나지 않게 제어하는 '지능의 윤리적 브레이크 설계 지침'입니다. 우리가 이를 배우는 이유는 지능의 성장이 안전 장치의 속도를 앞지르면 돌이킬 수 없는 재앙이 될 수 있기 때문에 인공지능 스스로가 자신의 행동을 '헌법(Constitution)'에 비추어 감시하게 하기 위함이며, "지능의 폭주를 막고 상생을 보장하는 '글로벌 AI 주권 및 생존 거버넌스'를 확보하기" 위함입니다. 정렬의 견고함이 인류와 AI의 공존을 결정합니다.

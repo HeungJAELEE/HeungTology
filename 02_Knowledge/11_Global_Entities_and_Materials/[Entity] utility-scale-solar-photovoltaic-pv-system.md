@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "utility-scale-solar-photovoltaic-pv-system"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] utility-scale-solar-photovoltaic-pv-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A massive facility consisting of thousands of solar panels that convert sunlight into electricity for the utility grid (Utility-Scale Solar PV System) and the engineering of trackers, inverters, and sub-stations to maximize energy yield and grid reliability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["solar-pv", "utility-scale", "photovoltaic", "solar-farm", "inverter-technology", "grid-integration", "renewable-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'System_Fidelity_Audit: Evaluate the ''Performance Ratio'' (PR) to identify losses from shading, soiling, or inverter inefficiency that degrade the multi-megawatt output.'
-    - 'Inverter_Integrity_Check: Analyze the Harmonic Distortion and reactive power capability of the Central Inverters to ensure they are supporting the grid voltage rather than destabilizing it.'
-    - 'Tracking_Accuracy_Scan: Monitor the Single-axis Tracker angles relative to the sun''s position to identify mechanical failures or ''Back-tracking'' algorithm errors that reduce irradiance capture.'
-Trust Metrics:
+  description: "[Entity] utility-scale-solar-photovoltaic-pv-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Utility-Scale Solar Photovoltaic (PV) System
+# [Entity] utility-scale-solar-photovoltaic-pv-system
 
 ## 1. 개요 (Why: 인간적 통찰)
 지평선 끝까지 펼쳐진 수만 장의 유리 판이 어떻게 하나의 거대한 발전소가 되어 도시 전체에 전기를 공급할까요? **유틸리티급 태양광(PV) 발전 시스템**은 태양이라는 영원한 불꽃을 거두어들이는 **'에너지의 대지 예술'**이자 공학입니다. 개별 태양전지의 물리를 넘어, 수천 에이커의 땅을 가로지르는 전기 배선, 해를 따라 움직이는 추적 장치(Tracker), 그리고 직류를 교류로 바꾸는 거대 인버터가 오케스트라처럼 협연합니다. 탄소 없는 지구를 위한 **'지능형 햇빛 공장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Soiling Potential - Energy loss > 5% due to dust accumulation. Deploy robotic cleaning drones"
         return "PASS: Clean Panel Surface and Verified Optical Transmission Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(performance_ratio=0.82, inverter_uptime_pct=99.9, tracker_error_deg=0.5)
 print(engine.diagnose_solar_farm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_solar_farm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data solar-farm-irradiance-and-performance-ratio-v2026`와 연동되어, 전 세계 거대 태양광 단지의 데이터를 실시간 분석하고 성능 저하 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 청정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - solar-cell-physics-and-photovoltaic-efficiency

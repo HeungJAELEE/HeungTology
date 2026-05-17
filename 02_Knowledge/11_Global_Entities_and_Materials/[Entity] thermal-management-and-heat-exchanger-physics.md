@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "thermal-management-and-heat-exchanger-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] thermal-management-and-heat-exchanger-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The monitoring and control of temperature in electronic or industrial systems to ensure reliable operation (Thermal Management) and the engineering of devices that transfer heat between two or more fluids at different temperatures (Heat Exchanger Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["thermal-management", "heat-exchanger", "thermodynamics", "cooling-systems", "heat-transfer", "industrial-cooling", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the actual heat transfer rate ($Q$) against the design capacity to identify fouling or scaling on the heat exchanger surfaces.'
-    - 'Efficiency_Integrity_Check: Analyze the temperature approach (Difference between hot outlet and cold inlet) to verify the effectiveness of the thermal management strategy.'
-    - 'Pressure_Drop_Scan: Monitor the fluid pressure drop across the exchanger to identify clogging or pump performance degradation that impacts cooling efficiency.'
-Trust Metrics:
+  description: "[Entity] thermal-management-and-heat-exchanger-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Thermal Management and Heat Exchanger Physics
+# [Entity] thermal-management-and-heat-exchanger-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 데이터 센터나 전기차의 배터리가 뜨겁게 달궈질 때, 어떻게 폭발하지 않고 시원하게 유지될 수 있을까요? **열 관리 및 열교환기 물리**는 에너지가 흐르는 곳이라면 어디든 발생하는 '열'이라는 부산물을 효과적으로 다스리는 **'에너지의 교통 정리'** 기술입니다. 열을 그냥 내버려 두면 기계를 파괴하는 독이 되지만, 열교환기를 통해 적절히 옮겨주면 시스템의 생명을 연장하고 때로는 그 열을 다시 에너지로 쓰는 지혜가 됩니다. 문명을 태우지 않고 움직이게 하는 **'보이지 않는 냉각의 미학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Degraded Thermal Interface - Air gaps or drying of TIM detected. Re-apply thermal paste/pad to prevent CPU/GPU throttling"
         return "PASS: Stable Thermal Contact and Verified Heat Dissipation Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(heat_transfer_efficiency=0.92, coolant_pressure_drop=0.5, outlet_temp_c=45.0)
 print(engine.diagnose_thermal_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_thermal_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data heat-exchanger-efficiency-and-thermal-load-v2026`와 연동되어, 전 세계 주요 발전소 및 서버 팜의 열 데이터를 실시간 분석하고 과열 폭발 및 가동 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 온도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "human-robot-interaction-hri-and-cobot-safety-standards"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] human-robot-interaction-hri-and-cobot-safety-standards]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of communication and coordination between humans and robots (HRI) and the specific safety protocols and technical standards (ISO 10218, ISO/TS 15066) that enable collaborative robots (Cobots) to work alongside people without physical barriers."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hri", "cobot", "safety-standards", "iso-10218", "human-robot-collaboration", "collision-detection"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Safety_Distance_Audit: Calculate the dynamic ''Speed and Separation Monitoring'' (SSM) distances to ensure the robot can stop before contacting a human.'
-    - 'Force_Limiting_Check: Evaluate the robot''s ability to instantly stop or reverse motion when a contact force exceeding the safety threshold (e.g., 140 N) is detected.'
-    - 'Intuitive_Interface_Scan: Analyze the usability and clarity of haptic, visual, or vocal interfaces used for human-robot communication to prevent operational errors.'
-Trust Metrics:
+  description: "[Entity] human-robot-interaction-hri-and-cobot-safety-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤝 Human-Robot Interaction (HRI) and Cobot Safety Standards
+# [Entity] human-robot-interaction-hri-and-cobot-safety-standards
 
 ## 1. 개요 (Why: 인간적 통찰)
 과거의 산업용 로봇은 사람을 다치게 할 수 있어 철창(Fence) 안에 갇혀 지냈습니다. 하지만 이제 로봇은 철창을 나와 우리 옆에서 함께 물건을 나르고 조립하는 '동료'가 되었습니다. **인간-로봇 상호작용(HRI) 및 협동 로봇(Cobot) 안전 표준**은 로봇이 사람의 살결에 닿아도 아프지 않게, 사람이 다가오면 스스로 속도를 줄여 배려하게 만드는 **'로봇의 예절과 안전수칙'**입니다. 기술적 정밀함을 넘어, 인간이 로봇을 두려워하지 않고 신뢰하며 함께 일할 수 있는 **'공존의 규칙'**을 세우는 일입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Power and Force Limiting Failed - Force Exceeded Human Pain Threshold"
         return "PASS: Force Limiting Logic Functional"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(sensor_redundancy_ok=True, impact_detection_sensitivity=0.98, response_latency_ms=45)
 print(engine.diagnose_cobot_safety())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_cobot_safety())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cobot-safety-violation-and-impact-incident-logs-v2026`와 연동되어, 산업 현장에서 가동 중인 모든 협동 로봇의 안전 로그를 실시간 분석하고 인명 사고 확률을 0.0001% 이하로 억제함으로써 인간과 기계가 신뢰하며 일하는 공존의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - haptic-feedback-and-tactile-sensor-physics

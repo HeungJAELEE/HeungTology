@@ -1,40 +1,29 @@
 ---
-Basic:
-  id: "actuator-dynamics-and-precision-servo-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] actuator-dynamics-and-precision-servo-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mechanical and electrical behavior of components that move or control a mechanism or system (Actuator Dynamics) and the algorithmic feedback systems that ensure those movements are executed with extreme accuracy and repeatability (Precision Servo Control Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["actuator", "servo-control", "robotics", "motion-control", "pid", "precision-engineering", "mechatronics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Control_Fidelity_Audit: Evaluate the ''Following Error'' (Position Lag) to identify if the servo gains are properly tuned for the current load inertia ($J$).'
-    - 'Actuator_Integrity_Check: Analyze the motor current consumption ($I$) and temperature to identify mechanical friction or winding degradation that reduces torque output.'
-    - 'Stability_Fidelity_Scan: Monitor the ''Frequency Response'' (Bode Plot) of the control loop to ensure sufficient phase margin and prevent oscillatory instability near resonance.'
-Trust Metrics:
+  description: "[Entity] actuator-dynamics-and-precision-servo-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Actuator Dynamics and Precision Servo Control Logic
+# [Entity] actuator-dynamics-and-precision-servo-control-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
-로봇 팔이 수 마이크로미터($\mu m$)의 오차도 없이 일사불란하게 움직이거나, 자율 주행차가 핸들을 0.1도 단위로 꺾는 비결은 무엇일까요? **액추에이터 역학 및 정밀 서보 제어 로직**은 전기 에너지를 '정교한 움직임'으로 바꾸는 **'기계의 근육과 신경'** 기술입니다. 단순한 모터 회전을 넘어, 외부의 저항과 자신의 무게를 실시간으로 계산하여 목표 지점에 '착' 달라붙게 만드는 지능형 운동 시스템입니다. 기계에 생명과 같은 섬세함을 불어넣는 **'움직임의 정수'**입니다.
+로봇 팔이 수 마이크로미터($\mu\text{m}$)의 오차도 없이 일사불란하게 움직이거나, 자율 주행차가 핸들을 0.1도 단위로 꺾는 비결은 무엇일까요? **액추에이터 역학 및 정밀 서보 제어 로직**은 전기 에너지를 '정교한 움직임'으로 바꾸는 **'기계의 근육과 신경'** 기술입니다. 단순한 모터 회전을 넘어, 외부의 저항과 자신의 무게를 실시간으로 계산하여 목표 지점에 '착' 달라붙게 만드는 지능형 운동 시스템입니다. 기계에 생명과 같은 섬세함을 불어넣는 **'움직임의 정수'**입니다.
 
 ## 2. 기초 원리 및 핵심 공식 (Foundational Principles & Mathematics)
 
@@ -57,7 +46,7 @@ $$ u(t) = K_p e(t) + K_i \int e(t) dt + K_d \frac{de(t)}{dt} $$
 | Feature | Standard Stepper Motor | Precision Servo System (V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Feedback** | Open-loop (Guessing) | Closed-loop (Absolute Sync)| - | Reliability |
-| **Position Accuracy**| ~ 100 | < 1 ~ 10 (High Res) | $\mu m$ | Precision |
+| **Position Accuracy**| ~ 100 | < 1 ~ 10 (High Res) | $\mu\text{m}$ | Precision |
 | **Response Time** | > 50 (Slow) | < 1 ~ 5 (Ultra Fast) | ms | Agility |
 | **Encoder Res.** | Low | > 20-bit (Millions of pulses)| - | Resolution |
 | **Load Handling** | Fixed Torque | Dynamic Compensation | - | Versatility |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Encoder Signal Integrity Failure - Pulse loss detected due to EMI or optical contamination. Risk of runaway motion"
         return "PASS: Clean Feedback Loop and Verified Motion Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(following_error_um=2.5, torque_ripple_pct=1.2, motor_temp_c=45.0)
 print(engine.diagnose_servo_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_servo_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data servo-position-error-and-torque-ripple-logs-v2026`와 연동되어, 전 세계 주요 로봇 및 CNC 공작기계의 서보 데이터를 실시간 분석하고 기계 충돌 및 오가공 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - 6-axis-robotic-arm-kinematics-and-control-logic

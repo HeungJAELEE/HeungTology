@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Bio-Governance"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Bio-Governance]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Bio-Governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Bio-Governance
@@ -90,5 +80,4 @@ def process_patient_record(record_data):
 2. 의료 AI에서 '결과에 대한 설명 가능성(Explainability)'이 법적 책임 소재를 가리는 데 왜 중요한가?
 3. 디지털 헬스케어 플랫폼이 글로벌 시장에 진출할 때 직면하는 '데이터 주권(Data Sovereignty)' 문제는 공학적으로 어떻게 해결 가능한가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

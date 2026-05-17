@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "planetary-resource-governance-and-deep-sea-mining-ethics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] planetary-resource-governance-and-deep-sea-mining-ethics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The global framework for managing and distributing Earth's natural resources (Planetary Resource Governance) and the moral and legal evaluation of extracting minerals from the ocean floor (Deep-sea Mining Ethics), balancing industrial demand for critical minerals with environmental preservation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["planetary-governance", "resource-management", "deep-sea-mining", "ethics", "sustainability", "ocean-governance", "critical-minerals"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Ecological_Impact_Audit: Evaluate the biodiversity loss and sediment plume distribution during mining operations to ensure they remain within the ''Maximum Tolerable Impact'' (MTI) limits.'
-    - 'Resource_Sovereignty_Check: Analyze the distribution of extraction permits in international waters (The Area) to ensure equitable sharing of the ''Common Heritage of Mankind''.'
-    - 'Circular_Integrity_Scan: Monitor the recycling rate of extracted minerals to verify that deep-sea mining is used as a temporary bridge rather than a permanent reliance.'
-Trust Metrics:
+  description: "[Entity] planetary-resource-governance-and-deep-sea-mining-ethics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Planetary Resource Governance and Deep-sea Mining Ethics
+# [Entity] planetary-resource-governance-and-deep-sea-mining-ethics
 
 ## 1. 개요 (Why: 인간적 통찰)
 인공지능과 전기차 시대를 위해 더 많은 배터리가 필요하지만, 땅위의 자원은 바닥나고 있다면 우리는 어디로 눈을 돌려야 할까요? **행성 자원 거버넌스 및 심해 채굴 윤리**는 인류 최후의 미개척지인 깊은 바닷속 보물(망간 단괴 등)을 어떻게 '정의롭게' 꺼내 쓸 것인가에 대한 **'지구의 양심'**입니다. 바닷속 생태계를 파괴하지 않으면서도 인류의 발전에 필요한 필수 광물을 확보하는 이 아슬아슬한 균형은, 문명의 지속 가능성을 시험하는 **'자원 전쟁의 평화적 해법'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Excessive Sediment Dispersion - Smothering Distant Ecosystems. Optimize Suction Header Geometry"
         return "PASS: Contained Extraction Impact and Verified Marine Protection confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(biodiversity_impact_score=0.04, benefit_sharing_ratio=0.75, recycled_content_pct=45.0)
 print(engine.diagnose_resource_governance_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_resource_governance_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data global-mineral-reserves-and-extraction-ethics-v2026`와 연동되어, 전 세계 자원 수급 및 심해 환경 데이터를 실시간 분석하고 자원 갈등 및 생태계 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 자원 정의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - business-ethics-and-corporate-social-responsibility-csr-governance

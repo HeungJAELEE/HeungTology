@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cryogenic-energy-storage-and-liquid-air-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cryogenic-energy-storage-and-liquid-air-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A long-duration energy storage technology that uses electricity to cool air until it liquefies, stores the liquid air in tanks, and then expands it through a turbine to generate electricity (Cryogenic Energy Storage) and the physical study of high-density energy capture via cryogenic phase transitions (Liquid Air Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cryogenic-storage", "liquid-air", "laes", "energy-storage", "thermodynamics", "grid-scale", "phase-change"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Energy_Fidelity_Audit: Evaluate the ''Round-Trip Efficiency'' ($\\eta_{RT}$) to identify if the waste heat from compression and the ''Cold'' from expansion are effectively captured and reused in the next cycle.'
-    - 'Storage_Integrity_Check: Analyze the boil-off gas (BOG) rate in the cryogenic tanks to ensure that insulation degradation is not leading to excessive energy leakage over time.'
-    - 'Discharge_Fidelity_Scan: Monitor the turbine inlet temperature and pressure to verify that the ''Liquid-to-Gas'' expansion is maximizing power output without icing or mechanical fatigue.'
-Trust Metrics:
+  description: "[Entity] cryogenic-energy-storage-and-liquid-air-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Cryogenic Energy Storage and Liquid Air Physics
+# [Entity] cryogenic-energy-storage-and-liquid-air-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기가 남아돌 때 공기를 액체로 만들어 보관했다가, 필요할 때 다시 전기로 바꾼다면 어떨까요? **저온 에너지 저장(LAES) 및 액체 공기 물리**는 공기를 영하 190도로 얼려 부피를 700분의 1로 줄인 '액체 배터리'로 사용하는 **'공기의 농축 에너지'** 기술입니다. 리튬 배터리처럼 수명이 닳지도 않고, 수십 년 동안 거대한 에너지를 품고 있을 수 있습니다. 보이지 않는 공기를 맑고 푸른 액체로 바꿔 지구의 에너지를 지키는 **'저온 문명의 거대한 저금통'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Cold Exergy Degradation - High-grade cold storage failed to maintain sub-zero targets. Next charging cycle efficiency will drop"
         return "PASS: Validated Exergy Buffer and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(liquid_air_level_pct=85.0, bog_rate_pct_day=0.1, discharge_efficiency_pct=62.5)
 print(engine.diagnose_laes_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_laes_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data laes-efficiency-and-thermal-storage-v2026`와 연동되어, 전 세계 주요 저온 에너지 저장 실증 단지의 데이터를 실시간 분석하고 충방전 효율 저하 및 누설 사고 확률을 0.001% 이하로 억제함으로써 지능형 신재생 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cryogenic-air-separation-and-distillation-physics

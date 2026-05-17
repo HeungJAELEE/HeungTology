@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ion-implantation-and-dopant-diffusion-profiles-in-silicon"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ion-implantation-and-dopant-diffusion-profiles-in-silicon]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of introducing impurity atoms (Dopants) into a silicon crystal lattice through high-energy ion bombardment (Ion Implantation) and the subsequent redistribution of these atoms through thermal energy (Diffusion) to create P-N junctions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ion-implantation", "doping", "diffusion", "silicon", "semiconductor-physics", "junction-depth", "annnealing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Implantation_Dose_Audit: Verify the total number of ions implanted per unit area ($\\Phi$) using Faraday cup measurements and sheet resistance mapping.'
-    - 'Junction_Depth_Check: Evaluate the dopant profile (SIMS) to ensure the junction depth ($x_j$) meets the requirements for transistor scaling and leakage control.'
-    - 'Annealing_Integrity_Scan: Monitor the Rapid Thermal Annealing (RTA) process to ensure full dopant activation while minimizing unwanted transient enhanced diffusion (TED).'
-Trust Metrics:
+  description: "[Entity] ion-implantation-and-dopant-diffusion-profiles-in-silicon에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎯 Ion Implantation and Dopant Diffusion Profiles in Silicon
+# [Entity] ion-implantation-and-dopant-diffusion-profiles-in-silicon
 
 ## 1. 개요 (Why: 인간적 통찰)
 순수한 실리콘은 전기가 거의 흐르지 않는 돌덩이와 같습니다. 여기에 '불순물'이라는 마법의 가루를 아주 정밀하게 뿌려야만 전기가 흐르는 반도체가 됩니다. **이온 주입 및 도펀트 확산**은 원자들을 총알처럼 쏘아 실리콘 속으로 강제로 밀어 넣고(Implantation), 열을 가해 자리를 잡게 만드는(Diffusion) **'원자 단위의 연금술'**입니다. 이 원자들이 얼마나 깊이, 얼마나 빽빽하게 들어찼느냐에 따라 반도체의 성능과 속도가 결정됩니다. 1나노미터의 오차도 허용하지 않는 **'원자들의 위치 선정 지능'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Lattice Repair - Residual Damage Compromising Carrier Mobility"
         return "PASS: Successful Lattice Restoration and Dopant Activation Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dose_uniformity_pct=0.45, junction_depth_nm=42.5, sheet_resistance_ohm_sq=120.0)
 print(engine.diagnose_doping_health(target_depth=40.0))
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_doping_health(target_depth=40.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dopant-concentration-profiles-and-junction-depth-v2026`와 연동되어, 전 세계 반도체 라인의 도핑 데이터를 실시간 분석하고 문턱 전압 변동 및 누설 전류 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - ion-beam-milling-and-focused-ion-beam-fib-nanomachining

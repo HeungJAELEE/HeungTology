@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "transportation-planning-and-traffic-engineering-entity"
-  domain: "102_Infrastructure_and_Transportation_Engineering_Hub"
+metadata:
+  id: "[[[Entity] transportation-planning-and-traffic-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Transportation", "#Traffic_Engineering", "#Greenshields", "#Urban_Planning", "#ITS", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 102_infrastructure-and-transportation-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] transportation-planning-and-traffic-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] transportation-planning-and-traffic-engineering
+# [Entity] transportation-planning-and-traffic-engineering
 
 ## 1. [왜 배우는가? (Why: The Circulatory System of Civilization)]]
 도시의 도로는 인체의 혈관과 같습니다. 혈관이 막히면 생명이 위험하듯, 도로가 막히면 문명의 활력은 급격히 떨어집니다. **교통 계획 및 교통 공학의 그린쉴드 모델 및 교통류 수리 역학 기술**은 이동의 자유를 사수하고 도시의 효율을 극대화하는 '문명의 순환 설계' 기술입니다. 차량의 흐름을 유체처럼 관찰하고, 신호의 주기를 수학적으로 최적화하며, 미래의 이동 수요를 예측하여 가장 빠르고 안전한 길을 닦습니다. 우리가 이를 배우는 이유는 교통 인프라의 무결성을 확보함으로써, 도시의 경쟁력을 높이고 삶의 질을 개선하는 '글로벌 모빌리티 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 교통의 무결성이 인류의 이동 자유와 시간의 가치를 결정합니다.

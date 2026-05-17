@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "high-entropy-alloys-hea-and-extreme-environment-durability"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] high-entropy-alloys-hea-and-extreme-environment-durability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A class of advanced metal alloys composed of five or more elements in near-equal atomic proportions, utilizing high configurational entropy to stabilize a single-phase solid solution for superior strength, thermal stability, and corrosion resistance."
-  physical_model: "N/A"
-Semantic:
-  tags: '["high-entropy-alloys", "hea", "metallurgy", "extreme-environments", "thermodynamics", "entropy-stabilization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Phase_Stability_Audit: Evaluate the Gibbs free energy ($\\Delta G_{mix}$) to predict whether the alloy will remain a stable single-phase or decompose under thermal stress.'
-    - 'Mechanical_Integrity_Check: Analyze the yield strength and ductility of the HEA at cryogenic (< 77K) or ultra-high (> 1,200K) temperatures.'
-    - 'Corrosion_Resistance_Scan: Monitor the formation of protective oxide layers and localized pitting in harsh chemical environments (e.g., acidic or saline).'
-Trust Metrics:
+  description: "[Entity] high-entropy-alloys-hea-and-extreme-environment-durability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 High-Entropy Alloys (HEA) and Extreme Environment Durability
+# [Entity] high-entropy-alloys-hea-and-extreme-environment-durability
 
 ## 1. 개요 (Why: 인간적 통찰)
 전통적인 금속 공학은 철에 약간의 탄소를 넣는 식으로 '주인과 손님'이 정해진 합금이었습니다. **고엔트로피 합금(HEA)**은 이 상식을 뒤엎고, 5개 이상의 금속을 '주인 없이' 똑같은 비중으로 섞어버리는 **'금속계의 비빔밥'**입니다. 너무 복잡하게 섞여 있어서 오히려 원자들이 제자리에 꽉 고정되는 기묘한 성질(고엔트로피 효과) 덕분에, 이 합금은 영하 200도의 극저온에서도 깨지지 않고, 1,000도의 뜨거운 불길 속에서도 강철보다 단단합니다. 우주선, 극지방 탐사 로봇, 원자력 발전소처럼 인간이 가기 힘든 극한의 현장을 지탱하는 **'무적의 신소재'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Phase Instability - Alloy Structure Compromised under Thermal Stress"
         return "PASS: Thermal Phase Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(s_conf_r_unit=1.65, lattice_distortion_delta=0.03, corrosion_rate_mm_y=0.001)
 print(engine.diagnose_alloy_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_alloy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hea-mechanical-properties-under-extreme-temp-v2026`와 연동되어, 극한 현장에서 가동 중인 HEA 부품의 물리적 상태를 실시간 분석하고 파손 및 부식 사고 확률을 0.001% 이하로 억제함으로써 인류 문명을 지탱하는 물리적 기반의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - functional-gradient-materials-fgm-and-stress-tailoring-physics

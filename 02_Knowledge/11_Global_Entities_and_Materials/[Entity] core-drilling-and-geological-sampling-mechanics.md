@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "core-drilling-and-geological-sampling-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] core-drilling-and-geological-sampling-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A drilling technique used to extract a cylindrical sample of rock or soil from the earth (Core Drilling) and the systematic process of analyzing these samples to determine the geological structure, mineral content, and mechanical properties of the subsurface (Geological Sampling Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["core-drilling", "geological-sampling", "mining", "geotechnical", "rock-mechanics", "diamond-bit", "exploration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Drilling_Fidelity_Audit: Evaluate the ''Rate of Penetration'' (ROP) and torque to identify if the drill bit is ''Balled up'' with clay or if the diamond segments are glazed, requiring re-sharpening.'
-    - 'Sample_Integrity_Check: Analyze the ''Core Recovery'' percentage to ensure that the drilling fluid pressure and vibration are not washing away soft geological features or fracturing the core sample.'
-    - 'Mechanical_Fidelity_Scan: Monitor the ''WOB'' (Weight on Bit) vs. depth to verify that the rock''s Unconfined Compressive Strength (UCS) is being correctly characterized without damaging the equipment.'
-Trust Metrics:
+  description: "[Entity] core-drilling-and-geological-sampling-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛏️ Core Drilling and Geological Sampling Mechanics
+# [Entity] core-drilling-and-geological-sampling-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지하 수 킬로미터 밑에 어떤 보물이 있는지, 건물을 지어도 무너지지 않을 단단한 땅인지 어떻게 알 수 있을까요? **코어 시추(Core Drilling) 및 지질 샘플링 역학**은 지구의 내부를 '빨대로 뽑아 올리듯' 확인하는 **'지하의 타임머신'** 기술입니다. 다이아몬드가 박힌 원통형 비트로 땅을 뚫어 원기둥 형태의 암석 샘플(코어)을 그대로 꺼내옵니다. 지구의 역사를 읽고 자원의 지도를 그리는 **'보이지 않는 세계의 탐험'** 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Very Poor Rock Quality - Frequent fractures and weak zones. Foundation engineering requires significant reinforcement"
         return "PASS: Validated Strata Stability and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(weight_on_bit_kn=15.0, torque_nm=450.0, core_recovery_pct=98.5)
 print(engine.diagnose_drilling_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_drilling_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drilling-parameters-and-core-recovery-rates-v2026`와 연동되어, 전 세계 주요 광산 및 토목 현장의 시추 데이터를 실시간 분석하고 비트 파손 및 샘플 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 문명의 탐사 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - copper-smelting-and-flash-furnace-metallurgy

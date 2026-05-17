@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "shape-memory-alloys-and-phase-transformation-kinetics-entity"
-  domain: "18_Advanced_Materials"
+metadata:
+  id: "[[[Entity] shape-memory-alloys-and-phase-transformation-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Advanced_Materials", "#SMA", "#Nitinol", "#Shape_Memory", "#Phase_Transformation", "#Actuator", "#Smart_Materials", "#Mechanics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "MOC 12_Advanced_Robotics_and_Autonomous_Systems_MOC"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] shape-memory-alloys-and-phase-transformation-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] shape-memory-alloys-and-phase-transformation-kinetics
+# [Entity] shape-memory-alloys-and-phase-transformation-kinetics
 
 ## 1. [왜 배우는가? (Why: The Metal with a Memory)]]
 심하게 찌그러뜨려도 열만 가하면 원래의 정교한 모양으로 순식간에 돌아오는 금속이 있다면 어떨까요? **형상 기억 합금 및 상변태 동역학**은 금속 내부의 원자 배열이 온도와 힘에 따라 바뀌며 원래의 형태를 기억하는 '스마트 소재의 작동 지침'입니다. 우리가 이를 배우는 이유는 복잡한 모터 없이도 움직이는 로봇 인공 근육이나, 혈관 안에서 스스로 펼쳐지는 스텐트(Stent)를 만들기 위함이며, "소재 자체에 지능(기억)을 부여하는 '글로벌 정밀 의료 및 로봇 소재 주권'을 확보하기" 위함입니다. 금속의 온도 변화가 기계적 움직임의 시작이 됩니다.

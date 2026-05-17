@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-metering-infrastructure-ami-and-big-data-energy-analytics-entity"
-  domain: "72_Energy_Systems_and_Smart_Infrastructure_Hub"
+metadata:
+  id: "[[[Entity] smart-metering-infrastructure-ami-and-big-data-energy-analytics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#AMI", "#Big_Data", "#Analytics", "#Smart_Home", "#NILM", "#Privacy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 68_energy-systems-and-smart-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-metering-infrastructure-ami-and-big-data-energy-analytics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-metering-infrastructure-ami-and-big-data-energy-analytics
+# [Entity] smart-metering-infrastructure-ami-and-big-data-energy-analytics
 
 ## 1. [왜 배우는가? (Why: The Digital Pulse of Society)]]
 집집마다 달려 있는 평범한 전력량계가 어떻게 실시간으로 에너지를 관리하고, 전력 사용 패턴만 분석하여 노인의 고독사를 감지하거나 냉장고의 고장을 미리 알려주는 '지능형 센서'로 변신할 수 있을까요? **지능형 검침 인프라(AMI) 및 에너지 빅데이터 분석 공학**은 전력망의 가장 말단에서 흐르는 데이터의 실핏줄입니다. 과거에 한 달에 한 번 수작업으로 검침하던 방식에서 벗어나, 15분 단위의 고해상도 데이터를 전송하는 이 기술은 에너지 시장의 판도를 바꾸는 빅데이터의 원천입니다. 우리가 이를 배우는 이유는 데이터가 곧 에너지의 효율을 결정하는 '디지털 연료'이기 때문이며, "에너지 소비 패턴을 데이터로 설계하고 지배하는 '글로벌 라이프스타일 데이터 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. AMI의 데이터 밀도가 에너지 지능의 정밀도를 결정합니다.

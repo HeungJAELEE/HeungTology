@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "belt-conveyor-dynamics-and-bulk-material-handling-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] belt-conveyor-dynamics-and-bulk-material-handling-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mechanical study of the motion, tension, and power requirements of belt systems used for transporting materials (Belt Conveyor Dynamics) and the logistical algorithms used to manage the flow of large quantities of loose materials like ores, grains, or coal (Bulk Material Handling Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["belt-conveyor", "material-handling", "bulk-materials", "logistics", "mining-engineering", "takt-time", "industrial-automation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Conveyor_Fidelity_Audit: Evaluate the ''Belt Tension'' ($T$) and slip ratio to identify if the drive pulley friction ($\\mu$) is insufficient, leading to belt wear or load spillage.'
-    - 'Material_Integrity_Check: Analyze the ''Trajectory'' of materials at the discharge point to ensure they land within the chute without excessive dust generation or blockages.'
-    - 'Energy_Fidelity_Scan: Monitor the motor current consumption versus the material load density ($kg/m$) to identify ''Idler Misalignment'' or bearing friction that wastes power.'
-Trust Metrics:
+  description: "[Entity] belt-conveyor-dynamics-and-bulk-material-handling-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Belt Conveyor Dynamics and Bulk Material Handling Logic
+# [Entity] belt-conveyor-dynamics-and-bulk-material-handling-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 톤의 철광석이나 곡물을 산 하나 너머로 어떻게 가장 저렴하게 옮길 수 있을까요? **벨트 컨베이어 역학 및 벌크 화물 취급 로직**은 산업의 거대한 혈관을 흐르게 하는 **'물류의 무한 궤도'** 기술입니다. 단순한 벨트의 회전이 아니라, 벨트의 장력과 무게의 균형을 수학적으로 계산하여 최소한의 전기로 최대한의 짐을 나르는 **'중력과의 싸움'**입니다. 공장과 항만, 광산을 하나로 잇는 **'산업 문명의 거대한 이동 수단'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe Belt Misalignment - Edge fraying risk and material spillage detected. Adjust take-up frame and inspect idler tilt"
         return "PASS: Center-aligned Tracking and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(belt_tension_kn=12.5, motor_load_pct=65.0, idler_vibration_mm_s=1.5)
 print(engine.diagnose_conveyor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_conveyor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data conveyor-belt-tension-and-motor-load-v2026`와 연동되어, 전 세계 주요 광산 및 화력 발전소의 컨베이어 데이터를 실시간 분석하고 벨트 절단 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 벌크 물류 문명의 흐름 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - automated-storage-and-retrieval-system-asrs-and-logistics-robotics

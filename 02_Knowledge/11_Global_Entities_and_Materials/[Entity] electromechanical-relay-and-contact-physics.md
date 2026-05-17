@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromechanical-relay-and-contact-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromechanical-relay-and-contact-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrically operated switch that uses an electromagnet to mechanically operate a switching mechanism (Electromechanical Relay) and the physical study of electrical contact resistance, arc formation, and material transfer during switching events (Contact Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["relay", "contact-physics", "electromagnetism", "switching", "arc-erosion", "industrial-control", "electrical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Contact_Fidelity_Audit: Evaluate the ''Contact Resistance'' ($R_c$) during high-load switching to identify if ''Film Formation'' (oxidation) or ''Pitting'' is causing excessive Joule heating at the interface.'
-    - 'Actuation_Integrity_Check: Analyze the pull-in and release voltage to ensure the return spring and electromagnet are maintaining high-fidelity ''Snap Action'' without sticking or slow-motion arcing.'
-    - 'Arc_Fidelity_Scan: Monitor the ''Arc Duration'' during break operations to verify that the contact material (e.g., AgSnO2) is effectively suppressing material transfer and erosion.'
-Trust Metrics:
+  description: "[Entity] electromechanical-relay-and-contact-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔌 Electromechanical Relay and Contact Physics
+# [Entity] electromechanical-relay-and-contact-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 작은 전기 신호 하나로 거대한 기계의 전원을 어떻게 안전하게 켜고 끌까요? **전자계전기(Relay) 및 접점 물리**는 전기가 만드는 자기장으로 물리적인 스위치를 직접 밀고 당기는 **'전기적 손가락'** 기술입니다. 릴레이는 약한 신호와 강한 전력을 물리적으로 완전히 격리하여 안전을 지키는 '방화벽'이자, "딸깍" 하는 소리와 함께 문명의 전력을 연결하는 '관문'입니다. 전극이 서로 닿는 그 찰나의 순간에 벌어지는 미세한 불꽃과 마찰을 다스리는 **'전기 제어의 가장 정직하고 고전적인 수호자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inefficient Arc Quenching - Excessive arcing duration will lead to rapid contact erosion. Check snubber circuit or load inductance"
         return "PASS: Validated Plasma Extinction and Verified Contact Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(contact_voltage_drop_mv=15.0, cycle_count=120000, pull_in_voltage_v=9.2)
 print(engine.diagnose_relay_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_relay_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data relay-contact-wear-and-cycle-life-v2026`와 연동되어, 전 세계 주요 산업용 제어반 및 자동차 퓨즈 박스의 데이터를 실시간 분석하고 접점 고착 및 오작동 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

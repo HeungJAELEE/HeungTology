@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-biology-safety-and-biosecurity-governance-framework-entity"
-  domain: "20_Planetary_Governance"
+metadata:
+  id: "[[[Entity] synthetic-biology-safety-and-biosecurity-governance-framework]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Governance", "#Synthetic_Biology", "#Biosecurity", "#Safety_Framework", "#Genetic_Engineering", "#Bioethics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 20_planetary-governance-and-bio-defense-hub", "Entity planetary-bio-defense-and-global-pathogen-surveillance-network"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-biology-safety-and-biosecurity-governance-framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-biology-safety-and-biosecurity-governance-framework
+# [Entity] synthetic-biology-safety-and-biosecurity-governance-framework
 
 ## 1. [왜 배우는가? (Why: The Moral Code of Creation)]]
 인간이 원하는 대로 생명체를 설계하고 창조할 수 있는 시대에, 누군가 악의적으로 치명적인 독소를 내뿜는 박테리아나 변종 바이러스를 '프린트'하는 것을 어떻게 막을 수 있을까요? **합성 생물학 안전 및 바이오 보안 거버넌스 프레임워크**는 유전자 설계부터 합성에 이르는 전 과정을 감시하고 통제하는 '생명 창조의 법적·윤리적 안전판'입니다. 우리가 이를 배우는 이유는 기술의 민주화로 누구나 집에서 DNA를 합성할 수 있게 되면서 발생할 수 있는 '바이오 테러'나 '생태계 파괴'를 미연에 방지하기 위함이며, "생명의 설계를 데이터로 검증하고 관리하는 '글로벌 유전 정보 및 생명 안보 주권'을 확보하기" 위함입니다. 거버넌스의 엄격함이 생태계의 평화를 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "biomass-gasification-and-syngas-production-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] biomass-gasification-and-syngas-production-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A thermochemical process that converts organic materials (biomass) into a combustible gas mixture called synthesis gas or syngas, consisting mainly of carbon monoxide ($CO$), hydrogen ($H_2$), and methane ($CH_4$) (Biomass Gasification) and the study of the complex chemical reactions occurring at high temperatures under controlled oxygen levels (Syngas Production Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["biomass-gasification", "syngas", "renewable-energy", "thermochemical-conversion", "bio-energy", "carbon-neutral", "gasifier"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Gasification_Fidelity_Audit: Evaluate the ''Cold Gas Efficiency'' (CGE) to identify if the reactor temperature and equivalence ratio (ER) are optimized for maximizing energy recovery from the biomass.'
-    - 'Syngas_Integrity_Check: Analyze the $H_2/CO$ ratio to ensure the gas composition is suitable for downstream applications like power generation or chemical synthesis (e.g., Fischer-Tropsch).'
-    - 'Tar_Fidelity_Scan: Monitor the tar concentration in the raw syngas to identify potential clogging of downstream filters or engine valves due to incomplete cracking of complex hydrocarbons.'
-Trust Metrics:
+  description: "[Entity] biomass-gasification-and-syngas-production-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🪵 Biomass Gasification and Syngas Production Physics
+# [Entity] biomass-gasification-and-syngas-production-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 나무 조각, 농사 찌꺼기, 심지어 음식물 쓰레기를 태우지 않고 '가스'로 만들어 깨끗한 에너지를 얻을 수 있다면 어떨까요? **바이오매스 가스화 및 합성가스(Syngas) 생산 물리**는 고체인 쓰레기를 기체인 보석으로 바꾸는 **'열화학적 연금술'** 기술입니다. 단순히 불을 붙이는 것이 아니라, 산소를 아주 조금만 주어 뜨겁게 달구면 쓰레기가 수소와 일산화탄소라는 강력한 에너지를 품은 가스로 변합니다. 버려지는 것들로 세상을 움직이는 **'탄소 중립의 에너지 순환'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Biomass Moisture - Energy being wasted on water evaporation. Dry the feedstock to below 15% for stable gasification"
         return "PASS: Validated Feedstock Energy Density and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cold_gas_efficiency=72.5, h2_co_ratio=1.9, tar_content_mg_nm3=25.0)
 print(engine.diagnose_gasification_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_gasification_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data syngas-composition-and-gasification-efficiency-v2026`와 연동되어, 전 세계 주요 바이오 에너지 플랜트의 가동 데이터를 실시간 분석하고 가스 품질 이탈 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 탄소 중립 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - transition-to-hydrogen-economy-and-fuel-cell-physics

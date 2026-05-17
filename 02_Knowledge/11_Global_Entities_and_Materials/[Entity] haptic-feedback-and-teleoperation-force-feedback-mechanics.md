@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "haptic-feedback-and-teleoperation-force-feedback-mechanics-entity"
-  domain: "11_Robotics_Automation"
+metadata:
+  id: "[[[Entity] haptic-feedback-and-teleoperation-force-feedback-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Haptics", "#Teleoperation", "#Robotics", "#Force_Feedback", "#Control_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[[MOC] 11_Robotics_Automation", "Entity cyber-physical-systems-cps-and-digital-twin-integration-physics]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] haptic-feedback-and-teleoperation-force-feedback-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] haptic-feedback-and-teleoperation-force-feedback-mechanics
+# [Entity] haptic-feedback-and-teleoperation-force-feedback-mechanics
 
 ## 1. [왜 배우는가? (Why: Feeling Across Distances)]]
 수만 킬로미터 떨어진 우주 로봇이 물체를 잡을 때, 그 딱딱함이나 부드러움을 내 손으로 직접 느낄 수 있다면 어떨까요? **햅틱 피드백 및 원격 제어 힘 피드백 역학**은 기계가 느낀 촉감을 인간의 신경계로 전달하는 '감각의 디지털 전송 기술'입니다. 우리가 이를 배우는 이유는 원격 수술이나 재난 구조 현장에서 로봇을 내 몸처럼 정교하게 다루고 가상 현실에서 실제 물체를 만지는 듯한 몰입감을 주며, "물리적 거리의 한계를 넘어 '촉각적 현존감과 원격 조작 주권'을 확보하기" 위함입니다. 피드백의 정밀도가 조작의 성공을 결정합니다.

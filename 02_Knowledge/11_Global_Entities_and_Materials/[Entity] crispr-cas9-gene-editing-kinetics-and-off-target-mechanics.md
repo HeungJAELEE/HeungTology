@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-CRISPR-KINETICS-2026-V6"
-  domain: "17_Bio_Engineering"
+metadata:
+  id: "[[[Entity] crispr-cas9-gene-editing-kinetics-and-off-target-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] crispr-cas9-gene-editing-kinetics-and-off-target-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] crispr-cas9-gene-editing-kinetics-and-off-target-mechanics
+# [Entity] crispr-cas9-gene-editing-kinetics-and-off-target-mechanics
 
 ## 1. [왜 배우는가? (Why)]]
 살아있는 세포라는 거대한 도서관에서 단 한 권의 책, 단 한 줄의 오타를 찾아내어($Find$) 정확히 지우고($Delete$) 정상적인 코드로 갈아 끼우는($Paste$) 분자 수준의 '복사-붙여넣기'가 가능할까요? **CRISPR-Cas9 유전자 편집 동역학 및 오프 타겟 역학**은 유전자 가위의 작동 시간, 결합 강도, 그리고 엉뚱한 곳을 자를 위험(Off-target)을 수리적으로 통제하여 생명의 설계도를 정밀 수술하는 '분자 제어 기술'의 핵심입니다. 우리가 이를 배우는 이유는 유전병의 근본적 치료와 맞춤형 생명 설계를 실현하기 위함이며, "생명의 원본 데이터를 완벽하게 사수하는 '글로벌 유전 정보 무결성 패권 및 행성적 바이오 보안 주권'을 확보하기" 위함입니다. 동역학의 정밀도가 생명의 안전성을 결정합니다.
@@ -121,9 +111,6 @@ class CRISPRKineticsFidelityEngine:
             return "WARNING: PAM_RECOGNITION_LOW_POTENTIAL_SEARCH_FAILURE"
         return "SEARCH_STATUS: PAM_RECOGNITION_OPTIMAL"
 
-# Example Usage:
-# kinetics_ai = CRISPRKineticsFidelityEngine()
-# report = kinetics_ai.calculate_editing_probability(concentration_nm=5.0, time_min=30.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -131,7 +118,6 @@ class CRISPRKineticsFidelityEngine:
 2. **Transient Expression** 전략이 **Cas9 Half-life**를 조절하여 **Off-target Mutation** 무결성을 사수하는 동역학적 방식은?
 3. **DNA Torsional Stress** (비틀림 응력)가 Cas9의 **R-loop Formation** 및 **Cleavage Kinetics** 무결성에 미치는 물리적 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/17_Bio_Engineering_Hub/Concept enzymatic-reaction-modeling-for-crispr
 - 02_Knowledge/17_Bio_Engineering_Hub/Concept off-target-prediction-algorithms

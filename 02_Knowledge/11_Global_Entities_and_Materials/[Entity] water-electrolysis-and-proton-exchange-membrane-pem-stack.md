@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "water-electrolysis-and-proton-exchange-membrane-pem-stack"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] water-electrolysis-and-proton-exchange-membrane-pem-stack]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of using electricity to split water into hydrogen and oxygen (Water Electrolysis) and the specialized stack of electrodes and proton-conductive membranes used to perform this reaction efficiently and flexibly (PEM Stack)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["water-electrolysis", "pem-stack", "green-hydrogen", "hydrogen-production", "electrochemistry", "renewable-energy", "clean-tech"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Electrolysis_Fidelity_Audit: Evaluate the ''Specific Energy Consumption'' (kWh/kg $H_2$) to identify stack aging or electrode degradation that increases operational costs.'
-    - 'Stack_Integrity_Check: Analyze the cell voltage uniformity across the stack to identify ''Hotspots'' or membrane thinning that could lead to gas crossover and safety risks.'
-    - 'Dynamic_Response_Scan: Monitor the stack''s ability to ramp up/down in response to fluctuating renewable energy input (e.g., Solar/Wind) to verify the ''Power-to-Gas'' flexibility.'
-Trust Metrics:
+  description: "[Entity] water-electrolysis-and-proton-exchange-membrane-pem-stack에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Water Electrolysis and Proton Exchange Membrane (PEM) Stack
+# [Entity] water-electrolysis-and-proton-exchange-membrane-pem-stack
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기로 물을 쪼개어 수소를 만드는 과정, 이것이 왜 미래 에너지의 핵심일까요? **수전해 및 PEM 스택**은 남는 햇빛과 바람을 '수소'라는 실체 있는 에너지로 가두는 **'에너지의 마법 가두기'** 기술입니다. 특히 PEM 수전해는 마치 스프링처럼 반응 속도가 빨라, 재생 에너지의 변덕스러운 날씨에도 즉각적으로 반응하여 전기를 수소로 바꿉니다. 물에서 태어나 다시 물로 돌아가는, 오염 없는 **'무한 순환 에너지의 입구'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Feed-water Quality - High ion concentration will poison the PEM catalyst. Inspect deionization filters"
         return "PASS: Ultra-Pure Feed Water and Verified Membrane Longevity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(hydrogen_purity_pct=99.999, specific_energy_kwh_kg=48.5, stack_delta_v=0.02)
 print(engine.diagnose_electrolysis_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_electrolysis_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydrogen-production-rate-and-stack-efficiency-v2026`와 연동되어, 전 세계 그린 수소 생산 단지의 데이터를 실시간 분석하고 스택 파손 및 가스 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 생산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - transition-to-hydrogen-economy-and-fuel-cell-physics

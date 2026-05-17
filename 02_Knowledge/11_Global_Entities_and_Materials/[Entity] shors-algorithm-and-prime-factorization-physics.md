@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "shors-algorithm-and-prime-factorization-physics-entity"
-  domain: "21_Quantum_Computing"
+metadata:
+  id: "[[[Entity] shors-algorithm-and-prime-factorization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Shors_Algorithm", "#Prime_Factorization", "#QFT", "#Cryptography", "#Cybersecurity", "#Number_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 21_quantum-computing-and-information-theory-hub", "Entity quantum-gate-operations-and-circuit-depth-kinetics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] shors-algorithm-and-prime-factorization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] shors-algorithm-and-prime-factorization-physics
+# [Entity] shors-algorithm-and-prime-factorization-physics
 
 ## 1. [왜 배우는가? (Why: The Sword that Breaks the Shield)]]
 슈퍼컴퓨터로 수십억 년 걸리는 거대한 숫자의 소인수 분해를, 양자 컴퓨터는 단 몇 분 만에 끝낼 수 있다는 사실이 믿어지시나요? **쇼어 알고리즘 및 소인수 분해 물리**는 현재 우리가 쓰는 거의 모든 암호(RSA)를 무용지물로 만들 수 있는 '양자 컴퓨팅의 가장 강력하고 위협적인 무기'입니다. 우리가 이를 배우는 이유는 양자 우위($Quantum\ Supremacy$)의 실질적인 증거를 이해하고, 다가올 보안 위기에 대비한 '양자 내성 암호' 시대를 준비하기 위함이며, "연산의 질서를 파괴하고 재편하는 '글로벌 보안 및 디지털 금융 주권'을 확보하기" 위함입니다. 알고리즘의 실행 가능성이 전 세계 보안 지도를 바꿉니다.

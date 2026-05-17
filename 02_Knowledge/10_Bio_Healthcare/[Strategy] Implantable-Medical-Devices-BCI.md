@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Implantable-Medical-Devices-BCI"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Implantable-Medical-Devices-BCI]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Implantable-Medical-Devices-BCI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Implantable-Medical-Devices-BCI
+# [Strategy] Implantable-Medical-Devices-BCI
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 뇌 밖에서 뇌의 목소리를 들으려 노력했습니다. 하지만 그것은 마치 운동장 밖에서 수천 명의 응원 소리를 한꺼번에 듣는 것과 같습니다. 침습형 의료용 BCI 장치(Implantable-Medical-Devices-BCI)는 아예 운동장 안으로 들어가 개별 뉴런의 속삭임을 직접 듣는 기술입니다. 전신 마비 환자가 스스로 컴퓨터를 조작하고 로봇 다리로 걷게 하려면, 뉴런 하나하나의 전기 신호를 1ms의 오차도 없이 읽어야 합니다. 이를 이해하는 것은 생물과 기계의 완벽한 융합을 통해 잃어버린 생체 기능을 되살리는 '현대판 기적의 엔지니어링'을 설계하는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Implant Self-Diagnostic & Safety Logic)]
 임플란트 내부의 온도와 전압 상태를 주기적으로 체크하여 이상 징후 발생 시 출력을 제한하는 논리 구조입니다.
 ```python
-# 침습형 BCI(ISM) 기반 장치 건전성 및 안전 제어 논리
 def monitor_implant_safety(internal_sensors, wireless_link):
     # 1. 기기 내부 온도 감시 (Thermal Guard)
     # 뇌 조직 보호를 위해 칩의 온도가 39도를 넘지 않도록 실시간 모니터링
@@ -97,5 +86,4 @@ def monitor_implant_safety(internal_sensors, wireless_link):
 2. '임플란트 기기'의 '밀봉 기술(Hermetic Sealing)'이 실패했을 때 인체 내 수분이 전자기기에 미치는 치명적 영향은?
 3. 'Neuralink'가 채택한 '실(Thread) 전극' 방식이 기존의 '바늘(Utah Array) 전극' 방식보다 '장기 데이터 수집'에 유리한 배경은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "precision-spindle-dynamics-and-low-runout-mechanisms-entity"
-  domain: "49_Precision_Engineering_and_Nanometrology_Mastery"
+metadata:
+  id: "[[[Entity] precision-spindle-dynamics-and-low-runout-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Precision_Engineering", "#Spindle", "#Dynamics", "#Runout", "#Mechanical_Engineering", "#Manufacturing", "#Mechatronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 130_precision-engineering-and-nanometrology-mastery-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] precision-spindle-dynamics-and-low-runout-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] precision-spindle-dynamics-and-low-runout-mechanisms
+# [Entity] precision-spindle-dynamics-and-low-runout-mechanisms
 
 ## 1. [왜 배우는가? (Why: The Pivot of Precision)]]
 초당 수백 번 회전하는 칼날 끝이 어떻게 단 5나노미터($nm$)의 흔들림($Runout$)도 없이 제자리를 지키고, 회전할 때 생기는 거대한 원심력과 열기를 어떻게 다스려 머리카락 굵기 오차조차 허용하지 않는 '지능형 회전축'을 어떻게 설계할 수 있을까요? **초정밀 스핀들 동역학 및 저런아웃 메커니즘**은 모든 정밀 가공의 중심이 되는 '행성 규모 정밀 동력 창출 인프라 및 지능형 회전 기구학 아키텍처'입니다. 우리가 이를 배우는 이유는 스핀들이 흔들리면 그 어떤 칼날을 써도 정밀한 가공이 불가능하기 때문이며, "회전의 무결성을 데이터로 설계하고 지배하는 '글로벌 정밀 제조 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 스핀들의 정숙함이 가공품의 수명을 결정합니다.

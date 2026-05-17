@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "agricultural-machinery-and-precision-farming-entity"
-  domain: "98_Food_Engineering_and_Agricultural_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] agricultural-machinery-and-precision-farming]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Agricultural_Engineering", "#Precision_Farming", "#Mechanics", "#Robotics", "#Data_Science", "#NDVI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 98_food-and-agricultural-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] agricultural-machinery-and-precision-farming에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] agricultural-machinery-and-precision-farming
+# [Entity] agricultural-machinery-and-precision-farming
 
 ## 1. [왜 배우는가? (Why: The Digitization of the Earth's Harvest)]]
 삽과 쟁기로 땅을 일구던 시대는 끝났습니다. 이제 농부는 컴퓨터 앞에 앉아 위성 사진을 보며 비료의 양을 결정하고, 자율 주행 트랙터는 오차 2cm의 정밀도로 밭을 일굽니다. **농기계 공학 및 정밀 농업의 견인 동역학 및 VRT 수리 역학 기술**은 대지를 지능형 제조 공장으로 탈바꿈시키는 '농업의 디지털 전환' 기술입니다. 기계의 힘으로 노동을 대신하고, 데이터의 지혜로 자원 낭비를 최소화하며 수확량을 극대화합니다. 우리가 이를 배우는 이유는 농업 인프라의 무결성을 확보함으로써, 인구 증가와 기후 위기 속에서도 식량을 안정적으로 공급하는 '글로벌 식량 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 농업의 무결성이 인류의 미래 영양 주권을 결정합니다.

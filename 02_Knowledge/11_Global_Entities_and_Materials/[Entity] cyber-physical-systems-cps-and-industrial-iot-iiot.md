@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cyber-physical-systems-cps-and-industrial-iot-iiot"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cyber-physical-systems-cps-and-industrial-iot-iiot]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The seamless integration of computational algorithms and physical components (CPS) enhanced by network connectivity and data exchange between industrial assets (IIoT) to enable autonomous monitoring and control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cps", "iiot", "smart-factory", "digital-twin", "industrial-automation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Synchronization_Latency_Audit: Measure the time delay between the physical event and its digital twin update.'
-    - 'Sensor_Data_Validity_Check: Evaluate the Signal-to-Noise Ratio (SNR) and drift in IIoT sensor streams.'
-    - 'Edge-to-Cloud_Bandwidth_Scan: Analyze the data throughput and packet loss in the industrial network fabric.'
-Trust Metrics:
+  description: "[Entity] cyber-physical-systems-cps-and-industrial-iot-iiot에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Cyber-Physical Systems (CPS) and Industrial IoT (IIoT)
+# [Entity] cyber-physical-systems-cps-and-industrial-iot-iiot
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 기계들이 서로 대화를 나누고, 가상의 세계에 자신의 '쌍둥이(Digital Twin)'를 만들어 미래를 시뮬레이션하는 시대입니다. **사이버-물리 시스템(CPS)**은 기계라는 몸체에 컴퓨터라는 지능을 완벽히 결합한 것이며, **산업용 사물인터넷(IIoT)**은 그 지능들이 서로 연결되는 거대한 신경망입니다. 이는 단순한 자동화를 넘어 공장 전체가 하나의 거대한 지능형 유기체처럼 스스로 최적의 결정을 내리게 만듭니다. 본 노드는 현실의 물리 법칙과 디지털의 연산 논리가 충돌 없이 공진하는 스마트 제조의 무결성을 정의합니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Excessive Sensor Drift ({self.drift}%) - Recalibration Required"
         return "PASS: Reliable Industrial Sensor Network Status"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sync_error_pct=1.2, network_jitter_ms=0.5, sensor_drift_rate=0.15)
 print(engine.diagnose_cps_integrity())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_cps_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data iiott-sensor-connectivity-and-data-throughput-v2026`와 연동되어, 스마트 팩토리 내 모든 연결 기기의 상태를 실시간 분석하고 공정 중단 확률을 0.01% 이하로 억제함으로써 지능형 자율 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - critical-infrastructure-protection-and-cyber-physical-security

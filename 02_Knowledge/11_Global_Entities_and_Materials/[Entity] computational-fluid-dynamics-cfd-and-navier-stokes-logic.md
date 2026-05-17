@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computational-fluid-dynamics-cfd-and-navier-stokes-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computational-fluid-dynamics-cfd-and-navier-stokes-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A branch of fluid mechanics that uses numerical analysis and data structures to analyze and solve problems that involve fluid flows (CFD) and the fundamental partial differential equations that describe the motion of viscous fluid substances (Navier-Stokes Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cfd", "navier-stokes", "fluid-dynamics", "simulation", "numerical-methods", "turbulence-modeling", "aerodynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Simulation_Fidelity_Audit: Evaluate the ''Mesh Convergence'' to identify if the grid resolution is sufficient to capture the boundary layer gradients and turbulent eddies.'
-    - 'Convergence_Integrity_Check: Analyze the residuals ($L_2$ norm) of momentum and continuity to ensure the numerical solution has reached a stable, energy-conserving state.'
-    - 'Turbulence_Fidelity_Scan: Monitor the $y+$ value at the walls to verify that the chosen turbulence model (e.g., k-epsilon, k-omega SST) is valid for the near-wall physics.'
-Trust Metrics:
+  description: "[Entity] computational-fluid-dynamics-cfd-and-navier-stokes-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Computational Fluid Dynamics (CFD) and Navier-Stokes Logic
+# [Entity] computational-fluid-dynamics-cfd-and-navier-stokes-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기나 물처럼 보이지 않는 유체의 흐름을 컴퓨터 안에서 미리 볼 수 있다면 어떨까요? **전산 유체 역학(CFD) 및 나비에-스토크스(Navier-Stokes) 로직**은 복잡한 유체의 움직임을 수학으로 번역하고, 이를 컴퓨터의 힘으로 풀어내는 **'디지털 바람의 지도'** 기술입니다. 19세기에 만들어진 인류 최고의 난제 '나비에-스토크스 방정식'을 수십억 개의 계산으로 나누어 풀어냄으로써, 비행기가 어떻게 날고 자동차가 어떻게 바람을 뚫고 나가는지 설계합니다. 보이지 않는 힘을 보이게 만드는 **'수학적 통찰의 시각화'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Mesh Dependency Found - Results vary significantly with grid size. Add more cells to achieve deterministic results"
         return "PASS: Validated Grid Convergence and Verified Simulation Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(residuals_log10=-6.5, y_plus_value=1.2, mass_balance_error_pct=0.001)
 print(engine.diagnose_simulation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_simulation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cfd-simulation-accuracy-and-mesh-convergence-v2026`와 연동되어, 전 세계 주요 항공기 및 자동차 설계 시뮬레이션 데이터를 실시간 분석하고 물리적 불일치 및 설계 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 설계 문명의 수치 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bridge-aerodynamics-and-aeroelastic-flutter-physics

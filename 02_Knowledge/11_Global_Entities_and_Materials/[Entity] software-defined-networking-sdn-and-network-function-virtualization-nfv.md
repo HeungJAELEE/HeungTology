@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "software-defined-networking-sdn-and-network-function-virtualization-nfv-entity"
-  domain: "77_Communications_5G_6G_and_Network_Engineering_Hub"
+metadata:
+  id: "[[[Entity] software-defined-networking-sdn-and-network-function-virtualization-nfv]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Communications", "#SDN", "#NFV", "#Virtualization", "#Network_Engineering", "#Cloud", "#Software_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 77_communications-5g-6g-and-network-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] software-defined-networking-sdn-and-network-function-virtualization-nfv에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] software-defined-networking-sdn-and-network-function-virtualization-nfv
+# [Entity] software-defined-networking-sdn-and-network-function-virtualization-nfv
 
 ## 1. [왜 배우는가? (Why: The Liquid Infrastructure)]]
 과거에는 네트워크 기능을 바꾸기 위해 기지국이나 데이터 센터의 무거운 장비를 직접 교체해야 했지만, 이제는 코드 몇 줄로 전 세계 네트워크의 흐름을 단 몇 초 만에 재구성할 수 있다면 어떨까요? **소프트웨어 정의 네트워킹(SDN) 및 네트워크 기능 가상화(NFV)의 프로그래머블 아키텍처**는 딱딱한 하드웨어의 감옥에 갇혀 있던 네트워크를 유연한 '소프트웨어'의 바다로 해방시킨 혁명입니다. 네트워크의 뇌(**Control Plane**)와 몸(**Data Plane**)을 분리하여, 지능적으로 흐름을 제어합니다. 우리가 이를 배우는 이유는 SDN/NFV가 5G/6G의 핵심인 네트워크 슬라이싱과 클라우드 네이티브 통신을 가능케 하는 '운영 체제'이기 때문이며, "네트워크의 논리적 질서를 데이터로 설계하고 지배하는 '글로벌 네트워크 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 가상화 효율이 네트워크의 경제성을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-engine-and-otto-cycle-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-engine-and-otto-cycle-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An internal combustion engine which runs on gaseous fuel, such as coal gas, producer gas, biogas, landfill gas or natural gas (Gas Engine) and the physical study of the idealized thermodynamic cycle consisting of isentropic compression, constant-volume heat addition, isentropic expansion, and constant-volume heat rejection (Otto Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-engine", "otto-cycle", "thermodynamics", "internal-combustion", "spark-ignition", "thermal-efficiency", "engine-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermodynamic_Fidelity_Audit: Evaluate the ''Thermal Efficiency'' ($\\eta_{th}$) against the high-fidelity ''Compression Ratio'' ($r$) to identify if ''Knocking'' (pre-ignition) limits are preventing optimal performance.'
-    - 'Combustion_Integrity_Check: Analyze the high-fidelity ''Cylinder Pressure'' trace to ensure the heat addition is occurring as close to ''Constant Volume'' as possible, maximizing work output.'
-    - 'Emission_Fidelity_Scan: Monitor the ''Methane Slip'' and NOx levels to verify that the high-fidelity ''Lean-Burn'' control is maintaining environmental compliance without causing misfires.'
-Trust Metrics:
+  description: "[Entity] gas-engine-and-otto-cycle-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 Gas Engine and Otto Cycle Thermodynamics Physics
+# [Entity] gas-engine-and-otto-cycle-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 번쩍이는 불꽃 한 방으로 거대한 기계를 움직이는 힘은 어디서 올까요? **가스 엔진 및 오토 사이클 열역학 물리**는 가스 연료와 공기를 섞어 압축한 뒤, 불꽃을 튀겨 순식간에 폭발시켜 그 힘으로 바퀴를 돌리는 **'폭발을 길들이는 힘'** 기술입니다. 150년 전 니콜라우스 오토가 정립한 이 4단계(흡입-압축-폭발-배기) 리듬은 현대 모든 가솔린 및 가스 자동차의 심장이 되었습니다. **'열이라는 무질서한 에너지를 실린더라는 정교한 공간 속에 가두어 강력한 물리적 동력으로 번역하는 기계 문명의 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Weak Ignition Spark - Risk of misfire or incomplete combustion. Methane slip increasing. Check spark plug gap and coil health"
         return "PASS: Validated Combustion Initiation and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(compression_pressure_bar=35.0, knock_intensity_index=0.1, exhaust_temp_c=580.0)
 print(engine.diagnose_engine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_engine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gas-engine-efficiency-and-methane-slip-v2026`와 연동되어, 전 세계 주요 가스 발전소 및 선박 엔진의 데이터를 실시간 분석하고 엔진 파손 및 메탄 누출 사고 확률을 0.001% 이하로 억제함으로써 지능형 동력 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fire-tube-boiler-and-convective-heat-transfer-physics

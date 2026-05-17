@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Biodiversity-Monitoring-and-Ecosystem-Restoration"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Biodiversity-Monitoring-and-Ecosystem-Restoration]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Biodiversity-Monitoring-and-Ecosystem-Restoration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Biodiversity-Monitoring-and-Ecosystem-Restoration
+# [Strategy] Biodiversity-Monitoring-and-Ecosystem-Restoration
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 멸종 위기종을 보호하거나 숲을 살리는 일은 그저 나무를 심고 정성껏 돌보는 감성적인 영역이라고 생각했습니다. 하지만 이제 생태계는 정밀한 데이터로 관리되고 복원됩니다. 생물 다양성 모니터링 및 생태계 복원 지능(Biodiversity-Monitoring-and-Ecosystem-Restoration)은 AI가 숲의 소리를 듣고 어떤 동물이 사는지 알아내며, 로봇이 가장 적합한 위치에 씨앗을 뿌려 숲을 만드는 기술입니다. 물 한 컵으로 그 강에 어떤 물고기가 사는지 알아내고, 파괴된 산호초를 AI가 설계한 3D 구조물로 되살립니다. 이를 이해하는 것은 지구가 잃어버린 생명력을 과학적으로 되찾아주는 '지구 생명 복원'의 사령탑이 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Species Recognition & Reforestation Route Logic)]
 음향 데이터를 분석하여 종을 식별하고, 드론의 조림 경로를 생성하는 논리 구조입니다.
 ```python
-# 지구 지능(ISM) 기반 생물 다양성 모니터링 및 복원 로봇 제어 논리
 def operate_ecosystem_restoration(audio_stream, terrain_map):
     # 1. 지능형 종 식별 (Bioacoustic Recognition)
     # 숲의 소리 데이터를 분석하여 멸종 위기종 및 침입 외래종 판별
@@ -93,5 +82,4 @@ def operate_ecosystem_restoration(audio_stream, terrain_map):
 2. '로봇 드론 재조림' 시 '단일 수종'이 아닌 '다양한 자생종'을 섞어 심어야 하는 '생태계 회복 탄력성(Resilience)' 측면의 이유는?
 3. '생물 다양성 디지털 트윈'이 '기후 변화에 따른 종 이동'을 예측하고 '생태 통로'를 설계하는 데 어떠한 기여를 하는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

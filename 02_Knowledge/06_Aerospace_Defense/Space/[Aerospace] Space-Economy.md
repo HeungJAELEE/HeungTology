@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AERO-ECONOMY-2026-V6"
+metadata:
+  id: "[[[Aerospace] Space-Economy]]"
   domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Space_Economy'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Aerospace] Space-Economy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Aerospace] Space-Economy
@@ -116,7 +106,6 @@ class SpaceEconomyAnalyst:
 2. **Kessler Syndrome** (우주 쓰레기 연쇄 충돌)이 우주 경제의 지속 가능성을 위협하는 '외부 불경제' 요인으로서 가지는 심각성은?
 3. **ISRU** 기술이 성공적으로 정착했을 때, 지구와 달 사이의 물류 물동량 변화를 예측하는 수리적 모델의 핵심 변수는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/06_Aerospace_Defense/Space/Aerospace Satellite
 - 02_Knowledge/02_Battery/Materials/Battery Anode

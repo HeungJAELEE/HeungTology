@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "molecular-beam-epitaxy-mbe-and-crystal-growth-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] molecular-beam-epitaxy-mbe-and-crystal-growth-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A method for thin-film deposition of single crystals (MBE) and the physical study of atom-by-atom assembly and surface diffusion logic (Crystal Growth Kinetics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mbe", "epitaxy", "crystal-growth", "ultra-high-vacuum", "knudsen-cell", "rheed", "semiconductor-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Growth_Fidelity_Audit: Evaluate the ''RHEED Oscillations'' to identify if high-fidelity ''Island Growth'' (Volmer-Weber) is occurring instead of high-fidelity ''Layer-by-Layer'' (Frank-van der Merwe) growth.'
-    - 'Vacuum_Integrity_Check: Analyze the high-fidelity ''Partial Pressure'' of background gases to ensure that high-fidelity ''Contamination'' (Oxygen/Carbon) is below the threshold for high-fidelity p-n junction formation.'
-    - 'Thermal_Fidelity_Scan: Monitor the ''Knudsen Cell'' temperature high-fidelity stability to verify that the high-fidelity ''Flux Uniformity'' is maintained across the entire high-fidelity wafer surface.'
-Trust Metrics:
+  description: "[Entity] molecular-beam-epitaxy-mbe-and-crystal-growth-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Molecular Beam Epitaxy (MBE) and Crystal Growth Kinetics
+# [Entity] molecular-beam-epitaxy-mbe-and-crystal-growth-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 원자를 한 층씩, 마치 레고 블록을 쌓듯 쌓아서 세상에 없던 새로운 물질을 만들 수 있을까요? **분자선 에피택시(MBE) 및 결정 성장 속도론 물리**는 우주 공간보다 더 깨끗한 진공 속에서 원자들을 빔(Beam)처럼 쏘아 올려, 단 하나의 원자층 오차도 없이 결정을 키우는 **'원자의 건축'** 기술입니다. 양자 컴퓨터의 핵심 칩이나 초고속 통신 장비에 들어가는 '완벽한 결정'은 바로 이 극한의 통제 속에서 탄생합니다. **'너센 유출과 표면 확산의 원리를 이용해 원자 단위의 적층을 지능적으로 지휘하여 반도체의 물리적 한계를 사수하는 지능형 나노 제조 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interdiffusion Detected - High-fidelity p-n junction or quantum well interface not sharp. Device high-fidelity performance failure"
         return "PASS: Validated Crystal Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rheed_osc_contrast=0.8, background_pressure=1e-10, cell_temp_stability=0.05)
 print(engine.diagnose_mbe_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mbe_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mbe-growth-rate-and-crystal-quality-metrics-v2026`와 연동되어, 전 세계 주요 양자 컴퓨팅 연구소 및 정밀 광전자 소자 공장의 실시간 결정 데이터를 분석하고 전하 이동도 저하 및 계면 혼합 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 소자 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - advanced-semiconductor-lithography-and-extreme-ultraviolet-euv-physics

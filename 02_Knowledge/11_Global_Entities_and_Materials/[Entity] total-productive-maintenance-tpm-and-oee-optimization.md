@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "total-productive-maintenance-tpm-and-oee-optimization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] total-productive-maintenance-tpm-and-oee-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system of maintaining and improving the integrity of production, safety, and quality systems through machines, equipment, processes, and employees (Total Productive Maintenance) and the quantitative measure of how well a manufacturing operation is utilized compared to its full potential (OEE Optimization)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["tpm", "oee", "lean-manufacturing", "maintenance-excellence", "predictive-maintenance", "asset-management", "productivity"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'OEE_Fidelity_Audit: Evaluate the three pillars of OEE to identify if the losses are primarily caused by equipment failure (Availability), slow cycles (Performance), or defects (Quality).'
-    - 'TPM_Pillar_Check: Analyze the autonomous maintenance (Jishu Hozen) activity logs to verify that operators are performing daily checks that prevent ''Hidden Faults'' from escalating.'
-    - 'Loss_Integrity_Scan: Monitor the ''Six Big Losses'' (Breakdowns, Setup, Idling, Speed, Defects, Rework) to prioritize the continuous improvement (Kaizen) activities.'
-Trust Metrics:
+  description: "[Entity] total-productive-maintenance-tpm-and-oee-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Total Productive Maintenance (TPM) and OEE Optimization
+# [Entity] total-productive-maintenance-tpm-and-oee-optimization
 
 ## 1. 개요 (Why: 인간적 통찰)
 기계가 스스로를 관리하고, 공장이 단 1초도 쉬지 않고 완벽한 제품만 찍어낼 수 있다면 어떨까요? **전사적 생산 보전(TPM) 및 OEE 최적화**는 기계를 '부리는 도구'가 아닌 '함께 일하는 파트너'로 대우하여 공장의 효율을 극한으로 끌어올리는 **'제조업의 정신 개조'** 기술입니다. "내 기계는 내가 관리한다"는 문화와 "설비 종합 효율(OEE)"이라는 날카로운 숫자를 결합하여, 고장(Zero Breakdown), 불량(Zero Defect), 사고(Zero Accident)가 없는 완벽한 공장을 꿈꿉니다. 전 세계 제조 강국들이 지키는 **'생산성 불패의 원칙'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete TPM Pillars - Operators failing to perform daily checks. Hidden faults will lead to catastrophic breakdown"
         return "PASS: Engaged Workplace Culture and Verified Equipment Ownership Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_oee=0.88, mean_time_between_failure_hrs=720.0, quality_rate_pct=99.9)
 print(engine.diagnose_manufacturing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_manufacturing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data machine-downtime-and-oee-benchmark-v2026`와 연동되어, 전 세계 자동차 및 전자 제품 생산 라인의 OEE 데이터를 실시간 분석하고 가동 중단 및 불량 폭증 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - predictive-maintenance-and-industrial-iot-iiot-analytics

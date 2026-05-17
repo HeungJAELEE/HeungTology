@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cryogenic-air-separation-and-distillation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cryogenic-air-separation-and-distillation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of separating atmospheric air into its primary components (nitrogen, oxygen, argon) by cooling it to extremely low temperatures until it liquefies (Cryogenic Air Separation) and the physical distillation of these liquids based on their unique boiling points at sub-zero levels (Distillation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cryogenics", "air-separation", "asu", "distillation", "liquid-nitrogen", "liquid-oxygen", "thermodynamics", "industrial-gas"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cryogenic_Fidelity_Audit: Evaluate the ''Cold Box'' insulation and heat exchanger approach temperature to identify if thermal leakage is increasing the specific energy consumption ($kWh/Nm^3$) of the plant.'
-    - 'Distillation_Integrity_Check: Analyze the oxygen purity in the Low-Pressure Column to ensure that the reflux ratio and tray efficiency are maintained, preventing ''Argon Contamination''.'
-    - 'Safety_Fidelity_Scan: Monitor the ''Hydrocarbon Concentration'' in the liquid oxygen pool to verify that no explosive organic compounds are accumulating, which could lead to a catastrophic ASU explosion.'
-Trust Metrics:
+  description: "[Entity] cryogenic-air-separation-and-distillation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Cryogenic Air Separation and Distillation Physics
+# [Entity] cryogenic-air-separation-and-distillation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 숨 쉬는 평범한 공기에서 어떻게 병원용 산소나 반도체용 초고순도 질소를 뽑아낼까요? **저온 공기 분리(Cryogenic Air Separation) 및 증류 물리**는 공기를 영하 190도 이하로 꽁꽁 얼려 액체로 만든 뒤, 그 속에서 성분을 나누는 **'궁극의 냉동 연금술'** 기술입니다. 공기를 액체로 만드는 과정에서 발생하는 거대한 에너지의 흐름을 다스리고, 아주 미세한 끓는점 차이로 산소와 질소를 갈라내는 **'나노 규모의 저온 분리'**입니다. 보이지 않는 공기를 잡아서 문명의 필수 가스로 바꾸는 **'에너지 집약적 정밀 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Expander Efficiency - System cannot maintain 'Cold' balance. Liquid production rate will drop significantly"
         return "PASS: Validated Cryogenic Power Recovery and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(main_heat_exchanger_dt=1.5, oxygen_purity_pct=99.8, hydrocarbon_content_ppb=15)
 print(engine.diagnose_asu_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_asu_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data air-separation-unit-asu-yield-and-energy-v2026`와 연동되어, 전 세계 주요 산업 가스 플랜트의 데이터를 실시간 분석하고 폭발 및 가스 순도 미달 사고 확률을 0.0001% 이하로 억제함으로써 지능형 산업 문명의 가스 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cryogenic-pump-and-low-temperature-fluid-dynamics

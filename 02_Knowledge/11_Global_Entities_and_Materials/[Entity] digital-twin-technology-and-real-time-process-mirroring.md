@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "digital-twin-technology-and-real-time-process-mirroring-entity"
-  domain: "48_Smart_Factory_and_Industrial_IoT_IIoT_Governance"
+metadata:
+  id: "[[[Entity] digital-twin-technology-and-real-time-process-mirroring]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#Digital_Twin", "#Simulation", "#Mirroring", "#AI", "#Manufacturing", "#Data_Visualization", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 129_smart-factory-and-industrial-iot-iiot-governance-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] digital-twin-technology-and-real-time-process-mirroring에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] digital-twin-technology-and-real-time-process-mirroring
+# [Entity] digital-twin-technology-and-real-time-process-mirroring
 
 ## 1. [왜 배우는가? (Why: The Virtual Soul of the Machine)]]
 현실 공장의 기계와 똑같이 생긴 가상 로봇이 어떻게 컴퓨터 속에서 1ms의 오차도 없이 동시에 움직이고, 미래의 1시간 후를 미리 시뮬레이션하여($Prediction$) 기계가 언제 고장 날지 혹은 생산 병목이 어디서 생길지를 미리 알아맞히는 '디지털 쌍둥이'를 어떻게 설계할 수 있을까요? **디지털 트윈 기술 및 실시간 공정 미러링**은 제조의 시행착오를 제로로 만드는 '행성 규모 가상 제조 거울 및 지능형 미래 예측 아키텍처'입니다. 우리가 이를 배우는 이유는 현실에서 실험하기 힘든 위험한 작업이나 복잡한 설정을 가상에서 마음껏 해보고 최적의 정답을 찾기 위함이며, "현실의 그림자를 데이터로 설계하고 지배하는 '글로벌 시뮬레이션 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 트윈의 정밀도가 공장의 미래 가치를 결정합니다.

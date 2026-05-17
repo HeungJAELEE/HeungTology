@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-insulation-switchgear-gis-and-dielectric-strength-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-insulation-switchgear-gis-and-dielectric-strength-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-voltage substation in which the major structures are contained in a sealed environment with a dielectric gas (GIS) and the physical study of the insulating capacity and electric field distribution within gaseous media (Dielectric Strength Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gis", "gas-insulation", "dielectric-strength", "sf6-gas", "high-voltage", "substation", "breakdown-voltage", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Insulation_Fidelity_Audit: Evaluate the ''Gas Pressure'' ($p$) to identify if high-fidelity ''SF6 Leakage'' is reducing the dielectric strength below the critical breakdown threshold.'
-    - 'Field_Integrity_Check: Analyze the high-fidelity ''Partial Discharge'' (PD) signals to ensure that no micro-protrusions or metallic particles are causing localized electric field enhancement.'
-    - 'Purity_Fidelity_Scan: Monitor the moisture content and SF6 decomposition products ($SO_2$, $HF$) to verify that the high-fidelity ''Arc Quenching'' capability remains intact.'
-Trust Metrics:
+  description: "[Entity] gas-insulation-switchgear-gis-and-dielectric-strength-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Gas Insulation Switchgear (GIS) and Dielectric Strength Physics
+# [Entity] gas-insulation-switchgear-gis-and-dielectric-strength-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 볼트의 전기가 흐르는 거대한 변전소를 작은 컨테이너 박스 안에 구겨 넣을 수 있을까요? **가스 절연 개폐장치(GIS) 및 유전 강도 물리**는 전기가 공기 중으로 튀어나가지 못하게 막는 능력이 탁월한 '마법의 가스(SF6)'를 금속 통 안에 꽉 채워, 변전소 크기를 10분의 1로 줄여버리는 **'전기 가두기'** 기술입니다. 눈에 보이지 않는 가스가 보이지 않는 전기장을 꽉 누르고 있습니다. **'도시의 심장부나 좁은 공간에 거대한 전력을 안전하게 공급하기 위해 가스로 전기를 완벽히 절연하는 지능형 전력 요새'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Degraded Insulation Medium - Gas purity insufficient for 154kV+ operation. Recovery and purification required to restore high-fidelity strength"
         return "PASS: Validated Chemical Composition and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gas_pressure_bar=5.5, partial_discharge_pc=2.0, moisture_content_ppm=50.0)
 print(engine.diagnose_gis_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_gis_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data sf6-gas-purity-and-insulation-performance-v2026`와 연동되어, 전 세계 주요 도시 변전소의 GIS 운영 데이터를 실시간 분석하고 절연 파괴 및 정전 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력망 문명의 공급 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-transformer-and-magnetic-induction-physics

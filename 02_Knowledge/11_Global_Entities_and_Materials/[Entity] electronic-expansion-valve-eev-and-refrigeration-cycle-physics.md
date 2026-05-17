@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electronic-expansion-valve-eev-and-refrigeration-cycle-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electronic-expansion-valve-eev-and-refrigeration-cycle-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electronically controlled device that regulates the flow of refrigerant into the evaporator of a refrigeration or air conditioning system (EEV) and the physical study of throttling, flash gas formation, and superheat control in the vapor-compression cycle (Refrigeration Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["eev", "expansion-valve", "refrigeration", "hvac", "thermodynamics", "refrigerant-flow", "energy-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Expansion_Fidelity_Audit: Evaluate the ''Superheat'' ($T_{evap,out} - T_{evap,sat}$) against the EEV step position to identify if the valve is ''Hunting'' (oscillating) or if the refrigerant charge is insufficient.'
-    - 'Flow_Integrity_Check: Analyze the pressure drop across the valve to ensure that ''Flash Gas'' is forming at the correct stage, maximizing the high-fidelity cooling capacity of the evaporator.'
-    - 'Actuator_Fidelity_Scan: Monitor the stepper motor pulse counts to verify that the needle position is maintaining high-fidelity linearity without mechanical sticking or ''Loss of Step'' events.'
-Trust Metrics:
+  description: "[Entity] electronic-expansion-valve-eev-and-refrigeration-cycle-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Electronic Expansion Valve (EEV) and Refrigeration Cycle Physics
+# [Entity] electronic-expansion-valve-eev-and-refrigeration-cycle-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 에어컨이나 냉장고가 시원해지는 결정적인 순간은 언제일까요? 바로 뜨겁고 좁은 통로를 지나던 냉매가 넓은 곳으로 확 퍼지며 온도가 뚝 떨어지는 '팽창'의 순간입니다. **전자식 팽창 밸브(EEV) 및 냉동 사이클 물리**는 이 팽창의 정도를 머리카락 굵기보다 정밀하게 조절하여 에너지를 아끼는 **'냉기의 정밀 수도꼭지'** 기술입니다. 과거의 기계식 밸브가 대충 물을 틀었다면, EEV는 센서의 정보를 받아 0.01mm 단위로 냉매를 조절합니다. **'쾌적함은 극대화하고 전기료는 최소화하는 지능적 열역학의 수호자'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: High Compression Loss - System operating inefficiently. Check condenser airflow or ambient temperature limits"
         return "PASS: Validated Isenthalpic Drop and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(superheat_k=5.2, eev_step_pos=250, evaporator_pressure_bar=8.5)
 print(engine.diagnose_refrigeration_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_refrigeration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data eev-step-position-and-superheat-stability-v2026`와 연동되어, 전 세계 주요 데이터센터 및 스마트 팜의 냉각 데이터를 실시간 분석하고 압축기 소손 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 공조 문명의 열적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-valve-and-flow-coefficient-cv-logic

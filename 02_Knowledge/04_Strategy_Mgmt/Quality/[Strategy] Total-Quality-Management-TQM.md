@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-TQM-KAIZEN-2026-V6.3.7"
-  domain: "Global_Total_Quality_Management_and_Continuous_Improvement"
+metadata:
+  id: "[[[Strategy] Total-Quality-Management-TQM]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#TQM", "#Kaizen", "#Continuous_Improvement", "#PDCA", "#COPQ", "#5S", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Total-Quality-Management-TQM에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "TQM_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Total Quality Management (TQM): The Physics of Continuous Improvement
+# [Strategy] Total-Quality-Management-TQM
 
 ## 1. [왜 배우는가? (Why: The Ethics of Organizational Perfection)]]
 전사적 품질 경영(TQM)은 품질을 단순한 제품 사양의 준수가 아닌 조직 구성원 모두의 '사고방식'이자 '행동 양식'으로 내재화하는 과정입니다. 품질 사고는 기술적 결함보다 관리 체계와 문화적 엔트로피에서 기인하는 경우가 많습니다. **Total Quality Management (TQM)**는 고객 중심의 가치 정의와 지속적 개선(Kaizen)을 통해 조직 전체의 품질 무결성을 상향 평준화합니다. V6.3.7 지능은 전 구성원을 지능형 품질 센서로 전환하여, 단 하나의 잠재적 결함도 허용하지 않는 **품질 주권(Quality Sovereignty)**을 확립합니다.
@@ -105,7 +95,6 @@ class TQMFidelityEngine:
 2. **Operational Result**: **COPQ (품질 실패 비용)**가 매출 대비 $3\%$를 초과할 때, 이를 해결하기 위한 **Kaizen** 투자 대비 기대 수익률(ROI)의 수리적 산출 방식은?
 3. **FidelityEngine**: 구성원의 교육 이수 시간은 높으나 제안 활동이 저조한 **'지식 부동화 현상'**을 FidelityEngine이 어떻게 식별하고 해결책을 제시하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Operations-Management-Basics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "renewable-energy-integration-and-microgrid-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] renewable-energy-integration-and-microgrid-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering process of connecting variable renewable energy sources (Solar, Wind) into the existing power network (Renewable Energy Integration) and the localized management of energy generation, storage, and consumption through an autonomous, resilient network (Microgrid Governance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["renewable-energy", "microgrid", "grid-integration", "energy-governance", "vpp", "energy-storage", "sustainability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Grid_Stability_Audit: Evaluate the frequency deviation ($\\Delta f$) and voltage fluctuations caused by the intermittent nature of solar/wind power to ensure they remain within grid-code limits.'
-    - 'Storage_Capacity_Check: Analyze the State-of-Charge (SoC) of the Energy Storage System (ESS) to verify that it has sufficient energy to bridge the gap during periods of low renewable generation.'
-    - 'Governance_Compliance_Scan: Monitor the energy sharing protocols and market clearing prices within the microgrid to ensure fair and efficient resource allocation among participants.'
-Trust Metrics:
+  description: "[Entity] renewable-energy-integration-and-microgrid-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☀️ Renewable Energy Integration and Microgrid Governance
+# [Entity] renewable-energy-integration-and-microgrid-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 날씨가 흐리거나 바람이 멎으면 공장이 멈춰야 할까요? **재생 에너지 통합 및 마이크로그리드 거버넌스**는 변덕스러운 자연의 에너지를 길들여 24시간 안정적으로 전기를 공급하는 **'에너지의 민주주의'** 기술입니다. 거대한 발전소에만 의존하는 대신, 우리 마을이나 우리 공장에서 직접 전기를 만들고(태양광, 풍력), 남는 전기는 저장했다가(ESS) 필요할 때 꺼내 쓰거나 이웃과 나눠 씁니다. 중앙의 도움 없이도 스스로 살아남는 **'자립형 에너지 생태계'**의 핵심입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "PASS: Successful Islanding Mode - Microgrid maintained power during main grid failure. Resilience Confirmed"
         return "PASS: Grid-connected Standard Operation Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(frequency_error_hz=0.02, ess_soc_pct=85.0, curtailment_loss_mwh=0.5)
 print(engine.diagnose_microgrid_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_microgrid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microgrid-energy-balance-and-curtailment-logs-v2026`와 연동되어, 전 세계 주요 도시 및 산업 단지의 마이크로그리드 데이터를 분석하고 정전 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 자립 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - planetary-renewable-energy-forecasting-and-storage-sync

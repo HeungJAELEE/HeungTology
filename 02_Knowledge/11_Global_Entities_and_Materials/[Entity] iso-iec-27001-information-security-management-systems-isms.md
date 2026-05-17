@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iso-iec-27001-information-security-management-systems-isms"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iso-iec-27001-information-security-management-systems-isms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The international standard (ISO/IEC 27001) that provides a framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS), focusing on protecting the CIA triad (Confidentiality, Integrity, and Availability) of organizational data."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iso-27001", "isms", "information-security", "cybersecurity", "risk-management", "confidentiality", "integrity", "availability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Security_Control_Audit: Verify the implementation and effectiveness of Annex A controls (e.g., access control, encryption, physical security) based on the Statement of Applicability (SoA).'
-    - 'Vulnerability_Assessment_Check: Analyze the frequency and remediation speed of vulnerability scans to ensure that the ISMS is proactively addressing technical weaknesses.'
-    - 'Incident_Response_Scan: Evaluate the organization''s response to security incidents against the ISO 27001 incident management framework to identify areas for improvement.'
-Trust Metrics:
+  description: "[Entity] iso-iec-27001-information-security-management-systems-isms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔐 ISO/IEC 27001: Information Security Management Systems (ISMS)
+# [Entity] iso-iec-27001-information-security-management-systems-isms
 
 ## 1. 개요 (Why: 인간적 통찰)
 정보가 곧 자본인 시대, 누군가 우리 회사의 핵심 기술을 훔쳐보거나 데이터를 마음대로 바꿔버린다면 기업의 운명은 하루아침에 끝날 수 있습니다. **ISO/IEC 27001 및 ISMS**는 기업의 소중한 정보를 지키기 위한 **'디지털 요새의 성벽'**입니다. 단순히 보안 프로그램을 설치하는 것을 넘어, 누가 정보를 볼 수 있는지, 사고가 나면 어떻게 대응할지, 직원들은 보안 수칙을 잘 아는지 등 '사람, 프로세스, 기술' 전체를 아우르는 **'전사적 보안 문화'**를 구축하는 일입니다. 정보의 안전을 넘어, 고객과 파트너에게 "우리는 당신의 데이터를 목숨처럼 소중히 다룬다"라는 믿음을 주는 **'신뢰의 보증서'**입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Identity Management - Excessive Dormant Accounts Increase Attack Surface"
         return "PASS: Strict Access Control and Identity Governance Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(high_risk_mitigation_rate=0.98, mean_time_to_patch_days=5, employee_phishing_fail_rate=0.02)
 print(engine.diagnose_isms_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_isms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cybersecurity-incident-logs-and-isms-compliance-v2026`와 연동되어, 전 세계 주요 기관의 보안 위협과 대응 데이터를 실시간 분석하고 데이터 유출 및 랜섬웨어 사고 확률을 0.001% 이하로 억제함으로써 디지털 정보 자산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - industrial-control-system-ics-cybersecurity-architecture

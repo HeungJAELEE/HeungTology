@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "exhaust-gas-recirculation-egr-and-emission-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] exhaust-gas-recirculation-egr-and-emission-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A nitrogen oxide (NOx) emissions reduction technique used in petrol/gasoline and diesel engines (EGR) and the physical study of inert gas thermal buffering and oxygen concentration dilution in combustion processes (Emission Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["egr", "emission-control", "nox-reduction", "combustion-physics", "exhaust-gas", "environmental-protection", "engine-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Emission_Fidelity_Audit: Evaluate the ''NOx Concentration'' in the exhaust stream to identify if the EGR valve is sticking or if the high-fidelity cooling efficiency of the EGR cooler is degraded.'
-    - 'Combustion_Integrity_Check: Analyze the cylinder pressure and burn rate to ensure that excessive EGR is not causing ''Misfire'' or ''Partial Burn'' instability in high-fidelity engine cycles.'
-    - 'Soot_Fidelity_Scan: Monitor the particulate matter (PM) tradeoff to verify that the high-fidelity EGR rate is not increasing soot formation beyond the DPF (Diesel Particulate Filter) capacity.'
-Trust Metrics:
+  description: "[Entity] exhaust-gas-recirculation-egr-and-emission-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Exhaust Gas Recirculation (EGR) and Emission Control Physics
+# [Entity] exhaust-gas-recirculation-egr-and-emission-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 엔진에서 이미 타버린 '죽은 공기(배기가스)'를 왜 다시 신선한 엔진 속으로 집어넣을까요? **배기가스 재순환(EGR) 및 배출 제어 물리**는 뜨거운 불길 속에 '불을 끄는 성질'을 가진 배기가스를 섞어, 질소산화물(NOx)이라는 독성 기체가 생기지 못하게 방해하는 **'불길의 온도 조절'** 기술입니다. 마치 뜨거운 국에 찬물을 부어 온도를 맞추듯, 엔진 내부의 폭발 온도를 미세하게 낮추어 환경을 보호하는 **'문명의 배설물을 재활용해 대기를 정화하는 지능적 역발상의 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: DPF Saturation Imminent - EGR rate too high, causing excessive PM formation. Reduce EGR and initiate DPF regeneration cycle"
         return "PASS: Validated Combustion Balance and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(egr_valve_pos_pct=15.0, exhaust_temp_c=450.0, nox_sensor_ppm=120.0)
 print(engine.diagnose_emission_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_emission_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data engine-nox-emissions-and-egr-rate-v2026`와 연동되어, 전 세계 주요 자동차 및 선박 엔진의 배출 데이터를 실시간 분석하고 환경 규제 위반 및 엔진 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 친환경 수송 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electric-motor-cooling-and-thermal-management-physics

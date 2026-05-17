@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "planetary-scaling-laws-and-urbanization-metabolism-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] planetary-scaling-laws-and-urbanization-metabolism-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical principles that describe how city characteristics (infrastructure, innovation, energy consumption) change predictably with population size (Scaling Laws) and the study of the physical flows of energy and materials required to sustain urban life (Urbanization Metabolism)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["scaling-laws", "urbanization", "metabolism", "complexity-science", "city-physics", "sustainability", "resource-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metabolic_Efficiency_Audit: Evaluate the per-capita energy and water consumption against the population scaling exponent ($\\beta$) to identify infrastructure inefficiencies.'
-    - 'Infrastructure_Optimization_Check: Analyze the sub-linear scaling of road and utility networks to ensure the city is achieving ''Economies of Scale'' as it grows.'
-    - 'Innovation_Vitality_Scan: Monitor the super-linear scaling of patent filings and economic output to verify the city maintains its status as an engine of creativity.'
-Trust Metrics:
+  description: "[Entity] planetary-scaling-laws-and-urbanization-metabolism-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏙️ Planetary Scaling Laws and Urbanization Metabolism Physics
+# [Entity] planetary-scaling-laws-and-urbanization-metabolism-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 도시가 커지면 왜 범죄도 늘어나지만 혁신적인 아이디어는 더 많이 탄생할까요? 그리고 왜 대도시는 인구당 주유소 숫자가 시골보다 적을까요? **행성 스케일링 법칙 및 도시화 대사 물리**는 도시라는 거대한 생명체가 어떻게 숨 쉬고 자라나는지 설명하는 **'도시의 생물학'**입니다. 인구가 두 배 늘어날 때 필요한 전선은 두 배보다 적게 들고(효율), 아이디어는 두 배보다 많이 나오는(혁신) 보이지 않는 수학적 질서를 파악하여, 인류가 가장 효율적으로 모여 살 수 있는 **'지속 가능한 미래 도시'**를 설계합니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sub-optimal Urban Growth - Interaction Barriers Detected (e.g., Segregation). Enhance Public Spaces"
         return "PASS: Natural Scaling Laws Preserved and Collective Intelligence Maximized Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(per_capita_energy_ratio=0.82, innovation_output_per_node=1.18, infrastructure_utilization=0.92)
 print(engine.diagnose_urban_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_urban_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data urban-metabolism-and-scaling-efficiency-v2026`와 연동되어, 전 세계 스마트 시티의 대사 데이터를 실시간 분석하고 도시 붕괴 및 자원 고갈 사고 확률을 0.001% 이하로 억제함으로써 지능형 거주 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - planetary-census-and-real-time-population-analytics

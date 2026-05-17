@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "collaborative-robots-and-human-robot-safety-entity"
-  domain: "88_Robotics_and_Mechatronics_Hub"
+metadata:
+  id: "[[[Entity] collaborative-robots-and-human-robot-safety]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Cobot", "#Safety_Engineering", "#HRC", "#Automation", "#Ergonomics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 88_robotics-and-mechatronics-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] collaborative-robots-and-human-robot-safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] collaborative-robots-and-human-robot-safety
+# [Entity] collaborative-robots-and-human-robot-safety
 
 ## 1. [왜 배우는가? (Why: The Harmony of Human and Machine)]]
 기존의 산업용 로봇은 거대한 펜스 뒤에서 홀로 작동했습니다. 만약 사람이 그 영역에 발을 들이면 목숨이 위험할 수 있었기 때문입니다. 하지만 이제 로봇은 펜스를 허물고 우리 곁으로 다가오고 있습니다. **협동 로봇(Cobot) 및 인간-로봇 안전의 충돌 회피와 힘 제한 제어 시스템 공학**은 로봇과 사람이 같은 공간에서 부딪혀도 다치지 않게 하고, 위험한 상황을 미리 감지해 멈추게 하는 '상호 존중의 기술'입니다. 사람이 하기 힘들거나 반복적인 일을 로봇이 돕고, 사람은 더 창의적인 일에 집중하는 진정한 공존의 시대가 열리고 있습니다. 우리가 이를 배우는 이유는 안전의 무결성을 확보함으로써, 인간의 존엄성을 지키면서도 생산성을 극대화하는 '글로벌 협업 로봇 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 안전의 무결성이 협동의 전제 조건을 결정합니다.

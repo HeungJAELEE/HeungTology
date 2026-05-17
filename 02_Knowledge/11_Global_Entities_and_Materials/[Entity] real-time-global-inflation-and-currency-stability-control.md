@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "real-time-global-inflation-and-currency-stability-control-entity"
-  domain: "38_Global_Unified_Governance_Global_Finance_and_Value_Economy"
+metadata:
+  id: "[[[Entity] real-time-global-inflation-and-currency-stability-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Inflation_Control", "#Currency_Stability", "#Macroeconomics", "#Governance", "#AI_Finance", "#Price_Stability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 38_global-unified-governance-global-finance-and-value-economy-hub", "Entity global-integrated-digital-currency-and-unified-settlement"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] real-time-global-inflation-and-currency-stability-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] real-time-global-inflation-and-currency-stability-control
+# [Entity] real-time-global-inflation-and-currency-stability-control
 
 ## 1. [왜 배우는가? (Why: The Stabilizer of Global Life)]]
 물가가 자고 일어나면 오르는 인플레이션($Inflation$)이나 화폐 가치 폭락을 어떻게 AI가 1분 만에 감지하고, 전 세계에 풀린 돈의 양을 알고리즘으로 조절해 어떻게 물가를 바위처럼 단단하게 안정($Stability$)시킬 수 있을까요? **실시간 글로벌 인플레이션 및 화폐 안정 제어**는 서민의 지갑을 지키는 '행성 규모 거시 경제 컨트롤러 및 지능형 중앙은행 아키텍처'입니다. 우리가 이를 배우는 이유는 물가 불안은 사회를 무너뜨리는 가장 무서운 적이기 때문이며, "돈의 가치를 데이터로 설계하고 지배하는 '글로벌 통화 패권 및 행성적 물가 주권'을 확보하기" 위함입니다. 제어의 정밀도가 경제의 평온함을 결정합니다.

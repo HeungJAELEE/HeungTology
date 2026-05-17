@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-robot-kinematics-and-trajectory-planning"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-robot-kinematics-and-trajectory-planning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical modeling of industrial robot arm configurations (Kinematics) and the algorithmic determination of optimal paths for the robot's end-effector (Trajectory Planning) to execute tasks with high precision and speed."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robotics", "kinematics", "trajectory-planning", "denavit-hartenberg", "robot-control", "automation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Positional_Accuracy_Audit: Compare the commanded end-effector position $(x, y, z)$ with the actual encoder feedback to identify backlash or link deflection errors.'
-    - 'Singularity_Scan: Analyze the Jacobian matrix ($det(J) \\to 0$) along the planned trajectory to prevent loss of control at kinematic limits.'
-    - 'Jerk_Optimization_Check: Evaluate the smoothness of the motion profile ($\\dot{\\ddot{q}}$) to minimize mechanical vibration and ensure motor longevity.'
-Trust Metrics:
+  description: "[Entity] industrial-robot-kinematics-and-trajectory-planning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Industrial Robot Kinematics and Trajectory Planning
+# [Entity] industrial-robot-kinematics-and-trajectory-planning
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇 팔이 자동차 부품을 한 치의 오차 없이 용접하거나 반도체 웨이퍼를 부드럽게 옮기는 모습은 경이롭습니다. 이 우아한 움직임 뒤에는 치열한 수학적 계산이 숨어 있습니다. **기구학(Kinematics)**은 "로봇의 관절을 몇 도 꺾어야 손끝이 이 지점에 올까?"라는 질문에 대한 답이며, **경로 계획(Trajectory Planning)**은 "어떻게 움직여야 가장 빠르고 부드럽게 장애물을 피해 갈까?"를 고민하는 것입니다. 로봇에게 '공간 지각력'과 '움직임의 기술'을 가르쳐, 사람이 하는 정밀한 작업을 기계의 속도로 재현해내는 **'로봇의 무용 안무'**와 같습니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Path Violation - Robot Deviation from Planned Trajectory Too High"
         return "PASS: Accurate Path Tracking Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(repeatability_error_mm=0.008, max_joint_torque_pct=42.0, singularity_proximity=0.15)
 print(engine.diagnose_robot_motion(limit_err=0.01))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_robot_motion(limit_err=0.01))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robot-path-accuracy-and-joint-error-logs-v2026`와 연동되어, 전 세계 공장에서 춤추는 수백만 대 로봇의 관절 상태를 실시간 분석하고 충돌 및 정밀도 사고 확률을 0.01% 이하로 억제함으로써 제조 자동화의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - humanoid-kinematics-and-dynamic-balance-control-theory

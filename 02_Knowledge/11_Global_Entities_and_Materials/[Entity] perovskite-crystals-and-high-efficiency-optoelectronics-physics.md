@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "perovskite-crystals-and-high-efficiency-optoelectronics-physics-entity"
-  domain: "18_Advanced_Materials"
+metadata:
+  id: "[[[Entity] perovskite-crystals-and-high-efficiency-optoelectronics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Advanced_Materials", "#Perovskite", "#Optoelectronics", "#Solar_Cells", "#LED", "#Photovoltaics", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "Entity perovskite-solar-cell-and-photovoltaic-physics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] perovskite-crystals-and-high-efficiency-optoelectronics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] perovskite-crystals-and-high-efficiency-optoelectronics-physics
+# [Entity] perovskite-crystals-and-high-efficiency-optoelectronics-physics
 
 ## 1. [왜 배우는가? (Why: The Game Changer in Light and Energy)]]
 유리창에 바르기만 해도 전기가 생성되고, 종이처럼 얇으면서도 눈이 부시게 선명한 화면을 저렴하게 만들 수 있다면 어떨까요? **페로브스카이트 결정 및 고효율 광전자 물리**는 특유의 결정 구조($ABX_3$)를 가진 신소재가 빛을 전기로, 혹은 전기를 빛으로 바꾸는 놀라운 효율의 비밀을 다루는 '에너지 및 디스플레이 혁신 지침'입니다. 우리가 이를 배우는 이유는 실리콘보다 훨씬 저렴한 비용으로 탄소 중립을 실현하고 차세대 디스플레이 주도권을 잡기 위함이며, "빛과 에너지의 변환 효율을 극대화하는 '글로벌 광전 소재 및 에너지 안보 주권'을 확보하기" 위함입니다. 결정 격자 속의 이온 배열이 에너지의 가치를 결정합니다.

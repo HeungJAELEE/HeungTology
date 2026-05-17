@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "decentralized-ai-and-federated-learning-topology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] decentralized-ai-and-federated-learning-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The distributed machine learning paradigm (Federated Learning) that enables AI models to be trained across multiple decentralized edge devices or servers holding local data samples, without exchanging them (Data Privacy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["decentralized-ai", "federated-learning", "privacy-preserving-ai", "edge-intelligence", "distributed-learning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Convergence_Audit: Measure the rate of decrease in global loss function over training rounds.'
-    - 'Client_Update_Validity_Check: Detect and mitigate ''Poisoning Attacks'' where a malicious client sends fake model weights.'
-    - 'Communication_Efficiency_Scan: Analyze the bandwidth consumed for model parameter exchange vs. local computation time.'
-Trust Metrics:
+  description: "[Entity] decentralized-ai-and-federated-learning-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕸️ Decentralized AI and Federated Learning Topology
+# [Entity] decentralized-ai-and-federated-learning-topology
 
 ## 1. 개요 (Why: 인간적 통찰)
 AI를 학습시키려면 엄청난 데이터가 필요합니다. 하지만 그 데이터는 우리 스마트폰의 사진, 병원의 진료 기록처럼 아주 개인적이고 민감한 것들입니다. **연합 학습(Federated Learning)**은 데이터를 서버로 가져오는 대신, AI 모델을 데이터가 있는 곳(각자의 기기)으로 보내는 역발상입니다. 데이터는 주인의 기기에 그대로 머문 채 '학습된 지능(가중치)'만 서버로 보내 합칩니다. "데이터를 공유하지 않고 지식만 공유한다"는 이 원칙은 프라이버시를 지키면서도 거대한 인공지능을 만드는 가장 지혜로운 방법입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return f"REJECT: Excessive Bandwidth Consumption ({self.bw}MB) - Apply Gradient Compression"
         return "PASS: Sustainable Communication Topology Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(convergence_speed=0.65, poisoning_threat_level=0.02, bandwidth_usage_mb=45)
 print(engine.diagnose_learning_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_learning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data federated-learning-convergence-and-privacy-budget-v2026`와 연동되어, 전 세계 수억 대의 엣지 기기에서 일어나는 AI 학습 과정을 실시간 분석하고 지식 유출 확률을 0.001% 이하로 억제함으로써 프라이버시 중심 지능형 사회의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - data-privacy-and-differential-privacy-technologies

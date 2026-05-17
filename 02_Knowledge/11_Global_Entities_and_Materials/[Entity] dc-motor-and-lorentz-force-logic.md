@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "dc-motor-and-lorentz-force-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] dc-motor-and-lorentz-force-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrical machine that converts direct current electrical energy into mechanical energy (DC Motor) and the physical study of the force exerted on a current-carrying conductor in a magnetic field that drives the rotation (Lorentz Force Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dc-motor", "lorentz-force", "electromagnetism", "electric-machine", "torque", "back-emf", "industrial-drive"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Torque_Fidelity_Audit: Evaluate the ''Torque Constant'' ($K$) and armature current ($I_a$) to identify if magnetic saturation or field weakening is reducing the motor''s starting capability.'
-    - 'Back-EMF_Integrity_Check: Analyze the generated $E_b$ against the rotational speed to ensure the magnetic flux ($\\phi$) is stable and the winding insulation is intact.'
-    - 'Commutation_Fidelity_Scan: Monitor the brush sparking and commutator wear to verify that the mechanical-electrical interface is maintaining high-fidelity power transfer without excessive EMI.'
-Trust Metrics:
+  description: "[Entity] dc-motor-and-lorentz-force-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ DC Motor and Lorentz Force Logic
+# [Entity] dc-motor-and-lorentz-force-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 보이지 않는 전기가 어떻게 무거운 기계를 돌리는 물리적인 힘으로 변할까요? **DC 모터 및 로렌츠 힘(Lorentz Force) 로직**은 자기장 속에서 흐르는 전기가 받는 '옆으로 밀리는 힘'을 회전력으로 바꾸는 **'전기에너지의 물리적 변환'** 기술입니다. 이는 마치 보이지 않는 자기장의 손이 전선을 힘차게 밀어내는 것과 같습니다. 로봇의 팔부터 전기차의 바퀴까지, 현대 문명의 모든 '움직임'을 가능케 하는 **'전기 기계 공학의 가장 직관적인 기초'**입니다.
@@ -92,7 +81,6 @@ class LogicFidelityEngine:
             return "REJECT: Field Loss Detected - Motor at risk of 'Runaway' (Infinite speed). Magnetic flux lost. Emergency stop required"
         return "PASS: Validated Flux Density and Verified Drive Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(supply_voltage=24.0, armature_current=12.5, rotational_speed_rpm=1500)
 print(engine.diagnose_motor_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_motor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dc-motor-efficiency-and-torque-speed-curves-v2026`와 연동되어, 전 세계 주요 로봇 및 산업용 전동기 라인의 데이터를 실시간 분석하고 코일 소손 및 폭주 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - computer-numerical-control-cnc-and-servo-motor-logic

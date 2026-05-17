@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "organizational-culture-and-leadership-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] organizational-culture-and-leadership-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic management of shared values, beliefs, and behaviors within an organization (Organizational Culture) and the formal systems used to direct and control leadership actions (Leadership Governance), ensuring ethical conduct and alignment with corporate goals."
-  physical_model: "N/A"
-Semantic:
-  tags: '["organizational-culture", "leadership", "governance", "change-management", "corporate-values", "ethical-leadership", "strategic-alignment"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Cultural_Alignment_Audit: Evaluate the consistency between stated corporate values and actual employee behaviors to identify ''Value Gaps'' that compromise integrity.'
-    - 'Leadership_Accountability_Check: Analyze the decision-making transparency and oversight mechanisms to ensure leaders are acting as stewards of the organization''s long-term health.'
-    - 'Ethical_Climate_Scan: Monitor anonymous reporting trends and employee sentiment to identify risks of toxic culture or non-compliance before they lead to legal issues.'
-Trust Metrics:
+  description: "[Entity] organizational-culture-and-leadership-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Organizational Culture and Leadership Governance
+# [Entity] organizational-culture-and-leadership-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 회사의 '진정한 모습'은 아무도 보지 않을 때 직원들이 어떻게 행동하는가에 달려 있습니다. **조직 문화 및 리더십 거버넌스**는 기업이라는 보이지 않는 건물의 '공기'와 '기둥'을 관리하는 **'보이지 않는 지휘'**입니다. 훌륭한 문화는 규정 없이도 옳은 일을 하게 만들고, 정교한 리더십 거버넌스는 권력이 올바른 방향(공익과 성장)으로 흐르도록 통제합니다. 기술과 자본을 넘어서는, 기업의 영혼을 빚고 지키는 **'품격의 경영'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Fragile Leadership Pipeline - Continuity Risk Identified. Enhance Talent Development Governance"
         return "PASS: Sustainable Leadership Stewardship and Continuity Strategy Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(integrity_violation_count=0, employee_trust_score=0.92, policy_compliance_rate=0.98)
 print(engine.diagnose_org_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_org_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data organizational-health-and-governance-compliance-logs-v2026`와 연동되어, 전 세계 주요 기업의 거버넌스 데이터를 실시간 분석하고 부패 및 문화 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 경영 문명의 거버넌스 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - business-ethics-and-corporate-social-responsibility-csr-governance

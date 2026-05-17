@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "haptic-feedback-systems-and-telepresence-robotics-entity"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] haptic-feedback-systems-and-telepresence-robotics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Haptic", "#Telepresence", "#Remote_Control", "#Feedback", "#HMI", "#Cyber_Physical", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 54_robotics-and-autonomous-system-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] haptic-feedback-systems-and-telepresence-robotics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] haptic-feedback-systems-and-telepresence-robotics
+# [Entity] haptic-feedback-systems-and-telepresence-robotics
 
 ## 1. [왜 배우는가? (Why: Being Anywhere at Once)]]
 지구 반대편이나 우주 공간에 있는 로봇이 물건을 만질 때 그 감촉($Haptic$)을 어떻게 내 손처럼 실시간으로 느끼고, 마치 내가 그곳에 있는 것처럼($Telepresence$) 로봇의 눈과 귀를 통해 생생하게 현장을 누비는 '원격 존재'의 기술을 어떻게 설계할 수 있을까요? **햅틱 피드백 시스템 및 원격 현재감 로보틱스**는 시공간의 벽을 허무는 '행성 규모 원격 노동 인프라 및 지능형 감각 전송 아키텍처'입니다. 우리가 이를 배우는 이유는 위험한 재난 현장이나 심해, 우주에서 사람이 직접 가지 않고도 완벽하게 일을 처리해야 하기 때문이며, "현재감의 본질을 데이터로 설계하고 지배하는 '글로벌 원격 제어 패권 및 행성적 존재 주권'을 확보하기" 위함입니다. 피드백의 생생함이 원격 작업의 성공률을 결정합니다.

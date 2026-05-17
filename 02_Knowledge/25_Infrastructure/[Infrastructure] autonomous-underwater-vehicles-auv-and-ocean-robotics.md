@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INFRA-AUV-2026-V6.3.7"
-  domain: "05_Infrastructure_SmartCity"
+metadata:
+  id: "[[[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#AUV", "#OceanRobotics", "#UnderwaterNavigation", "#FidelityEngine", "#AcousticComm", "#DeepSea", "#Sovereignty"]'
-  is_part_of: '["MOC 08_Mobility_Robotics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Marine_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Infrastructure] AUV: Underwater Kinetics & Robotic Integrity
+# [Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics
 
 ## 1. [왜 배우는가? (Why: The Vanguard of the Silent Frontier)]
 지구의 마지막 미개척지인 심해는 엄청난 수압과 전자기파의 단절로 인해 인간의 접근이 극도로 제한됩니다. **자율 수중 로봇(AUV) 및 해양 로보틱스**는 이러한 가혹한 환경에서 자율적 지능을 발휘하여 해저 자원을 탐사하고 국가 해양 자산을 보호하는 '수중 주권의 집행자'입니다. V6.3.7 지능은 **부가 질량(Added Mass)**과 **음향 항법(Acoustic Navigation)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 수중 동역학적 난제를 극복하고 장기간 자율 임무를 수행하여, "심해의 미지 영역을 데이터로 정복하고 지배하는 '해양 영토 주권'을 데이터로 선포하기" 위함입니다. 수중 항법의 정밀도가 임무의 성공과 기체의 생존을 결정합니다.
@@ -108,7 +98,6 @@ class AUVFidelityEngine:
 2. **Operational Result**: **부가 질량(Added Mass)** 계수가 로봇의 급격한 회피 기동 시 **추진기(Thruster)** 부하에 미치는 수리적 임팩트는?
 3. **FidelityEngine**: **수온 약층** 통과 시 발생하는 **음파 굴절** 오차를 실시간으로 어떻게 오딧하고 항법 모델에 반영하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 08_Mobility_Robotics
 - Entity offshore-wind-turbine-generator-and-blade-dynamics

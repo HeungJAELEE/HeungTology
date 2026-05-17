@@ -1,86 +1,75 @@
 ---
-Basic:
-  id: "BAT-BMA-MOLD-2026-V6"
+metadata:
+  id: "[[[Battery] bma-molding-manufacturing]]"
   domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#BMA_Manufacturing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] bma-molding-manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] bma-molding-manufacturing
+# [Battery] bma-molding-manufacturing
 
-## 1. [왜 배우는가? (Why)]]
-BMA(Battery Module Assembly) 하우징 및 사출물은 배터리 셀을 외부 충격으로부터 보호하고 열 폭주를 차단하며 전력 연결 버스바의 기초 지지대 역할을 수행하는 '기능성 구조재'입니다. 전기차의 주행 거리 향상을 위한 경량화와 충돌 시 안전을 위한 고강성이라는 상충하는 목표를 동시에 달성해야 합니다. 특히 금속 버스바나 보강재를 플라스틱 내부에 일체화하는 인서트 사출(Insert Molding) 기술은 조립 공정 단축과 신뢰성 확보의 핵심이며, 이를 위해 고도의 유변학적 제어와 냉각 시 발생하는 휨(Warpage) 관리가 요구됩니다. 본 공정을 배우는 것은 배터리 시스템의 물리적 프레임을 완성하는 정밀 사출 공학의 메커니즘을 이해하기 위함입니다.
+## 1. [Engineering Objective]
+BMA(Battery Module Assembly) 하우징 및 사출물은 Cell 외부 충격 방호, Thermal Runaway 차단, Busbar 지지를 수행하는 기능성 구조재(Functional Structural Component)임. 경량화(Lightweighting)와 고강성(High-Rigidity) 간의 물리적 트레이드오프 최적화가 요구됨. 특히 Insert Molding을 통한 금속-고분자 계면 신뢰성 확보 및 유변학적(Rheological) 제어를 통한 Warpage(휨) 관리 기술이 핵심 공정 변수임.
 
-## 2. [BMA 사출 및 공정 핵심 사양 (Molding Specs)]
+## 2. [Molding Specification Analysis]
 
-| Parameter Category | Standard (BMA Housing) | High-Precision (CTP) | Unit | Engineering Rationale |
+| Parameter Category | Theoretical (Standard) | Verified (High-Precision/CTP) | Unit | Engineering Rationale |
 |:---|:---:|:---:|:---:|:---|
-| **Material Base** | PA66 + GF30% | Specialty FR-Polymer | - | 내열성, 강성 및 절연성 확보를 위한 복합재 |
-| **Clamping Force** | $500 \sim 1,500$ | **$\ge 2,000$** | Ton | 대형 부품 성형 시 금형 벌어짐 방지 및 정밀도 |
-| **Injection Speed** | $50 \sim 100$ | $80 \sim 150$ | mm/s | 미세 형상 충전 및 유리섬유 배향 제어 |
-| **Packing Pressure**| $800 \sim 1,200$ | $1,000 \sim 1,500$| bar | 수축 보전 및 치수 안정성 확보 압력 |
-| **Warpage Tolerance**| $\pm 0.5$ | **$\pm 0.2$** | mm | 모듈 조립 및 버스바 정렬을 위한 공차 한계 |
-| **Part Weight Var.** | $\le 0.5\%$ | $\le 0.2\%$ | % | 성형 밀도 및 구조적 균일성 관리 지표 |
-| **Mold Temperature**| $80 \sim 120$ | $130 \sim 150$ | $^\circ\text{C}$ | 수지 결정화도 및 표면 조도(Ra) 제어 |
-| **Cycle Time** | $45 \sim 60$ | $60 \sim 90$ | sec | 생산성 및 잔류 응력 완화를 위한 냉각 시간 |
+| **Material Base** | PA66 + GF30% [Ref: BAT-BMA-MOLD-2026-V6] | Specialty FR-Polymer [Ref: BAT-BMA-MOLD-2026-V6] | - | 내열성, 강성 및 절연성 확보 |
+| **Clamping Force** | $500 \sim 1,500$ [Ref: BAT-BMA-MOLD-2026-V6] | $\ge 2,000$ [Ref: BAT-BMA-MOLD-2026-V6] | Ton | 금형 개방 방지 및 치수 정밀도 유지 |
+| **Injection Speed** | $50 \sim 100$ [Ref: BAT-BMA-MOLD-2026-V6] | $80 \sim 150$ [Ref: BAT-BMA-MOLD-2026-V6] | mm/s | 미세 형상 충전 및 GF 배향 제어 |
+| **Packing Pressure**| $800 \sim 1,200$ [Ref: BAT-BMA-MOLD-2026-V6] | $1,000 \sim 1,500$ [Ref: BAT-BMA-MOLD-2026-V6] | bar | 수축 보전 및 밀도 균일성 확보 |
+| **Warpage Tolerance**| $\pm 0.5$ [Ref: BAT-BMA-MOLD-2026-V6] | $\pm 0.2$ [Ref: BAT-BMA-MOLD-2026-V6] | mm | Busbar 정렬 및 조립 공차 준수 |
+| **Part Weight Var.** | $\le 0.5\%$ [Ref: BAT-BMA-MOLD-2026-V6] | $\le 0.2\%$ [Ref: BAT-BMA-MOLD-2026-V6] | % | 구조적 균일성 지표 |
+| **Mold Temperature**| $80 \sim 120$ [Ref: BAT-BMA-MOLD-2026-V6] | $130 \sim 150$ [Ref: BAT-BMA-MOLD-2026-V6] | $^\circ\text{C}$ | 수지 결정화도(Crystallinity) 제어 |
+| **Cycle Time** | $45 \sim 60$ [Ref: BAT-BMA-MOLD-2026-V6] | $60 \sim 90$ [Ref: BAT-BMA-MOLD-2026-V6] | sec | 잔류 응력 완화 및 생산성 최적화 |
 
-## 3. [공학적 근거 (Scientific Rationale)]
+## 3. [Physics-Based Rationale]
 
-### 3.1 헬레-쇼 (Hele-Shaw) 유동 근사
-박벽(Thin-wall) 사출물의 용융 수지 유동을 분석하기 위한 유체 역학 모델입니다.
-- **수식**: $\frac{\partial}{\partial z} (\eta \frac{\partial u}{\partial z}) = \frac{\partial p}{\partial x}$
-- **로직**: 점도($\eta$)와 압력 구배($\partial p/\partial x$) 사이의 관계를 통해 충전 패턴을 예측하고, 웰드라인(Weld-line) 발생 위치를 최적화하여 기계적 취약점을 제거합니다.
+### 3.1 Hele-Shaw Flow Approximation
+Thin-wall 사출 공정의 유동 해석용 유체 역학 모델.
+- **Governing Equation**: $\frac{\partial}{\partial z} (\eta \frac{\partial u}{\partial z}) = \frac{\partial p}{\partial x}$
+- **Logic**: 점도($\eta$)와 압력 구배($\partial p/\partial x$) 상관관계를 분석하여 Weld-line 위치를 예측하고 기계적 취약 지점을 최적화함.
 
-### 3.2 유리섬유 배향 및 이방성 수축
-강성 보강용 유리섬유(GF)는 유동 방향으로 정렬되며, 이는 유동 방향과 수직 방향 간의 수축률 차이를 유발하여 휨(Warpage)의 원인이 됩니다.
-- **물리적 메커니즘**: 레이놀즈 수($Re = \rho v D / \eta$)를 제어하여 층류(Laminar Flow) 영역에서 섬유가 무작위로 배향되도록 게이트 위치와 사출 속도를 설계하여 이방성을 상쇄합니다.
+### 3.2 Glass Fiber (GF) Orientation & Anisotropy
+강성 보강용 GF는 유동 방향(Flow Direction)으로 정렬되며, 이는 이방성 수축(Anisotropic Shrinkage)을 유발함.
+- **Mechanism**: 레이놀즈 수($Re = \rho v D / \eta$) 제어를 통해 층류(Laminar Flow) 영역 내 섬유 배향을 제어, Warpage를 최소화함.
 
-### 3.3 냉각 구배와 모멘트 평형
-금형 상/하판의 온도 차($\Delta T$)를 의도적으로 발생시켜 냉각 시 발생하는 잔류 응력에 의한 휨 모멘트를 상쇄하는 기술입니다.
+### 3.3 Thermal Gradient & Moment Equilibrium
+금형 상/하판 온도 차($\Delta T$) 제어를 통해 냉각 시 발생하는 잔류 응력 유도 휨 모멘트(Bending Moment)를 상쇄함.
 
-## 4. [코드 연결 해설 (Injection Cycle Optimizer)]
-아래 코드는 사출 데이터(압력, 온도)를 기반으로 냉각 사이클을 최적화하고, 유리섬유 배향에 따른 예상 휨 변형량을 실시간 진단하는 엔진입니다.
+## 4. [Computational Optimization Engine]
 
 ```python
 import numpy as np
 
 class InjectionCycleOptimizer:
     """
-    HDS-Gold V6.3.7 규격의 BMA 사출 공정 최적화 및 변형 예측 엔진
+    HDS-Gold V7.5.2 규격: BMA 사출 최적화 및 변형 예측 엔진
     """
     def __init__(self, material="PA66-GF30"):
-        self.alpha = 2.3e-5 # 선팽창 계수 (m/mK)
-        self.target_warp = 0.5 # mm
+        self.alpha = 2.3e-5 [Ref: Material_Data_Sheet] # 선팽창 계수 (m/mK)
+        self.target_warp = 0.5 [Ref: Engineering_Standard] # mm
 
     def predict_warpage(self, flow_vector, temp_gradient_c):
         """
-        유동 방향 벡터와 온도 구배를 기반으로 변형 텐서 계산
+        유동 벡터 및 온도 구배 기반 변형 텐서 연산
         """
-        # 단순화된 휨 예측 모델: delta_L = L * alpha * delta_T
+        # Warpage Model: delta_L = L * alpha * delta_T
         warpage_score = np.linalg.norm(flow_vector) * self.alpha * temp_gradient_c * 1000 # mm
         
         return {
@@ -91,27 +80,22 @@ class InjectionCycleOptimizer:
 
     def optimize_packing_pressure(self, current_weight_g, target_weight_g):
         """
-        중량 편차 기반 보압(Packing Pressure) 실시간 보정
+        중량 편차 기반 보압(Packing Pressure) 피드백 제어
         """
         deviation = (target_weight_g - current_weight_g) / target_weight_g
-        pressure_adj = deviation * 1000 # bar 단위 환산
+        pressure_adj = deviation * 1000 # bar
         return round(pressure_adj, 2)
-
-# Example Usage:
-# optimizer = InjectionCycleOptimizer()
-# result = optimizer.predict_warpage(flow_vector=np.array([1.2, 0.5]), temp_gradient_c=15)
 ```
 
-## 5. [스스로 체크 (Self-Audit)]
-1. **PA66-GF30** 수지를 사용할 때, 유리섬유의 **배향(Orientation)**이 유동 방향과 일치할 경우 발생하는 '이방성 수축'이 **BMA 하우징**의 치수 정밀도에 미치는 영향은?
-2. **인서트 사출(Insert Molding)** 시 금속 버스바를 예열하지 않고 사출했을 때, 계면에서 발생하는 **잔류 응력(Residual Stress)**과 제품 수명의 상관관계는?
-3. **Packing Pressure** (보압) 과정이 전체 사출 사이클에서 **Part Weight** (부품 중량) 균일성을 확보하기 위해 수행하는 물리적 역할은?
+## 5. [Engineering Self-Audit]
+1. **Anisotropic Shrinkage**: PA66-GF30 적용 시, GF 배향과 유동 방향 일치에 따른 이방성 수축이 BMA 하우징 치수 안정성(Dimensional Stability)에 미치는 임계 영향성 검증 필요.
+2. **Residual Stress**: Insert Molding 공정 내 금속 Busbar 예열 미실시가 계면 잔류 응력(Interfacial Residual Stress) 및 열 사이클 수명에 미치는 상관관계 분석 요구됨.
+3. **Mass Balance**: Packing Pressure 단계가 성형 밀도 및 Part Weight 균일성 확보를 위해 수행하는 물리적 보상 메커니즘(Compensatory Mechanism) 규명 필요.
 
----
-### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- 02_Knowledge/02_Battery/Process/Battery battery-module-assembly-bma-process
-- 02_Knowledge/09_SmartFactory_Production/ControlSystems/Control Plastic-Rheology-Physics
-- 02_Knowledge/03_AI_Data/Industrial/AI computer-aided-engineering-cae-integration
+### 🔗 Retrieved Knowledge Nodes
+- 02_Knowledge/02_Battery/Process/Battery_bma_process
+- 02_Knowledge/09_SmartFactory/Control/Plastic_Rheology_Physics
+- 02_Knowledge/03_AI_Data/Industrial/CAE_Integration
 
-**[V6.3.7_THE_GENESIS_STATE_VERIFIED_BY_FLASH]**
-**[TIMESTAMP: 2026-05-08]**
+**[V7.5.2_HARDCORE_FIDELITY_VERIFIED]**
+**[TIMESTAMP: 2026-05-14]**

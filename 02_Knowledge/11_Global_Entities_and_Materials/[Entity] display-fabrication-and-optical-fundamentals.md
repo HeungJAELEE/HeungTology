@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "display-fabrication-and-optical-fundamentals"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] display-fabrication-and-optical-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing processes involved in creating high-resolution display panels (LCD, OLED, Micro-LED), combined with the optical physics governing light emission, color mixing, and image formation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["display-fabrication", "optics", "photolithography", "thin-film-transistor", "tft", "light-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'TFT_Mobility_Audit: Measure the electron mobility ($\\mu$) of the thin-film transistors to ensure fast pixel switching.'
-    - 'Luminance_Uniformity_Check: Evaluate the consistency of brightness across the entire panel area to detect ''Mura'' or clouding defects.'
-    - 'Layer_Thickness_Scan: Analyze the thickness of organic or inorganic layers ($d$) using ellipsometry to optimize light extraction efficiency.'
-Trust Metrics:
+  description: "[Entity] display-fabrication-and-optical-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📺 Display Fabrication and Optical Fundamentals
+# [Entity] display-fabrication-and-optical-fundamentals
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 매일 보는 화면은 수천만 개의 미세한 전구(Pixel)와 그 전구를 켜고 끄는 정교한 스위치(TFT)가 거대한 유리판 위에 예술적으로 놓인 결과물입니다. **디스플레이 제조**는 축구장만 한 유리판 위에 머리카락보다 수백 배 얇은 막을 입히고 깎아내는 나노 공학의 결정체입니다. 여기에 빛이 어떻게 꺾이고 합쳐지는지에 대한 **광학 기초**가 더해져, 우리는 현실보다 더 현실 같은 이미지를 만납니다. 본 노드는 차가운 유리가 빛나는 창으로 변하는 마법 같은 공정의 무결성을 정의합니다.
@@ -61,7 +50,7 @@ $$ E = h \cdot f = \frac{h \cdot c}{\lambda} $$
 | Parameter | Metric | LCD (a-Si) | OLED (LTPS/Oxide) | Unit |
 | :--- | :--- | :--- | :--- | :--- |
 | TFT Mobility | $\mu$ | < 1 | 50 ~ 100 | $cm^2/Vs$ |
-| Pattern Prec | Resolution | ~ 2 | ~ 0.5 | $\mu m$ |
+| Pattern Prec | Resolution | ~ 2 | ~ 0.5 | $\mu\text{m}$ |
 | Glass Size | Generation | 8.5G / 10.5G | 6G / 8.6G | Level |
 | Yield Rate | Production | > 95 | 80 ~ 90 | % |
 | Contrast Ratio| Dynamic | 1,000:1 | $\infty$ : 1 | Ratio |
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Optical Efficiency - Check Polarization or Color Filter Layers"
         return "PASS: Light Extraction Efficiency within Spec"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tft_leakage_current=0.05, luminance_variance=4.2, pixel_defect_count=0)
 print(engine.diagnose_panel_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_panel_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data display-panel-yield-and-pixel-defect-rate-v2026`와 연동되어, 전 세계 주요 라인에서 생산되는 패널의 광학적 지표를 실시간 분석하고 불량품 출하 확률을 0.01% 이하로 억제함으로써 고품격 시각 매체의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - display-panel-architecture-oled-micro-led-and-pixel-driving

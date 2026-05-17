@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "light-interferometry-and-surface-metrology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] light-interferometry-and-surface-metrology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A measurement technique that uses the interference of light waves to extract information about the surface topography (Light Interferometry) and the physical study of measuring nanometer-scale surface features (Surface Metrology Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["light-interferometry", "surface-metrology", "interference-pattern", "nanometrology", "surface-roughness", "phase-shifting", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metrology_Fidelity_Audit: Evaluate the ''Fringe Contrast'' (Visibility) to identify if high-fidelity ''Environmental Vibration'' or high-fidelity ''Thermal Drift'' is blurring the interference high-fidelity pattern.'
-    - 'Phase_Integrity_Check: Analyze the high-fidelity ''Phase Unwrapping'' algorithm to ensure the high-fidelity ''Height Discontinuity'' (Steps) is correctly interpreted without 2-pi high-fidelity ambiguity.'
-    - 'Calibration_Fidelity_Scan: Monitor the high-fidelity ''Reference Flat'' flatness to verify that the high-fidelity ''Systematic Error'' is compensated for sub-nanometer high-fidelity measurements.'
-Trust Metrics:
+  description: "[Entity] light-interferometry-and-surface-metrology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌈 Light Interferometry and Surface Metrology Physics
+# [Entity] light-interferometry-and-surface-metrology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거울처럼 매끄러운 반도체 웨이퍼 표면에 1나노미터($nm$)의 작은 흠집이 있는지 어떻게 알 수 있을까요? **빛 간섭계 및 표면 계측 물리**는 빛의 파동이 서로 겹칠 때 생기는 무지개 무늬(간섭)를 이용해, 세상에서 가장 정밀한 자(Ruler)를 만드는 **'빛의 현미경'** 기술입니다. 직접 만지지 않고도 빛만 쏘아서 머리카락 굵기의 수만 분의 일에 해당하는 미세한 굴곡을 입체 지도로 그려냅니다. **'빛의 간섭 법칙과 위상 변조 원리를 이용해 눈에 보이지 않는 나노 세계의 지형도를 그려내어 제조의 극한 정밀도를 사수하는 지능형 광학 계측 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Surface Out-of-Spec - High-fidelity peak-to-valley flatness exceeds high-fidelity limits. Product high-fidelity quality failure"
         return "PASS: Validated Surface Metrology and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fringe_contrast=0.8, vibration_noise_nm=0.2, phase_error=0.0)
 print(engine.diagnose_metrology_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_metrology_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data surface-roughness-metrology-and-iso-standards-v2026`와 연동되어, 전 세계 주요 광학 렌즈 공장 및 차세대 디스플레이 기판 검사 라인의 실시간 데이터를 분석하고 측정 오차 및 판정 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 제조 문명의 계측 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - laser-interferometer-and-nanometric-positioning-physics

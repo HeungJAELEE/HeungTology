@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "condenser-design-and-latent-heat-transfer"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] condenser-design-and-latent-heat-transfer]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering specification and layout of a device used to condense a gaseous substance into a liquid state through cooling (Condenser Design) and the study of energy transfer during this phase change without a change in temperature (Latent Heat Transfer)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["condenser", "heat-transfer", "latent-heat", "phase-change", "thermodynamics", "steam-cycle", "industrial-cooling"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Overall Heat Transfer Coefficient'' ($U$) to identify if the condenser tubes are fouled (scaling/biofilm), which leads to loss of vacuum and cycle efficiency.'
-    - 'Vacuum_Integrity_Check: Analyze the condenser pressure against the theoretical saturation pressure to ensure that ''Air In-leakage'' is not blanketting the tubes, preventing latent heat transfer.'
-    - 'Cooling_Fidelity_Scan: Monitor the ''Terminal Temperature Difference'' (TTD) to verify that the cooling water flow and distribution are optimized for maximum exergy recovery.'
-Trust Metrics:
+  description: "[Entity] condenser-design-and-latent-heat-transfer에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Condenser Design and Latent Heat Transfer
+# [Entity] condenser-design-and-latent-heat-transfer
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 증기를 다시 물로 되돌리는 것이 왜 그렇게 중요할까요? **복수기(Condenser) 설계 및 잠열(Latent Heat) 전달**은 열기관이 계속해서 일을 할 수 있게 만드는 **'에너지의 리셋 버튼'** 기술입니다. 터빈을 돌리고 나온 힘없는 증기를 차갑게 식혀 부피를 1,600분의 1로 줄이면, 그곳은 진공 상태가 됩니다. 이 진공이 증기를 빨아들여 발전 효율을 극대화합니다. 열을 버리는 것 같지만, 사실은 에너지를 다시 쓸 수 있게 '그릇'을 비우는 **'열역학적 순환의 수호자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Condenser Tube Leakage - Cooling water contaminating the high-purity condensate. Risk of boiler corrosion. Isolate section immediately"
         return "PASS: Validated Pressure Boundary and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(condenser_vacuum_mmhg=720.0, cooling_water_inlet_t=22.0, ttd_c=5.2)
 print(engine.diagnose_condenser_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_condenser_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data condenser-vacuum-and-cooling-water-temp-v2026`와 연동되어, 전 세계 주요 발전소 및 화학 공장의 복수기 데이터를 실시간 분석하고 진단하며 효율 저하 및 튜브 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 순환 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cooling-tower-and-evaporative-cooling-physics

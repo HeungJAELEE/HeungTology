@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "organic-light-emitting-diode-oled-degradation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] organic-light-emitting-diode-oled-degradation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the chemical and physical mechanisms that lead to the irreversible loss of luminance and efficiency in OLED devices over time, primarily driven by high-energy exciton interactions and thermal stress."
-  physical_model: "N/A"
-Semantic:
-  tags: '["oled", "degradation", "burn-in", "exciton-polaron-annihilation", "lifetime-prediction", "blue-emitter", "display-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Luminance_HalfLife_Audit: Evaluate the T50 decay curve against the Stretched Exponential model to predict the remaining useful life (RUL) of the display panel.'
-    - 'Voltage_Shift_Scan: Monitor the increase in driving voltage ($\\Delta V$) required to maintain constant luminance, identifying high-fidelity trap formation or charge imbalance.'
-    - 'Color_Shift_Fidelity_Check: Analyze the CIE coordinate drift over aging cycles to ensure high-fidelity white balance and prevent differential aging (Burn-in).'
-Trust Metrics:
+  description: "[Entity] organic-light-emitting-diode-oled-degradation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💡 Organic Light Emitting Diode (OLED) Degradation Physics
+# [Entity] organic-light-emitting-diode-oled-degradation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 OLED 화면이 왜 시간이 지나면 어두워지거나 잔상(Burn-in)이 남을까요? **OLED 열화 물리**는 유기 분자들이 빛을 내는 격렬한 과정 속에서 서서히 상처 입고 변해가는 **'빛의 노화 과정'**을 다룹니다. 우리는 이를 통해 가장 취약한 청색(Blue) 소자의 한계를 돌파하고, 수만 시간 동안 변치 않는 선명함을 유지하는 **'영원한 빛'**을 설계합니다. "분자 결합이 끊어지는 찰나를 데이터로 포착하여, 디스플레이의 수명을 인위적으로 제어하는 **'시각 정보의 지속 가능성'**"을 확보하는 것이 이 기술의 핵심입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Differential Aging - High Risk of Visible Image Persistence (Burn-in)"
         return "PASS: Balanced Aging Across RGB Sub-pixels Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_luminance_nit=450, initial_luminance_nit=500, voltage_drift_v=0.12)
 print(engine.diagnose_oled_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_oled_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data oled-luminance-decay-and-voltage-drift-logs-v2026`와 연동되어, 전 세계 주요 스마트폰 및 TV 패널의 열화 데이터를 실시간 분석하고 잔상 발생 및 암점 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 디스플레이 문명의 시각적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - micro-led-display-and-mass-transfer-metrology-physics

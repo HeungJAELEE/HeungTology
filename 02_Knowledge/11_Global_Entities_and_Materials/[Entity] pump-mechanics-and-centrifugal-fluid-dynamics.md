@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "pump-mechanics-and-centrifugal-fluid-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] pump-mechanics-and-centrifugal-fluid-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering study of machines used to move fluids by mechanical action (Pump Mechanics) and the specific physical principles of using centrifugal force to increase fluid velocity and pressure (Centrifugal Fluid Dynamics), including performance mapping and failure prevention."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pump-mechanics", "centrifugal-pump", "fluid-dynamics", "cavitation", "npsh", "impeller-design", "mechanical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Pump_Efficiency_Audit: Evaluate the actual total head ($H$) and flow rate ($Q$) against the manufacturer''s performance curve to identify impeller wear or internal leakage.'
-    - 'Cavitation_Integrity_Check: Analyze the suction pressure and fluid temperature to ensure the available Net Positive Suction Head ($\\text{NPSH}_a$) exceeds the required limit ($\\text{NPSH}_r$) to prevent vapor bubble formation.'
-    - 'Vibration_Signature_Scan: Monitor the vibration levels at the bearing housings to identify hydraulic imbalance or mechanical misalignment that leads to premature seal failure.'
-Trust Metrics:
+  description: "[Entity] pump-mechanics-and-centrifugal-fluid-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Pump Mechanics and Centrifugal Fluid Dynamics
+# [Entity] pump-mechanics-and-centrifugal-fluid-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 몸의 심장이 피를 온몸으로 돌리듯, 산업 현장에서 물, 기름, 화학 물질을 끊임없이 순환시키는 '산업의 심장'은 무엇일까요? **펌프 역학 및 원심 유체 역학**은 유체에 에너지를 불어넣어 낮은 곳에서 높은 곳으로, 혹은 먼 대륙까지 이동시키는 **'흐름의 원동력'**입니다. 빠르게 회전하는 날개(임펠러)가 만드는 원심력으로 액체를 밖으로 밀어내어 강력한 압력을 만듭니다. 공장의 모든 공정이 멈추지 않고 원활하게 돌아가게 만드는 **'지능형 유체 인프라'**의 핵심입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low NPSH Margin - Risk of Cavitation damage. Increase Suction Pressure or Lower Fluid Temp"
         return "PASS: Safe Suction Conditions and Verified Hydraulic Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pump_head_actual_m=55.0, design_flow_rate_m3h=120, vibration_rms_mms=1.2)
 print(engine.diagnose_pump_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_pump_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pump-efficiency-and-cavitation-vibration-logs-v2026`와 연동되어, 전 세계 수처리 및 화학 공장의 펌프 가동 데이터를 실시간 분석하고 기계 파손 및 유체 누출 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 유체 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-utility-management-upw-and-specialty-gas-systems

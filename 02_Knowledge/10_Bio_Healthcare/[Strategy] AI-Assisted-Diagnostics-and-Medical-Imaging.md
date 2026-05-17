@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] AI-Assisted-Diagnostics-and-Medical-Imaging"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] AI-Assisted-Diagnostics-and-Medical-Imaging]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] AI-Assisted-Diagnostics-and-Medical-Imaging에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] AI-Assisted-Diagnostics-and-Medical-Imaging
+# [Strategy] AI-Assisted-Diagnostics-and-Medical-Imaging
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 질병 진단은 전적으로 의사의 경험과 눈에만 의존해야 한다고 생각했습니다. 하지만 인간의 눈은 피로를 느끼고 미세한 차이를 놓칠 수 있습니다. AI 보조 진단 및 의료 영상 분석 지능(AI-Assisted-Diagnostics-and-Medical-Imaging)은 인공지능이 수백만 장의 의료 영상을 학습하여 의사보다 더 정확하고 빠르게 병을 찾아내는 기술입니다. 암 세포를 초기 단계에서 발견하고, 복잡한 MRI 영상을 1초 만에 분석하여 최적의 수술 경로를 제시합니다. 이를 이해하는 것은 질병을 정복하고 인류의 생명을 구하는 '디지털 의료의 사령관'이 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Image Classification & Lesion Segmentation Logic)]
 의료 영상을 입력받아 암 세포 구역을 분할(Segmentation)하고 위험도를 점수화하는 논리 구조입니다.
 ```python
-# 생명 지능(ISM) 기반 AI 의료 영상 분석 및 진단 보조 논리
 def diagnose_medical_image(image_data, patient_history):
     # 1. 영상 품질 개선 (Deep Learning Reconstruction)
     # 저선량(Low-dose) CT 영상의 노이즈를 제거하고 해상도 복원
@@ -96,5 +85,4 @@ def diagnose_medical_image(image_data, patient_history):
 2. '딥러닝 재구성(DLR)' 기술이 'MRI 촬영 시간'을 단축하면서도 '진단 정확도'를 유지할 수 있는 수학적 근거는?
 3. 의료 AI 현장 도입 시 '설명 가능한 AI(XAI)'가 '의료 사고 책임 소재' 및 '의료진의 수용성' 측면에서 왜 중요한가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

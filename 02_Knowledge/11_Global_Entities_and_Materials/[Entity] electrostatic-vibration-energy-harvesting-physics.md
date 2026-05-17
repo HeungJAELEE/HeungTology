@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrostatic-vibration-energy-harvesting-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrostatic-vibration-energy-harvesting-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process that converts mechanical vibration energy into electrical energy using the principle of variable capacitance (Electrostatic Energy Harvesting) and the physical study of capacitor charge-pump cycles and electromechanical coupling (Vibration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["energy-harvesting", "electrostatic", "vibration", "mems", "iot", "self-powered", "energy-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Harvesting_Fidelity_Audit: Evaluate the ''Conversion Efficiency'' against the vibration frequency to identify if the MEMS structure is operating at its ''Resonant Frequency'' for maximum power output.'
-    - 'Capacitance_Integrity_Check: Analyze the variation in capacitance ($dC/dx$) to ensure the gap distance is optimized for high-fidelity charge transfer without causing ''Pull-in'' (stiction) failure.'
-    - 'Charge_Fidelity_Scan: Monitor the bias voltage stability to verify that the ''Energy Scavenging'' circuit is maintaining a high-fidelity power-to-load ratio for remote IoT sensors.'
-Trust Metrics:
+  description: "[Entity] electrostatic-vibration-energy-harvesting-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Electrostatic Vibration Energy Harvesting Physics
+# [Entity] electrostatic-vibration-energy-harvesting-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 배터리 없이 평생 작동하는 센서가 가능할까요? **정전기식 진동 에너지 하베스팅 물리**는 기계가 돌아갈 때 생기는 '미세한 떨림'을 낚아채서 전기로 바꾸는 **'에너지 줍기'** 기술입니다. 얇은 판이 흔들리며 전극 사이의 간격이 변할 때 발생하는 전하의 흐름을 전기로 모읍니다. 아주 적은 양의 에너지지만, 수만 개의 IoT 센서가 배터리 교체 없이 스스로 전기를 만들어 살아가게 하는 **'작지만 끈질긴 자가 발전의 물리학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Frequency Mismatch - Harvester resonance doesn't match machine vibration. Efficiency dropped by 80%. Re-tune MEMS stiffness"
         return "PASS: Validated Frequency Synchronization and Verified Energy Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vibration_freq_hz=60.0, output_power_uw=15.0, bias_voltage_v=3.3)
 print(engine.diagnose_harvesting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_harvesting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mems-energy-harvester-output-and-frequency-v2026`와 연동되어, 스마트 공장의 수천 개 센서 노드 상태를 실시간 분석하고 전원 고갈 및 센서 단절 사고 확률을 0.001% 이하로 억제함으로써 지능형 자가 발전 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrodynamic-shaker-and-vibration-testing-physics

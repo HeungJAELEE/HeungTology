@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Bio-Engineering"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Bio-Engineering]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Bio-Engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Bio-Engineering
@@ -89,5 +79,4 @@ def design_synthetic_gene(target_protein_sequence):
 2. '바이오 파운드리'의 자동화 시스템이 미생물 기반 제조 산업의 단가를 낮추는 공학적 논리는?
 3. '대사 공학'을 통해 생산된 '대체 단백질'이 전통적인 축산업 대비 환경적으로 유리한 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

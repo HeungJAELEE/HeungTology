@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "blind-quantum-computing-and-private-delegated-computation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] blind-quantum-computing-and-private-delegated-computation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A protocol that allows a client with limited quantum capabilities to perform quantum computations on a remote quantum server without revealing the data or the algorithm to the server."
-  physical_model: "N/A"
-Semantic:
-  tags: '["blind-quantum-computing", "quantum-privacy", "delegated-computation", "quantum-cloud", "security"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SecurityFidelityEngine"
-  diagnostic_protocol:
-    - 'Privacy_Leakage_Audit: Measure the mutual information between server-side operations and client-side logic.'
-    - 'Quantum_Fidelity_Check: Verify the correctness of blind computation using trap qubits.'
-    - 'Communication_Overhead_Audit: Evaluate the tradeoff between security level and classical communication rounds.'
-Trust Metrics:
+  description: "[Entity] blind-quantum-computing-and-private-delegated-computation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Blind Quantum Computing and Private Delegated Computation
+# [Entity] blind-quantum-computing-and-private-delegated-computation
 
 ## 1. 개요 (Why)
 양자 컴퓨터는 매우 비싸고 관리하기 어려워 미래에도 대부분 클라우드 방식으로 제공될 것입니다. 하지만 제약회사의 신약 설계나 국가 기밀 암호 분석을 원격 양자 서버에 맡길 때, 서버 관리자가 내 데이터와 알고리즘을 볼 수 있다면 심각한 보안 문제가 발생합니다. 블라인드 양자 컴퓨팅(BQC)은 사용자가 서버에게 '무엇을 계산하는지' 알려주지 않고도 완벽한 계산 결과를 얻을 수 있게 하는 '양자 철통 보안' 기술입니다. 본 노드는 양자 클라우드 환경에서의 데이터 주권과 연산 무결성을 사수하기 위한 보안 표준을 정의합니다.
@@ -70,7 +59,6 @@ class SecurityFidelityEngine:
             return f"WARNING: Potential Metadata Leakage ({self.leak} bits) - Increase Rotation Randomness"
         return "PASS: Zero-Knowledge Privacy Maintained"
 
-# Instance Diagnostic
 engine = SecurityFidelityEngine(trap_success_rate=1.0, info_leakage_bits=0, circuit_depth=500)
 print(engine.diagnose_computation_integrity())
 ```
@@ -88,7 +76,6 @@ print(engine.diagnose_computation_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data blind-quantum-computation-fidelity-and-privacy-leakage-v2026`와 연동되어, 원격 서버의 모든 양자 조작을 트랩 검증 시스템으로 실시간 감시하고 연산 결과의 무결성을 99.9% 보장함으로써 안전한 양자 클라우드 생태계를 구축합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 104_quantum-computing-and-advanced-physics-hub
 - measurement-based-quantum-computation-mbqc

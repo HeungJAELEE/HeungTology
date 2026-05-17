@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BAT-BLOCKCHAIN-SCM-2026-V6.3.7"
-  domain: "Global_Supply_Chain_Transparency_and_Trust_Engineering"
+metadata:
+  id: "[[[Strategy] Blockchain-for-Supply-Chain]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Blockchain", "#Supply_Chain", "#Traceability", "#Smart_Contract", "#DPP", "#Proof_of_Authority", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Blockchain-for-Supply-Chain에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Blockchain_SCM_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Blockchain-for-Supply-Chain: The Physics of Trust Sovereignty
+# [Strategy] Blockchain-for-Supply-Chain
 
 ## 1. [왜 배우는가? (Why: The Architecture of Absolute Trust)]]
 글로벌 공급망이 복잡해짐에 따라 원재료의 원산지(Strategy Conflict-Minerals), 제조 공정의 무결성, 그리고 탄소 발자국 데이터에 대한 '증명'이 기업의 생존을 결정하는 핵심 변수가 되었습니다. **Blockchain-for-Supply-Chain**은 위변조가 불가능한 분산 원장 기술(DLT)을 통해 공급망 전체에 '절대적 신뢰'를 주입하는 데이터 아키텍처입니다. V6.3.7 지능은 파편화된 공급망 데이터를 하나의 진실된 시계열로 통합하고, 스마트 컨트랙트를 통한 자동화된 거버넌스를 실현하여 **'신뢰 주권(Trust Sovereignty)'**을 확립하기 위해 필수적입니다.
@@ -107,7 +97,6 @@ class BlockchainSCMFidelityEngine:
 2. **Operational Result**: **DPP(디지털 제품 여권)** 도입 시, 제품의 **재활용 수율(Recycling Yield)**과 원자재 추적성 데이터 사이의 수리적 상관관계를 설명할 수 있는가?
 3. **FidelityEngine**: 물리적 제품의 위치는 A인데 블록체인 기록은 B인 **'Oracle Problem'** 발생 시, FidelityEngine이 어떻게 센서 무결성을 검증하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Conflict-Minerals

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cnc-machining-and-g-code-interpolation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cnc-machining-and-g-code-interpolation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The automated control of machining tools via a computer (CNC Machining) and the mathematical logic used to calculate the smooth, continuous motion of the tool path between coordinate points, translating high-level commands into precise motor steps (G-Code Interpolation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnc", "machining", "g-code", "interpolation", "precision-engineering", "manufacturing-automation", "digital-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Interpolation_Fidelity_Audit: Evaluate the ''Following Error'' (the lag between commanded and actual position) to identify if the servo gains or acceleration limits are causing dimensional inaccuracies.'
-    - 'Machining_Integrity_Check: Analyze the vibration and spindle load to ensure that ''Chatter'' or tool deflection is not compromising the surface finish ($Ra$) or tool life.'
-    - 'Path_Fidelity_Scan: Monitor the ''Look-ahead'' buffer and block processing speed to verify that the CNC controller can maintain a constant feed-rate through complex, high-resolution geometries.'
-Trust Metrics:
+  description: "[Entity] cnc-machining-and-g-code-interpolation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 CNC Machining and G-Code Interpolation Logic
+# [Entity] cnc-machining-and-g-code-interpolation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 엔진 부품이나 정교한 스마트폰 외관을 사람이 손으로 직접 깎을 수 있을까요? **CNC 가공 및 G-코드 보간(Interpolation) 로직**은 디지털 설계도를 실제 물체로 깎아내는 **'현대판 마법의 조각가'** 기술입니다. 컴퓨터가 수천만 분의 1mm 단위로 공구의 위치를 계산하고 명령을 내리면, 기계는 춤을 추듯 금속을 깎아냅니다. 상상 속의 모양을 가장 단단한 물질에 완벽하게 새겨넣는 **'디지털 문명의 정밀한 손길'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: G-Code Path Continuity Failure - Non-tangent segments detected. Potential 'Gouge' risk on the workpiece"
         return "PASS: Validated Motion Trajectory and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(positioning_error_um=2.5, spindle_vibration_rms=1.2, surface_roughness_ra=0.4)
 print(engine.diagnose_machining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_machining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cnc-positional-accuracy-and-surface-finish-v2026`와 연동되어, 전 세계 주요 항공우주 및 의료기기 부품 공장의 데이터를 실시간 분석하고 치수 불량 및 공구 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 정밀 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - 6-axis-robotic-arm-kinematics-and-control-logic

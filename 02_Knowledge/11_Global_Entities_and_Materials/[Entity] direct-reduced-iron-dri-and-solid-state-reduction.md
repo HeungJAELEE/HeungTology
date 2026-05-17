@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "direct-reduced-iron-dri-and-solid-state-reduction"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] direct-reduced-iron-dri-and-solid-state-reduction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-quality metallic iron produced from the direct reduction of iron ore (in the form of lumps or pellets) by a reducing gas (H2/CO) without melting (Direct Reduced Iron) and the physical-chemical study of oxygen removal from solid ore lattice (Solid-State Reduction)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["dri", "direct-reduction", "steelmaking", "solid-state", "hydrogen-iron", "metallurgy", "green-steel"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Reduction_Fidelity_Audit: Evaluate the ''Degree of Metallization'' (ratio of metallic iron to total iron) using the shrinking core model to identify if the reducing gas is failing to penetrate the core of the ore pellets.'
-    - 'Chemical_Integrity_Check: Analyze the $H_2/CO$ ratio in the shaft furnace to ensure optimal reduction kinetics while managing the endothermic/exothermic heat balance of the solid bed.'
-    - 'Re-oxidation_Fidelity_Scan: Monitor the DRI temperature and moisture level after discharge to verify that ''Pyrophoricity'' (spontaneous combustion) is suppressed during storage and transport.'
-Trust Metrics:
+  description: "[Entity] direct-reduced-iron-dri-and-solid-state-reduction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Direct Reduced Iron (DRI) and Solid-State Reduction
+# [Entity] direct-reduced-iron-dri-and-solid-state-reduction
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 용광로에서 쇳물을 뻘겋게 녹이지 않고도 철을 만들 수 있을까요? **직접 환원철(DRI) 및 고상 환원**은 철광석을 녹이지 않은 '고체 상태'에서 산소만 쏙 빼내어 순수한 철로 바꾸는 **'비가열 정제'** 기술입니다. 특히 수소를 이용하면 이산화탄소 대신 물만 나오기 때문에, 철강 산업의 탄소 중립을 실현할 유일한 대안으로 꼽힙니다. 돌덩이(광석)에서 산소라는 '녹'을 화학적으로 뜯어내어 은빛 철로 바꾸는 **'녹색 제철의 핵심 로직'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fire Hazard Alert - DRI is highly reactive. Spontaneous re-oxidation (combustion) possible during storage. Cooling system failure"
         return "PASS: Validated Material Stability and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(metallization_rate_pct=94.5, carbon_content_pct=2.1, shaft_furnace_temp_c=880.0)
 print(engine.diagnose_dri_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_dri_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dri-metallization-rate-and-carbon-content-v2026`와 연동되어, 전 세계 주요 수소 환원 제철 실증 단지의 데이터를 실시간 분석하고 환원 불량 및 화재 사고 확률을 0.001% 이하로 억제함으로써 지능형 탄소 중립 문명의 철강 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - copper-smelting-and-flash-furnace-metallurgy

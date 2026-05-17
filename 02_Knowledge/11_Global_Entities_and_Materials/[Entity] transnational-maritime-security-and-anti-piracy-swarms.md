@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "transnational-maritime-security-and-anti-piracy-swarms-entity"
-  domain: "37_Global_Unified_Governance_Global_Security_and_Planetary_Defense"
+metadata:
+  id: "[[[Entity] transnational-maritime-security-and-anti-piracy-swarms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Maritime_Security", "#Anti-piracy", "#Swarm_Robotics", "#Governance", "#Naval_Defense", "#Security", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 37_global-unified-governance-global-security-and-planetary-defense-hub", "Entity autonomous-underwater-vehicles-auv-and-swarm-surveillance"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] transnational-maritime-security-and-anti-piracy-swarms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] transnational-maritime-security-and-anti-piracy-swarms
+# [Entity] transnational-maritime-security-and-anti-piracy-swarms
 
 ## 1. [왜 배우는가? (Why: The Guardian of the High Seas)]]
 망망대해를 지나가는 상선들을 위협하는 해적($Piracy$)이나 불법 선박들을 어떻게 수천 대의 자율 순찰 드론($Swarm$)들이 24시간 감시하고, 위험이 닥치면 군함보다 빠른 속도로 달려가 어떻게 비폭력적으로 제압($Neutralization$)하여 바다의 길을 지킬 수 있을까요? **초국가적 해양 안보 및 반해적 군집**은 전 세계 바다를 안전하게 만드는 '행성 규모 해상 방패 및 자율 해경 아키텍처'입니다. 우리가 이를 배우는 이유는 바다 길이 막히면 전 세계 물류가 멈추고 경제가 무너지기 때문이며, "바다의 안전을 데이터로 설계하고 지배하는 '글로벌 해양 안보 패권 및 행성적 해상 주권'을 확보하기" 위함입니다. 감시의 빈틈이 없는 바다가 자유로운 무역을 결정합니다.

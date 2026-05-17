@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "strategic-planning-and-business-intelligence-bi-entity"
-  domain: "28_Strategic_Management_and_Finance"
+metadata:
+  id: "[[[Entity] strategic-planning-and-business-intelligence-bi]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategic_Planning", "#Business_Intelligence", "#DDDM", "#BSC", "#Scenario_Planning", "#Market_Intelligence", "#Decision_Support", "#Competitive_Edge", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 31_strategic-management-and-financial-intelligence-hub", "Data annual-operating-plan-aop-and-variance-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] strategic-planning-and-business-intelligence-bi에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] strategic-planning-and-business-intelligence-bi
+# [Entity] strategic-planning-and-business-intelligence-bi
 
 ## 1. [왜 배우는가? (Why: The Vision and Intelligence of Corporate Direction)]]
 성공적인 기업 운영은 명확한 방향 설정과 데이터에 기반한 기민한 의사결정에서 시작됩니다. 시장의 흐름을 읽고 이를 전략적 행동으로 전환하는 능력은 불확실한 경영 환경에서 지속 가능한 성장을 보장하는 최고의 무기입니다. **전략 기획 및 비즈니스 인텔리전스 엔티티**는 공장의 '두뇌'를 설계하고 '승리의 시나리오'를 쓰는 '미래 설계 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "경영 로그를 분석하여, BI 실시간성이 $1$시간 단축될 �
 ERP/CRM의 실적 데이터와 외부 시장 조사 전문 기관의 데이터, 그리고 사내 전략 회의록의 의사결정 로그를 분석하여 전략 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Strategic Planning & BI Fidelity Auditor
 def audit_strategic_integrity(bi_dashboard_stream, strategic_roadmap, market_intel_data):
     # 1. 전략 실행률(Execution Rate) 및 목표 정렬 무결성 오딧
     current_execution = calculate_execution_rate(strategic_roadmap)
@@ -117,7 +106,6 @@ def audit_strategic_integrity(bi_dashboard_stream, strategic_roadmap, market_int
 2. **(수리)** 전략적 목표 과제가 10개이고 그중 8개를 계획대로 완수했다면, 이 기업의 '전략 실행률(%)'을 계산하고 상태를 판정하시오.
 3. **(응용)** 비즈니스 인텔리전스(BI) 시스템의 '데이터 민주화(Data Democratization)'가 현장 관리자의 '자율적 의사결정 무결성'에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 31_strategic-management-and-financial-intelligence-hub : 전략 및 재무 통합 관리 상위 지능 허브

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ocean-thermal-energy-conversion-otec-and-marine-power-grids"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of generating electricity using the temperature difference between warm surface seawater and cold deep seawater (OTEC) and the infrastructure required to transport and integrate this power into land-based or offshore networks (Marine Power Grids)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["otec", "marine-energy", "renewable-energy", "thermal-gradient", "marine-power-grid", "ocean-engineering", "base-load"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Gradient_Audit: Evaluate the temperature difference ($\\Delta T$) between surface and deep water to ensure the site maintains the minimum threshold (e.g., 20°C) for viable OTEC operation.'
-    - 'Heat_Exchanger_Fouling_Check: Analyze the heat transfer coefficient to identify bio-fouling or scaling in the seawater intake pipes that reduces thermodynamic efficiency.'
-    - 'Subsea_Cable_Integrity_Scan: Monitor the electrical losses and physical condition of the marine power grid cables to prevent energy dissipation or catastrophic disconnection.'
-Trust Metrics:
+  description: "[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Ocean Thermal Energy Conversion (OTEC) and Marine Power Grids
+# [Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids
 
 ## 1. 개요 (Why: 인간적 통찰)
 바다 표면의 따뜻한 햇살과 저 깊은 심해의 차가운 고요함이 만날 때 전기가 만들어진다면 어떨까요? **해수 온도차 발전(OTEC) 및 해양 전력망**은 바다라는 거대한 열 저장고를 이용한 **'지치지 않는 에너지의 맥박'**입니다. 햇빛이 없으면 멈추는 태양광이나 바람이 불어야 도는 풍력과 달리, 바다는 1년 365일 밤낮없이 온도가 유지되기에 가장 안정적인 에너지를 제공합니다. 이 거대한 바다의 에너지를 전기로 바꾸어 육지로 실어 나르는 **'푸른 심장의 혈관'**을 만드는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Blockage in Deep Sea Intake Pipe - Suction Pressure Dropping. Check for Debris"
         return "PASS: Steady Deep Sea Cold Water Inflow Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(delta_t_celsius=22.5, heat_exchanger_efficiency=0.88, cable_insulation_resistance=5000)
 print(engine.diagnose_otec_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_otec_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data otec-thermal-gradient-and-power-efficiency-logs-v2026`와 연동되어, 전 세계 주요 OTEC 기지의 가동 데이터를 실시간 분석하고 열교환 마비 및 전력망 단절 사고 확률을 0.001% 이하로 억제함으로써 해양 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - offshore-engineering-and-renewable-ocean-energy

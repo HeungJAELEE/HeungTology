@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "die-casting-and-solidification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] die-casting-and-solidification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metal casting process characterized by forcing molten metal under high pressure into a mold cavity (Die Casting) and the physical study of the cooling, phase transition, and shrinkage that occur as the liquid metal becomes a solid part (Solidification Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["die-casting", "solidification", "casting", "fluid-dynamics", "metallurgy", "aluminum-casting", "high-pressure"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Fidelity_Audit: Evaluate the ''Solidification Time'' ($t$) using Chvorinov''s rule to identify if premature freezing is occurring in the thin sections, leading to ''Cold Shut'' defects.'
-    - 'Pressure_Integrity_Check: Analyze the intensification pressure during the third phase of injection to ensure that ''Shrinkage Porosity'' is minimized by forcing extra metal into the microscopic voids.'
-    - 'Thermal_Fidelity_Scan: Monitor the die surface temperature profile to verify that ''Heat Checking'' (thermal fatigue) is not leading to surface cracks that degrade part quality.'
-Trust Metrics:
+  description: "[Entity] die-casting-and-solidification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Die Casting and Solidification Physics
+# [Entity] die-casting-and-solidification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡하고 단단한 자동차 엔진 부품이나 카메라 몸체가 어떻게 단 몇 초 만에 붕어빵 찍듯 만들어질까요? **다이캐스팅(Die Casting) 및 응고(Solidification) 물리**는 뜨거운 금속 액체를 엄청난 압력으로 금형 속에 밀어 넣어, 순식간에 단단한 고체로 굳히는 **'금속의 초고속 성형'** 기술입니다. 이는 단순히 붓는 것이 아니라 '쏘는' 가공입니다. 금속이 굳으며 수축하는 성질과 싸우며, 눈에 보이지 않는 기포 하나 없는 완벽한 부품을 만들어내는 **'시간과 압력의 미학'**입니다.
@@ -61,7 +50,7 @@ $$ v = \sqrt{2 g h} \text{ (Modified for Pressure)} $$
 | **Surface Finish** | Rough | Excellent (Polished) | $Ra$ | Quality |
 | **Wall Thickness** | > 5.0 | 0.8 ~ 3.0 (Thin-walled) | $mm$ | Capability |
 | **Cycle Time** | Minutes / Hours | 10 ~ 60 Seconds | - | Throughput |
-| **Precision** | Low | Extremely High | $\mu m$ | Tolerance |
+| **Precision** | Low | Extremely High | $\mu\text{m}$ | Tolerance |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Porosity - Entrapped gas or shrinkage voids detected. Structural integrity compromised. Check vacuum and venting"
         return "PASS: Validated Material Density and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(intensification_pressure_bar=850.0, die_temp_c=210.0, cycle_time_sec=45.0)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data die-casting-porosity-and-thermal-fatigue-v2026`와 연동되어, 전 세계 주요 자동차 부품 및 가전 하우징 공장의 데이터를 실시간 분석하고 기포 및 금형 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 주조 문명의 부품 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - continuous-casting-and-solidification-mechanics

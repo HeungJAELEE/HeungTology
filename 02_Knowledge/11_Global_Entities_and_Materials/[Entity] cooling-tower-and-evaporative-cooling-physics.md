@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cooling-tower-and-evaporative-cooling-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cooling-tower-and-evaporative-cooling-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A heat rejection device that rejects waste heat to the atmosphere through the cooling of a water stream to a lower temperature (Cooling Tower) and the physical study of heat transfer driven by the evaporation of a small portion of the water into a moving air stream (Evaporative Cooling Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cooling-tower", "evaporative-cooling", "heat-rejection", "psychrometrics", "water-cooling", "industrial-thermodynamics", "hvac"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Cooling Range'' and ''Approach'' (Cold water temp - Wet bulb temp) to identify if the tower is under-performing due to poor air flow or fouled fill media.'
-    - 'Water_Integrity_Check: Analyze the ''Cycles of Concentration'' (CoC) to ensure that dissolved solids are not scaling the heat exchangers, requiring optimized blowdown control.'
-    - 'Operational_Fidelity_Scan: Monitor the fan power vs. water temperature to verify that the ''Variable Speed Drives'' are maximizing the Energy Efficiency Ratio (EER) based on ambient psychrometric conditions.'
-Trust Metrics:
+  description: "[Entity] cooling-tower-and-evaporative-cooling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛲ Cooling Tower and Evaporative Cooling Physics
+# [Entity] cooling-tower-and-evaporative-cooling-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장이나 발전소 옥상에서 하얀 김이 모락모락 피어오르는 거대한 탑을 본 적 있나요? **냉각탑 및 증발(Evaporative) 냉각 물리**는 물을 공기 중에 뿌려 스스로 몸을 식히게 만드는 **'자연의 에어컨'** 기술입니다. 땀이 마르면서 우리 몸을 시원하게 하듯, 물의 아주 일부를 증발시켜 남은 물의 온도를 대기 온도보다 더 낮게 떨어뜨립니다. 뜨거워진 산업의 열기를 하늘로 실어 보내는 **'거대한 열의 호흡'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Drift Loss - Drift eliminators damaged or bypassed. Risk of local icing and chemical contamination of surroundings"
         return "PASS: Validated Moisture Containment and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cooling_approach_c=4.5, water_conductivity_us=1200.0, fan_vibration_mm_s=1.2)
 print(engine.diagnose_tower_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_tower_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cooling-tower-approach-and-wet-bulb-sensitivity-v2026`와 연동되어, 전 세계 주요 발전소 및 데이터 센터의 냉각 데이터를 실시간 분석하고 냉각 효율 저하 및 수질 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 안정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - condenser-design-and-latent-heat-transfer

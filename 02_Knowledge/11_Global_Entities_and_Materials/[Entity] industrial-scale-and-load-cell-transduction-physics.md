@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-scale-and-load-cell-transduction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-scale-and-load-cell-transduction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A weighing device designed for heavy-duty industrial use (Industrial Scale) and the physical study of converting mechanical force into a measurable electrical signal (Load Cell Transduction Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-scale", "load-cell", "strain-gauge", "weighing-system", "piezoelectric", "wheatstone-bridge", "industrial-metrology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Measurement_Fidelity_Audit: Evaluate the ''Zero Drift'' to identify if high-fidelity ''Thermal Expansion'' or permanent high-fidelity ''Deformation'' is biasing the zero-point reading.'
-    - 'Sensitivity_Integrity_Check: Analyze the high-fidelity ''Hysteresis'' (Loading vs Unloading delta) to ensure that the high-fidelity ''Elastic Recovery'' of the load cell body is within spec.'
-    - 'Creep_Fidelity_Scan: Monitor the high-fidelity ''Creep'' (Signal change under constant load) to verify that high-fidelity ''Strain Gauge'' bonding and material high-fidelity stability are maintained.'
-Trust Metrics:
+  description: "[Entity] industrial-scale-and-load-cell-transduction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Industrial Scale and Load Cell Transduction Physics
+# [Entity] industrial-scale-and-load-cell-transduction-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십 톤의 쇳덩이를 실은 트럭의 무게를 소수점 단위까지 어떻게 정확히 잴 수 있을까요? **산업용 저울 및 로드셀 변환 물리**는 기계적인 '누르는 힘'을 전기적인 '숫자'로 바꾸는 **'무게의 번역기'** 기술입니다. 금속 덩어리가 미세하게 휘어지는 성질(탄성)을 이용해, 그 굽어짐의 정도를 전기 신호로 포착합니다. **'중력의 법칙과 전기 저항의 변화를 이용해 원자재의 입고부터 제품의 출하까지 모든 물동량을 숫자로 증명하는 지능형 산업 계량 엔진'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Calibration Failure - High-fidelity scale not following linear curve. Potential high-fidelity strain gauge debonding. Recalibration high-fidelity required"
         return "PASS: Validated Measurement Linearity and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_weight_kg=1000.5, zero_offset_uv=10.0, ambient_temp_c=25.0)
 print(engine.diagnose_scale_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_scale_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data load-cell-linearity-and-hysteresis-v2026`와 연동되어, 전 세계 주요 물류 허브 및 화학 플랜트의 실시간 계량 데이터를 분석하고 계측 오류 및 사기/사고 확률을 0.001% 이하로 억제함으로써 지능형 물류 문명의 정량 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-sensor-and-strain-gauge-transduction-physics

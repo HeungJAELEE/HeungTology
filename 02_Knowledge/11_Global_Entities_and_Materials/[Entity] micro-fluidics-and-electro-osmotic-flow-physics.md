@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-fluidics-and-electro-osmotic-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-fluidics-and-electro-osmotic-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The behavior, precise control, and manipulation of fluids that are geometrically constrained to a small, typically sub-millimeter, scale (Micro-fluidics) and the physical study of fluid motion induced by an applied electric field across a porous material or microchannel (Electro-osmotic Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-fluidics", "electro-osmotic-flow", "lab-on-a-chip", "capillary-flow", "zeta-potential", "reynolds-number", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Flow_Fidelity_Audit: Evaluate the ''Zeta Potential'' ($\\zeta$) to identify if high-fidelity ''Surface Adsorption'' or high-fidelity ''pH Changes'' are reversing the high-fidelity flow direction.'
-    - 'Mixing_Integrity_Check: Analyze the high-fidelity ''Peclet Number'' ($Pe$) to ensure that high-fidelity ''Molecular Diffusion'' is sufficient for complete mixing in the absence of high-fidelity turbulence.'
-    - 'Capillary_Fidelity_Scan: Monitor the high-fidelity ''Contact Angle'' to verify that high-fidelity ''Surface Priming'' is not causing high-fidelity air bubbles to block the microchannels.'
-Trust Metrics:
+  description: "[Entity] micro-fluidics-and-electro-osmotic-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Micro-fluidics and Electro-osmotic Flow Physics
+# [Entity] micro-fluidics-and-electro-osmotic-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 피 검사나 DNA 분석을 병원의 거대한 장비 대신 손바닥만 한 칩 하나에서 끝낼 수 있을까요? **미세 유체 및 전기 삼투 유동 물리**는 물방울보다 작은 액체를 정교한 미로(마이크로 채널) 속에서 자유자재로 다스리는 **'액체의 초미세 운송'** 기술입니다. 펌프나 모터 대신 전기를 걸어 액체를 스스로 흐르게 하거나(전기 삼투), 표면의 성질만으로 액체를 끌어당깁니다. **'헬름홀츠-스몰루코프스키 식과 전기 이중층의 원리를 이용해 나노 리터 단위의 유체를 지능적으로 지휘하여 무인 진단과 제조의 한계를 사수하는 지능형 유체 공학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Debye Shielding - High-fidelity ionic strength too high. High-fidelity electro-osmotic flow velocity suppressed"
         return "PASS: Validated Micro-Physics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(zeta_potential_mv=-40.0, pressure_drop_bar=0.1, mixing_efficiency_pct=95.0)
 print(engine.diagnose_microfluidic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_microfluidic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microfluidic-mixing-efficiency-and-flow-rates-v2026`와 연동되어, 전 세계 주요 진단 칩 팹 및 바이오 연구소의 실시간 유체 데이터를 분석하고 흐름 정지 및 혼합 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 생명 제조 문명의 유체 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lab-on-a-chip-and-microfluidic-transport-physics

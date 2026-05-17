@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "product-lifecycle-management-plm-and-engineering-data-governance-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] product-lifecycle-management-plm-and-engineering-data-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#PLM", "#Engineering_Governance", "#Digital_Twin", "#BOM", "#ECN", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Entity enterprise-system-core-architecture-and-integrated-governance"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] product-lifecycle-management-plm-and-engineering-data-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] product-lifecycle-management-plm-and-engineering-data-governance
+# [Entity] product-lifecycle-management-plm-and-engineering-data-governance
 
 ## 1. [왜 배우는가? (Why: The Blueprint of Value)]]
 제품은 물리적 실체이기 전에 '정보의 집합체'입니다. **제품 수명주기 관리(PLM) 및 엔지니어링 데이터 거버넌스**는 아이디어의 스케치부터 설계, 시뮬레이션, 제조 연동, 그리고 폐기에 이르기까지 제품에 관한 모든 지적 자산을 관리하는 기업의 '원천 지능'입니다. PLM이 엔지니어링의 정밀함을 담보한다면, 이는 곧 제조의 효율(ERP)과 고객의 만족(CRM)으로 직결됩니다. 우리가 이를 배우는 이유는 제품 원가의 70~80%가 결정되는 '설계 단계'에서 수리적으로 최적의 의사결정을 내리고, 디지털 스레드(Digital Thread)를 통해 전 가치 사슬에 걸쳐 정보의 단절 없는 흐름을 구현하여 기술적 경쟁 우위를 영구화하기 위함입니다. 설계의 정밀함이 이익의 크기를 결정합니다.

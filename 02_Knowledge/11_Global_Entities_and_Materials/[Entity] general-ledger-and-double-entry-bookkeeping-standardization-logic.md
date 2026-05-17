@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "general-ledger-and-double-entry-bookkeeping-standardization-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] general-ledger-and-double-entry-bookkeeping-standardization-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The primary accounting record of a company that uses double-entry bookkeeping to store balance sheet and income statement transactions (General Ledger) and the mathematical logic that ensures every entry has an equal and opposite entry (Double-Entry Bookkeeping Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["general-ledger", "double-entry", "bookkeeping", "accounting", "financial-reporting", "standardization", "audit-trail", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Bookkeeping_Fidelity_Audit: Evaluate the ''Trial Balance'' to identify if high-fidelity ''Unbalanced Entries'' exist, indicating a fundamental breach in double-entry logic.'
-    - 'Consolidation_Integrity_Check: Analyze the inter-company eliminations to ensure the high-fidelity ''Combined Balance Sheet'' is not double-counting internal trades.'
-    - 'Audit_Fidelity_Scan: Monitor the ''Journal Entries'' for any high-fidelity deletions or unauthorized modifications, ensuring a perfect audit trail for regulatory compliance.'
-Trust Metrics:
+  description: "[Entity] general-ledger-and-double-entry-bookkeeping-standardization-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📖 General Ledger and Double-Entry Bookkeeping Standardization Logic
+# [Entity] general-ledger-and-double-entry-bookkeeping-standardization-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 기업의 수천억 원짜리 거래들이 단 1원의 오차도 없이 관리될 수 있는 비결이 무엇일까요? **총계정원장 및 복식부기 표준화 로직**은 "세상의 모든 가치는 누군가에게서 와서 누군가에게로 간다"는 철학을 수학적으로 구현한 **'자본의 대차대조'** 기술입니다. 왼쪽(차변)에 무언가 생겼다면, 반드시 오른쪽(대변)에 그만큼의 원천이 있어야 합니다. **'돈의 흐름을 거울처럼 양쪽으로 기록하여 거짓과 누락이 발붙일 곳 없게 만드는 인류 경제 문명의 가장 정직한 기록 체계'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Security Breach - Unauthorized attempt to modify high-fidelity posted journals. System lock engaged. Digital signature required for all adjustments"
         return "PASS: Validated Ledger Immutability and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(trial_balance_diff=0, suspense_account_balance=500.0, journal_approval_rate=0.99)
 print(engine.diagnose_accounting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_accounting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data financial-transaction-volume-and-reconciliation-v2026`와 연동되어, 전 세계 주요 대기업 및 금융 기관의 회계 데이터를 실시간 분석하고 횡령 및 분식 회계 사고 확률을 0.001% 이하로 억제함으로써 지능형 자본주의 문명의 투명성 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - enterprise-resource-planning-erp-and-business-process-integration-logic

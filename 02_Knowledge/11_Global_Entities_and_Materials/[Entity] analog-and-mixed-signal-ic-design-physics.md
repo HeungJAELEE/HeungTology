@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "analog-and-mixed-signal-ic-design-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] analog-and-mixed-signal-ic-design-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The design of integrated circuits that deal with continuous-time signals (Analog IC) and the integration of both analog and digital circuits on a single chip (Mixed-Signal IC Design Physics) to interface between the physical world and digital processors."
-  physical_model: "N/A"
-Semantic:
-  tags: '["analog-design", "mixed-signal", "ic-design", "semiconductor-physics", "adc-dac", "noise-analysis", "rf-design"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Design_Fidelity_Audit: Evaluate the ''Phase Margin'' and stability of the operational amplifier to identify potential oscillations that could distort the analog signal.'
-    - 'Noise_Integrity_Check: Analyze the ''Signal-to-Noise Ratio'' (SNR) and ''Total Harmonic Distortion'' (THD) to ensure the analog-to-digital conversion meets the required precision (ENOB).'
-    - 'Mismatch_Fidelity_Scan: Monitor the ''Transistor Matching'' and offset voltage variations across the wafer to identify process gradients that degrade differential circuit performance.'
-Trust Metrics:
+  description: "[Entity] analog-and-mixed-signal-ic-design-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎼 Analog and Mixed-Signal IC Design Physics
+# [Entity] analog-and-mixed-signal-ic-design-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 디지털 세상은 0과 1로 명확하지만, 우리가 사는 현실은 연속적이고 복잡한 아날로그입니다. **아날로그 및 혼성 신호 IC 설계 물리**는 자연의 목소리(소리, 빛, 압력)를 디지털이 이해할 수 있는 언어로 통역하는 **'나노 단위의 통역관'** 기술입니다. 0.000001V의 미세한 떨림도 놓치지 않고 증폭하면서도, 컴퓨터 칩에서 나오는 시끄러운 디지털 노이즈로부터 아날로그의 섬세함을 지켜내는 **'조화로운 공존의 설계'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe Transistor Mismatch - Offset voltage exceeding tolerance. Process variations causing differential pair asymmetry"
         return "PASS: Balanced Circuit Topology and Verified Physical Layout Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(adc_enob=14.2, amplifier_phase_margin=62.0, signal_to_noise_db=85.0)
 print(engine.diagnose_analog_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_analog_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data adc-enob-and-analog-power-consumption-v2026`와 연동되어, 전 세계 주요 아날로그 반도체(TI, ADI 등)의 가동 데이터를 실시간 분석하고 신호 왜곡 및 정밀도 상실 사고 확률을 0.001% 이하로 억제함으로써 지능형 센서 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - vlsi-design-and-finfet-transistor-scaling-physics

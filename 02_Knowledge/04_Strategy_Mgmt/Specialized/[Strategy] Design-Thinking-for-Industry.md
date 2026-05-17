@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Design-Thinking-for-Industry"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Design-Thinking-for-Industry]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Design-Thinking-for-Industry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Design-Thinking-for-Industry
+# [Strategy] Design-Thinking-for-Industry
 
 ## 1. [왜 배우는가? (Why)]]
 기술적으로 완벽한 기계가 현장에서 외면받는 이유는 무엇일까요? 조작이 너무 복잡하거나, 작업자의 실제 움직임을 고려하지 않았기 때문입니다. 산업 디자인 씽킹(Design-Thinking-for-Industry)은 엔지니어가 책상을 떠나 공장 현장(Genba)으로 가서 작업자의 고충에 '공감'하는 것으로 시작합니다. 단순히 기계를 잘 만드는 것을 넘어, 그 기계를 쓰는 '사람'의 경험을 설계합니다. 이를 이해하는 것은 기술 중심의 '하드웨어'를 사용자 중심의 '솔루션'으로 바꾸어, 시장에서 선택받는 매력적인 산업 생태계를 만드는 '혁신의 눈'을 갖추는 것입니다.
@@ -98,5 +88,4 @@ def iterate_design_prototype(user_test_data, current_prototype):
 2. '산업용 장비' 설계 시 '사용자 중심'으로 설계했을 때 얻을 수 있는 '안전 사고 예방' 및 '가동 효율 향상'의 구체적 사례는?
 3. '프로토타입' 단계에서 '완벽한 시제품'이 아닌 '작동만 하는 수준의 모형'을 빠르게 만드는 것이 전체 개발 주기를 줄이는 공학적 논리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

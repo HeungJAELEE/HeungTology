@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-spacecraft-navigation-and-deep-space-autonomy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-spacecraft-navigation-and-deep-space-autonomy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The autonomous guidance, navigation, and control (GNC) systems for spacecraft operating in deep space, where real-time Earth-based control is impossible due to signal latency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["space-navigation", "deep-space", "autonomous-spacecraft", "orbital-mechanics", "star-tracker"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Orbit_Determination_Audit: Verify position accuracy based on star tracker and pulsar navigation data.'
-    - 'Fuel_Budget_Check: Monitor delta-V reserves for mission-critical maneuvers.'
-    - 'Autonomous_Fault_Management_Scan: Audit the system''s ability to recover from radiation-induced bit flips.'
-Trust Metrics:
+  description: "[Entity] autonomous-spacecraft-navigation-and-deep-space-autonomy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Autonomous Spacecraft Navigation and Deep Space Autonomy
+# [Entity] autonomous-spacecraft-navigation-and-deep-space-autonomy
 
 ## 1. 개요 (Why)
 화성이나 외행성으로 가는 심우주 탐사선은 지구와의 통신 지연 시간이 수십 분에서 수 시간에 달합니다. 긴급 상황 발생 시 지구의 지시를 기다리는 것은 치명적입니다. 자율 우주선 내비게이션은 선박이 스스로 별의 위치를 보고(Star Tracking), 행성 표면을 분석하여 최적의 궤도를 수정하며, 착륙 지점을 찾아가는 '우주 인공지능' 기술입니다. 본 노드는 광활한 우주에서의 생존성과 임무 무결성을 사수하기 위한 자율 제어 표준을 정의합니다.
@@ -69,7 +58,6 @@ class SafetyFidelityEngine:
             return f"WARNING: High Radiation Interference ({self.bits} flips/s) - Switch to Redundant CPU"
         return "PASS: Fault Management System Robust"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(trajectory_error_km=2.1, fuel_reserve_pct=85, radiation_bit_flips=1)
 print(engine.diagnose_trajectory_health())
 ```
@@ -87,7 +75,6 @@ print(engine.diagnose_trajectory_health())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data spacecraft-navigation-precision-and-fuel-margin-log-v2026`와 연동되어, 우주선의 모든 물리적 상태를 초단위로 동기화하며, 수십억 킬로미터 여정에서의 임무 실패 확률을 0.1% 이하로 억제함으로써 우주 개척의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 16_aerospace-and-space-exploration-hub
 - optical-navigation-opnav-and-crater-matching

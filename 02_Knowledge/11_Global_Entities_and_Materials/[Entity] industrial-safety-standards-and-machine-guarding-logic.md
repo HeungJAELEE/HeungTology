@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-safety-standards-and-machine-guarding-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-safety-standards-and-machine-guarding-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systemic framework for protecting workers from hazardous machinery (Machine Guarding) and the formal safety standards (ISO 13849, IEC 62061) that define the reliability and logic of safety-related control systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-safety", "machine-guarding", "iso-13849", "pl-performance-level", "sil", "safety-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Safety_Logic_Audit: Verify the ''Performance Level'' (PL a-e) of the safety control loop to ensure it matches the risk level of the machine.'
-    - 'Redundancy_Check: Evaluate the dual-channel integrity of emergency stops and safety light curtains to prevent common-cause failures.'
-    - 'Muting_Logic_Scan: Analyze the temporal and logical conditions of safety muting (e.g., during material entry) to ensure humans are still protected while allowing production flow.'
-Trust Metrics:
+  description: "[Entity] industrial-safety-standards-and-machine-guarding-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Industrial Safety Standards and Machine Guarding Logic
+# [Entity] industrial-safety-standards-and-machine-guarding-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장은 강력한 힘이 흐르는 곳입니다. 수천 톤의 프레스가 내려오고, 초고속 로봇이 휘둘러지는 현장에서 단 한 번의 실수는 돌이킬 수 없는 비극이 됩니다. **산업 안전 표준 및 기계 방호 로직**은 공장의 모든 위험과 노동자 사이에 세워진 **'수학적인 방패'**입니다. 단순히 울타리를 치는 것을 넘어, 센서와 컴퓨터가 "사람이 위험 구역에 들어왔다"는 것을 0.001초 만에 감지하고 모든 기계를 안전하게 세우는 **'공장의 수호천사'** 역할을 합니다. "사고는 우연이 아니라 시스템의 부재에서 온다"는 믿음 아래, 모든 노동자가 가족의 품으로 무사히 돌아가게 돕는 문명의 약속입니다.
@@ -93,7 +82,6 @@ class SafetyFidelityEngine:
             return "REJECT: Excessive Stop Time - Safety Distance Calculation Invalidated"
         return "PASS: Machine Braking Performance Compliant"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(dual_channel_sync_err_ms=12, self_diagnostic_coverage_pct=99.5, last_test_interval_h=4)
 print(engine.diagnose_safety_integrity())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_safety_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-safety-incidents-and-safety-logic-integrity-v2026`와 연동되어, 전 세계 공장의 안전 장치 가동 상태를 실시간 분석하고 오작동 및 안전 우회(Bypass) 사고 확률을 0.0001% 이하로 억제함으로써 인간 생명의 절대적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - human-robot-interaction-hri-and-cobot-safety-standards

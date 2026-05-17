@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Open-Innovation"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Open-Innovation]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Open-Innovation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Open-Innovation
+# [Strategy] Open-Innovation
 
 ## 1. [왜 배우는가? (Why)]]
 기술의 발전 속도가 너무 빠르고 분야가 방대해져서, 아무리 큰 기업이라도 모든 기술을 혼자 개발할 수 없습니다(Not-Invented-Here 증후군 타파). 오픈 이노베이션(Open-Innovation)은 전 세계의 대학, 스타트업, 심지어 경쟁사가 가진 아이디어와 기술을 빌려오거나 함께 개발하여 혁신의 속도를 획기적으로 높이는 전략입니다. 이를 통해 기업은 낮은 리스크로 신기술을 시험하고, 우리만 쓰기에 아까운 내부 기술은 외부에 팔아 새로운 수익을 창출하는 '경계 없는 성장'을 달성할 수 있습니다.
@@ -100,5 +90,4 @@ def identify_innovation_partners(internal_tech_gap):
 2. '벤처 클라이언트' 모델이 일반적인 '지분 투자(CVC)' 방식 대비 '혁신 도입 속도' 면에서 가지는 이점은?
 3. 외부 기술을 도입할 때 조직 내부의 반발인 'NIH(Not-Invented-Here)' 증후군을 극복하기 위한 'R&D 거버넌스'의 역할은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

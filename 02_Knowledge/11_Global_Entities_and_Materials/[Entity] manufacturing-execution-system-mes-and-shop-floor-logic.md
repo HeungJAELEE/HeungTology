@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "manufacturing-execution-system-mes-and-shop-floor-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] manufacturing-execution-system-mes-and-shop-floor-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A computerized system used in manufacturing to track and document the transformation of raw materials into finished goods (MES) and the physical logic of managing real-time operations on the production floor (Shop Floor Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mes", "manufacturing-execution-system", "shop-floor", "traceability", "oee", "wip", "real-time-monitoring", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Traceability_Fidelity_Audit: Evaluate the ''Data Continuity'' to identify if high-fidelity ''Information Gaps'' between ERP and Shop Floor are causing high-fidelity tracking errors.'
-    - 'Operation_Integrity_Check: Analyze the high-fidelity ''Bottleneck'' at specific workstations via Little''s Law to ensure the high-fidelity ''Production Cadence'' is optimized for maximum high-fidelity throughput.'
-    - 'Quality_Fidelity_Scan: Monitor the high-fidelity ''First Pass Yield'' (FPY) to verify that the high-fidelity ''Process Interlocks'' are effectively preventing defective parts from moving to the next stage.'
-Trust Metrics:
+  description: "[Entity] manufacturing-execution-system-mes-and-shop-floor-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Manufacturing Execution System (MES) and Shop Floor Logic
+# [Entity] manufacturing-execution-system-mes-and-shop-floor-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장 안에서 지금 이 순간 어떤 기계가 돌고 있고, 어떤 물건이 어디까지 만들어졌는지 1초의 오차도 없이 다 알 수 있을까요? **제조 실행 시스템(MES) 및 현장 운영 로직**은 공장의 두뇌와 팔다리를 연결하여, 생산 현장의 모든 움직임을 디지털로 기록하고 제어하는 **'공장의 실시간 관제탑'** 기술입니다. 단순히 '많이 만드는 것'을 넘어, '언제, 누가, 어떤 기계로, 어떤 재료를 써서' 만들었는지 완벽하게 추적(Traceability)하여 불량을 막고 효율을 극대화합니다. **'ISA-95 표준과 OEE 분석의 원리를 이용해 현장의 혼돈을 정제된 데이터로 변환하여 제조의 투명성을 사수하는 지능형 실행 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Traceability Gap - High-fidelity lot history incomplete. Risk of high-fidelity recall failure. Fix high-fidelity data bridge between PLC and MES"
         return "PASS: Validated Manufacturing Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(oee_pct=85.0, wip_units=100, cycle_time_min=5.0)
 print(engine.diagnose_manufacturing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_manufacturing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data production-yield-and-oee-benchmarks-v2026`와 연동되어, 전 세계 주요 스마트 팩토리 및 자동차 부품 조립 라인의 실시간 제조 데이터를 분석하고 라인 정지 및 혼류 생산 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 실행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-automation-and-plc-logic-control-systems

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ar-vr-near-eye-display-optics-and-waveguide-design"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ar-vr-near-eye-display-optics-and-waveguide-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The optical engineering of immersive display systems, focusing on waveguide combiners, diffractive grating structures (SRG, VHG), and light engine integration for AR/VR headsets."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ar-vr", "near-eye-display", "waveguide", "diffractive-optics", "optics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'FOV_Audit: Measure Field of View based on waveguide refractive index and grating pitch.'
-    - 'Optical_Efficiency_Check: Monitor light loss from the micro-display to the eye.'
-    - 'Image_Uniformity_Scan: Detect color non-uniformity (rainbow effect) across the viewing window.'
-Trust Metrics:
+  description: "[Entity] ar-vr-near-eye-display-optics-and-waveguide-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👓 AR/VR Near-eye Display Optics and Waveguide Design
+# [Entity] ar-vr-near-eye-display-optics-and-waveguide-design
 
 ## 1. 개요 (Why)
 안경처럼 가벼운 폼팩터에서 대화면 몰입감을 제공하기 위해, 빛을 얇은 유리에 가두고 눈앞으로 유도하는 '웨이브가이드(Waveguide)' 기술이 AR/VR의 핵심입니다. 빛의 회절(Diffraction)과 전반사(TIR)를 정교하게 제어하여 두꺼운 렌즈 없이도 가상 이미지를 현실 세계 위에 겹쳐 보이게 합니다. 본 노드는 시야각(FOV)과 광학 효율 극대화를 위한 초정밀 광학 설계 표준을 정의합니다.
@@ -73,7 +62,6 @@ class DisplayFidelityEngine:
         # 실제 데이터 기반 placeholder
         return "PASS: Grating Efficiency within 15% range"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(refractive_index=1.9, grating_pitch=400, wavelength=532)
 print(engine.calculate_fov_limit())
 ```
@@ -91,7 +79,6 @@ print(engine.calculate_fov_limit())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data waveguide-display-efficiency-and-fov-log-v2026`와 연동되어, 나노 패턴 오차에 따른 이미지 왜곡을 0.1% 단위로 예측하고 실외에서도 선명한 증강현실 경험을 제공하기 위한 결정론적 가이드를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 07_display-comm-intelligence-hub
 - micro-led-display-for-ar-vr

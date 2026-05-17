@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "boiling-water-reactor-bwr-and-nuclear-steam-cycle-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] boiling-water-reactor-bwr-and-nuclear-steam-cycle-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of light water nuclear reactor used for the generation of electrical power where the reactor core heats water, turning it directly into steam that drives a turbine (Boiling Water Reactor) and the study of the thermodynamic cycle where heat from nuclear fission is converted into mechanical and then electrical energy (Nuclear Steam Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bwr", "nuclear-reactor", "steam-cycle", "nuclear-physics", "rankine-cycle", "void-fraction", "neutron-kinetics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Neutron_Fidelity_Audit: Evaluate the ''Neutron Flux'' and reactivity margin to identify if the control rods or recirculation flow are maintaining the core in a stable, critical state.'
-    - 'Thermal_Integrity_Check: Analyze the ''Critical Power Ratio'' (CPR) and void fraction to ensure the fuel cladding is not experiencing ''Boiling Transition'' (Dryout) which leads to overheating.'
-    - 'Cycle_Fidelity_Scan: Monitor the main steam pressure and moisture separator performance to verify that the ''Rankine Cycle'' is operating at peak thermodynamic efficiency.'
-Trust Metrics:
+  description: "[Entity] boiling-water-reactor-bwr-and-nuclear-steam-cycle-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Boiling Water Reactor (BWR) and Nuclear Steam Cycle Physics
+# [Entity] boiling-water-reactor-bwr-and-nuclear-steam-cycle-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 원자력 발전소의 핵심에서 물이 직접 보글보글 끓어올라 그 증기가 바로 터빈을 돌린다면 어떨까요? **비등경수로(BWR) 및 원자력 증기 사이클 물리**는 거대한 '핵 연료 냄비'에서 직접 증기를 만들어내는 **'가장 단순하고 강력한 에너지 추출'** 기술입니다. 가압경수로(PWR)와 달리 복잡한 2차 계통 없이 원자로 안에서 직접 물을 끓여 효율을 높입니다. 핵분열의 거대한 열기를 전기로 바꾸는 **'원자력 시대의 거대한 증기 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Coolant Purity - Risk of CRUD (Corrosion Product) buildup on fuel rods. Potential for fuel failure and radioactivity leak"
         return "PASS: Ultra-Pure Light Water and Verified Neutronic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(neutron_flux_level=1.0, void_fraction_pct=40.0, core_flow_rate_kg_s=100.0)
 print(engine.diagnose_bwr_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bwr_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bwr-neutron-flux-and-coolant-void-fraction-v2026`와 연동되어, 전 세계 주요 BWR 발전소의 데이터를 실시간 분석하고 핵연료 손상 및 방사능 유출 사고 확률을 0.000001% 이하로 억제함으로써 지능형 에너지 문명의 원자력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - boiler-feedwater-treatment-and-corrosion-inhibition-logic

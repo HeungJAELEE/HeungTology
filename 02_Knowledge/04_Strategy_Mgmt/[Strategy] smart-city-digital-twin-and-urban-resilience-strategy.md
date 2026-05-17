@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-city-digital-twin-and-urban-resilience-strategy-entity"
-  domain: "13_Governance_Law"
+metadata:
+  id: "[[[Strategy] smart-city-digital-twin-and-urban-resilience-strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Smart_City", "#Digital_Twin", "#Resilience", "#Governance", "#Urban_Planning", "#IoT", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Governance smart-city-operating-system-and-urban-governance-intelligence", "Strategy ai-and-digital-transformation-master-strategy"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] smart-city-digital-twin-and-urban-resilience-strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] smart-city-digital-twin-and-urban-resilience-strategy
+# [Strategy] smart-city-digital-twin-and-urban-resilience-strategy
 
 ## 1. [왜 배우는가? (Why: The Living Mirror of the City)]]
 도시가 살아있는 생명체라면, 그 도시를 똑같이 복제한 가상 세계(디지털 트윈)는 도시의 영혼입니다. **스마트 시티 디지털 트윈 및 도시 회복탄력성 전략**은 실제 도시의 모든 데이터(교통, 에너지, 환경)를 가상 세계에 실시간으로 연결하여, 미래를 예측하고 위기 시 즉각 대응하는 '지휘 통제 전략'입니다. 우리가 이를 배우는 이유는 재난 발생 시 피해를 최소화하고 도시 운영 효율을 극대화하여 시민의 삶의 질을 높이며, "데이터 지능을 통해 어떠한 위기에도 무너지지 않는 '회복탄력적 스마트 시티 및 주거 주권'을 확보하기" 위함입니다. 예측의 정밀도가 도시의 생존력을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Energy Intensity per Capita** 분석을 통해 스마트 시티 도입 전/후의 탄소 발자국 절감량과 기후 보상 가치를 수리 산출한 결과는?
 5. RAG 시스템에서 **전국 단위의 실시간 CCTV/IoT 스트림**과 **도시 디지털 트윈 모델**을 융합하여, '범죄 발생 징후를 $90\%$ 확률로 사전 탐지하고 인근 경찰력을 선제 배치하는' **Predictive Urban Safety** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Governance smart-city-operating-system-and-urban-governance-intelligence : 디지털 트윈 전략이 실제로 구현되는 도시 운영 체계 및 거버넌스 엔티티
 - [[[Strategy] ai-and-digital-transformation-master-strategy : 국가 디지털 전환 전략 속에서 스마트 시티를 데이터 경제의 핵심 플랫폼으로 구축하려는 상위 전략 노드

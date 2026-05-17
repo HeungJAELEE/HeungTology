@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kanban-system-and-just-in-time-jit-production-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kanban-system-and-just-in-time-jit-production-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The visual information system (Kanban) used to control the production flow and inventory level in a Just-In-Time (JIT) environment, ensuring that parts are produced and delivered 'just-in-time' as needed by the downstream process."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kanban", "jit", "lean-manufacturing", "pull-system", "inventory-control", "toyota-production-system", "supply-chain"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Kanban_Velocity_Audit: Monitor the circulation speed of Kanban cards to identify bottlenecks or ''frozen'' inventory within the production loop.'
-    - 'JIT_Synchronization_Check: Evaluate the timing of parts arrival against the assembly line takt-time to minimize idle waiting and overproduction.'
-    - 'WIP_Limit_Compliance_Scan: Ensure that the number of active Kanban cards (Work-in-Process) does not exceed the calculated buffer capacity to prevent gridlock.'
-Trust Metrics:
+  description: "[Entity] kanban-system-and-just-in-time-jit-production-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗂️ Kanban System and Just-In-Time (JIT) Production Logic
+# [Entity] kanban-system-and-just-in-time-jit-production-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 미리 많이 만들어 쌓아두는 것이 안전해 보이지만, 사실 그것은 공장을 병들게 하는 '비만(재고)'입니다. **칸반(Kanban) 시스템 및 JIT 생산 로직**은 뒷공정(고객)이 물건을 가져갈 때만 앞공정이 물건을 만드는 **'필요한 만큼만 움직이는 지능'**입니다. 마치 슈퍼마켓에서 우유가 팔리면 그 자리를 채우는 것과 같습니다. '칸반'이라는 신호표를 주고받으며 공장 전체가 거대한 컨베이어 벨트처럼 막힘없이 흐르게 만들어, 낭비를 없애고 유연함을 극대화하는 **'공장의 다이어트 처방법'**입니다.
@@ -94,7 +83,6 @@ class FactoryFidelityEngine:
             return "REJECT: Information Integrity Failure - Lost Kanban Cards Lead to Invisible Inventory Risks"
         return "PASS: Accurate Visual Flow Control Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(kanban_cycle_time_min=45, stockout_frequency=0.002, wip_inventory_level=120)
 print(engine.diagnose_jit_health())
 ```
@@ -112,7 +100,6 @@ print(engine.diagnose_jit_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data kanban-flow-and-jit-inventory-levels-v2026`와 연동되어, 전 세계 주요 제조 라인의 칸반 흐름을 실시간 분석하고 생산 중단 및 과잉 재고 사고 확률을 0.001% 이하로 억제함으로써 린(Lean) 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - kaizen-and-continuous-improvement-methodology

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corporate-social-responsibility-csr-and-philanthropy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corporate-social-responsibility-csr-and-philanthropy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic integration of social and environmental concerns into business operations and the voluntary contribution of resources to societal goals (Philanthropy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["csr", "philanthropy", "social-impact", "esg", "sustainability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Social_Impact_Audit: Measure the tangible benefits to the local community and environment from CSR initiatives.'
-    - 'Philanthropic_Efficiency_Check: Evaluate the percentage of donations reaching intended beneficiaries vs. administrative costs.'
-    - 'Stakeholder_Sentiment_Scan: Analyze the public perception and stakeholder support for the organization''s social activities.'
-Trust Metrics:
+  description: "[Entity] corporate-social-responsibility-csr-and-philanthropy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤝 Corporate Social Responsibility (CSR) and Philanthropy
+# [Entity] corporate-social-responsibility-csr-and-philanthropy
 
 ## 1. 개요 (Why)
 기업은 사회라는 토양 위에서만 생존할 수 있습니다. CSR은 기업이 이윤 추구를 넘어 사회적 책임을 다하는 것이며, 필란트로피(박애)는 기업의 부를 더 나은 세상을 위해 자발적으로 나누는 행위입니다. 이는 단순한 기부를 넘어, 기업의 평판을 높이고 인재를 끌어모으며 지역 사회와의 상생을 통해 장기적인 성장을 보장하는 '지속 가능 경영'의 핵심 전략입니다. 본 노드는 사회적 책임 활동의 무결성과 임팩트 측정 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LegalFidelityEngine:
             return f"REJECT: Low Stakeholder Trust ({self.score}%) - CSR Initiatives Perceive as 'Greenwashing'"
         return "PASS: Strong Social License to Operate Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(sroi_ratio=3.5, admin_cost_pct=12, stakeholder_support_score=85)
 print(engine.diagnose_social_impact())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_social_impact())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data csr-investment-and-social-impact-metrics-v2026`와 연동되어, 모든 사회 공헌 활동의 비용 대비 임팩트를 실시간 분석하고 사회적 오작동 확률을 1% 이하로 억제함으로써 기업의 시민 의식과 도덕적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - esg-compliance-and-sustainable-sourcing

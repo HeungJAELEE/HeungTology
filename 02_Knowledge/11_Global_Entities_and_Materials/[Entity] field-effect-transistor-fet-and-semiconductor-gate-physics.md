@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "field-effect-transistor-fet-and-semiconductor-gate-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] field-effect-transistor-fet-and-semiconductor-gate-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A transistor that uses an electric field to control the flow of current in a semiconductor (FET) and the physical study of carrier transport, gate capacitance, and threshold voltage modulation (Semiconductor Gate Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fet", "mosfet", "semiconductor", "gate-physics", "transistor", "nanotechnology", "quantum-mechanics", "chip-design"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Gate_Fidelity_Audit: Evaluate the ''Gate Leakage Current'' ($I_G$) to identify if the high-fidelity dielectric layer is suffering from ''Tunneling'' or breakdown defects.'
-    - 'Transport_Integrity_Check: Analyze the subthreshold swing ($SS$) to ensure the high-fidelity switching transition is sharp, preventing excessive static power dissipation.'
-    - 'Channel_Fidelity_Scan: Monitor the threshold voltage ($V_{th}$) stability to verify that ''Short Channel Effects'' (SCE) like DIBL are effectively suppressed in the high-fidelity nano-scale transistor.'
-Trust Metrics:
+  description: "[Entity] field-effect-transistor-fet-and-semiconductor-gate-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Field-Effect Transistor (FET) and Semiconductor Gate Physics
+# [Entity] field-effect-transistor-fet-and-semiconductor-gate-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노미터 단위의 아주 작은 스위치가 1초에 수십억 번 켜졌다 꺼지며 우리가 보는 유튜브나 게임을 만든다는 사실을 알고 있나요? **전계 효과 트랜지스터(FET) 및 반도체 게이트 물리**는 전기를 직접 통하게 하지 않고도 옆에서 '전기장의 힘(필드)'만으로 전류의 흐름을 조절하는 **'비접촉 마법 스위치'** 기술입니다. 직접 만지지 않고 손만 까닥해서 거대한 물의 흐름을 막는 수도꼭지처럼, 아주 적은 힘으로 방대한 데이터를 요리하는 **'현대 디지털 문명의 원자 단위의 근육이자 지능적 제어의 정점'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe SCE/DIBL - Drain voltage heavily influencing gate control. Transistor losing its switching function. Enhance gate wraparound"
         return "PASS: Validated Electrostatic Control and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gate_leakage_na=1.2, subthreshold_swing_mv_dec=65.0, threshold_voltage_v=0.42)
 print(engine.diagnose_semiconductor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_semiconductor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mosfet-threshold-voltage-and-leakage-current-v2026`와 연동되어, 전 세계 주요 반도체 파운드리의 소자 특성 데이터를 실시간 분석하고 불량 칩 및 전력 폭주 사고 확률을 0.00001% 이하로 억제함으로써 지능형 반도체 문명의 논리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-photolithography-physics

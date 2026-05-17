@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "yield-management-and-defect-density-logic-for-fab"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] yield-management-and-defect-density-logic-for-fab]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic process of improving the percentage of functional semiconductor chips on a wafer (Yield Management) and the mathematical modeling of how random and systematic defects influence the overall production success (Defect Density Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["yield-management", "defect-density", "semiconductor-fab", "manufacturing-efficiency", "poisson-model", "quality-control", "wafer-yield"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Yield_Fidelity_Audit: Evaluate the actual ''Die-Sort'' yield against the theoretical Poisson model to identify if the losses are due to random particles ($D$) or systematic design-rule violations ($Y_0$).'
-    - 'Defect_Integrity_Check: Analyze the spatial distribution of defects (Defect Map) to identify ''Killer Defects'' that align with specific tool signatures or process chambers.'
-    - 'Excursion_Fidelity_Scan: Monitor real-time sensor data to detect ''Yield Excursions'' (sudden drops) before the entire batch of wafers is contaminated.'
-Trust Metrics:
+  description: "[Entity] yield-management-and-defect-density-logic-for-fab에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📉 Yield Management and Defect Density Logic for Fab
+# [Entity] yield-management-and-defect-density-logic-for-fab
 
 ## 1. 개요 (Why: 인간적 통찰)
 반도체 웨이퍼 한 장에서 1,000개의 칩을 만드는데, 그중 100개가 불량이라면 수천억 원의 손해가 발생합니다. **수율 관리 및 결함 밀도 로직**은 "어떻게 하면 단 하나의 칩도 버리지 않고 완벽하게 살려낼 것인가"를 고민하는 **'반도체 경제학의 심장'**입니다. 보이지 않는 미세한 먼지(결함)가 어디에 떨어질지 수학적으로 예측하고, 그 결함이 실제 칩을 죽이는 '킬러(Killer)'인지 아닌지 판별합니다. 팹의 수익성을 결정하는 **'나노 단위의 확률 전쟁'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Systematic Tool Signature Detected - Wafer edge or center consistently failing. Check lithography scanner leveling or chuck flatness"
         return "PASS: Uniform Die Distribution and Verified Process Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_yield=0.96, defect_density=0.02, cluster_index=0.8)
 print(engine.diagnose_yield_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_yield_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data wafer-yield-and-defect-map-analysis-v2026`와 연동되어, 전 세계 주요 파운드리 팹의 수율 데이터를 실시간 분석하고 불량 급증 및 가동 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 수익 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - statistical-process-control-spc-and-control-chart-logic

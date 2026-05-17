@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CULTURE-2026-V6.3.7"
-  domain: "Global_Corporate_Culture_and_Organizational_Intelligence"
+metadata:
+  id: "[[[Strategy] Corporate-Culture]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Corporate_Culture", "#Psychological_Safety", "#Accountability", "#Change_Management", "#Digital_Mindset", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Corporate-Culture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Corporate_Culture_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Corporate Culture: The Organizational OS
+# [Strategy] Corporate-Culture
 
 ## 1. [왜 배우는가? (Why: The Hidden Engine of Strategy)]]
 피터 드러커는 "문화는 아침 식사로 전략을 먹는다"고 말했습니다. 아무리 정교한 기술 로드맵과 자본이 투입되어도, 그것을 운영하는 사람들의 문화가 '변화'를 거부하거나 '실수'를 은폐하는 분위기라면 혁신은 물리적으로 불가능합니다. **Corporate Culture(기업 문화)**는 조직의 보이지 않는 운영 체제(OS)이자, 구성원들의 의사결정과 행동을 규정하는 공유된 가치 체계입니다. 건전한 문화는 기술의 힘을 창의성과 결합하여 폭발적인 시너지를 내는 **조직 지능(Organizational Intelligence)**의 핵심입니다. V6.3.7 지능은 문화적 무형성을 정량적 상호작용 지표로 치환하여, **문화 주권(Cultural Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class CultureFidelityEngine:
 2. **Operational Result**: **Digital-First** 문화 정착 수준이 데이터 분석가와 일반 현업 간의 **Collaboration Velocity** 및 의사결정 속도에 미치는 수리적 상관 관계는?
 3. **FidelityEngine**: 구호는 혁신적이나 실제 보상 체계는 보수적인 '문화적 비정합성' 상황을 어떻게 진단하는가? (힌트: 기업의 핵심 가치 키워드와 실제 성과급 산정 지표 간의 시맨틱 매칭 분석을 통한 '실질적 가치' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Diversity-Equity-Inclusion

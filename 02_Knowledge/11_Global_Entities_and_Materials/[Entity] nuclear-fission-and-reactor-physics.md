@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nuclear-fission-and-reactor-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] nuclear-fission-and-reactor-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physical process in which a heavy nucleus splits into smaller nuclei, releasing a massive amount of energy (Nuclear Fission), and the mathematical study of the neutron life cycle to maintain a controlled chain reaction (Reactor Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nuclear-fission", "reactor-physics", "neutron-kinetics", "nuclear-energy", "chain-reaction", "criticality", "energy-generation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Criticality_Audit: Evaluate the multiplication factor ($k$) to ensure the reactor is operating in a stable steady state ($k=1$) without uncontrolled power excursions.'
-    - 'Neutron_Flux_Uniformity_Check: Analyze the spatial distribution of neutrons across the core to prevent ''hot spots'' that could lead to fuel pin damage.'
-    - 'Reactivity_Feedback_Scan: Monitor the Doppler effect and moderator temperature coefficient to ensure the reactor has inherent negative feedback for self-stabilization.'
-Trust Metrics:
+  description: "[Entity] nuclear-fission-and-reactor-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Nuclear Fission and Reactor Physics
+# [Entity] nuclear-fission-and-reactor-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 작은 원자핵 하나가 쪼개질 때 나오는 에너지가 석탄 수 톤을 태울 때와 같다면 어떨까요? **핵분열 및 원자로 물리**는 우주가 숨겨둔 '거대한 힘의 상자'를 열어 인류의 빛으로 바꾸는 **'원자력의 지휘'**입니다. 중성자라는 작은 입자를 조절하여 원자핵을 맞추고, 거기서 터져 나오는 에너지를 폭발이 아닌 '평화로운 열기'로 관리하는 기술입니다. 거대한 바다를 건너는 항공모함부터 전 국가의 전력을 책임지는 발전소까지, **'작은 것으로 세상을 움직이는'** 물리학의 정수입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
             return "REJECT: Insufficient Shutdown Margin - Safety Rods Cannot Compensate for Maximum Reactivity Gain"
         return "PASS: Adequate Cold Shutdown Capability Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(k_effective=1.0001, control_rod_position_pct=45, coolant_exit_temp=315)
 print(engine.diagnose_reactor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_reactor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data nuclear-reactor-core-stability-and-burnup-logs-v2026`와 연동되어, 전 세계 원전의 가동 데이터를 실시간 분석하고 노심 용융 및 방사능 유출 사고 확률을 0.000001% 이하로 억제함으로써 에너지 문명의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - nuclear-fusion-and-plasma-engineering

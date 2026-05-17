@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] HVAC"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] HVAC]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] HVAC에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] HVAC
@@ -91,5 +81,4 @@ def optimize_hvac_operation(weather_forecast, occupancy_data):
 2. 클린룸에서 '양압 제어'와 '공기 순환(Air Change)' 횟수가 제품 수율에 미치는 공학적 영향은?
 3. AI를 활용한 '예측형 HVAC 제어'가 실시간 센서 기반 제어보다 에너지 효율 면에서 우수한 까닭은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "multivariate-statistical-process-control-mspc-and-quality-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] multivariate-statistical-process-control-mspc-and-quality-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An advanced set of statistical tools used to analyze process data with multiple correlated variables simultaneously (MSPC) and the physical logic of ensuring product quality via multi-dimensional variance control (Quality Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mspc", "spc", "statistical-process-control", "multivariate", "pca", "pls", "quality-control", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Variance_Fidelity_Audit: Evaluate the ''T-squared'' and ''Q-residual'' to identify if high-fidelity ''Process Drift'' or high-fidelity ''Correlation Breakdown'' is indicating a hidden high-fidelity fault.'
-    - 'Quality_Integrity_Check: Analyze the high-fidelity ''Principal Components'' to ensure the high-fidelity ''Common Cause Variation'' is distinguished from high-fidelity ''Special Cause Variation''.'
-    - 'Metric_Fidelity_Scan: Monitor the high-fidelity ''Contribution Plot'' to verify which specific high-fidelity sensor is driving the high-fidelity alarm in the multi-dimensional space.'
-Trust Metrics:
+  description: "[Entity] multivariate-statistical-process-control-mspc-and-quality-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 Multivariate Statistical Process Control (MSPC) and Quality Logic
+# [Entity] multivariate-statistical-process-control-mspc-and-quality-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 수천 개 센서 중 단 하나도 범위를 벗어나지 않았는데, 왜 결과물은 불량이 나올까요? **다변량 통계적 공정 제어(MSPC) 및 품질 로직**은 개별 센서가 아니라 '모든 센서의 조합'이 만드는 미묘한 분위기를 읽어내는 **'공장의 육감'** 기술입니다. 온도, 압력, 유량이 각각은 정상이더라도, 이들이 맺는 관계가 틀어지면 불량이 발생한다는 무서운 진실을 수학적으로 밝혀냅니다. **'주성분 분석(PCA)과 호텔링 T-제곱의 원리를 이용해 고차원의 데이터를 저차원의 핵심 지표로 응축하여 품질의 변동을 사수하는 지능형 품질 관리 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Model Obsolescence - High-fidelity correlation structure changed. High-fidelity re-modeling (PCA/PLS) with new high-fidelity data required"
         return "PASS: Validated Statistical Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(t_squared_score=5.0, q_residual_error=0.1, contribution_indices=[])
 print(engine.diagnose_quality_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_quality_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mspc-control-limits-and-defect-detection-rates-v2026`와 연동되어, 전 세계 주요 반도체 식각 및 대규모 석유화학 증류 공정의 실시간 통계 데이터를 분석하고 품질 저하 및 돌발 공정 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 품질 문명의 데이터 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - kpi-and-operational-performance-metric-logic

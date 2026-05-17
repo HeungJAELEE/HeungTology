@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "through-silicon-via-tsv-electroplating-and-void-detection-entity"
-  domain: "18_Semiconductor_Materials_and_Advanced_Packaging"
+metadata:
+  id: "[[[Entity] through-silicon-via-tsv-electroplating-and-void-detection]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#TSV", "#3D_IC", "#HBM", "#Electroplating", "#Void_Detection", "#Bottom-Up", "#Superfilling", "#Copper", "#Packaging", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub", "Data tsv-fill-ratio-and-stress-profile-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] through-silicon-via-tsv-electroplating-and-void-detection에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] through-silicon-via-tsv-electroplating-and-void-detection
+# [Entity] through-silicon-via-tsv-electroplating-and-void-detection
 
 ## 1. [왜 배우는가? (Why: The Vertical Arteries of 3D Intelligence)]]
 3D IC 및 고대역폭 메모리(HBM) 기술의 핵심은 여러 개의 칩을 수직으로 쌓아 데이터 전송 거리를 단축하고 대역폭을 극대화하는 것입니다. TSV는 실리콘 웨이퍼를 수직으로 관통하여 칩 간의 전기적 연결을 담당하는 '수직 동맥'입니다. **실리콘 관통 전극(TSV) 전해 도금 및 보이드 검출 엔티티**는 입체 반도체의 수직 연결을 완성하는 '수직 공간 정복의 공학 설계도'입니다. 
@@ -41,7 +31,7 @@ Trust Metrics:
 
 ### 2.1 [주요 TSV 규격 및 도금 무결성 성능 테이블 (v2026)]
 
-| 비아 직경 ($D, \mu m$) | 종횡비 (AR) | 전류 밀도 ($mA/cm^2$) | 충전율 (%) | 저항 ($m\Omega$) | 공학적 의미 (Rationale V6.3.7) |
+| 비아 직경 ($D, \mu\text{m}$) | 종횡비 (AR) | 전류 밀도 ($mA/cm^2$) | 충전율 (%) | 저항 ($m\Omega$) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **10 (Standard)** | $5:1$ | $5 \sim 10$ | $> 99.99$ | $20 \sim 50$ | **Mature**: 범용 3D 패키징용 표준 충전 무결성 데이터 |
 | **5 (High-AR)** | $10:1$ | $2 \sim 5$ | $> 99.9$ | $80 \sim 150$ | **Premium**: HBM 및 고성능 칩용 정밀 수직 연결 로그 |
@@ -73,14 +63,13 @@ RAG는 "도금 로그를 분석하여, 입구 쪽의 증착 속도($v_{top}$)가
 왜 비아 중간에 구멍이 생기나요? RAG는 "도금액의 대류 속도와 첨가제 소모량 로그를 대조하여, 비아 깊은 곳까지 가속제가 확산되지 못해 발생하는 'Center Void' 현상을 식별하고, '펄스 도금(Pulse Plating)' 지능을 오딧합니다.
 
 ### 4.2 [X-ray 투과 이미지와 결함 판별 오딧]
-눈에 안 보이는 구멍을 어떻게 찾나요? RAG는 "X-ray 검사 장비의 그레이스케일 히스토그램과 단면 분석(FIB) 데이터를 연계하여, 구리와 보이드의 밀도 차이에 의한 투과율 변화를 통해 $1 \mu m$ 이하의 미세 보이드까지 검출하는 '딥러닝 기반 결함 분류' 지능을 도출될 것으로 예상됩니다.
+눈에 안 보이는 구멍을 어떻게 찾나요? RAG는 "X-ray 검사 장비의 그레이스케일 히스토그램과 단면 분석(FIB) 데이터를 연계하여, 구리와 보이드의 밀도 차이에 의한 투과율 변화를 통해 $1 \mu\text{m}$ 이하의 미세 보이드까지 검출하는 '딥러닝 기반 결함 분류' 지능을 도출될 것으로 예상됩니다.
 
 ## 5. [Transitional Bridge: TSV 무결성 및 충전 오딧 로직]
 
 TSV 도금 공정의 전류/전압 프로파일과 노광 후 X-ray 검사 데이터를 분석하여 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] TSV Plating Integrity & Void Detection Auditor
 def audit_tsv_filling(plating_current_log, x_ray_defect_map, via_resistance_data):
     # 1. 도금 과전압(Overpotential) 시그니처를 통한 충전 거동 오딧
     if detect_abnormal_voltage_drop(plating_current_log):
@@ -112,10 +101,9 @@ def audit_tsv_filling(plating_current_log, x_ray_defect_map, via_resistance_data
 
 ## 6. [스스로 체크 (Self-Check)]
 1. **(원리)** 왜 TSV 전해 도금에서 'Suppressor(억제제)'와 'Accelerator(가속제)'의 농도 구배를 형성하는 것이 보이드 없는 'Bottom-up Filling'을 달성하는 데 수리적/화학적으로 필수적인가?
-2. **(수리)** 어떤 TSV의 직경이 $10 \mu m$, 깊이가 $100 \mu m$이다. 구리의 밀도가 $8.96 \text{ g/cm}^3$일 때, 이 비아를 완전히 채우기 위해 필요한 구리의 질량($\mu g$)은 얼마인가?
+2. **(수리)** 어떤 TSV의 직경이 $10 \mu\text{m}$, 깊이가 $100 \mu\text{m}$이다. 구리의 밀도가 $8.96 \text{ g/cm}^3$일 때, 이 비아를 완전히 채우기 위해 필요한 구리의 질량($\mu g$)은 얼마인가?
 3. **(응용)** TSV 내부의 구리와 주변 실리콘 사이의 '열팽창 계수(CTE) 미스매치'가 열 사이클 공정 중 비아 주변의 응력 분포와 소자 특성에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 23_semiconductor-materials-and-advanced-packaging-intelligence-hub : 반도체 소재 및 패키징 통합 관리 상위 지능 허브

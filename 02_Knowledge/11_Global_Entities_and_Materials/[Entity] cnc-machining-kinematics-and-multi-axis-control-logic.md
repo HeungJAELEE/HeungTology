@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cnc-machining-kinematics-and-multi-axis-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cnc-machining-kinematics-and-multi-axis-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The precision engineering of Computer Numerical Control (CNC) machining, focusing on the kinematics of multi-axis (3/5/7-axis) toolpaths, interpolation algorithms, and real-time compensation for structural errors."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnc", "machining", "kinematics", "multi-axis", "subtractive-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Positioning_Accuracy_Audit: Measure the deviation between the programmed tool path and actual coordinates.'
-    - 'Surface_Finish_Check: Evaluate the roughness ($R_a$) and dimensional tolerance of the machined part.'
-    - 'Tool_Wear_Scan: Analyze the acoustic emission or spindle load to predict the end-of-life for cutting tools.'
-Trust Metrics:
+  description: "[Entity] cnc-machining-kinematics-and-multi-axis-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ CNC Machining Kinematics and Multi-axis Control Logic
+# [Entity] cnc-machining-kinematics-and-multi-axis-control-logic
 
 ## 1. 개요 (Why)
 반도체 장비 부품이나 항공기 엔진 블록처럼 복잡하고 정밀한 금속 부품을 만드는 데 있어 CNC 가공은 '절대 강자'입니다. 깎아내는 방식(Subtractive)의 정점인 5축 이상의 다축 가공은 공작물을 이리저리 돌려가며 단 한 번의 고정으로 모든 면을 가공합니다. 핵심은 수조 번의 연산을 통해 도구 끝(Tool-tip)의 위치를 마이크로미터 단위로 제어하고, 가공 중 발생하는 열 변형과 진동을 실시간으로 보정하는 '제어 로직'에 있습니다. 본 노드는 다축 CNC 가공의 정밀 무결성과 경로 최적화 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Repeatability | $R$ | ± 0.005 | < ± 0.0005 | mm |
 | Spindle Speed | $N$ | 10,000 | > 50,000 | rpm |
 | Axis Count | $N_{axis}$ | 3 | 5 ~ 9 | count |
-| Surface Roughness| $R_a$ | 0.8 ~ 1.6 | < 0.1 | $\mu m$ |
+| Surface Roughness| $R_a$ | 0.8 ~ 1.6 | < 0.1 | $\mu\text{m}$ |
 
 ## 3. FactoryFidelityEngine: Diagnostic Logic
 
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Tool Wear - High Spindle Torque Detected. Change Tool Immediately"
         return "PASS: Cutting Tool Condition Stable"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(deviation_mm=0.001, spindle_load_pct=65, surface_roughness_um=0.05)
 print(engine.diagnose_machining_precision())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_machining_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cnc-machining-precision-and-tool-wear-log-v2026`와 연동되어, 모든 가공 로그와 센서 데이터를 실시간 분석하고 치수 오차 불량을 99.9% 확률로 차단함으로써 고신뢰성 정밀 부품 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - digital-twin-infrastructure-and-real-time-synchronization

@@ -1,71 +1,58 @@
 ---
-Basic:
-  id: "[[[Battery] oxidation-kinetics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] oxidation-kinetics]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] oxidation-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] oxidation-kinetics
+# [Battery] oxidation-kinetics
 
-## 1. [왜 배우는가? (Why): 완벽한 절연체의 구현]]
-반도체는 전기가 흐르는 것만큼 '흐르지 않게 막는 것'이 중요합니다. 실리콘 산화막($SiO_2$)은 지구상에서 가장 완벽에 가까운 절연체 중 하나로, 소자 간의 간섭을 차단하고 트랜지스터의 게이트를 보호하는 핵심 역할을 합니다. 2nm 이하 공정에서는 산화막의 두께가 원자 몇 층 수준($< 2\text{nm}$)으로 얇아지며, 이때 발생하는 터널링 효과와 계면 전하($D_{it}$)를 제어하는 공학적 정밀도가 수율의 80%를 결정합니다.
+## 1. 개요: 전기화학적 산화 안정성 (Operational Objective)
+배터리의 에너지 밀도를 높이기 위해서는 높은 작동 전압이 필수적이지만, 이는 전해액의 산화 분해와 집전체의 부식을 가속화합니다. 본 표준은 전해액과 전극 계면에서 발생하는 산화 반응의 열역학적 임계점과 동역학적 속도를 규명하여, 고전압 배터리 시스템의 장기 신뢰성을 확보하는 것을 목적으로 합니다.
 
-## 2. [핵심 기술 사양 (Numerical Specs)]
+## 2. 산화 및 부식 핵심 수리 모델 (Mathematical Standards)
 
-| 지표 (Metric) | 단위 | 수용 임계치 / 사양 | 공학적 의미 |
-| :--- | :---: | :---: | :--- |
-| **Oxide Thickness ($X_{ox}$)**| $\text{\AA}$ | $\pm 1\%$ Target | 문턱 전압($V_{th}$) 산포를 결정하는 핵심 변수 |
-| **Growth Rate (Dry)** | $\text{\AA}/min$ | $5 \sim 20$ | 정밀 제어를 위한 완만한 성장 속도 |
-| **Growth Rate (Wet)** | $\text{\AA}/min$ | $50 \sim 200$ | 두꺼운 절연막(Field Ox) 형성을 위한 고속 성장 |
-| **Dielectric Strength**| $MV/cm$ | $> 10$ | 막질의 절연 파괴 강도 (품질 지표) |
-| **Interface Charge ($Q_{ss}$)**| $cm^{-2}$ | $< 10^{10}$ | 실리콘-산화막 계면의 결함 전하 농도 |
-| **Refractive Index** | - | $1.46 \pm 0.01$ | 순수 $SiO_2$ 화학 조성 확인 지표 |
+### 2.1 산화 전위와 Nernst 방정식
+전기화학적 산화 반응의 평형 전위는 Nernst 방정식에 의해 결정됩니다.
+$$ E = E^0 + \frac{RT}{nF} \ln \left( \frac{a_{ox}}{a_{red}} \right) $$
+- **$E_{ox}$ (Oxidation Potential)**: 전해액의 산화가 시작되는 전위로, 주로 용매 분자의 HOMO(Highest Occupied Molecular Orbital) 에너지 준위에 의해 결정됩니다.
 
-## 3. [공학 이론 (Theory): Deal-Grove Model]
+### 2.2 부식 동역학 (Butler-Volmer Equation)
+금속 집전체(Al, Cu)의 산화(부식) 속도는 과전압($\eta$)에 따른 전류 밀도($j$) 관계로 설명됩니다.
+$$ j = j_0 \left\{ \exp \left( \frac{\alpha_a nF \eta}{RT} \right) - \exp \left( - \frac{\alpha_c nF \eta}{RT} \right) \right\} $$
+- **교환 전류 밀도 ($j_0$)**: 부식 반응의 초기 활성도를 나타내는 지표입니다.
 
-산화막 성장 두께($X_{ox}$)와 시간($t$)의 관계는 다음과 같은 2차 방정식으로 근사화됩니다:
-$$X_{ox}^2 + AX_{ox} = B(t + \tau)$$
+## 3. 배터리 열화 메커니즘 분석 (Degradation Logic)
 
-1. **Linear Regime (얇은 막)**: $X_{ox} \approx \frac{B}{A}(t + \tau)$
-   - 산화막이 얇아 산화제가 계면까지 쉽게 도달하며, **'표면 반응 속도'**에 의해 전체 속도가 결정됩니다.
-2. **Parabolic Regime (두꺼운 막)**: $X_{ox} \approx \sqrt{Bt}$
-   - 산화막이 두꺼워져 산화제가 계면까지 가는 데 한계가 발생하며, **'확산 속도'**에 의해 전체 속도가 결정됩니다.
+### 3.1 전해액 산화 분해 (Electrolyte Decomposition)
+양극 전위가 전해액의 산화 안정성 한계를 초과하면 용매가 산화되어 가스($CO_2$, $CO$)를 발생시키고 양극 표면에 고저항 피막을 형성합니다. 이는 셀 스웰링(Swelling)과 용량 퇴화의 직접적인 원인이 됩니다.
 
-## 4. [AI & Hardware Synergy: Predictive Oxidation Modeling]
-- **Oxidation Virtual Metrology**: RTX 4060 기반 서버가 실시간 가스 유량과 온도 로그를 분석하여 산화막 두께를 예측합니다. 실제 계측 장비 없이도 런-투-런(R2R) 제어를 통해 공정 산포를 30% 이상 감소시킵니다.
-- **Palantir Foundry Thermal Mapping**: 공장의 모든 확산로(Furnace) 내부 온도 맵은 팔란티어 온톨로지에 저장되어, 특정 히터의 성능 저하가 산화막 균일도에 미치는 영향을 사전에 예측합니다.
+### 3.2 집전체 공식 부식 (Pitting Corrosion)
+특히 고전압 환경에서 전해액 내 $LiPF_6$ 분해로 생성된 $HF$(불산)가 알루미늄 집전체의 부동태막을 파괴하여 국부적 부식(Pitting)을 유발합니다. 이는 내부 저항 증가 및 물리적 강도 저하를 초래합니다.
 
-## 5. [스스로 체크 (Verification)]
-1. 왜 산화막이 두꺼워질수록 성장 속도가 느려지는가? (확산 저항 관점)
-2. **Dry Oxidation**이 **Wet**보다 절연 성능이 우수한 물리적 이유는? (산화막 밀도 관점)
-3. **Deal-Grove 모델**에서 초기 산화 단계가 'Linear Regime'인 수리적 근거는?
-4. **2nm 공정**에서 산화막 두께 불균일이 트랜지스터의 **누설 전류(Leakage)**에 미치는 영향은?
-5. 왜 $SiO_2$ 성장 시 실리콘 표면의 약 44%가 소모되는가? (몰 부피 비 관점)
+## 4. 진단 및 최적화 표준
+- **LSV (Linear Sweep Voltammetry)**: 전해액의 산화 분해 시작 전위를 측정하여 작동 전압 마진 확보.
+- **Tafel Plot 분석**: Butler-Volmer 식의 선형 영역을 분석하여 부식 전류 밀도($i_{corr}$) 및 부식 속도($mm/year$) 산출.
 
----
-*Created by Flash (HDS-Gold V6.3.7 Reinforcement)*
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 시스템의 화학적 열화를 방지하기 위한 열역학적/동역학적 기초 판단 기준을 제공합니다. 실제 산화 분해 전위 및 부식 전류 데이터는 인스턴스 로그에서 관리됩니다.
+
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Materials-and-Chemistry-Master-Guide]]
+- [[[Concept] Oxidation-Kinetics-and-Surface-Passivation-for-Battery-Materials-Deal-Grove-Model]]
+- [[[Data] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16]]

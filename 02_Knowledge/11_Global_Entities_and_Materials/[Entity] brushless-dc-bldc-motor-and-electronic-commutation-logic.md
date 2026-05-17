@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brushless-dc-bldc-motor-and-electronic-commutation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brushless-dc-bldc-motor-and-electronic-commutation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A synchronous motor using a direct current (DC) electric power supply that has an electronically controlled commutation system instead of a mechanical brush and commutator (BLDC Motor) and the complex control algorithms that determine the timing and sequence of power delivery to the motor coils based on rotor position (Electronic Commutation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bldc", "motor-control", "electronic-commutation", "esc", "permanent-magnet", "drone-motor", "robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Commutation_Fidelity_Audit: Evaluate the ''Back-EMF'' zero-crossing detection to identify if the commutation timing is drifting, which causes torque ripple and reduced efficiency.'
-    - 'Thermal_Integrity_Check: Analyze the winding temperature and FET (Field Effect Transistor) heat dissipation to ensure the ''Electronic Speed Controller'' (ESC) is not being overloaded.'
-    - 'Magnetic_Fidelity_Scan: Monitor the rotor magnetic flux to identify potential ''Demagnetization'' of the permanent magnets due to over-current or high-temperature operation.'
-Trust Metrics:
+  description: "[Entity] brushless-dc-bldc-motor-and-electronic-commutation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Brushless DC (BLDC) Motor and Electronic Commutation Logic
+# [Entity] brushless-dc-bldc-motor-and-electronic-commutation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 드론이 하늘을 날고 로봇이 정교하게 움직이는 비결, 그리고 전기차가 그토록 조용하고 강력한 이유가 무엇일까요? **BLDC 모터 및 전자 정류(Commutation) 로직**은 마찰과 불꽃을 일으키는 '브러시'를 없애고 그 자리를 '컴퓨터의 지능'으로 채운 **'디지털 구동의 정수'** 기술입니다. 기계적인 접촉 대신 전기의 흐름을 소프트웨어로 정밀하게 켰다 껐다 하며 회전시킵니다. 마모되지 않는 영원한 생명력과 압도적인 효율을 가진 **'현대 기계 문명의 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Switching Loss - ESC approaching thermal runaway. Switching frequency may be too high for current gate drive strength"
         return "PASS: Clean Power Switching and Verified Controller Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(back_emf_zero_crossing_error=2.5, motor_current_ripple=0.05, winding_temp_c=65.0)
 print(engine.diagnose_motor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_motor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bldc-motor-efficiency-and-thermal-profile-v2026`와 연동되어, 전 세계 주요 드론 및 서보 모터의 가동 데이터를 실시간 분석하고 제어 이탈 및 코일 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 구동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - actuator-dynamics-and-precision-servo-control-logic

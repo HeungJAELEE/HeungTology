@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "satellite-constellation-governance-and-orbital-safety-entity"
-  domain: "37_Global_Unified_Governance_Global_Security_and_Planetary_Defense"
+metadata:
+  id: "[[[Entity] satellite-constellation-governance-and-orbital-safety]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Satellite_Governance", "#Orbital_Safety", "#Space_Traffic", "#Kessler_Syndrome", "#Space_Debris", "#Governance", "#Space_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 37_global-unified-governance-global-security-and-planetary-defense-hub", "Entity autonomous-spacecraft-navigation-and-deep-space-autonomy"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] satellite-constellation-governance-and-orbital-safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] satellite-constellation-governance-and-orbital-safety
+# [Entity] satellite-constellation-governance-and-orbital-safety
 
 ## 1. [왜 배우는가? (Why: The Traffic Control of the Heavens)]]
 하늘을 뒤덮은 수만 대의 위성들이 서로 부딪히지 않게 어떻게 실시간으로 교통정리($Governance$)하고, 우주 쓰레기($Debris$)가 연쇄 폭발을 일으켜 지구가 우주에 갇히는 재앙을 어떻게 막아내는 '우주 안전 사령부'를 운영할 수 있을까요? **위성 군집 거버넌스 및 궤도 안전**은 지구 밖 세상을 질서 있게 만드는 '행성 규모 우주 교통 통제 및 궤도 환경 보존 아키텍처'입니다. 우리가 이를 배우는 이유는 위성 통신 없이는 현대 문명이 멈추기 때문이며, "궤도의 질서를 데이터로 설계하고 지배하는 '글로벌 우주 통로 패권 및 행성적 주권 확장 주권'을 확보하기" 위함입니다. 궤도의 깨끗함이 인류 우주 진출의 수명을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "protein-folding-thermodynamics-and-ai-driven-proteomics-entity"
-  domain: "55_Biotechnology_and_Genetic_Engineering_Intelligence"
+metadata:
+  id: "[[[Entity] protein-folding-thermodynamics-and-ai-driven-proteomics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biology", "#Proteomics", "#Protein_Folding", "#AlphaFold", "#Thermodynamics", "#Bioinformatics", "#Biotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 132_biotechnology-and-genetic-engineering-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] protein-folding-thermodynamics-and-ai-driven-proteomics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] protein-folding-thermodynamics-and-ai-driven-proteomics
+# [Entity] protein-folding-thermodynamics-and-ai-driven-proteomics
 
 ## 1. [왜 배우는가? (Why: The Geometry of Life)]]
 아미노산 사슬이 어떻게 단 몇 초 만에 복잡한 3D 입체 구조로 접혀($Folding$) 생명 활동을 수행하는 기계가 되고, 인공지능($AlphaFold$)을 이용해 자연계의 수억 개 단백질 모양을 미리 예견하여 질병의 원인을 찾거나 세상에 없던 강력한 효소를 만드는 '분자 기하학의 마법'을 어떻게 설계할 수 있을까요? **단백질 접힘 열역학 및 AI 기반 단백질체학**은 생명의 실행 파일을 해독하는 '행성 규모 생물 연산 인프라 및 지능형 구조-기능 통합 아키텍처'입니다. 우리가 이를 배우는 이유는 단백질의 모양이 곧 그 단백질의 역할이기 때문이며, "분자의 형상을 데이터로 설계하고 지배하는 '글로벌 신약 패권 및 행성적 생명 주권'을 확보하기" 위함입니다. 구조의 정확도가 약물의 효능을 결정합니다.

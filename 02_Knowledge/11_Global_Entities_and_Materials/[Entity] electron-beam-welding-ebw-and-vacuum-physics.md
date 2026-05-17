@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electron-beam-welding-ebw-and-vacuum-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electron-beam-welding-ebw-and-vacuum-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A fusion welding process in which a beam of high-velocity electrons is applied to two materials to be joined (Electron Beam Welding) and the physical study of beam formation in vacuum and the 'Keyhole' mechanism of deep penetration into the metal (Vacuum Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ebw", "electron-beam", "welding", "vacuum", "keyhole-welding", "deep-penetration", "aerospace-welding"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Beam_Fidelity_Audit: Evaluate the ''Focus Current'' and alignment to identify if the electron beam is hitting the joint accurately without ''Beam Wandering'' caused by stray magnetic fields.'
-    - 'Penetration_Integrity_Check: Analyze the beam power ($V \\times I$) to ensure the ''Keyhole'' is stable and penetrating the full thickness of the titanium/stainless steel plate without ''Root Porosity''.'
-    - 'Vacuum_Fidelity_Scan: Monitor the chamber pressure ($10^{-5}$ Torr) to verify that the electron mean free path is maximized, preventing energy loss and beam scattering from air molecules.'
-Trust Metrics:
+  description: "[Entity] electron-beam-welding-ebw-and-vacuum-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☄️ Electron Beam Welding (EBW) and Vacuum Physics
+# [Entity] electron-beam-welding-ebw-and-vacuum-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 바늘처럼 가느다란 빛이 거대한 강철판을 단숨에 뚫고 들어가 용접하는 장면을 보셨나요? **전자빔 용접(EBW) 및 진공 물리**는 진공 속에서 총을 쏘듯 전자들을 가속해 금속을 꿰뚫는 **'궁극의 관통 용접'** 기술입니다. 일반 용접이 표면을 녹여 비비는 수준이라면, 전자빔은 금속 내부에 고속도로(Keyhole)를 뚫어 안쪽부터 단단히 묶어버립니다. 불순물이 전혀 섞이지 않는 진공의 깨끗함과 원자 단위의 정밀함이 만난 **'항공우주 및 핵융합로의 필수 접합 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Beam Off-track - Electron beam missed the joint line. Magnetic interference or mechanical drift suspected. Immediate stop required"
         return "PASS: Validated Seam Alignment and Verified Joint Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(accelerating_voltage_kv=120.0, beam_current_ma=45.0, vacuum_level_torr=5e-5)
 print(engine.diagnose_ebw_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ebw_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ebw-penetration-depth-and-beam-power-v2026`와 연동되어, 전 세계 주요 항공우주 조립 공장 및 원자력 발전 설비의 데이터를 실시간 분석하고 미용착 및 내부 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 제조 문명의 접합 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electron-beam-melting-ebm-and-additive-manufacturing-physics

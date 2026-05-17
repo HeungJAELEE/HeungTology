@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-insurance-and-risk-pooling-for-planetary-disasters"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-insurance-and-risk-pooling-for-planetary-disasters]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The global financial infrastructure designed to provide economic protection against large-scale, systemic risks (Planetary Disasters) such as pandemics, climate catastrophes, or asteroid impacts, utilizing collective risk-pooling and advanced actuarial modeling."
-  physical_model: "N/A"
-Semantic:
-  tags: '["insurance", "risk-pooling", "disaster-recovery", "catastrophe-bonds", "planetary-risk", "actuarial-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FinanceFidelityEngine"
-  diagnostic_protocol:
-    - 'Solvency_Capital_Audit: Ensure the global risk pool has sufficient liquid assets to cover the 1-in-1000 year catastrophe event (Tail Risk).'
-    - 'Risk_Correlation_Check: Analyze the dependency between different disaster types (e.g., Climate change triggering food shortages) to prevent pool depletion.'
-    - 'Payout_Speed_Simulation: Verify the blockchain-based smart contract trigger mechanisms for near-instantaneous aid distribution after a disaster event.'
-Trust Metrics:
+  description: "[Entity] global-insurance-and-risk-pooling-for-planetary-disasters에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Global Insurance and Risk Pooling for Planetary Disasters
+# [Entity] global-insurance-and-risk-pooling-for-planetary-disasters
 
 ## 1. 개요 (Why: 인간적 통찰)
 개인이 감당할 수 없는 불행을 위해 보험이 있듯이, 전 인류가 함께 겪는 거대한 재앙(팬데믹, 기후 대재앙 등)을 위해 **글로벌 재난 보험**이 필요합니다. 아무리 돈이 많은 국가라도 지구 전체 규모의 위기에는 무릎을 꿇을 수 있습니다. **리스크 풀링(Risk Pooling)**은 전 세계 국가와 기업들이 자원을 미리 모아두었다가, 재난이 닥친 곳에 즉시 쏟아부어 문명의 붕괴를 막는 **'경제적 방어막'**입니다. 인공지능은 수만 년의 데이터를 분석해 일어날 확률이 0.01%인 '블랙 스완'까지 계산에 넣어, 우리가 내일의 재앙 앞에서도 파산하지 않도록 지켜줍니다.
@@ -88,7 +77,6 @@ class FinanceFidelityEngine:
             return "REJECT: Low Sensor Fidelity - Risk of Basis Risk (Fraud or Non-payout)"
         return "PASS: Parametric Trigger Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FinanceFidelityEngine(total_pool_value_bn=500.0, estimated_max_loss_bn=250.0, correlation_factor=0.35)
 print(engine.diagnose_solvency_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_solvency_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data planetary-catastrophe-probability-and-payout-models-v2026`와 연동되어, 전 지구적 위기 징후를 실시간 분석하고 재난 시 금융 시스템의 연쇄 붕괴 및 구호 지연 사고 확률을 0.001% 이하로 억제함으로써 인류 문명의 경제적 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - global-carbon-negative-infrastructure-and-climate-repair

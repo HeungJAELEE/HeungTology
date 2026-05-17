@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromagnetic-brake-and-eddy-current-retardation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromagnetic-brake-and-eddy-current-retardation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A device used to slow or stop a moving object using electromagnetic force (Electromagnetic Brake) and the physical study of how circulating currents induced in a conductor (Eddy Currents) create a counter-magnetic field that dissipates kinetic energy as heat (Eddy Current Retardation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electromagnetic-brake", "eddy-current", "retarder", "braking-physics", "lorenz-force", "industrial-safety", "non-contact-braking"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Braking_Fidelity_Audit: Evaluate the ''Braking Force'' ($F_b$) against the vessel/vehicle speed to identify if the magnetic field strength ($B$) is sufficient for high-fidelity retardation at high velocities.'
-    - 'Thermal_Integrity_Check: Analyze the rotor/plate temperature to ensure that the kinetic energy dissipated as ''Eddy Current Heat'' is not exceeding the Curie temperature or causing structural warping.'
-    - 'Response_Fidelity_Scan: Monitor the solenoid excitation time to verify that the ''Emergency Stop'' latency is within high-fidelity industrial safety limits (typically < 50ms).'
-Trust Metrics:
+  description: "[Entity] electromagnetic-brake-and-eddy-current-retardation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧲 Electromagnetic Brake and Eddy Current Retardation Physics
+# [Entity] electromagnetic-brake-and-eddy-current-retardation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 닿지도 않았는데 어떻게 달리는 기차를 세울 수 있을까요? **전자기 브레이크 및 와전류 감속 물리**는 보이지 않는 '자기장 그물'로 회전하는 물체를 붙잡는 **'비접촉 제동'** 기술입니다. 금속판이 자석 근처를 지날 때, 내부에 생기는 소용돌이 전기(와전류)가 마치 보이지 않는 끈처럼 물체를 뒤로 잡아당깁니다. 마찰로 깎여 나가는 패드도 없고, 끼익 소리도 없이 조용히 운동 에너지를 열로 태워 없애는 **'마모 없는 마찰의 물리학이자 극한 안전의 수호자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Safety Sequence Delay - Latency in magnetic field buildup. High risk of collision in automated warehouse or crane systems"
         return "PASS: Validated Response Time and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(brake_current_a=25.0, rotor_temp_c=120.0, braking_torque_nm=450.0)
 print(engine.diagnose_braking_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_braking_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data eddy-current-brake-torque-and-heating-v2026`와 연동되어, 전 세계 주요 고속 열차 및 산업용 크레인의 제동 데이터를 실시간 분석하고 제어 실패 및 과열 사고 확률을 0.0001% 이하로 억제함으로써 지능형 극한 수송 문명의 제동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - eddy-current-testing-and-electromagnetic-induction-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-engine-and-power-generation-dynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-engine-and-power-generation-dynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Large-scale engines used for primary or backup electricity production (Industrial Engine) and the physical study of mechanical-to-electrical energy conversion and grid synchronization (Power Generation Dynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-engine", "power-generation", "generator", "thermodynamics", "electrical-conversion", "synchronization", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Generation_Fidelity_Audit: Evaluate the ''Excitation Current'' to identify if high-fidelity ''Voltage Droop'' or reactive high-fidelity power instability is occurring.'
-    - 'Synchronization_Integrity_Check: Analyze the high-fidelity ''Phase Angle'' and frequency difference to ensure that the high-fidelity ''Automatic Voltage Regulator'' (AVR) and ''Governor'' are ready for grid high-fidelity connection.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Winding Temperature'' to verify that high-fidelity ''Insulation Aging'' is not accelerating due to harmonic high-fidelity distortion or overload.'
-Trust Metrics:
+  description: "[Entity] industrial-engine-and-power-generation-dynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Industrial Engine and Power Generation Dynamics Physics
+# [Entity] industrial-engine-and-power-generation-dynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 도시 전체를 밝히는 전기가 거대한 쇳덩이 엔진의 회전에서 어떻게 태어날까요? **산업용 엔진 및 발전 역학 물리**는 연료의 힘으로 축을 돌리고, 그 회전력을 전자기 유도라는 마법을 통해 전기로 바꾸는 **'에너지의 연금술'** 기술입니다. 단순히 전기를 만드는 것을 넘어, 국가 전력망과 완벽하게 주파수(60Hz)를 맞춰야 하는 정교한 조율의 과정입니다. **'열역학적 폭발을 전자기적 파동으로 번역하여 현대 문명의 혈액인 전력을 끊임없이 공급하는 지능형 거대 동력 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Vibration - High-fidelity mechanical unbalance or bearing wear. Risk of catastrophic high-fidelity failure. Shutdown and inspect"
         return "PASS: Validated Mechanical Stability and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(frequency_hz=60.0, terminal_voltage_v=13800.0, winding_temp_c=85.0)
 print(engine.diagnose_generation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_generation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data generator-efficiency-and-harmonic-distortion-v2026`와 연동되어, 전 세계 주요 발전소 및 비상 전원 시스템의 실시간 데이터를 분석하고 주파수 이탈 및 권선 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - internal-combustion-engine-ice-and-four-stroke-thermodynamics-physics

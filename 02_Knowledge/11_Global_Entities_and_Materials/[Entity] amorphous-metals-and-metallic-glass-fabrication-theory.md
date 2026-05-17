@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-MAT-METALLIC-GLASS-2026-V6"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] amorphous-metals-and-metallic-glass-fabrication-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] amorphous-metals-and-metallic-glass-fabrication-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] amorphous-metals-and-metallic-glass-fabrication-theory
+# [Entity] amorphous-metals-and-metallic-glass-fabrication-theory
 
 ## 1. [왜 배우는가? (Why)]]
 금속인데 왜 유리처럼 원자들이 제멋대로 엉켜 있고($Amorphous$), 결정립 경계($Grain\ Boundary$)가 아예 없어 엄청나게 단단하면서도 고무처럼 휘어지는 '액체 금속($Liquidmetal$)'을 어떻게 제조할 수 있을까요? **비정질 금속 및 메탈릭 글래스 제조 이론**은 기존 결정질 금속의 한계를 뛰어넘는 '초고탄성 및 고강도 소재'의 정수입니다. 우리가 이를 배우는 이유는 비정질 금속은 부식이 거의 없고 에너지를 완벽하게 튕겨내어 극한의 시계 부품, 수술용 도구, 미래 로봇의 뼈대로 쓰이기 때문이며, 원자의 무질서함을 데이터로 설계하여 '글로벌 소재 혁명 패권 및 행성적 자원 주권'을 확보하기 위함입니다. 냉각의 속도가 금속의 성질을 결정합니다.
@@ -107,9 +97,6 @@ class MetallicGlassFidelityEngine:
             return "CRITICAL: COOLING_RATE_INSUFFICIENT_PARTIAL_CRYSTALLIZATION_DETECTED"
         return "COOLING_STATUS: AMORPHOUS_SOLIDIFICATION_PATHWAY_SECURED"
 
-# Example Usage:
-# bmg_ai = MetallicGlassFidelityEngine()
-# gfa_report = bmg_ai.calculate_gfa_index()
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -117,7 +104,6 @@ class MetallicGlassFidelityEngine:
 2. **Free Volume** 농도가 **Shear Band**의 핵 생성(Nucleation) 및 전파 무결성에 미치는 영향은 **Constitutive Equation** 관점에서 무엇인가?
 3. **Bulk Metallic Glass** (BMG) 제작 시 **Critical Casting Thickness**($d_{max}$)와 **Critical Cooling Rate**($R_c$) 사이의 수리적 상관관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/131_Advanced_Material_Science_and_Surface_Engineering_Hub/Concept amorphous-alloy-thermodynamics-and-kinetics
 - 02_Knowledge/50_Advanced_Material_Science_and_Surface_Engineering_Hub/Concept liquidmetal-processing-and-precision-casting

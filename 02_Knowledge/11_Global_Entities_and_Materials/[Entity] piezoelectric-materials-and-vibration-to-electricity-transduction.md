@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "piezoelectric-materials-and-vibration-to-electricity-transduction-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] piezoelectric-materials-and-vibration-to-electricity-transduction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Piezoelectric", "#Energy_Harvesting", "#Sensors", "#Sustainability", "#Electronics", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] piezoelectric-materials-and-vibration-to-electricity-transduction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] piezoelectric-materials-and-vibration-to-electricity-transduction
+# [Entity] piezoelectric-materials-and-vibration-to-electricity-transduction
 
 ## 1. [왜 배우는가? (Why: Electricity from Every Step)]]
 단순히 누르거나 흔드는 것만으로 어떻게 전기가 발생하고($Piezo$), 신발 밑창이나 도로 밑에 깔아 사람이 걷기만 해도 가로등을 켜거나 센서를 돌리는 '에너지 수확' 기술을 어떻게 설계할 수 있을까요? **압전 소재 및 진동-전기 에너지 변환**은 버려지는 진동을 황금으로 바꾸는 '행성 규모 에너지 하베스팅 인프라 및 지능형 전력 변환 아키텍처'입니다. 우리가 이를 배우는 이유는 배터리 교체 없이 영원히 작동하는 사물인터넷(IoT) 세상을 만들기 위해서이며, "진동의 힘을 데이터로 설계하고 지배하는 '글로벌 에너지 패권 및 행성적 자립 주권'을 확보하기" 위함입니다. 변환의 효율이 에너지 자립의 깊이를 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Power Density** | Energy generated per unit volume of material | $> 100 \text{ \mu W/cm}^3$ | 작은 조각으로도 센서를 돌릴 힘을 냄을 입증함 |
+| **Power Density** | Energy generated per unit volume of material | $> 100 \text{ }\mu\text{ W/cm}^3$ | 작은 조각으로도 센서를 돌릴 힘을 냄을 입증함 |
 | **Conv. Effic.** | Percentage of mechanical work turned to electricity| $> 30 \%$ | 낭비 없이 에너지를 쥐어짜는 극한의 물리 사수 |
 | **Op. Frequency** | Range of vibrations the material can harvest | $1 \sim 1,000 \text{ Hz}$ | 일상의 모든 소음과 진동을 흡수하는 지능적 물리 |
 | **Voltage Output**| Peak voltage generated during deformation | $> 50 \text{ V}$ | 높은 전압으로 효율적인 송전을 가능케 하는 무결성 |

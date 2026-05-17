@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "jet-engine-and-brayton-cycle-propulsion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] jet-engine-and-brayton-cycle-propulsion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A reaction engine discharging a fast-moving jet that generates thrust by Newton's third law (Jet Engine) and the physical study of continuous-flow heat engines using air as the working fluid (Brayton Cycle Propulsion Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["jet-engine", "brayton-cycle", "propulsion", "gas-turbine", "thrust", "compressor", "combustor", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Propulsion_Fidelity_Audit: Evaluate the ''Thrust-to-Weight Ratio'' and ''Specific Fuel Consumption'' (SFC) to identify if high-fidelity ''Turbine Blade Creep'' is reducing high-fidelity efficiency.'
-    - 'Cycle_Integrity_Check: Analyze the high-fidelity ''Pressure Ratio'' ($r_p$) vs ''Turbine Inlet Temperature'' (TIT) to ensure the high-fidelity engine is operating at the thermodynamic high-fidelity optimum without melting.'
-    - 'Stability_Fidelity_Scan: Monitor the high-fidelity ''Compressor Stall'' margin via pressure transducers to verify that high-fidelity ''Airflow Distortion'' is not risking catastrophic surge.'
-Trust Metrics:
+  description: "[Entity] jet-engine-and-brayton-cycle-propulsion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Jet Engine and Brayton Cycle Propulsion Physics
+# [Entity] jet-engine-and-brayton-cycle-propulsion-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수백 톤의 거대한 비행기가 어떻게 소리보다 빠른 속도로 하늘을 가르며 날 수 있을까요? **제트 엔진 및 브레이턴 사이클 추진 물리**는 공기를 들이마셔 엄청나게 압축하고 터뜨려 뒤로 내뿜는 **'거대한 공기 대포'** 기술입니다. "밀어내는 만큼 나아간다"는 뉴턴의 제3법칙(작용-반작용)을 가장 극단적이고 효율적으로 구현한 기계의 걸작입니다. **'초고온/초고압의 열역학적 에너지를 강력한 운동 에너지로 변환하여 중력을 극복하고 대륙 간 이동을 가능케 하는 지능형 추진 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Flame-out Imminent - High-fidelity airflow distortion or fuel high-fidelity starvation detected. Activate high-fidelity auto-relight system"
         return "PASS: Validated Continuous Combustion and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(egt_temp_c=750.0, fan_n1_speed_pct=95.0, core_n2_speed_pct=98.0)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data jet-engine-thrust-and-fuel-burn-profiles-v2026`와 연동되어, 전 세계 주요 항공사 및 엔진 제조사의 실시간 데이터를 분석하고 엔진 고장 및 비행 사고 확률을 0.000001% 이하로 억제함으로써 지능형 항공 문명의 비행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-compressor-and-gas-compression-thermodynamics-physics

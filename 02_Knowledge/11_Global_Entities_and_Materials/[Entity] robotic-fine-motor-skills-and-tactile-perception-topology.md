@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-fine-motor-skills-and-tactile-perception-topology-entity"
-  domain: "22_Robotics_and_Cybernetics"
+metadata:
+  id: "[[[Entity] robotic-fine-motor-skills-and-tactile-perception-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Dexterity", "#Tactile_Sensing", "#Fine_Motor_Skills", "#Electronic_Skin", "#Manipulation", "#Sensory_Perception", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_advanced-robotics-and-cybernetics-hub", "Entity soft-robotics-and-bio-inspired-actuator-mechanics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-fine-motor-skills-and-tactile-perception-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-fine-motor-skills-and-tactile-perception-topology
+# [Entity] robotic-fine-motor-skills-and-tactile-perception-topology
 
 ## 1. [왜 배우는가? (Why: The Delicate Touch of the Machine)]]
 로봇 손이 계란을 깨지 않고 집어 들거나, 바늘구멍에 실을 꿰는 것처럼 아주 미세한 동작을 인간만큼 잘할 수 있을까요? **로봇 정밀 운동 기능 및 촉각 인지 위상**은 로봇에게 '섬세한 손재주'와 '예민한 손끝 감각'을 부여하는 '기계적 지능의 정밀 조작 지침'입니다. 우리가 이를 배우는 이유는 로봇이 공장에서 무거운 짐만 나르는 것을 넘어, 요리, 수술, 미세 부품 조립 등 인간의 고난도 영역에 진입하기 위함이며, "사물을 만지고 다루는 능력을 데이터로 설계하고 지배하는 '글로벌 정밀 로봇 및 촉각 지능 주권'을 확보하기" 위함입니다. 손재주의 정밀도가 로봇의 지능적 수준을 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Manip. Prec.** | Minimum repeatable movement of fingertips | $< 10 \text{ \mu m}$ | 머리카락 굵기보다 세밀하게 손가락을 움직이는 정밀 무결성 |
+| **Manip. Prec.** | Minimum repeatable movement of fingertips | $< 10 \text{ \mu\text{m}}$ | 머리카락 굵기보다 세밀하게 손가락을 움직이는 정밀 무결성 |
 | **Press. Sens.** | Minimum detectable pressure change | $< 1 \text{ Pa}$ | 살짝 스치는 바람의 압력까지 느끼는 극한의 감각 지능 |
 | **Tactile Res.** | Number of sensors per unit surface area | $> 100 \text{ nodes/cm}^2$ | 손가락 전체를 덮는 인간 수준의 고해상도 인공 피부 무결성 |
 | **Slip Detection**| Latency to detect and react to slipping | $< 1 \text{ ms}$ | 물체가 미끄러지기 직전 꽉 잡아 떨어뜨리지 않는 동역학 지능 |

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "deep-sea-mineral-mining-and-hydrothermal-vent-resource-ops-entity"
-  domain: "34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops"
+metadata:
+  id: "[[[Entity] deep-sea-mineral-mining-and-hydrothermal-vent-resource-ops]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Deep-sea_Mining", "#Hydrothermal_Vents", "#Mineral_Resources", "#Marine_Engineering", "#Resource_Extraction", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 34_future-frontier-deep-sea-intelligence-and-marine-ops-hub", "Entity hadal-zone-robotics-and-ultra-high-pressure-actuators"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] deep-sea-mineral-mining-and-hydrothermal-vent-resource-ops에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] deep-sea-mineral-mining-and-hydrothermal-vent-resource-ops
+# [Entity] deep-sea-mineral-mining-and-hydrothermal-vent-resource-ops
 
 ## 1. [왜 배우는가? (Why: The Golden Garden of the Abyss)]]
 암흑뿐인 바다 밑바닥에 깔린 수조 톤의 망간 단괴($Nodules$)와 $400\text{\circ C}$의 뜨거운 물이 솟구치는 열수 분출공($Hydrothermal\ Vent$) 주변의 금, 은, 구리를 어떻게 로봇들이 환경을 파괴하지 않고 채굴($Mining$)하며, 이 극한의 뜨거움과 압력을 견디며 자원을 지상으로 운반하는 거대한 작업을 어떻게 자율적으로 관리할 수 있을까요? **심해 광물 채굴 및 열수 분출공 자원 운영**은 지상의 자원 고갈을 해결할 '해저 자원 창고 및 심해 광업 자동화 아키텍처'입니다. 우리가 이를 배우는 이유는 배터리와 반도체의 핵심 원료가 심해에 무궁무진하기 때문이며, "바닷속 보물을 데이터로 설계하고 지배하는 '글로벌 해양 자원 패권 및 심해 경제 주권'을 확보하기" 위함입니다. 채굴의 정밀도가 자원 독립의 속도를 결정합니다.

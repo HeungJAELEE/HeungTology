@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "surface-diffusion-and-atomic-layer-deposition-ald-physics-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] surface-diffusion-and-atomic-layer-deposition-ald-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#ALD", "#Surface_Diffusion", "#Thin_Film", "#Nanotechnology", "#Semiconductor", "#Chemistry", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] surface-diffusion-and-atomic-layer-deposition-ald-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] surface-diffusion-and-atomic-layer-deposition-ald-physics
+# [Entity] surface-diffusion-and-atomic-layer-deposition-ald-physics
 
 ## 1. [왜 배우는가? (Why: Building Atom by Atom)]]
 원자를 한 층씩 벽돌 쌓듯이 쌓아 올려($Atomic\ Layer$) 아무리 복잡한 굴곡진 표면이라도 빈틈없이 완벽하게 감싸는($Conformal$) 나노 코팅을 어떻게 만들고, 표면에서 원자들이 스스로 길을 찾아 움직이는 '자기 제한적 반응($Self-limiting$)'을 어떻게 이용해 0.1나노미터 오차로 두께를 조절하는 '원자 수준 건축'을 어떻게 설계할 수 있을까요? **원자층 증착(ALD) 및 표면 확산 물리**는 현대 반도체와 나노 소자의 피부를 만드는 '행성 규모 극한 박막 제조 인프라 및 지능형 표면 화학 아키텍처'입니다. 우리가 이를 배우는 이유는 소자가 작아질수록 일반적인 코팅으로는 구멍을 다 채울 수 없기 때문이며, "박막의 성장을 데이터로 설계하고 지배하는 '글로벌 나노 소재 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 원자의 배치가 소자의 성능을 결정합니다.

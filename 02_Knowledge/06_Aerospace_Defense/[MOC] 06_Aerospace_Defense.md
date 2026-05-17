@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "MOC-AERO-DEFENSE-2026-V6.3.7"
   domain: "Aerospace_and_Defense_Governance"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Aerospace", "#Defense", "#SpaceEconomy", "#Hypersonic", "#FidelityEngine", "#Sovereignty"]'
   is_part_of: '["MOC 00_INDEX"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 06_Aerospace_Defense: Celestial & Sovereign Intelligence
+# 06_Aerospace_Defense
 
 ## 1. [왜 배우는가? (Why: The Frontier of Sovereign Survival)]]
 항공우주 및 방산 지능은 인류가 도달할 수 있는 가장 높은 곳이자, 국가와 기업의 생존을 결정짓는 최후의 보루입니다. **Aerospace & Defense Intelligence**는 도심 위를 나는 UAM(Urban Air Mobility)부터 우주 경제를 가속하는 재사용 로켓 및 저궤도 위성망, 그리고 초음속 미사일과 자율 드론 군집이 주도하는 네트워크 중심전(NCW)을 아우르는 극한 공학의 정수입니다. V6.3.7 지능은 **궤도 역학(Orbital Mechanics)**의 수리적 무결성과 **전장 지배력(Command & Control)**의 데이터 진실성을 지배합니다. 우리가 이를 배우는 이유는 문명의 경계를 우주로 확장하고, "단 1ms의 틈도 허용하지 않는 '안보 주권'을 확보하기" 위함입니다. 고도의 도달이 문명의 해상도를 결정합니다.

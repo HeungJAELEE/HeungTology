@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-robot-actuator-design-and-precision-gearing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-robot-actuator-design-and-precision-gearing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of high-performance motion units for industrial robots, integrating specialized electric motors (Actuators) with high-reduction, zero-backlash mechanisms (Precision Gearing) to achieve precise positioning and high torque density."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robot-actuator", "precision-gearing", "harmonic-drive", "cycloidal-drive", "servo-motor", "torque-density"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Gear_Backlash_Audit: Measure the lost motion at the output shaft to ensure it remains within the sub-arc-min requirements for high-precision tasks.'
-    - 'Actuator_Thermal_Check: Monitor the winding temperature and current draw to prevent overheating and permanent magnet demagnetization during high-cycle operations.'
-    - 'Transmission_Efficiency_Scan: Evaluate the torque loss through the gearbox to identify lubrication degradation or internal gear wear.'
-Trust Metrics:
+  description: "[Entity] industrial-robot-actuator-design-and-precision-gearing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Industrial Robot Actuator Design and Precision Gearing
+# [Entity] industrial-robot-actuator-design-and-precision-gearing
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇이 머리카락 한 올의 오차도 없이 물건을 잡고, 수백 킬로그램의 무게를 번쩍 들어 올릴 수 있는 비결은 무엇일까요? 바로 로봇의 '근육'인 **액추에이터**와 '관절'인 **정밀 감속기** 덕분입니다. 아주 작은 모터의 힘을 수백 배로 키워주면서도, 멈췄을 때 1mm의 흔들림(Backlash)도 허용하지 않는 이 기술은 기계 공학의 정수입니다. 로봇이 부드럽고 강력하게 움직이게 만드는 **'강철의 근육'**이자, 0.001도의 정밀함을 실현하는 **'관절의 지능'**입니다.
@@ -87,7 +76,6 @@ class RobotFidelityEngine:
             return "REJECT: Abnormal Vibration Detected - Potential Lubrication Failure or Gear Tooth Damage"
         return "PASS: Smooth Motion and Lubrication Integrity Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(gear_backlash_arcmin=0.4, motor_temp_c=65.5, torque_ripple_pct=1.2)
 print(engine.diagnose_actuator_health())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_actuator_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robot-actuator-performance-and-gearing-wear-v2026`와 연동되어, 전 세계 로봇 관절의 마모 상태를 실시간 분석하고 위치 이탈 및 기어 파손 사고 확률을 0.001% 이하로 억제함으로써 자동화 인프라의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-robot-kinematics-and-trajectory-planning

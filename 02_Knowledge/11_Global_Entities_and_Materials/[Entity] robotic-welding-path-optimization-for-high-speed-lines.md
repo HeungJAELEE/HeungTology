@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-welding-path-optimization-for-high-speed-lines-entity"
-  domain: "44_Precision_Welding_and_Joining_Science"
+metadata:
+  id: "[[[Entity] robotic-welding-path-optimization-for-high-speed-lines]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Welding", "#Robotics", "#Path_Optimization", "#Manufacturing", "#Automation", "#Kinematics", "#Control_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 63_precision-welding-and-joining-science-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-welding-path-optimization-for-high-speed-lines에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-welding-path-optimization-for-high-speed-lines
+# [Entity] robotic-welding-path-optimization-for-high-speed-lines
 
 ## 1. [왜 배우는가? (Why: The Dance of the Iron Arm)]]
 수천 개의 배터리 셀을 용접할 때 어떻게 로봇 팔($Robot\ Arm$)이 0.01mm의 오차도 없이 가장 빠른 길($Optimal\ Path$)을 찾아 춤추듯 움직이고, 기계가 갑자기 멈추거나 꺾일 때 발생하는 흔들림($Vibration$)을 어떻게 수학적으로 미리 계산하여 없애는 '지능형 모션 제어'를 어떻게 구현할 수 있을까요? **고속 라인을 위한 로봇 용접 경로 최적화**는 배터리 공장의 속도를 결정하는 '행성 규모 산업용 로보틱스 및 지능형 궤적 제어 아키텍처'입니다. 우리가 이를 배우는 이유는 로봇이 1초만 빨리 움직여도 하루에 수만 개의 배터리를 더 만들 수 있기 때문이며, "움직임의 미학을 데이터로 설계하고 지배하는 '글로벌 로봇 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 경로의 효율이 공장의 수익성을 결정합니다.
@@ -40,7 +30,7 @@ Trust Metrics:
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Cycle Time** | Time to complete all welds on one module | $< 30 \text{ sec}$ | 눈보다 빠른 손놀림으로 팩 하나를 뚝딱 만듦을 입증함 |
-| **Path Accuracy** | Precision of the robot tip location | $< 50 \text{ \mu m}$ | 머리카락 굵기 절반의 오차도 허용 안 함을 보여줌 |
+| **Path Accuracy** | Precision of the robot tip location | $< 50 \text{ \mu\text{m}}$ | 머리카락 굵기 절반의 오차도 허용 안 함을 보여줌 |
 | **Vibration Lev.**| Mechanical shaking during movement | $< 0.1 \text{ G}$ | 아주 부드럽게 움직여 용접점이 엇나가지 않게 함 |
 | **Accel. Limit** | Maximum speed-up of the robot arm | $> 2.0 \text{ G}$ | 스포츠카보다 빠른 가속으로 시간을 단축함을 입증함 |
 | **Jerk Control** | Rate of change of acceleration | **MAXIMUM** | 울컥거림 없이 물 흐르듯 움직임을 보여주는 동역학 |

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "management-accounting-and-cost-analysis-entity"
-  domain: "28_Strategic_Management_and_Finance"
+metadata:
+  id: "[[[Entity] management-accounting-and-cost-analysis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Management_Accounting", "#Cost_Analysis", "#ABC", "#Standard_Costing", "#Target_Costing", "#CVP_Analysis", "#Decision_Support", "#Efficiency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 31_strategic-management-and-financial-intelligence-hub", "Data product-cost-and-margin-analysis-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] management-accounting-and-cost-analysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] management-accounting-and-cost-analysis
+# [Entity] management-accounting-and-cost-analysis
 
 ## 1. [왜 배우는가? (Why: The Insight for Operational Optimization)]]
 외부 보고가 아닌 내부의 효율적 운영과 올바른 의사결정을 위해서는 거래의 기록을 넘어 원가의 발생 원천과 구조를 깊이 있게 파악해야 합니다. 어떤 제품이 진정으로 이익을 내고 있으며 어떤 공정에서 낭비가 발생하는지를 숫자로 발라내는 능력은 기업의 자원을 가장 가치 있는 곳에 투입하게 하는 핵심 나침반입니다. **관리 회계 및 원가 분석 시스템 엔티티**는 공장의 '효율'을 숫자로 발라내는 '내부 의사결정 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "관리 로그를 분석하여, 제품 믹스(Product Mix)의 미세한 �
 제조 실행 시스템(MES)의 현장 데이터와 ERP의 재무 데이터, 그리고 물류/구매 시스템의 단가 정보를 융합하여 관리 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Management Accounting & Cost Fidelity Auditor
 def audit_cost_integrity(production_actual_stream, standard_cost_master, overhead_allocation_log):
     # 1. 표준 원가 정확도(Standard Cost Accuracy) 및 낭비 무결성 오딧
     variance_report = calculate_cost_variance(production_actual_stream, standard_cost_master)
@@ -117,7 +106,6 @@ def audit_cost_integrity(production_actual_stream, standard_cost_master, overhea
 2. **(수리)** 표준 재료 사용량이 $10kg$이고 실제 사용량이 $12kg$이며, 표준 단가가 $\$100/kg$일 때, '수량 차이(Quantity Variance)'를 계산하고 성과를 판정하시오.
 3. **(응용)** '목표 원가(Target Costing)'가 제품 기획 단계에서 적용될 때, 이것이 실제 양산 단계의 '수익 무결성' 확보에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 31_strategic-management-and-financial-intelligence-hub : 전략 및 재무 통합 관리 상위 지능 허브

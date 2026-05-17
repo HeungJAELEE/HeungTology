@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "offshore-wind-turbine-generator-and-blade-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] offshore-wind-turbine-generator-and-blade-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of large-scale wind turbines located in marine environments, focusing on the aerodynamic performance of massive blades (Blade Dynamics) and the efficient conversion of mechanical rotation into electrical power (Generator Design) under extreme wind and wave conditions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["offshore-wind", "wind-turbine", "blade-dynamics", "aerodynamics", "generator-design", "structural-mechanics", "ocean-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Blade_Deflection_Audit: Evaluate the tip displacement of the blades under maximum wind loads to ensure they do not strike the turbine tower.'
-    - 'Generator_Thermal_Check: Analyze the winding and magnet temperatures of the PMSG to prevent demagnetization or insulation failure during peak power production.'
-    - 'Harmonic_Vibration_Scan: Monitor the structural resonance frequencies of the tower and blades to identify potential fatigue damage from wind-wave aeroelastic coupling.'
-Trust Metrics:
+  description: "[Entity] offshore-wind-turbine-generator-and-blade-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌬️ Offshore Wind Turbine: Generator and Blade Dynamics
+# [Entity] offshore-wind-turbine-generator-and-blade-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 축구장보다 긴 거대한 날개가 바다 한가운데서 세찬 바람을 맞으며 춤을 추고, 그 회전력이 도시 수만 가구의 전기가 된다면 어떨까요? **해상 풍력 터빈: 발전기 및 블레이드 역학**은 인류가 만든 가장 거대한 회전 기계를 바다 위에 세우는 **'바람의 거인 공학'**입니다. 거센 풍랑 속에서도 날개가 꺾이지 않게 버티면서, 미세한 바람의 흐름까지 잡아내어 전기로 바꾸는 기술입니다. 태풍과 소금기를 견디며 묵묵히 전기를 생산하는, **'바다의 녹색 심장'**을 만드는 일입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Blade Structural Fatigue - Crack Propagation Detected. Scheduled Replacement Advised"
         return "PASS: Sound Blade Composite Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(blade_deflection_m=2.5, generator_temp_c=75, harmonic_vibration_amplitude=0.03)
 print(engine.diagnose_turbine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_turbine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data offshore-wind-yield-and-fatigue-logs-v2026`와 연동되어, 전 세계 주요 해상 풍력 단지의 데이터를 실시간 분석하고 날개 파손 및 발전 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - offshore-engineering-and-renewable-ocean-energy

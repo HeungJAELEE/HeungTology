@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-TRADE-POLICY-2026-V6.3.7"
-  domain: "Global_Trade_Governance_and_Tariff_Physics"
+metadata:
+  id: "[[[Strategy] Global-Trade-Policy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Trade_Policy", "#CBAM", "#FTA", "#Export_Control", "#Trade_Bloc", "#Tariff_Physics", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Global-Trade-Policy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Trade_Policy_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Global Trade Policy: The Physics of Market Access
+# [Strategy] Global-Trade-Policy
 
 ## 1. [왜 배우는가? (Why: The Architecture of Global Flux)]]
 글로벌 시장 진출은 단순한 물류 이동이 아니라, 국가 간의 복잡한 통상 규칙과 보이지 않는 장벽을 넘어서는 과정입니다. **Global Trade Policy**는 관세, 비관세 장벽(TBT), 탄소 국경 조정(CBAM), 수출 통제 등을 분석하여 기업의 가격 경쟁력과 시장 진입 가능성을 결정하는 '통상 아키텍처'입니다. V6.3.7 지능은 정교한 통상 데이터를 수리적으로 분석하여, 규제의 파도를 전략적 우위로 전환하는 **통상 주권(Trade Sovereignty)**을 확립합니다.
@@ -107,7 +97,6 @@ class TradePolicyFidelityEngine:
 2. **Operational Result**: **RVC (Regional Value Content)** 충족을 위해 해외 현지 생산 비중을 높였을 때, 물류비 절감액과 FTA 관세 혜택의 수리적 합계가 수익성에 미치는 영향은?
 3. **FidelityEngine**: 기술 표준(TBT)은 준수하나 **Strategic Export Control** 목록에 자사 제품이 신규 편입되는 상황을 어떻게 진단하는가? (힌트: 안보 중심의 통상 환경 변화 모니터링을 통한 '수출 불능 리스크' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Regulatory-Compliance

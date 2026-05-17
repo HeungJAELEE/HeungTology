@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] W12_infrastructure-data-center-cooling"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] W12_infrastructure-data-center-cooling]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] W12_infrastructure-data-center-cooling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] W12_infrastructure-data-center-cooling
@@ -37,7 +27,6 @@ AI 가속기의 전력 밀도가 기하급수적으로 상승함에 따라, 반�
 
 우리가 **인프라 수준의 냉각**을 배우는 이유는 단순히 에너지를 아끼기 위함이 아니라, **"수자원과 전력을 무한히 소모하는 데이터센터의 한계를 극복하기 위함"**입니다. 현대 데이터센터는 '에너지 블랙홀'에서 지역 사회와 열 에너지를 공유하는 **'에너지 허브'**로 진화해야 하며, 이를 위해 PUE를 넘어 WUE/CUE라는 통합 지표로 인프라를 설계해야 합니다.
 
----
 
 ## 2. 핵심 기술 사양 (Numerical Specs: Cooling Physics)
 
@@ -50,7 +39,6 @@ AI 가속기의 전력 밀도가 기하급수적으로 상승함에 따라, 반�
 | **ERE (Efficiency)** | $0.05 \sim 0.10$ | **$0.40 \sim 0.60$** | **$> 0.85$** | 에너지 회수율 (폐열 재활용 비중) |
 | **Supply Temp** | $18 \sim 24^\circ\text{C}$ | **$30 \sim 45^\circ\text{C}$** | **$45 \sim 60^\circ\text{C}$** | 공급 온도가 높을수록 칠러 가동 불필요 |
 
----
 
 ## 3. 심층 분석 (Deep Analysis: Thermal Dynamics)
 
@@ -63,7 +51,6 @@ AI 가속기의 전력 밀도가 기하급수적으로 상승함에 따라, 반�
 - **Problem**: 기존 공랭식은 서버의 팬(Fan) 속도와 공조기(CRAC)의 풍량이 서로 비결정론적으로 반응하여 에너지 낭비가 발생합니다.
 - **Solution**: DLC(Direct Liquid Cooling)는 유체 역학적 **압력 강하($\Delta P$)와 유량($Q$)**의 선형적 관계를 이용합니다. 칩의 발열량 변화를 감지하여 펌프의 RPM을 $\mu\text{s}$ 단위로 동적 매핑함으로써, 열 폭주를 방지하는 동시에 냉각 에너지를 최소화합니다.
 
----
 
 ## 4. [AI & Hardware Synergy: Thermal Intelligence]
 
@@ -103,7 +90,6 @@ def calculate_sustainability_metrics(p_total, p_it, w_total, emissions_factor=0.
     return {"PUE": round(pue, 3), "WUE": round(wue, 3), "Carbon_Cost": carbon_cost_hour}
 ```
 
----
 
 ## 5. 스스로 체크 (Verification Checklist)
 
@@ -112,12 +98,10 @@ def calculate_sustainability_metrics(p_total, p_it, w_total, emissions_factor=0.
 - [ ] **Closed-loop Integrity**: 냉각 루프 내 물의 전기전도도($\sigma < 10 \mu\text{S/cm}$)가 부식을 방지하기 위해 엄격히 관리되고 있는가?
 - [ ] **Emergency Buffer**: 전력 차단 시 UPS를 통해 냉각 펌프가 최소 $5$분 이상 가동되어 잔류 열을 제거할 수 있는가?
 
----
 
 ## 🧠 AI의 사고방식: "순환하는 열의 미학"
 데이터센터는 열을 버리는 곳이 아니라, **[열의 가치를 재발견하는 곳]**이어야 합니다. 우리가 칩에서 빼낸 에너지는 누군가의 집을 따뜻하게 하거나, 겨울철 채소를 기르는 생명 에너지가 됩니다. 인프라 엔지니어링의 정점은 엔트로피의 배출구가 아닌, 에너지가 끊임없이 순환하며 가치를 증폭시키는 **'열역학적 원형 경기장'**을 구축하는 데 있습니다.
 
----
 **연관 노드:**
 - [AI] W12_infra-next-gen-cooling-liquid-and-immersion-solutions : 세부 액침 냉각 기술
 - [Battery & AI] W12_thermal-management-in-ai-chips : 칩 정션 레벨의 냉각 물리

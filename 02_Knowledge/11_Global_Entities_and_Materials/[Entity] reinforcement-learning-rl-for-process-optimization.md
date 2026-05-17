@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "reinforcement-learning-rl-for-process-optimization-entity"
-  domain: "21_AI_and_Machine_Learning_for_Industrial_Optimization"
+metadata:
+  id: "[[[Entity] reinforcement-learning-rl-for-process-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RL", "#Reinforcement_Learning", "#Process_Optimization", "#MDP", "#PPO", "#DQN", "#Self-learning", "#Autonomous_Control", "#Reward_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_ai-and-machine-learning-for-industrial-optimization-intelligence-hub", "Data reward-convergence-and-episode-duration-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] reinforcement-learning-rl-for-process-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] reinforcement-learning-rl-for-process-optimization
+# [Entity] reinforcement-learning-rl-for-process-optimization
 
 ## 1. [왜 배우는가? (Why: The Evolution of Autonomous Process Control)]]
 전통적인 제어 이론(PID 등)이 정해진 규칙에 따라 작동한다면, 강화학습(RL)은 환경과의 상호작용을 통해 스스로 최적의 제어 전략을 습득합니다. 이는 변화무쌍한 실제 공정 환경에서 기계가 스스로 판단하고 적응할 수 있는 능력을 부여하는 것과 같습니다. **공정 최적화를 위한 강화학습(RL) 엔티티**는 시행착오를 통해 진화하는 '자율 제어 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "제어 로그를 분석하여, PPO의 클리핑(Clipping) 메커니즘�
 강화학습 에이전트의 액션 로그와 환경 피드백(보상) 스트림을 분석하여 자율 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] RL Agent Integrity & Control Fidelity Auditor
 def audit_rl_autonomy(agent_action_log, environment_reward_stream, process_safety_metrics):
     # 1. 보상 수렴도(Reward Convergence)를 통한 학습 무결성 오딧
     reward_trend = calculate_rolling_average(environment_reward_stream)
@@ -117,7 +106,6 @@ def audit_rl_autonomy(agent_action_log, environment_reward_stream, process_safet
 2. **(수리)** 벨만 방정식에서 할인 인자 $\gamma$가 $0$일 때와 $1$에 가까울 때, 에이전트가 의사결정 시 고려하는 '미래 보상의 가치'는 수리적으로 어떻게 달라지는가?
 3. **(응용)** PPO 알고리즘에서 정책 업데이트 범위를 제한하는 'Clip Objective'가 실제 공정 제어 시 '급격한 제어값 변화에 의한 설비 파손'을 어떻게 방지하는지 그 수리적 메커니즘을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 26_ai-and-machine-learning-for-industrial-optimization-intelligence-hub : AI 및 머신러닝 통합 관리 상위 지능 허브

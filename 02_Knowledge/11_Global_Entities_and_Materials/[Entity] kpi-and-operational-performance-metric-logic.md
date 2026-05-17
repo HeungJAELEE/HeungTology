@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kpi-and-operational-performance-metric-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kpi-and-operational-performance-metric-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Quantifiable measures used to evaluate the success of an organization or activity (KPI) and the physical logic of calculating overall equipment effectiveness, quality rates, and throughput (Operational Performance Metric Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kpi", "oee", "performance-metrics", "operational-efficiency", "benchmarking", "data-analytics", "industrial-management", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Metric_Fidelity_Audit: Evaluate the ''Data Accuracy'' to identify if high-fidelity ''Manual Reporting'' or sensor high-fidelity drift is creating false high-fidelity KPI improvements (Watermelon KPIs).'
-    - 'OEE_Integrity_Check: Analyze the high-fidelity ''Performance Loss'' vs ''Minor Stoppages'' to ensure that micro-stoppages are not being high-fidelity hidden in general uptime logs.'
-    - 'Correlation_Fidelity_Scan: Monitor the high-fidelity ''Lagging Indicators'' (Financials) against ''Leading Indicators'' (Safety/Maintenance) to verify the high-fidelity predictive power of the metric system.'
-Trust Metrics:
+  description: "[Entity] kpi-and-operational-performance-metric-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 KPI and Operational Performance Metric Logic
+# [Entity] kpi-and-operational-performance-metric-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장이 잘 돌아가고 있는지, 아니면 겉만 번지르르한 상태인지 어떻게 한눈에 알 수 있을까요? **KPI 및 운영 성과 지표 로직**은 복잡한 공장 안의 모든 움직임을 '숫자'라는 공용어로 바꾸는 **'공장의 성적표'** 기술입니다. 단순히 생산량을 세는 수준을 넘어, 기계가 얼마나 놀았는지, 불량은 왜 났는지, 에너지는 얼마나 낭비됐는지를 실시간으로 추적합니다. **'OEE와 ROI의 수식을 이용해 추상적인 노력을 구체적인 성과로 증명하고 미래의 성장을 설계하는 지능형 경영 관리 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Data Integrity Loss - High-fidelity sensor data mismatching manual high-fidelity logs. 'Watermelon KPI' high-fidelity suspected (Green outside, Red inside)"
         return "PASS: Validated Metric Logic and Verified Truth Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_oee=0.82, rework_rate_pct=1.2, maintenance_cost_per_unit=150.0)
 print(engine.diagnose_performance_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_performance_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data global-oee-benchmarks-and-factory-performance-v2026`와 연동되어, 전 세계 주요 제조 및 물류 허브의 실시간 성과 데이터를 분석하고 목표 미달 및 손실 사고 확률을 0.001% 이하로 억제함으로써 지능형 경영 문명의 성과 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - just-in-time-jit-and-lean-manufacturing-logistics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "air-pollution-control-and-carbon-capture-technology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] air-pollution-control-and-carbon-capture-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Comprehensive engineering solutions for removing gaseous and particulate pollutants from industrial exhaust and the separation of CO2 for storage or utilization (CCUS)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["air-pollution", "carbon-capture", "ccs", "ccus", "scr", "flue-gas-desulfurization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "PollutionFidelityEngine"
-  diagnostic_protocol:
-    - 'CCS_Capture_Rate: $\\eta_{ccs} \\ge 0.90$'
-    - 'NOx_Removal_Efficiency: $\\eta_{scr} \\ge 0.95$'
-    - 'Particulate_Emission_Limit: $PM \\le 10$ $mg/Nm^3$'
-Trust Metrics:
+  description: "[Entity] air-pollution-control-and-carbon-capture-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Air Pollution Control and Carbon Capture Technology
+# [Entity] air-pollution-control-and-carbon-capture-technology
 
 ## 1. 개요 (Why)
 대기 오염 제어는 공중 보건과 직결된 기술이며, 특히 탄소 포집(Carbon Capture)은 '넷 제로(Net Zero)' 달성을 위한 필수 불가결한 기술입니다. 연소 공정에서 발생하는 다양한 오염 물질을 물리적, 화학적 공정으로 제거하고, 특히 지구 온난화의 주범인 $CO_2$를 선택적으로 분리하여 영구 격리하거나 자원화하는 것은 현대 산업의 도덕적, 경제적 의무입니다. 본 엔티티는 가스상 물질의 이동 현상과 반응 공학을 결합하여 정밀한 정화 시스템을 설계합니다.
@@ -81,7 +70,6 @@ class PollutionFidelityEngine:
         m_captured = self.Q * (self.y_in - self.y_out) * density_co2
         return {"mass_captured_kgh": m_captured}
 
-# Instance Diagnostic
 ccs_engine = PollutionFidelityEngine(gas_flow_rate=50000, co2_in=0.15, co2_out=0.012, pressure_drop=1.5)
 print(ccs_engine.check_capture_integrity())
 print(ccs_engine.estimate_carbon_mass_captured())
@@ -100,7 +88,6 @@ print(ccs_engine.estimate_carbon_mass_captured())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data air-quality-index-and-particulate-matter-log-v2026` 및 `Data blue-hydrogen-ccs-efficiency-and-purity-log-v2026`와 실시간 동기화되어 산업 현장의 배출 무결성을 보증합니다. `PollutionFidelityEngine`을 통해 탄소 세금 절감 효과를 수치화하고, 기후 리스크에 대한 결정론적 방어막을 형성합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 107_environmental-engineering-and-pollution-control-hub
 - selective-catalytic-reduction-scr-logic

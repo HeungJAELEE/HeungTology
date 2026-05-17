@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "microgrid-stability-and-decentralized-power-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] microgrid-stability-and-decentralized-power-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The localized energy system (Microgrid) and the control algorithms used to maintain voltage and frequency stability through decentralized methods (Droop Control), allowing for the integration of diverse distributed energy resources (DERs) and seamless transitions between grid-connected and islanded modes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["microgrid", "power-stability", "decentralized-control", "droop-control", "smart-grid", "energy-storage", "islanding"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Stability_Margin_Audit: Evaluate the system''s response to step-load changes to ensure the frequency and voltage nadir remain within the permissible IEEE 1547 standards.'
-    - 'Decentralized_Coordination_Check: Verify that multiple inverters in the microgrid are sharing the load proportionally based on their droop coefficients without a central controller.'
-    - 'Islanded_Transition_Scan: Monitor the synchronization process during grid reconnection to prevent massive inrush currents or phase mismatches.'
-Trust Metrics:
+  description: "[Entity] microgrid-stability-and-decentralized-power-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Microgrid Stability and Decentralized Power Control Logic
+# [Entity] microgrid-stability-and-decentralized-power-control-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 발전소가 멈춰도 우리 마을의 불은 꺼지지 않게 할 수 있을까요? **마이크로그리드 안정성 및 분산 제어 로직**은 마을 단위, 혹은 건물 단위의 작은 전력망이 스스로 살아남는 **'에너지 독립의 지혜'**입니다. 태양광, 풍력, 배터리 등 제멋대로 변하는 에너지원들을 중앙 통제관 없이도 서로 눈치를 보며(분산 제어) 조화롭게 맞추는 **'전력의 오케스트라'**입니다. 큰 전력망이 고장 나면 즉시 '섬'처럼 독립하여 전기를 계속 공급하고, 다시 연결될 때는 부드럽게 합쳐지는 **'회복력 있는 에너지 자치'**의 핵심입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Insufficient System Inertia - Frequency Changing Too Fast for Control Response. Enhance Battery Fast-Response"
         return "PASS: Adequate System Damping and Inertia Profile Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(freq_deviation_hz=0.08, voltage_ripple_pct=0.012, islanding_transition_ms=25)
 print(engine.diagnose_grid_stability())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_grid_stability())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microgrid-voltage-and-frequency-deviation-logs-v2026`와 연동되어, 전 세계 스마트 시티 및 산업 단지의 전력 데이터를 실시간 분석하고 정전 및 설비 파손 사고 확률을 0.001% 이하로 억제함으로써 에너지 주권의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - microgrid-design-and-islanded-operation-logic

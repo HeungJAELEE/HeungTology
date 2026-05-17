@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "metamaterials-and-negative-refractive-index-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] metamaterials-and-negative-refractive-index-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics of artificial structures (Metamaterials) engineered to have electromagnetic properties not found in nature, specifically characterized by simultaneous negative permittivity ($\\epsilon < 0$) and negative permeability ($\\mu < 0$), resulting in a negative refractive index ($n < 0$) and the reversal of classical wave phenomena.'"
-  physical_model: "N/A"
-Semantic:
-  tags: '["metamaterials", "negative-refractive-index", "optics", "photonics", "stealth", "superlens", "lhm", "electromagnetics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Refractive_Fidelity_Audit: Verify the ''Negative Index'' window width to ensure the material maintains $n < 0$ across the target operational bandwidth.'
-    - 'Sub-wavelength_Integrity_Check: Analyze the unit cell size relative to wavelength ($\\lambda/10$) to confirm the ''Effective Medium Approximation'' is valid.'
-    - 'Loss_Tangent_Scan: Monitor the imaginary parts of $\\epsilon$ and $\\mu$ to detect excessive high-fidelity material absorption or resonance scattering.'
-Trust Metrics:
+  description: "[Entity] metamaterials-and-negative-refractive-index-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Metamaterials and Negative Refractive Index Physics
+# [Entity] metamaterials-and-negative-refractive-index-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 빛을 휘게 하여 물체를 보이지 않게 하거나(투명 망토), 렌즈의 한계를 넘어 원자까지 볼 수 있는 슈퍼 돋보기를 만들 수 있다면 어떨까요? **메타물질 및 음의 굴절률 물리**는 자연계에는 존재하지 않는 구조를 인위적으로 설계하여 빛이나 소리의 흐름을 마음대로 조절하는 **'파동의 연금술'**입니다. 우리가 이를 배우는 이유는 레이더에 잡히지 않는 스텔스 비행체를 만들거나, 회절 한계를 극복하여 나노 세계를 직접 관찰하기 위함이며, "자연의 법칙을 공학적 구조로 극복하는 **'광학적 불가능의 정복'**"을 실현합니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Stealth Fidelity - Reflection Signature Detected. Meta-surface Re-optimization Required"
         return "PASS: Validated Wave Cancellation and Confirmed Stealth Integrity"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(real_n=-1.2, loss_tangent=0.05, fabrication_error_pct=1.2)
 print(engine.diagnose_meta_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_meta_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data metamaterial-transmission-and-refraction-index-logs-v2026`와 연동되어, 전 세계 차세대 통신 장비 및 항공우주 스텔스 코팅의 파동 제어 데이터를 실시간 분석하고 광학적 투과 오류 및 산란 사고 확률을 0.001% 이하로 억제함으로써 지능형 파동 제어 문명의 설계 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - photonic-crystal-and-bandgap-engineering-physics

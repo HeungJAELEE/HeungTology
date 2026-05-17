@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corporate-secretary-and-board-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corporate-secretary-and-board-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic role and administrative framework of the corporate secretary in managing board communications, ensuring legal compliance, and upholding high standards of corporate governance."
-  physical_model: "N/A"
-Semantic:
-  tags: '["corporate-secretary", "board-of-directors", "governance", "compliance", "shareholder-rights"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Board_Compliance_Audit: Verify that board meetings, minutes, and resolutions comply with legal and statutory requirements.'
-    - 'Transparency_Score_Check: Evaluate the disclosure of financial and strategic information to shareholders.'
-    - 'Conflict_of_Interest_Scan: Monitor board member relationships for potential ethical violations or bias.'
-Trust Metrics:
+  description: "[Entity] corporate-secretary-and-board-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Corporate Secretary and Board Governance
+# [Entity] corporate-secretary-and-board-governance
 
 ## 1. 개요 (Why)
 기업의 이사회는 배의 조타실이며, 기업 비서(Corporate Secretary)는 그 조타실이 법과 원칙에 따라 올바르게 작동하도록 보좌하는 파수꾼입니다. 지배구조(Governance)가 무너지면 대주주의 독단이나 경영진의 부정부패로 기업 전체가 위험에 빠집니다. 기업 비서는 이사회 운영의 투명성을 확보하고, 주주의 권리를 보호하며, 복잡한 법적 규제를 준수하게 함으로써 기업의 신뢰도를 지키는 핵심 기둥입니다. 본 노드는 이사회 운영의 무결성과 지배구조 투명성 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LegalFidelityEngine:
             return "REJECT: Missing Statutory Filings - Immediate Risk of Legal Sanctions and Penalty"
         return "PASS: Regulatory Compliance Maintained"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(board_attendance=98, independent_ratio=60, compliance_filing_status=True)
 print(engine.diagnose_governance_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_governance_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data board-meeting-attendance-and-compliance-v2026`와 연동되어, 이사회의 모든 활동 데이터를 실시간 분석하고 지배구조 리스크를 99% 확률로 사전 감지함으로써 기업 운영의 도덕적/법적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - corporate-governance-and-board-of-directors-management

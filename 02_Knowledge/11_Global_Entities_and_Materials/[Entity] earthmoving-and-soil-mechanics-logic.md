@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "earthmoving-and-soil-mechanics-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] earthmoving-and-soil-mechanics-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of moving or processing large quantities of soil or rock to prepare a site for construction (Earthmoving) and the physical-mathematical study of soil behavior under stress, including shear strength, compressibility, and bearing capacity (Soil Mechanics Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["earthmoving", "soil-mechanics", "construction", "civil-engineering", "excavation", "compaction", "heavy-equipment"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Excavation_Fidelity_Audit: Evaluate the ''Bucket Fill Factor'' against the soil type (clay, sand, rock) to identify if the equipment is under-performing or if the soil shear strength is exceeding the tool''s breakout force.'
-    - 'Compaction_Integrity_Check: Analyze the soil moisture content against the ''Optimum Moisture'' to ensure that the required ''Dry Density'' is achieved, preventing future structural settlement.'
-    - 'Cycle_Fidelity_Scan: Monitor the haul road rolling resistance and grade to verify that the truck fleet''s ''Cycle Time'' is maximized for high-fidelity logistics throughput.'
-Trust Metrics:
+  description: "[Entity] earthmoving-and-soil-mechanics-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚜 Earthmoving and Soil Mechanics Logic
+# [Entity] earthmoving-and-soil-mechanics-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 산을 깎고 평지를 만드는 작업이 단순한 '삽질'의 반복일까요? **토공사(Earthmoving) 및 토질 역학 로직**은 땅의 성질을 과학적으로 분석하여 가장 효율적으로 흙을 옮기고 다지는 **'지형의 재구성'** 기술입니다. 흙은 보기보다 까다로운 재료입니다. 파내면 부피가 늘어나고, 다지면 줄어듭니다. 물기가 너무 많아도 안 되고, 적어도 안 됩니다. 대지의 무게를 견디는 든든한 기초를 만들기 위한 **'중장비와 물리학이 결합한 거대 토목의 예술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Equipment Overload - Soil/Rock hardness exceeding machine capability. Risk of hydraulic failure. Switch to ripper or blasting"
         return "PASS: Validated Tool Performance and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(moisture_content_pct=11.5, compaction_density_pct=98.0, cycle_time_min=8.5)
 print(engine.diagnose_earthmoving_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_earthmoving_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data earthmoving-cycle-times-and-fuel-efficiency-v2026`와 연동되어, 전 세계 주요 대규모 택지 조성 및 도로 건설 현장의 데이터를 실시간 분석하고 지반 침하 및 공기 지연 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라 문명의 토대 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - dredging-and-underwater-excavation-physics

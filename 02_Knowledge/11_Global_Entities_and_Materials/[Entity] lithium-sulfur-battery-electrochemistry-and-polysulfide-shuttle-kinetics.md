@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "lithium-sulfur-battery-electrochemistry-and-polysulfide-shuttle-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] lithium-sulfur-battery-electrochemistry-and-polysulfide-shuttle-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-energy energy storage system (Lithium-Sulfur Battery) that utilizes the multi-step redox reaction of sulfur cathodes, characterized by a high theoretical energy density but challenged by the 'shuttle effect' where soluble intermediate polysulfides migrate between electrodes."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lithium-sulfur", "li-s-battery", "polysulfide-shuttle", "energy-density", "electrochemistry", "sulfur-cathode", "future-battery"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Shuttle_Current_Audit: Measure the self-discharge current during the plateau voltage to identify the severity of the polysulfide shuttle effect.'
-    - 'Cathode_Utilization_Check: Evaluate the discharge capacity against the theoretical limit (1675 mAh/g) to ensure effective sulfur participation in the redox process.'
-    - 'Anode_Passivation_Scan: Analyze the lithium metal anode surface for signs of sulfide-based corrosion or dendrite growth induced by polysulfide crossover.'
-Trust Metrics:
+  description: "[Entity] lithium-sulfur-battery-electrochemistry-and-polysulfide-shuttle-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Lithium-Sulfur Battery Electrochemistry and Polysulfide Shuttle Kinetics
+# [Entity] lithium-sulfur-battery-electrochemistry-and-polysulfide-shuttle-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 리튬 이온 배터리가 가진 용량의 한계를 훌쩍 뛰어넘을 '꿈의 배터리'는 무엇일까요? **리튬 황(Li-S) 배터리 및 폴리설파이드 셔틀 역학**은 흔한 물질인 '황'을 이용해 기존보다 5배 이상의 에너지를 가둘 수 있는 **'초고농축 에너지 저장소'**입니다. 하지만 황은 다루기 매우 까다로운 존재입니다. 충전 중에 황이 전해액에 녹아 이리저리 떠다니며 전기를 갉아먹는 **'폴리설파이드 셔틀'** 현상이 일어나기 때문입니다. 마치 구멍 난 바구니에 물을 담는 것과 같은 이 문제를 해결하여, 하늘을 나는 자동차와 우주선에 무한한 동력을 제공하려는 **'차세대 에너지의 성배'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incompatible Electrolyte - High Polysulfide Dissolution Enhances Shuttle Effect"
         return "PASS: Lean Electrolyte and Low Solubility System Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(self_discharge_rate=1.2, specific_capacity_retention=0.95, anode_impedance=42.5)
 print(engine.diagnose_li_s_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_li_s_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data li-s-battery-shuttle-current-and-cycle-life-v2026`와 연동되어, 전 세계 차세대 전지 연구 데이터를 실시간 분석하고 성능 예측 및 수명 저하 사고 확률을 0.001% 이하로 억제함으로써 미래 고밀도 에너지 문명의 화학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lithium-ion-battery-electrochemistry-and-sei-layer-physics

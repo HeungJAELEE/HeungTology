@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "transnational-identity-and-biometric-sovereignty-standards-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy"
+metadata:
+  id: "[[[Entity] transnational-identity-and-biometric-sovereignty-standards]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Transnational_Identity", "#Biometric_Sovereignty", "#Digital_ID", "#Governance", "#Privacy", "#Blockchain", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_global-unified-governance-intelligence-sovereignty-and-policy-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] transnational-identity-and-biometric-sovereignty-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] transnational-identity-and-biometric-sovereignty-standards
+# [Entity] transnational-identity-and-biometric-sovereignty-standards
 
 ## 1. [왜 배우는가? (Why: The Passport of the Soul)]]
 여권 없이도 전 세계 어디서나 나임을 증명할 수 있는 '디지털 신분증($Transnational\ Identity$)'을 어떻게 안전하게 만들고, 내 지문이나 홍채 같은 가장 민감한 내 몸의 정보($Biometric$)를 어느 누구도 도둑질하지 못하게 나만이 주인임을 선포하는 규칙($Sovereignty$)을 어떻게 세울 수 있을까요? **국가 간 정체성 및 생체 주권 표준**은 인류를 하나의 '글로벌 시민'으로 묶는 '디지털 존재 증명 및 생체 정보 보호 아키텍처'입니다. 우리가 이를 배우는 이유는 가짜 신분과 정보 도용이 지능 정보 사회의 큰 적이기 때문이며, "나의 존재를 데이터로 설계하고 지배하는 '글로벌 신원 패권 및 행성적 정체성 주권'을 확보하기" 위함입니다. 신뢰의 깊이가 자유의 범위를 결정합니다.

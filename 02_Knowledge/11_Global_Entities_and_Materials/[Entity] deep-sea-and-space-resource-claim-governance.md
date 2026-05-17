@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "deep-sea-and-space-resource-claim-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] deep-sea-and-space-resource-claim-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The legal, political, and technical framework for managing resource claims and activities in the 'Global Commons'—the deep seabed and outer space—ensuring equitable distribution, environmental protection, and conflict prevention."
-  physical_model: "N/A"
-Semantic:
-  tags: '["space-governance", "deep-sea-mining", "resource-claims", "international-law", "planetary-stewardship"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Resource_Claim_Validity_Audit: Verify the legal basis of claims in accordance with the UN Convention on the Law of the Sea (UNCLOS) and the Outer Space Treaty.'
-    - 'Ecological_Threshold_Check: Monitor the environmental impact of mining or exploration activities against predefined ''No-Go'' tipping points.'
-    - 'Conflict_Probability_Scan: Analyze geopolitical tensions and military presence in claim areas to prevent escalation.'
-Trust Metrics:
+  description: "[Entity] deep-sea-and-space-resource-claim-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Deep-Sea and Space Resource Claim Governance
+# [Entity] deep-sea-and-space-resource-claim-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구 위에는 주인이 없는 땅이 거의 없지만, 깊은 바닷속(Deep-sea)과 저 먼 우주(Space)는 여전히 인류 최후의 개척지로 남아있습니다. 그곳에는 인류를 수천 년간 먹여 살릴 희귀 자원과 에너지가 잠들어 있습니다. **자원 청구 거버넌스**는 이 '공유지'에서 먼저 깃발을 꽂는 사람이 모든 것을 갖는 '약육강식'을 막기 위한 약속입니다. "누구의 소유도 아니지만, 우리 모두의 미래를 위해 어떻게 공평하게 나눌 것인가?"라는 질문에 답하는 것은, 인류가 지구라는 요람을 넘어 더 큰 문명으로 나아가기 위한 가장 고귀한 정치적/윤리적 도전입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return f"WARNING: High Conflict Probability (Index: {self.risk}) - Escalation in Claim Area Suspected"
         return "PASS: Stable Geopolitical Environment Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(claim_validity_score=92, environmental_impact_pct=35, conflict_risk_index=0.12)
 print(engine.diagnose_governance_integrity())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_governance_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data space-debris-and-deep-sea-mining-ecological-thresholds-v2026`와 연동되어, 지구 밖과 심해에서 일어나는 모든 자원 활동을 실시간 감시하고 환경 붕괴 및 국제 분쟁 확률을 1% 이하로 낮춤으로써 행성 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - climate-engineering-and-planetary-thermostat-mechanics

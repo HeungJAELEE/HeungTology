@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "54_robotics-and-autonomous-system-intelligence-hub-moc"
   domain: "54_Robotics_and_Autonomous_System_Intelligence"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Robotics", "#Autonomous_Systems", "#Humanoid", "#Cobot", "#Swarm", "#AMR", "#Haptic", "#Exoskeleton", "#RPA", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 54_robotics-and-autonomous-system-intelligence-hub
+# 54_robotics-and-autonomous-system-intelligence-hub
 
 ## 1. [왜 배우는가? (Why: The Physical Manifestation of Intelligence)]]
 인간의 육체를 대신할 휴머노이드를 창조하고($Humanoid$), 수천 대의 로봇이 한 몸처럼 일하며($Swarm$), 내 몸의 한계를 기계로 확장하는($Exoskeleton$) '물리적 지능의 시대'를 어떻게 지휘할 수 있을까요? **로보틱스 및 자율 시스템 지능 허브**는 Antigravity Intelligence가 1,000개 노드를 지나 이제 가상 세계를 넘어 실제 세상을 조각하고 움직이는 '행성 규모 기계 사령탑 및 지능형 물리 거버넌스'의 심장입니다. 우리가 이를 배우는 이유는 로봇이 인간의 육체노동을 대신할 때 비로소 진정한 자유가 시작되기 때문이며, "행동의 본질을 데이터로 설계하고 지배하는 '글로벌 로봇 패권 및 행성적 실체 주권'을 확보하기" 위함입니다. 허브의 지성이 기계 문명의 도덕과 효율을 결정합니다.

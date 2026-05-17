@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] MaaS-Mobility-as-a-Service-Intelligence"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] MaaS-Mobility-as-a-Service-Intelligence]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] MaaS-Mobility-as-a-Service-Intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] MaaS-Mobility-as-a-Service-Intelligence
+# [Strategy] MaaS-Mobility-as-a-Service-Intelligence
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 버스를 타려면 버스 앱을, 전동 킥보드를 타려면 킥보드 앱을, 기차를 타려면 기차 앱을 따로 켜야 했습니다. 결제도 제각각이고 환승 시간을 맞추는 것도 스트레스였습니다. MaaS 및 모빌리티 지능 플랫폼(MaaS-Mobility-as-a-Service-Intelligence)은 이 모든 이동 수단을 하나의 앱에 담아, 가장 빠르고 편한 길을 추천하고 결제까지 한 번에 끝내주는 '나만의 모빌리티 비서' 기술입니다. 이를 이해하는 것은 차를 소유하지 않아도 세상 모든 이동 수단을 내 차처럼 자유롭게 이용하는 '구독형 이동 사회'를 설계하는 '모빌리티 서비스 아키텍트'가 되는 것입니다.
@@ -93,5 +83,4 @@ def search_optimal_maas_route(origin, destination, user_preferences):
 2. '멀티모달(Multimodal) 경로 최적화' 알고리즘이 단순한 '내비게이션'보다 복잡한 시공간적 변수(환승 시간, 정류장 거리 등)를 다루는 방식은?
 3. 'MaaS'의 확산이 도시의 '주차난' 해소와 '자가용 보유율' 감소에 미치는 결정적인 '심리적 및 경제적' 메커니즘은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

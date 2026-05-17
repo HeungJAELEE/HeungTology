@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "space-robotics-and-orbital-manipulation-kinematics-entity"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] space-robotics-and-orbital-manipulation-kinematics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Space", "#Orbital_Manipulation", "#Satellite_Servicing", "#Zero-G", "#Kinematics", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_autonomous-systems-and-robotics-hub", "Entity global-satellite-internet-constellation-and-orbital-mesh"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] space-robotics-and-orbital-manipulation-kinematics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] space-robotics-and-orbital-manipulation-kinematics
+# [Entity] space-robotics-and-orbital-manipulation-kinematics
 
 ## 1. [왜 배우는가? (Why: The Mechanics of Zero-Gravity Work)]]
 무중력 상태에서 떠다니는 고장 난 위성을 어떻게 부드럽게 낚아채고($Capture$), 내가 위성을 밀 때 그 반작용($Reaction$)으로 내가 뒤로 밀려나지 않게 어떻게 스스로를 고정하며, 우주 정거장을 짓거나 달에 기지를 건설하는 복잡한 작업을 어떻게 지상 조종 없이 자율적으로 수행할 수 있을까요? **우주 로봇공학 및 궤도 조작 운동학**은 우주에서 일하는 기계의 지능을 설계하는 '무중력 구동 및 궤도 서비스 지침'입니다. 우리가 이를 배우는 이유는 우주 쓰레기를 치우고 기지를 짓는 일은 인간보다 로봇이 훨씬 안전하고 효율적이기 때문이며, "우주의 노동력을 데이터로 설계하고 지배하는 '글로벌 우주 제조 및 궤도 물류 주권'을 확보하기" 위함입니다. 조작의 정밀도가 우주 인프라의 확장성을 결정합니다.

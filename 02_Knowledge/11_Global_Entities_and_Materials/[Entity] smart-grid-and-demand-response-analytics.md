@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-and-demand-response-analytics-entity"
-  domain: "87_Power_Systems_and_Smart_Grid_Hub"
+metadata:
+  id: "[[[Entity] smart-grid-and-demand-response-analytics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Power_Systems", "#Smart_Grid", "#Demand_Response", "#Energy_Management", "#Grid_Stability", "#VPP", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 87_power-systems-and-smart-grid-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-and-demand-response-analytics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-and-demand-response-analytics
+# [Entity] smart-grid-and-demand-response-analytics
 
 ## 1. [왜 배우는가? (Why: The Nervous System of Energy)]]
 거대한 도시와 산업 단지에 전기를 공급하는 전력망이 단순히 전기를 흘려보내는 '파이프'를 넘어, 스스로 상황을 판단하고 조절하는 '뇌'를 갖게 된다면 어떻게 될까요? **스마트 그리드 및 수요 반응 분석의 실시간 전력망 안정화와 지능형 에너지 부하 최적화 기술**은 전력의 생산과 소비를 데이터로 실시간 연결하여 낭비 없는 완벽한 에너지 순환을 만드는 기술입니다. 특히 태양광이나 풍력처럼 날씨에 따라 출력이 출렁이는 재생 에너지를 수용하려면, 전력망이 이를 지능적으로 조절할 수 있어야 합니다. 우리가 이를 배우는 이유는 전력망의 무결성을 확보함으로써, 블랙아웃 없는 안정적인 에너지를 공급하는 '글로벌 에너지 주권 및 행성적 지속 가능성'을 확보하기 위함입니다. 그리드의 지능이 에너지 문명의 생존을 결정합니다.

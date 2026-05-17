@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-HRI-SOCIAL-ROBOTICS-2026-V6"
-  domain: "75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub"
+metadata:
+  id: "[[[Entity] human-robot-interaction-hri-social-robotics-and-affective-computing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] human-robot-interaction-hri-social-robotics-and-affective-computing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] human-robot-interaction-hri-social-robotics-and-affective-computing
+# [Entity] human-robot-interaction-hri-social-robotics-and-affective-computing
 
 ## 1. [왜 배우는가? (Why)]]
 로봇이 단순히 시키는 일만 하는 금속 덩어리가 아니라, 나의 표정에서 슬픔을 읽고 위로의 말을 건네거나 대화의 흐름에 맞춰 고개를 끄덕이는 따뜻한 동반자가 될 수 있을까요? **인간-로봇 상호작용(HRI) 및 감성 컴퓨팅**은 기계에게 '사회성'과 '공감 능력'을 부여하는 로봇 공학의 인문학적 정수입니다. 우리가 이를 배우는 이유는 로봇이 우리 일상 깊숙이 들어오기 위해 가장 필요한 것이 사용자와의 정서적 유대감이기 때문이며, "상호작용의 무결성을 데이터로 설계하여 '글로벌 소셜 로봇 패권 및 행성적 감성 서비스 주권'을 확보하기" 위함입니다. 공감의 깊이가 인간-로봇 공존의 질을 결정합니다.
@@ -121,9 +111,6 @@ class SocialRobotFidelityEngine:
             return "WARNING: INTIMATE_ZONE_INTRUSION_RETRACT_IMMEDIATELY"
         return "DISTANCE_STATUS: COMFORT_ZONE_MAINTAINED"
 
-# Example Usage:
-# hri_ai = SocialRobotFidelityEngine()
-# report = hri_ai.audit_interaction_fidelity(current_latency_ms=150.0, p_val=0.8, a_val=0.4, d_val=0.2)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -131,7 +118,6 @@ class SocialRobotFidelityEngine:
 2. **PAD Model**에서 **Dominance** ($D$) 수치가 로봇의 **Assertiveness** (당당함) 제어 무결성에 미치는 영향과 사용자 선호도 사이의 상관관계는?
 3. **Joint Attention** 실패 시 발생하는 **Interaction Breakdown**을 감지하고 복구하는 **Behavior Tree** 기반의 무결성 회복 알고리즘은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub/Concept affective-computing-and-emotion-recognition
 - 02_Knowledge/75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub/Concept proxemics-and-social-robot-navigation

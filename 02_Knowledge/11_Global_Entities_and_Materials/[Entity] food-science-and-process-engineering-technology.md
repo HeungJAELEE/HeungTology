@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "food-science-and-process-engineering-technology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] food-science-and-process-engineering-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of science and engineering principles to the processing, preservation, and distribution of food products, focusing on ensuring nutritional quality, safety (HACCP), and shelf-life extension."
-  physical_model: "N/A"
-Semantic:
-  tags: '["food-science", "process-engineering", "food-safety", "pasteurization", "food-processing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Process_Audit: Verify the time-temperature profile ($F_0$ value) of sterilization or pasteurization to ensure 12-log reduction of target pathogens.'
-    - 'Nutritional_Retention_Check: Evaluate the degradation of vitamins and proteins during processing to maximize the food''s health value.'
-    - 'Contamination_Risk_Scan: Monitor critical control points (HACCP) for biological, chemical, or physical hazards in the production line.'
-Trust Metrics:
+  description: "[Entity] food-science-and-process-engineering-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🍎 Food Science and Process Engineering Technology
+# [Entity] food-science-and-process-engineering-technology
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 매일 먹는 음식이 식탁에 오르기까지는 정교한 '생명 공학'의 과정이 숨어 있습니다. **식품 과학 및 공정 공학**은 갓 수확한 원료의 영양과 맛을 그대로 지키면서도, 해로운 세균만을 정밀하게 조준하여 제거하는 **'생명의 연금술'**입니다. 우유를 안전하게 만드는 살균, 과일을 신선하게 보관하는 건조, 그리고 영양소를 캡슐에 담는 가공 기술은 인류가 굶주림과 식중독으로부터 해방되어 건강한 삶을 누리게 하는 가장 따뜻한 기술입니다.
@@ -92,9 +81,7 @@ class MedicalFidelityEngine:
             return f"WARNING: Excessive Nutritional Degradation ({vitamin_c_loss_pct}%) - Optimize Temperature-Time Profile"
         return "PASS: Nutrient Retention within High-Quality Spec"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(processing_temp=121, holding_time_sec(1200, residual_pathogen_count=0)
-# Correction: Fixing constructor call
 engine = MedicalFidelityEngine(121, 1200, 0)
 print(engine.diagnose_food_safety(d_value_at_temp=100))
 ```
@@ -112,7 +99,6 @@ print(engine.diagnose_food_safety(d_value_at_temp=100))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data food-preservation-efficiency-and-microbial-safety-v2026`와 연동되어, 전 세계 주요 식품 공장의 공정 데이터를 실시간 분석하고 식중독 및 변질 사고 확률을 0.01% 이하로 억제함으로써 인류 먹거리 안전의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - food-sovereignty-and-precision-agriculture-governance

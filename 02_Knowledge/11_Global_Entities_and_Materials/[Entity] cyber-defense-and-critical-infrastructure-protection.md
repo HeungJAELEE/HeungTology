@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cyber-defense-and-critical-infrastructure-protection"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cyber-defense-and-critical-infrastructure-protection]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Comprehensive security framework for protecting Operational Technology (OT) and Critical Infrastructure (CI) from cyber threats, focusing on network segmentation, intrusion detection, and resilient system architecture."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cyber-defense", "ics-security", "scada", "zero-trust", "critical-infrastructure", "threat-intelligence"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "CyberFidelityEngine"
-  diagnostic_protocol:
-    - 'Threat_Detection_Sensitivity: $Recall \\ge 0.98$ for known attack signatures.'
-    - 'Response_Time_Audit: $MTTR \\le 30$ min for critical alerts.'
-    - 'Network_Integrity_Check: Zero unauthorized cross-segment traffic.'
-Trust Metrics:
+  description: "[Entity] cyber-defense-and-critical-infrastructure-protection에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Cyber Defense and Critical Infrastructure Protection
+# [Entity] cyber-defense-and-critical-infrastructure-protection
 
 ## 1. 개요 (Why)
 물리적 공격만큼 치명적인 것이 사이버 공격입니다. 특히 전력망, 상수도, 원자력 발전소와 같은 핵심 인프라에 대한 사이버 공격은 국가 마비 사태를 초래할 수 있습니다. 기존의 경계 보안 방식에서 벗어나 '아무도 믿지 않는' 제로 트러스트(Zero Trust) 원칙을 적용하고, 공격 시에도 핵심 기능은 유지되는 회복 탄력성(Resilience)을 확보하는 것이 본 엔티티의 최우선 목적입니다.
@@ -73,7 +62,6 @@ class CyberFidelityEngine:
         resilience_grade = "HIGH" if availability >= 0.999 else "LOW"
         return {"availability": availability, "resilience_grade": resilience_grade}
 
-# Instance Diagnostic
 cyber_engine = CyberFidelityEngine(alerts_total=150, true_threats=48, undetected_threats=1, mtbf=720, mttr=0.5)
 print(cyber_engine.calculate_detection_fidelity())
 print(cyber_engine.evaluate_resilience())
@@ -92,7 +80,6 @@ print(cyber_engine.evaluate_resilience())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data cyber-security-threat-detection-and-response-log-v2026`와 연동되어 지능형 지속 위협(APT)으로부터 핵심 인프라를 사수합니다. `CyberFidelityEngine`을 통해 보안 가시성을 $100\%$ 확보하고, 공격 시나리오별 대응 프로토콜을 결정론적으로 자동화함으로써 국가 안보의 디지털 토대를 공고히 합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_defense-and-strategic-systems-command-center
 - ics-scada-security-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "material-requirements-planning-mrp-and-inventory-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] material-requirements-planning-mrp-and-inventory-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A production planning, scheduling, and inventory control system used to manage manufacturing processes (MRP) and the physical logic of ensuring the right material is available in the right quantity at the right time (Inventory Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mrp", "material-requirements-planning", "inventory-management", "bom", "lead-time", "safety-stock", "erp", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'BOM_Fidelity_Audit: Evaluate the ''BOM Accuracy'' to identify if high-fidelity ''Component Missing'' or high-fidelity ''Wrong Quantity'' errors are causing production high-fidelity stalls.'
-    - 'Inventory_Integrity_Check: Analyze the high-fidelity ''Cycle Count'' variance to ensure that high-fidelity ''Physical Stock'' matches the high-fidelity ''System Balance'' to prevent high-fidelity ''Ghost Inventory''.'
-    - 'Lead_Time_Fidelity_Scan: Monitor the high-fidelity ''Supplier Variability'' to verify that high-fidelity ''Lead-Time Offsetting'' accounts for current high-fidelity global logistics disturbances.'
-Trust Metrics:
+  description: "[Entity] material-requirements-planning-mrp-and-inventory-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Material Requirements Planning (MRP) and Inventory Logic
+# [Entity] material-requirements-planning-mrp-and-inventory-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 여객기 한 대를 만들려면 수백만 개의 나사가 필요한데, 딱 나사 하나가 없어서 조립이 멈춘다면 얼마나 허탈할까요? **자재 소요량 계획(MRP) 및 재고 로직**은 복잡한 제품을 만드는 데 필요한 모든 부품을 수학적으로 계산하여, 단 하나의 나사도 빠짐없이 제시간에 도착하게 만드는 **'제조의 쇼핑 리스트'** 기술입니다. 단순히 '많이 사두는 것'은 돈을 낭비하는 것이고, '너무 적게 사는 것'은 공장을 멈추게 하는 도박입니다. **'BOM 전개와 순 소요량 계산 원리를 이용해 미래의 필요를 현재의 주문으로 변환하여 공급망의 균형을 사수하는 지능형 자재 관리 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Nervous MRP - High-fidelity production plan changing too frequently. Causing high-fidelity supply chain chaos and excessive high-fidelity expedited freight costs"
         return "PASS: Validated Planning Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(inventory_accuracy_pct=99.0, stockout_rate_pct=0.5, bom_errors_count=0)
 print(engine.diagnose_mrp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mrp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data inventory-accuracy-and-stockout-rates-v2026`와 연동되어, 전 세계 주요 자동차 및 하이테크 기업의 실시간 자재 데이터를 분석하고 부품 부족 및 과잉 재고 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 자산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - logistics-optimization-and-supply-chain-network-logic

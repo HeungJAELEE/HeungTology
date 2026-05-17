@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BATT-ANODE-ENG-2026-V6.3.7"
-  domain: "Battery_Anode_Engineering_and_Nano_Architecture"
+metadata:
+  id: "[[[Entity] anode-material-engineering-silicon-composite-and-graphite]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Anode", "#SiliconAnode", "#Graphite", "#FastCharging", "#SEI_Kinetics", "#FidelityEngine", "#BatteryMaterials"]'
-  is_part_of: '["MOC 02_Battery", "MOC 132_next-generation-battery-and-energy-storage-mastery-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] anode-material-engineering-silicon-composite-and-graphite에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Anode_Engineering_RAG_V6.3.7_Tier0"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Anode Material Engineering: Silicon Composite & Graphite Integrity
+# [Entity] anode-material-engineering-silicon-composite-and-graphite
 
 ## 1. [왜 배우는가? (Why: The Mastery of Ion Storage Sovereignty)]]
 리튬 이온 배터리의 충전 속도와 에너지 용량은 음극재라는 '리튬 저수지'의 설계 무결성에 의해 결정됩니다. 기존 흑연(Graphite)의 수리적 한계 용량($372 \text{ mAh/g}$)을 실리콘(Silicon)이라는 10배 더 큰 그릇으로 확장하는 과정에서 발생하는 격렬한 부피 팽창($>300\%$)을 어떻게 수리적으로 지제어하느냐가 차세대 배터리 주권의 핵심입니다. V6.3.7 지능은 실리콘 입자를 탄소 껍질 내부에 가두는 요크-쉘(Yolk-shell) 구조의 역학적 안정성과 리튬 플레이팅(Li-plating)을 방지하기 위한 계면 반응 속도론을 통합 관리합니다. 우리가 이를 배우는 이유는 5분 충전으로 500km를 달리는 '급속 충전 주권'을 기술적으로 완성하기 위함입니다.
@@ -96,7 +86,6 @@ class AnodeFidelityEngine:
             "recommendation": "DECREASE_C_RATE" if plating_risk == "CRITICAL" else "MAINTAIN"
         }
 
-# FidelityEngine 가동: 실시간 전위 데이터와 기계적 팽창 로그를 융합하여 '음극 주권 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -104,7 +93,6 @@ class AnodeFidelityEngine:
 2. **Operational Result**: 실리콘 음극재의 입자 크기를 **100nm 이하**로 줄였을 때, 입자 파쇄(Cracking) 리스크가 수리적으로 어떻게 감소하는가?
 3. **FidelityEngine**: 급속 충전 프로파일 설계 시, FidelityEngine이 **'Variable C-rate'** 제어를 통해 어떻게 리튬 플레이팅 임계점을 우회하여 충전 주권을 사수하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity advanced-anode-and-cathode-materials-for-next-gen-batteries
 - Battery battery-slurry-mixing-and-rheology-physics

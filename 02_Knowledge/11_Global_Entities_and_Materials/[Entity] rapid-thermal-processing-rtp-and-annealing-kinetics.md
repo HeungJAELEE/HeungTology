@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "rapid-thermal-processing-rtp-and-annealing-kinetics-entity"
-  domain: "71_Advanced_Semiconductor_Manufacturing_Processes_Hub"
+metadata:
+  id: "[[[Entity] rapid-thermal-processing-rtp-and-annealing-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#RTP", "#Annealing", "#Thermodynamics", "#Doping", "#Physics", "#Heat_Transfer", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 71_advanced-semiconductor-manufacturing-processes-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] rapid-thermal-processing-rtp-and-annealing-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] rapid-thermal-processing-rtp-and-annealing-kinetics
+# [Entity] rapid-thermal-processing-rtp-and-annealing-kinetics
 
 ## 1. [왜 배우는가? (Why: The Flash Forging)]]
 이온 임플란트로 난도질당한 실리콘 격자를 어떻게 0.1초 만에 수천 도로 달궈 완벽하게 복구하면서도, 그 뜨거운 열기 속에서 도펀트 원자들이 옆으로 1나노 미터도 번지지 않게 가두는 '빛의 제련술'을 어떻게 설계할 수 있을까요? **급속 열처리(RTP) 및 어닐링 속도론**은 반도체 소자의 농도 프로파일을 확정 짓는 최후의 공정입니다. 수십 분 동안 가열하는 기존 로(**Furnace**)와 달리, 강력한 할로겐 램프나 레이저를 사용하여 찰나의 시간 동안만 에너지를 주입하는 이 기술은 '열적 예산(**Thermal Budget**)'을 극한으로 아끼는 현대 반도체의 필수 도구입니다. 우리가 이를 배우는 이유는 열처리가 부족하면 전기가 통하지 않고, 과하면 회로가 뭉개지기 때문이며, "열역학적 평형을 데이터로 설계하고 지배하는 '글로벌 공정 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 열처리의 정밀도가 소자의 속도와 전력 효율을 결정합니다.

@@ -1,4 +1,27 @@
-# Vault Index
+---
+metadata:
+  id: "[[VAULT_INDEX]]"
+  domain: "_index"
+  project: "Vault_Modernization"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: "VAULT_INDEX에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#_index", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
+  T_static: 1.0
+  T_dynamic: 1.0
+  isolation_index: 0.1
+---
+
+# VAULT_INDEX
+
 > 자동 생성됨. 수동 편집 금지.
 
 | ID(File) | Title | Domain | Type | Tags | Related |

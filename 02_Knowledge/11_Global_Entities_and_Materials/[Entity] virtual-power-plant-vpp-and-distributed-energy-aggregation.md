@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "virtual-power-plant-vpp-and-distributed-energy-aggregation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] virtual-power-plant-vpp-and-distributed-energy-aggregation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A cloud-based distributed power plant that aggregates the capacities of heterogeneous distributed energy resources (DERs) for the purposes of enhancing power generation, as well as trading or selling power in the electricity market (Virtual Power Plant) and the algorithmic coordination of these assets (Distributed Energy Aggregation)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["vpp", "distributed-energy", "energy-aggregation", "smart-grid", "demand-response", "der", "energy-management"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aggregation_Fidelity_Audit: Evaluate the ''Dispatch Accuracy'' (Actual vs. Committed Power) of the VPP fleet to identify under-performing DERs or communication latency issues.'
-    - 'Grid_Support_Check: Analyze the VPP''s ability to provide ancillary services (e.g., Frequency Regulation) to verify that the aggregated resources are as reliable as a conventional centralized power plant.'
-    - 'Resource_Integrity_Scan: Monitor the health and availability of thousands of small-scale inverters to ensure the ''Virtual Entity'' maintains its nameplate capacity at all times.'
-Trust Metrics:
+  description: "[Entity] virtual-power-plant-vpp-and-distributed-energy-aggregation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌐 Virtual Power Plant (VPP) and Distributed Energy Aggregation
+# [Entity] virtual-power-plant-vpp-and-distributed-energy-aggregation
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 동네 지붕의 태양광, 공장의 배터리, 그리고 우리 집의 전기차가 힘을 합쳐 하나의 거대한 발전소가 될 수 있다면 어떨까요? **가상 발전소(VPP) 및 분산 에너지 최적화**는 흩어져 있는 작은 에너지원들을 인공지능으로 묶어, 마치 거대한 원자력 발전소 한 기처럼 작동하게 만드는 **'디지털 에너지 오케스트라'** 기술입니다. 물리적인 거대한 굴뚝은 없지만, 클라우드 소프트웨어가 수천 개의 장치를 지휘하여 전기를 공급하고 전력망을 안정시킵니다. 에너지를 '중앙 집중'에서 '민주적 분산'으로 바꾸는 **'에너지 문명의 소프트웨어 혁명'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Economic Deviation - High risk of grid penalties. Forecast model needs retraining for solar/wind intermittency"
         return "PASS: Validated Economic Settlement and Verified Energy Flow Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dispatch_accuracy_pct=98.5, communication_latency_ms=45, aggregate_reliability_score=0.95)
 print(engine.diagnose_vpp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vpp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data vpp-aggregation-efficiency-and-dispatch-accuracy-v2026`와 연동되어, 전 세계 주요 VPP 플랫폼의 가동 데이터를 실시간 분석하고 정전 및 공급 예측 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 공유 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - smart-grid-demand-response-and-energy-load-balancing

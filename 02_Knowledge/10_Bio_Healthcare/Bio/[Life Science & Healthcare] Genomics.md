@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "BIO-GENOMICS-BLUEPRINT-OF-LIFE-2026-V6"
+metadata:
+  id: "[[[Life Science & Healthcare] Genomics]]"
   domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Genomics'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] Genomics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] Genomics
@@ -105,7 +95,6 @@ class GenomeSequencingDiagnosticEngine:
 2. **Liquid Biopsy** (액체 생검)에서 **cfDNA** (Cell-free DNA) 분석 시 **Signal-to-Noise Ratio** (SNR)를 높이기 위해 사용하는 **Molecular Barcoding**의 공학적 기전은?
 3. **Variant Calling** 결과에서 **False Positive**를 줄이기 위해 **Alignment Rate**와 **Base Quality Score Recalibration** (BQSR)이 필수적인 이유는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Healthcare/Bio/Bio Bio-Manufacturing
 - 02_Knowledge/10_Bio_Healthcare/Engineering/Bio Bio-Engineering

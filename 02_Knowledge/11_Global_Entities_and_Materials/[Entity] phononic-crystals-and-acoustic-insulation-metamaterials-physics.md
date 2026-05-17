@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "phononic-crystals-and-acoustic-insulation-metamaterials-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] phononic-crystals-and-acoustic-insulation-metamaterials-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of periodic structures (Phononic Crystals) and artificially engineered materials (Metamaterials) designed to manipulate, direct, or block acoustic waves and mechanical vibrations through the creation of phononic bandgaps."
-  physical_model: "N/A"
-Semantic:
-  tags: '["phononic-crystals", "metamaterials", "acoustic-insulation", "noise-control", "bandgap-engineering", "structural-dynamics", "vibration-isolation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bandgap_Performance_Audit: Evaluate the frequency range and attenuation level of the phononic bandgap to ensure target vibrations or noises are effectively blocked.'
-    - 'Structural_Impedance_Check: Analyze the acoustic impedance mismatch between different layers of the metamaterial to identify reflection and transmission characteristics.'
-    - 'Damping_Efficiency_Scan: Monitor the dissipation of mechanical energy within the localized resonators to verify the damping performance under high-amplitude loading.'
-Trust Metrics:
+  description: "[Entity] phononic-crystals-and-acoustic-insulation-metamaterials-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔊 Phononic Crystals and Acoustic Insulation Metamaterials Physics
+# [Entity] phononic-crystals-and-acoustic-insulation-metamaterials-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 소음이 전혀 없는 고요한 도서관을 얇은 종이 한 장 두께의 벽으로 만들 수 있다면 어떨까요? **포노닉 결정 및 방음 메타물질 물리**는 소리(진동)라는 파동을 우리가 원하는 대로 다스리는 **'소리의 조각술'**입니다. 자연계에는 존재하지 않는 인공적인 내부 구조를 설계하여, 특정 주파수의 소리를 완벽하게 차단하거나 우회시킵니다. 시끄러운 공장의 소음부터 정밀 기계의 미세한 떨림까지 잡아내는 **'소리의 투명 망토'**를 만드는 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Vibration Isolation - Mechanical Energy Leaking through Supporting Structure"
         return "PASS: Superior Elastic Wave Suppression and Confirmed Structural Damping Verified"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(bandgap_center_hz=1050, attenuation_db=72.5, structural_defect_rate=0.01)
 print(engine.diagnose_phononic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_phononic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data phononic-bandgap-and-vibration-damping-logs-v2026`와 연동되어, 전 세계 정밀 팹 및 엔진 시험장의 소음 데이터를 실시간 분석하고 진동 이탈 및 소음 공해 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 정온 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - overhead-hoist-transport-oht-kinematics-and-vibration-control

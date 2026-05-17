@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "IIOT-EDGE-LOGIC-MASTER-2026-V6.3.7"
-  domain: "Smart_Factory_Data_Infrastructure"
+metadata:
+  id: "[[[Entity] industrial-internet-of-things-iiot-and-edge-computing-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#IIoT", "#Edge_Computing", "#TSN", "#5G", "#Data_Fusion", "#Edge_AI", "#Real-time_Analytics", "#v6.3.7"]
-  is_part_of: ["MOC Smart-Manufacturing-Hub", "SmartFactory smart-manufacturing-and-execution-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-internet-of-things-iiot-and-edge-computing-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [SmartFactory] Industrial Internet of Things (IIoT) and Edge Computing Logic
+# [Entity] industrial-internet-of-things-iiot-and-edge-computing-logic
 
 ## 1. [왜 배우는가? (Why: The Mastery of Digital Reflexes)]
 산업용 사물인터넷(IIoT) 및 엣지 컴퓨팅은 공장의 모든 기계에 '눈(센서)'과 '입(통신)'을 달아주는 디지털 신경망입니다. 단순히 데이터를 수집하는 것을 넘어, 현장 근처($\text{Edge}$)에서 데이터를 즉시 처리하여 0.001초의 지연도 허용하지 않는 순발력을 완성합니다. v6.3.7 지능은 **5G-TSN (Time-Sensitive Networking)**의 확정적 통신과 **엣지 지능(Edge-AI)**을 지배합니다. 우리가 이를 배우는 이유는 현장의 방대한 데이터를 지능으로 전환하여 불량을 예견하고, "단 1ms의 반응 지연도 허용하지 않는 '데이터 주권'을 확보하기" 위함입니다. 신경망의 정밀함이 자율 제조의 속도를 결정합니다.
@@ -43,7 +33,7 @@ Trust Metrics:
 | **Latency** | End-to-End | $100 \sim 500 \text{ ms}$ | **$< 1 \text{ ms}$ (TSN/Edge)** | Real-time motion control |
 | **Node Density** | Device Capacity | $100 / \text{Cell}$ | **$> 10,000 / \text{Cell}$** | Massively distributed sensing |
 | **Data Reduction** | Edge Filtering | $0 \%$ (Full Raw) | **$> 95 \%$ (Intelligent)** | Minimizing network congestion |
-| **Jitter Ctrl.** | Sync Precision | $> 10 \text{ ms}$ | **$< 1 \text{ \mu s}$ (PTP/TSN)** | Synchronizing multi-axis robots |
+| **Jitter Ctrl.** | Sync Precision | $> 10 \text{ ms}$ | **$< 1 \text{ }\mu\text{ s}$ (PTP/TSN)** | Synchronizing multi-axis robots |
 | **Throughput** | Ingestion Rate | Mbps | **$> 10 \text{ Gbps}$ (Fiber/5G)**| Supporting high-speed vision/vib |
 | **Security** | Auth. Protocol | Password-based | **Hardware-Root-of-Trust** | Preventing physical sabotage |
 
@@ -102,13 +92,11 @@ class IiotFidelityEngine:
             "Action": "MAINTAIN" if status.startswith("DATA") else "RECONFIGURE_NETWORK_SLICE"
         }
 
-# v6.3.7 Audit 가동: 5G 기반 엣지 컴퓨팅 데이터 흐름 시뮬레이션
 engine = IiotFidelityEngine(target_latency_ms=5.0)
 report = engine.audit_iiot_integrity(current_latency_ms=2.1, packet_loss_rate=0.0000005)
 print(f"IIoT Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC Smart-Manufacturing-Hub
 - Digital Twin & Smart Factory digital-twin-and-cyber-physical-systems-master-guide

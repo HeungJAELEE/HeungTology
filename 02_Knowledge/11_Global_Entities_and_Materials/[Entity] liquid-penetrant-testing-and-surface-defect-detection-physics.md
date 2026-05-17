@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "liquid-penetrant-testing-and-surface-defect-detection-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] liquid-penetrant-testing-and-surface-defect-detection-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A widely applied and low-cost inspection method used to locate surface-breaking defects in all non-porous materials (Liquid Penetrant Testing) and the physical study of capillary action and wetting dynamics (Surface Defect Detection Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["liquid-penetrant-testing", "lpt", "ndt", "surface-defect", "capillary-action", "fluorescence", "industrial-inspection", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Penetration_Fidelity_Audit: Evaluate the ''Dwell Time'' ($t$) to identify if high-fidelity ''Viscosity'' changes or ''Surface Contamination'' is preventing the penetrant from filling high-fidelity micro-cracks.'
-    - 'Observation_Integrity_Check: Analyze the high-fidelity ''UV Intensity'' and high-fidelity ''Developer Coverage'' to ensure the high-fidelity ''Contrast Ratio'' is sufficient for human or AI defect detection.'
-    - 'Cleaning_Fidelity_Scan: Monitor the high-fidelity ''Pre-cleaning'' effectiveness to verify that high-fidelity ''Oil'' or ''Scale'' is not masking surface high-fidelity defects.'
-Trust Metrics:
+  description: "[Entity] liquid-penetrant-testing-and-surface-defect-detection-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕵️ Liquid Penetrant Testing and Surface Defect Detection Physics
+# [Entity] liquid-penetrant-testing-and-surface-defect-detection-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 항공기 엔진 날개나 원자력 발전소 배관 표면에 보이지 않는 아주 미세한 금(Crack)이 가 있다면 어떻게 찾아낼까요? **액체 침투 탐상 및 표면 결함 탐지 물리**는 액체가 좁은 틈새를 파고드는 성질(모세관 현상)을 이용해, 숨어있는 결함을 밖으로 '빨아올려' 보여주는 **'결함의 확대경'** 기술입니다. 형광색 액체가 균열 속으로 스며들게 한 뒤, 다시 밖으로 끌어내어 자외선 아래에서 밝게 빛나게 함으로써 재난의 씨앗을 미리 발견합니다. **'워시번 방정식과 모세관 압력의 원리를 이용해 미세 결함에 액체를 강제로 주입하여 육안으로는 불가능한 정밀 검사를 수행하는 지능형 비파괴 검사 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Background Noise - High-fidelity excess penetrant not removed correctly. Unacceptable high-fidelity signal-to-noise ratio"
         return "PASS: Validated Capillary Logic and Verified Inspection Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dwell_time_min=15.0, uv_intensity_uw=1200.0, surface_cleanliness_level=0.95)
 print(engine.diagnose_inspection_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_inspection_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ndt-defect-detection-probability-and-resolution-v2026`와 연동되어, 전 세계 주요 항공 정비창 및 중공업 현장의 실시간 비파괴 검사 데이터를 분석하고 균열 미검출 및 대형 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 안전 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - light-interferometry-and-surface-metrology-physics

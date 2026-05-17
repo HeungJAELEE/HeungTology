@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "laser-welding-metrology-and-fusion-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] laser-welding-metrology-and-fusion-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of measuring the physical dimensions and quality of a laser weld in real-time (Laser Welding Metrology) and the physical logic of controlling the molten pool dynamics and solidification (Fusion Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["laser-welding", "fusion-control", "weld-pool", "metrology", "optical-coherence-tomography", "penetration-depth", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Fusion_Fidelity_Audit: Evaluate the ''Keyhole Stability'' to identify if high-fidelity ''Spatter'' or ''Porosity'' is occurring due to high-fidelity vapor pressure fluctuations.'
-    - 'Metrology_Integrity_Check: Analyze the high-fidelity ''OCT'' (Optical Coherence Tomography) feedback to ensure the high-fidelity ''Weld Depth'' is maintained within sub-millimeter precision.'
-    - 'Solidification_Fidelity_Scan: Monitor the high-fidelity ''Cooling Rate'' to verify that high-fidelity ''Hot Cracking'' risk is minimized via optimal high-fidelity beam modulation.'
-Trust Metrics:
+  description: "[Entity] laser-welding-metrology-and-fusion-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Laser Welding Metrology and Fusion Control Physics
+# [Entity] laser-welding-metrology-and-fusion-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철판을 종이 한 장 두께로 아주 정밀하게 붙여야 할 때, 혹은 전기차 배터리의 얇은 캔을 밀봉해야 할 때, 눈으로 볼 수도 없는 찰나의 순간에 일어나는 용접 과정을 어떻게 통제할 수 있을까요? **레이저 용접 중량 측정 및 용융 제어 물리**는 빛의 칼날로 금속을 녹이는 것을 넘어, 그 깊이와 모양을 실시간으로 감시하고 다스리는 **'빛의 조각'** 기술입니다. 용접 부위에 또 다른 미세한 레이저를 쏘아 깊이를 0.01mm 단위로 측정(OCT)하고, 열의 흐름을 조절하여 불량 없는 완벽한 접합을 구현합니다. **'키홀 역학과 광간섭계 원리를 이용해 금속의 녹는 점을 지능적으로 다스려 초정밀 제조의 신뢰성을 사수하는 지능형 광학 공정 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Hot Cracking Risk - High-fidelity thermal gradient too steep. Internal high-fidelity stress exceeds material limits. Pulse-shape high-fidelity modification required"
         return "PASS: Validated Weld Integrity and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oct_depth_mm=3.5, spatter_count=10, focal_position_mm=0.0)
 print(engine.diagnose_welding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_welding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data laser-welding-penetration-depth-and-bead-width-v2026`와 연동되어, 전 세계 주요 전기차 제조 및 정밀 반도체 장비 조립 라인의 실시간 용접 데이터를 분석하고 미납 및 기공 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 접합 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - laser-diode-and-semiconductor-photonics-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "asynchronous-motor-and-variable-frequency-drive-vfd-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] asynchronous-motor-and-variable-frequency-drive-vfd-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of alternating current (AC) electric motor where the electric current in the rotor needed to produce torque is obtained by electromagnetic induction (Asynchronous Motor) and the electronic device that controls the speed and torque of these motors by varying the frequency and voltage of the input power (VFD Control)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["asynchronous-motor", "vfd", "motor-control", "induction-motor", "inverter", "energy-efficiency", "industrial-automation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Motor_Fidelity_Audit: Evaluate the ''Slip Ratio'' ($s$) under different load conditions to identify rotor degradation or excessive mechanical friction in the motor-load coupling.'
-    - 'VFD_Integrity_Check: Analyze the PWM harmonic distortion (THD) and switching frequency to ensure the inverter is not causing overheating or premature insulation failure in the motor windings.'
-    - 'Efficiency_Fidelity_Scan: Monitor the ''Power Factor'' and real-time energy savings achieved by the VFD compared to traditional across-the-line starting.'
-Trust Metrics:
+  description: "[Entity] asynchronous-motor-and-variable-frequency-drive-vfd-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Asynchronous Motor and Variable Frequency Drive (VFD) Control
+# [Entity] asynchronous-motor-and-variable-frequency-drive-vfd-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 세계 전력의 절반 이상을 누가 쓰는지 아시나요? 바로 공장과 건물의 '모터'들입니다. **비동기 모터 및 VFD 제어**는 기계의 근육인 모터를 가장 영리하게 다스리는 **'에너지의 고삐'** 기술입니다. 과거에는 모터를 무조건 전속력으로 돌리고 밸브로 흐름을 막아 에너지를 낭비했다면, 이제는 VFD라는 인공지능형 지휘자가 필요한 만큼만 전기의 주파수를 조절하여 모터의 속도를 맞춥니다. 전기를 아끼고 기계의 수명을 늘리는 **'지능형 구동의 핵심'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Harmonic Distortion - VFD switching causing electrical noise. Risk of interfering with other sensors or damaging motor insulation"
         return "PASS: Clean Sine-wave Synthesis and Verified Inverter Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(slip_ratio=0.03, vfd_output_frequency=45.0, motor_vibration_mm_s=1.2)
 print(engine.diagnose_motor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_motor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data motor-energy-consumption-and-vfd-efficiency-v2026`와 연동되어, 전 세계 산업용 펌프, 팬, 컨베이어의 가동 데이터를 실시간 분석하고 모터 소손 및 전력 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 구동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - actuator-dynamics-and-precision-servo-control-logic

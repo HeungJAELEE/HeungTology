@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-shipping-lanes-and-unmanned-vessel-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-shipping-lanes-and-unmanned-vessel-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The autonomous operation of cargo vessels and the digital management of ocean shipping lanes, integrating COLREGs-compliant collision avoidance and optimal weather-based routing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["autonomous-shipping", "unmanned-vessel", "maritime-logistics", "vts", "autonomous-navigation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Collision_Avoidance_Audit: Verify compliance with COLREGs (International Regulations for Preventing Collisions at Sea).'
-    - 'Route_Efficiency_Check: Audit fuel consumption vs. optimal weather routing predictions.'
-    - 'Remote_Connectivity_Scan: Monitor satellite link latency and redundancy for unmanned operation.'
-Trust Metrics:
+  description: "[Entity] autonomous-shipping-lanes-and-unmanned-vessel-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Autonomous Shipping Lanes and Unmanned Vessel Control
+# [Entity] autonomous-shipping-lanes-and-unmanned-vessel-control
 
 ## 1. 개요 (Why)
 글로벌 물동량의 90%를 담당하는 해운 산업은 이제 무인화와 자율주행의 시대로 접어들고 있습니다. 자율운항선박은 인적 오류로 인한 사고를 줄이고, 최적의 경로와 속도를 계산하여 연료 소모와 탄소 배출을 획기적으로 낮춥니다. 수천 킬로미터의 대양을 가로지르는 무인 선박은 전 세계 공급망을 더 지능적이고 탄력적으로 만드는 핵심 인프라입니다. 본 노드는 해양 운송의 안전성과 물류 무결성을 사수하기 위한 제어 및 운용 표준을 정의합니다.
@@ -72,7 +61,6 @@ class SafetyFidelityEngine:
             return f"REJECT: Excessive Fuel Consumption ({self.fuel} L/nm) - Re-calculate Weather Route"
         return "PASS: Fuel Efficiency Within Optimal Envelope"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(proximity_nm=1.5, fuel_consumption_rate=45, comm_latency=350)
 print(engine.diagnose_collision_risk())
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_collision_risk())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data autonomous-vessel-navigation-accuracy-and-fuel-savings-v2026`와 연동되어, 전 세계 바다의 기상 상황과 선박 데이터를 실시간 분석하고 해상 사고율을 90% 이상 예방하며 글로벌 물류 효율을 획기적으로 개선합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_supply-chain-management-and-logistics-intelligence-hub
 - marine-radar-and-ais-data-fusion

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Neuromorphic-Computing-and-Bio-AI"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Neuromorphic-Computing-and-Bio-AI]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Neuromorphic-Computing-and-Bio-AI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Neuromorphic-Computing-and-Bio-AI
+# [Strategy] Neuromorphic-Computing-and-Bio-AI
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 컴퓨터가 엄청난 전기를 먹으면서 뜨거워지는 것을 당연하게 생각했습니다. 하지만 우리 뇌는 전구 하나 밝힐 정도의 전력(20W)만 쓰면서도 세상에서 가장 복잡한 생각을 해냅니다. 뉴로모픽 컴퓨팅 및 바이오 AI 지능(Neuromorphic-Computing-and-Bio-AI)은 컴퓨터를 우리 뇌처럼 설계하는 기술입니다. 뇌의 뉴런과 시냅스를 닮은 칩을 만들어, 전기는 쥐꼬리만큼 쓰면서도 로봇이 사람처럼 보고 느끼며 행동하게 만듭니다. 이를 이해하는 것은 에너지 소모 없는 무한한 지능의 시대를 열고, 기계에 생명과 같은 효율성을 부여하는 '인공 지능 아키텍트'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (SNN Inference & Event-based Vision Processing)]
 이벤트 기반 카메라에서 들어오는 신호를 수신하여 물체의 움직임을 실시간 추적하는 논리 구조입니다.
 ```python
-# 신경 지능(ISM) 기반 뉴로모픽 SNN 추론 및 이벤트 처리 논리
 def process_neuromorphic_events(event_stream, snn_hardware):
     # 1. 이벤트 데이터 수집 (Event Ingestion)
     # (x, y) 좌표, 시간(t), 극성(p)으로 구성된 픽셀 변화 이벤트 수신
@@ -96,5 +85,4 @@ def process_neuromorphic_events(event_stream, snn_hardware):
 2. '스파이킹 신경망(SNN)'에서 정보를 '시간(Time)'에 실어 보내는 방식이 '기존 딥러닝(ANN)'의 '값(Value)' 전달 방식과 공학적으로 어떻게 다른가?
 3. '뉴로모픽 컴퓨팅' 기술이 '자율 주행 드론'이나 '웨어러블 의료 기기'와 같은 '에지(Edge)' 환경에서 필수적인 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

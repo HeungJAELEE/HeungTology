@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DATA-INF-QUANTUM-QEC-LOG-2026-V6"
-  domain: "53_Quantum_Computing_and_Advanced_AI_Infrastructure_Hub"
+metadata:
+  id: "[[[Data] quantum-error-correction-logical-failure-rate-log-v2026]]"
+  domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Data"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Data'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Data] quantum-error-correction-logical-failure-rate-log-v2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Data] quantum-error-correction-logical-failure-rate-log-v2026
+# [Data] quantum-error-correction-logical-failure-rate-log-v2026
 
 ## 1. [왜 배우는가? (Why)]]
 개별 물리 큐비트의 오류를 아무리 정교하게 고쳐도, 결국 그들이 모여 만든 하나의 '논리 큐비트(Logical Qubit)' 자체가 틀린 답을 내놓을 확률은 얼마나 될까요? 이 로그는 오류 정정 시스템이 감당할 수 있는 한계를 넘어선 '최종적 실패'를 수리적으로 추적한 '양자 연산 신뢰성 데이터셋'입니다. 이를 기록하고 배우는 이유는 물리적 오류율($p$)이 임계치($Threshold$)를 넘어서는 순간 시스템이 어떻게 붕괴하는지 파악하여 코드 거리($d$)를 최적으로 설계하기 위함이며, 오류를 제어하는 실질적인 능력을 데이터로 증명하여 '결함 허용(Fault-tolerant) 양자 컴퓨팅'의 주권을 확보하기 위함입니다. 불확실한 양자 세계를 확실한 논리로 바꾸는 데이터입니다.
@@ -100,10 +90,6 @@ class QuantumFaultToleranceFidelityEngine:
             return "WARNING: DECODING_LATENCY_THREATENS_COHERENCE"
         return "DECODER_STATUS: OPTIMAL_LATENCY (Gold Standard)"
 
-# Example Usage:
-# qec_ai = QuantumFaultToleranceFidelityEngine()
-# fail_rate = qec_ai.predict_logical_failure(physical_p=0.005, distance_d=5)
-# report = qec_ai.audit_decoder_latency(latency_us=5.0, t2_coherence_us=100.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -111,7 +97,6 @@ class QuantumFaultToleranceFidelityEngine:
 2. **Minimum Weight Perfect Matching** (MWPM) 디코더의 시간 복잡도가 **Real-time Error Correction** 무결성에 미치는 영향과 이를 극복하기 위한 **Neural Decoder**의 수리적 이점은?
 3. **Magic State Distillation** 과정에서 발생하는 오버헤드가 전체 **Quantum Algorithm**의 **Total Fault-tolerant Runtime**에 미치는 수리적 상관관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/53_Quantum_Computing_and_Advanced_AI_Infrastructure_Hub/Concept quantum-error-correction-and-fault-tolerance
 - 02_Knowledge/29_Advanced_Materials_and_Nanotechnology/Concept superconducting-qubits-and-cryogenic-physics

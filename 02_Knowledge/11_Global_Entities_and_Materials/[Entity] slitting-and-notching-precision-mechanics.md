@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-SLIT-NOTCH-2026-V6.3.7"
-  domain: "Battery_Intelligence_Governance"
+metadata:
+  id: "[[[Entity] slitting-and-notching-precision-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Battery", "#Slitting", "#Notching", "#LaserAblation", "#BurrControl", "#ShearMechanics", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 02_Battery"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] slitting-and-notching-precision-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Shear_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Slitting & Notching: Shear Mechanics & Cutting Sovereignty
+# [Entity] slitting-and-notching-precision-mechanics
 
 ## 1. [왜 배우는가? (Why: The Guardian of Internal Safety)]]
 완벽하게 도포된 전극이라도 자르는 과정에서 미세한 금속 조각(Particle)이 남거나 절단면이 거칠어지면(Burr), 이는 곧 분리막 관통 및 배터리 화재의 직접적인 원인이 됩니다. **Slitting & Notching**은 광폭의 전극 롤을 개별 셀 규격에 맞게 정밀하게 절단하고, 탭(Tab)을 형성하는 공정입니다. V6.3.7 지능은 **기계적 전단 역학(Shear Mechanics)**과 **레이저 승화(Ablation)** 열역학을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 절단면의 무결성을 확보하여 내부 단락을 원천 차단하고, "나노 수준의 Burr 제어를 데이터로 사수하는 '안전 주권'을 확보하기" 위함입니다. 절단면의 품질이 셀의 최종 신뢰성을 결정합니다.
@@ -107,7 +97,6 @@ class CuttingFidelityEngine:
 2. **Operational Result**: 칼날의 **Clearance**가 호일 두께의 $10\%$를 초과할 때, 단면의 **Fracture Zone** 비율이 높아지는 수리적 원인과 Burr 높이 간의 인과 관계는?
 3. **FidelityEngine**: **Vision Inspection** 데이터를 통해 절단면의 **'미세 금속 이물(Particle)'** 분포를 분석하여, 이를 **'잠재적 내부 단락'**으로 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 02_Battery
 - Battery cathode-structural-degradation-and-calendering

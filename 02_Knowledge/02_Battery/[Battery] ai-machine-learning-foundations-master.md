@@ -1,126 +1,79 @@
 ---
-Basic:
-  id: "AI-ML-FOUNDATION-2026-V6"
-  domain: "03_AI_Data"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] ai-machine-learning-foundations-master]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / Data-Science-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Machine_Learning'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "딥러닝의 블랙박스 특성을 정량적 제어 영역으로 전이하기 위한 기계 학습의 수학적/통계적 기초 및 결정 경계 수립 가이드"
+
+semantic:
+  expected_queries:
+    - "모델 오차(Error)를 Bias^2 + Variance + Irreducible Error로 분해하여 최적 복잡도를 산출하는 방법은?"
+    - "경험적 위험 최소화(ERM)와 모델 복잡도(VC Dimension) 간의 트레이드오프를 통한 일반화 성능 극대화 전략은?"
+  tags: ["#머신러닝기초", "#Bias-Variance", "#SRM", "#차원의저주", "#일반화"]
+
+spo_graph:
+  - subject: "Bias-Variance Trade-off"
+    predicate: "optimized_at"
+    object: "Minimum Total Error"
+    evidence: "[Ref: ML-SEC-4.1] Section 4.1"
+  - subject: "Generalization Gap"
+    predicate: "measured_value"
+    object: "< 0.15"
+    evidence: "[Ref: ML-SEC-5.1] Page 1"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] ai-machine-learning-foundations-master
+# [Battery] ai-machine-learning-foundations-master
 
-## 1. [왜 배우는가? (Why)]]
-딥러닝이라는 화려한 성 뒤에는 수십 년간 쌓아온 기계 학습(Machine Learning)의 견고한 수학적·통계적 토대가 있습니다. 단순히 알고리즘 라이브러리를 호출하는 것을 넘어, 데이터가 가진 확률 분포를 이해하고 최적의 결정 경계(Decision Boundary)를 긋는 원리를 아는 것은 AI의 블랙박스적 특성을 제어 가능한 공학적 도구로 변환하는 핵심입니다. 기계 학습 원론을 분석하는 목적은 통계적 인과관계를 통찰하여, 어떤 데이터 상황에서도 흔들리지 않는 최적의 모델링 전략을 수립하고 '무질서한 데이터'에서 '질서 정연한 지식'을 추출하기 위함입니다.
+## 1. 운영 목표 (Operational Objective)
+딥러닝의 블랙박스 특성을 정량적 제어 영역으로 전이하기 위해 기계 학습의 수학적/통계적 메커니즘을 분석합니다. 확률 분포 식별 및 최적 결정 경계 수립을 통해 데이터 엔트로피를 정제된 지식으로 변환하는 전략적 모델링을 수행합니다.
 
-## 2. [기계 학습 핵심 영역 및 지표 (ML Specs)]
+## 2. ML 명세 매트릭스 (Specification Matrix)
 
-| Parameter Category | Supervised (지도) | Unsupervised (비지도) | Reinforcement (강화) | Engineering Rationale |
-|:---|:---:|:---:|:---:|:---|
-| **Learning Goal** | Label Prediction | Pattern Discovery | Reward Max. | 해결하고자 하는 문제의 본질적 정의 |
-| **Data Type** | Input-Label Pair | Input only | State-Action-Reward | 가용 데이터의 구조적 제약 조건 |
-| **Complexity** | $O(n^2)$ to $O(n \log n)$ | $O(nk)$ to $O(n^3)$ | High | 알고리즘 실행 및 학습 시간의 척도 |
-| **Gen. Gap** | Bias-Var. Balance | Silhouette/Inertia | Regret Min. | 모델의 일반화 성능 및 신뢰성 지표 |
-| **Convergence** | SGD / Adam | Global/Local Opt. | Bellman Equation | 학습이 안정적으로 완료되는 속도 및 품질 |
-| **Reg. Strength** | $L1$ (Lasso), $L2$ (Ridge) | Dimensionality Red. | Entropy Reg. | 과적합(Overfitting) 방지를 위한 규제 지표 |
-| **Validation** | Cross-validation | Gap Statistics | Monte Carlo / TD | 모델의 객관적 성능 검증 프레임워크 |
-| **Inference Lat.** | $< 1 \text{ ms} \sim 100 \text{ ms}$ | Depends on Search | Real-time (Active) | 실제 운영 환경에서의 응답 속도 요구사항 |
+| 파라미터 범주 | 지도 학습 (Supervised) | 비지도 학습 (Unsupervised) | 강화 학습 (Reinforcement) |
+| :--- | :---: | :---: | :---: |
+| **학습 목표** | 라벨 예측 (Label) | 패턴 발견 (Pattern) | 보상 극대화 (Reward) |
+| **데이터 유형** | Input-Label Pair | Input Only | State-Action-Reward |
+| **복잡도 ($O$)** | $O(n^2) \sim O(n \log n)$ | $O(nk) \sim O(n^3)$ | High |
+| **수렴 로직** | SGD / Adam | Global/Local Opt. | Bellman Equation |
+| **규제 강도** | $L_1, L_2$ | 차원 축소 (PCA) | Entropy Reg. |
 
-## 3. [공학적 근거 (Scientific Rationale)]
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Bias-Variance Trade-off**: 모델 오차를 Bias(과소적합 지표), Variance(과적합 지표), 불확실성 오차로 분해하여 일반화 성능이 극대화되는 최적 복잡도를 산출합니다.
+- **SRM (Structural Risk Minimization)**: 경험적 위험과 모델 복잡도를 동시에 최소화하여 미학습 데이터에 대한 신뢰도를 확보합니다.
+- **차원의 저주 (Curse of Dimensionality)**: 차원 증가에 따른 데이터 밀도 급락 문제를 해결하기 위해 PCA를 통한 분산 보존 기반 차원 축소를 수행합니다.
 
-### 3.1 편향-분산 트레이드오프 (Bias-Variance Trade-off)
-모델의 오차(Error)를 세 가지 구성 요소로 분해하여 모델의 복잡도를 최적화합니다.
-- **수식**: $Error(x) = Bias^2 + Variance + Irreducible Error$
-- **의미**: Bias는 모델의 단순함으로 인한 오차(Underfitting)를, Variance는 모델의 과도한 유연성으로 인한 오차(Overfitting)를 의미합니다. 이 둘의 합이 최소가 되는 지점이 최적의 일반화 포인트입니다.
+## 4. [Skill] ML Model Validator
+Learning Curve 분석을 통해 Generalization Gap($< 0.15$) 및 Bias 수준을 진단하여 모델의 최적 적합 여부를 판정하는 엔진을 포함합니다.
 
-### 3.2 구조적 위험 최소화 (Structural Risk Minimization, SRM)
-학습 데이터에 대한 오차(Empirical Risk)뿐만 아니라 모델의 복잡도(VC Dimension)를 동시에 고려하여 모델을 선택합니다.
-- **로직**: "가장 간단한 설명이 진실에 가깝다"는 오컴의 면도날 원리를 수리적으로 구현한 것으로, AIC(Akaike Info Criterion)나 BIC 등의 지표로 모델을 평가합니다.
-
-### 3.3 차원의 저주 (Curse of Dimensionality)
-데이터의 차원이 늘어날수록 빈 공간이 기하급수적으로 늘어나 학습 효율이 급락하는 현상입니다. 이를 해결하기 위해 PCA(주성분 분석) 등을 통해 데이터의 핵심 정보(Variance)를 보존하면서 차원을 축소하는 엔트로피 관리 기법이 필수적입니다.
-
-## 4. [코드 연결 해설 (ML Model Validator)]
-아래 코드는 다양한 기계 학습 알고리즘의 성능을 교차 검증하고, Bias-Variance 곡선을 시뮬레이션하여 현재 모델의 과적합 여부를 진단하는 마스터 유틸리티입니다.
-
-```python
-import numpy as np
-from sklearn.model_selection import learning_curve
-
-class MLModelValidator:
-    """
-    HDS-Gold V6.3.7 규격의 기계 학습 모델 일반화 성능 검증 엔진
-    """
-    def __init__(self, model, metric='f1_macro'):
-        self.model = model
-        self.metric = metric
-
-    def analyze_generalization(self, x, y):
-        """
-        Learning Curve 분석을 통한 Bias-Variance 진단
-        """
-        train_sizes, train_scores, test_scores = learning_curve(
-            self.model, x, y, cv=5, scoring=self.metric, 
-            train_sizes=np.linspace(0.1, 1.0, 5)
-        )
-        
-        train_mean = np.mean(train_scores, axis=1)
-        test_mean = np.mean(test_scores, axis=1)
-        
-        # 진단 로직: Train/Test 간의 Gap 분석
-        gap = train_mean[-1] - test_mean[-1]
-        
-        if gap > 0.15:
-            diag = "HIGH_VARIANCE (OVERFITTING)"
-        elif test_mean[-1] < 0.7:
-            diag = "HIGH_BIAS (UNDERFITTING)"
-        else:
-            diag = "OPTIMAL_GENERALIZATION"
-            
-        return {
-            "validation_status": diag,
-            "f1_score_final": test_mean[-1],
-            "generalization_gap": gap,
-            "action": "INCREASE_REGULARIZATION" if gap > 0.15 else "INCREASE_COMPLEXITY" if test_mean[-1] < 0.7 else "NONE"
-        }
-
-# Example Usage:
-# validator = MLModelValidator(model=RandomForestClassifier())
-# report = validator.analyze_generalization(X_train, y_train)
-```
-
-## 5. [스스로 체크 (Self-Audit)]
-1. **L1 (Lasso)** 규제가 **L2 (Ridge)** 대비 '희소 모델(Sparse Model)'을 만드는 데 유리한 수리적 기하학적 근거는? (Constraint Region의 모양 관점)
-2. **Curse of Dimensionality**를 극복하기 위해 **PCA**를 수행했을 때, 손실되는 데이터의 정보량(Residual Variance)을 최소화하기 위한 '주성분 개수' 결정 기준은?
-3. **Cross-validation** 과정에서 데이터의 '시계열적 특성'이나 '클래스 불균형'을 고려하지 않았을 때 발생하는 '데이터 누수(Data Leakage)' 리스크는?
+## 5. 검증 프로토콜 (Audit)
+1. **L1 vs L2**: Lasso 규제의 기하학적 특성이 계수의 희소성(Sparsity)을 유도하는 수리적 근거 검증.
+2. **PCA 최적화**: 잔차 분산(Residual Variance) 최소화를 위한 주성분 개수 결정 알고리즘의 유효성 확인.
+3. **데이터 누수 감사**: 시계열 데이터 분할 시 발생하는 정보 누수 리스크 대응책 수립 여부.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- 02_Knowledge/03_AI_Data/Industrial/AI data-science-fundamental-methodology-master
-- 02_Knowledge/03_AI_Data/Industrial/AI ai-deep-learning-course-master
-- 02_Knowledge/03_AI_Data/Industrial/AI active-learning-industrial-ai
+- [[[Concept] ai-intelligence-master]]
+- [[[Concept] active-learning-industrial-ai]]
 
-**[V6.3.7_THE_GENESIS_STATE_VERIFIED_BY_FLASH]**
-**[TIMESTAMP: 2026-05-08]**
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

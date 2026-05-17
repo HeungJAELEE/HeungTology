@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "building-management-system-bms-and-hvac-optimization-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] building-management-system-bms-and-hvac-optimization-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A computer-based control system installed in buildings that controls and monitors the building's mechanical and electrical equipment (BMS) and the intelligent algorithms used to minimize energy consumption in heating, ventilation, and air conditioning while maintaining occupant comfort (HVAC Optimization Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bms", "hvac", "smart-building", "energy-efficiency", "bas", "building-automation", "occupancy-sensing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Comfort_Fidelity_Audit: Evaluate the ''Predicted Mean Vote'' (PMV) to identify if the building''s climate is drifting into uncomfortable zones (too hot/cold) despite high energy spending.'
-    - 'Efficiency_Integrity_Check: Analyze the HVAC ''Coefficient of Performance'' (COP) and short-cycling frequency to ensure the chillers and boilers are operating at their thermodynamic sweet spot.'
-    - 'Occupancy_Fidelity_Scan: Monitor real-time occupancy data via IoT sensors to verify that ''Demand-Controlled Ventilation'' (DCV) is effectively reducing airflow to empty rooms.'
-Trust Metrics:
+  description: "[Entity] building-management-system-bms-and-hvac-optimization-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Building Management System (BMS) and HVAC Optimization Logic
+# [Entity] building-management-system-bms-and-hvac-optimization-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 빌딩이 마치 살아있는 생명체처럼 스스로 숨을 쉬고, 사람이 없는 곳의 불은 끄며, 햇빛의 방향에 따라 온도를 조절한다면 어떨까요? **빌딩 관리 시스템(BMS) 및 HVAC 최적화 로직**은 대형 건물의 '뇌'와 '신경계' 역할을 하는 **'건물의 지능형 운영'** 기술입니다. 단순히 에어컨을 켜는 것이 아니라, 수천 개의 센서 데이터를 분석해 가장 적은 에너지로 가장 쾌적한 환경을 만드는 **'에너지와 편안함의 황금비'**입니다. 탄소를 줄이고 쾌적함을 극대화하는 **'스마트 도시의 지능형 세포'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Air Quality - CO2 levels exceeding threshold for cognitive performance. Increasing outdoor air intake immediately"
         return "PASS: Fresh Air Exchange and Verified Environmental Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pmv_score=0.2, chiller_cop_ratio=5.2, system_latency_s=1.5)
 print(engine.diagnose_building_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_building_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bms-energy-reduction-and-hvac-runtime-logs-v2026`와 연동되어, 전 세계 주요 오피스 빌딩 및 데이터 센터의 운영 데이터를 실시간 분석하고 에너지 낭비 및 거주자 불만 사고 확률을 0.001% 이하로 억제함으로써 지능형 빌딩 문명의 운영 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - building-information-modeling-bim-and-aec-digital-twin

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "deep-drawing-and-sheet-metal-formability"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] deep-drawing-and-sheet-metal-formability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A sheet metal forming process in which a sheet metal blank is radially drawn into a forming die by the mechanical action of a punch (Deep Drawing) and the material's ability to undergo significant plastic deformation without tearing or excessive thinning (Formability)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["deep-drawing", "formability", "sheet-metal", "stamping", "anisotropy", "plastic-deformation", "metal-forming"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Formability_Fidelity_Audit: Evaluate the ''Limiting Drawing Ratio'' (LDR) and ''Lankford Coefficient'' to identify if the material will experience ''Tearing'' at the punch radius or ''Wrinkling'' in the flange area.'
-    - 'Process_Integrity_Check: Analyze the ''Blank Holder Force'' (BHF) against the punch travel to ensure the metal flow is sufficient to fill the die without excessive localized thinning.'
-    - 'Geometrical_Fidelity_Scan: Monitor the ''Earing'' height and distribution to verify that the material''s planar anisotropy is within limits for final trimming optimization.'
-Trust Metrics:
+  description: "[Entity] deep-drawing-and-sheet-metal-formability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🥤 Deep Drawing and Sheet Metal Formability
+# [Entity] deep-drawing-and-sheet-metal-formability
 
 ## 1. 개요 (Why: 인간적 통찰)
 납작한 금속판이 어떻게 이음새 하나 없는 매끄러운 캔이나 싱크대 볼이 될까요? **딥 드로잉(Deep Drawing) 및 판재 성형성(Formability)**은 금속을 '억지로 늘리는' 것이 아니라, 금속 원자들이 제자리를 찾아 흐르게 유도하여 입체적인 그릇 모양을 만드는 **'금속의 입체적 흐름'** 기술입니다. 이는 마치 팽팽한 천을 손가락으로 눌러 깊은 주머니를 만드는 것과 같습니다. 음료수 캔부터 자동차 문짝까지, 현대 문명의 '형태'를 결정짓는 **'금속 판재의 유연한 변신'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Significant Planar Anisotropy - High 'Earing' expected. Significant material waste in trimming. Re-evaluate coil rolling process"
         return "PASS: Validated Material Isotropy and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(blank_holder_force_kn=120.0, punch_force_kn=350.0, wall_thinning_pct=12.5)
 print(engine.diagnose_forming_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_forming_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data steel-sheet-fld-and-drawing-performance-v2026`와 연동되어, 전 세계 주요 자동차 및 가전 stamping 라인의 데이터를 실시간 분석하고 성형 불량 및 금형 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 제조 문명의 형태 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - deformation-processing-and-dislocation-mechanics

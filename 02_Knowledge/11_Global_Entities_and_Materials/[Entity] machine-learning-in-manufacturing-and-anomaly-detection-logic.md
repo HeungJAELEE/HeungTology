@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "machine-learning-in-manufacturing-and-anomaly-detection-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] machine-learning-in-manufacturing-and-anomaly-detection-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of algorithms and statistical models to enable computer systems in manufacturing to improve their performance through experience (Machine Learning) and the physical logic of identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data (Anomaly Detection Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["machine-learning", "manufacturing", "anomaly-detection", "predictive-maintenance", "data-science", "unsupervised-learning", "industrial-ai", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Model_Fidelity_Audit: Evaluate the ''Reconstruction Error'' to identify if high-fidelity ''Concept Drift'' is making the high-fidelity AI model obsolete for the current high-fidelity process state.'
-    - 'Detection_Integrity_Check: Analyze the high-fidelity ''Precision'' and ''Recall'' to ensure the high-fidelity ''False Alarms'' are minimized while capturing all high-fidelity ''Critical Anomalies''.'
-    - 'Feature_Fidelity_Scan: Monitor the ''SHAP Values'' (Explainable AI) to verify which high-fidelity physical sensor is the primary driver for the high-fidelity anomaly prediction.'
-Trust Metrics:
+  description: "[Entity] machine-learning-in-manufacturing-and-anomaly-detection-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Machine Learning in Manufacturing and Anomaly Detection Logic
+# [Entity] machine-learning-in-manufacturing-and-anomaly-detection-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 수천 개 센서 데이터 중에서 "곧 고장이 날 것 같다"는 아주 미세하고 기분 나쁜 징조를 어떻게 미리 알아낼 수 있을까요? **제조업에서의 머신러닝 및 이상 탐지 로직**은 사람이 일일이 감시하기 힘든 거대한 데이터의 바다에서, 평소와 다른 '미세한 엇박자'를 찾아내는 **'디지털 감지견'** 기술입니다. 데이터가 가르쳐주는 과거의 패턴을 학습하여, 한 번도 본 적 없는 새로운 형태의 고장이나 불량까지도 "이건 좀 이상한데?"라고 짖어줍니다. **'오토인코더와 확률적 탐지의 원리를 이용해 데이터의 불협화음을 읽어내어 제조의 평온함을 사수하는 지능형 예측 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Model Jitter - High-fidelity false alarm rate too high. Operator high-fidelity trust declining. Adjust high-fidelity anomaly thresholds"
         return "PASS: Validated Industrial AI Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(recon_error_score=0.05, shap_feature_importance=["Bearing_Vibe_Z"], model_drift_index=0.01)
 print(engine.diagnose_ai_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ai_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-ai-model-accuracy-and-fault-detection-v2026`와 연동되어, 전 세계 주요 반도체 팹 및 스마트 팩토리의 실시간 AI 데이터를 분석하고 예측 실패 및 불필요한 가동 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 의사결정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - manufacturing-execution-system-mes-and-shop-floor-logic

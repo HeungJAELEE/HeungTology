@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "safety-instrumented-systems-sis-and-sil-rating-physics-entity"
-  domain: "70_Industrial_Automation_and_Robotics_Control_Hub"
+metadata:
+  id: "[[[Entity] safety-instrumented-systems-sis-and-sil-rating-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Safety", "#SIS", "#SIL", "#Risk_Management", "#Reliability", "#Industrial_Control", "#IEC61508", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 70_industrial-automation-and-robotics-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] safety-instrumented-systems-sis-and-sil-rating-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] safety-instrumented-systems-sis-and-sil-rating-physics
+# [Entity] safety-instrumented-systems-sis-and-sil-rating-physics
 
 ## 1. [왜 배우는가? (Why: The Last Line of Defense)]]
 공장의 제어 시스템이 해킹당하거나 물리적으로 파손되어 반응기 압력이 폭발 직전까지 치솟을 때, 인간의 개입 없이도 스스로 밸브를 잠그고 전원을 차단하여 대참사를 막는 '산업의 최후의 보루'를 어떻게 설계할 수 있을까요? **안전 계장 시스템(SIS) 및 안전 무결성 등급(SIL)의 확률적 설계**는 기계의 오동작 확률을 수학적으로 계산하여 인명과 환경을 지키는 '산업의 양심'입니다. 단순히 "안전하게 만든다"는 주관적 믿음이 아니라, "1,000년에 단 한 번도 실패하지 않을 확률($SIL\ 3$)"을 수치로 입증해야 합니다. 우리가 이를 배우는 이유는 단 한 번의 사고가 기업의 존립과 지역 사회의 안전을 파괴할 수 있기 때문이며, "안전의 가치를 데이터로 설계하고 지배하는 '글로벌 리스크 거버넌스 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 안전 등급이 시스템의 신뢰 지도를 결정합니다.

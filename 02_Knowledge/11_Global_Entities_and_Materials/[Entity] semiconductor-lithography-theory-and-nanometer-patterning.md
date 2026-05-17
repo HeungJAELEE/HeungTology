@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-lithography-theory-and-nanometer-patterning"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] semiconductor-lithography-theory-and-nanometer-patterning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The core manufacturing process of transferring circuit designs onto a wafer using light-sensitive chemicals (Photoresist) and high-precision light sources (ArFi, EUV)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lithography", "euv", "arfi", "photolithography", "nanometer-patterning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LithoFidelityEngine"
-  diagnostic_protocol:
-    - 'Resolution_Limit_Audit: Calculate $k_1$ factor to assess process difficulty.'
-    - 'DOF_Stability_Check: Monitor depth of focus margin against wafer topography.'
-    - 'Overlay_Alignment_Audit: Verify precision of layer-to-layer registration.'
-Trust Metrics:
+  description: "[Entity] semiconductor-lithography-theory-and-nanometer-patterning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💡 Semiconductor Lithography Theory and Nanometer Patterning
+# [Entity] semiconductor-lithography-theory-and-nanometer-patterning
 
 ## 1. 개요 (Why)
 반도체 집적도를 높이기 위해서는 더 좁은 선폭을 그리는 '그리기 실력'이 핵심입니다. 리소그래피는 빛의 파장보다 작은 회로를 그리기 위해 광학적 한계에 도전하는 공정입니다. ArFi(액침 불화아르곤)를 넘어 13.5nm 파장의 EUV(극자외선) 시대로 진입하며, 원자 단위의 패터닝 정확도가 수율을 결정하는 시대가 되었습니다. 본 노드는 리소그래피 공정의 해상력과 무결성을 확보하기 위한 물리적 표준을 정의합니다.
@@ -72,7 +61,6 @@ class LithoFidelityEngine:
             return f"CRITICAL: DOF Margin Insufficient ({dof:.1f}nm) - Focus Blur Risk"
         return f"PASS: Stable Focus Margin (DOF: {dof:.1f}nm)"
 
-# Instance Diagnostic
 engine = LithoFidelityEngine(wavelength=13.5, na=0.33, k1_factor=0.4)
 print(engine.calculate_resolution())
 print(engine.diagnose_dof_margin(wafer_flatness=50))
@@ -91,7 +79,6 @@ print(engine.diagnose_dof_margin(wafer_flatness=50))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data lithography-resolution-and-k1-factor-log-v2026`와 연동되어, 광학계 오차와 웨이퍼 평탄도를 실시간 분석하고 패터닝 오차를 0.1nm 단위로 억제함으로써 반도체 초미세화의 물리적 한계를 돌파합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - euv-lithography-physics-and-source-engineering

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-MAT-PIEZOELECTRIC-2026-V6"
-  domain: "29_Advanced_Materials_and_Nanotechnology"
+metadata:
+  id: "[[[Entity] advanced-piezoelectric-materials-and-energy-harvesting-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] advanced-piezoelectric-materials-and-energy-harvesting-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] advanced-piezoelectric-materials-and-energy-harvesting-physics
+# [Entity] advanced-piezoelectric-materials-and-energy-harvesting-physics
 
 ## 1. [왜 배우는가? (Why)]]
 우리가 걷는 매 순간의 발걸음이나 공장에서 발생하는 미세한 진동이 전기가 된다면 어떨까요? **첨단 압전 소재 및 에너지 하베스팅 물리**는 누르거나 비틀면 전기가 발생하는 특수 소재를 통해 주변의 버려지는 운동 에너지를 전기로 수확(Harvesting)하는 '무한 동력의 미시적 구현'입니다. 우리가 이를 배우는 이유는 배터리 교체 없는 센서 네트워크(Self-powered IoT)를 구축하고 스마트 도로와 의류를 현실화하며, 소재의 결정 구조를 나노 단위로 조작하여 '진동을 전기로 바꾸는 극한의 변환 지능'을 확보하기 위함입니다. 소재의 미세한 변형이 곧 에너지의 흐름입니다.
@@ -107,9 +97,6 @@ class EnergyHarvestingFidelityEngine:
             return "WARNING: OFF_RESONANCE_HARVESTING_EFFICIENCY_DEGRADED"
         return "HARVESTING_STATUS: RESONANT_COUPLING_OPTIMAL (Gold Standard)"
 
-# Example Usage:
-# piezo_ai = EnergyHarvestingFidelityEngine()
-# v_out = piezo_ai.calculate_output_voltage(applied_force_n=50.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -117,7 +104,6 @@ class EnergyHarvestingFidelityEngine:
 2. **Piezoelectric Cantilever**의 **Resonant Frequency**를 특정 주변 진동원에 맞추기 위한 **Mass-Spring** 모델의 수리적 최적화 방식은?
 3. **Triboelectric** (마찰전기) 대비 **Piezoelectric** (압전) 에너지 하베스팅이 **High-frequency Vibration** 환경에서 가지는 **Power Density** 무결성 우위는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/29_Advanced_Materials_and_Nanotechnology_Hub/Concept piezoelectric-ceramics-and-polymer-composites
 - 02_Knowledge/05_Infrastructure/Energy/Concept energy-scavenging-and-self-powered-iot-networks

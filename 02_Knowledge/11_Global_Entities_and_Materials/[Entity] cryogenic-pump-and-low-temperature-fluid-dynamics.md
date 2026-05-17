@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cryogenic-pump-and-low-temperature-fluid-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cryogenic-pump-and-low-temperature-fluid-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized pump designed to handle liquid gases at extremely low temperatures without causing vaporization (Cryogenic Pump) and the study of fluid behavior in these conditions, focusing on the prevention of cavitation and the management of extreme thermal contraction (Low-Temperature Fluid Dynamics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cryogenic-pump", "low-temperature", "fluid-dynamics", "liquid-nitrogen", "lng", "npsh", "mechanical-seal"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cavitation_Fidelity_Audit: Evaluate the ''NPSH Margin'' against the liquid temperature to identify if ''Flash Evaporation'' is occurring in the impeller eye, leading to rapid erosion and flow loss.'
-    - 'Seal_Integrity_Check: Analyze the ''Gas Barrier'' pressure and leakage rate to ensure the mechanical seal is not frozen or cracked by the extreme $\\Delta T$ between the process and ambient environment.'
-    - 'Mechanical_Fidelity_Scan: Monitor the motor current and vibration for signs of ''Bearing Freeze'' or misalignment caused by non-uniform thermal contraction of the pump casing.'
-Trust Metrics:
+  description: "[Entity] cryogenic-pump-and-low-temperature-fluid-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Cryogenic Pump and Low-Temperature Fluid Dynamics
+# [Entity] cryogenic-pump-and-low-temperature-fluid-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 영하 190도의 액체 질소나 액체 산소를 뿜어낼 때, 왜 일반 펌프를 쓰면 안 될까요? **저온 펌프(Cryogenic Pump) 및 극저온 유체 역학**은 '얼어붙는 것'과의 처절한 싸움 속에서 액체를 옮기는 **'극한의 이송'** 기술입니다. 이 액체들은 조금만 온도가 올라가도 기체로 변해 펌프를 멈추게(Cavitation) 합니다. 펌프 스스로가 얼음 덩어리가 되면서도, 내부의 회전체는 0.001mm의 오차도 없이 돌아야 하는 **'극한 환경의 정밀 기계 공학'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Seal Barrier Failure - Nitrogen/Argon seal gas leaking excessively. High risk of process liquid escaping and freezing external parts"
         return "PASS: Validated Pressure Barrier and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(suction_pressure_bar=2.5, liquid_temp_c=-195.0, motor_vibration_mm_s=1.5)
 print(engine.diagnose_pump_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_pump_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cryogenic-pump-performance-and-seal-life-v2026`와 연동되어, 전 세계 주요 LNG 터미널 및 가스 분리 플랜트의 펌프 데이터를 실시간 분석하고 가스 누출 및 설비 동결 사고 확률을 0.0001% 이하로 억제함으로써 지능형 에너지 문명의 액체 이송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cavitating-pump-and-npsh-optimization-logic

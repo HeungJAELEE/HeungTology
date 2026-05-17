@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hard-rock-mining-and-geotechnical-stability-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hard-rock-mining-and-geotechnical-stability-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of extracting ores and minerals from igneous, metamorphic, and sedimentary rocks (Hard Rock Mining) and the physical study of rock mass strength, stress distribution, and support integrity (Geotechnical Stability Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mining", "hard-rock", "geotechnical", "rock-mechanics", "stability", "tunnelling", "blasting", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stability_Fidelity_Audit: Evaluate the ''Factor of Safety'' (FoS) against the high-fidelity ''Stress Redistribution'' to identify if the current excavation span is approaching the high-fidelity ''Rockburst'' threshold.'
-    - 'Support_Integrity_Check: Analyze the high-fidelity ''Bolt Tension'' and ''Shotcrete Strain'' to ensure the active support system is effectively confining the high-fidelity rock mass deformation.'
-    - 'Seismic_Fidelity_Scan: Monitor the micro-seismic event rate and magnitude to verify that the high-fidelity ''Energy Release Rate'' (ERR) is within safe mining operational limits.'
-Trust Metrics:
+  description: "[Entity] hard-rock-mining-and-geotechnical-stability-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛏️ Hard Rock Mining and Geotechnical Stability Physics
+# [Entity] hard-rock-mining-and-geotechnical-stability-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천 톤의 암석이 머리 위에 떠 있는 지하 깊은 곳에서, 터널이 무너지지 않게 지탱하는 비결은 무엇일까요? **경암 채광 및 지반 공학적 안정성 물리**는 지구의 거대한 압력을 이겨내고 보석과 금속을 캐내기 위해, 암석이 가진 '버티는 힘'을 수학적으로 계산하는 **'지구와의 힘겨루기'** 기술입니다. 암석은 보기엔 단단하지만, 틈(절리)이 생기면 순식간에 붕괴할 수 있는 '잠자는 거인'과 같습니다. **'암반의 성격과 스트레스를 분석하여 인간이 안전하게 지구의 내부로 들어갈 수 있도록 지지하는 지질학적 안전 요새'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Blast Vibration - Peak Particle Velocity (PPV) risking structural damage to nearby high-fidelity shafts. Optimize delay timing and charge weight"
         return "PASS: Validated Controlled Fragmentation and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(microseismic_event_rate=5, rockbolt_tension_kn=120.0, convergence_rate_mm_day=0.5)
 print(engine.diagnose_geotechnical_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_geotechnical_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data rock-mass-quality-and-support-pressure-v2026`와 연동되어, 전 세계 주요 대심도 광산 및 지하 연구소의 데이터를 실시간 분석하고 낙반 및 암반 파열 사고 확률을 0.001% 이하로 억제함으로써 지능형 지하 개척 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - geothermal-energy-and-subsurface-heat-exchange-physics

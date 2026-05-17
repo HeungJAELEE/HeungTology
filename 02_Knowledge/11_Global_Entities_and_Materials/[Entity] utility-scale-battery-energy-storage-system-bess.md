@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "utility-scale-battery-energy-storage-system-bess"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] utility-scale-battery-energy-storage-system-bess]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A complex of modular battery units combined with power electronics and control systems, designed to store electrical energy on a massive scale for grid stability (Utility-Scale BESS) and the orchestration of these assets to balance intermittent renewable energy supply."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bess", "energy-storage", "grid-storage", "lithium-ion", "lfp", "ancillary-services", "power-grid"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Storage_Fidelity_Audit: Evaluate the State of Health (SoH) and internal resistance of the battery clusters to identify aging modules that degrade the overall ''Round-Trip Efficiency''.'
-    - 'Thermal_Integrity_Check: Analyze the cell-to-cell temperature variance within the container to ensure the Liquid Cooling system is preventing ''Hotspots'' that could lead to thermal runaway.'
-    - 'Response_Agility_Scan: Monitor the millisecond-scale response time to grid frequency deviations (Fast Frequency Response) to verify the BESS''s role as a ''Virtual Synchronous Generator''.'
-Trust Metrics:
+  description: "[Entity] utility-scale-battery-energy-storage-system-bess에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Utility-Scale Battery Energy Storage System (BESS)
+# [Entity] utility-scale-battery-energy-storage-system-bess
 
 ## 1. 개요 (Why: 인간적 통찰)
 바람이 멈추거나 해가 저물었을 때, 재생 에너지가 만들던 전기가 갑자기 끊기면 전력망은 어떻게 될까요? **유틸리티급 배터리 에너지 저장 장치(BESS)**는 도시 전체가 쓸 수 있는 전기를 거대한 컨테이너 수백 개에 담아두는 **'전력망의 거대한 보조 배터리'**입니다. 전기가 남을 때 꽉 채워두었다가, 전력이 부족한 순간 0.1초 만에 쏟아부어 전력망의 붕괴를 막습니다. 재생 에너지를 '변덕스러운 에너지'에서 '믿을 수 있는 에너지'로 바꾸는 **'에너지 문명의 완충기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Slow Power Ramp - Fails to meet Fast Frequency Response (FFR) grid requirements. Update inverter firmware"
         return "PASS: Millisecond Dispatch Capability and Verified Grid-Support Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(state_of_health_pct=95.0, max_cell_temp_c=32.0, insulation_resistance_mohm=500.0)
 print(engine.diagnose_bess_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bess_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bess-cycle-degradation-and-thermal-runaway-logs-v2026`와 연동되어, 전 세계 메가팩 및 거대 배터리 단지의 데이터를 실시간 분석하고 화재 및 계통 탈조 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 저장 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - lithium-ion-battery-chemistry-and-anode-cathode-mechanics

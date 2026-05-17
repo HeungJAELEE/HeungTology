@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-control-system-ics-cybersecurity-architecture"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-control-system-ics-cybersecurity-architecture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The multi-layered security framework designed to protect Industrial Control Systems (PLC, DCS, SCADA) from cyber threats, ensuring the integrity, availability, and confidentiality of critical infrastructure through Defense-in-Depth and Zero Trust principles."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ics-security", "cybersecurity", "ot-security", "iec-62443", "defense-in-depth", "smart-factory", "zero-trust"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Network_Segmentation_Audit: Verify the isolation of the OT (Operational Technology) network from the IT network using DMZ and industrial firewalls.'
-    - 'Anomaly_Traffic_Check: Monitor for unusual protocol behaviors (e.g., unexpected Modbus writes or unauthorized PLC firmware updates).'
-    - 'Vulnerability_Compliance_Scan: Evaluate the system''s alignment with IEC 62443 standards and identify unpatched legacy controllers.'
-Trust Metrics:
+  description: "[Entity] industrial-control-system-ics-cybersecurity-architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Industrial Control System (ICS) Cybersecurity Architecture
+# [Entity] industrial-control-system-ics-cybersecurity-architecture
 
 ## 1. 개요 (Why: 인간적 통찰)
 옛날의 공장은 담장만 높으면 안전했습니다. 하지만 기계들이 인터넷에 연결된 오늘날, 보이지 않는 적들은 수천 킬로미터 밖에서 공장의 밸브를 열고 기계를 망가뜨리려 합니다. **산업 제어 시스템(ICS) 사이버 보안**은 공장의 심장부(PLC, DCS)를 지키는 **'디지털 성벽'**입니다. 단순히 암호를 거는 것을 넘어, 공장 내부의 모든 소통을 감시하고 수상한 행동을 즉시 차단하는 **'지능형 방어 체계'**입니다. 공장이 멈추면 전기가 끊기고 물이 멈출 수 있기에, 이 보안은 단순한 데이터 보호를 넘어 '시민의 안전'을 지키는 필수 인프라입니다.
@@ -87,7 +76,6 @@ class LogicFidelityEngine:
             return "REJECT: Messy Firewall Configuration - Hidden Security Gaps Likely"
         return "PASS: Clean and Effective Security Rules Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(unauthorized_access_count=0, patched_device_pct=98.5, network_jitter_ms=1.2)
 print(engine.diagnose_cyber_health())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_cyber_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ics-security-breach-attempts-and-mitigation-logs-v2026`와 연동되어, 전 세계 주요 인프라의 사이버 공격 시도를 실시간 분석하고 제어권 탈취 및 시설 파괴 사고 확률을 0.001% 이하로 억제함으로써 산업 문명의 디지털 생존 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - global-cyber-defense-and-autonomous-threat-neutralization

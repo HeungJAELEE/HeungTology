@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "etching-process-and-plasma-surface-micromachining-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] etching-process-and-plasma-surface-micromachining-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process used in microfabrication to chemically remove layers from the surface of a wafer (Etching) and the physical study of ion bombardment and chemical reaction kinetics in plasma-driven surface sculpting (Micromachining Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["etching", "plasma-etching", "semiconductor", "micromachining", "anisotropy", "dry-etching", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Fidelity_Audit: Evaluate the ''Etch Rate'' (ER) and uniformity across the wafer to identify if ''Loading Effects'' or ''ARDE'' (Aspect Ratio Dependent Etching) are causing high-fidelity depth variations.'
-    - 'Selectivity_Integrity_Check: Analyze the ratio of etch rates between the target layer and the mask ($S = ER_{film}/ER_{mask}$) to ensure the high-fidelity pattern transfer is maintained.'
-    - 'Anisotropy_Fidelity_Scan: Monitor the sidewall profile and ion energy distribution (IED) to verify that the high-fidelity ''Vertical Profile'' is achieved without ''Undercut'' or ''Bowing'' defects.'
-Trust Metrics:
+  description: "[Entity] etching-process-and-plasma-surface-micromachining-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Etching Process and Plasma Surface Micromachining Physics
+# [Entity] etching-process-and-plasma-surface-micromachining-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노미터 단위의 아주 미세한 반도체 칩 안에 깊고 수직인 계곡을 어떻게 깎아낼 수 있을까요? **식각(Etching) 공정 및 플라즈마 표면 미세 가공 물리**는 화학적인 '부식'과 물리적인 '타격'을 결합해, 원하지 않는 부분만 정교하게 도려내는 **'나노 조각술'** 기술입니다. 특히 플라즈마 상태의 이온들을 채찍처럼 휘둘러 수직으로만 깊게 파 내려가는 기술은 현대 반도체 문명을 가능하게 한 핵심 중의 핵심입니다. **'원자 단위로 깎아내는 지능적 정밀 조각이자 현대판 연금술의 역방향 기술'**입니다.
@@ -59,7 +48,7 @@ $$ A = 1 - \frac{ER_{lat}}{ER_{vert}} $$
 | **Medium** | Acid / Base Solution | Ionized Gas (Plasma) | - | Physics |
 | **Direction** | Isotropic (All-way) | **Anisotropic (Vertical)**| - | Logic |
 | **Selectivity** | Very High (Chemical) | Moderate to High | - | Quality |
-| **Resolution** | > 1 $\mu m$ (Coarse) | < 10 $nm$ (Nano-scale) | $nm$ | Precision |
+| **Resolution** | > 1 $\mu\text{m}$ (Coarse) | < 10 $nm$ (Nano-scale) | $nm$ | Precision |
 | **Cleanliness** | Chemical Waste High | Dry / Vacuum Process | - | Eco |
 | **Cost** | Low | High (Vacuum Equip) | - | Business |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Selectivity - Photoresist mask eroding too fast. Pattern height will be compromised. Adjust gas chemistry ($O_2/CF_4$ ratio)"
         return "PASS: Validated Material Selectivity and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gas_flow_sccm=50.0, rf_power_watts=1200.0, etch_uniformity_pct=1.2)
 print(engine.diagnose_etch_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_etch_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data etching-selectivity-and-anisotropy-ratios-v2026`와 연동되어, 전 세계 주요 반도체 팹의 식각 데이터를 실시간 분석하고 깊이 오류 및 패턴 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 소자 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-photolithography-physics

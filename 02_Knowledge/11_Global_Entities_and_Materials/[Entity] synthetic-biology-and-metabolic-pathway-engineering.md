@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-biology-and-metabolic-pathway-engineering-entity"
-  domain: "27_Biotechnology_and_Genomic_Intelligence"
+metadata:
+  id: "[[[Entity] synthetic-biology-and-metabolic-pathway-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biotechnology", "#Synthetic_Biology", "#Metabolic_Engineering", "#Bio-Manufacturing", "#Cell_Factory", "#Genetic_Circuits", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_biotechnology-and-genomic-intelligence-hub", "MOC 25_global-infrastructure-and-future-cities-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-biology-and-metabolic-pathway-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-biology-and-metabolic-pathway-engineering
+# [Entity] synthetic-biology-and-metabolic-pathway-engineering
 
 ## 1. [왜 배우는가? (Why: The Bio-foundry of Life)]]
 미생물이나 효소의 설계도를 어떻게 다시 그려서($Reprogramming$), 마치 공장의 컨베이어 벨트처럼 설탕을 먹고 가솔린을 뱉거나 플라스틱을 분해하는 '살아있는 세포 공장($Cell\ Factory$)'을 어떻게 만들 수 있을까요? **합성 생물학 및 대사 경로 공학**은 생명체를 산업용 기계로 재탄생시키는 '생체 회로 설계 및 대사 최적화 지침'입니다. 우리가 이를 배우는 이유는 석유 화합물을 대체할 지속 가능한 생산 방식을 생명공학에서 찾아야 하기 때문이며, "물질의 생산을 데이터로 설계하고 지배하는 '글로벌 바이오 제조 및 자원 자립 주권'을 확보하기" 위함입니다. 대사 경로의 효율이 바이오 경제의 수익성을 결정합니다.

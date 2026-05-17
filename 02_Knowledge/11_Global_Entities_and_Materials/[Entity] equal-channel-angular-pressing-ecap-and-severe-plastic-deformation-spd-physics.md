@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "equal-channel-angular-pressing-ecap-and-severe-plastic-deformation-spd-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] equal-channel-angular-pressing-ecap-and-severe-plastic-deformation-spd-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technique in materials science that produces ultra-fine grained materials by passing a metal through a die containing two channels of equal cross-section meeting at an angle (ECAP) and the physical study of accumulating extreme strain to achieve nanostructuring without changing dimensions (SPD Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ecap", "spd", "severe-plastic-deformation", "grain-refinement", "nanostructured-materials", "mechanical-metallurgy", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deformation_Fidelity_Audit: Evaluate the ''Accumulated Equivalent Strain'' ($\\epsilon_N$) after multiple passes to identify if the material is reaching the high-fidelity ''Saturation'' limit of grain refinement.'
-    - 'Grain_Integrity_Check: Analyze the sub-grain boundary angles to ensure the transition from low-angle to high-angle boundaries is occurring for high-fidelity nanostructuring.'
-    - 'Structural_Fidelity_Scan: Monitor the pressing pressure and die friction to verify that the ''Shear Zone'' is uniform, preventing high-fidelity cracking or flow localization defects.'
-Trust Metrics:
+  description: "[Entity] equal-channel-angular-pressing-ecap-and-severe-plastic-deformation-spd-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Equal Channel Angular Pressing (ECAP) and Severe Plastic Deformation (SPD) Physics
+# [Entity] equal-channel-angular-pressing-ecap-and-severe-plastic-deformation-spd-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속을 깎거나 녹이지 않고, 단순히 '구부리고 펴는' 것만으로 강철보다 강하게 만들 수 있을까요? **ECAP 및 극심한 소성 변형(SPD) 물리**는 금속 덩어리를 좁은 'ㄱ'자 터널 속으로 밀어 넣어, 내부의 결정 알갱이들을 잘게 부수고 으깨는 **'금속의 연단'** 기술입니다. 겉모양은 그대로인데 속은 나노미터 단위로 촘촘해지며, 자연 상태에서는 불가능한 강도와 인성을 동시에 얻어냅니다. **'모양의 변화 없이 성질의 혁명을 일으키는 연금술과 같은 물리적 단조술'**입니다.
@@ -57,7 +46,7 @@ $$ \sigma_y = \sigma_0 + k_y d^{-1/2} $$
 | Feature | Conventional Rolling | ECAP / SPD (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Dimension Change**| Large (Thinning) | **Zero (Constant)** | - | Logic |
-| **Grain Size** | 10 ~ 100 (Micro) | 0.1 ~ 0.5 (Ultra-fine)| $\mu m$ | Precision |
+| **Grain Size** | 10 ~ 100 (Micro) | 0.1 ~ 0.5 (Ultra-fine)| $\mu\text{m}$ | Precision |
 | **Strain Level** | 1 ~ 2 (Low) | 4 ~ 10 (Severe) | - | Intensity |
 | **Strength Increase**| 50 ~ 100 | 200 ~ 400 (Massive) | % | Power |
 | **Ductility** | Drops rapidly | Maintained / Improved | - | Resilience |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inhomogeneous Deformation - Large hardness variation across cross-section. Internal stress concentrations high. Review die geometry ($\Phi, \Psi$)"
         return "PASS: Validated Shear Distribution and Verified Microstructural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(press_force_ton=120.0, pass_number=4, sample_surface_crack=False)
 print(engine.diagnose_spd_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_spd_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ecap-grain-size-reduction-and-hardness-v2026`와 연동되어, 전 세계 주요 고강도 경량 합금 및 생체 임플란트 소재의 생산 데이터를 실시간 분석하고 공정 파손 및 소재 불균일 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 가공 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - explosive-forming-and-high-strain-rate-metal-shaping-physics

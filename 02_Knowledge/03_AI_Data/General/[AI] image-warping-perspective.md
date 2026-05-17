@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-CV-PERSPECT-WARP-2026-V6"
+metadata:
+  id: "[[[AI] image-warping-perspective]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Perspective_Transform'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] image-warping-perspective에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] image-warping-perspective
@@ -106,7 +96,6 @@ class HomographyEngine:
 2. **Affine Transform**은 유지하지만 **Perspective Transform**은 유지하지 못하는 기하학적 성질(예: 평행성)은 무엇인가?
 3. **RANSAC** 알고리즘이 특징점 매칭 과정에서 잘못 매칭된 점(Outliers)이 섞여 있을 때, 어떻게 강건하게 **H 행렬**을 추정하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI image-transformation-affine
 - 02_Knowledge/03_AI_Data/General/AI camera-calibration-and-intrinsic-params

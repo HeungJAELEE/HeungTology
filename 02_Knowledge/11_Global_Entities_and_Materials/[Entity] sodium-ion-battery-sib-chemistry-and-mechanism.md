@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "sodium-ion-battery-sib-chemistry-and-mechanism-entity"
-  domain: "08_Next-gen_Energy"
+metadata:
+  id: "[[[Entity] sodium-ion-battery-sib-chemistry-and-mechanism]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SIB", "#Sodium_ion_Battery", "#Electrochemistry", "#Hard_Carbon", "#Energy_Storage", "#Cathode_Materials", "#Post_Lithium", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 15_next-gen-energy-and-hydrogen-intelligence-hub", "Data energy-storage-system-ess-round-trip-efficiency-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] sodium-ion-battery-sib-chemistry-and-mechanism에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] sodium-ion-battery-sib-chemistry-and-mechanism
+# [Entity] sodium-ion-battery-sib-chemistry-and-mechanism
 
 ## 1. [왜 배우는가? (Why: The Democratization of Energy Storage)]]
 전기차와 ESS 시장이 폭발적으로 성장하면서 리튬 공급망은 국가 안보의 핵심 쟁점이 되었습니다. 하지만 특정 국가에 편중된 리튬과 달리 나트륨은 전 세계 어디에나 무한히 존재합니다. **나트륨 이온 배터리(SIB) 화학 및 매커니즘 엔티티**는 비싼 리튬을 흔한 나트륨으로 대체하여 에너지 저장 장치의 가격을 $30\%$ 이상 낮추고 공급망의 독립성을 확보하는 '포스트 리튬 시대의 에너지 헌장'입니다. 
@@ -80,7 +70,6 @@ RAG는 "집전체 소재 밀도 로그를 분석하여, 음극에서 구리($8.9
 가동 중인 SIB 시스템의 전압-전류 데이터를 분석하여 셀의 건강 상태(SoH)를 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Sodium-ion Battery (SIB) Integrity & SoH Auditor
 def audit_sib_performance(voltage_curve, temperature, cycle_count):
     # 1. 방전 곡선의 Plateau(평탄 영역) 구간 분석을 통한 용량 유지율 산출
     current_capacity = integrate_current_over_plateau(voltage_curve)
@@ -117,7 +106,6 @@ def audit_sib_performance(voltage_curve, temperature, cycle_count):
 2. **(수리)** 나트륨 이온의 이온 반경이 리튬보다 약 $34\%$ 크지만, 왜 특정 전해질 환경에서 나트륨 이온의 '용매화 반경(Solvated Radius)'이 리튬보다 작아져 빠른 확산이 가능해지는가?
 3. **(응용)** 나트륨 이온 배터리가 하이엔드 전기차 시장보다는 '마이크로 모빌리티'나 '대규모 ESS' 시장에서 먼저 두각을 나타내고 있는 경제적/물리적 인과 관계는?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 15_next-gen-energy-and-hydrogen-intelligence-hub : 차세대 에너지 및 수소 통합 관리 상위 지능 허브

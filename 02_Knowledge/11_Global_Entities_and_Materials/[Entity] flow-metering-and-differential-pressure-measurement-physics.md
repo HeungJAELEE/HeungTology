@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flow-metering-and-differential-pressure-measurement-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flow-metering-and-differential-pressure-measurement-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technique used to measure the rate of flow of a fluid in a pipe by creating a deliberate restriction and measuring the resulting pressure difference (Differential Pressure Measurement) and the physical study of velocity-pressure conversion (Flow Metering Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["flow-metering", "differential-pressure", "bernoulli", "orifice-plate", "venturi", "industrial-metrology", "fluid-dynamics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metering_Fidelity_Audit: Evaluate the ''Square Root Extraction'' to identify if low-flow high-fidelity errors are exceeding the target accuracy due to small pressure signals.'
-    - 'Reynolds_Integrity_Check: Analyze the Reynolds Number ($Re$) to ensure the high-fidelity flow is in the ''Fully Turbulent'' regime where the discharge coefficient is stable.'
-    - 'Drift_Fidelity_Scan: Monitor the zero-point stability of the high-fidelity DP transmitter to verify that ''Impulse Line'' clogging or gas pockets are not biasing the measurement.'
-Trust Metrics:
+  description: "[Entity] flow-metering-and-differential-pressure-measurement-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📐 Flow Metering and Differential Pressure Measurement Physics
+# [Entity] flow-metering-and-differential-pressure-measurement-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 파이프 속을 흐르는 투명한 물이나 가스가 1초에 몇 리터나 지나가는지 어떻게 알 수 있을까요? 파이프를 직접 열어볼 수도 없는데 말이죠. **유량 측정 및 차압 측정 물리**는 파이프 안에 살짝 '턱(오리피스)'을 만들어 물의 흐름을 방해하고, 그로 인해 생기는 앞뒤의 '압력 차이'를 이용해 속도를 맞추는 **'압력으로 읽는 속도'** 기술입니다. 직접 보지 않고도 압력의 변화만으로 흐름을 꿰뚫어 봅니다. **'보이지 않는 유체의 흐름을 숫자로 번역하여 공장의 가계부를 정확히 기록하는 지능형 유체 계측의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Line Clogging / Air Pocket - Unstable pressure signal detected. Impulse lines likely partially blocked or containing gas bubbles. Flush and bleed the lines"
         return "PASS: Validated Signal Transmission and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(delta_p_kpa=25.0, fluid_density_kg_m3=1000.0, reynolds_number=50000)
 print(engine.diagnose_flow_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_flow_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data flow-meter-accuracy-and-reynolds-number-v2026`와 연동되어, 전 세계 주요 정유 및 화학 공장의 유량 데이터를 실시간 분석하고 계측 오차 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 유체 관리 문명의 정확성 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flow-control-valve-and-actuator-positioning-logic

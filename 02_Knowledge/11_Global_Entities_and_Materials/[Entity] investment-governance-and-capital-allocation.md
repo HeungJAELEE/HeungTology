@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "investment-governance-and-capital-allocation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] investment-governance-and-capital-allocation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The framework for making and monitoring strategic investment decisions (Investment Governance) and the process of distributing financial resources across business units or projects (Capital Allocation) to maximize long-term shareholder value."
-  physical_model: "N/A"
-Semantic:
-  tags: '["investment-governance", "capital-allocation", "portfolio-management", "strategic-finance", "roi", "fiduciary-duty"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FinanceFidelityEngine"
-  diagnostic_protocol:
-    - 'Capital_Efficiency_Audit: Evaluate the Return on Invested Capital (ROIC) across different business segments to identify areas of value destruction.'
-    - 'Investment_Mandate_Check: Verify that all strategic investments align with the board-approved risk appetite and long-term strategic goals.'
-    - 'Post-mortem_Performance_Scan: Analyze the actual versus projected returns of completed projects to identify systemic biases in the investment planning process.'
-Trust Metrics:
+  description: "[Entity] investment-governance-and-capital-allocation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Investment Governance and Capital Allocation
+# [Entity] investment-governance-and-capital-allocation
 
 ## 1. 개요 (Why: 인간적 통찰)
 CEO의 가장 중요한 일은 무엇일까요? 좋은 물건을 만드는 것도 중요하지만, 회사가 가진 한정된 자원(돈과 사람)을 어디에 '투자'할지 결정하는 것이 진짜 승부처입니다. **투자 거버넌스 및 자본 배분**은 기업의 미래를 결정하는 **'자원 배치 지도'**입니다. 낡은 공장을 고칠 것인가, 새로운 회사를 살 것인가, 아니면 주주들에게 돈을 돌려줄 것인가? 이 모든 결정이 투명하고 논리적인 원칙에 따라 이루어지게 만드는 **'기업의 나침반'**입니다. 자본을 가장 효율적으로 배치하는 기업이 결국 최후의 승자가 됩니다.
@@ -89,7 +78,6 @@ class FinanceFidelityEngine:
             return "REJECT: Potential Conflict of Interest - Unauthorized Related-Party Investment Detected"
         return "PASS: Fiduciary Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FinanceFidelityEngine(roic_vs_wacc_spread=5.5, investment_hurdle_rate=12.0, post_audit_variance=0.12)
 print(engine.diagnose_allocation_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_allocation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data corporate-capital-expenditure-and-roi-benchmarks-v2026`와 연동되어, 전 세계 주요 기업의 자본 집행 내역을 실시간 분석하고 자산 거품 및 자본 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 거버넌스의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - investment-analysis-and-stock-valuation-fundamentals

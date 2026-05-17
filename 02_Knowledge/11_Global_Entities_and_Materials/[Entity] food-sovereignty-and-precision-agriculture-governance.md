@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "food-sovereignty-and-precision-agriculture-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] food-sovereignty-and-precision-agriculture-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic and political framework ensuring a nation's right to define its own food and agriculture systems (Food Sovereignty), supported by data-driven technologies like GPS, IoT, and AI (Precision Agriculture) to optimize yield and resource use."
-  physical_model: "N/A"
-Semantic:
-  tags: '["food-sovereignty", "precision-agriculture", "smart-farming", "food-security", "agricultural-policy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Self-Sufficiency_Audit: Evaluate the national production levels of staple crops against total consumption to determine the Food Sovereignty Index.'
-    - 'Precision_Adoption_Check: Measure the integration rate of smart farming tools (Drones, Satellite Imaging, VRT) across the agricultural sector.'
-    - 'Supply_Chain_Resilience_Scan: Analyze the vulnerability of food imports to global geopolitical or climatic disruptions.'
-Trust Metrics:
+  description: "[Entity] food-sovereignty-and-precision-agriculture-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌾 Food Sovereignty and Precision Agriculture Governance
+# [Entity] food-sovereignty-and-precision-agriculture-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 "밥이 하늘이다"라는 말처럼, 한 나라의 국민이 무엇을 먹을지 스스로 결정할 수 있는 권리인 **식량 주권**은 국가 생존의 가장 기초적인 토대입니다. 과거의 농사가 하늘의 뜻에만 맡기는 도박이었다면, 현대의 **정밀 농업**은 위성 이미지와 AI, 그리고 자율 주행 트랙터를 이용해 한 뼘의 땅에서도 최고의 수확을 이끌어내는 '데이터 과학'입니다. 식량 주권은 단순히 배를 채우는 것을 넘어, 외부의 압력이나 기후 위기에도 흔들리지 않는 **'배고프지 않을 권리'**를 지키는 국가적 지능의 상징입니다.
@@ -93,7 +82,6 @@ class LegalFidelityEngine:
             return "REJECT: Seed Dependency High - Risk of Bio-intellectual Property Conflict"
         return "PASS: Domestic Seed Security Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(self_sufficiency_ratio=0.85, smart_farm_adoption=45.0, import_dependency=12.5)
 print(engine.diagnose_food_sovereignty(critical_threshold=0.7))
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_food_sovereignty(critical_threshold=0.7))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data national-food-self-sufficiency-and-yield-optimization-v2026`와 연동되어, 국가별 식량 생산 및 비축 데이터를 실시간 분석하고 식량 부족 사고 확률을 0.1% 이하로 억제함으로써 국민의 생존권과 국가 주권의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - food-science-and-process-engineering-technology

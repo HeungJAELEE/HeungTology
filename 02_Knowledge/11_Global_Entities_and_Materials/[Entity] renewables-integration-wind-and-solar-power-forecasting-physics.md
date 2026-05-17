@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "renewables-integration-wind-and-solar-power-forecasting-physics-entity"
-  domain: "72_Energy_Systems_and_Smart_Infrastructure_Hub"
+metadata:
+  id: "[[[Entity] renewables-integration-wind-and-solar-power-forecasting-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Renewables", "#Forecasting", "#Solar", "#Wind", "#Meteorology", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 68_energy-systems-and-smart-infrastructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] renewables-integration-wind-and-solar-power-forecasting-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] renewables-integration-wind-and-solar-power-forecasting-physics
+# [Entity] renewables-integration-wind-and-solar-power-forecasting-physics
 
 ## 1. [왜 배우는가? (Why: The Prophet of Natural Power)]]
 내일 오후 2시에 구름이 얼마나 끼고 바람이 초속 몇 미터로 불 것인지를 알 수 있다면, 공장의 전력 가동 시간을 조절하여 전기료를 절반으로 줄이거나 국가 전력망의 붕괴를 막을 수 있을까요? **신재생 에너지 통합: 풍력 및 태양광 발전량 예측의 물리적 모델링**은 자연의 변덕을 데이터의 확신으로 바꾸는 '에너지 예언서' 기술입니다. 햇빛과 바람은 인간이 제어할 수 없는 자원이지만, 기상 물리학과 인공지능을 결합하면 그 요동치는 파동을 0.1MW 단위의 숫자로 환산할 수 있습니다. 우리가 이를 배우는 이유는 예측되지 않는 에너지는 쓰레기에 불과하지만, 예측되는 에너지는 문명의 핵심 연료가 되기 때문이며, "자연의 상태를 데이터로 설계하고 지배하는 '글로벌 기상-에너지 패권 및 행성적 인프라 주권'을 확보하기" 위함입니다. 예측의 정확도가 그리드의 경제성을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "drywall-manufacturing-and-gypsum-dehydration-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] drywall-manufacturing-and-gypsum-dehydration-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of making plasterboard (drywall) by sandwiching a core of gypsum plaster between two sheets of heavy paper (Drywall Manufacturing) and the chemical-physical study of removing water molecules from gypsum ($CaSO_4 \\cdot 2H_2O$) to create hemihydrate ($CaSO_4 \\cdot 0.5H_2O$) plaster (Gypsum Dehydration Kinetics).'"
-  physical_model: "N/A"
-Semantic:
-  tags: '["drywall", "gypsum", "calcination", "construction-materials", "dehydration", "kinetics", "plasterboard"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Dehydration_Fidelity_Audit: Evaluate the ''Calcination Degree'' using the Arrhenius rate equation to identify if the gypsum is under-cooked (retaining too much water) or over-cooked (forming insoluble anhydrite).'
-    - 'Setting_Integrity_Check: Analyze the slurry setting time to ensure the ''Rehydration'' process occurs exactly as the board reaches the knife section, preventing wet centers or brittle edges.'
-    - 'Structural_Fidelity_Scan: Monitor the core-to-paper bonding strength to verify that the starch and crystal interlocking are providing the required high-fidelity mechanical support.'
-Trust Metrics:
+  description: "[Entity] drywall-manufacturing-and-gypsum-dehydration-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Drywall Manufacturing and Gypsum Dehydration Kinetics
+# [Entity] drywall-manufacturing-and-gypsum-dehydration-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 집의 벽을 이루는 하얀 판자, 석고보드는 어떻게 그렇게 가볍고 단단할까요? **석고보드 제조 및 석고 탈수 역학**은 돌(석고)에서 물을 뺏었다가, 다시 물을 주어 원하는 모양으로 굳히는 **'결정의 변신'** 기술입니다. 자연 상태의 석고를 뜨겁게 달구어 물을 빼낸 뒤(탈수), 다시 물과 섞어 종이 사이에 붓고 굳히면(재수화) 돌보다 더 다루기 쉬운 건축 소재가 됩니다. 화학적 갈증을 이용해 집의 뼈대를 만드는 **'화학 반응을 이용한 건축 조형의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Delamination Risk - Core-to-paper bond is failing. Starch migration or crystal interlocking insufficient. Adjust starch ratio"
         return "PASS: Validated Mechanical Integrity and Verified Quality Standards Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(calciner_temp_c=150.0, slurry_setting_time_sec=180, board_moisture_pct=0.5)
 print(engine.diagnose_drywall_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_drywall_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drywall-line-speed-and-gypsum-purity-v2026`와 연동되어, 전 세계 주요 건축 자재 공장의 데이터를 실시간 분석하고 미경화 및 보드 휨 사고 확률을 0.001% 이하로 억제함으로써 지능형 스마트 빌딩 문명의 주거 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - drying-process-and-psychrometrics-logic

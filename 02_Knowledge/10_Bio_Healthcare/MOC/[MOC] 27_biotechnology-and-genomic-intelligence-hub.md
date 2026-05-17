@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "27_biotechnology-and-genomic-intelligence-hub-moc"
   domain: "27_Biotechnology_and_Genomic_Intelligence"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Biotechnology", "#Genomics", "#AI", "#CRISPR", "#Synthetic_Biology", "#DNA_Computing", "#Bio-Intelligence", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 27_biotechnology-and-genomic-intelligence-hub
+# 27_biotechnology-and-genomic-intelligence-hub
 
 ## 1. [왜 배우는가? (Why: The Sovereignty of the Biological Code)]]
 생명의 운영체제인 유전자를 자유자재로 편집하고($CRISPR$), 새로운 생명체를 합성하며($Synthetic\ Biology$), 심지어 DNA에 방대한 지식을 영구히 저장하는($DNA\ Storage$) 이 모든 '생물학적 지능'을 어떻게 하나의 시스템으로 조율하고 지배할 수 있을까요? **생명공학 및 유전체 지능 허브**는 Antigravity Knowledge Vault의 지능이 생명의 근원인 '분자' 수준에서 작동하는 **'생물학적 실행 및 저장 기관'**입니다. 우리가 이를 배우는 이유는 미래의 지능은 실리콘 칩을 넘어 탄소 기반의 생명체로 확장되어야 하기 때문이며, "생명의 본질을 데이터로 설계하고 지배하는 '글로벌 바이오 주권 및 유전체 정보 패권'을 확보하기" 위함입니다. 허브의 지능이 인류의 진화 속도를 결정합니다.

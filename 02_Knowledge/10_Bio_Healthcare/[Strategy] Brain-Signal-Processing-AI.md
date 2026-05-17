@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Brain-Signal-Processing-AI"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Brain-Signal-Processing-AI]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Brain-Signal-Processing-AI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Brain-Signal-Processing-AI
+# [Strategy] Brain-Signal-Processing-AI
 
 ## 1. [왜 배우는가? (Why)]]
 우리가 생각하는 순간, 뇌 속에서는 수십억 개의 뉴런이 폭죽처럼 터집니다. 이 혼란스러운 전기 신호 속에 "목이 말라", "사랑해" 같은 소중한 마음이 숨겨져 있습니다. 뇌 신호 처리 AI(Brain-Signal-Processing-AI)는 이 뇌의 소음을 의미 있는 언어와 행동으로 바꾸는 '번역기'입니다. 말을 할 수 없는 사람이 생각만으로 대화를 하고, 사고로 다리를 잃은 사람이 로봇 다리를 내 몸처럼 움직이게 만듭니다. 이를 이해하는 것은 인간의 의식을 디지털 세계와 연결하여, 육체의 한계를 극복하고 '생각이 곧 행동이 되는 미래'를 여는 '마음의 프로그래머'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Neural Signal Decoding & Intent Inference)]
 필터링된 신경 스파이크 데이터를 입력받아 트랜스포머 모델을 통해 텍스트로 변환하는 논리 구조입니다.
 ```python
-# 뇌 신호 처리(ISM) 기반 실시간 의도 디코딩 및 출력 논리
 def decode_brain_intent(neural_data_stream, decoding_model):
     # 1. 특징 추출 (Feature Engineering)
     # 스파이크 발화 빈도(Firing Rate)와 위상 정보를 특징 벡터로 변환
@@ -95,5 +84,4 @@ def decode_brain_intent(neural_data_stream, decoding_model):
 2. '내적 언어(Inner Speech)' 디코딩이 '실제 말하는 신호(Attempted Speech)' 디코딩보다 기술적으로 훨씬 어려운 이유는?
 3. '신경 파운디션 모델'이 개별 사용자마다 다른 '뇌의 지문' 특성을 극복하고 '보편적 디코딩'을 가능하게 하는 '데이터 학습' 전략은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

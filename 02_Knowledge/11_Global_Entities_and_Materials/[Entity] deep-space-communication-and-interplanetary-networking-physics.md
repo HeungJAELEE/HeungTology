@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "deep-space-communication-and-interplanetary-networking-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] deep-space-communication-and-interplanetary-networking-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of long-range data transmission systems between Earth and deep-space missions (Mars, Outer Planets), focusing on overcoming signal attenuation, extreme time delays, and the development of Delay-Tolerant Networking (DTN)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["deep-space-communication", "dtn", "free-space-optics", "interplanetary-internet", "signal-attenuation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Signal_Link_Budget_Audit: Calculate the received signal power ($P_r$) at the ground station considering distance ($d$) and antenna gains.'
-    - 'Latency_Compensation_Check: Verify the performance of predictive control and DTN protocols in handling one-way delays (e.g., 20 mins for Mars).'
-    - 'Pointing_Accuracy_Scan: Evaluate the precision of beam steering for high-frequency (Ka-band) or optical (Laser) links.'
-Trust Metrics:
+  description: "[Entity] deep-space-communication-and-interplanetary-networking-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Deep Space Communication and Interplanetary Networking Physics
+# [Entity] deep-space-communication-and-interplanetary-networking-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 화성에 간 탐사선이 지구로 사진을 한 장 보내는 일은, 산 정상에서 촛불을 켜고 서울에 있는 사람이 그 빛을 보려는 것만큼이나 어렵습니다. **심해 우주 통신**은 수억 킬로미터의 진공을 뚫고 희미해진 신호를 잡아내는 '기술적 기적'입니다. 빛의 속도로 달려도 수십 분이 걸리는 지연(Latency)과, 행성이 가려지면 끊겨버리는 가혹한 환경 속에서 화성이나 목성 너머의 데이터를 끊김 없이 전달하는 것은 인류가 행성 간 종(Interplanetary species)으로 진화하기 위한 디지털 혈맥을 잇는 작업입니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return f"REJECT: Beam Misalignment ({offset_arcsec} arcsec) - High Risk of Signal Drop"
         return "PASS: Precision Pointing Maintained"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(received_power_dbm=-155, noise_floor_dbm=-174, packet_loss_rate=2.5)
 print(engine.diagnose_link_quality(min_snr_threshold=15))
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_link_quality(min_snr_threshold=15))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data deep-space-signal-latency-and-bandwidth-v2026`와 연동되어, 모든 행성 간 통신 트랜잭션의 신호 세기와 데이터 무결성을 실시간 분석하고 통신 단절 사고 확률을 0.1% 이하로 억제함으로써 우주 문명 연결의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - deep-sea-and-space-resource-claim-governance

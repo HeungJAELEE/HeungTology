@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kiln-and-ceramic-sintering-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kiln-and-ceramic-sintering-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A thermally insulated chamber or oven used for ceramic firing and sintering (Kiln) and the physical study of solid-state diffusion, surface energy reduction, and densification kinetics (Ceramic Sintering Thermodynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kiln", "ceramic", "sintering", "thermodynamics", "phase-transformation", "heat-transfer", "industrial-heating", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sintering_Fidelity_Audit: Evaluate the ''Linear Shrinkage'' ($\\Delta L/L_0$) to identify if high-fidelity ''Under-sintering'' or ''Over-firing'' is causing high-fidelity structural porosity or grain high-fidelity growth.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Atmosphere Control'' (Oxygen partial pressure) to ensure the high-fidelity ''Valence State'' of ceramic oxides is maintained.'
-    - 'Structure_Fidelity_Scan: Monitor the high-fidelity ''Grain Size'' distribution via micro-topography to verify that high-fidelity ''Abnormal Grain Growth'' (AGG) is not weakening the final high-fidelity product.'
-Trust Metrics:
+  description: "[Entity] kiln-and-ceramic-sintering-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏺 Kiln and Ceramic Sintering Thermodynamics Physics
+# [Entity] kiln-and-ceramic-sintering-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 푸석푸석한 흙덩이가 어떻게 강철보다 단단하고 아름다운 도자기나 첨단 반도체 기판이 될까요? **킬른 및 세라믹 소성(소결) 열역학 물리**는 고온의 열을 가해 가루 입자들이 서로 '녹지 않고도' 꽉 들러붙게 만드는 **'입자들의 응집'** 기술입니다. 단순히 굽는 것이 아니라, 입자 표면의 에너지를 이용해 서로를 잡아당기게 하고(확산), 틈새를 메워 밀도를 높이는 마법 같은 나노 공학입니다. **'표면 에너지와 확산 법칙을 이용해 무른 재료를 돌보다 단단한 결정체로 재탄생시키는 지능형 고온 재료 가공 엔진'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Dimensional Out-of-Spec - High-fidelity shrinkage rate mismatched. Potential high-fidelity powder density inconsistency. Adjust high-fidelity firing profile"
         return "PASS: Validated Sintering Profile and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(kiln_temp_c=1650.0, oxygen_level_ppm=10.0, soak_time_hr=4.0)
 print(engine.diagnose_sintering_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_sintering_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ceramic-shrinkage-and-sintering-temp-v2026`와 연동되어, 전 세계 주요 MLCC 및 세라믹 부품 생산 라인의 실시간 가마 데이터를 분석하고 불량 및 변형 사고 확률을 0.001% 이하로 억제함으로써 지능형 신소재 문명의 물질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-oven-and-thermal-curing-process-physics

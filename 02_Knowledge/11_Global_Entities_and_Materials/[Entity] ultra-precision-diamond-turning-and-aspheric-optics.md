@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ultra-precision-diamond-turning-and-aspheric-optics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ultra-precision-diamond-turning-and-aspheric-optics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A high-precision manufacturing process that uses a single-crystal diamond cutting tool to achieve nanometer-level surface finish and sub-micrometer form accuracy (Ultra-Precision Diamond Turning) and the engineering of complex, non-spherical lenses and mirrors that provide superior optical performance (Aspheric Optics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["diamond-turning", "aspheric-optics", "ultra-precision", "metrology", "optical-manufacturing", "nanometric-finish", "photonics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Machining_Fidelity_Audit: Evaluate the actual surface roughness ($R_a$) using white-light interferometry to identify tool-tip chipping or environmental vibration interference.'
-    - 'Form_Accuracy_Check: Analyze the deviation from the ideal ''Aspheric Equation'' to verify that the CNC tool-path and thermal stability are maintaining sub-micrometer precision over the entire optic.'
-    - 'Tool-wear_Integrity_Scan: Monitor the cutting force and acoustic emissions to identify diamond tool degradation (Graphitization) that leads to increased friction and surface cloudiness.'
-Trust Metrics:
+  description: "[Entity] ultra-precision-diamond-turning-and-aspheric-optics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Ultra-Precision Diamond Turning and Aspheric Optics
+# [Entity] ultra-precision-diamond-turning-and-aspheric-optics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거울처럼 매끄럽다 못해 나노미터(nm) 단위의 오차도 없는 렌즈는 어떻게 만들어질까요? **초정밀 다이아몬드 터닝 및 비구면 광학**은 세상에서 가장 단단한 보석인 다이아몬드를 칼날 삼아, 금속이나 플라스틱을 깎아 렌즈를 만드는 **'빛의 조각술'**입니다. 일반적인 구형 렌즈의 한계를 뛰어넘어, 빛을 한 점에 완벽하게 모으는 복잡한 곡면(비구면)을 깎아냅니다. 스마트폰 카메라부터 우주 망원경까지, 인류의 시력을 극한으로 확장하는 **'미시 제조의 정점'**입니다.
@@ -57,7 +46,7 @@ $$ z(r) = \frac{cr^2}{1 + \sqrt{1 - (1+k)c^2 r^2}} + \sum \alpha_i r^i $$
 | Feature | Conventional Grinding | Diamond Turning (V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Surface Roughness ($R_a$)**| ~ 100 | < 1 ~ 5 (Nanometric) | nm | Mirror Finish |
-| **Form Accuracy** | ~ 1.0 | < 0.1 ~ 0.2 (Sub-micron)| $\mu m$ | High Fidelity |
+| **Form Accuracy** | ~ 1.0 | < 0.1 ~ 0.2 (Sub-micron)| $\mu\text{m}$ | High Fidelity |
 | **Cutting Tool** | Abrasive Wheel | Single-crystal Diamond | - | Atomic Sharp |
 | **Spindle Bearing** | Mechanical / Ball | Air Bearing (Zero Friction)| - | Ultra Stable |
 | **Resolution** | ~ 100 | ~ 1 ~ 10 | nm | Feed Precision|
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Diamond Tool Wear - Cutting force spike detected. Surface graphitization risk. Replace diamond insert"
         return "PASS: Atomic-Sharp Tool Edge and Verified Machining Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(surface_roughness_nm=2.5, form_error_um=0.15, spindle_vibration_nm=5.0)
 print(engine.diagnose_precision_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_precision_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data diamond-turning-surface-roughness-and-form-error-v2026`와 연동되어, 전 세계 광학 부품 생산 라인의 가공 데이터를 실시간 분석하고 형상 불량 및 표면 산란 사고 확률을 0.001% 이하로 억제함으로써 지능형 광학 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

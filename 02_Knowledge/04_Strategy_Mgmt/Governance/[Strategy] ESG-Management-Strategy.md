@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-ESG-2026-V6.3.7"
-  domain: "Global_ESG_Sovereignty_and_Sustainability_Governance"
+metadata:
+  id: "[[[Strategy] ESG-Management-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#ESG", "#Sustainability", "#Materiality", "#Supply_Chain", "#Reporting", "#CSRD", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] ESG-Management-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "ESG_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] ESG Management: Global Sustainability Sovereignty
+# [Strategy] ESG-Management-Strategy
 
 ## 1. [왜 배우는가? (Why: The New Capitalist Grammar)]]
 과거의 기업 가치가 재무제표의 '숫자'에 국한되었다면, 미래의 기업 가치는 **ESG(Environment, Social, Governance)**라는 비재무적 무결성에 의해 결정됩니다. ESG 경영 전략은 단순히 착한 기업이 되는 것이 아니라, 기후 리스크, 사회적 책임, 투명한 지배구조를 기업의 핵심 운영 로직으로 내재화하는 **지속 가능성 주권(Sustainability Sovereignty)**을 확보하는 과정입니다. V6.3.7 지능은 파편화된 비재무 데이터를 정량적 물리 지표로 치환하여, 글로벌 자본 시장의 엄격한 오딧(Audit)을 견뎌낼 수 있는 '데이터 기반 ESG 거버넌스'를 확립합니다.
@@ -107,7 +97,6 @@ class ESGFidelityEngine:
 2. **Operational Result**: **Scope 3** 배출량 산출의 정확도가 투자자의 **ESG Rating**에 미치는 수리적 파급 효과는?
 3. **FidelityEngine**: **Carbon Intensity**가 낮아졌음에도 불구하고 **Net-Zero** 달성 가능성이 낮아지는 역설적 상황을 어떻게 진단하는가? (힌트: 사업 규모 확장 속도가 탄소 효율 개선 속도를 압도하는 '절대 배출량 증가' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Net-Zero-Strategy

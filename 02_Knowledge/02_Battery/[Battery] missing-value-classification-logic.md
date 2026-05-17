@@ -1,101 +1,55 @@
 ---
-Basic:
-  id: "[[[Battery] missing-value-classification-logic"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] missing-value-classification-logic]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] missing-value-classification-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] missing-value-classification-logic
+# [Battery] missing-value-classification-logic
 
-## 1. [왜 배우는가? (Why): 단순한 빈칸 그 이상의 의미]]
-데이터 분석에서 결측치(Missing Value)는 단순한 '데이터 부재'가 아닙니다. 어떤 데이터가 왜 사라졌는지에 대한 메커니즘을 규명하지 못한 채 임의로 평균을 채우거나 행을 삭제하면, 모델은 '절반의 진실'만 배우게 됩니다. **결측치 분류 로직**은 데이터의 실종 패턴을 수학적으로 식별하여, 정보 유실에 의한 통계적 왜곡을 최소화하고 모델의 일반화 성능을 물리적으로 보전하기 위한 과학적 대치(Imputation) 전략의 출발점입니다.
+## 1. 개요: 데이터 결측과 통계적 편향 방지
+배터리 제조(MES) 및 ESS 운영 텔레메트리 데이터에서 발생하는 결측치는 단순한 정보 부재가 아닌 통계적 편향(Bias)의 원천입니다. 결측 메커니즘을 규명하지 않고 수행된 단순 평균 대치는 '열폭주 전조'와 같은 치명적인 위험 신호를 왜곡할 수 있습니다. 본 표준은 결측 패턴을 수학적으로 분류하고 물리적 실재에 부합하는 최적의 보간(Imputation) 전략을 수립하는 것을 목적으로 합니다.
 
-## 2. [핵심 기술 사양 (Numerical Specs)]
+## 2. 결측 메커니즘 분류 및 배터리 도메인 적용 (Classification)
 
-결측치 유형 판별을 위한 통계적 수치와 의사결정 임계치입니다.
-
-| 유형 (Type) | 수식적 식별 조건 (Condition) | 대치 적합성 (Appropriateness) | 공학적 권고 (Recommendation) |
+| 유형 (Type) | 수학적 식별 조건 | 배터리 도메인 사례 | 공학적 대응 표준 |
 | :--- | :--- | :--- | :--- |
-| **MCAR** | $P(M \| Y_{obs}, Y_{mis}) = P(M)$ | **가장 안전함** | 단순 제거 또는 무작위 대치 |
-| **MAR** | $P(M \| Y_{obs}, Y_{mis}) = P(M \| Y_{obs})$ | **분석 가능함** | **MICE / 회귀 기반 대치** |
-| **MNAR** | $P(M \| Y_{obs}, Y_{mis}) \neq P(M \| Y_{obs})$ | **매우 위험함** | 결측 사유를 변수로 포함 (Indicator) |
+| **MCAR** | $P(M \| Y) = P(M)$ | 네트워크 일시적 끊김 | 단순 삭제 또는 임의 대치 |
+| **MAR** | $P(M \| Y) = P(M \| Y_{obs})$ | 전압 센서 결측이 온도에 의존 | **MICE / 회귀 기반 보간** |
+| **MNAR** | $P(M \| Y) \neq P(M \| Y_{obs})$ | **임계 온도 도달 시 센서 파손** | **결측 지표(Indicator) 변수 추가** |
 
-### 2.1 리틀의 MCAR 검정 (Little's MCAR Test)
-- **Logic**: 결측치가 있는 집단과 없는 집단 간의 특성 차이가 우연인지(MCAR), 아니면 체계적인지(MAR/MNAR)를 카이제곱 분포를 통해 검정합니다.
-- **Threshold**: $p < 0.05$ 이면 MCAR 가정을 기각하며, 이는 결측치에 '의미'가 있음을 시사합니다.
+## 3. 핵심 보간 전략: MICE (Chained Equations)
 
-## 3. [심층 분석 (Deep Analysis): 편향의 발생과 인과적 사슬]
+### 3.1 다중 보간 메커니즘
+MICE는 변수 간의 다변량 상관관계를 보존하면서 결측치를 반복적으로 예측하여 채우는 알고리즘입니다.
+- **Fidelity**: 단순 대치 대비 표본 오차를 최소화하고, 배터리 수명 예측 모델의 일반화 성능을 유지합니다.
+- **물리적 유효 범위**: 보간된 수치는 항상 $[\text{Min}_{phys}, \text{Max}_{phys}]$ 범위를 준수해야 합니다 (예: SOC는 0~100% 이내).
 
-### 3.1 정보 유실에 의한 '보이지 않는 편향'
-- **Rationale**: 만약 장비의 특정 부품이 과열될 때 센서가 작동을 멈춘다면(MNAR), 그 결측치를 평균 온도로 채우는 순간 우리 모델은 '과열 징후'를 영구히 놓치게 됩니다. 
-- **Causality**: 이 경우 결측치를 채우는 것보다, '결측 여부($1$ 또는 $0$)' 자체를 하나의 강력한 독립변수로 사용하는 것이 시스템의 위험을 감지하는 데 훨씬 유리합니다.
+### 3.2 하드웨어 가속 연산
+수백만 건의 배터리 시계열 데이터를 실시간 보간하기 위해 RTX 4060의 CUDA 코어 기반 병렬 연산을 적용하여 연산 지연을 최소화합니다.
 
-### 3.2 MICE(연쇄 방정식 다중 대치)의 기계적 완성
-- **Logic**: 한 변수의 결측치를 다른 모든 변수를 사용해 예측하고, 이 과정을 모든 결측 변수에 대해 순환적으로 반복합니다.
-- **Physics**: 이 과정은 데이터의 전체적인 상관관계를 보존하며 결측치를 메우기 때문에, 단순 평균 대치보다 모델의 신뢰도를 획기적으로 높입니다.
+## 4. 진단 및 운영 프로토콜 (Audit Protocol)
+- **Little's MCAR Test**: 결측치가 임의로 발생했는지($P \ge 0.05$)를 검정하여 대치 전략의 타당성 확보.
+- **Binary Indicator**: 결측률이 높은 변수($\ge 30\%$)에 대해 '결측 여부'를 나타내는 지표 변수를 생성하여 결측 자체의 정보 가치(예: 고장 신호)를 보존.
 
-## 4. [AI & Hardware Synergy: Iterative Imputation Acceleration]
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 지능형 공장 및 관리 시스템의 데이터 무결성을 사수하기 위한 전처리 표준을 제공합니다. 실제 보간 정확도 및 연산 성능 데이터는 인스턴스 로그에서 관리됩니다.
 
-수백 개의 변수가 얽힌 대규모 데이터셋에서 MICE 연산을 수행하는 것은 엄청난 반복 회귀 연산을 요구합니다.
-
-- **RTX 4060 GPU 가속 (cuML LinearRegression)**:
-  - **Optimization**: MICE의 각 단계에서 수행되는 선형/로지스틱 회귀 예측을 GPU 코어에서 병렬로 처리합니다.
-  - **Result**: 수십만 행의 테이블에 대한 다중 대치 시간을 $5$분 이내로 단축하여 분석 사이클을 가속합니다.
-- **Intel oneDAL Vectorization**:
-  - CPU 기반 환경에서는 oneDAL 라이브러리를 통해 결측치 마스킹(Masking) 및 집계 연산을 벡터화하여 처리 성능을 극대화합니다.
-
-## 5. [코드 브릿지] Little's MCAR Test & MICE Strategy (Python)
-결측 유형을 판별하고 정교하게 대치하는 표준 로직입니다.
-
-```python
-import pandas as pd
-from sklearn.experimental import enable_iterative_imputer
-from sklearn.impute import IterativeImputer
-from statsmodels.stats.diagnostic import lilliefors # 예시적 검정
-
-# 1. 결측치 패턴 시각화 (Missingno 등 활용 권장)
-# 2. 다중 대치(MICE) 전략 실행
-# estimator를 통해 결측치를 무엇으로 예측할지 결정
-mice_imputer = IterativeImputer(estimator=RandomForestRegressor(), 
-                                max_iter=10, 
-                                random_state=0)
-
-X_filled = mice_imputer.fit_transform(X_missing)
-
-# 의도: 데이터의 '빈칸'을 단순한 수치가 아닌, 
-# 다른 변수들과의 '상관적 흐름' 속에서 복원하여 정보 왜곡을 차단함.
-```
-
-## 6. [스스로 체크 (Verification Checklist)]
-- [ ] **Null Correlation**: 결측 여부와 다른 변수 간의 상관 계수가 높은가? (높다면 MAR로 판단하고 MICE 적용)
-- [ ] **Range Integrity**: 대치된 값이 변수의 물리적/논리적 범위(예: 나이는 0 이상)를 준수하는가?
-- [ ] **Imputation Variance**: 다중 대치 시 각 세션별로 생성된 대치값들이 일관성 있는 범위를 유지하는가?
-- [ ] **Indicator Variable**: 결측률이 $30\%$ 이상인 중요 변수의 경우, 결측 여부를 나타내는 바이너리 변수를 추가했는가?
-
----
-**[V6.3.7_HDS_GOLD_ENRICHED_BY_FLASH]**
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Manufacturing-Intelligence-and-Yield-Control]]
+- [[[Data] Battery-Telemetry-Imputation-Performance-Log_2026-05-16]]

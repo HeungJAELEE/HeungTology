@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "COM-VCSEL-MASTER-2026-V6.3.7"
-  domain: "Display_Communication"
+metadata:
+  id: "[[[Comm] VCSEL-Photonics-Hardware]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#VCSEL", "#Laser_Physics", "#Quantum_Well", "#DBR", "#LiDAR", "#3D_Sensing", "#Optical_Communication", "#Photonics"]
-  is_part_of: ["Display display-and-next-gen-communication-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] VCSEL-Photonics-Hardware에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Comm] VCSEL-Photonics-Hardware
@@ -116,7 +106,6 @@ print(f"25도 출력: {vcsel.calculate_output_power(5, 25)} mW")
 print(f"70도 출력: {vcsel.calculate_output_power(5, 70)} mW")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Display display-and-next-gen-communication-master-guide
 - 08_Mobility_Robotics/Mobility autonomous-driving-and-lidar-physics (보강 필요)

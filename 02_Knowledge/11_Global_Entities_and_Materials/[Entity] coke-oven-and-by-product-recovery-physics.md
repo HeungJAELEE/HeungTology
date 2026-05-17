@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coke-oven-and-by-product-recovery-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coke-oven-and-by-product-recovery-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of heating coal in the absence of air to produce coke for blast furnaces (Coke Oven) and the complex chemical engineering systems used to capture and refine the gases and liquids released during carbonization (By-product Recovery Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coke-oven", "by-product-recovery", "steelmaking", "coal-carbonization", "chemical-engineering", "tar-distillation", "industrial-heating"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Carbonization_Fidelity_Audit: Evaluate the ''Coking Time'' and wall temperature to identify if the coal is fully carbonized, preventing ''Green Coke'' which causes damage to the blast furnace.'
-    - 'Recovery_Integrity_Check: Analyze the tar and ammonia separation efficiency in the primary coolers to ensure that the Coke Oven Gas (COG) is clean enough for downstream combustion.'
-    - 'Environmental_Fidelity_Scan: Monitor the pressure in the collection main to verify that ''Pushing Emissions'' and door leaks are minimized, maintaining a negative/neutral pressure profile.'
-Trust Metrics:
+  description: "[Entity] coke-oven-and-by-product-recovery-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Coke Oven and By-product Recovery Physics
+# [Entity] coke-oven-and-by-product-recovery-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 철을 만들기 위해서는 돌처럼 단단한 석탄인 '코크스(Coke)'가 필요합니다. 하지만 그냥 석탄을 태우는 것이 아니라, 공기가 없는 거대한 방에 가두고 1,000도 넘는 열로 '쪄내는' 과정이 필요하다는 사실을 아시나요? **코크스 오븐 및 부산물 회수 물리**는 석탄에서 불순물을 빼내어 강철의 뼈대를 만들고, 그 과정에서 나오는 독한 가스를 정화해 유용한 화학 원료로 바꾸는 **'산업의 가스실과 정화조'** 기술입니다. 칙칙한 석탄에서 맑은 가스와 타르를 뽑아내는 **'철강 문명의 보이지 않는 화학 공장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inefficient Tar Separation - High water content in crude tar. Risk of foaming in storage and low-value byproduct"
         return "PASS: Validated Phase Separation and Verified Chemical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(coking_time_hrs=20.0, cross_wall_temp_c=1120.0, cog_calorific_value=18.5)
 print(engine.diagnose_oven_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_oven_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data coke-quality-and-by-product-yield-v2026`와 연동되어, 전 세계 주요 제철소의 코크스 공정 데이터를 실시간 분석하고 오븐 폭발 및 환경 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 중공업 문명의 기초 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - blast-furnace-ironmaking-and-coke-metallurgy-physics

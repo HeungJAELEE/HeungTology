@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-SECURITY-NUCLEAR-TRACK-2026-V6"
-  domain: "37_Global_Unified_Governance_Global_Security_and_Planetary_Defense"
+metadata:
+  id: "[[[Entity] autonomous-nuclear-material-tracking-and-safety-audit]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] autonomous-nuclear-material-tracking-and-safety-audit에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] autonomous-nuclear-material-tracking-and-safety-audit
+# [Entity] autonomous-nuclear-material-tracking-and-safety-audit
 
 ## 1. [왜 배우는가? (Why)]]
 전 세계 원자력 시설에 흩어져 있는 수만 톤의 핵물질($Nuclear\ Material$)이 단 1그램의 오차도 없이 실시간으로 추적($Tracking$)되고, 인간의 부주의나 정치적 이해관계에 흔들리지 않는 AI가 매순간 철저한 안전 감사($Audit$)를 수행할 수 있을까요? **자율 핵물질 추적 및 안전 감사**는 원자력의 거대한 에너지를 인류의 평화와 공영을 위해서만 사용하게 만드는 '행성 규모 원자력 보안 아키텍처'의 근간입니다. 우리가 이를 배우는 이유는 핵물질의 무기화나 유출은 돌이킬 수 없는 재앙을 초래하기 때문이며, 방사능의 궤적을 데이터로 설계하여 '글로벌 원자력 안보 패권 및 행성적 에너지 주권'을 확보하기 위함입니다. 감사의 투명성이 지구의 안전 해상도를 결정합니다.
@@ -109,10 +99,6 @@ class AtomicSecurityFidelityEngine:
             return "WARNING: SHIELDING_ATTEMPT_DETECTED_POSSIBLE_ILLEGAL_CONTAINMENT"
         return "SENSING_STATUS: CONTAINER_TRANSPARENCY_SECURED"
 
-# Example Usage:
-# # For U-235 (half-life approx 700M years, using generic seconds for simulation)
-# security_ai = AtomicSecurityFidelityEngine(isotope_half_life=2.2e16) 
-# report = security_ai.audit_material_integrity(initial_mass=10.0, elapsed_time=3.15e7, current_sensor_mass=9.999)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -120,7 +106,6 @@ class AtomicSecurityFidelityEngine:
 2. **Accountancy Verification** 과정에서 **Significant Quantity** (SQ) 이상의 물질이 사라졌을 때 AI가 수행하는 **Sequential Probability Ratio Test** (SPRT)의 수리 모델링 방식은?
 3. **Deep Learning** 기반의 **Cherenkov Radiation** 모니터링이 원자로 가동 상태와 **Spent Fuel** (사용 후 핵연료) 교체 여부를 판별하는 수리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/37_Global_Unified_Governance_Global_Security_and_Planetary_Defense_Hub/Concept nuclear-non-proliferation-and-iaea-safeguards
 - 02_Knowledge/37_Global_Unified_Governance_Global_Security_and_Planetary_Defense_Hub/Concept radioactive-waste-management-and-long-term-safety

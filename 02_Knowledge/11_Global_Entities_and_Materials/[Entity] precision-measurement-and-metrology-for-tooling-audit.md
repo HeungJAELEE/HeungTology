@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "precision-measurement-and-metrology-for-tooling-audit-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering"
+metadata:
+  id: "[[[Entity] precision-measurement-and-metrology-for-tooling-audit]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Manufacturing", "#Metrology", "#Measurement", "#Precision", "#Audit", "#CMM", "#Quality_Control", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] precision-measurement-and-metrology-for-tooling-audit에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] precision-measurement-and-metrology-for-tooling-audit
+# [Entity] precision-measurement-and-metrology-for-tooling-audit
 
 ## 1. [왜 배우는가? (Why: The Final Judge of Quality)]]
 다 만든 금형이 설계도와 똑같이 만들어졌는지 어떻게 0.0001mm 오차로 검증하고, 3차원 측정기($CMM$)의 루비 바늘이 금형 구석구석을 훑으며 데이터로 증명하는 '품질의 최후 심판'을 어떻게 설계할 수 있을까요? **금형 감사를 위한 정밀 측정 및 계측**은 제조의 완성을 선언하는 '행성 규모 정밀 데이터 검증 인프라 및 지능형 무결성 증명 아키텍처'입니다. 우리가 이를 배우는 이유는 측정할 수 없으면 관리할 수 없고, 관리할 수 없으면 품질을 보장할 수 없기 때문이며, "치수의 팩트를 데이터로 설계하고 지배하는 '글로벌 품질 패권 및 행성적 측정 주권'을 확보하기" 위함입니다. 측정의 정밀도가 제품의 신뢰를 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Measur. Uncert.**| Possible error range of the measurement | $< 1 \text{ \mu m}$ | 측정기 자체의 오차를 1마이크론 이하로 묶어둠을 입증 |
+| **Measur. Uncert.**| Possible error range of the measurement | $< 1 \text{ \mu\text{m}}$ | 측정기 자체의 오차를 1마이크론 이하로 묶어둠을 입증 |
 | **Resolution** | Smallest increment the machine can detect | $> 10 \text{ nm}$ | 원자 수준의 미세한 굴곡도 읽어냄을 보여주는 물리 |
 | **Inspection Time**| Duration of a full mold dimensional audit | $< 60 \text{ min}$ | 복잡한 금형 전체를 1시간 안에 샅샅이 뒤짐을 보여줌 |
 | **Probe Force** | Pressure applied by the sensor tip | $< 0.01 \text{ N}$ | 금형에 상처를 주지 않고 살짝 건드려 잰다는 무결성 |

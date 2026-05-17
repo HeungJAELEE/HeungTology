@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RAG-HITL-2026-V6"
+metadata:
+  id: "[[[AI] human-in-the-loop-rag-strategy]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#HITL'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] human-in-the-loop-rag-strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] human-in-the-loop-rag-strategy
@@ -110,7 +100,6 @@ class HitlRagOrchestrator:
 2. **Token Economy** 관점에서, 인간이 직접 컨텍스트를 선별함으로써 절감되는 **Input Token** 비용의 추산 공식은?
 3. **Active Learning** 관점에서, 반복적으로 선택되는 지식 노드들을 **'God Node'**로 격상시켜 검색 우선순위를 자동 조정하는 알고리즘의 설계 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI retrieval-augmented-generation-v6-1
 - 02_Knowledge/03_AI_Data/General/AI context-window-management

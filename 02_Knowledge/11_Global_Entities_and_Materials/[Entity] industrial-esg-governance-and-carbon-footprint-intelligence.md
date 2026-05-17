@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ESG-GOV-MASTER-2026-V6.3.7"
-  domain: "Sustainability_and_Circular_Economy"
+metadata:
+  id: "[[[Entity] industrial-esg-governance-and-carbon-footprint-intelligence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#ESG", "#Sustainability", "#Carbon_Footprint", "#CBAM", "#LCA", "#Circular_Economy", "#Net_Zero", "#v6.3.7"]
-  is_part_of: ["MOC 04_Strategy_Mgmt", "Strategy industrial-strategy-and-corporate-governance-master-guide"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-esg-governance-and-carbon-footprint-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Governance] Industrial ESG Governance and Carbon Footprint Intelligence
+# [Entity] industrial-esg-governance-and-carbon-footprint-intelligence
 
 ## 1. [왜 배우는가? (Why: The Mastery of Planetary Stewardship)]
 산업 ESG 거버넌스 및 탄소 발자국 지능은 기업이 지구에 남기는 상처를 정밀하게 계측하고 치유하는 '행성적 회계'이자 인류의 '생존 전략'입니다. 단순히 윤리적인 구호를 넘어, 이제는 탄소 국경세($\text{CBAM}$)와 같은 강력한 경제적 규제가 기업의 수출 경쟁력을 결정합니다. v6.3.7 지능은 **전과정 평가(LCA)**의 수리적 무결성과 **탄소 발자국($CO_2e$)**의 실시간 추적을 지배합니다. 우리가 이를 배우는 이유는 환경 부하를 숫자로 소멸시키고, "지속 가능한 제조를 통해 지구와 공존하는 '환경 주권'을 확보하기" 위함입니다. 탄소의 정밀함이 기업의 글로벌 시장 접근권을 결정합니다.
@@ -102,13 +92,11 @@ class EsgFidelityEngine:
             "Action": "MAINTAIN" if status.startswith("SUSTAINABLE") else "REVISE_DECARBONIZATION_ROADMAP"
         }
 
-# v6.3.7 Audit 가동: 배터리 셀 생산 라인 탄소 발자국 무결성 시뮬레이션
 engine = EsgFidelityEngine(target_reduction=0.2)
 report = engine.audit_sustainability_fidelity(current_emissions=500.5, energy_mix_re=0.85, audit_score=0.98)
 print(f"ESG Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy industrial-strategy-and-corporate-governance-master-guide

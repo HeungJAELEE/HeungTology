@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "endoscopy-and-fiber-optic-imaging-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] endoscopy-and-fiber-optic-imaging-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A medical or industrial procedure that uses an endoscope to examine the interior of a hollow organ or cavity (Endoscopy) and the physical study of light transmission through flexible glass fibers via total internal reflection (Fiber Optic Imaging Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["endoscopy", "fiber-optics", "medical-imaging", "total-internal-reflection", "borescope", "optical-physics", "diagnostics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Imaging_Fidelity_Audit: Evaluate the ''Image Resolution'' against the fiber core density to identify if ''Pixelation'' or broken fibers are degrading the high-fidelity diagnostic view.'
-    - 'Optical_Integrity_Check: Analyze the ''Numerical Aperture'' (NA) and light loss per meter to ensure the fiber bundle is providing sufficient brightness for high-fidelity imaging in dark cavities.'
-    - 'Thermal_Fidelity_Scan: Monitor the tip temperature (from the LED/Light source) to verify that the ''Tissue Safety'' or ''Material Integrity'' is not compromised by excessive heat.'
-Trust Metrics:
+  description: "[Entity] endoscopy-and-fiber-optic-imaging-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔭 Endoscopy and Fiber Optic Imaging Physics
+# [Entity] endoscopy-and-fiber-optic-imaging-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 몸속 깊숙한 곳이나 엔진 내부처럼 보이지 않는 어두운 미로를 째지 않고 어떻게 훤히 들여다볼 수 있을까요? **내시경(Endoscopy) 및 광섬유 영상 물리**는 빛을 낚싯줄처럼 가늘고 휘어지는 유리 실(광섬유)에 가두어 구불구불한 길을 따라 전달하는 **'빛의 배달'** 기술입니다. 빛은 광섬유 내부에서 튕기며 길을 잃지 않고 끝까지 달려가 영상을 가져옵니다. 째지 않고 고치는 '최소 침습'의 기적을 가능하게 하는 **'어둠 속을 밝히는 유연한 시력'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Optical Misalignment - Objective lens shifted. High-fidelity viewing range insufficient for safe navigation"
         return "PASS: Validated Depth of Field and Verified Diagnostic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pixel_fault_count=45, light_output_lux=5500, tip_temperature_c=36.5)
 print(engine.diagnose_imaging_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_imaging_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fiber-optic-resolution-and-light-transmission-v2026`와 연동되어, 전 세계 주요 대학 병원 및 항공기 정비창의 데이터를 실시간 분석하고 영상 오류 및 장비 고장 사고 확률을 0.001% 이하로 억제함으로써 지능형 원격 진단 문명의 시각적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

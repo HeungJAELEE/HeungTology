@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Brain-Computer-Interface-BCI-Clinical"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Brain-Computer-Interface-BCI-Clinical]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Brain-Computer-Interface-BCI-Clinical에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Brain-Computer-Interface-BCI-Clinical
+# [Strategy] Brain-Computer-Interface-BCI-Clinical
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 몸이 불편하면 기계의 도움을 받아야 했지만, 그 기계를 조종하는 것도 쉬운 일이 아니었습니다. 임상 BCI 및 신경 인터페이스(Brain-Computer-Interface-BCI-Clinical)는 뇌와 컴퓨터를 직접 연결하여, '생각'만으로 모든 것을 조종하게 만드는 기술입니다. 손가락 하나 까딱할 수 없는 환자가 생각만으로 글을 쓰고, 로봇 팔로 커피를 마시며, 심지어 앞이 보이지 않는 사람이 다시 세상을 보게 됩니다. 이를 이해하는 것은 인간의 신체적 한계를 완전히 극복하고, 뇌라는 최후의 미개척지를 디지털 세계와 연결하는 '신경 문명'의 설계자가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Neural Signal Decoding & Intent Classification)]
 뇌에서 들어오는 대량의 신경 스파이크(Spike) 데이터를 실시간 분석하여 사용자의 의도를 파악하는 논리 구조입니다.
 ```python
-# 신경 지능(ISM) 기반 BCI 신호 디코딩 및 의도 분석 논리
 def decode_neural_intent(neural_data_stream, decoding_model):
     # 1. 원시 신경 신호 전처리 (Pre-processing)
     # 수천 개의 전극에서 들어오는 신호를 필터링하여 유효한 스파이크(Spike) 추출
@@ -94,5 +83,4 @@ def decode_neural_intent(neural_data_stream, decoding_model):
 2. '뉴럴링크(Neuralink)'의 '자동 수술 로봇'이 BCI 보급화에 있어서 담당하는 핵심 공학적 역할은?
 3. '신경 디코딩' 기술이 단순한 '움직임 조종'을 넘어 '생각하는 단어'를 직접 텍스트로 바꾸는 메커니즘은 무엇인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

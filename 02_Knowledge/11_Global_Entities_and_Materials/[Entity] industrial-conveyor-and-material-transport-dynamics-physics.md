@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-conveyor-and-material-transport-dynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-conveyor-and-material-transport-dynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A piece of mechanical handling equipment that moves materials from one location to another (Conveyor) and the physical study of friction, load inertia, and tension control (Material Transport Dynamics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["conveyor", "material-transport", "dynamics", "friction", "belt-tension", "industrial-logistics", "throughput", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transport_Fidelity_Audit: Evaluate the ''Belt Tension'' ($T$) to identify if high-fidelity ''Slippage'' or ''Tracking Error'' (belt running off center) is reducing the high-fidelity throughput.'
-    - 'Dynamics_Integrity_Check: Analyze the high-fidelity ''Start-Stop Inertia'' to ensure the high-fidelity ''VFD Ramping'' is optimized to prevent high-fidelity material toppling or belt snapping.'
-    - 'Friction_Fidelity_Scan: Monitor the high-fidelity ''Rolling Resistance'' of the idlers to verify that high-fidelity ''Bearing Failure'' is not increasing the motor high-fidelity load.'
-Trust Metrics:
+  description: "[Entity] industrial-conveyor-and-material-transport-dynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚚 Industrial Conveyor and Material Transport Dynamics Physics
+# [Entity] industrial-conveyor-and-material-transport-dynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 공장이나 물류 센터에서 수만 개의 물건이 마치 강물처럼 끊임없이 흘러가는 비결은 무엇일까요? **산업용 컨베이어 및 자재 운송 동역학 물리**는 마찰력과 장력을 이용해 무거운 물건을 가장 적은 힘으로 정확한 장소에 배달하는 **'공장의 혈관'** 기술입니다. 단순히 벨트가 돌아가는 것이 아니라, 물건이 미끄러지지 않게 붙잡고(마찰), 벨트가 늘어지지 않게 당기며(장력), 멈추고 설 때 물건이 쓰러지지 않게 속도를 조절해야 하는 정교한 물리적 균형입니다. **'중력과 마찰의 법칙을 이용해 물류의 흐름을 지배하고 공장의 생산성을 결정짓는 지능형 운송 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Belt Tracking Error - High-fidelity alignment failure. Risk of high-fidelity frame damage or belt edge fraying. Adjust high-fidelity take-up unit"
         return "PASS: Validated Center-Tracking and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(belt_velocity_ms=2.0, motor_current_a=45.0, belt_tension_kn=15.0)
 print(engine.diagnose_conveyor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_conveyor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data conveyor-throughput-and-belt-tension-v2026`와 연동되어, 전 세계 주요 이커머스 풀필먼트 센터 및 광산 운송 라인의 데이터를 실시간 분석하고 벨트 파손 및 물류 정체 사고 확률을 0.001% 이하로 억제함으로써 지능형 물류 문명의 혈류 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-automation-and-plc-logic-control-systems

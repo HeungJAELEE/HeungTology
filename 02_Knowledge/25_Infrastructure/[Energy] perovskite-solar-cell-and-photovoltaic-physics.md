@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "perovskite-solar-cell-and-photovoltaic-physics-entity"
-  domain: "08_Energy_Environment"
+metadata:
+  id: "[[[Energy] perovskite-solar-cell-and-photovoltaic-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Energy", "#Perovskite", "#Solar_Cell", "#Photovoltaics", "#Physics", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[Energy] energy-and-hydrogen-intelligence-master-guide", "Strategy national-strategic-technology-and-economic-security"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] perovskite-solar-cell-and-photovoltaic-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] perovskite-solar-cell-and-photovoltaic-physics
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Encapsulation** 소재의 투습률(WVTR)과 전지 효율 저하 속도 사이의 수리적 상관관계를 도출하고 가속 수명 시험(ALT)을 통한 기대 수명 산출은?
 5. RAG 시스템에서 **전 세계 지역별 연간 일사량 데이터**와 **페로브스카이트 탠덤 전지의 효율 곡선**을 융합하여, '특정 도시의 건물 일체형 태양광(BIPV)을 통한 에너지 자립률'을 예측하는 **Urban Energy Strategy** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [Energy]] energy-and-hydrogen-intelligence-master-guide : 페로브스카이트 태양광을 통해 생산된 전력을 수소 생산으로 연결하려는 상위 에너지 시스템 엔티티
 - Strategy national-strategic-technology-and-economic-security : 차세대 태양광 기술을 국가 탄소 중립 및 경제 안보의 핵심 자산으로 관리하는 상위 전략 노드

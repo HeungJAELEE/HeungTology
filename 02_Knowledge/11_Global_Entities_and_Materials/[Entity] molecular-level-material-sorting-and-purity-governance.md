@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "molecular-level-material-sorting-and-purity-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] molecular-level-material-sorting-and-purity-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced industrial process of identifying and separating substances at the molecular scale (Molecular-level Sorting) and the regulatory framework (Purity Governance) that ensures materials meet extreme purity standards for high-tech manufacturing and safety."
-  physical_model: "N/A"
-Semantic:
-  tags: '["material-sorting", "molecular-purity", "governance", "separation-science", "quality-control", "nanometrology", "circular-economy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Purity_Threshold_Audit: Evaluate the concentration of trace impurities against the target specification (e.g., 9N purity) to ensure compliance with high-end semiconductor or medical standards.'
-    - 'Sorting_Efficiency_Check: Analyze the loss rate of target molecules during the sorting process to optimize the trade-off between purity and economic yield.'
-    - 'Contamination_Source_Scan: Monitor the entire supply chain and processing environment to identify and eliminate potential ingress of sub-ppb level contaminants.'
-Trust Metrics:
+  description: "[Entity] molecular-level-material-sorting-and-purity-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Molecular-level Material Sorting and Purity Governance
+# [Entity] molecular-level-material-sorting-and-purity-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에서 가장 깨끗한 물건을 만든다면, 얼마나 깨끗해야 할까요? **분자 수준 물질 분류 및 순도 거버넌스**는 수조 개의 분자들 중에서 '미꾸라지 한 마리' 같은 불순물을 찾아내어 추방하는 **'나노 단위의 검역 시스템'**입니다. 반도체 칩이 작동하려면 99.9999999%(9N) 이상의 완벽한 순도가 필요합니다. 이 거대한 순도의 성벽을 쌓기 위해 분자 하나하나의 신분증을 확인하고 분류하는 **'지능형 분자 선별'**이자, 이를 엄격히 관리하는 **'물질적 법치주의'**의 정수입니다.
@@ -87,7 +76,6 @@ class LegalFidelityEngine:
             return "NOTICE: High Sorting Loss - Purification Cost Increasing. Optimize Molecular Sieve Selectivity"
         return "PASS: Efficient Molecular Separation and High Yield Profile Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(detected_impurity_ppb=0.15, compliance_standard="9N", chain_of_custody_integrity=0.995)
 print(engine.diagnose_purity_governance())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_purity_governance())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data material-purity-levels-and-yield-impact-v2026`와 연동되어, 전 세계 특수 화학물질 및 소재의 순도 데이터를 실시간 분석하고 불량 유출 및 공정 오염 사고 확률을 0.001% 이하로 억제함으로써 고도 지능 문명의 물질적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - mass-transfer-and-separation-processes-distillation-and-absorption

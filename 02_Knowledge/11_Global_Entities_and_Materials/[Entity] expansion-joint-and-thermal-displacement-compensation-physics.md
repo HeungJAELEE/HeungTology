@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "expansion-joint-and-thermal-displacement-compensation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] expansion-joint-and-thermal-displacement-compensation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A flexible connection in a piping system or structure designed to absorb thermal expansion and vibration (Expansion Joint) and the physical study of compensating for longitudinal or angular changes in material dimensions due to temperature fluctuations (Thermal Displacement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["expansion-joint", "thermal-expansion", "displacement-compensation", "piping-engineering", "bellows", "stress-analysis", "structural-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Displacement_Fidelity_Audit: Evaluate the ''Actual Expansion'' ($\\Delta L$) against the joint''s rated movement capacity to identify if the high-fidelity limit is exceeded, leading to ''Squirm'' or buckling failure.'
-    - 'Fatigue_Integrity_Check: Analyze the thermal cycling frequency to ensure the ''Bellows Fatigue Life'' is within the high-fidelity safety margin, preventing sudden rupture or leakage.'
-    - 'Support_Fidelity_Scan: Monitor the anchor loads and guide positioning to verify that the ''Thermal Force'' is being correctly channeled into the high-fidelity expansion joint, not the equipment nozzles.'
-Trust Metrics:
+  description: "[Entity] expansion-joint-and-thermal-displacement-compensation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎢 Expansion Joint and Thermal Displacement Compensation Physics
+# [Entity] expansion-joint-and-thermal-displacement-compensation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수 킬로미터에 달하는 뜨거운 증기 파이프라인이나 거대한 다리가 여름과 겨울의 온도 차이로 인해 수 미터씩 늘어났다 줄어들었다 한다는 사실을 알고 있나요? **신축 이음(Expansion Joint) 및 열 변위 보상 물리**는 거대한 구조물이 숨을 쉬듯 움직일 수 있는 '여유'를 주는 **'산업의 관절'** 기술입니다. 만약 이 관절이 없다면, 팽창하는 힘을 이기지 못한 파이프는 휘어지거나 폭발해버릴 것입니다. **'물질의 피할 수 없는 팽창 본능을 유연하게 받아내어 시스템의 파괴를 막는 지능적 완충의 미학'**입니다.
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Fatigue Stress - High-frequency vibration causing resonance in bellows. Fatigue life will drop by 90%. Install vibration dampeners"
         return "PASS: Validated Dynamic Absorption and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pipe_temp_c=250.0, measured_compression_mm=3.2, bellows_condition="Clean")
 print(engine.diagnose_joint_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_joint_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pipe-thermal-expansion-and-joint-fatigue-v2026`와 연동되어, 전 세계 주요 화학 플랜트 및 장거리 열수송관의 데이터를 실시간 분석하고 조인트 파손 및 누출 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - energy-recovery-ventilator-erv-and-heat-exchanger-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electro-osmosis-and-microfluidic-transport-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electro-osmosis-and-microfluidic-transport-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The motion of liquid induced by an applied potential across a porous material, capillary tube, or micro-channel (Electro-Osmosis) and the physical study of fluid behavior and transport at the sub-millimeter scale where surface forces dominate over volume forces (Microfluidic Transport Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electro-osmosis", "microfluidics", "lab-on-a-chip", "zeta-potential", "fluid-dynamics", "bio-sensor", "transport-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transport_Fidelity_Audit: Evaluate the ''Electro-osmotic Velocity'' ($u_e$) against the applied electric field ($E$) to identify if the channel surface (Zeta potential) has been fouled or if the buffer concentration is incorrect.'
-    - 'Boundary_Layer_Integrity_Check: Analyze the ''Debye Length'' ($\\lambda_D$) to ensure the Electrical Double Layer is properly developed for efficient pumping, without excessive Joule heating from the ionic current.'
-    - 'Flow_Fidelity_Scan: Monitor the flow profile to verify that the ''Plug Flow'' characteristic of electro-osmosis is maintained, which minimizes sample dispersion compared to pressure-driven parabolic flow.'
-Trust Metrics:
+  description: "[Entity] electro-osmosis-and-microfluidic-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 Electro-Osmosis and Microfluidic Transport Physics
+# [Entity] electro-osmosis-and-microfluidic-transport-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 펌프도 모터도 없는 머리카락 굵기의 미세한 통로에서 어떻게 액체를 정교하게 흐르게 할까요? **전기 삼투(Electro-Osmosis) 및 미세 유체 수송 물리**는 전기의 힘으로 액체의 표면을 직접 '밀어서' 움직이는 **'보이지 않는 손'** 기술입니다. 좁은 세상(마이크로 세계)에서는 물의 무게보다 표면의 성질이 훨씬 중요해집니다. 전기를 걸어주면 통로 벽면에 붙어있던 이온들이 물을 끌고 함께 달리기 시작합니다. 실험실 전체를 칩 하나에 담는 '랩온어칩'의 심장과 같은 **'나노 규모의 액체 제어 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Sample Dispersion - Flow profile not flat. Check for pressure leaks or surface non-uniformity interfering with electro-osmosis"
         return "PASS: Validated Transport Profile and Verified Diagnostic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(applied_voltage=500.0, measured_current_ua=50.0, flow_velocity_um_s=55.0)
 print(engine.diagnose_microfluidic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_microfluidic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microfluidic-pumping-and-separation-v2026`와 연동되어, 전 세계 주요 바이오 칩 및 정밀 화학 분석 장치의 데이터를 실시간 분석하고 유동 정지 및 분석 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 진단 문명의 수송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - colloid-chemistry-and-zeta-potential-physics

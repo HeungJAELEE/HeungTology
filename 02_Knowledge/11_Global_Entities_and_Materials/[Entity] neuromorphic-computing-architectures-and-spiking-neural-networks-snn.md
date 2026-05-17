@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "neuromorphic-computing-architectures-and-spiking-neural-networks-snn"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] neuromorphic-computing-architectures-and-spiking-neural-networks-snn]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The hardware architectures (Neuromorphic Computing) that mimic the biological brain's structure and function, utilizing Spiking Neural Networks (SNN) and synaptic crossbar arrays (often with memristors) to process information asynchronously and with extreme energy efficiency."
-  physical_model: "N/A"
-Semantic:
-  tags: '["neuromorphic", "snn", "spiking-neural-networks", "memristor", "synaptic-crossbar", "brain-inspired", "low-power-computing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Spike_Rate_Audit: Evaluate the sparsity of neural spikes across the network to ensure the architecture is leveraging temporal sparsity for energy savings.'
-    - 'Synaptic_Weight_Precision_Check: Analyze the conductance resolution ($G_{ij}$) in the crossbar array to identify drift or noise that degrades inference accuracy.'
-    - 'Neuron_Dynamics_Scan: Monitor the membrane potential ($V_m$) and refractory period of individual neurons to ensure the LIF model correctly captures the biological-like timing.'
-Trust Metrics:
+  description: "[Entity] neuromorphic-computing-architectures-and-spiking-neural-networks-snn에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Neuromorphic Computing Architectures and Spiking Neural Networks (SNN)
+# [Entity] neuromorphic-computing-architectures-and-spiking-neural-networks-snn
 
 ## 1. 개요 (Why: 인간적 통찰)
 컴퓨터가 인간의 뇌처럼 생각하고, 아주 적은 양의 전기만으로 수조 개의 연산을 동시에 처리할 수 있다면 어떨까요? **뉴로모픽 컴퓨팅 아키텍처 및 SNN(스파이킹 신경망)**은 실리콘 칩 위에 인공적인 뇌 세포를 만드는 **'반도체 위의 뇌'**입니다. 쉼 없이 0과 1을 계산하는 기존 컴퓨터와 달리, 뉴로모픽은 뉴런이 신호를 보낼 때만 '번쩍(Spike)'이며 일합니다. 밥 한 그릇의 힘으로 복잡한 사고를 하는 인간의 뇌처럼, 세상을 이해하면서도 뜨겁게 달궈지지 않는 **'꿈의 지능형 하드웨어'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Synaptic Plasticity Failure - Local Learning Rules (STDP) Not Converging"
         return "PASS: Active Synaptic Plasticity and Real-time Adaptation Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(spike_sparsity_pct=95.5, weight_drift_sigma=0.04, inference_latency_us=12.0)
 print(engine.diagnose_neuromorphic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_neuromorphic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data neuromorphic-chip-efficiency-and-spike-rate-logs-v2026`와 연동되어, 전 세계 뉴로모픽 공장의 가동 데이터를 실시간 분석하고 연산 오류 및 열 폭주 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 하드웨어 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - memristor-crossbar-arrays-and-in-memory-computing-physics

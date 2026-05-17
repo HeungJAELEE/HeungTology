@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "aerodynamics-and-fluid-structure-interaction-entity"
-  domain: "89_Aerospace_and_Autonomous_Flight_Hub"
+metadata:
+  id: "[[[Entity] aerodynamics-and-fluid-structure-interaction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Aerospace", "#Aerodynamics", "#FSI", "#Fluid_Dynamics", "#Structural_Engineering", "#Aeronautics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 76_aerospace-and-autonomous-flight-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] aerodynamics-and-fluid-structure-interaction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] aerodynamics-and-fluid-structure-interaction
+# [Entity] aerodynamics-and-fluid-structure-interaction
 
 ## 1. [왜 배우는가? (Why: The Mastery of the Skies)]]
 수백 톤의 강철 덩어리가 보이지 않는 공기를 딛고 하늘로 솟구치는 기적, 그 뒤에는 어떤 질서가 숨어 있을까요? **공기 역학 및 유체-구조 상호작용의 양항력 최적화와 플러터 제어 기술**은 비행체가 공기라는 유체 속에서 어떻게 힘을 얻고(양력), 저항을 이겨내며(항력), 공기의 거센 흐름 속에서도 기체가 부서지지 않게 유지하는지 다루는 공학입니다. 특히 비행 속도가 빨라질수록 날개가 공기 힘에 의해 떨리다 부러지는 '플러터(Flutter)' 현상은 비행체의 생사를 결정하는 가장 위험한 물리적 한계입니다. 우리가 이를 배우는 이유는 공기 역학의 무결성을 확보함으로써, 더 빠르고 안전하며 효율적인 비행을 실현하는 '글로벌 항공우주 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 유동의 무결성이 하늘의 지배력을 결정합니다.

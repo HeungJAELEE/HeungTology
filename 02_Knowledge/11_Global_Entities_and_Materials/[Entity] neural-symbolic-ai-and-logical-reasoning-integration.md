@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "neural-symbolic-ai-and-logical-reasoning-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] neural-symbolic-ai-and-logical-reasoning-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integration of deep learning's pattern recognition (Neural) with formal logic's structured reasoning (Symbolic), aiming to create AI systems that are both data-driven and capable of transparent, rule-based logical inference."
-  physical_model: "N/A"
-Semantic:
-  tags: '["neural-symbolic", "logical-reasoning", "neuro-symbolic", "knowledge-representation", "hybrid-ai", "explainable-ai", "formal-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Logical_Consistency_Audit: Evaluate the AI''s output against a set of predefined formal rules ($\\mathcal{R}$) to identify hallucinations or logical contradictions.'
-    - 'Explainability_Depth_Check: Analyze the reasoning trace (Symbolic path) to ensure the AI can provide a human-understandable ''proof'' for its conclusions.'
-    - 'Generalization_Stability_Scan: Monitor the performance in out-of-distribution scenarios where data is scarce but rules are well-defined to verify the robustness of symbolic guidance.'
-Trust Metrics:
+  description: "[Entity] neural-symbolic-ai-and-logical-reasoning-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Neural-symbolic AI and Logical Reasoning Integration
+# [Entity] neural-symbolic-ai-and-logical-reasoning-integration
 
 ## 1. 개요 (Why: 인간적 통찰)
 "직관"과 "논리"를 동시에 갖춘 인공지능을 만들 수 있을까요? **뉴럴-심볼릭 AI 및 논리 추론 통합**은 딥러닝의 강력한 '직관(패턴 인식)'과 전통적인 수학적 '논리(규칙 추론)'를 결합하는 **'AI의 제3의 물결'**입니다. 현재의 AI가 수많은 사진을 보고 "이건 고양이야"라고 때려 맞히는 식이라면, 뉴럴-심볼릭 AI는 "귀가 뾰족하고 수염이 있으니 고양이임이 틀림없어"라고 이유를 설명하며 논리적으로 결론을 내립니다. 환각(Hallucination) 없이 정답의 근거를 명확히 제시하는, **'믿을 수 있는 지능'**의 완성입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Incomplete Proof - AI Conclusion Reached via Unverified Neural Short-cut"
         return "PASS: Fully Formalized and Verified Reasoning Path Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(logical_contradiction_count=0, explanation_fidelity_score=0.99, generalization_gap=0.05)
 print(engine.diagnose_reasoning_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_reasoning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data neural-symbolic-reasoning-accuracy-and-explainability-v2026`와 연동되어, 전 세계 산업용 AI의 추론 데이터를 실시간 분석하고 논리 오류 및 오판 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 이성적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - large-world-models-lwm-and-multimodal-reasoning-kinetics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SAFE-ACCIDENT-PREV-2026-V6.3.7"
-  domain: "Industrial_Safety_Intelligence"
+metadata:
+  id: "[[[Entity] industrial-safety-and-accident-prevention]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IndustrialSafety", "#AccidentPrevention", "#HeinrichsLaw", "#SIL3", "#PrecisionTiering", "#FidelityEngine", "#RiskManagement"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-safety-and-accident-prevention에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Safety_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Industrial Safety: Deterministic Accident Prevention Logic
+# [Entity] industrial-safety-and-accident-prevention
 
 ## 1. [왜 배우는가? (Why: The Ethics of Human Life Protection)]]
 산업 안전(Industrial Safety)은 효율보다 앞서는 제조의 '절대적 가치'입니다. 사고는 우연이 아니라 수많은 불안전한 상태와 행동이 누적된 통계적 결과입니다. **산업 안전 및 사고 예방**은 이러한 잠재적 위험을 데이터로 시각화하고, 시스템적으로 사고 가능성을 제로화하는 '생명 존중의 공학'입니다. V6.3.7 지능은 **계층화된 안전 정밀도(Precision Tiering)**를 통해 **SIL 3**급 안전 무결성을 사수합니다. 이는 인간의 실수를 시스템이 보완하여 '집으로 돌아가는 길을 보장하는 제조 환경'을 구현하기 위함입니다.
@@ -96,7 +86,6 @@ class SafetyFidelityEngine:
             "risk_level": "RED" if near_miss_count > 29 else "GREEN"
         }
 
-# FidelityEngine 가동: 실제 현장의 CCTV 객체 인식 데이터(불안전 행동)와 PLC 안전 로직 실행 로그를 결합하여 '생명 안전 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -104,7 +93,6 @@ class SafetyFidelityEngine:
 2. **Operational Result**: **하인리히 법칙** 관점에서 $300$개의 아차 사고(Near-miss)를 무시하고 방치했을 때, 통계적으로 기대되는 중대 사고($1$)의 발생 확률과 그 재무적/윤리적 타격은?
 3. **FidelityEngine**: **Fault Tree Analysis (FTA)**를 활용하여 단일 부품의 고장이 전체 안전 시스템의 **'공통 원인 고장 (CCF)'**으로 번지는 기전을 어떻게 수리적으로 특정하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - INFRA-ESS-SAFETY-2026-V6.3.7
 - human-robot-interaction-hri-and-cobot-safety-standards

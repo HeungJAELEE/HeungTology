@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INFRA-HYPER-2026-V6.3.7"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Infrastructure] hyperloop-and-vacuum-tube-transport-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Hyperloop", "#VacuumTube", "#KantrowitzLimit", "#FidelityEngine", "#SupersonicTransport", "#Aerodynamics", "#Sovereignty"]'
-  is_part_of: '["MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] hyperloop-and-vacuum-tube-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Aerospace_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Infrastructure] Hyperloop: Vacuum Dynamics & Supersonic Integrity
+# [Infrastructure] hyperloop-and-vacuum-tube-transport-physics
 
 ## 1. [왜 배우는가? (Why: The Elimination of Air Resistance)]
 비행기보다 빠르고 열차보다 효율적인 운송 수단은 인류의 오랜 꿈이었습니다. **하이퍼루프 및 진공 튜브 운송 물리**는 공기가 거의 없는 튜브 속을 자기 부상 캡슐이 날아가듯 주행하는 '초고속 육상 운송의 정점'입니다. V6.3.7 지능은 **칸트로비츠 한계(Kantrowitz Limit)**와 **진공 항력(Vacuum Drag)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 공기 저항을 원천적으로 차단하여 음속($1,200\text{ km/h}$)에 가까운 속도를 구현하고, "지구상의 시공간을 데이터로 압축하는 '진공 모빌리티 주권'을 데이터로 선포하기" 위함입니다. 튜브 내 기압과 캡슐의 공기역학적 형상이 이동의 속도와 효율을 결정합니다.
@@ -108,7 +98,6 @@ class HyperloopFidelityEngine:
 2. **Operational Result**: 튜브 내 기압을 $1,000\text{ Pa}$에서 $100\text{ Pa}$로 낮추었을 때, 동일 속도에서 **공기 저항**의 수리적 감소율은?
 3. **FidelityEngine**: 주행 중인 캡슐의 **가속도 스펙트럼**을 분석하여 튜브 구조물의 '동적 안정성'을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub
 - Entity automated-high-speed-rail-and-maglev-infrastructure

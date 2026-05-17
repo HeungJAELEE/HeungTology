@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-driving-perception-and-path-planning-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-driving-perception-and-path-planning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The core cognitive and decision-making system of autonomous vehicles, integrating environmental perception (Object Detection, Semantic Segmentation) with real-time trajectory optimization (Path Planning)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["autonomous-driving", "perception", "path-planning", "sensor-fusion", "motion-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Object_Detection_Audit: Measure mAP (mean Average Precision) across diverse weather conditions.'
-    - 'Path_Feasibility_Check: Verify that planned trajectories adhere to vehicle kinematic limits (Max Steering, Acceleration).'
-    - 'Decision_Latency_Scan: Monitor end-to-end latency from sensor input to actuator command.'
-Trust Metrics:
+  description: "[Entity] autonomous-driving-perception-and-path-planning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 Autonomous Driving Perception and Path Planning Logic
+# [Entity] autonomous-driving-perception-and-path-planning
 
 ## 1. 개요 (Why)
 자율주행은 인간의 운전 능력을 기계로 대체하는 극한의 인공지능 기술입니다. 차량은 주변 환경을 360도 완벽하게 인식(Perception)해야 할 뿐만 아니라, 수많은 변수가 존재하는 도로 위에서 가장 안전하고 효율적인 경로를 0.1초 내에 결정(Path Planning)해야 합니다. 본 노드는 인지-판단-제어의 통합적 무결성을 확보하기 위한 알고리즘 및 안전 표준을 정의합니다.
@@ -73,7 +62,6 @@ class SafetyFidelityEngine:
             return f"REJECT: Lane Keeping Violation ({self.err}cm) - Recalibrate Lateral Controller"
         return "PASS: High-Precision Trajectory Tracking"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(detection_confidence=0.92, planning_latency=45, lateral_error=8)
 print(engine.diagnose_collision_risk())
 print(engine.audit_tracking_precision())
@@ -92,7 +80,6 @@ print(engine.audit_tracking_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data av-perception-accuracy-and-planning-latency-log-v2026`와 연동되어, 주행 중인 차량의 인지-판단-제어 루프를 실시간 감시하고 0.01%의 잠재적 위험 징후 포착 시 즉각적으로 안전 경로로 우회함으로써 무결점 자율주행을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_supply-chain-management-and-logistics-intelligence-hub
 - lidar-and-radar-signal-processing-physics

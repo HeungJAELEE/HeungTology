@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotics-kinematics-and-dynamics-denavit-hartenberg-dh-convention-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] robotics-kinematics-and-dynamics-denavit-hartenberg-dh-convention]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Kinematics", "#Dynamics", "#Mathematics", "#Geometry", "#Control_Theory", "#Automation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotics-kinematics-and-dynamics-denavit-hartenberg-dh-convention에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotics-kinematics-and-dynamics-denavit-hartenberg-dh-convention
+# [Entity] robotics-kinematics-and-dynamics-denavit-hartenberg-dh-convention
 
 ## 1. [왜 배우는가? (Why: The Geometry of Purposeful Motion)]]
 수천 개의 부품으로 구성된 거대 로봇 팔이 단 0.01mm의 오차도 없이 반도체 웨이퍼를 집어 올리거나 환자의 수술 부위를 정확히 타격하려면, 로봇의 모든 마디가 공간상에서 어디에 있는지 어떻게 계산해야 할까요? **로봇 기구학 및 역학: DH 파라미터와 좌표 변환의 기하학적 정밀도**는 로봇의 '관절 각도'라는 숫자 데이터를 '공간상의 위치'라는 물리적 실체로 번역하는 로봇 공학의 공용 언어입니다. 6자유도 이상의 복잡한 움직임을 수학적으로 단순화하여 컴퓨터가 실시간으로 로봇을 제어할 수 있게 합니다. 우리가 이를 배우는 이유는 정확한 기구학 모델 없이는 로봇의 지능이 육체와 연결될 수 없기 때문이며, "기계적 거동을 데이터로 설계하고 지배하는 '글로벌 로보틱스 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 기구학 모델의 정밀도가 로봇의 작업 무결성을 결정합니다.

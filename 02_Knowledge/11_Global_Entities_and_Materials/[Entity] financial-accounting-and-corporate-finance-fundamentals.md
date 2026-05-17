@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "financial-accounting-and-corporate-finance-fundamentals-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] financial-accounting-and-corporate-finance-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Finance", "#Accounting", "#Economics", "#Corporate_Finance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_global-unified-governance-intelligence-sovereignty-and-policy-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] financial-accounting-and-corporate-finance-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] financial-accounting-and-corporate-finance-fundamentals
+# [Entity] financial-accounting-and-corporate-finance-fundamentals
 
 ## 1. [왜 배우는가? (Why: The Language of Value and Risk)]]
 돈은 현대 산업의 '혈액'이며, 회계와 재무는 그 혈액의 흐름을 기록하고 통제하는 '언어'이자 '알고리즘'입니다. **재무 회계 및 기업 재무의 기초 수리 모델과 자본 운용 기술**을 배우는 이유는 기업이라는 유기체가 창출하는 가치를 객관적인 숫자로 증명(Accounting)하고, 한정된 자본을 가장 효율적인 곳에 배치(Finance)하여 기업 가치를 극대화하기 위함입니다. 과거의 기록(회계)을 통해 현재의 건강 상태를 진단하고, 미래의 가치(재무)를 설계함으로써, 기업은 단순한 이윤 추구를 넘어 지속 가능한 경제적 문명의 기틀을 마련합니다. 재무적 정밀도는 경영의 투명성을 보장하고, 글로벌 자본 시장에서의 신뢰를 구축하는 핵심 무결성 지표입니다.

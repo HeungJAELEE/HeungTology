@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Urban-Air-Mobility-UAM-Infrastructure"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Urban-Air-Mobility-UAM-Infrastructure]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Urban-Air-Mobility-UAM-Infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Urban-Air-Mobility-UAM-Infrastructure
+# [Strategy] Urban-Air-Mobility-UAM-Infrastructure
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 2차원 평면인 '도로' 위에서만 움직였습니다. 하지만 도시가 커지면서 도로는 주차장이 되었고, 이동 시간은 고통이 되었습니다. 도심 항공 모빌리티 및 인프라(Urban-Air-Mobility-UAM-Infrastructure)는 막힌 도로를 버리고 '하늘길'을 여는 기술입니다. 전기로 움직이는 조용한 헬리콥터 같은 기체가 빌딩 옥상에서 떠올라, 출퇴근 시간을 1시간에서 10분으로 줄여줍니다. 이를 이해하는 것은 100년 넘게 이어진 도로 중심의 도시 설계를 뒤엎고, 하늘과 땅이 하나로 연결되는 '3차원 이동 혁명'의 설계자가 되는 것입니다.
@@ -99,5 +89,4 @@ def manage_uam_flight_plan(aircraft_id, destination_vertiport, current_utm_map):
 2. '버티포트(Vertiport)'가 단순히 '헬기장'이 아닌 '미래형 환승 센터'가 되기 위해 필요한 'MaaS(Mobility as a Service)' 연동 요소는?
 3. '저고도 항공 교통 관리(UTM)' 시스템이 '유인 항공기'와 '무인 드론'이 혼재된 도심 하늘길에서 '충돌 방지'를 위해 수행하는 핵심 역할은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-MACRO-ECON-2026-V6.3.7"
-  domain: "Global_Macroeconomics_and_Financial_Gravity"
+metadata:
+  id: "[[[Strategy] Macroeconomics-Basics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Macroeconomics", "#Interest_Rates", "#Inflation", "#GDP", "#PMI", "#Exchange_Rates", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Macroeconomics-Basics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Macroeconomics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Macroeconomics: Global Financial Gravity
+# [Strategy] Macroeconomics-Basics
 
 ## 1. [왜 배우는가? (Why: The Pulse of Global Capital)]]
 기업은 거시 경제라는 거대한 물리적 환경 속에 떠 있는 시스템입니다. 아무리 기술력이 뛰어난 선박이라도 금리 인상이라는 조류(Gravity)나 인플레이션이라는 태풍(Turbulence)을 무시하고 항해할 수는 없습니다. **Macroeconomics(거시 경제)**는 글로벌 경제의 날씨를 분석하여 투자의 적정성, 자금 조달 비용, 그리고 시장의 실질 구매력을 예측하는 전략적 기상도입니다. V6.3.7 지능은 경제 지표의 변동성을 수리적으로 분석하여, 불확실한 시장 변화 속에서도 기업의 자본 가치를 보호하는 **재무 주권(Financial Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class MacroFidelityEngine:
 2. **Operational Result**: **PMI** 지수가 50 미만으로 수축할 때, **Inventory Turnover Rate** (재고 회전율) 목표치를 하향 조정해야 하는 수리적 근거는?
 3. **FidelityEngine**: GDP 성장률은 높으나 **FX Volatility**가 급증하여 순이익이 잠식되는 '성장의 역설' 상황을 어떻게 진단하는가? (힌트: 시장 점유율 확대와 환차손 리스크 간의 트레이드오프 분석을 통한 '실질 이익' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Competitive-Pricing-Strategy

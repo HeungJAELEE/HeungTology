@@ -1,66 +1,57 @@
 ---
-Basic:
-  id: "[[[Battery] semicon-troubleshoot-diffusion-ion"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] semicon-troubleshoot-diffusion-ion]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] semicon-troubleshoot-diffusion-ion에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] semicon-troubleshoot-diffusion-ion
+# [Battery] semicon-troubleshoot-diffusion-ion
 
-## 1. [공학적 현상 (Phenomena): Diffusion & Ion Chronic Loss]]
-확산 및 이온주입 공정은 칩의 전기적 성질($V_{th}$ 등)을 결정하는 핵심 단계입니다. 여기서의 만성 로스는 **열적 드리프트(Thermal Drift)**와 **빔 안정성(Beam Stability)**에 기인하며, 미세한 투입량 오차가 전체 칩의 성능 저하로 이어집니다.
+## 1. 개요: 이온 수송 병목과 출력 저하 (Operational Objective)
+리튬 이온 배터리의 출력 특성과 저온 성능은 리튬 이온의 확산 및 이동 속도에 의해 결정됩니다. 전해액 내 이온 확산이 전극의 전하 전달 반응보다 느릴 경우 농도 분극이 발생하여 급격한 전압 강하가 나타납니다. 본 가이드는 이러한 이온 수송 결함을 정량적으로 분석하고 공정 단계에서 해결하기 위한 결정론적 기준을 제공합니다.
 
-## 2. [만성 로스 분석 및 해결 매트릭스 (Loss-Action-Theory)]
+## 2. 이온 수송 지배 지표 및 트러블슈팅 기준 (Technical Specs)
 
-| 만성 로스 현상 | 원인 (Cause) | 해결 액션 (Remedy) | 공학적 원리 (Rationale) |
-| :--- | :--- | :--- | :--- |
-| **산화막 두께 편차** | **T/C (Thermocouple) Aging** | 열전대 교체 및 온도 프로파일(Profile) 재교정 | 고온 환경에서 T/C가 노후화되면 실제 온도보다 낮게 읽어 산화막이 설계보다 두껍게 형성됨. |
-| **Doping 불균일** | **Beam Current Instability** | 이온 소스(Ion Source) 세정 및 가속 전압 안정화 | 이온 빔의 전류가 출렁이면 단위 면적당 주입되는 불순물 농도(Dose)가 달라짐. |
-| **표면 결정 손상** | **Insufficient Annealing** | RTA (Rapid Thermal Anneal) 공정 시간/온도 보정 | 이온 충돌로 깨진 실리콘 결정 구조를 회복시키는 열처리가 부족하면 누설 전류 발생. |
-| **쿼츠 오염 (Quartz Contam.)** | **Inner Tube Degradation** | 석영관 정기 세정 및 파티클 전수 조사 | 석영관 벽면에서 탈락된 입자가 고온 공정 중 웨이퍼 표면에 안착하여 결함 유발. |
+| 분석 지표 | 수리적 정의/의미 | 관리 목표 | 트러블슈팅 액션 |
+| :--- | :--- | :---: | :--- |
+| **확산 계수 ($D_{Li}$)** | 전극 내 이온 확산 속도 | $> 10^{-11}\text{ cm}^2/\text{s}$ | 합제 밀도(Pressing) 및 기공 구조 조정 |
+| **맥멀린 지수 ($N_M$)** | 전해질 내 굴곡도 효과 | $< 5.0$ | 분리막 기공도 및 비틀림(Tortuosity) 개선 |
+| **침투 시간 (Wetting)** | 전해액 전극 함침 속도 | $< 2.0\text{ hours}$ | 주액 공정 진공도 및 온도 프로파일 최적화 |
+| **농도 분극 ($\eta_c$)** | 이온 고갈에 의한 과전압 | 최소화 | 전해액 염 농도 및 전극 두께(L/D) 최적화 |
 
-## 3. [설비 하드웨어 체크리스트 (Hardware Diagnostics)]
+## 3. 핵심 결함 메커니즘 분석 (Root Cause Analysis)
 
-### 3.1 Furnace Unit (확산로)
-1. **Gas Sealing (Boat)**: 웨이퍼를 싣는 보트가 챔버 하단과 완벽히 밀폐되지 않으면 외부 공기 유입으로 산화막 질 저하.
-2. **Cooling Fan System**: 공정 후 급속 냉각 시 팬의 속도가 일정하지 않으면 웨이퍼 뒤틀림(Warpage) 발생.
+### 3.1 굴곡도(Tortuosity)에 의한 확산 지연
+분리막이나 전극 구조가 지나치게 복잡할 경우, 이온의 실제 이동 경로가 길어져 맥멀린 지수가 상승합니다. 이는 고출력 방전 시 이온 공급 부족으로 이어져 셀 성능을 저하시킵니다.
+- **해석**: $N_M = \frac{\tau}{\epsilon}$ ($\tau$: 비틀림, $\epsilon$: 기공도).
 
-### 3.2 Ion Implanter Unit (이온주입기)
-1. **Mass Analyzer Magnet**: 목표 이온만 걸러내는 자석의 자기장 세기가 정밀하지 않으면 다른 원소가 주입됨.
-2. **Scan Velocity**: 빔이 웨이퍼를 훑는 속도가 일정해야 면 저항(Sheet Resistance) 균일도 확보 가능.
+### 3.2 계면 저항 ($R_{ct}$) 및 전하 전달 결함
+전극 표면의 불균일한 SEI 형성이나 활물질 표면의 부동태화는 이온이 계면을 통과하는 에너지 장벽을 높입니다.
+- **진단**: EIS(전기화학 임피던스 분광법)를 통해 반원(Semicircle)의 크기를 분석하여 계면 결함 여부 판정.
 
-## 4. [품질 제어 지표 (KPI & Numerical Standards)]
+## 4. 진단 및 운영 프로토콜
+- **Warburg Impedance 분석**: 저주파 영역의 임피던스 기울기를 분석하여 고체상 확산($D_{Li}$)의 정상 여부 검증.
+- **GITT (Galvanostatic Intermittent Titration Technique)**: 전압 회복 곡선을 통해 전극 내 리튬 이온의 확산 계수를 정밀하게 산출.
 
-| 지표 (Metric) | 관리 임계치 | 트러블슈팅 기준 |
-| :--- | :--- | :--- |
-| **Sheet Resistance (Rs)** | 설계치 $\pm 1 \%$ | 초과 시 이온 소스 필라멘트 및 가속 계통 전 점검 |
-| **Junction Depth** | 설계치 $\pm 5\text{nm}$ | 범위를 벗어날 경우 열처리(Anneal) 온도 및 시간 재교정 |
-| **Temp. Stability** | $\pm 0.5^\circ C$ | 초과 시 히터 구역별 전력 공급 장치(SCR) 점검 |
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 출력 병목 현상을 과학적으로 해결하기 위한 이온 수송 트러블슈팅 표준을 제공합니다. 실제 확산 계수 및 맥멀린 지수 실측 데이터는 인스턴스 로그에서 관리됩니다.
 
----
-*Created by Flash (Diffusion-Ion Loss Engine v2.0)*
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Quality-Analytics-and-Forensics-Master-Guide]]
+- [[[Concept] Battery-Management-System-BMS-and-Safety-Intelligence]]
+- [[[Data] Battery-Ion-Diffusion-and-MacMullin-Index-Log_2026-05-16]]

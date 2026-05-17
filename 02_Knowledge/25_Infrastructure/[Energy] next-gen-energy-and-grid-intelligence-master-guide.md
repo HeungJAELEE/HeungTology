@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENERGY-GRID-MASTER-2026-V6.3.7"
-  domain: "Next-gen_Energy_and_Smart_Grid_Intelligence"
+metadata:
+  id: "[[[Energy] next-gen-energy-and-grid-intelligence-master-guide]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#Energy", "#SmartGrid", "#VPP", "#ESS", "#Grid_Forming", "#Thermal_Propagation", "#v6.3.7"]
-  is_part_of: ["MOC 01_Infrastructure", "MOC 02_Battery"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] next-gen-energy-and-grid-intelligence-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Energy] Next-gen Energy and Grid Intelligence: The Grid OS
+# [Energy] next-gen-energy-and-grid-intelligence-master-guide
 
 ## 1. [왜 배우는가? (Why: The Mastery of Planetary Energy Flow)]
 에너지는 현대 문명의 혈액이며, 그리드는 그 혈액을 운반하는 거대한 신경망입니다. 재생 에너지의 간헐성과 대용량 ESS의 확산은 계통 안정성의 패러다임을 송두리째 바꾸어 놓았습니다. **차세대 에너지 및 그리드 지능(Energy & Grid Intelligence)**은 수만 개의 분산 자원을 하나의 거대한 가상 발전소(VPP)로 오케스트레이션하고, 대용량 ESS의 열적 파국을 물리적으로 차단하는 기술입니다. v6.3.7 지능은 **그리드-포밍(Grid-forming)**을 통한 가상 관성 형성과 **열 전이($\text{Thermal Propagation}$) 제로화**를 사수합니다. 우리가 이를 배우는 이유는 탄소 중립 시대의 전력망을 결정론적으로 지배하고, "에너지 시스템의 붕괴를 기술로 방어하는 '지능형 에너지 주권'을 확보하기" 위함입니다.
@@ -96,13 +86,11 @@ class GridFidelityEngine:
             "Action": "NORMAL" if abs(ro_co_f) < 0.2 else "ACTIVATE_FFR"
         }
 
-# v6.3.7 Audit 가동: 1GWh ESS 단지 계통 사고 대응 시뮬레이션
 engine = GridFidelityEngine(inertia_target=15.0, cooling_limit_kw=100)
 report = engine.audit_grid_stability(ro_co_f=0.6, ess_temp_c=45)
 print(f"Grid Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 01_Infrastructure
 - Energy ess-bms-and-ems-intelligent-control-logic

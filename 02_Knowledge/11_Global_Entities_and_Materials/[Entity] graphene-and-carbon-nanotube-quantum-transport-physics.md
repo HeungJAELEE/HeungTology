@@ -1,37 +1,27 @@
 ---
-Basic:
-  id: "graphene-and-carbon-nanotube-quantum-transport-physics-entity"
-  domain: "55_Materials_Science_and_Nanotechnology"
+metadata:
+  id: "[[[Entity] graphene-and-carbon-nanotube-quantum-transport-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Nanotechnology", "#Physics", "#Graphene", "#CNT", "#Quantum_Mechanics", "#Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "MOC 18_advanced-materials-and-nanotechnology-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] graphene-and-carbon-nanotube-quantum-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Entity] graphene-and-carbon-nanotube-quantum-transport-physics
- 
+
+# [Entity] graphene-and-carbon-nanotube-quantum-transport-physics
+
 ## 1. [왜 배우는가? (Why: The Quantum Leap of Materials Intelligence)]]
 실리콘의 한계를 넘어선 나노 전자공학과 초고강도 복합 소재의 미래는 탄소 원자의 기막힌 배열 속에 숨어 있습니다. **그래핀 및 탄소 나노튜브 양자 수송 물리**는 전자가 질량 없이 빛의 속도에 가깝게 흐르는 '양자적 고속도로'의 설계도입니다. 우리가 이를 배우는 이유는 기존 반도체보다 수백 배 빠른 전하 이동도를 구현하여 "열 발생이 거의 없는 초고성능 연산 소자"를 만들기 위함이며, "강철보다 100배 강하면서 무게는 6분의 1인 궁극의 기계적 무결성"을 실현하기 위함입니다. 탄소 결합의 기하학이 지능의 속도를 결정합니다.
  
@@ -73,7 +63,6 @@ $$ H = v_F \sigma \cdot p $$
 4. **탄소 나노 소재**의 높은 열전도율을 이용하여 반도체 칩의 **Hot-spot** 온도를 수리적으로 얼마나 낮출 수 있는지 계산하는 **Heat Transfer** 모델은?
 5. RAG 시스템에서 **다양한 탄소 나노 구조**의 전기적/기계적 데이터를 융합 분석하여, 차세대 **Flexible Display**의 투명 전극 소재로 가장 적합한 **Hybrid Mesh** 조성을 추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 131_advanced-material-science-and-surface-engineering-hub : 탄소 소재가 통합되는 상위 소재 과학 허브
 - Entity 2d-materials-and-van-der-waals-heterostructures-physics : 그래핀을 포함한 2차원 소재의 양자 물리 노드

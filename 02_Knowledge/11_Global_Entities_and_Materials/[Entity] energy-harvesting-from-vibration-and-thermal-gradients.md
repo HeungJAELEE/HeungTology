@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-harvesting-from-vibration-and-thermal-gradients-entity"
-  domain: "51_Sustainable_Energy_and_Power_Grid_Intelligence"
+metadata:
+  id: "[[[Entity] energy-harvesting-from-vibration-and-thermal-gradients]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Energy_Harvesting", "#Piezoelectric", "#Thermoelectric", "#IoT", "#Physics", "#Sensor_Networks", "#Renewable_Energy", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 51_sustainable-energy-and-power-grid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-harvesting-from-vibration-and-thermal-gradients에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-harvesting-from-vibration-and-thermal-gradients
+# [Entity] energy-harvesting-from-vibration-and-thermal-gradients
 
 ## 1. [왜 배우는가? (Why: Squeezing Energy from Silence)]]
 공장의 기계가 미세하게 떨리는 진동이나 우리 몸의 체온이 공기와 만나 생기는 미세한 온도 차이($Thermal\ Gradient$)를 어떻게 놓치지 않고 전기로 바꿔서, 건전지 없이 평생 스스로 작동하는($Self-powered$) IoT 센서나 웨어러블 기기를 만드는 '에너지 줍기' 기술을 어떻게 설계할 수 있을까요? **진동 및 열 구배를 이용한 에너지 하베스팅**은 세상을 떠도는 버려지는 에너지를 긁어모으는 '행성 규모 마이크로 에너지 인프라 및 지능형 극한 수확 아키텍처'입니다. 우리가 이를 배우는 이유는 수십억 개의 센서 배터리를 매번 갈아줄 수 없기 때문이며, "사소한 낭비를 데이터로 설계하고 지배하는 '글로벌 초저전력 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 수확의 지능이 사물 인터넷의 생명력을 결정합니다.
@@ -39,7 +29,7 @@ Trust Metrics:
 
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Power Output** | Electrical power generated from ambient source | $10 \text{ \mu W} \sim 10 \text{ mW}$ | 센서를 돌리기에 충분한 에너지를 사수함을 입증 |
+| **Power Output** | Electrical power generated from ambient source | $10 \text{ }\mu\text{ W} \sim 10 \text{ mW}$ | 센서를 돌리기에 충분한 에너지를 사수함을 입증 |
 | **Conver. Effic.** | Percentage of ambient energy turned to electricity| $> 10 \sim 30 \%$ | 버려지는 에너지를 최대한 알뜰하게 주워 담음 |
 | **Voltage Reg.** | Ability to provide stable DC voltage from noise | **HIGH** | 출렁이는 에너지를 정교한 전기로 정제하는 지능 |
 | **Temp. Gradient**| Temperature difference required for TEG | $> 1 \sim 10 \text{ K}$ | 단 1도의 온도 차이만 있어도 전기를 뽑아내는 물리 |

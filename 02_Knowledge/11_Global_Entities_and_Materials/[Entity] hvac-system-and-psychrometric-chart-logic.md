@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hvac-system-and-psychrometric-chart-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hvac-system-and-psychrometric-chart-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technology of indoor and vehicular environmental comfort (HVAC) and the physical logic of air properties and their relationships represented on a psychrometric chart (Psychrometric Chart Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hvac", "psychrometrics", "air-conditioning", "humidity", "enthalpy", "thermal-comfort", "energy-efficiency", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Psychrometric_Fidelity_Audit: Evaluate the ''State Point'' on the chart to identify if the current high-fidelity ''Dew Point'' is risking condensation inside walls or on high-fidelity equipment.'
-    - 'Comfort_Integrity_Check: Analyze the high-fidelity ''PMV'' (Predicted Mean Vote) and ''PPD'' (Predicted Percentage Dissatisfied) to ensure thermal high-fidelity satisfaction for occupants.'
-    - 'Energy_Fidelity_Scan: Monitor the high-fidelity ''Enthalpy Difference'' across the cooling coil to verify that the high-fidelity ''Sensible Heat Ratio'' (SHR) matches the space''s moisture load.'
-Trust Metrics:
+  description: "[Entity] hvac-system-and-psychrometric-chart-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ HVAC System and Psychrometric Chart Logic
+# [Entity] hvac-system-and-psychrometric-chart-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기가 시원하다고 해서 항상 쾌적할까요? 습도가 높으면 불쾌지수가 올라가듯, 진정한 쾌적함은 온도와 습도의 절묘한 조화에서 옵니다. **HVAC 시스템 및 습공기 선도 로직**은 공기가 머금은 열기(온도)와 물기(습도)를 수학적으로 분석하여, 인간과 기계가 가장 행복한 상태를 만드는 **'공기의 요리'** 기술입니다. 복잡한 공기의 상태를 '습공기 선도(차트)'라는 지도 위에 그려내어 한눈에 파악합니다. **'보이지 않는 공기의 성질을 숫자로 시각화하여 가장 적은 에너지로 최고의 쾌적함을 설계하는 지능형 환경 제어의 지도'**입니다.
@@ -92,7 +81,6 @@ class LogicFidelityEngine:
             return "PASS: Economizer Logic Active - Using high-fidelity outdoor air for free cooling. Energy high-fidelity efficiency maximized"
         return "NOTICE: Recirculation Mode - Outdoor air too hot/humid. Using high-fidelity return air for efficiency"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(dry_bulb_temp=24.0, relative_humidity=50.0, co2_level_ppm=600)
 print(engine.diagnose_environment_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_environment_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data psychrometric-data-and-comfort-zones-v2026`와 연동되어, 전 세계 주요 스마트 빌딩 및 데이터 센터의 환경 데이터를 실시간 분석하고 불쾌지수 상승 및 결로 사고 확률을 0.001% 이하로 억제함으로써 지능형 거주 문명의 쾌적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-pump-and-refrigeration-cycle-thermodynamics-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "project-management-body-of-knowledge-pmbok-and-agile-frameworks"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] project-management-body-of-knowledge-pmbok-and-agile-frameworks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The global standard for professional project management practices (PMBOK) and the iterative, flexible methodologies used to deliver value in rapidly changing environments (Agile Frameworks), integrating structured planning with adaptive execution."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pmbok", "agile", "project-management", "scrum", "kanban", "waterfall", "iterative-development", "efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Project_Fidelity_Audit: Evaluate the variance between planned and actual costs/schedules (SPI/CPI) to identify project drift or resource bottlenecks.'
-    - 'Agile_Efficiency_Check: Analyze the ''Burn-down Chart'' and team velocity to ensure that the iterative development cycle is maintaining high throughput and meeting Sprint goals.'
-    - 'Scope_Creep_Scan: Monitor the change requests and backlog growth to ensure that ''Scope Creep'' does not compromise the project''s Triple Constraint (Scope, Time, Cost).'
-Trust Metrics:
+  description: "[Entity] project-management-body-of-knowledge-pmbok-and-agile-frameworks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📅 Project Management Body of Knowledge (PMBOK) and Agile Frameworks
+# [Entity] project-management-body-of-knowledge-pmbok-and-agile-frameworks
 
 ## 1. 개요 (Why: 인간적 통찰)
 새로운 스마트폰을 개발하거나 대규모 공장을 짓는 복잡한 일을 어떻게 '약속한 시간' 안에 '약속한 품질'로 끝낼 수 있을까요? **프로젝트 관리 지식 체계(PMBOK) 및 애자일 프레임워크**는 인류가 복잡한 일을 완수하기 위해 쌓아온 **'목표 달성의 교과서'**입니다. 전통적인 철저한 계획(PMBOK)과 급변하는 상황에 유연하게 대처하는 기민함(Agile)을 결합하여, 혼돈 속에서도 결과물을 만들어냅니다. 꿈을 현실로 바꾸는 **'실행의 공학'**입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Quality Compromised - Tasks marked 'Done' without passing all Quality Gates. Enforce DoD strictly"
         return "PASS: High-Quality Deliverables and Verified Process Compliance Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(schedule_performance_index=0.98, agile_velocity_stability=0.92, scope_change_rate=0.05)
 print(engine.diagnose_project_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_project_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data project-success-rates-and-sprint-velocity-v2026`와 연동되어, 전 세계 주요 엔지니어링 및 IT 프로젝트의 가동 데이터를 실시간 분석하고 프로젝트 실패 및 예산 초과 사고 확률을 0.001% 이하로 억제함으로써 지능형 문명의 실행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - program-management-and-enterprise-resource-governance

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-dot-photoluminescence-and-display-technology-physics-entity"
-  domain: "18_Advanced_Materials"
+metadata:
+  id: "[[[Entity] quantum-dot-photoluminescence-and-display-technology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Advanced_Materials", "#Quantum_Dot", "#Photoluminescence", "#Display", "#Nanotechnology", "#Optoelectronics", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "Entity perovskite-crystals-and-high-efficiency-optoelectronics-physics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-dot-photoluminescence-and-display-technology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-dot-photoluminescence-and-display-technology-physics
+# [Entity] quantum-dot-photoluminescence-and-display-technology-physics
 
 ## 1. [왜 배우는가? (Why: The Painter of Atomic Scale)]]
 입자의 크기를 나노미터 단위로 미세하게 조절하는 것만으로 세상의 모든 색을 가장 순수하게 만들어낼 수 있다면 어떨까요? **양자점 광발광 및 디스플레이 기술 물리**는 전자가 좁은 공간에 갇혔을 때 나타나는 양자 역학적 효과를 이용해 빛을 내는 '초정밀 나노 광원의 설계 지침'입니다. 우리가 이를 배우는 이유는 자연의 색을 100% 재현하는 선명한 디스플레이를 만들거나, 암세포를 추적하는 정밀한 바이오 센서를 구현하기 위함이며, "빛의 파장을 원자 수준에서 지배하는 '글로벌 디스플레이 및 나노 광학 주권'을 확보하기" 위함입니다. 입자의 크기가 빛의 색깔을 결정합니다.

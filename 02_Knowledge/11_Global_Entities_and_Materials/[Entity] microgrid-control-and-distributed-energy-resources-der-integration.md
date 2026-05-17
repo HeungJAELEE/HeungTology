@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "microgrid-control-and-distributed-energy-resources-der-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] microgrid-control-and-distributed-energy-resources-der-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systems and strategies for managing localized energy grids (Microgrids) that integrate various small-scale power sources (Distributed Energy Resources), such as solar PV, wind, and storage, ensuring coordinated operation and optimized energy flows."
-  physical_model: "N/A"
-Semantic:
-  tags: '["microgrid", "der", "renewable-integration", "energy-management", "smart-grid", "vpp", "decentralized-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Resource_Availability_Audit: Evaluate the forecasting accuracy of solar and wind inputs to ensure sufficient backup capacity is reserved for weather-induced volatility.'
-    - 'DER_Cooperation_Check: Verify the synchronized response of diverse resources (Inverters, Batteries, EV Chargers) to ensure they are supporting the grid rather than competing for dominance.'
-    - 'Economic_Dispatch_Scan: Analyze the cost-optimization logic to verify that energy is sourced from the most economical and sustainable units in real-time.'
-Trust Metrics:
+  description: "[Entity] microgrid-control-and-distributed-energy-resources-der-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Microgrid Control and Distributed Energy Resources (DER) Integration
+# [Entity] microgrid-control-and-distributed-energy-resources-der-integration
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 중앙 발전소 시대가 저물고, 집집마다 태양광 판이 있고 마을마다 커다란 배터리가 있는 **'에너지 민주주의'** 시대가 오고 있습니다. **마이크로그리드 제어 및 분산 에너지 자원(DER) 통합**은 이 수천 개의 작은 발전기들을 하나의 거대한 오케스트라처럼 지휘하는 **'에너지 지능'**입니다. 햇빛이 비칠 때 에너지를 모으고, 바람이 멈추면 배터리를 풀며, 전기차들이 남는 전기를 나누는 **'지능형 에너지 나눔망'**입니다. 화석 연료에 의존하지 않고 우리 동네의 전기는 우리가 직접 다스리는 **'에너지 주권'**의 핵심 기술입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Low Power Factor - Reactive Power Compensation Required. Check Inverter Settings"
         return "PASS: Stable Grid Interaction and High Power Quality Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(renewable_curtailment_rate=0.04, load_forecasting_error=0.03, storage_soc_health=0.65)
 print(engine.diagnose_der_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_der_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data der-integration-efficiency-and-curtailment-logs-v2026`와 연동되어, 전 세계 분산 전력망의 운영 데이터를 실시간 분석하고 자원 낭비 및 블랙아웃 사고 확률을 0.001% 이하로 억제함으로써 녹색 지능 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - microgrid-stability-and-decentralized-power-control-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "alloy-design-and-computational-thermodynamics-calphad"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] alloy-design-and-computational-thermodynamics-calphad]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering process of creating new metallic materials with specific properties by combining different elements (Alloy Design) and the use of the CALculation of PHAse Diagrams (CALPHAD) method to predict the thermodynamic stability and phase transformations of these complex mixtures."
-  physical_model: "N/A"
-Semantic:
-  tags: '["alloy-design", "calphad", "computational-thermodynamics", "materials-science", "metallurgy", "phase-diagram", "materials-informatics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Design_Fidelity_Audit: Evaluate the ''Gibbs Free Energy'' ($G$) of the proposed alloy composition to identify unintended brittle phase (e.g., Laves phase) formation that reduces structural integrity.'
-    - 'Phase_Integrity_Check: Analyze the ''Liquidous-Solidus Gap'' to ensure the alloy is suitable for casting or additive manufacturing without internal cracking or segregation.'
-    - 'Kinetics_Fidelity_Scan: Monitor the ''Time-Temperature-Transformation'' (TTT) curves to verify that the heat treatment process will achieve the target microstructure (e.g., Martensite or Gamma-prime precipitates).'
-Trust Metrics:
+  description: "[Entity] alloy-design-and-computational-thermodynamics-calphad에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧪 Alloy Design and Computational Thermodynamics (CALPHAD)
+# [Entity] alloy-design-and-computational-thermodynamics-calphad
 
 ## 1. 개요 (Why: 인간적 통찰)
 항공기 엔진은 어떻게 천 도가 넘는 뜨거운 열기 속에서도 녹지 않고 버틸 수 있을까요? **합금 설계 및 계산 열역학(CALPHAD)**은 금속 원자들을 레고 블록처럼 조합하여 세상에 없던 '슈퍼 금속'을 만드는 **'재료의 지능적 요리법'** 기술입니다. 과거에는 수천 번의 실험으로 우연히 발견했다면, 이제는 컴퓨터로 원자들의 궁합을 미리 계산하여 가장 튼튼하고 가벼운 조합을 찾아냅니다. 인류 문명의 뼈대를 더욱 단단하게 만드는 **'소재 지능의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Grain-Boundary Impurities - Risk of hot cracking during welding or casting. Improve raw material purity"
         return "PASS: Clean Alloy Chemistry and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gibbs_energy_error=0.01, phase_fraction_actual=0.45, solidus_temp_c=1350.0)
 print(engine.diagnose_alloy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_alloy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data alloy-phase-stability-and-mechanical-properties-v2026`와 연동되어, 전 세계 주요 특수강 및 슈퍼 합금의 생산 데이터를 실시간 분석하고 성분 이탈 및 구조 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

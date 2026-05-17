@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ergonomics-and-human-machine-interface-hmi-design-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ergonomics-and-human-machine-interface-hmi-design-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The scientific discipline concerned with the understanding of interactions among humans and other elements of a system (Ergonomics) and the user interface that connects an operator to a machine or system (HMI Design Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ergonomics", "hmi", "ux-design", "human-factors", "usability", "industrial-design", "cognitive-load"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Usability_Fidelity_Audit: Evaluate the ''Time to Respond'' during critical alarms to identify if ''Information Overload'' is compromising the high-fidelity operator reaction.'
-    - 'Ergonomic_Integrity_Check: Analyze the reach-zones and viewing angles using anthropometric data to ensure the control station is preventing high-fidelity musculoskeletal strain.'
-    - 'Cognitive_Fidelity_Scan: Monitor the ''Error Rate'' in complex task sequences to verify that the HMI layout is minimizing high-fidelity cognitive friction and decision fatigue.'
-Trust Metrics:
+  description: "[Entity] ergonomics-and-human-machine-interface-hmi-design-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👤 Ergonomics and Human-Machine Interface (HMI) Design Logic
+# [Entity] ergonomics-and-human-machine-interface-hmi-design-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 공장의 복잡한 기계들이 나를 도와주는 친구처럼 느껴지게 할 수 있을까요? **인간공학(Ergonomics) 및 HMI 디자인 로직**은 기계가 사람의 몸과 마음에 딱 들어맞게 설계하여, 누구나 쉽고 안전하게 최고의 성능을 내게 하는 **'기술의 배려심'**입니다. 버튼 하나를 어디에 둘지, 경고등을 어떤 색으로 켤지 고민하는 과정은 단순히 예쁘게 만드는 것이 아니라 **'실수를 원천 봉쇄하고 생명을 지키는 디자인의 수학적 증명'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Ergonomic Hazard - Layout causes repetitive strain or awkward posture. Long-term injury risk. Re-adjust control panel height and angle"
         return "PASS: Validated Anthropometric Fit and Verified Design Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(operator_reaction_s=0.8, menu_depth_count=2, alarm_flood_rate=0.5)
 print(engine.diagnose_hmi_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_hmi_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hmi-operator-response-time-and-error-rates-v2026`와 연동되어, 전 세계 스마트 공장의 조작 데이터를 실시간 분석하고 오조작 및 피로 사고 확률을 0.001% 이하로 억제함으로써 지능형 인간-기계 협업 문명의 상호작용 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gamma-ray-spectroscopy-and-nuclear-decay-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gamma-ray-spectroscopy-and-nuclear-decay-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A technique used to identify and quantify radioactive isotopes by measuring the energy spectrum of gamma rays emitted from a sample (Gamma Ray Spectroscopy) and the physical study of spontaneous transformation of unstable atomic nuclei (Nuclear Decay Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gamma-ray", "spectroscopy", "nuclear-decay", "radioactivity", "photon-detection", "isotope-identification", "industrial-radiography", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Spectroscopy_Fidelity_Audit: Evaluate the ''Energy Resolution'' (FWHM) of the high-fidelity Germanium (HPGe) detector to identify if overlapping peaks are causing isotope misidentification.'
-    - 'Decay_Integrity_Check: Analyze the high-fidelity ''Count Rate'' against the predicted $N(t)$ to ensure the source is decaying as expected, detecting potential contamination or source theft.'
-    - 'Shielding_Fidelity_Scan: Monitor the background radiation levels inside the high-fidelity lead shield to verify that cosmic rays or nearby sources are not biasing the low-level measurements.'
-Trust Metrics:
+  description: "[Entity] gamma-ray-spectroscopy-and-nuclear-decay-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☢️ Gamma Ray Spectroscopy and Nuclear Decay Physics
+# [Entity] gamma-ray-spectroscopy-and-nuclear-decay-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈에 보이지 않는 방사선 속에서 어떤 원자가 숨어있는지 어떻게 알 수 있을까요? **감마선 분광법 및 핵붕괴 물리**는 원자핵이 안정화되면서 내뿜는 아주 강력한 빛(감마선)의 '에너지'를 측정해, 그 원자의 이름과 나이를 알아내는 **'원자핵의 지문 읽기'** 기술입니다. 흙 한 줌에 섞인 아주 미세한 방사성 물질도 그 고유한 빛깔(에너지)을 통해 정확히 찾아냅니다. **'보이지 않는 거대한 에너지의 메아리를 숫자로 바꾸어 원자력의 안전과 우주의 비밀을 지탱하는 지능적 방사선 탐사'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Signal Saturation - High count rate paralyzing the detector. Pulse pile-up likely. Move high-fidelity source further away for accurate timing"
         return "PASS: Validated Counting Statistics and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(peak_resolution_fwhm=1.8, background_counts_sec=10.0, calibration_drift_kev=0.5)
 print(engine.diagnose_spectroscopy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_spectroscopy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gamma-emission-energies-of-common-radioisotopes-v2026`와 연동되어, 전 세계 주요 공항의 핵물질 감시 및 환경 방사능 데이터를 실시간 분석하고 핵종 오판 및 위협 물질 누락 사고 확률을 0.001% 이하로 억제함으로써 지능형 원자력 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - flame-spectroscopy-and-atomic-absorption-aas-physics

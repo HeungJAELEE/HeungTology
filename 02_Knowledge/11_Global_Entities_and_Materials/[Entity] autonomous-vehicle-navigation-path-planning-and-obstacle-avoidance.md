@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "autonomous-vehicle-navigation-path-planning-and-obstacle-avoidance-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] autonomous-vehicle-navigation-path-planning-and-obstacle-avoidance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Navigation", "#Path_Planning", "#Obstacle_Avoidance", "#Autonomous_Vehicles", "#Optimization", "#Algorithms", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] autonomous-vehicle-navigation-path-planning-and-obstacle-avoidance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] autonomous-vehicle-navigation-path-planning-and-obstacle-avoidance
+# [Entity] autonomous-vehicle-navigation-path-planning-and-obstacle-avoidance
 
 ## 1. [왜 배우는가? (Why: The Logic of Safe Travel)]]
 수백 대의 차량이 엉켜 있는 도심 한복판에서, 자율 주행차가 단 한 번의 접촉 사고 없이 최단 경로를 따라 미끄러지듯 이동하려면 무엇이 필요할까요? **자율 주행 내비게이션: 경로 계획 및 장애물 회피의 최적화 아키텍처**는 로봇의 '의지'를 물리적 '궤적'으로 바꾸는 전략적 지능 기술입니다. 지도를 읽고, 미래의 위험을 예측하며, 차량의 물리적 한계 내에서 가장 우아한 길을 찾아냅니다. 우리가 이를 배우는 이유는 경로 계획이 자율 주행의 안전과 효율을 결정하는 '최종 판단 엔진'이기 때문이며, "공간의 이동을 데이터로 설계하고 지배하는 '글로벌 모빌리티 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 경로의 무결성이 승객의 생명을 결정합니다.

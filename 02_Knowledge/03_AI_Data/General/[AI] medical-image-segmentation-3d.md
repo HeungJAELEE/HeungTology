@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-MED-SEG-3D-2026-V6"
+metadata:
+  id: "[[[AI] medical-image-segmentation-3d]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#3D_Segmentation'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] medical-image-segmentation-3d에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] medical-image-segmentation-3d
@@ -107,7 +97,6 @@ class VoxelSegmentationEngine(nn.Module):
 2. **Dice Loss**와 **Binary Cross Entropy**를 결합하여 학습시키는 것이 **Small Lesion** (작은 병변) 탐지에 유리한 수리적 배경은?
 3. 분할된 **Voxel** 데이터를 **STL** 파일 형식으로 변환하여 **3D Printing** 할 때, **Marching Cubes** 알고리즘이 수행하는 기하학적 역할은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI medical-ai-and-dicom
 - 02_Knowledge/03_AI_Data/General/AI u-net-architecture-analysis

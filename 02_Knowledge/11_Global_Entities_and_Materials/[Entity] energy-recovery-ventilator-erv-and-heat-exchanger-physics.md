@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "energy-recovery-ventilator-erv-and-heat-exchanger-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] energy-recovery-ventilator-erv-and-heat-exchanger-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of air-to-air heat exchanger that transfers sensible heat and latent heat (moisture) between outgoing stale air and incoming fresh air (ERV) and the physical study of thermal efficiency and moisture transfer kinetics (Heat Exchanger Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["erv", "energy-recovery", "heat-exchanger", "hvac", "ventilation", "latent-heat", "sensible-heat"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Exchange_Fidelity_Audit: Evaluate the ''Sensible Effectiveness'' ($\\epsilon_s$) to identify if the heat exchanger core is clogged or if the fan speeds are causing unbalanced airflow.'
-    - 'Latent_Integrity_Check: Analyze the moisture transfer rate to ensure the desiccant material (e.g., polymer/paper) is maintaining its high-fidelity sorption capacity without mold buildup.'
-    - 'Thermal_Fidelity_Scan: Monitor the frost formation risk in sub-zero environments to verify that the ''Defrost Logic'' is preventing high-fidelity ice blockage while maximizing recovery.'
-Trust Metrics:
+  description: "[Entity] energy-recovery-ventilator-erv-and-heat-exchanger-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Energy Recovery Ventilator (ERV) and Heat Exchanger Physics
+# [Entity] energy-recovery-ventilator-erv-and-heat-exchanger-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 추운 겨울, 환기를 위해 창문을 열면 따뜻한 방 안의 공기가 다 나가버려 아깝지 않나요? **에너지 회수 환기 장치(ERV) 및 열교환 물리**는 나가는 공기에서 '따뜻함(열)'과 '촉촉함(습도)'만 쏙 빼앗아 들어오는 새 공기에 입혀주는 **'에너지 재활용'** 기술입니다. 낡은 공기는 버리되 그 속에 담긴 소중한 에너지는 지켜내는 이 장치는, 에어컨이나 히터의 부담을 획기적으로 줄여줍니다. **'숨은 열까지 낚아채어 쾌적함과 저비용을 동시에 잡는 지능적 환기의 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Latent Efficiency - ERV core lost its hygroscopic properties. Air is too dry for occupant comfort. Replace core or check for surface saturation"
         return "PASS: Validated Humidity Retention and Verified Comfort Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(in_out_temp_delta=15.0, flow_balance_ratio=1.0, filter_status=0.2)
 print(engine.diagnose_erv_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_erv_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data erv-sensible-and-latent-efficiency-v2026`와 연동되어, 전 세계 주요 제로 에너지 빌딩 및 친환경 아파트의 공조 데이터를 실시간 분석하고 에너지 낭비 및 실내 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 거주 문명의 공기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - drying-process-and-psychrometrics-logic

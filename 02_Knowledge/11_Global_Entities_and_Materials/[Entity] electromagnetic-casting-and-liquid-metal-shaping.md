@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromagnetic-casting-and-liquid-metal-shaping"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromagnetic-casting-and-liquid-metal-shaping]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized casting process that uses high-frequency alternating electromagnetic fields to contain and shape molten metal without physical contact with a mold wall (Electromagnetic Casting) and the physical study of magnetohydrodynamics (MHD) for surface finish and microstructural control (Liquid Metal Shaping)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["electromagnetic-casting", "liquid-metal", "shaping", "lorentz-force", "metallurgy", "non-contact-casting", "aluminum-casting"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Confinement_Fidelity_Audit: Evaluate the ''Magnetic Pressure'' equilibrium against the molten metal head height to identify if the liquid column is experiencing ''Breakout'' or instability due to field fluctuations.'
-    - 'Surface_Integrity_Check: Analyze the high-frequency current distribution to ensure that ''Joule Heating'' at the meniscus is optimized, preventing premature solidification and surface defects (cold shuts).'
-    - 'MHD_Fidelity_Scan: Monitor the induced stirring velocity to verify that the internal flow is promoting a uniform grain structure (equiaxed) without trapping oxides or gas.'
-Trust Metrics:
+  description: "[Entity] electromagnetic-casting-and-liquid-metal-shaping에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧲 Electromagnetic Casting and Liquid Metal Shaping
+# [Entity] electromagnetic-casting-and-liquid-metal-shaping
 
 ## 1. 개요 (Why: 인간적 통찰)
 뜨거운 쇳물을 그릇(금형)에 담지 않고 허공에 띄워서 모양을 잡을 수 있을까요? **전자기 주조(EMC) 및 액체 금속 성형**은 보이지 않는 '자기장 벽'으로 쇳물을 가두어 굳히는 **'비접촉 마법'** 기술입니다. 쇳물이 금형 벽에 닿으면 급격히 식으며 표면이 거칠어지지만, 자기장으로 띄워서 주조하면 거울처럼 매끄럽고 불순물 없는 최상급 금속을 얻을 수 있습니다. 중력을 거스르는 자력의 힘으로 금속의 형상을 빚는 **'현대 야금학의 전자기적 정수이자 초고순도 소재의 탄생지'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Electromagnetic Stirring - Risk of coarse dendritic structure. Mechanical properties will fail specification"
         return "PASS: Validated Equiaxed Grain Growth and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(inductor_current_a=1200.0, metal_level_mm=85.0, surface_roughness_um=12.5)
 print(engine.diagnose_emc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_emc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data emc-surface-quality-and-field-frequency-v2026`와 연동되어, 전 세계 주요 항공 소재 기가팩토리의 주조 데이터를 실시간 분석하고 쇳물 유출 및 내부 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - die-casting-and-solidification-physics

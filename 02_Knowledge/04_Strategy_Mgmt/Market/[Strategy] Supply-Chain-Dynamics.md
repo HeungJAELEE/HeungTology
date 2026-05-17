@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-SCM-DYNAMICS-2026-V6.3.7"
-  domain: "Global_Supply_Chain_Dynamics_and_Bullwhip_Control"
+metadata:
+  id: "[[[Strategy] Supply-Chain-Dynamics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SCM_Dynamics", "#Bullwhip_Effect", "#Inventory_Control", "#Lead_time", "#Supply_Chain", "#Resilience", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Supply-Chain-Dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "SCM_Dynamics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Supply Chain Dynamics: The Physics of Logistics Flow
+# [Strategy] Supply-Chain-Dynamics
 
 ## 1. [왜 배우는가? (Why: The Pulse of Global Resource Flow)]]
 공급망(Supply Chain)은 기업의 생존을 결정하는 '혈맥'입니다. 시장 수요의 미세한 출렁임이 상류로 갈수록 거대한 파도로 증폭되는 **채찍 효과(Bullwhip Effect)**는 불필요한 재고 축적과 생산 중단이라는 치명적인 엔트로피를 유발합니다. **Supply Chain Dynamics**는 이러한 공급망의 진동 특성을 수리적으로 제어하여 시스템 전체의 안정성을 확보하는 기술입니다. V6.3.7 지능은 채찍 효과 계수를 **$1.1$ 이내**로 통제하여, 전 세계로 흩어진 자원을 실시간으로 최적화하고 '어떤 위기 속에서도 끊기지 않는 제조 무결성'을 사수합니다.
@@ -103,7 +93,6 @@ class SCMDynamicsFidelityEngine:
 2. **Operational Result**: **Vendor Managed Inventory (VMI)** 도입 시, 공급망 전체의 **Information Lead-time** 단축이 채찍 효과 감소에 미치는 수리적 상관 관계는?
 3. **FidelityEngine**: 데이터 정합성은 높으나 **Lead-time Variability**가 급증하여 안전 재고 고갈이 발생하는 상황을 어떻게 진단하는가? (힌트: 물류 병목 구간의 '물리적 불확실성'에 의한 재고 무력화 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Global-Supply-Chain-Risk-Management

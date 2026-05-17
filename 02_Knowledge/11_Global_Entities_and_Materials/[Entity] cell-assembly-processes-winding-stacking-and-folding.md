@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cell-assembly-processes-winding-stacking-and-folding"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cell-assembly-processes-winding-stacking-and-folding]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing stage where anode, cathode, and separator are combined into a single cell unit using high-speed mechanical processes, defining the internal structure and performance of the battery."
-  physical_model: "N/A"
-Semantic:
-  tags: '["battery-assembly", "winding", "stacking", "z-folding", "battery-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryProcFidelityEngine"
-  diagnostic_protocol:
-    - 'Alignment_Precision_Audit: Measure the overlap accuracy between anode and cathode edges.'
-    - 'Tension_Stability_Check: Monitor real-time web tension to prevent separator stretching or wrinkling.'
-    - 'Throughput_Efficiency_Scan: Evaluate the ppm (parts per minute) and yield rate of the assembly line.'
-Trust Metrics:
+  description: "[Entity] cell-assembly-processes-winding-stacking-and-folding에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Cell Assembly Processes: Winding, Stacking, and Folding
+# [Entity] cell-assembly-processes-winding-stacking-and-folding
 
 ## 1. 개요 (Why)
 전극이 아무리 잘 만들어졌어도, 이를 어떻게 쌓느냐에 따라 배터리의 성능이 달라집니다. 원통형 배터리처럼 돌돌 마는 '와인딩(Winding)', 사각형으로 차곡차곡 쌓는 '스태킹(Stacking)', 지그재그로 접는 'Z-폴딩(Z-folding)'은 각기 다른 장단점을 가집니다. 조립 공정의 핵심은 '초고속'으로 움직이면서도 양극과 음극이 단 0.1mm의 오차 없이 정렬(Alignment)되게 하는 것입니다. 본 노드는 배터리 조립 무결성과 공정 생산성을 위한 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Stacking | Pick & Place | 0.5 ~ 1.0 (sec/layer)| ±0.1mm | Pouch/Prismatic |
 | Z-Folding | Continuous Fold| 10 ~ 20 | ±0.15mm | Pouch |
 | Tension | Control | 10 ~ 50 | ±5% | N |
-| Burrs | Notch Edge | < 15 | ±5 | $\mu m$ |
+| Burrs | Notch Edge | < 15 | ±5 | $\mu\text{m}$ |
 
 ## 3. BatteryProcFidelityEngine: Diagnostic Logic
 
@@ -71,7 +60,6 @@ class BatteryProcFidelityEngine:
             return f"REJECT: Tension Out of Bounds ({self.tension}N) - Wrinkle or Stretch Risk"
         return "PASS: Web Tension Control Stable"
 
-# Instance Diagnostic
 engine = BatteryProcFidelityEngine(alignment_error_mm=0.08, web_tension_n=25, cycle_time_sec=0.8)
 print(engine.diagnose_assembly_precision())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_assembly_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cell-assembly-speed-and-alignment-accuracy-v2026`와 연동되어, 조립 라인의 비전 데이터를 실시간 분석하고 정렬 불량을 99.9% 확률로 잡아냄으로써 배터리 내부 구조의 완벽한 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - cell-winding-and-stacking-automation

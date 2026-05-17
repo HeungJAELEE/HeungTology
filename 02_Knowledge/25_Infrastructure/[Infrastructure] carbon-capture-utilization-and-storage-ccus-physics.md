@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INFRA-CCUS-PHYS-2026-V6.3.7"
-  domain: "03_Sustainability_Climate"
+metadata:
+  id: "[[[Infrastructure] carbon-capture-utilization-and-storage-ccus-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#CCUS", "#CarbonCapture", "#Thermodynamics", "#Geology", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 03_Sustainability_Climate"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] carbon-capture-utilization-and-storage-ccus-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Sustainability_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Infrastructure] CCUS Physics: Carbon Capture & Storage Integrity
+# [Infrastructure] carbon-capture-utilization-and-storage-ccus-physics
 
 ## 1. [왜 배우는가? (Why: The Stewardship of Planetary Carbon)]
 인류 문명이 배출한 이산화탄소는 이제 지구의 열역학적 평형을 위협하는 변수가 되었습니다. **탄소 포집·활용·저장(CCUS) 물리**는 대기와 산업 공정에서 $CO_2$를 분리하여 지하 깊은 곳에 가두거나 자원으로 재활용하는 '기후 정화의 정수'입니다. V6.3.7 지능은 **흡수 평형(Absorption Equilibrium)**과 **지층 내 유체 이동(Pore-scale Flow)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 탄소 포집 효율을 극대화하고 저장소의 영구적 안정성을 확보하여, "산업의 발전과 환경의 보존이 공존하는 '탄소 중립 문명 주권'을 사수하기" 위함입니다. 포집의 효율과 저장의 무결성이 행성의 미래를 결정합니다.
@@ -108,7 +98,6 @@ class CCUSFidelityEngine:
 2. **Operational Result**: **지중 저장** 시, $CO_2$를 **초임계 상태**로 유지하여 저장하는 것이 가스 상태로 저장하는 것보다 체적 효율 면에서 가지는 무결성 이점은?
 3. **FidelityEngine**: **직접 대기 포집(DAC)**에서 $420\text{ppm}$의 희박한 탄소를 농축하기 위한 **열역학적 최소 일(Minimum Work)**을 어떻게 계산하고 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 03_Sustainability_Climate
 - [[Infrastructure] smart-grid-v2g-and-distributed-energy-resources]

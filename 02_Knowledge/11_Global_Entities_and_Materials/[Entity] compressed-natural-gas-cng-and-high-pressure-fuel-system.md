@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "compressed-natural-gas-cng-and-high-pressure-fuel-system"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] compressed-natural-gas-cng-and-high-pressure-fuel-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Natural gas under high pressure which remains clear, odorless, and non-corrosive (CNG) and the complex engineering logic of safely storing and delivering this gas to internal combustion engines via high-pressure cylinders and regulators (High-Pressure Fuel System)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cng", "natural-gas", "fuel-system", "high-pressure", "clean-energy", "automotive-engineering", "gas-storage"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Pressure_Fidelity_Audit: Evaluate the ''Cylinder Pressure'' and temperature to identify if the fuel system is experiencing over-pressurization during fast-fill or extreme ambient heat.'
-    - 'Regulator_Integrity_Check: Analyze the secondary stage pressure to ensure that the ''Pressure Regulator'' is maintaining a constant feed to the injectors without freeze-up due to the Joule-Thomson effect.'
-    - 'Safety_Fidelity_Scan: Monitor the ''Leakage Detectors'' and PRD (Pressure Relief Device) status to verify that the high-pressure barrier is intact and no hazardous gas accumulation is occurring.'
-Trust Metrics:
+  description: "[Entity] compressed-natural-gas-cng-and-high-pressure-fuel-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛽ Compressed Natural Gas (CNG) and High-Pressure Fuel System
+# [Entity] compressed-natural-gas-cng-and-high-pressure-fuel-system
 
 ## 1. 개요 (Why: 인간적 통찰)
 깨끗한 공기를 위해 도시 가스를 자동차의 연료로 쓸 수는 없을까요? **압축 천연가스(CNG) 및 고압 연료 시스템**은 기체 상태의 천연가스를 200배 넘는 압력으로 꽉 눌러서 가볍고 깨끗한 '청정 연료'로 바꾸는 **'기체의 고밀도 에너지화'** 기술입니다. 시내버스나 대형 트럭의 뒤편에 실린 튼튼한 가스통 속에는, 엄청난 압력을 견디며 우리 도시의 공기를 지켜내는 **'보이지 않는 에너지의 파수꾼'**이 들어있습니다. 폭발적인 힘을 안전한 그릇에 담아 문명을 달리게 하는 **'고압 공학의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Potential Structural Damage - High-G impact detected on the storage cylinder. Risk of composite delamination. Mandatory inspection required"
         return "PASS: Validated Pressure Vessel and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cylinder_pressure_bar=180.0, regulator_exit_pressure_bar=8.2, fuel_temp_c=25.0)
 print(engine.diagnose_cng_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cng_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cng-fuel-storage-safety-and-pressure-cycles-v2026`와 연동되어, 전 세계 주요 대중교통 및 트럭 플릿의 가동 데이터를 실시간 분석하고 가스 누출 및 용기 파손 사고 확률을 0.0001% 이하로 억제함으로써 지능형 모빌리티 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - combustible-gas-detector-and-explosive-limit-monitoring

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Autonomous-Defense-Systems-and-Robotic-Warfare"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Autonomous-Defense-Systems-and-Robotic-Warfare]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Autonomous-Defense-Systems-and-Robotic-Warfare에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Autonomous-Defense-Systems-and-Robotic-Warfare
+# [Strategy] Autonomous-Defense-Systems-and-Robotic-Warfare
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 전쟁은 수천 명의 군인이 전선에서 대치하고, 사람이 조종하는 탱크와 전투기가 주력이 되는 장비전이라고 생각했습니다. 하지만 이제 전장의 주역은 로봇과 AI가 됩니다. 자율 방어 시스템 및 로봇 전쟁 지능(Autonomous-Defense-Systems-and-Robotic-Warfare)은 로봇이 위험한 정찰과 전투를 대신 수행하고, AI가 인간보다 빠르게 적의 공격을 분석해 아군을 보호하는 기술입니다. 사람이 방아쇠를 당기기 전, AI가 이미 수백 개의 표적을 분석해 최선의 대응책을 제시합니다. 이를 이해하는 것은 인명 피해를 최소화하고 국가의 안보를 지능적으로 수호하는 '미래 국방'의 사령탑이 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Drone Swarm Coordination & Target Classification Logic)]
 드론 간의 간격을 유지하고, 카메라 영상에서 표적을 식별하는 논리 구조입니다.
 ```python
-# 국방 지능(ISM) 기반 자율 방어 및 로봇 전쟁 제어 논리
 def execute_autonomous_mission(drone_fleet, reconnaissance_feed):
     # 1. 지능형 표적 식별 (Target Identification)
     # 카메라 데이터를 분석해 적 전차와 민간 차량을 99% 확률로 구분
@@ -94,5 +83,4 @@ def execute_autonomous_mission(drone_fleet, reconnaissance_feed):
 2. '드론 군집(Drone Swarm)' 기술이 '기존 방공망(Anti-air defense)'을 무력화할 수 있는 '물량 및 분산 지능' 측면의 이유는?
 3. '치명적 자율 무기(LAWS)'에 대한 '국제법적 논쟁' 속에서 '인간의 통제권(Human Control)'을 기술적으로 보장하는 방식은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

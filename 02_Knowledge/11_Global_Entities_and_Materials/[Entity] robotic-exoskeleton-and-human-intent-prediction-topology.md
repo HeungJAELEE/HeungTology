@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-exoskeleton-and-human-intent-prediction-topology-entity"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] robotic-exoskeleton-and-human-intent-prediction-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Exoskeleton", "#Human_Augmentation", "#Intent_Prediction", "#Wearable_Tech", "#AI", "#Neuroscience", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_autonomous-systems-and-robotics-hub", "Entity neuro-regeneration-and-brain-repair-mechanics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-exoskeleton-and-human-intent-prediction-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-exoskeleton-and-human-intent-prediction-topology
+# [Entity] robotic-exoskeleton-and-human-intent-prediction-topology
 
 ## 1. [왜 배우는가? (Why: The Symbiosis of Flesh and Steel)]]
 사람이 발을 떼려고 하는 0.1초 전의 미세한 근육 신호나 무게 중심의 변화를 AI가 어떻게 미리 읽어내어($Intent\ Prediction$), 로봇 다리가 마치 내 몸인 것처럼 한 치의 어긋남 없이 힘을 보태주어 무거운 짐을 들거나 마비된 다리로 다시 걷게 할 수 있을까요? **로봇 외골격 및 인간 의도 예측 위상**은 인간의 육체를 강화하는 '인간-로봇 공생 및 지능형 증강 설계 지침'입니다. 우리가 이를 배우는 이유는 로봇이 사람의 의도보다 늦게 움직이면 오히려 짐이 되기 때문이며, "인간의 행동을 데이터로 설계하고 지배하는 '글로벌 인간 증강 및 모빌리티 복구 주권'을 확보하기" 위함입니다. 예측의 정밀도가 증강의 자연스러움을 결정합니다.

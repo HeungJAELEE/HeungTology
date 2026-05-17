@@ -1,14 +1,14 @@
 ---
-Basic:
+metadata:
   id: "MOC-CHEM-INFO-HUB-v6.4"
   date: 2026-05-14
   domain: 11_Global_Entities_and_Materials
-Dynamic:
+dynamic:
   status: Ratified (V6.4 Active)
-Object:
+object:
   uuid: chemistry-informatics-hub-moc
   type: MOC
-Semantic:
+semantic:
   is_part_of: '["[[[MOC] 00_INDEX]]"]'
   tags: '["#MOC", "#Chemistry", "#Informatics", "#Dataset", "#AIP"]'
 Trust Metrics:
@@ -22,9 +22,10 @@ related_to: '["[[01-molecular-modeling-fundamentals]]", "[[01-pharmacology-and-d
 trust_base: 1.0
 trust_lambda: 0.0
 type: MOC
+  version: "v7.5.3"
 ---
 
-# [MOC] Chemistry Informatics Hub (화학 정보학 통합 허브)
+# chemistry-informatics-hub
 
 ## 1. 개요 (Context)
 본 문서는 Antigravity 시스템에 이식된 글로벌 화학 데이터셋 및 화학 정보학(Cheminformatics) 리소스를 총괄하는 지휘소입니다. 외부에서 수집된 방대한 화학 지식을 시스템의 공학적 의사결정에 활용할 수 있도록 분류하고 연결합니다.

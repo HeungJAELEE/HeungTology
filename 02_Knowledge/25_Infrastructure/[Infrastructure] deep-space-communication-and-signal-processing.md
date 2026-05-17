@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "deep-space-communication-and-signal-processing-entity"
-  domain: "04_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] deep-space-communication-and-signal-processing]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Space", "#Communication", "#Signal_Processing", "#Physics", "#Error_Correction", "#Network", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Mobility satellite-orbital-mechanics-and-trajectory-control", "MOC 25_global-infrastructure-and-future-cities-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] deep-space-communication-and-signal-processing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] deep-space-communication-and-signal-processing
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Optical Communication** (레이저 통신) 도입 시, 지구 대기에 의한 **Scintillation**과 **Beam Wander**를 보정하기 위한 **Adaptive Optics** (적응 제어 광학)의 수리적 수렴 속도는?
 5. RAG 시스템에서 **태양계 천체력(Ephemeris)** 데이터와 **통신 링크 예산**을 융합하여, '행성 엄폐(Occultation)' 시 발생할 통신 단절 시간을 분 단위로 예측하고 최적의 데이터 덤프(Dump) 시점을 산출하는 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Mobility]] satellite-orbital-mechanics-and-trajectory-control]] : 통신 대상인 위성 및 탐사선의 궤도 정보와 도플러 보정의 기초가 되는 항법 엔티티
 - [Infrastructure] semiconductor-node-scaling-and-nanolithography-physics : 심우주 통신의 신호 처리를 담당하는 고성능 저전력 반도체 소자 기술 엔티티

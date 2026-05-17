@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vibration-isolation-and-active-damping-for-metrology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] vibration-isolation-and-active-damping-for-metrology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of isolating an object from the source of vibrations, such as floor noise or machinery (Vibration Isolation) and the use of sensors and actuators to generate counter-forces that neutralize mechanical oscillations (Active Damping for Metrology)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["vibration-isolation", "active-damping", "metrology", "precision-measurement", "piezoelectric", "air-bearing", "structural-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Isolation_Fidelity_Audit: Evaluate the ''Transmissibility Ratio'' ($T$) across a frequency spectrum to identify ''Resonance Peaks'' where floor vibrations are actually being amplified rather than suppressed.'
-    - 'Damping_Integrity_Check: Analyze the settling time of the metrology stage after a stage move; if active damping is malfunctioning, the ''Residual Vibration'' will degrade measurement throughput.'
-    - 'Sensor_Fidelity_Scan: Monitor the noise floor of the piezoelectric accelerometers to ensure that the active system is not injecting ''Electronic Noise'' into the mechanical stage.'
-Trust Metrics:
+  description: "[Entity] vibration-isolation-and-active-damping-for-metrology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📳 Vibration Isolation and Active Damping for Metrology
+# [Entity] vibration-isolation-and-active-damping-for-metrology
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노미터 단위의 반도체 회로를 관찰할 때, 옆 방에서 걷는 사람의 발걸음이나 멀리서 달리는 지하철의 진동이 마치 지진처럼 느껴진다면 어떻게 될까요? **진동 격리 및 계측용 능동 댐핑**은 세상의 모든 미세한 흔들림으로부터 정밀 기기를 지켜내는 **'나노 단위의 고요함'** 기술입니다. 단순한 고무 패드(수동)를 넘어, 진동이 오는 순간 반대 방향으로 똑같은 힘을 주어 진동을 상쇄하는(능동) 인공지능형 평형 유지 기술입니다. 세상의 소란함을 잠재우고 진실만을 측정하게 돕는 **'정밀 문명의 보호막'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Air Pressure - Isolation table bottomed out. Auto-leveling system failing. Check compressor supply"
         return "PASS: Balanced Floating State and Verified Mechanical Decoupling Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vibration_velocity_rms=0.015, isolation_efficiency_pct=99.2, settling_time_ms=15)
 print(engine.diagnose_vibration_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vibration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data floor-vibration-spectra-and-isolation-efficiency-v2026`와 연동되어, 전 세계 반도체 공장 및 연구소의 진동 데이터를 실시간 분석하고 측정 오류 및 영상 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 계측 문명의 정적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-measurement-and-metrology-for-tooling-audit

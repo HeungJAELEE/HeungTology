@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "rover-mechanics-and-autonomous-planetary-exploration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] rover-mechanics-and-autonomous-planetary-exploration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering design of mobile robots intended to traverse the surface of other planets or moons (Rover Mechanics) and the advanced AI systems that enable these robots to navigate and conduct science without direct human intervention (Autonomous Planetary Exploration)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["rover-mechanics", "planetary-exploration", "autonomous-robotics", "terramechanics", "space-robotics", "mobility-systems", "astronomy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Mobility_Fidelity_Audit: Evaluate the wheel slip ratio ($s$) to ensure the rover is not getting stuck in soft regolith; trigger ''Escape Maneuvers'' if the drawbar pull becomes negative.'
-    - 'Suspension_Integrity_Check: Analyze the joint angles of the Rocker-Bogie system to verify that the rover can maintain contact with all six wheels while traversing uneven rocky terrain.'
-    - 'Autonomous_Navigation_Scan: Monitor the hazard avoidance (Hazcam) data to ensure the path planner is identifying obstacles larger than the wheel radius ($0.5D$) and adjusting the trajectory in real-time.'
-Trust Metrics:
+  description: "[Entity] rover-mechanics-and-autonomous-planetary-exploration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚜 Rover Mechanics and Autonomous Planetary Exploration
+# [Entity] rover-mechanics-and-autonomous-planetary-exploration
 
 ## 1. 개요 (Why: 인간적 통찰)
 지구에서 수억 킬로미터 떨어진 붉은 화성 땅 위를, 사람의 도움 없이 스스로 길을 찾아 움직이는 '외로운 탐험가'는 어떻게 일할까요? **로버 역학 및 자율 행성 탐사**는 미지의 행성 표면을 누비며 과학적 발견을 수행하는 **'우주용 자율 주행 로봇'** 기술입니다. 푹푹 빠지는 모래 지형(테라메카닉스)을 견디는 특수 바퀴와, 험난한 바위산을 넘을 수 있는 독특한 서스펜션, 그리고 지구와 통신이 끊겨도 스스로 위험을 판단해 우회하는 인공지능이 결합되어 있습니다. 인류의 눈과 발이 되어 우주의 신비를 밝히는 **'외계 문명 개척의 선봉장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Power Shortage - Solar panels obscured by dust. Hibernate all non-essential systems until Wind-cleaning event"
         return "PASS: Adequate Energy Storage and Verified Power-safe Operation Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(wheel_slip_ratio=0.15, tilt_angle_deg=5.0, hazard_confidence=0.95)
 print(engine.diagnose_rover_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_rover_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data rover-wheel-slip-and-terrain-trafficability-logs-v2026`와 연동되어, 화성(Curiosity, Perseverance)의 가동 데이터를 실시간 분석하고 고립 및 장비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 행성 탐사 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - robot-kinematics-and-autonomous-visual-slam-mechanics

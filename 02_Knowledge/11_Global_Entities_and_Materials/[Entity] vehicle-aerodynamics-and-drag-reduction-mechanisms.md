@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vehicle-aerodynamics-and-drag-reduction-mechanisms"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] vehicle-aerodynamics-and-drag-reduction-mechanisms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the motion of air around a vehicle and the forces it exerts (Vehicle Aerodynamics) and the engineering of shapes and devices—such as spoilers, diffusers, and active shutters—to minimize resistance and optimize energy efficiency (Drag Reduction Mechanisms)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aerodynamics", "drag-reduction", "automotive-engineering", "fluid-dynamics", "fuel-efficiency", "wind-tunnel", "cfd"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aerodynamic_Fidelity_Audit: Evaluate the Drag Coefficient ($C_d$) against the design target to identify unintended turbulence sources like roof racks or misaligned underbody panels.'
-    - 'Vortex_Integrity_Check: Analyze the wake region behind the vehicle to ensure that ''Diffusers'' and ''Boat-tails'' are effectively suppressing the low-pressure pocket that ''pulls'' the car backward.'
-    - 'Cooling_Efficiency_Scan: Monitor the ''Active Grille Shutter'' response to verify that it balances aerodynamic drag and radiator cooling requirements according to engine/battery temperature.'
-Trust Metrics:
+  description: "[Entity] vehicle-aerodynamics-and-drag-reduction-mechanisms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ Vehicle Aerodynamics and Drag Reduction Mechanisms
+# [Entity] vehicle-aerodynamics-and-drag-reduction-mechanisms
 
 ## 1. 개요 (Why: 인간적 통찰)
 바람을 가르며 달리는 자동차가 더 멀리, 더 조용하게 가기 위해 가장 중요한 것은 무엇일까요? **차량 공기역학 및 항력 감소 메커니즘**은 보이지 않는 벽인 '공기'를 부드럽게 흘려보내는 **'바람의 조각술'** 기술입니다. 시속 100km로 달릴 때 자동차 에너지의 절반 이상이 공기를 밀어내는 데 사용됩니다. 이 저항을 줄이는 것은 단순히 멋진 모양을 만드는 것을 넘어, 연료를 아끼고 전기차의 주행 거리를 늘리는 **'에너지 효율의 정수'**입니다. 공기와 싸우지 않고 친구가 되어 달리는 **'유체의 지능적 조율'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Aero-acoustic Performance - Turbulence around A-pillar or mirror causing excessive noise. Check seal integrity"
         return "PASS: Quiet Cabin Environment and Verified Surface Smoothing Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(target_cd=0.21, measured_cd=0.22, air_shutter_status=0.5)
 print(engine.diagnose_aerodynamic_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_aerodynamic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data vehicle-drag-coefficient-and-energy-consumption-v2026`와 연동되어, 전 세계 주요 차종의 공력 데이터를 실시간 분석하고 연비 저하 및 고속 불안정 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - tire-mechanics-and-autonomous-vehicle-dynamics

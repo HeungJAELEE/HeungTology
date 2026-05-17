@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ultra-high-entropy-alloys-and-extreme-environment-structural-integrity"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ultra-high-entropy-alloys-and-extreme-environment-structural-integrity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A class of advanced metal alloys consisting of five or more elements in near-equal proportions (High Entropy Alloys) and the study of how these materials maintain their mechanical strength and stability under extreme heat, pressure, or radiation (Extreme Environment Structural Integrity)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["high-entropy-alloys", "hea", "material-science", "structural-integrity", "extreme-environments", "metallurgy", "aerospace-materials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Material_Fidelity_Audit: Evaluate the Phase Stability of the alloy at extreme temperatures to identify unintended precipitation or brittle phase formation that compromises structural integrity.'
-    - 'Strength_Integrity_Check: Analyze the yield strength ($\\sigma_y$) and fracture toughness ($K_{IC}$) to verify that the ''Lattice Distortion'' from multiple elements is effectively hindering dislocation movement.'
-    - 'Radiation_Tolerance_Scan: Monitor for swelling or embrittlement under high-energy particle bombardment to ensure the HEA is suitable for nuclear fusion or deep-space reactor environments.'
-Trust Metrics:
+  description: "[Entity] ultra-high-entropy-alloys-and-extreme-environment-structural-integrity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Ultra-High Entropy Alloys and Extreme Environment Structural Integrity
+# [Entity] ultra-high-entropy-alloys-and-extreme-environment-structural-integrity
 
 ## 1. 개요 (Why: 인간적 통찰)
 서로 다른 대여섯 가지 금속을 똑같은 비율로 섞으면 어떤 일이 벌어질까요? **초고엔트로피 합금(HEA) 및 극한 환경 구조 무결성**은 "철이 주인이 되고 다른 금속은 양념"이라는 수천 년 금속학의 고정관념을 깬 **'금속의 민주주의'** 기술입니다. 여러 금속이 대등하게 섞이면서 생기는 엄청난 무질서(Entropy)가 오히려 물질을 더 단단하게 결속시킵니다. 영하 200도의 극한 추위부터 핵융합로의 엄청난 뜨거움까지 견뎌내는 **'지구상에서 가장 강인한 금속 문명의 방패'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Radiation Swelling - Atomic lattice failing to absorb particle damage. Unsuitable for nuclear environment"
         return "PASS: Robust Atomic Displacement Recovery and Verified Extreme Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fracture_toughness=120.0, peak_temp_exposure=800.0, lattice_distortion_strain=0.15)
 print(engine.diagnose_alloy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_alloy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hea-yield-strength-and-fracture-toughness-logs-v2026`와 연동되어, 전 세계 항공 우주 및 에너지 시설의 특수 합금 데이터를 실시간 분석하고 재료 파손 및 구조 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - rare-earth-element-extraction-and-separation-metallurgy

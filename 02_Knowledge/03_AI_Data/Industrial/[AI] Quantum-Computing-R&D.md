@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-QUANTUM-RD-2026-V6"
+metadata:
+  id: "[[[AI] Quantum-Computing-R&D]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Quantum_Computing'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Quantum-Computing-R&D에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Quantum-Computing-R&D
@@ -39,12 +29,12 @@ Trust Metrics:
 
 | Parameter Category | Specific Metric | Target Specification | Engineering Rationale |
 |:---|:---:|:---:|:---|
-| **Coherence Time** | $T_1$ (Relaxation) | $> 100 \text{ \mu s}$ | 양자 상태가 유지되는 시간 (연산 가능 시간 결정) |
-| **Phase Coherence**| $T_2$ (Dephasing) | $> 50 \text{ \mu s}$ | 위상 정보가 보존되는 시간 (간섭 효과 유지) |
+| **Coherence Time** | $T_1$ (Relaxation) | $> 100 \text{ }\mu\text{ s}$ | 양자 상태가 유지되는 시간 (연산 가능 시간 결정) |
+| **Phase Coherence**| $T_2$ (Dephasing) | $> 50 \text{ }\mu\text{ s}$ | 위상 정보가 보존되는 시간 (간섭 효과 유지) |
 | **Gate Fidelity** | 2-Qubit Gate Acc. | $> 99.9\%$ | 연산 중 발생하는 오류율 최소화 (QEC 임계치) |
 | **Qubit Count** | Physical Qubits | $> 1,000 \text{ (NISQ)}$ | 중간 규모 양자 장치에서의 유의미한 연산 규모 |
 | **Operating Temp.** | Cryogenic Temp | $< 20 \text{ mK}$ | 초전도 큐비트의 열 잡음 억제를 위한 극저온 환경 |
-| **Interconnect** | QPU-GPU Latency | $< 10 \text{ \mu s}$ | 하이브리드 알고리즘(VQE)의 반복 연산 최적화 |
+| **Interconnect** | QPU-GPU Latency | $< 10 \text{ }\mu\text{ s}$ | 하이브리드 알고리즘(VQE)의 반복 연산 최적화 |
 | **Volume** | Quantum Volume | $> 2^{10}$ | 큐비트 수와 오류율을 결합한 종합 성능 지표 |
 | **Advantage** | Speedup Factor | Exponential | 분자 오비탈 계산 등 특정 문제에서의 계산 우위 |
 
@@ -107,7 +97,6 @@ class QuantumRDPipeline:
 2. **Quantum Volume** 지표가 단순히 큐비트 수만 늘리는 것보다 실제 연산 능력을 더 정확하게 대변하는 공학적 이유는?
 3. **Error Mitigation** (오류 완화) 기술이 **Error Correction** (오류 정정) 기술과 하드웨어 요구 사항 측면에서 가지는 결정적 차이는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Algorithms-Industrial-Use
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Error-Correction-QEC

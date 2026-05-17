@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "tool-wear-mechanisms-and-predictive-maintenance-physics-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering"
+metadata:
+  id: "[[[Entity] tool-wear-mechanisms-and-predictive-maintenance-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Manufacturing", "#Tool_Wear", "#Predictive_Maintenance", "#Tribology", "#Metallurgy", "#AI", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] tool-wear-mechanisms-and-predictive-maintenance-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] tool-wear-mechanisms-and-predictive-maintenance-physics
+# [Entity] tool-wear-mechanisms-and-predictive-maintenance-physics
 
 ## 1. [왜 배우는가? (Why: The Life of the Cutting Edge)]]
 강철을 깎는 초경합금 칼날이 어떻게 닳아가고($Wear$), 칼날이 부러지기 직전에 나는 미세한 소리나 진동($Acoustic\ Emission$)을 어떻게 인공지능이 포착하여 "이제 칼을 갈 때가 됐어!"라고 알려주는 '지능형 건강 진단'을 어떻게 구현할 수 있을까요? **공구 마모 메커니즘 및 예지 보전 물리**는 가공 공장의 멈춤 없는 가동을 책임지는 '행성 규모 마찰 공학 및 지능형 유지보수 아키텍처'입니다. 우리가 이를 배우는 이유는 공구가 갑자기 부러지면 비싼 금형을 망가뜨리기 때문이며, "마모의 진행을 데이터로 설계하고 지배하는 '글로벌 자산 관리 패권 및 행성적 생산 안정 주권'을 확보하기" 위함입니다. 공구의 수명 관리가 공장의 수익성을 결정합니다.
@@ -40,7 +30,7 @@ Trust Metrics:
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Tool Life** | Effective time before machining quality drops| $> 50 \text{ hours}$ | 칼날 하나로 수천 개의 부품을 깎음을 입증하는 물리 |
-| **Wear Rate** | Increase in wear scar size over time | $< 5 \text{ \mu m/min}$ | 눈에 안 보일 정도로 천천히 닳음을 보여주는 마찰공학 |
+| **Wear Rate** | Increase in wear scar size over time | $< 5 \text{ \mu\text{m}/min}$ | 눈에 안 보일 정도로 천천히 닳음을 보여주는 마찰공학 |
 | **Predict. Accu.**| Accuracy of AI predicting tool failure | $> 98 \%$ | 부러지기 직전에 귀신같이 알아맞힘을 입증하는 지능 |
 | **Coating Hard.** | Hardness of TiN/TiAlN protective layers | $> 3,000 \text{ HV}$ | 다이아몬드급 단단함으로 칼날을 지킴을 보여주는 물리 |
 | **Sensor Sensit.**| Ability to detect micro-cracks via sound | **MAXIMUM** | 칼날이 갈라지는 비명을 듣고 멈춤을 입증하는 정보 |

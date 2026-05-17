@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-mechanical-planarization-cmp-and-molecular-level-flatness"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-mechanical-planarization-cmp-and-molecular-level-flatness]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The semiconductor fabrication process that uses chemical etching and mechanical abrasion to achieve global planarity (flatness) on the wafer surface, essential for multi-layer lithography."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cmp", "planarization", "semiconductor-manufacturing", "polishing", "wafer-flatness"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Removal_Rate_Audit: Measure the material thickness removed per unit time against target specs.'
-    - 'Flatness_Uniformity_Check: Evaluate Within-Wafer Non-Uniformity (WIWNU) using interferometry.'
-    - 'Slurry_Flow_Audit: Verify the delivery rate and pH stability of the abrasive chemical slurry.'
-Trust Metrics:
+  description: "[Entity] chemical-mechanical-planarization-cmp-and-molecular-level-flatness에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🪞 Chemical Mechanical Planarization (CMP) and Molecular Level Flatness
+# [Entity] chemical-mechanical-planarization-cmp-and-molecular-level-flatness
 
 ## 1. 개요 (Why)
 반도체 칩이 고도화될수록 내부 회로는 수십 층으로 쌓입니다. 각 층을 쌓을 때 바닥이 평평하지 않으면 그 위의 회로가 뭉개지거나 초점이 맞지 않게 됩니다. CMP는 화학 약품으로 표면을 부드럽게 만들고(Chemical), 미세 알갱이로 갈아내어(Mechanical) 원자 수준의 평탄도(Planarity)를 구현하는 마법 같은 공정입니다. 본 노드는 반도체 적층의 무결성을 결정짓는 CMP 공정의 정밀도와 물리화학적 제어 표준을 정의합니다.
@@ -70,9 +59,7 @@ class FactoryFidelityEngine:
             return "WARNING: Polishing Pad Near EoL - Potential Surface Scratches Detected"
         return "PASS: Consumables within Operational Limit"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(removal_rate(3200, uniformity_pct=2.1, pad_life_hrs=150)
-# Correction: Fixing constructor call
 engine = FactoryFidelityEngine(3200, 2.1, 150)
 print(engine.diagnose_planarization_quality(target_rr=3150))
 ```
@@ -90,7 +77,6 @@ print(engine.diagnose_planarization_quality(target_rr=3150))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cmp-removal-rate-and-wafer-flatness-metrics-v2026`와 연동되어, 공정 중 발생하는 모든 진동과 두께 데이터를 실시간 분석하고 웨이퍼 평탄도를 원자 단위로 보증함으로써 초고집적 반도체 적층의 무결성을 사수합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - slurry-chemistry-and-abrasive-kinetics

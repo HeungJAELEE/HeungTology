@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bio-mimetic-structural-colors-and-photonic-crystal-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bio-mimetic-structural-colors-and-photonic-crystal-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of nanostructures that produce color through light interference, diffraction, and scattering (mimicking Morpho butterflies, opals) rather than pigments."
-  physical_model: "N/A"
-Semantic:
-  tags: '["structural-color", "photonic-crystal", "biomimetics", "nanophotonics", "iridescence"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'Reflectance_Peak_Audit: Measure the wavelength and intensity of the structural color at normal incidence.'
-    - 'Angular_Dependency_Check: Evaluate the color shift (iridescence) across different viewing angles.'
-    - 'Nanostructure_Integrity_Scan: Detect defects in the periodic lattice using SEM/AFM analysis.'
-Trust Metrics:
+  description: "[Entity] bio-mimetic-structural-colors-and-photonic-crystal-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦋 Bio-mimetic Structural Colors and Photonic Crystal Physics
+# [Entity] bio-mimetic-structural-colors-and-photonic-crystal-physics
 
 ## 1. 개요 (Why)
 자연의 모르포 나비나 오팔의 영롱한 색깔은 화학 색소가 아니라 빛의 '물리적 간섭'에 의해 만들어집니다. 이를 구조색(Structural Color)이라고 합니다. 구조색은 시간이 지나도 변하지 않으며, 화학 독성이 없고, 특정 각도에서만 보이거나 빛의 세기에 따라 변하는 등 카멜레온 같은 특성을 가집니다. 본 노드는 차세대 디스플레이, 위조 방지, 친환경 염료를 위한 나노 광학 구조의 무결성과 설계 표준을 정의합니다.
@@ -72,7 +61,6 @@ class DisplayFidelityEngine:
             return f"WARNING: High Iridescence ({self.shift}nm/10deg) - Angular Limitation Detected"
         return "PASS: Stable Color Response Verified"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(peak_wavelength=450, reflectance_pct=85, angle_shift_nm=1.2)
 print(engine.diagnose_color_purity())
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_color_purity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data structural-color-reflectance-and-viewing-angle-v2026`와 연동되어, 나노 구조의 설계 오차를 5nm 단위로 감시하고 목표 색상 구현 성공률을 98% 이상으로 유지함으로써 영구적이고 친환경적인 광학 지식의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 104_quantum-computing-and-advanced-physics-hub
 - nanofabrication-techniques-lithography-and-etching

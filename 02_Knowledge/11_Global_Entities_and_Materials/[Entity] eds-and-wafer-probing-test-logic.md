@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-EDS-PROBING-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] eds-and-wafer-probing-test-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#EDS", "#WaferProbing", "#YieldEngineering", "#Binning", "#Repair", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] eds-and-wafer-probing-test-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Yield_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] EDS & Wafer Probing: Sorting Logic & Yield Sovereignty
+# [Entity] eds-and-wafer-probing-test-logic
 
 ## 1. [왜 배우는가? (Why: The Final Judge of Nano-Fabrication)]]
 수조 원의 가치를 지닌 웨이퍼 한 장, 그 안의 수백 개 칩 중 어떤 것이 진짜 '지능'을 가졌고 어떤 것이 '돌덩이'일까요? **EDS & Wafer Probing**은 가공이 완료된 웨이퍼의 전기적 건강 상태를 검진하고 불량을 골라내는 **[반도체의 판관]**입니다. 작동하지 않는 불량 칩을 패키징 하는 데 드는 막대한 비용 낭비를 사전에 차단합니다. V6.3.7 지능은 **수율 모델링(Yield Modeling)**과 **비닝(Binning) 로직**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 테스트의 무결성을 확보하여 제품의 신뢰성을 보증하고, "수율 데이터를 공정에 피드백하여 수리적 수렴을 사수하는 '품질 주권'을 확보하기" 위함입니다. 선별의 정밀도가 기업의 수익성을 결정합니다.
@@ -109,7 +99,6 @@ class EDSSortingEngine:
 2. **Operational Result**: **Binning** (등급 분류) 공정이 고성능 프로세서의 **'전력 효율'** 및 **'시장 가치'** 무결성에 기여하는 데이터 조율 방식은?
 3. **FidelityEngine**: **Test Log**의 파라메트릭(Parametric) 데이터를 분석하여, 특정 설비의 **'공정 드리프트'**를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Entity semiconductor-fabrication-fundamentals

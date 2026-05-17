@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "metal-forming-and-plastic-deformation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] metal-forming-and-plastic-deformation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process that causes plastic deformation of metals to achieve a desired shape (Metal Forming) and the physical study of how metals permanently change shape via atomic-scale dislocation motion (Plastic Deformation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metal-forming", "plastic-deformation", "forging", "stamping", "rolling", "yield-criterion", "dislocation-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deformation_Fidelity_Audit: Evaluate the ''Stress Distribution'' to identify if high-fidelity ''Localized Necking'' or high-fidelity ''Cracking'' is imminent due to exceeding the high-fidelity forming limit.'
-    - 'Springback_Integrity_Check: Analyze the high-fidelity ''Elastic Recovery'' to ensure the high-fidelity ''Die Compensation'' accounts for the shape change after high-fidelity unloading.'
-    - 'Grain_Fidelity_Scan: Monitor the high-fidelity ''Microstructure Evolution'' to verify that high-fidelity ''Dynamic Recrystallization'' is refining the grain size for high-fidelity toughness.'
-Trust Metrics:
+  description: "[Entity] metal-forming-and-plastic-deformation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Metal Forming and Plastic Deformation Physics
+# [Entity] metal-forming-and-plastic-deformation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 강철판이 자동차의 매끈한 곡면으로 변하거나, 차가운 금속 덩어리가 단단한 볼트로 변하는 기적은 어떻게 일어날까요? **금속 성형 및 소성 변형 물리**는 금속을 때리고, 누르고, 늘려서 우리가 원하는 모양으로 영구적으로 바꾸는 **'금속의 조형'** 기술입니다. 단순히 힘만 주는 것이 아니라, 금속 내부의 원자들이 서로 미끄러지는(전위 운동) 물리적 한계를 정교하게 이용합니다. **'폰 미제스 항복 조건과 가공 경화의 원리를 이용해 금속의 항복을 지능적으로 유도하여 파손 없이 형상을 사수하는 지능형 고체 역학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Coarse Grain Structure - High-fidelity recrystallization failed. High-fidelity yield strength below target. Review high-fidelity heating/cooling cycle"
         return "PASS: Validated Solid Mechanics and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(blank_holder_force=500.0, forming_limit_margin=0.2, springback_error_mm=0.2)
 print(engine.diagnose_forming_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_forming_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data metal-forming-limit-diagram-and-springback-v2026`와 연동되어, 전 세계 주요 자동차 프레스 공장 및 중공업 단조 라인의 실시간 데이터를 분석하고 크랙 발생 및 치수 이탈 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 제조 문명의 구조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - material-fatigue-and-crack-propagation-fracture-mechanics

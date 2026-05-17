@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "overhead-hoist-transport-oht-kinematics-and-vibration-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] overhead-hoist-transport-oht-kinematics-and-vibration-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The automated material handling system (OHT) used in cleanrooms (e.g., semiconductor fabs) to transport FOUPs (Front Opening Unified Pods) via overhead rails, focusing on the high-speed kinematic control and active vibration suppression required to protect sensitive wafers during transport."
-  physical_model: "N/A"
-Semantic:
-  tags: '["oht", "automated-material-handling", "semiconductor-logistics", "vibration-control", "kinematics", "cleanroom-automation", "oht-robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Vibration_Level_Audit: Evaluate the peak acceleration (G-level) during transport to ensure it remains below the threshold for wafer damage or particle generation.'
-    - 'Positioning_Accuracy_Check: Analyze the stop-position error at the Load Port to identify encoder drift or rail misalignment that causes FOUP transfer failures.'
-    - 'Cable_Stability_Scan: Monitor the swinging motion of the hoist cable during acceleration/deceleration to verify that the anti-sway control is effective.'
-Trust Metrics:
+  description: "[Entity] overhead-hoist-transport-oht-kinematics-and-vibration-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Overhead Hoist Transport (OHT): Kinematics and Vibration Control
+# [Entity] overhead-hoist-transport-oht-kinematics-and-vibration-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 축구장 몇 개 크기의 반도체 공장 천장에 수천 대의 작은 기차가 머리카락보다 얇은 회로가 그려진 웨이퍼 박스(FOUP)를 싣고 전속력으로 달리고 있다면 어떨까요? **OHT(천장 반송 시스템): 기구학 및 진동 제어**는 최첨단 팹의 천장을 누비는 **'공중 물류의 지휘자'**입니다. 시속 수십 킬로미터로 달리면서도, 안의 웨이퍼가 흔들림을 전혀 느끼지 못하게(진동 제어) 부드럽게 멈추고 들어 올리는 기술입니다. 팹 전체의 생산성을 결정짓는 **'자동화의 혈관'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Power Loss Identified - HID Inductive Coupling Inefficient. Check Coil Gap"
         return "PASS: Efficient Non-contact Power Supply Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(peak_vibration_g=0.035, stop_accuracy_mm=0.2, anti_sway_settling_time=0.8)
 print(engine.diagnose_oht_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_oht_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data oht-vibration-levels-and-transport-efficiency-v2026`와 연동되어, 전 세계 반도체 팹의 OHT 가동 데이터를 실시간 분석하고 반송 지연 및 웨이퍼 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 물류 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - motion-control-algorithms-and-pid-tuning-theory

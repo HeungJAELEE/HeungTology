@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iterative-design-and-agile-product-development"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iterative-design-and-agile-product-development]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The product development methodology that emphasizes cyclic prototyping, testing, and refinement (Iterative Design) and adaptive planning through cross-functional collaboration and rapid feedback loops (Agile), ensuring that the final product meets evolving user needs."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iterative-design", "agile", "scrum", "product-development", "mvp", "feedback-loop", "prototyping"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Iteration_Velocity_Audit: Measure the team''s velocity (story points per sprint) to ensure predictable delivery and identify resource bottlenecks.'
-    - 'User_Feedback_Integrity_Check: Evaluate the incorporation of real-world user feedback into the product backlog to prevent ''feature creep'' and ensure market fit.'
-    - 'Cycle_Time_Scan: Analyze the time from idea to working prototype to ensure that the iterative loop remains fast enough for rapid market adaptation.'
-Trust Metrics:
+  description: "[Entity] iterative-design-and-agile-product-development에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔄 Iterative Design and Agile Product Development
+# [Entity] iterative-design-and-agile-product-development
 
 ## 1. 개요 (Why: 인간적 통찰)
 완벽한 제품을 한 번에 만들려고 노력하다가 출시 기회를 놓친 적은 없나요? 세상은 너무 빠르게 변하고, 사용자의 마음은 알다가도 모릅니다. **반복적 설계 및 애자일 제품 개발**은 "완벽보다는 전진"을 선택하는 **'진화형 개발 전략'**입니다. 처음부터 100점짜리 정답을 찾는 대신, 일단 50점짜리라도 만들어 시장에 내놓고($MVP$), 사람들의 반응을 보며 60점, 70점으로 빠르게 고쳐 나가는 **'학습하는 조직의 지능'**입니다. 실패를 두려워하지 않고 작은 성공을 겹겹이 쌓아 올려, 결국 세상이 정말로 필요로 하는 제품을 만들어내는 **'유연한 혁신의 엔진'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Slow Innovation Cycle - Market Opportunities May Be Lost Before Launch"
         return "PASS: Rapid Prototyping and Market Entry Capability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sprint_velocity_variance=0.12, user_feedback_adoption_rate=0.85, rework_ratio=0.15)
 print(engine.diagnose_development_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_development_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data agile-development-velocity-and-product-success-rate-v2026`와 연동되어, 전 세계 주요 제품 개발 팀의 퍼포먼스를 실시간 분석하고 프로젝트 파산 및 시장 외면 사고 확률을 0.001% 이하로 억제함으로써 지능형 혁신의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - kaizen-and-continuous-improvement-methodology

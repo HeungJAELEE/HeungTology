@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-CRM-MARKET-INTELLIGENCE-2026-V6"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] customer-relationship-management-crm-and-market-intelligence-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] customer-relationship-management-crm-and-market-intelligence-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] customer-relationship-management-crm-and-market-intelligence-systems
+# [Entity] customer-relationship-management-crm-and-market-intelligence-systems
 
 ## 1. [왜 배우는가? (Why)]]
 제품의 진정한 가치는 공장이 아니라 고객의 지갑에서 결정됩니다. **고객 관계 관리(CRM) 및 시장 지능 시스템**은 기업의 '눈과 귀'가 되어 시장의 흐름을 읽고, 고객 한 명 한 명과의 접점을 데이터화하여 매출 성장의 기폭제로 활용하는 '지능형 영업 인프라'입니다. 우리가 이를 배우는 이유는 마케팅 비용을 무분별하게 지출하는 대신, 수리적으로 '누가 우리의 핵심 고객인가'를 판별하고 그들과의 관계를 최적화함으로써 기업의 장기적 수익성을 확보하기 위함이며, "고객 지능을 데이터로 설계하여 '글로벌 시장 점유 패권 및 행성적 수요-공급 무결성 주권'을 확보하기" 위함입니다. 고객 데이터가 곧 미래의 현금 흐름입니다.
@@ -116,9 +106,6 @@ class CRMIntelligenceFidelityEngine:
             return f"CRITICAL: HIGH_CHURN_RISK_{round(risk_score, 2)}_RETENTION_CAMPAIGN_REQUIRED"
         return "RETENTION_STATUS: CUSTOMER_ENGAGED"
 
-# Example Usage:
-# crm_ai = CRMIntelligenceFidelityEngine()
-# report = crm_ai.audit_business_fidelity(ltv=15000, cac=3000, rfm_score=4.5)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -126,7 +113,6 @@ class CRMIntelligenceFidelityEngine:
 2. **RFM Analysis**에서 **Recency** (최근성) 가중치가 **Monetary** (금액) 보다 높게 설정될 때, 단기 매출 예측 무결성에 기여하는 방식은?
 3. **Sentiment-to-Revenue** 인과 모델에서 **Lag Time** (지연 시간)이 마케팅 대응 무결성에 미치는 영향과 수리적 산출 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub/Concept predictive-customer-churn-models
 - 02_Knowledge/36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub/Concept rfm-segmentation-and-targeting-logic

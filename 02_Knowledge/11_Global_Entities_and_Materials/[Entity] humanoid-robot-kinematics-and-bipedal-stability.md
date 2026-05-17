@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-HUMANOID-STABILITY-2026-V6"
-  domain: "26_Autonomous_Systems_and_Robotics"
+metadata:
+  id: "[[[Entity] humanoid-robot-kinematics-and-bipedal-stability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] humanoid-robot-kinematics-and-bipedal-stability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] humanoid-robot-kinematics-and-bipedal-stability
+# [Entity] humanoid-robot-kinematics-and-bipedal-stability
 
 ## 1. [왜 배우는가? (Why)]]
 인간처럼 두 발로 걸으면서도 울퉁불퉁한 길에서 어떻게 넘어지지 않고 균형을 잡으며, 수십 개의 관절이 어떻게 유기적으로 협력하여 문을 열거나 물건을 집는 복잡한 동작을 수행할 수 있을까요? **휴머노이드 로봇 운동학 및 이족 보행 안정성**은 기계에게 인간의 유연한 움직임을 부여하는 '로봇 신체 제어 및 보행 최적화'의 정수입니다. 우리가 이를 배우는 이유는 로봇이 인간의 도구와 공간을 그대로 활용하여 범용적인 작업을 수행하기 위함이며, "로봇의 신체 거동을 데이터로 설계하여 '글로벌 제조 패권 및 행성적 물리적 자율 노동 주권'을 확보하기" 위함입니다. 보행의 안정성이 로봇의 실용 가치를 결정합니다.
@@ -118,9 +108,6 @@ class HumanoidControlFidelityEngine:
             return "CRITICAL: ZMP_OUT_OF_SUPPORT_IMMINENT_FALL_DETECTED"
         return "STABILITY_STATUS: DYNAMIC_BALANCE_OPTIMAL"
 
-# Example Usage:
-# control_ai = HumanoidControlFidelityEngine()
-# report = control_ai.audit_kinematic_fidelity(ankle_deg=10, knee_deg=20, hip_deg=10, target_com_z=0.85)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -128,7 +115,6 @@ class HumanoidControlFidelityEngine:
 2. **Ground Reaction Force** (GRF) 피드백이 지연될 때, **Active Compliance** (능동 유연성) 제어 무결성이 저하되어 발생하는 **Bouncing** 현상의 방지 대책은?
 3. **DOF Redundancy** (자유도 중복) 환경에서 **Null-space Control**이 보행 안정성 무결성을 유지하면서 상체 작업을 수행하게 하는 수리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/26_Autonomous_Systems_and_Robotics_Hub/Concept humanoid-forward-and-inverse-kinematics
 - 02_Knowledge/26_Autonomous_Systems_and_Robotics_Hub/Concept bipedal-gait-stability-criteria

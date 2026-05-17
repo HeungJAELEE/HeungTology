@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "active-electronically-scanned-array-aesa-radar-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] active-electronically-scanned-array-aesa-radar-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of phased-array radar whose transmitter and receiver functions are composed of numerous small solid-state transmit/receive modules (TRMs) (Active Electronically Scanned Array) and the physics of manipulating phase shifts to steer radio beams nearly instantaneously without moving parts."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aesa", "radar-physics", "beamforming", "phased-array", "electronic-warfare", "signal-processing", "gallium-nitride"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Beam_Fidelity_Audit: Evaluate the ''Side-lobe Levels'' and beam width to identify TRM failures or phase-shifter errors that lead to signal leakage and reduced target detection range.'
-    - 'Thermal_Integrity_Check: Analyze the temperature of the Gallium Nitride (GaN) modules to ensure that the liquid cooling system is handling the high power density required for long-range surveillance.'
-    - 'Spectrum_Fidelity_Scan: Monitor for ''Electronic Counter-Measures'' (Jamming) and verify the AESA''s ability to hop frequencies and form nulls in the direction of the interference.'
-Trust Metrics:
+  description: "[Entity] active-electronically-scanned-array-aesa-radar-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Active Electronically Scanned Array (AESA) Radar Physics
+# [Entity] active-electronically-scanned-array-aesa-radar-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 커다란 안테나가 뱅글뱅글 돌아가며 하늘을 살피던 시대는 끝났습니다. **AESA 레이더 물리**는 수천 개의 작은 안테나가 눈 깜빡임보다 수천 배 빠르게 '보이지 않는 눈길(빔)'을 이리저리 돌리는 **'디지털 시선의 혁명'** 기술입니다. 기계적으로 움직이지 않고도 전파의 위상(Phase)을 조절하여 빛의 속도로 목표물을 쫓습니다. 여러 대의 적기를 동시에 추적하고, 적의 전파 방해를 피해 숨바꼭질을 하는 **'현대 전장의 보이지 않는 지휘자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Ineffective Nulling - Radar susceptible to jamming. Update adaptive beamforming algorithms for new threat signatures"
         return "PASS: Robust Electronic Counter-Counter Measures and Verified Tracking Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(trm_failure_rate_pct=1.5, liquid_coolant_temp=55.0, sidelobe_level_db=-35.0)
 print(engine.diagnose_aesa_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_aesa_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data aesa-trm-efficiency-and-target-tracking-accuracy-v2026`와 연동되어, 전 세계 최신 전투기 및 방공 시스템의 레이더 데이터를 실시간 분석하고 모듈 고장 및 추적 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 안보 문명의 감시 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - radar-systems-and-synthetic-aperture-radar-sar-physics

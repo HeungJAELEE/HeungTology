@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AERO-KF21-2026-V6"
+metadata:
+  id: "[[[Aerospace] KF-21]]"
   domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#KF_21'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Aerospace] KF-21에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Aerospace] KF-21
@@ -104,7 +94,6 @@ class AvionicsOrchestrator:
 2. **AESA** 레이더에서 개별 **TRM**의 고장 시에도 전체 레이더 성능이 급격히 저하되지 않는 'Graceful Degradation'의 수리적 배경은?
 3. **MUM-T** 운용 시 유인기와 무인기 간의 통신이 끊겼을 때를 대비한 무인기의 **Autonomous Mission Logic** 설계 시 최우선 고려 사항은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/06_Aerospace_Defense/Space/Aerospace Satellite
 - 02_Knowledge/03_AI_Data/Industrial/AI Predictive-Maintenance

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "collaborative-robot-cobot-safety-and-force-torque-sensing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] collaborative-robot-cobot-safety-and-force-torque-sensing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced robotics technology enabling direct interaction between humans and robots in a shared workspace, utilizing high-fidelity force-torque sensors and safety-rated speed monitoring."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cobot", "robot-safety", "force-torque-sensor", "hrc", "iso-10218"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Collision_Sensitivity_Audit: Verify robot stops within safe force limits during contact.'
-    - 'Sensor_Drift_Check: Monitor zero-point stability of F/T sensors.'
-    - 'Human_Proximity_Detection: Audit speed scaling based on worker distance.'
-Trust Metrics:
+  description: "[Entity] collaborative-robot-cobot-safety-and-force-torque-sensing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Collaborative Robot (Cobot) Safety and Force-Torque Sensing
+# [Entity] collaborative-robot-cobot-safety-and-force-torque-sensing
 
 ## 1. 개요 (Why)
 전통적인 산업용 로봇은 안전 펜스 내부에서만 작동해야 했으나, 협동 로봇(Cobot)은 인간과 같은 공간에서 안전하게 공조합니다. 이는 로봇이 인간의 접촉을 감지하고 즉시 멈추거나 힘을 조절하는 '지능형 안전' 기술이 있기에 가능합니다. 본 노드는 인간-로봇 협업(HRC)의 물리적 안전 경계를 정의하고, 충돌 시의 에너지를 생체 허용 범위 내로 제한하기 위한 결정론적 제어 표준을 정의합니다.
@@ -74,7 +63,6 @@ class RobotFidelityEngine:
             return "ADAPTIVE: Reduced Speed Mode Active"
         return "OPTIMAL: Full Speed Operation"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(current_force=65, speed=200, proximity_dist=450)
 print(engine.diagnose_collision_safety())
 print(engine.audit_speed_scaling())
@@ -93,7 +81,6 @@ print(engine.audit_speed_scaling())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data cobot-collision-force-and-response-time-log-v2026`와 실시간 연동되어, 센서 드리프트를 0.1N 단위로 감시하며 전사적인 안전 인증(CE, UL) 규격 준수를 결정론적으로 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_robotics-and-autonomous-systems-intelligence-hub
 - impedance-and-admittance-control-logic

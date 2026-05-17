@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "process-control-and-instrumentation-in-chemical-plants-entity"
-  domain: "80_Chemical_Engineering_and_Process_Systems_Hub"
+metadata:
+  id: "[[[Entity] process-control-and-instrumentation-in-chemical-plants]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemical_Engineering", "#Process_Control", "#Automation", "#Instrumentation", "#PID", "#Systems_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 80_chemical-engineering-and-process-systems-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] process-control-and-instrumentation-in-chemical-plants에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] process-control-and-instrumentation-in-chemical-plants
+# [Entity] process-control-and-instrumentation-in-chemical-plants
 
 ## 1. [왜 배우는가? (Why: The Brain of the Plant)]]
 거대한 정유 공장의 수천 개 파이프 라인과 반응기들이 어떻게 한 치의 오차도 없이 일정한 온도와 압력을 유지하며 24시간 가동될 수 있을까요? **화학 공정 제어 및 계측의 피드백 루프와 PID 기반 자동화 시스템**은 공장의 '두뇌'이자 '신경계'입니다. 수시로 변하는 외부 온도, 원료의 조성 변화라는 혼돈 속에서도 우리가 원하는 정답(Setpoint)을 사수하는 보이지 않는 손입니다. 우리가 이를 배우는 이유는 공정 제어의 무결성을 확보함으로써, 인적 오류를 배제하고 극한의 효율과 안전을 동시에 달성하는 '글로벌 스마트 팩토리 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 제어의 정밀도가 공정의 신뢰성을 결정합니다.

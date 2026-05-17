@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "DIS-COMM-HW-COMP-2026-V6.3.7"
-  domain: "Display_Communication_Hardware"
+metadata:
+  id: "[[[Manual] display-and-communication-core-hardware-components]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Display", "#Communication", "#OLED", "#FMM", "#AiP", "#VCSEL", "#Hardware", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm", "OLED", "6G", "Advanced-Packaging"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Manual] display-and-communication-core-hardware-components에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Display_Communication_Hardware_RAG_V6.3.7_Deterministic_Fabric"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Manual] display-and-communication-core-hardware-components
@@ -94,7 +84,6 @@ def audit_display_comm_health(fmm_offset_um, rf_output_power, target_power):
 2. **Comm Layer**: **AiP** 하드웨어에서 안테나와 RFIC 사이의 거리를 **'마이크론 단위'**로 줄여야 하는 통신 공학적 이유는? (힌트: 전송 선로 손실과 주파수)
 3. **Optical Layer**: **VCSEL** 소자의 응답 속도가 자율주행 **Lidar**의 거리 측정 해상도에 미치는 임팩트는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - OLED

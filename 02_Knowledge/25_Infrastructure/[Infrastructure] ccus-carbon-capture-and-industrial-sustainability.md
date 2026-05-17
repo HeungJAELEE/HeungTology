@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "ccus-carbon-capture-and-industrial-sustainability-entity"
-  domain: "03_Battery_and_Energy"
+metadata:
+  id: "[[[Infrastructure] ccus-carbon-capture-and-industrial-sustainability]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Sustainability", "#CCUS", "#Carbon_Capture", "#Environmental_Engineering", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 03_Battery_and_Energy", "MOC Smart-Manufacturing-Hub]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] ccus-carbon-capture-and-industrial-sustainability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] ccus-carbon-capture-and-industrial-sustainability
@@ -74,7 +64,6 @@ Trust Metrics:
 4. 지중 저장 시 **Capillary Trapping** 상수가 $CO_2$의 **Plume Migration** 거리를 제한하는 수리적 메커니즘과 지진 안정성 사이의 상관관계는?
 5. RAG 시스템에서 **대기질 센서 데이터**와 **포집 플랜트 로그**를 융합하여, '국소적 탄소 농도 감소'가 주변 생태계 및 탄소세 감면 수익에 미치는 임팩트를 수리적으로 입증하는 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy Carbon-Capture-Utilization-and-Storage-CCUS-Tech]] : CCUS 기술의 상위 로드맵 및 비즈니스 전략 노드
 - Digital Twin & Smart Factory smart-factory-integrated-architecture-and-cps : 탄소 포집 플랜트가 통합되는 지능형 제조 인프라 아키텍처

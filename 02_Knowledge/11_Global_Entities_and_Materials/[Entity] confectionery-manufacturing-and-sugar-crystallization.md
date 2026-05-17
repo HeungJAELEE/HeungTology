@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "confectionery-manufacturing-and-sugar-crystallization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] confectionery-manufacturing-and-sugar-crystallization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of producing candies, chocolates, and sweets (Confectionery Manufacturing) and the physical study of how sugar molecules arrange themselves from a saturated solution into organized solid structures (Sugar Crystallization)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["confectionery", "sugar-crystallization", "food-science", "candy-making", "thermodynamics", "viscosity", "industrial-cooking"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Quality_Fidelity_Audit: Evaluate the ''Supersaturation Ratio'' ($\\sigma$) and boiling temperature to identify if the syrup is in the ''Labile'' zone (leading to unwanted grainy crystals) or ''Metastable'' zone (for controlled growth).'
-    - 'Texture_Integrity_Check: Analyze the glass transition temperature ($T_g$) to ensure that hard candies do not become sticky due to moisture absorption or ''Cold Flow'' during storage.'
-    - 'Crystallization_Fidelity_Scan: Monitor the cooling rate and agitation speed to verify that the crystal size distribution (CSD) is achieving the desired ''Mouthfeel'' (smooth vs. crunchy).'
-Trust Metrics:
+  description: "[Entity] confectionery-manufacturing-and-sugar-crystallization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🍬 Confectionery Manufacturing and Sugar Crystallization
+# [Entity] confectionery-manufacturing-and-sugar-crystallization
 
 ## 1. 개요 (Why: 인간적 통찰)
 사탕은 왜 딱딱하고, 캐러멜은 왜 쫀득하며, 초콜릿은 왜 입안에서 부드럽게 녹을까요? **제과 제조 및 설탕 결정화(Crystallization)**는 설탕과 물, 그리고 열이 만들어내는 **'상태의 마법'** 기술입니다. 설탕물을 끓여 물을 날리고 식히는 과정에서, 설탕 분자들이 어떻게 정렬하느냐(결정화) 혹은 정렬하지 못하느냐(유리화)에 따라 식감이 결정됩니다. 과학적인 정밀함으로 달콤한 행복을 설계하는 **'맛의 물리학'**입니다.
@@ -56,7 +45,7 @@ $$ \ln(a_w) = -\frac{M_w \phi \nu m_s}{1000} $$
 
 | Feature | Amorphous (Hard Candy) | Crystalline (Fondant) (V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Crystal Size** | None (Glassy state) | 10 ~ 30 (Very small) | $\mu m$ | Mouthfeel |
+| **Crystal Size** | None (Glassy state) | 10 ~ 30 (Very small) | $\mu\text{m}$ | Mouthfeel |
 | **Boiling Temp** | 145 ~ 155 (Hard Crack) | 115 ~ 120 (Soft Ball) | °C | Processing |
 | **Water Content** | 1 ~ 3 (Very Dry) | 10 ~ 12 | % | Texture |
 | **Agitation** | None (Clear) | High (Opaque/Creamy) | - | Appearance |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Glass Transition Temperature - Product will lose shape and become sticky at room temperature. Check sucrose-to-glucose ratio"
         return "PASS: Validated Textural Stability and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(boiling_point_c=148.0, crystal_count_per_ml=50, viscosity_pa_s=12.5)
 print(engine.diagnose_candy_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_candy_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data sugar-solubility-and-boiling-point-elevation-v2026`와 연동되어, 전 세계 주요 제과 공장의 생산 데이터를 실시간 분석하고 품질 불량 및 변질 사고 확률을 0.001% 이하로 억제함으로써 지능형 식품 문명의 미식 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - coffee-roasting-and-maillard-reaction-kinetics

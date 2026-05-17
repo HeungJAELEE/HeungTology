@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-PDM-2026-V6"
+metadata:
+  id: "[[[AI] Predictive-Maintenance]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Predictive_Maintenance'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Predictive-Maintenance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Predictive-Maintenance
@@ -114,7 +104,6 @@ class PdMDiagnosticsEngine:
 2. **Remaining Useful Life (RUL)** 예측에서 **LSTM**이 단순 **RNN**보다 시계열 데이터의 '장기 기억(Long-term dependencies)' 처리에 유리한 이유는?
 3. **MCSA** 분석 시 전원 주파수(60Hz) 주변의 **Sideband** 발생이 회전자(Rotor) 결함을 의미하는 물리적 인과관계는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Quality-Control-AI
 - 02_Knowledge/03_AI_Data/Industrial/AI Digital-Twin-SOP

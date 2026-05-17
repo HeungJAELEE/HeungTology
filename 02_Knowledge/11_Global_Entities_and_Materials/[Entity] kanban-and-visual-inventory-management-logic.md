@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "kanban-and-visual-inventory-management-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] kanban-and-visual-inventory-management-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A scheduling system for lean manufacturing and just-in-time manufacturing (Kanban) and the physical logic of using visual signals to control work-in-process and inventory levels (Visual Inventory Management Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["kanban", "visual-management", "inventory-control", "pull-system", "wip-limit", "supply-chain", "lean", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Flow_Fidelity_Audit: Evaluate the ''WIP Limits'' to identify if high-fidelity ''Bottlenecks'' are being exposed or if excessive high-fidelity ''Slack'' is hiding process inefficiencies.'
-    - 'Signal_Integrity_Check: Analyze the high-fidelity ''Replenishment Signal'' speed against the high-fidelity ''Lead Time'' to ensure that ''Stockouts'' are prevented without over-stocking.'
-    - 'Visual_Fidelity_Scan: Monitor the high-fidelity ''Andon'' status and physical high-fidelity ''Kanban Board'' accuracy to verify that the high-fidelity ''Ground Truth'' matches the digital system.'
-Trust Metrics:
+  description: "[Entity] kanban-and-visual-inventory-management-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🗂️ Kanban and Visual Inventory Management Logic
+# [Entity] kanban-and-visual-inventory-management-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 공장 라인에서 어떤 부품이 얼마나 남았는지, 지금 무엇을 만들어야 하는지 모든 직원이 어떻게 한눈에 알 수 있을까요? **칸반 및 시각적 재고 관리 로직**은 눈에 보이는 신호(카드, 신호등, 바구니)를 통해 공장의 흐름을 지휘하는 **'제조의 신호등'** 기술입니다. 데이터 시트에 숨겨진 숫자 대신, 빈 통이나 빨간색 불빛이라는 직관적인 언어로 현장의 소통을 극대화합니다. **'재고 보충 공식과 WIP 제한의 원리를 이용해 과잉 생산을 막고 물 흐르듯 유연한 생산 라인을 유지하는 지능형 시각 통제 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Replenishment Delay - High-fidelity lead time exceeds takt time. Potential high-fidelity stockout at the assembly line"
         return "PASS: Validated Signal Response and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_wip_count=10, target_takt_time=60.0, missing_kanban_rate=0.01)
 print(engine.diagnose_kanban_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_kanban_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data kanban-replenishment-cycles-and-stockout-rates-v2026`와 연동되어, 전 세계 주요 자동차 및 물류 센터의 실시간 칸반 데이터를 분석하고 과잉 재고 및 품절 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 시각적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - just-in-time-jit-and-lean-manufacturing-logistics

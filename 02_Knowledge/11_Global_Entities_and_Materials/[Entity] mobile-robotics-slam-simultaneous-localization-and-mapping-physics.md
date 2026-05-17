@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "mobile-robotics-slam-simultaneous-localization-and-mapping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] mobile-robotics-slam-simultaneous-localization-and-mapping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The computational process (SLAM) that enables a mobile robot to build a map of an unknown environment while simultaneously keeping track of its own location within that map, utilizing sensor data from Lidar, cameras, and IMUs."
-  physical_model: "N/A"
-Semantic:
-  tags: '["slam", "mobile-robotics", "localization", "mapping", "kalman-filter", "lidar", "visual-odometry", "autonomous-navigation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Localization_Drift_Audit: Evaluate the cumulative error in the robot''s estimated position against ground truth to identify sensor noise or scan matching failures.'
-    - 'Map_Consistency_Check: Analyze the alignment of overlapping map segments to ensure ''Loop Closure'' correctly eliminates the drifting error.'
-    - 'Sensor_Fusion_Integrity_Scan: Verify the synchronization and noise handling between Lidar, IMU, and Visual Odometry to ensure a robust pose estimate in dynamic or featureless environments.'
-Trust Metrics:
+  description: "[Entity] mobile-robotics-slam-simultaneous-localization-and-mapping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Mobile Robotics: SLAM (Simultaneous Localization and Mapping) Physics
+# [Entity] mobile-robotics-slam-simultaneous-localization-and-mapping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 "나는 누구인가? 여긴 어디인가?" 로봇이 낯선 방에 들어섰을 때 던지는 가장 철학적이면서도 기술적인 질문입니다. **모바일 로보틱스: SLAM(동시적 위치 추정 및 지도 작성)**은 로봇에게 '눈'과 '기억'을 주어, 아무것도 모르는 장소에서 스스로 지도를 그리며 자신의 위치를 찾아내는 **'디지털 탐험가'의 뇌**입니다. 한 발자국 움직일 때마다 지도를 업데이트하고, 다시 그 자리에 왔을 때 "아, 아까 거기구나!"라고 깨닫는(Loop Closure) 이 과정은, 로봇이 진정으로 자율성을 갖게 되는 **'인지적 독립'**의 시작입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Low Feature Environment - Localization Integrity Lost. Use Lidar or Manual Guidance"
         return "PASS: Rich Feature Environment and Reliable Tracking Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(localization_drift_m=0.12, map_loop_closure_error_m=0.05, sensor_update_rate_hz=25)
 print(engine.diagnose_slam_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_slam_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data slam-drift-error-and-map-reconstruction-accuracy-v2026`와 연동되어, 전 세계 자율 주행 로봇의 위치 데이터를 실시간 분석하고 경로 이탈 및 충돌 사고 확률을 0.001% 이하로 억제함으로써 모바일 지능 문명의 이동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm

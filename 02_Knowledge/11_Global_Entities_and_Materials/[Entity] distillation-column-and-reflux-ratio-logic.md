@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "distillation-column-and-reflux-ratio-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] distillation-column-and-reflux-ratio-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An essential industrial apparatus used to separate liquid mixtures into their component parts based on differences in volatilities (Distillation Column) and the control logic of returning a portion of the condensed overhead liquid back to the column to improve separation purity (Reflux Ratio Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["distillation", "reflux-ratio", "chemical-engineering", "separation", "vapor-liquid-equilibrium", "industrial-processing", "fractionation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Separation_Fidelity_Audit: Evaluate the ''Reflux Ratio'' ($R$) against the distillate purity ($x_D$) to identify if the system is operating below the ''Minimum Reflux'', leading to an inability to meet product specifications.'
-    - 'Hydrodynamic_Integrity_Check: Analyze the pressure drop and vapor velocity to ensure the column is not ''Flooding'' (liquid held up by vapor) or ''Weeping'' (liquid leaking through trays).'
-    - 'Thermal_Fidelity_Scan: Monitor the reboiler heat duty and condenser cooling rate to verify the energy-efficiency and maintain the overall ''Vapor-Liquid Equilibrium'' (VLE) stability.'
-Trust Metrics:
+  description: "[Entity] distillation-column-and-reflux-ratio-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Distillation Column and Reflux Ratio Logic
+# [Entity] distillation-column-and-reflux-ratio-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 물과 알코올이 섞인 술을 끓여서 독한 술을 만드는 원리는 무엇일까요? **증류탑 및 환류비(Reflux Ratio) 로직**은 혼합된 액체들을 끓는점 차이를 이용해 정교하게 갈라놓는 **'화학적 선별'** 기술입니다. 특히 증류탑 꼭대기에서 나온 깨끗한 액체를 다시 탑 안으로 들이붓는 '환류(Reflux)'는, 올라오는 증기를 씻어내어 순도를 극한으로 올리는 **'자정 작용의 마법'**입니다. 보이지 않는 분자들을 끓는점으로 정렬시켜 문명의 순수한 원료를 빚어내는 **'화학 공정의 심장이자 여과기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Reboiler Fouling - Scale buildup on tubes. Cannot maintain required boil-up rate for high reflux. Maintenance required"
         return "PASS: Validated Heat Duty and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(distillate_purity_pct=99.5, reflux_ratio=2.1, tray_pressure_drop_mbar=3.2)
 print(engine.diagnose_distillation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_distillation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data distillation-tray-efficiency-and-reflux-v2026`와 연동되어, 전 세계 주요 화학 및 석유 공장의 데이터를 실시간 분석하고 제품 불량 및 플랜트 범람 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 화학 문명의 분리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - crude-oil-distillation-and-fractional-separation-physics

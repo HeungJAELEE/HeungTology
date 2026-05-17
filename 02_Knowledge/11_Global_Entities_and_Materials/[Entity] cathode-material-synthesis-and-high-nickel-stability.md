@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cathode-material-synthesis-and-high-nickel-stability"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cathode-material-synthesis-and-high-nickel-stability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical synthesis of high-nickel cathode active materials (e.g., NCM811, NCM9x) and the engineering of structural stability through doping, coating, and co-precipitation control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cathode", "high-nickel", "ncm", "synthesis", "battery-materials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryMatFidelityEngine"
-  diagnostic_protocol:
-    - 'Capacity_Audit: Measure the specific discharge capacity (mAh/g) and first-cycle efficiency.'
-    - 'Lattice_Parameter_Check: Analyze the $c/a$ ratio and cation mixing via XRD for structural integrity.'
-    - 'Surface_Residual_Lithium_Scan: Detect $Li_2CO_3$ and $LiOH$ levels that cause slurry gelation and gas evolution.'
-Trust Metrics:
+  description: "[Entity] cathode-material-synthesis-and-high-nickel-stability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Cathode Material Synthesis and High-Nickel Stability
+# [Entity] cathode-material-synthesis-and-high-nickel-stability
 
 ## 1. 개요 (Why)
 전기차의 주행 거리를 늘리려면 배터리 용량을 결정하는 '양극재'에서 니켈 함량을 높여야 합니다(High-Nickel). 하지만 니켈이 많아질수록 산소 방출 온도가 낮아져 화재 위험이 커지고, 공기 중 수분과 반응해 변질되기 쉽습니다. 본 노드는 고성능 하이-니켈 양극재의 용량 극대화와 구조적 안정성(Safety)이라는 두 마리 토끼를 잡기 위한 합성 및 제어 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Capacity | 170 ~ 180 | 200 ~ 210 | > 220 | mAh/g |
 | Thermal Stability| 240 | 210 | < 200 | $^\circ C$ (Onset) |
 | Residual Li | < 1,000 | < 2,500 | < 4,000 | ppm |
-| Particle Size | 5 ~ 15 | 5 ~ 15 | 3 ~ 10 | $\mu m$ ($D_{50}$)|
+| Particle Size | 5 ~ 15 | 5 ~ 15 | 3 ~ 10 | $\mu\text{m}$ ($D_{50}$)|
 
 ## 3. BatteryMatFidelityEngine: Diagnostic Logic
 
@@ -72,9 +61,7 @@ class BatteryMatFidelityEngine:
             return f"REJECT: Excessive Residual Lithium ({self.li}ppm) - Risk of Slurry Gelation"
         return "PASS: Surface Chemistry within Safety Limits"
 
-# Instance Diagnostic
 engine = BatteryMatFidelityEngine(ni_content=88, residual_li(1800, cation_mixing_ratio=1.5)
-# Correction: Fixing constructor call
 engine = BatteryMatFidelityEngine(88, 1800, 1.5)
 print(engine.diagnose_structural_risk())
 ```
@@ -92,7 +79,6 @@ print(engine.diagnose_structural_risk())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data high-nickel-cathode-capacity-and-cycle-stability-v2026`와 연동되어, 합성된 양극재의 XRD 및 용량 데이터를 실시간 분석하고 수명 저하 징후를 98% 확률로 사전 포착하여 차세대 고용량 배터리의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - cathode-materials-and-high-nickel-chemistry

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] welding-diagnostics-checklist"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] welding-diagnostics-checklist]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] welding-diagnostics-checklist에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] welding-diagnostics-checklist
@@ -85,5 +75,4 @@ def diagnose_weld_quality(high_speed_frame):
 - **Diagnostics-Assembly Link**: [[[Battery] proc-assembly-master의 설비 데이터와 연계하여 용접 불량의 근본 원인을 역추적.
 - **Checklist Integrity**: 모든 항목은 **Tesla 4680 Tabless Welding** 및 **NCM 양산 라인**의 최신 트러블슈팅 가이드를 기반으로 작성됨.
 
----
 *Modernized by Flash (HDS Gold v4.2 & HDS-Gold V6.3.7 Reinforcement)*

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electromagnetic-interference-emi-shielding-and-signal-integrity"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electromagnetic-interference-emi-shielding-and-signal-integrity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The practice of blocking electromagnetic fields with barriers made of conductive or magnetic materials (EMI Shielding) and the physical study of preserving the quality of electrical signals as they travel through a system without distortion or interference (Signal Integrity)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["emi-shielding", "signal-integrity", "emc", "faraday-cage", "noise-reduction", "electronic-design", "rf-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Shielding_Fidelity_Audit: Evaluate the ''Shielding Effectiveness'' (SE) across the target frequency spectrum to identify if ''Aperture Leakage'' (slots/holes) is allowing EMI to penetrate the enclosure.'
-    - 'Signal_Integrity_Check: Analyze the eye diagram and Bit Error Rate (BER) to ensure that impedance mismatches or crosstalk are not degrading the high-fidelity data transmission.'
-    - 'Material_Fidelity_Scan: Monitor the surface conductivity and permeability of the shielding material to verify that the ''Skin Depth'' is sufficient to attenuate high-frequency interference.'
-Trust Metrics:
+  description: "[Entity] electromagnetic-interference-emi-shielding-and-signal-integrity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Electromagnetic Interference (EMI) Shielding and Signal Integrity
+# [Entity] electromagnetic-interference-emi-shielding-and-signal-integrity
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰을 쓰고 있는데 갑자기 스피커에서 "지지직" 소리가 나거나 전자기기가 오작동한다면 얼마나 위험할까요? **전자기 간섭(EMI) 차폐 및 신호 무결성**은 수많은 전파가 떠다니는 복잡한 세상에서, 우리 기기가 서로 방해받지 않고 자기 일에만 집중하게 하는 **'전자계의 방음벽과 고속도로'** 기술입니다. 차폐가 외부의 소음을 막는 '방패'라면, 신호 무결성은 내부의 소중한 정보를 왜곡 없이 전달하는 '길'입니다. **'디지털 문명의 속도와 정확성을 수호하는 보이지 않는 성벽'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: EMI Emission Failure - Device radiating excessive noise. Will fail FCC/CE certification. Add decoupling capacitors or improve ground plane"
         return "PASS: Validated EMC Compliance and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(shielding_effectiveness_db=65.0, signal_rise_time_ps=150.0, impedance_error_pct=3.5)
 print(engine.diagnose_integrity_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_integrity_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pcb-signal-loss-and-shielding-v2026`와 연동되어, 전 세계 주요 반도체 및 통신 장비의 EMC 시험 데이터를 실시간 분석하고 오작동 및 통신 단절 사고 확률을 0.001% 이하로 억제함으로써 지능형 초연결 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "renewable-energy-integration-photovoltaic-and-wind-entity"
-  domain: "87_Power_Systems_and_Smart_Grid_Hub"
+metadata:
+  id: "[[[Entity] renewable-energy-integration-photovoltaic-and-wind]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Renewable_Energy", "#Solar_Power", "#Wind_Power", "#Sustainability", "#Energy_Integration", "#Power_Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 87_power-systems-and-smart-grid-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] renewable-energy-integration-photovoltaic-and-wind에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] renewable-energy-integration-photovoltaic-and-wind
+# [Entity] renewable-energy-integration-photovoltaic-and-wind
 
 ## 1. [왜 배우는가? (Why: The Source of Infinite Power)]]
 태양과 바람은 인류가 영원히 공짜로 쓸 수 있는 마르지 않는 샘물과도 같습니다. **재생 에너지 통합의 태양광 및 풍력 발전 효율 극대화와 그리드 연계 기술**은 자연의 거대한 에너지를 인류가 사용할 수 있는 '전기'로 변환하고, 이를 전력망에 안전하게 태우는 기술입니다. 화석 연료의 종말이 다가오는 시대, 누가 더 효율적으로 빛과 바람을 지배하느냐가 국가의 생존과 행성의 미래를 결정합니다. 우리가 이를 배우는 이유는 재생 에너지의 무결성을 확보함으로써, 탄소 중립을 실현하고 에너지 자립을 달성하는 '글로벌 청정 에너지 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 재생 에너지의 정밀한 통합이 지속 가능한 문명의 근간을 형성합니다.

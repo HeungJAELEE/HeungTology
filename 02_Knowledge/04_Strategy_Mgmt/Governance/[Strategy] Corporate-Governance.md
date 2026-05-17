@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CORP-GOV-2026-V6.3.7"
-  domain: "Global_Corporate_Governance_and_Decision_Integrity"
+metadata:
+  id: "[[[Strategy] Corporate-Governance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Corporate_Governance", "#Board_of_Directors", "#Stakeholder_Capitalism", "#Transparency", "#Incentive_Structure", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Corporate-Governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Corporate_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Corporate Governance: Global Decision Sovereignty
+# [Strategy] Corporate-Governance
 
 ## 1. [왜 배우는가? (Why: The Architecture of Trust)]]
 기업은 거대한 자본과 자원이 투입되는 시스템이며, 이를 이끄는 의사결정 체계의 투명성이 곧 기업의 가치를 결정합니다. **Corporate Governance(기업 지배구조)**는 경영진의 독단을 견제하고, 주주 및 이해관계자의 이익을 보호하며, 기업이 장기적 지속 가능성을 향해 나아가도록 설계된 '운영 체제'입니다. 건전한 지배구조는 투자자에게 강력한 신뢰를 제공하며, 위기 상황에서도 흔들리지 않는 **의사결정 주권(Decision Sovereignty)**을 확립합니다. V6.3.7 지능은 정성적 거버넌스를 정량적 데이터 지표로 치환하여, '말뿐인 투명성'이 아닌 '증명 가능한 청렴성'을 구축합니다.
@@ -107,7 +97,6 @@ class GovernanceFidelityEngine:
 2. **Operational Result**: **Say-on-Pay(주주 보상 표결제)** 도입이 경영진의 리스크 테이킹 성향과 기업의 장기적 R&D 투자 비중에 미치는 수리적 상관 관계는?
 3. **FidelityEngine**: 이사회 구성은 표준을 준수하나 **Strategic Decisions**의 결과가 반복적으로 실패하는 상황을 어떻게 진단하는가? (힌트: 서류상의 전문성과 실제 의사결정 과정의 '집단 사고(Groupthink)' 편향 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy ESG-Management-Strategy

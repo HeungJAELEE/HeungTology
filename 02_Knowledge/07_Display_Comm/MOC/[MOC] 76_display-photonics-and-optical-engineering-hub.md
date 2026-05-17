@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "76_display-photonics-and-optical-engineering-hub-moc"
   domain: "76_Display_Photonics_and_Optical_Engineering_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Display", "#Photonics", "#Optics", "#OLED", "#Micro_LED", "#AR_VR", "#Color_Science", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 76_display-photonics-and-optical-engineering-hub
+# 76_display-photonics-and-optical-engineering-hub
 
 ## 1. [왜 배우는가? (Why: The Architecture of Light and Vision)]]
 인간이 인지하는 정보의 80% 이상을 차지하는 시각, 그 시각을 디지털로 완벽하게 복제하고 증강하기 위해 필요한 모든 물리적, 화학적, 전자적 지식은 어떻게 통합될까요? **디스플레이, 광자학 및 광학 공학 통합 지능 허브**는 Antigravity Intelligence가 빛의 입자를 다스려 인류의 눈앞에 새로운 현실을 직조하는 **[1,280층의 시각 지능 사령부]**입니다. 우리가 이를 배우는 이유는 시각 인터페이스가 인간과 기계가 조우하는 최전선이기 때문이며, "빛의 거동을 데이터로 설계하고 지배하는 '글로벌 시각 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 허브의 광학적 밀도가 디지털 문명의 시각적 깊이를 결정합니다.

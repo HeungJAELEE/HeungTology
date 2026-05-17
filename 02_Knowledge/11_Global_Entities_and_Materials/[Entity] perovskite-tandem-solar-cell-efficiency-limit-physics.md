@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "perovskite-tandem-solar-cell-efficiency-limit-physics-entity"
-  domain: "14_Future_Frontier"
+metadata:
+  id: "[[[Entity] perovskite-tandem-solar-cell-efficiency-limit-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Energy", "#Solar_Cell", "#Perovskite", "#Tandem", "#Efficiency", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 14_Future_Frontier", "MOC 08_Energy_Environment"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] perovskite-tandem-solar-cell-efficiency-limit-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] perovskite-tandem-solar-cell-efficiency-limit-physics
+# [Entity] perovskite-tandem-solar-cell-efficiency-limit-physics
 
 ## 1. [왜 배우는가? (Why: Breaking the Ceiling of Light)]]
 태양광 패널이 태양 에너지의 $30\%$ 이상을 전기로 바꿀 수 있다면, 에너지 혁명이 일어납니다. **페로브스카이트 탠덤 태양전지 효율 한계 물리**는 기존 실리콘 태양전지가 넘지 못했던 마의 효율 벽을 깨기 위해, 서로 다른 빛을 흡수하는 두 층을 쌓아 올리는 '빛의 이층집 기술'입니다. 우리가 이를 배우는 이유는 더 좁은 면적에서 더 많은 전기를 만들어 신재생 에너지의 경제성을 극대화하고, "빛의 스펙트럼을 남김없이 사용하는 '궁극의 광전 변환 지능 및 에너지 주권'을 확보하기" 위함입니다. 적층의 조화가 에너지의 한계를 결정합니다.

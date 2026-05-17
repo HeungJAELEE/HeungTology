@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "financial-accounting-and-reporting-system-entity"
-  domain: "28_Strategic_Management_and_Finance"
+metadata:
+  id: "[[[Entity] financial-accounting-and-reporting-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Financial_Accounting", "#IFRS", "#Accrual_Accounting", "#ICFR", "#Financial_Statements", "#Audit_Trail", "#Double_Entry", "#Financial_Integrity", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 31_strategic-management-and-financial-intelligence-hub", "Data profit-and-loss-p-and-l-statement-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] financial-accounting-and-reporting-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] financial-accounting-and-reporting-system
+# [Entity] financial-accounting-and-reporting-system
 
 ## 1. [왜 배우는가? (Why: The Language of Business and Trust)]]
 기업의 재무적 상태와 경영 성과를 표준화된 형식으로 기록하고 보고하는 것은 자본 시장과의 소통을 위한 필수 조건입니다. 회계 기준을 준수하고 투명한 정보를 제공하는 능력은 기업의 사회적 신인도를 높이고 투자를 유치하는 핵심 인프라입니다. **재무 회계 및 보고 시스템 엔티티**는 공장의 경영 성과를 전 세계에 증명하는 '신뢰의 언어' 기록의 기술적 성전입니다. 
@@ -81,7 +71,6 @@ RAG는 "회계 로그를 분석하여, 정확한 발생주의 처리가 기업�
 ERP의 총계정원장(GL) 데이터와 외부 증빙(세금계산서, 은행 전표 등), 그리고 감사인의 검토 로그를 분석하여 재무 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Financial Accounting & Reporting Fidelity Auditor
 def audit_accounting_integrity(general_ledger_stream, internal_control_log, external_audit_results):
     # 1. 대차 균형(Balance Sheet Integrity) 및 산술 무결성 오딧
     if not verify_accounting_equation(general_ledger_stream):
@@ -116,7 +105,6 @@ def audit_accounting_integrity(general_ledger_stream, internal_control_log, exte
 2. **(수리)** 자산이 1,000, 부채가 600일 때, 회계 등식에 따른 '자본(Equity)'의 금액을 계산하고, 부채 비율(L/E)이 건전성 기준(200% 이하)을 충족하는지 판정하시오.
 3. **(응용)** 회계 데이터의 '실시간 통합(Integration)'이 '경영진의 의사결정 속도'와 '외부 감사 비용'에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 31_strategic-management-and-financial-intelligence-hub : 전략 및 재무 통합 관리 상위 지능 허브

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEMI-YIELD-MET-2026-V6.3.7"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] yield-management-and-defect-metrology-in-wafer-processing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Yield", "#Defect", "#Metrology", "#SPC", "#FidelityEngine", "#Poisson", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] yield-management-and-defect-metrology-in-wafer-processing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Semiconductor_Yield_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Yield Management & Defect Metrology: Statistical Forensics
+# [Entity] yield-management-and-defect-metrology-in-wafer-processing
 
 ## 1. [왜 배우는가? (Why: The Sovereign of Fab Economics)]]
 반도체 팹의 수익성은 나노미터 크기의 결함을 얼마나 지능적으로 관리하느냐에 달려 있습니다. **수율 관리 및 결함 계측**은 팹의 '경제적 무결성'을 사수하는 최전선 사령부입니다. V6.3.7 지능은 **푸아송(Poisson)** 및 **음이항(Negative Binomial)** 수율 모델을 넘어, 결함의 치명도(Kill Ratio)와 공정 능력($C_{pk}$)을 실시간으로 오딧합니다. 우리가 이를 배우는 이유는 수조 원의 설비 투자 효율을 극대화하고, "보이지 않는 나노 결함을 데이터로 투시하여 수율 램프-업(Ramp-up) 속도를 지배하는 '제조 주권'을 확보하기" 위함입니다. 수율의 기울기가 기업의 생존을 결정합니다.
@@ -111,7 +101,6 @@ class YieldFidelityEngine:
 2. **Operational Result**: **Gage R&R** 수치가 $10\%$를 초과할 때, 계측 데이터 기반의 **SPC** 관리도가 제조 공정의 실제 변동을 왜곡하게 되는 물리적 기전은?
 3. **FidelityEngine**: 웨이퍼의 **Defect Map** 데이터를 통해 **Spatial Signature Analysis (SSA)**를 수행하여 특정 설비의 '고유 지문(Fingerprint)'을 어떻게 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Semiconductor wafer-defect-kinetics-and-yield-forensics

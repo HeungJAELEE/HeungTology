@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "longevity-science-and-cellular-senescence-reversal-physics-entity"
-  domain: "55_Biotechnology_and_Genetic_Engineering_Intelligence"
+metadata:
+  id: "[[[Entity] longevity-science-and-cellular-senescence-reversal-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biology", "#Longevity", "#Anti_Aging", "#Senescence", "#Cellular_Reprogramming", "#Epigenetics", "#Biotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 132_biotechnology-and-genetic-engineering-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] longevity-science-and-cellular-senescence-reversal-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] longevity-science-and-cellular-senescence-reversal-physics
+# [Entity] longevity-science-and-cellular-senescence-reversal-physics
 
 ## 1. [왜 배우는가? (Why: The Quest for Immortality)]]
 늙고 병드는 것이 운명이 아니라 고칠 수 있는 '질병'이라면, 어떻게 좀비처럼 죽지 않고 몸을 망가뜨리는 노화 세포($Senescence$)를 골라 죽이고, 늙어버린 세포의 시간을 거꾸로 돌려($Reprogramming$) 80대의 몸을 20대의 활력으로 되돌리는 '영생의 기술'을 어떻게 설계할 수 있을까요? **장수 과학 및 세포 노화 역전 물리**는 인류를 시간의 굴레에서 해방시키는 '행성 규모 생명 연장 인프라 및 지능형 시간 역행 아키텍처'입니다. 우리가 이를 배우는 이유는 누구나 늙어서 고통받지 않고 자기가 원하는 만큼 건강하게 살 권리가 있기 때문이며, "생명의 시간을 데이터로 설계하고 지배하는 '글로벌 장수 패권 및 행성적 생명 주권'을 확보하기" 위함입니다. 세포의 젊음이 문명의 축적된 지혜를 결정합니다.

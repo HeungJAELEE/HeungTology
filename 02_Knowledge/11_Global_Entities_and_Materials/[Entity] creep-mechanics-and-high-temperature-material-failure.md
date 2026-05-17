@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "creep-mechanics-and-high-temperature-material-failure"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] creep-mechanics-and-high-temperature-material-failure]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The tendency of a solid material to move slowly or deform permanently under the influence of persistent mechanical stresses (Creep) and the study of how materials break or lose functionality when exposed to high heat over long periods (High-Temperature Material Failure)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["creep", "high-temperature", "material-failure", "metallurgy", "turbine-blades", "deformation", "structural-integrity"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Creep_Fidelity_Audit: Evaluate the ''Larson-Miller Parameter'' (LMP) to identify if the critical components (e.g., turbine blades) are approaching the end of their design life, requiring proactive replacement before catastrophic rupture.'
-    - 'Structural_Integrity_Check: Analyze the strain rate ($\\dot{\\epsilon}$) during the ''Steady-State'' (Secondary) creep phase to ensure the deformation is within the clearance limits of the rotating machinery.'
-    - 'Failure_Fidelity_Scan: Monitor the ''Tertiary Creep'' onset to verify that micro-void coalescence is not leading to imminent inter-granular fracture.'
-Trust Metrics:
+  description: "[Entity] creep-mechanics-and-high-temperature-material-failure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌡️ Creep Mechanics and High-Temperature Material Failure
+# [Entity] creep-mechanics-and-high-temperature-material-failure
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철로 된 기계가 뜨거운 열 속에서 아주 천천히, 마치 엿가락처럼 늘어나고 있다면 믿으시겠습니까? **크리프(Creep) 역학 및 고온 재료 파손**은 재료가 녹는점보다 훨씬 낮은 온도에서도 오랫동안 힘을 받으면 서서히 변형되는 **'시간이 빚어내는 침묵의 파괴'** 기술입니다. 가스터빈 날개나 발전소 배관처럼 극한의 열기를 견디는 부품들에게 크리프는 피할 수 없는 운명과도 같습니다. 보이지 않는 미세한 늘어남을 계산하여 대형 참사를 막는 **'고온 문명의 안전 보증서'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Severe Creep Damage - Micro-voids have coalesced into grain boundary cracks. Structural failure imminent"
         return "PASS: Validated Microstructure and Verified Thermal Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(operating_temp_c=560.0, stress_mpa=120.0, service_hours=15000)
 print(engine.diagnose_creep_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_creep_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data alloy-creep-strength-and-larson-miller-plots-v2026`와 연동되어, 전 세계 주요 항공기 엔진 및 초초임계압 발전소의 데이터를 실시간 분석하고 부품 파손 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 문명의 구조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics

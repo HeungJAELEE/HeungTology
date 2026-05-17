@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-MED-DICOM-2026-V6"
+metadata:
+  id: "[[[AI] medical-ai-and-dicom]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Medical_AI'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] medical-ai-and-dicom에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] medical-ai-and-dicom
@@ -111,7 +101,6 @@ class DicomProcessingEngine:
 2. **Lung Window**($L:-600, W:1500$) 설정을 사용했을 때, **Bone**($+1000\text{ HU}$) 영역은 모니터상에서 어떻게 표현되는가?
 3. 의료 AI 학습 전 **DICOM** 데이터에서 수행하는 **비식별화(De-identification)** 과정이 **HIPAA** 규정 준수 외에 데이터 편향(Bias) 방지 측면에서 갖는 의미는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI medical-image-segmentation-3d
 - 02_Knowledge/03_AI_Data/General/AI convolutional-neural-network-cnn

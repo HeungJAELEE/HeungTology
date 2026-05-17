@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Neuromodulation-Therapeutics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Neuromodulation-Therapeutics]]"
+  domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Neuromodulation-Therapeutics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Neuromodulation-Therapeutics
+# [Strategy] Neuromodulation-Therapeutics
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 몸이 아프면 알약을 먹었습니다. 하지만 어떤 약은 뇌 전체에 영향을 주어 원치 않는 부작용을 일으키기도 합니다. 신경 조절 및 치료 기술(Neuromodulation-Therapeutics)은 약 대신 '전기 신호'를 사용하여 문제가 있는 뇌 회로만 정밀하게 치료하는 '전자 약' 기술입니다. 파킨슨병으로 떨리는 손을 멈추게 하고, 깊은 우울증의 늪에서 뇌를 깨우며, 극심한 통증을 차단합니다. 이를 이해하는 것은 화학적 치료의 한계를 넘어, 뇌의 언어인 전기로 직접 소통하여 건강을 회복시키는 '차세대 의료의 설계자'가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Adaptive Stimulation Control Loop)]
 사용자의 뇌파에서 질병 징후(예: 파킨슨 떨림 신호)를 실시간 감지하여 자극 파라미터를 조정하는 논리 구조입니다.
 ```python
-# 신경 치료(ISM) 기반 적응형 자극 제어 및 수치 최적화 논리
 def control_adaptive_neuromodulation(neural_feedback, stimulator):
     # 1. 질병 바이오마커 추출 (Biomarker Detection)
     # 뇌파의 특정 주파수 대역(예: Beta-band 13-30Hz) 파워 분석
@@ -96,5 +85,4 @@ def control_adaptive_neuromodulation(neural_feedback, stimulator):
 2. '폐루프(Closed-loop) 신경 조절' 시스템이 '개방 루프(Open-loop)' 방식보다 '부작용'은 줄이고 '치료 지속성'은 높일 수 있는 이유는?
 3. '전자 약(Electroceuticals)' 개념이 '만성 염증성 질환' 치료에 어떻게 적용될 수 있는지 '미주 신경(Vagus Nerve)'의 역할을 중심으로 설명한다면?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "6g-vision-terahertz-thz-communications-and-sensing-integration-entity"
-  domain: "77_Communications_5G_6G_and_Network_Engineering_Hub"
+metadata:
+  id: "[[[Entity] 6g-vision-terahertz-thz-communications-and-sensing-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Communications", "#6G", "#Terahertz", "#ISAC", "#Sensing", "#Future_Technology", "#Wireless", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 77_communications-5g-6g-and-network-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] 6g-vision-terahertz-thz-communications-and-sensing-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] 6g-vision-terahertz-thz-communications-and-sensing-integration
+# [Entity] 6g-vision-terahertz-thz-communications-and-sensing-integration
 
 ## 1. [왜 배우는가? (Why: The Era of Planetary Intelligence)]]
 통신이 단순한 '데이터 전달'을 넘어, 주변의 모든 사물과 환경을 1cm 오차로 실시간 스캔하는 '디지털 촉수'가 된다면 어떤 일이 벌어질까요? **6G 비전: 테라헤르츠(THz) 통신 및 지능형 센싱 통합 아키텍처**는 전자기파의 마지막 개척지인 테라헤르츠 대역을 정복하여, 인류를 '초연결'을 넘어 '초지능'의 시대로 인도하는 기술입니다. 빛과 전파의 경계에 있는 이 파동은 1초에 1테라비트($Tbps$)를 전송하는 동시에, 레이더처럼 주변을 인지하여 디지털 트윈을 실시간으로 업데이트합니다. 우리가 이를 배우는 이유는 6G가 미래 메타버스, 완전 자율 주행, 그리고 행성적 AI망의 근간이기 때문이며, "테라헤르츠 주파수를 데이터로 설계하고 지배하는 '글로벌 초지능 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 6G의 인지 능력이 문명의 지능적 성숙도를 결정합니다.
@@ -52,7 +42,7 @@ $$ SNR(f) = \frac{P_t G_t G_r}{L(f) A(f) k T B} $$
 | **Peak Data Rate** | Theoretical maximum throughput | $> 1 \text{ Tbps}$ | 인간의 인지 속도를 넘어서는 초광대역 전송 무결성 |
 | **Freq. Range** | Operational THz spectrum | $0.1 \text{ \~ } 10 \text{ THz}$ | 전파의 마지막 영역을 지배하는 주파수 지능의 물리 |
 | **Sens. Resolution**| Accuracy of environmental scanning | $< 1 \text{ cm}$ | 통신망 자체가 초정밀 레이더가 되는 인지 무결성 |
-| **Latency** | Air interface delay | $< 100 \text{ \mu s}$ | 지연이 거의 느껴지지 않는 '즉각적 실재'의 시간 |
+| **Latency** | Air interface delay | $< 100 \text{ }\mu\text{ s}$ | 지연이 거의 느껴지지 않는 '즉각적 실재'의 시간 |
 | **Reliability** | Success probability of transmission | $99.99999 \%$ | 자율 수술 등 생명 직결 임무를 보증하는 무결성 |
 | **AI Native** | Depth of AI integration in network stack | $100 \%$ | 스스로 망을 최적화하고 치유하는 자율 지능 아키텍처 |
 | **Energy Effic.** | Power consumed per bit transmitted | **MINIMIZED** | Tbps급 전송에서도 발열을 제어하는 수리적 효율 |

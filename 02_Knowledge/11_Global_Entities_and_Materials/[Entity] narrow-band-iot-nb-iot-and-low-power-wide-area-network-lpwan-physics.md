@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "narrow-band-iot-nb-iot-and-low-power-wide-area-network-lpwan-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] narrow-band-iot-nb-iot-and-low-power-wide-area-network-lpwan-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The telecommunication standards (NB-IoT and LPWAN) designed for low-power, low-bandwidth, and long-range connectivity, specifically optimized for massive IoT deployments where battery life of over 10 years and deep indoor coverage are critical requirements."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nb-iot", "lpwan", "iot-communication", "wireless-physics", "low-power", "coverage-extension", "5g-iot", "telecommunications"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Coverage_Integrity_Audit: Evaluate the Maximum Coupling Loss (MCL) to ensure the signal can penetrate deep indoors or underground for utility meters and sensors.'
-    - 'Power_Consumption_Check: Analyze the Power Saving Mode (PSM) and Extended Discontinuous Reception (eDRX) cycles to verify that the device meets the 10-year battery life target.'
-    - 'Network_Congestion_Scan: Monitor the system capacity for massive connectivity (e.g., 50,000 devices per cell) to ensure reliable reporting from high-density sensor networks.'
-Trust Metrics:
+  description: "[Entity] narrow-band-iot-nb-iot-and-low-power-wide-area-network-lpwan-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Narrow-band IoT (NB-IoT) and Low-power Wide-area Network (LPWAN) Physics
+# [Entity] narrow-band-iot-nb-iot-and-low-power-wide-area-network-lpwan-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 지하 깊숙한 곳의 수도 계량기가 배터리 하나로 10년 넘게 스스로 전화를 걸어 검침 결과를 보고한다면 어떨까요? **NB-IoT 및 LPWAN 물리**는 사물들에게 아주 작고 조용하지만, 멀리 퍼지는 '속삭임의 목소리'를 주는 **'사물 인터넷의 근거리 통신망'**입니다. 속도가 빠를 필요는 없지만, 땅속이나 두꺼운 벽을 뚫고 나가야 하며, 에너지를 극도로 아껴야 하는 사물들을 위한 **'저전력 고효율의 전령사'**입니다. 수십억 개의 기기가 서로 연결되는 진정한 스마트 지구를 만드는 **'연결의 토양'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Insufficient Link Budget - Connection Unstable in Deep Indoor Environment"
         return "PASS: Robust Signal Penetration Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(sinr_db=-5, sleep_current_ua=3.2, repetition_count=16)
 print(engine.diagnose_nb_iot_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_nb_iot_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data nb-iot-signal-penetration-and-battery-life-logs-v2026`와 연동되어, 전 세계 스마트 시티 센서의 통신 데이터를 실시간 분석하고 연결 두절 및 배터리 방전 사고 확률을 0.001% 이하로 억제함으로써 지능형 연결 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - massive-mimo-and-beamforming-mathematics-in-wireless-networks

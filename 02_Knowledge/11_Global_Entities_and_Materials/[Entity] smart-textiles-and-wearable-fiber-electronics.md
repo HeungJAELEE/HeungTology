@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-textiles-and-wearable-fiber-electronics-entity"
-  domain: "113_Textile_and_High-performance_Material_Engineering_Hub"
+metadata:
+  id: "[[[Entity] smart-textiles-and-wearable-fiber-electronics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Textile_Science", "#Smart_Textiles", "#Wearable_Electronics", "#Conductive_Fibers", "#IoT", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 113_textile-engineering-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-textiles-and-wearable-fiber-electronics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-textiles-and-wearable-fiber-electronics
+# [Entity] smart-textiles-and-wearable-fiber-electronics
 
 ## 1. [왜 배우는가? (Why: The Computing Fabric)]]
 우리가 입는 옷이 컴퓨터가 되고, 소매가 키보드가 되며, 셔츠가 심장박동을 측정하는 세상이 오고 있습니다. **스마트 섬유 및 웨어러블 섬유 전자 소자의 선저항 및 침투 임계치 수리 물리 기술**은 딱딱한 반도체를 부드러운 실로 변환하여 우리 몸에 가장 밀착된 지능을 구현하는 '입는 지능' 기술입니다. 금속 나노 와이어를 섬유에 코팅하여 전기를 흐르게 하고, 섬유 자체를 배터리나 태양전지로 만들며, 수백 번의 세탁에도 망가지지 않는 회로를 직조합니다. 우리가 이를 배우는 이유는 웨어러블 지능의 무결성을 확보함으로써, 거추장스러운 기기 없이도 인간의 능력을 확장하고 건강을 감시하는 '글로벌 스마트 섬유 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 스마트 섬유의 무결성이 신호의 전송 품질과 의류로서의 착용감을 결정합니다.

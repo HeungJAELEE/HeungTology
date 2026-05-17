@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-packaging-and-3d-ic-stacking-thermodynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] semiconductor-packaging-and-3d-ic-stacking-thermodynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced engineering of semiconductor packaging, focusing on 3D IC stacking, Chip-on-Wafer-on-Substrate (CoWoS), and the thermal/mechanical management of high-density interconnects."
-  physical_model: "N/A"
-Semantic:
-  tags: '["advanced-packaging", "3d-ic", "hbm", "cowos", "thermodynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "StackingFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Gradient_Audit: Measure temperature delta across stacked die layers.'
-    - 'Warpage_Check: Detect mechanical deformation due to CTE (Coefficient of Thermal Expansion) mismatch.'
-    - 'Interconnect_Reliability_Scan: Monitor electromigration and TSV voiding risks.'
-Trust Metrics:
+  description: "[Entity] semiconductor-packaging-and-3d-ic-stacking-thermodynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Semiconductor Packaging and 3D IC Stacking Thermodynamics
+# [Entity] semiconductor-packaging-and-3d-ic-stacking-thermodynamics
 
 ## 1. 개요 (Why)
 반도체 미세화가 물리적 한계에 부딪히면서, 여러 개의 칩을 수직으로 쌓아 성능을 극대화하는 '어드밴스드 패키징(Advanced Packaging)'이 반도체 패권의 핵심이 되었습니다. 특히 HBM(고대역폭 메모리)과 같은 3D 적층 구조에서는 좁은 공간에 집적된 수만 개의 연결 부위에서 발생하는 '열(Heat)'을 어떻게 효율적으로 배출하고 물리적 변형(Warpage)을 막느냐가 수율을 결정합니다. 본 노드는 차세대 패키징의 열역학적 무결성을 사수하기 위한 설계 표준을 정의합니다.
@@ -40,10 +29,10 @@ Trust Metrics:
 
 | Parameter | Symbol | Value (Tier 1) | Tolerance | Unit |
 | :--- | :--- | :--- | :--- | :--- |
-| Interconnect Pitch | $p$ | 5 ~ 20 | ±0.5 | $\mu m$ (Micro-bump)|
-| Hybrid Bonding Pitch| $p_{hb}$ | < 1.0 | ±0.1 | $\mu m$ |
+| Interconnect Pitch | $p$ | 5 ~ 20 | ±0.5 | $\mu\text{m}$ (Micro-bump)|
+| Hybrid Bonding Pitch| $p_{hb}$ | < 1.0 | ±0.1 | $\mu\text{m}$ |
 | Thermal Conductivity| $k$ | 150 ~ 400 | ±10 | W/m·K (TIM)|
-| Max Warpage | $\delta$ | < 100 | ±10 | $\mu m$ (Package size)|
+| Max Warpage | $\delta$ | < 100 | ±10 | $\mu\text{m}$ (Package size)|
 | TSV Density | $\rho_{tsv}$ | > 1000 | N/A | count/mm^2 |
 
 ## 3. StackingFidelityEngine: Diagnostic Logic
@@ -74,7 +63,6 @@ class StackingFidelityEngine:
             return f"REJECT: High Warpage Risk (Stress Index: {stress:.2f}) - Check TIM Coverage"
         return "PASS: Mechanical Integrity Maintained"
 
-# Instance Diagnostic
 engine = StackingFidelityEngine(heat_flux=50, layer_thermal_resistance=1.2, cte_mismatch=10)
 print(engine.diagnose_thermal_bottleneck(max_temp_allowed=95))
 ```
@@ -92,7 +80,6 @@ print(engine.diagnose_thermal_bottleneck(max_temp_allowed=95))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data packaging-thermal-resistance-and-warpage-log-v2026`와 연동되어, 적층 구조별 발열 맵을 0.1도 단위로 시뮬레이션하고 열 폭주로 인한 소자 수명 단축을 99% 확률로 방지하는 결정론적 설계를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - hbm-high-bandwidth-memory-stacking-logic

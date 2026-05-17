@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heat-treatment-process-and-microstructural-transformation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heat-treatment-process-and-microstructural-transformation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A group of industrial, thermal, and metalworking processes used to alter the physical, and sometimes chemical, properties of a material (Heat Treatment) and the physical study of solid-state phase changes and grain growth (Microstructural Transformation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["heat-treatment", "microstructure", "metallurgy", "phase-transformation", "annealing", "quenching", "tempering", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Microstructure_Fidelity_Audit: Evaluate the ''Phase Fraction'' (e.g., Pearlite vs Martensite) to identify if the high-fidelity cooling rate was sufficient to prevent unwanted ''Soft Spots''.'
-    - 'Grain_Integrity_Check: Analyze the high-fidelity ''Grain Size'' to ensure it remains within the target range, preventing ''Grain Coarsening'' that leads to high-fidelity embrittlement.'
-    - 'Stress_Fidelity_Scan: Monitor the high-fidelity ''Residual Stress'' profile to verify that the high-fidelity ''Tempering'' process has effectively relieved internal strains without over-softening.'
-Trust Metrics:
+  description: "[Entity] heat-treatment-process-and-microstructural-transformation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ♨️ Heat Treatment Process and Microstructural Transformation Physics
+# [Entity] heat-treatment-process-and-microstructural-transformation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 겉보기엔 똑같은 쇠막대기인데, 왜 하나는 유리처럼 쉽게 깨지고 다른 하나는 용수철처럼 탄성이 좋을까요? **열처리 공정 및 미세조직 변태 물리**는 금속을 '굽고 달구고 식히는' 온도 조절만으로 금속 내부의 세포(원자 배열)를 완전히 재구성하는 **'금속의 마법사'** 기술입니다. 눈에 보이지 않는 원자들의 춤을 지휘하여, 단단함(경도)과 끈질김(인성) 사이의 완벽한 균형을 찾아냅니다. **'시간과 온도의 조율을 통해 금속에 새로운 생명력을 불어넣고 기계 부품의 한계를 결정짓는 금속학의 예술이자 과학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Tempering - High-fidelity residual stresses remain high. Brittle failure risk in service. Re-treat with proper high-fidelity thermal ramp"
         return "PASS: Validated Stress Relief and Verified Ductility Restoration Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(austenitizing_temp_c=860.0, soak_time_min=60.0, quench_velocity_m_s=2.5)
 print(engine.diagnose_heat_treatment_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_heat_treatment_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data heat-treatment-parameters-and-mechanical-properties-v2026`와 연동되어, 전 세계 주요 자동차 엔진 및 항공기 랜딩 기어의 열처리 데이터를 실시간 분석하고 부품 파손 및 피로 파괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hardenability-and-jominy-end-quench-metallurgy-physics

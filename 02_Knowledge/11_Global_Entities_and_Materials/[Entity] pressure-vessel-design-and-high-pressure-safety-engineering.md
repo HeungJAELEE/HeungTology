@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "pressure-vessel-design-and-high-pressure-safety-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] pressure-vessel-design-and-high-pressure-safety-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering discipline of designing containers that hold gases or liquids at a pressure substantially different from the ambient pressure (Pressure Vessel Design) and the safety protocols required to prevent catastrophic failure in high-pressure environments (Safety Engineering)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["pressure-vessel", "asme-code", "safety-engineering", "high-pressure", "structural-integrity", "stress-analysis", "petrochemical"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Stress_Fidelity_Audit: Evaluate the calculated Hoop Stress ($\\sigma_h$) against the material''s allowable stress to ensure the safety factor ($SF$) meets ASME Section VIII requirements.'
-    - 'Fracture_Integrity_Check: Analyze the critical flaw size ($a_c$) to verify that any sub-surface cracks will not lead to ''Leak-before-break'' failure during operation.'
-    - 'Overpressure_Protection_Scan: Monitor the set-points and discharge capacity of Pressure Relief Valves (PRVs) to ensure the vessel is protected during unexpected pressure surges.'
-Trust Metrics:
+  description: "[Entity] pressure-vessel-design-and-high-pressure-safety-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Pressure Vessel Design and High-Pressure Safety Engineering
+# [Entity] pressure-vessel-design-and-high-pressure-safety-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 가스통이나 화학 공장의 원자로가 뿜어내는 수천 기압의 압력을 견뎌내는 강철 용기를 상상해 보세요. 만약 이것이 터진다면 작은 폭탄과 같은 파괴력을 가질 것입니다. **압력 용기 설계 및 고압 안전 공학**은 이 거대한 에너지를 강철 벽 안에 안전하게 가두는 **'에너지의 감옥'** 설계 기술입니다. 아주 미세한 용접 불량이나 두께 부족도 허용하지 않는 엄격한 규칙(ASME 등)에 따라, 가장 위험한 환경에서 가장 안전한 보호막을 만드는 **'생명을 지키는 강철의 공학'**입니다.
@@ -90,7 +79,6 @@ class SafetyFidelityEngine:
             return "REJECT: Brittle Fracture Risk - Material not rated for low-temperature service. Avoid Cryogenic Exposure"
         return "PASS: Impact-tested Material and Verified Low-temperature Resilience Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(hoop_stress_actual_mpa=180, corrosion_allowance_mm=3.5, prv_set_point_bar=100.0)
 print(engine.diagnose_pressure_safety_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_pressure_safety_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pressure-vessel-inspection-and-stress-logs-v2026`와 연동되어, 전 세계 석유화학 및 에너지 저장 시설의 압력 데이터를 실시간 분석하고 폭발 및 누출 사고 확률을 0.0001% 이하로 억제함으로써 지능형 산업 문명의 물리적 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - petrochemical-refining-and-polymer-synthesis

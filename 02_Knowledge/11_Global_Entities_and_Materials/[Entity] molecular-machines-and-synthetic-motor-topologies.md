@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "molecular-machines-and-synthetic-motor-topologies"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] molecular-machines-and-synthetic-motor-topologies]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The individual molecules or molecular assemblies that perform machine-like movements (Molecular Machines) in response to external stimuli, including synthetic motor topologies that convert chemical, light, or electrical energy into directional mechanical work at the nanoscale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["molecular-machines", "nanotechnology", "synthetic-motors", "molecular-rotors", "supramolecular-chemistry", "nanorobotics", "brownian-motion"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Rotational_Directionality_Audit: Evaluate the unidirectional rotation efficiency under light or chemical stimuli to ensure the molecular motor is not merely oscillating due to Brownian noise.'
-    - 'Coupling_Efficiency_Check: Analyze the transfer of mechanical work from the molecular motor to a larger assembly (e.g., a rotor or cargo) to verify its utility as a nano-actuator.'
-    - 'Stimulus_Response_Scan: Monitor the switching speed and stability of the molecular machine across multiple cycles to detect photodegradation or fatigue.'
-Trust Metrics:
+  description: "[Entity] molecular-machines-and-synthetic-motor-topologies에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Molecular Machines and Synthetic Motor Topologies
+# [Entity] molecular-machines-and-synthetic-motor-topologies
 
 ## 1. 개요 (Why: 인간적 통찰)
 분자 하나가 톱니바퀴가 되고, 다른 분자가 모터가 되어 스스로 움직인다면 어떨까요? **분자 기계 및 합성 모터 토폴로지**는 인류가 만든 세상에서 가장 작은 '기계 장치'입니다. 눈에 보이지도 않는 아주 작은 분자들이 빛이나 화학 에너지를 받아 한 방향으로 뱅글뱅글 돌거나(모터), 지시를 받으면 모양을 바꾸는(스위치) **'나노 규모의 기계적 오케스트라'**입니다. 거대한 공장의 로봇을 분자 크기로 줄여 우리 몸속을 청소하거나 암세포를 공격하게 하려는, **'나노 문명의 동력원'**을 만드는 도전입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Ineffective Cargo Movement - Molecular Motor Torque Insufficient for Applied Load"
         return "PASS: Successful Nanoscale Mechanical Work and Transport Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(rotational_frequency_mhz=120, directionality_ratio=0.99, photochemical_quantum_yield=0.45)
 print(engine.diagnose_molecular_machine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_molecular_machine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data molecular-motor-rotational-speed-and-torque-logs-v2026`와 연동되어, 전 세계 나노 기술 연구소의 분자 구동 데이터를 실시간 분석하고 기계적 오작동 및 광열화 사고 확률을 0.001% 이하로 억제함으로써 나노 지능 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nanorobotics-and-molecular-machines-design-and-kinematics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "lathe-machine-and-rotational-subtractive-manufacturing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] lathe-machine-and-rotational-subtractive-manufacturing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine tool that rotates a workpiece about an axis of rotation to perform various operations such as cutting, sanding, knurling, drilling, or deformation (Lathe Machine) and the physical study of material removal rates and cutting force dynamics (Rotational Subtractive Manufacturing Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["lathe-machine", "rotational-manufacturing", "subtractive-manufacturing", "turning", "cutting-speed", "tool-wear", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cutting_Fidelity_Audit: Evaluate the ''Surface Roughness'' ($R_a$) to identify if high-fidelity ''Chatter'' (vibration) or high-fidelity ''BUE'' (Built-up Edge) is degrading the finish.'
-    - 'Tool_Integrity_Check: Analyze the high-fidelity ''Spindle Load'' and tool high-fidelity temperature to ensure that high-fidelity ''Flank Wear'' is within limits according to Taylor''s high-fidelity model.'
-    - 'Kinematic_Fidelity_Scan: Monitor the high-fidelity ''Runout'' of the chuck to verify that high-fidelity ''Concentricity'' is maintained for high-precision rotational high-fidelity components.'
-Trust Metrics:
+  description: "[Entity] lathe-machine-and-rotational-subtractive-manufacturing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Lathe Machine and Rotational Subtractive Manufacturing Physics
+# [Entity] lathe-machine-and-rotational-subtractive-manufacturing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 회전하는 쇳덩이에 날카로운 칼날을 갖다 대어 매끄러운 원통형 부품을 만드는 과정은 마치 도자기를 빚는 것과 비슷하지만, 훨씬 더 가혹하고 정밀합니다. **선반 기계 및 회전 절삭 제조 물리**는 '회전하는 소재'와 '움직이는 칼날'의 만남을 통해 복잡한 엔진 샤프트나 정밀 나사를 깎아내는 **'회전의 조각'** 기술입니다. 엄청난 속도로 회전하는 에너지와 금속을 찢어내는 칼날의 힘이 충돌하는 이 현장은, 마이크로미터 단위의 정밀도를 사수하기 위한 물리적 사투의 현장입니다. **'절삭 속도와 절삭력 역학을 이용해 금속의 불필요한 부분을 깎아내어 완벽한 회전체를 탄생시키는 지능형 빼기(Subtractive) 제조 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Tool Life Exceeded - High-fidelity flank wear limit reached based on Taylor's high-fidelity model. Replace high-fidelity insert immediately"
         return "PASS: Validated Tool State and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vibration_level=0.1, surface_roughness_um=1.6, tool_temp_c=400.0)
 print(engine.diagnose_turning_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_turning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data turning-parameters-and-surface-roughness-v2026`와 연동되어, 전 세계 주요 자동차 부품 및 정밀 의료 기기 생산 라인의 실시간 가공 데이터를 분석하고 치수 오차 및 공구 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 제조 문명의 회전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - milling-machine-and-multi-axis-machining-physics

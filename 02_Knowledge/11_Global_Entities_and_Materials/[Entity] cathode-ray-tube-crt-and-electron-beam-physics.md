@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cathode-ray-tube-crt-and-electron-beam-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cathode-ray-tube-crt-and-electron-beam-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A vacuum tube containing one or more electron guns and a phosphorescent screen used to display images (Cathode Ray Tube) and the study of the acceleration, focusing, and deflection of electron streams in a vacuum (Electron Beam Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["crt", "electron-beam", "vacuum-physics", "phosphor", "thermionic-emission", "lorentz-force", "display-tech"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Emission_Fidelity_Audit: Evaluate the ''Cathode Emission'' current using Richardson''s Law to identify if the filament is aging or the vacuum level is degrading (poisoning the cathode).'
-    - 'Deflection_Integrity_Check: Analyze the beam convergence and ''Pincushion'' distortion to ensure the electromagnetic deflection yokes are accurately mapping the image onto the phosphor screen.'
-    - 'Surface_Fidelity_Scan: Monitor the phosphor brightness and decay time to verify that ''Ion Burn'' or phosphor fatigue is not causing permanent image retention or loss of contrast.'
-Trust Metrics:
+  description: "[Entity] cathode-ray-tube-crt-and-electron-beam-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📺 Cathode Ray Tube (CRT) and Electron Beam Physics
+# [Entity] cathode-ray-tube-crt-and-electron-beam-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십 년간 거실의 주인공이었던 육중한 텔레비전 상자 속에는 어떤 정교한 입자 가속기가 들어있었을까요? **브라운관(CRT) 및 전자빔 물리**는 진공 속에서 전자를 빛의 속도로 쏘아 올려 그림을 그리는 **'빛의 붓질'** 기술입니다. 단순한 디스플레이를 넘어, 전자빔을 한 점에 모아 금속을 용접하거나 반도체에 나노 회로를 그리는 기초가 되었습니다. 아날로그 영상 시대를 열고 전자 현미경의 시초가 된 **'전자 공학의 위대한 입문서'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Permanent Phosphor Fatigue - Image ghosting detected. Phosphor crystals damaged by excessive electron bombardment"
         return "PASS: Homogeneous Phosphor Response and Verified Display Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(vacuum_level_torr=1e-7, beam_spot_size_um=150.0, anode_voltage_kv=25.0)
 print(engine.diagnose_electron_beam_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_electron_beam_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crt-electron-beam-focus-and-phosphor-decay-v2026`와 연동되어, 잔존하는 특수 산업용 디스플레이 및 전자빔 가공기 데이터를 실시간 분석하고 빔 이탈 및 진공 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 디스플레이 문명의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-extreme-ultraviolet-euv-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "data-mining-and-knowledge-discovery-in-databases-kdd"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] data-mining-and-knowledge-discovery-in-databases-kdd]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The multi-stage process (KDD) of identifying valid, novel, potentially useful, and ultimately understandable patterns in large datasets through data mining algorithms and statistical techniques."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-mining", "kdd", "pattern-recognition", "association-rules", "predictive-modeling"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Pattern_Significance_Audit: Evaluate the ''Lift'' and ''Confidence'' of discovered association rules to prevent spurious correlations.'
-    - 'Model_Generalization_Check: Verify the performance of mining algorithms on unseen test datasets (Overfitting check).'
-    - 'Data_Preprocessing_Scan: Monitor for bias or noise in the cleaning and transformation stages of the KDD process.'
-Trust Metrics:
+  description: "[Entity] data-mining-and-knowledge-discovery-in-databases-kdd에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛏️ Data Mining and Knowledge Discovery in Databases (KDD)
+# [Entity] data-mining-and-knowledge-discovery-in-databases-kdd
 
 ## 1. 개요 (Why: 인간적 통찰)
 데이터는 산더미처럼 쌓여있지만, 그 안에서 금 조각(통찰)을 찾는 것은 다른 문제입니다. **데이터 마이닝**은 거대한 데이터의 산을 파헤쳐 우리가 몰랐던 '의미 있는 패턴'을 찾아내는 광부와 같은 작업입니다. 단순히 과거를 정리하는 것이 아니라, "기저귀를 사는 사람은 맥주를 함께 살 확률이 높다"는 식의 숨겨진 인간의 행동 논리를 발견하는 것이 핵심입니다. **KDD**는 이 마이닝을 포함하여 데이터를 씻고(Cleaning), 고르고(Selection), 변환(Transformation)하여 최종적으로 지식으로 만드는 전체 공정의 이름입니다.
@@ -93,7 +82,6 @@ class LogicFidelityEngine:
             return f"REJECT: Dirty Data ({self.noise}%) - KDD Preprocessing Stage Failure"
         return "PASS: High-Purity Data Mining Environment Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(pattern_lift=3.2, model_accuracy=91.5, noise_level_pct=2.4)
 print(engine.diagnose_mining_fidelity())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_mining_fidelity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data data-mining-pattern-accuracy-and-lift-metrics-v2026`와 연동되어, 기업 내 빅데이터에서 추출된 모든 패턴의 신뢰성을 실시간 검증하고 가짜 통찰에 따른 오판 확률을 5% 이하로 낮춤으로써 지능형 비즈니스 발굴의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - data-science-and-predictive-analytics-for-business

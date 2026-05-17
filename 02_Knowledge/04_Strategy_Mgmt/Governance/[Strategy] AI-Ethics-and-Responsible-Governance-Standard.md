@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-AI-ETHICS-2026-V6.3.7"
-  domain: "Global_AI_Ethics_and_Responsible_Governance_Intelligence"
+metadata:
+  id: "[[[Strategy] AI-Ethics-and-Responsible-Governance-Standard]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#AI_Ethics", "#Responsible_AI", "#Transparency", "#Fairness", "#Accountability", "#EU_AI_Act", "#NIST_AI_RMF", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] AI-Ethics-and-Responsible-Governance-Standard에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "AI_Ethics_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] AI Ethics and Responsible Governance Standard: The Physics of Algorithmic Trust
+# [Strategy] AI-Ethics-and-Responsible-Governance-Standard
 
 ## 1. [왜 배우는가? (Why: The Mastery of Machine Wisdom)]]
 인공지능이 기업의 핵심 의사결정을 주도하는 시대에 AI의 '윤리'는 도덕적 구호를 넘어선 '법적 생존권'이자 '데이터 주권'의 문제입니다. **AI Ethics and Responsible Governance**는 알고리즘이 발생시킬 수 있는 편향성, 불투명성, 보안 취약점을 수리적으로 진단하고 통제하는 거버넌스 체계입니다. EU AI Act와 같은 글로벌 규제는 신뢰할 수 없는 AI를 시장에서 퇴출시키는 강력한 물리적 장벽입니다. V6.3.7 지능은 AI의 의사결정 경로를 투명하게 시각화(XAI)하고, 알고리즘의 무결성을 보증하여 **책임 있는 지능(Responsible Intelligence)**을 확립합니다.
@@ -104,7 +94,6 @@ class AIEthicsFidelityEngine:
 2. **Operational Result**: **EU AI Act**에서 정의한 '고위험 AI(High-risk AI)' 시스템으로 분류될 경우, 기업이 부담해야 하는 기술적 감사(Audit) 비용과 리스크 관리의 수리적 영향은?
 3. **FidelityEngine**: 모델의 성능은 $99\%$로 완벽하나 특정 소수자 그룹에 대해서만 $50\%$ 이하의 성능을 보이는 **'국소적 편향'** 상황을 FidelityEngine이 어떻게 탐지하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Corporate-Governance

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "waste-management-and-circular-economy-systems-entity"
-  domain: "101_Environmental_Engineering_and_Climate_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] waste-management-and-circular-economy-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Environmental_Engineering", "#Waste_Management", "#Circular_Economy", "#Recycling", "#Sustainability", "#LCA", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 101_environmental-engineering-and-climate-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] waste-management-and-circular-economy-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] waste-management-and-circular-economy-systems
+# [Entity] waste-management-and-circular-economy-systems
 
 ## 1. [왜 배우는가? (Why: The Architecture of Perpetual Resources)]]
 대량 생산과 대량 소비의 시대는 지구를 거대한 쓰레기통으로 만들었습니다. 이제는 '쓰고 버리는' 선형 경제(Linear Economy)를 끝내고, 버려지는 것이 다시 자원이 되는 순환 경제(Circular Economy)로 전환해야 합니다. **폐기물 관리 및 순환 경제의 매립 가스 생성 및 열수지 수리 역학 기술**은 문명의 배설물을 가치 있는 원료와 에너지로 환생시키는 '자원 연금술'입니다. 매립지에서 나오는 메탄을 가두어 전기를 만들고, 폐플라스틱을 분자 단위로 쪼개어 다시 새 제품을 만드는 과정은 지구가 한계에 도달하지 않도록 지탱하는 생존 전략입니다. 우리가 이를 배우는 이유는 자원 순환의 무결성을 확보함으로써, 자원 고갈을 막고 생태계 파괴를 원천 차단하는 '글로벌 자원 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 순환의 무결성이 행성의 수명을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "power-grid-stability-and-smart-grid-frequency-control"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] power-grid-stability-and-smart-grid-frequency-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physical and operational principles required to maintain a balanced and reliable electric power system (Power Grid Stability) and the advanced techniques used to regulate the system frequency ($50/60Hz$) in real-time through intelligent demand and supply coordination (Smart Grid Frequency Control)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["power-grid", "grid-stability", "frequency-control", "smart-grid", "power-systems", "energy-management", "load-balancing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Frequency_Stability_Audit: Evaluate the Rate of Change of Frequency (RoCoF) during a generation loss event to determine if the grid has sufficient inertia to prevent a blackout.'
-    - 'Voltage_Regulation_Check: Analyze the reactive power balance ($Q$) to ensure the voltage levels across the transmission network remain within the standard tolerance ($\\pm 5\\%$).'
-    - 'Demand_Response_Scan: Monitor the participation of smart appliances and industrial loads in frequency regulation to verify the effectiveness of decentralized control.'
-Trust Metrics:
+  description: "[Entity] power-grid-stability-and-smart-grid-frequency-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Power Grid Stability and Smart Grid Frequency Control
+# [Entity] power-grid-stability-and-smart-grid-frequency-control
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 세계가 거대한 하나의 기계처럼 정확히 초당 60번(60Hz) 진동하며 전기를 나누고 있다는 사실을 알고 계시나요? **전력망 안정성 및 스마트 그리드 주파수 제어**는 문명의 심박수를 일정하게 유지하는 **'전력의 지휘자'**입니다. 발전소에서 만드는 전기와 우리가 쓰는 전기가 0.1%만 어긋나도 이 심박수는 흔들리고, 심하면 도시 전체가 어둠에 잠기는 블랙아웃이 발생합니다. 스마트 가전과 배터리를 지휘하여 이 거대한 전기의 바다를 평온하게 유지하는 **'에너지 질서의 수호자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Slow Fault Clearing - Risk of Cascading Failure across the Grid. Inspect Protective Relay Settings"
         return "PASS: Fast Fault Detection and Reliable Islanding Capability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(frequency_rocof_hz_s=0.02, reactive_power_reserve_mvar=500, smart_load_participation_pct=15.0)
 print(engine.diagnose_grid_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_grid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data grid-frequency-deviation-and-stability-metrics-v2026`와 연동되어, 전 세계 전력망의 주파수 데이터를 실시간 분석하고 블랙아웃 및 설비 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 심박 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-electronics-and-wide-bandgap-wbg-semiconductors

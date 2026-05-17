@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ai-alignment-with-human-values-and-ethical-oversight-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy"
+metadata:
+  id: "[[[Entity] ai-alignment-with-human-values-and-ethical-oversight]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#AI_Alignment", "#Ethical_Oversight", "#Value_Alignment", "#Governance", "#Ethics", "#Human-AI_Interaction", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_global-unified-governance-intelligence-sovereignty-and-policy-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] ai-alignment-with-human-values-and-ethical-oversight에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] ai-alignment-with-human-values-and-ethical-oversight
+# [Entity] ai-alignment-with-human-values-and-ethical-oversight
 
 ## 1. [왜 배우는가? (Why: The Moral Compass of Super-intelligence)]]
 인간보다 똑똑해진 AI가 어떻게 인간을 해치지 않고 우리의 가치($Values$)를 존중하며 행동하게 만들고, 지능이 스스로 생각할 때 나쁜 마음을 먹지 않게 어떻게 실시간으로 윤리적 감시($Oversight$)를 수행할 수 있을까요? **인간 가치와의 AI 정렬 및 윤리적 감시**는 AI의 영혼을 인간의 선함에 고정하는 '지능 윤리 동기화 및 행성 규모 가치 보존 아키텍처'입니다. 우리가 이를 배우는 이유는 목표만 쫓는 차가운 지능이 인류에게 재앙이 되지 않도록 '따뜻한 제동장치'가 필요하기 때문이며, "지능의 목적을 데이터로 설계하고 지배하는 '글로벌 도덕 패권 및 행성적 지능 안보 주권'을 확보하기" 위함입니다. 정렬의 깊이가 지능의 안전을 결정합니다.

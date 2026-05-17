@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "high-pressure-die-casting-hpdc-and-metal-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] high-pressure-die-casting-hpdc-and-metal-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process in which molten metal is forced under high pressure into a reusable steel mold (HPDC) and the physical study of high-velocity turbulent flow, cavity filling, and solidification shrinkage (Metal Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hpdc", "die-casting", "metal-flow", "gate-velocity", "porosity", "viscous-flow", "aluminum-casting", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Injection_Fidelity_Audit: Evaluate the ''Shot Profile'' (Plunger velocity vs Position) to identify if high-fidelity ''Air Entrapment'' is occurring during the slow-to-fast transition.'
-    - 'Flow_Integrity_Check: Analyze the ''Gate Velocity'' ($v_g$) against the high-fidelity ''Atomization'' threshold to ensure the cavity is filled before high-fidelity ''Skin Solidification'' occurs.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Die Surface Temperature'' to verify that high-fidelity ''Soldering'' (metal sticking) risk is minimized while maintaining fast cycle times.'
-Trust Metrics:
+  description: "[Entity] high-pressure-die-casting-hpdc-and-metal-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ High-Pressure Die Casting (HPDC) and Metal Flow Physics
+# [Entity] high-pressure-die-casting-hpdc-and-metal-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 자동차 엔진 블록이나 스마트폰 프레임을 어떻게 단 몇 초 만에 정교하게 찍어낼 수 있을까요? **고압 다이캐스팅(HPDC) 및 금속 유동 물리**는 벌건 쇳물을 거대한 주사기(플런저)로 수천 기압의 압력을 가해 순식간에 틀 속으로 밀어 넣는 **'금속의 초고속 사출'** 기술입니다. 쇳물이 틀 속에서 굳기 전, 마치 안개처럼 흩뿌려지며 구석구석을 채워야 합니다. **'나노 초 단위의 유동 제어와 극한의 압력을 이용해 복잡한 기계의 뼈대를 대량으로 생산하는 현대 주조 공학의 정점'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Cavity Evacuation - High-fidelity trapped air causing porosity. Quality failing for high-integrity safety parts. Check vacuum valve timing"
         return "PASS: Validated Gas-free Filling and Verified Casting Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(shot_velocity_fast=4.5, casting_pressure_bar=1000.0, cavity_fill_time_ms=45.0)
 print(engine.diagnose_casting_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hpdc-gate-velocity-and-porosity-limits-v2026`와 연동되어, 전 세계 주요 자동차 및 가전 부품사의 주조 데이터를 실시간 분석하고 불량 및 금형 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 가공 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hot-rolling-and-recrystallization-metallurgy-physics

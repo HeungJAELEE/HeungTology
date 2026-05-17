@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Humanoid-Robots-and-General-Intelligence"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Humanoid-Robots-and-General-Intelligence]]"
+  domain: "03_Skills"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Humanoid-Robots-and-General-Intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_Skills", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Humanoid-Robots-and-General-Intelligence
+# [Strategy] Humanoid-Robots-and-General-Intelligence
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 로봇을 '특수 목적 장비'로 보았습니다. 용접 로봇은 용접만 하고, 배달 로봇은 배달만 했습니다. 하지만 휴머노이드 로봇 및 범용 인공지능(Humanoid-Robots-and-General-Intelligence)은 인간처럼 무엇이든 할 수 있는 '만능 로봇'을 지향합니다. 사람이 쓰는 도구를 그대로 쓰고, 사람이 사는 공간에서 함께 지내며, 복잡한 지시를 스스로 해석하여 실행합니다. 이를 이해하는 것은 컴퓨터 속의 지능을 끄집어내어 현실 세계에 물리적 신체를 부여하고, 로봇이 인류의 진정한 동반자가 되는 '로봇 문명'의 설계자가 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Humanoid Task Planning & Motor Control)]
 자연어 명령을 수신하여 작업 단계를 분해하고 각 관절의 각도를 제어하는 논리 구조입니다.
 ```python
-# 로봇 지능(ISM) 기반 휴머노이드 작업 기획 및 제어 논리
 def execute_humanoid_task(natural_language_command, environment_scan):
     # 1. 자연어 명령 해석 및 단계 분해 (Task Decomposition)
     # "커피 타줘" -> 컵 잡기, 물 붓기, 섞기 등 하위 작업으로 분해
@@ -92,5 +81,4 @@ def execute_humanoid_task(natural_language_command, environment_scan):
 2. '범용 로봇 지능(GPR)'이 상용화되었을 때, 제조업의 '공정 라인 설계' 방식은 어떻게 근본적으로 변하게 되는가?
 3. 휴머노이드 로봇의 '이족 보행(Bipedalism)'이 바퀴형 로봇보다 인간 중심 환경(집, 사무실 등)에서 유리한 공학적 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

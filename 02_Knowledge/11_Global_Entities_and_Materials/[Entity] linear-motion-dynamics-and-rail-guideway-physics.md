@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "linear-motion-dynamics-and-rail-guideway-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] linear-motion-dynamics-and-rail-guideway-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics governing objects moving in a straight line with precision and high load capacity (Linear Motion Dynamics) and the mechanical design of rails and blocks that guide this motion (Rail Guideway Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["linear-motion", "rail-guideway", "dynamics", "friction", "preload", "recirculating-ball", "rigidity", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Motion_Fidelity_Audit: Evaluate the ''Running Parallelism'' to identify if high-fidelity ''Rail Misalignment'' or ''Base Deformation'' is causing positioning high-fidelity errors.'
-    - 'Tribo_Integrity_Check: Analyze the high-fidelity ''Friction Resistance'' to ensure the high-fidelity ''Lubrication'' is effectively preventing high-fidelity ''Pitting'' or ''Flaking'' on the raceways.'
-    - 'Rigidity_Fidelity_Scan: Monitor the high-fidelity ''Deflection'' under load to verify that high-fidelity ''Preload'' settings are maintaining the required high-fidelity stiffness for machining.'
-Trust Metrics:
+  description: "[Entity] linear-motion-dynamics-and-rail-guideway-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Linear Motion Dynamics and Rail Guideway Physics
+# [Entity] linear-motion-dynamics-and-rail-guideway-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 가공기계가 쇳덩이를 깎을 때 생기는 엄청난 진동과 무게를 어떻게 버티면서 머리카락보다 얇은 오차로 부드럽게 움직일 수 있을까요? **직선 운동 역학 및 레일 가이드웨이 물리**는 무거운 짐을 가볍게 옮기고, 흔들림 없는 '길'을 만들어주는 **'기계의 궤도'** 기술입니다. 수천 개의 작은 강철 구슬(볼)이나 롤러가 레일 위를 구르며 마찰을 최소화하고, 동시에 단단하게 레일을 움켜쥐어 정밀한 직선 운동을 보장합니다. **'헤르츠 접촉 이론과 구름 마찰의 원리를 이용해 마찰의 저항을 기계적 정밀도로 치환하여 자동화 문명의 기동성을 지탱하는 지능형 기계 역학 엔진'**입니다.
@@ -57,7 +46,7 @@ $$ \delta = \frac{P}{K} $$
 | Feature | Sliding Guideway (Old) | Linear Rail (LM) (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Friction Coeff** | ~ 0.1 | **0.002 ~ 0.005 (Ultra-low)** | - | Economy |
-| **Positioning** | Low | **High ($\mu m$ level)** | - | Precision |
+| **Positioning** | Low | **High ($\mu\text{m}$ level)** | - | Precision |
 | **Speed (Max)** | ~ 10 | **Up to 200+** | $m/min$ | Agility |
 | **Load Capacity** | Limited | **Extreme (Ton-class)** | $kN$ | Power |
 | **Maintenance** | Frequent (Oil bath) | **Simplified (Grease)** | - | Intelligence |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Rigidity Loss - High-fidelity preload setting failed or block wear. Inaccurate high-fidelity machining expected"
         return "PASS: Validated Structural Stiffness and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(friction_force_n=50.0, vibration_rms=0.05, travel_distance_km=1000.0)
 print(engine.diagnose_guideway_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_guideway_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data linear-rail-load-capacity-and-service-life-v2026`와 연동되어, 전 세계 주요 반도체 팹 및 중공업 공장의 실시간 레일 데이터를 분석하고 위치 오차 및 구동 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - linear-actuator-and-precision-motion-control-physics

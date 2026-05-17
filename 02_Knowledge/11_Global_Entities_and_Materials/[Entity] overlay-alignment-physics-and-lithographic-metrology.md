@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "overlay-alignment-physics-and-lithographic-metrology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] overlay-alignment-physics-and-lithographic-metrology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-precision measurement and control process (Lithographic Metrology) of the positional accuracy between successive layers of patterned circuits on a wafer (Overlay Alignment), ensuring that transistors and interconnects are perfectly stacked at the nanometer scale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["overlay-alignment", "lithography", "metrology", "semiconductor-fabrication", "pattern-alignment", "wafer-processing", "nanofabrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Overlay_Budget_Audit: Evaluate the total alignment error against the budget (e.g., < 2nm) to ensure the stacked layers maintain electrical connectivity without shorts.'
-    - 'Metrology_Precision_Check: Analyze the Tool Induced Shift (TIS) to identify systematic errors in the measurement equipment that mask actual process variations.'
-    - 'Wafer_Warp_Correction_Scan: Monitor the wafer flatness and stress-induced deformation to verify that the alignment system correctly compensates for geometric distortions.'
-Trust Metrics:
+  description: "[Entity] overlay-alignment-physics-and-lithographic-metrology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Overlay Alignment Physics and Lithographic Metrology
+# [Entity] overlay-alignment-physics-and-lithographic-metrology
 
 ## 1. 개요 (Why: 인간적 통찰)
 아파트 100층을 쌓는데, 각 층의 기둥들이 원자 몇 개 두께의 오차도 없이 일렬로 딱딱 맞아야 한다면 어떨까요? **오버레이 정렬 물리 및 리소그래피 계측**은 반도체라는 초미세 빌딩을 쌓아 올릴 때 층과 층 사이의 위치를 맞추는 **'나노 단위의 수직 정렬'** 기술입니다. 아래층에 그려진 회로와 위층에 새로 그릴 회로가 완벽하게 겹쳐야만 전기가 통하고 반도체가 작동합니다. 인류가 도달한 가장 정밀한 '쌓기' 기술이자, 수율을 결정짓는 **'나노 세계의 조준경'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Mark Contrast - Metrology Tool Unable to Locate Alignment Targets. Check Resist Coating"
         return "PASS: Sharp Alignment Marks and Reliable Pattern Registration Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(overlay_error_nm=0.85, wafer_expansion_ppm=1.2, tool_induced_shift_nm=0.12)
 print(engine.diagnose_overlay_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_overlay_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data overlay-error-and-alignment-yield-logs-v2026`와 연동되어, 전 세계 최첨단 팹의 정렬 데이터를 실시간 분석하고 적층 불량 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 나노 지능 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nano-lithography-and-extreme-ultraviolet-euv-optics

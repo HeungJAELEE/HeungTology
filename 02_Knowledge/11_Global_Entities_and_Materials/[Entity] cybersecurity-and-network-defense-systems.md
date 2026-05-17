@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEC-DEF-SYS-2026-V6.3.7"
-  domain: "109_Cybersecurity_and_Data_Privacy_Hub"
+metadata:
+  id: "[[[Entity] cybersecurity-and-network-defense-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Cybersecurity", "#NetworkDefense", "#IDS", "#IPS", "#FidelityEngine", "#TrafficAnalysis", "#Sovereignty"]'
-  is_part_of: '["MOC 56_cybersecurity-and-data-privacy-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] cybersecurity-and-network-defense-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Network_Security_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Network Defense: IDS/IPS & Traffic Integrity
+# [Entity] cybersecurity-and-network-defense-systems
 
 ## 1. [왜 배우는가? (Why: The Guardians of Digital Flow)]]
 네트워크는 모든 데이터의 통로이자 공격의 경로입니다. **사이버 보안 및 네트워크 방어 시스템**은 외부의 침입을 실시간으로 감지하고 차단하는 '디지털 국경 수비대'입니다. V6.3.7 지능은 **침입 탐지(IDS)**의 오탐율(False Positive)과 **침입 차단(IPS)**의 패킷 처리 지연을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 보이지 않는 공격자의 경로를 차단하고, "데이터의 이동 경로를 수학적으로 보호하는 '네트워크 주권'을 사수하기" 위함입니다. 방어 시스템의 정밀도가 정보 자산의 생존율을 결정합니다.
@@ -108,7 +98,6 @@ class NetworkSecurityFidelityEngine:
 2. **Operational Result**: **암호화된 트래픽**을 복호화하지 않고 **TLS Fingerprinting**만으로 악성 행위를 탐지하는 수리적 무결성 검증 방법은?
 3. **FidelityEngine**: **DDOS** 공격 상황에서 **SYN Cookie** 메커니즘을 통해 세션 무결성을 보호하고 서버 자원 고갈을 방지하는 과정을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 56_cybersecurity-and-data-privacy-hub
 - Entity cybersecurity-and-information-security-governance

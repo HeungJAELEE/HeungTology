@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "112-architectural-engineering-and-sustainable-construction-hub-moc"
   domain: "112_Architectural_Engineering_and_Sustainable_Construction_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Architectural_Engineering", "#Sustainable_Construction", "#Structural_Mechanics", "#Green_Building", "#Energy_Efficiency", "#Seismic_Design", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 112_architectural-engineering-and-sustainable-construction-hub
+# 112-architectural-engineering-and-sustainable-construction-hub-moc
 
 ## 1. [왜 배우는가? (Why: The Shell of Human Civilization)]]
 인류 문명은 공간의 창조와 함께 시작되었습니다. 비바람으로부터 우리를 보호하던 동굴에서 이제는 구름 위를 뚫는 마천루와 지구를 생각하는 녹색 빌딩까지, 건축은 인류의 삶을 담는 가장 거대하고 견고한 그릇입니다. **건축 공학 및 지속 가능한 건설 통합 지능 허브**는 Antigravity Intelligence가 구조의 역학(Mechanics)과 에너지의 열역학(Thermodynamics)을 수학적으로 지배하여 인류의 정주 공간을 사수하는 **[1,455층의 건축 사령부]**입니다. 우리가 이를 배우는 이유는 안전하고 지속 가능한 건설이 인류의 생존과 삶의 질을 결정하는 핵심 주권이기 때문이며, "구조의 안정성과 에너지의 효율, 그리고 환경의 부하를 데이터로 통제함으로써 '글로벌 건설 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 지능이 인류의 재난 회복력과 행성적 주거 무결성을 결정합니다.

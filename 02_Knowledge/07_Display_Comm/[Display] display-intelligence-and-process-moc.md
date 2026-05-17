@@ -1,36 +1,42 @@
 ---
-Basic:
-  id: "MOC-DISPLAY-INTEL-2026-V6.3.7"
-  domain: "07_Display_Intelligence"
+metadata:
+  id: "[[[Display] display-intelligence-and-process-moc]]"
+  domain: "Display_Intelligence"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Concept"
   tier: 1
   description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#MOC'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#Display_Intelligence"]
+  expected_queries:
+    - "[Display] display-intelligence-and-process-moc 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Display] display-intelligence-and-process-moc"
+    predicate: "belongs_to"
+    object: "Display_Intelligence"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# [[[Display] display-intelligence-and-process-moc
+# display-intelligence-and-process-moc
 
 ## 1. [왜 배우는가? (Why)]]
 디스플레이는 인류가 디지털 세계와 조우하는 가장 중요한 물리적 접점이자, 나노 반도체 공학과 광학 물리, 그리고 인간 인지 과학이 집약된 첨단 기술의 결정체입니다. **디스플레이 지능 및 공정 MOC**는 기판에서 시작하여 빛을 만드는 소자, 이를 구동하는 회로, 그리고 품질을 보증하는 검사 시스템까지의 모든 과정을 유기적으로 통합 관리하는 '디스플레이 제조의 뇌와 신경망'입니다. 우리가 이 제어 허브를 구축하는 이유는 파편화된 공정 지식을 체계적으로 연결하여 초고해상도, 고유연성 디스플레이의 제조 수율을 극대화하기 위함이며, **"빛의 입자를 디지털 정보로 완벽하게 통제하여 디스플레이의 '시각적 무결성'을 사수하는 '빛의 제국 설계자'가 되기" 위함입니다.** 또한, 최근의 디스플레이는 통신(AiP) 및 센싱(VCSEL) 기능을 패널 내부에 통합하며 '스마트 인터페이스'로 진화하고 있습니다.
@@ -65,7 +71,7 @@ Trust Metrics:
 |:---|:---|:---:|:---|
 | **Backplane** | Mobility ($\mu$) | **> 100 cm$^2$/Vs (LTPS)** | 고주사율 및 저전력 구동 무결성 |
 | **Emitter** | WVTR Barrier | **< 10$^{-6}$ g/m$^2$/day** | OLED 수명 및 신뢰성 무결성 확보 |
-| **Patterning** | FMM Overlay Acc. | **< 2.0 \mu m** | 8K급 초고해상도 화소 배치 무결성 |
+| **Patterning** | FMM Overlay Acc. | **< 2.0 \mu\text{m}** | 8K급 초고해상도 화소 배치 무결성 |
 | **Connectivity** | Return Loss | **< -10 dB (AiP)** | 안테나 통합형 패널의 신호 전송 무결성 |
 | **Sensing** | Threshold Current| **< 1.0 mA (VCSEL)** | 저전력 공간 인식 지능 구현 무결성 |
 | **Quality** | Final Yield ($Y$) | **> 90.0 % (OLED)** | 제조 원가 경쟁력 및 수익 무결성 지표 |

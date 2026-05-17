@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-led-mass-transfer-and-bonding-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-led-mass-transfer-and-bonding-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics and engineering of transferring millions of micrometer-scale LED chips from a growth substrate to a target backplane with high-speed and high-precision, utilizing adhesion control (JKR mechanics), laser kinetics (LLO), or fluidic assembly to achieve high-fidelity display manufacturing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-led", "mass-transfer", "bonding", "laser-lift-off", "llo", "vander-waals-force", "jkr-model", "display-tech"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transfer_Yield_Audit: Evaluate the ''Six-Sigma'' yield metrics to identify if systemic adhesion failure or laser energy instability is causing high-fidelity pixel dropouts.'
-    - 'Placement_Accuracy_Check: Analyze the positional error ($< 1.0 \\mu m$) using high-fidelity vision metrology to ensure pixel-level alignment with the backplane pads.'
-    - 'Bonding_Reliability_Scan: Monitor the contact resistance and shear strength of the bonded chips to detect high-fidelity delamination or intermetallic growth issues.'
-Trust Metrics:
+  description: "[Entity] micro-led-mass-transfer-and-bonding-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📺 Micro-LED Mass Transfer and Bonding Physics
+# [Entity] micro-led-mass-transfer-and-bonding-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락보다 작은 수백만 개의 '나노 보석(LED)'을 단 몇 초 만에 거대한 기판에 한 치의 오차 없이 심는 기술, 이것이 바로 **마이크로 LED 매스 트랜스퍼 및 본딩 물리**입니다. 고해상도 디스플레이를 위해 칩의 크기는 작아지지만, 옮겨야 할 개수는 수천만 개로 늘어나는 극한의 제조 공정입니다. 레이저로 칩을 떼어내고(LLO), 정전기나 점착력을 이용해 붙이는 이 기술은 차세대 투명/신축 디스플레이 문명을 여는 **'나노 조립의 성배'**입니다.
@@ -60,9 +49,9 @@ $$ P_{plasma} \propto \frac{E_{laser}}{\Delta V} $$
 | Parameter | Pick-and-Place | Laser-driven (HDS-Gold) | Unit | Rationale |
 | :--- | :--- | :--- | :--- | :--- |
 | **Transfer Speed** | 10,000 | **> 10,000,000** | chips/hr | Productivity |
-| **Placement Accu.** | $\pm 5.0$ | **$\pm 1.0$** | $\mu m$ | Precision |
+| **Placement Accu.** | $\pm 5.0$ | **$\pm 1.0$** | $\mu\text{m}$ | Precision |
 | **Transfer Yield** | 99.9% | **> 99.9999%** | % | Quality |
-| **Chip Size** | $> 100$ | **$< 30$** | $\mu m$ | Scaling |
+| **Chip Size** | $> 100$ | **$< 30$** | $\mu\text{m}$ | Scaling |
 | **Release Method** | Mechanical / Vacuum | **Laser (Selective)** | - | Method |
 | **Bonding Temp** | $> 250$ | **$< 150$ (Low Temp)** | $^\circ C$ | Safety |
 
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Bonding Failure - High contact resistance or weak adhesion risk. Re-optimize IMC growth time"
         return "PASS: Validated Mechanical and Electrical Interconnect Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(yield_rate=99.999, mean_error_um=0.8, max_error_um=1.2)
 print(engine.diagnose_transfer_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_transfer_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data micro-led-transfer-yield-and-placement-accuracy-logs-v2026`와 연동되어, 전 세계 마이크로 LED 양산 라인의 전사 데이터를 실시간 분석하고 미부착 및 오배치 사고 확률을 0.001% 이하로 억제함으로써 차세대 초고해상도 디스플레이 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - advanced-display-manufacturing-and-thin-film-transistor-physics

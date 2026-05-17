@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "plastic-injection-molding-and-mold-flow-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] plastic-injection-molding-and-mold-flow-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing process for producing parts by injecting molten plastic material into a mold (Plastic Injection Molding) and the study of how the fluid plastic fills the cavity, cools, and solidifies (Mold Flow Dynamics) to ensure structural integrity and dimensional accuracy."
-  physical_model: "N/A"
-Semantic:
-  tags: '["plastic-molding", "injection-molding", "mold-flow", "rheology", "manufacturing", "plastics", "process-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cavity_Fill_Audit: Evaluate the injection pressure and melt temperature to ensure the plastic reaches the furthest edges of the mold without ''Short Shot'' or flashing.'
-    - 'Cooling_Uniformity_Check: Analyze the mold temperature distribution to identify hot spots that cause differential shrinkage and part warping.'
-    - 'Shrinkage_Compensation_Scan: Monitor the packing pressure and hold time to verify that additional material is injected to compensate for thermal contraction during solidification.'
-Trust Metrics:
+  description: "[Entity] plastic-injection-molding-and-mold-flow-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Plastic Injection Molding and Mold Flow Dynamics
+# [Entity] plastic-injection-molding-and-mold-flow-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 레고 블록부터 스마트폰 케이스까지, 복잡한 모양의 플라스틱 제품 수만 개를 단 몇 초 만에 똑같이 만들어낼 수 있는 비결은 무엇일까요? **플라스틱 사출 성형 및 금형 유동 역학**은 뜨겁게 녹인 플라스틱을 틀(금형) 속에 쏘아 넣어 굳히는 **'현대 제조의 붕어빵 틀'** 기술입니다. 눈에 보이지 않는 금형 속에서 끈적한 플라스틱이 어떻게 흐르고 어디서부터 굳는지 수학적으로 예측하여, 불량 없는 완벽한 제품을 찍어내는 **'대량 생산의 예술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Material Thermal Degradation - Resin spent too long in the heated barrel. Strength Compromised"
         return "PASS: Fresh Melt Injection and Verified Polymer Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(peak_injection_pressure=1200, mold_surface_temp_variance=3.5, part_warpage_mm=0.15)
 print(engine.diagnose_molding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_molding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data injection-molding-cycle-time-and-defect-logs-v2026`와 연동되어, 전 세계 사출 공장의 가동 데이터를 실시간 분석하고 미성형(Short shot) 및 변형 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 부품 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - petrochemical-refining-and-polymer-synthesis

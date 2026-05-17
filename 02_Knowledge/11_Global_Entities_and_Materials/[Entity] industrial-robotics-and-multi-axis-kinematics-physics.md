@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-robotics-and-multi-axis-kinematics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-robotics-and-multi-axis-kinematics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The design, construction, and operation of robots for manufacturing (Industrial Robotics) and the physical study of position, velocity, and acceleration of robot joints and end-effectors (Multi-axis Kinematics Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robotics", "kinematics", "inverse-kinematics", "jacobian", "servo-control", "joint-dynamics", "industrial-automation", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Kinematic_Fidelity_Audit: Evaluate the ''Pose Accuracy'' against the high-fidelity ''Tool Center Point'' (TCP) to identify if high-fidelity ''Joint Backlash'' or thermal expansion is causing path deviation.'
-    - 'Dynamic_Integrity_Check: Analyze the high-fidelity ''Singularity'' proximity to ensure the high-fidelity ''Inverse Kinematics'' solver doesn''t attempt infinite high-fidelity velocities at the wrist.'
-    - 'Payload_Fidelity_Scan: Monitor the high-fidelity ''Motor Torque'' harmonics to verify that high-fidelity ''Inertia'' and center-of-gravity (CoG) are within the safe high-fidelity envelope.'
-Trust Metrics:
+  description: "[Entity] industrial-robotics-and-multi-axis-kinematics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Industrial Robotics and Multi-axis Kinematics Physics
+# [Entity] industrial-robotics-and-multi-axis-kinematics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천 개의 관절을 가진 로봇 팔이 어떻게 0.01mm의 오차도 없이 자동차 문을 정확히 용접할까요? **산업용 로봇 및 다축 기구학 물리**는 로봇의 각 관절이 얼마나 굽혀져야 손끝(TCP)이 원하는 지점에 도달할지를 계산하는 **'기계의 기하학'** 기술입니다. 눈에 보이지 않는 3차원 공간 속 좌표를 행렬과 미분으로 해석하여, 강철 팔에 우아하고 정밀한 생명력을 불어넣습니다. **'수만 번의 반복 작업에도 지치지 않는 정밀함과 하중을 견디는 강인함을 수학적으로 제어하여 무인 제조 문명을 완성하는 지능형 기계 신체'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Collision Event - High-fidelity impact detected. Emergency stop triggered. Check for high-fidelity path obstruction and perform high-fidelity zero-point check"
         return "PASS: Validated Obstacle Clearance and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(joint_servo_lag_ms=2.5, tcp_position_error_mm=0.05, motor_torque_pct=65.0)
 print(engine.diagnose_robot_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_robot_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data robot-repeatability-and-payload-curves-v2026`와 연동되어, 전 세계 주요 로봇 생산 라인의 실시간 데이터를 분석하고 충돌 및 정밀도 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 기계 신체 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-automation-and-plc-logic-control-systems

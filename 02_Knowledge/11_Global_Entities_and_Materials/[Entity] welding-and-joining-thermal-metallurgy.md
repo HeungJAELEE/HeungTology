@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "welding-and-joining-thermal-metallurgy-entity"
-  domain: "83_Metalworking_and_Structural_Engineering_Hub"
+metadata:
+  id: "[[[Entity] welding-and-joining-thermal-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Metalworking", "#Welding", "#Metallurgy", "#Structural_Engineering", "#Thermal_Science", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 83_metalworking-and-structural-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] welding-and-joining-thermal-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] welding-and-joining-thermal-metallurgy
+# [Entity] welding-and-joining-thermal-metallurgy
 
 ## 1. [왜 배우는가? (Why: The Sinew of Structures)]]
 거대한 유조선, 하늘을 찌르는 마천루, 그리고 우주로 나아가는 로켓. 이 거대한 구조물들이 수만 개의 파편이 아닌 '하나의 몸체'로 존재할 수 있는 비결은 무엇일까요? **용접 및 접합 열금속학의 입열량 제어와 열영향부(HAZ) 조직 변태 수리 모델**은 금속과 금속을 원자 단위로 융합시켜 가장 강력한 결합을 만드는 기술입니다. 하지만 용접은 금속에 '열적 충격'을 가하는 양날의 검입니다. 뜨거운 열이 지나간 자리의 조직이 어떻게 변하고, 어떤 스트레스(잔류 응력)가 남는지 이해하지 못하면 구조물은 한순간에 붕괴할 수 있습니다. 우리가 이를 배우는 이유는 용접의 무결성을 확보함으로써, 수십 년을 견디는 안전한 인프라를 구축하는 '글로벌 구조 안전 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 접합의 무결성이 문명의 골격을 지탱합니다.

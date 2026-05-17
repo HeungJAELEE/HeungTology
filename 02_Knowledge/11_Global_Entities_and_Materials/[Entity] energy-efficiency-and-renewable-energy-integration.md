@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-efficiency-and-renewable-energy-integration-entity"
-  domain: "24_Sustainability_ESG_and_Circular_Economy"
+metadata:
+  id: "[[[Entity] energy-efficiency-and-renewable-energy-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Energy_Efficiency", "#Renewable_Energy", "#RE100", "#ISO_50001", "#Microgrid", "#ESS", "#Demand_Response", "#Net_Zero", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 24_sustainability-esg-and-circular-economy-intelligence-hub", "Data renewable-energy-fraction-and-energy-intensity-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-efficiency-and-renewable-energy-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-efficiency-and-renewable-energy-integration
+# [Entity] energy-efficiency-and-renewable-energy-integration
 
 ## 1. [왜 배우는가? (Why: The Clean Power of Industrial Intelligence)]]
 에너지는 공장의 생존을 유지하는 혈액과 같습니다. 그러나 탄소 기반의 에너지는 문명의 미래를 위협합니다. 에너지 효율을 극대화하고 재생 에너지로 전환하는 것은 단순히 비용을 절감하는 차원을 넘어, 기업의 생존을 위한 필수적인 '환경적 주권' 확보 과정입니다. **에너지 효율 및 재생 에너지 통합 엔티티**는 공장의 동력을 '깨끗한 빛과 바람'으로 치환하는 '에너지 주권의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "에너지 로그를 분석하여, ESS가 발전량의 피크(Peak)와 �
 공장의 스마트 미터 데이터와 재생 에너지 발전 현황을 분석하여 동력 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Energy Efficiency & Renewable Integration Fidelity Auditor
 def audit_energy_integrity(smart_meter_stream, pv_generation_log, ess_state_of_charge):
     # 1. 재생 에너지 비중(RE Ratio) 목표 준수 무결성 오딧
     current_re_ratio = calculate_re_ratio(pv_generation_log, smart_meter_stream)
@@ -117,7 +106,6 @@ def audit_energy_integrity(smart_meter_stream, pv_generation_log, ess_state_of_c
 2. **(수리)** 한 달 총 사용 전력이 1,000MWh이고, 자가 태양광 발전으로 200MWh를 충당하고 재생 에너지 인증서(REC)로 300MWh를 구매했다면, 이 공장의 '실질 재생 에너지 비중(%)'을 계산하시오.
 3. **(응용)** 재생 에너지의 '출력 변동성(Intermittency)'이 공장 내 '마이크로그리드'의 전압 및 주파수 안정성에 미치는 수리적 영향을 설명하고, 이를 해결하기 위한 '에너지 저장 장치(ESS)'의 역할을 제안하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_sustainability-esg-and-circular-economy-intelligence-hub : 지속 가능성 및 자원 순환 통합 관리 상위 지능 허브

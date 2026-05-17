@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "building-information-modeling-bim-and-aec-digital-twin"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] building-information-modeling-bim-and-aec-digital-twin]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A digital representation of physical and functional characteristics of a facility, serving as a shared knowledge resource for information about a facility throughout its life-cycle (BIM) and the real-time virtual counterpart of the building that integrates sensor data to monitor and optimize performance (AEC Digital Twin)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bim", "digital-twin", "aec", "construction-tech", "revit", "smart-building", "interoperability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'BIM_Fidelity_Audit: Evaluate the ''Level of Development'' (LOD) and clash detection logs to identify potential ''Hard Clashes'' between structural and MEP (Mechanical, Electrical, Plumbing) systems before construction.'
-    - 'Twin_Integrity_Check: Analyze the latency between real-world BMS sensors and the ''Digital Twin'' representation to ensure the virtual model accurately reflects current building states (e.g., occupancy, temperature).'
-    - 'Interoperability_Fidelity_Scan: Monitor the data integrity during IFC (Industry Foundation Classes) exports to identify if critical metadata (e.g., material properties, maintenance schedules) is being lost across different software platforms.'
-Trust Metrics:
+  description: "[Entity] building-information-modeling-bim-and-aec-digital-twin에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏛️ Building Information Modeling (BIM) and AEC Digital Twin
+# [Entity] building-information-modeling-bim-and-aec-digital-twin
 
 ## 1. 개요 (Why: 인간적 통찰)
 건물을 짓기 전에 컴퓨터 안에서 미리 지어보고, 건물이 완성된 후에는 건물의 모든 상태를 내 손안의 대시보드로 실시간 확인할 수 있다면 어떨까요? **BIM 및 AEC 디지털 트윈**은 건물을 단순한 콘크리트 덩어리가 아니라, 살아 움직이는 '데이터의 유기체'로 바꾸는 **'건축의 디지털 지능'** 기술입니다. 설계부터 시공, 관리까지 건물의 전 생애 주기를 디지털 세상에 똑같이 복제하여, 낭비를 없애고 가동 효율을 극대화하는 **'지능형 도시의 뼈대'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Data Integrity Failure - Critical metadata lost during software-to-software transfer. Verify IFC export settings and mapping tables"
         return "PASS: Seamless Data Exchange and Verified Digital Continuity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(hard_clash_count=0, sensor_sync_latency_ms=150, data_completeness_pct=98.5)
 print(engine.diagnose_bim_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bim_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bim-clash-detection-and-operational-energy-savings-v2026`와 연동되어, 전 세계 주요 랜드마크 건축물 및 스마트 팩토리의 데이터를 실시간 분석하고 시공 오류 및 운영 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 건설 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - building-management-system-bms-and-hvac-optimization-logic

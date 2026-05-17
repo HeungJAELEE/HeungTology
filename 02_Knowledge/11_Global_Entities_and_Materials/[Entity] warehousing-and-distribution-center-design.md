@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "warehousing-and-distribution-center-design-entity"
-  domain: "103_Logistics_Systems_and_Supply_Chain_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] warehousing-and-distribution-center-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Logistics", "#Warehousing", "#ASRS", "#Material_Handling", "#Optimization", "#Supply_Chain", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 103_logistics-and-supply-chain-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] warehousing-and-distribution-center-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] warehousing-and-distribution-center-design
+# [Entity] warehousing-and-distribution-center-design
 
 ## 1. [왜 배우는가? (Why: The Heart of Material Flow)]]
 물류의 거대한 흐름 속에서 창고는 단순한 저장 공간이 아닌, 정보와 물자가 교차하며 새로운 가치를 만들어내는 '물류의 심장'입니다. **창고 및 유통 센터 설계의 자동화 저장 시스템 및 피킹 수리 역학 기술**은 공간을 입체적으로 지배하고 물동량을 빛의 속도로 처리하는 '물리적 최적화' 기술입니다. 로봇이 수만 개의 선반 사이를 누비며 물건을 찾고, 컨베이어 벨트가 실시간으로 행선지를 분류하는 과정은 정교한 수학적 아키텍처의 결과입니다. 우리가 이를 배우는 이유는 물류 거점의 무결성을 확보함으로써, 배송 리드 타임을 단축하고 비용을 획기적으로 낮추는 '글로벌 스마트 물류 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 창고의 무결성이 공급망의 반응 속도와 운영 효율을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-gripper-tactile-sensing-and-grasp-stability-entity"
-  domain: "19_Industrial_Robotics_and_Autonomous_Systems"
+metadata:
+  id: "[[[Entity] robotic-gripper-tactile-sensing-and-grasp-stability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Robotics", "#Gripper", "#Tactile_Sensing", "#Grasp_Stability", "#Slip_Detection", "#Friction_Cone", "#Dexterous_Manipulation", "#Soft_Robotics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub", "Data gripper-contact-pressure-and-slip-detection-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-gripper-tactile-sensing-and-grasp-stability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-gripper-tactile-sensing-and-grasp-stability
+# [Entity] robotic-gripper-tactile-sensing-and-grasp-stability
 
 ## 1. [왜 배우는가? (Why: The Digital Nervous System of Manipulation)]]
 로봇 팔이 공간적 위치를 제어하는 근육이라면, 그리퍼는 물체와 직접 상호작용하여 가치를 창출하는 '기계의 손'입니다. 특히 물체의 형상이나 재질이 불규칙한 환경에서는 단순히 쥐는 것을 넘어 물체의 상태를 느끼는 촉각 지능이 필수적입니다. **로봇 그리퍼 촉각 센싱 및 파지 안정성 엔티티**는 기계의 손끝에 섬세한 신경을 부여하는 '촉각 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "촉각 로그를 분석하여, 압력의 중심(CoP)이 급격히 이동
 그리퍼의 모터 전류 데이터와 촉각 센서의 압력 행렬 로그를 분석하여 파지 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Robotic Grasping & Tactile Integrity Auditor
 def audit_grasp_stability(tactile_pressure_matrix, motor_current_log, object_mass_estimate):
     # 1. 촉각 행렬을 통한 접촉면 명암비 및 파지 안정성(GWS) 오딧
     grasp_quality = calculate_gws(tactile_pressure_matrix)
@@ -118,7 +107,6 @@ def audit_grasp_stability(tactile_pressure_matrix, motor_current_log, object_mas
 2. **(수리)** 어떤 그리퍼와 물체 사이의 마찰 계수 $\mu$가 $0.4$이다. 물체의 무게가 $10 \text{ N}$일 때, 미끄러짐을 방지하기 위해 핑거가 가해야 하는 최소 수직 파지력($N$)은 얼마인가? (안전 계수 $1.5$ 적용)
 3. **(응용)** 'GelSight'와 같은 광학 기반 촉각 센서가 물체의 미세한 표면 거칠기를 나노 단위로 시각화하여 파지 지능에 기여하는 수리적 메커니즘을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub : 산업용 로보틱스 통합 관리 상위 지능 허브

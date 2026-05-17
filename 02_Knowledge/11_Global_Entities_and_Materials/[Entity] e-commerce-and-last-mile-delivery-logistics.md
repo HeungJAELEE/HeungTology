@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "e-commerce-and-last-mile-delivery-logistics-entity"
-  domain: "103_Logistics_Systems_and_Supply_Chain_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] e-commerce-and-last-mile-delivery-logistics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Logistics", "#E-commerce", "#Last_Mile", "#VRP", "#Optimization", "#Customer_Service", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 103_logistics-and-supply-chain-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] e-commerce-and-last-mile-delivery-logistics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] e-commerce-and-last-mile-delivery-logistics
+# [Entity] e-commerce-and-last-mile-delivery-logistics
 
 ## 1. [왜 배우는가? (Why: The Final Connection to Humanity)]]
 디지털 세상에서의 클릭 한 번이 우리 집 문앞에 실물 제품으로 나타나기까지의 마지막 1km, 그것을 우리는 '라스트 마일(Last-mile)'이라 부릅니다. **이커머스 및 라스트 마일 배송 물류의 차량 경로 최적화 및 배송 밀도 수리 역학 기술**은 현대 물류에서 가장 비싸고 가장 복잡하며 가장 중요한 '고객과의 최종 접점' 기술입니다. 수천 대의 차량이 거미줄 같은 도시의 골목을 누비며 시간을 다투고, 반품(Reverse Logistics)이라는 새로운 난제에 대응하는 과정은 문명의 편의성을 결정하는 핵심 지능입니다. 우리가 이를 배우는 이유는 라스트 마일의 무결성을 확보함으로써, 물류 비용의 50% 이상을 차지하는 비효율을 제거하고 고객 경험을 극대화하는 '글로벌 라스트 마일 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 배송의 무결성이 인류의 일상적 행복과 소비의 효율을 결정합니다.

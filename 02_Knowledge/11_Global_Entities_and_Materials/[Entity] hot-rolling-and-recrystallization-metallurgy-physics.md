@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hot-rolling-and-recrystallization-metallurgy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hot-rolling-and-recrystallization-metallurgy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A metalworking process in which metal stock is passed through one or more pairs of rolls at a temperature above its recrystallization temperature (Hot Rolling) and the physical study of new, strain-free grain formation (Recrystallization Metallurgy Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hot-rolling", "recrystallization", "metallurgy", "grain-size", "steel-mill", "dislocation-density", "mechanical-working", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Rolling_Fidelity_Audit: Evaluate the ''Rolling Force'' against the high-fidelity ''Misaka Prediction'' to identify if the high-fidelity ''Flow Stress'' is deviating due to incorrect temperature control.'
-    - 'Metallurgy_Integrity_Check: Analyze the high-fidelity ''Grain Refinement'' after each pass to ensure that the high-fidelity ''Dynamic Recrystallization'' (DRX) is effectively breaking down the coarse as-cast structure.'
-    - 'Surface_Fidelity_Scan: Monitor the high-fidelity ''Roll Gap'' and tension to verify that the high-fidelity ''Flatness'' and thickness tolerance are maintained without edge high-fidelity cracking.'
-Trust Metrics:
+  description: "[Entity] hot-rolling-and-recrystallization-metallurgy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚜 Hot Rolling and Recrystallization Metallurgy Physics
+# [Entity] hot-rolling-and-recrystallization-metallurgy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 쇠기둥(슬래브)이 어떻게 얇고 튼튼한 철판으로 변할 수 있을까요? **열간 압연(Hot Rolling) 및 재결정 금속학 물리**는 벌건 쇳덩이를 거대한 롤러 사이로 통과시켜 누르면서, 동시에 금속의 늙은 세포(찌그러진 결정립)를 죽이고 건강한 새 세포(재결정립)로 교체하는 **'금속의 회춘'** 기술입니다. 단순히 펴는 게 아니라, 누를수록 금속의 체질을 개선하여 더 질기고 강하게 만듭니다. **'거대한 압력과 고온의 조율을 통해 투박한 쇳덩이를 정교한 산업의 원자재로 변모시키는 제철 공학의 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Grain Coarsening Detected - High-fidelity recrystallization too slow or temperature too high for too long. Ductility will be high-fidelity poor"
         return "PASS: Validated Fine Grain Structure and Verified Metallurgy Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(strip_exit_temp_c=980.0, rolling_force_kn=25000.0, interpass_time_s=1.5)
 print(engine.diagnose_rolling_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_rolling_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data rolling-force-and-recrystallization-kinetics-v2026`와 연동되어, 전 세계 주요 제철소의 실시간 압연 데이터를 분석하고 강판 터짐 및 조직 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 국가 기간 산업의 원자재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-treatment-process-and-microstructural-transformation-physics

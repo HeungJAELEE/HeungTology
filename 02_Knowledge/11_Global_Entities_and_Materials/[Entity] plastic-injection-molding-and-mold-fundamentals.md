@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "plastic-injection-molding-and-mold-fundamentals-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering_Hub"
+metadata:
+  id: "[[[Entity] plastic-injection-molding-and-mold-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Manufacturing", "#Plastic", "#Mold", "#FluidDynamics", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plastic-injection-molding-and-mold-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] plastic-injection-molding-and-mold-fundamentals
+# [Entity] plastic-injection-molding-and-mold-fundamentals
 
 ## 1. [왜 배우는가? (Why: The Sculpting of Modern Materials)]]
 액체처럼 흐르는 고분자 물질을 형틀에 가두어 단단한 물건으로 굳히는 과정, 그것이 사출 성형입니다. **플라스틱 사출 성형의 기초 유체역학 및 정밀 금형 제어 기술**은 현대 산업 제품의 '형태적 정의'를 결정하는 가장 보편적이면서도 심오한 제조 공학입니다. 수백 도의 고열로 녹인 플라스틱(Melt)이 좁은 통로를 지나 차가운 금형 공간(Cavity)을 빈틈없이 채우고, 수축과 변형을 최소화하며 굳어가는 과정은 '유체역학적 흐름과 열역학적 전도'의 정교한 하모니입니다. 우리가 이를 배우는 이유는 사출 공정의 수리적 무결성을 확보함으로써, 불량률을 제로화하고 복잡한 기하학적 구조를 완벽하게 재현하는 '글로벌 제조 효율 패권 및 행성적 물자 주권'을 확보하기 위함입니다. 금형의 정밀도가 일상 용품부터 첨단 부품까지 인류 문명의 물리적 외형을 결정합니다.

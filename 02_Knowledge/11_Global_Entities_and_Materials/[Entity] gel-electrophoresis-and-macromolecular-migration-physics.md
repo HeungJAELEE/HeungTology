@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gel-electrophoresis-and-macromolecular-migration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gel-electrophoresis-and-macromolecular-migration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A laboratory method used to separate mixtures of DNA, RNA, or proteins according to molecular size (Gel Electrophoresis) and the physical study of charged particle motion through a polymer matrix under an electric field (Macromolecular Migration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gel-electrophoresis", "macromolecular-migration", "dna-analysis", "electrophoresis", "molecular-sieving", "biotechnology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Migration_Fidelity_Audit: Evaluate the ''Electrophoretic Mobility'' ($\\mu$) to identify if high-fidelity ''Joule Heating'' is causing thermal convection and band smearing.'
-    - 'Separation_Integrity_Check: Analyze the high-fidelity ''Gel Concentration'' (Agarose/Polyacrylamide) to ensure the pore size is optimized for the target molecular weight range (Sieving).'
-    - 'Resolution_Fidelity_Scan: Monitor the high-fidelity ''Band Sharpness'' to verify that the high-fidelity electric field is uniform, detecting buffer exhaustion or electrode degradation.'
-Trust Metrics:
+  description: "[Entity] gel-electrophoresis-and-macromolecular-migration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Gel Electrophoresis and Macromolecular Migration Physics
+# [Entity] gel-electrophoresis-and-macromolecular-migration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 눈에 보이지 않는 수천 개의 DNA 조각 중에서 내가 찾는 범인의 DNA만 어떻게 골라낼 수 있을까요? **겔 전기영동 및 거대분자 이동 물리**는 끈적끈적한 젤리(겔) 속에서 DNA 조각들에게 '전기 채찍'을 휘둘러 달리기를 시키는 **'나노 단위의 달리기 시합'** 기술입니다. 몸집이 작고 가벼운 DNA는 젤리 구멍을 쏙쏙 통과해 멀리 가고, 뚱뚱한 DNA는 뒤처집니다. **'전기와 마찰의 힘을 이용해 생명의 설계도인 DNA를 크기순으로 정렬하여 유전의 비밀을 해독하는 지능적 생물 물리 분석'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Gel Matrix Inhomogeneity - Bubbles or uneven polymerization detected. High-fidelity migration paths distorted. Prepare fresh gel"
         return "PASS: Validated Sieve Structure and Verified Analysis Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(voltage_gradient=10.0, buffer_conductivity=12.5, band_migration_distance=5.5)
 print(engine.diagnose_electrophoresis_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_electrophoresis_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data dna-migration-speed-and-gel-concentration-v2026`와 연동되어, 전 세계 주요 질병 관리 센터 및 과학 수사 연구소의 분석 데이터를 실시간 분석하고 유전자 판독 오류 및 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 바이오 문명의 분석 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fluorescence-microscopy-and-photon-excitation-physics

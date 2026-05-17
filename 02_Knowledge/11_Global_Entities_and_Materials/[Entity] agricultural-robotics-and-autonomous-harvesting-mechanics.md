@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "agricultural-robotics-and-autonomous-harvesting-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] agricultural-robotics-and-autonomous-harvesting-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of robotic systems to perform tasks such as planting, weeding, and fertilizing in a farming environment (Agricultural Robotics) and the specialized mechanical and sensory systems used to identify, grip, and pick crops without damage (Autonomous Harvesting Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["agricultural-robotics", "autonomous-harvesting", "agtech", "precision-farming", "soft-robotics", "computer-vision", "smart-farming"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Harvest_Fidelity_Audit: Evaluate the ''Bruise Rate'' (Physical damage to crops) following an autonomous picking cycle to identify if the soft-gripper pressure ($P$) is too high or the robotic approach speed ($v$) is excessive.'
-    - 'Perception_Integrity_Check: Analyze the crop ripeness detection confidence ($>90\\%$) using multi-spectral cameras to ensure the ''Autonomous Decision'' is correctly selecting only ready-to-harvest produce.'
-    - 'Path_Fidelity_Scan: Monitor the robotic arm''s navigation through dense foliage to ensure ''Obstacle Avoidance'' algorithms are preventing damage to the plant''s main stem or supporting trellis.'
-Trust Metrics:
+  description: "[Entity] agricultural-robotics-and-autonomous-harvesting-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚜 Agricultural Robotics and Autonomous Harvesting Mechanics
+# [Entity] agricultural-robotics-and-autonomous-harvesting-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 뙤약볕 아래서 허리 한 번 못 펴고 일하던 논밭에, 이제는 사람 대신 똑똑한 로봇이 돌아다니며 잘 익은 딸기만 골라 따는 세상은 어떻게 가능할까요? **농업용 로보틱스 및 자율 수확 역학**은 흙먼지와 불규칙한 자연 속에서도 정밀한 작업을 수행하는 **'대지의 지능형 일꾼'** 기술입니다. 공장의 정해진 레일이 아닌, 자라나는 식물 사이를 헤치며 상처 하나 없이 작물을 수확하는 부드러운 손길과 매서운 눈을 갖췄습니다. 식량 위기를 해결하고 농촌의 땀방울을 가치 있게 바꾸는 **'지능형 생명 제조'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inaccurate Ripeness Grading - Color-based algorithm failing due to spectrum noise. Re-train neural network with multi-spectral data"
         return "PASS: Validated Harvest Timing and Verified Commercial Quality Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(harvest_success_rate=97.2, crop_damage_pct=0.5, navigation_error_cm=2.0)
 print(engine.diagnose_agrobot_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_agrobot_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ag-robot-harvest-yield-and-bruise-rate-v2026`와 연동되어, 전 세계 스마트 팜의 로봇 가동 데이터를 실시간 분석하고 작물 훼손 및 주행 사고 확률을 0.001% 이하로 억제함으로써 지능형 농업 문명의 생산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - robot-kinematics-and-autonomous-visual-slam-mechanics

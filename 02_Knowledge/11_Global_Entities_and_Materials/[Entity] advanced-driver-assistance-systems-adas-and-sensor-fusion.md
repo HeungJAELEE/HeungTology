@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "advanced-driver-assistance-systems-adas-and-sensor-fusion"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] advanced-driver-assistance-systems-adas-and-sensor-fusion]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Electronic systems that help the vehicle driver while driving or during parking (ADAS) and the process of combining data from multiple sensors—such as cameras, radar, and LiDAR—to create a more accurate and reliable model of the vehicle's surroundings (Sensor Fusion)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["adas", "sensor-fusion", "autonomous-driving", "radar", "lidar", "computer-vision", "automotive-safety"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Perception_Fidelity_Audit: Evaluate the ''Object Confidence Score'' and ''False Positive Rate'' to identify sensor blind spots or algorithm hallucinations that lead to ghost braking.'
-    - 'Fusion_Integrity_Check: Analyze the alignment between LiDAR point clouds and Camera pixels to ensure the ''Spatial Calibration'' is within sub-degree accuracy for precise distance estimation.'
-    - 'Latency_Fidelity_Scan: Monitor the end-to-end processing time from sensor capture to braking command to verify that the system can react within human-superior timeframes (e.g., < 100ms).'
-Trust Metrics:
+  description: "[Entity] advanced-driver-assistance-systems-adas-and-sensor-fusion에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚘 Advanced Driver Assistance Systems (ADAS) and Sensor Fusion
+# [Entity] advanced-driver-assistance-systems-adas-and-sensor-fusion
 
 ## 1. 개요 (Why: 인간적 통찰)
 비가 쏟아지는 밤길, 자율 주행차는 어떻게 앞서가는 차의 정확한 거리와 속도를 알아챌까요? **첨단 운전자 지원 시스템(ADAS) 및 센서 퓨전**은 자동차에 '눈'과 '뇌'를 달아주는 **'기계의 오감 통합'** 기술입니다. 눈(카메라)이 잘 안 보일 때는 귀(레이더)로 듣고, 더 정교한 입체감이 필요할 때는 촉각(라이다)을 동원합니다. 이 모든 단편적인 감각을 하나로 묶어(Fusion), 인간보다 더 정확하고 냉철하게 상황을 판단하는 **'사고 없는 이동의 수호신'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: False Positive Anomaly - System misidentifying shadows/puddles as obstacles. Update neural network weights for semantic segmentation"
         return "PASS: Validated Object Classification and Verified Safety Logic Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(object_detection_confidence=0.98, sensor_alignment_error=0.1, processing_latency_ms=45.0)
 print(engine.diagnose_adas_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_adas_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data adas-object-detection-confidence-and-latency-v2026`와 연동되어, 전 세계 수백만 대의 차량 인지 데이터를 실시간 분석하고 오인식 및 충돌 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 인지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - robot-kinematics-and-autonomous-visual-slam-mechanics

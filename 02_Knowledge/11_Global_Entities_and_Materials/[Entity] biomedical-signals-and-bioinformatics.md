@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "biomedical-signals-and-bioinformatics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] biomedical-signals-and-bioinformatics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integration of physiological signal acquisition (ECG, EEG, EMG) and computational analysis to extract clinically relevant features and model biological systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["biomedical-signal", "ecg", "eeg", "signal-processing", "bioinformatics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'Signal_Signal-to-Noise_Audit: Evaluate the raw signal quality against powerline interference and motion artifacts.'
-    - 'Feature_Extraction_Check: Verify the accuracy of heart rate variability (HRV) or spike detection algorithms.'
-    - 'Data_Synchronization_Scan: Ensure time-alignment between multi-modal biosignals (e.g., ECG + EEG).'
-Trust Metrics:
+  description: "[Entity] biomedical-signals-and-bioinformatics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🩺 Biomedical Signals and Bioinformatics
+# [Entity] biomedical-signals-and-bioinformatics
 
 ## 1. 개요 (Why)
 심장이 뛰고 뇌가 생각할 때마다 우리 몸은 미세한 전기 신호를 내뿜습니다. 이 '생체 신호(Biomedical Signals)'는 우리 건강 상태를 말해주는 가장 정밀한 데이터입니다. 심전도(ECG), 뇌파(EEG)와 같은 복잡한 파동 속에서 질병의 징후를 찾아내고, 이를 유전자 정보(Bioinformatics)와 결합하여 환자 개인에게 딱 맞는 치료법을 제시하는 것이 현대 정밀 의료의 핵심입니다. 본 노드는 생체 데이터 수집 및 분석의 무결성을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class MedicalFidelityEngine:
             return f"WARNING: Low Feature Confidence ({self.conf:.2f}) - Manual Review Required"
         return "PASS: Reliable Clinical Feature Extraction Confirmed"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(snr_db=22.5, artifact_ratio=0.05, feature_confidence=0.98)
 print(engine.diagnose_signal_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_signal_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data biomedical-signal-snr-and-feature-extraction-v2026`와 연동되어, 실시간 유입되는 생체 데이터를 0.1ms 단위로 검사하고 임상적 유효성을 99.9% 보장함으로써 오진 없는 디지털 진단의 무결성을 사수합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - biosensors-and-molecular-diagnostics-kinetics

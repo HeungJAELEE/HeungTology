@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "power-electronics-and-wide-bandgap-wbg-semiconductors"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] power-electronics-and-wide-bandgap-wbg-semiconductors]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of solid-state electronics to the control and conversion of electric power (Power Electronics) using advanced semiconductor materials like Silicon Carbide (SiC) and Gallium Nitride (GaN) that have a larger energy gap (Wide-Bandgap), enabling higher efficiency, voltage, and temperature operation."
-  physical_model: "N/A"
-Semantic:
-  tags: '["power-electronics", "wbg", "silicon-carbide", "gallium-nitride", "inverter", "converter", "energy-efficiency", "ev-power"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Limit_Audit: Evaluate the total power loss ($P_{loss}$) against theoretical limits for SiC/GaN to identify suboptimal switching frequencies or gate drive issues.'
-    - 'Thermal_Stress_Check: Analyze the junction temperature ($T_j$) under high-load conditions to ensure the WBG device operates within its high-temperature tolerance zone.'
-    - 'Switching_Transient_Scan: Monitor the $dV/dt$ and $dI/dt$ during high-speed switching to identify electromagnetic interference (EMI) risks or voltage spikes.'
-Trust Metrics:
+  description: "[Entity] power-electronics-and-wide-bandgap-wbg-semiconductors에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Power Electronics and Wide-Bandgap (WBG) Semiconductors
+# [Entity] power-electronics-and-wide-bandgap-wbg-semiconductors
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차를 더 멀리 가게 하고, 스마트폰 충전기를 손바닥보다 작게 만들 수 있는 비결은 무엇일까요? **전력 전자 및 와이드 밴드갭(WBG) 반도체**는 전기를 조절하고 바꾸는 **'에너지의 마법사'**입니다. 기존 실리콘보다 훨씬 넓은 에너지 장벽(와이드 밴드갭)을 가진 탄화규소(SiC)나 질화갈륨(GaN) 소재를 사용하여, 엄청난 고전압과 고온에서도 끄떡없이 작동합니다. 전력 손실을 획기적으로 줄여 인류의 모든 전기 기기를 더 작고, 강력하고, 효율적으로 만드는 **'녹색 문명의 핵심 엔진'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Voltage Margin - High Risk of Breakdown during Spikes. Use Higher Rated Device"
         return "PASS: Safe Operating Voltage and Robust Insulation Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(conversion_efficiency_pct=99.2, junction_temp_c=85.0, switching_noise_db=-55.0)
 print(engine.diagnose_power_semiconductor_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_power_semiconductor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data wbg-semiconductor-efficiency-and-thermal-logs-v2026`와 연동되어, 전 세계 전기차 및 데이터 센터의 전력 변환 데이터를 실시간 분석하고 소자 파손 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력 문명의 핵심 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - power-grid-stability-and-smart-grid-frequency-control

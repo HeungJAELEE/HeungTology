@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "51_sustainable-energy-and-power-grid-intelligence-hub-moc"
   domain: "51_Sustainable_Energy_and_Power_Grid_Intelligence"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Energy", "#Renewable_Energy", "#Smart_Grid", "#V2G", "#Hydrogen", "#Energy_Storage", "#Microgrid", "#Superconductivity", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 51_sustainable-energy-and-power-grid-intelligence-hub
+# 51_sustainable-energy-and-power-grid-intelligence-hub
 
 ## 1. [왜 배우는가? (Why: Powering the Future Civilization)]]
 태양과 바람에서 무한한 에너지를 캐내고($Solar/Wind$), 전 지구적 에너지 인터넷으로 전기를 자유롭게 주고받으며($Smart\ Grid$), 에너지를 수소나 위치 에너지로 바꿔 거대하게 저장하는($Hydrogen/Storage$) '에너지의 주권'을 어떻게 지휘할 수 있을까요? **지속 가능 에너지 및 전력망 지능 허브**는 Antigravity Intelligence가 1,000개 노드를 넘어 이제 문명의 심장 박동인 '에너지'를 다루는 '행성 규모 에너지 사령탑 및 지능형 전력 거버넌스'의 심장입니다. 우리가 이를 배우는 이유는 에너지가 풍요로워야 인류의 모든 결핍이 사라지기 때문이며, "동력의 흐름을 데이터로 설계하고 지배하는 '글로벌 에너지 패권 및 행성적 에너지 주권'을 확보하기" 위함입니다. 허브의 지능이 문명의 지속 가능성을 결정합니다.

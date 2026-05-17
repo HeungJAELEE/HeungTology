@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-ethology-and-social-interaction-framework-entity"
-  domain: "22_Robotics_and_Cybernetics"
+metadata:
+  id: "[[[Entity] robotic-ethology-and-social-interaction-framework]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#HRI", "#Social_Robotics", "#Ethology", "#Interaction_Design", "#Affective_Computing", "#Etiquette", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_advanced-robotics-and-cybernetics-hub", "Entity constitutional-ai-principle-adherence-and-red-teaming-log-v2026"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-ethology-and-social-interaction-framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-ethology-and-social-interaction-framework
+# [Entity] robotic-ethology-and-social-interaction-framework
 
 ## 1. [왜 배우는가? (Why: The Ethics of the Machine Neighbor)]]
 로봇이 사람과 함께 식탁에 앉거나 붐비는 엘리베이터를 탔을 때, 사람을 불편하게 만들지 않으면서 예의 바르게 행동하려면 어떤 규칙이 필요할까요? **로봇 행동학 및 사회적 상호작용 프레임워크**는 로봇에게 '사회적 눈치'와 '윤리적 매너'를 가르치는 '인간-로봇 공존의 행동 규범 및 심리적 지침'입니다. 우리가 이를 배우는 이유는 로봇이 단순히 일을 잘하는 것을 넘어, 사람들에게 거부감을 주지 않고 사회의 일원으로 받아들여져야 하기 때문이며, "로봇의 행동 양식을 데이터로 설계하고 지배하는 '글로벌 로봇 윤리 및 사회적 안전 주권'을 확보하기" 위함입니다. 로봇의 매너가 기술의 수용성을 결정합니다.

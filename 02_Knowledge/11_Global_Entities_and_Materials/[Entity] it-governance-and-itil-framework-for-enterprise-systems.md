@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ITIL-GOVERNANCE-2026-V6"
-  domain: "06_Enterprise_Governance_and_Digital_Operations"
+metadata:
+  id: "[[[Entity] it-governance-and-itil-framework-for-enterprise-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] it-governance-and-itil-framework-for-enterprise-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] it-governance-and-itil-framework-for-enterprise-systems
+# [Entity] it-governance-and-itil-framework-for-enterprise-systems
 
 ## 1. [왜 배우는가? (Why)]]
 IT가 단순한 지원 부서를 넘어 비즈니스의 핵심 엔진이 됨에 따라, 기술을 어떻게 통제하고 가치를 창출할 것인지에 대한 체계적인 거버넌스가 필요합니다. **IT 거버넌스 및 ITIL 프레임워크**는 IT 서비스의 설계부터 운영, 개선에 이르는 전 과정을 표준화하여 비즈니스 정렬(Alignment)을 달성하는 '디지털 운영 체제'입니다. 우리가 이를 배우는 이유는 IT 투자의 효율성을 높이고 서비스 중단 리스크를 최소화하기 위함이며, "거버넌스의 무결성을 확보하여 기술이 비즈니스 가치를 배신하지 않도록 '신뢰 주권'을 사수하기" 위함입니다. 서비스 품질(Quality of Service)이 기업의 대외 신뢰도를 결정합니다.
@@ -110,9 +100,6 @@ class ITILServiceFidelityEngine:
             
         return f"SERVICE_STATUS: COMPLIANCE_SECURED (Availability: {round(actual_availability, 3)}%, Fidelity: {round(fidelity, 2)})"
 
-# Example Usage:
-# itil = ITILServiceFidelityEngine()
-# report = itil.audit_service_fidelity(uptime_hours=719.5, total_hours=720, incident_count=2, change_success_rate=95.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -120,7 +107,6 @@ class ITILServiceFidelityEngine:
 2. **IT Governance**의 5대 영역 중 **Value Delivery**와 **Resource Management** 사이의 수리적 최적화(Optimization) 방법론은?
 3. **Incident Management**와 **Problem Management**의 차이점을 **Root Cause Integrity** 무결성 관점에서 설명하면?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/06_Enterprise_Governance_and_Digital_Operations_Hub/Concept it-infrastructure-and-cloud-architecture-system
 - 02_Knowledge/06_Enterprise_Governance_and_Digital_Operations_Hub/Entity it-asset-management-itam-and-software-asset-management-sam

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "composite-materials-and-advanced-manufacturing-entity"
-  domain: "110_Materials_Science_and_Nanotechnology_Hub"
+metadata:
+  id: "[[[Entity] composite-materials-and-advanced-manufacturing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Materials_Science", "#Composite_Materials", "#Manufacturing", "#Aerospace", "#CFRP", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 55_materials-science-and-nanotechnology-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] composite-materials-and-advanced-manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] composite-materials-and-advanced-manufacturing
+# [Entity] composite-materials-and-advanced-manufacturing
 
 ## 1. [왜 배우는가? (Why: The Architecture of Tailored Strength)]]
 강철은 강하지만 무겁고, 플라스틱은 가볍지만 약합니다. 우리는 이 둘의 장점만을 취해 새로운 소재를 직조합니다. **복합 재료 및 첨단 제조의 혼합 법칙 및 다르시 법칙 수리 역학 기술**은 재료를 층층이 쌓고 섞어서 자연계에 없는 극한의 성능을 구현하는 '소재 아키텍처' 기술입니다. 탄소 섬유로 비행기 날개를 만들어 무게를 절반으로 줄이고, 세라믹 복합재로 엔진의 뜨거운 열을 견디며, 수지가 섬유 사이를 흐르는 속도를 수학적으로 계산하여 결함 없는 부품을 찍어냅니다. 우리가 이를 배우는 이유는 구조적 무결성을 확보함으로써, 우주 항공과 모빌리티 산업의 효율을 극대화하는 '글로벌 복합재 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 복합재의 무결성이 구조물의 경량화 등급과 파손 안전성을 결정합니다.

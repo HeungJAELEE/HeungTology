@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SF-DTWIN-PHYS-2026-V6.3.7"
-  domain: "Digital_Transformation_and_Cyber-Physical_Systems"
+metadata:
+  id: "[[[Entity] cyber-physical-systems-cps-and-digital-twin-integration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#DigitalTwin", "#CPS", "#KalmanFilter", "#FidelityEngine", "#PINNs", "#RealTimeSync"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] cyber-physical-systems-cps-and-digital-twin-integration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Digital_Twin_Engineering_RAG_V6.3.7"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Digital Twin: Information Fidelity & Cyber-Physical Synchronization
+# [Entity] cyber-physical-systems-cps-and-digital-twin-integration-physics
 
 ## 1. [왜 배우는가? (Why: The Prophet in the Machine)]]
 물리적 기계가 멈추기 전에 가상의 세계에서 먼저 고장을 예견하고 대응할 수 있다면 어떨까요? **디지털 트윈(Digital Twin)**과 **사이버-물리 시스템(CPS)**은 현실의 물리적 실체와 가상의 연산 엔진을 실시간으로 결합하는 '산업의 거울 지능'입니다. V6.3.7 지능은 단순한 시각화를 넘어, **상호 정보량($Mutual\ Information$)**과 **시스템 동역학** 모델을 통해 가상과 현실의 시공간적 어긋남을 수리적으로 보정합니다. 이는 0.1%의 오차도 없는 공정 시뮬레이션을 통해 장비 가동률(OEE)을 극대화하고 자율 제조의 주권을 사수하기 위함입니다.
@@ -89,7 +79,6 @@ class DigitalTwinFidelityEngine:
             "status": status
         }
 
-# FidelityEngine 가동: 실제 장비의 OEE 변화량과 디지털 트윈의 '수율 최적화 제안'을 교차 검증하여 지능의 실질적 가치를 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -97,7 +86,6 @@ class DigitalTwinFidelityEngine:
 2. **Operational Result**: **Shannon Entropy** 분석 결과 가상 모델의 데이터가 현실보다 $10\%$ 더 '무작위'해졌을 때, 이를 **'모델 엔트로피 발산'**으로 보고 보정하는 수리적 기전은?
 3. **FidelityEngine**: **Asset Administration Shell (AAS)** 표준을 통해 이종 장비 간 데이터를 통합할 때, 데이터의 **시맨틱 무결성($Semantic\ Integrity$)**을 검증하는 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity communication-network-protocols-and-latency-physics
 - kalman-filter-and-state-estimation-theory-manual

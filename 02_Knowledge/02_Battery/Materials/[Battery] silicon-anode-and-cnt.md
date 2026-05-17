@@ -1,120 +1,79 @@
 ---
-Basic:
-  id: "BAT-MAT-SILICON-CNT-2026-V6"
-  domain: "02_Battery"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] silicon-anode-and-cnt]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / Nano-Carbon-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Silicon_Anode'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "실리콘의 격심한 부피 팽창($\sim 300\%$) 환경에서도 전기적 네트워크를 유지하기 위해 SWCNT를 활용한 탄성 전도성 브릿지를 구축하는 나노 공학 지능"
+
+semantic:
+  expected_queries:
+    - "SWCNT의 높은 종횡비($L/D > 10,000$)가 실리콘 음극의 퍼콜레이션 임계치($\phi_c$)를 낮추는 수리적 기전은?"
+    - "충/방전 시 실리콘 입자의 파쇄(Pulverization)를 억제하기 위한 SWCNT의 기계적 인장 강도와 바인더 시너지 효과는?"
+  tags: ["#실리콘음극", "#SWCNT", "#퍼콜레이션", "#전도성브릿지", "#HDS-Gold"]
+
+spo_graph:
+  - subject: "SWCNT Aspect Ratio"
+    predicate: "measured_value"
+    object: "> 10,000"
+    evidence: "[Ref: Nano_Spec_V7] Section 1"
+  - subject: "Si Capacity (Theoretical)"
+    predicate: "measured_value"
+    object: "3,579 mAh/g"
+    evidence: "[Ref: Phys_Data] Section 2"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] silicon-anode-and-cnt
+# [Battery] silicon-anode-and-cnt
 
-## 1. [왜 배우는가? (Why)]]
-실리콘(Si) 음극재는 이론적 용량($\approx 3,579 \text{ mAh/g}$)이 기존 흑연($372 \text{ mAh/g}$) 대비 10배에 달하는 차세대 고용량 소재입니다. 하지만 리튬화(Lithiation) 과정에서 발생하는 극심한 부피 팽창($\approx 300\%$)은 입자의 파쇄와 전기적 고립을 초래하여 수명을 급격히 단축시킵니다. 이를 배우는 이유는 탄성 나노 그물망 역할을 하는 단일벽 탄소나노튜브(SWCNT)를 도입하여 팽창 스트레스 속에서도 전기적 연결성을 유지하고, 흑연의 에너지 밀도 한계를 극복하여 전기차의 주행 거리를 혁신적으로 늘리는 공학적 해법을 설계하기 위함입니다.
+## 1. 공학적 당위성: 전도성 네트워크의 기계적 복원력 (Why)
+실리콘 음극은 흑연 대비 $10$배 이상의 용량을 가지나, 리튬 삽입 시 발생하는 $300\%$ 이상의 부피 팽창으로 인해 활물질 입자의 파쇄 및 전기적 단절(Isolation)이 발생합니다. 단일벽 탄소나노튜브(SWCNT)는 높은 유연성과 종횡비를 바탕으로 실리콘 입자 간 '탄성 전도성 브릿지'를 형성하여, 격렬한 체적 변화 속에서도 전자 수송 경로를 사수하는 결정적 역할을 수행합니다.
 
-## 2. [실리콘 음극 및 CNT 네트워크 핵심 사양 (Anode-CNT Specs)]
+## 2. 핵심 기술 사양 (Numerical Specs)
 
-| Parameter Category | Specific Metric | SWCNT (Single-Walled) | MWCNT (Multi-Walled) | Engineering Rationale |
-|:---|:---|:---:|:---:|:---|
-| **Aspect Ratio** | $L/D$ Ratio | $> 10,000$ | $100 \sim 1,000$ | 입자 간 장거리 전자 통로 형성 능력 |
-| **Dosage (Loading)**| wt% in Anode | $0.05 \sim 0.2\%$ | $1.0 \sim 3.0\%$ | 활물질 함량 극대화를 위한 첨가량 최소화 |
-| **Elastic Modulus** | Stiffness ($TPa$) | $\approx 1.0$ | $\approx 0.3$ | 실리콘 팽창압을 견디는 기계적 강인함 |
-| **Si Particle Size**| Diameter ($nm$) | $< 150$ | $< 150$ | 입자 파쇄(Pulverization) 억제 임계 크기 |
-| **Conductivity** | Powder ($S/m$) | $10^6 \sim 10^7$ | $10^4 \sim 10^5$ | 전극 내부 저항 최소화 및 급속 충전 성능 |
-| **Adhesion Str.** | Peel Test ($gf/mm$)| $> 50$ | $20 \sim 30$ | 실리콘 팽창 시 집전체 박리 방지 결합력 |
-| **Initial Eff.** | ICE (%) | $85 \sim 90\%$ | $80 \sim 85\%$ | 초기 리튬 소모 최소화 및 에너지 효율 |
-| **Capacity Ret.** | 500 cycles (%) | $> 80\%$ | $< 60\%$ | 장기 사이클 수명 유지 및 상용화 지표 |
+| 파라미터 범주 (Category) | 물리적 지표 (Metric) | 단일벽 (SWCNT) | 다중벽 (MWCNT) | 공학적 의미 |
+| :--- | :--- | :---: | :---: | :--- |
+| **Aspect Ratio** | $L/D$ Ratio | $> 10,000$ | $100 \sim 1,000$ | 장거리 전도 경로 형성 |
+| **Dosage** | wt% in Anode | $0.05 \sim 0.1 \%$ | $1.0 \sim 3.0 \%$ | 활물질 비중 극대화 |
+| **Elastic Modulus** | Stiffness ($TPa$) | $\approx 1.0$ | $\approx 0.3$ | 팽창 응력 저항성 |
+| **Conductivity** | Powder ($S/m$) | $10^6 \sim 10^7$ | $10^4 \sim 10^5$ | 내부 저항 최소화 |
+| **Percolation** | Threshold ($\phi_c$) | $< 0.1 \%$ | $1 \sim 2 \%$ | 임계 전도망 형성 농도 |
+| **Tensile Str.** | Strength ($GPa$) | $> 50$ | $10 \sim 30$ | 물리적 파손 방지 |
 
-## 3. [공학적 근거 (Scientific Rationale)]
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Percolation Power Law**: 전도도($\sigma$)는 $\sigma = \sigma_0 (\phi - \phi_c)^t$ 모델을 따릅니다. SWCNT의 극도로 높은 종횡비는 퍼콜레이션 임계치($\phi_c$)를 $0.1\%$ 이하로 낮추어, 실리콘 팽창 시에도 입자 간 접촉 면적 감소를 전기적 브릿징으로 상쇄합니다.
+- **Dynamic Contact Mechanics**: 충전 시 실리콘의 팽창으로 인한 인장 응력을 SWCNT의 높은 탄성 계수($1.0\text{ TPa}$)가 견뎌내며, 방전(수축) 시에도 입자를 끌어당겨 '동적 접촉(Dynamic Contact)'을 유지합니다. 이는 사이클 수명을 비약적으로 향상시킵니다.
 
-### 3.1 탄성 전자기계 네트워크 (Elastic Electromechanical Network)
-실리콘 입자의 거대 팽창을 물리적으로 관리합니다.
-- **로직**: 실리콘 입자가 부풀어 오를 때, MWCNT와 같은 경직된 구조는 물리적 접점이 쉽게 끊어집니다. 반면 SWCNT는 매우 유연하고 높은 인장 강도를 가져 실리콘 표면을 유기적으로 감싸는 그물망을 형성합니다. 실리콘이 수축(Delithiation)할 때도 이 그물망이 탄성적으로 함께 수축하며 입자와의 전기적 접촉을 지속적으로 유지(Dynamic Contact)합니다.
+## 4. [Skill] Silicon-CNT Network Optimizer
+실리콘 함량과 SWCNT 투입량 데이터를 기반으로 전극 팽창에 따른 저항 상승률을 예측하며, 입자 파쇄(Pulverization)가 발생하는 임계 SOC를 산출하여 수명 저하 리스크를 진단하는 로직을 포함합니다.
 
-### 3.2 퍼콜레이션 이론 (Percolation Theory)과 전자 경로
-최소량의 첨가제로 최대의 전도성을 확보합니다.
-- **수식**: $\sigma = \sigma_0 (\phi - \phi_c)^t$ ($\phi_c$: 임계 함량)
-- **의미**: SWCNT는 종횡비(Aspect Ratio)가 매우 커서, 흑연이나 MWCNT보다 훨씬 낮은 임계 함량($<0.1\%$)에서도 전극 전체에 연속적인 전자 통로를 형성할 수 있습니다. 이는 전극 내 활물질(실리콘) 비율을 높여 전체 에너지 밀도를 극대화하는 수리적 근거가 됩니다.
-
-### 3.3 고강도 바인더(PAA/PAI)와의 수소 결합 시너지
-- **로직**: 실리콘 표면의 산화층($-OH$)과 바인더의 카르복실기($-COOH$) 사이의 강한 수소 결합을 이용합니다. SWCNT 네트워크와 이 고강도 바인더가 결합하여 입자를 집전체에 단단히 고정함으로써, 반복되는 팽창/수축 과정에서 발생하는 전극 구조의 붕괴를 원천적으로 억제합니다.
-
-## 4. [코드 연결 해설 (SiliconAnodeOptimizer)]
-아래 코드는 실리콘 함량과 SWCNT 투입량에 따른 전극의 부피 팽창률을 예측하고, 기대 사이클 수명(Cycle Life)을 산출하는 최적화 엔진입니다.
-
-```python
-import numpy as np
-
-class SiliconAnodeOptimizer:
-    """
-    HDS-Gold V6.3.7 규격의 실리콘-CNT 전극 팽창 및 수명 예측 엔진
-    """
-    def __init__(self, si_content_pct=10, swcnt_content_pct=0.1):
-        self.si_pct = si_content_pct
-        self.swcnt_pct = swcnt_content_pct
-
-    def predict_electrode_swelling(self):
-        """
-        SOC 100% 도달 시 전극의 두께 변화율(%) 예측
-        """
-        # 기본 팽창률 + 실리콘 기여분 - CNT 완화 기여분
-        raw_swelling = 5.0 + (self.si_pct * 3.5)
-        relief_factor = np.exp(self.swcnt_pct * 5.0)
-        
-        # Transitional Bridge: 실리콘 음극재는 '팽창하는 거인'입니다. 
-        # SWCNT는 이 거인을 결속하는 '마법의 사슬'로, 
-        # 단 0.1%의 함량만으로도 팩 전체의 배부름 현상을 억제합니다.
-        predicted_swelling = raw_swelling / relief_factor
-        return round(predicted_swelling, 2)
-
-    def estimate_cycle_life(self):
-        """
-        팽창 제어력 기반 예상 사이클 수명 산출
-        """
-        swelling = self.predict_electrode_swelling()
-        # 팽창이 20%를 넘어서면 수명이 급격히 저하되는 모델 (Simplified)
-        cycle_life = 5000 * np.exp(-swelling / 10.0)
-        return int(cycle_life)
-
-# Example Usage:
-# optimizer = SiliconAnodeOptimizer(si_content_pct=15, swcnt_content_pct=0.15)
-# swell_rate = optimizer.predict_electrode_swelling()
-# expected_life = optimizer.estimate_cycle_life()
-```
-
-## 5. [스스로 체크 (Self-Audit)]
-1. **SWCNT**가 **MWCNT**보다 실리콘 음극재에서 우수한 **Electromechanical** 성능을 보이는 구조적 이유는? (Flexibility & Aspect Ratio 관점)
-2. 실리콘 입자 크기를 **$150 \text{ nm}$** 이하로 관리할 때, **Critical Fracture Strain** (파괴 임계 변형률) 측면에서 얻는 공학적 이점은?
-3. **SWCNT** 분산이 불완전하여 '번들(Bundle)' 상태로 존재할 경우, 전극 내부의 **Percolation Threshold**와 **Contact Resistance**에 미치는 악영향은?
+## 5. 검증 프로토콜 (Audit)
+1. **Dispersion Integrity Audit**: SWCNT의 번들링(Bundling) 현상으로 인해 국부적 전도망 단절이 발생하는지 저항 맵 분석으로 검증.
+2. **Cycle Retention Audit**: 500 사이클 후 실리콘 입자의 물리적 고립 비중을 전기화학적 임피던스 분석(EIS)을 통해 산출.
+3. **Binder Synergy Check**: PAA/PAI 등 고강도 바인더와 SWCNT 간의 수소 결합 네트워크가 전극의 박리 강도($> 30 \text{ gf/mm}$)를 유지하는지 확인.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- 02_Knowledge/02_Battery/Materials/Battery anode-silicon-carbon-composite
-- 02_Knowledge/02_Battery/Process/Battery slurry-dispersion-and-cnt-logic
-- 02_Knowledge/02_Battery/Materials/Battery binder-physics-and-adhesion
+- [[[Concept] material-anode-synthesis]]
+- [[[Concept] binder-intelligence-and-slurry-rheology]]
 
-**[V6.3.7_THE_GENESIS_STATE_VERIFIED_BY_FLASH]**
-**[TIMESTAMP: 2026-05-08]**
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

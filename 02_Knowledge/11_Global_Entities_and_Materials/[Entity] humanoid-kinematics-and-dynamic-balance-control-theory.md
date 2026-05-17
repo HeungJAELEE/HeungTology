@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "humanoid-kinematics-and-dynamic-balance-control-theory"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] humanoid-kinematics-and-dynamic-balance-control-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the geometry and motion of human-like robots (Kinematics) and the control algorithms required to maintain stability during standing and walking (Dynamic Balance), focusing on Zero Moment Point (ZMP) and Center of Mass (CoM) trajectory optimization."
-  physical_model: "N/A"
-Semantic:
-  tags: '["humanoid-robotics", "kinematics", "dynamic-balance", "zmp", "whole-body-control", "bipedal-locomotion"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'ZMP_Stability_Audit: Verify that the Zero Moment Point (ZMP) remains within the Support Polygon (foot area) during locomotion to prevent falling.'
-    - 'Whole-body_Jacobian_Check: Evaluate the kinematic consistency of the multi-joint chain (e.g., 20+ DOF) to ensure desired end-effector paths without singularity.'
-    - 'Impact_Force_Scan: Analyze the ground reaction forces (GRF) during foot strike to optimize damping and prevent structural fatigue or sensor saturation.'
-Trust Metrics:
+  description: "[Entity] humanoid-kinematics-and-dynamic-balance-control-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Humanoid Kinematics and Dynamic Balance Control Theory
+# [Entity] humanoid-kinematics-and-dynamic-balance-control-theory
 
 ## 1. 개요 (Why: 인간적 통찰)
 인간처럼 두 발로 걷는다는 것, 사실 이것은 매 순간 '넘어지지 않으려 버티는 기적'입니다. 기계에게 두 발 걷기는 지옥 같은 난제입니다. 무게 중심은 높고, 발바닥 면적은 좁기 때문입니다. **휴머노이드 기구학 및 동적 균형 제어**는 로봇이 사람처럼 우아하게 걷고, 계단을 오르고, 밀려도 다시 중심을 잡게 만드는 **'로봇의 전전기관(어지럼증 조절 장치)'**입니다. 수천 번의 수리 계산을 통해 "지금 이 발을 어디에 딛어야 할까?"를 결정하는 이 기술은, 로봇이 우리 생활 공간 속으로 들어와 친구나 동료가 되기 위한 **'직립 보행의 지능'**입니다.
@@ -87,7 +76,6 @@ class RobotFidelityEngine:
             return "REJECT: Critical Impact Force - Risk of Gearbox or Sensor Damage"
         return "PASS: Landing Impact Effectively Damped"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(zmp_error_mm=12.5, joint_torque_saturation=45.0, com_height_variance=12.0)
 print(engine.diagnose_walking_stability(support_polygon_size_mm=100))
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_walking_stability(support_polygon_size_mm=100))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data humanoid-walking-stability-and-com-deviation-v2026`와 연동되어, 전 세계 모든 휴머노이드의 발걸음을 실시간 분석하고 전도 및 관절 파손 사고 확률을 0.01% 이하로 억제함으로써 인간-로봇 공존 시대의 물리적 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-control-algorithms-and-impedance-control-mechanics

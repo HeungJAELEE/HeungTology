@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "offshore-engineering-and-subsea-technology-entity"
-  domain: "104_Marine_Engineering_and_Naval_Architecture_Hub"
+metadata:
+  id: "[[[Entity] offshore-engineering-and-subsea-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Marine_Engineering", "#Offshore", "#Subsea", "#Hydrodynamics", "#Morison_Equation", "#Energy", "#Robotics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 53_marine-and-naval-architecture-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] offshore-engineering-and-subsea-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] offshore-engineering-and-subsea-technology
+# [Entity] offshore-engineering-and-subsea-technology
 
 ## 1. [왜 배우는가? (Why: The Frontier of Deep Resources)]]
 대륙의 자원이 고갈됨에 따라 인류는 이제 수천 미터 아래의 칠흑 같은 심해로 눈을 돌리고 있습니다. **해양 플랜트 및 심해 기술의 모리슨 방정식 및 계류 수리 역학 기술**은 인간이 직접 갈 수 없는 극한의 환경에서 에너지를 캐내고 운송하는 '최첨단 공학의 집합체'입니다. 거센 파도와 바람 속에서도 구조물을 한자리에 고정하고, 에베레스트 높이만큼 깊은 바닷속의 엄청난 압력을 견뎌내며, 해저 로봇을 통해 자원을 생산하는 과정은 인류가 지구의 마지막 미개척지를 지배하기 위한 관문입니다. 우리가 이를 배우는 이유는 해양 자원의 무결성을 확보함으로써, 에너지 안보를 수호하고 심해 기술의 패권을 쥐는 '글로벌 해양 플랜트 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 심해 기술의 무결성이 인류의 미래 에너지 자립도를 결정합니다.

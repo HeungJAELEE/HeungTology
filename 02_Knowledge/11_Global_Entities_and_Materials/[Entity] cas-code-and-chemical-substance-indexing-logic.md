@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cas-code-and-chemical-substance-indexing-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cas-code-and-chemical-substance-indexing-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A unique numerical identifier assigned by the Chemical Abstracts Service (CAS) to every chemical substance described in the open scientific literature (CAS Registry Number) and the logical algorithms and database structures used to categorize, link, and retrieve complex molecular information (Chemical Substance Indexing Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cas-registry-number", "chemical-indexing", "cheminformatics", "substance-database", "chemical-safety", "regulatory-compliance", "mds"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Index_Fidelity_Audit: Evaluate the ''Check Digit'' of the CAS number to identify if a typo or manual entry error is pointing to the wrong hazardous substance.'
-    - 'Search_Integrity_Check: Analyze the ''Substructure Search'' performance to ensure the database can accurately link isomers and isotopes of the same CAS-registered base substance.'
-    - 'Regulatory_Fidelity_Scan: Monitor the mapping between CAS numbers and GHS (Globally Harmonized System) hazard labels to verify that industrial storage follows the ''Chemical Compatibility'' logic.'
-Trust Metrics:
+  description: "[Entity] cas-code-and-chemical-substance-indexing-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📑 CAS Code and Chemical Substance Indexing Logic
+# [Entity] cas-code-and-chemical-substance-indexing-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에 존재하는 수억 종류의 화학 물질들, 이름도 복잡한 이들을 어떻게 하나도 빠짐없이 관리할 수 있을까요? **CAS 번호 및 화학 물질 인덱싱 로직**은 화학 물질에게 부여하는 '우주 공통의 주민등록번호' 기술입니다. 언어가 달라도, 별명이 달라도, 이 고유한 번호 하나면 전 세계 어디서든 이 물질이 독성인지 영양제인지 즉시 알 수 있습니다. 복잡한 분자의 세계를 질서 정연한 데이터의 세계로 연결하는 **'화학 문명의 거대한 도서관 시스템'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Redundant Substance Entries - Multiple internal IDs for same CAS. Data integrity compromised. Deduplication required"
         return "PASS: Unique Single Source of Truth and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(check_digit_valid=True, search_latency_ms=120, registry_update_status=True)
 print(engine.diagnose_indexing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_indexing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cas-registry-growth-and-chemical-search-latency-v2026`와 연동되어, 전 세계 주요 연구소 및 화학 공장의 물질 관리 데이터를 실시간 분석하고 오입력 및 규제 미준수 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - calcium-carbide-and-acetylene-production-chemistry

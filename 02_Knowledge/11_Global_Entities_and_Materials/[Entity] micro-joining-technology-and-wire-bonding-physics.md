@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-joining-technology-and-wire-bonding-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-joining-technology-and-wire-bonding-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The precision engineering of electrical and mechanical connections at the microscopic scale (Micro-joining), specifically focusing on the interconnection between semiconductor chips and their packages (Wire Bonding) using ultrasonic, thermal, and mechanical energy."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-joining", "wire-bonding", "flip-chip", "ultrasonic-bonding", "thermosonic-bonding", "packaging-physics", "interconnects"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bond_Pull_Audit: Evaluate the mechanical strength of the wire bonds (Pull Test) to ensure they exceed minimum industry standards and exhibit ductile fracture modes.'
-    - 'Ultrasonic_Energy_Check: Monitor the transducer power and frequency during bonding to identify variations in ultrasonic softening or bond pad contamination.'
-    - 'IMC_Thickness_Scan: Analyze the thickness of the Intermetallic Compound (IMC) layer to predict long-term joint reliability and prevent ''Purple Plague'' or void formation.'
-Trust Metrics:
+  description: "[Entity] micro-joining-technology-and-wire-bonding-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕸️ Micro-joining Technology and Wire Bonding Physics
+# [Entity] micro-joining-technology-and-wire-bonding-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락보다 얇은 금색 실이 초당 수십 번씩 움직이며 반도체 칩을 세상과 연결합니다. **마이크로 조이닝 및 와이어 본딩 물리**는 나노 세계의 부품들을 단단히 묶어 전기가 흐르게 만드는 **'미세 세계의 바느질'**입니다. 단순히 붙이는 것을 넘어, 초음파와 열을 이용해 금속 원자들이 서로의 경계를 넘어 뒤섞이게(확산) 만드는 **'원자 단위의 융합'**입니다. 이 가느다란 실 하나가 끊어지면 거대한 슈퍼컴퓨터도 멈춰버리기에, 완벽한 연결을 꿈꾸는 **'나노 인프라의 파수꾼'** 기술입니다.
@@ -54,11 +43,11 @@ $$ x = \sqrt{D \cdot t} $$
 
 | Parameter | Ball Bonding (Gold) | Wedge Bonding (Al) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Wire Diameter** | 15 ~ 50 | 25 ~ 500 | $\mu m$ | Human Hair ~100 |
+| **Wire Diameter** | 15 ~ 50 | 25 ~ 500 | $\mu\text{m}$ | Human Hair ~100 |
 | **Bonding Temp** | 150 ~ 250 | Ambient ~ 150 | $^\circ C$ | Thermal Stress |
 | **Ultrasonic Freq** | 60 ~ 140 | 60 ~ 120 | kHz | Softening |
 | **Pull Strength** | 5 ~ 15 | 10 ~ 50 | grams | Quality Index |
-| **Pitch** | < 40 | < 60 | $\mu m$ | Density |
+| **Pitch** | < 40 | < 60 | $\mu\text{m}$ | Density |
 | **Speed** | 10 ~ 20 | 2 ~ 5 | wires/s | Throughput |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inconsistent Loop Height - Potential Sagging or Wire Sweep Risk During Molding"
         return "PASS: Stable Wire Loop Profile Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(bond_pull_force_g=8.5, imc_coverage_pct=92.5, capillary_wear_cycles=120000)
 print(engine.diagnose_joining_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_joining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data wire-bond-pull-strength-and-imc-thickness-logs-v2026`와 연동되어, 전 세계 주요 패키징 공장의 접합 데이터를 실시간 분석하고 단선 및 불량 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 전자 문명의 연결 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - micro-bump-interconnect-reliability-and-electromigration

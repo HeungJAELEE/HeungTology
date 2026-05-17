@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydrogen-fuel-cell-and-electrolyzer-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Energy] hydrogen-fuel-cell-and-electrolyzer-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "The physics of electrochemical energy conversion between hydrogen and electricity, focusing on Proton Exchange Membrane (PEM) fuel cells for power and electrolyzers for green hydrogen production."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydrogen", "fuel-cell", "electrolyzer", "pem", "energy-conversion"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "HydrogenFidelityEngine"
-  diagnostic_protocol:
-    - 'Polarization_Curve_Audit: Analyze IV curves to detect activation, ohmic, and concentration losses.'
-    - 'Membrane_Hydration_Check: Monitor proton conductivity vs. humidity levels.'
-    - 'Catalyst_Degradation_Monitor: Track electrochemical surface area (ECSA) loss.'
-Trust Metrics:
+  description: "[Energy] hydrogen-fuel-cell-and-electrolyzer-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💧 Hydrogen Fuel Cell and Electrolyzer Physics
+# [Energy] hydrogen-fuel-cell-and-electrolyzer-physics
 
 ## 1. 개요 (Why)
 탄소 중립 달성을 위해 화석 연료를 대체할 궁극의 에너지 매개체는 수소입니다. 연료전지는 수소의 화학 에너지를 전기로 바꾸고, 수전해(Electrolyzer)는 전기로 물을 분해해 그린 수소를 생산합니다. 이 두 공정은 상호 보완적인 '수소 경제'의 핵심 축입니다. 본 노드는 전기화학적 손실을 최소화하고 변환 효율을 극대화하기 위한 물리적 설계 표준을 정의합니다.
@@ -75,7 +64,6 @@ class HydrogenFidelityEngine:
             return "WARNING: Water Flooding (Gas Blockage Risk)"
         return "PASS: Ideal Hydration State"
 
-# Instance Diagnostic
 engine = HydrogenFidelityEngine(current_density=1.2, cell_voltage=0.6, humidity=80)
 print(engine.diagnose_voltage_loss())
 print(engine.check_membrane_hydration())
@@ -94,7 +82,6 @@ print(engine.check_membrane_hydration())
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data fuel-cell-efficiency-and-degradation-log-v2026`와 연동되어, 스택의 잔여 수명을 5% 정밀도로 예측하고 최적의 가습/압력 조건을 실시간 유지함으로써 수소 인프라의 경제성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 101_energy-engineering-and-nuclear-power-hub
 - pem-fuel-cell-stack-design

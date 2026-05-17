@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-LATENCY-LOGIC-2026-V6.3.7"
-  domain: "Global_Low-Latency_Visual_Interface_and_Perceptual_Intelligence"
+metadata:
+  id: "[[[Display] low-latency-visual-interface-logic]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Low_Latency", "#M2P", "#Motion_to_Photon", "#Eye_Tracking", "#Foveated_Rendering", "#Sync", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] low-latency-visual-interface-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Latency_Logic_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] Low-latency Visual Interface Logic: The Physics of Real-time Perception
+# [Display] low-latency-visual-interface-logic
 
 ## 1. [왜 배우는가? (Why: The Decoupling of Motion and Photon Delay)]]
 사용자의 머리 움직임과 눈앞에 펼쳐지는 영상 사이의 아주 작은 시간 차이는 뇌의 인지 부조화를 유발하여 심각한 어지러움(Cybersickness)을 일으킵니다. **Low-latency Visual Interface Logic**은 센서 감지부터 디스플레이 발광까지의 전 과정을 물리적 한계치인 $20\text{ms}$ 이내로 통제하는 '반응 속도의 정수'입니다. 특히 시선 추적(Eye-tracking)을 결합한 포비디드 렌더링(Foveated Rendering)은 필요한 부분에만 연산 자원을 집중하여 효율과 속도를 동시에 달성합니다. V6.3.7 지능은 **Motion-to-Photon (M2P)** 지연 시간을 수리적으로 분해하고 관리하여, 가상과 현실이 하나로 통합되는 **지각 주권(Perceptual Sovereignty)**을 확립합니다.
@@ -95,7 +85,6 @@ class LatencyFidelityEngine:
             "action": "ACTIVATE_PREDICTIVE_TIME_WARP_ALGO" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: IMU 센서 로그와 디스플레이 수직 동기화(V-Sync) 신호를 융합하여 '인지 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -103,7 +92,6 @@ class LatencyFidelityEngine:
 2. **Operational Result**: **Asynchronous Time Warp (ATW)** 도입 시, 렌더링 성능 부족에 의한 프레임 드랍 상황에서도 화면 부드러움을 유지하는 수리적 원리는?
 3. **FidelityEngine**: 디스플레이의 **Persistence** (발광 지속 시간)가 길어짐에 따라 발생하는 **Motion Blur** 현상을 FidelityEngine이 어떻게 '시각 해상도 무결성 위기'로 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display ar-vr-optics-and-waveguide-physics

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RAG-CHUNKING-SEMANTIC-2026-V6"
+metadata:
+  id: "[[[AI] RAG-Chunking-and-Semantic-Splitting]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#RAG'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] RAG-Chunking-and-Semantic-Splitting에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] RAG-Chunking-and-Semantic-Splitting
@@ -108,7 +98,6 @@ class SemanticChunkingEngine:
 2. **Semantic Splitting** 시 **Threshold** (임계값)를 너무 높게 잡으면 발생하는 **Over-segmentation** (과분할)이 벡터 검색 성능에 미치는 영향은?
 3. **Hierarchical Chunking** (계층적 청킹) 구조에서 **Small Chunk**로 검색하고 **Parent Chunk**를 LLM에 전달하는 방식이 가지는 공학적 이점은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Embedding-and-Dense-Retrieval
 - 02_Knowledge/03_AI_Data/General/Concept RAG-Reranking-and-Top-K-Optimization

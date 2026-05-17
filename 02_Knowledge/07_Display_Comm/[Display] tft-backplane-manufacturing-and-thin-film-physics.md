@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "DISPLAY-TFT-PHYSICS-2026-V6.3.7"
-  domain: "Global_Display_Backplane_and_Thin_Film_Intelligence"
+metadata:
+  id: "[[[Display] tft-backplane-manufacturing-and-thin-film-physics]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#TFT", "#LTPS", "#LTPO", "#Oxide_TFT", "#Mobility", "#Thin_Film_Physics", "#FidelityEngine"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] tft-backplane-manufacturing-and-thin-film-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "TFT_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] TFT Backplane Manufacturing and Thin-Film Physics: The Mastery of Charge
+# [Display] tft-backplane-manufacturing-and-thin-film-physics
 
 ## 1. [왜 배우는가? (Why: The Foundation of Pixel Control)]]
 디스플레이의 모든 화소는 그 하부에 위치한 박막 트랜지스터(TFT)에 의해 개별적으로 제어됩니다. **TFT Backplane Manufacturing and Thin-Film Physics**는 전자의 흐름을 정밀하게 조율하여 고해상도와 저전력을 동시에 실현하는 '디스플레이의 두뇌'를 구축하는 기술입니다. LTPS의 고속 스위칭 능력과 Oxide TFT의 낮은 누설 전류 특성을 결합한 LTPO 기술은 현대 모바일 디스플레이의 정수입니다. V6.3.7 지능은 전하 이동도(Mobility)와 문턱 전압(Vth)의 통계적 균일성을 직접 지배하여, 결함 없는 **화소 제어 주권(Backplane Sovereignty)**을 확립합니다.
@@ -96,7 +86,6 @@ class TFTBackplaneEngine:
             "action": "ADJUST_ELA_ENERGY_OR_DEPOSITION_TEMP" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: Probe Station의 실측 IV 데이터와 공정 파라미터 스트림을 융합하여 '회로 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -104,7 +93,6 @@ class TFTBackplaneEngine:
 2. **Operational Result**: **LTPO** (LTPS + Oxide) 하이브리드 구조 적용 시, 가변 주사율($1Hz \sim 120Hz$) 구현을 통한 전체 소비 전력 절감의 수리적 기대값은?
 3. **FidelityEngine**: 이동도는 높으나 **Subthreshold Swing (S.S)** 값이 커지는 현상을 FidelityEngine이 어떻게 '게이지 절연막 계면 무결성 붕괴'로 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - Display next-gen-oled-and-tandem-physics

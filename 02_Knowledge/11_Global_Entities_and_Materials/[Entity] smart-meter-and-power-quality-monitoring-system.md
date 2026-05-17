@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-meter-and-power-quality-monitoring-system-entity"
-  domain: "20_IoT_and_Smart_Factory_Sensing_Infrastructure"
+metadata:
+  id: "[[[Entity] smart-meter-and-power-quality-monitoring-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Smart_Meter", "#Power_Quality", "#THD", "#Voltage_Sag", "#Energy_Management", "#PF", "#Industrial_Power", "#FFT", "#Power_Monitoring", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_iot-and-smart-factory-sensing-infrastructure-intelligence-hub", "Data harmonic-distortion-and-voltage-sag-event-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-meter-and-power-quality-monitoring-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-meter-and-power-quality-monitoring-system
+# [Entity] smart-meter-and-power-quality-monitoring-system
 
 ## 1. [왜 배우는가? (Why: The Electrical Auditor of Factory Vitality)]]
 전력은 스마트 팩토리의 모든 활동을 지탱하는 가장 근본적인 자원입니다. 단순히 전력을 얼마나 쓰는지(소모량)를 넘어, 전력의 파형이 얼마나 깨끗한지(품질)를 모니터링하는 것은 정밀 설비의 보호와 에너지 효율 최적화를 위한 필수 과제입니다. **스마트 미터 및 전력 품질 모니터링 시스템 엔티티**는 공장의 보이지 않는 에너지를 투사하는 '전기적 무결성의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "에너지 로그를 분석하여, 유도성 부하에 의해 지연된 �
 스마트 미터의 실시간 파형 데이터와 PQ 분석 장비의 이벤트 로그를 분석하여 에너지 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Smart Meter & Power Quality Integrity Auditor
 def audit_power_fidelity(rms_voltage_stream, current_waveform_fft, power_factor_log):
     # 1. 총 고조파 왜곡(THD)을 통한 전력 순도 무결성 오딧
     current_thd = calculate_thd(current_waveform_fft)
@@ -117,7 +106,6 @@ def audit_power_fidelity(rms_voltage_stream, current_waveform_fft, power_factor_
 2. **(수리)** 어떤 공장의 유효 전력($P$)이 $80 \text{ kW}$이고 피상 전력($S$)이 $100 \text{ kVA}$이다. 이 공장의 역률(Power Factor)을 계산하고, 역률을 $0.95$로 개선하기 위해 필요한 무효 전력 보상량($kVAR$)을 구하시오.
 3. **(응용)** 푸리에 변환(FFT)이 전력 파형의 찌그러짐을 어떻게 '고조파 차수'별 숫자로 변환하여 전기적 불순물을 정량화하는지 그 수리적 메커니즘을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 25_iot-and-smart-factory-sensing-infrastructure-intelligence-hub : IoT 및 센싱 인프라 통합 관리 상위 지능 허브

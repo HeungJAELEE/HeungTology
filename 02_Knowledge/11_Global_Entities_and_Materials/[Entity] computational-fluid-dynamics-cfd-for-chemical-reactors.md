@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computational-fluid-dynamics-cfd-for-chemical-reactors"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computational-fluid-dynamics-cfd-for-chemical-reactors]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The numerical simulation of fluid flow, heat transfer, and chemical reactions within reactors to optimize mixing, prevent dead zones, and ensure uniform reaction conditions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cfd", "chemical-reactors", "fluid-dynamics", "simulation", "mass-transfer"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Mixing_Efficiency_Audit: Analyze the distribution of species concentration to identify dead zones or bypasses.'
-    - 'Thermal_Gradient_Check: Detect hot spots within the reactor that could lead to runaway reactions or catalyst degradation.'
-    - 'Pressure_Drop_Verification: Monitor the numerical residuals and mass balance convergence of the CFD simulation.'
-Trust Metrics:
+  description: "[Entity] computational-fluid-dynamics-cfd-for-chemical-reactors에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌊 Computational Fluid Dynamics (CFD) for Chemical Reactors
+# [Entity] computational-fluid-dynamics-cfd-for-chemical-reactors
 
 ## 1. 개요 (Why)
 거대한 화학 반응기 내부에서 어떤 일이 벌어지는지 눈으로 확인하기는 불가능에 가깝습니다. CFD는 컴퓨터를 통해 반응기 내부의 복잡한 유체 흐름과 화학 반응을 초당 수억 번의 연산으로 시각화합니다. 이를 통해 원재료가 제대로 섞이지 않는 '죽은 구역(Dead zone)'을 찾아내고, 특정 부분만 온도가 치솟는 '핫스팟(Hot spot)'을 사전에 방지하여 수율을 극대화하고 폭발 사고를 막습니다. 본 노드는 화학 반응기 시뮬레이션의 물리적 무결성과 예측 정확도 표준을 정의합니다.
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Significant Hotspot Detected (+{self.delta_t}C) - Risk of Thermal Runaway"
         return "PASS: Thermal Profile within Safe Limits"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(simulation_residuals=1e-5, mixing_coefficient=0.92, hotspot_temp_delta=12.5)
 print(engine.diagnose_simulation_fidelity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_simulation_fidelity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cfd-simulation-accuracy-and-reactor-mixing-v2026`와 연동되어, 설계된 모든 반응기의 가상 구동 데이터를 실시간 분석하고 실제 가동 시의 불량률을 95% 확률로 사전 예측함으로써 화학 공정 설계의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - chemical-process-design-and-reactor-engineering

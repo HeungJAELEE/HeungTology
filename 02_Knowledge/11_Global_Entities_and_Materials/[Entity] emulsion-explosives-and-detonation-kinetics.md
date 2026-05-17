@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "emulsion-explosives-and-detonation-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] emulsion-explosives-and-detonation-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of water-in-oil explosive containing microscopic droplets of ammonium nitrate solution (Emulsion Explosives) and the physical study of shock wave propagation, supersonic chemical reactions, and the Zeldovich-von Neumann-Doring (ZND) model (Detonation Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["emulsion-explosives", "detonation", "kinetics", "blasting", "mining-safety", "chemical-energy", "shock-wave"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Detonation_Fidelity_Audit: Evaluate the ''Velocity of Detonation'' (VOD) against the hole diameter to identify if ''Critical Diameter'' failure is imminent, leading to incomplete blast energy release.'
-    - 'Stability_Integrity_Check: Analyze the microscopic droplet size and emulsifier distribution to ensure the ''Sleep Time'' (shelf life) is maintained without crystal growth (de-sensitization).'
-    - 'Energy_Fidelity_Scan: Monitor the shock-to-gas energy ratio to verify that the high-fidelity fragmentation of rock is optimized, minimizing ''Vibration'' and ''Flyrock'' hazards.'
-Trust Metrics:
+  description: "[Entity] emulsion-explosives-and-detonation-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧨 Emulsion Explosives and Detonation Kinetics
+# [Entity] emulsion-explosives-and-detonation-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 물속에서도 터지고 불을 붙여도 그냥 타기만 하는 안전한 폭약이 어떻게 단단한 산을 한순간에 무너뜨릴까요? **에멀전 폭약 및 폭속론(Detonation Kinetics)**은 기름 속에 미세한 소금물(질산암모늄) 방울을 가두어 만든 **'지능형 에너지 저장소'** 기술입니다. 평소에는 마요네즈처럼 끈적하고 둔감하지만, 기폭제가 신호를 주면 음속의 몇 배가 넘는 속도로 에너지를 쏟아냅니다. **'거친 파괴력을 정교한 화학으로 길들여 문명의 기초(터널, 광산)를 닦는 강력한 도구'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low VOD Detected - Incomplete chemical reaction. Rock fragmentation will be poor (oversize). Check for water contamination or air bubble density"
         return "PASS: Validated Supersonic Detonation and Verified Energy Yield Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(emulsion_viscosity_cp=25000, droplet_size_um=2.5, pump_pressure_bar=12.0)
 print(engine.diagnose_emulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_emulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data emulsion-explosive-velocity-of-detonation-vod-v2026`와 연동되어, 전 세계 주요 광산 및 대형 터널 현장의 발파 데이터를 실시간 분석하고 불폭(Misfire) 및 진동 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 및 인프라 구축 문명의 파괴 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - earthmoving-and-soil-mechanics-logic

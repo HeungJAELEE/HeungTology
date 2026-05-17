@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-THERMO-PROC-ISO-2026-V6"
-  domain: "01_Industrial_Physics_and_Thermodynamics"
+metadata:
+  id: "[[[Entity] isochoric-and-isobaric-thermodynamic-processes]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] isochoric-and-isobaric-thermodynamic-processes에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] isochoric-and-isobaric-thermodynamic-processes
+# [Entity] isochoric-and-isobaric-thermodynamic-processes
 
 ## 1. [왜 배우는가? (Why)]]
 산업 시스템의 에너지 효율을 설계하고 최적화하기 위해서는 열과 일이 상호 작용하는 물리적 경로인 '열역학 과정'에 대한 정밀한 이해가 필수적입니다. **정적(Isochoric) 및 정압(Isobaric) 과정**은 엔진 사이클(Otto, Diesel, Stirling)의 기초를 형성하며, 고정 부피 탱크의 가열이나 개방형 시스템의 피스톤 운동과 같은 실제 공정을 수리적으로 정의합니다. 우리가 이를 배우는 이유는 에너지 손실을 최소화하면서 유효한 일을 추출하거나 온도를 제어하기 위함이며, "열역학적 결정론에 기반하여 거시적 에너지 흐름을 미시적 분자 운동의 통계적 확실성으로 사수하기" 위함입니다. 과정의 경로(Path)가 시스템의 경제성을 결정합니다.
@@ -126,9 +116,6 @@ class ThermoProcessFidelityEngine:
             "Fidelity": fidelity
         }
 
-# Example Usage:
-# engine = ThermoProcessFidelityEngine(degrees_of_freedom=3) # Monatomic Gas
-# result = engine.simulate_process(n_moles=1.0, T_start=300, T_end=450, process_type='isobaric')
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -136,7 +123,6 @@ class ThermoProcessFidelityEngine:
 2. **Isochoric Process**에서 압력이 2배 상승했을 때, 통계역학적 관점에서 분자의 **Mean Square Speed**($v_{rms}^2$) 무결성 변화량은?
 3. 실제 기체(Real Gas)에서 **Joule-Thomson Effect**가 발생할 때, 이상 기체 모델 기반의 **Isobaric Fidelity** 무결성이 붕괴되는 임계 조건은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Concept laws-of-thermodynamics-overview
 - 02_Knowledge/01_Industrial_Physics_and_Thermodynamics_Hub/Concept ideal-gas-law-and-state-equations

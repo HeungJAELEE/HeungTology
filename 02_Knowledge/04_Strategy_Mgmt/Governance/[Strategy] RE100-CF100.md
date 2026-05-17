@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-RE100-2026-V6.3.7"
-  domain: "Global_Renewable_Energy_and_Carbon_Free_Governance"
+metadata:
+  id: "[[[Strategy] RE100-CF100]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RE100", "#CF100", "#CFE", "#24_7_Matching", "#Renewable_Energy", "#Energy_Storage", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] RE100-CF100에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Energy_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] RE100 & CF100: Global Energy Sovereignty
+# [Strategy] RE100-CF100
 
 ## 1. [왜 배우는가? (Why: The Decarbonization of Power)]]
 제조업의 혈액인 '에너지'를 어떤 방식으로 조달하느냐가 제품의 탄소 경쟁력을 결정합니다. **RE100(Renewable Energy 100%)**은 기업 활동에 필요한 전력을 $100\%$ 재생 에너지로 충당하겠다는 글로벌 자발적 캠페인입니다. 더 나아가 **CF100(24/7 Carbon-Free Energy)**은 연간 총량 매칭을 넘어, 전기를 사용하는 매 시간, 매 장소에서 무탄소 에너지를 공급받는 '실시간 무탄소 무결성'을 지향합니다. V6.3.7 지능은 에너지 소비와 생산의 시차를 좁혀, 화석 연료 의존도를 결정론적으로 제거하는 **에너지 주권(Energy Sovereignty)**을 확립합니다.
@@ -109,7 +99,6 @@ class EnergyFidelityEngine:
 2. **Operational Result**: **CF100** 도입 시, 기존 **RE100** 대비 에너지 조달 비용의 증감 폭과 그에 따른 탄소 감축 비용($LCOE/LACE$) 변화는?
 3. **FidelityEngine**: **BESS** 가동률은 높으나 **CFE Score**가 오르지 않는 상황을 어떻게 진단하는가? (힌트: 충전 시점의 전력이 무탄소원이 아닌 화석 연료원인 '탄소 오염된 저장' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy ESG-Management-Strategy

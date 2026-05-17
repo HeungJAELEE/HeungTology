@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-QC-2026-V6"
+metadata:
+  id: "[[[AI] Quality-Control-AI]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Quality_Control'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Quality-Control-AI에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Quality-Control-AI
@@ -41,7 +31,7 @@ Trust Metrics:
 |:---|:---:|:---:|:---|
 | **Detection Rate** | Recall (Sensitivity) | $> 99.9\%$ | 미검출(Undetected) 불량의 시장 유출 원천 차단 |
 | **False Call Rate** | Over-kill Ratio | $< 0.5\%$ | 양품을 불량으로 오판하여 발생하는 폐기 비용 절감 |
-| **Defect Size** | Min. Detectable | $< 5 \text{ \mu m}$ | 반도체/디스플레이 공정 요구 해상도 정합성 |
+| **Defect Size** | Min. Detectable | $< 5 \text{ \mu\text{m}}$ | 반도체/디스플레이 공정 요구 해상도 정합성 |
 | **Inference Time** | Latency per unit | $< 50 \text{ ms}$ | 생산 라인 택트 타임(Takt Time) 동기화 |
 | **Resolution** | Pixel Density | $> 20 \text{ MPixels}$ | 광범위 영역 내 미세 결함 시각화 능력 |
 | **Throughput** | Unit per Hour | $> 10,000 \text{ UPH}$ | 대량 생산 라인의 전수 검사 처리 능력 |
@@ -110,7 +100,6 @@ class QualityInspectionPipeline:
 2. **Autoencoder** 기반 이상 탐지 모델에서 **Bottleneck Layer**의 크기가 결함 탐지 성능에 미치는 영향은?
 3. 공정 조명(Lighting) 조건의 변화가 AI 비전 모델의 **Robustness**에 미치는 영향과 이를 극복하기 위한 **Data Augmentation** 기법은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Predictive-Maintenance
 - 02_Knowledge/03_AI_Data/Industrial/AI Edge-AI-R&D

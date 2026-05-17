@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "motor-design-physics-pmsm-and-induction-motor-theory"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] motor-design-physics-pmsm-and-induction-motor-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The physics and engineering of electrical machines that convert electrical energy into mechanical work (Motor Design), focusing on Permanent Magnet Synchronous Motors (PMSM) for high efficiency and Induction Motors for robustness and simplicity."
-  physical_model: "N/A"
-Semantic:
-  tags: '["motor-design", "pmsm", "induction-motor", "electromagnetics", "torque-physics", "efficiency", "electric-vehicle"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Magnetic_Flux_Audit: Evaluate the back-EMF (Electromotive Force) profile to identify demagnetization in PMSMs or winding insulation breakdown.'
-    - 'Torque_Ripple_Check: Analyze the variations in instantaneous torque to ensure smooth operation and minimize mechanical vibration and noise (NVH).'
-    - 'Thermal_Efficiency_Scan: Monitor the stator and rotor temperatures to prevent irreversible damage to magnets or winding melt-down under peak load.'
-Trust Metrics:
+  description: "[Entity] motor-design-physics-pmsm-and-induction-motor-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Motor Design Physics: PMSM and Induction Motor Theory
+# [Entity] motor-design-physics-pmsm-and-induction-motor-theory
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차의 바퀴를 굴리고, 로봇의 관절을 움직이는 보이지 않는 힘의 근원은 무엇일까요? **모터 설계 물리: PMSM 및 유도 전동기 이론**은 전기에너지를 강력한 회전력으로 바꾸는 **'현대 문명의 근육'**을 설계하는 기술입니다. 영구자석의 강력한 끌림을 이용하는 **PMSM**과, 보이지 않는 자기장의 파도를 타고 달리는 **유도 전동기**는 인류가 전기를 물리적인 힘으로 길들인 최고의 걸작입니다. 에너지 한 방울까지 쥐어짜 내어 더 멀리, 더 조용히 가려는 **'효율의 극한'**을 추구하는 전기역학의 정수입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Abnormal Resistance - Potential Winding Short or Fatigue Identified"
         return "PASS: Efficient Current Flow and Minimal Copper Loss Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(torque_ripple_pct=2.2, stator_temp_c=75.5, back_emf_voltage=315)
 print(engine.diagnose_motor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_motor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data electric-motor-efficiency-and-thermal-profile-v2026`와 연동되어, 전 세계 전기차 및 로봇 모터의 데이터를 실시간 분석하고 탈조(Step-out) 및 소손 사고 확률을 0.001% 이하로 억제함으로써 지능형 동력 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-robot-actuator-design-and-precision-gearing

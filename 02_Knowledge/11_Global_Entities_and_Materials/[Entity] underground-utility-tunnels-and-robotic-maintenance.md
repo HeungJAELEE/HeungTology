@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "underground-utility-tunnels-and-robotic-maintenance-entity"
-  domain: "25_Global_Infrastructure_and_Future_Cities"
+metadata:
+  id: "[[[Entity] underground-utility-tunnels-and-robotic-maintenance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Underground", "#Utility_Tunnels", "#Robotics", "#Maintenance", "#Smart_City", "#Predictive_Maintenance", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_global-infrastructure-and-future-cities-hub", "MOC 21_industrial-ai-and-predictive-maintenance-hub"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] underground-utility-tunnels-and-robotic-maintenance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] underground-utility-tunnels-and-robotic-maintenance
+# [Entity] underground-utility-tunnels-and-robotic-maintenance
 
 ## 1. [왜 배우는가? (Why: The Invisible Organs of the City)]]
 도시의 도로를 파헤치지 않고도 전선, 수도관, 통신선을 어떻게 한꺼번에 관리하고, 좁고 위험한 지하 터널 속에서 로봇들이 알아서 가스 누출이나 화재 징후를 찾아내어 스스로 수리하는 '지능형 지하 공동구'를 어떻게 구축할 수 있을까요? **지하 공동구 및 로봇 유지 보수**는 문명의 생명선을 수호하는 '지하 인프라 통합 및 자율 관리 지침'입니다. 우리가 이를 배우는 이유는 도시가 거대해질수록 지상의 혼란 없이 인프라를 유지하는 것이 필수적이기 때문이며, "지하의 통로를 데이터로 설계하고 지배하는 '글로벌 인프라 안보 및 자율 정비 주권'을 확보하기" 위함입니다. 지하의 안정성이 도시의 가동 신뢰도를 결정합니다.

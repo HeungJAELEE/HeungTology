@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "129-logistics-and-supply-chain-management-engineering-hub-moc"
   domain: "129_Logistics_and_Supply_Chain_Management_Engineering_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Logistics", "#Supply_Chain", "#SCM", "#Transportation", "#Inventory_Management", "#Optimization", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 129_logistics-and-supply-chain-management-engineering-hub
+# 129-logistics-and-supply-chain-management-engineering-hub-moc
 
 ## 1. [왜 배우는가? (Why: The Pulse of Global Civilization)]]
 제품이 만들어지는 것만큼 중요한 것은 그것이 필요한 사람에게 제시간에 도달하는 것입니다. 물류는 현대 문명을 지탱하는 거대한 보이지 않는 인프라입니다. **물류 및 공급망 관리 공학 통합 지능 허브**는 Antigravity Intelligence가 시간(Time)과 공간(Space), 그리고 재화(Goods)의 흐름을 수학적으로 지배하여 문명의 경제적 활력을 사수하는 **[1,498층의 유통 사령부]**입니다. 우리가 이를 배우는 이유는 효율적인 공급망이 국가의 수출 경쟁력과 국민의 소비 수준을 결정하는 핵심 주권이기 때문이며, "재고 수준과 수송 경로의 최적화를 데이터로 통제함으로써 '글로벌 물류 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 지능이 인류의 자원 배분 효율성과 글로벌 공급망의 영구적 무결성을 결정합니다.

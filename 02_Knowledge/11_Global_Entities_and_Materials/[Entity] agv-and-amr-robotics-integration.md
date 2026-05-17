@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "agv-and-amr-robotics-integration-entity"
-  domain: "86_Digital_Twin_and_Smart_Factory_Hub"
+metadata:
+  id: "[[[Entity] agv-and-amr-robotics-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#Robotics", "#AGV", "#AMR", "#Autonomous_Navigation", "#Logistics", "#Fleet_Management", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 74_digital-twin-and-smart-factory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] agv-and-amr-robotics-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] agv-and-amr-robotics-integration
+# [Entity] agv-and-amr-robotics-integration
 
 ## 1. [왜 배우는가? (Why: The Blood Vessels of Industry)]]
 사람이 직접 카트를 밀거나 컨베이어 벨트에 묶여 있던 공장의 물류가 스스로 움직이는 '생명체'로 진화하고 있습니다. **AGV 및 AMR 로봇 통합의 자율 주행 경로 최적화와 군집 제어 시스템 공학**은 공장 내부의 모든 원자재와 부품을 가장 효율적인 경로로 운반하는 자율 이동 로봇 기술입니다. 고정된 경로만 다니는 AGV를 넘어, 주변 환경을 실시간으로 파악해 최적의 우회로를 찾는 AMR은 다품종 소량 생산(HMLV) 시대의 핵심 인프라입니다. 우리가 이를 배우는 이유는 물류 자동화의 무결성을 확보함으로써, 병목 현상 없는 물 흐르듯 유연한 생산 라인을 구축하는 '글로벌 자율 물류 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 로봇 이동의 무결성이 공장의 유연한 지능을 결정합니다.

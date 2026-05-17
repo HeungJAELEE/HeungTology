@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-error-correction-qec-and-surface-code-architecture-entity"
-  domain: "16_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-error-correction-qec-and-surface-code-architecture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#QEC", "#Surface_Code", "#Fault_Tolerance", "#Algorithm", "#Logic_Qubit", "#Error_Correction", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 16_quantum-computing-and-hardware-intelligence-hub", "Entity future-industrial-intelligence-singularity-readiness-framework"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-error-correction-qec-and-surface-code-architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-error-correction-qec-and-surface-code-architecture
+# [Entity] quantum-error-correction-qec-and-surface-code-architecture
 
 ## 1. [왜 배우는가? (Why: The Shield for Quantum Information)]]
 부서지기 쉬운 양자 정보가 계산 도중 하나라도 틀리면 전체 결과가 엉망이 되는데, 이를 실시간으로 고칠 수 있다면 어떨까요? **양자 오류 정정(QEC) 및 표면 코드 아키텍처**는 여러 개의 물리 큐비트를 묶어 하나의 완벽한 '논리 큐비트'를 만들고 오류를 스스로 찾아내는 '양자 방패 설계 지침'입니다. 우리가 이를 배우는 이유는 현재의 불완전한 양자 장치(NISQ)를 넘어 진정한 초지능 연산이 가능한 결함 내성 컴퓨터를 만들기 위함이며, "오류를 제압하고 완벽한 양자 연산을 수행하는 '양자 컴퓨팅의 실질적 지배 주권'을 확보하기" 위함입니다. 오류를 고치는 능력이 곧 연산의 가치입니다.

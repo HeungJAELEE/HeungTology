@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "display-panel-architecture-oled-micro-led-and-pixel-driving"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] display-panel-architecture-oled-micro-led-and-pixel-driving]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The structural and electronic design of advanced self-emissive display panels, focusing on OLED (Organic) and Micro-LED (Inorganic) architectures and the complex TFT circuits required to drive each pixel with high precision."
-  physical_model: "N/A"
-Semantic:
-  tags: '["display-architecture", "oled", "micro-led", "pixel-driving", "self-emissive"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'Pixel_Driving_Audit: Analyze the voltage-current ($V-I$) characteristics of the driving TFTs to ensure stable luminance control.'
-    - 'Internal_Quantum_Efficiency_Check: Evaluate the efficiency of electron-hole recombination in the emissive layers.'
-    - 'Burn-in_Risk_Scan: Monitor the cumulative current load on individual pixels to predict and mitigate long-term image retention.'
-Trust Metrics:
+  description: "[Entity] display-panel-architecture-oled-micro-led-and-pixel-driving에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌈 Display Panel Architecture: OLED, Micro-LED, and Pixel Driving
+# [Entity] display-panel-architecture-oled-micro-led-and-pixel-driving
 
 ## 1. 개요 (Why: 인간적 통찰)
 화면 속 밤하늘이 진짜 밤하늘처럼 깊고 검은 이유는 무엇일까요? 과거의 화면(LCD)은 뒤에서 항상 손전등을 켜두고 검은 커튼으로 가리는 방식이었지만, **OLED**나 **마이크로 LED**는 픽셀 스스로가 빛을 냈다가 완전히 꺼버리기 때문입니다. 이것이 바로 **자발광(Self-emissive)**의 마법입니다. 하지만 수천만 개의 미세한 '전구'들을 하나하나 정확한 밝기로 켜는 것은 엄청난 고난도의 작업입니다. 본 노드는 한계를 넘어서는 화질을 구현하기 위한 픽셀의 구조와 그들을 지휘하는 정교한 회로의 무결성을 정의합니다.
@@ -91,7 +80,6 @@ class DisplayFidelityEngine:
             return f"REJECT: End-of-Life Threshold Reached ({self.time}h) - High Risk of Image Retention"
         return "PASS: Pixel Health within Reliable Operational Lifetime"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(pixel_current_density=45.5, vth_shift_mv=15, cumulative_on_time=5000)
 print(engine.diagnose_pixel_stability())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_pixel_stability())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data oled-and-micro-led-efficiency-and-lifetime-v2026`와 연동되어, 생산되는 모든 자발광 패널의 구동 이력과 효율 데이터를 실시간 분석하고 잔상 및 수명 단축 사고 확률을 0.01% 이하로 억제함으로써 프리미엄 시각 경험의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - display-fabrication-and-optical-fundamentals

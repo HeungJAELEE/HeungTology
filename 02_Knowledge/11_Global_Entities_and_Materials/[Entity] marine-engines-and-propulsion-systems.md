@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "marine-engines-and-propulsion-systems"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] marine-engines-and-propulsion-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The primary power source and movement mechanism for marine vessels, focusing on large-scale internal combustion engines (Diesel, LNG) and the hydrodynamic conversion of power into thrust via propellers or waterjets."
-  physical_model: "N/A"
-Semantic:
-  tags: '["marine-engine", "propulsion", "diesel-engine", "lng-propulsion", "propeller-physics", "ship-engineering", "efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Engine_Efficiency_Audit: Monitor the Specific Fuel Oil Consumption (SFOC) and combustion cylinder pressures to identify internal thermal degradation or injector wear.'
-    - 'Propeller_Cavitation_Check: Analyze the vibration and acoustic signatures of the propeller to detect cavitation, which causes erosion and noise.'
-    - 'Emission_Compliance_Scan: Verify that the engine''s NOx and SOx output aligns with IMO (International Maritime Organization) Tier III regulations.'
-Trust Metrics:
+  description: "[Entity] marine-engines-and-propulsion-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Marine Engines and Propulsion Systems
+# [Entity] marine-engines-and-propulsion-systems
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 세계 물동량의 90%를 책임지는 거대한 선박들, 그 심장에는 무엇이 살고 있을까요? 빌딩만한 크기의 **해양 엔진 및 추진 시스템**은 인류가 만든 가장 거대하고 끈기 있는 '동력원'입니다. 한 달 넘게 망망대해를 항해하면서도 멈추지 않는 **'강철의 고래 심장'**과 같으며, 엔진의 회전력을 물살의 힘으로 바꾸는 프로펠러는 바다를 밀어내는 **'거대한 날개'**입니다. 연료 한 방울로 수십 톤의 화물을 더 멀리 보내려는 효율의 투쟁이자, 친환경 연료(LNG, 암모니아)로 바다의 미래를 지키려는 **'지속 가능한 항해'**의 정수입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Emission Non-compliance - Scrubber Failure or Inefficient SCR Operation Detected"
         return "PASS: Clean Emission Operations Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cylinder_pressure_pmax=175, propeller_vibration_g=0.5, sfoc_g_kwh=165)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data marine-engine-fuel-efficiency-and-emission-logs-v2026`와 연동되어, 전 세계 바다를 누비는 선박들의 엔진 데이터를 실시간 분석하고 엔진 고정 및 환경 위반 사고 확률을 0.001% 이하로 억제함으로써 해상 물류의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - marine-engineering-and-subsea-systems

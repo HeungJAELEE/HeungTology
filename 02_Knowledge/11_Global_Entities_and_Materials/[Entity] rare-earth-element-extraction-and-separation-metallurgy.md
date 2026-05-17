@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "rare-earth-element-extraction-and-separation-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] rare-earth-element-extraction-and-separation-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The metallurgical process of recovering rare earth elements (REEs) from ores (Extraction) and the complex chemical techniques used to isolate individual elements with high purity (Separation Metallurgy), which are essential for magnets, batteries, and advanced electronics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["rare-earth", "extraction", "separation-metallurgy", "solvent-extraction", "critical-minerals", "metallurgy", "green-technology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Extraction_Fidelity_Audit: Evaluate the distribution ratio ($D$) of the target rare earth element to ensure maximum recovery from the aqueous leach solution into the organic phase.'
-    - 'Purity_Integrity_Check: Analyze the separation factor ($\\beta$) between adjacent rare earth elements (e.g., Nd and Pr) to verify that the final product meets 99.99%+ purity standards.'
-    - 'Chemical_Reagent_Scan: Monitor the pH and concentration of extractants (e.g., P507) to identify potential process drifts that could cause cross-contamination between elements.'
-Trust Metrics:
+  description: "[Entity] rare-earth-element-extraction-and-separation-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Rare Earth Element Extraction and Separation Metallurgy
+# [Entity] rare-earth-element-extraction-and-separation-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차의 강력한 모터와 스마트폰의 고성능 스피커 속에는 '산업의 비타민'이라 불리는 신비한 금속들이 숨어 있습니다. **희토류 추출 및 분리 야금**은 흙 속에 아주 미세하게 섞여 있는 이 귀한 원소들을 한 땀 한 땀 골라내는 **'원자 단위의 정제술'**입니다. 란타넘부터 루테튬까지 성질이 너무나 비슷한 17형제들을 화학적 '분별 추출'을 통해 99.99% 이상의 순도로 분리해냅니다. 첨단 기술 문명을 움직이는 가장 강력하고 희귀한 **'전략적 자원 공학'**의 정수입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Radioactive Leakage detected in Raffinate - Thorium/Uranium co-extraction error. Activate Emergency Containment"
         return "PASS: Safe Tailings Management and Verified Environmental Compliance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(solvent_loading_pct=75.0, stage_ph_deviation=0.02, final_purity_pct=99.995)
 print(engine.diagnose_ree_separation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ree_separation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ree-purity-and-solvent-extraction-yield-v2026`와 연동되어, 전 세계 주요 희토류 생산지의 화학 데이터를 실시간 분석하고 불순물 혼입 및 환경 사고 확률을 0.001% 이하로 억제함으로써 지능형 첨단 산업의 소재 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-casting-and-investment-molding-metallurgy

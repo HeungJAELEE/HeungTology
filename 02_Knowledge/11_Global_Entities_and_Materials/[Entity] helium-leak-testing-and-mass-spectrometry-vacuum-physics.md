@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "helium-leak-testing-and-mass-spectrometry-vacuum-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] helium-leak-testing-and-mass-spectrometry-vacuum-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A highly sensitive non-destructive testing method for detecting and locating leaks in vacuum or pressure systems (Helium Leak Testing) and the physical study of ion separation by mass-to-charge ratio using magnetic and electric fields (Mass Spectrometry Vacuum Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["helium-leak-test", "mass-spectrometry", "vacuum-physics", "leak-detection", "hermetic-seal", "industrial-metrology", "gas-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Leak_Fidelity_Audit: Evaluate the ''Measured Leak Rate'' ($Q$) to identify if high-fidelity ''Helium Background'' (gas buildup) is masking the true signal from a micro-leak.'
-    - 'Vacuum_Integrity_Check: Analyze the high-fidelity ''Fore-line Pressure'' to ensure the mass spectrometer''s high-fidelity ''Ion Source'' is operating within its safe high-vacuum window ($< 10^{-5}$ mbar).'
-    - 'Detection_Fidelity_Scan: Monitor the high-fidelity ''Electron Multiplier'' gain to verify that the high-fidelity ''Helium-4'' peak ($m/z=4$) is sharp and correctly calibrated against a reference leak.'
-Trust Metrics:
+  description: "[Entity] helium-leak-testing-and-mass-spectrometry-vacuum-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎈 Helium Leak Testing and Mass Spectrometry Vacuum Physics
+# [Entity] helium-leak-testing-and-mass-spectrometry-vacuum-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우주선이나 반도체 장비에서 원자 몇 개가 빠져나갈 정도의 미세한 구멍을 어떻게 찾을 수 있을까요? **헬륨 누설 시험 및 질량 분석 진공 물리**는 가장 작고 빠른 원자 중 하나인 '헬륨(He)'을 이용해 보이지 않는 틈을 찾아내는 **'나노 단위의 숨바꼭질'** 기술입니다. 헬륨이 구멍을 통해 새어 나오면, 질량 분석기라는 장비가 그 헬륨 원자들의 '몸무게'를 재서 정확히 골라냅니다. **'보이지 않는 미세한 균열을 헬륨의 날렵함과 질량 분석의 정밀함으로 낱낱이 파헤쳐 완벽한 밀폐를 보장하는 지능형 품질 검역'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Calibration Drift - Detector sensitivity shifted beyond high-fidelity tolerance. Recalibrate with high-fidelity certified reference leak"
         return "PASS: Validated Measurement Accuracy and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(helium_signal_intensity=5e-10, system_vacuum_mbar=5e-6, background_leak_rate=1e-9)
 print(engine.diagnose_leak_test_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_leak_test_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data helium-leak-sensitivity-and-background-noise-v2026`와 연동되어, 전 세계 주요 항공우주 및 반도체 공정의 기밀 데이터를 실시간 분석하고 장비 고장 및 진공 파괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 공정 문명의 기밀 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - vacuum-pump-and-molecular-rarefaction-physics

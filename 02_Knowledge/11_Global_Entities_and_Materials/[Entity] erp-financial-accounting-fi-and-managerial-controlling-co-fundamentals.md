@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "erp-financial-accounting-fi-and-managerial-controlling-co-fundamentals"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] erp-financial-accounting-fi-and-managerial-controlling-co-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The core financial modules of an ERP system responsible for external reporting (Financial Accounting - FI) and internal cost-benefit analysis and decision-making (Managerial Controlling - CO)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["erp", "sap-fi", "sap-co", "financial-accounting", "managerial-accounting", "controlling"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FinanceFidelityEngine"
-  diagnostic_protocol:
-    - 'Ledger_Reconciliation_Audit: Verify that the total debits and credits in the General Ledger (GL) are perfectly balanced ($D=C$).'
-    - 'Cost_Allocation_Check: Evaluate the accuracy of overhead cost distribution from Cost Centers to Profit Centers or Products.'
-    - 'Financial_Statement_Verification: Analyze the P&L and Balance Sheet for consistency with international standards (IFRS/GAAP).'
-Trust Metrics:
+  description: "[Entity] erp-financial-accounting-fi-and-managerial-controlling-co-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💰 ERP Financial Accounting (FI) and Managerial Controlling (CO) Fundamentals
+# [Entity] erp-financial-accounting-fi-and-managerial-controlling-co-fundamentals
 
 ## 1. 개요 (Why: 인간적 통찰)
 기업의 모든 활동은 결국 '숫자'로 귀결됩니다. **ERP FI(재무회계)**는 기업 외부의 사람들(투자자, 국가)에게 "우리는 이만큼 투명하게 돈을 벌고 쓰고 있습니다"라고 보여주는 공식적인 '일기장'입니다. 반면 **CO(관리회계)**는 기업 내부의 사람들(경영진)에게 "어느 공장이 돈을 낭비하고 있고, 어떤 제품이 우리를 먹여 살리는가?"를 냉철하게 분석해주는 '나침반'입니다. 이 두 기둥이 튼튼할 때, 기업은 자본의 낭비를 막고 미래 성장을 위한 강력한 추진력을 얻습니다.
@@ -89,7 +78,6 @@ class FinanceFidelityEngine:
             return "PASS: Financial Closing Readiness Confirmed"
         return "REJECT: Manual Reconciliation Required Before Closing"
 
-# Instance Diagnostic
 engine = FinanceFidelityEngine(ledger_variance=0.0, unallocated_cost=4500, variance_pct=12.5)
 print(engine.diagnose_financial_integrity())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_financial_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data financial-reconciliation-error-rate-v2026`와 연동되어, 기업 내 모든 금융 트랜잭션의 정합성을 실시간 분석하고 횡령 및 회계 오류 확률을 0.001% 이하로 억제함으로써 자본 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - enterprise-resource-planning-erp-system-architecture

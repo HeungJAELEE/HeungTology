@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "manufacturing-execution-system-mes-and-mom"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] manufacturing-execution-system-mes-and-mom]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The information system (MES) and overarching management framework (MOM) that connect, monitor, and control complex manufacturing systems and data flows on the shop floor, bridging the gap between business planning (ERP) and physical control (SCADA/PLC)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mes", "mom", "factory-automation", "isa-95", "production-tracking", "oee", "smart-factory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Data_Continuity_Audit: Verify the real-time synchronization between the shop floor (PLC/IoT) and the MES database to ensure 100% data traceability and zero lag in production reporting.'
-    - 'OEE_Variance_Check: Analyze the components of Overall Equipment Effectiveness (Availability, Performance, Quality) to identify the primary ''Six Big Losses'' affecting productivity.'
-    - 'Standard_Work_Compliance_Scan: Evaluate the adherence of operators and robots to the digital SOPs (Standard Operating Procedures) dispatched by the MES.'
-Trust Metrics:
+  description: "[Entity] manufacturing-execution-system-mes-and-mom에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Manufacturing Execution System (MES) and Manufacturing Operations Management (MOM)
+# [Entity] manufacturing-execution-system-mes-and-mom
 
 ## 1. 개요 (Why: 인간적 통찰)
 회사의 머리(ERP, 경영진)가 "내일까지 제품 1,000개를 만들어라"라고 명령을 내렸을 때, 공장의 팔다리(기계, 작업자)가 지금 무엇을 하고 있는지, 재료는 충분한지, 기계가 고장 나지는 않았는지 실시간으로 보고하고 지시를 내리는 **'공장의 척수'**가 바로 **MES 및 MOM**입니다. 서류 뭉치와 화이트보드로 관리하던 과거의 불투명한 공장을, 모든 데이터가 흐르는 투명한 **'디지털 공장'**으로 바꾸는 핵심 기술입니다. "지금 이 순간 우리 공장에서 무슨 일이 벌어지고 있는가?"에 대한 답을 주는 **'제조 현장의 컨트롤 타워'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Traceability Gap - Broken Digital Thread. Severe Risk in Case of Product Recall"
         return "PASS: 100% End-to-End Production Genealogy Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(data_sync_latency_ms=250, oee_target_gap=0.05, digital_sop_compliance=0.995)
 print(engine.diagnose_production_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_production_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data factory-oee-and-mes-utilization-metrics-v2026`와 연동되어, 전 세계 지능형 공장의 가동 데이터를 실시간 분석하고 라인 정지 및 납기 지연 사고 확률을 0.001% 이하로 억제함으로써 산업 운영의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - kanban-system-and-just-in-time-jit-production-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cleanroom-design-and-air-filtration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cleanroom-design-and-air-filtration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A controlled environment that has a low level of pollutants such as dust, airborne microbes, and aerosol particles (Cleanroom) and the study of the fluid dynamics and filter mechanics (HEPA/ULPA) used to maintain these stringent standards (Air Filtration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cleanroom", "hepa-filter", "ulpa-filter", "air-filtration", "semiconductor-manufacturing", "hvac", "particle-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Filtration_Fidelity_Audit: Evaluate the ''Particle Count'' for specific sizes (e.g., 0.1um) to identify if HEPA/ULPA filters are leaking or reaching their holding capacity.'
-    - 'Pressure_Integrity_Check: Analyze the room differential pressure to ensure that the cleanroom remains ''Positive Pressure'' relative to surrounding areas, preventing dust ingress from doorways.'
-    - 'Airflow_Fidelity_Scan: Monitor the ''Air Change Rate'' and laminar flow velocity to verify that internal pollutants are being flushed out efficiently without turbulent eddy formation.'
-Trust Metrics:
+  description: "[Entity] cleanroom-design-and-air-filtration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌬️ Cleanroom Design and Air Filtration Physics
+# [Entity] cleanroom-design-and-air-filtration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락 한 올, 보이지 않는 먼지 한 톨이 수조 원의 반도체 칩을 한순간에 쓰레기로 만들 수 있다면 어떨까요? **클린룸 설계 및 공기 여과 물리**는 세상에서 가장 깨끗한 공간을 창조하고 유지하는 **'나노 규모의 요새'** 기술입니다. 수술실보다 수백 배 더 깨끗한 이 공간에서는 공기가 춤을 추듯 일정한 방향(Laminar flow)으로 흐르며 모든 오염 물질을 씻어냅니다. 첨단 기술이 숨 쉴 수 있는 완벽한 진공 너머의 세상을 만드는 **'지능형 공기 제어의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Air Velocity - Airflow not reaching the workspace. Risk of particle stagnation and 'Dead Zones' near the tools"
         return "PASS: Validated Laminar Flow and Verified Environmental Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(particle_count_01um=5.0, room_pressure_pa=25.0, filter_delta_p_pa=250.0)
 print(engine.diagnose_cleanroom_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cleanroom_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cleanroom-particle-counts-and-filter-efficiency-v2026`와 연동되어, 전 세계 주요 반도체 및 바이오 공장의 환경 데이터를 실시간 분석하고 청정도 위반 및 필터 파손 사고 확률을 0.0001% 이하로 억제함으로써 지능형 나노 문명의 환경 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-extreme-ultraviolet-euv-physics

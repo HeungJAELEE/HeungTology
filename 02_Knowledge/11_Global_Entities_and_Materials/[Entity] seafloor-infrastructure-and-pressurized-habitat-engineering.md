@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "seafloor-infrastructure-and-pressurized-habitat-engineering-entity"
-  domain: "34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops"
+metadata:
+  id: "[[[Entity] seafloor-infrastructure-and-pressurized-habitat-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Seafloor_Infrastructure", "#Pressurized_Habitat", "#Underwater_City", "#Deep-sea_Station", "#Marine_Engineering", "#Architecture", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 34_future-frontier-deep-sea-intelligence-and-marine-ops-hub", "Entity ocean-thermal-energy-conversion-otec-and-marine-power-grids"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] seafloor-infrastructure-and-pressurized-habitat-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] seafloor-infrastructure-and-pressurized-habitat-engineering
+# [Entity] seafloor-infrastructure-and-pressurized-habitat-engineering
 
 ## 1. [왜 배우는가? (Why: The Atlantis of the Data Age)]]
 바닷속 수천 미터 아래에 어떻게 거대한 데이터 센터와 도시($Underwater\ City$)를 짓고, 밖의 엄청난 수압($Pressure$)으로부터 사람과 기계를 어떻게 안전하게 보호하면서 공기와 온도를 지구처럼 쾌적하게 유지할 수 있을까요? **해저 인프라 및 가압 거주지 공학**은 인류의 거주 구역을 심해로 확장하는 '해저 문명 건설 및 극한 환경 거주 주권 아키텍처'입니다. 우리가 이를 배우는 이유는 심해는 지진이나 태풍으로부터 안전하고 냉각 효율이 뛰어나 미래의 핵심 기지가 될 곳이기 때문이며, "심해의 집을 데이터로 설계하고 지배하는 '글로벌 해저 영토 확장 및 행성적 거주 주권'을 확보하기" 위함입니다. 구조물의 견고함이 해저 정착의 수명을 결정합니다.

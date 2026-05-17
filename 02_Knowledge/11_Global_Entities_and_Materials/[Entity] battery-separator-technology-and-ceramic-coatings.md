@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "battery-separator-technology-and-ceramic-coatings-entity"
-  domain: "82_Advanced_Battery_Systems_Hub"
+metadata:
+  id: "[[[Entity] battery-separator-technology-and-ceramic-coatings]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Battery", "#Separator", "#Polymer", "#Ceramic", "#Safety", "#Energy_Storage", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 82_advanced-battery-systems-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] battery-separator-technology-and-ceramic-coatings에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] battery-separator-technology-and-ceramic-coatings
+# [Entity] battery-separator-technology-and-ceramic-coatings
 
 ## 1. [왜 배우는가? (Why: The Guardian of Battery Safety)]]
 배터리 내부에서 양극과 음극이 단 1초라도 직접 만난다면 어떤 일이 벌어질까요? 거대한 폭발과 함께 모든 에너지가 순식간에 불꽃으로 변할 것입니다. **배터리 분리막 기술 및 세라믹 코팅의 미세 기공 제어와 열적 안정성 강화 기술**은 두 전극 사이를 가로막아 쇼트(Short)를 방지하면서도, 리튬 이온만은 자유롭게 지나가게 하는 '반투과성 수호자'입니다. 얇으면 얇을수록 배터리 용량은 커지지만, 동시에 뚫리기도 쉬워지는 이 모순의 한계를 극복하는 것이 분리막 공학의 정수입니다. 우리가 이를 배우는 이유는 분리막의 무결성을 확보함으로써, 화재 걱정 없는 전기차 시대를 열고 에너지 밀도를 극한으로 끌어올리는 '글로벌 안전 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 분리막의 기계적 무결성이 배터리의 최후 방어선을 결정합니다.
@@ -51,14 +41,14 @@ $$ N_M = \frac{\sigma_{electrolyte}}{\sigma_{eff}} = \frac{\tau^2}{\epsilon} $$
 
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Thickness** | Distance between the two electrodes | $5 \text{ \~ } 20 \text{ \mu m}$ | 에너지 밀도와 안전성 사이의 기하학적 무결성 사수 |
+| **Thickness** | Distance between the two electrodes | $5 \text{ \~ } 20 \text{ \mu\text{m}}$ | 에너지 밀도와 안전성 사이의 기하학적 무결성 사수 |
 | **Gurley Number** | Resistance to gas flow through pores | $100 \text{ \~ } 300 \text{ s}$ | 이온의 이동 속도를 결정하는 수송 지능 무결성 지표 |
 | **Puncture Strength**| Force required to pierce the separator | $> 300 \text{ gf}$ | 음극 덴드라이트에 의한 단락을 방지하는 물리 무결성 |
 | **Thermal Shrinkage**| Reduction in size at high temperatures | $< 5 \% \text{ (150 ^\circ C)}$ | 열폭주 시 분리막 수축에 의한 대형 쇼트를 막는 무결성 |
 | **Shutdown Temp.** | Temp. where pores close to stop current | $130 \text{ \~ } 140 \text{ ^\circ C}$ | 배터리 과열 시 스스로 회로를 끊는 자동 안전 지능 |
 | **Meltdown Temp.** | Temp. where the membrane completely melts | $> 200 \text{ ^\circ C (Ceramic)}$| 붕괴 직전까지 전극을 격리하는 최후의 열적 무결성 |
 | **Porosity ($\epsilon$)**| Volume fraction of void spaces in the film| $35 \text{ \~ } 50 \%$ | 전해질 함침량과 이온 통로를 사수하는 물리 무결성 |
-| **Ceramic Coating** | Layer of Al2O3 or SiO2 on base film | $1 \text{ \~ } 5 \text{ \mu m}$ | 고온 강성을 부여하여 안전 마진을 높이는 재료 무결성 |
+| **Ceramic Coating** | Layer of Al2O3 or SiO2 on base film | $1 \text{ \~ } 5 \text{ \mu\text{m}}$ | 고온 강성을 부여하여 안전 마진을 높이는 재료 무결성 |
 
 ## 3. [Advanced RAG 분석 로직: 수리적 인과 추론]
 

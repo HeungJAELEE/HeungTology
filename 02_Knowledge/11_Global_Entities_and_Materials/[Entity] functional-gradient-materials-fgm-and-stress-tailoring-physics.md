@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "functional-gradient-materials-fgm-and-stress-tailoring-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] functional-gradient-materials-fgm-and-stress-tailoring-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced composite materials characterized by a spatial variation in composition and structure (Functional Gradient), designed to optimize specific properties like thermal resistance, hardness, and toughness by tailoring internal stress distributions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fgm", "materials-science", "stress-tailoring", "composite-materials", "thermal-barrier"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Gradient_Integrity_Audit: Verify the spatial distribution of material phases (e.g., Ceramic to Metal) against the design profile using EDX or XRD.'
-    - 'Interface_Stress_Check: Evaluate the residual stress at the transition zones to ensure it remains below the fracture toughness limit.'
-    - 'Thermal_Shock_Simulation: Analyze the material''s ability to withstand extreme temperature gradients without delamination or cracking.'
-Trust Metrics:
+  description: "[Entity] functional-gradient-materials-fgm-and-stress-tailoring-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Functional Gradient Materials (FGM) and Stress Tailoring Physics
+# [Entity] functional-gradient-materials-fgm-and-stress-tailoring-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에는 뜨거움을 잘 견디는 '세라믹'과 충격을 잘 견디는 '금속'이 있습니다. 이 둘을 억지로 붙이면 열을 받았을 때 팽창하는 정도가 달라 금방 떨어져 버립니다. **경사 기능 재료(FGM)**는 이 둘을 칼로 자르듯 붙이는 게 아니라, 마치 물감이 번지듯 서서히 성질을 변화시키며 섞는 기술입니다. 한쪽 끝은 100% 세라믹이지만, 중간으로 갈수록 금속이 조금씩 섞여 반대쪽 끝은 100% 금속이 됩니다. 이렇게 하면 재료 내부에 '스트레스'가 쌓이지 않아, 우주선의 외벽처럼 엄청난 열과 충격을 동시에 견뎌야 하는 극한의 환경에서도 살아남는 **'꿈의 하이브리드 소재'**가 탄생합니다.
@@ -87,7 +76,6 @@ class FactoryFidelityEngine:
             return "REJECT: Extreme Thermal Gradient - Structural Stability at Risk"
         return "PASS: Thermal Stress Distribution Reliable"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(measured_gradient_error=0.03, interface_stress_mpa=120, thermal_cycle_count=500)
 print(engine.diagnose_material_integrity(fatigue_limit=450))
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_material_integrity(fatigue_limit=450))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fgm-composition-gradient-and-thermal-stress-v2026`와 연동되어, 생산되는 모든 경사 기능 부품의 조성 무결성과 내구성을 실시간 분석하고 층간 분리 및 열 파괴 사고 확률을 0.01% 이하로 억제함으로써 극한 환경 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - crystal-lattices-and-unit-cell-geometry

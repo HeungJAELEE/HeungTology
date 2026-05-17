@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "elevator-dispatching-and-group-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] elevator-dispatching-and-group-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A system that manages multiple elevators in a building to transport passengers efficiently (Elevator Dispatching) and the control logic that minimizes waiting times and energy consumption using advanced algorithms (Group Control Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["elevator-control", "dispatching", "group-control", "traffic-management", "optimization", "smart-building", "vertical-transportation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Dispatch_Fidelity_Audit: Evaluate the ''Average Waiting Time'' (AWT) across peak hours to identify if the group control algorithm is failing to manage ''Bunching'' (multiple elevators arriving at once).'
-    - 'Energy_Integrity_Check: Analyze the specific energy consumption per passenger trip to ensure the ''Eco-mode'' dispatching is effectively balancing speed vs. sustainability.'
-    - 'Traffic_Fidelity_Scan: Monitor the destination floor distribution to verify that the ''Destination Control System'' (DCS) is correctly grouping passengers to minimize the high-fidelity $N_{stops}$ parameter.'
-Trust Metrics:
+  description: "[Entity] elevator-dispatching-and-group-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Elevator Dispatching and Group Control Logic
+# [Entity] elevator-dispatching-and-group-control-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십 층 높이의 빌딩에서 엘리베이터 버튼을 눌렀을 때, 여러 대 중 어떤 엘리베이터가 나에게 와야 가장 빠를까요? **엘리베이터 배차 및 그룹 제어 로직**은 수많은 사람의 '목적지'와 엘리베이터들의 '위치'를 분석해 가장 효율적인 경로를 찾아주는 **'빌딩 안의 관제탑'** 기술입니다. 단순히 가까운 차를 보내는 것이 아니라, 미래의 교통량을 예측해 사람들을 끼리끼리 묶어주고(Grouping) 에너지 낭비를 막는 **'수직 이동의 지능형 사령부이자 도시 생활의 리듬을 조절하는 숨은 공신'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Low Grouping Efficiency - Destination control system grouping random floors. Increases stops per trip and waiting times. Re-calibrate traffic learning model"
         return "PASS: Validated Destination Clustering and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(avg_wait_time_s=18.5, peak_handling_pct=15.0, energy_per_trip_wh=22.0)
 print(engine.diagnose_dispatch_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_dispatch_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data elevator-waiting-time-and-traffic-patterns-v2026`와 연동되어, 전 세계 주요 랜드마크 빌딩의 수직 교통 데이터를 실시간 분석하고 대기 시간 폭주 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 스마트 빌딩 문명의 이동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - energy-management-system-ems-and-iso-50001-compliance-logic

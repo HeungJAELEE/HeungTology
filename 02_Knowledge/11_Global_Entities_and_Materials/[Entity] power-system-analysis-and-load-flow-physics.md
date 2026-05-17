@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "power-system-analysis-and-load-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] power-system-analysis-and-load-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical and physical study of how electrical power is distributed and flows through a complex network (Power System Analysis) and the numerical methods used to calculate the voltage, current, and power at every point in the grid (Load Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["power-system-analysis", "load-flow", "admittance-matrix", "newton-raphson", "electric-grid", "power-engineering", "computational-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Load_Flow_Audit: Evaluate the convergence of the Newton-Raphson iterations to ensure the power system model represents a physically stable and solvable state.'
-    - 'Voltage_Profile_Check: Analyze the voltage magnitudes at each bus (node) to verify they are within operational limits (typically $0.95 \\sim 1.05$ p.u.).'
-    - 'Line_Congestion_Scan: Monitor the power flow through transmission lines to identify ''Bottlenecks'' where lines are operating near their thermal limit ($S_{max}$).'
-Trust Metrics:
+  description: "[Entity] power-system-analysis-and-load-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Power System Analysis and Load Flow Physics
+# [Entity] power-system-analysis-and-load-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 세계를 잇는 거대한 전선망 속에서 전기가 어디로 흐르고 어디서 막히는지 어떻게 알 수 있을까요? **전력 계통 해석 및 조류 계산 물리**는 전력망이라는 거대한 지도의 모든 길에 흐르는 전기의 양과 압력을 계산하는 **'전기의 내비게이션'**입니다. 수만 개의 발전소와 수억 가구를 잇는 복잡한 수식을 풀어내어, 전선이 타버리거나 전압이 떨어지지 않게 최적의 경로를 찾아냅니다. 전기가 보이지 않는 곳에서 안전하게 우리 집까지 도착하게 만드는 **'에너지 물류의 수학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Fragile Network - System will collapse if one major line trips. Enhance Transmission Redundancy"
         return "PASS: N-1 Contingency Reliable and Verified Grid Resilience Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(convergence_mismatch_va=1e-6, min_bus_voltage_pu=0.98, line_loading_pct=65.0)
 print(engine.diagnose_load_flow_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_load_flow_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data load-flow-convergence-and-nodal-voltage-logs-v2026`와 연동되어, 전 세계 전력 계통의 실시간 흐름 데이터를 분석하고 과부하 및 전압 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 수송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - power-grid-stability-and-smart-grid-frequency-control

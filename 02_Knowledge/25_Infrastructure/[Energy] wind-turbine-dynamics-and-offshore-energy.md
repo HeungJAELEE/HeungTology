@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "wind-turbine-dynamics-and-offshore-energy-entity"
-  domain: "02_Energy_Infrastructure"
+metadata:
+  id: "[[[Energy] wind-turbine-dynamics-and-offshore-energy]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Wind_Power", "#Fluid_Dynamics", "#Offshore", "#Structural_Engineering", "#Sustainability", "#Control_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Energy smart-grid-and-vpp-control-intelligence", "MOC 02_Energy_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] wind-turbine-dynamics-and-offshore-energy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] wind-turbine-dynamics-and-offshore-energy
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Floating Offshore Wind** 시스템에서 **Full-state Feedback Control**이 파도에 의한 부유체 운동과 블레이드 피치 제어 사이의 연동(Coupling)을 안정화하는 수리적 조건은?
 5. RAG 시스템에서 **해양 기상 예보 데이터**와 **SCADA 시스템 로그**를 융합하여, '태풍 접근 시' 하중 분산을 위해 각 터빈의 **Yaw** 각도를 어떻게 배치할지 군집 최적화(Swarm Optimization)를 수행하는 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Energy]] smart-grid-and-vpp-control-intelligence]] : 풍력 발전의 변동성을 수용하고 관리하는 상위 전력망 지능 엔티티
 - Mobility autonomous-maritime-navigation-and-smart-port-logistics : 해상 풍력 단지 유지보수를 위한 자율 운항 선박 및 로보틱스 연계 노드

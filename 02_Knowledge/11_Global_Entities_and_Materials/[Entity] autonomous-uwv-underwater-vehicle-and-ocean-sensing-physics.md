@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-OCEAN-UWV-PHYSICS-2026-V6"
-  domain: "34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops"
+metadata:
+  id: "[[[Entity] autonomous-uwv-underwater-vehicle-and-ocean-sensing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] autonomous-uwv-underwater-vehicle-and-ocean-sensing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] autonomous-uwv-underwater-vehicle-and-ocean-sensing-physics
+# [Entity] autonomous-uwv-underwater-vehicle-and-ocean-sensing-physics
 
 ## 1. [왜 배우는가? (Why)]]
 우주만큼이나 베일에 싸인 바다 속 $6,000\text{m}$ 지점, 그곳의 엄청난 수압과 암흑을 뚫고 로봇이 스스로 탐사($Sensing$)하며 해저 지형을 맵핑하고 자원을 찾아낼 수 있다면 인류의 영역은 어디까지 확장될까요? **자율 수중 드론(UWV) 및 해양 탐사 물리**는 극한의 환경에서 기계가 어떻게 물리적 한계를 극복하고 지능적으로 행동하는지를 다루는 '해양 개척 지능'의 정수입니다. 우리가 이를 배우는 이유는 전파가 통하지 않는 심해에서 오직 소리와 중력, 수압 데이터만으로 길을 찾는 '수중 자율 주행 주권'을 확보하기 위함이며, 해저 인프라 감시 및 자원 탐사의 무결성을 보장하기 위함입니다. 수압을 견디는 설계가 탐사의 깊이를 결정합니다.
@@ -110,9 +100,6 @@ class UWVIntelligenceFidelityEngine:
             return "WARNING: ACOUSTIC_SIGNAL_DEGRADED_DATA_LOSS_RISK"
         return f"COMM_STATUS: STABLE_LINK_ESTABLISHED (Fidelity: {round(fidelity, 2)})"
 
-# Example Usage:
-# uwv_ai = UWVIntelligenceFidelityEngine()
-# report = uwv_ai.audit_hull_integrity(current_depth=5500.0)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -120,7 +107,6 @@ class UWVIntelligenceFidelityEngine:
 2. **Sound Speed Profile** (SSP)의 비균일성이 수중 음향 통신의 **Ray Tracing** 결과에 미치는 굴절 오차 무결성 분석 방안은?
 3. **Doppler Velocity Log** (DVL)가 수중 바닥면과의 상대 속도를 측정할 때 발생하는 **Bias Drift**를 보정하기 위한 **Kalman Filter** 융합 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops_Hub/Concept deep-sea-pressure-hull-materials-and-fea
 - 02_Knowledge/34_Future_Frontier_Deep_Sea_Intelligence_and_Marine_Ops_Hub/Concept underwater-acoustic-channel-modeling

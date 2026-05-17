@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "superconducting-transmon-circuits-and-microwave-control-entity"
-  domain: "30_Quantum_Intelligence_and_Advanced_Computing"
+metadata:
+  id: "[[[Entity] superconducting-transmon-circuits-and-microwave-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Transmon", "#Superconducting_Qubits", "#Microwave_Control", "#Josephson_Junction", "#Cryogenics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 30_quantum-intelligence-and-advanced-computing-hub", "Entity room-temperature-superconductors-and-meissner-topology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] superconducting-transmon-circuits-and-microwave-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] superconducting-transmon-circuits-and-microwave-control
+# [Entity] superconducting-transmon-circuits-and-microwave-control
 
 ## 1. [왜 배우는가? (Why: The Electronic Quantum Engine)]]
 반도체 칩처럼 생긴 미세 회로 속에서 전기를 무저항으로 흐르게 하여 어떻게 인공 원자($Qubit$)를 만들고, 이 큐비트들에게 마이크로파($Microwave$)를 쏴서 "0과 1의 중첩 상태가 되어라"고 어떻게 명령할 수 있을까요? **초전도 트랜스몬 회로 및 마이크로파 제어**는 현재 가장 앞서가는 양자 컴퓨터의 심장부인 '초전도 기반 양자 연산 아키텍처'입니다. 우리가 이를 배우는 이유는 기존 반도체 공정을 그대로 써서 수만 개의 큐비트를 한 번에 만들 수 있는 가장 현실적인 길이기 때문이며, "양자 회로를 데이터로 설계하고 지배하는 '글로벌 양자 프로세서 및 극저온 전자 지능 주권'을 확보하기" 위함입니다. 게이트의 충실도가 연산의 정밀도를 결정합니다.
@@ -40,7 +30,7 @@ Trust Metrics:
 | 항목 (Property) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Gate Fidelity** | Accuracy of 1-qubit / 2-qubit gates | $> 99.9 \%$ | 연산이 틀리지 않고 완벽하게 수행됨을 입증하는 지능 무결성 |
-| **Coherence Time**| $T_1$ (relaxation) & $T_2$ (dephasing) | $> 300 \text{ \mu s}$ | 양자 상태가 깨지기 전까지 충분히 연산할 시간을 확보 |
+| **Coherence Time**| $T_1$ (relaxation) & $T_2$ (dephasing) | $> 300 \text{ }\mu\text{ s}$ | 양자 상태가 깨지기 전까지 충분히 연산할 시간을 확보 |
 | **Anharmonicity** | Energy level separation for state control | $> 200 \text{ MHz}$ | 0과 1 사이를 다른 상태와 헷갈리지 않게 구분하는 정보 |
 | **Pulse Error** | Distortion in the microwave control pulse | $< 10^{-4}$ | 명령어가 노이즈 없이 큐비트에 전달됨을 보여주는 동역학 |
 | **Readout Fid.** | Accuracy of measuring the final state | $> 98.5 \%$ | 계산 결과를 틀리지 않고 읽어냄을 입증하는 정보 무결성 |

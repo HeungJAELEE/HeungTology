@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BATT-ELECTRO-PHYS-2026-V6.3.7"
-  domain: "Battery_Materials_Chemistry"
+metadata:
+  id: "[[[Entity] electrolyte-composition-and-sei-layer-stability]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Electrolyte", "#SEI", "#NernstEinstein", "#FidelityEngine", "#PrecisionTiering", "#IonTransport"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electrolyte-composition-and-sei-layer-stability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Battery_Chemistry_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Electrolyte: Solvation Dynamics & SEI Interface Physics
+# [Entity] electrolyte-composition-and-sei-layer-stability
 
 ## 1. [왜 배우는가? (Why: The Ionic Silk Road)]]
 양극과 음극 사이에서 리튬 이온들이 1마이크로초의 지체도 없이 흐를 수 있게 해주는 '혈액'이 없다면, 고속 충전과 고출력 배터리는 존재할 수 없습니다. **전해질(Electrolyte)**은 이온의 이동 통로이며, 그 과정에서 탄생하는 **SEI(Solid Electrolyte Interphase)** 보호막은 배터리의 수명과 안전성을 결정하는 최후의 방어선입니다. V6.3.7 지능은 **계층화된 화학적 사양(Precision Tiering)**을 통해 고전압 하이엔드 EV부터 장수명 ESS까지 최적의 이온 수송 경로를 설계합니다.
@@ -99,7 +89,6 @@ class ElectrolyteTieredEngine:
             "status": status
         }
 
-# FidelityEngine 가동: 실제 전지의 고율 방전 성능 데이터와 전해질의 $t_{Li^+}$ 값을 결합하여 '수송 영토 무결성' 오딧
 ```
 
 ## 6. [스스로 체크 (Self-Audit)]
@@ -107,7 +96,6 @@ class ElectrolyteTieredEngine:
 2. **Operational Result**: 보급형(Low-end) 배터리에서 가격을 위해 저가형 염(LiPF6 -> LiBF4 등)을 사용했을 때, **이온 전도도**와 **SEI 안정성** 간의 수리적 트레이드오프는?
 3. **FidelityEngine**: **Nernst-Einstein** 수식을 통해 계산된 이론적 전도도와 실제 실측치의 괴리를 통해 전해질 내 **'이온 쌍(Ion Pair)'** 형성률을 역산하는 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity advanced-battery-materials-and-electrochemical-kinetics
 - electrolyte-composition-and-sei-layer-stability-manual

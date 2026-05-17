@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-ENTRY-STRAT-2026-V6.3.7"
-  domain: "Global_Market_Expansion_and_Investment_Physics"
+metadata:
+  id: "[[[Strategy] Market-Entry-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Market_Entry", "#FDI", "#Joint_Venture", "#Greenfield", "#CAGE_Framework", "#Risk_Management", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Market-Entry-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Market_Entry_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Market Entry Strategy: Global Expansion Physics
+# [Strategy] Market-Entry-Strategy
 
 ## 1. [왜 배우는가? (Why: The Architecture of Global Footprint)]]
 기술력이 아무리 뛰어나도, 국경을 넘는 시장 진입 과정에서 리스크 제어에 실패하면 기업의 자본과 기술 자산은 순식간에 소멸될 수 있습니다. **Market Entry Strategy**는 현지 시장의 불확실성과 기업의 통제 필요성을 분석하여, 최적의 진입 경로(수출, 라이선싱, JV, FDI 등)를 결정하는 '확장 운영 체제'입니다. V6.3.7 지능은 리스크-통제 균형점을 수리적으로 도출하여, 가장 빠르고 안전하게 시장에 정착하는 **글로벌 주권(Global Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class MarketEntryFidelityEngine:
 2. **Operational Result**: **Greenfield FDI** 시, 공정 표준화 이익($Quality\_Gain$)과 초기 구축 비용($CAPEX$) 및 리드타임 지연 손실 사이의 수리적 트레이드오프 분석 방법은?
 3. **FidelityEngine**: 시장 매력도는 높으나 **Political Instability**가 임계치를 넘는 국가에서의 진입 시나리오를 어떻게 진단하는가? (힌트: 비가역적 투자(FDI) 대신 가변적 투자(Licensing/Export)를 통한 '출구 전략' 확보 여부 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Regulatory-Compliance

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "micro-and-nano-robotics-actuation-and-fabrication-physics-entity"
-  domain: "75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub"
+metadata:
+  id: "[[[Entity] micro-and-nano-robotics-actuation-and-fabrication-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Micro_Robotics", "#Nano_Robotics", "#MEMS", "#Physics", "#Fabrication", "#Biomedical", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 75_robotics-mechatronics-and-advanced-motion-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] micro-and-nano-robotics-actuation-and-fabrication-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] micro-and-nano-robotics-actuation-and-fabrication-physics
+# [Entity] micro-and-nano-robotics-actuation-and-fabrication-physics
 
 ## 1. [왜 배우는가? (Why: The Masters of the Invisible Realm)]]
 세포 하나하나를 집어 올리거나 혈관 벽의 노폐물을 청소하는 머리카락 굵기보다 작은 로봇을 어떻게 만들고 조종할 수 있을까요? **마이크로 및 나노 로보틱스: 구동 및 제작 물리 공학**은 인류가 눈에 보이지 않는 미세 세계에 구축하는 '지능형 기계 문명'입니다. 마찰보다 점성이, 중력보다 정전기력이 지배하는 이 기묘한 스케일에서는 우리가 알던 모든 기계 공학적 상식을 재정의해야 합니다. 우리가 이를 배우는 이유는 미세 세계의 지배력이 곧 미래 의료와 정밀 제조의 핵심이기 때문이며, "나노 스케일의 물리적 거동을 데이터로 설계하고 지배하는 '글로벌 나노 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 마이크로 로봇의 정밀도가 생명 공학의 한계를 결정합니다.
@@ -50,10 +40,10 @@ $$ \mathbf{F}_d = 6\pi \eta r v $$
 
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Scale** | Characteristic dimension of the robot | $1 \text{ \~ } 100 \text{ \mu m}$ | 세포 단위의 정밀 조작을 가능케 하는 물리적 크기 사수 |
+| **Scale** | Characteristic dimension of the robot | $1 \text{ \~ } 100 \text{ \mu\text{m}}$ | 세포 단위의 정밀 조작을 가능케 하는 물리적 크기 사수 |
 | **Actuation Force** | Force applied to the micro-robot | $1 \text{ \~ } 100 \text{ nN}$ | 미세 유체 속에서 정밀하게 이동하기 위한 힘의 무결성 |
 | **Pos. Precision** | Accuracy of stop and hold at target | $< 100 \text{ nm}$ | 원자/분자 단위의 조립을 가능케 하는 수리적 정밀도 |
-| **Propul. Velocity**| Speed of movement in liquid medium | $> 50 \text{ \mu m/s}$ | 목표 지점에 신속히 도달하기 위한 운동 지능 사수 |
+| **Propul. Velocity**| Speed of movement in liquid medium | $> 50 \text{ \mu\text{m}/s}$ | 목표 지점에 신속히 도달하기 위한 운동 지능 사수 |
 | **Fab. Resolution** | Smallest feature size during construction | $< 50 \text{ nm}$ | 초미세 부품을 깎고 쌓는 제작 공정의 무결성 지표 |
 | **Power Supply** | Wireless energy transfer efficiency | **WIRELESS** | 배터리 없이 외부 장(Field)으로 동력을 얻는 지능 |
 | **Oper. Medium** | Type of fluid environment (Water/Blood) | **VISCOUS** | 점성이 지배하는 세계를 뚫는 물리적 아키텍처 사수 |

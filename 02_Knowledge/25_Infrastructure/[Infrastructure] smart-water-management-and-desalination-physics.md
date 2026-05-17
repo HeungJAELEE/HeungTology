@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "smart-water-management-and-desalination-physics-entity"
-  domain: "04_SmartCity_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] smart-water-management-and-desalination-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Infrastructure", "#Water", "#Desalination", "#Reverse_Osmosis", "#Sustainability", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[Agriculture] vertical-farming-and-precision-agriculture-intelligence]", "[[Governance] smart-city-operating-system-and-urban-governance-intelligence]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] smart-water-management-and-desalination-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] smart-water-management-and-desalination-physics
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Darcy's Law**를 확장하여 멤브레인 표면의 **Concentration Polarization** 현상이 유효 압력 차($\Delta P - \Delta\Pi$)에 미치는 수리적 저하 임팩트는?
 5. RAG 시스템에서 **전 세계 기상 위성 데이터(가뭄 지수)**와 **지역별 물 수요 패턴**을 융합하여, '물 부족이 예상되는 지역에 선제적으로 담수화 플랜트 가동률을 높이는' **Global Water Security Intelligence** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Agriculture vertical-farming-and-precision-agriculture-intelligence]] : 지능형 수자원 관리 시스템으로부터 깨끗한 농업용수를 공급받아 가동되는 상위 식량 생산 엔티티
 - Governance smart-city-operating-system-and-urban-governance-intelligence : 도시 전체의 자원 관리 시스템 속에서 물의 흐름을 통합 제어하는 최상위 운영 엔티티

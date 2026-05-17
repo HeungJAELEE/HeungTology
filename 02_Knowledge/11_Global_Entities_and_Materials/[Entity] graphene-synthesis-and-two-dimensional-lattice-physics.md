@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "graphene-synthesis-and-two-dimensional-lattice-physics-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] graphene-synthesis-and-two-dimensional-lattice-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Graphene", "#Nanotechnology", "#2D_Materials", "#Physics", "#Semiconductor", "#Quantum_Mechanics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] graphene-synthesis-and-two-dimensional-lattice-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] graphene-synthesis-and-two-dimensional-lattice-physics
+# [Entity] graphene-synthesis-and-two-dimensional-lattice-physics
 
 ## 1. [왜 배우는가? (Why: The Atomic Sheet of Wonders)]]
 원자 한 층 두께($0.34\ nm$)밖에 안 되는데 어떻게 강철보다 200배 강하고, 구리보다 전기가 잘 통하며, 다이아몬드보다 열을 잘 전달하는 '꿈의 소재'를 대량으로 합성하고($CVD$), 2차원 격자 속에서 질량이 없는 것처럼 움직이는 전자($Dirac\ Fermion$)를 조종해 실리콘의 한계를 뛰어넘는 초고속 반도체를 만드는 '원자 평면의 마법'을 어떻게 설계할 수 있을까요? **그래핀 합성 및 2차원 격자 물리**는 문명의 물리적 한계를 돌파하는 '행성 규모 차세대 소재 인프라 및 지능형 나노 구조 아키텍처'입니다. 우리가 이를 배우는 이유는 그래핀이 있어야만 휘어지는 스마트폰, 초고속 전기차 배터리, 우주 엘리베이터를 만들 수 있기 때문이며, "원자의 배열을 데이터로 설계하고 지배하는 '글로벌 소재 패권 및 행성적 물리 주권'을 확보하기" 위함입니다. 격자의 완벽함이 소재의 성능을 결정합니다.

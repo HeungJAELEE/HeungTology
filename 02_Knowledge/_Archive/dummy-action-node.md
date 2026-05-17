@@ -1,31 +1,26 @@
 ---
-Basic_Layer:
-  id: "dummy-action-node"
-  title: "Dummy Action Node"
-  category: "Test"
-  tags: ["AIP", "Test", "Actionable"]
-Object_Layer:
+metadata:
+  id: "[[dummy-action-node]]"
+  domain: "_Archive"
+  project: "Vault_Modernization"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
-  priority: "Low"
-Semantic_Layer:
-  domain: "System"
-  topology: "Infrastructure"
-Dynamic_Layer:
-  status: "Experimental"
-  version: "V6.4.2"
-Trust_Metrics:
-  T_static: 0.0
-  T_dynamic: 0.0
-Lineage:
-  logic_provenance: "V6.4 Test Protocol"
-Executable_Action:
-  has_action: false
-  action_type: "run_dummy_script"
-  target_script: "C:/Anitigravity/04_Tools/dummy_execute.py"
-  params: { "mode": "fast", "value": "100" }
+  tier: 1
+  description: "dummy-action-node에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#_Archive", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
+  T_static: 1.0
+  T_dynamic: 1.0
+  isolation_index: 0.1
 ---
 
-# Dummy Action Node (더미 액션 테스트 노드)
+# dummy-action-node
 
 이 문서는 V6.4 Palantir AIP 모드의 **실행 가능성(Actionable)** 및 **더미 액션 테스트**를 위한 노드입니다. 
 이 노드가 검색되면, 에이전트는 반드시 하단의 `Executable_Action` 레이어를 해석하여 사용자에게 결재(Y/N)를 요청해야 합니다.

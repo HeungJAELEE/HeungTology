@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "centrifugal-compressor-and-impeller-aerodynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] centrifugal-compressor-and-impeller-aerodynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A dynamic compressor in which the mechanical action of rapidly rotating impellers accelerates the gas to high velocity, which is then converted into pressure energy (Centrifugal Compressor) and the study of the complex high-speed airflow through these impellers (Impeller Aerodynamics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["centrifugal-compressor", "aerodynamics", "impeller", "turbo-machinery", "compression-ratio", "surge-control", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Aerodynamic_Fidelity_Audit: Evaluate the ''Surge Margin'' to identify if the compressor is operating too close to the unstable flow regime, which causes damaging pressure reversals.'
-    - 'Impeller_Integrity_Check: Analyze the vibration spectra for ''Sub-synchronous'' frequencies to ensure that aerodynamic stalling (Stall) is not occurring on the impeller blades.'
-    - 'Efficiency_Fidelity_Scan: Monitor the isentropic efficiency ($\\eta_{iso}$) and discharge temperature to verify that internal ''Friction/Leakage'' losses are within design specifications.'
-Trust Metrics:
+  description: "[Entity] centrifugal-compressor-and-impeller-aerodynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Centrifugal Compressor and Impeller Aerodynamics
+# [Entity] centrifugal-compressor-and-impeller-aerodynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기를 빛의 속도에 가깝게 휘둘러서 엄청난 압력을 만들어낸다면 어떨까요? **원심 압축기 및 임펠러 공기역학**은 기체를 회전의 힘으로 던져서 에너지를 응축하는 **'공기의 가속과 압축'** 기술입니다. 항공기 엔진부터 대형 공장의 공기 공급원까지, 보이지 않는 기체를 다루는 가장 정교한 기계 중 하나입니다. 부드러운 바람을 강력한 힘의 원천으로 바꾸는 **'고속 유체 역학의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Seal Leakage - Risk of process gas contamination or loss. Maintenance required for Dry Gas Seal system"
         return "PASS: Tight Sealing Integrity and Verified System Safety Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(surge_margin_pct=15.5, isentropic_efficiency_pct=82.0, vibration_overall_mm_s=2.5)
 print(engine.diagnose_compressor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_compressor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data centrifugal-compressor-surge-margin-and-efficiency-v2026`와 연동되어, 전 세계 주요 가스 플랜트 및 터보 냉동기의 가동 데이터를 실시간 분석하고 서지 붕괴 및 임펠러 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 압축 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - centrifugal-pump-and-euler-turbine-equation-physics

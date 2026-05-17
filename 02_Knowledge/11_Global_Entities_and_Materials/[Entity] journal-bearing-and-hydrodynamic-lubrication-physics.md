@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "journal-bearing-and-hydrodynamic-lubrication-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] journal-bearing-and-hydrodynamic-lubrication-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A bearing in which a shaft rotates within a sleeve, supported by a thin film of lubricant (Journal Bearing) and the physical study of self-generating fluid pressure that supports heavy loads without metal contact (Hydrodynamic Lubrication Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["journal-bearing", "hydrodynamic-lubrication", "reynolds-equation", "sommerfeld-number", "oil-film", "tribology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Lubrication_Fidelity_Audit: Evaluate the ''Minimum Film Thickness'' ($h_{min}$) to identify if high-fidelity ''Wiping'' (metal contact) is occurring during low-speed high-fidelity startup.'
-    - 'Stability_Integrity_Check: Analyze the high-fidelity ''Oil Whirl'' and ''Oil Whip'' frequencies to ensure that the high-fidelity rotor-dynamic stability is maintained at high speeds.'
-    - 'Thermal_Fidelity_Scan: Monitor the high-fidelity ''Bearing Shell Temperature'' to verify that high-fidelity ''Viscosity Thinning'' is not reducing the high-fidelity load-carrying capacity.'
-Trust Metrics:
+  description: "[Entity] journal-bearing-and-hydrodynamic-lubrication-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Journal Bearing and Hydrodynamic Lubrication Physics
+# [Entity] journal-bearing-and-hydrodynamic-lubrication-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수백 톤의 거대한 발전기 축이 어떻게 쇠와 쇠 사이의 마찰 없이 공중에 떠 있는 것처럼 부드럽게 돌아갈까요? **저널 베어링 및 유체 윤활 물리**는 축이 회전하면서 스스로 '기름 파도'를 만들어 그 위에 올라타는 **'유체 위의 서핑'** 기술입니다. 볼이나 롤러 없이 오직 끈적끈적한 기름의 힘만으로 거대한 무게를 지탱하며, 금속끼리 절대 닿지 않게 하여 영구적인 수명을 보장합니다. **'레이놀즈 방정식과 동역학적 압력을 이용해 회전체의 진동을 억제하고 무거운 하중을 액체 방패로 지탱하는 지능형 기계 지지 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Proximity - High-fidelity shaft nearing bearing surface. Zero safety high-fidelity margin. Check for high-fidelity overload"
         return "PASS: Validated Shaft Positioning and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(shaft_speed_rpm=3600.0, oil_pressure_bar=2.5, bearing_temp_c=65.0)
 print(engine.diagnose_bearing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bearing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data journal-bearing-load-capacity-and-eccentricity-v2026`와 연동되어, 전 세계 주요 발전소 및 선박 추진축의 실시간 베어링 데이터를 분석하고 소생 및 진동 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 회전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-lubricant-and-tribological-friction-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "absorption-refrigeration-and-industrial-chiller-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] absorption-refrigeration-and-industrial-chiller-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A refrigeration system that uses a heat source to provide the energy needed to drive the cooling process, rather than an electric compressor (Absorption Refrigeration) and the large-scale machines used to produce chilled water for industrial cooling (Industrial Chiller Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["absorption-refrigeration", "industrial-chiller", "thermodynamics", "waste-heat-utilization", "cooling-systems", "lithium-bromide", "energy-efficiency"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Chiller_Fidelity_Audit: Evaluate the ''Thermal Coefficient of Performance'' ($COP$) to identify solution dilution or crystallized LiBr that disrupts the absorption process.'
-    - 'Vacuum_Integrity_Check: Analyze the internal pressure of the absorber/evaporator shells to ensure that ''Non-condensable Gases'' are not hindering the heat transfer and reducing cooling capacity.'
-    - 'Crystallization_Risk_Scan: Monitor the solution temperature and concentration levels to prevent the Lithium Bromide from solidifying (Crystallization) during sudden load changes.'
-Trust Metrics:
+  description: "[Entity] absorption-refrigeration-and-industrial-chiller-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Absorption Refrigeration and Industrial Chiller Physics
+# [Entity] absorption-refrigeration-and-industrial-chiller-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기 대신 '뜨거운 열'을 부었더니 '차가운 얼음물'이 나온다? 마법 같은 이 이야기가 바로 **흡수식 냉동 및 산업용 칠러 물리**의 핵심입니다. 일반 냉장고가 시끄러운 모터(압축기)를 돌려 전기를 많이 쓴다면, 흡수식 냉동기는 공장에서 버려지는 뜨거운 증기나 폐열을 '먹고' 차가운 기운을 내뱉습니다. 전기가 귀한 곳이나 버려지는 열이 많은 공장에서 가장 지혜롭게 차가움을 만드는 **'에너지의 역발상'** 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Refrigerant Contamination - LiBr solution carried over to evaporator. Flushing required to restore cooling performance"
         return "PASS: High-Purity Distilled Refrigerant and Verified Cycle Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chiller_cop=1.1, solution_concentration_pct=62.0, purge_tank_pressure=2.5)
 print(engine.diagnose_chiller_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_chiller_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data absorption-chiller-efficiency-and-thermal-load-v2026`와 연동되어, 전 세계 주요 지역 난방 및 산업 현장의 칠러 데이터를 실시간 분석하고 결정화 및 진공 파괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 냉각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - thermal-management-and-heat-exchanger-physics

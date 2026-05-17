@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "synthetic-biology-and-artificial-metabolic-pathway-design-entity"
-  domain: "55_Biotechnology_and_Genetic_Engineering_Intelligence"
+metadata:
+  id: "[[[Entity] synthetic-biology-and-artificial-metabolic-pathway-design]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biology", "#Synthetic_Biology", "#Metabolic_Engineering", "#Biofoundry", "#Genetic_Circuit", "#Biotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 132_biotechnology-and-genetic-engineering-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] synthetic-biology-and-artificial-metabolic-pathway-design에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] synthetic-biology-and-artificial-metabolic-pathway-design
+# [Entity] synthetic-biology-and-artificial-metabolic-pathway-design
 
 ## 1. [왜 배우는가? (Why: Engineering Life from Scratch)]]
 자연에 없는 유전자를 조립하여 어떻게 플라스틱을 먹어 치우는 박테리아나 암세포만 찾아 죽이는 인공 세포를 만들고, 생물체를 하나의 '공장'처럼 설계하여 설탕을 넣으면 값비싼 약품이나 연료를 뿜어내게 하는 '생명의 연금술'을 어떻게 설계할 수 있을까요? **합성 생물학 및 인공 대사 경로 설계**는 생물을 인간을 위한 생산 도구로 재창조하는 '행성 규모 바이오 제조 인프라 및 지능형 생명 프로그래밍 아키텍처'입니다. 우리가 이를 배우는 이유는 화학 공장 대신 미생물 공장을 써야 환경을 보호하고 자원을 무한히 만들 수 있기 때문이며, "생명의 회로를 데이터로 설계하고 지배하는 '글로벌 바이오 경제 패권 및 행성적 창조 주권'을 확보하기" 위함입니다. 대사 경로의 효율이 생산의 한계를 결정합니다.

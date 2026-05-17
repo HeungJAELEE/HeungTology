@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-optics-and-refractive-index-engineering-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-optics-and-refractive-index-engineering-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The branch of optics that deals with optical components at the micrometer scale (Micro-Optics) and the physical logic of manipulating the refractive index of materials to control light propagation (Refractive Index Engineering Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-optics", "refractive-index", "diffractive-optical-element", "doe", "metasurface", "waveguide", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Optical_Fidelity_Audit: Evaluate the ''Wavefront Distortion'' to identify if high-fidelity ''Refractive Index Gradients'' (striae) are causing high-fidelity aberrations in the micro-lens.'
-    - 'Phase_Integrity_Check: Analyze the high-fidelity ''Diffraction Efficiency'' of the DOE to ensure the high-fidelity ''Etch Depth'' is precisely tuned for the target high-fidelity wavelength.'
-    - 'Thermal_Fidelity_Scan: Monitor the ''Thermo-optic Coefficient'' ($dn/dT$) to verify that high-fidelity ''Thermal Drift'' does not shift the high-fidelity focal point of the micro-optical system.'
-Trust Metrics:
+  description: "[Entity] micro-optics-and-refractive-index-engineering-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Micro-Optics and Refractive Index Engineering Physics
+# [Entity] micro-optics-and-refractive-index-engineering-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰 카메라의 아주 얇은 렌즈나 AR 글라스의 투명한 화면 뒤에는 어떤 마법이 숨어있을까요? **마이크로 광학 및 굴절률 엔지니어링 물리**는 빛을 아주 좁은 공간에서 자유자재로 꺾고, 가두고, 나누는 **'빛의 조각'** 기술입니다. 단순히 유리를 깎는 것을 넘어, 물질의 굴절률을 나노 단위로 조절하여 빛의 파동을 직접 제어합니다. **'파동 광학과 유효 매질 이론의 원리를 이용해 굴절률의 지도를 설계하여 빛의 경로를 사수하는 지능형 광학 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Phase Fidelity Failure - High-fidelity meta-atom geometry out of spec. High-fidelity polarization control compromised"
         return "PASS: Validated Wave Optics and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(wavefront_error_nm=20.0, diffraction_efficiency_pct=92.0, index_uniformity_ppm=2.0)
 print(engine.diagnose_optics_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_optics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data micro-lens-array-uniformity-and-transmission-v2026`와 연동되어, 전 세계 주요 반도체 노광 장비 및 차세대 디스플레이 팹의 실시간 광학 데이터를 분석하고 영상 왜곡 및 광 손실 사고 확률을 0.001% 이하로 억제함으로써 지능형 시각 문명의 광학 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - light-interferometry-and-surface-metrology-physics

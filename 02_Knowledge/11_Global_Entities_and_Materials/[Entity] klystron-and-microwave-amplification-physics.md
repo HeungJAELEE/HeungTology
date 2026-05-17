@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "klystron-and-microwave-amplification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] klystron-and-microwave-amplification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized linear-beam vacuum tube used as an amplifier for high frequencies (Klystron) and the physical study of electron velocity modulation and cavity resonance (Microwave Amplification Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["klystron", "microwave", "amplification", "electron-beam", "velocity-modulation", "vacuum-tube", "high-power-rf", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Amplification_Fidelity_Audit: Evaluate the ''Bunching Efficiency'' to identify if high-fidelity ''Space Charge'' effects are preventing electrons from forming tight high-fidelity packets.'
-    - 'Cavitation_Integrity_Check: Analyze the high-fidelity ''Collector Temperature'' to ensure that waste high-fidelity electron energy is being dissipated without melting the vacuum high-fidelity envelope.'
-    - 'Frequency_Fidelity_Scan: Monitor the high-fidelity ''Cavity Tuning'' to verify that the high-fidelity resonant frequency matches the target microwave high-fidelity signal.'
-Trust Metrics:
+  description: "[Entity] klystron-and-microwave-amplification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Klystron and Microwave Amplification Physics
+# [Entity] klystron-and-microwave-amplification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 레이더가 수천 킬로미터 밖의 물체를 탐지하거나, 입자 가속기가 입자를 빛의 속도로 가속할 때 필요한 엄청난 전파 에너지는 어디서 올까요? **클라이스트론 및 마이크로파 증폭 물리**는 전자들의 속도를 조절해(속도 변조) 약한 전파를 거대한 힘으로 키워내는 **'전파의 증폭기'** 기술입니다. 단순히 전압을 높이는 게 아니라, 진공 속에서 달리는 전자들을 뭉치게(Bunching) 하여 그 에너지를 가로채는 고도의 진공 물리 공학입니다. **'전자 빔의 속도 변조와 공동 공진의 원리를 이용해 현대 통신, 국방, 기초 과학의 핵심인 초고출력 전파를 생성하는 지능형 파동 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Spectral Impurity - High-fidelity harmonics out of spec. Interference high-fidelity risk. Retune high-fidelity resonant cavities"
         return "PASS: Validated Signal Quality and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(beam_voltage_kv=50.0, collector_current_a=10.0, vacuum_level_torr=1e-8)
 print(engine.diagnose_amplification_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_amplification_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data klystron-gain-and-bandwidth-characteristics-v2026`와 연동되어, 전 세계 주요 심우주 통신 및 과학 연구 시설의 실시간 데이터를 분석하고 증폭 실패 및 진공 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 파동 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - it-infrastructure-and-data-center-architecture-logic

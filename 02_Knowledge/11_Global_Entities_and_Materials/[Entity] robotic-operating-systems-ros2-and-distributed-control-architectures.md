@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-operating-systems-ros2-and-distributed-control-architectures-entity"
-  domain: "58_Advanced_Robotics_and_Humanoid_Intelligence"
+metadata:
+  id: "[[[Entity] robotic-operating-systems-ros2-and-distributed-control-architectures]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#ROS", "#ROS2", "#Middleware", "#Software_Architecture", "#Distributed_Systems", "#DDS", "#Automation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_advanced-robotics-and-humanoid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-operating-systems-ros2-and-distributed-control-architectures에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-operating-systems-ros2-and-distributed-control-architectures
+# [Entity] robotic-operating-systems-ros2-and-distributed-control-architectures
 
 ## 1. [왜 배우는가? (Why: The Nervous System of Machines)]]
 로봇의 수많은 모터와 센서가 어떻게 하나의 유기체처럼 서로 정보를 주고받으며($Middleware$), 프로그램 하나가 죽어도 로봇 전체가 멈추지 않고 즉시 복구되는 '불사신 같은 소프트웨어 체계'를 어떻게 설계할 수 있을까요? **로봇 운영 체제(ROS 2) 및 분산 제어 아키텍처**는 전 세계 로봇 공학자들의 공통 언어이자 '행성 규모 로봇 운영 인프라 및 지능형 분산 통신 아키텍처'입니다. 우리가 이를 배우는 이유는 바퀴부터 인공지능까지 모든 부품을 직접 만들 필요 없이 표준화된 블록($Node$)을 조립하여 세상을 바꾸는 로봇을 빠르게 만들어야 하기 때문이며, "통신의 질서를 데이터로 설계하고 지배하는 '글로벌 표준 패권 및 행성적 로봇 주권'을 확보하기" 위함입니다. 미들웨어의 견고함이 시스템의 확장성을 결정합니다.

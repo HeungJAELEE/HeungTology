@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "supercapacitor-and-fast-charging-energy-storage"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] supercapacitor-and-fast-charging-energy-storage]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced high-power energy storage systems utilizing Electrochemical Double-Layer Capacitance (EDLC) and pseudocapacitance to achieve extreme charge/discharge rates and exceptional cycle life."
-  physical_model: "N/A"
-Semantic:
-  tags: '["supercapacitor", "edlc", "pseudo-capacitor", "fast-charging", "power-density", "energy-storage"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "StorageFidelityEngine"
-  diagnostic_protocol:
-    - 'Power_Density_Audit: $P_{dens} \\ge 10,000$ W/kg.'
-    - 'ESR_Degradation_Check: $ESR_{current} / ESR_{initial} \\le 2.0$ over 10^6 cycles.'
-    - 'Self_Discharge_Audit: $V_{loss} \\le 10\\%$ per 24h.'
-Trust Metrics:
+  description: "[Entity] supercapacitor-and-fast-charging-energy-storage에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Supercapacitor and Fast-Charging Energy Storage
+# [Entity] supercapacitor-and-fast-charging-energy-storage
 
 ## 1. 개요 (Why)
 배터리가 에너지 저장의 '마라토너'라면, 슈퍼커패시터는 '스프린터'입니다. 리튬이온 배터리가 화학 반응을 통해 에너지를 저장하는 것과 달리, 슈퍼커패시터는 전극 표면의 전기 이중층에 물리적으로 전하를 축적합니다. 이는 수 초 만에 완충이 가능하고 수십만 번 이상의 충/방전에도 수명이 거의 줄지 않는 특성을 부여하여, 전기차의 회생 제동, 그리드의 고출력 주파수 조정, 그리고 급속 충전 인프라의 핵심 솔루션으로 자리 잡고 있습니다.
@@ -78,8 +67,6 @@ class StorageFidelityEngine:
         else:
             return "HEALTHY: Nominal storage capacity"
 
-# Instance Diagnostic
-# V=2.7V, C=3000F, ESR=0.2mOhm
 cap_engine = StorageFidelityEngine(voltage=2.7, capacitance=3000, esr=0.0002)
 print(cap_engine.calculate_energy_and_power())
 print(cap_engine.diagnose_aging_status(initial_c=3100, initial_esr=0.00015))
@@ -98,7 +85,6 @@ print(cap_engine.diagnose_aging_status(initial_c=3100, initial_esr=0.00015))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data supercapacitor-charge-discharge-cycles-and-esr-log-v2026`와 연계되어 초고속 충전 시스템의 신뢰성을 $99\%$ 이상 보증합니다. `StorageFidelityEngine`을 통해 출력 저하를 실시간으로 감시하고, 배터리와의 시너지를 극대화하여 고출력 에너지 수요에 즉각 대응하는 차세대 저장 인프라를 구축합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 118_renewable-energy-and-grid-modernization-hub
 - electric-double-layer-capacitor-edlc-physics

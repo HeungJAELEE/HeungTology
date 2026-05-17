@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "multi-axis-cnc-and-kinematic-error-compensation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] multi-axis-cnc-and-kinematic-error-compensation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A computer-controlled machine tool capable of motion in four or more directions simultaneously (Multi-axis CNC) and the physical logic of mathematically correcting geometric and kinematic inaccuracies in real-time (Kinematic Error Compensation Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnc", "multi-axis", "kinematics", "error-compensation", "5-axis", "rtcp", "calibration", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Kinematic_Fidelity_Audit: Evaluate the ''Pivot Distance'' and ''Tilt Center'' errors to identify if high-fidelity ''Axis Misalignment'' is causing high-fidelity contouring errors in 5-axis motion.'
-    - 'Geometric_Integrity_Check: Analyze the high-fidelity ''Squareness'' and ''Parallelism'' of the axes via high-fidelity ''Ballbar Testing'' to ensure the high-fidelity workspace accuracy.'
-    - 'Compensation_Fidelity_Scan: Monitor the high-fidelity ''Thermal Drift'' sensors to verify that high-fidelity ''Real-time Offset'' is effectively canceling the high-fidelity expansion of the spindle/leadscrew.'
-Trust Metrics:
+  description: "[Entity] multi-axis-cnc-and-kinematic-error-compensation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Multi-axis CNC and Kinematic Error Compensation Logic
+# [Entity] multi-axis-cnc-and-kinematic-error-compensation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 비행기 날개나 정교한 임플란트를 어떻게 쇠막대기 하나로 깎아낼 수 있을까요? **다축 CNC 및 기구학적 오차 보정 로직**은 기계가 상하좌우뿐만 아니라 회전까지 동시에 수행하며 어떤 각도에서도 물건을 깎을 수 있게 만드는 **'기계의 유연성'** 기술입니다. 단순히 축을 늘리는 것을 넘어, 기계가 완벽할 수 없다는 것을 인정하고 그 미세한 비틀림과 오차를 수학적으로 '미리 읽고 반대로 움직여' 완벽함을 창조해냅니다. **'동차 변환 행렬과 오차 맵핑의 원리를 이용해 3차원 공간의 좌표를 실시간으로 교정하여 나노 가공의 무결성을 사수하는 지능형 수치 제어 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: RTCP Calibration Failure - High-fidelity pivot distance error. 5-axis high-fidelity contouring will fail"
         return "PASS: Validated Kinematic Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(volumetric_error_um=2.0, spindle_drift_um=1.0, axis_orthogonality_arcsec=0.5)
 print(engine.diagnose_cnc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cnc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data 5-axis-cnc-volumetric-accuracy-and-thermal-drift-v2026`와 연동되어, 전 세계 주요 항공기 부품 및 정밀 의료 기기 공장의 실시간 수치 제어 데이터를 분석하고 기구학적 충돌 및 치수 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 정밀 제조 문명의 궤적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - numerical-control-nc-and-g-code-interpolation-logic

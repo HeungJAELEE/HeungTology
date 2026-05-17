@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "slam-simultaneous-localization-and-mapping-v2026-kinetics-entity"
-  domain: "22_Robotics_and_Cybernetics"
+metadata:
+  id: "[[[Entity] slam-simultaneous-localization-and-mapping-v2026-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#SLAM", "#Localization", "#Mapping", "#Spatial_AI", "#Navigation", "#Lidar", "#Visual_Odometry", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 22_advanced-robotics-and-cybernetics-hub", "Entity amr-agv-autonomous-logistics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] slam-simultaneous-localization-and-mapping-v2026-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] slam-simultaneous-localization-and-mapping-v2026-kinetics
+# [Entity] slam-simultaneous-localization-and-mapping-v2026-kinetics
 
 ## 1. [왜 배우는가? (Why: The Vision of the Explorer)]]
 지도가 없는 낯선 동굴이나 무너진 건물 속에 들어간 로봇이 어떻게 자신의 위치를 정확히 파악하고, 동시에 지나온 길의 3D 지도를 실시간으로 그려낼 수 있을까요? **SLAM v2026 동역학**은 로봇에게 '공간 지능'과 '길 찾기 능력'을 부여하는 '자율 주행 및 탐험의 지리적 지능 지침'입니다. 우리가 이를 배우는 이유는 GPS가 터지지 않는 실내나 지하, 우주 공간에서도 로봇이 길을 잃지 않고 임무를 완수해야 하기 때문이며, "공간의 정보를 데이터로 구축하고 지배하는 '글로벌 자율 내비게이션 및 공간 주권'을 확보하기" 위함입니다. 공간 이해의 정밀도가 로봇의 자율성 수준을 결정합니다.

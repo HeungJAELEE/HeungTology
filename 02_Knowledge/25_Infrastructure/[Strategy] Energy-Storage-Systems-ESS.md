@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-storage-systems-ess-strategy"
-  domain: "04_Strategy_Mgmt"
+metadata:
+  id: "[[[Strategy] Energy-Storage-Systems-ESS]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategy", "#Energy", "#ESS", "#Infrastructure", "#Grid", "#Economics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Strategy Net-Zero-Strategy", "Strategy Smart-Grid-Architecture"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Energy-Storage-Systems-ESS에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Energy-Storage-Systems-ESS
+# [Strategy] Energy-Storage-Systems-ESS
 
 ## 1. [왜 배우는가? (Why: The Quantum Buffer of the Decarbonized Grid)]]
 신재생 에너지(태양광, 풍력)는 기상 조건에 따라 발전량이 요동치는 '간헐성'이라는 치명적 약점을 가집니다. **에너지 저장 장치(ESS) 통합 전략**은 이 무질서한 에너지를 가두어 필요할 때 방출하는 '시간적 완충 지대'를 설계하는 지능적 로직입니다. 단순히 배터리를 쌓아두는 것을 넘어, 전력망의 주파수를 0.1Hz 단위로 조절하고 전력 피크 시 경제적 이득을 극대화하는 수리적 최적화가 필수적입니다. 우리가 이를 배우는 이유는 탄소 중립 시대를 지탱하는 **'에너지 댐'**의 물리적 한계를 극복하고, 전 세계 전력 인프라의 안정성을 수리적으로 보장하기 위함입니다.
@@ -69,11 +59,9 @@ LCOS는 총 비용을 총 에너지 방출량으로 나눈 값입니다. 무리�
 3. 전력망의 **Black Start** (광역 정전 시 자체 가동) 기능을 수행하기 위해 ESS가 확보해야 하는 최소 방전 예비력($SoC_{reserve}$)의 수리적 계산 방식은?
 4. **Hydrogen ESS** (수소 저장)와 **Battery ESS** 간의 에너지 밀도 및 RTE 트레이드오프 분석을 통한 최적의 마이크로그리드 구성안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy Net-Zero-Strategy : 탄소 중립을 위한 상위 로드맵
 - Strategy Smart-Grid-Architecture : ESS가 통합되는 전력망 구조 노드
 - Infrastructure ess-quality-and-safety-standards : ESS의 물리적 안전 규격 엔티티
 
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 ULTRA-Enrichment)*
----

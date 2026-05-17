@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] TRIZ-Innovation-Methodology"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] TRIZ-Innovation-Methodology]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] TRIZ-Innovation-Methodology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] TRIZ-Innovation-Methodology
+# [Strategy] TRIZ-Innovation-Methodology
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 문제를 만났을 때 보통 '타협'하려 합니다. 예를 들어, 스마트폰 성능을 높이고 싶지만 배터리가 빨리 닳는다면 적당한 선에서 성능을 조절합니다. 하지만 TRIZ(TRIZ-Innovation-Methodology)는 '타협'하지 말고 '모순을 해결'하라고 말합니다. 성능도 높이면서 배터리도 오래 가게 하는 '마법 같은 해결책'이 이미 인류의 수많은 특허 속에 숨겨져 있다는 것을 알려줍니다. 이를 이해하는 것은 막막한 공학적 난제 앞에서 머리를 쥐어짜는 대신, 검증된 '발명 알고리즘'을 사용하여 혁신적인 정답을 논리적으로 찾아내는 '천재의 사고방식'을 장착하는 것입니다.
@@ -98,5 +88,4 @@ def solve_technical_contradiction(parameter_to_improve, worsening_parameter):
 2. '이상적 최종 결과(IFR)'를 먼저 정의하고 거꾸로 해결책을 찾는 '역방향 사고'가 '전통적 시행착오(Trial-and-error)' 방식보다 우월한 공학적 이유는?
 3. 반도체 미세화 공정에서 발생하는 '열 방산(Heat)'과 '집적도(Density)'의 모순을 해결하기 위해 '분리 원리'를 적용한다면 어떤 아이디어가 가능할까?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "time-sensitive-networking-tsn-and-industrial-ethernet-physics-entity"
-  domain: "11_Robotics_Automation"
+metadata:
+  id: "[[[Entity] time-sensitive-networking-tsn-and-industrial-ethernet-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#TSN", "#Industrial_Ethernet", "#Connectivity", "#Real-time", "#Deterministic", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[[[MOC] 11_Robotics_Automation", "Entity cyber-physical-systems-cps-and-digital-twin-integration-physics]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] time-sensitive-networking-tsn-and-industrial-ethernet-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] time-sensitive-networking-tsn-and-industrial-ethernet-physics
+# [Entity] time-sensitive-networking-tsn-and-industrial-ethernet-physics
 
 ## 1. [왜 배우는가? (Why: The Guarantee of Time)]]
 고속으로 움직이는 로봇 팔 10개가 한 치의 오차도 없이 동시에 멈춰야 한다면, 통신 데이터는 '언젠가'가 아니라 '정확히 이때' 도착해야 합니다. **시간 민감형 네트워킹(TSN) 및 산업용 이더넷 물리**는 데이터 전송의 지연과 떨림(Jitter)을 수학적으로 제거하여 정해진 시간에 배달을 보장하는 '시간의 약속 지능'입니다. 우리가 이를 배우는 이유는 사무용 인터넷과 공장 제어망을 하나로 합치면서도 제어 데이터의 우선순위를 완벽히 지키고, "찰나의 지연도 허용하지 않는 '결정론적 산업 네트워크 주권'을 확보하기" 위함입니다. 시간의 정밀도가 제어의 무결성을 결정합니다.

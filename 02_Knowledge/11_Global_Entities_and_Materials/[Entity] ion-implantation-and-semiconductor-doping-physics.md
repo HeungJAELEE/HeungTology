@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ion-implantation-and-semiconductor-doping-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ion-implantation-and-semiconductor-doping-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process by which ions of a material are accelerated in an electrical field and impacted into a solid (Ion Implantation) and the physical study of modifying semiconductor conductivity through controlled impurities (Semiconductor Doping Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ion-implantation", "semiconductor-doping", "wafer-fabrication", "stopping-power", "lattice-damage", "annealing", "p-n-junction", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Implantation_Fidelity_Audit: Evaluate the ''Projected Range'' ($R_p$) to identify if high-fidelity ''Channeling'' (ions slipping through lattice holes) is causing deeper than intended high-fidelity doping.'
-    - 'Damage_Integrity_Check: Analyze the high-fidelity ''Crystal Lattice Displacement'' to ensure that the post-implant high-fidelity ''Annealing'' (heat treatment) successfully repairs the silicon structure.'
-    - 'Dosage_Fidelity_Scan: Monitor the high-fidelity ''Beam Current'' and scan uniformity to verify that the high-fidelity ''Dopant Density'' ($\\phi$) is within $0.1\\%$ of the target spec.'
-Trust Metrics:
+  description: "[Entity] ion-implantation-and-semiconductor-doping-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☢️ Ion Implantation and Semiconductor Doping Physics
+# [Entity] ion-implantation-and-semiconductor-doping-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 순수한 실리콘(모래)이 어떻게 전기를 통하게도 하고 막기도 하는 마법의 반도체 칩이 될까요? **이온 주입 및 반도체 도핑 물리**는 실리콘이라는 완벽한 격자 구조 속에 특정 불순물(이온)을 강제로 '총을 쏘듯' 집어넣어 성질을 바꾸는 **'원자 단위의 튜닝'** 기술입니다. 전자가 남는 구역(N형)과 모자라는 구역(P형)을 나노미터 단위로 배치하여 현대 문명의 뇌인 트랜지스터를 만듭니다. **'이온을 빛에 가까운 속도로 가속하여 실리콘의 영혼을 바꾸고 전자의 흐름을 지배하는 반도체 공학의 근본 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Channeling Risk - High-fidelity ions slipping through crystal 'holes'. Doping depth high-fidelity out of control. Tilt wafer by 7 degrees"
         return "PASS: Validated Off-axis Implantation and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(beam_current_ua=500.0, implant_energy_kev=150.0, sheet_resistance_ohm=100.0)
 print(engine.diagnose_implant_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_implant_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ion-implant-dose-and-depth-accuracy-v2026`와 연동되어, 전 세계 주요 반도체 팹의 실시간 이온 주입 데이터를 분석하고 도핑 불량 및 격자 손상 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 소자 문명의 성능 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_semiconductor-and-nanoscale-engineering-hub
 - photolithography-and-sub-wavelength-patterning-physics

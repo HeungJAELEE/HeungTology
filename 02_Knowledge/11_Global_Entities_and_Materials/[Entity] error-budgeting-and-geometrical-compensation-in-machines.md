@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "error-budgeting-and-geometrical-compensation-in-machines"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] error-budgeting-and-geometrical-compensation-in-machines]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic engineering approach of predicting and summing all potential errors in a machine's motion (Error Budgeting) and applying mathematical corrections (Geometrical Compensation) to achieve sub-micron precision in manufacturing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metrology", "error-budgeting", "geometrical-compensation", "precision-engineering", "machine-tools"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Geometric_Error_Audit: Measure the 21 systematic errors (6 per axis + squareness) of a 3-axis machine using laser interferometers.'
-    - 'Thermal_Drift_Check: Evaluate the displacement of the spindle or tool tip caused by temperature changes in the machine structure.'
-    - 'Abbe_Offset_Verification: Analyze the distance between the measurement scale and the actual tool path to minimize rotational error amplification.'
-Trust Metrics:
+  description: "[Entity] error-budgeting-and-geometrical-compensation-in-machines에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Error Budgeting and Geometrical Compensation in Machines
+# [Entity] error-budgeting-and-geometrical-compensation-in-machines
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에 완벽한 기계는 없습니다. 아무리 비싼 기계라도 아주 미세하게 휘어지거나, 온도가 변하면 늘어나고, 움직일 때 조금씩 비틀거립니다. **에러 버젯팅(Error Budgeting)**은 이 모든 '실수'들을 미리 예측하여 "우리 기계는 최대 이만큼 틀릴 거야"라고 정직하게 예산을 짜는 일입니다. **기하학적 보정**은 그 틀어짐을 수학적으로 계산해서, 기계가 움직일 때 반대 방향으로 살짝 더 움직여 오차를 '0'으로 만드는 마법 같은 기술입니다. 0.001mm의 오차도 허용하지 않는 반도체나 항공기 부품을 만드는 힘은 바로 이 '정밀한 자기 반성'에서 나옵니다.
@@ -59,10 +48,10 @@ $$ \delta_{total} = \sqrt{\delta_{geometric}^2 + \delta_{thermal}^2 + \delta_{dy
 
 | Parameter | Metric | Standard Machine | Ultra-Precision | Unit |
 | :--- | :--- | :--- | :--- | :--- |
-| Positioning | Accuracy | 5 ~ 20 | < 1 | $\mu m$ |
-| Repeatability | Precision | 2 ~ 5 | < 0.2 | $\mu m$ |
-| Thermal Drift | Stability | 10 ~ 50 | < 1 | $\mu m/^\circ C$ |
-| Spindle Error | Run-out | 1 ~ 5 | < 0.1 | $\mu m$ |
+| Positioning | Accuracy | 5 ~ 20 | < 1 | $\mu\text{m}$ |
+| Repeatability | Precision | 2 ~ 5 | < 0.2 | $\mu\text{m}$ |
+| Thermal Drift | Stability | 10 ~ 50 | < 1 | $\mu\text{m}/^\circ C$ |
+| Spindle Error | Run-out | 1 ~ 5 | < 0.1 | $\mu\text{m}$ |
 | Scale Res | Feedback | 100 ~ 500 | 1 ~ 10 | $nm$ |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Thermal Drift Detected ({self.temp}C) - Activate Volumetric Compensation"
         return "PASS: Thermal Equilibrium Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(measured_error_um=0.8, compensation_applied=True, structure_temp_c=21.5)
 print(engine.diagnose_geometrical_precision(tolerance_limit=1.0))
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_geometrical_precision(tolerance_limit=1.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data machine-tool-positioning-accuracy-and-thermal-drift-v2026`와 연동되어, 생산 라인에 있는 모든 초정밀 장비의 오차 이력을 실시간 분석하고 가공 불량 발생 확률을 0.001% 이하로 억제함으로써 지능형 극한 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - control-systems-and-signal-processing-engineering

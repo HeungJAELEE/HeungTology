@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "granulation-process-and-powder-agglomeration-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] granulation-process-and-powder-agglomeration-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process of forming grains or granules from a powdery or solid substance, producing a particulate matter (Granulation) and the physical study of particle collision, liquid bridging, and solid-state bonding (Powder Agglomeration Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["granulation", "powder-agglomeration", "particle-physics", "pharmaceutical-manufacturing", "wet-granulation", "stokes-number", "industrial-processing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Granulation_Fidelity_Audit: Evaluate the ''Stokes Number'' ($St$) to identify if high-fidelity ''Bouncing'' (no growth) or ''Crashing'' (over-wetting) is preventing stable granule formation.'
-    - 'Integrity_Fidelity_Check: Analyze the high-fidelity ''Liquid Bridge'' stability against the impeller shear force to ensure that the granules are not being shredded back into powder.'
-    - 'Size_Fidelity_Scan: Monitor the high-fidelity ''Particle Size Distribution'' (PSD) to verify that the high-fidelity ''Growth Rate'' is uniform, avoiding the formation of ''Lumps'' (elephant feet).'
-Trust Metrics:
+  description: "[Entity] granulation-process-and-powder-agglomeration-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💊 Granulation Process and Powder Agglomeration Physics
+# [Entity] granulation-process-and-powder-agglomeration-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 밀가루처럼 고운 가루를 어떻게 알약처럼 단단하고 균일한 알갱이로 뭉칠 수 있을까요? **과립화(Granulation) 공정 및 분말 응집 물리**는 흩날리는 가루에 적절한 '끈기(바인더)'를 더해, 입자들이 서로 손을 잡고 동글동글한 덩어리가 되게 만드는 **'가루의 사회화'** 기술입니다. 단순히 뭉치는 게 아니라, 물방울이 입자 사이에서 '다리(Liquid Bridge)' 역할을 하며 서로를 끌어당기게 수학적으로 설계합니다. **'다루기 힘든 미세 분말을 흐름성이 좋은 균일한 알갱이로 탈바꿈시켜 정밀한 투약과 공정의 효율을 보장하는 지능형 입자 역학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor PSD Uniformity - Wide high-fidelity size range. Will cause segregation in the tablet press. Adjust high-fidelity impeller shear"
         return "PASS: Validated Granule Geometry and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(impeller_power_kw=12.5, binder_flow_rate=2.0, granule_moisture_pct=15.0)
 print(engine.diagnose_granulation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_granulation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data granule-size-distribution-and-binder-viscosity-v2026`와 연동되어, 전 세계 주요 제약사 및 비료 공장의 과립 데이터를 실시간 분석하고 입도 불량 및 정제 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 입자 가공 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fluidized-bed-combustion-fbc-and-heat-transfer-physics

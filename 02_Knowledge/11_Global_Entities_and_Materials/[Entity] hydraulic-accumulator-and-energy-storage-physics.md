@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydraulic-accumulator-and-energy-storage-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydraulic-accumulator-and-energy-storage-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A pressure storage reservoir in which a non-compressible hydraulic fluid is held under pressure by an external source (Hydraulic Accumulator) and the physical study of gas-liquid interactions and potential energy storage (Energy Storage Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydraulic-accumulator", "energy-storage", "fluid-power", "gas-spring", "shock-absorption", "pressure-surge", "industrial-hydraulics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Storage_Fidelity_Audit: Evaluate the ''Precharge Pressure'' ($P_0$) to identify if high-fidelity ''Gas Leakage'' is reducing the usable fluid volume and response speed.'
-    - 'Thermal_Integrity_Check: Analyze the high-fidelity ''Polytropic Exponent'' ($n$) to determine if the cycle is adiabatic (fast) or isothermal (slow), affecting high-fidelity energy efficiency.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Pressure Ripples'' to verify that the accumulator is effectively acting as a high-fidelity ''Pulsation Dampener'', protecting the pump.'
-Trust Metrics:
+  description: "[Entity] hydraulic-accumulator-and-energy-storage-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Hydraulic Accumulator and Energy Storage Physics
+# [Entity] hydraulic-accumulator-and-energy-storage-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 유압 시스템에서 갑자기 엄청난 힘이 필요할 때나, 펌프가 떨리며 소음을 낼 때 이를 해결해주는 '마법의 통'이 있습니다. **유압 어큐뮬레이터(축압기) 및 에너지 저장 물리**는 액체 속에 압축된 질소 가스를 가두어, 마치 보이지 않는 '유압 스프링'처럼 에너지를 저장했다가 필요할 때 쏟아붓는 **'유압용 보조 배터리'** 기술입니다. 펌프의 맥동을 흡수하고 비상시에는 장비를 멈추는 생명선 역할을 합니다. **'기체와 액체의 조화를 통해 유압 시스템의 에너지를 비축하고 충격을 완화하여 시스템의 안정성을 사수하는 지능형 압력 요새'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Ineffective Dampening - High-fidelity pressure surges still reaching the pump. Accumulator location or high-fidelity precharge is sub-optimal"
         return "PASS: Validated Surge Protection and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(precharge_pressure_bar=80.0, system_peak_pressure=210.0, cycle_time_s=1.0)
 print(engine.diagnose_accumulator_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_accumulator_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data accumulator-capacity-and-response-times-v2026`와 연동되어, 전 세계 주요 대형 사출기 및 풍력 발전기 피치 제어 시스템의 데이터를 실시간 분석하고 블래더 파손 및 압력 변동 사고 확률을 0.001% 이하로 억제함으로써 지능형 유압 공정 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydraulic-pump-and-fluid-displacement-physics

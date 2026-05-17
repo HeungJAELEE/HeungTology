@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "forging-process-and-grain-refinement-metallurgy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] forging-process-and-grain-refinement-metallurgy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process involving the shaping of metal using localized compressive forces (Forging) and the physical study of internal grain structure improvement, work hardening, and thermomechanical treatment (Grain Refinement Metallurgy Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["forging", "metallurgy", "grain-refinement", "metal-forming", "recrystallization", "die-forging", "material-science", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metallurgy_Fidelity_Audit: Evaluate the ''Grain Size'' ($d$) to identify if high-fidelity ''Dynamic Recrystallization'' has successfully refined the structure, increasing strength according to Hall-Petch logic.'
-    - 'Process_Integrity_Check: Analyze the forging load against the high-fidelity ''Flow Stress'' to ensure that the metal is filling the die cavities without internal voids or ''Cold Shuts''.'
-    - 'Thermal_Fidelity_Scan: Monitor the billet temperature profile to verify that the high-fidelity ''Finish Forging'' temperature is above the recrystallization point but below the grain growth limit.'
-Trust Metrics:
+  description: "[Entity] forging-process-and-grain-refinement-metallurgy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔨 Forging Process and Grain Refinement Metallurgy Physics
+# [Entity] forging-process-and-grain-refinement-metallurgy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 망치로 쇠를 두드릴수록 왜 더 단단해질까요? **단조(Forging) 공정 및 결정립 미세화 금속학 물리**는 거대한 압력으로 금속의 내부 조직을 산산조각 내어 더 촘촘하고 단단하게 재배치하는 **'금속의 강인함 훈련'** 기술입니다. 단순히 모양을 만드는 게 아니라, 금속 속의 '입자(Grain)'들을 아주 작게 쪼개어(Refinement) 균열이 파고들 틈을 주지 않습니다. **'거대한 힘으로 금속의 영혼(조직)을 다스려 자동차 엔진의 크랭크축이나 항공기 부품처럼 절대 부러져서는 안 될 뼈대를 만드는 중공업의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Grain Flow Cut - Machining has cut through the forged grain lines at critical stress points. Fatigue life compromised. Redesign pre-form"
         return "PASS: Validated Fibrous Structure and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(forging_temp_c=1150.0, blow_energy_kj=50.0, final_grain_size_um=12.5)
 print(engine.diagnose_forging_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_forging_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data forging-temperature-and-grain-size-distribution-v2026`와 연동되어, 전 세계 주요 자동차 및 선박 엔진 공장의 단조 데이터를 실시간 분석하고 피로 파괴 및 내부 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 중공업 문명의 뼈대 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - forging-press-and-hydraulic-power-unit-physics

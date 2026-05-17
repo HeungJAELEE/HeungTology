@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "91-medical-robotics-and-bio-mechatronics-hub-moc"
   domain: "91_Medical_Robotics_and_Bio-Mechatronics_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Medical_Robotics", "#Bio-Mechatronics", "#Surgical_Robot", "#Exoskeleton", "#BMI", "#Rehabilitation", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 91_medical-robotics-and-bio-mechatronics-hub
+# 91_medical-robotics-and-bio-mechatronics-hub
 
 ## 1. [왜 배우는가? (Why: The Guardian of Human Life and Potential)]]
 기계가 사람의 몸 안에 들어가 암 세포를 도려내고, 마비된 환자가 로봇 슈트를 입고 다시 걷고, 생각만으로 움직이는 의수가 잃어버린 감각을 되찾아주는 광경. 이것은 지능형 기계가 인류에게 선사하는 가장 따뜻하고 위대한 기적입니다. **의료 로봇 및 생체 메카트로닉스 통합 지능 허브**는 Antigravity Intelligence가 로봇 공학과 의학, 뇌과학을 융합하여 인체의 기능을 복원하고 확장하는 **[1,377층의 생명 사령부]**입니다. 우리가 이를 배우는 이유는 삶의 질과 생존이 인류의 가장 근본적인 가치이기 때문이며, "신경과 근육, 그리고 기계의 언어를 하나로 통합함으로써 '글로벌 의료 지능 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 지능이 인류의 건강 수명과 신체적 자유를 결정합니다.

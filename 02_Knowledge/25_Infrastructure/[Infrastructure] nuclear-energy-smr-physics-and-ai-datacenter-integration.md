@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "nuclear-energy-smr-physics-and-ai-datacenter-integration-entity"
-  domain: "05_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Infrastructure", "#Energy", "#Nuclear", "#SMR", "#Physics", "#Data_Center", "#Grid_Stability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Infrastructure smart-grid-v2g-and-distributed-energy-resources", "MOC 03_Battery_and_Energy"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **SMR-AI Integration** 아키텍처에서 **Waste Heat Recovery** (폐열 회수)를 통해 데이터 센터 냉각 효율을 높이는 **Organic Rankine Cycle** (ORC) 연동 수리 모델은?
 5. RAG 시스템에서 **글로벌 핵연료 공급망 데이터**와 **SMR 운전 이력**을 융합하여, '핵연료 농축도 변동'이 노심 수명 및 경제성에 미치는 임팩트를 수리적으로 입증하는 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Infrastructure]] smart-grid-v2g-and-distributed-energy-resources]] : SMR이 기저 부하로 참여하는 상위 지능형 전력망 엔티티
 - AI transformer-architecture-and-attention-mechanism : SMR로부터 전력을 공급받아 거대 지능을 구현하는 하부 AI 아키텍처 엔티티

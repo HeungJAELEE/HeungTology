@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "advanced-process-control-apc-and-virtual-metrology-vm-strategy"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Strategy] advanced-process-control-apc-and-virtual-metrology-vm]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategy", "#Process_Control", "#APC", "#Virtual_Metrology", "#AI", "#Semiconductor", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 130_precision-engineering-and-nanometrology-mastery-hub", "MOC 16_smart-factory-and-industrial-ai-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] advanced-process-control-apc-and-virtual-metrology-vm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Strategy] advanced-process-control-apc-and-virtual-metrology-vm
+
+# [Strategy] advanced-process-control-apc-and-virtual-metrology-vm
  
 ## 1. [왜 배우는가? (Why: The Autopilot of the Semiconductor Sea)]]
 수천 개의 공정 파라미터가 얽힌 반도체 생산 라인에서, 설비 상태는 고정되어 있지 않고 끊임없이 변합니다(Drift). **첨단 공정 제어(APC) 및 가상 계측(VM)**은 이 요동치는 공정의 바다 위에서 제품의 품질을 목표치로 유지하는 '자율 주행 시스템'입니다. 우리가 이를 배우는 이유는 모든 웨이퍼를 실제로 측정하는 데 드는 막대한 비용과 시간을 줄이면서도, "데이터를 통해 보이지 않는 결과를 예측하고 스스로 최적의 공정 조건을 찾아가게 함으로써 수율 변동성을 수리적으로 극소화"하기 위함입니다. 제어의 지능이 제조의 연속성을 보증합니다.
@@ -73,7 +63,6 @@ APC는 공장의 맥박을 조절합니다. 설비가 늙어가고 환경이 변
 4. **Feed-forward** 제어 시 상위 공정의 계측 오차를 하위 공정 파라미터에 매핑하여 수율 손실을 상쇄하는 수리적 최적화 모델은?
 5. RAG 시스템에서 **팹 전체의 APC 로그**를 분석하여, 특정 설비 그룹의 **Control Gain**이 최적이 아님을 식별하고, 전체 수율 극대화를 위한 **Global Optimization** 파라미터를 추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 130_precision-engineering-and-nanometrology-mastery-hub : APC/VM 전략이 통합되는 상위 계측/품질 허브
 - Entity control-theory-pid-lqr-and-model-predictive-control-mpc : 제어 이론의 기초 엔티티

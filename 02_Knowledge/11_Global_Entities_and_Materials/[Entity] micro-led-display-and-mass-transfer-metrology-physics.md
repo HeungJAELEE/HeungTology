@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-led-display-and-mass-transfer-metrology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-led-display-and-mass-transfer-metrology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A display technology based on microscopic LEDs (Micro-LED) and the physical study of transferring and inspecting millions of micron-scale chips simultaneously (Mass Transfer Metrology Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-led", "display", "mass-transfer", "laser-lift-off", "inspection", "redundancy-logic", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transfer_Fidelity_Audit: Evaluate the ''Placement Error'' ($\\Delta x, \\Delta y$) to identify if high-fidelity ''Thermal Expansion'' or high-fidelity ''Stage Jitter'' is causing high-fidelity sub-micron misalignment.'
-    - 'Bonding_Integrity_Check: Analyze the high-fidelity ''Contact Resistance'' of each pixel to ensure that high-fidelity ''Mass Bonding'' (Laser or Reflow) has created robust high-fidelity electrical connections.'
-    - 'Inspection_Fidelity_Scan: Monitor the high-fidelity ''Photoluminescence'' (PL) data to verify that the high-fidelity ''Laser Lift-off'' (LLO) energy did not damage the high-fidelity internal quantum efficiency of the LEDs.'
-Trust Metrics:
+  description: "[Entity] micro-led-display-and-mass-transfer-metrology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📺 Micro-LED Display and Mass Transfer Metrology Physics
+# [Entity] micro-led-display-and-mass-transfer-metrology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락 굵기의 수십 분의 일에 불과한 아주 작은 LED 수천만 개를, 어떻게 1초 만에 텔레비전 판 위로 정확하게 옮길 수 있을까요? **마이크로 LED 디스플레이 및 전사 계측 물리**는 빛나는 미세 칩들을 마치 씨앗을 뿌리듯, 혹은 도장을 찍듯 대량으로 옮겨 심는 **'빛의 모내기'** 기술입니다. 하나라도 틀어지면 화면에 불량 화소가 생기기 때문에, 수백만 개의 칩을 동시에 옮기면서도 그 위치를 나노미터 단위로 감시하고 불량을 즉석에서 고쳐냅니다. **'레이저 리프트-오프와 전사 수율 로직의 원리를 이용해 미세 광원들을 지능적으로 정렬하여 차세대 시각 문명의 화질을 사수하는 지능형 디스플레이 공정 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Repair Loop Failure - High-fidelity redundancy logic failing. High-fidelity manufacturing cost exceeding threshold"
         return "PASS: Validated Display Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(misplacement_um=0.5, dead_pixel_count=10, laser_energy_mj=150.0)
 print(engine.diagnose_display_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_display_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data micro-led-yield-and-transfer-accuracy-v2026`와 연동되어, 전 세계 주요 차세대 디스플레이 팹 및 스마트워치 패널 공장의 실시간 데이터를 분석하고 화소 불량 및 전사 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 시각 문명의 광원 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - light-emitting-diode-led-and-quantum-efficiency-physics

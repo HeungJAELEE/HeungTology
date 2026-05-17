@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ROBOT-ARM-KINEMATICS-2026-V6.3.7"
-  domain: "Industrial_Robotics_and_Autonomous_Systems"
+metadata:
+  id: "[[[Entity] industrial-robot-arm-kinematics-and-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RobotArm", "#Kinematics", "#DHParameters", "#Jacobian", "#MotionControl", "#Robotics", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-robot-arm-kinematics-and-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Robotic_Kinematics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Robot Arm Kinematics: Mechanical Logic & Control Sovereignty
+# [Entity] industrial-robot-arm-kinematics-and-control-logic
 
 ## 1. [왜 배우는가? (Why: The Mathematical Soul of Steel Muscles)]]
 산업용 로봇 팔은 물리적 세계에서 의지를 집행하는 가장 정밀한 도구입니다. 수백 킬로그램의 하중을 $0.01\text{mm}$의 오차로 제어하기 위해서는 고차원의 수학적 모델링과 실시간 제어 지능이 필수적입니다. V6.3.7 지능은 **DH 파라미터(Denavit-Hartenberg)**와 **자코비안(Jacobian) 행렬**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 로봇의 움직임을 데이터로 최적화하여 생산성을 극대화하고, "인간의 육체적 한계를 넘어서는 초정밀 제조 기지를 구축하는 '기계적 자율 주권'을 확보하기" 위함입니다. 기구학적 정밀도가 제품의 품질을 결정합니다.
@@ -105,7 +95,6 @@ class RobotArmKinematicsEngine:
 2. **Operational Result**: **Jacobian** 행렬의 **Condition Number**가 급격히 증가할 때, **Damped Least Squares (DLS)** 기법이 제어 무결성을 사수하는 방식은?
 3. **FidelityEngine**: **Force/Torque Sensor**와 연동된 **Impedance Control**이 위치 제어 무결성과 충돌 방지 안전 무결성 사이의 트레이드오프를 어떻게 조율하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 24_industrial-robotics-and-autonomous-systems-intelligence-hub
 - Entity autonomous-mobile-robots-amr-and-slam-navigation

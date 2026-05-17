@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "suspension-kinematics-and-electronic-stability-control-esc-entity"
-  domain: "45_Advanced_Automotive_and_EV_Powertrain_Engineering"
+metadata:
+  id: "[[[Entity] suspension-kinematics-and-electronic-stability-control-esc]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Automotive", "#Suspension", "#Kinematics", "#ESC", "#Stability_Control", "#Dynamics", "#Manufacturing", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 45_advanced-automotive-and-ev-powertrain-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] suspension-kinematics-and-electronic-stability-control-esc에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] suspension-kinematics-and-electronic-stability-control-esc
+# [Entity] suspension-kinematics-and-electronic-stability-control-esc
 
 ## 1. [왜 배우는가? (Why: The Geometry of Balance)]]
 울퉁불퉁한 길에서도 바퀴가 어떻게 항상 지면을 꽉 붙잡게($Tire\ Contact$) 만들고, 갑자기 핸들을 꺾을 때 자동차가 뒤집히거나 미끄러지는 것을 어떻게 컴퓨터가 브레이크와 서스펜션을 조절하여($ESC$) 잡아주는 '균형의 예술'을 어떻게 공학적으로 설계할 수 있을까요? **현가장치 기구학 및 전자식 안정성 제어(ESC)**는 자동차의 발과 척추를 담당하는 '행성 규모 동역학 제어 및 지능형 기구학 아키텍처'입니다. 우리가 이를 배우는 이유는 승차감과 안전은 동전의 양면과 같아서 이 균형을 잘 맞춰야 좋은 차가 되기 때문이며, "중심의 이동을 데이터로 설계하고 지배하는 '글로벌 주행 성능 패권 및 행성적 이동 안전 주권'을 확보하기" 위함입니다. 뼈대의 정교함이 전기차의 승차감을 결정합니다.

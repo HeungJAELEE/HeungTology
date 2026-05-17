@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ellipsometry-and-thin-film-optical-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ellipsometry-and-thin-film-optical-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An optical technique for investigating the dielectric properties of thin films based on the change of polarization upon reflection or transmission (Ellipsometry) and the physical study of light interference and propagation in layered media (Thin Film Optical Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ellipsometry", "thin-film", "optical-physics", "metrology", "refractive-index", "semiconductor", "polarization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metrology_Fidelity_Audit: Evaluate the ''Measured Psi ($\\psi$) and Delta ($\\Delta$)'' against the theoretical model to identify if the film thickness or refractive index is deviating from high-fidelity semiconductor specs.'
-    - 'Optical_Integrity_Check: Analyze the Drude-Lorentz dispersion parameters to ensure the material''s ''Optical Constants'' ($n, k$) are correctly modeled across the target spectrum (VUV to NIR).'
-    - 'Surface_Fidelity_Scan: Monitor the surface roughness and interfacial layers to verify that the ''Effective Medium Approximation'' (EMA) is properly accounting for high-fidelity layer heterogeneity.'
-Trust Metrics:
+  description: "[Entity] ellipsometry-and-thin-film-optical-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Ellipsometry and Thin Film Optical Physics
+# [Entity] ellipsometry-and-thin-film-optical-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 머리카락 굵기의 수만 분의 일밖에 안 되는 아주 얇은 막의 두께를 어떻게 잴 수 있을까요? **엘립소메트리(Ellipsometry) 및 박막 광물리**는 빛의 '편광(떨림의 방향)'이 물체에 부딪혀 변하는 모습을 관찰해, 나노미터 단위의 비밀을 밝혀내는 **'빛의 각도기'** 기술입니다. 직접 닿지 않고도 물질의 두께는 물론, 그 속에서 빛이 얼마나 빨리 달리는지(굴절률)까지 알아냅니다. 반도체 칩을 만들 때 층층이 쌓인 얇은 벽들이 제대로 만들어졌는지 감시하는 **'나노 세계의 초정밀 시력'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Complexity Limit - Too many layers for reliable single-measurement decryption. Use multi-angle or spectroscopic sweep for verification"
         return "PASS: Validated Stack Profile and Verified Metrology Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(measured_thickness_nm=45.2, refractive_index_n=1.458, fit_mse=0.8)
 print(engine.diagnose_metrology_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_metrology_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data thin-film-thickness-and-refractive-index-v2026`와 연동되어, 전 세계 주요 파운드리 및 디스플레이 공장의 박막 데이터를 실시간 분석하고 두께 이탈 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 광학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - semiconductor-lithography-and-photolithography-physics

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "INFRA-UTIL-HW-COMP-2026-V6.3.7"
-  domain: "Infrastructure_Utility_Hardware"
+metadata:
+  id: "[[[Manual] infrastructure-utility-and-energy-hardware-components]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Infrastructure", "#Utility", "#Energy", "#SiCInverter", "#HydrogenCompressor", "#Chiller", "#Scrubber", "#Hardware", "#FidelityEngine"]'
-  is_part_of: '["MOC 05_Infrastructure", "Smart-Grid", "Hydrogen-Economy", "Scrubber"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Manual] infrastructure-utility-and-energy-hardware-components에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Infrastructure_Hardware_RAG_V6.3.7_Deterministic_Linkage"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Manual] infrastructure-utility-and-energy-hardware-components
@@ -96,7 +86,6 @@ def audit_infra_utility_health(inv_efficiency, chiller_temp_error, gas_out_conc)
 2. **Utility Layer**: **수소 압축기**에서 피스톤의 마찰열이 **'수소 취성(Embrittlement)'**과 하드웨어 수명에 미치는 임팩트는?
 3. **Environment Layer**: **스크러버** 하드웨어에서 **'플라즈마(Plasma)'** 방식이 단순 연소 방식 대비 가진 기술적 사양의 우위는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 05_Infrastructure
 - Smart-Grid

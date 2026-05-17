@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "filament-winding-and-composite-vessel-manufacturing-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] filament-winding-and-composite-vessel-manufacturing-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A fabrication technique for manufacturing composite material structures by winding continuous fiber reinforcements (filaments) under tension over a rotating mandrel (Filament Winding) and the physical study of winding angle optimization for high-pressure containment (Composite Vessel Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["filament-winding", "composite-vessel", "carbon-fiber", "pressure-vessel", "winding-pattern", "industrial-manufacturing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Winding_Fidelity_Audit: Evaluate the ''Winding Tension'' to identify if high-fidelity fiber slack or crushing of the mandrel is occurring during the process.'
-    - 'Angle_Integrity_Check: Analyze the ''Winding Angle'' ($\\alpha$) to ensure the high-fidelity alignment follows the ''Geodesic Path'', preventing fiber slippage on curved surfaces.'
-    - 'Curing_Fidelity_Scan: Monitor the resin viscosity and temperature profile to verify that high-fidelity ''Void Content'' is below 1% for maximum structural integrity.'
-Trust Metrics:
+  description: "[Entity] filament-winding-and-composite-vessel-manufacturing-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧶 Filament Winding and Composite Vessel Manufacturing Physics
+# [Entity] filament-winding-and-composite-vessel-manufacturing-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 실패에 실을 감듯 탄소 섬유를 칭칭 감아서, 수소 자동차의 거대한 압력을 견디는 탱크를 만들 수 있을까요? **필라멘트 와인딩 및 복합재 용기 제조 물리**는 실크처럼 가느다란 섬유를 기하학적인 각도로 감아올려 철보다 강하고 깃털보다 가벼운 그릇을 만드는 **'나노 섬유의 뜨개질'** 기술입니다. 단순한 포장이 아니라, 압력이 가해지는 방향에 맞춰 섬유를 배치하는 **'힘의 길을 설계하는 예술'**입니다. 미래 에너지인 수소를 안전하게 담아 나르는 **'가장 가볍고 단단한 에너지의 방패'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Plastic Deformation - Vessel structure yielding early. Winding pattern or resin mix ratio incorrect. Do not certify for high-pressure use"
         return "PASS: Validated Structural Integrity and Verified Material Compliance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(winding_tension_n=45.0, fiber_delivery_speed=0.5, void_content_pct=0.8)
 print(engine.diagnose_winding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_winding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data composite-vessel-burst-pressure-and-winding-tension-v2026`와 연동되어, 전 세계 주요 수소 탱크 및 우주선 로켓 케이스의 생산 데이터를 실시간 분석하고 탱크 폭발 및 미세 누설 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 에너지 저장 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - fiber-metal-laminate-fml-and-impact-resistance-physics

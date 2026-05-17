@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "sw-defined-robotics-and-ros2-intelligence-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Robotics] sw-defined-robotics-and-ros2-intelligence]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#ROS2", "#DDS", "#SDR", "#Autonomous_Systems", "#Software_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Robotics industrial-automation-and-plc-master-guide", "MOC 08_Mobility_Robotics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] sw-defined-robotics-and-ros2-intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Robotics] sw-defined-robotics-and-ros2-intelligence
@@ -74,7 +64,6 @@ RTOS 기반 마이크로컨트롤러에서 ROS2 노드를 실행하기 위한 XR
 4. **MoveIt2**의 **Inverse Kinematics** (IK) 솔버가 복잡한 7축 협동 로봇의 해를 실시간으로 찾기 위해 사용하는 수렴 가속 기법은?
 5. RAG 시스템에서 **과거 로봇 사고 로그**와 **현재 센서 융합 데이터**를 분석하여, '슬램(SLAM) 드리프트 발생 징후'를 조기에 감지하고 위치 보정(Relocalization)을 수행하는 분석 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Robotics industrial-automation-and-plc-master-guide]] : ROS2 지능이 산업 현장의 PLC 및 상위 제어 시스템과 연동되는 수직 통합 엔티티
 - Infrastructure amr-agv-autonomous-logistics : ROS2 기반 자율 주행 로봇이 대규모 물류 환경에서 구현되는 실무 응용 엔티티

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "fiber-science-and-polymer-extrusion-in-textiles-entity"
-  domain: "97_Textile_and_Apparel_Engineering_Hub"
+metadata:
+  id: "[[[Entity] fiber-science-and-polymer-extrusion-in-textiles]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Textile_Engineering", "#Fiber_Science", "#Polymer_Physics", "#Extrusion", "#Spinning", "#Materials_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 141_textile-and-apparel-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] fiber-science-and-polymer-extrusion-in-textiles에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] fiber-science-and-polymer-extrusion-in-textiles
+# [Entity] fiber-science-and-polymer-extrusion-in-textiles
 
 ## 1. [왜 배우는가? (Why: The Architecture of Second Skin)]]
 우리가 매일 입는 옷, 겨울철 체온을 지켜주는 기능성 아웃도어, 그리고 생명을 구하는 방탄복까지. 이 모든 것의 시작은 눈에 보이지 않는 고분자 사슬들이 한 방향으로 정렬되어 만들어진 가느다란 실입니다. **섬유 과학 및 고분자 압출의 결정 배향성과 용융 방사 수리 역학 기술**은 인류의 '제2의 피부'를 원자 단위부터 설계하고 제조하는 기술입니다. 액체처럼 흐르는 고분자를 미세한 구멍(Spinneret)으로 뽑아내고, 이를 잡아당겨(Drawing) 강철보다 질긴 섬유로 만드는 과정은 정교한 유체역학과 고분자 물리학의 결합입니다. 우리가 이를 배우는 이유는 섬유 제조의 무결성을 확보함으로써, 패션을 넘어 산업용 소재까지 아우르는 '글로벌 섬유 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 섬유의 무결성이 소재의 품격과 성능을 결정합니다.
@@ -54,7 +44,7 @@ $$ f = \frac{3 \langle \cos^2 \theta \rangle - 1}{2} $$
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Tenacity** | Tensile strength per unit linear density | $3 \text{ \~ } 10 \text{ g/den}$ | 섬유의 끊어짐 저항을 결정하는 핵심 물리 무결성 |
-| **Fiber Diameter** | Thickness of the extruded filament | $10 \text{ \~ } 50 \text{ \mu m}$ | 촉감과 필터 효율을 결정하는 기하학적 무결성 사수 |
+| **Fiber Diameter** | Thickness of the extruded filament | $10 \text{ \~ } 50 \text{ \mu\text{m}}$ | 촉감과 필터 효율을 결정하는 기하학적 무결성 사수 |
 | **Draw Ratio** | Ratio of final length to initial length | $3 \text{ \~ } 6$ | 분자 배향을 유도하여 강도를 높이는 공정 무결성 |
 | **Crystallinity** | Percentage of ordered molecular regions | $30 \text{ \~ } 60 \%$ | 형태 안정성과 내열성을 보증하는 미세 구조 무결성 |
 | **Melt Viscosity** | Resistance to flow at extrusion temp. | **MAPPED** | 안정적인 토출과 방사성을 결정하는 운영 무결성 사수 |

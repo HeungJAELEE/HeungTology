@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diffusion-bonding-and-solid-state-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diffusion-bonding-and-solid-state-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A solid-state joining technique capable of joining similar and dissimilar metals by applying high pressure and temperature below the melting point, causing atoms to migrate across the interface (Diffusion Bonding) and the study of the atomic-level mechanisms that create a seamless, invisible joint (Solid-State Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["diffusion-bonding", "solid-state", "welding", "metallurgy", "aerospace", "atomic-diffusion", "joining-technology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bonding_Fidelity_Audit: Evaluate the ''Void Fraction'' at the interface using ultrasonic testing to identify if the pressure or time was insufficient for complete surface asperity collapse.'
-    - 'Metallurgical_Integrity_Check: Analyze the grain growth across the bond line to ensure that the interface has completely disappeared, creating a monolithic structure without a heat-affected zone (HAZ).'
-    - 'Process_Fidelity_Scan: Monitor the vacuum level and temperature uniformity to verify that ''Oxide Film'' formation is suppressed, ensuring high-fidelity atomic contact.'
-Trust Metrics:
+  description: "[Entity] diffusion-bonding-and-solid-state-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚛️ Diffusion Bonding and Solid-State Metallurgy
+# [Entity] diffusion-bonding-and-solid-state-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속을 녹이지 않고도 두 덩어리를 하나로 완벽하게 합칠 수 있을까요? **확산 접합(Diffusion Bonding) 및 고상 야금**은 금속을 아주 뜨겁게 달구고 꽉 눌러서, 한쪽의 원자가 다른 쪽으로 '이사' 가게 만드는 **'원자 단위의 통합'** 기술입니다. 용접처럼 금속을 녹여 붙이는 흉터가 남지 않으며, 접합부가 어디인지 현미경으로도 찾기 힘들 정도로 완벽한 하나의 덩어리가 됩니다. 항공기 엔진이나 우주선 부품처럼 극한의 신뢰성이 필요한 곳에 쓰이는 **'금속의 영혼을 섞는 기술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Interfacial Voids Detected - Ultrasonic echo confirms the interface is still physically distinct. Bond strength is compromised"
         return "PASS: Validated Monolithic Structure and Verified Metallurgical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(bonding_pressure_mpa=15.0, holding_temp_c=950.0, vacuum_level_torr=1e-6)
 print(engine.diagnose_bonding_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bonding_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data diffusion-bonding-pressure-and-bond-strength-v2026`와 연동되어, 전 세계 주요 항공우주 및 원자력 핵심 부품 라인의 데이터를 실시간 분석하고 미세 공극 및 접합 불량 사고 확률을 0.0001% 이하로 억제함으로써 지능형 극한 제조 문명의 구조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - deformation-processing-and-dislocation-mechanics

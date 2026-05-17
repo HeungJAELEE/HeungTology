@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-heating-ventilation-and-air-conditioning-hvac-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-heating-ventilation-and-air-conditioning-hvac-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technology of indoor and vehicular environmental comfort (HVAC) and the physical logic of air distribution, moisture control, and thermal balance within large-scale industrial spaces (Industrial HVAC Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hvac", "industrial-ventilation", "psychrometrics", "energy-efficiency", "cleanroom", "thermal-comfort", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Ventilation_Fidelity_Audit: Evaluate the ''Air Changes per Hour'' (ACH) to identify if high-fidelity ''Contaminant Accumulation'' or CO2 levels are exceeding safety limits for high-fidelity worker health.'
-    - 'Efficiency_Integrity_Check: Analyze the high-fidelity ''Free Cooling'' potential against the outdoor wet-bulb high-fidelity temperature to maximize energy-saving high-fidelity operation.'
-    - 'Pressure_Fidelity_Scan: Monitor the high-fidelity ''Differential Pressure'' across cleanroom high-fidelity boundaries to verify that ''Cross-Contamination'' is prevented via positive pressure logic.'
-Trust Metrics:
+  description: "[Entity] industrial-heating-ventilation-and-air-conditioning-hvac-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌬️ Industrial Heating, Ventilation, and Air Conditioning (HVAC) Logic
+# [Entity] industrial-heating-ventilation-and-air-conditioning-hvac-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 공장 안의 수천 명의 사람과 수조 원대 장비들이 쾌적하게 숨 쉬고 작동하게 만드는 비결은 무엇일까요? **산업용 HVAC 및 공조 로직**은 공장의 온도, 습도, 청정도를 조절하는 **'공장의 호흡기'** 기술입니다. 단순히 에어컨을 트는 수준을 넘어, 오염된 공기를 밖으로 뿜어내고 깨끗한 공기를 채우며, 에너지를 최소한으로 써서 거대한 공간의 기후를 통제합니다. **'공기의 엔탈피와 유체 역학을 지배하여 최적의 생산 환경과 작업자의 건강을 사수하는 지능형 대기 관리 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Air Quality - High-fidelity CO2 levels too high. Worker high-fidelity fatigue and safety risk. Increase fresh air high-fidelity intake"
         return "PASS: Validated Fresh Air Exchange and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(room_temp_c=22.0, room_humidity_pct=45.0, differential_pressure_pa=25.0)
 print(engine.diagnose_hvac_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_hvac_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hvac-energy-consumption-and-iaq-trends-v2026`와 연동되어, 전 세계 주요 스마트 빌딩 및 생산 시설의 실시간 공조 데이터를 분석하고 환경 이탈 및 에너지 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 거주 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hvac-system-and-psychrometric-chart-logic

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "active-pharmaceutical-ingredient-api-and-bioreactor-scaling"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] active-pharmaceutical-ingredient-api-and-bioreactor-scaling]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical or biological substance in a drug that is responsible for its medicinal effect (Active Pharmaceutical Ingredient) and the engineering challenge of increasing the production volume from laboratory scale to industrial mass production while maintaining purity and yield (Bioreactor Scaling)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["api-manufacturing", "bioreactor", "biotechnology", "chemical-engineering", "scaling-up", "pharmaceuticals", "process-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Process_Fidelity_Audit: Evaluate the ''Oxygen Transfer Rate'' ($k_La$) in the large-scale reactor to identify if the cells are becoming anaerobic due to insufficient mixing as the volume increases.'
-    - 'API_Integrity_Check: Analyze the impurity profile using HPLC (High-Performance Liquid Chromatography) to verify that the ''Scaling-up'' process hasn''t introduced unintended side-products or degradation.'
-    - 'Metabolic_Fidelity_Scan: Monitor the pH and dissolved oxygen (DO) levels in real-time to ensure the ''Bioreactor Environment'' remains within the optimal window for the specific cell line.'
-Trust Metrics:
+  description: "[Entity] active-pharmaceutical-ingredient-api-and-bioreactor-scaling에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💊 Active Pharmaceutical Ingredient (API) and Bioreactor Scaling
+# [Entity] active-pharmaceutical-ingredient-api-and-bioreactor-scaling
 
 ## 1. 개요 (Why: 인간적 통찰)
 실험실의 작은 병 안에서 성공한 기적의 치료제를, 전 세계 수백만 명이 쓸 수 있도록 거대한 탱크에서 똑같은 품질로 대량 생산하려면 어떤 마법이 필요할까요? **원료 의약품(API) 및 바이오리액터 스케일업**은 생명공학의 성과를 현실의 복지로 바꾸는 **'생명의 대량 복제'** 기술입니다. 단순히 탱크를 키우는 것이 아니라, 수만 리터의 액체 속 모든 세포가 실험실에서처럼 골고루 숨 쉬고 먹고 자라게 만드는 정교한 유체역학의 예술입니다. 한 방울의 약에 담긴 가치를 온 세상에 나누는 **'바이오 문명의 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Contamination Detected - Foreign microorganisms found in the broth. Immediate batch termination and system sterilization required"
         return "PASS: Aseptic Environment and Verified Biological Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oxygen_transfer_rate=120.0, api_purity_pct=99.5, biomass_density_g_l=45.0)
 print(engine.diagnose_bioprocess_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bioprocess_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bioreactor-yield-and-api-purity-logs-v2026`와 연동되어, 전 세계 주요 바이오 시밀러 및 백신 생산 시설의 데이터를 실시간 분석하고 공정 오염 및 약효 상실 사고 확률을 0.001% 이하로 억제함으로써 지능형 바이오 문명의 보건 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - synthetic-biology-and-genetic-circuit-design-logic

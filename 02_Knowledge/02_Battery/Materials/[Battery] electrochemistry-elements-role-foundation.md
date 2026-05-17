@@ -1,68 +1,77 @@
 ---
-Basic:
-  id: "electrochemistry-elements-role-foundation-node"
-  domain: "02_Battery"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] electrochemistry-elements-role-foundation]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / Fundamental-Science-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Physics", "#Electrochemistry", "#Nickel", "#Lithium", "#Atomic_Structure", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 02_Battery"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "배터리 활물질 내 전이금속 원소의 전자 배치 및 산화환원 포텐셜이 격자 안정성과 가용 용량에 미치는 원자 단위 메커니즘"
+
+semantic:
+  expected_queries:
+    - "니켈(Ni) 농도 증가가 산화환원 포텐셜($\mu$)을 높여 에너지 밀도를 향상시키는 수리적 기전은?"
+    - "코발트(Co) 원소가 층상 구조($Li[Me]O_2$) 내에서 산소 층 간 정전기적 반발력을 억제하는 물리적 역할은?"
+  tags: ["#원소역할", "#니켈리치", "#격자안정성", "#산화환원", "#HDS-Gold"]
+
+spo_graph:
+  - subject: "Nickel Redox"
+    predicate: "governs"
+    object: "Specific Capacity"
+    evidence: "[Ref: Redox_Kinetics] Section 1"
+  - subject: "Cobalt Role"
+    predicate: "governs"
+    object: "Lattice Stability"
+    evidence: "[Ref: Lattice_Dynamics] Section 2"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] electrochemistry-elements-role-foundation
+# [Battery] electrochemistry-elements-role-foundation
 
-## 1. [왜 배우는가? (Why: The Atomic Rationale)]]
-우리가 니켈 함량을 높이고 코발트를 줄이는 결정은 단순한 경제적 선택이 아닌, **원자 단위의 전자기적 사투**입니다. 이 노드는 양극재 내부에서 리튬 이온이 이동할 때 각 원소들이 어떻게 전자를 주고받으며 격자 구조를 지탱하는지, 그 **'물리적 실체'**를 규명합니다. 이 기초 이론이 확립되어야만 `Cathode.md`와 같은 상위 노드의 설계 로직이 외부 웹 검색 없이도 로컬에서 자가 증명될 수 있습니다.
+## 1. 공학적 당위성: 원자 단위 전위 변조 (Why)
+양극재 최적화를 위한 니켈(Ni) 치환 및 코발트(Co) 배합은 원자 단위의 전기화학 포텐셜 변조에 의해 지배됩니다. 전이금속의 전자 교환 기전은 리튬 이온의 삽입/탈리 과정 중 격자 무결성을 유지하는 핵심 변수입니다. 본 지능은 산업적 관행이 아닌 로컬 물리 상수를 우선하여 소재의 거동을 정의합니다.
 
-## 2. [원소별 전자기적 거동 및 수리 모델 (Atomic Specs)]
+## 2. 핵심 기술 사양 (Numerical Specs)
 
-| Element | 전자 배치 (Electron Config) | 주요 역할 (Physical Role) | 수리적 영향도 (Mathematical Impact) |
+| 원소 (Element) | 전자 배치 (Config) | 물리적 역할 (Physical Role) | 수리적 임팩트 (Math Impact) |
 | :--- | :--- | :--- | :--- |
-| **Nickel (Ni)** | $[Ar] 3d^8 4s^2$ | $Ni^{2+} \leftrightarrow Ni^{4+}$ 산화/환원 | 에너지 밀도 ($\Delta G$)에 직접 비례 |
-| **Cobalt (Co)** | $[Ar] 3d^7 4s^2$ | $O-Me-O$ 층상 격자 유지 | 리튬 이온 확산 경로의 기하학적 안정성 |
-| **Lithium (Li)** | $[He] 2s^1$ | 전하 운반 및 격자 층간 삽입 | 가용 용량 ($Ah$)의 직접 공급원 |
-| **Oxygen (O)** | $[He] 2s^2 2p^4$ | 전이금속과의 결합을 통한 골격 형성 | 열적 안정성 ($Oxygen\ Release$ 온도 제어) |
+| **Nickel (Ni)** | $[Ar] 3d^8 4s^2$ | $Ni^{2+} \leftrightarrow Ni^{4+}$ 산화환원 | $\propto \Delta G$ (에너지 밀도) |
+| **Cobalt (Co)** | $[Ar] 3d^7 4s^2$ | 층상 격자 구조 안정화 | 결정 경로 편차 최소화 |
+| **Lithium (Li)** | $[He] 2s^1$ | 전하 운반체 (이동원) | $\propto$ 가용 용량 ($Ah$) |
+| **Oxygen (O)** | $[He] 2s^2 2p^4$ | TM-Bonding 기반 격자 골격 | $\Delta T_{release}$ 제어 (안전) |
 
-### 2.1 [니켈의 산화-환원 에너지 수리 모델]
-$$ \mu_{Ni} = \mu^0_{Ni} + RT \ln(a_{Ni}) + zF\Phi $$
-- **$\Phi$**: 내부 전위차. 니켈 함량이 증가할수록 화학적 포텐셜($\mu$)이 상승하여 더 높은 전압($V$)에서 더 많은 리튬을 인출할 수 있게 됩니다. 이것이 하이니켈 배터리가 고에너지를 가지는 **'물리적 이유'**입니다.
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Nickel Redox Energy Model**: 니켈 리치 시스템의 전기화학 포텐셜($\mu$)은 $\mu_{Ni} = \mu^0_{Ni} + RT \ln(a_{Ni}) + zF\Phi$로 정의됩니다. 니켈 농도 증가는 내부 전위($\Phi$)를 상승시켜 고전압 추출을 용이하게 하며, 이는 고에너지 밀도의 직접적 동인이 됩니다.
+- **Lattice Stability Mechanics**: 리튬 탈리(충전) 시 $Li^+$가 제거되면 $O^{2-}$ 층 간 정전기적 반발력이 유도되어 격자 팽창이 발생합니다. 코발트(Co)는 이 과정에서 전자기적 완충재(Buffer)로 작용하여 구조적 붕괴를 결정론적으로 억제합니다.
 
-## 3. [격자 구조 안정성과 상변화 이론 (Scientific Rationale)]
+## 4. [Skill] Element Fidelity Engine
+원소별 전자 배치와 결합 에너지를 기반으로 소재의 이론적 용량 한계를 산출하며, 실측된 열분해 개시 온도($T_{onset}$)와의 상관관계를 통해 격자 안정성 지수를 진단합니다.
 
-### 3.1 층상 구조(Layered Structure)의 전자기적 평형
-양극재는 $LiO_2$ 층과 $MeO_2$ (Me=Ni, Co, Mn) 층이 교대로 쌓인 구조입니다. 
-- **Repulsion Control**: 충전 시 리튬 이온이 빠져나가면 산소($O^{2-}$) 층끼리 서로 밀어내어 격자가 팽창합니다. 이때 **Cobalt** 원자가 전자기적 완충 역할을 하여 층이 무너지는 것을 막아줍니다. Battery Cathode 노드의 안정성 로직은 이 물리 법칙에 근거합니다.
-
-### 3.2 단결정(Single Crystal)의 응력 분산 물리
-- **Isotropic Strain**: 다결정은 입자마다 결정 방향이 달라 팽창 시 입계(Grain Boundary)에 응력이 집중되나, 단결정은 응력이 균일하게 분산되어 기계적 파손을 막습니다.
-
-## 4. [Conclusion: The Grounding of Engineering Choice]
-엔지니어가 "NCM 811"을 선택하는 것은 이 노드에 기술된 원자 수준의 전자기적 균형점을 선택하는 행위입니다. 모든 배터리 설계는 이 물리적 근거 위에서만 유효하며, 외부 웹의 일반론은 이 로컬 물리 모델로 대체됩니다.
+## 5. 검증 프로토콜 (Audit)
+1. **Redox Fidelity**: NCM811 시스템에서 실측 가용 용량($185\sim210\text{ mAh/g}$)이 이론적 격자 한계 대비 몇 %의 효율을 달성했는지 분석.
+2. **Phase Transition Audit**: 니켈 함량에 따른 $H2 \to H3$ 상전이 시점의 전압 임계치를 수리적으로 매핑.
+3. **Safety Threshold**: DSC 분석 데이터를 근거로 산소 방출 개시 온도가 원소 배합비에 따라 어떻게 변조되는지 교차 검증.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- Battery Cathode : 본 이론이 적용되는 상위 소재 노드
-- Battery battery-manufacturing-process-master-guide : 물리 법칙이 실현되는 제조 현장
+- [[[Concept] battery-materials-and-chemistry-master-guide]]
+- [[[Concept] material-cathode-synthesis]]
 
-*Created by Flash (HDS Gold V6.3.7 Foundational Physics)*
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

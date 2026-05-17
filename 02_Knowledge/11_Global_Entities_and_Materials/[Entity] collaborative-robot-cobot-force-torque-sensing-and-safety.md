@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "collaborative-robot-cobot-force-torque-sensing-and-safety"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] collaborative-robot-cobot-force-torque-sensing-and-safety]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The sensor technology and safety algorithms that enable robots to detect and react to external forces and torques, ensuring safe physical interaction with humans and environment."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cobot", "robot-safety", "force-torque-sensing", "hrc", "tactile-sensing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Torque_Sensor_Audit: Calibrate the joint-level torque sensors and verify zero-point drift.'
-    - 'Collision_Detection_Check: Simulate external impacts to measure the latency and peak force during emergency stop.'
-    - 'Impedance_Control_Verification: Evaluate the ''softness'' or compliance of the robot arm during hand-guiding mode.'
-Trust Metrics:
+  description: "[Entity] collaborative-robot-cobot-force-torque-sensing-and-safety에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Collaborative Robot (Cobot) Force-Torque Sensing and Safety
+# [Entity] collaborative-robot-cobot-force-torque-sensing-and-safety
 
 ## 1. 개요 (Why)
 협동 로봇(Cobot)이 안전한 이유는 바로 '촉각'이 있기 때문입니다. 인간의 근육처럼 로봇의 관절마다 장착된 토크 센서는 아주 작은 힘의 변화도 감지합니다. 사람이 살짝만 밀어도 그 힘을 읽어내어 즉시 멈추거나, 가해진 힘의 방향으로 부드럽게 따라 움직입니다. 이 '감각적 안전성' 덕분에 로봇은 무거운 펜스 없이도 인간의 가장 가까운 거리에서 일할 수 있습니다. 본 노드는 협동 로봇의 힘 감지 무결성과 안전 제어 로직을 위한 표준을 정의합니다.
@@ -76,7 +65,6 @@ class RobotFidelityEngine:
             return "REJECT: Sensor Drift or Model Mismatch - Recalibrate Robot Dynamic Parameters"
         return "PASS: Force-Torque Calibration Verified"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(measured_torque=25.2, dynamic_model_torque=25.0, velocity_mms=100)
 print(engine.diagnose_collision_safety())
 ```
@@ -94,7 +82,6 @@ print(engine.diagnose_collision_safety())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cobot-force-sensitivity-and-collision-stop-latency-v2026`와 연동되어, 전 세계 협동 로봇의 힘 감지 데이터를 실시간 분석하고 오작동 및 사고 확률을 0.001% 이하로 억제함으로써 인간-로봇 공존 인프라의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cognitive-robotics-and-human-robot-collaboration-hrc-physics

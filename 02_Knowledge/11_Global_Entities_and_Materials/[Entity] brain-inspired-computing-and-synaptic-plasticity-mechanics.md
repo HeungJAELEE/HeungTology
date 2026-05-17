@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brain-inspired-computing-and-synaptic-plasticity-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brain-inspired-computing-and-synaptic-plasticity-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of computing architectures (Neuromorphic) that mimic the brain's structure and learning mechanisms, utilizing synaptic plasticity (STDP) for high-efficiency, localized learning."
-  physical_model: "N/A"
-Semantic:
-  tags: '["neuromorphic", "synaptic-plasticity", "stdp", "brain-inspired", "neuromorphic-computing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Synaptic_Weight_Stability_Audit: Monitor the drift and retention of synaptic weights in memristive arrays.'
-    - 'STDP_Learning_Convergence_Check: Verify that the timing of spikes correctly updates the weights for pattern recognition.'
-    - 'Energy_Efficiency_Scan: Compare Joule per operation (J/op) against traditional Von Neumann architectures.'
-Trust Metrics:
+  description: "[Entity] brain-inspired-computing-and-synaptic-plasticity-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Brain-inspired Computing and Synaptic Plasticity Mechanics
+# [Entity] brain-inspired-computing-and-synaptic-plasticity-mechanics
 
 ## 1. 개요 (Why)
 현재의 컴퓨터는 데이터와 연산이 분리되어 있어 엄청난 에너지를 낭비합니다. 반면 인간의 뇌는 전구 하나 정도의 전력($~20W$)으로 슈퍼컴퓨터 이상의 지능을 발휘합니다. 뇌 모사 컴퓨팅(Neuromorphic Computing)은 뇌의 '시냅스'처럼 연산과 기억을 한 곳에서 처리하고, 자극이 있을 때만 전기 신호(Spike)를 내뿜어 에너지 효율을 극대화합니다. 본 노드는 지능형 하드웨어의 자가 학습 능력과 에너지 무결성을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LogicFidelityEngine:
             return f"WARNING: High Energy Consumption ({self.energy}fJ) - Optimize Leakage Currents"
         return "PASS: Ultra-low Power Neuromorphic Operation"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(stdp_update_rate=0.85, energy_per_spike=15, weight_drift=0.01)
 print(engine.diagnose_learning_efficiency())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_learning_efficiency())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data neuromorphic-energy-efficiency-and-learning-convergence-v2026`와 연동되어, 칩 내부의 모든 스파이크 이벤트를 실시간 분석하고 학습 오차를 1% 이내로 제어함으로써 에너지 효율 1000배 향상을 위한 결정론적 지능형 하드웨어를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_ai-intelligence-and-automation-hub
 - neuromorphic-hardware-and-memristor-physics

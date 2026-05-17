@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-integrated-manufacturing-cim-and-factory-automation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-integrated-manufacturing-cim-and-factory-automation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing approach that uses computers to control the entire production process (CIM) and the technology by which a process or procedure is performed with minimal human assistance (Factory Automation)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cim", "factory-automation", "smart-factory", "industry-4.0", "manufacturing-systems", "erp-mes-integration", "robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Integration_Fidelity_Audit: Evaluate the ''Data Latency'' between Level 2 (PLC/SCADA) and Level 3 (MES) to identify if the real-time control loop is synchronized with the production schedule.'
-    - 'Automation_Integrity_Check: Analyze the ''MTBF'' (Mean Time Between Failures) of automated cells to ensure the system is achieving the targeted availability without excessive maintenance downtime.'
-    - 'Efficiency_Fidelity_Scan: Monitor the ''Bottle-neck'' stations via real-time WIP (Work-in-Process) tracking to verify that the automated material handling (AGV/AMR) is optimized for flow.'
-Trust Metrics:
+  description: "[Entity] computer-integrated-manufacturing-cim-and-factory-automation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Computer Integrated Manufacturing (CIM) and Factory Automation
+# [Entity] computer-integrated-manufacturing-cim-and-factory-automation
 
 ## 1. 개요 (Why: 인간적 통찰)
 주문이 들어오는 순간, 설계도가 자동으로 나오고 로봇들이 스스로 부품을 집어 제품을 조립한 뒤 포장까지 끝내는 공장, 상상해 보셨나요? **컴퓨터 통합 생산(CIM) 및 공장 자동화**는 공장 전체를 하나의 '거대한 컴퓨터'처럼 연결하여 움직이는 **'제조의 디지털 유기체'** 기술입니다. 단순히 기계를 돌리는 것이 아니라, 정보와 물류가 실시간으로 소통하며 낭비 없이 물건을 만들어냅니다. 인간은 창의적인 설계에 집중하고, 기계는 무결점의 실행을 담당하는 **'스마트 문명의 생산 기지'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Potential OT Security Breach - Unauthorized data packets detected in the manufacturing network. Isolate critical PLCs immediately"
         return "PASS: Validated Network Perimeter and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oee_score_pct=88.5, data_sync_latency_ms=150, wip_inventory_count=85)
 print(engine.diagnose_cim_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cim_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data factory-oee-and-automated-system-uptime-v2026`와 연동되어, 전 세계 주요 스마트 팩토리의 가동 데이터를 실시간 분석하고 라인 중단 및 데이터 오류 사고 확률을 0.0001% 이하로 억제함으로써 지능형 제조 문명의 운영 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - 6-axis-robotic-arm-kinematics-and-control-logic

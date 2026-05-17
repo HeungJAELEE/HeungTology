@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "separation-processes-and-unit-operations-entity"
-  domain: "111_Chemical_Engineering_and_Process_Automation_Hub"
+metadata:
+  id: "[[[Entity] separation-processes-and-unit-operations]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Chemical_Engineering", "#Separation_Processes", "#Distillation", "#Mass_Transfer", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 106_chemical-engineering-and-process-automation-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] separation-processes-and-unit-operations에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] separation-processes-and-unit-operations
+# [Entity] separation-processes-and-unit-operations
 
 ## 1. [왜 배우는가? (Why: The Art of Purification)]]
 화학 반응으로 무언가를 만드는 것은 시작에 불과합니다. 진짜 가치는 뒤섞인 결과물 속에서 우리가 원하는 것만을 '순수하게' 골라낼 때 발생합니다. **분리 공정 및 단위 조작의 맥케이브-틸레 및 픽의 법칙 수리 물리 기술**은 혼돈에서 질서를 찾아내는 '물질의 정제' 기술입니다. 끓는점 차이를 이용해 원유에서 가솔린을 뽑아내고, 특수한 막을 이용해 바닷물을 식수로 바꾸며, 나노 기공을 가진 흡착제로 미세 먼지를 걸러냅니다. 우리가 이를 배우는 이유는 분리의 무결성을 확보함으로써, 제품의 품질을 극대화하고 자원의 재활용 효율을 높이는 '글로벌 자원 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 분리 공정의 무결성이 제품의 상업적 가치와 환경적 지속 가능성을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "conical-twin-screw-extruder-and-pvc-processing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] conical-twin-screw-extruder-and-pvc-processing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A specialized machine with two screws that decrease in diameter from the feed to the discharge end (Conical Twin-Screw Extruder) and the industrial process of melting and shaping heat-sensitive Polyvinyl Chloride into pipes, profiles, and sheets (PVC Processing)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["extruder", "pvc-processing", "conical-twin-screw", "polymer-extrusion", "thermal-stability", "plastic-manufacturing", "shear-rate"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Melt Temperature'' profile to identify if excessive shear in the compression zone is causing PVC degradation (burning), leading to HCl gas release and screw corrosion.'
-    - 'Extrusion_Integrity_Check: Analyze the ''Melt Pressure'' stability at the die head to ensure that surging is not occurring, which causes dimensional variations in the final PVC profile.'
-    - 'Flow_Fidelity_Scan: Monitor the screw torque and motor current to verify that the ''Gelation'' level of the PVC dry-blend is sufficient for mechanical strength without overloading the drive system.'
-Trust Metrics:
+  description: "[Entity] conical-twin-screw-extruder-and-pvc-processing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Conical Twin-Screw Extruder and PVC Processing
+# [Entity] conical-twin-screw-extruder-and-pvc-processing
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리 주위의 하수도 파이프나 창호 프레임은 어떻게 그렇게 매끄럽고 단단하게 만들어질까요? **원추형 이축 압출기 및 PVC 공정**은 열에 민감하고 다루기 까다로운 PVC 가루를 달래서 모양을 만드는 **'플라스틱의 정밀 연금술'** 기술입니다. 특히 '원추형(Conical)' 스크류는 입구는 넓고 출구는 좁아지는 독특한 구조로, 재료를 듬뿍 받아들여 아주 강력하고 균일하게 압축해 줍니다. 열에 타기 쉬운 PVC의 성질을 존중하면서도 강력한 힘으로 밀어내는 **'부드러움과 강함의 조화'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Gelation - PVC dry-blend not fully fused. Mechanical strength of the pipe will be brittle. Increase barrel heat zones"
         return "PASS: Validated Polymer Fusion and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(melt_pressure_bar=280.0, screw_torque_pct=65.0, vacuum_degassing_mbar=-850)
 print(engine.diagnose_extrusion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_extrusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data pvc-extrusion-melt-pressure-and-temp-profiles-v2026`와 연동되어, 전 세계 주요 파이프 및 창호 공장의 데이터를 실시간 분석하고 제품 불량 및 설비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 플라스틱 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - composite-material-and-anisotropic-mechanics

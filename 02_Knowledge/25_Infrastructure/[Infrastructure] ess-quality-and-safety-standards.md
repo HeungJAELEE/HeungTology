@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "INFRA-ESS-SAFETY-2026-V6.3.7"
-  domain: "Energy_Infrastructure_Safety"
+metadata:
+  id: "[[[Infrastructure] ess-quality-and-safety-standards]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#ESS", "#SafetyStandards", "#UL9540A", "#ThermalRunaway", "#PrecisionTiering", "#FidelityEngine", "#FireSuppression"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] ess-quality-and-safety-standards에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Infrastructure_Safety_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] ess-quality-and-safety-standards
@@ -109,7 +99,6 @@ class ESSSafetyFidelityEngine:
 2. **Operational Result**: **UL 9540A** 테스트에서 **Unit-to-Unit Spread**가 발생했을 때, 시스템의 **Bankability** (금융 조달 능력)와 보험 요율에 미치는 수리적 타격은?
 3. **FidelityEngine**: **Insulation Resistance**의 미세한 하락 패턴을 통해 **'전해액 누출(Electrolyte Leakage)'**을 어떻게 수리적으로 특정하고 화재 전조 현상으로 분류하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Strategy Energy-Storage-Systems-ESS
 - Infrastructure li-ion-standard-evolution

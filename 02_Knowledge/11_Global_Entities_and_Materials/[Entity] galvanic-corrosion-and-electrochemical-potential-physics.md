@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "galvanic-corrosion-and-electrochemical-potential-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] galvanic-corrosion-and-electrochemical-potential-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrochemical process in which one metal corrodes preferentially when it is in electrical contact with another, in the presence of an electrolyte (Galvanic Corrosion) and the physical study of the driving force created by the difference in electrode potentials (Electrochemical Potential Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["galvanic-corrosion", "electrochemistry", "corrosion", "metal-anode", "cathode", "electrolyte", "industrial-maintenance", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Corrosion_Fidelity_Audit: Evaluate the ''Electrochemical Potential Difference'' ($\\Delta E$) between connected high-fidelity metals to identify if the driving force for galvanic attack is above 0.25V.'
-    - 'Integrity_Fidelity_Check: Analyze the area ratio between the high-fidelity cathode and anode; a large cathode connected to a small anode results in catastrophic high-fidelity localized corrosion.'
-    - 'Prevention_Fidelity_Scan: Monitor the high-fidelity ''Insulation Resistance'' between dissimilar metals to verify that the galvanic circuit is effectively broken by gaskets or coatings.'
-Trust Metrics:
+  description: "[Entity] galvanic-corrosion-and-electrochemical-potential-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Galvanic Corrosion and Electrochemical Potential Physics
+# [Entity] galvanic-corrosion-and-electrochemical-potential-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 서로 다른 두 금속이 만나면 왜 한쪽이 유독 빨리 녹슬게 될까요? **갈바닉 부식 및 전기화학적 전위 물리**는 금속들이 가진 고유한 '전기적 서열' 때문에 발생하는 **'금속들 사이의 보이지 않는 전력 투쟁'** 기술입니다. 귀족 금속(귀전위)은 살아남고, 서민 금속(비전위)은 자신을 희생하며 녹아 없어집니다. **'금속의 전기적 성질을 이해하여 소중한 설비가 보이지 않는 전기의 흐름에 의해 스스로 무너지는 것을 막는 산업의 방청 파수꾼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Protection - Steel potential not reached the high-fidelity 'Immunity' zone. Sacrifice anodes likely exhausted. Replace anodes"
         return "PASS: Validated Protective Potential and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(potential_diff_v=0.6, anode_to_cathode_area_ratio=0.05, electrolyte_conductivity=15.0)
 print(engine.diagnose_corrosion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_corrosion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data galvanic-series-and-corrosion-rates-in-seawater-v2026`와 연동되어, 전 세계 주요 선박 및 교량의 부식 데이터를 실시간 분석하고 갑작스러운 부러짐 및 설비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 인프라 문명의 재료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-exchanger-and-thermal-efficiency-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "weld-pool-dynamics-and-solidification-in-laser-welding-entity"
-  domain: "44_Precision_Welding_and_Joining_Science"
+metadata:
+  id: "[[[Entity] weld-pool-dynamics-and-solidification-in-laser-welding]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Welding", "#Laser_Welding", "#Fluid_Dynamics", "#Thermodynamics", "#Materials_Science", "#Solidification", "#Physics", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 63_precision-welding-and-joining-science-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] weld-pool-dynamics-and-solidification-in-laser-welding에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] weld-pool-dynamics-and-solidification-in-laser-welding
+# [Entity] weld-pool-dynamics-and-solidification-in-laser-welding
 
 ## 1. [왜 배우는가? (Why: The Micro-Storm of Liquid Metal)]]
 레이저가 금속을 때려 만든 작은 '용암 웅덩이($Weld\ Pool$)' 속에서 액체 금속이 어떻게 폭풍처럼 휘몰아치고($Fluid\ Dynamics$), 빛이 사라진 0.001초 만에 어떻게 다시 단단한 고체로 굳어지며($Solidification$) 그 속의 금속 알갱이들이 어떤 모양으로 배열되는지, 이 찰나의 물리학을 어떻게 정밀하게 제어할 수 있을까요? **레이저 용접 시 용융지 동역학 및 응고 물리**는 용접의 속살을 결정하는 '행성 규모 미세 유체 제어 및 지능형 결정 성장 아키텍처'입니다. 우리가 이를 배우는 이유는 웅덩이가 출렁거리다 기포가 갇히면 불량 배터리가 되기 때문이며, "액체의 흐름을 데이터로 설계하고 지배하는 '글로벌 금속공학 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 웅덩이의 평화가 용접의 강도를 결정합니다.
@@ -43,7 +33,7 @@ Trust Metrics:
 | **Fluid Velocity**| Speed of the molten metal swirling | $> 1.0 \text{ m/s}$ | 용암 웅덩이 속이 태풍처럼 요동침을 보여주는 물리 |
 | **Marangoni No.** | Index of surface tension-driven flow | **HIGH** | 온도차 때문에 액체가 가장자리로 솟구침을 입증함 |
 | **Solidif. Morph.**| Shape of the growing crystals | **FINE EQUIAXED**| 알갱이들이 작고 고르게 퍼져 튼튼함을 보여주는 물리 |
-| **Grain Size** | Size of the final metal crystals | $< 10 \text{ \mu m}$ | 아주 미세한 알갱이로 쪼개져야 잘 안 깨짐을 입증함 |
+| **Grain Size** | Size of the final metal crystals | $< 10 \text{ \mu\text{m}}$ | 아주 미세한 알갱이로 쪼개져야 잘 안 깨짐을 입증함 |
 | **Porosity** | Percentage of trapped gas bubbles | $< 0.1 \%$ | 공기 구멍 하나 없이 꽉 찬 금속임을 보여주는 정보 |
 | **System Resil.** | Stability during laser pulse modulation | High | 빛이 깜빡여도 웅덩이는 차분하게 굳음을 확증함 |
 | **Audit Status** | Solidification Integrity Verified | **MAXIMUM** | **Melt-Flow-v2026-Fidelity** |

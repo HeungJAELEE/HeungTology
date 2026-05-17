@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "occupational-health-and-ergonomics-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] occupational-health-and-ergonomics-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systemic management of workplace conditions (Occupational Health) and the design of tasks/equipment to fit the human body's capabilities (Ergonomics), aiming to prevent work-related injuries, illnesses, and musculoskeletal disorders (MSD)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["occupational-health", "ergonomics", "industrial-safety", "worker-wellbeing", "msd-prevention", "work-design", "human-factors"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Ergonomic_Risk_Audit: Evaluate the physical demands of tasks using standardized tools (e.g., REBA, RULA) to identify high-risk postures and force requirements.'
-    - 'Work-Design_Compatibility_Check: Analyze the alignment between equipment design and anthropometric data (human body measurements) to minimize reach distances and strain.'
-    - 'Health_Surveillance_Scan: Monitor incident reports and wellness data to identify emerging trends in occupational illnesses or chronic pain among workers.'
-Trust Metrics:
+  description: "[Entity] occupational-health-and-ergonomics-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧘 Occupational Health and Ergonomics Governance
+# [Entity] occupational-health-and-ergonomics-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상의 모든 공장과 사무실이 사람의 몸에 맞춰 설계된다면 어떨까요? **보건 및 인체공학 거버넌스**는 기계에 사람을 맞추는 것이 아니라, 사람에게 기계와 일을 맞추는 **'인간 중심의 공학적 배려'**입니다. 단순히 아프지 않게 하는 것을 넘어, 가장 편안하고 자연스러운 자세로 일할 수 있게 설계하여 숙련된 노동자가 오랫동안 건강하게 자신의 능력을 발휘하도록 돕는 **'기업의 가장 따뜻한 인프라'**입니다. 사람이 행복해야 제품도 완벽해진다는 **'휴먼 퍼스트'**의 실천입니다.
@@ -90,7 +79,6 @@ class LegalFidelityEngine:
             return "REJECT: Inadequate Equipment Design - Exclusion of Smaller or Larger Workers Identified. Non-inclusive Workspace"
         return "PASS: Universal Design Principles and Ideal Human-Equipment Fit Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(high_risk_task_pct=0.08, msd_incident_rate=0.012, erg_training_coverage=0.99)
 print(engine.diagnose_occupational_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_occupational_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-ergonomics-risk-and-injury-statistics-v2026`와 연동되어, 전 세계 산업 현장의 보건 데이터를 실시간 분석하고 직업병 및 작업장 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 인간 중심 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - industrial-safety-and-environmental-compliance-governance

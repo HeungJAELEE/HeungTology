@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "medical-imaging-and-diagnostic-systems-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] medical-imaging-and-diagnostic-systems-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering discipline focused on the development of technologies that visualize the internal structures and functions of the human body (Medical Imaging) and the systems used to interpret these images for disease detection (Diagnostic Systems)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["medical-imaging", "mri", "ct-scan", "ultrasound", "diagnostic-systems", "signal-processing", "bio-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Image_Artifact_Audit: Evaluate the presence of motion blur, metallic artifacts, or noise patterns in the acquired images to ensure high diagnostic quality.'
-    - 'Signal-to-Noise_Ratio_Check: Analyze the raw signal quality against baseline benchmarks to verify the health of the sensors and signal processing chain.'
-    - 'AI_Diagnostic_Integrity_Scan: Verify the accuracy of AI-driven lesion detection against human radiologist ''Ground Truth'' to ensure zero false negatives in critical diagnoses.'
-Trust Metrics:
+  description: "[Entity] medical-imaging-and-diagnostic-systems-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏥 Medical Imaging and Diagnostic Systems Engineering
+# [Entity] medical-imaging-and-diagnostic-systems-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 몸을 가르지 않고도 우리 몸속 구석구석을 훤히 들여다볼 수 있는 능력, 이것은 현대 의학이 우리에게 준 가장 강력한 **'투시의 마법'**입니다. **의료 영상 및 진단 시스템 공학**은 X선, 자기장, 초음파 등 다양한 물리적 신호를 이용해 몸속의 지도를 그리는 **'나노 단위의 탐험가'**입니다. 보이지 않는 암세포의 징후를 찾아내고, 심장이 뛰는 찰나를 포착하며, 뇌의 생각 흐름까지 영상으로 바꾸는 이 기술은 **'생명의 언어를 데이터로 번역하는 일'**입니다. 한 사람의 생명을 구하기 위해 가장 정밀한 물리 법칙들을 총동원하는 **'공학적 헌신'**의 결정체입니다.
@@ -60,7 +49,7 @@ $$ \omega_0 = \gamma \cdot B_0 $$
 | **MRI** | Magnetic Resonance | Soft Tissue / Brain| < 1.0 mm | Supercond. Magnet|
 | **Ultrasound** | Acoustic Wave | Real-time / Safe | 1 ~ 5 mm | Piezo Transducer |
 | **PET** | Positron Emission | Metabolic Activity| 4 ~ 6 mm | Scintillator |
-| **OCT** | Light Interference | Micro-structures | 1 ~ 10 $\mu m$| Superlum. Diode |
+| **OCT** | Light Interference | Micro-structures | 1 ~ 10 $\mu\text{m}$| Superlum. Diode |
 
 ## 4. LogicFidelityEngine: Diagnostic Logic
 
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Excessive Radiation Dose - Patient Safety Limit Breached. Optimize Scan Protocols"
         return "PASS: Safe Radiation Exposure Levels Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(spatial_resolution_mm=0.8, signal_to_noise_ratio=45.5, ai_false_negative_rate=0.0002)
 print(engine.diagnose_imaging_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_imaging_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data medical-imaging-resolution-and-ai-diagnostic-accuracy-v2026`와 연동되어, 전 세계 주요 병원의 영상 장비 상태를 실시간 분석하고 오진 및 장비 결함 사고 확률을 0.001% 이하로 억제함으로써 인류 건강의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - bio-integrated-and-biodegradable-electronics-physics

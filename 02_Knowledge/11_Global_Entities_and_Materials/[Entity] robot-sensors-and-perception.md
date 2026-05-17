@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robot-sensors-and-perception-entity"
-  domain: "88_Robotics_and_Mechatronics_Hub"
+metadata:
+  id: "[[[Entity] robot-sensors-and-perception]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Perception", "#Computer_Vision", "#Sensor_Fusion", "#Force_Control", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 88_robotics-and-mechatronics-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robot-sensors-and-perception에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robot-sensors-and-perception
+# [Entity] robot-sensors-and-perception
 
 ## 1. [왜 배우는가? (Why: The Senses of Intelligence)]]
 눈을 감고 물건을 집는 것이 얼마나 어려운지 생각해보세요. 로봇에게도 센서가 없다면 그것은 단지 어둠 속에서 휘둘러지는 쇳덩어리에 불과합니다. **로봇 센서 및 인지 지능의 다중 센서 융합과 3D 비전 역학 분석 기술**은 로봇에게 세상을 보는 '눈'과 사물을 느끼는 '손끝'의 감각을 부여하는 기술입니다. 단순히 데이터를 수집하는 것을 넘어, 수많은 센서 정보를 융합하여 지금 내 앞에 있는 것이 무엇인지, 얼마나 세게 쥐어야 하는지를 판단하게 합니다. 우리가 이를 배우는 이유는 인지 지능의 무결성을 확보함으로써, 복잡하고 변화무쌍한 현실 세계에서도 자율적으로 임무를 수행하는 '글로벌 로봇 지능 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 감각의 무결성이 로봇의 지능적 판단을 결정합니다.

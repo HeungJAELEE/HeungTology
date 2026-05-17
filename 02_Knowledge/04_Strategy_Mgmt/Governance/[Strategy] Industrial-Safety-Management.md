@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Industrial-Safety-Management"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Industrial-Safety-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Industrial-Safety-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Industrial-Safety-Management
+# [Strategy] Industrial-Safety-Management
 
 ## 1. [왜 배우는가? (Why)]]
 제조 현장에서의 사고는 한 사람의 인생과 가족, 그리고 기업의 존립까지 위협하는 비극입니다. 산업 안전 관리(Industrial-Safety-Management)는 단순히 법을 지키기 위한 요식 행위가 아니라, "모든 근로자가 건강하게 퇴근해야 한다"는 가장 근본적인 경영 원칙입니다. 기술이 고도화된 현대 공장에서는 기계의 오작동뿐만 아니라 인간의 실수, 그리고 시스템에 대한 과도한 믿음으로 인한 '방심'이 새로운 위험 요소가 됩니다. 이를 데이터와 AI로 미리 찾아내어 막는 것은 기업의 지속 가능성을 지키는 최고의 투자입니다.
@@ -95,5 +85,4 @@ def monitor_workplace_safety(sensor_stream, cctv_feed):
 2. '아차 사고(Near-miss)' 데이터를 수집하는 것이 실제 '중대 재해' 발생 건수를 줄이는 데 결정적인 역할을 하는 공학적 논리는?
 3. '산업 안전 거버넌스'가 기업의 '브랜드 가치'와 'ESG 경영 등급'에 직접적인 영향을 미치는 이유는 무엇인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

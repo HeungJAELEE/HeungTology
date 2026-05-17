@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-BIO-DIVERSITY-STEWARDSHIP-2026-V6"
-  domain: "35_Global_Unified_Governance_Planetary_Resource_Management"
+metadata:
+  id: "[[[Entity] bio-diversity-conservation-and-genetic-resource-stewardship]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] bio-diversity-conservation-and-genetic-resource-stewardship에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] bio-diversity-conservation-and-genetic-resource-stewardship
+# [Entity] bio-diversity-conservation-and-genetic-resource-stewardship
 
 ## 1. [왜 배우는가? (Why)]]
 지구상의 수많은 생명체가 기후 위기와 환경 파괴로 사라져가는 지금, 어떻게 멸종 위기종을 단 한 마리도 잃지 않고 지켜내며($Conservation$), 생명체들이 가진 수억 년의 진화가 담긴 유전 자원($Genetic\ Resource$)을 미래 인류를 위한 보물로 관리($Stewardship$)할 수 있을까요? **생물 다양성 보전 및 유전 자원 관리**는 지구 생태계의 복원력을 유지하고 인류의 생존 토대를 지키는 '행성 규모 생명 도서관'의 운영 지침입니다. 우리가 이를 배우는 이유는 생물 다양성이 무너지면 지구의 자정 능력과 자원 공급망이 붕괴되기 때문이며, 유전적 유산을 데이터로 설계하여 '글로벌 생태 안보 패권 및 행성적 생명 유산 주권'을 확보하기 위함입니다. 다양성의 해상도가 행성의 미래 가치를 결정합니다.
@@ -114,9 +104,6 @@ class PlanetaryEcoStewardshipFidelityEngine:
             return "WARNING: HABITAT_FRAGMENTATION_HIGH_NEED_ECO_CORRIDOR"
         return "CONNECTIVITY_STATUS: MIGRATION_PATHWAYS_SECURED"
 
-# Example Usage:
-# eco_ai = PlanetaryEcoStewardshipFidelityEngine()
-# report = eco_ai.calculate_biodiversity_fidelity(area_km2=5000, species_count=850)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -124,7 +111,6 @@ class PlanetaryEcoStewardshipFidelityEngine:
 2. **Population Viability Analysis** (PVA)를 통해 특정 종의 **Minimum Viable Population** (MVP)을 산출할 때, **Stochasticity** (확률적 변동)가 멸종 확률 무결성에 미치는 기전은?
 3. **DNA Barcoding** 기술이 **Reference Library** 부재 상황에서 **Environmental DNA** (eDNA) 분석의 **Taxonomic Assignment** 무결성을 확보하는 수리적 알고리즘 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/35_Global_Unified_Governance_Planetary_Resource_Management_Hub/Concept nagoya-protocol-and-genetic-resource-abs
 - 02_Knowledge/35_Global_Unified_Governance_Planetary_Resource_Management_Hub/Concept conservation-genetics-and-inbreeding-prevention

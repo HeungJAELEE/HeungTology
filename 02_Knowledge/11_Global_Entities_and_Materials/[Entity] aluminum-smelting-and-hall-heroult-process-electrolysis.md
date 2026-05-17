@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "aluminum-smelting-and-hall-heroult-process-electrolysis"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] aluminum-smelting-and-hall-heroult-process-electrolysis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of extracting aluminum from its oxide, alumina ($Al_2O_3$), via electrolysis (Aluminum Smelting) and the specific electrochemical method involving the dissolution of alumina in molten cryolite ($Na_3AlF_6$) at high temperatures (Hall-Héroult Process)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["aluminum-smelting", "hall-heroult-process", "electrolysis", "metallurgy", "primary-aluminum", "cryolite", "energy-intensive"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Smelting_Fidelity_Audit: Evaluate the ''Current Efficiency'' ($CE$) and specific energy consumption (kWh/kg Al) to identify ''Anode Effects'' or electrolytic bath instability.'
-    - 'Cathode_Integrity_Check: Analyze the magnetic field distribution and molten metal heave (MHD) to ensure the ''Metal Pad'' is stable, preventing electrical shorting and excessive energy loss.'
-    - 'Emission_Fidelity_Scan: Monitor the fluoride and $CO_2$ emissions from the potline to verify that the ''Scrubber'' systems and inert anode pilots are meeting environmental targets.'
-Trust Metrics:
+  description: "[Entity] aluminum-smelting-and-hall-heroult-process-electrolysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Aluminum Smelting and Hall-Héroult Process Electrolysis
+# [Entity] aluminum-smelting-and-hall-heroult-process-electrolysis
 
 ## 1. 개요 (Why: 인간적 통찰)
 가볍고 튼튼한 알루미늄이 한때는 금보다 귀했다는 사실을 아시나요? **알루미늄 제련 및 홀-에루 공정**은 전기를 '액체 금속'으로 직접 바꾸는 **'전기적 연금술'** 기술입니다. 돌가루(알루미나)를 1,000도의 뜨거운 용암(전해질)에 녹이고 엄청난 양의 전기를 쏟아부어, 산소를 떼어내고 순수한 알루미늄을 가라앉힙니다. 비행기부터 캔 음료까지 현대 문명을 가볍게 만드는 **'전기 집약적 소재 혁명'**의 현장입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sub-standard Aluminum Purity - Contamination from tool erosion or low-grade alumina. Grade downgraded to secondary alloy"
         return "PASS: High-Purity Primary Aluminum and Verified Electrolytic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_efficiency_pct=95.5, bath_temp_c=955.0, anode_effect_count=0)
 print(engine.diagnose_smelting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_smelting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data aluminum-smelting-energy-efficiency-and-carbon-emissions-v2026`와 연동되어, 전 세계 주요 알루미늄 제련소의 가동 데이터를 실시간 분석하고 전력 블랙아웃 및 환경 규제 위반 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 생산 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - alloy-design-and-computational-thermodynamics-calphad

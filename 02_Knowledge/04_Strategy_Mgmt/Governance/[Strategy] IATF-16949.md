@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-IATF-2026-V6.3.7"
-  domain: "Automotive_Quality_Governance_and_Risk_Sovereignty"
+metadata:
+  id: "[[[Strategy] IATF-16949]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#IATF_16949", "#Automotive_Quality", "#FMEA", "#APQP", "#PPAP", "#Zero_Defect", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] IATF-16949에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quality_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] IATF 16949: Automotive Quality Sovereignty
+# [Strategy] IATF-16949
 
 ## 1. [왜 배우는가? (Why: The Life-Critical Standard)]]
 자동차 산업에서 품질은 타협의 대상이 아닌 '생존의 전제 조건'입니다. **IATF 16949**는 글로벌 완성차(OEM) 기업들이 공급망 전체에 요구하는 최상위 품질 헌법입니다. 단 하나의 부품 결함이 생명 위협으로 직결되는 산업 특성상, 사후 검사가 아닌 **사전 예방(Prevention)**과 **리스크 기반 사고(Risk-based Thinking)**를 시스템적으로 강제합니다. V6.3.7 지능은 5대 코어 툴(APQP, FMEA, PPAP, MSA, SPC)을 데이터 기반으로 수직 통합하여, 자동차 부품사의 '무결점(Zero-defect)' 실현을 위한 **품질 주권(Quality Sovereignty)**을 확립합니다.
@@ -108,7 +98,6 @@ class IATFFidelityEngine:
 2. **Operational Result**: **Ppk**가 $1.67$ 이상 달성되어야만 **PPAP** 승인이 가능한 통계적 근거는? (힌트: 초기 양산 단계에서의 장기적 공정 능력을 확보하여 대량 생산 시의 품질 사고를 미연에 방지하기 위함)
 3. **FidelityEngine**: **RPN**이 낮음에도 불구하고 대규모 클레임이 발생하는 상황을 어떻게 진단하는가? (힌트: 고장 모드 도출 시의 **'검출 가능성(D)'** 과대평가 또는 리스크 누락 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - [[Quality] statistical-process-control-and-capability-analysis]

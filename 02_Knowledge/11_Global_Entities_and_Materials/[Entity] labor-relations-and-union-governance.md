@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "labor-relations-and-union-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] labor-relations-and-union-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The framework for managing the relationship between an organization's management and its workforce (Labor Relations), often involving formal organizations of employees (Unions) and the processes for collective bargaining and conflict resolution (Union Governance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["labor-relations", "union-governance", "collective-bargaining", "hr-strategy", "employee-engagement", "legal-compliance", "industrial-democracy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Collective_Agreement_Audit: Review the compliance of current working conditions and benefits with the negotiated collective bargaining agreement (CBA).'
-    - 'Grievance_Resolution_Check: Analyze the speed and fairness of the dispute resolution process to prevent minor issues from escalating into major labor strikes.'
-    - 'Union_Governance_Transparency_Scan: Evaluate the democratic processes and financial transparency within the union to ensure it effectively represents employee interests.'
-Trust Metrics:
+  description: "[Entity] labor-relations-and-union-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤝 Labor Relations and Union Governance
+# [Entity] labor-relations-and-union-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 기업은 기계와 자본만으로 돌아가지 않습니다. 그 핵심에는 감정을 가지고 꿈을 꾸는 '사람'이 있습니다. **노사 관계 및 노조 거버넌스**는 경영진과 노동자라는 두 바퀴가 서로 어긋나지 않고 함께 굴러가게 만드는 **'조직의 윤활유'**입니다. 갈등은 필연적이지만, 그 갈등을 파괴가 아닌 건설적인 대화로 바꾸어 '상생'의 길을 찾는 과정입니다. 서로를 적이 아닌 파트너로 인정하고, 공동의 번영을 위해 규칙을 정하고 지키는 **'산업 민주주의의 꽃'**입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "NOTICE: Deteriorating Employee Trust - Review Compensation and Working Conditions"
         return "PASS: High Organizational Engagement Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(labor_dispute_count=0, avg_resolution_days=5, collective_agreement_adherence=1.0)
 print(engine.diagnose_labor_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_labor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data labor-dispute-trends-and-collective-agreement-benchmarks-v2026`와 연동되어, 전 세계 주요 기업의 노사 데이터를 실시간 분석하고 파업 및 노사 분규 사고 확률을 0.001% 이하로 억제함으로써 기업 운영의 인적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - human-resources-and-talent-development-system

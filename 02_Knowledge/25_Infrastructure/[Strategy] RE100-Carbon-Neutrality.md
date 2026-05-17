@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] RE100-Carbon-Neutrality"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] RE100-Carbon-Neutrality]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] RE100-Carbon-Neutrality에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] RE100-Carbon-Neutrality
+# [Strategy] RE100-Carbon-Neutrality
 
 ## 1. [왜 배우는가? (Why)]]
 앞으로의 비즈니스는 '탄소'를 해결하지 못하면 시작조차 할 수 없습니다. RE100 및 탄소 중립(RE100-Carbon-Neutrality)은 기업이 쓰는 모든 에너지를 깨끗하게 바꾸는 작업입니다. 유럽에 물건을 팔 때 탄소세를 내지 않으려면(CBAM), 그리고 애플이나 구글 같은 큰 고객사에 부품을 납품하려면 반드시 그들이 요구하는 재생 에너지 사용 비율을 맞춰야 합니다. 이를 이해하는 것은 전력망의 구조를 이해하고, 탄소 배출권 거래 시장과 재생 에너지 구매 전략을 통해 '탄소 리스크'를 '비즈니스 기회'로 전환하는 능력을 갖추는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Carbon Footprint Calculation)]
 제품 생산 시 발생하는 전력 소비와 연료 사용 데이터를 바탕으로 탄소 배출량을 산출하고 감축 목표를 설정하는 논리 구조입니다.
 ```python
-# 탄소 중립(ISM) 기반 탄소 발자국 산출 및 RE100 조달 최적화 논리
 def calculate_carbon_footprint_and_offset(production_log, energy_bills):
     # 1. 직접 배출량 산출 (Scope 1)
     # 공장 내 보일러, 차량 등 연료 연소에 의한 탄소 발생량 계산
@@ -99,5 +88,4 @@ def calculate_carbon_footprint_and_offset(production_log, energy_bills):
 2. 'CBAM(탄소국경조정제도)'에 대응하기 위해 기업이 '제품 탄소 발자국(PCF)'을 'LCA(전생애주기평가)' 관점에서 관리해야 하는 이유는?
 3. 기업의 탄소 중립 달성 과정에서 '에너지 효율 개선'과 '재생 에너지 전환' 중 어떤 것이 우선순위가 되어야 하는지 '한계 감축 비용(MAC)' 관점에서의 논리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

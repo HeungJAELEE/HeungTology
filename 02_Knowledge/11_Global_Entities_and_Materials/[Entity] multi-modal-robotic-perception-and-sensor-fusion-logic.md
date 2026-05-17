@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "multi-modal-robotic-perception-and-sensor-fusion-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] multi-modal-robotic-perception-and-sensor-fusion-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced intelligence system that integrates data from multiple sensing modalities (Lidar, Cameras, Radar, IMUs) into a single, consistent environmental model (Sensor Fusion Logic) to enhance a robot's situational awareness and decision-making accuracy (Perception)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["robotic-perception", "sensor-fusion", "lidar", "computer-vision", "imu", "kalman-filter", "autonomous-systems", "perception-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Sensor_Synchronization_Audit: Evaluate the timestamp alignment between different sensors to prevent temporal drift that compromises the fused state estimate.'
-    - 'Cross-modal_Consistency_Check: Analyze the agreement between independent sensor observations (e.g., Lidar vs. Camera) to identify and mitigate sensor-specific failures or spoofing.'
-    - 'Uncertainty_Propagation_Scan: Monitor the covariance matrix of the fused output to ensure the system''s confidence level matches the actual environmental complexity.'
-Trust Metrics:
+  description: "[Entity] multi-modal-robotic-perception-and-sensor-fusion-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Multi-modal Robotic Perception and Sensor Fusion Logic
+# [Entity] multi-modal-robotic-perception-and-sensor-fusion-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇이 안개가 자욱한 길을 가거나, 어두운 방 안에서 장애물을 피해야 한다면 무엇이 필요할까요? 눈(카메라)만으로는 어둠을 뚫기 어렵고, 귀(소나)만으로는 모양을 알기 어렵습니다. **멀티모달 로봇 인지 및 센서 융합 로직**은 카메라, 레이더, 라이다, 자이로스코프 등 로봇의 모든 감각을 하나로 엮어 세상에 대한 완벽한 입체 지도를 그리는 **'로봇의 오감 통합 두뇌'**입니다. 한 센서가 거짓말을 하거나(노이즈), 보지 못하는 곳이 있어도 다른 센서가 보완해주어, 어떤 상황에서도 흔들림 없는 **'인지적 무결성'**을 유지하는 기술입니다.
@@ -89,7 +78,6 @@ class RobotFidelityEngine:
             return "REJECT: Fragile Perception Chain - Slow Recovery from Sensor Blockage. System Vulnerable"
         return "PASS: Robust Multi-modal Awareness and Fast Context Recovery Confirmed"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(sensor_time_offset_ms=12, modality_conflict_score=0.15, fusion_uncertainty=0.08)
 print(engine.diagnose_perception_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_perception_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data sensor-fusion-uncertainty-and-detection-probability-v2026`와 연동되어, 전 세계 자율 시스템의 센서 데이터를 실시간 분석하고 오인식 및 인지 공백 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 인지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - machine-vision-and-object-recognition-for-factory-automation

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "international-financial-reporting-standards-ifrs-and-unified-accounting"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] international-financial-reporting-standards-ifrs-and-unified-accounting]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The global set of accounting standards (IFRS) issued by the International Accounting Standards Board (IASB), ensuring that financial statements are consistent, transparent, and comparable across international borders (Unified Accounting)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ifrs", "accounting-standards", "financial-reporting", "transparency", "unified-accounting", "iasb", "global-finance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Financial_Statement_Audit: Verify the accuracy and completeness of the balance sheet, income statement, and cash flow statement according to IFRS principles.'
-    - 'Fair_Value_Measurement_Check: Evaluate the valuation techniques used for non-financial assets and liabilities to ensure they reflect current market conditions.'
-    - 'Disclosure_Transparency_Scan: Analyze the notes to the financial statements for clarity, relevance, and compliance with mandatory disclosure requirements.'
-Trust Metrics:
+  description: "[Entity] international-financial-reporting-standards-ifrs-and-unified-accounting에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📊 International Financial Reporting Standards (IFRS) and Unified Accounting
+# [Entity] international-financial-reporting-standards-ifrs-and-unified-accounting
 
 ## 1. 개요 (Why: 인간적 통찰)
 전 세계 투자자들이 서로 다른 언어를 쓰더라도, 기업의 건강 상태를 보여주는 '장부'만큼은 하나의 공통된 언어로 읽어야 합니다. **국제 회계 기준(IFRS) 및 통합 회계**는 전 세계 자본 시장을 하나로 묶는 **'금융의 바벨탑'**입니다. 단순히 숫자를 맞추는 것이 아니라, 기업의 가치를 숨기거나 부풀리지 않고 '있는 그대로' 투명하게 보여주기 위한 전 세계적인 약속입니다. 이 언어가 있기에 한국의 투자자가 독일의 기업에, 미국의 기업이 베트남의 공장에 안심하고 투자할 수 있는 **'글로벌 신뢰의 엔진'**입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Revenue Recognition Violation - Premature or Improper Revenue Booking Detected"
         return "PASS: Accurate Revenue Measurement Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(accounting_error_rate=0.0005, impairment_loss_accuracy=0.98, disclosure_completeness=1.0)
 print(engine.diagnose_financial_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_financial_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data global-financial-compliance-and-ifrs-audit-logs-v2026`와 연동되어, 전 세계 주요 기업의 재무 데이터를 실시간 분석하고 분식 회계 및 자본 유출 사고 확률을 0.001% 이하로 억제함으로써 글로벌 자본 시장의 투명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - internal-audit-and-risk-based-assurance-governance

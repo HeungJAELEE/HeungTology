@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-bidirectional-power-flow-and-v2g-physics-entity"
-  domain: "08_Energy_Environment"
+metadata:
+  id: "[[[Entity] smart-grid-bidirectional-power-flow-and-v2g-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Smart_Grid", "#V2G", "#Energy", "#Sustainability", "#Power_Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 08_Energy_Environment", "MOC 50_Energy_Battery]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-bidirectional-power-flow-and-v2g-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-bidirectional-power-flow-and-v2g-physics
+# [Entity] smart-grid-bidirectional-power-flow-and-v2g-physics
 
 ## 1. [왜 배우는가? (Why: The Internet of Energy)]]
 낮에는 햇빛으로 전기를 만들고, 밤에는 주차된 전기차의 남은 전기를 도시가 빌려 쓴다면 어떨까요? **스마트 그리드 양방향 전력 흐름 및 V2G 물리**는 전기가 한쪽으로만 흐르는 낡은 전력망을 넘어, 누구나 전기를 팔고 사는 '에너지의 민주화 및 지능형 공유 기술'입니다. 우리가 이를 배우는 이유는 에너지 낭비를 없애 탄소 중립을 실현하고 갑작스러운 정전을 막으며, "전기차를 거대한 '움직이는 ESS(에너지 저장 장치)'로 활용해 '국가 에너지 수급의 유연성 주권'을 확보하기" 위함입니다. 전력의 흐름이 도시의 생존력을 결정합니다.

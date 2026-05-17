@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "drying-process-and-psychrometrics-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] drying-process-and-psychrometrics-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mass transfer process consisting of the removal of water or another solvent by evaporation from a solid, semi-solid or liquid (Drying Process) and the physical-mathematical study of gas-vapor mixtures, primarily air and water vapor (Psychrometrics Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["drying", "psychrometrics", "evaporation", "humidity", "heat-transfer", "mass-transfer", "industrial-drying"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Drying_Fidelity_Audit: Evaluate the ''Drying Rate'' ($R$) to identify if the process is in the ''Constant Rate Period'' (surface evaporation) or has shifted to the ''Falling Rate Period'' (internal diffusion limited).'
-    - 'Humidity_Integrity_Check: Analyze the wet-bulb and dry-bulb temperatures to ensure the air''s ''Drying Capacity'' is maximized without causing surface hardening or ''Case Hardening'' of the material.'
-    - 'Efficiency_Fidelity_Scan: Monitor the exhaust air humidity to verify that the energy used for heating is effectively translated into ''Latent Heat of Evaporation'' rather than wasted as sensible heat.'
-Trust Metrics:
+  description: "[Entity] drying-process-and-psychrometrics-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Drying Process and Psychrometrics Logic
+# [Entity] drying-process-and-psychrometrics-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 빨래가 어떤 날은 잘 마르고, 어떤 날은 왜 눅눅할까요? **건조(Drying) 공정 및 습공기(Psychrometrics) 로직**은 공기의 온도는 물론, 그 안에 숨겨진 '습기'의 비밀을 파헤쳐 물기를 가장 효율적으로 날려 보내는 **'공기의 조화'** 기술입니다. 산업 현장에서는 쌀이나 약, 종이 등을 말릴 때 단순히 뜨거운 바람을 부는 게 아닙니다. 공기가 얼마나 목이 마른 상태(습도)인지 계산하여, 재료의 겉면이 타지 않으면서 속까지 뽀송뽀송하게 말리는 **'보이지 않는 습기와의 전쟁이자 에너지 관리의 정수'**입니다.
@@ -59,7 +48,7 @@ $$ \omega = 0.622 \frac{P_v}{P - P_v} $$
 | **Heat Transfer** | Air flow (Hot air) | Atomized droplets | - | Method |
 | **Material Form** | Solids / Granules | Liquids / Slurries | - | Versatility |
 | **Drying Time** | Minutes ~ Hours | Seconds (Instant) | - | Speed |
-| **Particle Size** | Large / Irregular | Fine Powder (Micro) | $\mu m$ | Quality |
+| **Particle Size** | Large / Irregular | Fine Powder (Micro) | $\mu\text{m}$ | Quality |
 | **Energy Efficiency**| Moderate | High (Latent heat use)| - | Economy |
 | **Control Parameter**| DB/WB Temp | Nozzle Pressure / Air T| - | Logic |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inefficient Energy Logic - Latent heat from exhaust air is not being recaptured. Operational costs will exceed budget by 15%"
         return "PASS: Validated Thermodynamic Efficiency and Verified Process Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dry_bulb_temp_c=85.0, relative_humidity_pct=25.0, exit_moisture_pct=8.5)
 print(engine.diagnose_drying_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_drying_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drying-kinetics-and-equilibrium-moisture-v2026`와 연동되어, 전 세계 주요 제약 및 식품 건조 라인의 데이터를 실시간 분석하고 미건조 및 과건조 사고 확률을 0.001% 이하로 억제함으로써 지능형 품질 관리 문명의 함수율 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - boiling-and-two-phase-flow-physics

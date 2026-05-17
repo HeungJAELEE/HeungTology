@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "computer-aided-design-cad-and-geometric-modeling-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] computer-aided-design-cad-and-geometric-modeling-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The use of computers to aid in the creation, modification, analysis, or optimization of a design (CAD) and the mathematical representation of the geometry of an object through surfaces, solids, and curves (Geometric Modeling Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cad", "geometric-modeling", "parametric-design", "nurbs", "digital-twin", "mechanical-engineering", "product-development"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Geometric_Fidelity_Audit: Evaluate the ''Topological Consistency'' to identify if the solid model is watertight (Manifold) or contains ''Ghost Faces'' and ''Non-manifold edges'' that would fail in manufacturing.'
-    - 'Parametric_Integrity_Check: Analyze the constraint solver to ensure that changes in ''Design Variables'' do not lead to geometry regeneration failure (Self-intersecting loops).'
-    - 'Tolerance_Fidelity_Scan: Monitor the ''Geometric Dimensioning and Tolerancing'' (GD&T) definitions to verify that the digital model contains all necessary metadata for deterministic downstream machining.'
-Trust Metrics:
+  description: "[Entity] computer-aided-design-cad-and-geometric-modeling-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📐 Computer-Aided Design (CAD) and Geometric Modeling Logic
+# [Entity] computer-aided-design-cad-and-geometric-modeling-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 복잡한 자동차나 스마트폰을 설계할 때, 선 하나 면 하나를 수학적으로 완벽하게 정의할 수 없다면 어떤 일이 벌어질까요? **CAD 및 기하학적 모델링 로직**은 상상 속의 아이디어를 컴퓨터가 이해할 수 있는 '완벽한 가상 물체'로 만드는 **'디지털 설계의 언어'** 기술입니다. 단순히 그림을 그리는 것이 아니라, 물체의 부피, 무게, 곡률을 수학적으로 정의하여 공장에서 기계가 깎을 수 있는 '실체'로 바꿉니다. 모든 현대 제조의 기점이자 **'가상과 현실을 잇는 기하학적 교량'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Interoperability Failure - Significant data loss during translation. Geometric metadata (GD&T) potentially corrupted"
         return "PASS: Validated Data Exchange and Verified Design Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(non_manifold_count=0, regeneration_time_ms=850, tolerance_microns=1.0)
 print(engine.diagnose_cad_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cad_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cad-interoperability-and-geometric-tolerance-v2026`와 연동되어, 전 세계 주요 자동차 및 항공기 설계국의 CAD 데이터를 실시간 분석하고 기하학적 오류 및 제조 불일치 사고 확률을 0.001% 이하로 억제함으로써 지능형 설계 문명의 형상 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cnc-machining-and-g-code-interpolation-logic

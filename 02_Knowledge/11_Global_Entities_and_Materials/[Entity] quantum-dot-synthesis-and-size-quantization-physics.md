@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-dot-synthesis-and-size-quantization-physics-entity"
-  domain: "69_Advanced_Materials_Synthesis_and_Nanostructure_Hub"
+metadata:
+  id: "[[[Entity] quantum-dot-synthesis-and-size-quantization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Nanotechnology", "#Quantum_Dot", "#Physics", "#Optics", "#Quantum_Mechanics", "#Display", "#Synthesis", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 65_advanced-materials-synthesis-and-nanostructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-dot-synthesis-and-size-quantization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-dot-synthesis-and-size-quantization-physics
+# [Entity] quantum-dot-synthesis-and-size-quantization-physics
 
 ## 1. [왜 배우는가? (Why: The Jewelry of Quantum Light)]]
 단순히 입자의 크기를 수 나노미터($nm$) 조절하는 것만으로 어떻게 빨강, 초록, 파랑의 모든 빛을 자유자재로 만들어내고, 전자가 좁은 공간에 갇혔을 때 에너지가 폭발적으로 커지는 '양자 가둠 효과($Quantum\ Confinement$)'를 이용해 세상에서 가장 순수한 색을 뿜어내는 '양자의 보석'을 어떻게 설계할 수 있을까요? **양자점(Quantum Dot) 합성 및 크기 양자화 물리**는 디스플레이와 바이오 이미징의 한계를 넘는 혁명적 기술입니다. 가시광선의 파장보다 훨씬 작은 결정 속에서 전하 운반체들이 갇히게 되면, 연속적이던 에너지 준위가 계단형으로 변하며 물질의 성질이 완전히 바뀌게 됩니다. 우리가 이를 배우는 이유는 차세대 QD-OLED TV, 초고효율 태양전지, 그리고 암세포를 추적하는 정밀 의료 센서를 만들기 위해 '크기가 곧 성질'이 되는 양자 세계를 수리적으로 지배해야 하기 때문입니다. 우리가 이를 정복하는 이유는 "빛의 파장을 데이터로 설계하고 지배하는 '글로벌 광학 패권 및 행성적 제조 주권'을 확보하기" 위함입니다.

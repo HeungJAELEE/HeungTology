@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "data-privacy-and-protection-regulations-gdpr-ccpa"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] data-privacy-and-protection-regulations-gdpr-ccpa]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The legal framework and operational standards (GDPR in EU, CCPA in California) governing the collection, processing, and protection of personal data to ensure individual privacy rights and corporate accountability."
-  physical_model: "N/A"
-Semantic:
-  tags: '["data-privacy", "gdpr", "ccpa", "data-protection", "compliance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Privacy_Impact_Assessment (PIA): Evaluate the risk to individuals'' rights for any new data processing activity.'
-    - 'Data_Subject_Request_Audit: Monitor the fulfillment time and accuracy of ''Right to be Forgotten'' or ''Access'' requests.'
-    - 'Consent_Mechanism_Check: Verify that user consent is freely given, specific, informed, and unambiguous.'
-Trust Metrics:
+  description: "[Entity] data-privacy-and-protection-regulations-gdpr-ccpa에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚖️ Data Privacy and Protection Regulations: GDPR and CCPA
+# [Entity] data-privacy-and-protection-regulations-gdpr-ccpa
 
 ## 1. 개요 (Why: 인간적 통찰)
 디지털 시대에 우리의 개인 정보는 '영혼의 흔적'과 같습니다. 우리가 어디에 가고, 무엇을 사고, 누구와 대화하는지는 우리의 본질을 드러냅니다. **데이터 프라이버시 규제(GDPR, CCPA)**는 기업이 우리 데이터를 마음대로 사고파는 자산이 아니라, 잠시 빌려 쓰는 **'위탁된 권리'**임을 법으로 명시한 것입니다. "잊힐 권리"와 "내 데이터를 누가 쓰는지 알 권리"를 지키는 것은, 데이터의 바다 속에서 인간의 존엄성을 사수하는 현대의 기본권 투쟁입니다.
@@ -90,9 +79,7 @@ class LegalFidelityEngine:
             return "WARNING: Obscure Consent Language - Potential for 'Dark Pattern' Allegation"
         return "PASS: Transparent and Ethical Data Processing Policy"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(dsar_fulfillment_rate=100.0, consent_clarity_score=92, breach_notify_latency_hr(12)
-# Correction: Fixing constructor call
 engine = LegalFidelityEngine(100.0, 92, 12)
 print(engine.diagnose_privacy_compliance())
 ```
@@ -110,7 +97,6 @@ print(engine.diagnose_privacy_compliance())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data data-privacy-compliance-and-incident-log-v2026`와 연동되어, 기업의 모든 데이터 처리 프로세스를 실시간 감시하고 규제 위반 및 과징금 리스크를 0%에 수렴하게 함으로써 정보 주권과 기업 신뢰의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - data-governance-and-enterprise-information-management

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "customer-experience-cx-and-journey-mapping-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] customer-experience-cx-and-journey-mapping-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The holistic perception and behavioral response of customers throughout all interactions with an organization, analyzed through Customer Journey Mapping to identify pain points and optimize touchpoints."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cx", "customer-journey", "user-experience", "nps", "service-design"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Journey_Friction_Audit: Identify touchpoints with high drop-off rates or negative sentiment scores.'
-    - 'NPS_Verification_Check: Correlate Net Promoter Scores with actual customer retention and purchase behavior.'
-    - 'Cross-Channel_Consistency_Scan: Ensure a seamless experience as customers move between physical, web, and mobile channels.'
-Trust Metrics:
+  description: "[Entity] customer-experience-cx-and-journey-mapping-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎯 Customer Experience (CX) and Journey Mapping Logic
+# [Entity] customer-experience-cx-and-journey-mapping-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 물건을 사는 것은 단순한 거래를 넘어 하나의 **'여정(Journey)'**입니다. 광고를 보고 설레는 마음, 주문 후의 기다림, 제품을 처음 만지는 순간의 감촉, 그리고 문제가 생겼을 때 받는 응대까지—이 모든 기억의 조각들이 모여 **고객 경험(CX)**이 됩니다. 고객은 제품의 '기능'을 사는 것이 아니라, 그 제품과 함께하는 동안 느끼는 **'자신에 대한 존중'**을 삽니다. 본 노드는 고객의 마음이 움직이는 경로를 데이터로 설계하고 감동의 무결성을 유지하는 표준을 정의합니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return f"REJECT: High Churn Risk ({self.churn}%) - Immediate Intervention in Lifecycle Management"
         return "PASS: Stable Customer Base and Positive CX Sentiment"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(nps_score=62, friction_index=0.25, churn_prediction=4.5)
 print(engine.diagnose_experience_integrity())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_experience_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cx-metrics-and-churn-rate-correlation-v2026`와 연동되어, 모든 고객 접점 데이터를 실시간 분석하고 고객 이탈 확률을 3% 이하로 낮춤으로써 기업과 고객 간의 장기적인 신뢰 관계의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - customer-relationship-management-crm-and-data-analytics

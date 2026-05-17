@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "enterprise-resource-planning-erp-system-architecture"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] enterprise-resource-planning-erp-system-architecture]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integrated management of core business processes, often in real-time and mediated by software and technology (ERP), serving as the 'Central Nervous System' of an organization to harmonize Finance, HR, Supply Chain, and Manufacturing."
-  physical_model: "N/A"
-Semantic:
-  tags: '["erp", "sap", "oracle", "enterprise-architecture", "business-process-integration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Data_Consistency_Audit: Verify that a single transaction (e.g., Sales Order) is reflected accurately and instantly across Finance, Inventory, and Production modules.'
-    - 'Process_Standardization_Check: Evaluate the deviation between the ''Global Template'' and local business process variations.'
-    - 'System_Performance_Scan: Monitor database response times and application server latency during peak month-end closing periods.'
-Trust Metrics:
+  description: "[Entity] enterprise-resource-planning-erp-system-architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏢 Enterprise Resource Planning (ERP) System Architecture
+# [Entity] enterprise-resource-planning-erp-system-architecture
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 기업이 수만 명의 직원과 수조 원의 자산을 관리하면서도 일사불란하게 움직일 수 있는 비결은 무엇일까요? **ERP(전사적 자원 관리)**는 기업의 눈, 귀, 입, 그리고 뇌를 하나로 잇는 **'중앙 신경계'**입니다. 영업팀이 물건을 팔면 창고의 재고가 실시간으로 줄어들고, 회계 장부에는 매출이 기록되며, 공장에는 새로운 생산 명령이 떨어집니다. 이 모든 일이 단 하나의 시스템 안에서 물 흐르듯 일어납니다. ERP는 혼돈 속에 질서를 부여하고, 데이터에 기반한 투명한 경영을 가능케 하는 현대 비즈니스의 초석입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Broken Business Process Chain - Synchronous Integration Required"
         return "PASS: Seamless Cross-module Integration Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(data_discrepancy_pct=0.02, month_end_closing_days=3, db_latency_ms=85)
 print(engine.diagnose_erp_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_erp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data erp-transaction-throughput-and-database-latency-v2026`와 연동되어, 기업 내 모든 비즈니스 트랜잭션의 정합성을 실시간 분석하고 회계 사고 및 운영 병목 확률을 0.01% 이하로 억제함으로써 기업 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - erp-financial-accounting-fi-and-managerial-controlling-co-fundamentals

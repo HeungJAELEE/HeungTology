@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "compressed-air-energy-storage-caes-and-adiabatic-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] compressed-air-energy-storage-caes-and-adiabatic-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A way to store energy generated at one time for use at another time using compressed air (CAES) and the thermodynamic study of compression and expansion processes where heat is managed to maximize efficiency, ideally without exchange with the surroundings (Adiabatic Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["caes", "energy-storage", "adiabatic-physics", "thermodynamics", "compressed-air", "grid-storage", "renewable-integration"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermodynamic_Fidelity_Audit: Evaluate the ''Round-trip Efficiency'' to identify if the heat of compression is being effectively captured in the TES or lost to the environment, requiring fossil fuel reheat during expansion.'
-    - 'Storage_Integrity_Check: Analyze the pressure decay in the cavern or storage tank to ensure that geological leakage or valve bypass is not draining the stored potential energy.'
-    - 'Operational_Fidelity_Scan: Monitor the ''Expansion Temperature'' at the turbine exit to verify that icing or material thermal fatigue is not being induced by rapid adiabatic cooling.'
-Trust Metrics:
+  description: "[Entity] compressed-air-energy-storage-caes-and-adiabatic-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌬️ Compressed Air Energy Storage (CAES) and Adiabatic Physics
+# [Entity] compressed-air-energy-storage-caes-and-adiabatic-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 동굴에 공기를 꽉꽉 눌러 담았다가, 필요할 때 전기로 다시 바꿀 수 있다면 어떨까요? **압축 공기 에너지 저장(CAES) 및 단열(Adiabatic) 물리**는 공기를 '에너지 배터리'로 사용하는 **'공기의 거대한 응축'** 기술입니다. 남는 전기로 공기를 압축하면 엄청난 열이 발생하는데, 이 열을 잘 보관했다가 나중에 공기를 풀 때 다시 써먹는 '단열' 기술이 핵심입니다. 땅속 동굴을 거대한 건전지로 바꾸어 지구를 지키는 **'자연을 이용한 에너지 저금통'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sub-zero Exit Temperature - Risk of ice formation in turbine blades due to rapid adiabatic expansion. Increase reheat flow immediately"
         return "PASS: Validated Expansion Path and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(round_trip_efficiency_pct=72.5, cavern_pressure_drop_bar=0.1, tes_heat_loss_c_hr=1.2)
 print(engine.diagnose_caes_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_caes_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data caes-round-trip-efficiency-and-thermal-storage-v2026`와 연동되어, 전 세계 주요 대용량 에너지 저장 단지의 데이터를 실시간 분석하고 동굴 붕괴 및 열 효율 급락 사고 확률을 0.001% 이하로 억제함으로써 지능형 전력망의 신뢰 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - centrifugal-compressor-and-impeller-aerodynamics

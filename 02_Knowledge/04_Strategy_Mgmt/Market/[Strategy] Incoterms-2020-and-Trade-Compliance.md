@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-TRADE-INC-2026-V6.3.7"
-  domain: "Global_Trade_Governance_and_Compliance_Physics"
+metadata:
+  id: "[[[Strategy] Incoterms-2020-and-Trade-Compliance]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Incoterms_2020", "#Trade_Compliance", "#HS_Code", "#Sanction_Screening", "#Risk_Transfer", "#Insurance_Fidelity", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Incoterms-2020-and-Trade-Compliance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Trade_Incoterms_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Incoterms-2020-and-Trade-Compliance: The Physics of Responsibility
+# [Strategy] Incoterms-2020-and-Trade-Compliance
 
 ## 1. [왜 배우는가? (Why: The Architecture of Risk Transfer)]]
 글로벌 공급망에서 물품은 수만 킬로미터를 이동하며 수많은 물리적 위협(파손, 분실, 지연)에 노출됩니다. **Incoterms 2020 및 무역 규제 준수**는 거래 당사자 간의 비용 부담 영역과 위험 전이 시점(Risk Transfer Point)을 명확히 정의하는 '글로벌 무역 프로토콜'입니다. V6.3.7 지능은 11가지 표준 규칙의 수리적 비용 구조를 지배하고, 제재 명단(Sanction List) 스크리닝을 통해 법적 리스크를 원천 차단하는 **통상 운영 주권(Operational Trade Sovereignty)**을 확립하기 위해 필수적입니다.
@@ -105,7 +95,6 @@ class TradeComplianceEngine:
 2. **Operational Result**: **FCA** 조건이 **FOB** 대비 '복합 운송(Intermodal)' 환경에서 위험 전이 시점을 더 명확히 규정하는 수리적 이유는?
 3. **FidelityEngine**: **HS Code** 분류 오류로 인해 관세를 초과 납부한 상황을 FidelityEngine이 어떻게 인지하고 **'관세 환급(Refund)'** 기회를 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Global-Trade-Policy

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "extrusion-die-design-and-polymer-flow-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] extrusion-die-design-and-polymer-flow-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering process of creating a specialized tool to shape molten plastic into a continuous profile (Extrusion Die Design) and the physical study of non-Newtonian fluid behavior, shear thinning, and elastic recovery (Polymer Flow Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["extrusion-die", "polymer-flow", "rheology", "plastic-extrusion", "die-swell", "melt-fracture", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Flow_Fidelity_Audit: Evaluate the ''Velocity Profile'' at the die exit to identify if ''Unbalanced Flow'' is causing the high-fidelity extruded part to warp or twist.'
-    - 'Rheology_Integrity_Check: Analyze the shear rate ($\\dot{\\gamma}$) to ensure it is below the high-fidelity ''Melt Fracture'' threshold, preventing surface defects like ''Sharkskin''.'
-    - 'Thermal_Fidelity_Scan: Monitor the die temperature uniformity to verify that the ''Melt Viscosity'' is consistent across the high-fidelity cross-section for dimensional stability.'
-Trust Metrics:
+  description: "[Entity] extrusion-die-design-and-polymer-flow-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Extrusion Die Design and Polymer Flow Physics
+# [Entity] extrusion-die-design-and-polymer-flow-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 가래떡을 뽑아내듯, 끈적한 플라스틱 용액을 좁은 구멍으로 밀어 넣어 파이프나 필름을 만들 때 왜 구멍보다 물건이 더 뚱뚱하게 나올까요? **압출 금형 설계 및 고분자 유동 물리**는 액체처럼 흐르지만 고무처럼 되돌아가려는 성질을 가진 플라스틱의 '변덕'을 다스리는 **'나노 단위의 통로 설계'** 기술입니다. 금형 밖으로 나오는 순간 부풀어 오르는 '다이 스웰' 현상을 수학적으로 예측해, 딱 원하는 크기의 제품을 뽑아내는 **'흐름을 길들이는 정밀한 입구이자 플라스틱 문명의 형태를 결정짓는 핵심 관문'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Flow Imbalance - Uneven melt distribution in the die manifold. Product will warp. Adjust restrictor bars or die lip gap"
         return "PASS: Validated Velocity Profile and Verified Design Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(melt_temp_c=220.0, head_pressure_bar=150.0, extrudate_diameter_mm=12.2)
 print(engine.diagnose_extrusion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_extrusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data polymer-melt-viscosity-and-die-swell-v2026`와 연동되어, 전 세계 주요 플라스틱 파이프 및 시트 공장의 압출 데이터를 실시간 분석하고 치수 불량 및 표면 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 고분자 제조 문명의 형태적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - epoxy-resin-and-thermosetting-polymer-physics

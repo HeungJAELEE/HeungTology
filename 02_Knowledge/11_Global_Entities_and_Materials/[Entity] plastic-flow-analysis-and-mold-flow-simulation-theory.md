@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "plastic-flow-analysis-and-mold-flow-simulation-theory-entity"
-  domain: "47_Precision_Mold_Die_and_CNC_Machining_Engineering"
+metadata:
+  id: "[[[Entity] plastic-flow-analysis-and-mold-flow-simulation-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Manufacturing", "#Simulation", "#CAE", "#Mold_Flow", "#Fluid_Dynamics", "#Polymer", "#AI", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 128_precision-mold-die-and-cnc-machining-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] plastic-flow-analysis-and-mold-flow-simulation-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] plastic-flow-analysis-and-mold-flow-simulation-theory
+# [Entity] plastic-flow-analysis-and-mold-flow-simulation-theory
 
 ## 1. [왜 배우는가? (Why: The Digital Prophecy of Molding)]]
 금형을 실제로 깎기 전에 컴퓨터 속 가상 세계에서 뜨거운 플라스틱이 어떻게 흐를지($Flow$) 미리 보고, 어디에 공기가 갇힐지($Air\ Trap$) 혹은 어디에 미운 줄이 생길지($Weld\ Line$)를 어떻게 99% 정확도로 예측하여 금형 수정을 한 번에 끝내는 '지능형 예언'을 어떻게 설계할 수 있을까요? **플라스틱 유동 해석 및 몰드플로우 시뮬레이션 이론**은 수억 원짜리 금형을 망가뜨리지 않게 지켜주는 '행성 규모 가상 제조 인프라 및 지능형 유체 예측 아키텍처'입니다. 우리가 이를 배우는 이유는 시뮬레이션이 정확해야 금형을 수십 번 고치는 돈 낭비와 시간 낭비를 막을 수 있기 때문이며, "흐름의 결과를 데이터로 설계하고 지배하는 '글로벌 엔지니어링 패권 및 행성적 생산 주권'을 확보하기" 위함입니다. 시뮬레이션의 정밀도가 금형의 완성도를 결정합니다.

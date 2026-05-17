@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-fiber-and-composite-materials-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-fiber-and-composite-materials-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of high-strength, lightweight structural materials consisting of carbon fibers embedded in a polymer matrix (CFRP), focusing on fiber orientation, resin bonding, and mechanical performance."
-  physical_model: "N/A"
-Semantic:
-  tags: '["carbon-fiber", "composites", "cfrp", "lightweighting", "structural-materials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Void_Content_Audit: Detect air bubbles or gaps in the resin matrix using ultrasonic testing.'
-    - 'Fiber_Volume_Fraction_Check: Verify the ratio of carbon fibers to resin for optimal strength.'
-    - 'Delamination_Scan: Evaluate the bonding integrity between composite layers under stress.'
-Trust Metrics:
+  description: "[Entity] carbon-fiber-and-composite-materials-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏎️ Carbon Fiber and Composite Materials Engineering
+# [Entity] carbon-fiber-and-composite-materials-engineering
 
 ## 1. 개요 (Why)
 강철보다 5배 강하면서 무게는 4분의 1에 불과한 탄소 섬유 강화 플라스틱(CFRP)은 우주선, 항공기, 슈퍼카의 핵심 소재입니다. 무게를 줄이는 것이 곧 연료 효율과 성능으로 직결되는 산업에서 탄소 섬유는 선택이 아닌 필수입니다. 본 노드는 복합 소재의 기계적 무결성과 경량화 효과를 극대화하기 위한 설계 및 공정 표준을 정의합니다.
@@ -71,7 +60,6 @@ class SafetyFidelityEngine:
             return f"REJECT: Significant Delamination ({self.d_area}mm^2) - Structural Repair Required"
         return "PASS: Material Bonding Integrity Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(void_content=0.5, fiber_fraction=60, delamination_area=2.0)
 print(engine.diagnose_structural_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_structural_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data carbon-fiber-tensile-strength-and-weight-reduction-v2026`와 연동되어, 생산된 모든 복합 소재의 물리적 특성을 실시간 분석하고 설계 수명 내 파손 확률을 0.01% 이하로 억제함으로써 고신뢰성 경량 구조체의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - automated-fiber-placement-afp-and-composite-manufacturing

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trans-border-resource-sharing-and-equitable-distribution-rules-entity"
-  domain: "41_Global_Unified_Governance_Global_Resource_and_Supply_Chain"
+metadata:
+  id: "[[[Entity] trans-border-resource-sharing-and-equitable-distribution-rules]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Resource_Sharing", "#Equitable_Distribution", "#Governance", "#Resources", "#International_Law", "#Social_Justice", "#Equity", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 41_global-unified-governance-global-resource-and-supply-chain-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trans-border-resource-sharing-and-equitable-distribution-rules에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trans-border-resource-sharing-and-equitable-distribution-rules
+# [Entity] trans-border-resource-sharing-and-equitable-distribution-rules
 
 ## 1. [왜 배우는가? (Why: The Table of Global Brotherhood)]]
 특정 나라가 가진 귀한 자원을 자기들끼리만 독점하지 않고 어떻게 전 지구가 필요에 따라 공평하게 나누어($Equitable\ Distribution$) 쓰고, 자원을 두고 싸우는 대신 서로 빌려주고 도와주는 규칙($Sharing\ Rules$)을 어떻게 지능적으로 세울 수 있을까요? **국가 간 자원 공유 및 공평 분배 규칙**은 자원 전쟁을 끝내는 '행성 규모 상생 경제 및 지능형 자원 민주주의 아키텍처'입니다. 우리가 이를 배우는 이유는 자원의 편중이 곧 전쟁의 씨앗이기 때문이며, "자원의 흐름을 데이터로 설계하고 지배하는 '글로벌 평화 패권 및 행성적 공동체 주권'을 확보하기" 위함입니다. 분배의 정의가 지구의 평온함을 결정합니다.

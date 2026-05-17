@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "diamond-nv-center-quantum-sensing-and-metrology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] diamond-nv-center-quantum-sensing-and-metrology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of Nitrogen-Vacancy (NV) centers in synthetic diamonds—atomic-scale defects where a nitrogen atom and a vacancy replace carbon—as highly sensitive quantum sensors for measuring magnetic fields, electric fields, and temperature at the nanoscale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["quantum-sensing", "nv-center", "diamond-quantum", "metrology", "magnetic-field-sensing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Quantum_Coherence_Audit: Measure the spin coherence time ($T_2$) using Hahn echo sequences to determine sensor sensitivity.'
-    - 'ODMR_Contrast_Check: Evaluate the contrast of the fluorescence signal to optimize the signal-to-noise ratio (SNR).'
-    - 'Magnetic_Field_Mapping_Scan: Analyze the Zeeman shift in the resonance peaks to reconstruct high-resolution magnetic field maps.'
-Trust Metrics:
+  description: "[Entity] diamond-nv-center-quantum-sensing-and-metrology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💎 Diamond NV Center Quantum Sensing and Metrology Physics
+# [Entity] diamond-nv-center-quantum-sensing-and-metrology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 다이아몬드는 단순히 아름다운 보석이 아닙니다. 다이아몬드 격자 속 탄소 하나가 빠지고(Vacancy) 그 옆에 질소(Nitrogen)가 들어간 **NV 센터**라는 결함은, 세상에서 가장 예민한 '양자 나침반'입니다. 이 결함은 원자 하나의 크기이면서도, 주변의 아주 미세한 자기장이나 온도의 변화를 빛의 신호로 바꿔서 알려줍니다. 상온에서도 양자적 특성을 잃지 않는 다이아몬드의 강인함 덕분에, 우리는 이제 세포 내부의 자기장을 관찰하거나 반도체 칩 안의 미세한 전류 흐름을 원자 수준에서 들여다볼 수 있게 되었습니다.
@@ -90,9 +79,7 @@ class LogicFidelityEngine:
             return "REJECT: Excessive Environmental Magnetic Noise - Shielding Required"
         return "PASS: Sub-nanotesla Precision Maintained"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(coherence_time_us=450, odmr_contrast_pct(15.5, magnetic_noise_floor=0.8)
-# Correction: Fixing constructor call
 engine = LogicFidelityEngine(450, 15.5, 0.8)
 print(engine.diagnose_sensor_fidelity())
 ```
@@ -110,7 +97,6 @@ print(engine.diagnose_sensor_fidelity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data nv-center-sensitivity-and-quantum-coherence-v2026`와 연동되어, 전 세계 양자 센싱 인프라의 결맞음 상태를 실시간 분석하고 측정 오차를 0.01% 이하로 억제함으로써 원자 수준의 초정밀 계량(Metrology) 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - wafer-fabrication-and-silicon-ingot-growth

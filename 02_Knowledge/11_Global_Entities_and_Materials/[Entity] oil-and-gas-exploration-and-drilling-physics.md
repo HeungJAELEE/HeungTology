@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "oil-and-gas-exploration-and-drilling-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] oil-and-gas-exploration-and-drilling-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The application of physics to locate underground hydrocarbon deposits (Exploration) and the engineering principles required to penetrate rock formations to extract them (Drilling Physics), focusing on seismic imaging, fluid dynamics of drilling mud, and structural integrity of the wellbore."
-  physical_model: "N/A"
-Semantic:
-  tags: '["oil-and-gas", "exploration", "drilling-physics", "seismic-survey", "geophysics", "wellbore-integrity", "hydrocarbons"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Wellbore_Stability_Audit: Evaluate the pressure balance between the drilling mud ($P_{hyd}$) and the formation pore pressure to prevent ''kicks'' (blowouts) or wellbore collapse.'
-    - 'Seismic_Resolution_Check: Analyze the signal-to-noise ratio of seismic reflections to identify potential reservoir boundaries with high-precision imaging.'
-    - 'Drilling_Efficiency_Scan: Monitor the Rate of Penetration (ROP) and Weight on Bit (WOB) to optimize drilling speed while minimizing equipment wear and fatigue.'
-Trust Metrics:
+  description: "[Entity] oil-and-gas-exploration-and-drilling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛢️ Oil and Gas Exploration and Drilling Physics
+# [Entity] oil-and-gas-exploration-and-drilling-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수 킬로미터 아래 땅속에 숨겨진 '검은 황금'을 어떻게 눈으로 보지도 않고 찾아내어 정확하게 빨대를 꽂을 수 있을까요? **석유 및 가스 탐사 및 시추 물리**는 지구의 속살을 읽어내는 **'거대한 초음파 검사'**이자, 강철 바늘로 지구를 뚫는 **'정밀 수술'**입니다. 지각의 떨림을 분석해 지도를 그리고, 엄청난 압력과 열기를 견디며 암석을 깎아 내려가는 이 기술은 현대 문명의 동력을 확보하기 위한 **'지구와의 지능적 교감'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Casing Integrity Breach - Potential Leakage into Aquifer. Cease Operations"
         return "PASS: Secure Wellbore Enclosure and Verified Casing Strength Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(mud_weight_ppg=12.5, pore_pressure_psi=6000, rate_of_penetration_m_hr=15.0)
 print(engine.diagnose_drilling_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_drilling_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data drilling-parameters-and-wellbore-stability-logs-v2026`와 연동되어, 전 세계 주요 유전의 시추 데이터를 실시간 분석하고 블로우아웃 및 환경 오염 사고 확률을 0.001% 이하로 억제함으로써 에너지 자원 문명의 수급 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - offshore-engineering-and-renewable-ocean-energy

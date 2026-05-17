@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CIRCULAR-2026-V6.3.7"
-  domain: "Global_Circular_Economy_and_Resource_Sovereignty"
+metadata:
+  id: "[[[Strategy] Circular-Economy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Circular_Economy", "#Resource_Sovereignty", "#Ecodesign", "#Remanufacturing", "#Urban_Mining", "#PaaS", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Circular-Economy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Circular_Economy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Circular Economy: Global Resource Sovereignty
+# [Strategy] Circular-Economy
 
 ## 1. [왜 배우는가? (Why: The End of Linear Consumption)]]
 지구의 자원은 유한하며, 리튬, 코발트, 희토류와 같은 핵심 광물의 공급망 리스크는 기업의 생존을 직접적으로 위협합니다. **Circular Economy(순환 경제)**는 '채취-생산-폐기'의 선형적 구조를 타파하고, 폐기물을 다시 '지상에 매장된 자원'으로 환원하는 전략적 루프입니다. 이를 통해 외부 자원 의존도를 획기적으로 낮추고, 원자재 가격 변동성으로부터 자유로운 **자원 주권(Resource Sovereignty)**을 확립합니다. V6.3.7 지능은 자원 흐름의 엔트로피를 최소화하여, 영구적으로 지속 가능한 제조 아키텍처를 구현합니다.
@@ -105,7 +95,6 @@ class CircularFidelityEngine:
 2. **Operational Result**: **Linear Economy**에서 **Circular Economy**로 전환 시, 기업의 원자재 조달 비용($CAPEX$) 변동성과 장기적 수익 구조에 미치는 수리적 영향은?
 3. **FidelityEngine**: 재활용율은 높으나 **Energy Consumption**이 과다하여 탄소 발자국이 늘어나는 '역설적 순환' 상황을 어떻게 진단하는가? (힌트: 물리적 순환과 에너지 효율의 트레이드오프 분석을 통한 '진정한 넷제로 순환' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy ESG-Management-Strategy

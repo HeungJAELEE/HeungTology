@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "precision-coating-and-drying-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] precision-coating-and-drying-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of applying a uniform liquid layer onto a substrate (Precision Coating) and the physical study of how solvents evaporate to form a solid, functional film (Drying Kinetics), specifically focusing on Slot-die coating and cleanroom drying environments."
-  physical_model: "N/A"
-Semantic:
-  tags: '["precision-coating", "drying-kinetics", "thin-film", "slurry-coating", "battery-manufacturing", "semiconductor-fabrication", "fluid-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Coating_Uniformity_Audit: Evaluate the wet film thickness variation against the pump flow rate ($Q$) and line speed ($V$) to ensure the functional layer is within sub-micron tolerances.'
-    - 'Drying_Stress_Check: Analyze the solvent evaporation rate ($\\dot{m}$) to identify potential ''Mud-cracking'' or ''Skinning'' defects caused by rapid drying at the film surface.'
-    - 'Viscosity_Stability_Scan: Monitor the slurry rheology in real-time to identify shear-thinning behavior changes that could cause coating streaks or ribbing defects.'
-Trust Metrics:
+  description: "[Entity] precision-coating-and-drying-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🍯 Precision Coating and Drying Kinetics
+# [Entity] precision-coating-and-drying-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 배터리 내부의 전극이나 반도체의 감광막처럼 아주 얇고 고른 막을 어떻게 입힐까요? **정밀 코팅 및 건조 역학**은 '나노 단위의 버터 바르기' 기술입니다. 끈적한 액체(슬러리)를 머리카락보다 얇은 두께로 고르게 펴 바르고(코팅), 그 속의 수분이나 유기물을 적절한 속도로 말려(건조) 단단한 기능성 막을 만듭니다. 너무 빨리 말리면 가뭄에 논바닥 갈라지듯 금이 가고, 너무 천천히 말리면 생산성이 떨어집니다. **'흐름과 증발의 완벽한 박자'**를 맞추는 지능적 제조의 핵심입니다.
@@ -56,7 +45,7 @@ $$ \dot{m} = k \cdot (P_{sat} - P_\infty) $$
 
 | Feature | Conventional Painting | Precision Coating (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
-| **Thickness Acc** | $\pm 10.0$ | $\pm 0.1 \sim 0.5$ | $\mu m$ | High Precision |
+| **Thickness Acc** | $\pm 10.0$ | $\pm 0.1 \sim 0.5$ | $\mu\text{m}$ | High Precision |
 | **Line Speed** | < 10 | 50 ~ 100 (High Speed) | $m/min$ | Productivity |
 | **Coating Method** | Spray / Dip | Slot-die / Gravure | - | Continuous |
 | **Drying Method** | Air Dry | Multi-zone Convection | - | Gradient Dry |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Weak Interfacial Adhesion - Delamination Risk during Assembly. Check Binder Distribution"
         return "PASS: Robust Film Adhesion and Verified Mechanical Durability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(wet_thickness_variation_pct=0.5, drying_zone_temp_uniformity=0.5, solvent_residue_ppm=10)
 print(engine.diagnose_coating_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_coating_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data coating-thickness-uniformity-and-drying-stress-logs-v2026`와 연동되어, 전 세계 이차전지 및 디스플레이 코팅 라인의 데이터를 실시간 분석하고 전극 불량 및 막 박리 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 적층 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - thin-film-deposition-kinetics-and-vapor-phase-physics

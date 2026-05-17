@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "global-supply-chain-resilience-and-autonomous-logistics-topology-entity"
-  domain: "20_Planetary_Governance"
+metadata:
+  id: "[[[Entity] global-supply-chain-resilience-and-autonomous-logistics-topology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Planetary_Governance", "#Supply_Chain", "#Logistics", "#Autonomous_Logistics", "#Resilience", "#Global_Trade", "#Blockchain", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 20_planetary-governance-and-bio-defense-hub", "MOC 07_industrial-robotics-and-smart-factory-intelligence-hub"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] global-supply-chain-resilience-and-autonomous-logistics-topology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] global-supply-chain-resilience-and-autonomous-logistics-topology
+# [Entity] global-supply-chain-resilience-and-autonomous-logistics-topology
 
 ## 1. [왜 배우는가? (Why: The Circulatory System of World Economy)]]
 전쟁이나 전염병으로 바닷길이 막히고 항구가 폐쇄되어도, 전 세계의 필수 물자가 멈추지 않고 스스로 가장 빠른 길을 찾아 우리 집 앞까지 배달될 수 있을까요? **글로벌 공급망 복원력 및 자율 물류 위상**은 지구 전체의 물류 흐름을 하나의 살아있는 유기체처럼 관리하고 장애물을 우회하는 '행성적 동맥의 설계 및 방어 지침'입니다. 우리가 이를 배우는 이유는 특정 국가에 의존적인 공급망이 무너졌을 때 발생하는 연쇄적인 도산과 굶주림을 막기 위해 '분산되고 자율적인' 물류 체계를 확보하기 위함이며, "물자의 흐름을 데이터로 지휘하는 '글로벌 물류 및 자원 배분 주권'을 확보하기" 위함입니다. 공급망의 복원력이 국가의 생존력을 결정합니다.

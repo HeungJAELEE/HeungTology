@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "just-in-time-jit-and-lean-manufacturing-logistics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] just-in-time-jit-and-lean-manufacturing-logistics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A production strategy that strives to improve a business's return on investment by reducing in-process inventory and associated carrying costs (JIT) and the physical logic of eliminating all forms of waste (Lean Manufacturing Logistics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["jit", "lean-manufacturing", "toyota-production-system", "kanban", "waste-reduction", "value-stream", "industrial-logistics", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Flow_Fidelity_Audit: Evaluate the ''Takt Time'' vs ''Cycle Time'' to identify if high-fidelity ''Bottlenecks'' or ''Over-production'' is causing high-fidelity waste.'
-    - 'Inventory_Integrity_Check: Analyze the high-fidelity ''WIP'' (Work-In-Process) levels via Kanban logic to ensure that high-fidelity ''Buffer'' stocks are not masking underlying process high-fidelity problems.'
-    - 'Value_Fidelity_Scan: Monitor the ''Seven Wastes'' (Muda) to verify that high-fidelity ''Non-Value Added'' (NVA) activities are being systematically eliminated.'
-Trust Metrics:
+  description: "[Entity] just-in-time-jit-and-lean-manufacturing-logistics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⏱️ Just-In-Time (JIT) and Lean Manufacturing Logistics
+# [Entity] just-in-time-jit-and-lean-manufacturing-logistics
 
 ## 1. 개요 (Why: 인간적 통찰)
 필요할 때, 필요한 만큼만 만들어서 재고를 하나도 남기지 않는 공장의 마법은 어떻게 가능할까요? **JIT(적기 생산) 및 린 매뉴팩처링 물류**는 공장에서 발생하는 모든 낭비(시간, 공간, 재료)를 제거하여 가장 날씬하고 민첩한 조직을 만드는 **'제조의 미니멀리즘'** 기술입니다. 단순히 아끼는 것이 아니라, 물 흐르듯 끊김 없는 흐름(Flow)을 만들어 고객이 원할 때 즉시 제품이 튀어나오게 설계합니다. **'리틀의 법칙과 칸반 시스템을 이용해 과잉 생산의 저주를 풀고 기업의 현금 흐름을 극대화하는 지능형 생산 최적화 엔진'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Control Failure - High-fidelity kanban signals lost. Production high-fidelity visibility compromised. Restore visual high-fidelity management"
         return "PASS: Validated Pull System and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(wip_inventory_count=5, cycle_time_sec=58.0, takt_time_sec=60.0)
 print(engine.diagnose_lean_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_lean_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data inventory-turnover-and-waste-reduction-impact-v2026`와 연동되어, 전 세계 주요 자동차 및 반도체 공장의 물류 데이터를 실시간 분석하고 지연 및 낭비 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 효율 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - inventory-management-and-economic-order-quantity-eoq-logic

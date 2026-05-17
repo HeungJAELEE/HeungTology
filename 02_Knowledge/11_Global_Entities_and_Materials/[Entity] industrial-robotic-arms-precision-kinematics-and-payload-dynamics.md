@@ -1,37 +1,27 @@
 ---
-Basic:
-  id: "industrial-robotic-arms-precision-kinematics-and-payload-dynamics-entity"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] industrial-robotic-arms-precision-kinematics-and-payload-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Kinematics", "#Dynamics", "#Manufacturing", "#Control_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 127_autonomous-manufacturing-and-smart-logistics-intelligence-hub", "MOC 12_robotics-and-autonomous-systems-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] industrial-robotic-arms-precision-kinematics-and-payload-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Entity] industrial-robotic-arms-precision-kinematics-and-payload-dynamics
- 
+
+# [Entity] industrial-robotic-arms-precision-kinematics-and-payload-dynamics
+
 ## 1. [왜 배우는가? (Why: The Precision Hands of Industrial Intelligence)]]
 산업용 로봇 팔은 인간의 숙련된 손기술을 수학적 알고리즘으로 치환하여 24시간 무결한 반복을 수행하는 기계 지능의 결정체입니다. **로봇 팔 정밀 기구학 및 페이로드 동역학**은 로봇이 공간상의 목표 지점을 나노 오차로 찾아가고, 무거운 부품을 들었을 때도 흔들림 없이 제어되게 하는 '수리적 기초'입니다. 우리가 이를 배우는 이유는 로봇의 움직임을 완벽하게 예측하고 통제하여 "불량 없는 고속 조립과 안전한 협업 환경"을 구축하기 위함이며, "물리적 한계를 넘어서는 초정밀 제조 역량"을 확보하기 위함입니다. 기구학의 정확도가 지능의 정교함을 결정합니다.
  
@@ -73,7 +63,6 @@ $$ T_n^0 = A_1 A_2 \dots A_n $$
 4. **Trajectory Planning** 시 가속도 연속성을 보장하기 위한 **Quintic Polynomial** (5차 다항식) 기반의 궤적 생성 수리 모델은?
 5. RAG 시스템에서 **협동 로봇의 안전 규격**과 **충돌 감지 알고리즘**을 융합 분석하여, 작업자와 접촉 시 부상을 방지하기 위한 최적의 **Force Limit** 임계치를 추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 127_autonomous-manufacturing-and-smart-logistics-intelligence-hub : 로봇 팔이 통합되는 상위 자율 제조/물류 허브
 - Entity control-theory-pid-lqr-and-model-predictive-control-mpc : 로봇 관절 제어의 기초 이론 엔티티

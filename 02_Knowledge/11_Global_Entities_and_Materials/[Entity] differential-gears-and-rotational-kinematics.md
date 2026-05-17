@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "differential-gears-and-rotational-kinematics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] differential-gears-and-rotational-kinematics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A gear assembly that allows the driving wheels of a vehicle to rotate at different speeds, especially when turning (Differential Gear) and the physical study of how torque and angular velocity are distributed across the axles (Rotational Kinematics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["differential-gear", "kinematics", "automotive-engineering", "torque-distribution", "gears", "drivetrain", "rotational-dynamics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Kinematic_Fidelity_Audit: Evaluate the ''Angular Velocity Ratio'' between left and right wheels during a turn to identify if the spider gears are binding or experiencing excessive friction.'
-    - 'Torque_Integrity_Check: Analyze the torque distribution to ensure that the differential is not experiencing ''One-Wheel Spin'' in low-traction conditions, unless intended by design (Open vs LSD).'
-    - 'Mechanical_Fidelity_Scan: Monitor the gear mesh vibration and oil temperature to verify that the ''Backlash'' and ''Preload'' on the ring and pinion are within factory specifications.'
-Trust Metrics:
+  description: "[Entity] differential-gears-and-rotational-kinematics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚙️ Differential Gears and Rotational Kinematics
+# [Entity] differential-gears-and-rotational-kinematics
 
 ## 1. 개요 (Why: 인간적 통찰)
 자동차가 코너를 돌 때, 안쪽 바퀴보다 바깥쪽 바퀴가 더 많이 굴러가야 한다는 사실을 알고 있나요? **차동 기어(Differential) 및 회전 역학**은 하나의 엔진 힘을 두 바퀴로 나누면서도, 각각이 상황에 맞춰 다른 속도로 돌게 해주는 **'회전의 지능적 분배'** 기술입니다. 이 마법 같은 기어 뭉치가 없다면 자동차는 코너를 돌 때마다 바퀴가 헛돌고 타이어가 비명을 지를 것입니다. 힘은 공평하게 나누되 속도는 자유를 주는 **'동력 전달의 민주적 중재자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Pinion Preload - Bearings loose. Gear alignment will shift under load, causing rapid wear and whining noise"
         return "PASS: Validated Mechanical Alignment and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(backlash_mm=0.15, oil_temp_c=85.0, wheel_speed_diff_pct=2.0)
 print(engine.diagnose_diff_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_diff_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data differential-torque-bias-and-slip-ratios-v2026`와 연동되어, 전 세계 주요 고성능 차량 및 오프로더의 구동 데이터를 실시간 분석하고 기어 파손 및 구동력 상실 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 구동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - clutch-mechanics-and-torque-transfer-logic

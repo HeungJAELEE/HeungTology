@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "precision-casting-and-investment-molding-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] precision-casting-and-investment-molding-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of producing high-precision metal parts by creating a ceramic mold around a disposable pattern (Precision Casting), specifically focusing on the metallurgical control of grain structure and solidification in Investment Casting for aerospace and medical applications."
-  physical_model: "N/A"
-Semantic:
-  tags: '["precision-casting", "investment-casting", "metallurgy", "lost-wax", "foundry", "manufacturing", "turbine-blades"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Fidelity_Audit: Evaluate the cooling rate against Chvorinov''s Rule to ensure the grain size and porosity meet the high-strength requirements of turbine components.'
-    - 'Dimensional_Precision_Check: Analyze the mold expansion and metal shrinkage coefficients to verify the final part dimensions are within microns of the target design.'
-    - 'Grain_Structure_Scan: Monitor the Directional Solidification (DS) or Single Crystal (SX) growth process to identify defects like ''Freckles'' or misoriented grains.'
-Trust Metrics:
+  description: "[Entity] precision-casting-and-investment-molding-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Precision Casting and Investment Molding Metallurgy
+# [Entity] precision-casting-and-investment-molding-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 항공기 엔진의 거대한 회전 날개가 수천 도의 열기 속에서도 녹지 않고 버티는 비결은 무엇일까요? **정밀 주조 및 인베스트먼트 몰딩 금속학**은 금속을 녹여 틀에 붓는 인류 최고(最古)의 기술을 현대의 극한 공학으로 끌어올린 **'금속의 조각술'**입니다. 왁스로 만든 모형을 세라믹으로 감싸 정교한 틀을 만들고, 그 속에 녹은 합금을 부어 단 하나의 결정(Single Crystal)으로 된 부품을 만들어냅니다. 오차 없는 정밀함으로 하늘과 생명을 지키는 **'금속의 생명력을 빚는 기술'**입니다.
@@ -55,7 +44,7 @@ $$ t = B (V/A)^n $$
 | Feature | Sand Casting (Legacy) | Investment Casting (V6.3.7)| Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Tolerance** | $\pm 1.0 \sim 5.0$ | $\pm 0.05 \sim 0.1$ | mm | High Precision |
-| **Surface Finish** | Rough (Ra 12.5) | Smooth (Ra 1.6 ~ 3.2)| $\mu m$ | Low Machining |
+| **Surface Finish** | Rough (Ra 12.5) | Smooth (Ra 1.6 ~ 3.2)| $\mu\text{m}$ | Low Machining |
 | **Wall Thickness** | > 5.0 | < 1.0 (Thin-wall) | mm | Complex Shape |
 | **Material** | Iron / Aluminum | Superalloys / Titanium | - | High Temp |
 | **Grain Structure** | Random (Equiaxed) | Directional / Single Xtal| - | Super-strength |
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Shell Permeability - Trapped Gases causing Surface Defects. Optimize Slurry Composition"
         return "PASS: Robust Ceramic Mold and Verified Gas Evacuation Capability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(mold_preheat_temp_c=1500, withdrawal_rate_mm_min=3.5, porosity_volume_pct=0.01)
 print(engine.diagnose_casting_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data casting-yield-and-grain-structure-fidelity-v2026`와 연동되어, 전 세계 항공 및 방산 주조 라인의 실시간 데이터를 분석하고 균열(Crack) 및 결정 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 금속 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - phase-diagrams-and-gibbs-phase-rule-applications

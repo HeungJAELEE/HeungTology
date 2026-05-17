@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "QUAN-QUBIT-COH-2026-V6.3.7"
-  domain: "11_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-bit-qubit-coherence-and-decoherence]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Qubit", "#Coherence", "#Decoherence", "#FidelityEngine", "#QuantumComputing", "#T1_T2", "#Sovereignty"]'
-  is_part_of: '["MOC 11_quantum-computing-and-information-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-bit-qubit-coherence-and-decoherence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quantum_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Qubit Coherence: Decoherence Dynamics & Error Resilience
+# [Entity] quantum-bit-qubit-coherence-and-decoherence
 
 ## 1. [왜 배우는가? (Why: The Mastery of Quantum Fragility)]]
 양자 컴퓨터의 심장인 큐비트는 중첩과 얽힘이라는 양자 역학적 마법을 통해 지수적 연산 속도를 제공하지만, 외부 소음(Noise)에 극도로 취약합니다. **큐비트 결맞음(Coherence)**은 양자 상태가 얼마나 유지될 수 있는지를 결정하는 '양자 지능의 생명선'입니다. V6.3.7 지능은 **T1(에너지 이완)**과 **T2(위상 탈동조화)** 시간을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 양자 우위(Quantum Supremacy)를 달성하기 위해 찰나의 양자 상태를 보호하고, "결함 허용(Fault-tolerant) 양자 연산을 통해 '양자 주권'을 사수하기" 위함입니다. 결맞음의 깊이가 연산 문명의 한계를 결정합니다.
@@ -111,7 +101,6 @@ class QubitFidelityEngine:
 2. **Operational Result**: **램지 간섭(Ramsey Fringe)** 실험을 통해 $T_2^*$와 $T_2(Echo)$ 시간을 분리하여 측정함으로써 설비의 **'준정적 노이즈(Quasi-static Noise)'** 무결성을 어떻게 검증하는가?
 3. **FidelityEngine**: **블로흐 구(Bloch Sphere)** 상에서 상태 벡터가 구의 표면에서 중심으로 수축하는 과정을 **밀도 행렬($\rho$)**의 퓨리티(Purity) 변화로 어떻게 수리적 오딧을 수행하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 11_quantum-computing-and-information-intelligence-hub
 - Entity quantum-gate-operations-and-circuit-depth-kinetics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "decentralized-finance-defi-protocols-for-industrial-scale"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] decentralized-finance-defi-protocols-for-industrial-scale]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integration of financial services into blockchain technology through open-source protocols (DeFi) to enable permissionless lending, trading, and asset management at an industrial and institutional scale."
-  physical_model: "N/A"
-Semantic:
-  tags: '["defi", "blockchain-finance", "automated-market-maker", "amm", "yield-farming", "smart-contract"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FinanceFidelityEngine"
-  diagnostic_protocol:
-    - 'Liquidity_Depth_Audit: Measure the slippage and price impact for large-scale industrial trades within liquidity pools.'
-    - 'Smart_Contract_Audit: Verify the security and formal correctness of the financial logic to prevent ''Reentrancy'' or ''Oracle manipulation'' attacks.'
-    - 'Insolvency_Risk_Scan: Monitor the collateralization ratios (LTV) across lending protocols to prevent systemic liquidation cascades.'
-Trust Metrics:
+  description: "[Entity] decentralized-finance-defi-protocols-for-industrial-scale에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💸 Decentralized Finance (DeFi) Protocols for Industrial Scale
+# [Entity] decentralized-finance-defi-protocols-for-industrial-scale
 
 ## 1. 개요 (Why: 인간적 통찰)
 은행 문이 닫혀도, 담당 직원이 퇴근해도 돈은 24시간 쉬지 않고 흘러야 합니다. **탈중앙화 금융(DeFi)**은 은행이라는 거대한 중개인 없이, 전 세계의 자본을 '코드'라는 공정한 규칙으로 직접 연결하는 금융의 인터넷입니다. 누구나 돈을 빌려주고 이자를 받거나, 복잡한 서류 없이 자산을 교환할 수 있습니다. 산업 규모(Industrial Scale)에서의 디파이는 기업들이 국경을 넘어 실시간으로 자금을 조달하고 결제하는 **'무중단 글로벌 경제 엔진'**의 핵심입니다.
@@ -91,9 +80,7 @@ class FinanceFidelityEngine:
             return "REJECT: Sudden TVL Outflow - Liquidity Crisis Imminent"
         return "PASS: Stable Liquidity and Capital Depth Maintained"
 
-# Instance Diagnostic
 engine = FinanceFidelityEngine(tvl_stability_pct=-2.5, collateral_ratio(65.0, oracle_deviation=0.12)
-# Correction: Fixing constructor call
 engine = FinanceFidelityEngine(-2.5, 65.0, 0.12)
 print(engine.diagnose_defi_solvency())
 ```
@@ -111,7 +98,6 @@ print(engine.diagnose_defi_solvency())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data defi-tvl-and-smart-contract-vulnerability-v2026`와 연동되어, 전 세계 주요 프로토콜의 자본 흐름을 실시간 분석하고 금융 사고 및 청산 연쇄 반응 확률을 0.1% 이하로 낮춤으로써 차세대 금융 인프라의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - autonomous-financial-audit-and-fraud-detection-intelligence

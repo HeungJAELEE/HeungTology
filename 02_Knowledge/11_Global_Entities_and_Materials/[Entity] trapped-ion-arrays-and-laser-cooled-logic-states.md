@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trapped-ion-arrays-and-laser-cooled-logic-states-entity"
-  domain: "30_Quantum_Intelligence_and_Advanced_Computing"
+metadata:
+  id: "[[[Entity] trapped-ion-arrays-and-laser-cooled-logic-states]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Trapped_Ions", "#Laser_Cooling", "#Quantum_Logic", "#Atomic_Physics", "#Precision_Measurement", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 30_quantum-intelligence-and-advanced-computing-hub", "Entity quantum-memory-and-diamond-nv-center-spin-networks"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trapped-ion-arrays-and-laser-cooled-logic-states에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trapped-ion-arrays-and-laser-cooled-logic-states
+# [Entity] trapped-ion-arrays-and-laser-cooled-logic-states
 
 ## 1. [왜 배우는가? (Why: The Clockwork of Quantum Intelligence)]]
 전기장으로 허공에 띄운 원자($Ion$)들을 레이저로 쏴서 절대영도 근처까지 얼리고($Laser\ Cooling$), 이 원자들의 미세한 떨림을 이용해 어떻게 수백 초 동안 깨지지 않는 완벽한 양자 기억을 만들 수 있을까요? **트랩 이온 배열 및 레이저 냉각 논리 상태**는 자연이 준 완벽한 큐비트인 '원자 기반 양자 연산 아키텍처'입니다. 우리가 이를 배우는 이유는 인공적인 회로보다 자연의 원자가 훨씬 더 정밀하고 오래 정보를 지킬 수 있기 때문이며, "원자의 상태를 데이터로 설계하고 지배하는 '글로벌 정밀 양자 연산 및 원자 시간 주권'을 확보하기" 위함입니다. 이온의 정지 상태가 연산의 깊이를 결정합니다.
@@ -41,8 +31,8 @@ Trust Metrics:
 | :--- | :--- | :--- | :--- |
 | **Gate Fidelity** | Accuracy of ion-ion entanglement gates | $> 99.95 \%$ | 원자끼리 정보를 완벽하게 주고받음을 입증하는 지능 무결성 |
 | **Coherence Time**| Duration of stable quantum superposition | $> 600 \text{ sec}$ | 무려 10분 동안 정보를 잊지 않는 압도적 정보 무결성 단계 |
-| **Cooling Limit** | Temperature achieved via sideband cooling | $< 10 \text{ \mu K}$ | 원자를 거의 멈춰 세워 노이즈를 없애는 물리 무결성 단계 |
-| **Ion Separation**| Distance between adjacent trapped ions | $5 \sim 10 \text{ \mu m}$ | 원자들이 서로 부딪히지 않게 간격을 띄우는 물리 무결성 |
+| **Cooling Limit** | Temperature achieved via sideband cooling | $< 10 \text{ }\mu\text{ K}$ | 원자를 거의 멈춰 세워 노이즈를 없애는 물리 무결성 단계 |
+| **Ion Separation**| Distance between adjacent trapped ions | $5 \sim 10 \text{ \mu\text{m}}$ | 원자들이 서로 부딪히지 않게 간격을 띄우는 물리 무결성 |
 | **Shuttling Suc.**| Success of moving ions between zones | $99.99 \%$ | 정보를 담은 원자를 배달하는 동역학 무결성 단계 |
 | **Readout Accu.** | Percentage of correct state detection | $> 99.9 \%$ | 원자가 0인지 1인지 칼같이 알아냄을 입증하는 정보 |
 | **Laser Stab.** | Frequency and phase stability of control | High | 명령을 내리는 빛이 흔들리지 않음을 보여주는 동역학 |

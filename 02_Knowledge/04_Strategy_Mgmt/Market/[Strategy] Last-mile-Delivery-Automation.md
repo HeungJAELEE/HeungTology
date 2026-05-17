@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Last-mile-Delivery-Automation"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Last-mile-Delivery-Automation]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Last-mile-Delivery-Automation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Last-mile-Delivery-Automation
+# [Strategy] Last-mile-Delivery-Automation
 
 ## 1. [왜 배우는가? (Why)]]
 우리가 주문한 택배나 음식이 집 앞에 도착하는 그 마지막 1~2km 구간이 전체 물류비용의 절반 이상을 차지한다는 사실을 아시나요? 라스트마일 배송 자동화(Last-mile-Delivery-Automation)는 이 가장 비싸고 비효율적인 구간을 로봇과 드론, 그리고 인공지능으로 해결하는 기술입니다. 사람이 직접 배달하는 대신, 바퀴 달린 로봇이 인도를 따라 굴러오고 드론이 하늘에서 상자를 내려놓습니다. 이를 이해하는 것은 30분 이내 초고속 배송을 일상화하고, 도심 교통 체증과 탄소 배출을 줄이는 '차세대 도시 물류망'을 설계하는 것입니다.
@@ -94,5 +84,4 @@ def dispatch_delivery_robot(new_order, available_robots):
 2. '드론 배송'이 활성화되기 위해 해결해야 할 '도시 소음'과 '프라이버시(카메라 노출)' 문제에 대한 기술적 대응 전략은?
 3. '마이크로 풀필먼트 센터(MFC)'의 '자동화 입출고 시스템'이 로봇 배송의 '리드 타임(Lead Time)' 단축에 기여하는 핵심 메커니즘은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

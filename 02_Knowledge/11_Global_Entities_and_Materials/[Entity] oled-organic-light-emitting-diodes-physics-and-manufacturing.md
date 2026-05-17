@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "oled-organic-light-emitting-diodes-physics-and-manufacturing"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] oled-organic-light-emitting-diodes-physics-and-manufacturing]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The field of technology focused on the physics of self-emitting organic materials (OLED) and the high-precision manufacturing processes required to create them, including vacuum evaporation using Fine Metal Masks (FMM) and Thin-film Encapsulation (TFE) to protect against moisture."
-  physical_model: "N/A"
-Semantic:
-  tags: '["oled", "display-technology", "electroluminescence", "fmm", "evaporation-process", "organic-electronics", "thin-film-encapsulation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Luminance_Uniformity_Audit: Evaluate the brightness consistency across the display panel to identify evaporation shadows or mask misalignment issues.'
-    - 'Encapsulation_Integrity_Check: Analyze the Water Vapor Transmission Rate (WVTR) of the TFE layer to ensure the organic materials are protected from atmospheric degradation.'
-    - 'Color_Purity_Scan: Monitor the CIE coordinates of the Red, Green, and Blue sub-pixels to verify the purity and efficiency of the organic emitter layers.'
-Trust Metrics:
+  description: "[Entity] oled-organic-light-emitting-diodes-physics-and-manufacturing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌈 OLED (Organic Light Emitting Diodes): Physics and Manufacturing
+# [Entity] oled-organic-light-emitting-diodes-physics-and-manufacturing
 
 ## 1. 개요 (Why: 인간적 통찰)
 스스로 빛을 내는 아주 얇은 종이 같은 화면, 구부리거나 돌돌 말 수 있는 디스플레이를 본 적이 있나요? **OLED(유기 발광 다이오드): 물리와 제조**는 빛을 내는 특별한 유기 분자들을 이용해 세상을 밝히는 **'나노 입자의 자가 발광'** 기술입니다. 별도의 조명(Backlight) 없이 픽셀 하나하나가 스스로 빛나기에, 완벽한 검은색과 생생한 색감을 구현할 수 있습니다. 얇고 가벼운 미래를 만드는 **'빛나는 분자들의 예술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Premature Organic Decay - Blue Emitter Stability Insufficient. Enhance Host-Guest Chemistry"
         return "PASS: Stable Electroluminescence and Extended Lifespan Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fmm_alignment_error_um=0.8, wvtr_level=1e-7, luminance_uniformity_pct=98.5)
 print(engine.diagnose_oled_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_oled_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data oled-luminance-decay-and-production-yield-v2026`와 연동되어, 전 세계 OLED 팹의 가동 데이터를 실시간 분석하고 불량 화소 및 수명 단축 사고 확률을 0.001% 이하로 억제함으로써 지능형 디스플레이 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - thin-film-transistor-tft-and-display-backplane-physics

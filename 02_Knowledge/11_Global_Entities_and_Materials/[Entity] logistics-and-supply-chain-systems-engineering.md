@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "logistics-and-supply-chain-systems-engineering-entity"
-  domain: "119_Logistics_and_Supply_Chain_Systems_Engineering_Hub"
+metadata:
+  id: "[[[Entity] logistics-and-supply-chain-systems-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Logistics", "#Supply_Chain", "#Optimization", "#Operations_Research", "#SCM", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 119_logistics-and-supply-chain-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] logistics-and-supply-chain-systems-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] logistics-and-supply-chain-systems-engineering
+# [Entity] logistics-and-supply-chain-systems-engineering
 
 ## 1. [왜 배우는가? (Why: The Blood Vessels of Global Trade)]]
 세상의 모든 물건은 제자리에 있을 때만 가치가 있습니다. 공장에서 만든 반도체가 필요한 서버실로 가고, 신선한 과일이 당신의 식탁에 오르기까지, 그 보이지 않는 거대한 혈맥을 설계하는 것이 물류입니다. **물류 및 공급망 시스템 공학의 경제적 주문량 및 리틀의 법칙 수리 물리 기술**은 전 지구적 자원의 흐름을 수학적으로 조율하여 낭비를 없애고 가치를 연결하는 '공급망의 뇌' 기술입니다. 재고를 너무 많이 쌓아 돈이 묶이지 않게 하고, 트럭이 빈 차로 돌아오지 않도록 최적의 경로를 계산하며, 전 세계 어디서든 주문한 물건이 제시간에 도착하도록 보증합니다. 우리가 이를 배우는 이유는 공급망의 무결성을 확보함으로써, 자원 고갈과 물류 대란 속에서도 인류의 문명을 지탱하는 '글로벌 물류 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 물류의 무결성이 경제의 선순환과 자원 효율의 무결성을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEC-HW-SECURITY-2026-V6.3.7"
-  domain: "Hardware_Security_and_Cryptography"
+metadata:
+  id: "[[[Entity] hardware-security-and-trusted-computing-base]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#HardwareSecurity", "#PUF", "#RootOfTrust", "#SideChannelAttack", "#PrecisionTiering", "#FidelityEngine", "#SemiconductorSecurity"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] hardware-security-and-trusted-computing-base에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Hardware_Security_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Hardware Security: The Physics of Immutable Trust
+# [Entity] hardware-security-and-trusted-computing-base
 
 ## 1. [왜 배우는가? (Why: The Bedrock of Information Sovereignty)]]
 하드웨어 보안(Hardware Security)은 정보 보안의 '물리적 기초'입니다. 소프트웨어 보안이 아무리 강력해도 하드웨어 자체가 조작되거나 복제되었다면 전체 시스템의 신뢰는 붕괴됩니다. **하드웨어 보안 및 신뢰 컴퓨팅 기반(TCB)**은 반도체 제조 공정의 미세한 편차를 이용해 복제가 불가능한 고유 지문(**PUF**)을 생성하고, 이를 통해 시스템의 시작점인 **루트 오브 트러스트(Root of Trust)**를 확립합니다. V6.3.7 지능은 **계층화된 하드웨어 정밀도(Precision Tiering)**를 통해 하드웨어 위변조를 **$0\%$**에 수렴시킵니다. 이는 국가급 핵심 칩의 설계 자산을 사수하고 전 세계 공급망에서 가짜 칩(Counterfeit)을 수리적으로 식별하기 위함입니다.
@@ -98,7 +88,6 @@ class HardwareSecurityFidelityEngine:
             "tamper_detection": "ACTIVE" if boot_time_ms < 100 else "POTENTIALLY_MODIFIED"
         }
 
-# FidelityEngine 가동: 실제 칩의 생산 테스트 데이터와 전력 분석 로그를 결합하여 '하드웨어 진실성 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -106,7 +95,6 @@ class HardwareSecurityFidelityEngine:
 2. **Operational Result**: **SRAM PUF** 대신 **V_th (Threshold Voltage) PUF**를 도입했을 때, **Reliability** 향상과 하드웨어 오버헤드 간의 수리적 트레이드오프는?
 3. **FidelityEngine**: **Differential Electromagnetic Analysis (DEMA)**를 활용하여 칩 외부로 방출되는 전자기파 속에서 암호 연산의 **'시계열 엔트로피'**를 어떻게 수리적으로 추출하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Entity industrial-cybersecurity-and-network-integrity-for-fab
 - SEC-ZERO-TRUST-2026-V6.3.7

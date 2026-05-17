@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electrostatic-precipitator-esp-and-particle-capture-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electrostatic-precipitator-esp-and-particle-capture-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A filtration device that removes fine particles, such as dust and smoke, from a flowing gas using the force of an induced electrostatic charge (Electrostatic Precipitator) and the physical study of particle charging, migration in an electric field, and collection efficiency (Particle Capture Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["esp", "electrostatic-precipitator", "air-pollution-control", "particulate-matter", "corona-discharge", "environmental-engineering", "dust-collection"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Collection_Fidelity_Audit: Evaluate the ''Migration Velocity'' ($w$) against the particle size distribution to identify if ''Back Corona'' (reversed ionization) is occurring due to high-resistivity dust buildup.'
-    - 'Ionization_Integrity_Check: Analyze the secondary voltage and current to ensure the ''Corona Discharge'' is stable without frequent ''Sparking'' events that reduce the high-fidelity collection time.'
-    - 'Cleaning_Fidelity_Scan: Monitor the ''Rapping'' (vibration) intensity and frequency to verify that the collected dust is being shed into the hopper without significant re-entrainment into the gas stream.'
-Trust Metrics:
+  description: "[Entity] electrostatic-precipitator-esp-and-particle-capture-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌫️ Electrostatic Precipitator (ESP) and Particle Capture Physics
+# [Entity] electrostatic-precipitator-esp-and-particle-capture-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 화력 발전소나 제철소 굴뚝에서 뿜어져 나오는 시커먼 연기를 어떻게 순식간에 깨끗한 공기로 바꿀까요? **전기 집진기(ESP) 및 입자 포집 물리**는 보이지 않는 '정전기 자석'으로 미세먼지와 매연을 낚아채는 **'거대한 공기 청정기'** 기술입니다. 필터로 막는 게 아니라, 공기 중의 먼지들에게 전기를 입혀(대전) 금속판에 찰싹 달라붙게 만듭니다. 거대한 시설에서도 공기의 흐름을 막지 않으면서 먼지만 쏙 뽑아내는 **'지구의 호흡기를 지키는 전자기적 정화 장치'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Difficult Dust Profile - High resistivity ash causing 'Back Corona'. Condition the gas with SO3 or moisture to improve collection efficiency"
         return "PASS: Validated Dust Ionization and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(secondary_voltage_kv=55.0, secondary_current_ma=450.0, opacity_pct=2.5)
 print(engine.diagnose_esp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_esp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data esp-collection-efficiency-and-voltage-v2026`와 연동되어, 전 세계 주요 화력 발전 및 시멘트 공장의 환경 데이터를 실시간 분석하고 미세먼지 배출 초과 및 설비 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 친환경 문명의 대기 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - diesel-particulate-filter-dpf-and-soot-oxidation

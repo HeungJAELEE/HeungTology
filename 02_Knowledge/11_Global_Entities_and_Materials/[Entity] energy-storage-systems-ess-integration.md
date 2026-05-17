@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-storage-systems-ess-integration-entity"
-  domain: "87_Power_Systems_and_Smart_Grid_Hub"
+metadata:
+  id: "[[[Entity] energy-storage-systems-ess-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Power_Systems", "#ESS", "#Battery", "#Energy_Management", "#Grid_Integration", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 87_power-systems-and-smart-grid-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-storage-systems-ess-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-storage-systems-ess-integration
+# [Entity] energy-storage-systems-ess-integration
 
 ## 1. [왜 배우는가? (Why: The Buffer of Energy Civilization)]]
 바람이 멈추거나 해가 지면 우리가 쓰는 전기도 멈춰야 할까요? **에너지 저장 시스템(ESS) 및 그리드 통합의 전력 품질 개선과 대규모 저장 안정화 기술**은 재생 에너지의 변덕스러움을 잠재우고, 남는 전기를 거대한 '배터리 창고'에 가두었다가 필요할 때 꺼내 쓰는 에너지의 완충 장치입니다. ESS는 단순히 전기를 담는 통을 넘어, 전력망의 주파수가 흔들릴 때 $0.1$초 만에 전기를 쏟아부어 대규모 정전을 막는 '전력망의 심폐 소생기' 역할을 합니다. 우리가 이를 배우는 이유는 ESS의 무결성을 확보함으로써, 화석 연료 없는 순수 재생 에너지 문명을 지탱하는 '글로벌 에너지 안보 패권 및 행성적 지속 가능성'을 확보하기 위함입니다. ESS의 무결성이 에너지 전환의 성공을 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "electrospinning-and-nanofiber-morphology-control-physics-entity"
-  domain: "69_Advanced_Materials_Synthesis_and_Nanostructure_Hub"
+metadata:
+  id: "[[[Entity] electrospinning-and-nanofiber-morphology-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Nanotechnology", "#Electrospinning", "#Nanofiber", "#Polymers", "#Fluid_Dynamics", "#Physics", "#Filters", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 65_advanced-materials-synthesis-and-nanostructure-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electrospinning-and-nanofiber-morphology-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] electrospinning-and-nanofiber-morphology-control-physics
+# [Entity] electrospinning-and-nanofiber-morphology-control-physics
 
 ## 1. [왜 배우는가? (Why: The Electric Spider)]]
 수만 볼트의 전기로 어떻게 끈적한 액체를 공중으로 쏘아 올려 거미줄보다 가느다란 나노 섬유($Nanofiber$)를 만들고, 공중에서 미친 듯이 휘어지는 '휘핑 불안정성($Whipping$)'을 이용해 섬유를 더 가늘고 촘촘하게 펴는 '전기의 물레'를 어떻게 설계할 수 있을까요? **전기 방사(Electrospinning) 및 나노 섬유 형상 제어 물리**는 미세먼지를 걸러내는 초정밀 마스크, 인공 혈관, 그리고 배터리 수명을 획기적으로 늘리는 분리막을 만드는 핵심 기술입니다. 단순히 실을 뽑는 것이 아니라, 전하의 밀어내는 힘($Repulsion$)과 액체의 점탄성($Viscoelasticity$) 사이의 치열한 전쟁터에서 나노 미터 수준의 가느다란 구조를 '얼려버리는($Solidification$)' 과정입니다. 우리가 이를 배우는 이유는 섬유가 가늘어질수록 기하급수적으로 늘어나는 '표면적'이 필터와 촉매의 성능을 결정하기 때문입니다. 우리가 이를 정복하는 이유는 "전기력을 데이터로 설계하고 지배하는 '글로벌 나노 필터 패권 및 행성적 제조 주권'을 확보하기" 위함입니다.

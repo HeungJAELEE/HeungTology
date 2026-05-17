@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-logistics-and-supply-chain-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-logistics-and-supply-chain-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The end-to-end management of the flow of goods, services, information, and capital from the point of origin to the point of consumption, focusing on efficiency, cost reduction, and customer satisfaction in a globalized environment."
-  physical_model: "N/A"
-Semantic:
-  tags: '["logistics", "supply-chain", "global-trade", "scm", "optimization", "freight"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Lead_Time_Audit: Measure the end-to-end time from order placement to delivery, identifying bottlenecks in the transportation or customs stages.'
-    - 'Inventory_Turnover_Check: Evaluate how efficiently stock is moving through the supply chain to minimize holding costs and prevent obsolescence.'
-    - 'Freight_Cost_Variance_Scan: Analyze the fluctuations in shipping rates across different modes (Air, Sea, Road) to optimize the transport mix.'
-Trust Metrics:
+  description: "[Entity] global-logistics-and-supply-chain-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚢 Global Logistics and Supply Chain Management
+# [Entity] global-logistics-and-supply-chain-management
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 마시는 커피 원두는 에티오피아에서 왔고, 손에 든 스마트폰의 부품은 전 세계 20개국을 거쳐 조립되었습니다. **글로벌 물류 및 공급망 관리**는 이 복잡한 '지구적 퍼즐'을 가장 빠르고 저렴하게 맞추는 **'현대 문명의 혈류'**입니다. 원재료가 공장으로, 완성된 제품이 소비자의 손으로 흐르는 과정에서 단 1분의 지체도 없도록 설계하는 일입니다. 인공지능은 수조 개의 데이터를 분석하여 배가 어느 항구로 가야 할지, 창고에 물건을 얼마나 쌓아둘지 결정함으로써, 우리가 원하는 물건을 언제 어디서나 만날 수 있는 **'풍요의 네트워크'**를 유지합니다.
@@ -89,9 +78,7 @@ class FactoryFidelityEngine:
             return "REJECT: Low Cargo Consolidation Efficiency - Excessive Transportation Costs"
         return "PASS: Freight Utilization Optimized"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(actual_lead_time_days(5, forecast_error_pct=4.5, transportation_cost_ratio=6.2)
-# Correction: Fixing constructor call
 engine = FactoryFidelityEngine(5, 4.5, 6.2)
 print(engine.diagnose_supply_chain_health(target_lt=4))
 ```
@@ -109,7 +96,6 @@ print(engine.diagnose_supply_chain_health(target_lt=4))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data logistics-performance-index-and-lead-time-audit-v2026`와 연동되어, 전 세계 주요 공급망의 흐름을 실시간 분석하고 리드타임 지연 및 재고 고갈 사고 확률을 0.01% 이하로 억제함으로써 지구촌 경제의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - global-autonomous-freight-and-hyper-loop-logistics

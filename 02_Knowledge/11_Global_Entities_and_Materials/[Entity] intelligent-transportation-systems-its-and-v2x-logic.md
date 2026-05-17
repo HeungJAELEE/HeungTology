@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "intelligent-transportation-systems-its-and-v2x-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] intelligent-transportation-systems-its-and-v2x-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The integration of advanced communication technologies into transportation infrastructure and vehicles (ITS) to improve safety, efficiency, and sustainability, utilizing Vehicle-to-Everything (V2X) logic for real-time data exchange."
-  physical_model: "N/A"
-Semantic:
-  tags: '["its", "v2x", "v2v", "v2i", "smart-city", "autonomous-driving", "traffic-management"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'V2X_Latency_Audit: Measure the end-to-end communication delay between vehicles (V2V) and infrastructure (V2I) to ensure safety-critical alerts are delivered in time.'
-    - 'Traffic_Flow_Check: Evaluate the impact of ITS-led signal coordination on reducing congestion and vehicle idle time at intersections.'
-    - 'Security_Integrity_Scan: Monitor for unauthorized or spoofed V2X messages (e.g., false accident alerts) that could disrupt traffic flow.'
-Trust Metrics:
+  description: "[Entity] intelligent-transportation-systems-its-and-v2x-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚥 Intelligent Transportation Systems (ITS) and V2X Logic
+# [Entity] intelligent-transportation-systems-its-and-v2x-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 자동차가 서로 대화를 하고, 신호등이 길 위의 차들에게 "곧 초록불로 바뀔 거야"라고 미리 알려준다면 어떨까요? **지능형 교통 시스템(ITS) 및 V2X 로직**은 도로 위의 모든 것들을 하나의 거대한 유기체로 연결하는 **'도시의 신경망'**입니다. 단순히 차가 혼자 잘 가는 것을 넘어, 도로 전체가 실시간 정보를 주고받으며 사고를 예방하고 막힘없이 흐르게 만듭니다. 보이지 않는 곳에서 달려오는 차를 미리 알고 멈추거나, 구급차가 지나갈 때 모든 신호를 초록색으로 바꿔주는 **'배려하고 소통하는 도로'**의 두뇌입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Security Threat Detected - Potential Sybil Attack or Message Injection on V2X Network"
         return "PASS: Secure V2X Device Identity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(message_latency_ms=8.2, packet_delivery_ratio=0.99, traffic_flow_efficiency=0.92)
 print(engine.diagnose_its_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_its_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data v2x-communication-latency-and-traffic-efficiency-v2026`와 연동되어, 전 세계 스마트 시티의 도로 위 모든 데이터를 실시간 분석하고 교통사고 및 정체 발생 사고 확률을 0.001% 이하로 억제함으로써 미래 모빌리티의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - autonomous-vehicle-av-control-and-perception-logic

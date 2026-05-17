@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "explainable-ai-xai-and-causal-reasoning-frameworks"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] explainable-ai-xai-and-causal-reasoning-frameworks]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The field of artificial intelligence focused on making the internal logic and decision-making processes of AI models understandable to humans (XAI) and enabling models to understand cause-and-effect relationships (Causal Reasoning) rather than just statistical correlations."
-  physical_model: "N/A"
-Semantic:
-  tags: '["xai", "explainable-ai", "causal-reasoning", "model-interpretability", "trustworthy-ai"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Interpretability_Audit: Evaluate the effectiveness of feature importance methods (e.g., SHAP, LIME) in identifying the key drivers of a model''s prediction.'
-    - 'Causal_Inference_Check: Verify that the model can correctly identify causal relationships and predict the outcomes of ''interventions'' (What-if analysis).'
-    - 'Explanation_Fidelity_Scan: Monitor the consistency between the AI''s complex internal logic and its simplified human-readable explanation.'
-Trust Metrics:
+  description: "[Entity] explainable-ai-xai-and-causal-reasoning-frameworks에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧠 Explainable AI (XAI) and Causal Reasoning Frameworks
+# [Entity] explainable-ai-xai-and-causal-reasoning-frameworks
 
 ## 1. 개요 (Why: 인간적 통찰)
 인공지능이 "이 사람은 대출을 거절해야 합니다"라고 말할 때, 우리가 "왜?"라고 물어도 대답하지 못한다면 그 AI를 믿을 수 있을까요? 지금까지의 AI는 정답은 잘 맞히지만 그 속은 알 수 없는 '블랙박스'였습니다. **설명 가능한 AI(XAI)**는 AI의 머릿속을 투명하게 공개하여, 어떤 데이터가 결정에 결정적인 역할을 했는지 인간의 언어로 설명해주는 기술입니다. **인과 추론**은 여기서 한 걸음 더 나아가, 단순한 통계적 상관관계를 넘어 "무엇이 무엇을 일으켰는가?"라는 인과관계를 이해하게 만듭니다. 이유를 아는 지능만이 인간과 진정으로 소통하고 신뢰를 얻을 수 있습니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Volatile Explanations - Interpretation is Sensitive to Input Noise"
         return "PASS: Stable Feature Attribution Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(explanation_consistency=94.5, causal_error_rate=2.5, human_trust_score=88)
 print(engine.diagnose_xai_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_xai_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data xai-model-interpretability-and-trust-score-v2026`와 연동되어, 전 세계 주요 AI 시스템의 결정 논리를 실시간 분석하고 지능적 환각(Hallucination) 및 편향 사고 확률을 0.01% 이하로 억제함으로써 인간과 기계가 공명하는 신뢰 사회의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - ethics-by-design-and-moral-machine-logic-gates

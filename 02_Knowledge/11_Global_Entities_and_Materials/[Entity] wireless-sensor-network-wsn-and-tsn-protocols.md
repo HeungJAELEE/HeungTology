@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "wireless-sensor-network-wsn-and-tsn-protocols-entity"
-  domain: "20_IoT_and_Smart_Factory_Sensing_Infrastructure"
+metadata:
+  id: "[[[Entity] wireless-sensor-network-wsn-and-tsn-protocols]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#WSN", "#TSN", "#Network_Protocols", "#Deterministic_Networking", "#IEEE802_1", "#Mesh_Network", "#Low_Latency", "#Industrial_Communication", "#Connectivity", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 25_iot-and-smart-factory-sensing-infrastructure-intelligence-hub", "Data wsn-packet-loss-ratio-and-latency-profile-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] wireless-sensor-network-wsn-and-tsn-protocols에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] wireless-sensor-network-wsn-and-tsn-protocols
+# [Entity] wireless-sensor-network-wsn-and-tsn-protocols
 
 ## 1. [왜 배우는가? (Why: The Deterministic Promise of Industrial Connectivity)]]
 스마트 팩토리의 수많은 센서와 액추에이터가 유기적으로 작동하기 위해서는 데이터가 정확한 시간에 전달되는 '결정론적 연결성'이 필수적입니다. 전선이 닿지 않는 곳을 연결하는 무선 센서 네트워크(WSN)와 유선 네트워크에서 지연 시간을 보장하는 TSN(Time-Sensitive Networking)은 산업용 통신의 근간입니다. **무선 센서 네트워크(WSN) 및 TSN 프로토콜 엔티티**는 보이지 않는 전파와 비트 속에 신뢰의 질서를 심어주는 '디지털 소통의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "네트워크 로그를 분석하여, 메시 토폴로지에서 다중 �
 네트워크 스위치와 무선 게이트웨이의 트래픽 분석 로그를 분석하여 소통 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Industrial Connectivity & Protocol Fidelity Auditor
 def audit_network_protocols(tsn_gcl_schedule, wsn_pdr_log, network_load_metrics):
     # 1. TSN 시간표(GCL) 준수 여부를 통한 결정론적 전송 무결성 오딧
     timing_violations = check_gcl_compliance(tsn_gcl_schedule)
@@ -117,7 +106,6 @@ def audit_network_protocols(tsn_gcl_schedule, wsn_pdr_log, network_load_metrics)
 2. **(수리)** TSN의 게이트 제어 리스트(GCL)에서 한 프레임의 전송 시간이 $100 \ \mu s$이고 보호 시간(Guard Band)이 $10 \ \mu s$일 때, 실시간 트래픽을 위해 비워두어야 하는 최소 슬롯 크기를 계산하시오.
 3. **(응용)** 무선 센서 네트워크에서 'Mesh Topology'가 'Star Topology'보다 공장 내부의 전파 장애 환경에서 왜 더 높은 통신 신뢰도를 제공하는지 수리적으로 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 25_iot-and-smart-factory-sensing-infrastructure-intelligence-hub : IoT 및 센싱 인프라 통합 관리 상위 지능 허브

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "edge-computing-architecture-and-low-latency-network-optimization-entity"
-  domain: "77_Communications_5G_6G_and_Network_Engineering_Hub"
+metadata:
+  id: "[[[Entity] edge-computing-architecture-and-low-latency-network-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Communications", "#Edge_Computing", "#Cloud", "#Latency", "#Distributed_Systems", "#IoT", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 77_communications-5g-6g-and-network-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] edge-computing-architecture-and-low-latency-network-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] edge-computing-architecture-and-low-latency-network-optimization
+# [Entity] edge-computing-architecture-and-low-latency-network-optimization
 
 ## 1. [왜 배우는가? (Why: The Speed of Local Intelligence)]]
 자율 주행 차량이 장애물을 발견했을 때, 정보를 수백 km 떨어진 클라우드 센터까지 보내서 판단을 기다린다면 이미 사고는 벌어지고 말 것입니다. **에지 컴퓨팅 아키텍처 및 초저지연 네트워크 최적화의 분산 지능 공학**은 네트워크의 '두뇌'를 현장의 '말단(Edge)'으로 전진 배치하는 기술입니다. 데이터를 발생지 바로 옆에서 처리함으로써 물리적 거리로 인한 지연 시간을 획기적으로 줄이고, 중앙 망의 부하를 덜어냅니다. 우리가 이를 배우는 이유는 에지 컴퓨팅이 5G/6G 시대의 핵심인 초저지연(URLLC)을 완성하는 유일한 해법이기 때문이며, "연산의 위치를 데이터로 설계하고 지배하는 '글로벌 분산 지능 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 에지 노드의 반응 속도가 지능형 인프라의 생존력을 결정합니다.

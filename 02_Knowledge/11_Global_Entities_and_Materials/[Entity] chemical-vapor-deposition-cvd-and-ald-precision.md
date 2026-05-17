@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-vapor-deposition-cvd-and-ald-precision"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-vapor-deposition-cvd-and-ald-precision]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The nanometer-scale deposition of thin films through gaseous chemical reactions, focusing on Atomic Layer Deposition (ALD) for sub-angstrom thickness control and conformal coverage."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cvd", "ald", "nanomanufacturing", "thin-film", "semiconductor-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deposition_Rate_Audit: Measure the film growth per unit time or cycle against the target thickness.'
-    - 'Conformality_Check: Evaluate the step coverage on high-aspect-ratio trenches using TEM/SEM.'
-    - 'Precursor_Purity_Scan: Detect trace contaminants in the precursor gas line that cause film defects.'
-Trust Metrics:
+  description: "[Entity] chemical-vapor-deposition-cvd-and-ald-precision에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Chemical Vapor Deposition (CVD) and ALD Precision
+# [Entity] chemical-vapor-deposition-cvd-and-ald-precision
 
 ## 1. 개요 (Why)
 반도체 내부의 보이지 않는 미세 회로 위에 균일한 막을 입히는 것은 마치 건물 전체에 0.1mm 두께의 페인트를 단 한 군데의 뭉침 없이 칠하는 것과 같습니다. CVD는 가스를 이용해 막을 쌓고, 특히 ALD(원자층 증착)는 원자 한 층씩 번갈아 쌓아 올려 '완벽한 두께 제어'를 실현합니다. 현대 반도체의 3D 구조(V-NAND 등)를 가능하게 하는 핵심 기술이 바로 이 원자 단위의 증착 정밀도입니다. 본 노드는 증착 공정의 무결성과 원자 수준의 정밀 제어 표준을 정의합니다.
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Insufficient Step Coverage ({self.conf}%) - Risk of Void in 3D Structure"
         return "PASS: Perfectly Conformal Film Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(growth_per_cycle=1.02, conformality_pct=99.5, uniformity_pct=0.8)
 print(engine.diagnose_deposition_precision(target_gpc=1.00))
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_deposition_precision(target_gpc=1.00))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cvd-ald-film-thickness-and-conformality-v2026`와 연동되어, 모든 증착 사이클의 압력과 유량 데이터를 실시간 분석하고 두께 오차를 0.1nm 단위로 감시함으로써 결함 없는 초미세 회로 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - plasma-enhanced-chemical-vapor-deposition-pecvd

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-DIKW-VALUE-2026-V6"
+metadata:
+  id: "[[[AI] dikw-pyramid-value-creation]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#DIKW_Pyramid'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] dikw-pyramid-value-creation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] dikw-pyramid-value-creation
@@ -113,7 +103,6 @@ class DikwAnalyticsProcessor:
 2. **Knowledge** (지식) 계층이 **Information** (정보) 계층과 구별되는 가장 결정적인 차이점은 '단순 현상 기술'인가 아니면 '인과적 패턴(Causality)'인가?
 3. **Wisdom** (지혜) 단계에서 가치 판단(Utility)이 배제된 채 알고리즘이 독단적으로 행동할 때 발생할 수 있는 **지능형 공정 사고**의 시나리오는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI bayesian-probability-and-inference
 - 02_Knowledge/02_Battery/Intelligence/Battery degradation-physics

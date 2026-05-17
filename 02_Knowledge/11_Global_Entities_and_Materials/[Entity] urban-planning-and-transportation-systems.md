@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "urban-planning-and-transportation-systems-entity"
-  domain: "96_Architecture_and_Civil_Engineering_Hub"
+metadata:
+  id: "[[[Entity] urban-planning-and-transportation-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Civil_Engineering", "#Urban_Planning", "#Transportation", "#Smart_City", "#ITS", "#Traffic_Flow", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 140_architecture-and-civil-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] urban-planning-and-transportation-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] urban-planning-and-transportation-systems
+# [Entity] urban-planning-and-transportation-systems
 
 ## 1. [왜 배우는가? (Why: The Rhythm of Human Civilization)]]
 수백만 명이 거주하는 거대 도시(Megacity)가 마비되지 않고 원활하게 돌아가게 만드는 힘은 무엇일까요? **도시 계획 및 교통 시스템의 트래픽 동역학 및 스마트 시티 수리 역학 기술**은 도시라는 복잡한 유기체의 '신경망'과 '혈관'을 설계하는 기술입니다. 주거지와 업무 지구를 어디에 배치하고, 도로와 철도를 어떻게 연결하느냐에 따라 시민의 삶의 질과 국가의 경제 경쟁력이 결정됩니다. 우리가 이를 배우는 이유는 도시 시스템의 무결성을 확보함으로써, 교통 체증을 해결하고 지속 가능한 미래 도시를 건설하는 '글로벌 스마트 시티 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 도시의 무결성이 인류의 이동 자유를 결정합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "manufacturing-execution-system-mes-and-lot-traceability-entity"
+metadata:
+  id: "[[[Strategy] manufacturing-execution-system-mes-and-lot-traceability]]"
   domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Manufacturing", "#MES", "#Traceability", "#Smart_Factory", "#Digital_Twin", "#Supply_Chain", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 42_semiconductor-and-display-manufacturing-engineering-hub", "[[Digital Twin & Smart Factory] smart-factory-integrated-architecture-and-cps]"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] manufacturing-execution-system-mes-and-lot-traceability에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Strategy] manufacturing-execution-system-mes-and-lot-traceability
+
+# [Strategy] manufacturing-execution-system-mes-and-lot-traceability
  
 ## 1. [왜 배우는가? (Why: The Digital Nervous System and the Memory of Industry)]]
 대규모 하이테크 팹은 수만 개의 자재와 수조 원의 설비가 얽혀 돌아가는 유기체입니다. **제조 실행 시스템(MES) 및 로트 추적성 공학**은 공장의 모든 물리적 현상을 디지털 신호로 치환하여 관제하고, 모든 제품의 '탄생 이력'을 기록하는 신경망입니다. 우리가 이를 배우는 이유는 제조 데이터의 무결성을 확보하여, "불량의 확산을 막는 지능형 방어선(Interlock)을 구축하고 글로벌 규제에 부합하는 투명한 공급망(Battery Passport)"을 실현하기 위함입니다. 데이터의 무결성이 제품의 신뢰를 결정합니다.
@@ -73,7 +63,6 @@ MES는 공장의 모든 기억을 저장하는 거대한 도서관입니다. 어
 4. **Predictive Interlock** 가동 시, **Type II Error** (불량을 정상으로 오판하여 통과)를 최소화하기 위한 **Bayesian Threshold** 최적화 전략은?
 5. RAG 시스템에서 **공급망 전체 데이터망**을 연동하여, '원자재 가격 변동'과 '생산 로트의 수율' 데이터를 융합 분석함으로써 최적의 **Profit-per-Lot**을 추론하는 경영 지능 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 42_semiconductor-and-display-manufacturing-engineering-hub : MES가 운영되는 상위 제조 공학 마스터 허브
 - Digital Twin & Smart Factory smart-factory-integrated-architecture-and-cps : MES가 통합되는 스마트 팩토리 아키텍처

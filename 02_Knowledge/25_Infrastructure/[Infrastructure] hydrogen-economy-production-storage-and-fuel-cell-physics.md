@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "hydrogen-economy-production-storage-and-fuel-cell-physics-entity"
-  domain: "02_Energy_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] hydrogen-economy-production-storage-and-fuel-cell-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Infrastructure", "#Hydrogen", "#Fuel_Cell", "#Electrolysis", "#Thermodynamics", "#Electrochemistry", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Energy smart-grid-and-vpp-control-intelligence", "MOC 02_Energy_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] hydrogen-economy-production-storage-and-fuel-cell-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] hydrogen-economy-production-storage-and-fuel-cell-physics
@@ -42,7 +32,7 @@ Trust Metrics:
 | **Elec. Efficiency**| LHV-based efficiency of PEM/ALK electrolyzer | $> 80\%$ | 재생 에너지를 수소로 전환할 때의 열역학적 손실을 최소화하는 지표 |
 | **Power Density** | Output power per unit active area (Fuel Cell) | $> 2.0 \text{ W/cm}^2$ | 연료전지 스택의 소형화 및 고출력화를 결정하는 전기화학적 성능 |
 | **Storage Density**| Gravimetric hydrogen storage capacity | $> 6.0 \text{ wt}\%$ | 수소 모빌리티의 주행 거리를 사수하기 위한 무게 대비 저장 효율 |
-| **Degradation** | Voltage drop rate during stack operation | $< 5 \text{ \mu V/h}$ | 수만 시간 가동이 필요한 상용 인프라의 내구성 및 피로 수명 보증 |
+| **Degradation** | Voltage drop rate during stack operation | $< 5 \text{ }\mu\text{ V/h}$ | 수만 시간 가동이 필요한 상용 인프라의 내구성 및 피로 수명 보증 |
 | **Ortho-Para Conv.**| Conversion rate for liquid hydrogen storage | $> 99.9\%$ | 액체 수소 저장 시 자가 증발(Boil-off)을 막기 위한 양자 상태 제어 |
 | **Proton Cond.** | Ionic conductivity of PEM membrane | $> 0.1 \text{ S/cm}$ | 전해질 내의 양성자 이동 저항을 낮춰 고전류 밀도 운전을 가능하게 함 |
 | **Start-up Time** | Time to reach rated power from cold start | $< 30 \text{ s}$ | 수소 상용차 및 백업 전원의 즉각적인 대응력을 결정하는 열 제어 능력 |
@@ -74,7 +64,6 @@ $700^\circ\text{C}$ 이상 고온에서 작동하는 세라믹 전해질의 산�
 4. **Liquid Hydrogen** 저장 시 **Ortho-to-Para Conversion**이 지연될 때 발생하는 **Evaporation Rate** 증가량을 수리적으로 정량화하고, 최적의 촉매 충진량을 산출하는 설계 모델은?
 5. RAG 시스템에서 **전력망 부하 예측 데이터**와 **수전해-연료전지 하이브리드 로그**를 융합하여, '에너지 가격이 낮을 때 수소를 생산하고 높을 때 발전하는' **Hydrogen-based P2G2P Arbitrage** 최적화 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Energy]] smart-grid-and-vpp-control-intelligence]] : 수소 생산 및 발전이 통합되어 작동하는 지능형 전력망 및 가상 발전소 엔티티
 - Infrastructure carbon-capture-utilization-and-storage-ccus-physics : 그레이/블루 수소 생산 시 발생하는 탄소를 포집하여 청정 수소로 전환하는 연계 엔티티

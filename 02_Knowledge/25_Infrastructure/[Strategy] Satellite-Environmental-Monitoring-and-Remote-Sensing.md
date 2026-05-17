@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Satellite-Environmental-Monitoring-and-Remote-Sensing"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Satellite-Environmental-Monitoring-and-Remote-Sensing]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Satellite-Environmental-Monitoring-and-Remote-Sensing에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Satellite-Environmental-Monitoring-and-Remote-Sensing
+# [Strategy] Satellite-Environmental-Monitoring-and-Remote-Sensing
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 지구가 얼마나 오염되었는지, 아마존 밀림이 얼마나 사라졌는지 확인하려면 누군가 현장에 직접 가서 보고해야 한다고 생각했습니다. 하지만 이제 우주에서 지구의 모든 변화를 1cm 단위로 지켜봅니다. 위성 환경 모니터링 및 원격 탐사 지능(Satellite-Environmental-Monitoring-and-Remote-Sensing)은 수백 km 상공의 위성이 지구를 스캔하여 가뭄, 산불, 불법 벌채, 해양 오염을 실시간으로 찾아내는 기술입니다. 눈에 보이지 않는 메탄가스가 어디서 새는지 찾아내고, 곡물이 얼마나 잘 자라는지 분석해 식량 위기를 막습니다. 이를 이해하는 것은 우주에서 지구를 진단하고 보호하는 '지구 환경 사령관'이 되는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Feature Extraction & Disaster Detection Logic)]
 위성 영상을 읽어 산림 벌채 구역을 계산하고, 비정상적인 열원을 감지하여 산불을 경보하는 논리 구조입니다.
 ```python
-# 지구 지능(ISM) 기반 위성 원격 탐사 및 환경 관제 논리
 def analyze_satellite_observation(raw_imagery, sensor_type):
     # 1. 영상 전처리 및 노이즈 제거 (Atmospheric Correction)
     # 대기 산란 효과를 보정하여 지표면의 실제 색상(반사율) 복원
@@ -100,5 +89,4 @@ def analyze_satellite_observation(raw_imagery, sensor_type):
 2. '초분광(Hyperspectral) 영상' 데이터가 '수질 오염'이나 '식생 스트레스'를 판별할 수 있는 분광학적 원리는?
 3. '초소형 위성 군집(Constellation)'이 '단일 대형 위성' 대비 '지구 관측의 적시성(Timeliness)' 측면에서 어떤 전략적 변화를 가져왔는가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "topological-quantum-computing-and-anyon-braiding-mechanics-entity"
-  domain: "16_Quantum_Computing"
+metadata:
+  id: "[[[Entity] topological-quantum-computing-and-anyon-braiding-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Topology", "#Anyon", "#Majorana", "#Braiding", "#Fault_Tolerance", "#Physics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 16_quantum-computing-and-hardware-intelligence-hub", "Entity majorana-device-nanofabrication-and-low-temp-measurement"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] topological-quantum-computing-and-anyon-braiding-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] topological-quantum-computing-and-anyon-braiding-mechanics
+# [Entity] topological-quantum-computing-and-anyon-braiding-mechanics
 
 ## 1. [왜 배우는가? (Why: The Unbreakable Qubits)]]
 양자 정보가 외부 소음에 의해 너무 쉽게 깨진다면, 정보 자체를 물질의 '모양(위상)' 속에 숨겨버리면 어떨까요? **위상 양자 컴퓨팅 및 애니온 브레이딩 역학**은 마요라나 페르미온 같은 특이한 입자들의 궤적을 꼬아서(Braiding) 연산하는 '오류 내성 양자 컴퓨터의 꿈'입니다. 우리가 이를 배우는 이유는 이 방식이 물리적으로 오류가 발생할 수 없는 '위상적 보호'를 받기 때문에 별도의 복잡한 오류 수정 알고리즘이 필요 없기 때문이며, "절대 깨지지 않는 양자 연산의 성배를 찾아 '영구적 양자 정보 주권'을 확보하기" 위함입니다. 입자의 꼬임이 곧 연산의 결과가 됩니다.

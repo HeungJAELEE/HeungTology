@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fault-tree-analysis-fta-and-probabilistic-risk-assessment-pra-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fault-tree-analysis-fta-and-probabilistic-risk-assessment-pra-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A top-down, deductive failure analysis in which an undesired state of a system is analyzed using Boolean logic (FTA) and the comprehensive methodology to evaluate risks associated with complex engineered technological entities (PRA Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fta", "pra", "risk-assessment", "reliability-engineering", "failure-logic", "probabilistic-risk", "industrial-safety", "logic-gates"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Fault_Fidelity_Audit: Evaluate the ''Top Event'' probability against the target safety goal to identify if ''Minimal Cut Sets'' (the shortest paths to failure) are effectively mitigated.'
-    - 'Probabilistic_Integrity_Check: Analyze the component failure rates ($\\lambda$) to ensure the high-fidelity risk assessment is based on verified field data, not optimistic assumptions.'
-    - 'Logic_Fidelity_Scan: Monitor the dependency between redundant nodes to verify that ''Common Cause Failures'' (CCF) are correctly modeled in the high-fidelity fault tree.'
-Trust Metrics:
+  description: "[Entity] fault-tree-analysis-fta-and-probabilistic-risk-assessment-pra-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌲 Fault Tree Analysis (FTA) and Probabilistic Risk Assessment (PRA) Logic
+# [Entity] fault-tree-analysis-fta-and-probabilistic-risk-assessment-pra-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 "비행기 추락"이나 "원자로 폭발" 같은 끔찍한 사고가 왜 일어나는지, 그 원인을 파고 내려가면 어떤 모습일까요? **결함수 분석(FTA) 및 확률적 위험 평가(PRA) 로직**은 거대한 재앙(Top Event)을 정점에 두고, 그 일이 벌어지기 위해 필요한 작은 사고들을 뿌리처럼 엮어낸 **'사고의 가계부'** 기술입니다. 복잡한 기계 장치에서 "어떤 부품 두 개가 동시에 고장 나야만 재앙이 터지는지"를 수학적으로 밝혀내어, 가장 약한 고리를 찾아내는 **'보이지 않는 재난의 지도를 그리는 지능적 사령부'**입니다.
@@ -89,7 +78,6 @@ class LogicFidelityEngine:
             return "REJECT: Logical Paradox Detected - Circular dependency found in fault tree branches. Probabilistic result is mathematically invalid. Correct logic flow"
         return "PASS: Validated Boolean Structure and Verified Security Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(top_event_prob=5e-8, critical_cutset_count=0, common_cause_factor=0.02)
 print(engine.diagnose_safety_logic_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_safety_logic_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data system-failure-probabilities-and-critical-cut-sets-v2026`와 연동되어, 전 세계 주요 원자력 발전소 및 우주선의 안전 데이터를 실시간 분석하고 시스템 붕괴 및 인명 대참사 사고 확률을 0.00001% 이하로 억제함으로써 지능형 거대 시스템 문명의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - failure-mode-and-effects-analysis-fmea-and-risk-mitigation-logic

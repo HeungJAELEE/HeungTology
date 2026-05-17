@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A power plant that uses both a gas and a steam turbine together to produce more electricity from the same fuel than a traditional plant (CCGT) and the dual-cycle thermodynamic study combining high-temperature air expansion (Brayton Cycle) with waste-heat driven steam generation (Rankine Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ccgt", "brayton-cycle", "rankine-cycle", "gas-turbine", "heat-recovery", "energy-efficiency", "thermal-power"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Combined Cycle Efficiency'' ($\\eta_{CCGT}$) to identify if the gas turbine exhaust temperature and HRSG (Heat Recovery Steam Generator) performance are optimized.'
-    - 'Cycle_Integrity_Check: Analyze the pressure drop across the HRSG to ensure that back-pressure on the gas turbine is not excessive, which reduces the primary ''Brayton'' work output.'
-    - 'Operational_Fidelity_Scan: Monitor the ''Steam-to-Gas'' power ratio to verify that the bottoming Rankine cycle is maximizing its exergy recovery from the high-temp exhaust gases.'
-Trust Metrics:
+  description: "[Entity] combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Combined Cycle Gas Turbine (CCGT) and Brayton-Rankine Physics
+# [Entity] combined-cycle-gas-turbine-ccgt-and-brayton-rankine-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 가장 효율적으로 전기를 만드는 방법은 무엇일까요? **복합 화력 발전(CCGT) 및 브레이턴-랭킨 사이클 물리**는 하나의 연료로 두 번 전기를 뽑아내는 **'에너지의 재활용 끝판왕'** 기술입니다. 먼저 가스터빈(Brayton)을 돌려 전기를 만들고, 그때 나오는 엄청난 열기를 그냥 버리지 않고 물을 끓여 증기터빈(Rankine)을 또 한 번 돌립니다. 뜨거운 가스에서 한 번, 그 남은 열에서 또 한 번 에너지를 짜내는 **'지독할 정도로 효율적인 에너지 수확기'**입니다. 현대 발전 기술의 정점이자 가장 스마트한 화력 발전 방식입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: NOx Threshold Breached - DLN (Dry Low NOx) combustor or SCR catalyst efficiency low. Environmental compliance at risk"
         return "PASS: Clean Combustion Profile and Verified Regulatory Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(overall_efficiency_pct=61.5, hrsg_pinch_point_delta_t=8.2, gas_turbine_load_mw=250.0)
 print(engine.diagnose_ccgt_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ccgt_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ccgt-plant-efficiency-and-start-up-times-v2026`와 연동되어, 전 세계 주요 복합 화력 플랜트의 데이터를 실시간 분석하고 열효율 저하 및 터빈 손상 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - coal-fired-power-plant-and-rankine-cycle-physics

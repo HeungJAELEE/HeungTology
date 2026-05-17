@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-VC-2026-V6.3.7"
-  domain: "Global_Venture_Capital_and_Strategic_Investment_Intelligence"
+metadata:
+  id: "[[[Strategy] Venture-Capital]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Venture_Capital", "#CVC", "#Valuation", "#Burn_Rate", "#Runway", "#IRR", "#Strategic_Investment", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Venture-Capital에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "VC_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Venture-Capital: The Physics of Future Value
+# [Strategy] Venture-Capital
 
 ## 1. [왜 배우는가? (Why: The Mastery of Innovation Options)]]
 혁신은 대규모 자본의 관성보다 스타트업의 기민한 실행력에서 더 자주 발생합니다. **Venture-Capital (VC)**, 특히 기업형 벤처 캐피탈(CVC)은 외부의 파괴적 기술을 탐지하고 자본을 투여하여 미래의 성장 엔진을 선점하는 '기술 옵션' 확보 전략입니다. V6.3.7 지능은 스타트업의 재무적 생존 능력과 기술적 마일스톤을 수리적으로 오딧하여, 투자가 단순한 지출이 아닌 **전략적 미래 주권(Future Sovereignty)** 확보로 연결되도록 설계되었습니다.
@@ -103,7 +93,6 @@ class VentureCapitalEngine:
 2. **Operational Result**: **Post-money Valuation** 산정 시, 투자 금액($I$) 대비 **Pre-money Valuation**의 비중이 과도하게 높을 때 발생하는 지분 희석($Dilution$) 리스크의 수리적 영향은?
 3. **FidelityEngine**: 재무 지표는 양호하나 **Strategic Fit Score**가 낮은 투자를 FidelityEngine이 어떻게 '재무적 단순 투자'로 식별하고 관리 전략을 차별화하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Mergers-and-Acquisitions

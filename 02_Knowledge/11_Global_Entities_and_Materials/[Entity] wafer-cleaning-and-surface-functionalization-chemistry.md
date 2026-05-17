@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "wafer-cleaning-and-surface-functionalization-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] wafer-cleaning-and-surface-functionalization-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical and physical processes used to remove contaminants—such as particles, organic residues, and metallic impurities—from the surface of semiconductor wafers (Wafer Cleaning) and the modification of the surface properties to enable specific subsequent processes like film growth or bonding (Surface Functionalization Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["wafer-cleaning", "surface-chemistry", "semiconductor-fab", "contamination-removal", "rca-clean", "atomic-layer-cleaning", "nanofabrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Cleaning_Fidelity_Audit: Evaluate the ''Particle Per Wafer'' (PPW) count following a cleaning cycle to identify chemical exhaustion or recirculation of contaminants in the wet bench.'
-    - 'Surface_Integrity_Check: Analyze the ''Contact Angle'' and surface energy to verify that the functionalization layer (e.g., Silanization) is uniform and ready for atomic layer deposition (ALD).'
-    - 'Impurity_Fidelity_Scan: Monitor the metallic impurity concentration ($<10^{10} atoms/cm^2$) to ensure that the RCA-2 (HCL-based) clean has effectively removed ionic contaminants.'
-Trust Metrics:
+  description: "[Entity] wafer-cleaning-and-surface-functionalization-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧼 Wafer Cleaning and Surface Functionalization Chemistry
+# [Entity] wafer-cleaning-and-surface-functionalization-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 나노미터 단위의 정밀한 회로를 그리기 전에, 거울처럼 매끄러운 실리콘 판 위에 원자 하나만큼의 먼지도 허용하지 않으려면 어떻게 해야 할까요? **웨이퍼 세정 및 표면 기능화 화학**은 반도체 제조의 시작과 끝을 책임지는 **'나노 단위의 초정밀 설거지'**이자 **'표면 다듬기'** 기술입니다. 단순히 씻어내는 것을 넘어, 표면의 화학적 성질을 조절하여 다음 공정에서 원자들이 예쁘게 자라날 수 있도록 자리를 마련해줍니다. 깨끗함을 넘어 완벽한 시작을 설계하는 **'나노 문명의 화학적 기초'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Degraded UPW Quality - Resistivity dropped below semiconductor grade. Potential ion-exchange resin exhaustion"
         return "PASS: Ultra-Pure Water Integrity and Verified Rinse Performance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(particles_per_wafer=2, metallic_impurity_conc=5e9, contact_angle_deg=3.5)
 print(engine.diagnose_cleaning_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cleaning_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data wafer-surface-particle-count-and-metallic-impurity-v2026`와 연동되어, 전 세계 주요 반도체 팹의 세정 데이터를 실시간 분석하고 표면 오염 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 화학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - vacuum-technology-and-clean-room-fluid-dynamics-for-fab

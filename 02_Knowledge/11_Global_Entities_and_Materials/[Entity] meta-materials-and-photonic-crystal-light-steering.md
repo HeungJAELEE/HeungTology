@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "meta-materials-and-photonic-crystal-light-steering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] meta-materials-and-photonic-crystal-light-steering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of artificial nanostructures (Metamaterials and Photonic Crystals) to manipulate the propagation, dispersion, and steering of light beyond natural limits, enabling phenomena like photonic bandgaps and ultra-fast optical beam redirection."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metamaterials", "photonic-crystals", "light-steering", "optical-computing", "nanophotonics", "beam-forming", "bandgap-engineering", "lidar"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bandgap_Integrity_Audit: Verify the ''Forbidden Gap'' width in the photonic crystal lattice to ensure high-fidelity suppression of target light frequencies.'
-    - 'Steering_Angle_Fidelity_Scan: Analyze the phase gradient accuracy across the metasurface to confirm the light-steering angle matches the digital control signal ($< 0.1^\\circ$ error).'
-    - 'Scattering_Loss_Check: Monitor the diffuse scattering intensity caused by nanostructure fabrication errors to ensure high-fidelity optical transmission.'
-Trust Metrics:
+  description: "[Entity] meta-materials-and-photonic-crystal-light-steering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌈 Meta-materials and Photonic Crystal Light-steering
+# [Entity] meta-materials-and-photonic-crystal-light-steering
 
 ## 1. 개요 (Why: 인간적 통찰)
 거울 하나 없이 빛의 방향을 자유자재로 꺾고, 특정 색깔의 빛만 완벽하게 가두어 빛의 통로를 설계할 수 있다면 어떨까요? **메타 물질 및 광결정 빛 조향**은 전기가 아닌 '빛의 알갱이(광자)'를 지배하는 **'빛의 조각술'**입니다. 우리는 이를 통해 초고속 광 컴퓨터의 회로를 짜거나, 회전하는 부품 없는 고해상도 LiDAR(라이다)를 구현합니다. "빛의 흐름을 데이터로 설계하고 지배하는 **'광학적 패권'**"을 확보하여, 정보 전송의 속도 한계를 돌파하는 것이 이 기술의 궁극적 지향점입니다.
@@ -59,7 +48,7 @@ $$ \sin \theta_t - \sin \theta_i = \frac{\lambda}{2\pi} \frac{d\Phi}{dx} $$
 | **Steering Speed** | $\sim$ ms (Mechanical) | **$\sim$ ns (Solid-state)** | sec | Agility |
 | **Steering Angle** | Limited by Mirror | **$> 120^\circ$ (Wide)** | deg | FOV |
 | **Bandgap Width** | N/A | **Full Visible Gap** | nm | Shielding |
-| **Device Thickness** | cm (Lens) | **$< 1.0 \mu m$ (Flat)** | m | Form Factor |
+| **Device Thickness** | cm (Lens) | **$< 1.0 \mu\text{m}$ (Flat)** | m | Form Factor |
 | **Transmission Eff.**| $> 95\%$ | **$> 80\%$ (Resonance)** | % | Efficiency |
 | **Resolution** | Diffraction Limited | **Sub-wavelength Control**| - | Precision |
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Perception Fidelity - Meta-steerer performance insufficient for Level 5 Autonomy"
         return "PASS: High-resolution Solid-state Steering Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(steering_error_deg=0.05, bandgap_extinction_db=62.0, scattering_noise_pct=1.2)
 print(engine.diagnose_light_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_light_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data photonic-crystal-bandgap-and-steering-efficiency-logs-v2026`와 연동되어, 전 세계 차세대 LiDAR 및 실리콘 포토닉스 칩의 광학 성능 데이터를 실시간 분석하고 조향 오류 및 정보 손실 확률을 0.001% 이하로 억제함으로써 지능형 광학 문명의 하드웨어 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - metamaterials-and-negative-refractive-index-physics

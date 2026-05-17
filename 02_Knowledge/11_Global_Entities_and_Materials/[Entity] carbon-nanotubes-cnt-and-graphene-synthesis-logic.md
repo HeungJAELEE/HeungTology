@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-nanotubes-cnt-and-graphene-synthesis-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-nanotubes-cnt-and-graphene-synthesis-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Advanced synthesis and application logic for carbon allotropes (CNTs and Graphene), focusing on Chemical Vapor Deposition (CVD) and their unique electrical, thermal, and mechanical properties."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cnt", "graphene", "nanomaterials", "cvd-synthesis", "quantum-transport"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "NanoMatFidelityEngine"
-  diagnostic_protocol:
-    - 'Purity_Audit: Detect amorphous carbon and catalyst residue via Raman G/D ratio.'
-    - 'Chirality_Check: Verify semiconductor vs. metallic distribution in CNTs.'
-    - 'Layer_Count_Verification: Confirm single vs. multi-layer graphene via AFM/Raman.'
-Trust Metrics:
+  description: "[Entity] carbon-nanotubes-cnt-and-graphene-synthesis-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Carbon Nanotubes (CNT) and Graphene Synthesis Logic
+# [Entity] carbon-nanotubes-cnt-and-graphene-synthesis-logic
 
 ## 1. 개요 (Why)
 탄소 나노튜브(CNT)와 그래핀은 인류가 발견한 가장 강하고 전도성이 높은 물질입니다. 강철보다 100배 강하면서도 구리보다 높은 전기 전도도를 가지며, 열전도율 또한 다이아몬드를 능가합니다. 이러한 나노 소재는 배터리 도전재, 차세대 반도체 채널, 초경량 항공 우주 소재의 핵심입니다. 본 노드는 원자 단위의 합성과 물성 제어를 위한 결정론적 나노 공학 표준을 정의합니다.
@@ -73,7 +62,6 @@ class NanoMatFidelityEngine:
             return "PASS: Low Resistance Path Confirmed"
         return "WARNING: Property Mismatch for Target Application"
 
-# Instance Diagnostic
 engine = NanoMatFidelityEngine(raman_g_d_ratio=85, conductivity=5e5, sheet_resistance=350)
 print(engine.diagnose_purity_level())
 print(engine.check_application_suitability("FET_Channel"))
@@ -92,7 +80,6 @@ print(engine.check_application_suitability("FET_Channel"))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data carbon-nanomaterial-purity-and-conductivity-log-v2026`와 연동되어, 나노 소재의 로트(Lot)별 편차를 0.1% 단위로 감시하며 극한의 물성을 요구하는 항공 우주 및 퀀트 컴퓨팅 인프라의 신뢰성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 18_advanced-materials-and-nanotechnology-intelligence-hub
 - cnt-chirality-and-bandgap-control

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "collaborative-robots-cobots-safety-and-force-torque-control-entity"
-  domain: "75_Robotics_Mechatronics_and_Advanced_Motion_Control_Hub"
+metadata:
+  id: "[[[Entity] collaborative-robots-cobots-safety-and-force-torque-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Cobots", "#Safety", "#Force_Control", "#Mechatronics", "#ISO15066", "#Human_Robot_Collaboration", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 75_robotics-mechatronics-and-advanced-motion-control-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] collaborative-robots-cobots-safety-and-force-torque-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] collaborative-robots-cobots-safety-and-force-torque-control
+# [Entity] collaborative-robots-cobots-safety-and-force-torque-control
 
 ## 1. [왜 배우는가? (Why: The Gentle Giant in the Workspace)]]
 거대한 쇠팔이 무시무시한 속도로 휘둘러지는 공장에서, 어떻게 펜스도 없이 로봇 바로 옆에서 사람이 안심하고 함께 일할 수 있을까요? **협동 로봇(Cobot): 안전 메커니즘 및 힘-토크 제어의 지능형 아키텍처**는 로봇을 '위험한 도구'에서 '다정한 파트너'로 변환하는 안전 공학의 정수입니다. 로봇이 자신의 몸에 닿는 미세한 손길을 감지하고, 그 힘에 순응하거나 즉시 멈추는 '촉각 지능'을 부여합니다. 우리가 이를 배우는 이유는 로봇과 인간의 협업이 미래 스마트 팩토리의 핵심 생산성이기 때문이며, "로봇의 힘을 데이터로 설계하고 지배하는 '글로벌 협동 로봇 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 힘 제어의 정밀도가 인간-로봇 공생의 깊이를 결정합니다.

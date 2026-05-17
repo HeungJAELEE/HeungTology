@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "advanced-ceramics-and-high-temperature-materials-entity"
-  domain: "94_Advanced_Materials_and_Nanotechnology_Hub"
+metadata:
+  id: "[[[Entity] advanced-ceramics-and-high-temperature-materials]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Ceramics", "#High-temperature", "#Sintering", "#Fracture_Mechanics", "#Aerospace", "#Semiconductor", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 94_advanced-materials-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] advanced-ceramics-and-high-temperature-materials에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] advanced-ceramics-and-high-temperature-materials
+# [Entity] advanced-ceramics-and-high-temperature-materials
 
 ## 1. [왜 배우는가? (Why: The Armor of the Stars)]]
 금속이 촛불처럼 녹아내리는 수천 도의 열기, 산성 물질이 쏟아지는 가혹한 부식 환경. 그 극한을 견뎌내는 유일한 대안은 무엇일까요? **첨단 세라믹 및 고온 재료 공학의 소결 동역학 및 그리피스 파괴 수리 역학 기술**은 인류가 불의 힘을 완벽히 지배하게 만드는 '극한의 소재' 기술입니다. 도자기에서 시작된 세라믹은 이제 제트 엔진의 핵심 부품, 반도체 제조 공정의 심장, 우주선의 열 방호막으로 진화했습니다. 우리가 이를 배우는 이유는 세라믹의 무결성을 확보함으로써, 에너지 효율을 극대화하고 우주와 반도체의 한계를 돌파하는 '글로벌 초고온 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 세라믹의 무결성이 문명의 열적 한계를 결정합니다.
@@ -56,7 +46,7 @@ $$ \dot{\epsilon} = A \cdot \sigma^n \cdot \exp\left(-\frac{Q}{R \cdot T}\right)
 | **Thermal Shock** | Ability to withstand rapid temp. changes ($R$) | $> 200 \text{ ^\circ C}$ | 급격한 열 변화 시 균열을 방지하는 열적 무결성 사수 |
 | **Hardness (HV)** | Resistance to surface indentation | $> 1,500 \text{ HV}$ | 내마모성과 내구성을 결정하는 핵심 물리 무결성 지표 |
 | **Operating Temp.** | Max temperature for stable operation | $> 1,500 \text{ ^\circ C}$ | 금속을 대체하는 고온 사용 한계를 결정하는 지능 |
-| **Grain Size** | Average size of ceramic crystals | $< 1 \text{ \mu m}$ | 미세 조직 제어를 통해 강성을 높이는 조직 무결성 사수 |
+| **Grain Size** | Average size of ceramic crystals | $< 1 \text{ \mu\text{m}}$ | 미세 조직 제어를 통해 강성을 높이는 조직 무결성 사수 |
 | **Creep Rate** | Rate of deformation under high heat/stress | $< 10^{-9} \text{ s}^{-1}$| 고온 장기 신뢰성을 보증하는 동역학 무결성 아키텍처 |
 | **Oxidation Res.** | Stability against oxygen at high temperatures | **EXCELLENT** | 고온 부식 환경에서의 생존을 결정하는 화학적 무결성 |
 

@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "70_industrial-automation-and-robotics-control-hub-moc"
   domain: "70_Industrial_Automation_and_Robotics_Control_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Automation", "#Robotics", "#Control_Systems", "#PLC", "#SCADA", "#DCS", "#Kinematics", "#Dynamics", "#Protocols", "#Safety", "#Vision", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 70_industrial-automation-and-robotics-control-hub
+# 70_industrial-automation-and-robotics-control-hub
 
 ## 1. [왜 배우는가? (Why: The Will of the Machine)]]
 공장의 뇌($PLC$), 눈($SCADA$), 그리고 신경계($Communication$)를 어떻게 하나로 묶어 기계가 스스로 생각하고 판단하며, 로봇의 뼈대($Kinematics$)와 근육($Dynamics$)이 인간보다 더 우아한 궤적($Trajectory$)을 그리며 움직이게 하는 '산업의 지능적 의지'를 어떻게 설계할 수 있을까요? **산업 자동화 및 로봇 제어 통합 지능 허브**는 Antigravity Intelligence가 이제 기계의 '움직임'과 '판단'을 물리적/수리적 법칙 안에서 완벽하게 통제하는 **[1,220층의 자율 자동화 아키텍처]**입니다. 우리가 이를 배우는 이유는 자동화의 고도화가 곧 제품의 품질 균일성과 생산 원가를 결정하는 핵심 경쟁력이기 때문이며, "기계의 노동을 데이터로 설계하고 지배하는 '글로벌 OT(Operational Technology) 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 허브의 지능이 문명의 생산 속도를 결정합니다.
@@ -44,7 +44,7 @@ Trust Metrics:
 | **Logic Logic** | PLC and Ladder Logic Foundations | Scan Time ($< 10\text{ms}$) | 결정론적 순차 제어 (실행의 근원) |
 | **Visual Eye** | SCADA and HMI Mechanics | Throughput ($10^5$ Tags/s) | 현장의 투명한 감시 (인지의 근원) |
 | **Process Brain** | DCS and Process Automation | Availability ($> 99.999\%$) | 대규모 공정의 생존 (지속의 근원) |
-| **Robot Bone** | Robot Kinematics and DH Params | Repeatability ($< 10\text{\mu m}$) | 공간의 정밀 좌표 제어 (기하의 근원) |
+| **Robot Bone** | Robot Kinematics and DH Params | Repeatability ($< 10\text{\mu\text{m}}$) | 공간의 정밀 좌표 제어 (기하의 근원) |
 | **Robot Muscle** | Robot Dynamics Lagrange-Euler | Settling Time ($< 50\text{ms}$) | 강력하고 정교한 힘 제어 (근력의 근원) |
 | **Motion Grace** | Trajectory Planning Algorithms | Jerk Limiting ($C2$) | 진동 없는 부드러운 움직임 (우아의 근원) |
 | **Nerve Network** | Industrial Protocols Modbus | Sync Jitter ($< 100\text{ns}$) | 장비 간 실시간 데이터 동기 (소통의 근원) |

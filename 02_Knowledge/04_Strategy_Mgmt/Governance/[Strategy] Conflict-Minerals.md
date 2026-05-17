@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-CONFLICT-2026-V6.3.7"
-  domain: "Global_Conflict_Minerals_and_Human_Rights_Sovereignty"
+metadata:
+  id: "[[[Strategy] Conflict-Minerals]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Conflict_Minerals", "#3TG", "#Cobalt", "#Supply_Chain", "#Traceability", "#OECD", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Conflict-Minerals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Conflict_Minerals_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Conflict Minerals: Global Human Rights Sovereignty
+# [Strategy] Conflict-Minerals
 
 ## 1. [왜 배우는가? (Why: The Ethics of Raw Materials)]]
 현대 산업의 필수 자원인 리튬, 코발트, 3TG(주석, 탄탈륨, 텅스텐, 금) 등은 종종 아동 노동이나 무장 단체의 전쟁 자금원이 되는 '분쟁 지역'에서 채굴됩니다. **Conflict Minerals(분쟁 광물)** 관리는 우리 제품에 투입되는 원재료가 인권 침해나 비윤리적 비극의 산물이 아님을 증명하는 '도덕적 무결성 증명서'입니다. 글로벌 시장에서 이 증명은 단순한 사회적 책임을 넘어, 공급망 배제를 결정짓는 핵심 생존 전략이 되었습니다. V6.3.7 지능은 공급망의 상류(Upstream)부터 하류(Downstream)까지 모든 물리적 흐름을 추적하여, **윤리적 조달 주권(Ethical Sourcing Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class ConflictMineralFidelityEngine:
 2. **Operational Result**: **Cobalt**와 **Lithium**을 관리 대상에 포함시켰을 때, 기업의 ESG 평가 등급 및 글로벌 OEM(자동차사) 수주 성공률에 미치는 수리적 파급 효과는?
 3. **FidelityEngine**: 인증된 제련소임에도 불구하고 유입되는 광물량이 광산의 생산 능력을 초과하는 상황을 어떻게 진단하는가? (힌트: 비인증 광물이 인증 제련소로 유입되는 '공정 세탁' 징후 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy ESG-Management-Strategy

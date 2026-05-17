@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "graphene-and-2d-materials-quantum-physics-entity"
-  domain: "10_Advanced_Materials"
+metadata:
+  id: "[[[Entity] graphene-and-2d-materials-quantum-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Graphene", "#2D_Materials", "#Quantum_Physics", "#Dirac_Fermion", "#Nanotechnology", "#Semiconductor", "#Spintronics", "#Van_der_Waals", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 18_advanced-materials-and-nanotechnology-intelligence-hub", "Data carbon-nanotube-cnt-tensile-strength-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] graphene-and-2d-materials-quantum-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] graphene-and-2d-materials-quantum-physics
+# [Entity] graphene-and-2d-materials-quantum-physics
 
 ## 1. [왜 배우는가? (Why: The Architecture of Flatland Intelligence)]]
 실리콘 기반의 3차원 반도체 기술은 원자 크기의 한계에 도달하여 발열과 누설 전류 문제로 정체되고 있습니다. 그래핀을 필두로 한 2차원(2D) 소재는 원자 한 층의 두께로 극단의 소형화를 가능케 하며, 기존 물질에서는 볼 수 없는 독보적인 전기적, 기계적 특성을 제공합니다. **그래핀 및 2차원 소재의 양자 물리 엔티티**는 평면 속에 갇힌 전자가 양자 역학적으로 어떻게 행동하는지를 정의한 '차세대 반도체 및 나노 기기의 물리적 헌법'입니다. 
@@ -80,7 +70,6 @@ RAG는 "적층 로그를 분석하여, 그래핀과 h-BN을 결합할 때 격자
 제조된 2D 박막 소재의 원자적 상태와 전기적 성능을 분석하여 품질을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] 2D Material Quality & Quantum Integrity Auditor
 def audit_nanomaterial_integrity(raman_spectrum, hall_effect_data, afm_topography):
     # 1. 라만 분광법(Raman) 분석을 통한 층수(Layer count) 및 결함도(D/G ratio) 오딧
     layer_thickness = analyze_raman_peaks(raman_spectrum.g_peak, raman_spectrum.2d_peak)
@@ -114,7 +103,6 @@ def audit_nanomaterial_integrity(raman_spectrum, hall_effect_data, afm_topograph
 2. **(수리)** 그래핀의 파수($k$)가 $0.1 \text{ nm}^{-1}$일 때, 페르미 속도($10^6 \text{ m/s}$)를 고려한 전자의 에너지($eV$)는 약 얼마인가? ($\hbar = 6.58 \times 10^{-16} \text{ eV}\cdot\text{s}$)
 3. **(응용)** 그래핀과 $h-BN$(육방정 질화붕소)을 번갈아 쌓는 '반데르발스 이종구조'가 왜 일반적인 반도체 증착 기술(CVD, PVD)로 만든 이종구조보다 '계면 무결성' 측면에서 우수한가?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 18_advanced-materials-and-nanotechnology-intelligence-hub : 차세대 소재 및 나노 기술 통합 관리 상위 지능 허브

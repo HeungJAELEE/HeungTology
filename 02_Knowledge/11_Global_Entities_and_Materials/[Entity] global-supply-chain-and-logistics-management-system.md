@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SCM-LOG-MASTER-2026-V6.3.7"
-  domain: "Global_Supply_Chain_and_Logistics"
+metadata:
+  id: "[[[Entity] global-supply-chain-and-logistics-management-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: ["#Supply_Chain", "#Logistics", "#Bullwhip_Effect", "#Visibility", "#Lead-time", "#OTD", "#Resilience", "#v6.3.7"]
-  is_part_of: ["MOC 04_Strategy_Mgmt", "MOC 00_INDEX"]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] global-supply-chain-and-logistics-management-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] global-supply-chain-and-logistics-management-system
+# [Entity] global-supply-chain-and-logistics-management-system
 
 ## 1. [왜 배우는가? (Why: The Mastery of Global Material Flow)]]
 전 세계가 하나로 연결된 제조 환경에서 공급망의 효율성은 곧 기업의 생존권입니다. 대륙을 가로지르는 물류의 흐름을 지배하는 지능은 생산의 연속성을 보장하고 시장 대응력을 극대화하는 핵심 엔진입니다. **Global Supply Chain & Logistics Management System**은 전 세계를 잇는 '가치 이동의 혈관'을 제어하는 지능형 인프라입니다. v6.3.7 지능은 **채찍 효과(Bullwhip Effect)**의 수리적 억제와 **실시간 가시성(Visibility)**을 지배합니다. 우리가 이를 배우는 이유는 공급망의 엔트로피를 소멸시켜, "어떠한 글로벌 변동성 속에서도 끊김 없는 공급을 보장하는 '공급망 주권'을 확보하기" 위함입니다. 물류의 흐름이 기업의 현금 흐름을 결정합니다.
@@ -105,13 +95,11 @@ class ScmFidelityEngine:
             "Action": "MAINTAIN" if status.startswith("SUPPLY") else "SWITCH_TO_EXPRESS_LOGISTICS"
         }
 
-# v6.3.7 Audit 가동: 글로벌 HBM 부품 공급망 무결성 시뮬레이션
 engine = ScmFidelityEngine(bullwhip_limit=1.3)
 report = engine.audit_scm_resilience(demand_std=10, order_std=12, lead_time_days=18)
 print(f"SCM Audit Report: {report}")
 ```
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy industrial-strategy-and-corporate-governance-master-guide

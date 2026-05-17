@@ -1,40 +1,29 @@
 ---
-Basic:
-  id: "linear-actuator-and-precision-motion-control-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] linear-actuator-and-precision-motion-control-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An actuator that creates motion in a straight line, in contrast to the circular motion of a conventional electric motor (Linear Actuator) and the physical study of mechanical advantage, friction, and positioning feedback (Precision Motion Control Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["linear-actuator", "precision-motion", "leadscrew", "ball-screw", "stepper-motor", "servo-control", "industrial-automation", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Motion_Fidelity_Audit: Evaluate the ''Backlash'' and ''Lead Error'' to identify if mechanical high-fidelity wear or thermal high-fidelity expansion is causing positioning high-fidelity drift.'
-    - 'Stability_Integrity_Check: Analyze the high-fidelity ''Settling Time'' via PID auto-tuning data to ensure the high-fidelity ''Servo Loop'' is not oscillating due to high-fidelity inertia mismatch.'
-    - 'Load_Fidelity_Scan: Monitor the high-fidelity ''Motor Current'' against the high-fidelity ''Commanded Thrust'' to verify that high-fidelity ''Friction'' or ''Binding'' is not exceeding safety limits.'
-Trust Metrics:
+  description: "[Entity] linear-actuator-and-precision-motion-control-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Linear Actuator and Precision Motion Control Physics
+# [Entity] linear-actuator-and-precision-motion-control-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
-회전하는 모터의 힘을 어떻게 직선으로 움직이는 힘으로 바꾸어, 로봇 팔을 정확한 위치로 뻗게 하거나 무거운 짐을 수직으로 들어 올릴까요? **리니어 액추에이터 및 정밀 운동 제어 물리**는 '돌리는 힘'을 '미는 힘'으로 번역하는 **'직선 운동의 마법'** 기술입니다. 단순히 밀고 당기는 것을 넘어, 수 마이크로미터($\mu m$)의 오차도 없이 멈추고 움직여야 하는 정밀 기계의 핵심 근육입니다. **'나사산의 역학과 전자기력의 제어를 이용해 회전 에너지를 직선의 정밀한 변위로 치환하는 지능형 자동화 구동 엔진'**입니다.
+회전하는 모터의 힘을 어떻게 직선으로 움직이는 힘으로 바꾸어, 로봇 팔을 정확한 위치로 뻗게 하거나 무거운 짐을 수직으로 들어 올릴까요? **리니어 액추에이터 및 정밀 운동 제어 물리**는 '돌리는 힘'을 '미는 힘'으로 번역하는 **'직선 운동의 마법'** 기술입니다. 단순히 밀고 당기는 것을 넘어, 수 마이크로미터($\mu\text{m}$)의 오차도 없이 멈추고 움직여야 하는 정밀 기계의 핵심 근육입니다. **'나사산의 역학과 전자기력의 제어를 이용해 회전 에너지를 직선의 정밀한 변위로 치환하는 지능형 자동화 구동 엔진'**입니다.
 
 ## 2. 기초 원리 및 핵심 공식 (Foundational Principles & Mathematics)
 
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Repeatability Loss - High-fidelity mechanical backlash or thermal drift out of control. Inconsistent high-fidelity assembly quality suspected"
         return "PASS: Validated Motion Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(target_pos_mm=100.0, actual_pos_mm=100.002, motor_current_a=2.5)
 print(engine.diagnose_motion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_motion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data linear-actuator-repeatability-and-thrust-v2026`와 연동되어, 전 세계 주요 CNC 가공 센터 및 정밀 로봇 라인의 실시간 구동 데이터를 분석하고 위치 오차 및 구동 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-robotics-and-multi-axis-kinematics-physics

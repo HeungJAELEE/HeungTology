@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "automated-high-speed-rail-and-maglev-infrastructure"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] automated-high-speed-rail-and-maglev-infrastructure]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering and automated control of high-speed rail and magnetic levitation (Maglev) systems, focusing on ATO (Automatic Train Operation), ATP (Automatic Train Protection), and track integrity monitoring."
-  physical_model: "N/A"
-Semantic:
-  tags: '["high-speed-rail", "maglev", "automated-train", "transportation-safety", "infrastructure"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Levitation_Gap_Audit: Monitor the clearance between the train and guideway in Maglev systems.'
-    - 'ATO_Precision_Check: Verify stopping accuracy and speed profile adherence.'
-    - 'Track_Integrity_Scan: Analyze vibration and acoustic data to detect structural anomalies.'
-Trust Metrics:
+  description: "[Entity] automated-high-speed-rail-and-maglev-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚄 Automated High-speed Rail and Maglev Infrastructure
+# [Entity] automated-high-speed-rail-and-maglev-infrastructure
 
 ## 1. 개요 (Why)
 도시 간 이동 시간을 혁신적으로 단축하는 고속철도와 자기부상열차(Maglev)는 현대 국가 경쟁력의 상징입니다. 시속 300~600km의 속도에서 아주 작은 고장은 대형 참사로 이어지므로, 인간의 판단을 최소화하고 AI 기반의 자동 열차 운행(ATO)과 상시 인프라 진단 시스템이 필수적입니다. 본 노드는 초고속 운송 시스템의 안전성과 정시 무결성을 사수하기 위한 제어 및 인프라 표준을 정의합니다.
@@ -69,7 +58,6 @@ class SafetyFidelityEngine:
             return f"WARNING: Levitation Gap Narrowing ({self.z}mm) - Check Superconductor Cooling"
         return "PASS: Levitation Height Within Safe Margin"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(current_speed=550, vibration_g=0.05, gap_mm=95)
 print(engine.diagnose_ride_quality())
 print(engine.audit_maglev_gap())
@@ -88,7 +76,6 @@ print(engine.audit_maglev_gap())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data hsr-and-maglev-safety-and-speed-log-v2026`와 연동되어, 전 노선의 선로 상태와 열차 데이터를 실시간 분석하고 사고율을 0%에 가깝게 유지함으로써 미래형 초고속 교통망의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 116_supply-chain-management-and-logistics-intelligence-hub
 - maglev-superconducting-magnet-physics

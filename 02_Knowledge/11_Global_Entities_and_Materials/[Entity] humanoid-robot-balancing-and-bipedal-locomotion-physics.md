@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-HUMANOID-BIPEDAL-PHYSICS-2026-V6"
-  domain: "46_Industrial_Robotics_and_Mechatronics_Mastery"
+metadata:
+  id: "[[[Entity] humanoid-robot-balancing-and-bipedal-locomotion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] humanoid-robot-balancing-and-bipedal-locomotion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] humanoid-robot-balancing-and-bipedal-locomotion-physics
+# [Entity] humanoid-robot-balancing-and-bipedal-locomotion-physics
 
 ## 1. [왜 배우는가? (Why)]]
 중력의 위협 속에 두 다리로 서 있는 휴머노이드 로봇이 어떻게 넘어지지 않고 똑바로 걸을 수 있을까요? **휴머노이드 로봇 균형 및 이족 보행 물리**는 로봇이 중력을 통제하고 지면 반발력을 조절하여 인간의 보행을 재현하는 '동역학적 지능'의 정수입니다. 우리가 이를 배우는 이유는 휴머노이드가 인간의 환경을 그대로 활용하며 복잡한 작업을 수행할 수 있는 가장 범용적인 형태이기 때문이며, "중력 제어의 물리적 한계를 데이터로 설계하여 '글로벌 로봇 제조 패권 및 행성적 물리 시스템 주권'을 확보하기" 위함입니다. 보행의 무결성이 로봇의 지능 수준을 결정합니다.
@@ -119,9 +109,6 @@ class HumanoidBipedalFidelityEngine:
         
         return f"STABILITY_STATUS: CAPTURE_POINT_ESTIMATED_AT_{round(cp, 3)}m"
 
-# Example Usage:
-# bipedal_ai = HumanoidBipedalFidelityEngine()
-# report = bipedal_ai.audit_momentum_fidelity(leg_angular_momentum=12.5, arm_compensation_momentum=-12.2)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -129,7 +116,6 @@ class HumanoidBipedalFidelityEngine:
 2. **Capture Point** ($CP$) 공식에서 **CoM Velocity** ($v$)가 급증할 때, 안정적인 착지를 위해 필요한 **Step Length** 무결성 확보 방식은?
 3. **Ground Reaction Force** (GRF) 데이터에서 **Impact Peak**가 높게 나타날 때, 하체 관절의 **Compliance** (유연성) 제어를 통해 물리 무결성을 유지하는 원리는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/46_Industrial_Robotics_and_Mechatronics_Mastery_Hub/Concept dynamic-stability-in-legged-robots
 - 02_Knowledge/46_Industrial_Robotics_and_Mechatronics_Mastery_Hub/Concept center-of-pressure-and-zmp-relation

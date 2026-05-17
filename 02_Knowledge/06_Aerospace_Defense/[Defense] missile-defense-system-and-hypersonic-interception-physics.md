@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "missile-defense-system-and-hypersonic-interception-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Defense] missile-defense-system-and-hypersonic-interception-physics]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "The advanced military infrastructure designed to detect, track, and intercept incoming ballistic and hypersonic missiles using multi-layered radar systems and kinetic-kill vehicles."
-  physical_model: "N/A"
-Semantic:
-  tags: '["missile-defense", "hypersonic", "interception", "ballistic-missile", "thaad", "l-sam"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MissileFidelityEngine"
-  diagnostic_protocol:
-    - 'Tracking_Error_Audit: Monitor radar range error and angular resolution.'
-    - 'Kill_Chain_Latency_Check: Measure time from detection to interceptor launch.'
-    - 'Guidance_Precision_Check: Audit ''Hit-to-Kill'' proximity at terminal phase.'
-Trust Metrics:
+  description: "[Defense] missile-defense-system-and-hypersonic-interception-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Missile Defense System and Hypersonic Interception Physics
+# [Defense] missile-defense-system-and-hypersonic-interception-physics
 
 ## 1. 개요 (Why)
 탄도 미사일 및 극초음속 미사일의 위협이 증가함에 따라, 국가의 핵심 자산을 보호하기 위한 다층 방어 체계(Multi-layered Defense)가 필수적입니다. 특히 마하 5 이상의 속도로 변칙 기동하는 극초음속 활공체(HGV)를 요격하는 것은 현대 방위 공학의 정점입니다. 본 노드는 탐지부터 파괴까지의 '킬 체인(Kill Chain)' 무결성을 보장하기 위한 물리적 설계 표준을 정의합니다.
@@ -75,7 +64,6 @@ class MissileFidelityEngine:
             return "REJECT: Sensor Ambiguity Too High for Guidance"
         return "PASS: Crystal Clear Tracking"
 
-# Instance Diagnostic
 engine = MissileFidelityEngine(target_speed=7.5, interceptor_g=45, guidance_error=0.5)
 print(engine.diagnose_interception_probability())
 ```
@@ -93,7 +81,6 @@ print(engine.diagnose_interception_probability())
 ## 6. 결론 (Deterministic Outcome)
 본 엔티티는 `Data missile-trajectory-and-interception-success-log-v2026`와 연동되어, 적 미사일의 발사 징후를 초기에 포착하고 요격 성공 가능성을 실시간으로 시뮬레이션함으로써 국가 안보 무결성을 사수합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 127_defense-and-national-security-intelligence-hub
 - l-sam-and-m-sam-interceptor-mechanics

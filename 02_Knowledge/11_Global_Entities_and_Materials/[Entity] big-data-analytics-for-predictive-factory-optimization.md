@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-SMART-BIGDATA-FACTORY-2026-V6"
-  domain: "48_Smart_Factory_and_Industrial_IoT_IIoT_Governance"
+metadata:
+  id: "[[[Entity] big-data-analytics-for-predictive-factory-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] big-data-analytics-for-predictive-factory-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] big-data-analytics-for-predictive-factory-optimization
+# [Entity] big-data-analytics-for-predictive-factory-optimization
 
 ## 1. [왜 배우는가? (Why)]]
 공장에서 매초 쏟아지는 테라바이트($TB$)급의 파편화된 데이터들 속에서 어떻게 불량의 미세한 징후($Pattern$)를 포착하고, 수천 개의 변수 간 상관관계를 분석하여 "현재 공정 조건을 2% 조정하면 수율이 5% 향상될 것"이라는 최적의 해답을 도출할 수 있을까요? **예측적 공장 최적화를 위한 빅데이터 분석**은 제조 현장의 불확실성을 수리적 확실성으로 전환하는 '산업용 지능 나침반'입니다. 우리가 이를 배우는 이유는 데이터가 곧 기업의 원가 경쟁력이자 품질 무결성을 보장하는 유일한 도구이기 때문이며, 경험이 아닌 팩트를 데이터로 설계하여 '글로벌 산업 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 분석의 해상도가 제조의 지능 지수를 결정합니다.
@@ -117,9 +107,6 @@ class IndustrialBigDataFidelityEngine:
             return "CRITICAL: DATA_DRIFT_DETECTED_RETRAIN_MODEL_IMMEDIATELY"
         return "MODEL_STATUS: FEATURE_DISTRIBUTION_STABLE"
 
-# Example Usage:
-# analytics_ai = IndustrialBigDataFidelityEngine()
-# report = analytics_ai.predict_yield_fidelity(sensor_features=[0.8, 0.9, 0.7], model_weights=[0.4, 0.3, 0.3])
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -127,7 +114,6 @@ class IndustrialBigDataFidelityEngine:
 2. **SHAP** (SHapley Additive exPlanations) 값이 개별 공정 변수가 최종 수율 예측 무결성에 기여하는 **Marginal Contribution**을 산출하는 게임 이론적 방식은?
 3. **Data Drift**가 발생했을 때 **Online Learning** 알고리즘이 실시간으로 모델 파라미터를 업데이트하여 **Predictive Accuracy** 무결성을 사수하는 수리 모델링 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/48_Smart_Factory_and_Industrial_IoT_IIoT_Governance_Hub/Concept multivariate-process-monitoring-and-pca
 - 02_Knowledge/48_Smart_Factory_and_Industrial_IoT_IIoT_Governance_Hub/Concept explainable-ai-for-manufacturing-rca

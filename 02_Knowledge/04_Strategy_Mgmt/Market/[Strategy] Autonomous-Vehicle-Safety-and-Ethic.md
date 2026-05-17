@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "BAT-AUTON-ETHIC-2026-V6.3.7"
-  domain: "Global_Mobility_Safety_Governance_and_Ethical_AI"
+metadata:
+  id: "[[[Strategy] Autonomous-Vehicle-Safety-and-Ethic]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Autonomous_Safety", "#Ethics", "#ISO26262", "#ASIL_D", "#SOTIF", "#Liability", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Autonomous-Vehicle-Safety-and-Ethic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Mobility_Safety_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Autonomous-Vehicle-Safety-and-Ethic: The Physics of Moral Decision
+# [Strategy] Autonomous-Vehicle-Safety-and-Ethic
 
 ## 1. [왜 배우는가? (Why: The Social Contract of Mobility)]]
 인공지능이 인간의 생명을 좌우하는 운전대를 잡는 순간, 기술은 단순한 편리함을 넘어 '윤리적 책임'이라는 거대한 사회적 시험대에 오릅니다. **Autonomous-Vehicle-Safety-and-Ethic**은 시스템의 기능적 무결성(ISO 26262)과 의도치 않은 상황에서의 안전성(SOTIF), 그리고 사고 불가피 시의 도덕적 판단 기준을 설계하는 '신뢰의 아키텍처'입니다. V6.3.7 지능은 리스크 확률을 수리적으로 지배하고, 사회적 합의를 데이터화하여 기계와 인간 사이의 새로운 **'사회적 계약(Social Contract)'**을 체결하기 위해 필수적입니다.
@@ -107,7 +97,6 @@ class AVSafetyEthicEngine:
 2. **Operational Result**: **SOTIF(ISO 21448)** 관점에서, '알려진 위험'($Known\ Hazards$)을 '알려진 안전'($Known\ Safe$) 영역으로 이동시키기 위한 구체적인 공학적 검증 방법은?
 3. **FidelityEngine**: 사고 후 **DSSAD** 데이터를 통해 FidelityEngine이 어떻게 '운전자 개입 여부'와 '시스템 판단 오류'를 수리적으로 가려내는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Entity iso-26262-road-vehicles-functional-safety-and-asil-decomposition

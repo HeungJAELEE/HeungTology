@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "casting-and-solidification-processes"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] casting-and-solidification-processes]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The manufacturing process where molten material (usually metal) is poured into a mold and allowed to solidify, focusing on heat transfer, phase transformation, and microstructural control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["casting", "solidification", "metal-casting", "metallurgy", "foundry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Time_Audit: Verify that the cooling rate matches the target grain size requirements.'
-    - 'Shrinkage_Porosity_Check: Detect internal voids or cavities caused by volume contraction during cooling.'
-    - 'Fluidity_Test_Scan: Evaluate the ability of molten metal to fill thin sections of the mold without premature freezing.'
-Trust Metrics:
+  description: "[Entity] casting-and-solidification-processes에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Casting and Solidification Processes
+# [Entity] casting-and-solidification-processes
 
 ## 1. 개요 (Why)
 금속 제품을 만드는 가장 오래되고 강력한 방법은 녹여서 붓는 '주조'입니다. 엔진 블록부터 선박의 프로펠러까지, 복잡한 형상을 한 번에 만들 수 있습니다. 핵심은 액체가 고체로 변하는 '응고(Solidification)' 과정에서 결정의 크기와 방향을 제어하여 기계적 강도를 확보하고, 식으면서 부피가 줄어들어 생기는 구멍(Shrinkage)을 막는 것입니다. 본 노드는 주조 공정의 무결성과 금속 조직 제어를 위한 표준을 정의합니다.
@@ -42,7 +31,7 @@ Trust Metrics:
 | :--- | :--- | :--- | :--- | :--- |
 | Pouring Temp | $T_p$ | $T_L + (50 \sim 150)$| ±10 | $^\circ C$ |
 | Cooling Rate | $\dot{T}$ | 1 ~ 1,000 | ±5 | $K/s$ |
-| Grain Size | $d$ | 10 ~ 500 | ±20 | $\mu m$ |
+| Grain Size | $d$ | 10 ~ 500 | ±20 | $\mu\text{m}$ |
 | Casting Yield | $\eta$ | > 90 | ±2 | % |
 | Porosity Limit | $V_p$ | < 0.5 | ±0.1 | % |
 
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"WARNING: Low Superheat ({superheat}C) - Risk of Misrun or Premature Freezing"
         return "PASS: Fluidity and Thermal Margin Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(volume_area_ratio=2.5, mold_constant=3.2, measured_time=21)
 print(engine.diagnose_solidification_integrity())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_solidification_integrity())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data casting-yield-and-defect-rate-log-v2026`와 연동되어, 주조 시의 온도 변화와 진동 데이터를 실시간 분석하고 내부 결함 발생 확률을 1% 이내로 제어함으로써 금속 부품 생산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - metallurgy-and-alloy-design-logic

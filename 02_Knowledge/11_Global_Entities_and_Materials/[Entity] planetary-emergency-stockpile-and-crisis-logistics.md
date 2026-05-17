@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "planetary-emergency-stockpile-and-crisis-logistics-entity"
-  domain: "35_Global_Unified_Governance_Planetary_Resource_Management"
+metadata:
+  id: "[[[Entity] planetary-emergency-stockpile-and-crisis-logistics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Emergency_Stockpile", "#Crisis_Logistics", "#Disaster_Relief", "#Governance", "#Logistics", "#Resilience", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 35_global-unified-governance-planetary-resource-management-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] planetary-emergency-stockpile-and-crisis-logistics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] planetary-emergency-stockpile-and-crisis-logistics
+# [Entity] planetary-emergency-stockpile-and-crisis-logistics
 
 ## 1. [왜 배우는가? (Why: The World's First Responder)]]
 전 지구적인 재난이나 팬데믹이 닥쳤을 때 인류에게 필요한 약과 음식을 어떻게 미리 쌓아두고($Stockpile$), 전 세계 어디든 사고가 터지면 로봇들이 1시간 안에 비상 물자를 어떻게 배달($Logistics$)할 수 있을까요? **행성적 비상 비축 및 위기 물류**는 지구가 아플 때 즉시 작동하는 '글로벌 비상 약국 및 초고속 구호 아키텍처'입니다. 우리가 이를 배우는 이유는 준비되지 않은 위기는 인류를 무너뜨리지만, 준비된 시스템은 위기를 기회로 바꾸기 때문이며, "절망의 시간을 데이터로 설계하고 지배하는 '글로벌 위기 관리 패권 및 행성적 안전 주권'을 확보하기" 위함입니다. 물류의 속도가 살릴 수 있는 생명의 숫자를 결정합니다.

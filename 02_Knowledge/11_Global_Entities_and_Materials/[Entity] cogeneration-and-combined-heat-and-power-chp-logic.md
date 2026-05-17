@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cogeneration-and-combined-heat-and-power-chp-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cogeneration-and-combined-heat-and-power-chp-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The simultaneous production of electricity and useful thermal energy from a single fuel source (Cogeneration) and the integrated engineering logic used to maximize the total efficiency of the system by capturing waste heat from power generation for heating purposes (CHP Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cogeneration", "chp", "energy-efficiency", "district-heating", "thermodynamics", "waste-heat-recovery", "sustainable-energy"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Energy_Fidelity_Audit: Evaluate the ''Overall Efficiency'' ($\\eta_{total}$) to identify if the balance between electrical load and thermal demand is optimized or if useful heat is being wasted via cooling towers.'
-    - 'Cascade_Integrity_Check: Analyze the temperature levels of the recovered heat to ensure they are high enough for the intended ''End-use'' (e.g., high-pressure steam for industry vs. low-temp water for heating).'
-    - 'Reliability_Fidelity_Scan: Monitor the synchronization between the heat-recovery steam generator (HRSG) and the prime mover to verify that the ''Backup Boiler'' usage is minimized.'
-Trust Metrics:
+  description: "[Entity] cogeneration-and-combined-heat-and-power-chp-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ♨️ Cogeneration and Combined Heat and Power (CHP) Logic
+# [Entity] cogeneration-and-combined-heat-and-power-chp-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 일반적인 발전소에서 전기를 만들 때, 들어간 에너지의 60% 이상이 뜨거운 열이 되어 허공으로 날아간다는 사실을 아시나요? **열병합 발전(Cogeneration) 및 CHP 로직**은 이 아까운 열을 잡아내어 겨울철 난방이나 공장의 증기로 사용하는 **'에너지의 1+1'** 기술입니다. 하나의 연료로 전기와 열을 동시에 수확하여 버려지는 에너지를 최소화하는 **'지독할 정도로 알뜰한 에너지 수확'**입니다. 낭비를 가치로 바꾸어 지구의 온도를 낮추는 **'지능형 에너지 공생'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Sub-optimal Loading - Prime mover running at low efficiency. Aggregated thermal demand insufficient for current electric output"
         return "PASS: Synchronized Load Matching and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(overall_efficiency_pct=82.5, thermal_utilization_ratio=0.6, exhaust_temp_c=120.0)
 print(engine.diagnose_chp_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_chp_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data chp-efficiency-and-fuel-savings-reports-v2026`와 연동되어, 전 세계 주요 산업 단지 및 지역 난방 시스템의 데이터를 실시간 분석하고 에너지 낭비 및 공급 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 공생 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - coal-fired-power-plant-and-rankine-cycle-physics

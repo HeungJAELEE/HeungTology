@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-grid-and-distributed-energy-resources-entity"
-  domain: "117_Energy_Storage_and_Smart_Grid_Engineering_Hub"
+metadata:
+  id: "[[[Entity] smart-grid-and-distributed-energy-resources]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Smart_Grid", "#Energy", "#DER", "#Microgrid", "#VPP", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 117_energy-storage-and-smart-grid-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-grid-and-distributed-energy-resources에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-grid-and-distributed-energy-resources
+# [Entity] smart-grid-and-distributed-energy-resources
 
 ## 1. [왜 배우는가? (Why: The Internet of Energy)]]
 과거의 전력망은 거대한 발전소에서 집으로 전기를 일방적으로 보내는 단순한 선이었습니다. 하지만 이제 우리는 모두가 전기를 만들고, 팔고, 공유하는 시대를 살고 있습니다. **스마트 그리드 및 분산 에너지 자원의 전력 조류 및 스윙 방정식 수리 물리 기술**은 전력망에 '지능'을 부여하여 거대한 에너지 인터넷을 구축하는 기술입니다. 동네의 태양광 패널들을 모아 하나의 거대한 발전소처럼 운영하고(VPP), 전기차가 전력망의 배터리 역할을 수행하며, 인공지능이 1초 뒤의 전력 수요를 예측해 블랙아웃을 막습니다. 우리가 이를 배우는 이유는 에너지 유통의 무결성을 확보함으로써, 에너지 효율을 극대화하고 탄소 중립 사회를 실현하는 '글로벌 그리드 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 스마트 그리드의 무결성이 국가 에너지 안보와 전력 품질의 무결성을 결정합니다.

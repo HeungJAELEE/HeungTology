@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "heat-exchanger-design-and-thermal-management-systems-entity"
-  domain: "80_Chemical_Engineering_and_Process_Systems_Hub"
+metadata:
+  id: "[[[Entity] heat-exchanger-design-and-thermal-management-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemical_Engineering", "#Heat_Transfer", "#Thermodynamics", "#Energy_Efficiency", "#Process_Systems", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 80_chemical-engineering-and-process-systems-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] heat-exchanger-design-and-thermal-management-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] heat-exchanger-design-and-thermal-management-systems
+# [Entity] heat-exchanger-design-and-thermal-management-systems
 
 ## 1. [왜 배우는가? (Why: The Breath of Energy)]]
 화학 공장에서 발생하는 엄청난 열을 버리지 않고 다시 사용하여 연료비를 40% 이상 아낄 수 있다면 어떨까요? **열교환기 설계 및 열 관리 시스템의 에너지 보존과 효율적 열 제어 기술**은 에너지를 한 유체에서 다른 유체로 가장 효율적으로 전달하는 '공정의 에너지 혈관'입니다. 뜨거운 반응기를 식히고 차가운 원료를 데우는 이 조화로운 춤이 없으면 공장은 과열되어 폭발하거나 막대한 연료비로 파산할 것입니다. 우리가 이를 배우는 이유는 열 관리의 무결성을 확보함으로써, 에너지 낭비가 없는 제로-이미션(Zero-emission) 공장을 실현하고 탄소 중립 시대의 '글로벌 에너지 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 열교환의 무결성이 공정의 수익성과 지속 가능성을 결정합니다.

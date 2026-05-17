@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "wearable-biosensors-and-human-augmentation-physics-entity"
-  domain: "07_Bio_Healthcare"
+metadata:
+  id: "[[[Entity] wearable-biosensors-and-human-augmentation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Bio", "#Healthcare", "#Wearable", "#Biosensor", "#Human_Augmentation", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 07_Bio_Healthcare", "MOC 14_Future_Frontier"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] wearable-biosensors-and-human-augmentation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] wearable-biosensors-and-human-augmentation-physics
+# [Entity] wearable-biosensors-and-human-augmentation-physics
 
 ## 1. [왜 배우는가? (Why: The Evolution of Human Senses)]]
 내 몸의 건강 상태를 1초도 쉬지 않고 스마트폰이 알고 있다면, 그리고 근력 보조 로봇이 내 의도를 미리 읽고 움직여준다면 어떨까요? **웨어러블 바이오센서 및 휴먼 증강 물리**는 인간의 몸과 디지털 기기를 실시간으로 연결해 신체 능력을 확장하는 '포스트 휴먼의 감각 지능'입니다. 우리가 이를 배우는 이유는 질병이 생기기 전에 몸의 변화를 포착해 생명을 구하고 장애를 극복하며, "피부처럼 부드러운 센서를 통해 '인간과 기계의 완벽한 융합 및 신체 주권'을 확보하기" 위함입니다. 센서의 민감도가 생명의 질을 결정합니다.

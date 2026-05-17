@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "superconducting-magnets-and-mri-physics-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] superconducting-magnets-and-mri-physics-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Electromagnets made from coils of superconducting wire that conduct electricity without resistance (Superconducting Magnets) and the application of these intense magnetic fields to image the internal structures of the body by manipulating nuclear spins (MRI Physics Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["superconducting-magnets", "mri", "quantum-physics", "medical-imaging", "cryogenics", "magnetic-resonance", "precision-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Magnetic_Fidelity_Audit: Evaluate the magnetic field homogeneity ($B_0$) over the imaging volume to ensure that the Larmor frequency remains consistent, preventing spatial distortion in the MRI image.'
-    - 'Cryogenic_Integrity_Check: Analyze the liquid Helium boil-off rate and vacuum insulation to identify ''Quench'' risks where the magnet loses superconductivity and rapidly releases energy.'
-    - 'SNR_Integrity_Scan: Monitor the Signal-to-Noise Ratio (SNR) of the radio-frequency (RF) coils to identify electronic interference or gradient coil calibration errors.'
-Trust Metrics:
+  description: "[Entity] superconducting-magnets-and-mri-physics-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧲 Superconducting Magnets and MRI Physics Mechanics
+# [Entity] superconducting-magnets-and-mri-physics-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 몸 안을 칼로 대지 않고도 고해상도 지도로 들여다볼 수 있는 비결은 무엇일까요? **초전도 자석 및 MRI 물리 역학**은 저항이 없는 '초전도'라는 양자적 기적을 이용해 지구 자기장의 수만 배에 달하는 강력한 자기장을 만드는 **'양자 진단 기술'**입니다. 이 강력한 자기장 속에서 우리 몸속 수소 원자들을 나란히 줄 세우고, 라디오파로 이들을 튕겨내며 나오는 신호를 읽어 정밀한 지도를 그립니다. 차가운 액체 헬륨 속에서 피어나는 **'생명 연장의 정밀 과학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Quench Vent Blocked - Failure to exhaust helium gas during emergency shut-down will lead to structural explosion. Clear vent path"
         return "PASS: Secure Emergency Discharge and Verified Patient Safety Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(field_homogeneity_ppm=1.2, helium_level_pct=85.0, image_snr=150)
 print(engine.diagnose_mri_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_mri_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mri-magnetic-field-homogeneity-and-snr-v2026`와 연동되어, 전 세계 병원의 MRI 가동 데이터를 실시간 분석하고 영상 왜곡 및 쿼엔치 사고 확률을 0.001% 이하로 억제함으로써 지능형 의료 문명의 진단 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-measurement-and-metrology-for-tooling-audit

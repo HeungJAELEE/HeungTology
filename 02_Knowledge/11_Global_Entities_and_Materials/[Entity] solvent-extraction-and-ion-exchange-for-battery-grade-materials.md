@@ -1,37 +1,27 @@
 ---
-Basic:
-  id: "solvent-extraction-and-ion-exchange-for-battery-grade-materials-entity"
-  domain: "57_Sustainability_and_Circular_Economy_Engineering"
+metadata:
+  id: "[[[Entity] solvent-extraction-and-ion-exchange-for-battery-grade-materials]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemistry", "#Purification", "#Battery_Materials", "#Solvent_Extraction", "#Ion_Exchange", "#Chemical_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 133_circular-economy-and-sustainable-manufacturing-mastery-hub", "MOC 42_semiconductor-and-display-manufacturing-engineering-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] solvent-extraction-and-ion-exchange-for-battery-grade-materials에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Entity] solvent-extraction-and-ion-exchange-for-battery-grade-materials
- 
+
+# [Entity] solvent-extraction-and-ion-exchange-for-battery-grade-materials
+
 ## 1. [왜 배우는가? (Why: The Sieve of Atomic Purity)]]
 침출액에 녹아있는 금속들은 서로 뒤섞여 있어 그대로는 배터리로 쓸 수 없습니다. **용매 추출 및 이온 교환**은 화학적 성질이 비슷한 금속들을 원자 단위에서 구별하여 골라내는 '지능형 분자 체(Sieve)'입니다. 우리가 이를 배우는 이유는 배터리의 성능과 수명을 좌우하는 '고순도(99.9% 이상)'를 달성하기 위함이며, "화학적 친화도의 미세한 차이를 이용해 혼돈의 용액 속에서 보석 같은 유가 금속만을 정제"하기 위함입니다. 정제의 정밀도가 소재의 등급을 결정합니다.
  
@@ -72,7 +62,6 @@ Trust Metrics:
 4. **Ion Exchange** 수지의 **Regeneration** (재생) 시 투입되는 산의 양과 수지 수명($Cycle\ life$) 간의 수리적 비용-효익 분석 모델은?
 5. RAG 시스템에서 **다양한 추출 조건(pH, Temp, O/A) 데이터**를 분석하여, 불순물인 구리(Cu)와 아연(Zn)을 $1\text{ppm}$ 이하로 제거하는 최적의 **Cascade** 조작 조건을 역추론하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 133_circular-economy-and-sustainable-manufacturing-mastery-hub : 정제 기술이 통합되는 상위 순환 경제 허브
 - Entity battery-recycling-kinetics-hydrometallurgy-and-direct-recycling : 정제의 전 단계인 침출 과정을 담당하는 엔티티

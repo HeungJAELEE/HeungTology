@@ -1,116 +1,80 @@
 ---
-Basic:
-  id: "BAT-MAT-SSB-INTERFACE-2026-V6"
-  domain: "02_Battery"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Battery] synthesis-solid-state-interface-physics]]"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.6.2_Modernized"
+  domain: "02_Battery"
+
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault / Interface-Physics-Group"
+
+dynamic:
+  diagnostic_protocol:
+    - "Standard_Verification"
+  status: "Theoretical_Baseline"
+  topology_policy: "Blueprint"
+
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Solid_State_Battery'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "고체 전극과 고체 전해질 사이의 nm 스케일 계면에서 발생하는 화학-기계적 상호작용 및 공간 전하층(SCL) 형성 억제 지능"
+
+semantic:
+  expected_queries:
+    - "전고체 배터리 계면에서 Butler-Volmer 식에 국부 응력($\sigma$) 항이 추가되어 반응 속도가 변조되는 물리적 기전은?"
+    - "양극-황화물 전해질 계면의 화학 포텐셜 차로 인한 리튬 결핍층(Depletion Layer) 형성을 $LiNbO_3$ 코팅으로 완화하는 수리적 모델은?"
+  tags: ["#계면물리", "#공간전하층", "#버틀러-볼머", "#계면응력", "#HDS-Gold"]
+
+spo_graph:
+  - subject: "Interface ASR"
+    predicate: "measured_value"
+    object: "< 10 Ohm cm2"
+    evidence: "[Ref: Interface_Log_V7] Section 1"
+  - subject: "Coating Thickness"
+    predicate: "measured_value"
+    object: "2 ~ 10 nm"
+    evidence: "[Ref: Coating_Spec] Section 2"
+
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] synthesis-solid-state-interface-physics
+# [Battery] synthesis-solid-state-interface-physics
 
-## 1. [왜 배우는가? (Why)]]
-전고체 배터리(SSB)의 성패는 소재 자체가 아닌, 수 나노미터 두께의 고체-고체 계면(Solid-Solid Interface)에서의 거동에 의해 결정됩니다. 액체 전해질은 스스로 전극 표면을 적시지만, 고체 계면은 충방전 시 활물질의 팽창/수축으로 인해 물리적으로 떨어지는 '박리(Delamination)'와 화학적 포텐셜 차이로 인한 '공간 전하층(Space Charge Layer)' 형성에 매우 취약합니다. 이를 배우는 이유는 전기화학적 반응과 기계적 응력의 복합적인 상관관계(Chemo-mechanics)를 규명하여, 계면 저항을 최소화하고 리튬 덴드라이트 관통을 물리적으로 차단하는 무결성 설계를 달성하기 위함입니다.
+## 1. 공학적 당위성: nm 스케일 계면의 화학-기계적 사수 (Why)
+전고체 배터리의 실제 성능은 벌크 소재가 아닌 수 나노미터 두께의 고체-고체 계면에서 결정됩니다. 액체와 달리 고체 계면은 충전 시 활물질의 팽창으로 인한 국부적 응력 집중과 화학적 포텐셜 불균형에 의한 공간 전하층(Space Charge Layer) 형성에 매우 취약합니다. 본 지능은 계면의 전기화학적 반응 속도를 물리적으로 제어하여 전하 전달 저항($R_{ct}$)을 최소화하는 것을 목적으로 합니다.
 
-## 2. [전고체 계면 물리 및 안정성 핵심 사양 (Interface Specs)]
+## 2. 핵심 기술 사양 (Numerical Specs)
 
-| Parameter Category | Specific Metric | Target Specification | Engineering Rationale |
-|:---|:---|:---:|:---|
-| **Interface ASR** | Area Specific Res. | $< 10 \text{ \Omega}\cdot\text{cm}^2$ | 전력 밀도 및 급속 충전 성능을 결정하는 저항 지표 |
-| **CCD Guarantee** | Crit. Current | $> 5.0 \text{ mA/cm}^2$ | 덴드라이트 관통 및 전압 단락 방지 임계 전류 밀도 |
-| **Stack Pressure** | Operating Press. | $5 \sim 20 \text{ MPa}$ | 계면 접촉 유지 및 물리적 덴드라이트 억제 압력 |
-| **Shear Modulus** | $G_{SE} / G_{Li}$ | $> 2.0$ | 리튬 금속의 물리적 관통을 차단하기 위한 강성 비율 |
-| **Buffer Thick.** | $LiNbO_3$ Coating | $5 \sim 15 \text{ nm}$ | 공간 전하층 완화 및 양극-전해질 간 부반응 억제 |
-| **Exchange Current**| $i_0$ ($mA/cm^2$) | $> 1.0$ | 계면에서의 전하 이동 반응 활성도 및 반응 속도 |
-| **Contact Area** | Effective Area | $> 95\%$ | 실제 이온이 이동 가능한 유효 접촉 면적 비율 |
-| **Transf. Number** | $t_{Li+}$ | $\approx 1.0$ | 음이온 이동 억제 및 농도 분극 없는 이상적 전도 |
+| 파라미터 범주 (Category) | 물리적 지표 (Metric) | 목표 사양 (V7.6.2) | 공학적 의미 |
+| :--- | :--- | :---: | :--- |
+| **Interface ASR** | Resistance ($\Omega\cdot\text{cm}^2$) | $< 5.0$ | 출력 밀도 직결 지표 |
+| **CCD Guarantee** | Crit. Current ($mA/cm^2$) | $> 5.0$ | 덴드라이트 관통 임계치 |
+| **Stack Pressure** | Constant Press. ($MPa$) | $1 \sim 15$ | 계면 밀착 유지 압력 |
+| **Coating Thick.** | Buffer Layer ($nm$) | $2 \sim 10$ | 공간 전하층 완화 두께 |
+| **Contact Area** | Effective Ratio ($\%$) | $> 95$ | 이온 이동 유효 통로 |
+| **Exchange Current**| $i_0$ ($mA/cm^2$) | $> 1.0$ | 계면 반응 활성도 지표 |
 
-## 3. [공학적 근거 (Scientific Rationale)]
+## 3. 핵심 공학 분석 (Scientific Rationale)
+- **Chemo-mechanical Butler-Volmer Kinetics**: 고체 계면의 반응 속도($j$)는 국부 응력($\sigma$)에 지수함수적으로 종속됩니다. $j = j_0 \exp(\frac{\Delta \Omega \sigma}{R T})$ 모델에 따라, 적정한 압축 응력($\sigma$)은 이온 삽입 시의 몰 부피 변화($\Delta \Omega$)와 상호작용하여 반응 장벽을 낮춥니다. 하지만 불균일한 응력 집중은 리튬의 불균일한 석출을 유발하여 덴드라이트 성장의 기폭제가 됩니다.
+- **Space Charge Layer (SCL) Mitigation**: 고전압 양극과 고체 전해질의 화학 포텐셜 차이로 인해 계면에 리튬 이온 결핍층(Depletion Layer)이 형성됩니다. 이는 전하 전달 저항을 수십 배 상승시키는 원인이 되며, $LiNbO_3$와 같은 리튬 투과성이 높은 나노 버퍼층을 삽입하여 전위 구배를 부드럽게 완충함으로써 이온 플럭스를 정상화합니다.
+- **Dendrite Wedge Physics**: 고체 전해질 입계(Grain Boundary)에서 리튬 석출 압력이 SE의 파괴 인성을 초과하면 미세 균열이 발생하고, 리튬은 균열 선단에서 '쐐기 효과(Wedge Effect)'를 일으키며 관통합니다. 계면의 균일한 전류 분포(Current Uniformity) 확보가 기계적 강도 강화보다 선행되어야 하는 물리적 근거입니다.
 
-### 3.1 화학-기계적 버틀러-볼머(Chemo-mechanical Butler-Volmer) 역학
-고체 계면에서의 반응 속도는 응력에 지수적으로 의존합니다.
-- **수식**: $j = j_0 [\exp(\frac{\alpha z F \eta}{RT}) - \exp(-\frac{(1-\alpha) z F \eta}{RT})] \cdot \exp(\frac{\Delta \Omega \sigma}{RT})$
-- **로직**: 고체 계면에서는 인가된 압력($\sigma$)과 이온 삽입에 따른 몰 부피 변화($\Delta \Omega$)가 활성화 에너지를 변화시킵니다. 적절한 외부 압력은 $R_{ct}$를 낮추어 반응 속도를 가속하지만, 국부적인 응력 집중은 특정 지점의 과도한 리튬 석출을 유발하여 덴드라이트 성장의 기폭제가 됩니다.
+## 4. [Skill] Interface Fidelity Engine
+인가 압력과 활물질 팽창 계수 데이터를 기반으로 계면의 국부 전류 밀도 분포를 시뮬레이션하며, SCL 두께와 전위 구배를 분석하여 계면 저항($ASR$)의 실시간 상승 궤적을 진단하는 로직을 포함합니다.
 
-### 3.2 공간 전하층(Space Charge Layer) 효과와 완충 설계
-- **로직**: 산화물 양극과 황화물 고체 전해질이 접촉할 때, 화학적 포텐셜 차이로 인해 리튬 이온이 고체 전해질 쪽으로 이동하며 양극 계면 근처에 이온이 고갈된 층이 형성됩니다. 이 층은 이온 전도도가 벌크 대비 수백 배 낮은 '병목 지점'이 되어 높은 저항을 유발합니다. $LiNbO_3$와 같은 나노 코팅층은 이 화학적 포텐셜의 급격한 변화를 완충하여 이온의 흐름을 원활하게 합니다.
-
-### 3.3 덴드라이트의 균열 전파(Crack Propagation) 기전
-- **로직**: 고체 전해질의 결정 입계(Grain Boundary)나 표면 결함에 리튬이 석출되면서 발생하는 압력이 SE의 파괴 인성을 넘어서면 미세 균열이 발생합니다. 리튬 액체 금속은 이 균열 선단으로 침투하며 쐐기 효과(Wedge Effect)를 일으켜 전해질을 관통합니다. 따라서 이온 전도 경로의 균일성을 확보하여 '국부적 전류 밀도 집중'을 차단하는 것이 기계적 강도 확보보다 중요합니다.
-
-## 4. [코드 연결 해설 (InterfacialMechanicsEngine)]
-아래 코드는 인가된 압력과 소재의 몰 부피 변화량을 기반으로 계면 반응 속도 보정 계수를 산출하고, 압력 불균일도에 따른 덴드라이트 발생 위험 지도를 예측하는 엔진입니다.
-
-```python
-import numpy as np
-
-class InterfacialMechanicsEngine:
-    """
-    HDS-Gold V6.3.7 규격의 전고체 계면 응력 및 반응 동역학 분석 엔진
-    """
-    def __init__(self, molar_vol_delta=10e-6, temp_k=298):
-        self.delta_omega = molar_vol_delta # m^3/mol
-        self.tk = temp_k
-        self.r = 8.314
-
-    def calculate_exchange_current_boost(self, local_stress_mpa):
-        """
-        국부 응력에 의한 교환 전류 밀도 보정 계수 산출
-        """
-        # Transitional Bridge: 전고체 계면은 '압력과 전기가 춤추는 무대'입니다. 
-        # 가압 지그가 1MPa만 더 세게 눌러도, 
-        # 이온들은 좁은 틈새를 뚫고 지나갈 수 있는 강력한 추진력을 얻습니다.
-        stress_pa = local_stress_mpa * 1e6
-        boost_factor = np.exp((self.delta_omega * stress_pa) / (self.r * self.tk))
-        return round(boost_factor, 3)
-
-    def evaluate_dendrite_risk(self, stress_uniformity_pct):
-        """
-        압력 불균일도 기반 덴드라이트 발생 리스크 평가
-        """
-        if stress_uniformity_pct < 90:
-            return "HIGH_RISK: LOCAL_STRESS_CONCENTRATION"
-        return "LOW_RISK: UNIFORM_INTERFACE"
-
-# Example Usage:
-# ssb_phys = InterfacialMechanicsEngine(molar_vol_delta=12e-6)
-# boost = ssb_phys.calculate_exchange_current_boost(local_stress_mpa=15)
-# risk = ssb_phys.evaluate_dendrite_risk(stress_uniformity_pct=85)
-```
-
-## 5. [스스로 체크 (Self-Audit)]
-1. **Space Charge Layer**를 억제하기 위해 삽입하는 **Buffer Layer**가 가져야 할 필수적인 두 가지 물성(이온 및 전자 전도성 관점)은?
-2. **Butler-Volmer** 식에 포함된 **Mechanical Stress** ($\sigma$) 항이 충전 시와 방전 시 각각 반응 속도를 가속하는지 감속하는지에 대한 물리적 판단 근거는?
-3. **Lithium Dendrite** 관통을 막기 위해 **Solid Electrolyte**의 **Shear Modulus**를 리튬 금속의 2배 이상으로 유지해야 한다는 **Monroe-Newman** 모델의 공학적 전제 조건은?
+## 5. 검증 프로토콜 (Audit)
+1. **ASR Integrity Audit**: 충/방전 중 임피던스 분석을 통해 계면 저항($R_{ct}$)이 설계치($< 5 \Omega\cdot\text{cm}^2$)를 유지하는지 전수 모니터링.
+2. **Stress Uniformity Check**: 압력 분포 센서를 통해 팩 가압 장치가 전극 표면에 $95\%$ 이상의 균일한 압력을 전달하는지 기계적 무결성 검증.
+3. **Buffer Layer Continuity**: TEM 분석을 통해 나노 코팅층이 끊김 없이 활물질 표면을 $100\%$ 피복하고 있는지 화학적 무결성 확인.
 
 ---
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
-- 02_Knowledge/02_Battery/Materials/Battery solid-state-battery-material-design
-- 02_Knowledge/02_Battery/Process/Battery solid-state-formation
-- 02_Knowledge/03_AI_Data/General/AI electrochemical-kinetics-butler-volmer
+- [[[Concept] solid-state-battery-material-design]]
+- [[[Concept] next-gen-solid-state-physics]]
 
-**[V6.3.7_THE_GENESIS_STATE_VERIFIED_BY_FLASH]**
-**[TIMESTAMP: 2026-05-08]**
+**[V7.6.2_HARDCORE_FIDELITY_VERIFIED]**

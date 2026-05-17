@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-ITSM-SLA-2026-V6"
-  domain: "06_Enterprise_Governance_and_Digital_Operations"
+metadata:
+  id: "[[[Entity] it-service-management-itsm-and-service-level-agreements-sla]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] it-service-management-itsm-and-service-level-agreements-sla에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] it-service-management-itsm-and-service-level-agreements-sla
+# [Entity] it-service-management-itsm-and-service-level-agreements-sla
 
 ## 1. [왜 배우는가? (Why)]]
 IT 시스템의 운영 품질을 보장하고 사용자의 기대 수준을 관리하기 위해서는 서비스 제공자와 수혜자 사이의 정량적인 약속이 필요합니다. **IT 서비스 관리(ITSM) 및 서비스 수준 협약(SLA)**은 IT 서비스를 비즈니스 관점에서 정의하고, 그 성과를 객적으로 측정하여 개선하는 '디지털 서비스 신뢰 인프라'입니다. 우리가 이를 배우는 이유는 서비스 장애에 따른 비즈니스 손실을 최소화하고 투명한 성과 기반의 거버넌스를 구축하기 위함이며, "서비스의 무결성을 계약적 수치로 증명하여 IT 조직의 전략적 신뢰 주권을 사수하기" 위함입니다. 서비스 수준(Service Level)이 조직의 디지털 운영 성숙도를 결정합니다.
@@ -112,9 +102,6 @@ class ITSMSLAFidelityEngine:
             "Service_Credit_Penalty": round(penalty_factor, 2)
         }
 
-# Example Usage:
-# itsm = ITSMSLAFidelityEngine(sla_target_hours=4.0)
-# report = itsm.audit_sla_breach(ticket_id="INC-2026-001", resolution_time_hours=5.5)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -122,7 +109,6 @@ class ITSMSLAFidelityEngine:
 2. **First Call Resolution (FCR)** 향상이 **Total Cost of Ownership (TCO)** 및 서비스 무결성에 미치는 긍정적 영향은?
 3. **Multi-vendor SLA** 환경에서 **Operational Level Agreement (OLA)**가 **End-to-End Service Integrity** 무결성 확보를 위해 수행하는 역할은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/06_Enterprise_Governance_and_Digital_Operations_Hub/Concept it-governance-and-itil-framework
 - 02_Knowledge/06_Enterprise_Governance_and_Digital_Operations_Hub/Entity it-asset-management-itam-and-software-asset-management-sam

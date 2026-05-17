@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "joining-technologies-and-welding-metallurgy-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] joining-technologies-and-welding-metallurgy-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Processes that bond two or more materials together permanently (Joining Technologies) and the physical study of heat transfer, solidification, and phase transformations in the bond zone (Welding Metallurgy Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["joining", "welding", "metallurgy", "fusion-zone", "haz", "arc-welding", "laser-welding", "industrial-processing", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Metallurgy_Fidelity_Audit: Evaluate the ''Heat Affected Zone'' (HAZ) width to identify if excessive high-fidelity heat input is causing microstructural high-fidelity softening or embrittlement.'
-    - 'Fusion_Integrity_Check: Analyze the high-fidelity ''Weld Penetration'' depth to ensure that high-fidelity ''Lack of Fusion'' (LOF) is not compromising the joint''s structural high-fidelity integrity.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Arc Stability'' and ''Spatter'' levels to verify that high-fidelity ''Shielding Gas'' coverage is preventing atmospheric high-fidelity contamination.'
-Trust Metrics:
+  description: "[Entity] joining-technologies-and-welding-metallurgy-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Joining Technologies and Welding Metallurgy Physics
+# [Entity] joining-technologies-and-welding-metallurgy-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 선박이나 초고층 빌딩의 강철판들을 어떻게 하나처럼 단단하게 붙여 영원히 떨어지지 않게 만들까요? **접합 기술 및 용접 금속학 물리**는 금속을 녹여 분자끼리 서로 뒤엉키게 만드는 **'금속의 결혼'** 기술입니다. 단순히 붙이는 것이 아니라, 열을 가해 금속의 조직을 재배열하고, 식으면서 다시 강해지는 과정을 정밀하게 제어합니다. **'열전달과 상변화의 법칙을 이용해 파편화된 부품들을 하나의 거대한 구조물로 재탄생시키는 지능형 결합 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Lack of Fusion - High-fidelity weld bead too narrow. Insufficient high-fidelity penetration. Increase high-fidelity current or decrease speed"
         return "PASS: Validated Joint Geometry and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(welding_current_a=200.0, travel_speed_mps=0.01, shielding_gas_flow=15.0)
 print(engine.diagnose_joining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_joining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data weld-joint-strength-and-porosity-v2026`와 연동되어, 전 세계 주요 조선소 및 우주항공 제조 라인의 실시간 용접 데이터를 분석하고 결함 및 구조적 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 문명의 결합 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-laser-and-photonics-beam-delivery-physics

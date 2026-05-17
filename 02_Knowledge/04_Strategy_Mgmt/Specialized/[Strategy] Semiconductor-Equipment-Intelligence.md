@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Semiconductor-Equipment-Intelligence"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Semiconductor-Equipment-Intelligence]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Semiconductor-Equipment-Intelligence에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Semiconductor-Equipment-Intelligence
+# [Strategy] Semiconductor-Equipment-Intelligence
 
 ## 1. [왜 배우는가? (Why)]]
 반도체 공장은 '돈을 찍어내는 기계'와 같습니다. 수조 원짜리 노광 장비(EUV)가 한 시간만 멈춰도 수억 원의 손해가 발생합니다. 반도체 장비 지능(Semiconductor-Equipment-Intelligence)은 장비가 병들기 전에 스스로 "저 다음 달에 고장 날 것 같아요"라고 말하게 만드는 기술입니다. 나노미터 단위의 오차를 다루는 현장에서 인간의 감각으로는 절대 알 수 없는 미세한 진동과 전류의 변화를 AI가 감지하여, 장비의 가동률을 극대화하고 단 하나의 웨이퍼도 버려지지 않게 만드는 '제조업의 최첨단 지능'을 확보하는 것입니다.
@@ -99,5 +89,4 @@ def analyze_equipment_intelligence(sensor_stream, recipe_parameters):
 2. 'Run-to-Run(R2R) 제어'에서 '피드백 지연'이 발생했을 때 나타날 수 있는 '웨이퍼 수율 하락'의 공학적 인과관계는?
 3. '엣지 AI'를 통한 '장비 자율 보정'이 '중앙 서버 제어' 방식보다 '보안'과 '안정성' 측면에서 유리한 이유는 무엇인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

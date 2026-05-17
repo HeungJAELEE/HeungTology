@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "piezoelectric-materials-and-energy-harvesting-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] piezoelectric-materials-and-energy-harvesting-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of materials (Piezoelectric Materials) that generate electrical charge in response to applied mechanical stress, and the engineering principles used to capture and store this energy (Energy Harvesting) from ambient vibrations or human motion."
-  physical_model: "N/A"
-Semantic:
-  tags: '["piezoelectric", "energy-harvesting", "smart-materials", "pzt", "nanogenerator", "transducer", "sensors"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Electromechanical_Coupling_Audit: Evaluate the coupling factor ($k$) to ensure the material efficiently converts vibrations into usable electrical power without excessive dissipation.'
-    - 'Depolarization_Risk_Check: Analyze the Curie temperature and maximum stress levels to identify risks of losing piezoelectric properties due to thermal or mechanical over-stress.'
-    - 'Harvesting_Efficiency_Scan: Monitor the rectified voltage and power density from the energy harvesting circuit to verify optimal impedance matching with the storage system.'
-Trust Metrics:
+  description: "[Entity] piezoelectric-materials-and-energy-harvesting-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Piezoelectric Materials and Energy Harvesting Mechanics
+# [Entity] piezoelectric-materials-and-energy-harvesting-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 길을 걷는 사람들의 발걸음이나 흔들리는 나뭇가지의 움직임이 전기가 될 수 있을까요? **압전 소재 및 에너지 수확 역학**은 누르거나 비틀 때 전기가 생기는 신기한 소재를 이용한 **'움직임의 수확술'**입니다. 별도의 배터리 없이도 우리의 움직임만으로 심박 센서를 돌리거나, 도로의 진동으로 가로등을 켜는 꿈을 현실로 만듭니다. 낭비되는 기계적 에너지를 전기로 되살리는 **'자가 발전의 지능적 소재'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Impedance Matching - Power Lost in Harvesting Circuitry. Adjust Load Resistance"
         return "PASS: Efficient Energy Capture and Maximum Power Transfer Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(power_output_uw_cm2=25.5, resonant_frequency_hz=60.2, fatigue_cycles=1e5)
 print(engine.diagnose_piezo_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_piezo_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data piezoelectric-power-density-and-durability-v2026`와 연동되어, 전 세계 스마트 시티 및 웨어러블 기기의 에너지 수확 데이터를 실시간 분석하고 소자 파손 및 발전 상실 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 자립 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nanotechnology-and-smart-functional-materials

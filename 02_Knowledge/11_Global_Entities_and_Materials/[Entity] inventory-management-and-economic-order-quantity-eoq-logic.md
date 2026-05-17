@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "inventory-management-and-economic-order-quantity-eoq-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] inventory-management-and-economic-order-quantity-eoq-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The supervision of non-capitalized assets (inventory) and stock items (Inventory Management) and the physical logic of determining the optimal order quantity that minimizes total holding and ordering costs (EOQ Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["inventory-management", "eoq", "supply-chain", "safety-stock", "holding-cost", "ordering-cost", "industrial-logistics", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Optimization_Fidelity_Audit: Evaluate the ''Reorder Point'' (ROP) against the high-fidelity ''Lead Time'' to identify if high-fidelity ''Stockout Risk'' is increasing during demand spikes.'
-    - 'Cost_Integrity_Check: Analyze the high-fidelity ''Holding Cost'' ($H$) vs ''Ordering Cost'' ($S$) to ensure the current high-fidelity order size is at the mathematical minimum of the total cost curve.'
-    - 'Safety_Fidelity_Scan: Monitor the high-fidelity ''Standard Deviation of Demand'' to verify that high-fidelity ''Safety Stock'' levels are protecting the service level without excessive high-fidelity capital tie-up.'
-Trust Metrics:
+  description: "[Entity] inventory-management-and-economic-order-quantity-eoq-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Inventory Management and Economic Order Quantity (EOQ) Logic
+# [Entity] inventory-management-and-economic-order-quantity-eoq-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 창고에 물건이 너무 많으면 돈이 묶여서 손해고, 너무 적으면 물건이 없어 못 팔아서 손해입니다. 어떻게 하면 이 사이의 '황금 밸런스'를 잡을 수 있을까요? **재고 관리 및 경제적 주문량(EOQ) 로직**은 "한 번에 몇 개를 주문해야 가장 돈을 적게 쓸까?"라는 질문에 수학적으로 답하는 **'비용의 조율'** 기술입니다. 물건을 주문할 때 드는 수고비(주문비)와 물건을 쌓아둘 때 드는 보관비(유지비)가 서로 만나는 최적의 지점을 찾아냅니다. **'데이터에 기반한 정밀한 발주 타이밍과 수량 결정을 통해 기업의 현금 흐름을 사수하고 물류 정체를 해소하는 지능형 공급망의 뇌'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Safety Stock Insufficient - High-fidelity demand volatility exceeding current buffer. Risk of high-fidelity stockouts. Recalculate with high-fidelity Z-score"
         return "PASS: Validated Buffer Levels and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_inventory_level=500, daily_demand=100, lead_time_days=7)
 print(engine.diagnose_inventory_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_inventory_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data inventory-turnover-and-stockout-risks-v2026`와 연동되어, 전 세계 주요 제조사 및 유통사의 실시간 재고 데이터를 분석하고 품절 및 과잉 재고 사고 확률을 0.001% 이하로 억제함으로써 지능형 자산 관리 문명의 경제 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-automation-and-plc-logic-control-systems

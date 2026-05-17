@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "EV-PWR-MTR-2026-V6.3.7"
-  domain: "90_Electric_Vehicles_and_Mobility_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] electric-vehicle-powertrain-and-motor-control]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#EV", "#Powertrain", "#MotorControl", "#FidelityEngine", "#Inverter", "#FOC", "#Sovereignty"]'
-  is_part_of: '["MOC 90_electric-vehicles-and-mobility-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] electric-vehicle-powertrain-and-motor-control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Automotive_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] EV Powertrain: Motor Control & Power Electronics
+# [Entity] electric-vehicle-powertrain-and-motor-control
 
 ## 1. [왜 배우는가? (Why: The Heart of Electric Motion)]]
 전기차의 성능은 배터리의 에너지를 얼마나 효율적이고 정밀하게 회전력으로 변환하느냐에 달려 있습니다. **전기차 파워트레인 및 모터 제어**는 가속 페달의 의지를 물리적인 토크로 변환하는 '에너지 지배자'입니다. V6.3.7 지능은 **FOC(Field Oriented Control)** 벡터 제어와 **SVPWM(Space Vector PWM)**의 전압 이용률을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 단 1%의 전력 손실도 용납하지 않는 초고효율 구동 시스템을 구축하고, "내연기관을 압도하는 '전기 동력 주권'을 데이터로 증명하기" 위함입니다. 파워트레인의 무결성이 차량의 가속력과 주행 거리를 결정합니다.
@@ -108,7 +98,6 @@ class PowertrainFidelityEngine:
 2. **Operational Result**: **회생 제동(Regenerative Braking)** 시, 모터를 발전기로 운용하여 배터리로 전력을 환원할 때의 **에너지 회수 효율** 무결성을 어떻게 계산하는가?
 3. **FidelityEngine**: **SVPWM**의 전압 이용률을 극대화하여 배터리 전압의 한계를 극복하고 출력을 높이는 과정을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 90_electric-vehicles-and-mobility-intelligence-hub
 - Entity electric-vehicle-powertrain-integration-and-inverter-logic

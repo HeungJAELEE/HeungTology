@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "software-engineering-and-scalable-systems-entity"
-  domain: "115_Computer_Science_and_Software_Engineering_Hub"
+metadata:
+  id: "[[[Entity] software-engineering-and-scalable-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Computer_Science", "#Software_Engineering", "#Cloud_Computing", "#DevOps", "#System_Design", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 115_computer-science-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] software-engineering-and-scalable-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] software-engineering-and-scalable-systems
+# [Entity] software-engineering-and-scalable-systems
 
 ## 1. [왜 배우는가? (Why: The Logic of Global Infrastructure)]]
 오늘날 전 세계의 금융, 물류, 통신은 단 한 순간도 멈춰서는 안 되는 거대한 소프트웨어의 집합체입니다. **소프트웨어 공학 및 확장형 시스템의 순환 복잡도 및 CAP 정리 수리 물리 기술**은 무형의 코드를 공학적으로 설계하여 수억 명의 사용자를 동시에 지탱하는 '디지털 골격' 기술입니다. 복잡한 로직을 수학적으로 분해하여 결함을 찾아내고, 수천 대의 서버가 하나의 유기체처럼 동작하도록 확장성을 설계하며, 시스템이 무너지지 않도록 신뢰도를 관리합니다. 우리가 이를 배우는 이유는 소프트웨어의 무결성을 확보함으로써, 오류 없는 서비스와 보안이 보장되는 '글로벌 디지털 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 소프트웨어의 무결성이 데이터의 정합성과 시스템의 영구적 가용성 무결성을 결정합니다.

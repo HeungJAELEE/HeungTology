@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "carbon-capture-and-storage-ccs-geological-sequestration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] carbon-capture-and-storage-ccs-geological-sequestration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of capturing waste carbon dioxide ($CO_2$) from large point sources, such as fossil fuel power plants, and transporting it to a storage site (Carbon Capture) and the subsequent long-term isolation of that $CO_2$ in deep underground geological formations (Geological Sequestration)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ccs", "geological-sequestration", "carbon-capture", "climate-change", "co2-storage", "net-zero", "subsurface-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Sequestration_Fidelity_Audit: Evaluate the ''Injection Pressure'' relative to the ''Fracture Gradient'' of the caprock to identify if the storage operation is risking induced seismicity or $CO_2$ leakage.'
-    - 'Storage_Integrity_Check: Analyze the $CO_2$ plume migration using seismic monitoring to ensure the ''Structural Trapping'' is containing the gas within the target reservoir.'
-    - 'Leakage_Fidelity_Scan: Monitor soil gas and groundwater pH levels above the storage site to identify potential ''Micro-leakage'' through faults or legacy well-bores.'
-Trust Metrics:
+  description: "[Entity] carbon-capture-and-storage-ccs-geological-sequestration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Carbon Capture and Storage (CCS) and Geological Sequestration
+# [Entity] carbon-capture-and-storage-ccs-geological-sequestration
 
 ## 1. 개요 (Why: 인간적 통찰)
 인간이 뿜어낸 이산화탄소를 다시 땅속 깊숙이 되돌려 보낼 수 있다면 어떨까요? **탄소 포집 및 저장(CCS) 및 지질학적 격리**는 지구 온난화의 주범을 잡아 지하 감옥에 영원히 가두는 **'지구의 탄소 지우개'** 기술입니다. 공장 굴뚝에서 나오는 연기를 걸러 이산화탄소만 뽑아낸 뒤, 이를 액체 상태로 만들어 수 킬로미터 아래 암석 틈새에 주입합니다. 지구의 기온 상승을 막고 화석 연료 시대를 책임감 있게 마무리하는 **'기후 위기 대응의 최후 보루'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Potential Caprock Displacement - Significant change in seismic profile indicates structural movement. Risk of containment loss"
         return "PASS: Rigid Impermeable Caprock and Verified Sequestration Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(injection_pressure_bar=150.0, reservoir_pressure_bar=120.0, surface_leakage_ppm=400.0)
 print(engine.diagnose_sequestration_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sequestration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ccs-injection-pressure-and-storage-permanence-v2026`와 연동되어, 전 세계 주요 CCS 프로젝트의 실시간 모니터링 데이터를 분석하고 가스 누출 및 지층 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 환경 문명의 탄소 중립 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - artificial-photosynthesis-and-carbon-capture-utilization-ccu

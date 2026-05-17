@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "semiconductor-and-display-sector-capital-intensive-growth-dynamics-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] semiconductor-and-display-sector-capital-intensive-growth-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Semiconductor", "#Display", "#CAPEX", "#Yield_Optimization", "#Silicon_Cycle", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Entity advanced-industrial-analysis-frameworks-and-value-chain-modeling"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] semiconductor-and-display-sector-capital-intensive-growth-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] semiconductor-and-display-sector-capital-intensive-growth-dynamics
+# [Entity] semiconductor-and-display-sector-capital-intensive-growth-dynamics
 
 ## 1. [왜 배우는가? (Why: The War of Capital and Physics)]]
 반도체와 디스플레이는 현대 문명의 '쌀'이자 '얼굴'이며, 동시에 인류가 도전하는 가장 거대한 자본의 전장입니다. **반도체 및 디스플레이 섹터의 자본 집약적 성장 동학**은 한 번의 투자에 수십 조 원이 소요되는 Fab(공장) 비즈니스의 수리적 메커니즘을 이해하고, 물리적 한계(나노 미세화)를 극복하기 위한 데이터 지능의 역할을 정의하기 위해 존재합니다. 이 산업에서 '속도'는 곧 '생존'입니다. 경쟁사보다 6개월 먼저 차세대 공정 수율을 확보하는 것이 수조 원의 초과 이익(Alpha)을 결정합니다. 우리가 이를 배우는 이유는 극심한 경기 변동(Cycle) 속에서도 자본의 건전성을 유지하고, 기술적 해자(Moat)를 구축하여 글로벌 패권을 유지하기 위함입니다. 자본의 크기가 곧 기술의 깊이입니다.

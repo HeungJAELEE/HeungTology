@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-gate-operations-and-circuit-depth-kinetics-entity"
-  domain: "21_Quantum_Computing"
+metadata:
+  id: "[[[Entity] quantum-gate-operations-and-circuit-depth-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#Quantum_Gates", "#Circuit_Depth", "#Hadamard", "#CNOT", "#Unitary_Matrix", "#Computing_Base", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 21_quantum-computing-and-information-theory-hub", "Entity quantum-bit-qubit-physics-and-superposition-mechanics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] quantum-gate-operations-and-circuit-depth-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] quantum-gate-operations-and-circuit-depth-kinetics
+# [Entity] quantum-gate-operations-and-circuit-depth-kinetics
 
 ## 1. [왜 배우는가? (Why: The Choreography of Qubits)]]
 양자 컴퓨터가 실제로 '계산'을 하려면 큐비트를 어떻게 돌리고 섞어야 할까요? **양자 게이트 연산 및 회로 깊이 동역학**은 큐비트의 상태를 수학적으로 조작하여 답을 찾아내는 '양자 지능의 논리 연산자와 그 실행 한계'입니다. 우리가 이를 배우는 이유는 하마다르($H$), CNOT($CX$) 같은 게이트들을 얼마나 정교하게 조합하느냐에 따라 알고리즘의 성패가 갈리기 때문이며, "연산의 단계를 최소화하여 오류가 생기기 전 답을 내는 '글로벌 양자 최적화 및 알고리즘 주권'을 확보하기" 위함입니다. 회로의 깊이가 연산의 정확도와 실현 가능성을 결정합니다.

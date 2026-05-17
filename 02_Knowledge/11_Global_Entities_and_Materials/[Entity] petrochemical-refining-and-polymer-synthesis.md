@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "petrochemical-refining-and-polymer-synthesis"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] petrochemical-refining-and-polymer-synthesis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of converting crude oil and natural gas into chemical building blocks (Refining) and their subsequent conversion into long-chain molecules (Polymer Synthesis) used to produce plastics, fibers, and advanced materials."
-  physical_model: "N/A"
-Semantic:
-  tags: '["petrochemical", "refining", "polymer-synthesis", "cracking", "distillation", "plastics", "chemical-engineering"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Distillation_Column_Audit: Evaluate the temperature profile and pressure drop across the trays to ensure high-purity separation of hydrocarbon fractions (e.g., Naphtha, LPG).'
-    - 'Polymer_Molecular_Weight_Check: Analyze the Polydispersity Index (PDI) to ensure the synthesized polymers have uniform chain lengths, which determines mechanical strength.'
-    - 'Catalyst_Activity_Scan: Monitor the conversion rate in the cracking unit to identify catalyst poisoning or deactivation that reduces process yield.'
-Trust Metrics:
+  description: "[Entity] petrochemical-refining-and-polymer-synthesis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Petrochemical Refining and Polymer Synthesis
+# [Entity] petrochemical-refining-and-polymer-synthesis
 
 ## 1. 개요 (Why: 인간적 통찰)
 지하 깊은 곳에서 올라온 끈적한 검은 기름(원유)이 어떻게 우리가 매일 쓰는 투명한 페트병이나 질긴 옷감이 될 수 있을까요? **석유 화학 정제 및 고분자 합성**은 현대 문명의 재료를 만드는 **'거대한 분자 요리'**입니다. 원유를 끓여서 필요한 성분을 골라내고(정제), 그 작은 성분들을 수천 개씩 엮어 거대한 사슬(합성)을 만드는 과정입니다. 우리 주변의 거의 모든 플라스틱과 합성 고무를 탄생시키는 **'현대 연금술의 공장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Cooling Capacity Insufficient - Risk of Exothermic Runaway. Activate Emergency Quench System"
         return "PASS: Stable Thermal Management and Safe Polymerization Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(fractionation_purity_pct=99.9, polymer_pdi=1.2, catalyst_conversion_pct=92.5)
 print(engine.diagnose_petrochem_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_petrochem_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data petrochemical-yield-and-polymer-molecular-weight-v2026`와 연동되어, 전 세계 석유 화학 단지의 가동 데이터를 실시간 분석하고 수율 저하 및 열 폭주 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - nanotechnology-and-smart-functional-materials

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Corporate-Finance-Basics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Corporate-Finance-Basics]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Corporate-Finance-Basics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Corporate-Finance-Basics
+# [Strategy] Corporate-Finance-Basics
 
 ## 1. [왜 배우는가? (Why)]]
 전략이 아무리 멋져도 그것을 실행할 '돈'이 없거나, 투자한 돈보다 버는 돈이 적다면 그 기업은 망합니다. 기업 재무 기초(Corporate-Finance-Basics)는 한정된 자본을 어디에 투자해야 가장 큰 가치를 만들 수 있을지(Investment), 그리고 그 투자금을 어떻게 가장 싼 가격에 구해올지(Financing)를 결정하는 학문입니다. 이를 이해하는 것은 공장의 기계를 한 대 더 들여놓는 결정부터 거대한 공장을 짓는 일까지, 모든 경영 활동을 '수익성'과 '안정성'이라는 객관적 지표로 검증하고 최적의 선택을 내리는 '재무적 근육'을 키우는 것입니다.
@@ -95,5 +85,4 @@ def analyze_investment_feasibility(investment_amount, expected_cash_flows):
 2. 'NPV(순현재가치)' 분석에서 '할인율(Discount Rate)'에 'ESG 리스크'를 가산하는 것이 미래 불확실성을 방어하는 논리는?
 3. '부채의 세금 절감 효과(Tax Shield)'와 '파산 비용' 사이의 균형점을 찾는 것이 왜 '최적 자본 구조'의 핵심인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

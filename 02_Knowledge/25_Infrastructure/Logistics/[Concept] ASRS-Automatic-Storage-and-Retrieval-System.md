@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "LOGISTICS-ASRS-WHS-AUTO-2026-V6"
-  domain: "05_Infrastructure"
+metadata:
+  id: "[[[Concept] ASRS-Automatic-Storage-and-Retrieval-System]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#ASRS'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Concept] ASRS-Automatic-Storage-and-Retrieval-System에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Concept] ASRS-Automatic-Storage-and-Retrieval-System
@@ -106,7 +96,6 @@ class LogisticsAutomationEngine:
 2. **Class-Based Storage** 전략이 **Random Storage** 전략 대비 창고 회전율(Throughput)을 높이는 구체적인 수리적 기전은?
 3. **High-rise Rack** 설계 시 **Vertical Alignment** (수직 정렬) 오차가 발생했을 때, 고속 주행하는 **Stacker Crane**에 미치는 물리적 위협은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/05_Infrastructure/Logistics/Infrastructure overhead-hoist-transport-oht-logic
 - 02_Knowledge/05_Infrastructure/Facility/Infrastructure warehouse-management-system-wms

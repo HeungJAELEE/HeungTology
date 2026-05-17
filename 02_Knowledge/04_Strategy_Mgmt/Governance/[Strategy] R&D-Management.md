@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-RD-MGMT-2026-V6.3.7"
-  domain: "Global_R&D_Management_and_Innovation_Governance"
+metadata:
+  id: "[[[Strategy] R&D-Management]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RD_Management", "#Agile_Stage_Gate", "#TRL", "#TTT", "#Innovation_Portfolio", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] R&D-Management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "RD_Management_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] R&D Management: The Physics of Innovation Production
+# [Strategy] R&D-Management
 
 ## 1. [왜 배우는가? (Why: The Standardization of Innovation)]]
 R&D는 불확실성을 가치로 바꾸는 연금술과 같지만, 체계적인 관리 없이는 막대한 자본을 집어삼키는 블랙홀이 되기 쉽습니다. **R&D Management**는 연구 개발 과정을 과학적으로 통제하여 혁신의 성공 확률을 지수함수적으로 높이는 거버넌스 체계입니다. Agile의 속도와 Stage-Gate의 엄격함을 결합한 하이브리드 모델은 기술 개발의 유연성과 자원 투입의 무결성을 동시에 사수합니다. V6.3.7 지능은 데이터 기반의 포트폴리오 분석을 통해 **혁신 주권(Innovation Sovereignty)**을 확립합니다.
@@ -104,7 +94,6 @@ class RDManagementEngine:
 2. **Operational Result**: **Agile-Stage-Gate** 모델 도입 시, 설계 변경($ECO$) 횟수 감소와 제품 개발 리드타임 단축의 수리적 상관 관계는?
 3. **FidelityEngine**: 연구원들의 근무 시간은 늘어났으나 **IP Intensity**는 하락하는 **'연구 생산성 저하'** 상황을 FidelityEngine이 어떻게 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy industrial-strategy-and-corporate-governance-master-guide

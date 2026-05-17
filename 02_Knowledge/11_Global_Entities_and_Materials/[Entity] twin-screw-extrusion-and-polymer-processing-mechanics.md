@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "twin-screw-extrusion-and-polymer-processing-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] twin-screw-extrusion-and-polymer-processing-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A machine consisting of two intermeshing screws rotating in a barrel to mix, transport, and form polymer materials (Twin-Screw Extrusion) and the study of the physical and chemical changes in polymers during melting, mixing, and shaping under high pressure and temperature (Polymer Processing Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["twin-screw-extrusion", "polymer-processing", "plastics-manufacturing", "compounding", "rheology", "screw-design", "industrial-mixing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Extrusion_Fidelity_Audit: Evaluate the ''Specific Mechanical Energy'' (SME) to identify if the polymer is being over-sheared (degradation) or under-mixed (poor dispersion).'
-    - 'Melt_Stability_Check: Analyze the pressure fluctuation at the die to verify that the screw speed ($N$) and feed rate are perfectly synchronized for a stable output profile.'
-    - 'Mixing_Integrity_Scan: Monitor the torque and melt temperature to ensure that additives or fillers are being uniformly distributed throughout the polymer matrix.'
-Trust Metrics:
+  description: "[Entity] twin-screw-extrusion-and-polymer-processing-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Twin-Screw Extrusion and Polymer Processing Mechanics
+# [Entity] twin-screw-extrusion-and-polymer-processing-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 매일 쓰는 플라스틱 제품이나 특수 복합 소재들이 어떻게 단단한 알갱이에서 부드러운 반죽으로 변해 일정한 모양으로 태어날까요? **이축 압출 및 고분자 가공 역학**은 플라스틱이라는 거친 재료를 뜨거운 열과 강력한 회전력으로 요리하여 새로운 생명을 불어넣는 **'화학적 요리 기계'** 기술입니다. 특히 두 개의 나사(Screw)가 서로 맞물려 돌아가는 이축 압출기는 재료를 단순히 밀어내는 것을 넘어, 비빔밥을 비비듯 철저하게 섞고 화학 반응까지 일으키는 '움직이는 나노 공장'입니다. 현대 소재 문명의 질감을 결정하는 **'고분자 연금술의 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Additive Dispersion - Streaks or clumps detected in output. Increase kneading block intensity in screw design"
         return "PASS: Homogeneous Melt Matrix and Verified Compounding Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(melt_pressure_bar=120.0, screw_torque_pct=65.0, specific_energy_kwh_kg=0.25)
 print(engine.diagnose_extrusion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_extrusion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data extruder-melt-pressure-and-screw-torque-logs-v2026`와 연동되어, 전 세계 화학 및 플라스틱 공장의 압출 데이터를 실시간 분석하고 재료 탄화 및 기계 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

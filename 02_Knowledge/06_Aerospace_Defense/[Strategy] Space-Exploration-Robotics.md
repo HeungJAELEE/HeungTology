@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Space-Exploration-Robotics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Space-Exploration-Robotics]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Space-Exploration-Robotics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Space-Exploration-Robotics
+# [Strategy] Space-Exploration-Robotics
 
 ## 1. [왜 배우는가? (Why)]]
 우주는 인간에게 너무나 가혹한 곳입니다. 숨을 쉴 수도 없고, 방사선은 쏟아지며, 온도는 영하 100도와 영상 100도를 오갑니다. 우주 탐사 로보틱스(Space-Exploration-Robotics)는 이 극한의 장소에서 인간의 눈과 손이 되어주는 기술입니다. 지구에서 명령을 내리면 수십 분의 통신 지연이 발생하기 때문에, 로봇은 스스로 판단하고 움직여야 합니다. 이를 이해하는 것은 지구라는 요람을 벗어나 달, 화성, 그리고 더 먼 우주로 인류의 영역을 확장하는 '우주 시대의 개척 도구'를 설계하는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Planetary Rover Autonomous Path Selection)]
 궤도 지도와 주변 영상을 매칭하여 위치를 보정하고, 장애물을 피해 다음 목표로 이동하는 논리 구조입니다.
 ```python
-# 우주 로보틱스(ISM) 기반 행성 자율 주행 및 위치 보정 논리
 def execute_planetary_navigation(target_waypoint, orbital_map):
     # 1. MGL 기반 자기 위치 추정 (Localization)
     # 로봇의 파노라마 카메라 영상과 궤도 지도(Orbital Map)의 특징점 매칭
@@ -96,5 +85,4 @@ def execute_planetary_navigation(target_waypoint, orbital_map):
 2. '우주 방사선'이 반도체에 미치는 'SEU(Single Event Upset)' 현상을 방어하기 위한 '하드웨어 리던던시(이중화)' 설계의 핵심 논리는?
 3. '달 기지 건설'을 위해 현지 자원(Regolith)을 이용하는 '3D 프린팅 로봇'이 지구에서 자재를 가져가는 방식보다 '지속 가능성' 측면에서 유리한 이유는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

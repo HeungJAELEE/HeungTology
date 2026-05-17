@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "mass-spectrometry-and-molecular-fragmentation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] mass-spectrometry-and-molecular-fragmentation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An analytical technique that measures the mass-to-charge ratio of ions (Mass Spectrometry) and the physical study of breaking chemical bonds to identify molecular structures (Molecular Fragmentation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mass-spectrometry", "molecular-fragmentation", "ionization", "quadrupole", "time-of-flight", "molecular-weight", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Ionization_Fidelity_Audit: Evaluate the ''Ion Source'' stability to identify if high-fidelity ''Fragmentation Overload'' or high-fidelity ''Incomplete Ionization'' is masking the high-fidelity molecular peak.'
-    - 'Mass_Integrity_Check: Analyze the high-fidelity ''Calibration Curve'' using standard high-fidelity markers to ensure the high-fidelity ''Mass Accuracy'' is within parts-per-million (ppm) levels.'
-    - 'Vacuum_Fidelity_Scan: Monitor the high-fidelity ''Mean Free Path'' in the analyzer to verify that high-fidelity ''Ion-Molecule Collisions'' are not causing signal high-fidelity broadening.'
-Trust Metrics:
+  description: "[Entity] mass-spectrometry-and-molecular-fragmentation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧬 Mass Spectrometry and Molecular Fragmentation Physics
+# [Entity] mass-spectrometry-and-molecular-fragmentation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 미지의 가루나 정체 모를 환경 오염 물질이 무엇인지 원자 수준에서 어떻게 알아낼 수 있을까요? **질량 분석 및 분자 파쇄 물리**는 분자를 산산조각 낸 뒤, 그 조각들이 날아가는 속도나 휘어지는 정도를 보고 정체를 밝히는 **'원자의 저울'** 기술입니다. 마치 깨진 도자기 조각을 보고 원래 어떤 모양이었는지 맞히는 고고학자와 같습니다. 극도의 진공 속에서 전기로 분자를 때리고 자기장으로 휘게 하여, 단 하나의 원자 질량 차이까지 읽어내는 **'로렌츠 힘과 비행 시간의 원리를 이용해 물질의 지문을 읽어내는 지능형 분자 분석 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Over-fragmentation - High-fidelity molecular ion peak lost. Impossible to reconstruct high-fidelity parent structure. Reduce high-fidelity collision energy"
         return "PASS: Validated Analytic Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ion_counts=5000, mass_resolution=10000, vacuum_level=1e-7)
 print(engine.diagnose_ms_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_ms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data mass-spectrometry-resolution-and-sensitivity-v2026`와 연동되어, 전 세계 주요 반도체 클린룸의 극미량 오염 분석 및 도핑 검사 시스템의 실시간 데이터를 분석하고 분석 오류 및 성분 미검출 사고 확률을 0.001% 이하로 억제함으로써 지능형 화학 문명의 성분 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - trapped-ion-arrays-and-laser-cooled-logic-states

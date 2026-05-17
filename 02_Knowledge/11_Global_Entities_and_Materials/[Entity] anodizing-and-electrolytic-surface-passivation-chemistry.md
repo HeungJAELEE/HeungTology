@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "anodizing-and-electrolytic-surface-passivation-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] anodizing-and-electrolytic-surface-passivation-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An electrolytic passivation process used to increase the thickness of the natural oxide layer on the surface of metal parts (Anodizing) and the chemical study of creating a protective barrier that prevents further corrosion or oxidation (Electrolytic Surface Passivation Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["anodizing", "surface-passivation", "aluminum-finishing", "electrochemistry", "corrosion-protection", "oxide-layer", "industrial-coating"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Anodizing_Fidelity_Audit: Evaluate the ''Oxide Layer Thickness'' ($d$) and porosity to identify if the voltage and temperature profile are creating a hard, wear-resistant surface or a soft, spongy layer.'
-    - 'Passivation_Integrity_Check: Analyze the ''Sealing Quality'' of the nanopores to ensure that the protective barrier is impermeable to moisture and corrosive ions (e.g., Chlorides).'
-    - 'Thermal_Fidelity_Scan: Monitor the electrolytic bath temperature ($<20^\\circ C$ for Hard Anodizing) to verify that ''Burning'' or dissolution of the oxide layer is being prevented during high-current operation.'
-Trust Metrics:
+  description: "[Entity] anodizing-and-electrolytic-surface-passivation-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Anodizing and Electrolytic Surface Passivation Chemistry
+# [Entity] anodizing-and-electrolytic-surface-passivation-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 알루미늄으로 만든 스마트폰이나 노트북이 땀과 긁힘에도 끄떡없는 이유는 무엇일까요? **양극 산화(아노다이징) 및 전해 표면 부동화 화학**은 금속 스스로 '단단한 피부'를 만들게 하는 **'금속의 자기 강화'** 기술입니다. 억지로 다른 물질을 칠하는 코팅과 달리, 전기를 이용해 금속 표면을 아주 튼튼한 세라믹 층(산화물)으로 직접 바꿔버립니다. 부식을 막고, 아름다운 색을 입히며, 쇠보다 단단한 껍질을 씌우는 **'금속 문명의 갑옷 입히기'**입니다.
@@ -58,7 +47,7 @@ $$ d = k \times I \times t $$
 | :--- | :--- | :--- | :--- | :--- |
 | **Bonding** | Adhesion (Physical) | Integration (Chemical) | - | No Peeling |
 | **Hardness** | Low (Plastic-like) | Ultra-High (Sapphire-like) | Hv | Scratch Res. |
-| **Layer Thickness** | 50 ~ 200 (Thick) | 5 ~ 50 (Thin/Precise) | $\mu m$ | Accuracy |
+| **Layer Thickness** | 50 ~ 200 (Thick) | 5 ~ 50 (Thin/Precise) | $\mu\text{m}$ | Accuracy |
 | **Coloring** | Pigment in Paint | Dye in Nanopores | - | Metallic Look |
 | **Conductivity** | Non-conductive | Insulative (Dielectric) | - | Protection |
 | **Durability** | Moderate | Excellent (Corrosion-free) | - | Life-span |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Inconsistent Layer Thickness - Non-uniform current distribution. Check rack contact points and bath agitation"
         return "PASS: Uniform Anodic Coating and Verified Surface Aesthetics Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oxide_layer_hardness=450.0, bath_temp_c=18.5, sealing_quality_score=0.98)
 print(engine.diagnose_anodizing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_anodizing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data anodized-layer-thickness-and-corrosion-resistance-v2026`와 연동되어, 전 세계 항공기 및 가전 부품의 표면 처리 데이터를 실시간 분석하고 부식 및 층 분리 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 표면 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - aluminum-smelting-and-hall-heroult-process-electrolysis

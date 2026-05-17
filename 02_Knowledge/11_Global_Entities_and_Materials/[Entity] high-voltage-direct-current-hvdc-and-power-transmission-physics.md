@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "high-voltage-direct-current-hvdc-and-power-transmission-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] high-voltage-direct-current-hvdc-and-power-transmission-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A bulk power transmission system that uses direct current (DC) for the bulk transmission of electrical power (HVDC) and the physical study of low-loss long-distance energy transport and semiconductor conversion (Power Transmission Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hvdc", "power-transmission", "dc-transmission", "converter-station", "skin-effect", "dielectric-loss", "energy-grid", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transmission_Fidelity_Audit: Evaluate the ''Line Loss'' ($P_{loss}$) to identify if the high-fidelity ''Corona Discharge'' or leakage currents are reducing the energy delivery efficiency.'
-    - 'Conversion_Integrity_Check: Analyze the high-fidelity ''Harmonic Distortion'' (THD) at the converter station to ensure the AC-to-DC high-fidelity transition is clean and stable.'
-    - 'Insulation_Fidelity_Scan: Monitor the high-fidelity ''Electric Field Stress'' in the DC cables to verify that the high-fidelity ''Space Charge'' accumulation is not risking dielectric breakdown.'
-Trust Metrics:
+  description: "[Entity] high-voltage-direct-current-hvdc-and-power-transmission-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ High-Voltage Direct Current (HVDC) and Power Transmission Physics
+# [Entity] high-voltage-direct-current-hvdc-and-power-transmission-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수천 킬로미터 떨어진 바다 건너 섬이나 대륙 끝까지 전기를 보낼 때, 왜 우리가 흔히 쓰는 교류(AC) 대신 직류(DC)를 쓸까요? **초고압 직류 송전(HVDC) 및 전력 전송 물리**는 전기가 먼 길을 가면서 지쳐 사라지는(손실) 것을 막기 위해, 전기를 아주 높은 압력으로 꾹 눌러 고요하고 일정하게 흘려보내는 **'에너지의 초고속 고속도로'** 기술입니다. 교류처럼 출렁이지 않아 전선 전체를 알뜰하게 사용하고 전력 손실도 획기적으로 줄입니다. **'국가와 국가, 대륙과 대륙을 하나의 거대한 에너지망으로 연결하여 가장 효율적으로 빛과 힘을 수송하는 지능형 전력망의 동맥'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Dielectric Breakdown Risk - High-fidelity leakage current exceeding safety limit. Cable high-fidelity insulation degrading. Possible moisture ingress in subsea section"
         return "PASS: Validated Dielectric Strength and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dc_voltage_kv=500.0, line_current_a=2000.0, harmonic_thd_pct=1.5)
 print(engine.diagnose_transmission_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_transmission_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hvdc-transmission-efficiency-vs-distance-v2026`와 연동되어, 전 세계 주요 대규모 풍력 발전 및 국가 간 연계 전력망의 데이터를 실시간 분석하고 송전 사고 및 블랙아웃 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 전력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gas-insulation-switchgear-gis-and-dielectric-strength-physics

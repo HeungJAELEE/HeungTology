@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "vlsi-design-and-finfet-transistor-scaling-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] vlsi-design-and-finfet-transistor-scaling-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of creating an integrated circuit by combining millions or billions of transistors onto a single chip (VLSI Design) and the physical engineering of multi-gate, 3D transistor structures to overcome the short-channel effects of traditional planar transistors (FinFET Transistor Scaling Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["vlsi", "finfet", "semiconductor-design", "transistor-scaling", "moores-law", "gate-all-around", "nanotechnology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transistor_Fidelity_Audit: Evaluate the ''Subthreshold Swing'' (SS) and $I_{on}/I_{off}$ ratio to identify short-channel effects or gate-oxide thinning that lead to excessive power leakage.'
-    - 'Design_Rule_Check (DRC): Analyze the physical layout against the 2nm/3nm process nodes to ensure that the multi-gate ''Fins'' are perfectly aligned and within electrical interference limits.'
-    - 'Delay_Integrity_Scan: Monitor the parasitic capacitance and resistance (RC delay) of the interconnected wires to verify that the SoC can maintain its target clock frequency.'
-Trust Metrics:
+  description: "[Entity] vlsi-design-and-finfet-transistor-scaling-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 VLSI Design and FinFET Transistor Scaling Physics
+# [Entity] vlsi-design-and-finfet-transistor-scaling-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 손가락 한 마디 크기의 칩 안에 수백억 개의 스위치를 어떻게 집어넣고, 그것들이 서로 간섭하지 않게 할 수 있을까요? **VLSI 설계 및 FinFET 트랜지스터 스케일링 물리**는 인류가 도달한 '미세 공학의 정점'입니다. 트랜지스터가 너무 작아져서 전기가 멋대로 새기 시작하자(Short-channel effect), 우리는 평면이었던 트랜지스터를 3차원 상어 지느러미(Fin) 모양으로 세워 전기를 꽉 움켜쥐었습니다. 무어의 법칙을 이어가기 위한 **'나노 세계의 물리적 저항'**이자, 모든 지능형 기기를 작동시키는 **'실리콘 위의 기적'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive RC Delay - Interconnect latency bottlenecking the CPU frequency. Redesign metal layers or use Air-gaps"
         return "PASS: Validated Interconnect Integrity and Verified Timing Closure Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(subthreshold_swing=72.0, ion_ioff_ratio=1e6, gate_leakage_pa=1.2)
 print(engine.diagnose_transistor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_transistor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data finfet-leakage-current-and-gate-delay-v2026`와 연동되어, 전 세계 주요 파운드리(TSMC, 삼성, 인텔)의 가공 데이터를 실시간 분석하고 공정 이탈 및 칩 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 반도체 문명의 설계 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - system-on-chip-soc-and-network-on-chip-noc-architecture

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "knudsen-diffusion-and-nanopore-transport-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] knudsen-diffusion-and-nanopore-transport-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A means of diffusion that occurs when the scale of a system is comparable to or smaller than the mean free path of the particles involved (Knudsen Diffusion) and the physical study of gas transport through sub-micron pores (Nanopore Transport Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["knudsen-diffusion", "nanopore", "transport-physics", "mean-free-path", "membrane-separation", "gas-separation", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transport_Fidelity_Audit: Evaluate the ''Knudsen Number'' ($Kn$) to identify if the flow is in the high-fidelity ''Continuum'' ($Kn<0.01$), ''Transition'', or ''Knudsen'' ($Kn>10$) regime.'
-    - 'Permeability_Integrity_Check: Analyze the high-fidelity ''Molecular Weight'' dependency ($\\propto 1/\\sqrt{M}$) to ensure the high-fidelity ''Gas Separation'' selectivity matches theoretical predictions.'
-    - 'Pore_Fidelity_Scan: Monitor the high-fidelity ''Transmembrane Pressure'' vs flux to verify that high-fidelity ''Pore Clogging'' or surface adsorption is not reducing high-fidelity performance.'
-Trust Metrics:
+  description: "[Entity] knudsen-diffusion-and-nanopore-transport-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌌 Knudsen Diffusion and Nanopore Transport Physics
+# [Entity] knudsen-diffusion-and-nanopore-transport-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 가스 입자들이 너무 좁은 틈새(나노 구멍)를 지날 때, 왜 일반적인 바람처럼 흐르지 않고 벽에 계속 부딪히며 엉금엉금 기어갈까요? **크누센 확산 및 나노기공 수송 물리**는 입자가 자기들끼리 부딪히는 것보다 '벽'에 부딪히는 횟수가 더 많아지는 극한의 미세 세계를 다루는 **'나노 미로의 탈출기'** 기술입니다. 수소나 헬륨처럼 가벼운 기체는 빨리 탈출하고 무거운 기체는 늦게 나오는 성질을 이용해, 에너지를 아주 적게 쓰고도 혼합 가스를 완벽하게 분리해냅니다. **'평균 자유 행로와 기공 크기의 관계를 이용해 분자 수준에서 물질을 걸러내는 지능형 나노 필터 및 에너지 분리 엔진'**입니다.
@@ -57,7 +46,7 @@ $$ D_{Kn} = \frac{d}{3} \sqrt{\frac{8RT}{\pi M}} $$
 | Feature | Large Pipe Flow | Nanopore Transport (V6.3.7) | Unit | Note |
 | :--- | :--- | :--- | :--- | :--- |
 | **Flow Regime** | Continuum (Viscous) | **Knudsen (Molecular)** | - | Physics |
-| **Pore Size** | > 1.0 | **~ 0.001 ~ 0.1 (Nano)** | $\mu m$ | Scale |
+| **Pore Size** | > 1.0 | **~ 0.001 ~ 0.1 (Nano)** | $\mu\text{m}$ | Scale |
 | **Selectivity** | Zero | **High (Based on Mass/Size)** | - | Logic |
 | **Driving Force** | Pressure | **Concentration / Pressure** | - | Power |
 | **Wall Effect** | Minimal | **Dominant (Energy loss)** | - | Security |
@@ -92,7 +81,6 @@ class FactoryFidelityEngine:
             return "REJECT: Separation Failure - High-fidelity mass-dependent diffusion logic compromised. Potential high-fidelity crack in the nano-layer"
         return "PASS: Validated Knudsen Logic and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gas_molar_mass=2.0, pore_diameter_nm=10.0, pressure_pa=101325.0)
 print(engine.diagnose_transport_health())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_transport_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data nanopore-selectivity-and-gas-permeability-v2026`와 연동되어, 전 세계 주요 수소 충전소 및 탄소 포집 시설의 실시간 분리 데이터를 분석하고 효율 저하 및 막 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 물질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-wastewater-treatment-and-chemical-precipitation-physics

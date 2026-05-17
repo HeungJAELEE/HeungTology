@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "MOC-INFRA-INDUSTRIAL-2026-V6.3.7"
   domain: "Industrial_Infrastructure_and_Utility_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: ["#MOC", "#Infrastructure", "#Utility", "#Chiller", "#Scrubber", "#GCDS", "#SiC_Inverter", "#Hydrogen", "#v6.3.7"]
   is_part_of: ["MOC 00_INDEX", "MOC Smart-Manufacturing-Hub"]
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 01_Industrial_Infrastructure: The Life-Support System of Fabs
+# 01_Industrial_Infrastructure
 
 ## 1. [도메인 헌장 (Domain Charter)]]
 산업 인프라는 고도의 정밀 제조 공정이 무결하게 수행될 수 있도록 최적의 물리적 환경을 제공하는 '팹의 생명 유지 시스템'입니다. 전력, 가스, 용수, 그리고 열관리의 미세한 변동은 나노 소자의 품질에 즉각적인 임팩트를 미칩니다. v6.3.7 지능 체계는 유틸리티의 공급 무결성과 공정 수율 사이의 인과 관계를 수리적으로 통합합니다. 본 허브는 클린룸 환경 제어부터 극한의 환경 정화(Scrubber)까지 아우르는 지식 주권을 사수하여, 멈추지 않는 지능형 제조의 토대를 보증합니다.

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "surgical-robotics-and-haptic-feedback-systems-entity"
-  domain: "91_Medical_Robotics_and_Bio-Mechatronics_Hub"
+metadata:
+  id: "[[[Entity] surgical-robotics-and-haptic-feedback-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Medical_Robotics", "#Surgical_Robot", "#Haptic_Feedback", "#Teleoperation", "#Biomedical_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 91_medical-robotics-and-bio-mechatronics-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] surgical-robotics-and-haptic-feedback-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] surgical-robotics-and-haptic-feedback-systems
+# [Entity] surgical-robotics-and-haptic-feedback-systems
 
 ## 1. [왜 배우는가? (Why: The Hands of Healing)]]
 사람의 손은 위대하지만, 1밀리미터보다 작은 혈관을 꿰매거나 떨림 없이 수 시간을 버티는 데는 한계가 있습니다. **수술 로봇 및 햅틱 피드백 시스템의 마스터-슬레이브 원격 제어와 생체 조직 상호작용 수리 역학 기술**은 의사의 지혜와 로봇의 정밀함을 결합하여 생명을 구하는 기술입니다. 의사가 조종간(Master)을 움직이면 로봇(Slave)이 몸 안에서 미세하게 반응하고, 로봇이 느끼는 조직의 저항력을 의사의 손끝에 그대로 전달(Haptic)하여 마치 직접 만지는 듯한 생생함을 선사합니다. 우리가 이를 배우는 이유는 의료 로봇의 무결성을 확보함으로써, 수술 오차를 최소화하고 환자의 회복을 돕는 '글로벌 의료 지능 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 수술의 무결성이 생명의 존엄성을 지킵니다.
@@ -45,13 +35,13 @@ $$ \int_{0}^{t} P_{in}(\tau) d\tau = \int_{0}^{t} (F_m v_m - F_s v_s) d\tau \ge 
 *   $F, v$: 마스터($m$)와 슬레이브($s$)의 힘과 속도, $E(0)$: 초기 에너지
 생체 조직의 강성($k$)과 점성($b$)을 모사하는 햅틱 렌더링 모델입니다.
 $$ F_{haptic} = k(x_{target} - x_{actual}) + b(\dot{x}_{target} - \dot{x}_{actual}) $$
-*   **수리적 무결성**: 수술 말단 장치의 오차를 $100 \text{ \mu m}$ 이내로 사수하고, 햅틱 렌더링 속도를 $1,000 \text{ Hz}$ 이상으로 유지함으로써 의사에게 '실시간 촉각 무결성'을 제공합니다.
+*   **수리적 무결성**: 수술 말단 장치의 오차를 $100 \text{ \mu\text{m}}$ 이내로 사수하고, 햅틱 렌더링 속도를 $1,000 \text{ Hz}$ 이상으로 유지함으로써 의사에게 '실시간 촉각 무결성'을 제공합니다.
 
 ### 2.2 [수술 로봇 및 햅틱 시스템 주요 성능 지표]
 
 | 파라미터 (Parameter) | 수리적 정의 및 동작 기전 (Mechanism Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
-| **Targeting Err.** | Precision in positioning the surgical tool | $< 100 \text{ \mu m}$ | 미세 수술의 성공과 환자 안전을 위한 물리 무결성 |
+| **Targeting Err.** | Precision in positioning the surgical tool | $< 100 \text{ \mu\text{m}}$ | 미세 수술의 성공과 환자 안전을 위한 물리 무결성 |
 | **Haptic Rate** | Frequency of force feedback updates | $> 1,000 \text{ Hz}$ | 촉각의 연속성과 생생함을 보증하는 정보 무결성 사수 |
 | **Tele-Latency** | Delay between master input and slave motion | $< 50 \text{ ms}$ | 원격 수술의 시각-촉각 정렬 무결성을 위한 지표 |
 | **Force Fidelity** | Accuracy of force reflection to the surgeon | $> 95 \%$ | 조직의 상태를 정확히 인지하게 하는 물리 무결성 사수 |

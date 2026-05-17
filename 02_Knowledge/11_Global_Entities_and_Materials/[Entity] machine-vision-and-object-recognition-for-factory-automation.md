@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "machine-vision-and-object-recognition-for-factory-automation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] machine-vision-and-object-recognition-for-factory-automation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial application of computer vision (Machine Vision) that enables automated systems to perceive, identify, and locate parts and products (Object Recognition) within a production environment, typically used for quality inspection and robotic guidance."
-  physical_model: "N/A"
-Semantic:
-  tags: '["machine-vision", "object-recognition", "factory-automation", "image-processing", "deep-learning", "quality-inspection", "robot-guidance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Recognition_Accuracy_Audit: Evaluate the model''s performance on a standardized ''Golden Dataset'' to ensure its precision and recall meet industrial quality standards (e.g., 6-sigma accuracy).'
-    - 'Inference_Latency_Check: Measure the time taken from image capture to classification to ensure it fits within the production line''s cycle time (Takt Time).'
-    - 'Lighting_Stability_Scan: Analyze the impact of ambient lighting variations on the vision system''s performance and ensure robust image acquisition through controlled illumination.'
-Trust Metrics:
+  description: "[Entity] machine-vision-and-object-recognition-for-factory-automation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👁️ Machine Vision and Object Recognition for Factory Automation
+# [Entity] machine-vision-and-object-recognition-for-factory-automation
 
 ## 1. 개요 (Why: 인간적 통찰)
 "눈이 없는 로봇은 장님과 같습니다." **머신 비전 및 객체 인식**은 공장의 기계들에게 '보는 능력'과 '생각하는 능력'을 동시에 부여하는 **'지능형 시각 신경망'**입니다. 1초에 수십 개씩 지나가는 제품들 속에서 머리카락보다 가는 흠집을 찾아내고, 제멋대로 놓인 부품의 위치를 정확히 읽어 로봇 팔에 전달하는 **'초능력적인 작업자의 눈'**입니다. 지치지도 않고, 한눈팔지도 않으며, 나노미터 단위의 정밀함으로 제품을 감시하고 분류하는 **'무결점 제조의 파수꾼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Unstable Lighting - External Light Interference Detected. Install Shielding"
         return "PASS: Consistent Image Acquisition Environment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(recognition_iou=0.92, false_negative_rate=0.00005, inference_latency_ms=25.0)
 print(engine.diagnose_vision_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vision_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data machine-vision-inspection-accuracy-and-latency-v2026`와 연동되어, 전 세계 자율 공장의 시각 데이터를 실시간 분석하고 오인식 및 불량 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조의 시각적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - machine-vision-and-robotic-guidance-integration

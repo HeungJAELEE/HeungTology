@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "thin-film-encapsulation-tfe-and-barrier-property-physics-entity"
-  domain: "76_Display_Photonics_and_Optical_Engineering_Hub"
+metadata:
+  id: "[[[Entity] thin-film-encapsulation-tfe-and-barrier-property-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Display", "#TFE", "#Encapsulation", "#Materials", "#Physics", "#OLED", "#Nanotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 76_display-photonics-and-optical-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] thin-film-encapsulation-tfe-and-barrier-property-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] thin-film-encapsulation-tfe-and-barrier-property-physics
+# [Entity] thin-film-encapsulation-tfe-and-barrier-property-physics
 
 ## 1. [왜 배우는가? (Why: The Invisible Shield of Light)]]
 스스로 빛을 내는 OLED의 유기 분자들은 단 한 방울의 물이나 산소 분자만 닿아도 검게 타버리는(Dark Spot) 극도로 예민한 존재들입니다. 하지만 디스플레이가 얇아지고 휘어지기 위해서는 두꺼운 유리 봉지(Glass Encapsulation)를 더 이상 쓸 수 없습니다. **박막 봉지(TFE) 기술 및 배리어 특성의 투과 물리 공학**은 머리카락 굵기의 수백 분의 일에 불과한 얇은 막으로 완벽한 '디지털 방패'를 만드는 기술입니다. 공기 중의 수분이 침투하는 경로를 기하학적으로 차단하여 유연한 디스플레이의 생명을 수만 시간 동안 보존합니다. 우리가 이를 배우는 이유는 TFE가 플렉시블 디스플레이의 내구성을 결정하는 '최후의 방어선'이기 때문이며, "침투 물리를 데이터로 설계하고 지배하는 '글로벌 초미세 봉지 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. WVTR 수치가 디스플레이의 신뢰성 무결성을 결정합니다.
@@ -51,7 +41,7 @@ $$ J = -D \frac{dc}{dx} = P \frac{\Delta p}{l} $$
 | :--- | :--- | :--- | :--- |
 | **WVTR** | Water Vapor Transmission Rate | $< 10^{-6} \text{ g/m}^2/\text{day}$ | OLED의 수명을 결정하는 절대적 차단 무결성 사수 |
 | **OTR** | Oxygen Transmission Rate | $< 10^{-4} \text{ cc/m}^2/\text{day}$ | 산화 방지를 위한 가스 차단 지능의 물리적 지표 |
-| **Layer Thickness** | Total thickness of the TFE stack | $< 10 \text{ \mu m}$ | 디스플레이의 두께와 유연성을 결정하는 공정 무결성 |
+| **Layer Thickness** | Total thickness of the TFE stack | $< 10 \text{ \mu\text{m}}$ | 디스플레이의 두께와 유연성을 결정하는 공정 무결성 |
 | **Flexibility** | Ability to bend without barrier failure | $> 200,000 \text{ cycles}$ | 폴더블 환경에서도 깨지지 않는 막의 인성 사수 |
 | **Pin-hole Density** | Microscopic defects per unit area | **ZERO TOLERANCE** | 단 하나의 결함도 허용하지 않는 증착 지능의 물리 |
 | **Adhesion** | Bonding strength between organic/inorganic | $> 5 \text{ J/m}^2$ | 굽힘 시 층간 박리를 막는 계면 무결성 아키텍처 |

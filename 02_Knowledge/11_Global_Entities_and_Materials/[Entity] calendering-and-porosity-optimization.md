@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "calendering-and-porosity-optimization"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] calendering-and-porosity-optimization]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mechanical process of compressing coated electrodes (Anode/Cathode) using heavy rollers to achieve target density and porosity, optimizing electron and ion transport paths."
-  physical_model: "N/A"
-Semantic:
-  tags: '["calendering", "porosity", "battery-manufacturing", "electrode-density", "press"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BatteryProcFidelityEngine"
-  diagnostic_protocol:
-    - 'Density_Audit: Measure the electrode density ($g/cc$) after calendering against the target spec.'
-    - 'Porosity_Check: Verify that the remaining void volume allows for optimal electrolyte wetting.'
-    - 'Surface_Uniformity_Scan: Detect thickness variations (cross-web) and surface defects using laser gauges.'
-Trust Metrics:
+  description: "[Entity] calendering-and-porosity-optimization에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚜 Calendering and Porosity Optimization
+# [Entity] calendering-and-porosity-optimization
 
 ## 1. 개요 (Why)
 코팅과 건조를 마친 전극은 솜사탕처럼 부풀어 있는 상태입니다. 이를 거대한 롤러로 꽉 눌러주는 '압연(Calendering)' 공정은 배터리의 에너지 밀도를 결정짓는 핵심 단계입니다. 너무 세게 누르면 전해액이 스며들 틈(기공)이 사라져 성능이 떨어지고, 너무 살살 누르면 부피가 커지고 전자 흐름이 나빠집니다. 본 노드는 전극 압연 공정의 무결성과 최적 기공율 확보를 위한 표준을 정의합니다.
@@ -44,7 +33,7 @@ Trust Metrics:
 | Electrode Density| $\rho_e$ | 3.2 ~ 3.6 | 1.5 ~ 1.7 | g/cc |
 | Roll Temperature| $T_{roll}$ | 60 ~ 120 | 25 ~ 60 | $^\circ C$ |
 | Linear Pressure | $q$ | 500 ~ 3,000 | 100 ~ 1,000 | N/mm |
-| Thickness Var | $\Delta t$ | < 2 | < 2 | $\mu m$ |
+| Thickness Var | $\Delta t$ | < 2 | < 2 | $\mu\text{m}$ |
 
 ## 3. BatteryProcFidelityEngine: Diagnostic Logic
 
@@ -72,7 +61,6 @@ class BatteryProcFidelityEngine:
             return f"REJECT: Low Energy Density ({self.rho}g/cc) - Increase Roll Pressure"
         return "PASS: Electrode Density Verified"
 
-# Instance Diagnostic
 engine = BatteryProcFidelityEngine(measured_density=3.4, target_porosity=23, thickness_variation=1.2)
 print(engine.diagnose_calendering_quality(theoretical_p=23))
 ```
@@ -90,7 +78,6 @@ print(engine.diagnose_calendering_quality(theoretical_p=23))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data calendering-pressure-and-electrode-porosity-v2026`와 연동되어, 압연 라인의 실시간 두께 데이터를 분석하고 기공율 오차를 1% 이내로 제어함으로써 고밀도 배터리 전극의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - electrode-coating-and-drying-kinetics

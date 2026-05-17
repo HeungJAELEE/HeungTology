@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iron-and-steel-making-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iron-and-steel-making-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical and thermal processes involved in extracting iron from ore (Iron Making) and refining it by controlling carbon and impurity levels to produce various grades of steel (Steel Making)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metallurgy", "steel-making", "blast-furnace", "eaf", "reduction", "oxidation", "carbon-content", "industrial-materials"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Slag_Chemistry_Audit: Monitor the basicity ($CaO/SiO_2$) of the slag to ensure effective removal of sulfur and phosphorus impurities.'
-    - 'Furnace_Thermal_Check: Evaluate the temperature distribution within the blast furnace or EAF to prevent refractory lining erosion and optimize energy consumption.'
-    - 'Steel_Grade_Purity_Scan: Analyze the final carbon and alloying element concentrations to verify the steel meets the specific mechanical requirements (e.g., strength, ductility).'
-Trust Metrics:
+  description: "[Entity] iron-and-steel-making-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Iron and Steel Making Metallurgy
+# [Entity] iron-and-steel-making-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철은 인류 문명의 뼈대입니다. 우리가 사는 건물, 건너는 다리, 타는 자동차와 배까지 강철이 없는 세상은 상상조차 할 수 없습니다. **제선 및 제강 금속 공학**은 붉은 돌덩이(철광석)에 뜨거운 숨결을 불어넣어 단단한 금속으로 부활시키고, 탄소를 빼고 빼서 질긴 강철로 다듬는 **'불의 연금술'**입니다. 거대한 용광로 속에서 벌어지는 원자들의 격렬한 교환을 제어하여, 인류가 가장 많이 쓰고 가장 의지하는 **'문명의 합금'**을 만드는 숭고한 과정입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Refractory Thinning - High Risk of Breakout. Emergency Shutdown Required"
         return "PASS: Furnace Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tapping_temp_c=1620, carbon_precision_pct=0.01, slag_basicity=2.8)
 print(engine.diagnose_steel_health(target_grade="High-Strength-Low-Alloy"))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_steel_health(target_grade="High-Strength-Low-Alloy"))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data steel-production-purity-and-carbon-emissions-v2026`와 연동되어, 전 세계 제철소의 성분 데이터를 실시간 분석하고 불량 강재 유통 및 환경 규제 위반 사고 확률을 0.001% 이하로 억제함으로써 인류 문명 뼈대의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - iron-carbon-phase-diagram-and-steel-microstructures

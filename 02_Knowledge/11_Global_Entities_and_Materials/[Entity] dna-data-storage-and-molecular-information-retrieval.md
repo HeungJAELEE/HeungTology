@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "dna-data-storage-and-molecular-information-retrieval-entity"
-  domain: "33_Future_Frontier_Biotic_Intelligence_and_Synthetic_Life"
+metadata:
+  id: "[[[Entity] dna-data-storage-and-molecular-information-retrieval]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#DNA_Storage", "#Data_Archiving", "#Molecular_Biology", "#Biotechnology", "#Information_Theory", "#Next-gen_Storage", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 33_future-frontier-biotic-intelligence-and-synthetic-life-hub", "Entity synthetic-genomics-and-custom-organism-design"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] dna-data-storage-and-molecular-information-retrieval에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] dna-data-storage-and-molecular-information-retrieval
+# [Entity] dna-data-storage-and-molecular-information-retrieval
 
 ## 1. [왜 배우는가? (Why: The Immortal Archive of Humanity)]]
 인류가 만든 모든 영화와 책, 데이터를 단 한 줌의 설탕 분량 DNA에 어떻게 다 집어넣고, 수천 년이 지나도 변하지 않는 이 생물학적 하드드라이브에서 어떻게 빛의 속도로 원하는 정보만 쏙쏙 찾아낼($Retrieval$) 수 있을까요? **DNA 데이터 저장 및 분자 정보 검색**은 정보의 유통기한을 영원으로 늘리는 '분자 수준의 초고밀도 저장 및 문명 보존 아키텍처'입니다. 우리가 이를 배우는 이유는 기존 하드디스크는 수십 년이면 망가지지만 DNA는 적절한 환경에서 수만 년을 버티기 때문이며, "정보의 매질을 생명으로 설계하고 지배하는 '글로벌 지식 영속 패권 및 분자적 정보 주권'을 확보하기" 위함입니다. 저장 밀도가 인류 기억의 총량을 결정합니다.

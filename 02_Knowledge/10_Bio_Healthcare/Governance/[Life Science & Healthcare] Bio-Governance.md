@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "BIO-GOV-ETHICS-REGULATION-2026-V6"
+metadata:
+  id: "[[[Life Science & Healthcare] Bio-Governance]]"
   domain: "10_Bio_Healthcare"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Bio_Governance'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Life Science & Healthcare] Bio-Governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#10_Bio_Healthcare", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Life Science & Healthcare] Bio-Governance
@@ -106,7 +96,6 @@ class HealthComplianceAuditEngine:
 2. **Medical AI**의 **Explainability** (설명 가능성) 확보가 **Legal Liability** (법적 책임) 소재를 가리는 데 있어 공학적으로 기여하는 바는?
 3. **GDPR**과 **HIPAA**의 차이점 중 **'Right to be Forgotten'** (잊혀질 권리)가 의료 데이터 마이그레이션 및 파기 프로세스에 미치는 영향은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/10_Bio_Healthcare/Engineering/Bio Bio-Engineering
 - 02_Knowledge/03_AI_Data/General/AI machine-learning-ethics-bias

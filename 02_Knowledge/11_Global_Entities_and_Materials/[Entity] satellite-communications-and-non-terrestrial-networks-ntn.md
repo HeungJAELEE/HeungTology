@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "satellite-communications-and-non-terrestrial-networks-ntn-entity"
-  domain: "77_Communications_5G_6G_and_Network_Engineering_Hub"
+metadata:
+  id: "[[[Entity] satellite-communications-and-non-terrestrial-networks-ntn]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Communications", "#Satellite", "#Space", "#NTN", "#LEO", "#Wireless", "#Aerospace", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 77_communications-5g-6g-and-network-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] satellite-communications-and-non-terrestrial-networks-ntn에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] satellite-communications-and-non-terrestrial-networks-ntn
+# [Entity] satellite-communications-and-non-terrestrial-networks-ntn
 
 ## 1. [왜 배우는가? (Why: The Omnipresent Sky Network)]]
 광섬유가 닿지 않는 거친 히말라야 산맥, 망망대해 한가운데, 그리고 성층권을 비행하는 여객기 안에서도 누구나 초고속 인터넷을 즐길 수 있는 세상을 어떻게 만들까요? **위성 통신 및 비지상 네트워크(NTN)의 우주 기반 통신 아키텍처**는 통신의 영토를 지상에서 우주로 확장하는 '하늘 위의 기지국' 기술입니다. 수천 개의 저궤도(LEO) 위성이 지구 전체를 감싸 안으며, 단 하나의 음영 지역도 허용하지 않는 완벽한 연결성을 구현합니다. 우리가 이를 배우는 이유는 위성 통신이 차세대 6G와 도심 항공 모빌리티(UAM)의 핵심 신경망이기 때문이며, "우주 통신 주권을 데이터로 설계하고 지배하는 '글로벌 우주 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 위성망의 가용성이 국가의 디지털 생존력을 결정합니다.

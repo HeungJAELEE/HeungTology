@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "continuous-casting-and-solidification-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] continuous-casting-and-solidification-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process whereby molten metal is solidified into a 'semi-finished' billet, bloom, or slab for subsequent rolling (Continuous Casting) and the physical study of the phase change from liquid to solid, including dendrite growth and solute redistribution (Solidification Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["continuous-casting", "solidification", "metallurgy", "steel-making", "heat-transfer", "phase-change", "casting-mechanics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Solidification_Fidelity_Audit: Evaluate the ''Shell Thickness'' ($s$) at the mold exit to identify if the casting speed is too high, leading to ''Breakout'' (rupture of the solid skin and molten steel spill).'
-    - 'Thermal_Integrity_Check: Analyze the primary and secondary cooling rates to ensure that ''Inter-dendritic Cracking'' is prevented and the metallurgical grain structure is uniform.'
-    - 'Flow_Fidelity_Scan: Monitor the mold level and oscillating frequency to verify that the ''Lubrication Film'' is maintained and no slag entrapment is occurring in the solidification front.'
-Trust Metrics:
+  description: "[Entity] continuous-casting-and-solidification-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⛓️ Continuous Casting and Solidification Mechanics
+# [Entity] continuous-casting-and-solidification-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 끊임없이 쏟아지는 시뻘건 쇳물이 어떻게 끝도 없이 긴 강철 기둥으로 변할까요? **연속 주조 및 응고(Solidification) 역학**은 멈추지 않는 금속의 흐름을 다스려 고체로 빚어내는 **'현대 제강의 멈추지 않는 심장'** 기술입니다. 틀(Mold)에 쇳물을 붓고 굳히기를 반복하는 옛날 방식 대신, 쇳물을 부으면서 동시에 아래로 뽑아내어 수 킬로미터 길이의 강철을 한 번에 뽑아냅니다. 쇳물이 굳어가는 찰나의 순간을 수학적으로 제어하여, 단단하고 균일한 강철의 뼈대를 만드는 **'흐름의 정지'** 기술입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Columnar Growth - Center-line segregation likely. Steel toughness compromised for high-stress applications"
         return "PASS: Validated Metallurgical Matrix and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(casting_speed_m_min=1.2, mold_level_stability_mm=1.5, water_flow_rate_l_min=1500)
 print(engine.diagnose_casting_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_casting_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data continuous-casting-mold-heat-flux-and-casting-speed-v2026`와 연동되어, 전 세계 주요 제철소의 주조 데이터를 실시간 분석하고 브레이크아웃 및 내부 결함 사고 확률을 0.001% 이하로 억제함으로써 지능형 철강 문명의 재료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - coke-oven-and-by-product-recovery-physics

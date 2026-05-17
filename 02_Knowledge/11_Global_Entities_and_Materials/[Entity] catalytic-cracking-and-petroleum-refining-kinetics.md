@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "catalytic-cracking-and-petroleum-refining-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] catalytic-cracking-and-petroleum-refining-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical process used in petroleum refineries to convert high-molecular-weight hydrocarbon fractions of petroleum crude oils into more valuable products such as gasoline and olefinic gases (Catalytic Cracking) and the study of the complex reaction rates and mechanisms facilitated by solid acid catalysts like zeolites (Petroleum Refining Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["catalytic-cracking", "petroleum-refining", "fcc", "zeolite-catalyst", "gasoline-production", "chemical-kinetics", "hydrocarbon-cracking"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Refining_Fidelity_Audit: Evaluate the ''Conversion Rate'' and product selectivity (e.g., Gasoline vs. LCO) to identify if the riser temperature and catalyst-to-oil (C/O) ratio are optimized.'
-    - 'Catalyst_Integrity_Check: Analyze the ''Coke on Regenerated Catalyst'' (CRC) to ensure the regenerator is effectively burning off carbon deposits without sintering the zeolite active sites.'
-    - 'Hydrodynamic_Fidelity_Scan: Monitor the pressure balance between the reactor and regenerator to verify that ''Catalyst Circulation'' is stable and preventing reversal of hazardous gases.'
-Trust Metrics:
+  description: "[Entity] catalytic-cracking-and-petroleum-refining-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛢️ Catalytic Cracking and Petroleum Refining Kinetics
+# [Entity] catalytic-cracking-and-petroleum-refining-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 값싼 벙커씨유를 어떻게 비싸고 깨끗한 휘발유로 바꿀 수 있을까요? **촉매 분해(Catalytic Cracking) 및 석유 정제 역학**은 거대한 분자를 조각내어 에너지를 재창조하는 **'정유 공장의 마법'** 기술입니다. 끈적거리는 중질유를 촉매라는 '가위'가 들어있는 뜨거운 소용돌이 속에 집어넣으면, 단 몇 초 만에 가볍고 강력한 연료로 변신합니다. 전 세계 자동차와 비행기를 움직이는 연료를 가장 경제적으로 뽑아내는 **'현대 에너지 산업의 연금술'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Catalyst Regeneration - High CO in flue gas. Potential for 'Afterburn' damage. Increase air blower capacity"
         return "PASS: Clean Catalyst Regeneration and Verified Thermal Balance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(conversion_pct=75.5, gasoline_selectivity_pct=52.0, catalyst_activity_index=0.85)
 print(engine.diagnose_refining_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_refining_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fcc-yield-and-catalyst-regeneration-cycles-v2026`와 연동되어, 전 세계 주요 정유 플랜트의 실시간 가동 데이터를 분석하고 촉매 오염 및 폭발 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 연료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - catalytic-converter-and-exhaust-gas-purification-chemistry

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-STAT-RISK-METRICS-2026-V6"
+metadata:
+  id: "[[[AI] relative-risk-rr-and-odds-ratio-or]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Biostatistics'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] relative-risk-rr-and-odds-ratio-or에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] relative-risk-rr-and-odds-ratio-or
@@ -108,7 +98,6 @@ class BiostatisticalRiskEngine:
 2. **Odds Ratio** ($OR$)가 $1.0$이라는 것은 노출과 사건 발생 사이에 어떤 관계가 있음을 의미하는가?
 3. 사건 발생률이 높을 때(예: $50\%$) **OR**이 **RR**을 과대평가(Overestimate)하게 되는 수리적 기전은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI hypothesis-testing-and-p-value
 - 02_Knowledge/03_AI_Data/General/AI logistic-regression-mechanics

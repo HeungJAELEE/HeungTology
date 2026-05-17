@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chilled-water-system-and-thermal-storage-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chilled-water-system-and-thermal-storage-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A centralized cooling system that circulates cold water to cool buildings or industrial processes (Chilled Water System) and the logic of storing cooling energy in the form of ice or chilled water during off-peak hours to reduce energy costs and peak electrical demand (Thermal Storage Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["chilled-water", "thermal-storage", "hvac", "district-cooling", "energy-efficiency", "chiller-plant", "load-shifting"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'System_Fidelity_Audit: Evaluate the ''Delta T'' ($T_{return} - T_{supply}$) to identify if ''Low Delta T Syndrome'' is occurring, which leads to excessive pumping energy and reduced chiller capacity.'
-    - 'Storage_Integrity_Check: Analyze the ice formation/melting rate in the thermal storage tank to ensure the ''Cooling Reserve'' is sufficient for the next day''s peak load.'
-    - 'Efficiency_Fidelity_Scan: Monitor the chiller ''Coefficient of Performance'' (COP) across varying load levels to verify that the plant is operating at its thermodynamic sweet spot.'
-Trust Metrics:
+  description: "[Entity] chilled-water-system-and-thermal-storage-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ❄️ Chilled Water System and Thermal Storage Logic
+# [Entity] chilled-water-system-and-thermal-storage-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 빌딩이나 데이터 센터가 한여름 낮의 살인적인 더위에도 시원함을 유지하는 비결은 무엇일까요? **냉수 시스템 및 축냉(Thermal Storage) 로직**은 건물의 혈관인 배관 속에 차가운 물을 순환시켜 열을 씻어내는 **'도시의 거대한 냉각기'** 기술입니다. 특히 전기료가 싼 밤에 미리 얼음을 얼려두었다가 낮에 녹여 쓰는 '축냉' 기술은, 에너지 낭비를 줄이고 전력망의 과부하를 막는 **'에너지 시간 여행'** 전략입니다. 지구를 지키면서 시원함을 보장하는 **'지능형 에너지 저수지'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Incomplete Ice Formation - Dead zones in the storage tank. Reduced thermal capacity for the upcoming discharge cycle"
         return "PASS: Homogeneous Ice Matrix and Verified Storage Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(chilled_water_delta_t=6.5, plant_cop=6.2, storage_reserve_pct=85.0)
 print(engine.diagnose_plant_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_plant_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data chilled-water-delta-t-and-thermal-storage-efficiency-v2026`와 연동되어, 전 세계 주요 랜드마크 빌딩 및 스마트 팩토리의 냉수 플랜트 데이터를 실시간 분석하고 에너지 낭비 및 냉방 중단 사고 확률을 0.001% 이하로 억제함으로써 지능형 에너지 문명의 쾌적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - building-management-system-bms-and-hvac-optimization-logic

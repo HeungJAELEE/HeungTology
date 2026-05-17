@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "hydrogen-economy-and-infrastructure-master-roadmap-entity"
-  domain: "08_Energy_Environment"
+metadata:
+  id: "[[[Strategy] hydrogen-economy-and-infrastructure-master-roadmap]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Strategy", "#Energy", "#Hydrogen", "#Sustainability", "#Infrastructure", "#Decarbonization", "#Economic_Security", "#HDS_Gold_v6_1"]'
-  is_part_of: '["[Energy] energy-and-hydrogen-intelligence-master-guide", "Strategy global-supply-chain-governance-and-resilience"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] hydrogen-economy-and-infrastructure-master-roadmap에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] hydrogen-economy-and-infrastructure-master-roadmap
+# [Strategy] hydrogen-economy-and-infrastructure-master-roadmap
 
 ## 1. [왜 배우는가? (Why: The Clean Fuel of the Future)]]
 탄소 없는 세상을 만들려면 석유를 대신할 새로운 에너지가 필요합니다. **수소 경제 및 인프라 마스터 로드맵**은 우주에서 가장 흔한 원소인 수소를 만들고(생산), 옮기고(운송), 쓰는(활용) 전 과정을 설계하는 '미래 에너지 지도'입니다. 우리가 이를 배우는 이유는 탄소 중립이라는 인류 공통의 과제를 해결하면서 에너지 수입 의존도를 낮추고, "수소차, 수소 발전소, 수소 선박을 아우르는 '수소 주권 및 청정 에너지 패권'을 데이터 지능으로 선점하기" 위함입니다. 수소의 가격이 에너지의 경쟁력을 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Hydrogen Embrittlement** (수소 취성) 모델을 적용하여 기존 가스관을 수소관으로 전용할 때의 안전 수명과 파손 확률을 수리 산출한 결과는?
 5. RAG 시스템에서 **전 세계 수소 생산 기지 데이터**와 **글로벌 선박 항로**를 융합하여, '국가별 수소 수입 단가를 최소화하는 최적의 글로벌 수소 공급망 포트폴리오'를 제안하는 **Hydrogen Trade Strategy** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [Energy] energy-and-hydrogen-intelligence-master-guide : 수소 경제 로드맵의 기술적 구현을 담당하는 상위 에너지 시스템 엔티티
 - Strategy global-supply-chain-governance-and-resilience : 수소 에너지 자원의 글로벌 공급망과 지정학적 안보를 관리하는 최상위 전략 노드

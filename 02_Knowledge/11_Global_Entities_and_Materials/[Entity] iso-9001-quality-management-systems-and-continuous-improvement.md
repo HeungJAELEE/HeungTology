@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "iso-9001-quality-management-systems-and-continuous-improvement"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] iso-9001-quality-management-systems-and-continuous-improvement]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The international standard (ISO 9001) that specifies requirements for a Quality Management System (QMS), focusing on the organization's ability to consistently provide products and services that meet customer and regulatory requirements through the PDCA cycle and risk-based thinking."
-  physical_model: "N/A"
-Semantic:
-  tags: '["iso-9001", "qms", "quality-management", "continuous-improvement", "customer-focus", "risk-based-thinking", "standardization"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Context_Analysis_Audit: Review the organization''s ''Context and Stakeholder Analysis'' to ensure all external and internal factors affecting quality are identified.'
-    - 'Process_Approach_Check: Evaluate the interaction of core processes and their performance indicators (KPIs) to ensure systemic alignment with quality objectives.'
-    - 'Corrective_Action_Scan: Analyze the effectiveness of corrective actions taken after non-conformities to ensure the root cause is eliminated and recurrence prevented.'
-Trust Metrics:
+  description: "[Entity] iso-9001-quality-management-systems-and-continuous-improvement에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏆 ISO 9001: Quality Management Systems and Continuous Improvement
+# [Entity] iso-9001-quality-management-systems-and-continuous-improvement
 
 ## 1. 개요 (Why: 인간적 통찰)
 "믿고 살 수 있는 물건인가?"라는 아주 원초적인 질문에 대해, 전 세계가 합의한 대답이 바로 **ISO 9001**입니다. 품질은 단순히 불량품이 없는 것을 넘어, 고객이 원하는 것을 '항상 똑같이' 제공할 수 있는 조직의 능력을 뜻합니다. ISO 9001은 제품을 검사하는 법이 아니라, 제품을 만드는 '조직의 습관'을 고치는 **'품질의 철학'**입니다. "우리는 어제보다 오늘 더 나아지고 있는가?"를 스스로 묻고 기록하게 함으로써, 기업이 정체되지 않고 끊임없이 진화하게 만드는 **'성장의 마스터플랜'**입니다.
@@ -91,7 +80,6 @@ class LegalFidelityEngine:
             return "REJECT: Ineffective Risk-based Thinking - Critical Risks Identified but Not Addressed"
         return "PASS: Proactive Risk Mitigation Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(internal_audit_findings=2, customer_complaint_rate=0.005, corrective_action_closure_pct=100.0)
 print(engine.diagnose_qms_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_qms_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data qms-performance-and-customer-satisfaction-metrics-v2026`와 연동되어, 전 세계 주요 기업의 품질 데이터를 실시간 분석하고 품질 붕괴 및 신뢰 추락 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 생태계의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - kaizen-and-continuous-improvement-methodology

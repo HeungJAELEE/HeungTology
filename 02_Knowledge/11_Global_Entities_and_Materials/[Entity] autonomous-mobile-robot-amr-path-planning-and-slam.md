@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "autonomous-mobile-robot-amr-path-planning-and-slam-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] autonomous-mobile-robot-amr-path-planning-and-slam]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The navigation and mapping intelligence for mobile robots, enabling them to build maps of unknown environments (SLAM) and navigate safely to goals using dynamic path planning."
-  physical_model: "N/A"
-Semantic:
-  tags: '["amr", "slam", "path-planning", "robotics", "warehouse-automation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Localization_Drift_Audit: Measure the deviation between estimated and ground truth position.'
-    - 'Map_Consistency_Check: Verify the topological integrity of the built environment map.'
-    - 'Obstacle_Avoidance_Audit: Evaluate the robot''s ability to navigate through narrow passages without collision.'
-Trust Metrics:
+  description: "[Entity] autonomous-mobile-robot-amr-path-planning-and-slam에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Autonomous Mobile Robot (AMR) Path Planning and SLAM Logic
+# [Entity] autonomous-mobile-robot-amr-path-planning-and-slam
 
 ## 1. 개요 (Why)
 물류 창고나 공장에서 사람을 대신해 물건을 나르는 AMR(자율 이동 로봇)의 핵심은 '자신의 위치를 알고 가야 할 길을 찾는 것'입니다. SLAM은 지도 없이도 주변을 스캔하며 실시간으로 지도를 만드는 기술이며, 경로 계획은 시시각각 변하는 장애물을 피해 최적의 이동선을 찾는 기술입니다. 본 노드는 AMR의 자율 주행 무결성과 실내 탐행 정밀도를 위한 표준을 정의합니다.
@@ -70,7 +59,6 @@ class RobotFidelityEngine:
             return f"WARNING: Path Planning Bottleneck ({self.t}ms) - Reduced Dynamic Response"
         return "PASS: Navigation Logic Responsive"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(estimated_pos=(10.05, 5.0), actual_pos=(10.0, 5.0), planning_time=50)
 print(engine.diagnose_localization_drift())
 ```
@@ -88,7 +76,6 @@ print(engine.diagnose_localization_drift())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data amr-localization-accuracy-and-navigation-efficiency-v2026`와 연동되어, 로봇의 위치 드리프트를 1cm 단위로 상시 감시하고 물류 현장의 가동 효율을 20% 이상 향상시키는 결정론적 탐행 가이드를 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 03_robotics-and-autonomous-systems-hub
 - lidar-based-slam-gmapping-and-cartographer

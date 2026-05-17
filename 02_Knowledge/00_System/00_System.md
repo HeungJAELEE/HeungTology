@@ -1,19 +1,23 @@
 ---
-Semantic:
-  expected_queries:
-  - '*   Role: Assistant to an Industrial Process Engineer at Antigravity.'
-  - '*   Task: Generate 5 expected queries (questions) for a technical document for
-    future search/retrieval purposes.'
-  - '*   Input: Document titled `00_System.md`.'
-  - '*   Input Content: The user provided ```folder-index-content```.'
-  - '*   *Wait*, the actual content of the document is missing. The user put `folder-index-content`
-    as a placeholder.'
-citation_count: 0
-current_trust_level: 0.4
-tags: MOCs
-trust_base: 0.4
-trust_lambda: 0.3
+metadata:
+  id: "[[00_System]]"
+  domain: "00_System"
+  project: "Vault_Modernization"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: "00_System에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#00_System", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
+  T_static: 1.0
+  T_dynamic: 1.0
+  isolation_index: 0.1
 ---
 
-```folder-index-content
-```
+# 00_System

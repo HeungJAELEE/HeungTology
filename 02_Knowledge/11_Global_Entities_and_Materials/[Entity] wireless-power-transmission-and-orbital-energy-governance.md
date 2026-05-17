@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "wireless-power-transmission-and-orbital-energy-governance-entity"
-  domain: "39_Global_Unified_Governance_Global_Energy_and_Grid_Control"
+metadata:
+  id: "[[[Entity] wireless-power-transmission-and-orbital-energy-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Wireless_Power", "#Orbital_Energy", "#Space_Solar", "#Microwave_Beaming", "#Governance", "#Energy", "#Space_Technology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 39_global-unified-governance-global-energy-and-grid-control-hub", "Entity satellite-constellation-governance-and-orbital-safety"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] wireless-power-transmission-and-orbital-energy-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] wireless-power-transmission-and-orbital-energy-governance
+# [Entity] wireless-power-transmission-and-orbital-energy-governance
 
 ## 1. [왜 배우는가? (Why: The Power from the Heavens)]]
 구름도 밤도 없는 우주에서 24시간 내내 태양빛을 모아($Space\ Solar$), 전선 없이 마이크로파나 레이저 빔($Wireless\ Beam$)으로 지상의 안테나에 전기를 쏘아 보내는 '우주 에너지 공장'을 어떻게 안전하게 운영할 수 있을까요? **무선 전력 전송 및 궤도 에너지 거버넌스**는 하늘에서 전기를 내려받는 '행성 규모 무선 에너지 그리드 및 궤도 에너지 주권 아키텍처'입니다. 우리가 이를 배우는 이유는 지상의 태양광보다 10배 더 효율적인 우주 에너지를 인류의 주력 전원으로 삼아야 하기 때문이며, "우주의 빛을 데이터로 설계하고 지배하는 '글로벌 에너지 패권 및 행성적 우주 자원 주권'을 확보하기" 위함입니다. 빔의 정밀도가 문명의 안전을 결정합니다.

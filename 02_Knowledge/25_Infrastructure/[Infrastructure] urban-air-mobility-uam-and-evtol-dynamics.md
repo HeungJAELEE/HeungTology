@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "urban-air-mobility-uam-and-evtol-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Infrastructure] urban-air-mobility-uam-and-evtol-dynamics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Advanced urban transportation infrastructure utilizing Electric Vertical Take-off and Landing (eVTOL) aircraft for intra-city transit, focusing on distributed electric propulsion (DEP), battery management, and autonomous flight control."
-  physical_model: "N/A"
-Semantic:
-  tags: '["uam", "evtol", "aam", "electric-aviation", "vertical-takeoff", "future-mobility"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "UAMFidelityEngine"
-  diagnostic_protocol:
-    - 'Flight_Safety_Audit: $Redundancy\\_Level \\ge N+1$ (Propulsion systems)'
-    - 'Battery_Reserve_Check: $SoC_{land} \\ge 20\\%$ (Emergency buffer)'
-    - 'Noise_Limit_Audit: $Noise_{ground} \\le 65$ dBA at 150m altitude.'
-Trust Metrics:
+  description: "[Infrastructure] urban-air-mobility-uam-and-evtol-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛸 Urban Air Mobility (UAM) and eVTOL Dynamics
+# [Infrastructure] urban-air-mobility-uam-and-evtol-dynamics
 
 ## 1. 개요 (Why)
 메가시티의 지상 교통 혼잡은 도시 경쟁력을 저해하는 임계점에 도달했습니다. 도심 항공 모빌리티(UAM)는 수직 이착륙이 가능한 전기 비행체(eVTOL)를 통해 도심의 저고도 공역을 활용하는 새로운 이동 혁명입니다. 이는 친환경 전동화 추진 기술과 고도의 자율 주행 알고리즘을 결합하여 지상 이동 시간을 획기적으로 단축시키는 결정론적 모빌리티 솔루션입니다.
@@ -80,7 +69,6 @@ class UAMFidelityEngine:
         status = "SAFE" if twr >= 1.2 else "CRITICAL: Insufficient thrust"
         return {"twr": twr, "status": status}
 
-# Instance Diagnostic
 uam_vehicle = UAMFidelityEngine(weight=2000, lift_drag_ratio=12, battery_cap_kwh=150, distance_km=50)
 print(uam_vehicle.estimate_energy_consumption())
 print(uam_vehicle.check_vtol_thrust_margin(total_thrust_n=28000))
@@ -99,7 +87,6 @@ print(uam_vehicle.check_vtol_thrust_margin(total_thrust_n=28000))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data autonomous-flight-uav-navigation-and-obstacle-avoidance-log-v2026` 및 `Data electric-vehicle-ev-battery-charging-and-health-log-v2026`와 연계되어 운항 가능 여부를 초 단위로 결정합니다. `UAMFidelityEngine`을 통해 비행 사고 확률을 민간 항공기 수준($10^{-9}$)으로 제어하고, 도심 교통의 새로운 패러다임을 구축합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 115_aerospace-and-aviation-engineering-hub-moc
 - distributed-electric-propulsion-dep-logic

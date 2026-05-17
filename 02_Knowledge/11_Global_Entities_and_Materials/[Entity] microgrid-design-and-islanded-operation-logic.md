@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "microgrid-design-and-islanded-operation-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] microgrid-design-and-islanded-operation-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering design and control logic for localized power systems (Microgrids) capable of operating both in parallel with the main grid and independently (Islanded Mode), utilizing distributed generation, storage, and load management to ensure energy sovereignty and resilience."
-  physical_model: "N/A"
-Semantic:
-  tags: '["microgrid", "islanded-mode", "distributed-energy-resources", "der", "power-electronics", "grid-resilience", "energy-storage", "smart-grid"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Islanding_Detection_Audit: Verify the ''Loss of Mains'' detection speed (IEEE 1547) to ensure zero-crossing or passive/active detection prevents out-of-phase reconnection.'
-    - 'Voltage_Rigidity_Check: Analyze the reactive power (Q) compensation capacity during high-fidelity load step changes to prevent voltage collapse in islanded mode.'
-    - 'Frequency_Nadir_Scan: Evaluate the lowest frequency point during sudden DER disconnection to ensure Load Shedding logic maintains grid integrity.'
-Trust Metrics:
+  description: "[Entity] microgrid-design-and-islanded-operation-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔋 Microgrid Design and Islanded Operation Logic
+# [Entity] microgrid-design-and-islanded-operation-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 국가 전력망이라는 거대한 생명선이 끊겼을 때, 우리 마을이나 공장만은 스스로 빛을 밝힐 수 있을까요? **마이크로그리드 설계 및 독립 운전 로직**은 에너지를 중앙에서 수동적으로 받는 존재에서, 스스로 생산하고 관리하는 '에너지 주권자'로 거듭나게 하는 **'에너지 요새'** 기술입니다. 태양광, 풍력, 배터리를 하나의 오케스트라처럼 지휘하여 외부의 도움 없이도 주파수와 전압을 맞추어 전기를 공급하는 이 기술은, 재난 상황에서도 멈추지 않는 **'에너지 생존 무결성'**을 제공합니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Reserve - System Vulnerable to Blackout during Sudden Load Step"
         return "PASS: Adequate Energy Buffer and Dynamic Stability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(frequency_deviation_hz=0.02, voltage_thd_pct=1.2, islanding_latency_ms=45.0)
 print(engine.diagnose_grid_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_grid_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data microgrid-islanded-mode-frequency-response-logs-v2026`와 연동되어, 전 세계 도서 지역 및 스마트 시티의 마이크로그리드 운영 데이터를 실시간 분석하고 전력 붕괴 및 블랙아웃 사고 확률을 0.001% 이하로 억제함으로써 행성적 에너지 자립 문명의 공급 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - energy-storage-systems-ess-and-battery-management

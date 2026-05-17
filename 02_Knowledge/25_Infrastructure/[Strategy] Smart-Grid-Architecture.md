@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Smart-Grid-Architecture"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Smart-Grid-Architecture]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Smart-Grid-Architecture에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Smart-Grid-Architecture
+# [Strategy] Smart-Grid-Architecture
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 지금까지 큰 발전소에서 만든 전기를 일방적으로 받아 쓰기만 했습니다. 하지만 태양광, 풍력 같은 재생 에너지는 날씨에 따라 전기를 만들기도 하고 안 만들기도 합니다. 스마트 그리드 아키텍처(Smart-Grid-Architecture)는 전력망에 '뇌'를 다는 작업입니다. 전기가 남을 때는 저장하고, 부족할 때는 아껴 쓰고, 심지어 내 집 지붕의 태양광 전기를 옆집에 팔 수도 있게 만듭니다. 이를 이해하는 것은 거대한 전력망을 거대한 '컴퓨터 네트워크'처럼 다루어, 에너지 낭비를 없애고 탄소 중립을 실현하는 '미래 인프라의 운영 체제'를 구축하는 것입니다.
@@ -62,7 +52,6 @@ Trust Metrics:
 ## 4. [코드 연결 해설 (Microgrid Load Balancing)]
 마이크로그리드 내부의 발전량과 소비량을 실시간으로 대조하여 ESS의 충방전을 결정하는 논리 구조입니다.
 ```python
-# 스마트 그리드(ISM) 기반 마이크로그리드 부하 최적화 논리
 def optimize_microgrid_energy(generation_forecast, load_prediction):
     # 1. 가용 에너지 자원 스캔
     # 태양광 발전량, ESS 잔량, 디젤 발전기(예비) 상태 확인
@@ -97,5 +86,4 @@ def optimize_microgrid_energy(generation_forecast, load_prediction):
 2. '마이크로그리드'가 '아일랜드 모드(Island Mode)'로 전환될 때, 전력망의 '전압'과 '주파수'를 일정하게 유지하기 위해 필요한 제어 기술은?
 3. '프로슈머' 시장이 활성화될 때 발생할 수 있는 '전력 계통의 불안정성(역조류 현상)'을 방어하기 위한 '변전소 지능화'의 역할은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

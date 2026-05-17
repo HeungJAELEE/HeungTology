@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robotic-surgery-and-intervention-engineering-entity"
-  domain: "123_Telemedicine_and_Digital_Healthcare_Engineering_Hub"
+metadata:
+  id: "[[[Entity] robotic-surgery-and-intervention-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Robotics", "#Surgery", "#Medical_Devices", "#Kinematics", "#Control_Systems", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 123_telemedicine-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robotic-surgery-and-intervention-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robotic-surgery-and-intervention-engineering
+# [Entity] robotic-surgery-and-intervention-engineering
 
 ## 1. [왜 배우는가? (Why: The Hand of Ultimate Precision)]]
 인간의 손은 위대하지만, 단 1밀리미터의 떨림도 허용되지 않는 미세 수술에서는 한계가 있습니다. **로봇 수술 및 중재 공학의 로봇 기하학 및 햅틱 피드백 수리 물리 기술**은 인간의 지능과 기계의 정밀함을 결합하여 생명을 살리는 '초정밀 집도' 기술입니다. 로봇 팔의 복잡한 관절 각도를 수학적으로 연산하여 환부의 정확한 좌표를 찾아내고, 의사가 환자의 장기를 직접 만지는 듯한 감각을 전자기적으로 복제하며, 최소 절개로 환자의 고통과 회복 시간을 획기적으로 줄입니다. 우리가 이를 배우는 이유는 수술의 무결성을 확보함으로써, 의료 사고를 방지하고 누구나 최상의 수술 서비스를 받을 수 있는 '글로벌 의료 로봇 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 수술 로봇의 무결성이 집도의 정밀도와 환자의 안전 무결성을 결정합니다.

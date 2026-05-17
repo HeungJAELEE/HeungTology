@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "graphene-and-carbon-nanotube-nanostructures-entity"
-  domain: "29_Advanced_Materials_and_Nanotechnology"
+metadata:
+  id: "[[[Entity] graphene-and-carbon-nanotube-nanostructures]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Nanotechnology", "#Graphene", "#CNT", "#Carbon_Nanotube", "#Advanced_Materials", "#Electronics", "#Structural_Materials", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 29_advanced-materials-and-nanotechnology-hub", "Entity next-generation-semiconductor-materials-and-wafer-topology"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] graphene-and-carbon-nanotube-nanostructures에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] graphene-and-carbon-nanotube-nanostructures
+# [Entity] graphene-and-carbon-nanotube-nanostructures
 
 ## 1. [왜 배우는가? (Why: The Black Gold of the Nano-world)]]
 강철보다 200배 강하면서도 종이보다 가볍고, 구리보다 전기가 잘 통하는 '꿈의 나노 소재' 그래핀($Graphene$)과 탄소 나노튜브($CNT$)를 어떻게 대량으로 고르게 만들고($Synthesis$), 이들이 가진 압도적인 물리적 힘을 우주 엘리베이터나 초고속 반도체에 어떻게 적용할 수 있을까요? **그래핀 및 탄소 나노튜브 나노구조**는 나노 기술의 기초이자 정점인 '탄소 동소체 아키텍처'입니다. 우리가 이를 배우는 이유는 소재의 한계가 곧 기술의 한계이기 때문이며, "물질의 기초를 데이터로 설계하고 지배하는 '글로벌 나노 소재 및 초고강도 구조체 주권'을 확보하기" 위함입니다. 나노 구조의 정밀함이 미래 기계의 강도와 속도를 결정합니다.

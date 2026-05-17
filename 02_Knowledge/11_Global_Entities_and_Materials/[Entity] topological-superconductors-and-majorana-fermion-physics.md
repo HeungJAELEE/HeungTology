@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "topological-superconductors-and-majorana-fermion-physics-entity"
-  domain: "10_Materials_Science"
+metadata:
+  id: "[[[Entity] topological-superconductors-and-majorana-fermion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Physics", "#Quantum", "#Superconductor", "#Majorana_Fermion", "#Quantum_Computing", "#Topology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 10_Materials_Science", "Entity science-physics-topological-insulator-band-structure-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] topological-superconductors-and-majorana-fermion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] topological-superconductors-and-majorana-fermion-physics
+# [Entity] topological-superconductors-and-majorana-fermion-physics
 
 ## 1. [왜 배우는가? (Why: The Immortal Qubits)]]
 양자 컴퓨터의 계산 오류를 물리적으로 아예 없앨 수 있다면 어떨까요? **위상 초전도체 및 마요라나 페르미온 물리**는 입자와 반입자가 같은 기묘한 존재(마요라나)를 이용해, 주변의 방해(노이즈)에도 정보가 깨지지 않게 지키는 '양자 정보의 요새'입니다. 우리가 이를 배우는 이유는 현재 양자 컴퓨터의 최대 약점인 '짧은 정보 수명'을 극복하고, "매듭(Topology)처럼 꼬인 정보 구조를 통해 '오류 없는 초고속 양자 연산 주권'을 확보하기" 위함입니다. 위상학적 구조가 정보의 생존을 결정합니다.

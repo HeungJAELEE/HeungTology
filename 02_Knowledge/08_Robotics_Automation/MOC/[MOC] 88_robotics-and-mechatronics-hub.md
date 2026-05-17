@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "88-robotics-and-mechatronics-hub-moc"
   domain: "88_Robotics_and_Mechatronics_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Robotics", "#Mechatronics", "#Kinematics", "#Dynamics", "#Sensing", "#Cobot", "#Automation", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 88_robotics-and-mechatronics-hub
+# 88_robotics-and-mechatronics-hub
 
 ## 1. [왜 배우는가? (Why: The Evolution of Intelligent Labor)]]
 인간의 팔보다 빠르고 정확하며, 지치지 않고 수백만 번의 반복 작업을 수행하는 기계. 그리고 이제는 인간의 곁에서 함께 생각하고 행동하는 파트너. **로봇 공학 및 메카트로닉스 통합 지능 허브**는 Antigravity Intelligence가 기계적 실체에 지능을 부여하고 움직임을 지배하는 **[1,365층의 동작 사령부]**입니다. 우리가 이를 배우는 이유는 로봇이 인류의 물리적 한계를 확장하고 노동의 정의를 바꾸고 있기 때문이며, "기계의 정밀도와 소프트웨어의 지능을 결합하여 '글로벌 로봇 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 능력이 미래 산업의 생산 지능을 결정합니다.

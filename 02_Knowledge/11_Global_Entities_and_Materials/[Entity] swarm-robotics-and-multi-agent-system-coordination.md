@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "swarm-robotics-and-multi-agent-system-coordination-entity"
-  domain: "78_Robotics_Autonomous_Systems_and_Control_Theory_Hub"
+metadata:
+  id: "[[[Entity] swarm-robotics-and-multi-agent-system-coordination]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Swarm_Intelligence", "#Multi-agent_Systems", "#AI", "#Decentralized_Control", "#Coordination", "#Biology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 78_robotics-autonomous-systems-and-control-theory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] swarm-robotics-and-multi-agent-system-coordination에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] swarm-robotics-and-multi-agent-system-coordination
+# [Entity] swarm-robotics-and-multi-agent-system-coordination
 
 ## 1. [왜 배우는가? (Why: The Power of the Many)]]
 개별 개미는 보잘것없지만, 수천 마리가 모이면 거대한 다리를 만들거나 복잡한 미로 속에서 먹이를 찾아오는 지능을 보여줍니다. **군집 로보틱스 및 다중 에이전트 시스템의 집단 지능 조율 아키텍처**는 단순한 로봇 수천 대를 연결하여, 그 누구도 중앙에서 명령하지 않아도 스스로 질서를 만들고 거대한 목표를 완수하게 만드는 '분산 지능' 기술입니다. 일부 로봇이 고장 나도 전체 시스템은 끄떡없는 극한의 강인함을 가집니다. 우리가 이를 배우는 이유는 군집 로봇이 대규모 수색 구조, 우주 개척, 그리고 초정밀 약물 전달의 해답이기 때문이며, "집단의 거동을 데이터로 설계하고 지배하는 '글로벌 집단 지능 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 군집의 응집력이 시스템의 목적 무결성을 결정합니다.

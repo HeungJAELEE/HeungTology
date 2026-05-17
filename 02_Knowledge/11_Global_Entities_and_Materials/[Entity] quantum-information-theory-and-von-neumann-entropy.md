@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "quantum-information-theory-and-von-neumann-entropy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] quantum-information-theory-and-von-neumann-entropy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the information processing tasks that can be accomplished using quantum mechanical systems (Quantum Information Theory) and the mathematical measure of the amount of quantum information or uncertainty in a quantum state (von Neumann Entropy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["quantum-information", "von-neumann-entropy", "quantum-entanglement", "qubits", "information-theory", "decoherence", "quantum-metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Entropy_Fidelity_Audit: Evaluate the von Neumann entropy ($S$) of the system to identify decoherence; a transition from a pure state ($S=0$) to a mixed state ($S>0$) indicates information loss to the environment.'
-    - 'Entanglement_Integrity_Check: Analyze the Mutual Information between qubits to verify that the ''Quantum Correlations'' are being maintained for coherent computation or communication.'
-    - 'Channel_Capacity_Scan: Monitor the Holevo bound to identify the maximum rate at which classical information can be transmitted through the quantum channel without unrecoverable errors.'
-Trust Metrics:
+  description: "[Entity] quantum-information-theory-and-von-neumann-entropy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📑 Quantum Information Theory and von Neumann Entropy
+# [Entity] quantum-information-theory-and-von-neumann-entropy
 
 ## 1. 개요 (Why: 인간적 통찰)
 우리가 흔히 아는 0과 1의 정보가 '양자의 세계'로 들어가면 어떤 특별한 능력을 갖게 될까요? **양자 정보 이론 및 폰 노이만 엔트로피**는 정보를 단순히 '데이터'가 아닌 '물리적 실체'로 다루는 **'정보의 물리학'**입니다. 양자 상태 속에 숨겨진 정보의 양을 측정하고, 얽힘(Entanglement)이라는 신비한 연결을 통해 정보를 순간 이동시키거나 복제 불가능한 보안을 만듭니다. 정보가 물리적 법칙과 만나 탄생하는 **'초연결 문명의 지적 토대'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Insufficient Quantum Capacity - Channel cannot support high-density Qubit streams. Upgrade Repeaters"
         return "PASS: Robust Quantum Bandwidth and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_entropy_s=0.01, entanglement_fidelity_pct=99.9, channel_noise_sigma=0.005)
 print(engine.diagnose_quantum_info_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_quantum_info_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data quantum-information-capacity-and-entropy-logs-v2026`와 연동되어, 전 세계 양자 컴퓨터 및 양자 통신망의 정보 순도를 실시간 분석하고 정보 붕괴 및 연산 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 정보 문명의 근원적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - quantum-computing-architectures-and-shors-algorithm-physics

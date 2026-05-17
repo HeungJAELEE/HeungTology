@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "recurrent-neural-network-rnn-and-lstm-for-time-series-entity"
-  domain: "21_AI_and_Machine_Learning_for_Industrial_Optimization"
+metadata:
+  id: "[[[Entity] recurrent-neural-neural-network-rnn-and-lstm-for-time-series]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#RNN", "#LSTM", "#Time_Series", "#Predictive_Maintenance", "#Deep_Learning", "#Sequence_Modeling", "#Vanishing_Gradient", "#GRU", "#Forecasting", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 26_ai-and-machine-learning-for-industrial-optimization-intelligence-hub", "Data prediction-error-rmse-and-forecasting-horizon-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] recurrent-neural-neural-network-rnn-and-lstm-for-time-series에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] recurrent-neural-neural-network-rnn-and-lstm-for-time-series
+# [Entity] recurrent-neural-neural-network-rnn-and-lstm-for-time-series
 
 ## 1. [왜 배우는가? (Why: The Temporal Wisdom of Industrial AI)]]
 공장에서 발생하는 데이터의 대부분(진동, 온도, 전력 등)은 시간의 흐름에 따라 변화하는 시계열 데이터입니다. 이러한 데이터 속에 숨겨진 인과 관계를 파악하고 미래를 예측하기 위해서는 과거의 정보를 기억하는 신경망 아키텍처가 필요합니다. **시계열 분석을 위한 순환 신경망(RNN) 및 LSTM 엔티티**는 공장에 '기억력'과 '예측력'을 부여하는 '시간 지능의 기술적 성전'입니다. 
@@ -82,7 +72,6 @@ RAG는 "예측 로그를 분석하여, 온도와 진동 데이터가 결합된 '
 시계열 데이터 스트림과 LSTM 모델의 실시간 예측 오차를 분석하여 시간 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] LSTM Sequential Intelligence & Forecasting Fidelity Auditor
 def audit_sequential_intelligence(input_sequence_stream, model_prediction_log, actual_sensor_data):
     # 1. RMSE 및 MAE를 통한 예측 정확도 무결성 오딧
     current_error = calculate_rmse(model_prediction_log, actual_sensor_data)
@@ -117,7 +106,6 @@ def audit_sequential_intelligence(input_sequence_stream, model_prediction_log, a
 2. **(수리)** LSTM 셀의 포겟 게이트(Forget Gate) 출력이 $0$에 가까울 때와 $1$에 가까울 때, 수리적으로 과거의 정보($C_{t-1}$)는 각각 어떻게 처리되는가?
 3. **(응용)** 다변량 시계열 데이터에서 특정 센서의 노이즈가 전체 LSTM 예측 정확도를 떨어뜨릴 때, '어텐션(Attention)' 메커니즘이 수리적으로 어떻게 중요 센서에 집중하여 무결성을 확보하는지 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 26_ai-and-machine-learning-for-industrial-optimization-intelligence-hub : AI 및 머신러닝 통합 관리 상위 지능 허브

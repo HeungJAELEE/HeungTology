@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hot-isostatic-pressing-hip-and-powder-densification-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hot-isostatic-pressing-hip-and-powder-densification-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A manufacturing process used to reduce the porosity of metals and increase the density of many ceramic materials (HIP) and the physical study of high-temperature gas pressure-induced plastic flow and creep (Powder Densification Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hip", "isostatic-pressing", "powder-metallurgy", "densification", "internal-void-removal", "diffusion-bonding", "superalloys", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Densification_Fidelity_Audit: Evaluate the ''Relative Density'' ($\\rho$) to identify if high-fidelity ''Residual Porosity'' remains, risking fatigue failure in high-fidelity aerospace components.'
-    - 'Creep_Integrity_Check: Analyze the high-fidelity ''Pressure-Temperature Cycle'' to ensure that the material is within the high-fidelity ''Plastic Flow'' regime without causing excessive grain growth.'
-    - 'Pressure_Fidelity_Scan: Monitor the high-fidelity ''Argon Purity'' to verify that no high-fidelity ''Surface Oxidation'' or contamination is occurring inside the high-pressure vessel.'
-Trust Metrics:
+  description: "[Entity] hot-isostatic-pressing-hip-and-powder-densification-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Hot Isostatic Pressing (HIP) and Powder Densification Physics
+# [Entity] hot-isostatic-pressing-hip-and-powder-densification-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 주물로 만든 금속 부품 내부에 눈에 보이지 않는 작은 기포가 있다면 어떻게 될까요? 비행기 엔진처럼 극한의 힘을 받는 곳에서는 그 작은 구멍 하나가 대형 참사의 시작점이 될 수 있습니다. **열간 등압 성형(HIP) 및 분말 치밀화 물리**는 금속을 아주 뜨겁게 달군 상태에서 사방팔방으로 엄청난 가스 압력을 가해, 내부의 모든 구멍을 꾹 눌러 '치유'하는 **'금속의 심폐소생술'** 기술입니다. 단순한 압축이 아니라 원자들이 스스로 이동하여 구멍을 메우게 만듭니다. **'열과 압력이라는 거대한 힘으로 금속의 내면을 완벽히 다져서 단 0.01%의 빈틈도 허용하지 않는 극한의 재료 무결성'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: Pressure Containment Breach - High-fidelity argon leak detected in the vessel seals. Safety high-fidelity risk and cycle inefficiency. Shutdown and inspect"
         return "PASS: Validated High-Pressure Confinement and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(argon_pressure_mpa=150.0, vessel_temp_c=1200.0, cycle_hold_time_hr=4.0)
 print(engine.diagnose_hip_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_hip_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hip-densification-parameters-for-superalloys-v2026`와 연동되어, 전 세계 주요 항공기 및 의료용 인공관절 제조사의 데이터를 실시간 분석하고 미세 결함 및 피로 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 극한 제조 문명의 재료 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - heat-treatment-process-and-microstructural-transformation-physics

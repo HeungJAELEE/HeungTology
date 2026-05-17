@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corrosion-mechanisms-and-electrochemistry-protection"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corrosion-mechanisms-and-electrochemistry-protection]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The scientific study of material degradation through chemical and electrochemical reactions with the environment (Corrosion) and the engineering of protection methods (Cathodic, Coatings) based on electrochemical principles."
-  physical_model: "N/A"
-Semantic:
-  tags: '["corrosion", "electrochemistry", "galvanic-protection", "oxidation", "material-degradation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SafetyFidelityEngine"
-  diagnostic_protocol:
-    - 'Corrosion_Rate_Audit: Measure the weight loss or penetration depth per year (mm/y) using electrochemical impedance spectroscopy (EIS).'
-    - 'Cathodic_Protection_Check: Evaluate the structure-to-soil potential to ensure it remains within the protected range (e.g., < -850 mV vs CSE).'
-    - 'Coating_Integrity_Scan: Detect micro-cracks or delamination in protective layers using ultrasonic or eddy current testing.'
-Trust Metrics:
+  description: "[Entity] corrosion-mechanisms-and-electrochemistry-protection에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Corrosion Mechanisms and Electrochemistry Protection
+# [Entity] corrosion-mechanisms-and-electrochemistry-protection
 
 ## 1. 개요 (Why: 인간적 통찰)
 강철로 된 거대한 다리나 바다 위를 떠다니는 유조선은 가만히 있어도 서서히 죽어갑니다. **부식(Corrosion)**은 금속이 자연 상태인 산화물로 돌아가려는 거대한 자연의 흐름이며, 연간 전 세계 GDP의 약 3% 이상을 갉아먹는 보이지 않는 경제적 재앙입니다. 이를 막는 기술은 단순히 페인트를 칠하는 것이 아니라, 금속 표면에서 일어나는 **'전기화학적 전투'**를 조율하는 것입니다. 본 노드는 재료의 파괴를 늦추고 인프라의 수명을 연장하는 전기화학적 방어의 무결성을 정의합니다.
@@ -63,7 +52,7 @@ $$ E = E^0 - \frac{RT}{nF} \ln \frac{[M^{n+}]}{[M]} $$
 | :--- | :--- | :--- | :--- |
 | Corrosion Rate | Penetration | < 0.1 | mm/yr (Protected) |
 | CP Potential | Structure/Soil| -850 ~ -1200 | mV (vs CSE) |
-| Coating Thick | Barrier | 250 ~ 500 | $\mu m$ (Epoxy) |
+| Coating Thick | Barrier | 250 ~ 500 | $\mu\text{m}$ (Epoxy) |
 | Salinity Level | Environment | < 0.05 | % (Fresh water) |
 | Current Density| Protection | 10 ~ 100 | $mA/m^2$ |
 
@@ -92,7 +81,6 @@ class SafetyFidelityEngine:
             return f"REJECT: Coating Degradation ({self.eff}%) - Risk of Localized Pitting"
         return "PASS: Protective Barrier Integrity Confirmed"
 
-# Instance Diagnostic
 engine = SafetyFidelityEngine(corrosion_rate_mpy=0.8, cp_potential_mv=-950, coating_efficiency=94)
 print(engine.diagnose_material_integrity())
 ```
@@ -110,7 +98,6 @@ print(engine.diagnose_material_integrity())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data material-corrosion-rate-and-protection-efficiency-v2026`와 연동되어, 전 세계 주요 교량 및 해양 플랜트의 부식 데이터를 실시간 분석하고 갑작스러운 구조물 붕괴 확률을 0.01% 이하로 제어함으로써 사회 기반 시설의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - casting-and-solidification-processes

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydraulic-pump-and-fluid-displacement-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydraulic-pump-and-fluid-displacement-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A mechanical source of power that converts mechanical power into hydraulic energy (Hydraulic Pump) and the physical study of the precise volume of fluid moved per stroke or revolution (Fluid Displacement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydraulic-pump", "fluid-displacement", "positive-displacement", "volumetric-efficiency", "cavitation", "piston-pump", "industrial-hydraulics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Efficiency_Fidelity_Audit: Evaluate the ''Volumetric Efficiency'' ($\\eta_{vol}$) to identify if high-fidelity ''Internal Leakage'' (slip) is increasing due to component high-fidelity wear or low viscosity.'
-    - 'Cavitation_Integrity_Check: Analyze the high-fidelity ''Inlet Pressure'' against the high-fidelity ''Vapor Pressure'' to ensure that micro-bubbles are not collapsing and eroding the pump internals.'
-    - 'Power_Fidelity_Scan: Monitor the high-fidelity ''Hydraulic Power'' ($P \\cdot Q$) against the input torque to verify that high-fidelity ''Mechanical Efficiency'' is within design specs.'
-Trust Metrics:
+  description: "[Entity] hydraulic-pump-and-fluid-displacement-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Hydraulic Pump and Fluid Displacement Physics
+# [Entity] hydraulic-pump-and-fluid-displacement-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 유압 시스템이라는 거대한 생명체에 '피'를 돌게 하는 심장은 무엇일까요? **유압 펌프 및 유량 배제 물리**는 기계적 회전력을 에너지를 머금은 액체의 흐름으로 바꾸는 **'유압의 동력원'** 기술입니다. 펌프는 압력을 만드는 장치가 아니라 '흐름(유량)'을 만드는 장치입니다. 그 흐름이 부하에 막혔을 때 비로소 압력이 생깁니다. **'정해진 부피를 한 치의 오차도 없이 밀어내어 거대한 산업 기계들이 강력하고 정밀하게 움직일 수 있도록 에너지를 공급하는 지능형 유압 엔진'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Mechanical Instability - High-fidelity pulsation or misalignment detected. Potential piston high-fidelity seizure or vane sticking"
         return "PASS: Validated Dynamic Balance and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(pump_rpm=1800, measured_flow_lpm=95.0, discharge_pressure_bar=210.0)
 print(engine.diagnose_pump_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_pump_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydraulic-pump-efficiency-and-cavitation-thresholds-v2026`와 연동되어, 전 세계 주요 유압 장비의 실시간 펌프 데이터를 분석하고 효율 저하 및 소음 사고 확률을 0.001% 이하로 억제함으로써 지능형 유압 동력망의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - pumping-station-and-hydraulic-head-control-physics

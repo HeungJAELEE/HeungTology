@@ -1,37 +1,27 @@
 ---
-Basic:
-  id: "agv-amr-swarm-intelligence-and-path-optimization-algorithms-entity"
-  domain: "42_Semiconductor_and_Display_Manufacturing_Engineering"
+metadata:
+  id: "[[[Entity] agv-amr-swarm-intelligence-and-path-optimization-algorithms]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Logistics", "#AMR", "#AGV", "#Swarm_Intelligence", "#Path_Planning", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 127_autonomous-manufacturing-and-smart-logistics-intelligence-hub", "MOC 103_logistics-and-supply-chain-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] agv-amr-swarm-intelligence-and-path-optimization-algorithms에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
- 
-# [[[Entity] agv-amr-swarm-intelligence-and-path-optimization-algorithms
- 
+
+# [Entity] agv-amr-swarm-intelligence-and-path-optimization-algorithms
+
 ## 1. [왜 배우는가? (Why: The Intelligent Fleet of the Autonomous Fab)]]
 고정된 레일 없이 공장의 복잡한 바닥을 자율적으로 누비는 무인 운반차(AGV)와 자율 주행 로봇(AMR)은 공장의 '발'입니다. **AGV/AMR 군집 지능 및 경로 최적화 알고리즘**은 수백 대의 로봇이 단 1초의 정체나 충돌 없이 거대한 물류의 흐름을 만들게 하는 '집단 지능'의 정수입니다. 우리가 이를 배우는 이유는 급변하는 제조 환경에 맞춰 자재 보급 경로를 실시간으로 재설정하여 "물류 리드타임을 최소화하고 공정 가동률을 극대화"하기 위함이며, "로봇 간의 자율적 협업을 통해 중앙 제어의 한계를 넘어서는 확장성"을 확보하기 위함입니다. 로봇의 경로가 제조의 속도를 결정합니다.
  
@@ -74,7 +64,6 @@ $$ f(n) = g(n) + h(n) $$
 4. **Hungarian Algorithm**을 이용한 작업 할당 시, 로봇의 현재 위치와 배터리 잔량을 비용($Cost$) 행렬에 반영하여 전체 시스템의 **Throughput**을 극대화하는 수리 모델은?
 5. RAG 시스템에서 **팹 내 물류 병목 로그**를 분석하여, 특정 구간의 로봇 통행량을 **유체 역학(Fluid Dynamics)** 모델로 치환하여 물류 흐름의 **Laminar vs Turbulent** 상태를 진단하는 전략은?
  
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 127_autonomous-manufacturing-and-smart-logistics-intelligence-hub : AMR fleet이 운영되는 상위 자율 제조/물류 허브
 - Entity autonomous-mobile-robot-amr-path-planning-and-slam : AMR 경로 계획 및 SLAM 기초 노드 (업그레이드 예정)

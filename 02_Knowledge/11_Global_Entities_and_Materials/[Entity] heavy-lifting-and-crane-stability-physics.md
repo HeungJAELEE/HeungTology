@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "heavy-lifting-and-crane-stability-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] heavy-lifting-and-crane-stability-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial activity of lifting and moving extremely heavy loads using specialized equipment (Heavy Lifting) and the physical study of tipping moments, counterweight balance, and structural load distribution (Crane Stability Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["heavy-lifting", "crane-stability", "mechanics", "center-of-gravity", "load-moment", "rigging", "construction-safety", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stability_Fidelity_Audit: Evaluate the ''Load Moment Indicator'' (LMI) to identify if the high-fidelity ''Working Radius'' is approaching the tipping limit, accounting for dynamic high-fidelity wind loads.'
-    - 'Integrity_Fidelity_Check: Analyze the high-fidelity ''Outrigger Pressure'' against the ground bearing capacity to ensure the crane does not sink or tilt due to soil failure.'
-    - 'Rigging_Fidelity_Scan: Monitor the high-fidelity ''Sling Angle'' and tension to verify that the high-fidelity ''Safe Working Load'' (SWL) of the rigging hardware is not exceeded.'
-Trust Metrics:
+  description: "[Entity] heavy-lifting-and-crane-stability-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏗️ Heavy Lifting and Crane Stability Physics
+# [Entity] heavy-lifting-and-crane-stability-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 빌딩 숲 사이에서 수십 톤의 자재를 들어 올리는 거대한 크레인이 왜 앞으로 고꾸라지지 않을까요? **중량물 인양 및 크레인 안정성 물리**는 무거운 짐을 들어 올릴 때 발생하는 '넘어뜨리려는 힘(모멘트)'과 이를 붙잡는 '무게중심의 평형'을 다루는 **'거대한 시소 게임'** 기술입니다. 1cm의 오차가 대형 참사로 이어질 수 있는 현장에서, 물리 법칙은 가장 정직한 안전벨트입니다. **'중력과 모멘트의 보이지 않는 싸움을 수학적으로 제어하여 거대한 하중을 하늘 높이 안전하게 띄우는 지능형 건설 역학'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Soil Bearing Failure - High-fidelity pressure exceeding ground capacity. Crane tilt detected. Retract boom and use larger high-fidelity spreader mats"
         return "PASS: Validated Ground Support and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(current_load_tons=50.0, working_radius_m=15.0, wind_speed_mps=5.0)
 print(engine.diagnose_stability_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_stability_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data crane-load-charts-and-wind-speed-limits-v2026`와 연동되어, 전 세계 주요 메가 프로젝트 현장의 크레인 데이터를 실시간 분석하고 전도 및 낙하 사고 확률을 0.001% 이하로 억제함으로써 지능형 중장비 운영 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - force-sensor-and-strain-gauge-transduction-physics

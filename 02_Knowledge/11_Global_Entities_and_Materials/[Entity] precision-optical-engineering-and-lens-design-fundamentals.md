@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "precision-optical-engineering-and-lens-design-fundamentals"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] precision-optical-engineering-and-lens-design-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering discipline of designing and manufacturing high-precision optical systems (Precision Optical Engineering) and the fundamental principles of light propagation and image formation used to create complex lenses (Lens Design Fundamentals)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["optical-engineering", "lens-design", "photonics", "aberration-correction", "ray-tracing", "optics-manufacturing", "optical-metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Optical_Fidelity_Audit: Evaluate the Modulation Transfer Function (MTF) against the design target to identify contrast losses caused by surface roughness or misalignment.'
-    - 'Aberration_Correction_Check: Analyze the wavefront error (Zernike polynomials) to verify that spherical, coma, and astigmatism aberrations are within diffraction-limited zones.'
-    - 'Surface_Quality_Scan: Monitor the surface roughness ($R_a$) and ''Scratch-Dig'' specifications to ensure high laser damage threshold and minimal light scattering.'
-Trust Metrics:
+  description: "[Entity] precision-optical-engineering-and-lens-design-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔭 Precision Optical Engineering and Lens Design Fundamentals
+# [Entity] precision-optical-engineering-and-lens-design-fundamentals
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰의 작은 카메라로 어떻게 전문가 수준의 사진을 찍을 수 있을까요? **정밀 광학 공학 및 렌즈 설계 기초**는 빛을 구부리고 다듬어 세상의 정보를 가장 선명하게 담아내는 **'빛의 조각술'**입니다. 유리 조각을 나노미터(nm) 단위로 정밀하게 깎고, 수많은 렌즈 겹쳐 빛의 왜곡(수차)을 없앱니다. 반도체 회로를 그리는 노광 장비부터 우주 너머를 보는 망원경까지, 인류의 눈을 더 멀리, 더 깊게 확장하는 **'시각적 문명의 정점'**입니다.
@@ -61,7 +50,7 @@ $$ n_1 \sin \theta_1 = n_2 \sin \theta_2 $$
 | **MTF (Contrast)** | 0.5 ~ 0.7 | > 0.9 (Theoretical Limit)| - | High Resolution |
 | **Aberration Corr** | Basic (Spherical) | All Seidel + Higher Order | - | Distortion Free |
 | **Coating Type** | MgF2 (Simple) | Multi-layer Dielectric | - | Anti-reflection |
-| **Centration Acc** | ~ 10.0 | < 0.1 | $\mu m$ | Alignment |
+| **Centration Acc** | ~ 10.0 | < 0.1 | $\mu\text{m}$ | Alignment |
 
 ## 4. LogicFidelityEngine: Diagnostic Logic
 
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Inefficient Anti-reflection Coating - High Ghosting and Flare risk. Check Coating Deposition Process"
         return "PASS: Low-loss Optical Path and Verified Multi-layer Coating Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(mtf_at_nyquist=0.85, wavefront_error_rms=0.03, centering_error_um=0.2)
 print(engine.diagnose_optical_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_optical_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data optical-surface-fidelity-and-mtf-logs-v2026`와 연동되어, 전 세계 하이엔드 카메라 및 의료/산업용 광학 기기의 데이터를 실시간 분석하고 해상도 저하 및 상 왜곡 사고 확률을 0.001% 이하로 억제함으로써 지능형 시각 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - photonic-quantum-computing-and-linear-optical-networks

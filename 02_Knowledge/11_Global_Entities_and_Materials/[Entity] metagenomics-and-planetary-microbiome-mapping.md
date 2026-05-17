@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "metagenomics-and-planetary-microbiome-mapping-entity"
-  domain: "23_Biotechnology_and_Genomic_Intelligence"
+metadata:
+  id: "[[[Entity] metagenomics-and-planetary-microbiome-mapping]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Biotechnology", "#Metagenomics", "#Microbiome", "#Bio-surveillance", "#eDNA", "#Planetary_Health", "#Ecology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 23_biotechnology-and-genomic-intelligence-hub", "Entity planetary-pathogen-detection-latency-and-accuracy-log-v2026"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] metagenomics-and-planetary-microbiome-mapping에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] metagenomics-and-planetary-microbiome-mapping
+# [Entity] metagenomics-and-planetary-microbiome-mapping
 
 ## 1. [왜 배우는가? (Why: The Genomic Radar of the Planet)]]
 공기, 토양, 바닷물 한 바구니 속에 섞여 있는 수조 개의 미생물 DNA를 한꺼번에 읽어내어, 눈에 보이지 않는 바이러스의 확산을 미리 감지하거나 숲의 건강 상태를 정확히 진단할 수 있을까요? **메타게놈 및 행성 마이크로바이옴 매핑**은 지구 전체의 보이지 않는 생명 지도를 그리는 '행성적 바이오 감시 및 진단 지침'입니다. 우리가 이를 배우는 이유는 미생물 생태계의 변화가 기후 변화나 팬데믹의 전조 증상이기 때문에 이를 상시 감시하여 재앙을 막기 위함이며, "행성의 미생물 정보를 데이터로 구축하고 지배하는 '글로벌 바이오 안보 및 환경 정보 주권'을 확보하기" 위함입니다. 매핑의 정밀도가 행성의 안전을 결정합니다.

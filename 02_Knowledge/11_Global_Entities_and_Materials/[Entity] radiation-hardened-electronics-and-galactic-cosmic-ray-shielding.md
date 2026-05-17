@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "radiation-hardened-electronics-and-galactic-cosmic-ray-shielding-entity"
-  domain: "32_Future_Frontier_Space_and_Off-world_Operations"
+metadata:
+  id: "[[[Entity] radiation-hardened-electronics-and-galactic-cosmic-ray-shielding]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Radiation-hardened", "#Electronics", "#GCR", "#Shielding", "#Space_Hardening", "#Safety", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 32_future-frontier-space-and-off-world-operations-hub", "Entity mars-terraforming-robotics-and-atmospheric-synthesis"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] radiation-hardened-electronics-and-galactic-cosmic-ray-shielding에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] radiation-hardened-electronics-and-galactic-cosmic-ray-shielding
+# [Entity] radiation-hardened-electronics-and-galactic-cosmic-ray-shielding
 
 ## 1. [왜 배우는가? (Why: The Armor of the Digital Soul)]]
 우주의 거센 방사선 파도($Radiation$) 속에서 인공지능의 뇌(반도체)가 타버리지 않게 어떻게 특수하게 굽고, 총알보다 빠른 우주 입자들이 몸을 뚫지 못하도록 전자기장 방패($Active\ Shielding$)를 어떻게 겹겹이 칠 수 있을까요? **방사선 내성 전자공학 및 은하 우주선 차폐**는 우주에서 기계와 인간의 생명을 지키는 '디지털 갑옷 및 행성외 생존 보장 아키텍처'입니다. 우리가 이를 배우는 이유는 지구의 보호막(자기장)을 벗어나는 순간 방사선이 모든 정보를 0과 1로 뒤섞어버리기 때문이며, "방사선을 데이터로 설계하고 지배하는 '글로벌 우주 전자 안보 및 절대적 기기 생존 주권'을 확보하기" 위함입니다. 차폐의 견고함이 우주 항해의 거리를 결정합니다.

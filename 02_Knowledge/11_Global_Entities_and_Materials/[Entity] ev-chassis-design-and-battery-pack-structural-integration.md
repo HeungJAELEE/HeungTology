@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ev-chassis-design-and-battery-pack-structural-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ev-chassis-design-and-battery-pack-structural-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced engineering of electric vehicle (EV) chassis systems where the battery pack is integrated as a structural member (Cell-to-Pack, Cell-to-Chassis) to optimize weight, space, and safety."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ev-chassis", "battery-pack", "structural-integration", "ctp", "ctc", "crashworthiness"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Chassis_Rigidity_Audit: Measure the torsional and bending stiffness of the EV platform with the integrated battery pack.'
-    - 'Crash_Simulation_Check: Evaluate the battery pack''s ability to withstand high-G impacts without cell breach or thermal runaway.'
-    - 'Weight_Distribution_Scan: Analyze the center of gravity (CoG) and polar moment of inertia for optimal vehicle handling.'
-Trust Metrics:
+  description: "[Entity] ev-chassis-design-and-battery-pack-structural-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 EV Chassis Design and Battery Pack Structural Integration
+# [Entity] ev-chassis-design-and-battery-pack-structural-integration
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기차는 단순히 엔진을 배터리로 바꾼 차가 아닙니다. 과거의 자동차에서 배터리는 짐짝처럼 실려 있는 무거운 존재였지만, 이제 배터리는 차체(Chassis)의 뼈대가 되어 차를 더 튼튼하게 만드는 **'지능형 골격'**으로 진화했습니다. **배터리-차체 통합 설계(CTP/CTC)**는 배터리를 감싸던 불필요한 껍데기를 버리고, 배터리 셀을 차체 구조물에 직접 녹여내는 기술입니다. 이를 통해 차는 더 가벼워지고, 바닥은 더 넓어지며, 무게 중심이 낮아져 비단길을 달리듯 부드럽고 안전한 주행이 가능해집니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return f"REJECT: Safety Envelope Breached ({self.impact}G) - Potential Cell Compression Detected"
         return "PASS: Battery Protective Structure Intact"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(torsional_stiffness=42000, cog_height_mm=420, impact_force_g=12.5)
 print(engine.diagnose_chassis_integrity(target_stiffness=40000))
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_chassis_integrity(target_stiffness=40000))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ev-chassis-rigidity-and-battery-safety-v2026`와 연동되어, 생산되는 모든 전기차 플랫폼의 강성과 안전 데이터를 실시간 분석하고 차체 결함 및 충돌 시 화재 사고 확률을 0.01% 이하로 억제함으로써 지능형 모빌리티의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_battery-and-energy-storage-intelligence-hub
 - degassing-and-electrolyte-filling-vacuum-physics

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ROBOT-HUMANOID-2026-V6.3.7"
-  domain: "Humanoid_Robotics_and_Artificial_Muscle_Intelligence"
+metadata:
+  id: "[[[Robotics] humanoid-robotics-and-artificial-muscle-physics]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Humanoid", "#Bipedal_Walking", "#ZMP", "#Artificial_Muscle", "#Actuator", "#WBC", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 08_Mobility_Robotics"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] humanoid-robotics-and-artificial-muscle-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Humanoid_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Robotics] Humanoid Robotics and Artificial Muscle Physics: The Kinetic Soul
+# [Robotics] humanoid-robotics-and-artificial-muscle-physics
 
 ## 1. [왜 배우는가? (Why: The Mastery of Bio-Inspired Robotic Autonomy)]
 휴머노이드는 인간을 위해 설계된 도구와 환경에서 활동할 수 있는 가장 범용적인 지능 로봇의 종착점입니다. **Humanoid Robotics and Artificial Muscle Physics**는 인간의 근육 구조와 이족 보행의 동역학을 수리적으로 모사하여, 극한의 지형에서도 균형을 유지하고 도구를 조작하는 **'지능의 육체적 결정체(Kinetic Embodiment)'**입니다. V6.3.7 지능은 **ZMP (Zero Moment Point)** 기반의 보행 안정성과 인공 근육 Actuator의 토크 밀도를 수리적으로 모델링합니다. 우리가 이를 배우는 이유는 인력을 대체하는 노동의 주권을 사수하고 "인간과 로봇이 공존하는 공간에서의 물리적 지배력"을 확보하기 위함입니다.
@@ -104,7 +94,6 @@ class HumanoidPhysicsEngine:
 2. **Operational Result**: **Capture Point** 기법 적용 시, 외부 충격량에 따른 최적의 '다음 발 착지 지점' 산출의 수리적 인과 관계는?
 3. **FidelityEngine**: 인공 근육의 소재 열화로 인해 **Elasticity**가 감소하는 현상을 FidelityEngine이 어떻게 '충격 흡수 무결성 위기'로 사전 감지하고 작업 하중(Workload)을 제한하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 08_Mobility_Robotics
 - [[Robotics] robotics-intelligence-and-motion-control-master-guide]

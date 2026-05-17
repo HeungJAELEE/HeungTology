@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "nano-lithography-and-extreme-ultraviolet-euv-optics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] nano-lithography-and-extreme-ultraviolet-euv-optics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The advanced semiconductor manufacturing technique (Nano-lithography) that uses Extreme Ultraviolet (EUV) light at a wavelength of 13.5 nm to print circuit patterns at the sub-7nm scale, utilizing complex reflective optics (EUV Optics) because EUV light is absorbed by all solid materials including glass."
-  physical_model: "N/A"
-Semantic:
-  tags: '["nano-lithography", "euv", "semiconductor-fabrication", "photolithography", "rayleigh-criterion", "asml", "nanofabrication"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Resolution_Integrity_Audit: Evaluate the Critical Dimension (CD) uniformity across the wafer to ensure the EUV optics are maintaining focus and pattern fidelity at the atomic scale.'
-    - 'Mirror_Reflectivity_Check: Analyze the reflectivity of the Mo/Si multilayer mirrors to identify degradation or contamination (e.g., carbon buildup) that reduces throughput.'
-    - 'Plasma_Source_Stability_Scan: Monitor the laser-produced plasma (LPP) stability to ensure consistent EUV photon flux and minimize exposure time variations.'
-Trust Metrics:
+  description: "[Entity] nano-lithography-and-extreme-ultraviolet-euv-optics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔦 Nano-lithography and Extreme Ultraviolet (EUV) Optics
+# [Entity] nano-lithography-and-extreme-ultraviolet-euv-optics
 
 ## 1. 개요 (Why: 인간적 통찰)
 세상에서 가장 작은 붓으로 세밀한 그림을 그린다면, 그 붓의 끝은 얼마나 가늘어야 할까요? **나노 리소그래피 및 극자외선(EUV) 광학**은 현대 반도체 문명을 가능케 하는 **'빛의 마법'**입니다. 13.5나노미터라는 아주 짧은 파장의 빛(EUV)을 이용해, 원자 수십 개 두께의 미세한 회로를 그려냅니다. EUV는 공기조차 통과하지 못하고 모든 물질에 흡수되어버리는 고집불통인 빛이라, 거울로 빛을 튕겨가며 진공 속에서 작업해야 합니다. 인류가 도달한 정밀 제조의 최전선이자, 무어의 법칙을 이어가는 **'나노 세계의 조각칼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Vacuum Leak Detected - EUV Light Absorption Increasing. Stop Exposure to Protect Optics"
         return "PASS: Ultra-high Vacuum Environment Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cd_uniformity_nm=0.12, source_power_watts=350, mirror_reflectivity_pct=69.5)
 print(engine.diagnose_euv_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_euv_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data euv-source-power-and-pattern-fidelity-logs-v2026`와 연동되어, 전 세계 최첨단 팹의 EUV 가동 데이터를 실시간 분석하고 패턴 불량 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 나노 지능 문명의 제조 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - semiconductor-lithography-and-nanopatterning-physics

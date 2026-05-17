@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "low-earth-orbit-leo-satellite-constellation-and-6g"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Aerospace] low-earth-orbit-leo-satellite-constellation-and-6g]]"
+  domain: "06_Aerospace_Defense"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "A large-scale LEO satellite network integrated with 6G infrastructure to provide seamless, high-bandwidth, and low-latency global connectivity, enabling the Internet of Space Things (IoST)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["leo-satellite", "6g-network", "satellite-constellation", "space-internet", "orbital-mechanics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SatelliteFidelityEngine"
-  diagnostic_protocol:
-    - 'Handover_Success_Audit: Measure inter-satellite handover stability.'
-    - 'Doppler_Compensation_Check: Verify frequency shift correction accuracy.'
-    - 'Constellation_Coverage_Scan: Detect dead zones in global connectivity.'
-Trust Metrics:
+  description: "[Aerospace] low-earth-orbit-leo-satellite-constellation-and-6g에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#06_Aerospace_Defense", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Low Earth Orbit (LEO) Satellite Constellation and 6G
+# [Aerospace] low-earth-orbit-leo-satellite-constellation-and-6g
 
 ## 1. 개요 (Why)
 지상 통신망의 한계를 넘어 전 지구적 연결성을 확보하기 위해 6G 네트워크는 위성 성좌(Constellation)와의 통합이 필수적입니다. 저궤도(LEO) 위성은 550~1,200km 고도에서 초저지연 통신을 제공하며, 도심뿐만 아니라 극지, 해상, 항공기 등 모든 공간을 하나의 통신망으로 묶습니다. 본 노드는 우주 인프라와 6G 지상망의 융합을 위한 물리적 설계 표준을 정의합니다.
@@ -78,7 +67,6 @@ class SatelliteFidelityEngine:
             return "WARNING: Short Handover Window (Rapid Orbit Decay Risk)"
         return "PASS: Stable Constellation Shell"
 
-# Instance Diagnostic
 engine = SatelliteFidelityEngine(altitude=550, velocity=7600, frequency=30e9)
 print(engine.calculate_doppler_shift(angle_deg=30))
 ```
@@ -96,7 +84,6 @@ print(engine.calculate_doppler_shift(angle_deg=30))
 ## 6. 결론 (Deterministic Outcome)
 본 시스템은 `Data satellite-signal-latency-and-constellation-health-v2026`와 실시간 연동되어, 위성 성좌의 가동률을 99.9% 유지하며 6G 핵심 서비스인 자율주행차 및 도심 항공 모빌리티(UAM)의 글로벌 통신 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 113_aerospace-and-satellite-intelligence-hub
 - satellite-mesh-network-and-orbital-mechanics

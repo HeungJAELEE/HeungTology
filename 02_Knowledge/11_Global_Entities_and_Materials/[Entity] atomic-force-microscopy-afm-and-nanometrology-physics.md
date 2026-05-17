@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "atomic-force-microscopy-afm-and-nanometrology-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] atomic-force-microscopy-afm-and-nanometrology-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of scanning probe microscopy (SPM) with demonstrated resolution on the order of fractions of a nanometer (Atomic Force Microscopy) and the science of measurement at the nanoscale to ensure dimensional accuracy and surface integrity of nanomaterials (Nanometrology Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["afm", "nanometrology", "atomic-force", "scanning-probe", "nanotechnology", "surface-analysis", "metrology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Scanning_Fidelity_Audit: Evaluate the ''Force-Distance Curve'' to identify tip contamination or bluntness that degrades the spatial resolution of the topography map.'
-    - 'Z-axis_Integrity_Check: Analyze the piezoelectric scanner''s linearity and hysteresis to ensure the ''Vertical Height'' measurement is accurate at the sub-Angstrom level.'
-    - 'Noise_Fidelity_Scan: Monitor the RMS cantilever vibration in a vacuum/air environment to verify that ''Acoustic/Mechanical Noise'' is not masking the atomic-scale interaction signals.'
-Trust Metrics:
+  description: "[Entity] atomic-force-microscopy-afm-and-nanometrology-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 Atomic Force Microscopy (AFM) and Nanometrology Physics
+# [Entity] atomic-force-microscopy-afm-and-nanometrology-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 원자 하나가 얼마나 튀어나와 있는지, 표면이 얼마나 매끄러운지 '직접 만져서' 알 수 있다면 어떨까요? **원자간력 현미경(AFM) 및 나노 계측 물리**는 빛으로 볼 수 없는 아주 작은 세상을 '나노 바늘'로 훑어보는 **'원자 단위의 손가락'** 기술입니다. 눈으로 보는 것이 아니라 원자끼리 서로 밀고 당기는 아주 미세한 힘을 느껴서 지도를 그립니다. 반도체 회로의 깊이를 재거나 단백질의 모양을 관찰하는 **'나노 문명의 가장 예민한 감각'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Surface Adhesion - Tip sticking to sample due to water film or electrostatic charge. Clean sample or use liquid cell"
         return "PASS: Clean Tip-Sample Interaction and Verified Metrology Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cantilever_rms_noise_pm=12.5, tip_sharpness_nm=5.5, scanner_linearity_pct=99.8)
 print(engine.diagnose_nanometrology_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_nanometrology_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data afm-surface-topography-and-force-distance-curves-v2026`와 연동되어, 전 세계 주요 나노 연구소 및 반도체 공정 분석 데이터를 실시간 분석하고 측정 오류 및 표면 훼손 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 계측 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - precision-measurement-and-metrology-for-tooling-audit

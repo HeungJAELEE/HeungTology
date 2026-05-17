@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "radar-systems-and-synthetic-aperture-radar-sar-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] radar-systems-and-synthetic-aperture-radar-sar-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The system used to detect and track objects using radio waves (Radar Systems) and the advanced imaging technique that uses the motion of the radar antenna over a target region to provide high-resolution remote sensing (Synthetic Aperture Radar Physics), independent of daylight or weather conditions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["radar", "sar", "remote-sensing", "signal-processing", "doppler-effect", "aerospace", "imaging-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Detection_Fidelity_Audit: Evaluate the Signal-to-Noise Ratio (SNR) of the reflected pulse to ensure the radar can distinguish small targets from background clutter.'
-    - 'SAR_Resolution_Check: Analyze the phase history data to verify that the ''Synthetic Aperture'' is correctly reconstructed, achieving the theoretical azimuth resolution limit.'
-    - 'Doppler_Accuracy_Scan: Monitor the frequency shift of moving targets to identify velocity measurement errors caused by atmospheric interference or clock drift.'
-Trust Metrics:
+  description: "[Entity] radar-systems-and-synthetic-aperture-radar-sar-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛰️ Radar Systems and Synthetic Aperture Radar (SAR) Physics
+# [Entity] radar-systems-and-synthetic-aperture-radar-sar-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 칠흑 같은 밤이나 자욱한 안개 속에서도 산 너머의 비행기나 지상의 작은 자동차를 어떻게 선명하게 볼 수 있을까요? **레이더 시스템 및 합성 개구 레이더(SAR) 물리**는 보이지 않는 전파를 쏘고 그 메아리를 들어 세상을 파악하는 **'전자기적 시각'**입니다. 특히 SAR 기술은 비행기가 움직이면서 쏜 전파들을 마치 거대한 안테나 하나가 쏜 것처럼 가상으로 합쳐(합성), 구름 위에서도 땅 위의 나뭇잎 하나까지 구분해내는 **'구름을 뚫는 고해상도 눈'**을 제공합니다. 전 지구를 24시간 감시하고 보호하는 **'행성급 파수꾼'**의 핵심입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Uncertain Target Identification - Unable to distinguish Decoys from Real Targets. Apply Polarimetric Analysis"
         return "PASS: Reliable Target Discrimination and Verified Operational Fidelity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(radar_snr_db=35.0, sar_phase_error_deg=1.2, pulse_compression_ratio=1000)
 print(engine.diagnose_radar_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_radar_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data radar-detection-fidelity-and-sar-resolution-v2026`와 연동되어, 전 세계 국방 위성 및 재난 감시 레이더의 데이터를 실시간 분석하고 탐지 실패 및 영상 왜곡 사고 확률을 0.001% 이하로 억제함으로써 지능형 항공 우주 문명의 정보 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - radio-frequency-rf-engineering-and-antenna-design-physics

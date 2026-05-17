@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "marine-renewable-energy-offshore-wind-and-tidal-physics-entity"
-  domain: "02_Energy_Infrastructure"
+metadata:
+  id: "[[[Infrastructure] marine-renewable-energy-offshore-wind-and-tidal-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Infrastructure", "#Ocean_Engineering", "#Fluid_Dynamics", "#Renewable_Energy", "#Structural_Health", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Energy smart-grid-and-vpp-control-intelligence", "MOC 02_Energy_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] marine-renewable-energy-offshore-wind-and-tidal-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] marine-renewable-energy-offshore-wind-and-tidal-physics
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Wave Energy Converter (WEC)**에서 **Point Absorber** 방식이 파도의 수평 운동보다 수직 운동(Heave) 에너지 추출에 유리한 유체역학적 근거는?
 5. RAG 시스템에서 **해상 기상 레이더**와 **해저 센서 네트워크**를 융합하여, '거대 파랑 접근 시' 부유식 단지의 모든 터빈을 최적의 안전 모드로 전환하는 **Global Marine Safety** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Energy]] smart-grid-and-vpp-control-intelligence]] : 해상 에너지의 간헐성을 보완하고 전력망에 안정적으로 공급하는 상위 제어 엔티티
 - [Infrastructure] subsea-communication-and-underwater-acoustic-networks : 해상 및 해저 인프라 가동 상태를 전송하기 위한 수중 통신 연계 엔티티

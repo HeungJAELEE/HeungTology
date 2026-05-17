@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "conductive-polymer-and-intrinsic-conductivity-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] conductive-polymer-and-intrinsic-conductivity-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Organic polymers that conduct electricity, often called 'synthetic metals' (Conductive Polymer) and the physical study of how charge carriers (solitons, polarons) move through conjugated carbon chains (Intrinsic Conductivity Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["conductive-polymer", "intrinsic-conductivity", "polyaniline", "doping", "organic-electronics", "semiconductor", "material-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Conductivity_Fidelity_Audit: Evaluate the ''Doping Level'' to identify if the polymer has been sufficiently oxidized or reduced to create the necessary polarons for metallic-like conduction.'
-    - 'Morphology_Integrity_Check: Analyze the chain alignment and crystallinity to ensure that ''Inter-chain Hopping'' is not being hindered by amorphous disordered regions.'
-    - 'Stability_Fidelity_Scan: Monitor the conductivity decay over time and exposure to oxygen/humidity to verify that the ''Dopant'' is not leaching or degrading, leading to device failure.'
-Trust Metrics:
+  description: "[Entity] conductive-polymer-and-intrinsic-conductivity-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Conductive Polymer and Intrinsic Conductivity Physics
+# [Entity] conductive-polymer-and-intrinsic-conductivity-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 플라스틱이 전기를 통할 수 있다면 세상은 어떻게 변할까요? **전도성 고분자 및 고유 전도성 물리**는 '플라스틱은 절연체'라는 상식을 뒤집고, 금속처럼 전기가 흐르는 유연한 물질을 만드는 **'합성 금속'** 기술입니다. 2000년 노벨 화학상의 주인공이기도 한 이 기술은 탄소 사슬의 독특한 결합을 이용해 전자를 이동시킵니다. 가볍고, 휘어지고, 녹슬지 않는 전선이자 투명한 전극이 되어 미래의 '입는 컴퓨터'와 '휘어지는 디스플레이'를 가능케 하는 **'유기물 전자 시대의 주역'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Optical Quality - Polymer film too thick or scattering centers present. Unsuitable for transparent electrode applications"
         return "PASS: Validated Optical Clarity and Verified Electronic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(sheet_resistance_ohm_sq=150.0, doping_ratio=0.25, ambient_humidity_pct=45.0)
 print(engine.diagnose_polymer_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_polymer_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data conductive-polymer-doping-levels-and-stability-v2026`와 연동되어, 전 세계 주요 유기 태양광 및 OLED 소재 공장의 데이터를 실시간 분석하고 전도성 상실 및 소자 열화 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 문명의 전도 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - charge-coupled-device-ccd-and-cmos-sensor-physics

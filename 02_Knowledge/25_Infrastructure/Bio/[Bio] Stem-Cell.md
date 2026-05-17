@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Bio] Stem-Cell"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Bio] Stem-Cell]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Bio] Stem-Cell에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Bio] Stem-Cell
@@ -90,5 +80,4 @@ def monitor_organoid_development(image_stream):
 2. '장기 칩(Organ-on-a-Chip)' 기술이 기존의 2차원 세포 배양 실험보다 신약 독성 평가에 유리한 이유는?
 3. 3D 바이오 프린팅에서 '바이오 잉크'가 갖춰야 할 물리적(점탄성) 및 생물학적(생체 적합성) 요건은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bolt-preload-and-torque-tension-relationship-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bolt-preload-and-torque-tension-relationship-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The tension created in a fastener when it is tightened (Bolt Preload) and the mathematical correlation between the applied torque and the resulting clamping force, governed largely by friction in the threads and under the bolt head (Torque-Tension Relationship Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bolt-preload", "torque-tension", "fastener-mechanics", "mechanical-joint", "friction-coefficient", "clamping-force", "structural-integrity"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Preload_Fidelity_Audit: Evaluate the ''Residual Tension'' ($F_p$) in the bolted joint using ultrasonic or strain-gauge sensors to identify if the joint has relaxed due to vibration or thermal cycling.'
-    - 'Friction_Integrity_Check: Analyze the $K$-factor (Nut factor) to ensure that variations in surface lubrication are not causing massive swings in the achieved preload for a constant applied torque.'
-    - 'Fatigue_Fidelity_Scan: Monitor the bolt''s stress amplitude under dynamic loading to verify that the preload is high enough to prevent ''Joint Separation'' and thread-stripping fatigue.'
-Trust Metrics:
+  description: "[Entity] bolt-preload-and-torque-tension-relationship-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Bolt Preload and Torque-Tension Relationship Mechanics
+# [Entity] bolt-preload-and-torque-tension-relationship-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 다리나 비행기 날개가 단 몇 개의 나사로 고정되어 있다는 사실이 불안하지 않으신가요? **볼트 축력(Preload) 및 토크-인장 관계 역학**은 나사를 단순히 돌려 끼우는 것이 아니라, 나사를 '강력한 스프링'으로 만들어 두 물체를 꽉 쥐게 만드는 **'조임의 과학'** 기술입니다. 우리가 가하는 회전력(토크)의 90%는 마찰로 사라지고, 단 10%만이 물체를 잡아주는 힘(축력)이 됩니다. 이 보이지 않는 '꽉 쥐는 힘'을 계산하여 기계가 분해되지 않게 지키는 **'산업의 가장 작은 결속자'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Joint Relaxation Detected - Significant loss of preload after initial tightening. Embedment or gasket creep suspected. Re-torque required"
         return "PASS: Stable Residual Preload and Verified Structural Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(applied_torque_nm=120.0, friction_coefficient_k=0.18, environmental_temp_c=22.5)
 print(engine.diagnose_bolt_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_bolt_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bolt-torque-accuracy-and-preload-variation-v2026`와 연동되어, 전 세계 주요 교량 및 항공기 조립 데이터를 실시간 분석하고 볼트 탈락 및 구조 붕괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 산업 문명의 결속 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

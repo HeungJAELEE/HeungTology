@@ -1,37 +1,42 @@
 ---
-Basic:
-  id: "metal-organic-chemical-vapor-deposition-mocvd-kinetics"
+metadata:
+  id: "[[[Entity] metal-organic-chemical-vapor-deposition-mocvd-kinetics]]"
   domain: "General_Industrial"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Entity"
   tier: 1
   description: "The chemical vapor deposition technique (MOCVD) used to grow high-quality crystalline thin films (Epitaxy) by decomposing metal-organic precursors on a heated substrate, primarily used for compound semiconductors like GaN and GaAs."
-  physical_model: "N/A"
-Semantic:
-  tags: '["mocvd", "epitaxy", "semiconductor-fabrication", "thin-film", "compound-semiconductor", "chemical-kinetics", "led-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#General_Industrial"]
+  expected_queries:
+    - "[Entity] metal-organic-chemical-vapor-deposition-mocvd-kinetics 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Entity] metal-organic-chemical-vapor-deposition-mocvd-kinetics"
+    predicate: "belongs_to"
+    object: "General_Industrial"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Growth_Rate_Audit: Evaluate the film thickness against the deposition time and precursor flow rates to identify shifts between mass-transport limited and surface-reaction limited regimes.'
-    - 'Film_Uniformity_Check: Analyze the cross-wafer thickness and composition variance using reflectometry to ensure high-fidelity yield for micro-LED or power device fabrication.'
-    - 'Precursor_Purity_Scan: Monitor the residual impurities (e.g., Oxygen, Carbon) in the epitaxial layer to ensure high carrier mobility and optical efficiency.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# ⚗️ Metal-Organic Chemical Vapor Deposition (MOCVD) Kinetics
+# metal-organic-chemical-vapor-deposition-mocvd-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 현대의 LED 조명이나 초고속 통신 칩은 어떻게 만들어질까요? 그것은 원자 한 층 한 층을 정성스럽게 쌓아 올리는 **MOCVD(유기 금속 화학 기상 증착)**라는 고도의 '나노 벽돌 쌓기' 기술 덕분입니다. 복잡한 유기 금속 기체를 뜨거운 기판 위로 흘려보내, 기체들이 화학적으로 분해되면서 기판 위에 완벽한 결정을 이루게 만드는 **'화학적 비(Rain)의 예술'**입니다. 보이지 않는 기체의 흐름을 다스려 인공적인 수정을 키워내는 이 과정은, 반도체 산업의 가장 섬세하고도 강력한 **'결정 성장 기술'**입니다.
@@ -58,7 +63,7 @@ $$ k_s = A \cdot \exp\left(-\frac{E_a}{RT}\right) $$
 | :--- | :--- | :--- | :--- |
 | **Operating Temp** | 500 ~ 1,200 | $^\circ C$ | Reaction Regime |
 | **Chamber Pressure**| 10 ~ 760 | Torr | Boundary Layer |
-| **Growth Rate** | 0.1 ~ 5.0 | $\mu m / hr$ | Throughput |
+| **Growth Rate** | 0.1 ~ 5.0 | $\mu\text{m} / hr$ | Throughput |
 | **Uniformity** | < 1.0% | % (wafer) | Yield |
 | **Precursors** | TMGa, TMAl, $NH_3$ | Type | Purity |
 | **Carrier Gas** | $H_2, N_2$ | Type | Flow Dynamics |

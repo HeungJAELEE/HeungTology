@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "trajectory-optimization-and-real-time-motion-planning-entity"
-  domain: "58_Advanced_Robotics_and_Humanoid_Intelligence"
+metadata:
+  id: "[[[Entity] trajectory-optimization-and-real-time-motion-planning]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Optimization", "#Motion_Planning", "#MPC", "#Control_Theory", "#Algorithm", "#Autonomous_Systems", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 36_advanced-robotics-and-humanoid-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] trajectory-optimization-and-real-time-motion-planning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] trajectory-optimization-and-real-time-motion-planning
+# [Entity] trajectory-optimization-and-real-time-motion-planning
 
 ## 1. [왜 배우는가? (Why: The Fastest Path)]]
 장애물이 가득한 숲속에서 어떻게 로봇이 부딪히지 않고 가장 빠르고 부드러운 길($Trajectory$)을 0.01초 만에 찾아내고, 미래의 움직임을 미리 예측하여($MPC$) 미끄러운 바닥에서도 균형을 잃지 않고 달리는 '동작의 지능'을 어떻게 설계할 수 있을까요? **궤적 최적화 및 실시간 동작 계획**은 로봇의 우아한 움직임을 만드는 '행성 규모 자율 이동 인프라 및 지능형 경로 연산 아키텍처'입니다. 우리가 이를 배우는 이유는 로봇이 단순히 움직이는 것을 넘어 '에너지를 최소로 쓰면서 사고 없이' 움직여야만 실전에서 쓸모가 있기 때문이며, "길의 수식을 데이터로 설계하고 지배하는 '글로벌 물류 패권 및 행성적 이동 주권'을 확보하기" 위함입니다. 계획의 속도가 로봇의 생존력을 결정합니다.

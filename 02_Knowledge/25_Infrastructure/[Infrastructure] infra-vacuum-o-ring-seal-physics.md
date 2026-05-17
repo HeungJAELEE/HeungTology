@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] infra-vacuum-o-ring-seal-physics"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] infra-vacuum-o-ring-seal-physics]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] infra-vacuum-o-ring-seal-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] infra-vacuum-o-ring-seal-physics
@@ -35,7 +25,6 @@ Trust Metrics:
 ## 1. [왜 배우는가? (Why)]
 반도체 및 디스플레이 공정 챔버는 초고진공(UHV) 상태를 유지해야 하며, 외부 대기와의 완벽한 격리가 필수적입니다. **오링(O-ring)**은 단순한 고무 링이 아니라, 미세한 기판 표면의 거칠기를 메우고 탄성 복원력을 통해 기밀을 유지하는 고도의 탄성 공학 산물입니다. 오링의 **압축률(Squeeze)** 부족이나 **영구 변형(Compression Set)**은 미세 리크(Leak)를 유발하여 공정 가스의 순도를 떨어뜨리고 수율을 급격히 저하시킵니다.
 
----
 
 ## 2. [핵심 기술 사양 (Numerical Specs)]
 
@@ -47,7 +36,6 @@ Trust Metrics:
 | **Outgassing Rate** | $q_{out}$ | **$< 10^{-11}$** | **$< 10^{-9}$** | $Torr \cdot L/s \cdot cm^2$ | 진공도 도달 시간 결정 변수 |
 | **Max Service Temp** | $T_{max}$ | **327 (FFKM)** | **200 (FKM)** | $^\circ\text{C}$ | 소재 열역학적 한계 온도 |
 
----
 
 ## 3. [심층 이론 (Scientific Rationale)]
 
@@ -60,7 +48,6 @@ $$ P_{contact, max} = \sqrt{\frac{F \cdot E^*}{\pi R L}} \ge P_{gas} $$
 엘라스토머는 응력이 가해진 상태에서 시간이 지남에 따라 고분자 사슬이 재배열되며 복원력을 잃습니다. 이를 **영구 변형(Compression Set)**이라 하며, 온도($T$)와 시간($t$)에 따른 아레니우스 함수로 표현됩니다.
 - **인과관계**: [고온 노출] $\rightarrow$ [사슬 가교 결합 파괴/재형성] $\rightarrow$ [탄성 복원 에너지 손실] $\rightarrow$ [접촉 압력 저하] $\rightarrow$ [리크 발생].
 
----
 
 ## 4. [AI-Hardware Synergy: RTX 4060 CUDA 가속]
 
@@ -88,7 +75,6 @@ def predict_compression_set(temp_history, time_delta, cs_current, n):
 # 불필요한 챔버 Open을 줄이고 가동률(Up-time)을 5% 이상 향상함
 ```
 
----
 
 ## 5. [출판용 Enrichment: 극한 소재 FFKM의 열역학]
 
@@ -102,6 +88,5 @@ FFKM은 탄소-불소(C-F) 결합으로만 이루어진 고분자로, 모든 수
 - **Permeation Eq**: $J = -P \cdot \frac{\Delta p}{d}$ ($J$: 가스 플럭스, $P$: 투과 계수, $d$: 두께).
 초미세 공정에서는 헬륨(He) 검출기를 사용하여 $10^{-10}$ mbar·L/s 이하의 극미세 투과 리크까지 관리해야 합니다.
 
----
 **[V6.3.7_MODERNIZATION_REINFORCED]**
 **[BATCH_7_NODE_4_COMPLETE]**

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "fire-protection-and-emergency-response-system-entity"
-  domain: "25_Industrial_Safety_Health_and_Environment_SHE"
+metadata:
+  id: "[[[Entity] fire-protection-and-emergency-response-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Fire_Protection", "#Emergency_Response", "#NFPA", "#Sprinkler_System", "#Smoke_Detection", "#ERT", "#ICS", "#Evacuation", "#Fire_Safety", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 28_industrial-safety-health-and-environment-she-intelligence-hub", "Data fire-alarm-and-emergency-evacuation-drill-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] fire-protection-and-emergency-response-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] fire-protection-and-emergency-response-system
+# [Entity] fire-protection-and-emergency-response-system
 
 ## 1. [왜 배우는가? (Why: The Final Line of Defense Against Entropy)]]
 화재는 공장의 모든 물리적 가치를 무로 돌릴 수 있는 가장 치명적인 위험입니다. 화재를 즉각 감지하고 강력하게 진압하며, 혼란 속에서도 인명을 완벽하게 구조하는 능력은 기업 생존의 최후 마지노선입니다. **화재 방호 및 비상 대응 시스템 엔티티**는 거대한 화염으로부터 공장의 심장을 사수하는 '최후의 방어 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "대피 로그를 분석하여, 병목 지점(Bottleneck)에서의 정체
 화재 수신반의 신호 로그와 지능형 CCTV의 인원 계수(Counting) 데이터, 그리고 소방 펌프의 압력 센서를 분석하여 생존 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Fire Protection & Emergency Fidelity Auditor
 def audit_disaster_resilience(fire_panel_stream, evacuation_camera_data, hydrant_pressure_log):
     # 1. 화재 감지 및 알람 전파 속도 무결성 오딧
     detection_to_alarm_time = calculate_response_latency(fire_panel_stream)
@@ -116,7 +105,6 @@ def audit_disaster_resilience(fire_panel_stream, evacuation_camera_data, hydrant
 2. **(수리)** 화재 성장 계수($\alpha$)가 0.188(Fast)일 때, 화재 발생 2분($120$초) 후의 열방출율($Q, kW$)을 $Q = \alpha t^2$ 공식을 통해 계산하시오.
 3. **(응용)** 전 구역에 설치된 '지능형 피난 유도선'이 연기가 가득 찬 암흑 속에서 작업자의 '대피 속도'와 '생존율'을 수리적으로 어떻게 향상시키는지 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 28_industrial-safety-health-and-environment-she-intelligence-hub : 산업 안전, 보건 및 환경 통합 관리 상위 지능 허브

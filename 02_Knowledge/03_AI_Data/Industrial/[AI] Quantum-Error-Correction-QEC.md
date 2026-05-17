@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-QEC-2026-V6"
+metadata:
+  id: "[[[AI] Quantum-Error-Correction-QEC]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#QEC'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Quantum-Error-Correction-QEC에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Quantum-Error-Correction-QEC
@@ -42,11 +32,11 @@ Trust Metrics:
 | **Error Threshold** | Per-gate Error Rate | $< 0.1 \sim 1.0\%$ | QEC가 유효하게 작동하기 위한 물리적 하한선 |
 | **Code Distance** | Distance ($d$) | $3 \sim 21+$ | 수정 가능한 최대 오류 개수 ($d = 2t+1$) 결정 |
 | **Overhead Ratio** | Physical/Logical | $1,000 : 1 \sim 100 : 1$ | 논리 큐비트 하나를 만들기 위한 물리 큐비트 소요량 |
-| **Decod. Latency** | MWPM Inference | $< 1 \text{ \mu s}$ | 오류 발생 시 연산 중단 없이 실시간 교정 가능한 속도 |
+| **Decod. Latency** | MWPM Inference | $< 1 \text{ }\mu\text{ s}$ | 오류 발생 시 연산 중단 없이 실시간 교정 가능한 속도 |
 | **Suppression** | Logical Error Rate | $< 10^{-15}$ | 실질적인 상용 연산을 위한 오류 억제 목표치 |
 | **Code Type** | Surface / qLDPC | 2D / 3D Connectivity | 하드웨어 위상(Connectivity)에 따른 코드 선정 |
 | **Syndrome Meas.** | Readout Fidelity | $> 99.5\%$ | 간접 측정을 통한 오류 신호(Syndrome) 검출 정확도 |
-| **Cycle Time** | Feedback Loop | $< 10 \text{ \mu s}$ | 신드롬 측정-디코딩-교정 게이트 적용 전체 주기 |
+| **Cycle Time** | Feedback Loop | $< 10 \text{ }\mu\text{ s}$ | 신드롬 측정-디코딩-교정 게이트 적용 전체 주기 |
 
 ## 3. [공학적 근거 (Scientific Rationale)]
 
@@ -115,7 +105,6 @@ class QECDecoder:
 2. **qLDPC** (Quantum Low-Density Parity-Check) 코드가 기존 **Surface Code** 대비 'Overhead'를 획기적으로 줄일 수 있는 수리적 배경은?
 3. 디코딩 알고리즘의 **Latency**가 큐비트의 **Coherence Time**보다 길어질 경우 발생하는 **Backlog** 문제의 해결 방안은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Computing-R&D
 - 02_Knowledge/03_AI_Data/Industrial/AI Quantum-Processor-Architecture-QPU

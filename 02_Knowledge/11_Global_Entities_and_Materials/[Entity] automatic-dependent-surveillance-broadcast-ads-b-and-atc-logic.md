@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "automatic-dependent-surveillance-broadcast-ads-b-and-atc-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] automatic-dependent-surveillance-broadcast-ads-b-and-atc-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A surveillance technology in which an aircraft determines its position via satellite navigation and periodically broadcasts it, enabling it to be tracked (ADS-B) and the computational algorithms used by Air Traffic Control (ATC) to maintain safe separation and optimize flight paths based on this high-precision data."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ads-b", "atc-logic", "aviation-safety", "surveillance", "nextgen", "air-traffic-control", "transponder"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Surveillance_Fidelity_Audit: Evaluate the ''NACp'' (Navigation Accuracy Category for Position) and ''NIC'' (Navigation Integrity Category) to identify if the aircraft''s reported position is trustworthy for ATC decision-making.'
-    - 'Logic_Integrity_Check: Analyze the ATC conflict detection algorithms for ''False Alarms'' or ''Missed Conflicts'' in high-density terminal airspaces to ensure the safety-critical separation buffers are maintained.'
-    - 'Freshness_Fidelity_Scan: Monitor the ADS-B message update rate (Standard: 1 Hz) to identify aircraft with faulty transponders or satellite signal interference that could lead to ''Ghosting'' on the controller''s screen.'
-Trust Metrics:
+  description: "[Entity] automatic-dependent-surveillance-broadcast-ads-b-and-atc-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ✈️ Automatic Dependent Surveillance-Broadcast (ADS-B) and ATC Logic
+# [Entity] automatic-dependent-surveillance-broadcast-ads-b-and-atc-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 하늘이라는 거대한 3차원 도로에서 수천 대의 비행기가 서로 부딪히지 않고 질서 정연하게 날아다니는 비결은 무엇일까요? **ADS-B 및 ATC 로직**은 비행기가 자신의 위치를 하늘 전체에 실시간으로 외치는 **'디지털 자기소개'** 기술입니다. 과거에는 땅 위의 레이더가 비행기를 찾아다녔다면, 이제는 비행기가 스스로 GPS를 이용해 "나는 지금 어디에, 어떤 속도로 가고 있다"라고 1초마다 방송합니다. 이를 통해 관제사는 물론 옆의 비행기까지도 서로의 존재를 완벽히 인지하는 **'투명한 하늘의 교통망'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: ADS-B Signal Anomaly - Potential GPS spoofing or unauthorized transmitter detected. Triggering multi-lateration verification"
         return "PASS: Validated Signal Identity and Verified Electronic Sovereignty Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(nac_p_score=10, surveillance_latency_s=0.5, conflict_warning_count=1)
 print(engine.diagnose_atc_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_atc_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ads-b-reporting-accuracy-and-atc-conflict-counts-v2026`와 연동되어, 전 세계 주요 공역의 감시 데이터를 실시간 분석하고 공중 충돌 및 경로 이탈 사고 확률을 0.0001% 이하로 억제함으로써 지능형 항공 문명의 안전 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - aeronautical-engineering-and-supersonic-flight-physics

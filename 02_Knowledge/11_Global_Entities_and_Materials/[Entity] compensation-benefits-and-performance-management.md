@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "compensation-benefits-and-performance-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] compensation-benefits-and-performance-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic framework for aligning employee rewards (Base pay, Incentives, Benefits) with individual and organizational performance through deterministic evaluation and merit-based systems."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hr-management", "compensation", "benefits", "performance-management", "employee-retention"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Pay_Equity_Audit: Analyze salary distribution for potential gender or demographic bias.'
-    - 'KPI_Alignment_Check: Verify that individual performance goals directly support organizational objectives (OKRs).'
-    - 'Retention_Risk_Scan: Identify high-performing employees whose compensation is significantly below market average.'
-Trust Metrics:
+  description: "[Entity] compensation-benefits-and-performance-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💰 Compensation, Benefits, and Performance Management
+# [Entity] compensation-benefits-and-performance-management
 
 ## 1. 개요 (Why)
 사람은 기업의 가장 중요한 자산이며, '보상'은 그 자산의 가치를 인정하고 동기를 부여하는 가장 강력한 수단입니다. 보상과 성과 관리는 단순한 월급 계산이 아니라, 직원의 노력과 기업의 성장을 일치시키는 정교한 시스템입니다. 공정한 성과 평가와 그에 따르는 합리적 보상은 인재 유출을 막고 조직의 생산성을 극대화하는 핵심 엔진입니다. 본 노드는 보상 체계의 무결성과 성과 지표의 공정성 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LegalFidelityEngine:
             return f"REJECT: High Retention Risk (Index: {self.risk}) - Adjust Compensation for Top Talent"
         return "PASS: Stable Human Capital Retention Status"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(pay_equity_gap=2.1, kpi_alignment_score=92, retention_risk_index=0.15)
 print(engine.diagnose_compensation_fairness())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_compensation_fairness())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data employee-performance-and-compensation-correlation-v2026`와 연동되어, 전 직원의 성과와 보상 데이터를 실시간 분석하고 불공정 보상 사례를 99% 확률로 잡아냄으로써 건강한 조직 문화와 인재 경쟁력의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - corporate-culture-and-employee-value-proposition-evp

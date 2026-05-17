@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "electric-arc-furnace-eaf-and-plasma-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] electric-arc-furnace-eaf-and-plasma-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A furnace that heats charged material (usually steel scrap) by means of an electric arc (Electric Arc Furnace) and the physical-chemical study of ultra-high temperature plasma interactions for smelting, refining, and alloy production (Plasma Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["eaf", "electric-arc-furnace", "steelmaking", "plasma-metallurgy", "recycling", "scrap-steel", "industrial-heating"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Arc_Fidelity_Audit: Evaluate the ''Arc Stability'' and harmonic distortion to identify if the electrodes are too far from the scrap or if the slag layer is insufficient for arc shielding.'
-    - 'Metallurgical_Integrity_Check: Analyze the oxygen/carbon injection rates to ensure that the ''Decarburization'' and phosphorus removal are reaching the target chemistry for high-fidelity steel grades.'
-    - 'Electrode_Fidelity_Scan: Monitor the graphite electrode consumption rate to verify that the current density is optimized and ''Tip Breakage'' risks are minimized.'
-Trust Metrics:
+  description: "[Entity] electric-arc-furnace-eaf-and-plasma-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Electric Arc Furnace (EAF) and Plasma Metallurgy
+# [Entity] electric-arc-furnace-eaf-and-plasma-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 버려진 고철이 어떻게 단 몇 시간 만에 번쩍이는 새 강철로 다시 태어날까요? **전기로(EAF) 및 플라즈마 야금**은 거대한 인공 번개(아크)를 내리꽂아 차가운 고철을 녹이는 **'전기적 재생'** 기술입니다. 용광로(고로)가 철광석을 처음 녹이는 '창조'의 과정이라면, 전기로는 고철을 재활용하는 '순환'의 핵심입니다. 수천 도의 플라즈마 열기를 다스려 지구를 아끼면서도 가장 강한 철을 만드는 **'현대 제강의 전자기적 심장'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Electrode Consumption - Poor oxidation control or excessive current density. Material costs increasing by 15%"
         return "PASS: Validated Graphite Integrity and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(power_input_mw=85.0, specific_energy_kwh_t=380.0, arc_stability_index=0.92)
 print(engine.diagnose_eaf_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_eaf_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data eaf-energy-consumption-and-electrode-wear-v2026`와 연동되어, 전 세계 주요 철강 리사이클링 기가팩토리의 데이터를 실시간 분석하고 전극 파손 및 전력망 사고 확률을 0.001% 이하로 억제함으로써 지능형 자원 순환 문명의 제강 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cupola-furnace-and-iron-melting-metallurgy

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "brick-manufacturing-and-ceramic-firing-kinetics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] brick-manufacturing-and-ceramic-firing-kinetics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial process of shaping, drying, and firing clay to produce structural units (Brick Manufacturing) and the chemical study of the phase transformations and sintering that occur within the ceramic body as it is heated to high temperatures (Ceramic Firing Kinetics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["brick-manufacturing", "ceramic-firing", "sintering", "clay-chemistry", "kiln-operation", "thermal-kinetics", "structural-ceramics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Firing_Fidelity_Audit: Evaluate the ''Kiln Temperature Profile'' and heating rate to identify if the dehydroxylation or quartz inversion points are causing internal cracking or ''Black Core'' defects.'
-    - 'Sintering_Integrity_Check: Analyze the linear shrinkage ($\\Delta L$) and water absorption rate to ensure the brick has achieved full ''Vitrification'' for maximum durability and weather resistance.'
-    - 'Energy_Fidelity_Scan: Monitor the fuel consumption and exhaust gas temperature to verify that the ''Heat Recovery'' system and kiln insulation are maintaining optimal thermal efficiency.'
-Trust Metrics:
+  description: "[Entity] brick-manufacturing-and-ceramic-firing-kinetics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧱 Brick Manufacturing and Ceramic Firing Kinetics
+# [Entity] brick-manufacturing-and-ceramic-firing-kinetics
 
 ## 1. 개요 (Why: 인간적 통찰)
 발밑의 흔한 흙이 어떻게 천 년을 버티는 단단한 벽돌이 될까요? **벽돌 제조 및 세라믹 소성(Firing) 역학**은 흙을 '인공 암석'으로 탈바꿈시키는 **'불의 연금술'** 기술입니다. 단순히 굽는 것이 아니라, 열을 이용해 원자들을 서로 결합(Sintering)시키고 새로운 결정 구조를 만들어냅니다. 수천 도의 가마(Kiln) 속에서 흙이 숨을 쉬며 단단해지는 과정을 다스리는 **'가장 오래된 소재 혁명이자 지능형 건축 소재 공학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Soluble Salt Content - Risk of white salt stains (Efflorescence) on finished masonry. Improve clay washing or increase firing temp to fix salts"
         return "PASS: Clean Clay Mineralogy and Verified Aesthetic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(kiln_temp_uniformity=5.5, brick_linear_shrinkage=7.2, water_absorption_pct=6.5)
 print(engine.diagnose_firing_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_firing_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ceramic-firing-temperature-and-brick-strength-v2026`와 연동되어, 전 세계 주요 벽돌 및 세라믹 타일 공장의 데이터를 실시간 분석하고 강도 미달 및 균열 사고 확률을 0.001% 이하로 억제함으로써 지능형 건축 문명의 기초 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "corporate-management-and-strategy-fundamentals"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] corporate-management-and-strategy-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The core principles and frameworks for leading an organization and defining its long-term strategic direction to achieve sustainable competitive advantage."
-  physical_model: "N/A"
-Semantic:
-  tags: '["management", "business-strategy", "swot", "value-chain", "corporate-planning"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Strategy_Execution_Audit: Measure the achievement rate of strategic objectives (OKRs/KPIs).'
-    - 'Market_Positioning_Check: Evaluate the relative market share and competitive intensity using Porter''s Five Forces.'
-    - 'Resource_Efficiency_Scan: Analyze the ROI and resource allocation efficiency across business units.'
-Trust Metrics:
+  description: "[Entity] corporate-management-and-strategy-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📈 Corporate Management and Strategy Fundamentals
+# [Entity] corporate-management-and-strategy-fundamentals
 
 ## 1. 개요 (Why)
 방향 없는 항해는 좌초하기 마련입니다. 기업 경영과 전략은 거친 시장의 바다에서 기업이 어디로 가야 할지(Where to play)와 어떻게 이길지(How to win)를 결정하는 조타수 역할을 합니다. 뛰어난 전략은 한정된 자원을 가장 승률이 높은 곳에 집중시켜, 경쟁사보다 높은 가치를 창출하고 영속적인 성장을 가능하게 합니다. 본 노드는 기업 경영의 전략적 무결성과 자원 배분 최적화 표준을 정의합니다.
@@ -71,7 +60,6 @@ class LegalFidelityEngine:
             return "NOTICE: Niche Player Status - Explore Growth Strategy or Blue Ocean Shift"
         return "PASS: Strong Market Presence Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(okr_attainment=78, operating_margin=18.5, market_share_pct=25)
 print(engine.diagnose_strategic_health())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_strategic_health())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data corporate-strategic-kpi-and-market-share-v2026`와 연동되어, 기업의 모든 재무 및 전략 데이터를 실시간 분석하고 사업 실패 리스크를 90% 확률로 사전 포착함으로써 경영 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 21_human-resource-and-organizational-intelligence-hub
 - corporate-culture-and-employee-value-proposition-evp

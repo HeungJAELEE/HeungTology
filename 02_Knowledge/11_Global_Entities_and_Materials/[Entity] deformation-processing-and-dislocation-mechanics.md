@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "deformation-processing-and-dislocation-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] deformation-processing-and-dislocation-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The industrial methods of changing the shape of a metal workpiece through plastic deformation like rolling, forging, and extrusion (Deformation Processing) and the physical study of the motion and interaction of line defects in the crystal lattice that govern the material's strength and ductility (Dislocation Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["deformation-processing", "dislocation", "metallurgy", "plasticity", "work-hardening", "materials-science", "rolling-forging"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Deformation_Fidelity_Audit: Evaluate the ''Dislocation Density'' ($\\rho$) and strain rate to identify if the material is experiencing ''Dynamic Recovery'' or ''Recrystallization'', which drastically alters the post-processing mechanical properties.'
-    - 'Hardening_Integrity_Check: Analyze the flow stress against the total effective strain to ensure the ''Work Hardening'' rate is sufficient to maintain dimensional stability without premature necking.'
-    - 'Mechanical_Fidelity_Scan: Monitor the roll force and torque to verify that the ''Shear Bands'' or localized deformation zones are minimized, ensuring a uniform internal grain structure.'
-Trust Metrics:
+  description: "[Entity] deformation-processing-and-dislocation-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔩 Deformation Processing and Dislocation Mechanics
+# [Entity] deformation-processing-and-dislocation-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 금속을 두드리면 왜 더 단단해질까요? **소성 가공(Deformation Processing) 및 전위(Dislocation) 역학**은 금속 내부의 미세한 '결함'들을 조종하여 모양을 바꾸고 강도를 높이는 **'원자 단위의 교통 정리'** 기술입니다. 금속 원자들이 질서 정연하게 서 있는 격자 속에, 줄 하나가 어긋난 '전위'라는 녀석들이 돌아다니며 모양을 바꿉니다. 가공하면 할수록 이 전위들이 서로 엉켜서 움직이지 못하게 되는데, 이것이 바로 금속이 단단해지는 신비로운 **'가공 경화의 마법'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Excessive Grain Growth - Thermal over-processing detected. Hall-Petch strength lost. Material properties compromised"
         return "PASS: Validated Micro-texture and Verified Mechanical Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(strain_rate_s1=0.01, deformation_temp_c=1000.0, rolling_force_kn=3500.0)
 print(engine.diagnose_deformation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_deformation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data metal-dislocation-density-and-yield-strength-v2026`와 연동되어, 전 세계 주요 제철 및 항공 부품 공장의 데이터를 실시간 분석하고 미세 균열 및 강도 미달 사고 확률을 0.001% 이하로 억제함으로써 지능형 소재 제조 문명의 금속 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cold-forging-and-work-hardening-mechanics

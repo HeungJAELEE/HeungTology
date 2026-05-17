@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cd-sem-metrology-and-electron-beam-interaction-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cd-sem-metrology-and-electron-beam-interaction-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-precision measurement of Critical Dimensions (CD) in semiconductor patterns using Scanning Electron Microscopy (SEM), focusing on secondary electron yields and beam-sample interaction physics."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cd-sem", "metrology", "electron-beam", "semiconductor-manufacturing", "critical-dimension"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Beam_Resolution_Audit: Measure the beam spot size and edge roughness (LER) detection precision.'
-    - 'Charging_Effect_Check: Monitor image distortion or shift due to electron accumulation on non-conductive surfaces.'
-    - 'Measurement_Repeatability_Scan: Evaluate the 3-sigma variation across multiple scans of the same pattern.'
-Trust Metrics:
+  description: "[Entity] cd-sem-metrology-and-electron-beam-interaction-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔬 CD-SEM Metrology and Electron Beam Interaction Physics
+# [Entity] cd-sem-metrology-and-electron-beam-interaction-physics
 
 ## 1. 개요 (Why)
 반도체 회로 폭이 나노미터 단위로 좁아지면서, 눈으로 보는 것을 넘어 정확히 '측정'하는 것이 공정의 성패를 가릅니다. CD-SEM은 전자를 쏘아 튕겨 나오는 신호를 분석하여 옹스트롬($\AA$) 단위의 정밀도로 회로 폭을 잽니다. 한 치의 오차도 허용하지 않는 반도체 공정에서 CD-SEM은 불량 여부를 판가름하는 최종 심판관과 같습니다. 본 노드는 전자빔 계측의 정밀 무결성과 물리적 산란 모델을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"REJECT: High Charging Effect ({self.charge}) - Use Low-Voltage Mode or Charge Neutralizer"
         return "PASS: Clear Pattern Imaging Maintained"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(precision_3sigma=0.08, beam_current_drift=0.5, charging_level=0.1)
 print(engine.diagnose_metrology_accuracy())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_metrology_accuracy())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cd-sem-resolution-and-measurement-precision-v2026`와 연동되어, 계측된 모든 패턴 데이터를 실시간 분석하고 공정 편차를 0.1nm 단위로 감시함으로써 결함 없는 나노 소자 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - nanofabrication-techniques-lithography-and-etching

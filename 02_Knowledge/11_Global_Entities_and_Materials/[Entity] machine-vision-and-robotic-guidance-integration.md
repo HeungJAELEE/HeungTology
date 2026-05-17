@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "machine-vision-and-robotic-guidance-integration"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] machine-vision-and-robotic-guidance-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The technological convergence of optical sensing systems and robotic kinematic chains, enabling autonomous motion adjustment based on real-time visual feedback (Visual Servoing) and coordinate transformation (Hand-Eye Calibration)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["machine-vision", "robotic-guidance", "hand-eye-calibration", "visual-servoing", "industrial-robotics", "pose-estimation", "smart-factory"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Hand_Eye_Calibration_Audit: Calculate the reprojection error across multiple robot poses to ensure the transformation matrix validity (Limit: < 0.5 pixel).'
-    - 'Pose_Estimation_Stability_Check: Analyze the variance of object pose output (X, Y, Z, R, P, Y) under vibrating environments to ensure grip reliability.'
-    - 'Latency_Jitter_Analysis: Measure the consistency of the vision-to-motion control loop to prevent oscillatory behavior in high-speed tracking.'
-Trust Metrics:
+  description: "[Entity] machine-vision-and-robotic-guidance-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 👁️ Machine Vision and Robotic Guidance Integration
+# [Entity] machine-vision-and-robotic-guidance-integration
 
 ## 1. 개요 (Why: The Visionary Intelligence of Robots)
 "눈이 없는 로봇은 정해진 궤적만 반복하는 기계적 노예에 불과하지만, 비전이 통합된 로봇은 스스로 판단하고 적응하는 지능형 에이전트가 됩니다." **머신 비전 및 로봇 가이던스 통합**은 기계적 '힘'과 광학적 '판단'이 만나는 교차점입니다. 무작위로 쌓인 부품($Random\ Bin\ Picking$) 속에서 정확한 파지점(Grip Point)을 찾아내고, 움직이는 컨베이어 벨트 위의 제품을 0.1mm의 오차 없이 추적하는 이 기술은 현대 스마트 팩토리의 유연성을 결정짓는 핵심 지능입니다. 우리가 이 기술을 사수하는 이유는 공정의 '불확실성'을 수학적 '좌표'로 정복하여, 어떤 환경에서도 중단 없는 제조 주권을 실현하기 위함입니다.
@@ -97,7 +86,6 @@ class FactoryFidelityEngine:
             
         return "OPTIMAL: Robotic Guidance Integration System Operating with High Fidelity."
 
-# Instance Execution
 diag_engine = FactoryFidelityEngine(reprojection_error=0.32, pose_variance=[0.02, 0.02, 0.05, 0.01, 0.01, 0.01], loop_latency_ms=22.5)
 print(diag_engine.diagnose_integration_health())
 ```
@@ -115,7 +103,6 @@ print(diag_engine.diagnose_integration_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 로봇의 물리적 한계를 시각적 지능으로 극복하는 '가이던스 통합'의 표준을 제시합니다. `Data machine-vision-inspection-accuracy-and-latency-v2026`의 실측 데이터를 기반으로 캘리브레이션 행렬의 정적 신뢰도를 1.0으로 유지하며, 자율 공장의 모든 로봇이 '눈과 손의 완벽한 조화'를 통해 무결점 제조를 실현하도록 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - machine-vision-and-object-recognition-for-factory-automation

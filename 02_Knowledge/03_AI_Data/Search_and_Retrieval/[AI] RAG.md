@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-RAG-CORE-2026-V6"
+metadata:
+  id: "[[[AI] RAG]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#RAG'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] RAG에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] RAG
@@ -107,7 +97,6 @@ class RAGPipeline:
 2. **Context Window**가 충분히 크더라도 **Reranking**을 통해 문서를 선별하여 주입해야 하는 이유는? (Lost in the Middle 현상 중심)
 3. **GraphRAG**가 일반적인 **Vector RAG**가 해결하지 못하는 '전역적 요약' 및 '다단계 추론(Multi-hop)' 문제를 해결하는 원리는?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Search_and_Retrieval/AI Vector-Database
 - 02_Knowledge/03_AI_Data/Industrial/AI R&D-Data-Lake

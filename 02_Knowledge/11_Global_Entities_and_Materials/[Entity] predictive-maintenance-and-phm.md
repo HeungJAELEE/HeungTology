@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "predictive-maintenance-and-phm-entity"
-  domain: "86_Digital_Twin_and_Smart_Factory_Hub"
+metadata:
+  id: "[[[Entity] predictive-maintenance-and-phm]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Smart_Factory", "#Predictive_Maintenance", "#PHM", "#Reliability_Engineering", "#Machine_Learning", "#Diagnostics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 74_digital-twin-and-smart-factory-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] predictive-maintenance-and-phm에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] predictive-maintenance-and-phm
+# [Entity] predictive-maintenance-and-phm
 
 ## 1. [왜 배우는가? (Why: The Pulse of Machines)]]
 거대한 공장의 엔진이나 로봇 팔이 갑자기 멈춘다면, 그 손실은 단 몇 분 만에도 수십억 원에 달할 수 있습니다. **예지 보전 및 PHM의 설비 잔여 수명(RUL) 예측과 결함 조기 진단 공학**은 기계가 내는 미세한 신호—진동, 소리, 온도, 전류—를 분석하여 고장의 징후를 미리 알아내고 정비하는 '기계의 심전도 검사'입니다. 고장 난 뒤에 고치는 '사후 정비'나 정해진 주기마다 고치는 '예방 정비'를 넘어, 기계의 실제 건강 상태에 맞춰 꼭 필요할 때만 정비하는 가장 진보된 설비 관리 지능입니다. 우리가 이를 배우는 이유는 예지 보전의 무결성을 확보함으로써, 다운타임 제로(Zero-downtime)의 완벽한 생산 라인을 구현하는 '글로벌 제조 신뢰 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 예지 보전의 정밀도가 공장의 가동 무결성을 결정합니다.

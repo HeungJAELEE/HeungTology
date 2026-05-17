@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "quantum-dot-qd-display-and-color-conversion-physics-entity"
-  domain: "06_Display"
+metadata:
+  id: "[[[Display] quantum-dot-qd-display-and-color-conversion-physics]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Science", "#Display", "#Quantum_Dot", "#Nanotechnology", "#Optics", "#Photoluminescence", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Semiconductor display-next-gen-optics", "MOC 06_Display"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Display] quantum-dot-qd-display-and-color-conversion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Display] quantum-dot-qd-display-and-color-conversion-physics
+# [Display] quantum-dot-qd-display-and-color-conversion-physics
 
 ## 1. [왜 배우는가? (Why: The Geometry of Color)]]
 세상의 모든 색깔을 화면에 그대로 담아낼 수 있을까요? **양자점(Quantum Dot) 디스플레이 및 색 변환 물리**는 나노미터 크기의 입자 크기를 조절하여 가장 순수한 빛을 만들어내는 '나노 색채 기술'입니다. 우리가 이를 배우는 이유는 자연의 색을 $100\%$ 재현하여 시각적 몰입감을 극대화하고, "원자 단위의 크기 조절을 통해 빛의 파장을 자유자재로 다스리는 '차세대 디스플레이 및 나노 광학 주권'을 확보하기" 위함입니다. 입자의 크기가 색의 깊이를 결정합니다.
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Mie Scattering** 이론을 적용하여 QD 잉크 내의 나노 입자 산란이 색 투과율과 시야각에 미치는 수리적 영향 산출은?
 5. RAG 시스템에서 **최신 친환경 양자점 소재 DB**와 **현재 디스플레이 공정의 열적 부하 조건**을 융합하여, '효율은 90% 유지하면서 카드뮴은 전혀 없는 최적의 Core-Shell 구조'를 제안하는 **Nano-Material Strategy** 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Semiconductor display-next-gen-optics : 양자점 기술이 적용되는 차세대 OLED 및 LCD 디스플레이의 광학적 토대를 제공하는 상위 엔티티
 - [[[MOC] 06_Display : 시각 매체의 진화를 이끄는 다양한 디스플레이 기술을 통합 관리하는 최상위 디스플레이 지식 허브

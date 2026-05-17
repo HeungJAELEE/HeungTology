@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fiber-metal-laminate-fml-and-impact-resistance-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fiber-metal-laminate-fml-and-impact-resistance-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A hybrid composite material consisting of thin layers of metal (usually aluminum) bonded with layers of fiber-reinforced polymer (FML) and the physical study of energy absorption and crack bridging during high-velocity impacts (Impact Resistance Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fml", "glare", "composite", "aerospace-material", "impact-resistance", "fatigue-crack", "hybrid-material", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Impact_Fidelity_Audit: Evaluate the ''Specific Energy Absorption'' (SEA) to identify if high-fidelity ''Delamination'' or ''Fiber Breakage'' is providing the target crashworthiness.'
-    - 'Crack_Integrity_Check: Analyze the ''Crack Bridging'' effect by fibers in the metal layer to ensure the high-fidelity fatigue life is extended by inhibiting crack opening.'
-    - 'Interface_Fidelity_Scan: Monitor the bond strength between metal and polymer layers to verify that high-fidelity load transfer is maintained without premature adhesive failure.'
-Trust Metrics:
+  description: "[Entity] fiber-metal-laminate-fml-and-impact-resistance-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Fiber Metal Laminate (FML) and Impact Resistance Physics
+# [Entity] fiber-metal-laminate-fml-and-impact-resistance-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 비행기 동체가 새와 충돌하거나 번개를 맞아도 멀쩡할 수 있는 비결이 무엇일까요? **섬유 금속 적층판(FML) 및 충격 저항 물리**는 얇은 알루미늄 판과 질긴 탄소/유리 섬유를 시루떡처럼 겹겹이 쌓아 만든 **'하이브리드 장갑'** 기술입니다. 금속의 단단함과 섬유의 질김을 동시에 가져, 충격을 받으면 에너지를 층층이 나누어 흡수합니다. **'금속의 한계를 섬유로 보강하여 하늘을 나는 거대한 기계의 생명력을 지키는 최첨단 소재의 방패'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Bridging Failure - Fibers not effectively holding the metal crack. Potential resin aging or fiber degradation. Fatigue safety at risk"
         return "PASS: Validated Fiber Bridging and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(interface_bond_strength=22.5, delamination_area_mm2=5.0, impact_energy_j=10.0)
 print(engine.diagnose_material_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_material_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fml-impact-energy-and-damage-area-v2026`와 연동되어, 전 세계 주요 대형 항공기 및 우주선의 소재 데이터를 실시간 분석하고 동체 파손 및 피로 파괴 사고 확률을 0.001% 이하로 억제함으로써 지능형 항공우주 문명의 구조적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - explosive-forming-and-high-strain-rate-metal-shaping-physics

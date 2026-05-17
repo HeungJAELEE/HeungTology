@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "INF-GRID-SMART-DR-AI-2026-V6"
-  domain: "04_Infrastructure"
+metadata:
+  id: "[[[Battery] smart-grid-demand-response-ai]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Smart_Grid'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] smart-grid-demand-response-ai에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] smart-grid-demand-response-ai
+# [Battery] smart-grid-demand-response-ai
 
 ## 1. [왜 배우는가? (Why)]]
 태양광과 풍력 같은 재생 에너지는 기상 조건에 따라 발전량이 극심하게 변동하는 '간헐성' 문제를 안고 있습니다. 전력망은 항상 '공급량 = 수요량'의 평형을 유지해야 하며, 이 균형이 깨지면 주파수가 흔들려 대정전(Blackout)이 발생할 수 있습니다. 수요 반응(Demand Response)과 스마트 그리드 AI를 배우는 이유는 발전소를 추가로 짓는 대신, AI 지능을 통해 실시간으로 전력 소비를 제어하고 ESS를 활용함으로써 전력망의 유연성을 확보하기 위함입니다. 이는 '지능이 에너지를 보충하는' 디지털 발전소(Virtual Power Plant)의 핵심 기술입니다.
@@ -99,10 +89,6 @@ class VirtualPowerPlantEngine:
             return "CHARGE_RENEWABLE_SURPLUS"
         return "IDLE"
 
-# Example Usage:
-# vpp_ai = VirtualPowerPlantEngine(assets_count=12000)
-# action = vpp_ai.monitor_grid_stability(current_freq=59.75)
-# decision = vpp_ai.optimize_profit(smp_price=250, cur_soc_pct=45)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -110,7 +96,6 @@ class VirtualPowerPlantEngine:
 2. **VPP**가 물리적 양수 발전소나 가스터빈 발전소 대비 **Response Time**과 **Scalability** (확장성) 면에서 갖는 우위는?
 3. **OpenADR 2.0b** 프로토콜이 전력망 운영자(ISO/RTO)와 개별 가전 기기 사이의 **Interoperability** (상호 운용성)를 보장하는 방식은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/04_Infrastructure/Energy/Infrastructure energy-storage-system-ess-integration
 - 02_Knowledge/02_Battery/Intelligence/Battery battery-to-grid-v2g-physics

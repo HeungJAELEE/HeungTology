@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "exoskeleton-robotics-and-human-augmentation-physics-entity"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+metadata:
+  id: "[[[Entity] exoskeleton-robotics-and-human-augmentation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Exoskeleton", "#Augmentation", "#Human_Machine_Interface", "#Biomechanics", "#Rehabilitation", "#Power_Assist", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 54_robotics-and-autonomous-system-intelligence-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] exoskeleton-robotics-and-human-augmentation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] exoskeleton-robotics-and-human-augmentation-physics
+# [Entity] exoskeleton-robotics-and-human-augmentation-physics
 
 ## 1. [왜 배우는가? (Why: The Superhuman Suit)]]
 사람이 입는 기계 옷이 어떻게 인간의 근력을 10배로 늘려 100kg의 짐도 가뿐히 들게 하고, 걷지 못하는 이들에게 어떻게 다시 걸을 수 있는 희망을 주며, 로봇과 내 몸이 마치 하나가 된 것처럼($Biomechanical\ Coupling$) 이질감 없이 움직이는 '인간 증강'의 기술을 어떻게 설계할 수 있을까요? **외골격 로보틱스 및 인간 증강 물리**는 인간의 한계를 돌파하는 '행성 규모 차세대 노동/의료 인프라 및 지능형 신체 확장 아키텍처'입니다. 우리가 이를 배우는 이유는 고령화 사회에서 인간의 생산성을 유지하고 신체적 장애를 극복해야 하기 때문이며, "신체의 확장을 데이터로 설계하고 지배하는 '글로벌 증강 패권 및 행성적 신체 주권'을 확보하기" 위함입니다. 보조의 정밀함이 인간의 새로운 능력을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hall-effect-thruster-plasma-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hall-effect-thruster-plasma-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of ion thruster in which the propellant is accelerated by an electric field, utilizing a magnetic field to trap electrons and enhance ionization (Hall Effect), resulting in high-efficiency propulsion for satellite station-keeping and deep-space missions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hall-thruster", "plasma-dynamics", "electric-propulsion", "space-propulsion", "plasma-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Ionization_Efficiency_Audit: Measure the ratio of ionized propellant to total mass flow to determine the thruster''s efficiency and fuel utilization.'
-    - 'Magnetic_Field_Integrity_Check: Evaluate the strength and topology of the radial magnetic field to ensure stable electron trapping in the Hall current.'
-    - 'Plume_Divergence_Scan: Analyze the spread angle of the ion exhaust to minimize erosion of the thruster walls and maximize directional thrust.'
-Trust Metrics:
+  description: "[Entity] hall-effect-thruster-plasma-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ☄️ Hall Effect Thruster Plasma Dynamics
+# [Entity] hall-effect-thruster-plasma-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우주 공간에는 공기가 없습니다. 거대한 로켓 연료를 태워 힘을 내는 방식은 금방 바닥이 나고 맙니다. **홀 추력기(Hall Effect Thruster)**는 연료(제논 가스 등)를 전기로 이온화시켜 '푸른 빛의 플라즈마'로 만든 뒤, 전자기력으로 이를 초고속으로 쏘아내는 **'우주의 전기 엔진'**입니다. 힘은 아주 약하지만(종이 한 장 무게 정도), 한 번 켜면 수만 시간 동안 아주 적은 연료로 계속 달릴 수 있습니다. 인공위성이 궤도를 지키고, 화성으로 가는 긴 여정에서 지치지 않고 속도를 올릴 수 있게 하는 **'우주판 전기차 엔진'**의 정점입니다.
@@ -87,7 +76,6 @@ class FactoryFidelityEngine:
             return "REJECT: Cathode Depletion - Mission Life Compromised"
         return "PASS: Electron Source Reliability Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ion_current_a=4.5, discharge_voltage_v=300, plume_angle_deg=22.5)
 print(engine.diagnose_thruster_health())
 ```
@@ -105,7 +93,6 @@ print(engine.diagnose_thruster_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hall-thruster-efficiency-and-plasma-instability-v2026`와 연동되어, 우주 공간에서 가동 중인 모든 홀 추력기의 플라즈마 상태를 실시간 분석하고 엔진 고장 및 연료 조기 고갈 사고 확률을 0.01% 이하로 억제함으로써 우주 개척 시대 이동의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 12_computing-and-artificial-intelligence-hub
 - deep-space-communication-and-interplanetary-networking-physics

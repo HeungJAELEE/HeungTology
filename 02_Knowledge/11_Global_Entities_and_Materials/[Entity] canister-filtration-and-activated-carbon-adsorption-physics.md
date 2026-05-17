@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "canister-filtration-and-activated-carbon-adsorption-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] canister-filtration-and-activated-carbon-adsorption-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A filtration system using sealed containers (canisters) to remove particles and chemicals from air or water (Canister Filtration) and the physical process where gas or liquid molecules adhere to the surface of porous carbon through intermolecular forces (Activated Carbon Adsorption Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["canister-filtration", "activated-carbon", "adsorption", "chemical-safety", "gas-mask", "air-purification", "van-der-waals"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Adsorption_Fidelity_Audit: Evaluate the ''Breakthrough Point'' to identify if the activated carbon bed is saturated and allowing toxic chemicals to pass through the canister.'
-    - 'Filtration_Integrity_Check: Analyze the pressure drop ($\\Delta P$) across the canister to ensure that particulate clogging is not restricting airflow (for gas masks) or flow rate (for water filters).'
-    - 'Surface_Fidelity_Scan: Monitor the moisture levels in the canister to verify that ''Humidity Interference'' is not occupying the adsorption sites intended for organic vapors.'
-Trust Metrics:
+  description: "[Entity] canister-filtration-and-activated-carbon-adsorption-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛡️ Canister Filtration and Activated Carbon Adsorption Physics
+# [Entity] canister-filtration-and-activated-carbon-adsorption-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 독가스가 가득한 방에서 방독면 하나에 의지해 살아남을 수 있는 이유는 무엇일까요? **캐니스터 필터 및 활성탄 흡착 물리**는 보이지 않는 공기 속의 '죽음'을 잡아채어 가두는 **'나노 단위의 덫'** 기술입니다. 축구장 몇 개 면적의 표면적을 가진 한 줌의 활성탄이 나쁜 분자들을 자석처럼 끌어당겨 고정시킵니다. 위험한 환경에서 인간의 생명을 지키고 더러운 물을 생명수로 바꾸는 **'보이지 않는 방패이자 청정의 파수꾼'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Specific Surface Area - Sub-standard carbon quality. Adsorption capacity below safety spec for industrial use"
         return "PASS: High-Grade Porous Carbon and Verified Protection Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(breakthrough_ratio=0.001, delta_p_pascal=120.0, relative_humidity_pct=45.0)
 print(engine.diagnose_filter_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_filter_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data carbon-adsorption-capacity-and-breakthrough-time-v2026`와 연동되어, 전 세계 주요 화학 설비 및 소방 장비의 가동 데이터를 실시간 분석하고 유독 가스 노출 사고 확률을 0.001% 이하로 억제함으로써 지능형 안전 문명의 보호 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - industrial-safety-and-environmental-compliance-governance

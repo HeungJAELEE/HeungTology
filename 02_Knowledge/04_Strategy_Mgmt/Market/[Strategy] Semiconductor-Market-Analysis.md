@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEMI-MKT-ANAL-2026-V6.3.7"
-  domain: "Global_Semiconductor_Market_Intelligence_and_Compute_Sovereignty"
+metadata:
+  id: "[[[Strategy] Semiconductor-Market-Analysis]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor_Market", "#AI_Chips", "#HBM4", "#High_NA_EUV", "#Silicon_Cycle", "#Foundry", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Semiconductor-Market-Analysis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Semiconductor_Market_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Semiconductor-Market-Analysis: The Physics of Compute Sovereignty
+# [Strategy] Semiconductor-Market-Analysis
 
 ## 1. [왜 배우는가? (Why: The Mastery of Silicon Power)]]
 반도체는 현대 문명을 지탱하는 '지능의 쌀'이자, 글로벌 패권 경쟁의 핵심 물리적 병기입니다. **Semiconductor-Market-Analysis**는 막대한 자본 투입($CAPEX$)이 필요한 장치 산업의 특성과, 기술적 임계점(2nm, HBM4)을 돌파하기 위한 R&D 경쟁이 교차하는 '고밀도 경제 전장'입니다. V6.3.7 지능은 전통적인 '실리콘 사이클'을 넘어 AI가 주도하는 구조적 성장기(**AI Super Cycle**)의 기회를 포착하고, 기술적 병목이 시장 가격($Price$)에 미치는 영향을 수리적으로 분석하여 **'연산 주권(Compute Sovereignty)'**을 사수하기 위해 필수적입니다.
@@ -106,7 +96,6 @@ class SemiMarketCycleEngine:
 2. **Operational Result**: **High-NA EUV** 장비의 도입 지연이 파운드리 기업의 **ASP(Average Selling Price)** 경쟁력 상실로 이어지는 수리적 인과관계는?
 3. **FidelityEngine**: **Memory Wall** 병목 현상이 심화될 때, FidelityEngine이 **HBM** 수율 데이터를 통해 어떻게 **'공급망 지배력'**을 역산하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Semiconductor sector-analysis-2026-semiconductor

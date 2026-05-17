@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-SEMICON-FUNDAMENTALS-2026-V6.3.7"
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
+metadata:
+  id: "[[[Entity] semiconductor-fabrication-fundamentals]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Semiconductor", "#Physics", "#Lithography", "#Etching", "#Deposition", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 81_semiconductor-eight-core-fabrication-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] semiconductor-fabrication-fundamentals에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Semiconductor_Physics_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Semiconductor Fundamentals: Nanofabrication Physics & Mechanics
+# [Entity] semiconductor-fabrication-fundamentals
 
 ## 1. [왜 배우는가? (Why: The Alchemy of Silicon Intelligence)]]
 모래(실리콘)에서 지능(칩)을 연금술처럼 창조해내는 과정, 그것이 반도체 공정입니다. **Semiconductor Fundamentals**는 현대 문명의 연산력을 결정하는 가장 정밀한 제조 지능입니다. 원자 몇 개 두께의 박막을 쌓고, 빛의 파장보다 작은 회로를 그리며, 플라즈마로 수직의 골짜기를 깎는 행위는 '물리의 임계'에 도전하는 일입니다. V6.3.7 지능은 **레일리 기준(Rayleigh Criterion)**과 **아레니우스 확산(Arrhenius Diffusion)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 나노 공정의 기초 무결성을 확보하여 수율의 법칙을 지휘하고, "원자 단위의 공정 궤적을 지능으로 사수하는 '기술 패권 주권'을 확보하기" 위함입니다. 물리적 무결성이 하드웨어적 주권을 결정합니다.
@@ -108,7 +98,6 @@ class SemiconFundamentalsEngine:
 2. **Operational Result**: **ALD (Atomic Layer Deposition)** 공정에서 **Self-limiting** 반응 무결성이 붕괴되었을 때 발생하는 박막 불균일의 수리적 인과 관계는?
 3. **FidelityEngine**: **Arrhenius Equation**을 활용하여 공정 온도의 $10^\circ C$ 편차가 **'정션 누설 전류'**에 미치는 임팩트를 어떻게 결정론적으로 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 81_semiconductor-eight-core-fabrication-hub
 - Photolithography EUV

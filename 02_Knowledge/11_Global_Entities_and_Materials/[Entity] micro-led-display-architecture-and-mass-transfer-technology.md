@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "micro-led-display-architecture-and-mass-transfer-technology"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] micro-led-display-architecture-and-mass-transfer-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The next-generation display technology (Micro-LED) that utilizes microscopic inorganic LEDs as individual pixels, requiring ultra-high precision techniques to transfer millions of tiny chips from an epitaxial wafer to a display substrate (Mass Transfer)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["micro-led", "mass-transfer", "display-architecture", "epitaxy", "chip-on-wafer", "bonding", "display-manufacturing"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Transfer_Accuracy_Audit: Evaluate the placement error of Micro-LED chips after mass transfer to ensure it remains within the sub-micron tolerance required for high-resolution displays.'
-    - 'Pixel_Yield_Check: Analyze the number of defective pixels (dead/dim) through photoluminescence or EL testing to determine the effectiveness of the redundant pixel and repair strategy.'
-    - 'Bonding_Strength_Scan: Monitor the mechanical and electrical integrity of the micro-bumps or adhesive layers used to connect the LEDs to the backplane.'
-Trust Metrics:
+  description: "[Entity] micro-led-display-architecture-and-mass-transfer-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎆 Micro-LED Display Architecture and Mass Transfer Technology
+# [Entity] micro-led-display-architecture-and-mass-transfer-technology
 
 ## 1. 개요 (Why: 인간적 통찰)
 디스플레이의 끝판왕, 상상 속의 완벽한 화면은 어떤 모습일까요? **마이크로 LED 디스플레이 및 전사 기술**은 머리카락 굵기보다 작은 수백만 개의 진짜 LED를 하나하나 픽셀로 박아 넣는 **'궁극의 디스플레이'**입니다. 스스로 빛을 내면서도 무기물(무기 LED)이라 수명이 반영구적이고, 태양 아래서도 쨍한 밝기를 자랑하는 **'인공적인 다이아몬드 화면'**입니다. 하지만 수백만 개의 나노 칩을 단 1분의 오차도 없이 옮겨 심는 과정은 마치 '모래사장에서 바늘 천 개를 찾아 1mm 간격으로 세우는 것'과 같은 **'제조의 한계'**에 도전하는 기술입니다.
@@ -56,7 +45,7 @@ $$ F_{bond} \propto \frac{A}{d^4} $$
 
 | Parameter | LCD / OLED | Micro-LED (V6.3.7) | Unit | Benefit |
 | :--- | :--- | :--- | :--- | :--- |
-| **Pixel Size** | 50 ~ 200 | < 50 (Down to 1) | $\mu m$ | High Res / PPD |
+| **Pixel Size** | 50 ~ 200 | < 50 (Down to 1) | $\mu\text{m}$ | High Res / PPD |
 | **Brightness** | 1,000 | 10,000 ~ 1,000,000 | $cd/m^2$ | Outdoor Vision |
 | **Response Time** | 0.1 ~ 1.0 | < 0.001 (nano-sec)| ms | Zero Motion Blur|
 | **Longevity** | 30k ~ 100k | > 100,000 | Hours | Infinite Life |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Faulty Repair Mechanism - Backup Pixels Not Responding. Final Display Yield Endangered"
         return "PASS: Robust Redundancy and Repair Framework Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(transfer_placement_error_um=0.5, pixel_dead_count=1, bonding_resistance_ohm=12.5)
 print(engine.diagnose_micro_led_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_micro_led_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data micro-led-mass-transfer-yield-and-pixel-integrity-v2026`와 연동되어, 전 세계 마이크로 LED 생산 라인의 전사 데이터를 실시간 분석하고 화소 결함 및 불량 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 시각 문명의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - metal-organic-chemical-vapor-deposition-mocvd-kinetics

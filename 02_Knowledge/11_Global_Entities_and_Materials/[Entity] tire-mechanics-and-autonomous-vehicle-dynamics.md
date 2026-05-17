@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "tire-mechanics-and-autonomous-vehicle-dynamics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] tire-mechanics-and-autonomous-vehicle-dynamics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The study of the physical properties and behavior of pneumatic tires as they interact with the road surface (Tire Mechanics) and the mathematical modeling of how these forces influence the motion, stability, and control of autonomous vehicles (Autonomous Vehicle Dynamics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["tire-mechanics", "vehicle-dynamics", "automotive-engineering", "friction-mechanics", "autonomous-driving", "chassis-control", "safety"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Tire_Fidelity_Audit: Evaluate the actual cornering stiffness ($C_\\alpha$) against the reference model to identify tire pressure loss or excessive tread wear that reduces lateral grip.'
-    - 'Dynamic_Stability_Check: Analyze the vehicle''s yaw rate and sideslip angle to verify that the autonomous control system is operating within the ''Linear Handling'' region.'
-    - 'Friction_Estimation_Scan: Monitor the longitudinal slip vs. traction force to estimate the road friction coefficient ($\\mu$), adjusting the autonomous braking distance in real-time for wet or icy conditions.'
-Trust Metrics:
+  description: "[Entity] tire-mechanics-and-autonomous-vehicle-dynamics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚗 Tire Mechanics and Autonomous Vehicle Dynamics
+# [Entity] tire-mechanics-and-autonomous-vehicle-dynamics
 
 ## 1. 개요 (Why: 인간적 통찰)
 자율 주행 자동차가 비에 젖은 급커브 길을 돌 때, 어떻게 미끄러지지 않고 안전하게 방향을 틀 수 있을까요? **타이어 역학 및 자율 주행 차량 역학**은 자동차와 도로가 만나는 유일한 접점인 '타이어'의 복잡한 물리 현상을 이해하고 통제하는 **'안전의 최후 보루'** 기술입니다. 타이어는 단순한 고무 덩어리가 아니라, 매 순간 모양이 변하며 힘을 전달하는 복잡한 물리 장치입니다. 이 작은 접촉면(Contact Patch)에서 일어나는 마찰력의 신비를 수학으로 풀어내어, 인공지능이 인간보다 더 안전하게 운전하게 만드는 **'기동의 과학'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Bald Tire Detected - Hydroplaning risk is extreme. Autonomous system restricted to Low-speed mode until tire replacement"
         return "PASS: Adequate Tread Depth and Verified Wet-grip Performance Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(tire_pressure_psi=32.0, lateral_slip_angle=1.2, friction_mu_estimate=0.85)
 print(engine.diagnose_vehicle_dynamics_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_vehicle_dynamics_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data tire-wear-and-lateral-acceleration-logs-v2026`와 연동되어, 전 세계 자율 주행 차량의 타이어 가동 데이터를 실시간 분석하고 타이어 파손 및 미끄러짐 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 주행 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - robot-kinematics-and-autonomous-visual-slam-mechanics

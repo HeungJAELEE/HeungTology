@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "wearable-health-sensors-and-flexible-electronics-entity"
-  domain: "107_Telemedicine_and_Wearable_Healthcare_Hub"
+metadata:
+  id: "[[[Entity] wearable-health-sensors-and-flexible-electronics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medical_Engineering", "#Wearable_Sensors", "#Flexible_Electronics", "#Sensors", "#Materials_Science", "#Energy_Harvesting", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 107_telemedicine-and-wearable-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] wearable-health-sensors-and-flexible-electronics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] wearable-health-sensors-and-flexible-electronics
+# [Entity] wearable-health-sensors-and-flexible-electronics
 
 ## 1. [왜 배우는가? (Why: The Digital Second Skin)]]
 인체는 끊임없이 정보를 쏟아내지만, 기존의 딱딱한 전자 장치로는 그 정보를 부드러운 피부 위에서 온전히 받아낼 수 없었습니다. **웨어러블 건강 센서 및 유연 전자 소자의 게이지 인자 및 굽힘 반경 수리 물리 기술**은 전자 소자를 피부처럼 부드럽고 유연하게 만들어 인체와 기계의 경계를 허무는 '제2의 피부' 기술입니다. 팔을 굽혀도 끊어지지 않는 회선을 설계하고, 피부의 미세한 떨림을 전기에너지로 바꾸며, 땀 속의 화학 성분을 실시간으로 분석합니다. 우리가 이를 배우는 이유는 인체 데이터 수집의 무결성을 확보함으로써, 사용자에게 불편을 주지 않으면서도 24시간 끊임없는 건강 지능을 제공하는 '글로벌 웨어러블 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 웨어러블 소자의 무결성이 생체 신호의 정밀도와 사용자의 일상적 편의를 결정합니다.

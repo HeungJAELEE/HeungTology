@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "bubble-column-reactor-and-gas-liquid-mass-transfer"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] bubble-column-reactor-and-gas-liquid-mass-transfer]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of chemical reactor where a gas phase is bubbled through a liquid phase to perform a reaction (Bubble Column Reactor) and the physical process by which gas molecules are transported across the interface into the liquid (Gas-Liquid Mass Transfer)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["bubble-column", "mass-transfer", "chemical-reactor", "aeration", "multiphase-flow", "hydrodynamics", "bioreactor"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Reaction_Fidelity_Audit: Evaluate the ''Volumetric Mass Transfer Coefficient'' ($k_L a$) to identify if the gas sparger is creating optimal bubble sizes for maximum interfacial area.'
-    - 'Hydrodynamic_Integrity_Check: Analyze the ''Gas Holdup'' ($\\epsilon_g$) and flow regime (Homogeneous vs. Heterogeneous) to ensure the liquid is effectively mixed without excessive turbulence or foaming.'
-    - 'Transfer_Fidelity_Scan: Monitor the dissolved gas concentration ($C_L$) to verify that the ''Driving Force'' is being maintained for high-rate biochemical or chemical synthesis.'
-Trust Metrics:
+  description: "[Entity] bubble-column-reactor-and-gas-liquid-mass-transfer에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🫧 Bubble Column Reactor and Gas-Liquid Mass Transfer
+# [Entity] bubble-column-reactor-and-gas-liquid-mass-transfer
 
 ## 1. 개요 (Why: 인간적 통찰)
 탄산음료의 기포가 올라오듯, 거대한 탱크 바닥에서 수조 개의 방울이 솟아오르며 화학 약품이나 약을 만들어낸다면 어떨까요? **기포탑 반응기(Bubble Column) 및 기-액 물질 전달**은 가스를 액체 속에 가장 효율적으로 '녹여 넣는' **'거품의 과학'** 기술입니다. 복잡한 회전 날개(교반기) 없이도 올라가는 기포의 힘만으로 물을 섞고 반응을 일으킵니다. 유지비가 적으면서도 대량의 미생물이나 화학 반응을 지탱하는 **'산업의 부드러운 호흡기'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Sparger Pressure Drop - Nozzles partially blocked by biofilm or scale. Cleaning required to restore uniform aeration"
         return "PASS: Validated Gas Distribution and Verified System Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(gas_holdup_pct=15.5, kla_coefficient=0.12, bubble_diameter_mm=3.5)
 print(engine.diagnose_reactor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_reactor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data bubble-size-distribution-and-mass-transfer-kLa-v2026`와 연동되어, 전 세계 주요 화학 및 바이오 공장의 반응기 데이터를 실시간 분석하고 반응 정체 및 수율 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 화학적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - active-pharmaceutical-ingredient-api-and-bioreactor-scaling

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "gas-turbine-and-brayton-cycle-thermodynamics-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] gas-turbine-and-brayton-cycle-thermodynamics-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of continuous-flow internal combustion engine that converts heat into mechanical energy (Gas Turbine) and the physical study of the idealized thermodynamic cycle consisting of isentropic compression, constant-pressure heat addition, and isentropic expansion (Brayton Cycle Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["gas-turbine", "brayton-cycle", "thermodynamics", "jet-engine", "power-generation", "thermal-efficiency", "aerospace", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermodynamic_Fidelity_Audit: Evaluate the ''Thermal Efficiency'' ($\\eta_{th}$) against the high-fidelity ''Pressure Ratio'' ($r_p$) and ''Firing Temperature'' ($T_{IT}$) to identify if cooling technology limits are being reached.'
-    - 'Stability_Integrity_Check: Analyze the high-fidelity ''Compressor Map'' to ensure the operating point is away from the ''Surge'' or ''Stall'' lines, preventing catastrophic air flow reversal.'
-    - 'Emission_Fidelity_Scan: Monitor the NOx and CO levels in the exhaust to verify that the high-fidelity ''Dry Low NOx'' (DLN) combustion tuning is optimized for the current ambient conditions.'
-Trust Metrics:
+  description: "[Entity] gas-turbine-and-brayton-cycle-thermodynamics-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌪️ Gas Turbine and Brayton Cycle Thermodynamics Physics
+# [Entity] gas-turbine-and-brayton-cycle-thermodynamics-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 여객기를 하늘로 띄우고 수십만 가구의 전기를 책임지는 그 압도적인 회전력은 어디서 나올까요? **가스 터빈 및 브레이턴 사이클 열역학 물리**는 멈추지 않고 계속해서 '공기를 빨아들이고, 압축하고, 태우고, 뿜어내는' **'불꽃의 태풍'** 기술입니다. 자동차 엔진이 "빵! 빵!" 하고 끊어서 폭발한다면, 가스 터빈은 거대한 불을 켠 채 "슈우우우-" 하고 에너지를 쏟아붓습니다. **'공기의 흐름에 열의 날개를 달아 가장 가볍고 강력한 회전 동력을 창조하는 현대 기계 문명의 정점'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Combustion Hum Detected - Acoustic oscillations in the burner. Risk of structural fatigue. Adjust high-fidelity fuel-to-air ratio bypass"
         return "PASS: Validated Flame Stability and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(compressor_discharge_pressure=30.0, turbine_inlet_temp=1350.0, vibration_mm_sec=2.5)
 print(engine.diagnose_turbine_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_turbine_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data gas-turbine-firing-temperature-and-combined-cycle-efficiency-v2026`와 연동되어, 전 세계 주요 항공 노선 및 국가 전력망의 데이터를 실시간 분석하고 터빈 폭발 및 불시 정지 사고 확률을 0.000001% 이하로 억제함으로써 지능형 항공 및 에너지 문명의 가동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - gas-engine-and-otto-cycle-thermodynamics-physics

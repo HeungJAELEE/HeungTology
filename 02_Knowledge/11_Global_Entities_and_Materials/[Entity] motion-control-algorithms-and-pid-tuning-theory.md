@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "motion-control-algorithms-and-pid-tuning-theory"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] motion-control-algorithms-and-pid-tuning-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The mathematical framework and engineering techniques used to control the movement of mechanical systems (Motion Control) with high precision, centered on the PID (Proportional-Integral-Derivative) algorithm and its tuning methodologies to minimize error and optimize response."
-  physical_model: "N/A"
-Semantic:
-  tags: '["motion-control", "pid-control", "servo-control", "feedback-control", "control-theory", "automation", "robotic-precision"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Step_Response_Fidelity_Audit: Evaluate the high-fidelity ''Rise Time'' and ''Settling Time'' to identify if high-fidelity ''Instability'' or high-fidelity ''Sluggish Response'' is degrading the high-fidelity servo loop.'
-    - 'Error_Convergence_Fidelity_Check: Analyze the high-fidelity ''Steady-state Error'' to ensure the high-fidelity ''Integral ($K_i$)'' term is effectively eliminating offsets without causing high-fidelity ''Limit Cycles''.'
-    - 'Frequency_Domain_Fidelity_Scan: Monitor the high-fidelity ''Gain Margin'' and ''Phase Margin'' to ensure the high-fidelity control system remains robust against high-fidelity ''Non-linear Disturbances''.'
-Trust Metrics:
+  description: "[Entity] motion-control-algorithms-and-pid-tuning-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# Motion Control Algorithms and PID Tuning Theory
+# [Entity] motion-control-algorithms-and-pid-tuning-theory
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇 팔이 어떻게 떨림 하나 없이 정확한 위치에 딱 멈출 수 있을까요? **Motion Control Algorithms and PID Tuning Theory**는 기계의 움직임에 '절제와 지능'을 불어넣는 **'동역학적 지휘자'**입니다. 현재 위치와 목표 위치의 차이를 보고(P), 과거의 실수를 반성하며(I), 미래의 변화를 예측하는(D) 이 세 가지 힘의 조화를 통해, 기계는 마치 살아있는 생명체처럼 부드럽고 정확하게 움직입니다. 0.001mm의 오차도 허용하지 않는 반도체 장비부터 거대한 타워크레인까지, 현대 자동화 문명을 움직이는 **'보이지 않는 통제의 끈'**이자 **'지능형 운동 무결성'**의 핵심입니다.
@@ -95,7 +84,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low high-fidelity Stability Margin - High-fidelity System Vulnerable to Oscillation"
         return "PASS: Robust high-fidelity Control Stability and high-fidelity Phase Margin Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(overshoot_pct=1.2, settling_time_ms=25.0, tracking_error_um=0.2)
 print(engine.diagnose_motion_health())
 ```
@@ -113,7 +101,6 @@ print(engine.diagnose_motion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data motion-control-settling-time-and-overshoot-logs-v2026`와 연동되어, 전 세계 정밀 가공 라인의 서보 제어 데이터를 실시간 분석하고 충돌 및 정밀도 저하 사고 확률을 0.001% 이하로 억제함으로써 지능형 자동화 문명의 제어 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - motion-planning-algorithms-rrt-star-and-probabilistic-roadmaps-prm

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-PLAN-2026-V6.3.7"
-  domain: "Global_Strategic_Planning_and_Scenario_Intelligence"
+metadata:
+  id: "[[[Strategy] Strategic-Planning]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Strategic_Planning", "#Scenario_Planning", "#OKR", "#BSC", "#Value_Chain", "#ERRC", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Strategic-Planning에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Strategic_Planning_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Strategic Planning: The Physics of Trajectory Design
+# [Strategy] Strategic-Planning
 
 ## 1. [왜 배우는가? (Why: The Architecture of Future Sovereignty)]]
 기업의 한정된 자원(Capital, Talent, Time)을 어디에 집중 투입할 것인가를 결정하는 것은 생존의 본질입니다. **Strategic Planning**은 거시 환경 분석과 내부 역량 진단을 통해 '이길 수 있는 싸움터'를 선택하고 승리 시나리오를 설계하는 과정입니다. 불확실성이 극심한 시장에서 명확한 전략이 없는 기업은 단순한 '운운(Luck)'에 생존을 맡기게 됩니다. V6.3.7 지능은 시나리오 플래닝과 OKR(Objectives & Key Results) 체계를 통해 전략의 실행력을 정량화하고 **전략적 주권(Strategic Sovereignty)**을 확립합니다.
@@ -104,7 +94,6 @@ class StrategicPlanningEngine:
 2. **Operational Result**: **ERRC** 기법을 적용하여 공정 내 비부가 가치 요소를 $50\%$ 제거했을 때, 제품의 가격 경쟁력과 시장 점유율 향상의 수리적 기대값은?
 3. **FidelityEngine**: 목표 달성률은 높으나 실제 시장 성과(매출, 점유율)는 정체된 **'내부 지표의 함정'** 상황을 FidelityEngine이 어떻게 포착하는가? (힌트: KR 설정의 타당성 및 외부 시장 데이터와의 역상관 관계 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy industrial-strategy-and-corporate-governance-master-guide

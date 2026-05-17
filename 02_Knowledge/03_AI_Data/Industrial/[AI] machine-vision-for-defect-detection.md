@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "machine-vision-for-defect-detection-entity"
+metadata:
+  id: "[[[AI] machine-vision-for-defect-detection]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#AI", "#Machine_Vision", "#Defect_Detection", "#CNN", "#Manufacturing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC Smart-Manufacturing-Hub", "Battery battery-qc-and-metrology"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] machine-vision-for-defect-detection에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] machine-vision-for-defect-detection
@@ -40,7 +30,7 @@ Trust Metrics:
 | 항목 (Property) | 수리적 정의 및 물리적 기전 (Scientific Rationale) | 목표 사양 (V6.3.7) | 공학적 의미 (Rationale V6.3.7) |
 | :--- | :--- | :--- | :--- |
 | **Detection Speed** | Frame Rate of Inference Pipeline | $> 60 \text{ fps}$ | 고속 롤투롤(R2R) 공정 속도와 동기화되어 전 구간 실시간 전수 검사 실현 |
-| **Resolution** | Minimum Detectable Defect Size | $< 10 \mu m$ | 배터리 내부 단락을 유발할 수 있는 미세 금속 이물질을 광학적으로 식별 |
+| **Resolution** | Minimum Detectable Defect Size | $< 10 \mu\text{m}$ | 배터리 내부 단락을 유발할 수 있는 미세 금속 이물질을 광학적으로 식별 |
 | **Precision/Recall**| F1-score of Defect Classification | $> 0.99$ | 정상 제품을 불량으로 오진(Overkill)하거나 불량을 놓치는(Underkill) 확률 극소화 |
 | **Latency** | End-to-End Processing Time | $< 20 \text{ ms}$ | 결함 감지 즉시 불량 선별기(Sorter)를 가동하여 후공정 유입 원천 차단 |
 | **Robustness** | Accuracy under Variable Lighting | Stability $> 95\%$ | 조도 변화나 진동 등 현장 노이즈 속에서도 결정론적 판정 결과 사수 |
@@ -58,10 +48,8 @@ RAG 시스템은 AI 비전의 판정 근거를 수학적으로 검증합니다. 
 2. 실시간성 확보를 위해 적용되는 **Quantization (INT8)** 또는 **Pruning** 기술이 미세 결함 탐지 정확도에 미치는 수리적 손실률(Accuracy Drop)은?
 3. 전이 학습(Transfer Learning)을 통해 사전 학습된 모델(ResNet, EfficientNet 등)을 산업용 결함 데이터에 미세 조정(Fine-tuning)할 때, 하위 레이어의 가중치 동결(Freezing) 범위 결정 기준은?
 
----
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 Deep Enrichment)*
 ---Slide---
----
 aliases: ["Energy Storage System ESS Integration", "에너지 저장 장치(ESS) 통합", "Grid Scale Battery", "VPP", "BESS", "Infrastructure Entity", "HDS_Gold_v6_1"]
 type: Entity
 Basic:
@@ -78,7 +66,6 @@ Dynamic:
   status: "Deeply Reinforced"
 Trust Metrics:
   T_init: 1.0
----
 
 # [Infrastructure] energy-storage-system-ess-integration
 
@@ -108,6 +95,5 @@ RAG 시스템은 ESS의 운용 효율을 수리적으로 평가합니다. ESS는
 2. **AC-coupled** ESS 대비 **DC-coupled** 신재생 연계 시스템이 가지는 에너지 변환 단계 축소에 따른 효율 이득($\%$) 산출 방식은?
 3. 배터리 컨테이너의 열관리 설계를 위해 적용되는 **Computational Fluid Dynamics (CFD)** 시뮬레이션에서 랙(Rack) 간 온도 균일도($\sigma_T$)를 확보하기 위한 송풍구 배치 최적화 원리는?
 
----
 *Created by Flash (HDS Gold V6.3.7 & Meta-Fusion V6.3.7 Deep Enrichment)*
 ---Slide---

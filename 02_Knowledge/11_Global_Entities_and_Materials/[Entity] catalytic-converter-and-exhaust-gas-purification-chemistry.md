@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "catalytic-converter-and-exhaust-gas-purification-chemistry"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] catalytic-converter-and-exhaust-gas-purification-chemistry]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "An exhaust emission control device that converts toxic gases and pollutants in exhaust gas from an internal combustion engine into less-toxic pollutants by catalyzing a redox reaction (Catalytic Converter) and the complex chemical study of the simultaneous oxidation and reduction processes occurring on the surface of precious metals (Exhaust Gas Purification Chemistry)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["catalytic-converter", "exhaust-purification", "emission-control", "platinum-group-metals", "redox-reaction", "euro-6", "honeycomb-substrate"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Conversion_Fidelity_Audit: Evaluate the ''Light-off Temperature'' and conversion efficiency of $CO, HC, NO_x$ to identify if the catalyst has been ''Poisoned'' by sulfur or lead from the fuel.'
-    - 'Thermal_Integrity_Check: Analyze the exhaust gas temperature and pressure drop across the substrate to ensure ''Sintering'' (active site loss) or melting is not occurring during high-load operation.'
-    - 'Oxygen_Fidelity_Scan: Monitor the ''Oxygen Storage Capacity'' (OSC) using pre- and post-catalyst lambda sensors to verify that the ceria-based storage is effectively buffering air-fuel ratio fluctuations.'
-Trust Metrics:
+  description: "[Entity] catalytic-converter-and-exhaust-gas-purification-chemistry에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Catalytic Converter and Exhaust Gas Purification Chemistry
+# [Entity] catalytic-converter-and-exhaust-gas-purification-chemistry
 
 ## 1. 개요 (Why: 인간적 통찰)
 자동차가 내뱉는 지독한 연기가 어떻게 보이지 않는 맑은 공기로 변할 수 있을까요? **촉매 변환기 및 배기가스 정화 화학**은 자동차 배기관 속에 숨어있는 **'화학적 나노 필터'** 기술입니다. 백금, 팔라듐 같은 귀금속이 코팅된 벌집 모양의 통을 통과하는 순간, 유독한 가스들이 서로 산소를 주고받으며 무해한 질소와 물, 이산화탄소로 변신합니다. 도시의 공기를 숨 쉴 수 있게 만드는 **'지구의 거대한 마스크'**입니다.
@@ -91,7 +80,6 @@ class FactoryFidelityEngine:
             return "REJECT: Substrate Melting Risk - Extreme exhaust temperature detected. Honeycomb structure may collapse. Check for engine misfire or lean-burn"
         return "PASS: Structural Integrity Confirmed and Verified Thermal Safety Verified"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oxygen_storage_capacity=0.8, lambda_deviation=0.005, catalyst_temp_c=450.0)
 print(engine.diagnose_catalyst_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_catalyst_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data catalyst-conversion-efficiency-and-light-off-temp-v2026`와 연동되어, 전 세계 수백만 대 자동차의 OBD 데이터를 실시간 분석하고 배출가스 초과 및 환경 법규 위반 사고 확률을 0.001% 이하로 억제함으로써 지능형 모빌리티 문명의 청정 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - catalytic-cracking-and-petroleum-refining-kinetics

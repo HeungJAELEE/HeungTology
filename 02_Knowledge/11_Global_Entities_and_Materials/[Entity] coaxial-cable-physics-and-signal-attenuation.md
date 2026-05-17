@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "coaxial-cable-physics-and-signal-attenuation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] coaxial-cable-physics-and-signal-attenuation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of electrical cable consisting of an inner conductor surrounded by a concentric conducting shield, with the two separated by a dielectric material (Coaxial Cable) and the study of the loss of signal strength as it travels through the cable due to resistance, dielectric loss, and radiation (Signal Attenuation)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["coaxial-cable", "signal-attenuation", "electromagnetics", "transmission-line", "telecommunications", "impedance-matching", "shielding"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Signal_Fidelity_Audit: Evaluate the ''Insertion Loss'' (dB/m) at specific frequencies to identify if the dielectric is aging or if moisture has ingressed into the cable structure.'
-    - 'Impedance_Integrity_Check: Analyze the Return Loss (VSWR) to ensure that ''Impedance Mismatches'' caused by physical kinks or damaged connectors are not causing signal reflections.'
-    - 'Shielding_Fidelity_Scan: Monitor the ''Transfer Impedance'' to verify that the outer shield is effectively containing the signal and blocking external Electromagnetic Interference (EMI).'
-Trust Metrics:
+  description: "[Entity] coaxial-cable-physics-and-signal-attenuation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📡 Coaxial Cable Physics and Signal Attenuation
+# [Entity] coaxial-cable-physics-and-signal-attenuation
 
 ## 1. 개요 (Why: 인간적 통찰)
 데이터가 흐르는 '터널'이 외부의 방해로부터 완벽히 보호된다면 어떨까요? **동축 케이블(Coaxial Cable) 물리 및 신호 감쇠**는 전자기파를 구리선 안에 가두어 안전하게 운반하는 **'폐쇄형 신호 전용도로'** 기술입니다. 텔레비전 선이나 정밀 측정 장비에서 흔히 볼 수 있는 이 케이블은, 외부의 전자기 소음(Noise)은 막고 소중한 데이터는 멀리까지 보내는 **'데이터의 강철 금고'**입니다. 보이지 않는 전파를 물리적 구조로 다스리는 **'전자기 기하학의 정수'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Low Frequency Response - Cable cannot support modern high-speed data standards. Likely due to high-loss dielectric usage"
         return "PASS: Validated Frequency Spectrum and Verified Data Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(insertion_loss_db_100m=8.2, vswr_ratio=1.1, shield_integrity_pct=99.0)
 print(engine.diagnose_cable_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_cable_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data coaxial-cable-attenuation-by-frequency-and-length-v2026`와 연동되어, 전 세계 주요 방송망 및 5G 기지국의 케이블 데이터를 실시간 분석하고 통신 장애 및 노이즈 오류 사고 확률을 0.001% 이하로 억제함으로써 지능형 정보 문명의 전송 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - analog-and-mixed-signal-ic-design-physics

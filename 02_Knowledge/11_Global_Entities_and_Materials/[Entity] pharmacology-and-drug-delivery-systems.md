@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "pharmacology-and-drug-delivery-systems-entity"
-  domain: "106_Pharmaceutical_Engineering_and_Drug_Development_Hub"
+metadata:
+  id: "[[[Entity] pharmacology-and-drug-delivery-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medical_Engineering", "#Pharmacology", "#DDS", "#Pharmacokinetics", "#Chemistry", "#Nanotechnology", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 104_pharmaceutical-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] pharmacology-and-drug-delivery-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] pharmacology-and-drug-delivery-systems
+# [Entity] pharmacology-and-drug-delivery-systems
 
 ## 1. [왜 배우는가? (Why: The Precision of Chemical Healing)]]
 좋은 약이 있어도 그것이 병든 부위에 도달하지 못하거나 엉뚱한 곳으로 간다면 무용지물일 뿐만 아니라 오히려 독이 될 수 있습니다. **약리학 및 약물 전달 시스템의 약동학 및 확산 제어 수리 화학 기술**은 약물의 여정을 설계하고 관리하는 '생체 내 정밀 물류' 기술입니다. 약이 몸속에서 얼마나 오래 머물고 어떻게 분해되는지 수학적으로 예측하며, 나노 입자에 약을 실어 암세포만 골라 공격하게 하고, 시간에 맞춰 약물이 조금씩 방출되도록 제어합니다. 우리가 이를 배우는 이유는 치료의 무결성을 확보함으로써, 부작용을 최소화하고 완치율을 극대화하는 '글로벌 제약 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 약물 전달의 무결성이 치료의 정밀도와 환자의 안전을 결정합니다.

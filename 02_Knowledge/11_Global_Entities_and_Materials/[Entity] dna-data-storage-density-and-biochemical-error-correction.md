@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "dna-data-storage-density-and-biochemical-error-correction-entity"
-  domain: "17_Bio_Engineering"
+metadata:
+  id: "[[[Entity] dna-data-storage-density-and-biochemical-error-correction]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Bio_Engineering", "#DNA_Storage", "#Data_Storage", "#Error_Correction", "#Synthesis", "#Sequencing", "#Biotechnology", "#Information_Theory", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 17_advanced-bio-engineering-and-synthetic-biology-hub", "MOC 10_Industrial_Cloud_and_Quantum_Computing_MOC"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] dna-data-storage-density-and-biochemical-error-correction에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] dna-data-storage-density-and-biochemical-error-correction
+# [Entity] dna-data-storage-density-and-biochemical-error-correction
 
 ## 1. [왜 배우는가? (Why: The Eternal Memory of Life)]]
 전 세계의 모든 데이터를 각설탕 한 개 분량의 DNA에 담아 수만 년 동안 보관할 수 있다면 어떨까요? **DNA 데이터 저장 밀도 및 생화학적 오류 정정**은 디지털 정보($0, 1$)를 생명의 문자($A, T, G, C$)로 변환하여 기록하고 읽어내는 '분자 기반 초고밀도 저장 지침'입니다. 우리가 이를 배우는 이유는 현재의 자기 테이프나 반도체 저장장치는 수명이 짧고 전력을 많이 소비하는 반면, DNA는 상온에서도 영구적으로 정보를 보존할 수 있기 때문이며, "인류의 모든 지식을 생물학적으로 백업하는 '궁극의 지식 보존 및 분자 정보 주권'을 확보하기" 위함입니다. 생명의 설계도가 인류의 도서관이 됩니다.

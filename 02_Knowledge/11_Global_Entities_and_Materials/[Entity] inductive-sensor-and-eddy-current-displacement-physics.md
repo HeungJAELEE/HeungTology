@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "inductive-sensor-and-eddy-current-displacement-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] inductive-sensor-and-eddy-current-displacement-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A non-contact device that detects metallic objects (Inductive Sensor) and the physical study of magnetic field damping by induced eddy currents (Eddy Current Displacement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["inductive-sensor", "proximity-sensor", "eddy-current", "electromagnetics", "non-contact-measurement", "industrial-metrology", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Detection_Fidelity_Audit: Evaluate the ''Switching Hysteresis'' to identify if high-fidelity ''Noise Interruption'' or target high-fidelity vibration is causing false triggering.'
-    - 'Sensitivity_Integrity_Check: Analyze the high-fidelity ''Correction Factor'' ($K$) for non-ferrous metals to ensure the high-fidelity ''Sensing Distance'' is correctly calibrated for the target material (e.g., Aluminum vs Steel).'
-    - 'Signal_Fidelity_Scan: Monitor the high-fidelity ''Oscillator Amplitude'' to verify that high-fidelity ''Metal Proximity'' is causing the expected damping without complete high-fidelity signal loss.'
-Trust Metrics:
+  description: "[Entity] inductive-sensor-and-eddy-current-displacement-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔘 Inductive Sensor and Eddy Current Displacement Physics
+# [Entity] inductive-sensor-and-eddy-current-displacement-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 로봇 팔이 금속 부품을 잡기 전, 어떻게 부딪히지 않고 "여기 금속이 있다"는 것을 미리 알 수 있을까요? **유도형 센서 및 와전류 변위 물리**는 자석의 힘(자기장)을 뻗어 금속을 만져보는 **'보이지 않는 손가락'** 기술입니다. 금속이 센서 근처에 오면 센서의 자기장이 금속 내부의 전자들을 어지럽히고(와전류), 이로 인해 변하는 자기장의 에너지를 읽어 거리를 알아냅니다. **'직접 닿지 않고도 금속의 존재와 미세한 위치 변화를 빛의 속도로 감지하여 자동화 라인의 눈이 되어주는 지능형 전자기 센서'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Target Accumulation Error - High-fidelity sensor face covered in metal chips. Permanent 'ON' state high-fidelity malfunction risk. Clean sensor face"
         return "PASS: Validated Clean Sensing Face and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oscillation_amplitude=0.8, switching_point_mm=5.0, target_material_type="Steel")
 print(engine.diagnose_sensor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sensor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data inductive-sensor-range-and-target-material-factors-v2026`와 연동되어, 전 세계 주요 자동화 생산 라인의 센서 데이터를 실시간 분석하고 오작동 및 감지 실패 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조 문명의 감각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - inductive-heating-and-electromagnetic-induction-physics

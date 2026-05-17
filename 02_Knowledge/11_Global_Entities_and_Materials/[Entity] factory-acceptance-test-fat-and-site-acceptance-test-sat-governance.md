@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "factory-acceptance-test-fat-and-site-acceptance-test-sat-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] factory-acceptance-test-fat-and-site-acceptance-test-sat-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A process performed at the vendor's facility to verify that a system meets design specifications (FAT) and the testing performed at the user's site to verify operational readiness in the final environment (SAT Governance)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fat", "sat", "acceptance-test", "quality-governance", "commissioning", "industrial-validation", "compliance"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Governance_Fidelity_Audit: Evaluate the ''Punch List'' items found during FAT to identify if high-fidelity design deviations are corrected before shipping to the customer site.'
-    - 'Validation_Integrity_Check: Analyze the IQ (Installation Qualification) and OQ (Operational Qualification) reports to ensure the high-fidelity system is integrated with site-specific utilities correctly.'
-    - 'Performance_Fidelity_Scan: Monitor the PQ (Performance Qualification) data to verify that the high-fidelity system is producing products within specified tolerances under actual load.'
-Trust Metrics:
+  description: "[Entity] factory-acceptance-test-fat-and-site-acceptance-test-sat-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🏭 Factory Acceptance Test (FAT) and Site Acceptance Test (SAT) Governance
+# [Entity] factory-acceptance-test-fat-and-site-acceptance-test-sat-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 수십억 원짜리 거대 기계를 주문했는데, 설치하고 나서야 작동이 안 된다는 것을 알게 되면 어떻게 될까요? **공장 인수 시험(FAT) 및 현장 인수 시험(SAT) 거버넌스**는 기계가 '태어난 곳(제조사 공장)'에서 한 번, '살아갈 곳(고객사 현장)'에서 한 번 더 완벽하게 검증하는 **'산업의 두 번의 서명'** 기술입니다. 단순히 돌아가는지 보는 것이 아니라, 수만 개의 사양서 항목을 하나하나 체크하며 "우리가 약속한 대로 만들어졌음"을 수학적으로 확정하는 **'신뢰의 최종 관문이자 완벽한 시작을 보장하는 거버넌스'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Documentation Gap - Test protocols missing authorized signatures. System cannot be validated for regulated production (e.g., FDA/ISO)"
         return "PASS: Validated Testing Records and Verified Compliance Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(fat_compliance_pct=99.2, open_punch_items=2, commissioning_days=12)
 print(engine.diagnose_acceptance_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_acceptance_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data commissioning-cycle-time-and-acceptance-success-v2026`와 연동되어, 전 세계 대규모 플랜트 설비의 인수 데이터를 실시간 분석하고 인도 지연 및 초기 불량 사고 확률을 0.001% 이하로 억제함으로써 지능형 자본재 문명의 거래 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - experimental-design-doe-and-statistical-process-control-spc-logic

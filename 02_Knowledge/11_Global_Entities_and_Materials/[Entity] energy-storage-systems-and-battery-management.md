@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-storage-systems-and-battery-management-entity"
-  domain: "117_Energy_Storage_and_Smart_Grid_Engineering_Hub"
+metadata:
+  id: "[[[Entity] energy-storage-systems-and-battery-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Engineering", "#Energy_Storage", "#BMS", "#Battery", "#ESS", "#Smart_Grid", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 117_energy-storage-and-smart-grid-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-storage-systems-and-battery-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-storage-systems-and-battery-management
+# [Entity] energy-storage-systems-and-battery-management
 
 ## 1. [왜 배우는가? (Why: The Reservoir of the Future)]]
 에너지는 생성하는 것만큼이나 저장하는 것이 중요합니다. 태양광과 풍력은 우리가 원할 때만 전기를 주지 않기 때문입니다. **에너지 저장 시스템 및 배터리 관리의 SOC 추정 및 열 모델링 수리 물리 기술**은 전기를 가두어 두었다가 필요할 때 꺼내 쓰는 '에너지 댐'을 설계하고, 그 내부를 지능적으로 감시하는 기술입니다. 수만 개의 배터리 셀이 균일하게 작동하도록 제어하고, 단 1도의 온도 상승도 감지하여 폭발을 막으며, 배터리의 남은 수명을 수학적으로 예측합니다. 우리가 이를 배우는 이유는 에너지 저장의 무결성을 확보함으로써, 에너지 독립을 실현하고 친환경 모빌리티 시대를 완성하는 '글로벌 에너지 패권 및 행성적 제조 주권'을 확보하기 위함입니다. ESS의 무결성이 에너지의 공급 유연성과 안전 무결성을 결정합니다.

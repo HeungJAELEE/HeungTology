@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cancer-immunotherapy-and-car-t-cell-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cancer-immunotherapy-and-car-t-cell-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of a patient's own T-cells to express Chimeric Antigen Receptors (CARs) that specifically recognize and destroy cancer cells, combined with AI-driven tumor microenvironment analysis."
-  physical_model: "N/A"
-Semantic:
-  tags: '["immunotherapy", "car-t", "cancer-treatment", "genetic-engineering", "oncology"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "MedicalFidelityEngine"
-  diagnostic_protocol:
-    - 'T-cell_Viability_Audit: Measure the health and proliferation rate of engineered T-cells.'
-    - 'Target_Specificity_Check: Evaluate the CAR''s ability to distinguish tumor antigens (e.g., CD19) from healthy tissue.'
-    - 'Cytokine_Storm_Risk_Scan: Monitor for excessive IL-6 or IFN-gamma production levels.'
-Trust Metrics:
+  description: "[Entity] cancer-immunotherapy-and-car-t-cell-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎗️ Cancer Immunotherapy and CAR-T Cell Engineering
+# [Entity] cancer-immunotherapy-and-car-t-cell-engineering
 
 ## 1. 개요 (Why)
 기존의 항암제가 외부에서 독물을 넣어 암을 죽였다면, CAR-T 치료제는 우리 몸의 군대인 'T세포'를 개량하여 스스로 암을 사냥하게 합니다. 환자의 피를 뽑아 T세포를 추출하고, 여기에 암세포의 특정 표지자를 추적하는 '유전자 내비게이션(CAR)'을 장착한 뒤 다시 몸속에 넣어주는 이 기술은 말기 암 환자에게 획기적인 완치 기회를 제공합니다. 본 노드는 개인 맞춤형 면역 치료의 무결성과 안전한 세포 공학을 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class MedicalFidelityEngine:
             return f"WARNING: Cytokine Release Syndrome (CRS) Risk (IL-6: {self.cyt}pg/mL) - Administer Tocilizumab"
         return "PASS: Systemic Safety Levels Within Normal Range"
 
-# Instance Diagnostic
 engine = MedicalFidelityEngine(t_cell_expansion=250, tumor_burden=0.8, cytokine_level_pg=120)
 print(engine.diagnose_therapy_response())
 print(engine.audit_safety_risk())
@@ -90,7 +78,6 @@ print(engine.audit_safety_risk())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data car-t-cell-expansion-and-tumor-reduction-v2026`와 연동되어, 환자의 면역 시그널을 초단위로 감시하고 치료 성공률을 80% 이상으로 유지함으로써 '암 정복'을 향한 결정론적 의료 무결성을 보증합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 14_future-biology-and-healthcare-hub
 - biotechnology-and-bio-process-engineering

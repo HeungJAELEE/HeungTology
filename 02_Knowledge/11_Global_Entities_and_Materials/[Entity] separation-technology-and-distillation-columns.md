@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "separation-technology-and-distillation-columns-entity"
-  domain: "95_Chemical_Engineering_and_Petrochemicals_Hub"
+metadata:
+  id: "[[[Entity] separation-technology-and-distillation-columns]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Chemical_Engineering", "#Separation", "#Distillation", "#Thermodynamics", "#VLE", "#Petrochemicals", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 105_chemical-engineering-and-petrochemicals-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] separation-technology-and-distillation-columns에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] separation-technology-and-distillation-columns
+# [Entity] separation-technology-and-distillation-columns
 
 ## 1. [왜 배우는가? (Why: The Filter of Civilization)]]
 반응기에서 갓 나온 화합물은 대개 여러 성분이 뒤섞인 혼돈의 상태입니다. 이 원석 같은 혼합물을 다이아몬드처럼 순수한 제품으로 걸러내는 과정이 바로 분리 기술입니다. **분리 기술 및 증류탑 설계의 기-액 평형 및 매케이브-틸리 수리 역학 기술**은 끓는점의 미세한 차이를 이용하여 물질의 정체성을 찾아주는 '화학적 선별' 기술입니다. 석유를 가솔린과 등유로 나누고, 반도체 공정에 필요한 $99.999999999 \%$의 초고순도 가스를 만드는 모든 과정이 이 탑 안에서 이루어집니다. 우리가 이를 배우는 이유는 분리 공정의 무결성을 확보함으로써, 제품의 부가가치를 극대화하고 에너지 낭비를 막는 '글로벌 자원 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 분리의 무결성이 물질의 가치를 결정합니다.

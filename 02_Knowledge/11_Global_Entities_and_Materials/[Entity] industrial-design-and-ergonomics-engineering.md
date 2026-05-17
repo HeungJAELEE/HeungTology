@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-design-and-ergonomics-engineering"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-design-and-ergonomics-engineering]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The professional practice of designing products and systems (Industrial Design) that optimize human well-being and overall system performance by applying human anatomical and psychological data (Ergonomics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["industrial-design", "ergonomics", "human-factors", "user-experience", "product-design", "anthropometry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Anthropometric_Fit_Audit: Verify that the product or workstation design accommodates the 5th to 95th percentile of the target user population.'
-    - 'Musculoskeletal_Stress_Check: Evaluate the required forces and joint angles during operation to minimize the risk of repetitive strain injuries (RSI).'
-    - 'Cognitive_Ergonomics_Scan: Analyze the clarity and intuitiveness of control interfaces to prevent human error under high-stress conditions.'
-Trust Metrics:
+  description: "[Entity] industrial-design-and-ergonomics-engineering에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🎨 Industrial Design and Ergonomics Engineering
+# [Entity] industrial-design-and-ergonomics-engineering
 
 ## 1. 개요 (Why: 인간적 통찰)
 기계는 차갑지만, 그것을 쓰는 사람은 따뜻한 피가 흐르는 존재입니다. **산업 디자인 및 인간공학(Ergonomics)**은 기계에 인간의 체온과 리듬을 불어넣는 **'배려의 공학'**입니다. 단순히 예쁜 물건을 만드는 것이 아니라, 의자가 허리를 가장 편안하게 받쳐주고, 기계의 버튼이 눈을 감고도 누를 수 있는 위치에 있게 만드는 일입니다. 기계에 사람을 맞추는 것이 아니라, 사람의 몸과 마음의 지도(데이터)를 그려 기계를 사람에게 맞추는 **'인본주의적 기술'**입니다.
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Emergency Access Too Slow - Violates Safety Ergonomics Standards"
         return "PASS: Intuitive and Fast Safety Access Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(rep_strain_index=0.15, interface_error_rate=0.01, comfort_rating_score=92.0)
 print(engine.diagnose_design_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_design_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data product-usability-and-ergonomic-comfort-metrics-v2026`와 연동되어, 생산 현장 및 일상 제품의 인간공학적 데이터를 실시간 분석하고 직업병 및 오작동 사고 확률을 0.001% 이하로 억제함으로써 인간과 기계 사이의 조화로운 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - human-robot-interaction-hri-and-cobot-safety-standards

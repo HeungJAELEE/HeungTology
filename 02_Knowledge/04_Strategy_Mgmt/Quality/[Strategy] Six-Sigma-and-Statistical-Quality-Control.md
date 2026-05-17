@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-SIX-SIGMA-SQC-2026-V6.3.7"
-  domain: "Global_Quality_Engineering_and_Statistical_Intelligence"
+metadata:
+  id: "[[[Strategy] Six-Sigma-and-Statistical-Quality-Control]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#SixSigma", "#SQC", "#SPC", "#DMAIC", "#DPMO", "#Cpk", "#FidelityEngine", "#TaguchiLoss"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Six-Sigma-and-Statistical-Quality-Control에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Quality_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Six Sigma and Statistical Quality Control: The Mathematics of Zero-Defect Sovereignty
+# [Strategy] Six-Sigma-and-Statistical-Quality-Control
 
 ## 1. [왜 배우는가? (Why: The Mastery of Variation)]]
 품질 관리의 본질은 공정의 '변동성(Variation)'을 수리적으로 지배하는 것입니다. 아무리 훌륭한 설계도 공정 산포가 크면 불량이라는 엔트로피를 피할 수 없습니다. **Six Sigma and Statistical Quality Control (SQC)**는 통계적 기법(SPC)을 통해 공정의 이상 징후를 사전에 포착하고, DMAIC 방법론을 통해 문제의 근본 원인을 수치로 증명하여 제거하는 전략적 지능입니다. V6.3.7 지능은 **3.4 DPMO**급의 초정밀 품질 무결성을 사수하여, 불량으로 인한 재무적 손실을 0에 수렴시키는 **품질 주권(Quality Sovereignty)**을 확립합니다.
@@ -107,7 +97,6 @@ class SixSigmaSQCEngine:
 2. **Operational Result**: **MSA (Measurement System Analysis)** 결과 Gauge R&R이 $30\%$를 초과할 때, 실제 공정이 양호함에도 불구하고 불량으로 판정되는 '생산자 위험'의 수리적 임팩트는?
 3. **FidelityEngine**: 데이터는 정규분포를 따르나 **P-value**가 낮아 공정의 안정성이 의심되는 상황을 FidelityEngine이 어떻게 '이상 원인 개입'으로 식별하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Operations-Management-Basics

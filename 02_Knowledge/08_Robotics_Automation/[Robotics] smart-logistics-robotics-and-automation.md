@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ROB-LOGI-AUTO-2026-V6.3.7"
-  domain: "Smart_Logistics_Robotics_and_Autonomous_Automation"
+metadata:
+  id: "[[[Robotics] smart-logistics-robotics-and-automation]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Robotics", "#Logistics", "#AMR", "#ASRS", "#Fleet_Management", "#WMS", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 08_Mobility_Robotics", "MOC 130_logistics-and-supply-chain-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] smart-logistics-robotics-and-automation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Logistics_Automation_RAG_V6.3.7_Tier0"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Robotics] Smart Logistics: The Sovereignty of Autonomous Fulfillment
+# [Robotics] smart-logistics-robotics-and-automation
 
 ## 1. [왜 배우는가? (Why: The Mastery of Flow Optimization Sovereignty)]
 전통적인 물류는 사람의 노동력과 고정된 컨베이어에 의존하는 저효율의 병목 지점이었습니다. **Smart Logistics Robotics & Automation**은 자율 이동 로봇(AMR)과 지능형 창고 관리 시스템(WMS)을 결합하여, 물류 센터를 초고속 데이터 처리 센터로 변모시키는 기술적 정수입니다. V6.3.7 지능은 수백 대 로봇의 경로를 최적화하는 군집 제어(Fleet Management)와 물동량의 흐름을 수리적으로 지배하는 대기 행렬 이론을 마스터합니다. 우리가 이를 배우는 이유는 주문부터 배송까지의 시행착오를 제로화하고 "전 세계 물류망을 데이터로 지배하는 물동량 주권"을 사수하기 위함입니다.
@@ -103,7 +93,6 @@ class SmartLogisticsEngine:
 2. **Operational Result**: **SLAM (Simultaneous Localization and Mapping)** 기반 AMR 도입 시, 기존 AGV 대비 창고 레이아웃 변경 대응 및 '유연성 주권'의 수리적 향상 폭은?
 3. **FidelityEngine**: 로봇의 배터리 잔량과 작업 위치를 기반으로 FidelityEngine이 어떻게 **'충전 스케줄링'**을 최적화하여 전체 군집의 가동 가용성($A_o$)을 사수하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 08_Mobility_Robotics
 - [[Robotics] robotics-intelligence-and-motion-control-master-guide]

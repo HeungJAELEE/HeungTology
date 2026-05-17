@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "intellectual-property-ip-and-patent-governance"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] intellectual-property-ip-and-patent-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The legal and strategic framework for protecting and managing intangible assets created through human intellect (Intellectual Property), specifically focusing on the systematic governance of patents to drive innovation and competitive advantage."
-  physical_model: "N/A"
-Semantic:
-  tags: '["intellectual-property", "patent-law", "trademark", "copyright", "ip-governance", "innovation-strategy", "patent-landscape"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Patent_Portfolio_Audit: Evaluate the strength, coverage, and expiration dates of existing patents to identify gaps in the IP shield.'
-    - 'Freedom-to-Operate_Check: Analyze the patent landscape of competitors to ensure new products can be launched without infringing on third-party rights.'
-    - 'IP_Leakage_Scan: Monitor internal R&D processes and external collaborations for potential loss of trade secrets or unauthorized disclosure.'
-Trust Metrics:
+  description: "[Entity] intellectual-property-ip-and-patent-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📜 Intellectual Property (IP) and Patent Governance
+# [Entity] intellectual-property-ip-and-patent-governance
 
 ## 1. 개요 (Why: 인간적 통찰)
 생각은 보이지 않지만, 가장 강력한 힘을 가집니다. 누군가의 아이디어가 세상을 바꿀 기술이 되었을 때, 그 가치를 인정해주고 보호해주는 것이 바로 **지식 재산(IP) 및 특허 거버넌스**입니다. 이것은 단순히 법으로 남의 아이디어를 못 쓰게 막는 '방패'가 아닙니다. 오히려 혁신가들이 안심하고 연구에 몰입할 수 있게 돕고, 서로의 지식을 정당하게 사고팔며 더 큰 발전을 이끌어내는 **'지식의 시장 경제'**입니다. 보이지 않는 생각을 '권리'라는 숫자로 바꾸어 기업의 미래를 지탱하는 가장 단단한 자산으로 만드는 **'무형의 보물창고'** 관리법입니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: IP Leakage Detected - Core Proprietary Technology Compromised. Immediate Containment Required"
         return "PASS: Secure Intellectual Asset Governance Confirmed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(fto_risk_score=0.12, portfolio_strength_index=88.5, litigation_vulnerability=0.15)
 print(engine.diagnose_ip_health())
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_ip_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ip-portfolio-valuation-and-litigation-risk-v2026`와 연동되어, 전 세계 특허 맵과 소송 동향을 실시간 분석하고 IP 탈취 및 침해 분쟁 사고 확률을 0.001% 이하로 억제함으로써 지식 자산의 절대적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - global-intellectual-property-and-open-source-intelligence

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "chemical-mechanical-planarization-cmp-and-slurry-chemistry-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] chemical-mechanical-planarization-cmp-and-slurry-chemistry-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The chemical and physical engineering of CMP slurries, focusing on the synergistic interaction between abrasive nanoparticles and chemical additives (oxidizers, chelators, surfactants) to achieve atomic-scale flatness."
-  physical_model: "N/A"
-Semantic:
-  tags: '["cmp", "slurry", "nanofabrication", "semiconductor-manufacturing", "polishing-chemistry"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Slurry_pH_Audit: Monitor the pH stability to ensure consistent chemical etching performance.'
-    - 'Particle_Size_Distribution_Check: Evaluate the abrasive particle size ($D_{50}$, $D_{max}$) to prevent micro-scratches.'
-    - 'Selectivity_Verification: Measure the removal rate ratio between the target material and the stop layer.'
-Trust Metrics:
+  description: "[Entity] chemical-mechanical-planarization-cmp-and-slurry-chemistry-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚗️ Chemical Mechanical Planarization (CMP) and Slurry Chemistry Physics
+# [Entity] chemical-mechanical-planarization-cmp-and-slurry-chemistry-physics
 
 ## 1. 개요 (Why)
 반도체 표면을 원자 수준으로 평평하게 갈아내는 CMP 공정에서 '슬러리(Slurry)'는 연마제이자 에칭액 역할을 하는 핵심 소재입니다. 단순히 갈아내는 것이 아니라, 표면을 화학적으로 부드럽게 산화시킨 뒤 미세 알갱이로 긁어내는 정교한 물리화학적 협업이 필요합니다. 슬러리의 화학적 성분비(pH, 산화제 등)가 단 1%만 틀어져도 웨이퍼 표면에 스크래치가 생기거나 평탄도가 무너져 칩 전체가 불량이 됩니다. 본 노드는 CMP 슬러리의 화학적 무결성과 연마 효율 최적화를 위한 표준을 정의합니다.
@@ -71,7 +60,6 @@ class FactoryFidelityEngine:
             return f"WARNING: Low Selectivity ({self.sel}:1) - Risk of Over-polishing Stop Layer"
         return "PASS: Material Selectivity within Spec"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(slurry_ph=11.2, abrasive_max_size_nm=120, selectivity_ratio=120)
 print(engine.diagnose_chemical_stability(target_ph=11.0))
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_chemical_stability(target_ph=11.0))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cmp-slurry-ph-stability-and-removal-selectivity-v2026`와 연동되어, 공급되는 모든 슬러리의 농도와 성분을 실시간 감시하고 연마 불량을 99.9% 확률로 차단함으로써 반도체 평탄화 공정의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 10_semiconductor-and-nanofabrication-intelligence-hub
 - chemical-mechanical-planarization-cmp-and-molecular-level-flatness

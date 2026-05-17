@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "IT-INFRA-CLOUD-2026-V6.3.7"
-  domain: "30_IT_Infrastructure_and_Digital_Intelligence"
+metadata:
+  id: "[[[Entity] it-infrastructure-and-cloud-architecture-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#ITInfrastructure", "#CloudArchitecture", "#Availability", "#HybridCloud", "#FidelityEngine", "#DigitalSovereignty", "#Sovereignty"]'
-  is_part_of: '["MOC 32_it-infrastructure-and-digital-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] it-infrastructure-and-cloud-architecture-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Enterprise_Architecture_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] IT Infrastructure & Cloud: System Resiliency & Architecture
+# [Entity] it-infrastructure-and-cloud-architecture-system
 
 ## 1. [왜 배우는가? (Why: The Bedrock of Digital Intelligence)]]
 모든 데이터 분석과 AI 서비스는 견고한 IT 인프라 위에서 구동됩니다. **IT 인프라 및 클라우드 아키텍처**는 디지털 문명의 신경망이자 혈관이며, 시스템의 멈춤 없는 가동을 보장하는 최후의 보루입니다. V6.3.7 지능은 **가용성(Availability)**과 **재해 복구(DR)** 아키텍처를 수리적으로 지배합니다. 우리가 이를 배우는 이유는 하이브리드 클라우드 자원을 최적화하여 운영 비용을 절감하고, "어떠한 부하 속에서도 무너지지 않는 '디지털 주권'을 사수하기" 위함입니다. 인프라의 무결성이 사업의 연속성과 데이터의 안전을 결정합니다.
@@ -108,7 +98,6 @@ class InfraFidelityEngine:
 2. **Operational Result**: **Microservices Architecture (MSA)**에서 서비스 간 통신 폭증으로 인한 **'Cascading Failure'** 무결성 붕괴를 방지하기 위한 **Circuit Breaker**의 수리적 역할은?
 3. **FidelityEngine**: **하이브리드 클라우드** 환경에서 온-프레미스와 퍼블릭 클라우드 간의 데이터 동기화 지연($Lag$)이 데이터 일관성 무결성에 미치는 영향을 어떻게 오딧하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 32_it-infrastructure-and-digital-intelligence-hub
 - Entity computer-architecture-and-high-performance-computing

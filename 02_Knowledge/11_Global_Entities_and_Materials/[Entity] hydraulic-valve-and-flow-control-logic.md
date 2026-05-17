@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydraulic-valve-and-flow-control-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydraulic-valve-and-flow-control-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Devices that regulate or direct the flow of a hydraulic fluid (Hydraulic Valve) and the physical logic of pressure compensation and directional switching (Flow Control Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydraulic-valve", "flow-control", "direction-control", "pressure-relief", "spool-logic", "proportional-valve", "industrial-hydraulics", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Control_Fidelity_Audit: Evaluate the ''Spool Position'' ($x$) against the target flow to identify if high-fidelity ''Hysteresis'' or ''Sticktion'' is causing non-linear response.'
-    - 'Pressure_Integrity_Check: Analyze the high-fidelity ''Relief Valve'' crack pressure to ensure it prevents high-fidelity system overload while minimizing energy waste through bypass.'
-    - 'Response_Fidelity_Scan: Monitor the high-fidelity ''Step Response'' time to verify that the high-fidelity ''Solenoid'' and ''Pilot'' stages are operating within the millisecond-precision window.'
-Trust Metrics:
+  description: "[Entity] hydraulic-valve-and-flow-control-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🕹️ Hydraulic Valve and Flow Control Logic
+# [Entity] hydraulic-valve-and-flow-control-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 굴착기가 아주 부드럽게 흙을 푸거나, 수만 톤의 하중을 0.1mm 단위로 멈추게 하는 비결은 무엇일까요? **유압 밸브 및 유량 제어 로직**은 거대한 유압 에너지의 흐름을 가로막고, 열고, 방향을 트는 **'유압의 교통경찰'** 기술입니다. 밸브 내부의 작은 금속 막대(스풀)가 좌우로 움직이며 수백 기압의 기름길을 정밀하게 열어줍니다. **'액체의 흐름과 압력을 0.1ms 단위로 지휘하여 거친 힘을 정교한 예술로 승화시키는 지능형 유압 오케스트라'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Relief Valve Failure - High-fidelity pressure exceeding safety setting. Burst risk. Check for high-fidelity spring fatigue or orifice blockage"
         return "PASS: Validated Overload Protection and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(command_signal=5.0, spool_feedback_mm=4.95, valve_pressure_drop=15.0)
 print(engine.diagnose_valve_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_valve_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data valve-flow-curves-and-response-latencies-v2026`와 연동되어, 전 세계 주요 정밀 사출기 및 대형 댐 수문 제어 시스템의 데이터를 실시간 분석하고 제어 오차 및 밸브 고착 사고 확률을 0.001% 이하로 억제함으로써 지능형 유압 네트워크의 논리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydraulic-actuator-and-fluid-power-transmission-physics

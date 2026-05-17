@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "supply-chain-management-scm-and-supplier-relationship-management-srm-foundations-entity"
-  domain: "36_Global_Unified_Governance_Intelligence_Sovereignty_and_Policy_Hub"
+metadata:
+  id: "[[[Entity] supply-chain-management-scm-and-supplier-relationship-management-srm-foundations]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#SCM", "#SRM", "#Logistics", "#Procurement", "#Risk_Management", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Entity enterprise-system-core-architecture-and-integrated-governance"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] supply-chain-management-scm-and-supplier-relationship-management-srm-foundations에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] supply-chain-management-scm-and-supplier-relationship-management-srm-foundations
+# [Entity] supply-chain-management-scm-and-supplier-relationship-management-srm-foundations
 
 ## 1. [왜 배우는가? (Why: The Pulse of Physical Capital)]]
 제품은 설계도 안에서 태어나지만, 가치는 공급망 위에서 완성됩니다. **공급망 관리(SCM) 및 공급사 관계 관리(SRM)의 수리적 기초**는 원자재라는 물리적 에너지가 제품이라는 경제적 가치로 변환되어 고객에게 도달하는 전 과정을 최적화하기 위한 핵심 지능입니다. SCM이 기업의 '혈관과 신경망'이 되어 물류의 흐름을 통제한다면, SRM은 기업의 '손과 발'이 되어 최적의 파트너와 연결됩니다. 우리가 이를 배우는 이유는 공급망의 비효율(재고 과잉, 납기 지연)이 자본의 흐름을 막는 '혈전'이 되는 것을 방지하고, 변동성이 큰 글로벌 시장에서 '회복 탄력성(Resilience)'을 확보하여 지속 가능한 성장을 달성하기 위함입니다. 물류의 속도가 자본의 속도입니다.

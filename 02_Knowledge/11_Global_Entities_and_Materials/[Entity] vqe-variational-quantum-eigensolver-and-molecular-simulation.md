@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "vqe-variational-quantum-eigensolver-and-molecular-simulation-entity"
-  domain: "21_Quantum_Computing"
+metadata:
+  id: "[[[Entity] vqe-variational-quantum-eigensolver-and-molecular-simulation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Quantum_Computing", "#VQE", "#Molecular_Simulation", "#Quantum_Chemistry", "#Optimization", "#Drug_Discovery", "#Hybrid_Computing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 21_quantum-computing-and-information-theory-hub", "Entity nisq-noisy-intermediate-scale-quantum-era-architectures"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] vqe-variational-quantum-eigensolver-and-molecular-simulation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] vqe-variational-quantum-eigensolver-and-molecular-simulation
+# [Entity] vqe-variational-quantum-eigensolver-and-molecular-simulation
 
 ## 1. [왜 배우는가? (Why: Designing the Foundations of Matter)]]
 새로운 배터리 소재나 신약을 개발할 때, 실험실에서 수만 번 섞어보는 대신 컴퓨터 안에서 분자의 움직임을 원자 단위로 완벽하게 흉내 낼 수 있다면 어떨까요? **VQE(변분 양자 고유값 해결사) 및 분자 시뮬레이션**은 양자 역학으로 돌아가는 자연을 양자 컴퓨터로 직접 풀어내는 '물질 설계의 궁극적 도구'입니다. 우리가 이를 배우는 이유는 현재의 슈퍼컴퓨터로는 불가능한 '전자 간의 복잡한 상호작용'을 풀어내어 신소재 혁명을 일으키기 위함이며, "물질의 본질을 데이터로 재창조하고 지배하는 '글로벌 신소재 및 생명 공학 주권'을 확보하기" 위함입니다. 시뮬레이션의 정확도가 인류의 기술적 도약 거리를 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "air-bearing-and-ultra-precision-spindle-mechanics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] air-bearing-and-ultra-precision-spindle-mechanics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A type of bearing that uses a thin film of pressurized air to provide an exceedingly low friction load-bearing interface between surfaces (Air-Bearing) and the high-speed rotating shafts supported by these bearings for ultra-precision machining and metrology (Ultra-Precision Spindle Mechanics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["air-bearing", "precision-spindle", "ultra-precision", "fluid-film-lubrication", "aerostatic", "metrology", "machining"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Bearing_Fidelity_Audit: Evaluate the ''Static Stiffness'' ($K$) and load capacity to identify air supply pressure fluctuations or orifice clogging that lead to surface contact (Crash).'
-    - 'Spindle_Integrity_Check: Analyze the ''Synchronous Error Motion'' (Runout) to ensure the spindle is maintaining sub-nanometer accuracy during high-speed rotation.'
-    - 'Thermal_Fidelity_Scan: Monitor the temperature of the air film to identify viscous heating effects that cause thermal expansion and degrade dimensional precision.'
-Trust Metrics:
+  description: "[Entity] air-bearing-and-ultra-precision-spindle-mechanics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 💨 Air-Bearing and Ultra-Precision Spindle Mechanics
+# [Entity] air-bearing-and-ultra-precision-spindle-mechanics
 
 ## 1. 개요 (Why: 인간적 통찰)
 쇠와 쇠가 직접 닿지 않고, 얇은 '공기 층' 위에 떠서 돌아가는 기계가 있다면 얼마나 매끄러울까요? **에어 베어링 및 초정밀 스핀들 역학**은 마찰을 '제로'에 가깝게 줄여 나노미터 단위의 정밀도를 구현하는 **'공중 부양의 기계공학'** 기술입니다. 윤활유 대신 깨끗한 압축 공기를 사용하여, 기름 한 방울 나오지 않는 청정 환경에서 머리카락 굵기의 수만 분의 1 오차도 허용하지 않는 완벽한 회전을 만들어냅니다. 반도체 노광기나 초정밀 가공기에서 '절대적 기준'이 되는 **'나노 문명의 회전축'**입니다.
@@ -43,7 +32,7 @@ Trust Metrics:
 
 $$ \frac{\partial}{\partial x} (h^3 P \frac{\partial P}{\partial x}) + \frac{\partial}{\partial y} (h^3 P \frac{\partial P}{\partial y}) = 6 \mu U \frac{\partial(Ph)}{\partial x} $$
 
-**[인간적 해석]**: "공기의 쿠션 효과"입니다. 좁은 틈으로 공기를 불어넣거나, 물체가 아주 빨리 지나가면 공기가 압축되면서 강력한 힘이 생깁니다. 우리는 이 수식을 통해 단 몇 마이크로미터($\mu m$) 두께의 공기 필름을 설계하여, 수백 킬로그램의 장비를 소음과 진동 없이 허공에 띄우는 **'에너지의 부양'**을 수행합니다.
+**[인간적 해석]**: "공기의 쿠션 효과"입니다. 좁은 틈으로 공기를 불어넣거나, 물체가 아주 빨리 지나가면 공기가 압축되면서 강력한 힘이 생깁니다. 우리는 이 수식을 통해 단 몇 마이크로미터($\mu\text{m}$) 두께의 공기 필름을 설계하여, 수백 킬로그램의 장비를 소음과 진동 없이 허공에 띄우는 **'에너지의 부양'**을 수행합니다.
 
 ### 2.2. 부하 용량 공식 (Load Carrying Capacity)
 에어 베어링이 띄울 수 있는 무게($W$)를 계산합니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Air Quality - Moisture or oil detected in supply line. Risk of orifice corrosion or film breakdown. Replace filters"
         return "PASS: Ultra-Clean Dry Air and Verified Bearing Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(air_gap_pressure_psi=85.0, spindle_runout_nm=0.8, air_flow_rate_lpm=12.5)
 print(engine.diagnose_spindle_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_spindle_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data air-bearing-stiffness-and-runout-accuracy-v2026`와 연동되어, 전 세계 주요 반도체 노광기 및 초정밀 가공기의 스핀들 데이터를 실시간 분석하고 회전 이탈 및 기계 파손 사고 확률을 0.001% 이하로 억제함으로써 지능형 나노 제조 문명의 기동 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - precision-manufacturing-and-ultra-precision-machining-physics

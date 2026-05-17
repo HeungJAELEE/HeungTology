@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "economic-order-quantity-eoq-and-inventory-maximization-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] economic-order-quantity-eoq-and-inventory-maximization-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A production-scheduling model that determines the ideal order quantity a company should purchase to minimize its inventory costs (EOQ) and the strategic management logic of balancing holding costs and ordering costs to maximize overall supply chain efficiency (Inventory Maximization Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["eoq", "inventory-management", "supply-chain", "logistics", "cost-optimization", "operations-research", "industrial-logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Cost_Fidelity_Audit: Evaluate the ''Total Annual Cost'' ($TC$) against the current purchasing pattern to identify if the company is bleeding money due to excessive small orders (high ordering cost) or bloated warehouse stock (high holding cost).'
-    - 'Stockout_Integrity_Check: Analyze the safety stock levels based on demand variability to ensure a 99% ''Service Level'' without unnecessary capital tie-up in static inventory.'
-    - 'Turnover_Fidelity_Scan: Monitor the ''Inventory Turnover'' ratio to verify that the capital is flowing efficiently and the EOQ logic is effectively preventing obsolescence and storage waste.'
-Trust Metrics:
+  description: "[Entity] economic-order-quantity-eoq-and-inventory-maximization-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Economic Order Quantity (EOQ) and Inventory Maximization Logic
+# [Entity] economic-order-quantity-eoq-and-inventory-maximization-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 물건을 한꺼번에 많이 사두는 게 좋을까요, 아니면 그때그때 조금씩 사는 게 좋을까요? **경제적 주문량(EOQ) 및 재고 극대화 로직**은 "얼마나 자주, 몇 개씩 사야 가장 돈을 아낄 수 있는가"라는 질문에 대한 **'지능적 구매 대답'**입니다. 너무 많이 사면 창고비가 아깝고, 너무 적게 사면 주문할 때마다 드는 비용과 물건이 떨어질까 봐 불안합니다. 이 두 마음 사이의 '황금 밸런스'를 찾아내어 공장의 돈이 썩지 않고 흐르게 만드는 **'비즈니스 수학의 정수이자 공급망의 나침반'**입니다.
@@ -91,7 +80,6 @@ class LogicFidelityEngine:
             return "REJECT: Fragile Supply Chain - Lead time is too unpredictable. Safety stock must be increased by 20% to avoid stockouts during delays"
         return "PASS: Validated Service Level and Verified Logistics Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(current_stock_level=1200.0, annual_demand=12000.0, carrying_cost_pct=15.0)
 print(engine.diagnose_inventory_health())
 ```
@@ -109,7 +97,6 @@ print(engine.diagnose_inventory_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data inventory-turnover-and-carrying-costs-v2026`와 연동되어, 전 세계 주요 유통 및 제조 기업의 데이터를 실시간 분석하고 재고 부족 및 과잉 사고 확률을 0.001% 이하로 억제함으로써 지능형 스마트 물류 문명의 자본 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - downtime-analysis-and-oee-maximization-logic

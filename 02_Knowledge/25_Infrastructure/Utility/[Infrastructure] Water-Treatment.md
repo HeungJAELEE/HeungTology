@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] Water-Treatment"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] Water-Treatment]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] Water-Treatment에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] Water-Treatment
@@ -89,5 +79,4 @@ def control_upw_quality(sensor_readings):
 2. 물의 '비저항(Resistivity)' 수치가 왜 수질의 순도를 나타내는 지표가 되는가?
 3. 반도체 폐수를 재이용할 때 발생할 수 있는 공학적 리스크와 이를 방지하는 'AI 수질 감시'의 역할은?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

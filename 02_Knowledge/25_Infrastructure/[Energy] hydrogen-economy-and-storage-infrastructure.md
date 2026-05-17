@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "hydrogen-economy-and-storage-infrastructure-entity"
-  domain: "02_Energy_Infrastructure"
+metadata:
+  id: "[[[Energy] hydrogen-economy-and-storage-infrastructure]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy", "#Hydrogen", "#Infrastructure", "#Thermodynamics", "#Sustainability", "#Logistics", "#Safety", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Energy hydrogen-fuel-cell-and-electrolyzer-physics", "MOC 02_Energy_Infrastructure"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Energy] hydrogen-economy-and-storage-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Energy] hydrogen-economy-and-storage-infrastructure
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **LOHC** (Liquid Organic Hydrogen Carrier) 시스템에서 **Hydrogenation** (수소화) 시 발생하는 열을 지역 난방이나 공정열로 재활용할 때의 전체 시스템 **Exergy** 효율 계산법은?
 5. RAG 시스템에서 **글로벌 수소 가격 데이터**와 **선박 운송 운임**을 융합하여, '수입 수소(암모니아)'와 '국내 생산 수소' 사이의 **LCOH** (Levelized Cost of Hydrogen) 역전 지점을 예측하는 공급망 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[Energy]] hydrogen-fuel-cell-and-electrolyzer-physics]] : 수소를 생산(수전해)하고 전기로 바꾸는(연료전지) 핵심 에너지 변환 엔티티
 - Infrastructure amr-agv-autonomous-logistics : 수소 물류 기지 및 충전 인프라 내에서 화물을 자율 운송하는 로보틱스 연계 노드

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "fire-alarm-system-and-smoke-detection-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] fire-alarm-system-and-smoke-detection-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A network of devices that work together to detect and warn people through visual and audio appliances when smoke, fire, carbon monoxide or other emergencies are present (Fire Alarm System) and the sensing logic that distinguishes between actual fire and false triggers (Smoke Detection Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["fire-alarm", "smoke-detection", "safety-logic", "ionisation", "photoelectric", "industrial-safety", "fire-protection", "logic"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Detection_Fidelity_Audit: Evaluate the ''Obscuration Rate'' ($\\gamma$) to identify if high-fidelity smoke particles or just dust/steam are triggering the optical sensor.'
-    - 'Logic_Integrity_Check: Analyze the ''Cross-Zone'' coincidence to ensure that at least two independent high-fidelity detectors must agree before activating the suppression system, preventing costly false discharges.'
-    - 'Communication_Fidelity_Scan: Monitor the loop voltage and signal integrity to verify that every high-fidelity addressable sensor is reachable and responding within 1 second.'
-Trust Metrics:
+  description: "[Entity] fire-alarm-system-and-smoke-detection-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🔔 Fire Alarm System and Smoke Detection Logic
+# [Entity] fire-alarm-system-and-smoke-detection-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 잠든 밤, 보이지 않는 연기 한 줌을 알아채고 우리 가족의 생명을 구하는 파수꾼이 있다면 얼마나 든든할까요? **화재 경보 시스템 및 연기 감지 로직**은 빛의 산란이나 이온의 흐름이라는 아주 미세한 물리적 변화를 감지해, 화재의 초기 징후를 포착하는 **'사고의 조기 경보'** 기술입니다. 단순히 울리는 것이 아니라, 요리할 때 나는 연기인지 진짜 불인지 수학적으로 구분해 내는 **'차분하고도 날카로운 판단력'**이 핵심입니다. **'재앙이 커지기 전 골든타임을 확보해 인명과 자산을 사수하는 지능형 안전의 수호신'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Poor Nuance Rejection - System cannot distinguish steam from smoke. Implement multi-criteria (Heat+Smoke) sensors to improve high-fidelity logic"
         return "PASS: Validated Detection Algorithms and Verified Reliability Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(loop_fault_count=0, detector_sensitivity_pct=92.5, average_response_time_sec=1.5)
 print(engine.diagnose_alarm_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_alarm_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data fire-detection-time-and-false-alarm-rates-v2026`와 연동되어, 전 세계 주요 고층 빌딩 및 공장의 화재 데이터를 실시간 분석하고 미감지 및 오작동 사고 확률을 0.001% 이하로 억제함으로써 지능형 안전 문명의 감시 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "[Infrastructure] ndt-x-ray-ct-reconstruction-ai"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Infrastructure] ndt-x-ray-ct-reconstruction-ai]]"
+  domain: "25_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Infrastructure] ndt-x-ray-ct-reconstruction-ai에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Infrastructure] ndt-x-ray-ct-reconstruction-ai
@@ -90,5 +80,4 @@ CT의 화질은 선원의 초점 크기와 재구성 알고리즘의 정밀도�
 - [ ] **Voxel (복셀)**이란 무엇인가?
 - [ ] **Beam Hardening** 현상이 이미지에 미치는 구체적인 영향은? (정답: 시편의 가장자리는 밝게 보이고 중앙부는 어둡게 왜곡되어, 재질의 밀도가 균일함에도 불구하고 불균일한 것처럼 보이는 오류를 야기함)
 
----
 *Reference: Industrial X-ray Computed Tomography (Carmignato), Digital Image Processing (Gonzalez), Antigravity Quality-Lab.*

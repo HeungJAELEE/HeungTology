@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Smart-Factory-Digital-Thread"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Smart-Factory-Digital-Thread]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Smart-Factory-Digital-Thread에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Smart-Factory-Digital-Thread
+# [Strategy] Smart-Factory-Digital-Thread
 
 ## 1. [왜 배우는가? (Why)]]
 우리는 공장이 '자동화'되면 똑똑해진다고 생각하지만, 데이터가 단절되어 있으면 공장은 여전히 '장님'과 같습니다. 설계 도면(PLM) 따로, 기계 가동 데이터(MES) 따로, 주문 정보(ERP)가 따로 놀면 변화에 빠르게 대응할 수 없습니다. 스마트 팩토리 디지털 스레(Smart-Factory-Digital-Thread)는 이 흩어진 데이터들을 하나의 실(Thread)로 꿰어 연결하는 기술입니다. 제품이 어디서, 어떤 압력으로 만들어졌는지 10년 뒤에도 완벽하게 추적할 수 있고, 주문이 들어오는 즉시 공장의 기계들이 스스로 가동 계획을 짜게 만드는 '지능형 제조의 혈맥'을 구축하는 것입니다.
@@ -100,5 +90,4 @@ def synchronize_digital_thread(erp_order_id, factory_id):
 2. '자산 관리 쉘(AAS)' 기술이 '인더스트리 4.0'의 '장비 자율 협업'을 가능하게 하는 소프트웨어적 기제는?
 3. '디지털 트윈'과 '디지털 스레드'의 개념적 차이점과, 두 기술이 결합했을 때 발생하는 '제조 지능'의 시너지는 무엇인가?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

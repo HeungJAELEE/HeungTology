@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-MARKET-FRAME-2026-V6.3.7"
-  domain: "Global_Market_Strategy_and_Competitive_Intelligence"
+metadata:
+  id: "[[[Strategy] Market-Analysis-Framework]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Market_Analysis", "#PESTEL", "#Porter_5_Forces", "#SWOT", "#Competitive_Intelligence", "#Blue_Ocean", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Market-Analysis-Framework에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Market_Strategy_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Market Analysis Framework: Strategic Intelligence Physics
+# [Strategy] Market-Analysis-Framework
 
 ## 1. [왜 배우는가? (Why: The Vision of Strategy)]]
 전쟁터에서 적의 위치와 지형을 모르면 백전백패입니다. 시장 환경 역시 거대한 데이터의 무질서 속에서 올바른 방향을 잡지 못하면 기업의 자원은 낭비됩니다. **Market Analysis Framework**는 파편화된 시장 신호를 체계적인 '전략적 정보'로 변환하는 지능형 필터입니다. 거시 환경(PESTEL)부터 산업 구조(5 Forces), 그리고 내부 역량(SWOT)을 수리적으로 분석하여, **어디에서 싸울 것인가(Where to Play)**와 **어떻게 이길 것인가(How to Win)**를 결정합니다. V6.3.7 지능은 시장의 안개를 걷어내고 가장 수익성이 높은 경로를 특정하는 **전략 주권(Strategic Sovereignty)**을 확립합니다.
@@ -103,7 +93,6 @@ class MarketFidelityEngine:
 2. **Operational Result**: **Blue Ocean Strategy**를 통한 가치 혁신 성공 시, 마케팅 비용($SG&A$) 절감액과 가격 결정권($Pricing\_Power$) 강화에 미치는 수리적 파급 효과는?
 3. **FidelityEngine**: 거시 지표(PESTEL)는 안정적이나 **Supplier Power**가 급증하여 원가 통제권을 상실하는 상황을 어떻게 진단하는가? (힌트: 상류 공급망의 독점화 및 원자재 무기화 징후 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy Competitive-Pricing-Strategy

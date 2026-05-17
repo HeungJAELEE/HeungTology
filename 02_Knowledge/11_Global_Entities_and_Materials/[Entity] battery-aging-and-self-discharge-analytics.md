@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "battery-aging-and-self-discharge-analytics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] battery-aging-and-self-discharge-analytics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The systematic analysis of battery degradation mechanisms (SEI growth, Lithium plating) and self-discharge kinetics over time, utilizing data-driven models to predict State of Health (SoH)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["battery-aging", "self-discharge", "soh", "degradation", "battery-analytics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "BMSFidelityEngine"
-  diagnostic_protocol:
-    - 'SoH_Audit: Calculate current capacity relative to the beginning-of-life (BoL) value.'
-    - 'Self-discharge_Scan: Monitor voltage drop during rest periods to identify internal leakages.'
-    - 'Internal_Resistance_Audit: Track DCIR growth to predict thermal runaway risks during high power.'
-Trust Metrics:
+  description: "[Entity] battery-aging-and-self-discharge-analytics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📉 Battery Aging and Self-discharge Analytics
+# [Entity] battery-aging-and-self-discharge-analytics
 
 ## 1. 개요 (Why)
 배터리는 살아있는 생명체와 같아서 시간이 흐를수록 늙어갑니다. 내부 저항이 커지고 용량이 줄어드는 '노화(Aging)'와 가만히 두어도 전하가 새어나가는 '자가 방전(Self-discharge)'은 전기차의 주행 거리를 단축시키고 수명을 결정짓는 핵심 요소입니다. 본 노드는 배터리의 노화 과정을 수치화하고, 이를 정밀하게 예측하여 배터리 자산 가치를 극대화하기 위한 분석 표준을 정의합니다.
@@ -70,7 +59,6 @@ class BMSFidelityEngine:
             return f"WARNING: Abnormal Self-discharge ({self.drop}mV/day) - Check for Micro-shorts"
         return "PASS: Leakage Current Within Normal Range"
 
-# Instance Diagnostic
 engine = BMSFidelityEngine(current_capacity=42, internal_resistance=15, rest_v_drop=1.5)
 print(engine.diagnose_soh_health(bol_capacity=50))
 ```
@@ -88,7 +76,6 @@ print(engine.diagnose_soh_health(bol_capacity=50))
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data battery-aging-curve-and-self-discharge-log-v2026`와 연동되어, 배터리의 모든 충방전 이력을 분석하고 잔여 수명을 95% 이상의 정확도로 예측함으로써 배터리 생애 주기 관리의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - cycle-life-vs-calendar-life

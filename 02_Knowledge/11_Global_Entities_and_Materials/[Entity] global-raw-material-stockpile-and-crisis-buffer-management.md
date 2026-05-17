@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "global-raw-material-stockpile-and-crisis-buffer-management"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] global-raw-material-stockpile-and-crisis-buffer-management]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The strategic governance framework for maintaining and managing emergency reserves of critical raw materials (Stockpile) to ensure industrial continuity during supply chain disruptions, geopolitical crises, or natural disasters (Crisis Buffer)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["raw-materials", "strategic-stockpile", "crisis-management", "resource-security", "buffer-management"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LegalFidelityEngine"
-  diagnostic_protocol:
-    - 'Stockpile_Adequacy_Audit: Verify that the current reserves of critical materials (e.g., Lithium, Rare Earths, Cobalt) meet the minimum strategic duration (e.g., 90 days) for national industry.'
-    - 'Degradation_Check: Monitor the physical and chemical integrity of stockpiled materials to prevent quality loss during long-term storage.'
-    - 'Replenishment_Logic_Scan: Analyze the automated trigger points for purchasing new materials based on global market price dips and supply risk levels.'
-Trust Metrics:
+  description: "[Entity] global-raw-material-stockpile-and-crisis-buffer-management에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📦 Global Raw Material Stockpile and Crisis Buffer Management
+# [Entity] global-raw-material-stockpile-and-crisis-buffer-management
 
 ## 1. 개요 (Why: 인간적 통찰)
 전쟁이 나거나 거대한 항구가 막혀서 우리 공장에 꼭 필요한 '리튬'이나 '희토류'가 들어오지 않는다면 어떻게 될까요? 국가 전체의 산업이 멈출 수도 있습니다. **글로벌 원자재 비축 및 위기 버퍼 관리**는 마치 가정집의 '비상 식량'처럼, 국가와 기업이 최악의 순간을 대비해 쌓아두는 **'산업적 생존 보험'**입니다. 인공지능은 전 세계 정세를 24시간 감시하여, 위기가 오기 전 미리 창고를 채우고, 자원이 부족해질 때 가장 필요한 곳에 우선적으로 자원을 배분하는 **'지능형 창고지기'** 역할을 합니다.
@@ -89,7 +78,6 @@ class LegalFidelityEngine:
             return "REJECT: Inefficient Procurement - Buying at Peak Prices. Review AI Market Prediction Logic"
         return "PASS: Cost-effective Replenishment Executed"
 
-# Instance Diagnostic
 engine = LegalFidelityEngine(current_stock_days=95, supply_risk_index=0.42, storage_degradation_pct=0.5)
 print(engine.diagnose_stockpile_health(target_days=90))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_stockpile_health(target_days=90))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data strategic-raw-material-reserves-and-depletion-v2026`와 연동되어, 전 세계 주요 원자재의 비축 현황과 수급 위기 징후를 실시간 분석하고 산업 중단 사고 확률을 0.01% 이하로 억제함으로써 국가 산업 주권의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 29_legal-compliance-and-corporate-governance-hub
 - global-mineral-reserve-tracking-and-autonomous-mining-ops

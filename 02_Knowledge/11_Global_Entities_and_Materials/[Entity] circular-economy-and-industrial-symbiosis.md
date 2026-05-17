@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "circular-economy-and-industrial-symbiosis"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] circular-economy-and-industrial-symbiosis]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The collaborative framework where multiple industrial entities exchange energy, water, and materials to minimize environmental impact and maximize resource efficiency through symbiotic relationships."
-  physical_model: "N/A"
-Semantic:
-  tags: '["circular-economy", "industrial-symbiosis", "resource-sharing", "eco-industrial-park", "sustainability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "SustainabilityFidelityEngine"
-  diagnostic_protocol:
-    - 'Exchange_Efficiency_Audit: Measure the volume and quality of materials exchanged between firms.'
-    - 'Symbiotic_Network_Check: Evaluate the number of active resource links and their stability over time.'
-    - 'Carbon_Reduction_Verification: Audit the net decrease in $CO_2$ emissions resulting from shared energy or waste heat.'
-Trust Metrics:
+  description: "[Entity] circular-economy-and-industrial-symbiosis에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤝 Circular Economy and Industrial Symbiosis
+# [Entity] circular-economy-and-industrial-symbiosis
 
 ## 1. 개요 (Why)
 혼자서는 쓰레기인 것이 모이면 자원이 됩니다. 산업 공생(Industrial Symbiosis)은 인접한 공장들이 서로의 폐기물, 폐열, 공정수를 원료나 에너지로 맞교환하는 '공동체 순환' 시스템입니다. A공장의 굴뚝에서 나오는 열로 B공장이 전기를 만들고, C공장의 폐수가 D공장의 냉각수가 되는 식입니다. 이는 비용 절감을 넘어, 지역 전체를 하나의 거대한 유기체처럼 만드는 '에코 산업 단지(EIP)'의 핵심 원리입니다. 본 노드는 산업 간 자원 공생의 무결성과 경제적 시너지 표준을 정의합니다.
@@ -71,9 +60,7 @@ class SustainabilityFidelityEngine:
             return f"REJECT: Carbon Reduction Below Target ({self.co2}t) - Strengthen Material Loops"
         return "PASS: Significant Climate Impact Reduction Confirmed"
 
-# Instance Diagnostic
 engine = SustainabilityFidelityEngine(links_per_firm=5.2, waste_heat_recovery_pct=35, carbon_reduction_tons(1200)
-# Correction: Fixing constructor call
 engine = SustainabilityFidelityEngine(5.2, 35, 1200)
 print(engine.diagnose_symbiotic_health())
 ```
@@ -91,7 +78,6 @@ print(engine.diagnose_symbiotic_health())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data industrial-symbiosis-economic-benefit-and-resource-savings-v2026`와 연동되어, 산업 단지 내 모든 자원 이동 데이터를 실시간 분석하고 교환 효율을 90% 이상으로 유지함으로써 무결성 기반의 자립형 경제 모델을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 22_sustainability-and-circular-economy-intelligence-hub
 - circular-economy-industrial-metabolism-and-resource-loop-physics

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "copper-smelting-and-flash-furnace-metallurgy"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] copper-smelting-and-flash-furnace-metallurgy]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The process of extracting copper from its ores by heating and melting (Copper Smelting) and the specialized high-efficiency technology that uses the energy released by the oxidation of iron and sulfur in the ore to achieve smelting temperatures (Flash Furnace Metallurgy)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["copper-smelting", "flash-furnace", "metallurgy", "pyrometallurgy", "matte-production", "sulfuric-acid", "industrial-furnace"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Thermal_Fidelity_Audit: Evaluate the ''Matte Temperature'' and ''Slag Viscosity'' to identify if the furnace is in ''Autogenous'' balance, meaning the ore''s own energy is sufficient to maintain the melt without external fuel.'
-    - 'Chemical_Integrity_Check: Analyze the $Cu$ content in the slag to ensure that copper loss is minimized through proper fluxing (e.g., silica addition) and phase separation time.'
-    - 'Environmental_Fidelity_Scan: Monitor the $SO_2$ concentration in the off-gas to verify that the ''Acid Plant'' is effectively capturing sulfur emissions and converting them into sulfuric acid byproduct.'
-Trust Metrics:
+  description: "[Entity] copper-smelting-and-flash-furnace-metallurgy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚱️ Copper Smelting and Flash Furnace Metallurgy
+# [Entity] copper-smelting-and-flash-furnace-metallurgy
 
 ## 1. 개요 (Why: 인간적 통찰)
 전선부터 반도체까지 현대 문명을 연결하는 구리는 어떻게 만들어질까요? **구리 제련 및 자경(Flash)로 야금**은 돌 속에 숨어있는 구리를 불의 힘으로 끄집어내는 **'불의 정화'** 기술입니다. 특히 '자경로(Flash Furnace)'는 놀라운 기술로, 구리 광석 속에 들어있는 황($S$)이 타오를 때 발생하는 열을 그대로 이용해 광석 스스로를 녹입니다. 외부 연료 없이 자신의 에너지로 금속을 뽑아내는 **'스스로 타오르는 금속의 탄생'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Copper Loss in Slag - Separation time insufficient or fluxing chemistry incorrect. Profitability integrity compromised"
         return "PASS: Validated Metallurgical Yield and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(furnace_temp_c=1250.0, matte_grade_pct=65.0, so2_capture_efficiency_pct=99.8)
 print(engine.diagnose_smelter_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_smelter_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data copper-matte-grade-and-furnace-temperature-profiles-v2026`와 연동되어, 전 세계 주요 구리 제련소의 가동 데이터를 실시간 분석하고 구리 손실 및 유해가스 유출 사고 확률을 0.001% 이하로 억제함으로써 지능형 금속 문명의 자원 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - continuous-casting-and-solidification-mechanics

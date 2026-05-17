@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ion-thrusters-and-electric-propulsion-for-deep-space"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ion-thrusters-and-electric-propulsion-for-deep-space]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-efficiency spacecraft propulsion technology (Electric Propulsion) that accelerates ions using electric fields (Ion Thrusters) to generate thrust, characterized by extremely high specific impulse ($I_{sp}$) suitable for long-duration deep space missions."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ion-thruster", "electric-propulsion", "deep-space", "hall-thruster", "specific-impulse", "plasma-physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Grid_Erosion_Audit: Monitor the acceleration grid wear caused by ion impingement to predict the thruster''s operational life.'
-    - 'Propellant_Utilization_Check: Evaluate the ionization efficiency of the propellant (e.g., Xenon) to minimize mass loss and maximize mission duration.'
-    - 'Thrust_Stability_Scan: Analyze the beam current and discharge stability to identify plasma oscillations or power supply anomalies.'
-Trust Metrics:
+  description: "[Entity] ion-thrusters-and-electric-propulsion-for-deep-space에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🚀 Ion Thrusters and Electric Propulsion for Deep Space
+# [Entity] ion-thrusters-and-electric-propulsion-for-deep-space
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 화성행 우주선이나 외계 행성 탐사선이 거대한 불꽃을 내뿜으며 날아가는 모습은 영화 속 장면일 뿐입니다. 실제 심우주 항해의 주인공은 푸른빛을 은은하게 내뿜으며 소리 없이 전진하는 **이온 엔진**입니다. 화학 로켓이 짧고 굵게 타오르는 '폭발적 달리기 선수'라면, 이온 엔진은 아주 적은 연료로 수년 동안 지치지 않고 가속하는 '초장거리 마라토너'입니다. 태양계 너머 먼 우주로 인류의 지능을 실어 나르는 **'빛의 돛'**이자, 가장 효율적인 **'우주 고속도로의 엔진'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Critical Fuel Level - Station-keeping Only. Abandon Deep Space Objectives"
         return "PASS: Sufficient Propellant for Extended Mission Operations"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(ion_beam_current_ma=450, grid_erosion_rate_nm_hr=1.2, gas_utilization_eff=0.94)
 print(engine.diagnose_propulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_propulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ion-thruster-efficiency-and-fuel-longevity-v2026`와 연동되어, 현재 우주를 날고 있는 모든 이온 엔진의 상태를 실시간 분석하고 엔진 정지 및 궤도 이탈 사고 확률을 0.001% 이하로 억제함으로써 인류 우주 진출의 추진력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_space-exploration-and-orbital-mechanics-hub
 - nuclear-thermal-propulsion-ntp-and-deep-space-logistics

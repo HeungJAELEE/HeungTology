@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "hydraulic-actuator-and-fluid-power-transmission-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] hydraulic-actuator-and-fluid-power-transmission-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A mechanical device that converts hydraulic energy into mechanical energy (Hydraulic Actuator) and the physical study of force, torque, and motion transmission through pressurized liquids (Fluid Power Transmission Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["hydraulic-actuator", "fluid-power", "cylinder", "hydraulic-motor", "force-multiplication", "stiffness", "industrial-automation", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Actuation_Fidelity_Audit: Evaluate the ''Static vs Dynamic Friction'' to identify if high-fidelity ''Stick-slip'' (jerky motion) is occurring during low-speed high-fidelity precision movements.'
-    - 'Stiffness_Integrity_Check: Analyze the high-fidelity ''Fluid Bulk Modulus'' to ensure the high-fidelity ''Hydraulic Stiffness'' is sufficient for the load, preventing unwanted high-fidelity oscillations.'
-    - 'Leakage_Fidelity_Scan: Monitor the high-fidelity ''Cylinder Bypass'' flow to verify that high-fidelity ''Seal Integrity'' is maintained, preventing internal power high-fidelity loss.'
-Trust Metrics:
+  description: "[Entity] hydraulic-actuator-and-fluid-power-transmission-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🦾 Hydraulic Actuator and Fluid Power Transmission Physics
+# [Entity] hydraulic-actuator-and-fluid-power-transmission-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 굴착기가 바위를 번쩍 들어 올리거나, 수만 톤의 금속을 꾹 누르는 그 거대한 힘의 실체는 무엇일까요? **유압 액추에이터 및 동력 전달 물리**는 액체라는 '부서지지 않는 단단한 연결봉'을 통해 힘을 전달하여, 아주 작은 펌프의 힘을 코끼리 수십 마리의 힘으로 증폭시키는 **'액체의 근육'** 기술입니다. 전기 모터로는 감당할 수 없는 극한의 하중을 아주 정밀하고 부드럽게 움직입니다. **'액체의 비압축성을 이용해 거대한 힘과 정밀한 위치 제어를 동시에 달성하여 산업의 중량물 핸들링을 책임지는 지능형 유압 심장'**입니다.
@@ -93,7 +82,6 @@ class FactoryFidelityEngine:
             return "REJECT: Positioning Drift - High-fidelity hydraulic stiffness insufficient or valve leak. System drifting under static high-fidelity load"
         return "PASS: Validated Static Holding and Verified Logic Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(cylinder_pressure_bar=250.0, piston_velocity_ms=0.1, external_load_tons=45.0)
 print(engine.diagnose_actuator_health())
 ```
@@ -111,7 +99,6 @@ print(engine.diagnose_actuator_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data hydraulic-actuator-efficiency-and-seal-friction-v2026`와 연동되어, 전 세계 주요 대형 크레인 및 사출 성형기의 구동 데이터를 실시간 분석하고 실린더 파손 및 실(Seal) 누유 사고 확률을 0.001% 이하로 억제함으로써 지능형 기계 자동화 문명의 동력 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - hydraulic-press-and-pascals-law-physics

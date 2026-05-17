@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "industrial-metrology-3d-scanning-and-lidar-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] industrial-metrology-3d-scanning-and-lidar-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The science of high-precision measurement of physical objects (Metrology) using light-based technologies (3D Scanning and LiDAR), capturing geometric data to create accurate digital twins for quality control and reverse engineering."
-  physical_model: "N/A"
-Semantic:
-  tags: '["metrology", "3d-scanning", "lidar", "optical-measurement", "precision-engineering", "quality-control"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Scanning_Precision_Audit: Compare the point cloud data of a calibrated reference artifact with the scanned model to quantify dimensional accuracy (microns).'
-    - 'LiDAR_Range_Integrity_Check: Evaluate the Signal-to-Noise Ratio (SNR) and ambient light interference to ensure stable distance measurement in complex environments.'
-    - 'Point_Cloud_Density_Scan: Analyze the resolution of the captured 3D mesh to ensure it satisfies the requirements for surface defect detection or CFD simulation.'
-Trust Metrics:
+  description: "[Entity] industrial-metrology-3d-scanning-and-lidar-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📏 Industrial Metrology: 3D Scanning and LiDAR Physics
+# [Entity] industrial-metrology-3d-scanning-and-lidar-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 기계는 눈으로 보지 못하지만, 빛으로 만집니다. **산업용 측정(Metrology) 및 3D 스캐닝**은 물체의 형상을 수백만 개의 점(Point Cloud)으로 따내어 컴퓨터 속으로 그대로 옮겨오는 **'빛의 조각 기술'**입니다. **LiDAR**는 빛이 되돌아오는 시간을 재서 공간의 깊이를 읽어냅니다. 머리카락 굵기의 수십 분의 일까지 잡아내는 이 정밀함은, 설계도와 실제 제품 사이의 '미세한 틈'을 찾아내어 불량을 막고 완벽한 '디지털 트윈'을 완성하는 **'산업의 현미경'**입니다.
@@ -56,10 +45,10 @@ $$ \sigma_d \approx \frac{c}{2 \cdot SNR \cdot \sqrt{B}} $$
 
 | Technology | Accuracy | Range | Speed (Points/sec) | Typical Use |
 | :--- | :--- | :--- | :--- | :--- |
-| **Laser Scanner** | 10 ~ 50 $\mu m$ | 0.5 ~ 5 m | 1 ~ 5 Million | Quality Inspection |
+| **Laser Scanner** | 10 ~ 50 $\mu\text{m}$ | 0.5 ~ 5 m | 1 ~ 5 Million | Quality Inspection |
 | **Industrial LiDAR**| 1 ~ 10 mm | 1 ~ 100 m | 100k ~ 1 Million | Factory AGV / AEC |
-| **Structured Light**| 5 ~ 20 $\mu m$ | 0.1 ~ 1 m | Full Frame Scan | Fine Surfaces |
-| **CMM (Contact)** | 1 ~ 5 $\mu m$ | 0.5 ~ 3 m | Low (Point-by-point)| Golden Standard |
+| **Structured Light**| 5 ~ 20 $\mu\text{m}$ | 0.1 ~ 1 m | Full Frame Scan | Fine Surfaces |
+| **CMM (Contact)** | 1 ~ 5 $\mu\text{m}$ | 0.5 ~ 3 m | Low (Point-by-point)| Golden Standard |
 | **Resolution** | 0.01 ~ 0.1 mm | High | N/A | Feature Detail |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -89,7 +78,6 @@ class FactoryFidelityEngine:
             return "REJECT: Poor Mesh Quality - Inaccurate Surface Representation for CAD Reconstruction"
         return "PASS: High-Fidelity 3D Model Fit Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(deviation_mean_um=12.4, point_cloud_density_pts_cm2=1500, snr_db=28.5)
 print(engine.diagnose_metrology_health(tolerance_um=20.0))
 ```
@@ -107,7 +95,6 @@ print(engine.diagnose_metrology_health(tolerance_um=20.0))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data 3d-scan-accuracy-and-point-cloud-density-v2026`와 연동되어, 전 세계 정밀 제조 현장의 측정 데이터를 실시간 분석하고 치수 불량 및 데이터 오염 사고 확률을 0.001% 이하로 억제함으로써 지능형 제조의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - digital-twin-and-cyber-physical-systems-cps-logic

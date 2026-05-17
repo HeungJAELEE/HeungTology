@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "exoskeleton-robotics-and-human-machine-synergy-entity"
-  domain: "08_Mobility_Robotics"
+metadata:
+  id: "[[[Robotics] exoskeleton-robotics-and-human-machine-synergy]]"
+  domain: "08_Robotics_Automation"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Robotics", "#Exoskeleton", "#Human_Augmentation", "#Control_Theory", "#Biomechanics", "#EMG", "#HDS_Gold_v6_1"]'
-  is_part_of: '["Robotics robotics-intelligence-and-motion-control-master-guide", "MOC 08_Mobility_Robotics"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Robotics] exoskeleton-robotics-and-human-machine-synergy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [Robotics] exoskeleton-robotics-and-human-machine-synergy
@@ -74,7 +64,6 @@ Trust Metrics:
 4. **Hill-type Muscle Model**에서 근육의 길이-장력(Length-Tension) 관계가 외골격의 가동 범위(ROM) 제한 설계에 미치는 수리적 제약 사항은?
 5. RAG 시스템에서 **사용자의 보행 습관 데이터**와 **지면 반력 센서값**을 융합하여, '비정형 지형(계단, 경사로)'을 인식하고 보조 모드를 $100\text{ms}$ 내에 자동 전환하는 시너지 전략은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - Robotics robotics-intelligence-and-motion-control-master-guide]] : 외골격의 정밀 토크 제어와 궤적 추종의 기초가 되는 로보틱스 엔티티
 - AI brain-computer-interface-and-neural-signal-processing : 뇌 신호를 직접 활용하여 외골격을 제어하는 상위 지능 인터페이스 엔티티

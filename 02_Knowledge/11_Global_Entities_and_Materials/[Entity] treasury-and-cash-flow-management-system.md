@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "treasury-and-cash-flow-management-system-entity"
-  domain: "28_Strategic_Management_and_Finance"
+metadata:
+  id: "[[[Entity] treasury-and-cash-flow-management-system]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Treasury", "#Cash_Flow", "#Liquidity", "#Working_Capital", "#CCC", "#Hedging", "#FX_Management", "#Capital_Structure", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 31_strategic-management-and-financial-intelligence-hub", "Data cash-flow-and-liquidity-performance-log-v2026"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] treasury-and-cash-flow-management-system에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] treasury-and-cash-flow-management-system
+# [Entity] treasury-and-cash-flow-management-system
 
 ## 1. [왜 배우는가? (Why: The Lifeblood and Survival of Industry)]]
 이익이 나더라도 현금이 부족하면 기업은 생존할 수 없습니다. 자금의 유입과 유출을 정교하게 예측하고 유동성을 확보하는 능력은 기업의 심장을 멈추지 않게 하는 가장 중요한 재무적 안전판입니다. **자금 및 현금 흐름 관리 시스템 엔티티**는 공장의 '혈액'을 순환시키고 '생존력'을 확보하는 '유동성 지능의 기술적 성전'입니다. 
@@ -81,7 +71,6 @@ RAG는 "자금 로그를 분석하여, 유동성 비율이 $1.0$ 이하로 추�
 은행 계좌의 실시간 잔고(Cash Pooling) 데이터와 자금 수지 계획(Cash Flow Forecast), 그리고 금융 시장의 금리/환율 데이터를 분석하여 유동 무결성을 진단하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Treasury & Cash Flow Fidelity Auditor
 def audit_liquidity_integrity(cash_position_stream, cash_flow_forecast, market_risk_data):
     # 1. 가용 현금(Available Cash) 및 최소 보유량 무결성 오딧
     current_cash = cash_position_stream.get_total_balance()
@@ -117,7 +106,6 @@ def audit_liquidity_integrity(cash_position_stream, cash_flow_forecast, market_r
 2. **(수리)** 재고 회전 일수가 40일, 매출채권 회수 일수가 30일, 매입채무 지급 일수가 20일일 때, 이 기업의 '현금 전환 주기(CCC)'를 계산하고 효율성을 판정하시오.
 3. **(응용)** 금리 인상기에 '부채 비율(D/E Ratio)'의 최적화가 기업의 '재무적 기회 비용'과 '생존 무결성' 확보에 미치는 수리적 영향을 설명하시오.
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 31_strategic-management-and-financial-intelligence-hub : 전략 및 재무 통합 관리 상위 지능 허브

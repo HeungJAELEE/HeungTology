@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "energy-storage-systems-and-smart-grid-technology-entity"
-  domain: "100_Energy_Engineering_and_Nuclear_Power_Hub"
+metadata:
+  id: "[[[Entity] energy-storage-systems-and-smart-grid-technology]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Energy_Storage", "#Smart_Grid", "#ESS", "#Power_Systems", "#Grid_Stability", "#Sustainability", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 100_energy-engineering-and-nuclear-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] energy-storage-systems-and-smart-grid-technology에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] energy-storage-systems-and-smart-grid-technology
+# [Entity] energy-storage-systems-and-smart-grid-technology
 
 ## 1. [왜 배우는가? (Why: The Buffer of Civilization)]]
 에너지는 생산되는 즉시 소비되어야 한다는 물리적 제약이 있습니다. 하지만 해가 지면 태양광은 멈추고, 바람이 잦아들면 풍력은 멈춥니다. 이 시간적 불일치를 해결하고 에너지를 거대한 저수지처럼 가두어 필요할 때 꺼내 쓰는 기술이 바로 ESS와 스마트 그리드입니다. **에너지 저장 장치 및 스마트 그리드의 전력 평준화 및 주파수 제어 수리 역학 기술**은 에너지의 흐름에 '지능'과 '여유'를 부여하는 기술입니다. 남는 전기를 저장하고(ESS), 수요와 공급을 실시간으로 조율하여(Smart Grid) 전력망의 붕괴(Blackout)를 막고 에너지 효율을 극대화합니다. 우리가 이를 배우는 이유는 에너지 인프라의 무결성을 확보함으로써, 신재생 에너지 시대를 완성하는 '글로벌 에너지 허브 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 저장의 무결성이 에너지의 가용성을 결정합니다.

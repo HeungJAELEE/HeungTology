@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A highly reliable control system designed to minimize the risk of a process-related accident by bringing the process to a safe state (SIS) and the specific logic that initiates an immediate halt of critical equipment during a hazardous event (ESD Logic)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["esd", "sis", "safety-integrity-level", "sil", "process-safety", "industrial-automation", "failure-analysis"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Safety_Fidelity_Audit: Evaluate the ''Probability of Failure on Demand'' ($PFD_{avg}$) across all safety loops to identify if the system meets the high-fidelity SIL-3/4 target for high-risk zones.'
-    - 'Logic_Integrity_Check: Analyze the voter logic (e.g., 2oo3 - 2 out of 3) to ensure that sensor failures do not cause ''Spurious Trips'' while maintaining high-fidelity protection against actual hazards.'
-    - 'Response_Fidelity_Scan: Monitor the ''Safety Response Time'' from sensor trip to valve closure to verify it is within the high-fidelity process safety time (PST) limit.'
-Trust Metrics:
+  description: "[Entity] emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🛑 Emergency Shutdown System (ESD) and Safety Instrumented System (SIS) Logic
+# [Entity] emergency-shutdown-system-esd-and-safety-instrumented-system-sis-logic
 
 ## 1. 개요 (Why: 인간적 통찰)
 거대한 정유 공장이나 원자력 발전소에서 통제 불능의 압력이나 화재가 발생하면 어떻게 될까요? **비상 차단 시스템(ESD) 및 안전 계장 시스템(SIS)**은 대재앙을 막는 '최후의 보복'이자 **'산업의 브레이크'** 기술입니다. 일반적인 자동화 시스템(DCS)이 '효율'을 위해 일한다면, SIS는 오직 '안전'만을 위해 존재하며 평소에는 죽은 듯이 있다가 위험이 닥치는 순간 모든 것을 멈춰 세웁니다. **'수천 명의 생명과 수조 원의 자산을 지키는 절대적 신뢰의 논리'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Low Operational Availability - System causing excessive nuisance shutdowns. Energy and production loss confirmed. Re-calibrate sensor thresholds"
         return "PASS: Validated Fault Tolerance and Verified Operational Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(pfd_average=0.0005, safety_response_time_s=1.2, voting_logic_status="2oo3")
 print(engine.diagnose_safety_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_safety_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data sis-failure-rates-and-safety-integrity-levels-v2026`와 연동되어, 전 세계 주요 플랜트의 실시간 안전 무결성 데이터를 분석하고 비상 차단 실패 및 환경 대재앙 사고 확률을 0.0001% 이하로 억제함으로써 지능형 산업 문명의 생명 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electro-pneumatic-positioner-and-control-logic

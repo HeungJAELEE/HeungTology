@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "glovebox-and-inert-atmosphere-confinement-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] glovebox-and-inert-atmosphere-confinement-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A sealed container that is designed to allow one to manipulate objects where a separate atmosphere is desired (Glovebox) and the physical study of gas purification, pressure control, and barrier integrity (Inert Atmosphere Confinement Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["glovebox", "inert-atmosphere", "confinement", "moisture-control", "oxygen-free", "purification", "hazardous-material", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Atmosphere_Fidelity_Audit: Evaluate the ''O2 and H2O Concentration'' (ppm) to identify if the high-fidelity ''Purifier Column'' (Molecular Sieve/Copper Catalyst) is saturated.'
-    - 'Pressure_Integrity_Check: Analyze the high-fidelity ''Differential Pressure'' to ensure the box remains positive (to keep air out) or negative (to keep hazards in) during glove manipulation.'
-    - 'Leak_Fidelity_Scan: Monitor the high-fidelity ''Pressure Decay'' rate to verify that the high-fidelity ''Glove Seals'' or ''Transfer Antechamber'' gaskets are maintaining hermetic integrity.'
-Trust Metrics:
+  description: "[Entity] glovebox-and-inert-atmosphere-confinement-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🧤 Glovebox and Inert Atmosphere Confinement Physics
+# [Entity] glovebox-and-inert-atmosphere-confinement-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 공기 중의 산소나 습기에 닿자마자 폭발하는 물질을 다루거나, 치명적인 독성 가스를 안전하게 연구하려면 어떻게 해야 할까요? **글러브박스 및 불활성 분위기 격리 물리**는 외부 세계와 완벽히 차단된 '작은 우주'를 만들고, 두꺼운 고무장갑을 통해 그 안의 세상을 조작하는 **'밀폐된 실험실'** 기술입니다. 내부에는 아르곤(Ar)이나 질소(N2) 같은 순수한 가스만 채워, 나노 단위의 미세한 공기 침입조차 허용하지 않습니다. **'위험한 물질은 가두고 연약한 시료는 보호하여 첨단 소재와 의약품의 탄생을 보장하는 지능형 고립 공간'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Hermetic Breach - Rapid pressure loss detected. Glove puncture or port seal failure suspected. Perform high-fidelity soap bubble test or helium leak test"
         return "PASS: Validated Seal Integrity and Verified Safety Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(oxygen_level_ppm=0.5, moisture_level_ppm=0.2, internal_pressure_pa=250.0)
 print(engine.diagnose_confinement_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_confinement_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data glovebox-atmosphere-purity-and-leak-rates-v2026`와 연동되어, 전 세계 주요 배터리 연구소 및 방사성 물질 취급소의 데이터를 실시간 분석하고 가스 오염 및 방사능 누출 사고 확률을 0.001% 이하로 억제함으로써 지능형 특수 환경 문명의 격리 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - vacuum-pump-and-molecular-rarefaction-physics

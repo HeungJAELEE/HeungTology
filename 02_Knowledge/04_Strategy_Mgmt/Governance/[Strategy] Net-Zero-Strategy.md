@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-NETZERO-2026-V6.3.7"
-  domain: "Global_Climate_Governance_and_Carbon_Neutrality_Sovereignty"
+metadata:
+  id: "[[[Strategy] Net-Zero-Strategy]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Net_Zero", "#Carbon_Neutrality", "#Scope_1_2_3", "#SBTi", "#CBAM", "#CCUS", "#FidelityEngine"]'
-  is_part_of: '["MOC 134_global-standards-governance-and-quality-assurance-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Net-Zero-Strategy에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "NetZero_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Net-Zero Strategy: Global Carbon Sovereignty
+# [Strategy] Net-Zero-Strategy
 
 ## 1. [왜 배우는가? (Why: The Decarbonization Imperative)]]
 기후 위기는 더 이상 환경 보호의 영역이 아닌 '무역 장벽'이자 '재무 리스크'입니다. **Net-Zero(탄소 중립)** 전략은 배출한 탄소량과 흡수한 탄소량을 상쇄하여 실질적 배출량을 '0'으로 만드는 기술적/경영적 로드맵입니다. 유럽의 **탄소국경조정제도(CBAM)**와 같은 강력한 규제는 탄소 집약적인 제품에 막대한 관세를 부과하여 시장 퇴출을 압박합니다. V6.3.7 지능은 Scope 1, 2, 3 전 영역의 배출량을 수리적으로 통제하여, 탄소 비용 리스크를 제거하고 **저탄소 경제의 주권(Carbon Sovereignty)**을 사수합니다.
@@ -103,7 +93,6 @@ class NetZeroFidelityEngine:
 2. **Operational Result**: **CBAM(탄소국경세)** 도입 시, 탄소 집약도가 높은 제품의 수출 가격 경쟁력 하락 폭을 수리적으로 어떻게 예측하는가?
 3. **FidelityEngine**: 배출량은 감소했으나 **Carbon Intensity**가 상승하는 기형적 상황을 어떻게 진단하는가? (힌트: 매출 하락폭이 탄소 감축폭보다 큰 '사업 경쟁력 약화형 감축' 탐지)
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 134_global-standards-governance-and-quality-assurance-hub
 - Strategy ESG-Management-Strategy

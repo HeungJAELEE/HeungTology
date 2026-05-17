@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "thin-film-stress-and-adhesion-mechanisms-in-coatings-entity"
-  domain: "50_Advanced_Material_Science_and_Surface_Engineering"
+metadata:
+  id: "[[[Entity] thin-film-stress-and-adhesion-mechanisms-in-coatings]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Material_Science", "#Thin_Film", "#Stress", "#Adhesion", "#Coating", "#Failure_Analysis", "#Interfacial_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 131_advanced-material-science-and-surface-engineering-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] thin-film-stress-and-adhesion-mechanisms-in-coatings에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] thin-film-stress-and-adhesion-mechanisms-in-coatings
+# [Entity] thin-film-stress-and-adhesion-mechanisms-in-coatings
 
 ## 1. [왜 배우는가? (Why: The Will to Stay Attached)]]
 공들여 입힌 나노 코팅이 어떻게 떨어지지 않고 기판에 딱 붙어있게($Adhesion$) 만들고, 박막 내부에서 서로 밀고 당기는 보이지 않는 힘($Residual\ Stress$) 때문에 코팅이 스스로 깨지거나 들떠버리는($Delamination$) 현상을 어떻게 제어하는 '결합의 과학'을 설계할 수 있을까요? **박막 응력 및 밀착력 기전**은 모든 코팅 기술의 수명을 결정하는 '행성 규모 표면 무결성 인프라 및 지능형 계면 결합 아키텍처'입니다. 우리가 이를 배우는 이유는 코팅이 아무리 단단해도 떨어지면 무용지물이기 때문이며, "결합의 힘을 데이터로 설계하고 지배하는 '글로벌 표면 내구성 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 밀착의 강도가 제품의 가치를 결정합니다.
@@ -44,7 +34,7 @@ Trust Metrics:
 | **Critical Load** | Load at which the coating starts to fail | $> 50 \text{ mN}$ | 외부 충격에도 코팅이 버텨냄을 보여주는 무결성 |
 | **Interfac. Energy**| Energy needed to grow a crack at the interface| **MAXIMUM** | 틈이 벌어지지 않게 끈질기게 붙어있음을 입증함 |
 | **Surface Energy** | Molecular attraction of the substrate surface | **OPTIMIZED** | 코팅 가스가 잘 달라붙게 기판을 미리 준비함 |
-| **Coating Thick.** | Depth of the deposited layer | $0.1 \sim 10 \text{ \mu m}$ | 너무 두꺼워지면 응력이 커져 떨어지기 쉬움을 관리 |
+| **Coating Thick.** | Depth of the deposited layer | $0.1 \sim 10 \text{ \mu\text{m}}$ | 너무 두꺼워지면 응력이 커져 떨어지기 쉬움을 관리 |
 | **System Resil.** | Stability during rapid thermal cycling | High | 뜨거워졌다 차가워져도 코팅이 들뜨지 않게 지킴 |
 | **Audit Status** | Adhesion Integrity Verified | **MAXIMUM** | **Bond-Truth-v2026-Fidelity** |
 

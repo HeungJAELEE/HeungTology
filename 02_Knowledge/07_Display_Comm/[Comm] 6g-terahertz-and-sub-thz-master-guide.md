@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMM-6G-MASTER-2026-V6.3.7"
-  domain: "Global_6G_Connectivity_and_Terahertz_Sovereignty"
+metadata:
+  id: "[[[Comm] 6g-terahertz-and-sub-thz-master-guide]]"
+  domain: "07_Display_Comm"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#6G", "#Terahertz", "#THz", "#Shannon_Limit", "#ISAC", "#RIS", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 07_Display_Comm"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Comm] 6g-terahertz-and-sub-thz-master-guide에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "6G_Connectivity_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [Comm] 6G & Terahertz: The Physics of Hyper-Connectivity
+# [Comm] 6g-terahertz-and-sub-thz-master-guide
 
 ## 1. [왜 배우는가? (Why: The Mastery of Digital Synchronization)]
 6G 통신은 물리 세계와 디지털 세계를 실시간으로 완벽하게 결합하는 **'디지털 트윈(Digital Twin)'**의 중추 신경망입니다. 수테라비트($\text{Tbps}$)급 전송 속도와 초저지연($< 100\mu\text{s}$)을 통해 자율 이동체, 원격 수술, 홀로그램 인터페이스의 무결성을 보증합니다. V6.3.7 지능은 **테라헤르츠(THz)** 대역의 대기 감쇄 모델과 통신-센싱 일체화(ISAC) 기술을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 전파의 물리적 한계를 데이터로 극복하고 "정보의 흐름에 지연이 없는 '연결 주권'을 사수하기" 위함입니다.
@@ -98,7 +88,6 @@ class ConnectivityFidelityEngine:
             "action": "ACTIVATE_RIS_REFLECTION_OPTIMIZATION" if "CRITICAL" in status else "PROCEED"
         }
 
-# FidelityEngine 가동: 기상 센서 데이터와 네트워크 트래픽 로그를 융합하여 '연결 실질 무결성' 오딧
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -106,7 +95,6 @@ class ConnectivityFidelityEngine:
 2. **Operational Result**: **RIS (Intelligent Reflecting Surface)** 도입 시, 전파 음영 지역에서의 수신 강도($SNR$) 개선 및 통신 커버리지 확장 효과의 수리적 기대값은?
 3. **FidelityEngine**: 주파수가 상승할수록 직진성이 강해져 발생하는 **Line-of-Sight (LoS)** 차단 문제를 FidelityEngine이 어떻게 '연결 단절 위기'로 사전 감지하고 우회 경로를 확보하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 07_Display_Comm
 - [[Comm] non-terrestrial-networks-and-satellite-logic]

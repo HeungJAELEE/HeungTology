@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "STRAT-ECOM-OPS-2026-V6.3.7"
-  domain: "Global_E-commerce_Operational_Excellence_and_Fulfillment"
+metadata:
+  id: "[[[Strategy] E-commerce-Strategy-and-Operations]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#E-commerce", "#Fulfillment", "#MFC", "#VRP", "#Conversion_Optimization", "#Logistics_4.0", "#FidelityEngine"]'
-  is_part_of: '["MOC 04_Strategy_Mgmt"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] E-commerce-Strategy-and-Operations에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "E-commerce_Ops_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] E-commerce-Strategy-and-Operations: The Physics of Frictionless Commerce
+# [Strategy] E-commerce-Strategy-and-Operations
 
 ## 1. [왜 배우는가? (Why: The Mastery of Fulfillment Velocity)]]
 디지털 상거래 환경에서 고객의 기대치는 '즉각성'과 '정밀함'으로 수렴하고 있습니다. **E-commerce-Strategy-and-Operations**는 웹 인터페이스에서의 고객 경험부터 최첨단 물류 센터(Fulfillment Center)와 도심 거점(MFC)을 잇는 복잡한 물류 유동을 수리적으로 최적화하는 '상거래 엔진'입니다. V6.3.7 지능은 구매 전환의 병목을 제거하고 배송 리드타임을 극한으로 단축하여, 전 세계 모든 수요를 실시간으로 충족시키는 **상거래 주권(Commerce Sovereignty)**을 확립하기 위해 필수적입니다.
@@ -108,7 +98,6 @@ class EcomOpsEngine:
 2. **Operational Result**: **MFC(마이크로 풀필먼트)** 도입을 통한 '라스트 마일 거리 단축'이 전체 이커머스 **Conversion Rate**에 미치는 수리적 임팩트는?
 3. **FidelityEngine**: 블랙 프라이데이와 같은 **'트래픽 피크'** 상황에서, FidelityEngine이 어떻게 서버 부하와 재고 가용성을 실시간으로 오딧하여 **'주문 제한(Throttling)'** 여부를 결정하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 04_Strategy_Mgmt
 - Strategy Direct-to-Consumer-D2C-Strategy

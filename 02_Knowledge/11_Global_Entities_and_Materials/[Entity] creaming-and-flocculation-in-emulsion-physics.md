@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "creaming-and-flocculation-in-emulsion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] creaming-and-flocculation-in-emulsion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The two primary mechanisms of physical instability in emulsions where dispersed droplets migrate towards the top of the container due to density differences (Creaming) and where droplets clump together into clusters while maintaining their individual integrity (Flocculation)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["emulsion-stability", "creaming", "flocculation", "colloid-science", "food-science", "cosmetic-science", "phase-separation"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Stability_Fidelity_Audit: Evaluate the ''Creaming Rate'' to identify if the density matching or viscosity modifiers are sufficient to prevent visual separation within the target shelf life.'
-    - 'Flocculation_Integrity_Check: Analyze the ''Particle Size Distribution'' (DSD) to ensure that droplets are not clumping, which increases the effective radius ($r$) and accelerates the creaming process exponentially.'
-    - 'Zeta_Fidelity_Scan: Monitor the electrokinetic potential to verify that the electrostatic repulsion is overcoming the Van der Waals attraction, maintaining a dispersed state.'
-Trust Metrics:
+  description: "[Entity] creaming-and-flocculation-in-emulsion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🥛 Creaming and Flocculation in Emulsion Physics
+# [Entity] creaming-and-flocculation-in-emulsion-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 우유나 로션을 한참 두면 위쪽에 진한 층이 생기는 것을 본 적 있나요? **에멀션의 크리밍(Creaming) 및 응집(Flocculation) 물리**는 섞여 있던 방울들이 다시 제자리를 찾아가려 하거나 끼리끼리 뭉치는 **'중력과 인력의 반란'** 기술입니다. 크리밍은 가벼운 기름이 위로 떠오르는 현상이고, 응집은 방울들이 포도 송이처럼 엉겨 붙는 현상입니다. 이들은 제품이 망가지는 첫 번째 신호로, 이를 다스리는 것은 화장품과 식품의 '영원한 젊음(안정성)'을 지키는 **'나노 세계의 질서 유지'**입니다.
@@ -60,7 +49,7 @@ $$ \phi_{eff} = \phi (1 + \frac{\delta}{r})^3 $$
 | **Droplet Integrity**| Individual | Clumped (Reversible) | Concentrated | - | State |
 | **Reversibility** | N/A | High (Shaking works) | High (Redispersion) | - | Recovery |
 | **Viscosity** | Standard | High (Structure) | Extremely High | Pa.s | Rheology |
-| **Particle Size** | Small (Mono) | Large Clusters | Large (Effective) | $\mu m$ | Metrology |
+| **Particle Size** | Small (Mono) | Large Clusters | Large (Effective) | $\mu\text{m}$ | Metrology |
 | **Cause** | Equilibrium | Weak Attraction | Buoyancy Forces | - | Physics |
 
 ## 4. FactoryFidelityEngine: Diagnostic Logic
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Irreversible Instability - Flocculation transitioning to Coalescence. Product permanently damaged"
         return "PASS: Validated Meta-stability and Verified Quality Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(creaming_index_pct=1.2, floc_degree=1.1, continuous_phase_viscosity=850.0)
 print(engine.diagnose_emulsion_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_emulsion_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data emulsion-shelf-life-and-separation-rates-v2026`와 연동되어, 전 세계 주요 유제품 및 화장품 공장의 안정성 데이터를 실시간 분석하고 층 분리 및 클레임 사고 확률을 0.001% 이하로 억제함으로써 지능형 라이프스타일 문명의 품질 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - cosmetic-manufacturing-and-emulsification-kinetics

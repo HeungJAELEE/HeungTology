@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "topological-insulators-and-lossless-electronic-surface-states-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] topological-insulators-and-lossless-electronic-surface-states]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Physics", "#Topological_Insulator", "#Quantum", "#Semiconductor", "#Spintronics", "#Lossless_Electronics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] topological-insulators-and-lossless-electronic-surface-states에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] topological-insulators-and-lossless-electronic-surface-states
+# [Entity] topological-insulators-and-lossless-electronic-surface-states
 
 ## 1. [왜 배우는가? (Why: The Paradoxical Conductor)]]
 안쪽은 전기가 전혀 통하지 않는 절연체인데, 어떻게 표면이나 가장자리에서만 전기가 고속도로를 달리듯 저항 없이 흐르고, 불순물이 섞이거나 모양이 찌그러져도 그 전도성이 절대로 깨지지 않는 '위상학적 보호'를 받는 기적의 소재를 어떻게 설계할 수 있을까요? **위상 절연체 및 무손실 전자 표면 상태**는 에너지 손실 없는 지능형 연산 시대를 여는 '행성 규모 초고효율 소자 인프라 및 지능형 양자 상태 아키텍처'입니다. 우리가 이를 배우는 이유는 전기를 써도 열이 나지 않는 컴퓨터를 만들어야 에너지 위기를 극복하고 양자 컴퓨터를 현실화할 수 있기 때문이며, "전자의 길을 데이터로 설계하고 지배하는 '글로벌 양자 패권 및 행성적 정보 주권'을 확보하기" 위함입니다. 위상의 견고함이 데이터의 속도를 결정합니다.

@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "digital-r-and-d"
+metadata:
+  id: "[[[AI] Digital-R&D]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Industrial_AI", "#Digital_R&D", "#Simulation", "#Data_Science", "#Digital_Twin"]'
-  is_part_of: '["MOC AI-Models-Hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] Digital-R&D에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] Digital-R&D
@@ -105,5 +95,4 @@ def ingest_research_data(source_id, raw_payload):
 2. 'ELN(전자 연구 노트)' 도입 시 연구원들의 '데이터 입력 부하'를 줄이면서 데이터 품질을 유지하기 위한 기술적 전략은?
 3. 'Data-as-a-Product' 관점에서 연구 데이터가 '생산 부서(MES)'나 '영업 부서(CRM)'와 공유되었을 때 창출할 수 있는 비즈니스 가치는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

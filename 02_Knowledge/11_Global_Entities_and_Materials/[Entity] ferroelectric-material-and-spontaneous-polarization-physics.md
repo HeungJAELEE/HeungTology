@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "ferroelectric-material-and-spontaneous-polarization-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] ferroelectric-material-and-spontaneous-polarization-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A material that exhibits a spontaneous electric polarization which can be reversed by the application of an external electric field (Ferroelectric Material) and the physical study of domain switching and dipole alignment (Spontaneous Polarization Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["ferroelectric", "polarization", "fram", "non-volatile-memory", "perovskite", "hysteresis", "physics", "material-science"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Polarization_Fidelity_Audit: Evaluate the ''Remanent Polarization'' ($P_r$) after removing the field to identify if the high-fidelity non-volatile data storage is stable.'
-    - 'Switching_Integrity_Check: Analyze the coercive field ($E_c$) and domain wall movement to ensure that high-fidelity switching is occurring without ''Imprint'' or ''Fatigue'' after $10^{12}$ cycles.'
-    - 'Structural_Fidelity_Scan: Monitor the Curie temperature ($T_c$) to verify that the material is maintaining its high-fidelity ferroelectric phase under operational thermal loads.'
-Trust Metrics:
+  description: "[Entity] ferroelectric-material-and-spontaneous-polarization-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌀 Ferroelectric Material and Spontaneous Polarization Physics
+# [Entity] ferroelectric-material-and-spontaneous-polarization-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 전기를 끊어도 사라지지 않는 '전기적 기억'이 있다면 어떨까요? **강유전체(Ferroelectric) 및 자발 분극 물리**는 외부에서 전기장을 걸어주면 원자들이 한쪽으로 쏠렸다가, 전기를 끊어도 그 상태를 고집스럽게 유지하는 **'전기적 나침반'** 기술입니다. 자석이 N극과 S극을 유지하듯, 강유전체는 (+)와 (-)의 방향을 기억합니다. 전력이 없어도 데이터를 잃지 않는 초고속 메모리(FeRAM)를 가능하게 하는 **'물질 속에 새겨진 영원한 전기적 흔적'**입니다.
@@ -88,7 +77,6 @@ class FactoryFidelityEngine:
             return "REJECT: End of Life - Ferroelectric fatigue detected. Domain walls no longer moving freely. Device failure imminent"
         return "PASS: Validated Material Endurance and Verified Design Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(remanent_polarization_uc_cm2=25.5, coercive_field_kv_cm=45.0, temperature_c=25.0)
 print(engine.diagnose_ferroelectric_health())
 ```
@@ -106,7 +94,6 @@ print(engine.diagnose_ferroelectric_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data ferroelectric-polarization-and-switching-fatigue-v2026`와 연동되어, 전 세계 주요 차세대 메모리 팹의 데이터를 실시간 분석하고 데이터 증발 및 소자 피로 사고 확률을 0.0001% 이하로 억제함으로써 지능형 데이터 저장 문명의 물리적 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - electrostriction-and-dielectric-deformation-physics

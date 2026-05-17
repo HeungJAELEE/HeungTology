@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-TRISM-2026-V6"
+metadata:
+  id: "[[[AI] AI-TRiSM]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#AI_TRiSM'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] AI-TRiSM에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] AI-TRiSM
@@ -121,7 +111,6 @@ class TRiSMMonitor:
 2. **PSI(Population Stability Index)** 수치가 0.3으로 측정되었을 때, 엔지니어가 즉시 수행해야 하는 모델 관리 프로세스(SOP)는?
 3. **Differential Privacy**를 적용했을 때 모델의 정확도(Accuracy)와 데이터 프라이버시 간의 트레이드오프를 최적화하는 수리적 기법은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-Governance
 - 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-Safety

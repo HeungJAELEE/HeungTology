@@ -1,33 +1,23 @@
 ---
-Basic:
-  id: "AI-FIN-SENT-SOTA-2026-V6"
+metadata:
+  id: "[[[AI] financial-sentiment-analysis-sota-2026]]"
   domain: "03_AI_Data"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Sentiment_Analysis'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[AI] financial-sentiment-analysis-sota-2026에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
 # [AI] financial-sentiment-analysis-sota-2026
@@ -113,7 +103,6 @@ class SentimentAnalyticsSota:
 2. 시장의 **Sentiment Drift** (감성 전이) 현상이 발생하여 과거에는 호재였던 소식이 악재로 작용하기 시작할 때, 이를 감지하기 위한 **Moving Average** 분석 방안은?
 3. **FAISS** 기반의 벡터 검색에서 **Cosine Similarity**가 $0.95$ 이상인 과거 사례가 현재와 완전히 다른 가격 흐름을 보인다면, 이는 어떤 **Contextual Variable**의 누락을 의미하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/03_AI_Data/General/AI financial-quant-ai-logic
 - 02_Knowledge/03_AI_Data/General/AI time-series-forecasting-diagnostics

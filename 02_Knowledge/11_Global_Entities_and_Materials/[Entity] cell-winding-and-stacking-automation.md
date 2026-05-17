@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cell-winding-and-stacking-automation"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cell-winding-and-stacking-automation]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The high-speed automated systems for battery cell assembly, utilizing precision robotics and vision sensors to execute winding and stacking processes with micron-level accuracy."
-  physical_model: "N/A"
-Semantic:
-  tags: '["automation", "battery-assembly", "winding", "stacking", "robotics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "RobotFidelityEngine"
-  diagnostic_protocol:
-    - 'Vision_Alignment_Audit: Verify the accuracy of the camera-based positioning system for electrode sheets.'
-    - 'Robotic_Path_Optimization: Analyze the movement efficiency of the pick-and-place arms to minimize cycle time.'
-    - 'Uptime_and_MTBF_Scan: Monitor the Mean Time Between Failures for mechanical components in high-speed operation.'
-Trust Metrics:
+  description: "[Entity] cell-winding-and-stacking-automation에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🤖 Cell Winding and Stacking Automation
+# [Entity] cell-winding-and-stacking-automation
 
 ## 1. 개요 (Why)
 배터리 가격의 절반 이상을 차지하는 공정 비용을 낮추려면 '속도'와 '정밀도'가 생명입니다. 조립 자동화는 인간의 손이 닿지 않는 속도로 전극을 쌓고 말면서도, 머리카락 굵기의 몇 분의 일에 불과한 오차도 허용하지 않습니다. 24시간 멈추지 않는 자동화 라인은 배터리의 대량 생산을 가능하게 하여 전기차 대중화를 이끄는 핵심 인프라입니다. 본 노드는 배터리 조립 자동화의 무결성과 효율성을 위한 로보틱스 및 제어 표준을 정의합니다.
@@ -71,7 +60,6 @@ class RobotFidelityEngine:
             return f"NOTICE: High Motor Load ({self.load}%) - Schedule Preventive Maintenance"
         return "PASS: Robotic Throughput Stable"
 
-# Instance Diagnostic
 engine = RobotFidelityEngine(position_error_mm=0.03, cycle_time_ms=750, motor_torque_load=65)
 print(engine.diagnose_robot_precision())
 ```
@@ -89,7 +77,6 @@ print(engine.diagnose_robot_precision())
 ## 6. 결론 (Deterministic Outcome)
 본 노드는 `Data cell-assembly-automation-uptime-and-precision-log-v2026`와 연동되어, 모든 조립 로봇의 구동 로그를 실시간 분석하고 생산 수율을 99.9% 이상으로 유지함으로써 배터리 대량 생산의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 11_advanced-battery-next-gen-intelligence-hub
 - cell-assembly-processes-winding-stacking-and-folding

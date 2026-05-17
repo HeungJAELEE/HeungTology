@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "SEC-GOV-RES-2026-V6.3.7"
-  domain: "30_IT_Infrastructure_and_Digital_Intelligence"
+metadata:
+  id: "[[[Entity] cybersecurity-and-information-security-governance]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Cybersecurity", "#Governance", "#RiskManagement", "#FidelityEngine", "#Compliance", "#DigitalSovereignty", "#Sovereignty"]'
-  is_part_of: '["MOC 32_it-infrastructure-and-digital-intelligence-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] cybersecurity-and-information-security-governance에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Security_Governance_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Cybersecurity Governance: Risk Strategy & Resilience
+# [Entity] cybersecurity-and-information-security-governance
 
 ## 1. [왜 배우는가? (Why: The Bulwark of Digital Sovereignty)]]
 디지털 자산의 가치가 증대됨에 따라 사이버 위협은 단순한 기술적 문제를 넘어 기업의 생존을 위협하는 전략적 리스크가 되었습니다. **사이버 보안 거버넌스**는 조직의 보안 목표를 설정하고, 리스크를 관리하며, 규제 준수를 보장하는 '디지털 성벽'의 설계도입니다. V6.3.7 지능은 **보안 리스크 지수(SRI)**와 **다층 방어(Defense in Depth)** 확률 모델을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 보안 침해로부터 자산을 보호하고, "어떠한 공격 속에서도 비즈니스의 연속성을 유지하는 '디지털 주권'을 사수하기" 위함입니다. 거버넌스의 무결성이 방어 체계의 견고함을 결정합니다.
@@ -108,7 +98,6 @@ class SecurityGovFidelityEngine:
 2. **Operational Result**: **NIST CSF (Cybersecurity Framework)**의 5대 핵심 영역(Identify, Protect, Detect, Respond, Recover)을 통한 리스크 관리 무결성을 어떻게 수리적으로 정량화하는가?
 3. **FidelityEngine**: **내부 위협(Insider Threat)**에 의한 데이터 유출 시, **IAM** 권한 오남용 패턴을 분석하여 '보안 무결성' 붕괴를 어떻게 사전에 탐지하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 32_it-infrastructure-and-digital-intelligence-hub
 - Entity it-infrastructure-and-cloud-architecture-system

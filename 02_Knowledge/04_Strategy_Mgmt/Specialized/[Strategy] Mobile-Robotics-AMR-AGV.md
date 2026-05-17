@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "[[[Strategy] Mobile-Robotics-AMR-AGV"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Strategy] Mobile-Robotics-AMR-AGV]]"
+  domain: "04_Strategy_Mgmt"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Strategy] Mobile-Robotics-AMR-AGV에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#04_Strategy_Mgmt", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Strategy] Mobile-Robotics-AMR-AGV
+# [Strategy] Mobile-Robotics-AMR-AGV
 
 ## 1. [왜 배우는가? (Why)]]
 공장의 바닥에 더 이상 검은 테이프나 마커가 필요 없습니다. 모바일 로보틱스(Mobile-Robotics-AMR-AGV)는 로봇이 스스로 길을 찾고, 장애물을 피하며, 물건을 나르는 기술입니다. 과거의 무인 운반차(AGV)가 정해진 길로만 다녔다면, 현재의 자율 이동 로봇(AMR)은 눈(LiDAR/Camera)을 통해 실시간으로 지도를 그리며 가장 빠른 길을 찾아냅니다. 이를 이해하는 것은 수백 대의 로봇이 개미 떼처럼 일사불란하게 움직이는 '역동적인 물류망'을 구축하여, 공장 전체의 흐름을 지능적으로 가속하는 '자율 물류의 지휘자'가 되는 것입니다.
@@ -95,5 +85,4 @@ def plan_autonomous_navigation(current_pose, target_destination, obstacles):
 2. 'LiDAR SLAM'과 'Visual SLAM'의 기술적 장단점과, 금속 반사가 심한 '반도체 클린룸'에서 더 권장되는 방식은?
 3. '수백 대의 로봇'이 좁은 통로에서 마주쳤을 때 발생하는 '데드락(Deadlock)' 현상을 해결하기 위한 'FMS(군집 관리 시스템)'의 우선순위 제어 논리는?
 
----
 **[V6.3.7_HDS_GOLD_MANDATE_ACTIVATED]**

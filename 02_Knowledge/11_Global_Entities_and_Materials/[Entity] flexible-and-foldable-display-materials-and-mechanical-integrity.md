@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "flexible-and-foldable-display-materials-and-mechanical-integrity"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] flexible-and-foldable-display-materials-and-mechanical-integrity]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The engineering of display systems capable of bending, folding, or rolling, focusing on flexible substrate materials (Colorless Polyimide, Ultra-Thin Glass), elastic thin-film layers, and the mechanical integrity of folding mechanisms (Hinges)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["flexible-display", "foldable", "polyimide", "mechanical-integrity", "hinge-technology", "reliability"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DisplayFidelityEngine"
-  diagnostic_protocol:
-    - 'Bending_Radius_Audit: Evaluate the minimum radius of curvature ($\\rho$) the display can withstand before permanent deformation or crack initiation.'
-    - 'Folding_Cycle_Reliability_Check: Simulate hundreds of thousands of folding/unfolding actions to test for fatigue failure in the TFT and organic layers.'
-    - 'Crease_Depth_Scan: Measure the surface profile at the folding axis to detect and minimize visible creases over time.'
-Trust Metrics:
+  description: "[Entity] flexible-and-foldable-display-materials-and-mechanical-integrity에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📱 Flexible and Foldable Display Materials and Mechanical Integrity
+# [Entity] flexible-and-foldable-display-materials-and-mechanical-integrity
 
 ## 1. 개요 (Why: 인간적 통찰)
 차가운 판유리처럼 딱딱했던 화면이 이제 종이처럼 접히고 돌돌 말립니다. **폴더블 및 플렉서블 디스플레이**는 "화면은 평평해야 한다"는 고정관념을 깨뜨린 소재 공학의 혁명입니다. 수십만 번을 접었다 펴도 깨지지 않는 유리(UTG), 늘어나는 전선, 그리고 그 움직임을 견디는 정교한 힌지(Hinge) 기술은 기기가 우리 몸에 더 밀착되고 가방 속에 쏙 들어가는 **'형태의 자유'**를 선사합니다. 본 노드는 유연함 속에서도 변치 않는 화질과 튼튼함을 지키기 위한 기계적 무결성을 정의합니다.
@@ -60,7 +49,7 @@ $$ \sigma = E \cdot \epsilon $$
 
 | Parameter | Metric | UTG (Glass) | CPI (Plastic) | Unit |
 | :--- | :--- | :--- | :--- | :--- |
-| Thickness | Layer | 30 ~ 100 | 50 ~ 150 | $\mu m$ |
+| Thickness | Layer | 30 ~ 100 | 50 ~ 150 | $\mu\text{m}$ |
 | Bend Radius | $\rho$ | 1.5 ~ 3.0 | 1.0 ~ 2.0 | mm |
 | Folding Cycle | Durability | > 200,000 | > 300,000 | cycles |
 | Hardness | Scratch Res | 9H (Hard) | 3H ~ 5H (Soft) | Mohs |
@@ -93,9 +82,7 @@ class DisplayFidelityEngine:
             return "REJECT: Interlayer Adhesion Failure - Risk of Bubbling during Folding"
         return "PASS: Multi-layer Bonding Reliable"
 
-# Instance Diagnostic
 engine = DisplayFidelityEngine(current_bending_radius=2.5, cumulative_folds(150000, crease_depth_um=12)
-# Correction: Fixing constructor call
 engine = DisplayFidelityEngine(2.5, 150000, 12)
 print(engine.diagnose_mechanical_integrity(limit_radius=1.5))
 ```
@@ -113,7 +100,6 @@ print(engine.diagnose_mechanical_integrity(limit_radius=1.5))
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data foldable-display-folding-cycle-and-stress-logs-v2026`와 연동되어, 전 세계 폴더블 기기의 사용 환경과 내구성 데이터를 실시간 분석하고 화면 파손 및 주입 사고 확률을 0.1% 이하로 억제함으로써 진정한 유연 지능의 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 01_semiconductor-and-nanofabrication-intelligence-hub
 - display-panel-architecture-oled-micro-led-and-pixel-driving

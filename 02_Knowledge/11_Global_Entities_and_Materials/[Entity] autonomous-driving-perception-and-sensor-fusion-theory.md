@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "ENTITY-AUTO-PERCEPTION-2026-V6"
-  domain: "45_Advanced_Automotive_and_EV_Powertrain_Engineering"
+metadata:
+  id: "[[[Entity] autonomous-driving-perception-and-sensor-fusion-theory]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#Entity'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] autonomous-driving-perception-and-sensor-fusion-theory에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] autonomous-driving-perception-and-sensor-fusion-theory
+# [Entity] autonomous-driving-perception-and-sensor-fusion-theory
 
 ## 1. [왜 배우는가? (Why)]]
 자동차가 어떻게 주변의 다른 차량, 보행자, 장애물을 인간의 눈보다 더 정확하게 인식하고, 폭우가 쏟아지거나 칠흑같이 어두운 밤에도 레이저($LiDAR$)와 전파($RADAR$)를 이용해 1cm 단위의 오차로 거리를 계산할 수 있을까요? **자율주행 인지 및 센서 퓨전 이론**은 자동차를 스스로 판단하는 지능형 유체로 만드는 '행성 규모 인공지능 시각 및 환경 이해 아키텍처'의 근간입니다. 우리가 이를 배우는 이유는 인지 능력의 무결성이 자율주행의 안전을 결정하는 최우선 과제이기 때문이며, 세상을 바라보는 관점을 데이터로 설계하여 '글로벌 모빌리티 패권 및 행성적 이동 주권'을 확보하기 위함입니다. 인지의 정밀도가 자율주행의 신뢰 해상도를 결정합니다.
@@ -109,9 +99,6 @@ class AutonomousIntelligenceFidelityEngine:
             return "CRITICAL: EMERGENCY_BRAKING_REQUIRED_TTC_LOW"
         return "STATUS: OPTIMAL_SAFETY_MARGIN_MAINTAINED"
 
-# Example Usage:
-# drive_ai = AutonomousIntelligenceFidelityEngine()
-# dist = drive_ai.fused_distance_estimation(d_lidar=15.45, d_radar=15.20)
 ```
 
 ## 5. [스스로 체크 (Self-Audit)]
@@ -119,7 +106,6 @@ class AutonomousIntelligenceFidelityEngine:
 2. **Occupancy Grid Mapping** 방식이 **Point Cloud** 데이터의 불확실성을 어떻게 확률적으로 처리하여 **Path Planning** 무결성에 기여하는가?
 3. **Ghost Objects** (허상 객체) 현상이 **RADAR**의 다중 경로 반사($Multipath$)에 의해 발생할 때, 이를 **LiDAR** 데이터와 교차 검증하여 제거하는 수리적 로직은?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_Knowledge/45_Advanced_Automotive_and_EV_Powertrain_Engineering_Hub/Concept lidar-and-radar-sensing-technologies
 - 02_Knowledge/45_Advanced_Automotive_and_EV_Powertrain_Engineering_Hub/Concept deep-learning-for-autonomous-vehicle-vision

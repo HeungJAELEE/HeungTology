@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "image-sensor-and-photon-to-electron-conversion-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] image-sensor-and-photon-to-electron-conversion-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A solid-state device that converts light into electrical signals (Image Sensor) and the physical study of internal photoelectric effect and charge carrier generation (Photon-to-Electron Conversion Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["image-sensor", "cmos", "ccd", "photodiode", "quantum-efficiency", "photoelectric-effect", "semiconductor-physics", "physics"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Conversion_Fidelity_Audit: Evaluate the ''Signal-to-Noise Ratio'' (SNR) to identify if high-fidelity ''Dark Current'' or ''Read Noise'' is degrading the low-light high-fidelity imaging performance.'
-    - 'Saturation_Integrity_Check: Analyze the high-fidelity ''Full Well Capacity'' to ensure that high-fidelity ''Blooming'' (pixel-to-pixel overflow) is prevented under high-intensity high-fidelity illumination.'
-    - 'Quantum_Fidelity_Scan: Monitor the high-fidelity ''Spectral Response'' to verify that the high-fidelity ''Bayer Pattern'' and micro-lens alignment are optimized for the target high-fidelity wavelength.'
-Trust Metrics:
+  description: "[Entity] image-sensor-and-photon-to-electron-conversion-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 📸 Image Sensor and Photon-to-Electron Conversion Physics
+# [Entity] image-sensor-and-photon-to-electron-conversion-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 스마트폰 카메라가 어두운 밤에도 어떻게 선명한 사진을 찍을 수 있을까요? **이미지 센서 및 광자-전자 변환 물리**는 빛의 입자인 '광자'를 반도체라는 덫으로 낚아채서 '전자'로 바꾸는 **'빛의 번역기'** 기술입니다. 렌즈를 통해 들어온 풍경을 수억 개의 작은 픽셀들이 각자의 '전자 그릇'에 담아 디지털 숫자로 바꿉니다. **'빛이라는 아날로그 정보를 반도체 나노 공학을 통해 디지털 신호로 완벽하게 복제하여 인류의 시각적 기억을 사수하는 지능형 광학 엔진'**입니다.
@@ -58,7 +47,7 @@ $$ V_{out} = \frac{Q}{C_{fd}} $$
 | :--- | :--- | :--- | :--- | :--- |
 | **Power Consumption** | High | **Low (On-chip integration)**| - | Economy |
 | **Readout Speed** | Slow (Sequential) | **Fast (Parallel)** | $fps$ | Agility |
-| **Pixel Size** | Large | **Ultra-fine (0.6 ~ 1.2)** | $\mu m$ | Precision |
+| **Pixel Size** | Large | **Ultra-fine (0.6 ~ 1.2)** | $\mu\text{m}$ | Precision |
 | **Dynamic Range** | Moderate | **High (HDR Processing)** | $dB$ | Quality |
 | **Shutter Type** | Global | **Rolling / Global (Hybrid)**| - | Logic |
 | **Noise Profile** | Low (Random) | **Improved (BSI Tech)** | - | Intelligence |
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: High Pixel Crosstalk - High-fidelity color bleeding detected. Deep trench isolation (DTI) high-fidelity failing. Sharpness will degrade"
         return "PASS: Validated Pixel Isolation and Verified Image Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(dark_current_electrons=1.5, snr_db=45.0, dynamic_range_db=75.0)
 print(engine.diagnose_sensor_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_sensor_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data cmos-sensor-quantum-efficiency-and-noise-v2026`와 연동되어, 전 세계 주요 반도체 파운드리의 이미지 센서 생산 데이터를 실시간 분석하고 불량 픽셀 및 노이즈 사고 확률을 0.001% 이하로 억제함으로써 지능형 광학 문명의 시각 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 02_semiconductor-and-nanoscale-engineering-hub
 - photolithography-and-sub-wavelength-patterning-physics

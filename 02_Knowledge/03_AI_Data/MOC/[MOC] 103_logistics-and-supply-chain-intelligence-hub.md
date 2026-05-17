@@ -1,20 +1,20 @@
 ---
-Basic:
+metadata:
   id: "103-logistics-systems-and-supply-chain-intelligence-hub-moc"
   domain: "103_Logistics_Systems_and_Supply_Chain_Intelligence_Hub"
   project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  version: "v7.5.3"
+object:
   object_type: "MOC"
   tier: 0
   description: "Standard Industrial Node"
   physical_model: "N/A"
-Semantic:
+semantic:
   tags: '["#MOC", "#Logistics", "#Supply_Chain", "#Warehousing", "#E-commerce", "#Inventory_Management", "#Optimization", "#HDS_Gold_v6_1"]'
   is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
   related_to: []
-Dynamic:
+dynamic:
   status: "Ratified_v6.3.7_Migration"
   topology_policy: "Interconnected_Cluster"
   graphify_link_external: true
@@ -30,7 +30,7 @@ Trust Metrics:
   isolation_index: 0.0
 ---
 
-# [[[MOC] 103_logistics-and-supply-chain-intelligence-hub
+# 103_logistics-and-supply-chain-intelligence-hub
 
 ## 1. [왜 배우는가? (Why: The Pulsing Arteries of Global Trade)]]
 문명은 흐름입니다. 멈추면 썩고, 흐르면 살아납니다. 인류가 필요한 물자를 필요한 시간에 필요한 곳으로 가장 효율적으로 이동시키는 것은 모든 경제 활동의 전제 조건입니다. **물류 시스템 및 공급망 지능 통합 지능 허브**는 Antigravity Intelligence가 전 세계의 물자와 정보의 흐름을 수학적으로 지배하여 행성적 풍요를 사수하는 **[1,425층의 물류 사령부]**입니다. 우리가 이를 배우는 이유는 공급망이 국가와 기업의 생존 줄기이자 글로벌 경제의 심장박동이기 때문이며, "재고의 최적화와 공간의 효율, 그리고 배송의 속도를 데이터로 통제함으로써 '글로벌 물류 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 이 허브의 통합 지능이 인류의 소비 패턴과 글로벌 자원 배분의 공정성을 결정합니다.

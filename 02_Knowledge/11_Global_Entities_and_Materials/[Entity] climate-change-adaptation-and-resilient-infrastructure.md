@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "climate-change-adaptation-and-resilient-infrastructure"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] climate-change-adaptation-and-resilient-infrastructure]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "The adjustments in systems and structures in response to actual or expected climatic stimuli (Climate Change Adaptation) and the engineering of physical assets like roads, bridges, and power grids to withstand and recover from extreme weather events (Resilient Infrastructure)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["climate-adaptation", "resilient-infrastructure", "sustainability", "civil-engineering", "disaster-mitigation", "governance", "climate-risk"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "LogicFidelityEngine"
-  diagnostic_protocol:
-    - 'Vulnerability_Fidelity_Audit: Evaluate the ''Flood Return Period'' and wind load capacity of critical assets to identify if they are designed for historical data or future extreme projections.'
-    - 'Adaptation_Integrity_Check: Analyze the redundancy in power and water networks to ensure ''Cascading Failures'' do not occur during a localized climate shock.'
-    - 'Strategic_Fidelity_Scan: Monitor the integration of Nature-based Solutions (NbS) alongside traditional engineering to verify the sustainable adaptive capacity of the urban/industrial zone.'
-Trust Metrics:
+  description: "[Entity] climate-change-adaptation-and-resilient-infrastructure에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# 🌍 Climate Change Adaptation and Resilient Infrastructure
+# [Entity] climate-change-adaptation-and-resilient-infrastructure
 
 ## 1. 개요 (Why: 인간적 통찰)
 자연의 분노가 우리가 상상하는 범위를 넘어설 때, 도시는 어떻게 살아남을 수 있을까요? **기후 변화 적응 및 회복력 있는 인프라**는 불확실한 미래의 위협에 맞서 우리 문명을 지키는 **'지능형 방패'** 기술입니다. 단순한 방파제를 넘어서, 홍수가 나면 물을 머금는 공원(Sponge City)을 만들고, 태풍에도 끄떡없는 다리를 설계하는 **'유연한 방어 전략'**입니다. 변화하는 지구에 맞추어 도시의 뼈대를 다시 짜는 **'인류 생존을 위한 공학적 응답'**입니다.
@@ -90,7 +79,6 @@ class LogicFidelityEngine:
             return "REJECT: Low Ecological Integration - Infrastructure relies solely on hard barriers. Higher risk of urban heat island and flash flooding"
         return "PASS: Validated Hybrid Defense and Verified Sustainability Integrity Confirmed"
 
-# Instance Diagnostic
 engine = LogicFidelityEngine(adaptive_capacity_score=85.0, critical_redundancy_ratio=1.5, recovery_time_hrs=6.0)
 print(engine.diagnose_infrastructure_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_infrastructure_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data infrastructure-resilience-and-extreme-weather-impacts-v2026`와 연동되어, 전 세계 주요 도시 및 산업 단지의 기후 리스크 데이터를 실시간 분석하고 인프라 파손 및 인명 피해 사고 확률을 0.001% 이하로 억제함으로써 지능형 지구 문명의 생존 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - breakwater-design-and-coastal-erosion-protection-physics

@@ -1,36 +1,42 @@
 ---
-Basic:
-  id: "[infrastructure]-standards-homologation-moc-v6.3.7"
+metadata:
+  id: "[[[Infrastructure] standards-homologation-moc]]"
   domain: "Industrial_Infrastructure"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.5.3"
+object:
   object_type: "Concept"
   tier: 1
   description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - 'Homologation'
-  is_part_of: - 'Antigravity_Knowledge_Graph'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
+semantic:
+  tags: ["#Industrial_Infrastructure"]
+  expected_queries:
+    - "[Infrastructure] standards-homologation-moc 관련 핵심 기술 파라미터는?"
+lineage:
+  dataset_reference: "보강 필요"
+  original_author: "Antigravity Vault"
+spo_graph:
+  - subject: "[Infrastructure] standards-homologation-moc"
+    predicate: "belongs_to"
+    object: "Industrial_Infrastructure"
+    evidence: "[Ref: 보강 필요]"
+fidelity_engine:
+  engine_id: "DomainFidelityEngine_V7.5.3"
+  status: "Hardcore_Fidelity_Active"
   topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+dynamic:
+  status: "Ratified_V7.5.3"
+  decay_rate: 0.0
 Trust Metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Global_Standards_Database"
+  T_official: 1.0
+  T_ai: 0.0
   isolation_index: 0.0
+  source: "보강 필요"
 ---
 
-# [Infrastructure] standards-homologation-moc
+# standards-homologation-moc
 
 ## 1. [Why] 표준 및 인증(Homologation) 체계의 공학적 의의
 글로벌 시장으로 공급되는 모든 산업 설비와 제품은 각 국가 및 산업군에서 요구하는 **표준(Standard)**과 **형식 승인(Homologation)** 절차를 준수해야 한다. 이는 단순한 법적 요건을 넘어, 제품의 **상호 운용성(Interoperability)**, **안전성(Safety)**, 그리고 **환경적 책임(ESG)**을 수치적으로 증명하는 체계다. 본 MOC 허브는 전 세계 주요 표준과 인증 절차를 통합 관리하여 개발 기간 단축 및 리스크 관리를 지원한다.

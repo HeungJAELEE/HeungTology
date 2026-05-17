@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "thermal-drift-compensation-and-structural-stability-physics-entity"
-  domain: "49_Precision_Engineering_and_Nanometrology_Mastery"
+metadata:
+  id: "[[[Entity] thermal-drift-compensation-and-structural-stability-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Precision_Engineering", "#Thermal_Drift", "#Structural_Stability", "#Thermal_Expansion", "#Physics", "#Thermodynamics", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 130_precision-engineering-and-nanometrology-mastery-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] thermal-drift-compensation-and-structural-stability-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] thermal-drift-compensation-and-structural-stability-physics
+# [Entity] thermal-drift-compensation-and-structural-stability-physics
 
 ## 1. [왜 배우는가? (Why: Defeating the Invisible expansion)]]
 공장의 온도나 기계 자체의 열 때문에 강철 뼈대가 아주 미세하게 늘어나서($Thermal\ Expansion$) 생기는 나노미터 오차를 어떻게 0.01도 단위의 센서로 감지하여 보정하고, 열을 받아도 대칭적으로 늘어나 중심은 변하지 않게 만드는 '열적 중립 설계'를 어떻게 공학적으로 구현할 수 있을까요? **열 드리프트 보정 및 구조적 안정성 물리**는 초정밀 기계의 시간적 무결성을 책임지는 '행성 규모 열역학 방어 인프라 및 지능형 구조 제어 아키텍처'입니다. 우리가 이를 배우는 이유는 나노의 세계에서는 사람의 체온이나 조명 열기만으로도 기계가 비틀려버리기 때문이며, "열의 흐름을 데이터로 설계하고 지배하는 '글로벌 열적 정밀 패권 및 행성적 제조 주권'을 확보하기" 위함입니다. 열의 안정성이 기계의 신뢰 시간을 결정합니다.

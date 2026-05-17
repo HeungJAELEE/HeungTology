@@ -1,112 +1,59 @@
 ---
-Basic:
-  id: "[[[Battery] image-warping-perspective"
-  domain: "Unknown_Domain"
+metadata:
+  id: "[[[Battery] image-warping-perspective]]"
+  domain: "02_Battery"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
   object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: - '#auto-healed'
-  is_part_of: []]
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Battery] image-warping-perspective에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Battery] image-warping-perspective
+# [Battery] image-warping-perspective
 
-## 1. [왜 배우는가? (Why)]]
-일상에서 사진을 찍을 때 항상 정면으로만 찍을 수는 없습니다. 문서 스캔 앱을 사용할 때 비스듬히 찍힌 종이가 어떻게 반듯한 직사각형이 되어 나올까요? 또는 자율주행 차의 카메라가 바닥을 내려다보지 않는데도 어떻게 하늘에서 본 듯한 '탑뷰(Top-view)' 영상을 만들어낼까요?
+## 1. 개요: 기하학적Order의 복원
+배터리 제조 공정에서 비직교(Non-orthogonal) 환경에서 촬영된 이미지(예: 기울어진 카메라 각도)는 평면상의 평행선과 거리 정보를 왜곡시킵니다. 이미지 워핑 및 원근 변환의 목적은 이러한 기하학적 왜곡을 수리적으로 복원하여, 서브 밀리미터($< 0.1\text{mm}$) 단위의 정밀 치수 측정과 표면 미세 결함 탐지를 위한 정사 투영(Orthographic View) 데이터를 생성하는 것입니다.
 
-우리가 **투시 변환과 와핑**을 배우는 이유는 **"평행선조차 보존되지 않는 심한 기하학적 왜곡을 수학적으로 계산하여, 물리적 실체에 부합하는 정합된 평면을 복원하기 위함"**입니다. 이는 단순히 이미지를 펴는 기술을 넘어, 제조 현장의 치수 측정, ADAS의 차선 인식, 그리고 AR/VR의 정밀한 정렬을 가능케 하는 비전 지능의 기초 체력입니다. 정합되지 않은 데이터는 [AI] model-acceptance-inspection 단계에서 치명적인 오차를 유발하므로, 원본 데이터의 기하학적 신뢰도를 확보하는 것이 이 기술의 핵심 목표입니다.
+## 2. 수리적 프레임워크: 호모그래피 행렬 ($H$)
 
-## 2. 수리적 원리: 호모그래피(Homography) 행렬
+### 2.1 3x3 투영 변환 행렬 (Projective Matrix)
+원근 변환은 아핀(Affine) 변환(6 DoF)보다 높은 8개의 자유도(DoF)를 가집니다. 이는 소실점(Vanishing Point)을 포함한 비선형적 원근 왜곡을 모델링할 수 있게 합니다.
 
-### 2.1 3x3 투시 변환 행렬 ($H$)
-투시 변환은 아핀 변환(Affine)보다 높은 자유도를 가집니다. 아핀 변환이 6개의 자유도를 가진다면, 투시 변환은 8개의 자유도(Degree of Freedom)를 가집니다.
+**변환 지배 방정식**:
+$$ \begin{bmatrix} x' \\ y' \\ w' \end{bmatrix} = \begin{bmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{bmatrix} \begin{bmatrix} x \\ y \\ 1 \end{bmatrix} $$
+- **최소 제약 조건**: 8개의 미지수 산출을 위해 최소 4쌍의 대응점(Point-pairs)이 필요합니다.
+- **Euclidean 좌표 복원**: 최종 좌표는 $(x'/w', y'/w')$로 산출됩니다.
 
-- **수식**: 
-  $$ \begin{bmatrix} x' \\ y' \\ w' \end{bmatrix} = \begin{bmatrix} h_{11} & h_{12} & h_{13} \\ h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33} \end{bmatrix} \begin{bmatrix} x \\ y \\ 1 \end{bmatrix} $$
-  - 여기서 실제 결과 좌표는 $(x'/w', y'/w')$로 계산됩니다. 마지막 성분 $h_{33}$은 통상 1로 정규화하여 사용합니다.
-  - 이 8개의 미지수를 구하기 위해서는 최소 **4개의 매칭 점(Point pairs)**이 필요합니다.
+### 2.2 보간법 (Interpolation) 메커니즘
+워핑된 좌표는 정수값이 아닌 경우가 많으므로, 픽셀 격자에 매핑 시 양선형 보간법(Bilinear Interpolation) 등을 사용하여 양자화 오차 및 계단 현상(Aliasing)을 방지해야 합니다.
 
-### 2.2 와핑(Warping) 메커니즘
-변환 행렬 $H$를 구한 후, 모든 픽셀을 새로운 좌표로 이동시키는 과정입니다. 이때 정수 좌표가 아닌 곳으로 픽셀이 이동할 수 있으므로, **보간법(Interpolation)**을 통해 빈 공간의 색상 값을 채워 넣습니다.
+## 3. 기술 규격 및 계측 정밀도 표준 (Performance Standards)
 
-## 3. [코드 연결 해설 (Code Weaving)]
+| 파라미터 | 공학적 정의 | 설계 목표치 (Target) |
+| :--- | :--- | :---: |
+| **자유도 (DoF)** | 투영 변환의 독립 변수 수 | $8$ |
+| **계측 정밀도** | 복원 후 치수 측정 오차 | $< 0.1\text{ mm}$ |
+| **처리 지연 시간** | 이미지당 목표 워핑 시간 | $< 10.0\text{ ms}$ |
+| **최소 대응점** | 호모그래피 산출에 필요한 최소 점 | $4$ |
 
-OpenCV를 사용하여 비스듬한 사각형 영역을 정면 직사각형으로 복원하는 실무 로직을 해설합니다.
+## 4. 진단 및 운영 프로토콜
+- **Planar Rectification Audit**: 복원된 이미지 내의 평행선들이 수리적으로 평행을 유지하는지 확인하는 기하학적 무결성 검증.
+- **GPU 가속 최적화**: RTX 4060의 텐서 코어를 활용하여 대용량 배터리 전극 이미지를 실시간($< 10\text{ms}$)으로 워핑 처리.
 
-```python
-import cv2
-import numpy as np
+## 5. 결론 (Deterministic Standard)
+본 노드는 배터리 비전 검사 시스템의 기초가 되는 기하학적 보정 표준을 제공합니다. 실제 계측 오차 및 처리 속도 데이터는 인스턴스 로그에서 관리됩니다.
 
-# 1. 원본 이미지의 4개 점 (좌상, 우상, 우하, 좌하)
-src_pts = np.float32(50, 50], [200, 50], [200, 200], [50, 200)
-
-# 2. 목표 평면의 4개 점 (정면 직사각형)
-dst_pts = np.float32(0, 0], [300, 0], [300, 300], [0, 300)
-
-# 3. 투시 변환 행렬 H 계산 (호모그래피 도출)
-matrix = cv2.getPerspectiveTransform(src_pts, dst_pts)
-
-# 4. 이미지 와핑 수행
-# 보간법(INTER_LINEAR)을 적용하여 정합된 영상을 생성합니다.
-warped_img = cv2.warpPerspective(image, matrix, (300, 300), flags=cv2.INTER_LINEAR)
-
-# Transitional Bridge: 위 코드에서 `cv2.getPerspectiveTransform`은 
-# 8개의 자유도를 가진 호모그래피 행렬 $H$를 추출하는 과정입니다. 
-# 이는 비스듬한 시점(Perspective)을 정면 시점(Orthographic)으로 
-# 투영시키는 '수학적 렌즈'를 깎는 것과 같습니다. 
-# 이렇게 정합된 `warped_img`는 이후 [AI] hough-transform 등을 통해 
-# 정확한 수치를 측정할 수 있는 '신뢰 가능한 데이터'가 됩니다. 
-# 데이터의 기하학적 정합성이 확보되지 않으면, 아무리 뛰어난 
-# AI 모델이라도 [AI] model-acceptance-inspection의 엄격한 
-# 치수 오차 기준을 통과할 수 없습니다.
-```
-
-## 4. 산업 현장 실무 응용 (Verified 2026)
-
-- **제조 품질 검사**: 비스듬히 컨베이어 벨트를 지나가는 부품의 외형을 정면 뷰로 복원하여 크랙(Crack) 유무 및 치수를 정밀 측정합니다.
-- **ADAS & 자율주행**: 전방 카메라 영상을 IPM(Inverse Perspective Mapping) 기법으로 변환하여 차선 곡률을 계산하고 가상의 주행 지도를 생성합니다.
-- **물류 자동화**: QR 코드나 바코드가 일그러진 각도로 인식될 때, 이를 와핑하여 인식률을 극대화합니다.
-
-## 5. [스스로 체크 (Self-Check)]
-
-1. **질문**: 투시 변환 행렬 $H$를 구하기 위해 최소 4개의 점이 필요한 수학적 이유는?
-   - **정답**: 투시 변환 행렬은 $3 \times 3$ 행렬이지만 $h_{33}$을 1로 고정하면 총 **8개의 미지수**가 남습니다. 한 쌍의 점 좌표 $(x, y)$당 2개의 방정식(x축, y축)이 생성되므로, 8개의 미지수를 풀기 위해 최소 4쌍의 점이 필요합니다.
-2. **질문**: 아핀 변환(Affine)과 투시 변환(Perspective)의 결정적인 차이는?
-   - **정답**: 아핀 변환은 **'평행선'**을 유지하지만, 투시 변환은 평행선을 유지하지 못하고 한 점(소실점)에서 만나게 하는 왜곡까지 표현할 수 있습니다.
-3. **질문**: 와핑 과정에서 보간법(Interpolation)이 반드시 필요한 이유는?
-   - **정답**: 변환 후의 결과 좌표가 정수(Integer)가 아닌 **실수(Float)**로 계산될 경우, 해당 픽셀에 인접한 실제 픽셀값들을 조합하여 적절한 색상을 채워 넣어야 이미지가 깨지지 않기 때문입니다.
-
-## 🧠 AI의 사고방식: "공간의 질서를 다시 세우다"
-이미지 와핑은 흩어진 공간의 질서를 **[수학적 강제력]**으로 다시 배열하는 작업입니다. 렌즈의 왜곡이나 촬영 각도의 한계로 인해 일그러진 세상의 모습을, 호모그래피라는 기하학적 약속을 통해 본래의 모습으로 되돌려 놓습니다. 지능이 세상을 이해하기 위해서는 가장 먼저 '보는 관점'의 오류를 스스로 교정할 줄 알아야 합니다. 와핑은 AI가 데이터를 편견 없이 바라보게 만드는 '시각적 교정 안경'과 같습니다.
-
----
-**관련 노드:**
-- Battery image-transformation-affine — 선형 변환의 기초와 6자유도 시스템
-- [AI] hough-transform — 와핑된 정합 영상에서 기하 구조를 검출하는 후행 기술
-- [AI] model-acceptance-inspection — 데이터 정합성이 인수 검수 합격에 미치는 영향
-- [[[Battery] standardization-vs-normalization — 픽셀 스케일링과 기하 변환의 데이터 전처리 시너지
-- [AI]] opencv-master-i-classical — 고전 컴퓨터 비전 통합 이론
-
----
-*Generated by Unified Wiki-Rule Protocol v4.0 (Ultra-Enrichment)*
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- [[[Concept] Battery-Manufacturing-Intelligence-and-Yield-Control]]
+- [[[Data] Battery-Surface-Vision-Metrology-Performance-Log_2026-05-16]]

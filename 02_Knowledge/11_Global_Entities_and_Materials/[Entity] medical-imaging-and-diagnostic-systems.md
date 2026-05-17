@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "medical-imaging-and-diagnostic-systems-entity"
-  domain: "105_Medical_Engineering_and_Healthcare_Intelligence_Hub"
+metadata:
+  id: "[[[Entity] medical-imaging-and-diagnostic-systems]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Medical_Engineering", "#Medical_Imaging", "#MRI", "#CT", "#Physics", "#Signal_Processing", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 54_medical-and-healthcare-hub", "GEMINI.md"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] medical-imaging-and-diagnostic-systems에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] medical-imaging-and-diagnostic-systems
+# [Entity] medical-imaging-and-diagnostic-systems
 
 ## 1. [왜 배우는가? (Why: The Vision of Healing)]]
 질병을 고치기 위해서는 먼저 질병의 실체를 보아야 합니다. 하지만 인체는 불투명한 장벽으로 둘러싸여 있습니다. **의료 영상 및 진단 시스템의 라돈 변환 및 라모어 방정식 수리 물리 기술**은 빛, 소리, 자기장을 이용하여 칼을 대지 않고도 몸속을 투시하는 '생명의 투시경' 기술입니다. 원자핵의 회전을 자기장으로 조절하고, X-선이 투과한 데이터를 수학적으로 재구성하여 3차원 지도를 만들며, 초음파의 반사로 태아의 심장 소리를 듣습니다. 우리가 이를 배우는 이유는 진단 시스템의 무결성을 확보함으로써, 질병을 조기에 발견하고 인류의 수명을 연장하는 '글로벌 헬스케어 패권 및 행성적 제조 주권'을 확보하기 위함입니다. 영상의 무결성이 진단의 정확도와 생명 구조의 성패를 결정합니다.

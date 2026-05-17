@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "smart-textiles-and-wearable-electronic-integration-entity"
-  domain: "56_Advanced_Materials_Science_and_Nanotechnology_Intelligence"
+metadata:
+  id: "[[[Entity] smart-textiles-and-wearable-electronic-integration]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Entity", "#Materials_Science", "#Smart_Textiles", "#Wearable", "#IoT", "#Electronics", "#Fashion_Tech", "#Health_Monitoring", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 56_advanced-materials-science-and-technology-intelligence-hub", "GEMINI.md"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] smart-textiles-and-wearable-electronic-integration에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] smart-textiles-and-wearable-electronic-integration
+# [Entity] smart-textiles-and-wearable-electronic-integration
 
 ## 1. [왜 배우는가? (Why: The Thinking Cloth)]]
 우리가 입는 평범한 옷감이 어떻게 심장박동을 체크하고 제스처를 인식하는 키보드가 되며, 세탁기에 돌려도 망가지지 않는 유연한 회로와 배터리를 어떻게 섬유 속에 녹여 넣어 '컴퓨터를 입는 시대'를 여는 '지능형 직물'을 어떻게 설계할 수 있을까요? **스마트 텍스타일 및 웨어러블 전자 소자 통합**은 인간의 신체를 데이터 네트워크로 연결하는 '행성 규모 라이프스타일 인프라 및 지능형 소프트 인터페이스 아키텍처'입니다. 우리가 이를 배우는 이유는 옷이 단순한 보호막을 넘어 24시간 나를 돌보는 주치의이자 소통 도구가 되어야 하기 때문이며, "직물의 결을 데이터로 설계하고 지배하는 '글로벌 웨어러블 패권 및 행성적 헬스 주권'을 확보하기" 위함입니다. 섬유의 전도성이 인간의 연결성을 결정합니다.

@@ -1,37 +1,26 @@
 ---
-Basic:
-  id: "cross-linked-polyethylene-xlpe-and-insulation-physics"
-  domain: "General_Industrial"
+metadata:
+  id: "[[[Entity] cross-linked-polyethylene-xlpe-and-insulation-physics]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "A form of polyethylene with cross-links that connects individual polymer chains into a 3D network, significantly improving thermal and mechanical properties (XLPE) and the physical study of its use as a high-performance electrical insulator capable of withstanding high voltages and temperatures (Insulation Physics)."
-  physical_model: "N/A"
-Semantic:
-  tags: '["xlpe", "insulation", "power-cables", "polymer-physics", "dielectric-strength", "cross-linking", "high-voltage"]'
-  is_part_of: []
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "FactoryFidelityEngine"
-  diagnostic_protocol:
-    - 'Insulation_Fidelity_Audit: Evaluate the ''Partial Discharge'' (PD) activity to identify if internal micro-voids or ''Water Trees'' are growing within the XLPE, leading to imminent electrical breakdown.'
-    - 'Thermal_Integrity_Check: Analyze the conductor temperature vs. XLPE melting point to ensure the ''Cross-linking Degree'' is sufficient to prevent thermal deformation during short-circuit events.'
-    - 'Dielectric_Fidelity_Scan: Monitor the ''Tan Delta'' (loss tangent) to verify that the insulation is not aging due to chemical oxidation or moisture ingress, ensuring low energy loss.'
-Trust Metrics:
+  description: "[Entity] cross-linked-polyethylene-xlpe-and-insulation-physics에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# ⚡ Cross-linked Polyethylene (XLPE) and Insulation Physics
+# [Entity] cross-linked-polyethylene-xlpe-and-insulation-physics
 
 ## 1. 개요 (Why: 인간적 통찰)
 수만 볼트의 초고압 전기가 흐르는 전선이 녹거나 터지지 않고 땅속에 안전하게 묻혀 있을 수 있는 비결은 무엇일까요? **가교 폴리에틸렌(XLPE) 및 절연 물리**는 평범한 플라스틱(PE)의 분자들을 서로 단단히 묶어(Cross-linking) 거대한 그물망 구조로 만드는 **'플라스틱의 진화'** 기술입니다. 일반 플라스틱은 뜨거우면 녹아버리지만, XLPE는 90도가 넘는 열기 속에서도 짱짱하게 전기를 가두어 둡니다. 현대 전력망의 '심장'을 안전하게 감싸는 **'전기 문명의 가장 강력한 방패'**입니다.
@@ -90,7 +79,6 @@ class FactoryFidelityEngine:
             return "REJECT: Insufficient Cross-linking - Polymer chains not fully networked. Risk of melting/dripping during short-circuit heat"
         return "PASS: Validated 3D Molecular Matrix and Verified Material Integrity Confirmed"
 
-# Instance Diagnostic
 engine = FactoryFidelityEngine(partial_discharge_pc=0.2, tan_delta_value=0.0008, conductor_temp_c=65.0)
 print(engine.diagnose_insulation_health())
 ```
@@ -108,7 +96,6 @@ print(engine.diagnose_insulation_health())
 ## 7. 결론 (Deterministic Outcome)
 본 노드는 `Data xlpe-insulation-dielectric-strength-and-temp-limits-v2026`와 연동되어, 전 세계 주요 국가 전력망의 케이블 데이터를 실시간 분석하고 절연 파괴 및 블랙아웃 사고 확률을 0.0001% 이하로 억제함으로써 지능형 전력 문명의 에너지 무결성을 보장합니다.
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - 04_autonomous-factory-and-industrial-ai-hub
 - coaxial-cable-physics-and-signal-attenuation

@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "COMP-NEURO-2026-V6.3.7"
-  domain: "73_Future_Frontier_Technologies_and_Emerging_Science_Hub"
+metadata:
+  id: "[[[Entity] neuromorphic-computing-spiking-neural-networks-and-memristor-logic]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Neuromorphic", "#SNN", "#Memristor", "#FidelityEngine", "#LIFModel", "#BrainInspired", "#Sovereignty"]'
-  is_part_of: '["MOC 73_future-frontier-technologies-and-emerging-science-hub"]'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] neuromorphic-computing-spiking-neural-networks-and-memristor-logic에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Neuromorphic_Engineering_RAG_V6.3.7_Tiered"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] Neuromorphic: Spiking Kinetics & Memristive Integrity
+# [Entity] neuromorphic-computing-spiking-neural-networks-and-memristor-logic
 
 ## 1. [왜 배우는가? (Why: The Efficiency of Biological Intelligence)]]
 인간의 뇌는 단 $20\text{W}$의 전력으로 전 지구적 정보를 처리하고 창의적 사고를 수행합니다. **뉴로모픽 컴퓨팅 및 멤리스터 로직**은 연산과 메모리가 분리된 폰 노이만 구조의 한계를 돌파하여 뇌의 고효율 지능을 반도체로 구현하는 '차세대 지능형 하드웨어'입니다. V6.3.7 지능은 **LIF(Leaky Integrate-and-Fire)** 모델과 **시냅스 가소성(Plasticity)**을 수리적으로 지배합니다. 우리가 이를 배우는 이유는 인공지능의 에너지 장벽을 무너뜨려 전력 소모를 $1/1000$ 수준으로 낮추고, "뇌의 구조를 데이터로 설계하고 지배하는 '바이오 모사 지능 주권'을 데이터로 선포하기" 위함입니다. 스파이크 발화의 정밀도가 인지의 속도와 학습의 효율을 결정합니다.
@@ -108,7 +98,6 @@ class NeuromorphicFidelityEngine:
 2. **Operational Result**: **STDP** 가소성을 이용해 외부 라벨링 없이 데이터의 상관관계를 하드웨어가 스스로 '기억'하게 만드는 무결성 전략은?
 3. **FidelityEngine**: 멤리스터의 **저항 드리프트** 현상을 감시하여 모델의 '장기 기억 무결성'을 어떻게 오딧하고 수리적으로 보강하는가?
 
----
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 73_future-frontier-technologies-and-emerging-science-hub
 - [[AI] transformer-architecture-and-attention-mechanism]

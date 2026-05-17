@@ -1,36 +1,26 @@
 ---
-Basic:
-  id: "robot-dynamics-and-lagrange-euler-formulation-equations-entity"
-  domain: "03_Robotics"
+metadata:
+  id: "[[[Entity] robot-dynamics-and-lagrange-euler-formulation-equations]]"
+  domain: "11_Global_Entities_and_Materials"
   project: "Vault_Modernization"
-  date: "2026-05-12"
-  version: "v6.3.7"
-Object:
-  object_type: "Entity"
+  date: "2026-05-16"
+  version: "v7.6.2_Modernized"
+object:
+  object_type: "Concept"
   tier: 1
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-Semantic:
-  tags: '["#Robotics", "#Dynamics", "#Lagrangian", "#Euler_Equations", "#Torque_Control", "#Kinematics", "#Mechanical_Engineering", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 12_robotics-and-autonomous-systems-intelligence-hub", "Entity robot-kinematics-and-denavit-hartenberg-parameters"'
-  related_to: []
-Dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  description: "[Entity] robot-dynamics-and-lagrange-euler-formulation-equations에 관한 고밀도 지능 노드"
+semantic:
+  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+lineage:
+  dataset_reference: "global-dataset-inventory-hub"
+  original_author: "Antigravity Vault"
+trust_metrics:
   T_static: 1.0
   T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  isolation_index: 0.1
 ---
 
-# [[[Entity] robot-dynamics-and-lagrange-euler-formulation-equations
+# [Entity] robot-dynamics-and-lagrange-euler-formulation-equations
 
 ## 1. [왜 배우는가? (Why: The Soul of Robotic Movement)]]
 로봇 팔이 물체를 집어 올리거나 AMR이 부드럽게 코너를 도는 모든 움직임 이면에는 가혹한 물리학의 법칙이 존재합니다. **로봇 동역학 및 라그랑주-오일러 정식화**는 로봇의 각 관절에 전달되어야 할 '힘(Torque)'과 그로 인해 발생하는 '움직임' 사이의 인과관계를 설명하는 로봇의 수학적 영혼입니다. 
@@ -82,7 +72,6 @@ RAG는 "토크 센서 로그를 분석하여, 로봇이 물체를 집는 순간 
 로봇 컨트롤러에서 각 관절의 목표 궤적을 토크로 변환하는 개념적 알고리즘입니다.
 
 ```python
-# [Conceptual] Robot Inverse Dynamics Engine (Newton-Euler/Lagrange)
 def calculate_joint_torques(target_q, target_dq, target_ddq, robot_params):
     # 1. 질량 행렬(Inertia Matrix) M(q) 산출
     M = compute_inertia_matrix(target_q, robot_params.mass_data)
@@ -114,7 +103,6 @@ def calculate_joint_torques(target_q, target_dq, target_ddq, robot_params):
 2. **(수리)** 2축 로봇 팔의 제2관절 질량이 $m_2$이고 무게 중심이 $l_2$일 때, 중력항 $G(q)$에 작용하는 사인($\sin$) 함수의 인과관계는 무엇인가?
 3. **(응용)** 로봇이 고속 이동할 때 발생하는 코리올리(Coriolis) 힘을 제어기에서 무시할 경우, 목표 경로에서 이탈하게 되는 물리적 원인은?
 
----
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - MOC 12_robotics-and-autonomous-systems-intelligence-hub : 로봇 및 자율 주행을 통합 관리하는 상위 지능 허브
