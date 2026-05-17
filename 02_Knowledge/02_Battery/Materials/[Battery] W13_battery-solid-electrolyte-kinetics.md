@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W13_battery-solid-electrolyte-kinetics]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Solid-Kinetics-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "b032de2a596e38e8eeb650f80a69ce30ebe64cf2df27ece593a2e4e51226cd42"
 object:
   object_type: "Concept"
   tier: 1
-  description: "고체 격자 내 리튬 이온의 Hopping 메커니즘과 활성화 에너지($E_a$) 제어를 통한 이온 전도 동역학 최적화 지능"
-
+  description: '고체 격자 내 리튬 이온의 Hopping 메커니즘과 활성화 에너지($E_a$) 제어를 통한 이온 전도 동역학 최적화 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "황화물계 고체 전해질의 격자 유연성(Lattice Softness)이 이온 이동 에너지 장벽($E_a$)을 낮추는 수리적 기전은?"
-    - "고체 전해질 내 결함 농도(Vacancy Concentration)와 이온 전도도($\sigma$) 간의 상관관계를 정의하는 Einstein-Smoluchowski 모델은?"
-  tags: ["#고체동역학", "#호핑메커니즘", "#활성화에너지", "#이온전도도", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Ionic Conductivity"
     predicate: "measured_value"
     object: "> 10 mS/cm (Sulfide RT)"
-    evidence: "[Ref: Phys_Log_V7] Section 1"
+    evidence_coordinate: "[Ref: Phys_Log_V7] Section 1"
+    evidence_hash: "b032de2a596e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Jump Frequency"
     predicate: "measured_value"
     object: "10^12 ~ 10^13 Hz"
-    evidence: "[Ref: Lattice_Dynamics] Section 2"
-
+    evidence_coordinate: "[Ref: Lattice_Dynamics] Section 2"
+    evidence_hash: "b032de2a596e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_battery-solid-electrolyte-kinetics
 

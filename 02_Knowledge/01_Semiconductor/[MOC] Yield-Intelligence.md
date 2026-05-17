@@ -1,57 +1,37 @@
 ---
-document_header:
-  metadata:
-    date: "2026-05-14"
-    domain: Semiconductor_Yield_Engineering
-    id: "[moc]-yield-intelligence-v7.5.3"
-    project: Vault_Modernization
-    version: "v7.5.3"
-  lineage:
-    dataset_reference: "DOI:10.1038/yield-intel.2026.v7.5.3"
-    original_author: "Yield_Management_Framework"
-  spo_graph:
-    - subject: "Yield_Intelligence"
-      predicate: "optimizes"
-      object: "Semiconductor_Profitability"
-      evidence: "[Ref: Yield_Mgmt_SOP Section 1]"
-    - subject: "Murphy_Model"
-      predicate: "predicts"
-      object: "Die_Yield"
-      evidence: "[Ref: Murphy_1968 Section 3.1]"
-    - subject: "Commonality_Analysis"
-      predicate: "identifies"
-      object: "Equipment_Anomaly"
-      evidence: "[Ref: SPC_Std Section 3.2]"
-    - subject: "ESC_Failure"
-      predicate: "induces"
-      object: "Bin-7_Defects"
-      evidence: "[Ref: EDS_Log Section 4.1]"
-  trust_metrics:
-    T_static: 1.0
-    T_research: 0.8
-    T_ai: 0.5
-    T_dynamic: 1.0
-    isolation_index: 0.0
-  topology:
-    policy: Interconnected_Cluster
-    status: Ratified_v7.5.3_Final
-  object_definition:
-    description: Standard Industrial Node
-    object_type: MOC
-    tier: 0
-  semantic_layer:
-    is_part_of: Antigravity_Knowledge_Graph
-    related_to: [Semiconductor_Manufacturing, Statistical_Process_Control]
-    tags: [Yield_Intelligence, Precision_Engineering]
-  version_control:
-    status: Hardcore_Fidelity_Upgraded
-  expected_queries:
-    - "Murphy 모델 기반의 칩 면적 증가에 따른 수율 하락률 정량적 예측값은 얼마인가?"
-    - "Bin-7 누설 전류 불량 발생 시 ESC 냉각 불균형과의 상관관계 분석 절차는?"
-    - "Commonality Analysis에서 Chi-square 통계량을 활용한 챔버 국소화 기준 임계치는?"
-    - "Line Yield 98.5% 미만 하락 시 Root Cause 분석을 위한 최우선 데이터 셋은?"
-    - "EDS 로그 기반의 에지 영역 불량 패턴과 에칭 설비 간의 시계열 상관계수는?"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Concept] [MOC] Yield-Intelligence]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "ac1596073d79179e4080cad52d8b668796dc2e43e9938339a18bb674f2f5a1de"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'High-fidelity engineering node: [MOC] Yield-Intelligence.md'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
+  T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # Yield-Intelligence
 

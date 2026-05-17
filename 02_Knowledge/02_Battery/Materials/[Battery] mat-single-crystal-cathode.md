@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] mat-single-crystal-cathode]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Material-Physics-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "5fc451558b50435093dfa68871d89eee3010aa087e38fa87e49a3359f9ee0a1c"
 object:
   object_type: "Concept"
   tier: 1
-  description: "하이니켈 시스템의 $H2 \to H3$ 상전이 응력을 물리적으로 분산시키기 위해 입자 전체를 단일 결정 도메인으로 성장시킨 고밀도 양극재 설계"
-
+  description: '하이니켈 시스템의 $H2 	o H3$ 상전이 응력을 물리적으로 분산시키기 위해 입자 전체를 단일 결정 도메인으로 성장시킨 고밀도 양극재 설계'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "단결정 양극재의 오스발트 숙성(Ostwald Ripening) 메커니즘을 통한 그레인 바운더리 제거 공정은?"
-    - "SOC 80% 이상 구간에서 발생하는 수축 응력을 단결정 구조가 수용하여 전해액 부반응을 억제하는 기전은?"
-  tags: ["#단결정소재", "#NCMA", "#오스발트숙성", "#응력분산", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Fracture Strength"
     predicate: "measured_value"
     object: "> 200 MPa"
-    evidence: "[Ref: V6] Section 1"
+    evidence_coordinate: "[Ref: V6] Section 1"
+    evidence_hash: "5fc451558b50"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Lattice Strain"
     predicate: "measured_value"
     object: "< 2.0 %"
-    evidence: "[Ref: V6] Section 1"
-
+    evidence_coordinate: "[Ref: V6] Section 1"
+    evidence_hash: "5fc451558b50"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] mat-single-crystal-cathode
 

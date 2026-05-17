@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] dikw-pyramid-value-creation]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "배터리 기가팩토리의 비가공 데이터를 산업 지능(Wisdom)으로 승격시켜 수율 및 ROI를 극대화하는 DIKW 가치 사슬 모델"
-semantic:
-  tags: ["#02_Battery", "#Data_Strategy", "#DIKW", "#Gigafactory", "#ROI", "#HDS-Gold"]
+  id: "[[[Battery] dikw-pyramid-value-creation]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-dikw-value-creation-roi-log-v2026"
   original_author: "Antigravity Vault"
+  original_hash: "88efd09fba7cb11b3ae5dd23f7cfb3c2be973e53ce7e3d5f9463715e729d621f"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '배터리 기가팩토리의 비가공 데이터를 산업 지능(Wisdom)으로 승격시켜 수율 및 ROI를 극대화하는 DIKW 가치 사슬 모델'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] dikw-pyramid-value-creation
 

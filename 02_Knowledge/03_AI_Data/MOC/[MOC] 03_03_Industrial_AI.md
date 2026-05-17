@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 03_03_Industrial_AI]]"
-  domain: "AI_Industrial"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "제조, 에너지, 물류 등 산업 현장의 의사결정 최적화 및 자율 제어를 위한 산업용 AI 핵심 노드 거점"
-semantic:
-  tags: ["#AI", "#Industrial_AI", "#Smart_Factory", "#Predictive_Maintenance", "#Digital_Twin", "#MOC"]
+  id: "[[[MOC] 03_03_Industrial_AI]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_Industrial"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "09eb7075ae46c2d909bcefbe79c1f9262c377f83454225e2af7e1cd8b459fd71"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '제조, 에너지, 물류 등 산업 현장의 의사결정 최적화 및 자율 제어를 위한 산업용 AI 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Industrial AI"
     predicate: "optimizes"
     object: "Manufacturing Processes"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "09eb7075ae46"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_03_Industrial_AI
 

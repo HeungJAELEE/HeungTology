@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 03_02_Generative_AI]]"
-  domain: "AI_Generative"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "텍스트, 이미지, 단백질 구조 등 신규 데이터를 생성하는 생성형 AI 핵심 기술 노드 거점"
-semantic:
-  tags: ["#AI", "#Generative_AI", "#LLM", "#Diffusion", "#GAN", "#Multi-modal", "#MOC"]
+  id: "[[[MOC] 03_02_Generative_AI]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_Generative"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "1123dba9bdbce0b23bcbc57109d9440c21a5ca62b7a7efd83264f495872008df"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '텍스트, 이미지, 단백질 구조 등 신규 데이터를 생성하는 생성형 AI 핵심 기술 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Generative AI"
     predicate: "creates"
     object: "Synthetic Content"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "1123dba9bdbc"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_02_Generative_AI
 

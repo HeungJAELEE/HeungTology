@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] electrolyte-salt-precipitation]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Thermal-Stability-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "fc304f4e7c8e5453005c2864f9b9c81eb27f1025e29b80c4594f8e60bcd22e6a"
 object:
   object_type: "Concept"
   tier: 1
-  description: "전해질 시스템 내 화학적 포텐셜($\mu$) 불균형으로 인한 염($LiPF_6$)의 고체 결정 상전이(Salt Precipitation) 및 HF 생성 부식 메커니즘"
-
+  description: '전해질 시스템 내 화학적 포텐셜($\mu$) 불균형으로 인한 염($LiPF_6$)의 고체 결정 상전이(Salt Precipitation) 및 HF 생성 부식 메커니즘'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "온도 하락에 따른 깁스 자유 에너지($\Delta G$) 변화가 염전출 핵생성(Nucleation)을 유도하는 수리적 기전은?"
-    - "왈든의 법칙(Walden's Rule)에 근거하여 전해질 점도 상승이 이온 전도도 급감에 미치는 물리적 상관관계는?"
-  tags: ["#염전출", "#LiPF6", "#왈든의법칙", "#화학적부식", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "LiPF6 Solubility"
     predicate: "measured_value"
     object: "0.4 ~ 1.5 M"
-    evidence: "[Ref: BAT-MAT-SALT-PRECIP-2026-V6] Section 1"
+    evidence_coordinate: "[Ref: BAT-MAT-SALT-PRECIP-2026-V6] Section 1"
+    evidence_hash: "fc304f4e7c8e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Ionic Conductivity"
     predicate: "measured_value"
     object: "1.0 ~ 12.0 mS/cm"
-    evidence: "[Ref: BAT-MAT-SALT-PRECIP-2026-V6] Section 1"
-
+    evidence_coordinate: "[Ref: BAT-MAT-SALT-PRECIP-2026-V6] Section 1"
+    evidence_hash: "fc304f4e7c8e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] electrolyte-salt-precipitation
 

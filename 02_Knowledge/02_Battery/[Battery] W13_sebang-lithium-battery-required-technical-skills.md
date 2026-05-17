@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W13_sebang-lithium-battery-required-technical-skills]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Manufacturing-Intelligence-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "5b7796c94de0688d2dea1d4ebf6d05616298284cf4227cb7a5ed7f3d187d3892"
 object:
   object_type: "Concept"
   tier: 1
-  description: "세방리튬배터리 스마트 팩토리 환경에서 요구되는 데이터 기반 문제 해결 역량 및 핵심 기술 스택 명세"
-
+  description: '세방리튬배터리 스마트 팩토리 환경에서 요구되는 데이터 기반 문제 해결 역량 및 핵심 기술 스택 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "세방리튬배터리 생산 공정의 OEE 85% 이상 유지를 위한 핵심 KPI 관리 방법은?"
-    - "IATF 16949 기준에 따른 공정 능력 지수(Cpk) 1.33 달성을 위한 분석 프로토콜은?"
-  tags: ["#세방리튬배터리", "#기술요구사항", "#OEE", "#Cpk", "#스마트팩토리"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Process Stability (Cpk)"
     predicate: "has_theoretical_limit"
     object: "> 1.33"
-    evidence: "[Ref: IATF 16949] Section 2"
+    evidence_coordinate: "[Ref: IATF 16949] Section 2"
+    evidence_hash: "5b7796c94de0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "OEE Benchmark"
     predicate: "measured_value"
     object: "85% ~ 95%"
-    evidence: "[Ref: Site Standard] Page 1"
-
+    evidence_coordinate: "[Ref: Site Standard] Page 1"
+    evidence_hash: "5b7796c94de0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_sebang-lithium-battery-required-technical-skills
 

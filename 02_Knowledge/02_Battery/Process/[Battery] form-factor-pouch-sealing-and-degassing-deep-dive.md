@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] form-factor-pouch-sealing-and-degassing-deep-dive]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Battery] form-factor-pouch-sealing-and-degassing-deep-dive에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+  id: "[[[Battery] form-factor-pouch-sealing-and-degassing-deep-dive]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "8cb6efdf7f86f73919303b65c01700e6c1295b358cb73d928da4374632f15d1f"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Battery] form-factor-pouch-sealing-and-degassing-deep-dive에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] form-factor-pouch-sealing-and-degassing-deep-dive
 

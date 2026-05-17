@@ -1,56 +1,54 @@
 ---
-meta:
-  id: "llm-agentic-workflow-moc"
-  domain: "03_AI_Data"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Concept] [MOC] LLM_&_Agentic_Workflow]]"
   project: "Vault_Modernization"
-  date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  type: "MOC"
-  tier: 2
-  description: "High-Density Language & Reasoning Intelligence Topology"
-  physical_model: "N/A"
-semantic:
-  tags: ["#MOC", "#LLM", "#NLP", "#Agentic_AI", "#Transformer", "#RAG", "#HDS_Gold_v7.5"]
-  hierarchy:
-    parent: ["MOC AI-Models-Hub", "MOC 03_AI_Data"]
-    relation: "Structural_Integrator"
-  related_nodes: ["MOC Vision_AI_&_CNN"]
-dynamic:
-  status: "Ratified_v7.5.2_Production"
-  topology_policy: "Interconnected_Cluster"
-  fidelity_engine: "DomainFidelityEngine_v7.5"
-  diagnostic_protocols:
-    - protocol: "Standard_Verification"
-      action: "Baseline Parameter Audit"
-    - protocol: "Context_Audit"
-      action: "Topological Integrity Validation"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://vault.antigravity.io/archives/llm-agentic-workflow-moc"
   original_author: "Flash (HDS Gold V6.3.7)"
+  original_hash: "ca4c50452ce53e2193233604c9085a9224463ad02637cc28ab102e0d35aef2b1"
+object:
+  object_type: "Concept"
+  tier: 2
+  description: 'High-Density Language & Reasoning Intelligence Topology'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "LLM_&_Agentic_Workflow"
     predicate: "integrates"
     object: "6_Master_Hubs"
-    evidence: "파편화된 언어 지능 지식을 6개의 고밀도 마스터 허브로 통합하여 SSOT를 구축함."
+    evidence_coordinate: "파편화된 언어 지능 지식을 6개의 고밀도 마스터 허브로 통합하여 SSOT를 구축함."
+    evidence_hash: "ca4c50452ce5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "RAG_System"
     predicate: "employs"
     object: "CoT_Reasoning"
-    evidence: "사용자의 요구사항을 사고의 사슬(Chain-of-Thought)로 분해하여 실행 계획을 수립함."
+    evidence_coordinate: "사용자의 요구사항을 사고의 사슬(Chain-of-Thought)로 분해하여 실행 계획을 수립함."
+    evidence_hash: "ca4c50452ce5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Alignment_Process"
     predicate: "ensures"
     object: "Linguistic_Integrity"
-    evidence: "RLHF, DPO 등을 통해 생성 답변이 인간 선호도 및 보안 정책에 부합하는지 실시간 감리함."
+    evidence_coordinate: "RLHF, DPO 등을 통해 생성 답변이 인간 선호도 및 보안 정책에 부합하는지 실시간 감리함."
+    evidence_hash: "ca4c50452ce5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
-audit:
-  upgrade_engine: "Antigravity V7.5.2 - Hardcore Fidelity Healer"
-  integrity_check: "PASSED"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # LLM_&_Agentic_Workflow
 

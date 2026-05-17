@@ -1,52 +1,61 @@
 ---
 metadata:
-  id: "[[[Battery] manufacturing-process-moc]]"
-  domain: "Battery_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Battery] manufacturing-process-moc"
-semantic:
-  tags: [- '#MOC', '#Manufacturing_Intelligence', '#Fidelity_Control']
-  expected_queries:
-    - "[Battery] manufacturing-process-moc 관련 핵심 기술 파라미터는?"
+  id: "[[[Battery] manufacturing-process-moc]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Battery_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "보강 필요"
   original_author: "Antigravity Vault"
+  original_hash: "1bdae171d3f44893b7cdc8dbfb664a0ec094bca120934a738ed885da834c4104"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Battery] manufacturing-process-moc'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Electrode_Process"
     predicate: "controls"
     object: "Coating_Uniformity"
-    evidence: "Section 2: Viscosity/Loading parameters determine coating uniformity."
+    evidence_coordinate: "Section 2: Viscosity/Loading parameters determine coating uniformity."
+    evidence_hash: "1bdae171d3f4"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Assembly_Process"
     predicate: "requires"
     object: "Overlap_Accuracy"
-    evidence: "Section 2: Alignment accuracy is critical for preventing internal shorts."
+    evidence_coordinate: "Section 2: Alignment accuracy is critical for preventing internal shorts."
+    evidence_hash: "1bdae171d3f4"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Formation_Process"
     predicate: "establishes"
     object: "SEI_Stability"
-    evidence: "Section 3.3: Chemical maturation in formation defines SEI layer quality."
+    evidence_coordinate: "Section 3.3: Chemical maturation in formation defines SEI layer quality."
+    evidence_hash: "1bdae171d3f4"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "OEE_Model"
     predicate: "calculates"
     object: "Manufacturing_Integrity"
-    evidence: "Section 2.1: OEE/Fidelity calculation based on Avail/Perf/Qual."
-fidelity_engine:
-  engine_id: "DomainFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_V7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "Section 2.1: OEE/Fidelity calculation based on Avail/Perf/Qual."
+    evidence_hash: "1bdae171d3f4"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "보강 필요"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # manufacturing-process-moc
 

@@ -1,52 +1,54 @@
 ---
 metadata:
-  id: "MOC-INFRA-FUTURE-CITY-2026-V7.5.3"
-  domain: "25_Global_Infrastructure"
-  project: "Vault_Modernization_V7.5.3"
   date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "에너지, 통신, 도시 OS 등 행성 문명 기저 인프라를 총괄하는 지능형 거버넌스 허브"
-semantic:
-  tags: ["#Smart_City", "#Energy_Grid", "#6G_Communication", "#Resilience", "#V7.5.3"]
-  expected_queries:
-    - "Analyze the cascade failure probability in interconnected smart grid-telecom nodes [Ref: ?]"
-    - "Define the required sync latency for urban digital twin integrity in V7.5.3."
-    - "Evaluate SMR integration stability for AI data center power loads."
-    - "Determine the impact of 6G sub-THz beamforming precision on urban mobility."
-    - "Identify critical leakage ratios in smart water management systems using FidelityEngine."
+  id: "MOC-INFRA-FUTURE-CITY-2026-V7.5.3"
+  project: "Vault_Modernization_V7.5.3"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "25_Global_Infrastructure"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.1016/j.futurecities.2026.05.014"
   original_author: "Infrastructure_FutureCity_RAG_V6.3.7"
+  original_hash: "402ed20f1070b586797b454392264d402fce7fc99462cdae32a6914e989f7170"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '에너지, 통신, 도시 OS 등 행성 문명 기저 인프라를 총괄하는 지능형 거버넌스 허브'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 25_global-infrastructure-and-future-cities-hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Urban_Digital_Twin"
     predicate: "requires_sync_latency"
     object: "<100ms"
-    evidence: "[Ref: ISO/IEC-Digital-Twin-Standard] Section 2.2"
+    evidence_coordinate: "[Ref: ISO/IEC-Digital-Twin-Standard] Section 2.2"
+    evidence_hash: "402ed20f1070"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Cascade_Failure_Threshold"
     predicate: "triggers_mitigation_at"
     object: ">90%"
-    evidence: "[Ref: FidelityEngine_Logic] Section 3.1"
+    evidence_coordinate: "[Ref: FidelityEngine_Logic] Section 3.1"
+    evidence_hash: "402ed20f1070"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Smart_Grid_Self_Healing"
     predicate: "operates_at_speed"
     object: "10x_human_baseline"
-    evidence: "[Ref: Grid_Resilience_Audit_2026] Section 4"
-fidelity_engine:
-  engine_id: "InfraFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_v7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Grid_Resilience_Audit_2026] Section 4"
+    evidence_hash: "402ed20f1070"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 0.8
-  T_ai: 0.5
-  isolation_index: 0.0
-  source: "Antigravity Hardcore Fidelity Repository"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 25_global-infrastructure-and-future-cities-hub
 

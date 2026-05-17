@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] conductive-additives-carbon-black-cnt-graphene]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Additive-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "2195d6e5c6fcce4055b4fcc611262ee2b69a729b362dea859cb86801f438658b"
 object:
   object_type: "Concept"
   tier: 1
-  description: "활물질의 저전도성을 보완하기 위한 전자 전송 네트워크(ETN) 구축 및 퍼콜레이션 임계점 최적화 설계"
-
+  description: '활물질의 저전도성을 보완하기 위한 전자 전송 네트워크(ETN) 구축 및 퍼콜레이션 임계점 최적화 설계'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "1D 구조인 CNT가 0D인 Carbon Black 대비 낮은 농도에서 퍼콜레이션 임계점($\phi_c$)에 도달하는 수리적 근거는?"
-    - "실리콘 음극의 부피 팽창 환경에서 SWCNT의 Mechanical Bridge 역할이 전기적 연속성을 유지하는 기전은?"
-  tags: ["#도전재", "#CNT", "#그래핀", "#퍼콜레이션", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "CNT Percolation"
     predicate: "measured_value"
     object: "0.1 ~ 1.5 wt%"
-    evidence: "[Ref: CNT_Res_2024] Section 1"
+    evidence_coordinate: "[Ref: CNT_Res_2024] Section 1"
+    evidence_hash: "2195d6e5c6fc"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "SWCNT Strain"
     predicate: "measured_value"
     object: "300 %"
-    evidence: "[Ref: Si_Anode_Spec] Section 2"
-
+    evidence_coordinate: "[Ref: Si_Anode_Spec] Section 2"
+    evidence_hash: "2195d6e5c6fc"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] conductive-additives-carbon-black-cnt-graphene
 

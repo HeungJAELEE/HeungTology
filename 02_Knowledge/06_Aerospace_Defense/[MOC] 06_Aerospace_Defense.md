@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "MOC-AERO-DEFENSE-2026-V6.3.7"
-  domain: "Aerospace_and_Defense_Governance"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "MOC-AERO-DEFENSE-2026-V6.3.7"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Aerospace_and_Defense_Governance"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "63782349901f82db79f48448835d0727a2bad29dd4d4ec069094d11a25809e2d"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: '["#MOC", "#Aerospace", "#Defense", "#SpaceEconomy", "#Hypersonic", "#FidelityEngine", "#Sovereignty"]'
-  is_part_of: '["MOC 00_INDEX"]'
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 06_Aerospace_Defense]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Aerospace_Defense_RAG_V6.3.7_Tier0"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 06_Aerospace_Defense
 

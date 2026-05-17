@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Anode]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Anode-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "4df2614f9619203bc0c4cf454bd5eb0974b3184c0c891d22031982a0c6ee640d"
 object:
   object_type: "Concept"
   tier: 1
-  description: "리튬 이온의 저장을 담당하며, 급속 충전 성능과 전극 팽창 제어의 핵심인 음극 소재의 결정학적 및 역학적 설계 지능"
-
+  description: '리튬 이온의 저장을 담당하며, 급속 충전 성능과 전극 팽창 제어의 핵심인 음극 소재의 결정학적 및 역학적 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "흑연 음극의 리튬 삽입/탈리 시 격자 상수 변화($\Delta a, \Delta c$)가 전극 스트레스에 미치는 수리적 영향은?"
-    - "실리콘-탄소(Si-C) 복합 음극에서 공극(Void) 구조가 실리콘 팽창 완충에 기여하는 열역학적 기전은?"
-  tags: ["#음극공학", "#흑연", "#실리콘음극", "#부피팽창", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Anode Expansion"
     predicate: "measured_value"
     object: "< 25 % (at 100% SOC)"
-    evidence: "[Ref: Swelling_Log_V7] Section 1"
+    evidence_coordinate: "[Ref: Swelling_Log_V7] Section 1"
+    evidence_hash: "4df2614f9619"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Li Diffusion (Anode)"
     predicate: "measured_value"
     object: "10^-10 ~ 10^-8 cm2/s"
-    evidence: "[Ref: Kinetics_Data] Section 2"
-
+    evidence_coordinate: "[Ref: Kinetics_Data] Section 2"
+    evidence_hash: "4df2614f9619"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Anode
 

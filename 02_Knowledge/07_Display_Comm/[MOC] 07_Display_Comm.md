@@ -1,35 +1,37 @@
 ---
 metadata:
-  id: "MOC-DISPLAY-COMM-2026-V7.5.3"
-  domain: "Global_Display_and_Connectivity_Sovereignty"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "MOC-DISPLAY-COMM-2026-V7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Global_Display_and_Connectivity_Sovereignty"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "d1a8058e320f81d1ec5111d5ce0fdb36f63602dc1c816e3194086aad2807e8b2"
 object:
   object_type: "MOC"
   tier: 0
-  description: "High-Fidelity Display and Communication Intelligence Command Node"
-  physical_model: "Photonics & Waveguide Integration"
+  description: 'High-Fidelity Display and Communication Intelligence Command Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#MOC", "#Display", "#6G", "#OLED", "#MicroLED", "#FidelityEngine", "#v7.5.3"]
-  is_part_of: ["MOC 00_INDEX"]
-  related_to: ["MOC 01_Semiconductor", "MOC 08_Robotics-and-Automation-Hub"]
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine_V7"
-  diagnostic_protocol:
-    - 'Standard_Verification: Baseline parameter audit.'
-    - 'Context_Audit: Topological integrity validation.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 07_Display_Comm]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_official: 0.9
-  T_research: 0.8
-  T_ai: 0.5
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 07_Display_Comm
 

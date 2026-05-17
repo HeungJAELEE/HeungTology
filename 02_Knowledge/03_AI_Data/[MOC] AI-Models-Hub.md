@@ -1,49 +1,37 @@
 ---
-layer_1_metadata:
-  id: "[[[MOC] AI-Models-Hub"
-  domain: "03_AI_Data"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Concept] [MOC] AI-Models-Hub]]"
   project: "Vault_Modernization"
-  date: "2026-05-14"
-  version: "v7.5.3"
-layer_2_object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-layer_3_semantic:
-  tags: ["#MOC", "#AI_Models", "#Deep_Learning", "#Machine_Learning", "#RAG", "#Industrial_AI"]
-  is_part_of: "MOC Data-Science-Hub"
-  relation_type: "Hierarchical_Root"
-layer_4_dynamic:
-  status: "Ratified_v7.5.2_Production"
-  topology_policy: "Interconnected_Cluster"
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol: ["Standard_Verification", "Context_Audit"]
-layer_5_lineage:
-  original_author: "Flash"
-  dataset_reference: "Antigravity_HDS_Gold_v6.3.7_Vault"
-layer_6_spo_graph:
-  - S: "AI-Models-Hub"
-    P: "governs"
-    O: "AI/ML_Conceptual_Nodes"
-    evidence: "AI/ML 개념 및 산업 지능 노드들을 총괄하는 최상위 허브입니다."
-  - S: "NLP_Substrate"
-    P: "establishes"
-    O: "8_Master_Nodes"
-    evidence: "NLP & Transformer Substrate 현대화를 통해 8개의 강력한 '마스터 노드' 체계가 확립되었습니다."
-  - S: "Modernization_Project"
-    P: "completed"
-    O: "240_Nodes"
-    evidence: "핵심 AI/ML 및 산업 지능 노드 240개가... 현대화되었습니다."
-layer_7_trust:
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "45f6968002b86924f1c54f6a9b4a83381d45f37c1350cd667bceb7dffc2b55a9"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'High-fidelity engineering node: [MOC] AI-Models-Hub.md'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
-layer_8_integrity:
-  checksum: "SHA-256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 # [[[MOC] AI-Models-Hub
 
 Functional hub for high-density AI/ML conceptual and industrial intelligence nodes. This node aggregates standardized architectures through the Antigravity HDS-Gold modernization protocol, establishing an 8-layer master node hierarchy for NLP and Transformer substrates.

@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] btms-battery-thermal-management-system]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Thermal-Systems-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "75c48310f581586ce61688458961635b84ee4f7f0ff409baeeb5d91d7925fbb6"
 object:
   object_type: "Concept"
   tier: 1
-  description: "배터리 팩의 최적 작동 온도 영역($25\sim35^{\circ}\text{C}$)을 유지하여 열역학적 평형을 제어하고 열폭주 리스크를 차단하기 위한 열관리 시스템 마스터 가이드"
-
+  description: '배터리 팩의 최적 작동 온도 영역($25\sim35^{\circ}\text{C}$)을 유지하여 열역학적 평형을 제어하고 열폭주 리스크를 차단하기 위한 열관리 시스템 마스터 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "BTMS 유동 채널 내 압력 강하($\Delta P$)와 대류 열전달 계수($h$) 간의 수리적 트레이드오프 분석 방법은?"
-    - "엔트로피 변화($I T dS/dT$) 기여도를 고려한 고출력 방전 시의 사전 냉각(Pre-cooling) 부하 예측 전략은?"
-  tags: ["#BTMS마스터", "#열역학제어", "#대류열전달", "#압력강하", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Heat Flux"
     predicate: "measured_value"
     object: "> 500 W/m2"
-    evidence: "[Ref: Field-Test] Section 1"
+    evidence_coordinate: "[Ref: Field-Test] Section 1"
+    evidence_hash: "75c48310f581"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Pressure Drop"
     predicate: "has_theoretical_limit"
     object: "< 30 kPa"
-    evidence: "[Ref: Validation] Section 2"
-
+    evidence_coordinate: "[Ref: Validation] Section 2"
+    evidence_hash: "75c48310f581"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] btms-battery-thermal-management-system
 

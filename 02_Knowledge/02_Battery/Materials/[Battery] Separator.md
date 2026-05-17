@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Separator]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Separator-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "6adb9060a56e90195587ca1dc3a6e8bf853e758091a7568937e9f3da94700d4e"
 object:
   object_type: "Concept"
   tier: 1
-  description: "양극과 음극 사이의 물리적 절연을 보장하고, 이상 발열 시 기공 폐쇄(Shutdown)를 통해 열폭주 전이를 차단하는 안전 인프라 설계 지능"
-
+  description: '양극과 음극 사이의 물리적 절연을 보장하고, 이상 발열 시 기공 폐쇄(Shutdown)를 통해 열폭주 전이를 차단하는 안전 인프라 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "분리막의 굴곡도(Tortuosity)와 기공률($\epsilon$)이 걸리 값(Gurley Value) 및 이온 저항에 미치는 수리적 상관관계는?"
-    - "세라믹 코팅층(CCS)이 분리막의 열 수축률을 억제하여 고온 멜트다운(Meltdown) 온도를 상향시키는 물리적 기전은?"
-  tags: ["#분리막공학", "#셧다운", "#멜트다운", "#걸리값", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Separator Thickness"
     predicate: "measured_value"
     object: "5 ~ 15 um"
-    evidence: "[Ref: Film_Spec_V7] Section 1"
+    evidence_coordinate: "[Ref: Film_Spec_V7] Section 1"
+    evidence_hash: "6adb9060a56e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Shutdown Temp"
     predicate: "measured_value"
     object: "130 ~ 135 C"
-    evidence: "[Ref: Thermal_Log_V7] Section 2"
-
+    evidence_coordinate: "[Ref: Thermal_Log_V7] Section 2"
+    evidence_hash: "6adb9060a56e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Separator
 

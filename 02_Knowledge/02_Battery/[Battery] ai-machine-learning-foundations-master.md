@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] ai-machine-learning-foundations-master]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Data-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "9b64e4d55387f1d7cedc387ba1939145b7cae0d3504b9c139b495f50cd7f6a52"
 object:
   object_type: "Concept"
   tier: 1
-  description: "딥러닝의 블랙박스 특성을 정량적 제어 영역으로 전이하기 위한 기계 학습의 수학적/통계적 기초 및 결정 경계 수립 가이드"
-
+  description: '딥러닝의 블랙박스 특성을 정량적 제어 영역으로 전이하기 위한 기계 학습의 수학적/통계적 기초 및 결정 경계 수립 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "모델 오차(Error)를 Bias^2 + Variance + Irreducible Error로 분해하여 최적 복잡도를 산출하는 방법은?"
-    - "경험적 위험 최소화(ERM)와 모델 복잡도(VC Dimension) 간의 트레이드오프를 통한 일반화 성능 극대화 전략은?"
-  tags: ["#머신러닝기초", "#Bias-Variance", "#SRM", "#차원의저주", "#일반화"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Bias-Variance Trade-off"
     predicate: "optimized_at"
     object: "Minimum Total Error"
-    evidence: "[Ref: ML-SEC-4.1] Section 4.1"
+    evidence_coordinate: "[Ref: ML-SEC-4.1] Section 4.1"
+    evidence_hash: "9b64e4d55387"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Generalization Gap"
     predicate: "measured_value"
     object: "< 0.15"
-    evidence: "[Ref: ML-SEC-5.1] Page 1"
-
+    evidence_coordinate: "[Ref: ML-SEC-5.1] Page 1"
+    evidence_hash: "9b64e4d55387"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] ai-machine-learning-foundations-master
 

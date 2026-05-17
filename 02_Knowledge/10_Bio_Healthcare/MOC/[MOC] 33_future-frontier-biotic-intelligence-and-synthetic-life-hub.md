@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 33_future-frontier-biotic-intelligence-and-synthetic-life-hub]]"
-  domain: "Future_Bio_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "인공 생명, 뇌-컴퓨터 인터페이스(BCI), 뉴로모픽 지능 및 미래 생체 공학 핵심 노드 거점"
-semantic:
-  tags: ["#Future_Bio", "#Synthetic_Life", "#BCI", "#Neuromorphic", "#AI_Ethics", "#MOC"]
+  id: "[[[MOC] 33_future-frontier-biotic-intelligence-and-synthetic-life-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Future_Bio_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "c38a6f6b9e05c0614acb5cea210e03a9f36f447c45bb79284b5a52895c34ac19"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '인공 생명, 뇌-컴퓨터 인터페이스(BCI), 뉴로모픽 지능 및 미래 생체 공학 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Biotic Intelligence"
     predicate: "merges_with"
     object: "Artificial Intelligence"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "c38a6f6b9e05"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 33_future-frontier-biotic-intelligence-and-synthetic-life-hub
 

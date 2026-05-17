@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] Battery-Management-System-BMS-and-Safety-Intelligence]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "배터리 시스템의 안전 무결성을 지키고 SoC/SoH 추정 오차를 제어하며 열폭주 전조를 진단하는 실시간 BMS 안전 제어 체계"
-semantic:
-  tags: ["#BMS", "#안전지능", "#SoC", "#SoH", "#열폭주방지", "#칼만필터", "#HDS-Gold"]
+  id: "[[[Battery] Battery-Management-System-BMS-and-Safety-Intelligence]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-bms-safety-and-state-estimation-log-v2026"
   original_author: "Antigravity Vault / Battery Intelligence Group"
+  original_hash: "d387e14981d132b1e9fe717fc31c558e394448f84c39b041f58594187633ce9d"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '배터리 시스템의 안전 무결성을 지키고 SoC/SoH 추정 오차를 제어하며 열폭주 전조를 진단하는 실시간 BMS 안전 제어 체계'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Battery-Management-System-BMS-and-Safety-Intelligence
 

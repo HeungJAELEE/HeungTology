@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] self-healing-material-ai]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Self-Healing-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "080a2cfe5033ff320977fdad3376630bbc0c72041cae16d5c8761d6b1c43eb51"
 object:
   object_type: "Concept"
   tier: 1
-  description: "실리콘 음극의 부피 팽창으로 인한 물리적 균열을 가역적 화학 결합을 통해 실시간 수복하고 전기적 접촉을 유지하는 자가 치유 소재 설계 지능"
-
+  description: '실리콘 음극의 부피 팽창으로 인한 물리적 균열을 가역적 화학 결합을 통해 실시간 수복하고 전기적 접촉을 유지하는 자가 치유 소재 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "Diels-Alder $[4+2]$ 사이클로부가 반응을 활용한 가역적 공유 결합이 전극의 기계적 강도를 복구하는 열역학적 기전은?"
-    - "WLF(Williams-Landel-Ferry) 방정식을 적용하여 유리전이온도($T_g$) 부근에서 자가 치유 고분자의 사슬 이동성을 최적화하는 방법은?"
-  tags: ["#셀프힐링", "#자가치유소재", "#가역결합", "#실리콘응력제어", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Strength Recovery"
     predicate: "measured_value"
     object: "> 90 %"
-    evidence: "[Ref: Healing_Log_V7] Section 1"
+    evidence_coordinate: "[Ref: Healing_Log_V7] Section 1"
+    evidence_hash: "080a2cfe5033"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Healing Time"
     predicate: "measured_value"
     object: "< 24 h"
-    evidence: "[Ref: Kinetic_Spec] Section 2"
-
+    evidence_coordinate: "[Ref: Kinetic_Spec] Section 2"
+    evidence_hash: "080a2cfe5033"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] self-healing-material-ai
 

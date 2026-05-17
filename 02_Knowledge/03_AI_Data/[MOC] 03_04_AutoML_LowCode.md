@@ -1,47 +1,37 @@
 ---
 metadata:
-  id: "[moc]-03_04_automl_lowcode-v7.5.2"
-  version: "v7.5.3"
   date: "2026-05-14"
+  id: "[moc]-03_04_automl_lowcode-v7.5.2"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.vault.ai/engineering/democratization-roadmap-v6.3.7"
   original_author: "Vault_Modernization_Engineering_Team"
+  original_hash: "e7df40d449825562be5082da52ba0a2e66548e6991fef8a5fffc2b5aa3a0d482"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node for AI Engineering Optimization"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node for AI Engineering Optimization'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags:
-    - "AutoML"
-    - "Low-Code"
-    - "AI_Democratization"
-  is_part_of:
-    - "Antigravity_Knowledge_Graph"
-  related_to:
-    - "Bayesian_Optimization"
-    - "NAS"
-dynamic:
-  status: "Ratified_v7.5.2_Upgraded"
-  topology_policy: "Interconnected_Cluster"
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - "Standard_Verification: Baseline parameter audit."
-    - "Context_Audit: Topological integrity check."
-spog_graph:
-  - triple: ["AutoML", "facilitates", "AI_Democratization"]
-    evidence: "AutoML 및 로우코드는 AI 기술의 진입 장벽을 낮추어... AI 민주화 기술이다."
-  - triple: ["AutoML", "reduces", "Development_Latency"]
-    evidence: "Model Build Time < 2hr (90% reduction)."
-  - triple: ["Bayesian_Optimization", "optimizes", "Hyperparameters"]
-    evidence: "이전의 탐색 결과(Y)를 바탕으로 목적 함수(f)의 확률 모델을 구축..."
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "AI_Democratization_Roadmap"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 # [[[MOC] 03_04_AutoML_LowCode
 
 ## 1. [Definition] AutoML 및 Low-Code의 공학적 의의

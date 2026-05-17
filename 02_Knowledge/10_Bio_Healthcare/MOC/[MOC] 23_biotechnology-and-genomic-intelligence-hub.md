@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 23_biotechnology-and-genomic-intelligence-hub]]"
-  domain: "Bio_Genomics"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "바이오 기술, 유전체 분석, 합성 생물학 및 AI 기반 신약 개발 핵심 노드 거점"
-semantic:
-  tags: ["#Bio", "#Genomics", "#Synthetic_Biology", "#AlphaFold", "#Drug_Discovery", "#BioAI", "#MOC"]
+  id: "[[[MOC] 23_biotechnology-and-genomic-intelligence-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Bio_Genomics"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "640d3d1fcd8d3a6c4eb15f50a95e1e82cc217ebc35788388392c217a178b207a"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '바이오 기술, 유전체 분석, 합성 생물학 및 AI 기반 신약 개발 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Biotechnology"
     predicate: "integrates"
     object: "AI Intelligence"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "640d3d1fcd8d"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 23_biotechnology-and-genomic-intelligence-hub
 

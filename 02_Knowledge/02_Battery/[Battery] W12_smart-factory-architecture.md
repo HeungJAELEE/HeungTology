@@ -1,27 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] W12_smart-factory-architecture]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "ISA-95 수직 통합 모델과 TSN(Time Sensitive Networking) 기반의 고신뢰성 초저지연 배터리 자율 제조 스마트 팩토리 아키텍처 설계 명세"
-semantic:
-  expected_queries:
-    - "스마트 팩토리 L1(PLC)과 L3(MES) 간의 TSN 시간 동기화 오차 임계치는?"
-    - "OEE(설비 종합 효율) 89.2% 달성을 위한 실시간 데이터 병목 구간 식별 방법은?"
-  tags: ["#스마트팩토리", "#ISA-95", "#TSN", "#OEE", "#자율제조", "#HDS-Gold"]
+  id: "[[[Battery] W12_smart-factory-architecture]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-smart-factory-oee-log-v2026"
   original_author: "Antigravity Vault / Manufacturing-System-Team"
+  original_hash: "68848ebf970ec8190f3bbab15f191c522f2a3d023c36c2c9f995fd014c18febf"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'ISA-95 수직 통합 모델과 TSN(Time Sensitive Networking) 기반의 고신뢰성 초저지연 배터리 자율 제조 스마트 팩토리 아키텍처 설계 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # W12_smart-factory-architecture
 

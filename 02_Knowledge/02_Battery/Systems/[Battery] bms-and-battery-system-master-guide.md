@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] bms-and-battery-system-master-guide]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Systems-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "efa6b8ddf5ab705460d99e26a564272b3cc72451a27a47df200ddb7cf6d9454a"
 object:
   object_type: "Concept"
   tier: 1
-  description: "대규모 전기화학 어레이의 상태를 수리적으로 추적/제어하고 시스템 수준의 안전 무결성을 확보하기 위한 통합 시스템 마스터 가이드"
-
+  description: '대규모 전기화학 어레이의 상태를 수리적으로 추적/제어하고 시스템 수준의 안전 무결성을 확보하기 위한 통합 시스템 마스터 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "배터리 팩 내부의 열폭주 전이(Thermal Propagation)를 차단하기 위한 결정론적 통제 메커니즘은?"
-    - "EKF 기반 상태 추정 무결성을 확보하기 위한 FidelityEngine 진단 프로토콜 요건은?"
-  tags: ["#시스템통합", "#BMS", "#열폭주차단", "#시스템무결성", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SoC Accuracy"
     predicate: "measured_value"
     object: "0.8 %"
-    evidence: "[Ref: Test-2026] Section 1"
+    evidence_coordinate: "[Ref: Test-2026] Section 1"
+    evidence_hash: "efa6b8ddf5ab"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Thermal Gradient"
     predicate: "has_theoretical_limit"
     object: "< 5 C"
-    evidence: "[Ref: Thermal-Manual] Section 2"
-
+    evidence_coordinate: "[Ref: Thermal-Manual] Section 2"
+    evidence_hash: "efa6b8ddf5ab"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] bms-and-battery-system-master-guide
 

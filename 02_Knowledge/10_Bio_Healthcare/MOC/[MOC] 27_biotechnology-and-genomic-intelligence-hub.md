@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "27_biotechnology-and-genomic-intelligence-hub-moc"
-  domain: "27_Biotechnology_and_Genomic_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "27_biotechnology-and-genomic-intelligence-hub-moc"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "27_Biotechnology_and_Genomic_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "118438bdc576c25257da933e8637d40f38d6e66e1449ec0492853abea64d9f5e"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: '["#MOC", "#Biotechnology", "#Genomics", "#AI", "#CRISPR", "#Synthetic_Biology", "#DNA_Computing", "#Bio-Intelligence", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 27_biotechnology-and-genomic-intelligence-hub
 

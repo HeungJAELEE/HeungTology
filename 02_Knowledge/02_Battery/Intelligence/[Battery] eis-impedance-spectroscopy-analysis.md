@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Concept] [Battery] eis-impedance-spectroscopy-analysis]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Concept_Node"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-eis-spectroscopy-log-v2026"
   original_author: "Antigravity Vault"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "c17a75bae95c52b06fdcbf9e3dd6662de9a9c2a62b55e45e3136ac7c511055df"
 object:
   object_type: "Concept"
   tier: 1
-  description: "전기화학 임피던스 분광법(EIS)을 적용하여 배터리 내부 임피던스, 전하 전달 저항, 이온 확산 거동을 개별 주파수 영역에서 분리 진단하는 공학 명세"
-
+  description: '전기화학 임피던스 분광법(EIS)을 적용하여 배터리 내부 임피던스, 전하 전달 저항, 이온 확산 거동을 개별 주파수 영역에서 분리 진단하는 공학 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "EIS 임피던스 분광법에서 Charge Transfer 저항(Rct)과 Warburg 임피던스를 분리하는 방법은?"
-    - "Nyquist Plot에서 반원의 찌그러짐을 보정하기 위한 CPE(상수위상요소) 모델링 기법은?"
-  tags: ["#EIS", "#임피던스", "#Nyquist", "#Warburg", "#CPE", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Randles Circuit Model"
     predicate: "determines_impedance_parameters"
     object: "Rs, Rct, Cdl, Zw"
-    evidence: "[Ref: battery-eis-spectroscopy-log-v2026] Section 3.1"
+    evidence_coordinate: "[Ref: battery-eis-spectroscopy-log-v2026] Section 3.1"
+    evidence_hash: "c17a75bae95c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Kramers-Kronig Relation"
     predicate: "validates_measurement_consistency"
     object: "KK-Error < 0.42%"
-    evidence: "[Ref: battery-eis-spectroscopy-log-v2026] Section 3.2"
-
+    evidence_coordinate: "[Ref: battery-eis-spectroscopy-log-v2026] Section 3.2"
+    evidence_hash: "c17a75bae95c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] eis-impedance-spectroscopy-analysis
 

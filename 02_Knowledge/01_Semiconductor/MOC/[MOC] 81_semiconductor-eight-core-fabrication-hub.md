@@ -2,43 +2,36 @@
 metadata:
   date: "2026-05-14"
   id: "MOC-SEMICON-8-CORE-2026-V7.5.3"
-  version: "v7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.semicon/fab-intelligence-v6.3.7-archived"
   original_author: "Antigravity Industrial Process Engineering Division"
-sp_graph:
-  - subject: "MOC-SEMICON-8-CORE"
-    predicate: "integrates"
-    object: "8-Core Fabrication Pillars"
-    evidence: "[Ref: Section 2]"
-  - subject: "FidelityEngine"
-    predicate: "executes"
-    object: "Process Window Optimization"
-    evidence: "[Ref: Section 4.1]"
-  - subject: "3D Architecture"
-    predicate: "mitigates"
-    object: "Economic Threshold"
-    evidence: "[Ref: Section 4.2]"
+  original_hash: "893b6a275b2f215ddc669a907916a60cbd4235ae6535bad7a57755b7bf8b44ee"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'High-fidelity engineering node: [MOC] 81_semiconductor-eight-core-fabrication-hub.md'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-domain_context:
-  domain: "Semiconductor_Eight_Core_Fabrication_Intelligence"
-  tier: 1
-topology:
-  policy: "Interconnected_Cluster"
-  isolation_index: 0.0
-semantics:
-  tags: ["#MOC", "#Semiconductor", "#Nanofabrication", "#Photolithography", "#Etching", "#Deposition", "#FidelityEngine", "#Sovereignty"]
-  is_part_of: "MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub"
-status:
-  state: "Hardcore_Fidelity_Upgraded"
-  timestamp: "2026-05-14T00:00:00Z"
-expected_queries:
-  - "EUV 노광 공정의 Overlay Error가 2.0nm[Ref: PATTERN_AUDIT_V7]를 초과할 때 Etching Selectivity에 미치는 상관계수는?"
-  - "CMP Slurry Mechanics의 Surface Roughness 0.5nm[Ref: CMP_MECHANICS_MANUAL] 도달 시 수율 저하 임계점 산출 방법은?"
-  - "3D 적층 경로 결정 시 Economic Threshold를 산출하는 비용 함수 모델의 수식은?"
-  - "HBM 패키징 단계에서 Thermal Resistance가 Junction Temperature에 미치는 영향도는?"
-  - "ALD 공정의 Step Coverage 무결성을 검증하기 위한 이론치와 실제 증착 두께의 오차 범위는?"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
+---
+
 
 # [[[MOC] 81_semiconductor-eight-core-fabrication-hub
 

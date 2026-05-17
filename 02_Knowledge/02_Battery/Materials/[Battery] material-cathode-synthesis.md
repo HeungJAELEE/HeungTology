@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] material-cathode-synthesis]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Cathode-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "3a4ce0e840c83627ee3d400cf9c4f26c347478dbc1921230451f3165d8571427"
 object:
   object_type: "Concept"
   tier: 1
-  description: "양극재의 가용 용량과 구조적 안정성을 결정짓는 공침(Co-precipitation) 및 소성(Calcination) 공정의 결정학적 제어 지능"
-
+  description: '양극재의 가용 용량과 구조적 안정성을 결정짓는 공침(Co-precipitation) 및 소성(Calcination) 공정의 결정학적 제어 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "공침 공정에서 CSTR 반응기의 pH 정밀 제어가 전구체의 탭 밀도(Tap Density)에 미치는 수리적 영향은?"
-    - "고온 소성 시 산소 분압($P_{O2}$) 제어를 통해 양이온 혼사(Cation Mixing)를 억제하는 결정학적 메커니즘은?"
-  tags: ["#양극합성", "#공침공정", "#소성공정", "#양이온혼사", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Reaction pH"
     predicate: "measured_value"
     object: "11.5 +/- 0.05"
-    evidence: "[Ref: Co-precip_SOP_02] Section 1"
+    evidence_coordinate: "[Ref: Co-precip_SOP_02] Section 1"
+    evidence_hash: "3a4ce0e840c8"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "XRD Ratio (I003/I104)"
     predicate: "measured_value"
     object: "1.45 +/- 0.05"
-    evidence: "[Ref: NCMA-XRD-Log-v2026] Section 2"
-
+    evidence_coordinate: "[Ref: NCMA-XRD-Log-v2026] Section 2"
+    evidence_hash: "3a4ce0e840c8"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] material-cathode-synthesis
 

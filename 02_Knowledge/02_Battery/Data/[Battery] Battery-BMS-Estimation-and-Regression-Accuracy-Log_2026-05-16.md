@@ -3,45 +3,51 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Intelligence-Audit-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Empirical_Grounding"
-  topology_policy: "Data_Log"
-
+  original_hash: "c23787fcfe3ed5f02413cdec72bd0b10d245cf0746a05c1db9ce28490d26d6c2"
 object:
   object_type: "Data"
   tier: 2
-  description: "2026년 양산형 전기차 BMS에 탑재된 EKF/GPR 하이브리드 알고리즘의 실측 SoC/SoH 추정 정확도 로그"
-
+  description: '2026년 양산형 전기차 BMS에 탑재된 EKF/GPR 하이브리드 알고리즘의 실측 SoC/SoH 추정 정확도 로그'
+measurement:
+  value: 100.0
+  unit: "percent_compliance"
+  precision: 1.0
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "BMS EKF 알고리즘의 실측 SoC 추정 오차(RMSE)와 수렴 시간은?"
-    - "GPR 기반 수명 예측의 MAPE(Mean Absolute Percentage Error) 실측 지표는?"
-  tags: ["#BMS데이터", "#알고리즘성능", "#SoC정밀도", "#EKF", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SoC RMSE"
     predicate: "measured_value"
     object: "0.82 %"
-    evidence: "[Ref: BMS-LOG-2026] Section 1"
+    evidence_coordinate: "[Ref: BMS-LOG-2026] Section 1"
+    evidence_hash: "c23787fcfe3e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Convergence Time"
     predicate: "measured_value"
     object: "8.52 sec"
-    evidence: "[Ref: BMS-LOG-2026] Section 1"
-
+    evidence_coordinate: "[Ref: BMS-LOG-2026] Section 1"
+    evidence_hash: "c23787fcfe3e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16
 

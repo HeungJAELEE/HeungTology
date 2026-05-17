@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Robotics] soft-robotics-and-bio-inspired-actuation-physics]]"
-  domain: "08_Robotics_Automation"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Robotics] soft-robotics-and-bio-inspired-actuation-physics에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#08_Robotics_Automation", "#지능망", "#HDS-Gold"]
+  id: "[[[Robotics] soft-robotics-and-bio-inspired-actuation-physics]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "08_Robotics_Automation"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "72f71bf2f5633ff9b8f1510cf08b684af1966597e99d9ba054564d74bd2799e5"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Robotics] soft-robotics-and-bio-inspired-actuation-physics에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Robotics] soft-robotics-and-bio-inspired-actuation-physics
 

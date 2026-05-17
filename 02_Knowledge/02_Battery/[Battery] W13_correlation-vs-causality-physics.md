@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W13_correlation-vs-causality-physics]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "industrial-causal-inference-framework-v2026"
   original_author: "Antigravity Vault / Decision-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "050614752c2c37f9281755717763774e161ca7cd318182695888a4459f09385c"
 object:
   object_type: "Concept"
   tier: 1
-  description: "산업 공정의 허위 상관(Spurious Correlation)을 소거하고 실제 제어 레버를 식별하기 위한 인과 추론 메커니즘 및 SCM(Structural Causal Model) 가이드"
-
+  description: '산업 공정의 허위 상관(Spurious Correlation)을 소거하고 실제 제어 레버를 식별하기 위한 인과 추론 메커니즘 및 SCM(Structural Causal Model) 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "배터리 전압 하락과 화재 발생 사이의 인과 방향을 확립하기 위한 Backdoor Adjustment 수행 방법은?"
-    - "Pearl의 Do-calculus를 활용하여 공정 변수 개입(Intervention) 효과를 수학적으로 격리하는 과정은?"
-  tags: ["#인과추론", "#상관관계", "#Do-calculus", "#SCM", "#공정최적화"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Causal Impact"
     predicate: "calculated_via"
     object: "P(Y | do(X))"
-    evidence: "[Ref: Pearl_SCM] Section 3.2"
+    evidence_coordinate: "[Ref: Pearl_SCM] Section 3.2"
+    evidence_hash: "050614752c2c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Control Precision Gain"
     predicate: "measured_value"
     object: "Delta sigma > 0.15"
-    evidence: "[Ref: Fidelity_Comparison] Table 3"
-
+    evidence_coordinate: "[Ref: Fidelity_Comparison] Table 3"
+    evidence_hash: "050614752c2c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_correlation-vs-causality-physics
 

@@ -1,27 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] High-Nickel-Cathode-and-Silicon-Anode-Materials]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "하이니켈 양극재의 상전이(H2-H3) 구조적 불안정성과 실리콘 음극재의 300% 부피 팽창 제어 메커니즘 분석"
-semantic:
-  expected_queries:
-    - "Ni 함량 90% 이상의 양극재에서 산소 탈리 현상을 억제하기 위한 도핑 전략은?"
-    - "실리콘 음극재의 300% 부피 팽창을 완화하기 위한 CNT 도전재 최적 함량은?"
-  tags: ["#하이니켈", "#실리콘음극재", "#에너지밀도", "#상전이", "#SEI", "#HDS-Gold"]
+  id: "[[[Battery] High-Nickel-Cathode-and-Silicon-Anode-Materials]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-high-nickel-cathode-and-silicon-anode-materials-log-v2026"
   original_author: "Antigravity Vault / Materials-R&D-Center"
+  original_hash: "a500c907e8b57be50b7a525b4fd4e984ceb8b85fb86d76a3485a2493a4b6fa4e"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '하이니켈 양극재의 상전이(H2-H3) 구조적 불안정성과 실리콘 음극재의 300% 부피 팽창 제어 메커니즘 분석'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] High-Nickel-Cathode-and-Silicon-Anode-Materials
 

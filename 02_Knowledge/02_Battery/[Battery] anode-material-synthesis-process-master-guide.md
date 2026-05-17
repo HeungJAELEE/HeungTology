@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] anode-material-synthesis-process-master-guide]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "anode-material-purity-and-electrochemical-performance-v2026"
   original_author: "Antigravity Vault / Material-Synthesis-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "63d29d96e28f1559f185e83e54d2b841b3619b8f17bac9278f6183f082f47bea"
 object:
   object_type: "Concept"
   tier: 1
-  description: "음극재의 결정성(Crystallinity) 제어 및 실리콘 기반 소재의 부피 팽창 억제를 위한 초고온 소성 및 정밀 표면 개질 공정 마스터 가이드"
-
+  description: '음극재의 결정성(Crystallinity) 제어 및 실리콘 기반 소재의 부피 팽창 억제를 위한 초고온 소성 및 정밀 표면 개질 공정 마스터 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "음극재 흑연화 공정에서 소성 온도가 결정 크기(Lc) 및 리튬 이온 확산 계수에 미치는 영향은?"
-    - "실리콘 음극재의 부피 팽창을 25% 이내로 제어하기 위한 나노 컨파인먼트(Nano-confinement) 설계 임계치는?"
-  tags: ["#음극재합성", "#흑연화", "#실리콘음극", "#부피팽창", "#SEI레이어"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Graphitization Temperature"
     predicate: "has_theoretical_limit"
     object: "2800 ~ 3200 C"
-    evidence: "[Ref: Antigravity Vault] Section 2"
+    evidence_coordinate: "[Ref: Antigravity Vault] Section 2"
+    evidence_hash: "63d29d96e28f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Specific Capacity (Graphite)"
     predicate: "measured_value"
     object: "350 ~ 370 mAh/g"
-    evidence: "[Ref: Antigravity Vault] Section 2"
-
+    evidence_coordinate: "[Ref: Antigravity Vault] Section 2"
+    evidence_hash: "63d29d96e28f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] anode-material-synthesis-process-master-guide
 

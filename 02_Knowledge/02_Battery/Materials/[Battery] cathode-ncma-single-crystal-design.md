@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] cathode-ncma-single-crystal-design]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Material-Standard-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "f81287e4653f32dbd5d4fa6114567e922d8ebd8f553db04d24a81f175effa3b5"
 object:
   object_type: "Concept"
   tier: 1
-  description: "하이니켈 양극재의 $H2 \to H3$ 상전이 응력을 물리적으로 극복하기 위한 입자 구조의 단일 도메인화 및 안정화 설계"
-
+  description: '하이니켈 양극재의 $H2 	o H3$ 상전이 응력을 물리적으로 극복하기 위한 입자 구조의 단일 도메인화 및 안정화 설계'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "단결정 NCMA 설계가 다결정 대비 입자 내 미세 균열(Micro-cracking)을 억제하는 결정학적 메커니즘은?"
-    - "NCMA 단결정 입자의 항복 강도($\sigma_y > 1 \text{ GPa}$)가 전극 압연 공정의 로딩 밀도 향상에 미치는 영향은?"
-  tags: ["#단결정설계", "#NCMA", "#상전이제어", "#항복강도", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Lattice Vol. Change"
     predicate: "measured_value"
     object: "< 5 %"
-    evidence: "[Ref: XRD_Exp] Section 1"
+    evidence_coordinate: "[Ref: XRD_Exp] Section 1"
+    evidence_hash: "f81287e4653f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Fracture Strength"
     predicate: "measured_value"
     object: "> 1 G p a"
-    evidence: "[Ref: Solid_Mech_v26] Section 2"
-
+    evidence_coordinate: "[Ref: Solid_Mech_v26] Section 2"
+    evidence_hash: "f81287e4653f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] cathode-ncma-single-crystal-design
 

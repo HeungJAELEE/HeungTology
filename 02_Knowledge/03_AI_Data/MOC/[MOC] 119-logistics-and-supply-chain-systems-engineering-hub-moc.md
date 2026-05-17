@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "119-logistics-and-supply-chain-systems-engineering-hub-moc"
-  domain: "119_Logistics_and_Supply_Chain_Systems_Engineering_Hub"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "119-logistics-and-supply-chain-systems-engineering-hub-moc"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "119_Logistics_and_Supply_Chain_Systems_Engineering_Hub"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "08c83e359f2f38c318517fc0862dab8f8c2dc2ccbddc6668a9351320b899ad0f"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: '["#MOC", "#Logistics", "#Supply_Chain", "#Optimization", "#Operations_Research", "#Global_Trade", "#SCM", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 119-logistics-and-supply-chain-systems-engineering-hub-moc
 

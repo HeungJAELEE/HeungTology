@@ -1,52 +1,54 @@
 ---
 metadata:
   date: "2026-05-14"
-  domain: "01_Semiconductor"
   id: "[[[MOC] Deposition-Materials-Hub]"
-  version: "v7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "DOI:10.1109/TSM.2026.V7.5.3_SEMICON"
   original_author: "Flash (HDS Gold V6.3.7)"
-  evolution_path: "v6.3.7_Migration -> V7.5.2_Hardcore_Fidelity -> V7.5.3_Hardcore_Fidelity"
-dynamic:
-  diagnostic_protocol: "Standard_Verification_v7.5.3"
-  fidelity_engine: "DomainFidelityEngine_v2.3"
-  topology_policy: "Interconnected_Cluster"
+  original_hash: "f5d444f25cf0e99e996759a3f2cd7a6757b652772ce04f6917a34d79d1ac6a89"
 object:
-  description: "High-Density Semiconductor Deposition Material Intelligence Node"
   object_type: "MOC"
-  tier: "0"
+  tier: 0
+  description: 'High-Density Semiconductor Deposition Material Intelligence Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "Ru/Mo 배선 도입 시 Cu 대비 비저항 감소율 및 Interface Stability 검증 방법은?"
-    - "ALD precursor의 Thermal Window 이탈 시 Nucleation Delay가 Step Coverage에 미치는 영향은?"
-    - "HfO2/ZrO2 적층 구조에서 Crystallization Temp 제어를 통한 Leakage Current 억제 임계치는?"
-    - "Cu 확산 방지를 위한 Barrier Metal의 최소 연속막 두께(Critical Thickness) 산출 근거는?"
-    - "PVD Target의 Oxygen impurity 농도가 Sputtering Yield 및 Film Stress에 미치는 상관관계는?"
-  is_part_of: ["MOC 01_Semiconductor", "MOC Smart-Manufacturing-Hub"]
-  tags: ["#MOC", "#Semiconductor", "#Deposition", "#Materials", "#Precursor", "#Sputtering_Target", "#HDS_Gold_v7.5.3"]
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Deposition Materials"
     predicate: "defines"
     object: "Device Reliability"
-    evidence: "SEMI-Mat.2026 Sec 1.1"
+    evidence_coordinate: "SEMI-Mat.2026 Sec 1.1"
+    evidence_hash: "f5d444f25cf0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "High-k Dielectric"
     predicate: "suppresses"
     object: "Gate Leakage Current"
-    evidence: "IEEE-STD-1140 Sec 3.3"
+    evidence_coordinate: "IEEE-STD-1140 Sec 3.3"
+    evidence_hash: "f5d444f25cf0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Barrier Metals"
     predicate: "prevents"
     object: "Metal Migration"
-    evidence: "SEMI-E47.1 Sec 2.1"
+    evidence_coordinate: "SEMI-E47.1 Sec 2.1"
+    evidence_hash: "f5d444f25cf0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_official: 0.8
-  T_ai: 0.5
-  isolation_index: 0.0
-status:
-  entropy_reduction: "Batch_16.5_Completed"
-  ratification: "V7.5.3_Hardcore_Fidelity_Certified"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [[[MOC] Deposition-Materials-Hub
 

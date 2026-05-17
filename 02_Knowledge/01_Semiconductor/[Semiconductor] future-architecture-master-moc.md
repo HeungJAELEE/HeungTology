@@ -1,40 +1,42 @@
 ---
 metadata:
-  id: "[[[Semiconductor] future-architecture-master-moc]]"
-  domain: "Unknown"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "Engineering_Standard"
-  tier: 1
-  description: "[Semiconductor] future-architecture-master-moc"
-semantic:
-  tags: ["#Unknown"]
-  expected_queries:
-    - "[Semiconductor] future-architecture-master-moc 관련 핵심 기술 파라미터는?"
+  id: "[[[Semiconductor] future-architecture-master-moc]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Unknown"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "보강 필요"
   original_author: "Antigravity Vault"
+  original_hash: "529c018b43f31ce64fbccba0e76e5f3893f516bf83ffb344d93db7c5dd246f67"
+object:
+  object_type: "Engineering_Standard"
+  tier: 1
+  description: '[Semiconductor] future-architecture-master-moc'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "[Semiconductor] future-architecture-master-moc"
     predicate: "belongs_to"
     object: "Unknown"
-    evidence: "[Ref: 보강 필요]"
-fidelity_engine:
-  engine_id: "DomainFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_V7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: 보강 필요]"
+    evidence_hash: "529c018b43f3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "보강 필요"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 date: "2026-05-14"
 domain: 01_Semiconductor

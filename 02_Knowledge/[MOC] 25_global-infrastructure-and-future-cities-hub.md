@@ -1,27 +1,37 @@
 ---
 metadata:
-  id: "[[MOC-INFRA-FUTURE-CITY-2026-V7.5.3]]"
-  domain: "25_global-infrastructure-and-future-cities-hub"
-  project: "Vault_Modernization_High_Fidelity"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "스마트 그리드, 6G 통신망 및 스마트 시티 디지털 트윈의 상호 복원력을 제어하는 지휘소 MOC"
-semantic:
-  expected_queries:
-    - "Calculate the probability of cascade failure across interconnected smart grid and telecom nodes based on the 90% threshold [Ref: FidelityEngine_Resilience_Model]?"
-    - "Analyze the impact of sync latency exceeding 100ms on urban digital twin state consistency [Ref: ISO/IEC-Digital-Twin-Standard]?"
-  tags: ["#MOC", "#Infrastructure", "#Smart_City", "#Energy", "#Communication", "#Resilience", "#HDS-Gold"]
+  id: "[[MOC-INFRA-FUTURE-CITY-2026-V7.5.3]]"
+  project: "Vault_Modernization_High_Fidelity"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "25_global-infrastructure-and-future-cities-hub"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.1016/j.futurecities.2026.05.014"
   original_author: "Infrastructure_FutureCity_RAG_V6.3.7"
+  original_hash: "b1996a57dbaa239d65fd69d7208175a253e0bd59fc0df848e308926d2dce8352"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '스마트 그리드, 6G 통신망 및 스마트 시티 디지털 트윈의 상호 복원력을 제어하는 지휘소 MOC'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] [MOC] 25_global-infrastructure-and-future-cities-hub.md]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 25_global-infrastructure-and-future-cities-hub
 

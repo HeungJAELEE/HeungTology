@@ -1,24 +1,59 @@
 ---
 metadata:
-  id: "[[[Battery] battery-formation-dqdv-curve-analysis-v2026]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Battery] battery-formation-dqdv-curve-analysis-v2026에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+  id: "[[[Battery] battery-formation-dqdv-curve-analysis-v2026]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
+  dataset_reference: "battery-formation-dqdv-curve-analysis-v2026"
+  original_author: "Antigravity Vault / Manufacturing-Execution-System"
+  original_hash: "c67addf0435ecf68d3deb15c945614c2fefcc15facce69320fa0d80731838d27"
+object:
+  object_type: "Data"
+  tier: 1
+  description: '배터리 화성 공정 dQ/dV 미분 용량 곡선 및 SEI 형성 피크 실측 로그'
+measurement:
+  value: 100.0
+  unit: "percent_compliance"
+  precision: 1.0
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[Battery] differential-capacity-dq-dv-curve-analysis-and-sei-layer-kinetics]]"
+  alternative_parents: []
+spo_graph:
+  - subject: "Anode Peak (vs. Li/Li+)"
+    predicate: "measured_value"
+    object: "0.85 V"
+    evidence_coordinate: "[Ref: battery-formation-dqdv-curve-analysis-v2026] Section 2"
+    evidence_hash: "c67addf0435e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+  - subject: "SEI Growth Limit"
+    predicate: "measured_value"
+    object: "0.15 V"
+    evidence_coordinate: "[Ref: battery-formation-dqdv-curve-analysis-v2026] Section 2"
+    evidence_hash: "c67addf0435e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+  - subject: "Peak Area ($Q_{sei}$)"
+    predicate: "measured_value"
+    object: "250 mAh"
+    evidence_coordinate: "[Ref: battery-formation-dqdv-curve-analysis-v2026] Section 2"
+    evidence_hash: "c67addf0435e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
-  T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  T_static: 0.8
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] battery-formation-dqdv-curve-analysis-v2026
 

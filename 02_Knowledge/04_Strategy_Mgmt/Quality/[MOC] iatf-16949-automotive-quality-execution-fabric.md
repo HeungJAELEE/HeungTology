@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "iatf-16949-quality-execution-fabric-moc-v7.5.3"
-  domain: "Industrial_Governance"
-  project: "Antigravity_Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "iatf-16949-quality-execution-fabric-moc-v7.5.3"
+  project: "Antigravity_Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Industrial_Governance"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "2a29327273742ec934583eafba1fffc58ceffe17baa0757bad2ee9f4dde121ed"
 object:
   object_type: "MOC"
   tier: 0
-  description: "자동차 품질 경영 시스템(IATF 16949)의 결정론적 실행 및 감사 준비도 지휘소"
+  description: '자동차 품질 경영 시스템(IATF 16949)의 결정론적 실행 및 감사 준비도 지휘소'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#IATF16949", "#QualityGovernance", "#MOC", "#Automotive", "#AuditReadiness", "#v7.5.3"]
-  is_part_of: ["MOC 04_Strategy_Mgmt"]
-  related_to: ["MOC 09_SmartFactory-Production-Hub"]
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Independent_Organism"
-  graphify_link_external: false
-  fidelity_engine: "FabricFidelityEngine_V7"
-  diagnostic_protocol:
-    - 'Cluster_Integrity_Check: Ensure all IATF procedures are cross-linked within the local domain.'
-    - 'Audit_Readiness_Scan: Verify that all sub-nodes contain Inspector-level audit checklists.'
-    - 'Domain_Isolation_Audit: Ensure zero external links to non-quality domains.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 04_Strategy_Mgmt]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.5
-  source: "IATF 16949:2016 / Antigravity Industrial Governance Standard"
-  isolation_index: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # iatf-16949-automotive-quality-execution-fabric
 

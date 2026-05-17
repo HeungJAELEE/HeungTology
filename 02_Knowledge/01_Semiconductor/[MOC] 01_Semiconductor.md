@@ -1,56 +1,60 @@
 ---
 metadata:
-  id: "MOC-SEMICON-2026-V7.5.3"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization_V7.5.3"
   date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "반도체 소자 물리, 나노 패터닝, 원자층 박막 및 입체 연결 기술을 총괄하는 전역 지능 허브"
-semantic:
-  tags: ["#Semiconductor", "#EUV", "#HBM4", "#HAR_Etch", "#High_NA", "#V7.5.3"]
-  expected_queries:
-    - "What is the impact of High-NA EUV on Angstrom-scale lithography precision?"
-    - "How does hybrid bonding in HBM4 influence thermal resistance in 3D stacking?"
-    - "What are the plasma etching mechanisms required for High-Aspect-Ratio (HAR) structures?"
-    - "How does ALD surface reaction kinetics ensure atomic-layer uniformity?"
-    - "What is the relationship between CMP slurry mechanics and global wafer planarization?"
+  id: "MOC-SEMICON-2026-V7.5.3"
+  project: "Vault_Modernization_V7.5.3"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://vault.antigravity.io/semicon/MOC-2026-V6.3.7"
   original_author: "Antigravity Vault Engineering Team"
+  original_hash: "6d3fbd064bc5f11596e178b7bc767ea50eb51989c6a2eb783d1c31a23d4282dc"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '반도체 소자 물리, 나노 패터닝, 원자층 박막 및 입체 연결 기술을 총괄하는 전역 지능 허브'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Semiconductor"
     predicate: "constitutes"
     object: "Digital_Civilization_Substrate"
-    evidence: "[Ref: AG-SSOT-STD] Section 1"
+    evidence_coordinate: "[Ref: AG-SSOT-STD] Section 1"
+    evidence_hash: "6d3fbd064bc5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "High-NA_EUV"
     predicate: "enables"
     object: "Angstrom_Scale_Fabrication"
-    evidence: "[Ref: P3-A] Section 2"
+    evidence_coordinate: "[Ref: P3-A] Section 2"
+    evidence_hash: "6d3fbd064bc5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "HBM4"
     predicate: "utilizes"
     object: "Hybrid_Bonding_Physics"
-    evidence: "[Ref: B4] Section 2"
+    evidence_coordinate: "[Ref: B4] Section 2"
+    evidence_hash: "6d3fbd064bc5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "V7.5.3_Architecture"
     predicate: "replaces"
     object: "V6.3.7_Legacy_System"
-    evidence: "[Ref: AG-HDS-SPEC] Section 1"
-fidelity_engine:
-  engine_id: "SemiconFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_v7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: AG-HDS-SPEC] Section 1"
+    evidence_hash: "6d3fbd064bc5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "Antigravity Hardcore Fidelity Repository"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 01_Semiconductor
 

@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] silicon-anode-and-cnt]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Nano-Carbon-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "bfcd24f5b816a1a7e515d2c0a7493219cae369fe5bdf606745a7022f74cd4a33"
 object:
   object_type: "Concept"
   tier: 1
-  description: "실리콘의 격심한 부피 팽창($\sim 300\%$) 환경에서도 전기적 네트워크를 유지하기 위해 SWCNT를 활용한 탄성 전도성 브릿지를 구축하는 나노 공학 지능"
-
+  description: '실리콘의 격심한 부피 팽창($\sim 300\%$) 환경에서도 전기적 네트워크를 유지하기 위해 SWCNT를 활용한 탄성 전도성 브릿지를 구축하는 나노 공학 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "SWCNT의 높은 종횡비($L/D > 10,000$)가 실리콘 음극의 퍼콜레이션 임계치($\phi_c$)를 낮추는 수리적 기전은?"
-    - "충/방전 시 실리콘 입자의 파쇄(Pulverization)를 억제하기 위한 SWCNT의 기계적 인장 강도와 바인더 시너지 효과는?"
-  tags: ["#실리콘음극", "#SWCNT", "#퍼콜레이션", "#전도성브릿지", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SWCNT Aspect Ratio"
     predicate: "measured_value"
     object: "> 10,000"
-    evidence: "[Ref: Nano_Spec_V7] Section 1"
+    evidence_coordinate: "[Ref: Nano_Spec_V7] Section 1"
+    evidence_hash: "bfcd24f5b816"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Si Capacity (Theoretical)"
     predicate: "measured_value"
     object: "3,579 mAh/g"
-    evidence: "[Ref: Phys_Data] Section 2"
-
+    evidence_coordinate: "[Ref: Phys_Data] Section 2"
+    evidence_hash: "bfcd24f5b816"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] silicon-anode-and-cnt
 

@@ -1,27 +1,37 @@
 ---
 metadata:
-  id: "[[[MOC] Advanced-Package]]"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "Moore의 법칙 연산 한계 극복을 위한 TSV 및 Cu-to-Cu 하이브리드 본딩 마이크로 접합 후공정 지휘 MOC"
-semantic:
-  expected_queries:
-    - "HBM4 하이브리드 본딩 공정에서 열 응력 분포 모델과 TSV 결함 제어법은?"
-    - "마이크로 범프 본딩과 구리 하이브리드 접합의 Interconnect 밀도 비교 분석"
-  tags: ["#MOC", "#반도체", "#하이브리드본딩", "#TSV", "#HBM4", "#어드밴스드패키징", "#HDS-Gold"]
+  id: "[[[MOC] Advanced-Package]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/semiconductor.roadmap.2026.advanced.pkg"
   original_author: "antigravity_industrial_process_engineer"
+  original_hash: "606763881d5179b20e56f55163f7da08dd64f53de5ce682138c34f9e7d0f1e9f"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: 'Moore의 법칙 연산 한계 극복을 위한 TSV 및 Cu-to-Cu 하이브리드 본딩 마이크로 접합 후공정 지휘 MOC'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [MOC] Advanced-Package
 

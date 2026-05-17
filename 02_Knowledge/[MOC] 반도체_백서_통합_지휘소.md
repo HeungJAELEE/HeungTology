@@ -1,27 +1,37 @@
 ---
 metadata:
-  id: "[[MOC_SEMICON_WHITEPAPER_HUB]]"
-  domain: "01_Semiconductor"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "8대 반도체 단위 공정(노광, 식각, ALD, HBM 패키징)의 전산 지식망을 통합 중계하는 마스터 지휘소 MOC"
-semantic:
-  expected_queries:
-    - "EUV 리소그래피 노드의 실측 펠리클 투과율과 광학 무결성 지표는?"
-    - "HBM4 하이브리드 본딩 공정의 실측 TSV 피치 및 접합 신뢰성 데이터는?"
-  tags: ["#MOC", "#반도체", "#노광공정", "#식각공정", "#ALD공정", "#하이브리드본딩", "#HDS-Gold"]
+  id: "[[MOC_SEMICON_WHITEPAPER_HUB]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://vault.antigravity.io/semicon/MOC_SEMICON_WHITEPAPER_HUB"
   original_author: "Antigravity V6.3.7 Chief Knowledge Architect (Flash)"
+  original_hash: "9c4b832909bc847dea08637bff3c9761e3b65766f1c3bc82d122c00492119b35"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '8대 반도체 단위 공정(노광, 식각, ALD, HBM 패키징)의 전산 지식망을 통합 중계하는 마스터 지휘소 MOC'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] [MOC] 반도체_백서_통합_지휘소.md]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [MOC] 반도체_백서_통합_지휘소
 

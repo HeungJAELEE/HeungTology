@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] battery-management-system-bms-master-guide]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Intelligence-Systems-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "16b14683fcb31e006d626aeb96f7acde28f6058944968b4c98eb55e90e0b1032"
 object:
   object_type: "Concept"
   tier: 1
-  description: "배터리 셀의 전기화학적 비선형성을 디지털 제어 논리로 변환하는 지능형 에너지 거버넌스 및 상태 추정 마스터 가이드"
-
+  description: '배터리 셀의 전기화학적 비선형성을 디지털 제어 논리로 변환하는 지능형 에너지 거버넌스 및 상태 추정 마스터 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "BMS의 SoC 추정 오차를 3% 이내로 제어하기 위한 EKF/OCV 하이브리드 보정 메커니즘은?"
-    - "ISO 26262 ASIL-D 등급의 기능 안전을 충족하기 위한 BMS 하드웨어 리던던시 및 FTTI 요건은?"
-  tags: ["#BMS마스터", "#SoC추정", "#기능안전", "#에너지거버넌스", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SoC Accuracy"
     predicate: "has_theoretical_limit"
     object: "< 3%"
-    evidence: "[Ref: SAE J2929] Section 1"
+    evidence_coordinate: "[Ref: SAE J2929] Section 1"
+    evidence_hash: "16b14683fcb3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Safety Interlock"
     predicate: "measured_value"
     object: "< 10 ms"
-    evidence: "[Ref: ISO 26262] Section 2"
-
+    evidence_coordinate: "[Ref: ISO 26262] Section 2"
+    evidence_hash: "16b14683fcb3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] battery-management-system-bms-master-guide
 

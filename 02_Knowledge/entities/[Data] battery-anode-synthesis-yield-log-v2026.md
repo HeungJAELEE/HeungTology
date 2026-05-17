@@ -1,34 +1,37 @@
 ---
 metadata:
-  date: 2026-05-17
+  date: "2026-05-17"
   id: "[[[Data] battery-anode-synthesis-yield-log-v2026]]"
   project: "Topology_Reinforcement"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "entities"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
   original_author: "Antigravity Vault"
-
-dynamic:
-  diagnostic_protocol:
-    - "Topological_Integrity_Check"
-  status: "Reinforced (Auto-Healed)"
-  topology_policy: "Blueprint"
-
+  original_hash: "1e55bcfd8b963be579f0194b4dfbf42ebe8dd0c750b0ae2acbd5bea7f739762d"
 object:
   object_type: "Concept"
   tier: 2
-  description: "Data battery-anode-synthesis-yield-log-v2026 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
-
+  description: 'Data battery-anode-synthesis-yield-log-v2026 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "Data battery-anode-synthesis-yield-log-v2026 엔티티의 위상적 연결 고리는? [[Data battery-anode-synthesis-yield-log-v2026]]"
-  tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
-
+  is_instance_of: "[[[MOC] entities]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 0.8
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Data] battery-anode-synthesis-yield-log-v2026
 

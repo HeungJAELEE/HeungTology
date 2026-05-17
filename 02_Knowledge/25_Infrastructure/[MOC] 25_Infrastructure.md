@@ -1,35 +1,37 @@
 ---
 metadata:
-  id: "MOC-INFRASTRUCTURE-2026-V7.5.3"
-  domain: "Industrial_and_Urban_Infrastructure"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "MOC-INFRASTRUCTURE-2026-V7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Industrial_and_Urban_Infrastructure"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "6936b85b611f09af197615f99aa46d0849e83ce943315686a56949f32895f84e"
 object:
   object_type: "MOC"
   tier: 0
-  description: "산업 유틸리티, 스마트 그리드, 지능형 교통 및 스마트 시티 통합 인프라 사령부"
-  physical_model: "Fluid Dynamics, Power Engineering & Urban Systems"
+  description: '산업 유틸리티, 스마트 그리드, 지능형 교통 및 스마트 시티 통합 인프라 사령부'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#MOC", "#Infrastructure", "#SmartGrid", "#SmartCity", "#ESS", "#ITS", "#HVDC", "#v7.5.3"]
-  is_part_of: ["MOC 00_INDEX"]
-  related_to: ["MOC 01_Semiconductor", "MOC 02_Battery", "MOC 08_Robotics-and-Automation-Hub"]
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine_V7"
-  diagnostic_protocol:
-    - 'Standard_Verification: Power/Fluid distribution audit.'
-    - 'Context_Audit: Urban data stream integrity validation.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 25_Infrastructure]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_official: 0.9
-  T_infrastructure: 1.0
-  T_ai: 0.5
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 25_Infrastructure
 

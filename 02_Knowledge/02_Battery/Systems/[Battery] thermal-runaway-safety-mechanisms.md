@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] thermal-runaway-safety-mechanisms]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Safety-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "d501c5a56a1f2ec71cb2862de69edf113b71a7e688f1728a358f14a8db9a296c"
 object:
   object_type: "Concept"
   tier: 1
-  description: "단일 셀의 열폭주가 팩 전체로 전이되는 것을 차단하고 승객 보호를 위한 골든 타임($> 5$분)을 확보하기 위한 열적, 기계적 안전 기전 설계 지능"
-
+  description: '단일 셀의 열폭주가 팩 전체로 전이되는 것을 차단하고 승객 보호를 위한 골든 타임($> 5$분)을 확보하기 위한 열적, 기계적 안전 기전 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "열폭주 시 셀 간 열 전이(Propagation) 메커니즘이 전도(Conduction)에서 복사(Radiation)로 전이되는 임계 온도의 수리적 모델은?"
-    - "NFPA 68 표준을 준수하기 위한 배터리 팩 벤트 밸브(Vent Valve)의 방출 압력 설정과 가스 유동 해석 기전은?"
-  tags: ["#열폭주안전", "#열전이차단", "#골든타임", "#벤트밸브", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Propagation Delay"
     predicate: "measured_value"
     object: "> 5.0 min"
-    evidence: "[Ref: UL_9540A_Data] Section 1"
+    evidence_coordinate: "[Ref: UL_9540A_Data] Section 1"
+    evidence_hash: "d501c5a56a1f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Barrier Conductivity"
     predicate: "measured_value"
     object: "< 0.02 W/mK"
-    evidence: "[Ref: Mat_Spec_V7] Section 2"
-
+    evidence_coordinate: "[Ref: Mat_Spec_V7] Section 2"
+    evidence_hash: "d501c5a56a1f"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] thermal-runaway-safety-mechanisms
 

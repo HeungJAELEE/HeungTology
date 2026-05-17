@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] slitting-and-notching-precision]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Battery] slitting-and-notching-precision에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+  id: "[[[Battery] slitting-and-notching-precision]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "f18a0ffe85a796b6be01dfc47f7eb47fddfcc382f8b91a0e9699352b63edc4a8"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Battery] slitting-and-notching-precision에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] slitting-and-notching-precision
 

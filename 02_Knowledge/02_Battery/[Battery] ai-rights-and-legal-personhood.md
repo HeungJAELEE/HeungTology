@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] ai-rights-and-legal-personhood]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Ethics-Committee-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "c69c8ea7d2aa847c0351a2ab56989abf225a9b14f3103d3660026a1a01d56a46"
 object:
   object_type: "Concept"
   tier: 1
-  description: "인공지능의 법적 인격(Legal Personhood) 획득 가능성에 대한 수리적/철학적 검증 및 책임 모델 확립 가이드"
-
+  description: '인공지능의 법적 인격(Legal Personhood) 획득 가능성에 대한 수리적/철학적 검증 및 책임 모델 확립 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "AI 에이전트의 도덕적 수동성(Moral Patiency)을 생물학적 고통 반응과 상관 분석하여 수치화하는 방법은?"
-    - "자율적 경제 활동을 수행하는 AI에게 기업(Corporation)에 준하는 법적 권리와 책임 능력을 부여하는 절차는?"
-  tags: ["#AI권리", "#법적인격", "#도덕적수동성", "#책임의간극", "#신뢰정합성"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Sentience Probability"
     predicate: "has_theoretical_limit"
     object: "P > 0.9"
-    evidence: "[Ref: Ethics Specs] Section 2"
+    evidence_coordinate: "[Ref: Ethics Specs] Section 2"
+    evidence_hash: "c69c8ea7d2aa"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Liability Capacity"
     predicate: "measured_value"
     object: "> 1000 ETH"
-    evidence: "[Ref: Ethics Specs] Section 2"
-
+    evidence_coordinate: "[Ref: Ethics Specs] Section 2"
+    evidence_hash: "c69c8ea7d2aa"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] ai-rights-and-legal-personhood
 

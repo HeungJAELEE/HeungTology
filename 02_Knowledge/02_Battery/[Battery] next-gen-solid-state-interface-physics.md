@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] next-gen-solid-state-interface-physics]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "전고체 배터리(SSB)의 기계적-전기화학적 계면 안정성, 공간 전하층(SCL) 형성 기전 및 덴드라이트 억제 물리학"
-semantic:
-  tags: ["#02_Battery", "#Solid_State_Battery", "#Interface_Physics", "#CCD", "#Monroe_Newman", "#HDS-Gold"]
+  id: "[[[Battery] next-gen-solid-state-interface-physics]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "ssb-interface-physics-log-v2026"
   original_author: "Antigravity Vault"
+  original_hash: "5d155f50bb37693cc5942fad1b13351312c7823111fdfe226b198c5ab13b7077"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '전고체 배터리(SSB)의 기계적-전기화학적 계면 안정성, 공간 전하층(SCL) 형성 기전 및 덴드라이트 억제 물리학'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] next-gen-solid-state-interface-physics
 

@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Concept] material-manufacturing-moc]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Concept_Node"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "Battery_Strategic_Hub"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Manufacturing-Intelligence-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "4869dedc5f138e28f0c76bb76810e485fb3672c7f95627e1fe0b66aa9bfac369"
 object:
   object_type: "Concept"
   tier: 0
-  description: "소재 합성, 전극 공정, 설비 제어 및 품질 분석을 PSP(Process-Structure-Property) 인과관계로 통합하는 제조 지능 마스터 허브"
-
+  description: '소재 합성, 전극 공정, 설비 제어 및 품질 분석을 PSP(Process-Structure-Property) 인과관계로 통합하는 제조 지능 마스터 허브'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "소재 제조 공정 파라미터(pH, 온도, 압력)가 배터리 셀의 에너지 밀도 및 수명에 미치는 PSP 감도 분석은?"
-    - "스마트 팩토리 기반의 가상 계측(Virtual Metrology) 기술이 대량 양산 무결성을 사수하는 수리적 기전은?"
-  tags: ["#제조MOC", "#PSP인과관계", "#양산무결성", "#스마트팩토리", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "OEE"
     predicate: "measured_value"
     object: "92.4 %"
-    evidence: "[Ref: Plant_Log_V7] Section 1"
+    evidence_coordinate: "[Ref: Plant_Log_V7] Section 1"
+    evidence_hash: "4869dedc5f13"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "pH Deviation"
     predicate: "measured_value"
     object: "+/- 0.02"
-    evidence: "[Ref: CSTR_Log_V7] Section 1"
-
+    evidence_coordinate: "[Ref: CSTR_Log_V7] Section 1"
+    evidence_hash: "4869dedc5f13"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] material-manufacturing-moc
 

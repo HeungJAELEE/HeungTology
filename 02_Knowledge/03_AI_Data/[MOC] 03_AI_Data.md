@@ -1,55 +1,37 @@
 ---
 metadata:
-  id: "MOC-AI-DATA-2026-V7.5.2"
-  domain: "Artificial_Intelligence_and_Data_Governance"
-  project: "Vault_Modernization"
   date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  type: "MOC"
-  tier: 0
-  description: "High-Fidelity Neural Architecture Node"
-  physical_model: "N/A"
-semantic:
-  tags: ["#MOC", "#AI", "#Data", "#NVLink", "#Tensor_Core", "#DPU", "#Compute_Infrastructure", "#Sovereignty"]
-  is_part_of: ["MOC 00_INDEX"]
-  related_to: ["Compute_Hardware_Layer", "Data_Governance_Layer"]
-dynamic:
-  status: "Fidelity_Upgraded"
-  topology_policy: "Interconnected_Cluster"
-  fidelity_engine: "DomainFidelityEngine_v7.5"
-  diagnostic_protocol: ["Standard_Verification", "Context_Audit", "SPO_Integrity_Check"]
+  id: "MOC-AI-DATA-2026-V7.5.2"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Artificial_Intelligence_and_Data_Governance"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://vault.antigravity.io/archives/MOC-AI-DATA-2026-V6.3.7"
   original_author: "Antigravity Vault"
+  original_hash: "cc67969a2a37e1616c8c839472d7db7ba7cadbf202ea8a4e8423d3d82e665cb3"
+object:
+  object_type: "Concept"
+  tier: 0
+  description: 'High-Fidelity Neural Architecture Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_research: 0.8
-  T_ai: 0.5
-  T_dynamic: 1.0
-  source: "Antigravity Vault"
-sp_graph:
-  - subject: "AI_Intelligence"
-    predicate: "transforms"
-    object: "Entropy_to_Order"
-    evidence: "Section 1: AI & Data Intelligence converts entropy into meaningful order."
-  - subject: "Compute_Hardware"
-    predicate: "determines"
-    object: "Intelligence_Velocity"
-    evidence: "Section 1: Hardware integrity determines the speed of intelligence."
-  - subject: "Tensor_Core"
-    predicate: "executes"
-    object: "Matrix_Arithmetic"
-    evidence: "P5: Tensor Core Matrix Arithmetic."
-  - subject: "NVLink"
-    predicate: "provides"
-    object: "High_Speed_Interconnect"
-    evidence: "P5: NVLink High-Speed Interconnect."
-integrity:
-  status: "Verified"
-  checksum: "0x7A5F2E99"
-  last_audit: "2026-05-14"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_AI_Data
 

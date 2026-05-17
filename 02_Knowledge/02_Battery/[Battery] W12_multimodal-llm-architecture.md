@@ -1,27 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] W12_multimodal-llm-architecture]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "제조 현장의 시각 및 공정 시계열 데이터를 융합 처리하기 위한 통합 감각 피질형 멀티모달 LLM 아키텍처 설계 명세"
-semantic:
-  expected_queries:
-    - "멀티모달 LLM 아키텍처에서 시각 토큰과 텍스트 토큰의 차원 일관성 유지 방법은?"
-    - "End-to-End Latency를 300ms 이내로 억제하기 위한 KV-Cache 최적화 전략은?"
-  tags: ["#멀티모달", "#LLM", "#아키텍처", "#Vision-to-Action", "#실시간추론", "#HDS-Gold"]
+  id: "[[[Battery] W12_multimodal-llm-architecture]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "w12-multimodal-bench-v2026"
   original_author: "Antigravity Vault / AI-Architecture-Team"
+  original_hash: "1eb4e917201da6d45b6c1254654aa6a116ff2c2dff5b377194f7bc42d7b91b22"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '제조 현장의 시각 및 공정 시계열 데이터를 융합 처리하기 위한 통합 감각 피질형 멀티모달 LLM 아키텍처 설계 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # W12_multimodal-llm-architecture
 

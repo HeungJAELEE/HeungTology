@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] bms-algorithms-soc-soh-estimation]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / BMS-Algorithm-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "b01b51d9b834060c1d81db694c857578e5fa3c1673c713d68f045fd5f1d7d7d9"
 object:
   object_type: "Concept"
   tier: 1
-  description: "직접 측정이 불가능한 전기화학적 상태량(SoC, SoH)을 전압, 전류, 온도 데이터를 통해 수리적으로 추정하고 예측하는 알고리즘 지능"
-
+  description: '직접 측정이 불가능한 전기화학적 상태량(SoC, SoH)을 전압, 전류, 온도 데이터를 통해 수리적으로 추정하고 예측하는 알고리즘 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "LFP 배터리의 전압 평탄 구간(Plateau)에서 EKF 알고리즘의 SoC 추정 오차를 억제하는 적응형 이득($K_k$) 제어 기전은?"
-    - "가우시안 과정 회귀(GPR) 모델을 활용하여 배터리 잔존 수명(RUL)과 예측 신뢰 구간을 산출하는 통계적 방법은?"
-  tags: ["#BMS알고리즘", "#SoC추정", "#SoH예지", "#EKF", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SoC Accuracy"
     predicate: "measured_value"
     object: "< 1.0 % Error"
-    evidence: "[Ref: Alg_Test_V7] Section 1"
+    evidence_coordinate: "[Ref: Alg_Test_V7] Section 1"
+    evidence_hash: "b01b51d9b834"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Convergence Time"
     predicate: "measured_value"
     object: "< 10 sec"
-    evidence: "[Ref: Convergence_Data] Section 2"
-
+    evidence_coordinate: "[Ref: Convergence_Data] Section 2"
+    evidence_hash: "b01b51d9b834"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] bms-algorithms-soc-soh-estimation
 

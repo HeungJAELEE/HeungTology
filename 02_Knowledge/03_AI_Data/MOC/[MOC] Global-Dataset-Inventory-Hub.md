@@ -1,20 +1,37 @@
 ---
-meta:
-  date: "2026-05-16"
-  domain: "Global_Dataset_Governance_and_Skill_Mapping"
-  id: "MOC-GLOBAL-DATASET-SKILL-INVENTORY-V7.5.3"
-  project: "Operational_Intelligence_Campaign"
-  version: "v7.5.3"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Concept] [MOC] Global-Dataset-Inventory-Hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Massively aggregated from HF, Kaggle, NIST, SEC, NASA, ESA, GitHub"
-  skill_reference: "Mapped to local 03_Skills directory"
   original_author: "Antigravity Intelligence Architect"
-context:
-  object_type: "MOC"
-  tier: 0
-  trust_rank_logic: "Source(40%) + Social(20%) + Integrity(30%) + Domain(10%)"
-  tags: ["#MOC", "#Dataset", "#Skill_Mapping", "#Infinite_Library"]
+  original_hash: "34c6588d14a33fcbf5239957e3f27374708f43cd4df01b81bfff3c3f43ec318d"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'High-fidelity engineering node: [MOC] Global-Dataset-Inventory-Hub.md'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
+  T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # Global-Dataset-Inventory-Hub
 
@@ -318,6 +335,68 @@ context:
 | **[B]** | `Exoplanet-Atmospheric-Spectra` | Webb-Res | 82 | `exoplanet_chem_solver.py` | 외계 행성 대기 성분 분석 |
 | **[B]** | `Space-Debris-Collision-Risk` | Track | 77 | `collision_probability.py` | 저궤도 위성 간 충돌 위험 모델 |
 | **[B]** | `Deep-Space-Network-S-N-Ratio` | JPL | 74 | `dsn_signal_analyzer.py` | 심우주 통신 신호 잡음비 분석 |
+
+### 2.12 [OpenCrab Multi-Ontology & Marketplace Datasets: The HeungTology Core]
+
+> 아래 데이터셋은 오픈크랩(OpenCrab) 작업공간 및 마켓플레이스에서 스크랩 및 검역 완료된 **55대 회사 카탈로그 온톨로지 지식 팩**입니다. 로컬 `opencrab_graph_parser.py` 및 Graphify 도구를 통해 HeungTology 전역 지능망에 1:1로 매핑됩니다.
+
+| Grade | Dataset Name | Source | Trust | Associated Skill | Note |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[S]** | `korea_card_graph_v4_aggregate_20260517.zip` | OpenCrab | 95 | `opencrab_graph_parser.py` | 1,200대 카드 혜택 통합 정규화 온톨로지 (268 Nodes, 3,217 Edges) |
+| **[S]** | `world_masterworks_ontology_20260516.zip` | OpenCrab | 94 | `opencrab_graph_parser.py` | 세계명작 영화/연극/뮤지컬 서사 구조 분석 팩 (logotekton 제작) |
+| **[S]** | `culture_tourism_graph_20260516.zip` | OpenCrab | 92 | `opencrab_graph_parser.py` | 패션 위크 및 리조트 트렌드 GraphRAG 온톨로지 팩 |
+| **[S]** | `pritzker_2000_present_persona_graph_20260516.zip` | OpenCrab | 94 | `opencrab_graph_parser.py` | 프리츠커 수상 건축가 페르소나 그래프 데이터 팩 |
+| **[S]** | `nemotron_personas_korea_ontology pack` | OpenCrab | 93 | `opencrab_graph_parser.py` | 엔비디아 네모트론 8B 기반 한국어 페르소나 합성 데이터 팩 |
+| **[A]** | `popular_pets_graph_20260516.zip` | OpenCrab | 89 | `opencrab_graph_parser.py` | 대중적 반려동물 생태 및 관리 데이터 팩 |
+| **[A]** | `cat_graph_20260516.zip` | OpenCrab | 88 | `opencrab_graph_parser.py` | 고양이 품종, 행동 의학 및 수의학 온톨로지 팩 |
+| **[A]** | `dog_graph_20260516.zip` | OpenCrab | 88 | `opencrab_graph_parser.py` | 반려견 행동 교정 및 건강 관리 온톨로지 팩 |
+| **[S]** | `korea-nsurance-terms_20260516.zip` | OpenCrab | 92 | `opencrab_graph_parser.py` | 국내 보험 약관 및 금융 전문 용어 정규화 팩 |
+| **[A]** | `https://github.com/makenotion/notion-sdk-js ontology pack` | OpenCrab | 86 | `opencrab_graph_parser.py` | 노션 SDK API 기능 및 메소드 상호 작용성 온톨로지 팩 |
+| **[B]** | `AURAVA AURA60 HeadSpa Pass` | OpenCrab | 80 | `opencrab_graph_parser.py` | 뷰티/디바이스 헤드스파 서비스 기획 데이터 팩 |
+| **[B]** | `AURA BOX 사업기획 v0.2` | OpenCrab | 81 | `opencrab_graph_parser.py` | 아우라 박스 물류 및 사업성 분석 기획서 온톨로지 팩 |
+| **[A]** | `kpop_idol ontology pack` | OpenCrab | 87 | `opencrab_graph_parser.py` | 글로벌 K-Pop 아이돌 멤버십, 기획사, 데뷔 음반 데이터 팩 |
+| **[A]** | `data_scientist_toolbox ontology pack` | OpenCrab | 89 | `opencrab_graph_parser.py` | 데이터 사이언티스트 연구 도구(Python, R) 메타 온톨로지 팩 |
+| **[A]** | `michelin_2026 ontology pack` | OpenCrab | 88 | `opencrab_graph_parser.py` | 2026년 기준 미쉐린 스타 레스토랑 정보 및 카테고리 팩 |
+| **[A]** | `golf_ontology pack_골프 온톨로지팩` | OpenCrab | 85 | `opencrab_graph_parser.py` | 골프 장비, 룰, 필드 기하학 및 스윙 이론 온톨로지 팩 |
+| **[S]** | `architecture_laws_ontology pack` | OpenCrab | 93 | `opencrab_graph_parser.py` | 한국 건축법, 건폐율, 용적률 규제 및 표준 법률 팩 |
+| **[A]** | `fashion_ ontology pack` | OpenCrab | 85 | `opencrab_graph_parser.py` | 의류 소재, 디자인 패턴, 트렌드 사이클 온톨로지 팩 |
+| **[A]** | `wine_ontology pack` | OpenCrab | 88 | `opencrab_graph_parser.py` | 전세계 와이너리, 품종, 테이스팅 노트 및 마리아주 팩 |
+| **[B]** | `dong ontology pack` | OpenCrab | 82 | `opencrab_graph_parser.py` | 한국 행정동, 법정동 경계 및 지리 공간 정보 팩 |
+| **[A]** | `whisky ontology pack` | OpenCrab | 86 | `opencrab_graph_parser.py` | 싱글 몰트, 블렌디드 위스키 증류소 및 테이스팅 맵 팩 |
+| **[B]** | `youtube-starterpack` | OpenCrab | 83 | `opencrab_graph_parser.py` | 유튜브 채널 성장 전략 및 알고리즘 트리거 요인 데이터 팩 |
+| **[B]** | `Mugong ontology pack` | OpenCrab | 81 | `opencrab_graph_parser.py` | 전통 무술 및 스포츠 기하학적 인체 모션 온톨로지 팩 |
+| **[S]** | `diabetes-ontology pack` | OpenCrab | 94 | `opencrab_graph_parser.py` | 당뇨병 진단, 약학 작용 기전 및 임상 통계 온톨로지 팩 (39 Nodes, 36 Edges) |
+| **[S]** | `karpathy ontology pack` | OpenCrab | 95 | `opencrab_graph_parser.py` | 안드레이 카파시 인공지능 연구 연대기 및 신경망 강의 팩 (52 Nodes, 48 Edges) |
+| **[S]** | `ontology_science ontology pack` | OpenCrab | 92 | `opencrab_graph_parser.py` | 데이터 과학 방법론, 라이브러리 위상 맵 팩 (52 Nodes, 48 Edges) |
+| **[A]** | `super_fantasy ontology pack` | OpenCrab | 88 | `opencrab_graph_parser.py` | 판타지 세계관 빌딩, 지리 및 가상 생태계 팩 (52 Nodes, 48 Edges) |
+| **[S]** | `brand_top100 ontology pack` | OpenCrab | 91 | `opencrab_graph_parser.py` | 글로벌 Top 100 브랜드 평판 및 재무 데이터 팩 (52 Nodes, 48 Edges) |
+| **[A]** | `fantasy_worldbuilding ontology pack` | OpenCrab | 89 | `opencrab_graph_parser.py` | 가상 시나리오 및 소설 창작용 월드 빌딩 온톨로지 팩 (65 Nodes, 60 Edges) |
+| **[S]** | `biomedical_ontology pack` | OpenCrab | 94 | `opencrab_graph_parser.py` | 생물의학 임상 시험 및 약리학 관계망 데이터 팩 (65 Nodes, 60 Edges) |
+| **[S]** | `korea-tax-law-reference ontology pack` | OpenCrab | 96 | `opencrab_graph_parser.py` | 대한민국 세법(소득세, 법인세) 참조 온톨로지 팩 (104 Nodes, 96 Edges) |
+| **[S]** | `healthcare ontology pack` | OpenCrab | 93 | `opencrab_graph_parser.py` | Kaggle 헬스케어 환자 기록 및 병원 운영 통계 팩 (181 Nodes, 167 Edges) |
+| **[S]** | `marketing ontology pack` | OpenCrab | 92 | `opencrab_graph_parser.py` | 고객 여정 맵 및 마케팅 캠페인 ROI 데이터 팩 (181 Nodes, 167 Edges) |
+| **[S]** | `music ontology pack` | OpenCrab | 91 | `opencrab_graph_parser.py` | 음악 장르, 아티스트, 작곡 메타데이터 온톨로지 팩 (182 Nodes, 168 Edges) |
+| **[S]** | `Kaggle 3D Modeling Ontology Pack` | OpenCrab | 96 | `opencrab_graph_parser.py` | 3D 모델링 메시, 파일 포맷 및 렌더링 물리 팩 (1,279 Nodes, 4,805 Edges) |
+| **[B]** | `sales-simulation ontology pack` | OpenCrab | 82 | `opencrab_graph_parser.py` | 가상 시뮬레이션 기반 세일즈 파이프라인 예측 팩 |
+| **[A]** | `Multi-Class Drone Detection ontology pack` | OpenCrab | 88 | `opencrab_graph_parser.py` | 멀티 클래스 드론 비행체 탐지 및 물리 사양 온톨로지 팩 |
+| **[A]** | `Earth Intelligence ontology pack` | OpenCrab | 89 | `opencrab_graph_parser.py` | 지구 관측 위성 데이터 및 기후 변화 지표 팩 |
+| **[A]** | `AI Job Market Trends (2022–2026) ontology pack` | OpenCrab | 88 | `opencrab_graph_parser.py` | AI 일자리 트렌드 및 기술 요구 사항 추이 분석 팩 |
+| **[A]** | `Social Media User Behavior ontology pack` | OpenCrab | 86 | `opencrab_graph_parser.py` | 소셜 미디어 플랫폼별 사용자 리텐션 및 행동 모델 팩 |
+| **[S]** | `EV Market Analytics ontology pack` | OpenCrab | 92 | `opencrab_graph_parser.py` | 글로벌 전기차(EV) 보급률, 배터리 채택 사양 및 충전망 분석 팩 |
+| **[A]** | `Laptop Specs and Price ontology pack` | OpenCrab | 87 | `opencrab_graph_parser.py` | 사양별 노트북 단가 및 성능 효율 맵 팩 |
+| **[A]** | `E-commerce Sales Analyticst ontology pack` | OpenCrab | 89 | `opencrab_graph_parser.py` | 글로벌 이커머스 매출 트렌드 및 물류 지연 요인 분석 팩 |
+| **[A]** | `Healthcare Patient Analytics Dataset` | OpenCrab | 88 | `opencrab_graph_parser.py` | 환자 데이터 기반 진료 품질 및 질환 예측 인자 팩 |
+| **[S]** | `Global Weapons Systems Dataset (10,000 Records)` | OpenCrab | 91 | `opencrab_graph_parser.py` | 글로벌 무기 체계 제원 및 공급망 분석 팩 (10,000 레코드) |
+| **[A]** | `UI design ontology pack` | OpenCrab | 87 | `opencrab_graph_parser.py` | UI/UX 컴포넌트 라이브러리 및 디자인 시스템 관계망 팩 |
+| **[B]** | `billboard-data ontology pack` | OpenCrab | 83 | `opencrab_graph_parser.py` | 빌보드 차트 히트곡 작곡 공식 및 아티스트 네트워크 팩 |
+| **[A]** | `SE shopee-dataset ontology` | OpenCrab | 86 | `opencrab_graph_parser.py` | 동남아 쇼피(Shopee) 마켓플레이스 판매 데이터 온톨로지 팩 |
+| **[A]** | `Pynite ontology pack` | OpenCrab | 89 | `opencrab_graph_parser.py` | 파이썬 유한요소 해석(FEA) 구조 계산 엔진 프레임워크 팩 |
+| **[A]** | `3D시티 온톨로지팩` | OpenCrab | 88 | `opencrab_graph_parser.py` | 도시 공간 정보 데이터 및 3D 모델링 규격 팩 |
+| **[S]** | `303,000개 건축 선형 정적 구조` | OpenCrab | 94 | `opencrab_graph_parser.py` | 대규모 건축 구조 공학 선형 정적 구조 유한요소 데이터 팩 |
+| **[A]** | `플랜트온톨로지팩` | OpenCrab | 89 | `opencrab_graph_parser.py` | 플랜트 엔지니어링 설비, 배관 기하학 및 압력 등급 온톨로지 팩 |
+| **[B]** | `이미지온톨로지팩` | OpenCrab | 81 | `opencrab_graph_parser.py` | 컴퓨터 비전용 이미지 메타데이터 및 바운딩 박스 관계망 팩 |
+| **[S]** | `화학데이터셋` | OpenCrab | 93 | `opencrab_graph_parser.py` | 화학 합성 물질 분자 구조 및 반응성 물성 데이터 팩 |
+| **[S]** | `분자데이터셋` | OpenCrab | 94 | `opencrab_graph_parser.py` | 약물 타겟 단백질 결합 및 분자 도킹 물리 시뮬레이션 팩 |
 
 ## 3. [Neo4j MCP 검증 완료: 실측 데이터 로그 (Verified Operational Data)]
 

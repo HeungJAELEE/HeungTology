@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] LLM_&_Agentic_Workflow]]"
-  domain: "AI_NLP"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "대규모 언어 모델(LLM) 및 자율적 에이전트 워크플로우를 위한 지식 거점 (Map of Content)"
-semantic:
-  tags: ["#AI", "#LLM", "#Agentic_Workflow", "#NLP", "#Generative_AI", "#MOC"]
+  id: "[[[MOC] LLM_&_Agentic_Workflow]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_NLP"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "2d63890987b3e729f5c2ba35f3c4b3272d155a5eaa8be8434a6e4afd90d2ec54"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '대규모 언어 모델(LLM) 및 자율적 에이전트 워크플로우를 위한 지식 거점 (Map of Content)'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "LLM"
     predicate: "powers"
     object: "Agentic Workflow"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "2d63890987b3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # LLM_&_Agentic_Workflow
 

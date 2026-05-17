@@ -1,30 +1,43 @@
 ---
 metadata:
-  id: "[[[Battery & AI] supply-chain-geopolitics-moc]]"
-  domain: "strategic_supply_chain"
-  project: "vault_modernization"
   date: "2026-05-16"
-  version: "v7.6.0_concept_node"
-object:
-  object_type: "Concept"
-  tier: 0
-  description: "글로벌 배터리 패권 경쟁 및 규제 대응을 위한 지정학적 리스크 모델링 및 AI 공급망 최적화 전략"
-semantic:
-  tags: ["#Geopolitics", "#SupplyChain", "#IRA", "#CRMA", "#AI_Optimization"]
+  id: "[[[Battery & AI] supply-chain-geopolitics-moc]]"
+  project: "vault_modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "strategic_supply_chain"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-global-passport-and-esg-compliance-log-v2026 (Trust: 99, Skill: supply_chain_auditor.py)"
   original_author: "Antigravity Vault / Strategic-Intelligence-Group"
+  original_hash: "6343578501de15a57b83fb1ba4c5ac68cd122df21b9f4b0d8764a01c455e5b9a"
+object:
+  object_type: "Concept"
+  tier: 0
+  description: '글로벌 배터리 패권 경쟁 및 규제 대응을 위한 지정학적 리스크 모델링 및 AI 공급망 최적화 전략'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Battery Supply Chain"
     predicate: "governed_by"
     object: "Geopolitical Regulations"
-    evidence: "[Ref: BATT-ESG-LOG-v2026] Section 4.1"
+    evidence_coordinate: "[Ref: BATT-ESG-LOG-v2026] Section 4.1"
+    evidence_hash: "6343578501de"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
-  t_static: 1.0
-  t_dynamic: 1.0
-  t_ai: 0.1
-  source: "battery-global-passport-and-esg-compliance-log-v2026"
+  T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 # [Battery & AI] supply-chain-geopolitics-moc
 
 ## 1. [Strategic Objective]

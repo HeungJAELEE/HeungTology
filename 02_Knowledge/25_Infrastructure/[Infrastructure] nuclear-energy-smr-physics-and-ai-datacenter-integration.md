@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration]]"
-  domain: "25_Infrastructure"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+  id: "[[[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "25_Infrastructure"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "0ec050b8a2263aa6ebd9e514c2d8e9d4458280ce38c9f32b24fdf438d6a3a9f9"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 25_Infrastructure]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Infrastructure] nuclear-energy-smr-physics-and-ai-datacenter-integration
 

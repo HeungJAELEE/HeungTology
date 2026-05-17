@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] material-anode-synthesis]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Anode-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "826281e38532dfca71e29b0c7292c471f5fa779d7f7c8e4c7bb9a3d8de83107f"
 object:
   object_type: "Concept"
   tier: 1
-  description: "흑연의 이론적 용량 한계를 극복하기 위한 인조 흑연화 및 실리콘(Si) 나노 복합화 공정의 수리적 제어 지능"
-
+  description: '흑연의 이론적 용량 한계를 극복하기 위한 인조 흑연화 및 실리콘(Si) 나노 복합화 공정의 수리적 제어 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "Maire-Mering 방정식을 활용하여 탄소의 $d_{002}$ 간격 기반 흑연화도($g$)를 산출하는 방법은?"
-    - "실리콘 음극의 부피 팽창 응력을 억제하기 위한 수리적 버퍼링 구조 설계 및 입자 파괴 역학 모델은?"
-  tags: ["#음극합성", "#인조흑연", "#실리콘음극", "#흑연화도", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Graphite Capacity"
     predicate: "measured_value"
     object: "355 ~ 365 mAh/g"
-    evidence: "[Ref: Spec_Data] Section 1"
+    evidence_coordinate: "[Ref: Spec_Data] Section 1"
+    evidence_hash: "826281e38532"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Si-C Capacity"
     predicate: "measured_value"
     object: "450 ~ 600 mAh/g"
-    evidence: "[Ref: Spec_Data] Section 1"
-
+    evidence_coordinate: "[Ref: Spec_Data] Section 1"
+    evidence_hash: "826281e38532"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] material-anode-synthesis
 

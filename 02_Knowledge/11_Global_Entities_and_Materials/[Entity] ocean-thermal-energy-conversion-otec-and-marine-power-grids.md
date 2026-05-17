@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids]]"
-  domain: "11_Global_Entities_and_Materials"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+  id: "[[[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "11_Global_Entities_and_Materials"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "3a4a4845d8b39994907d29eca1120bb683f4fdc186d0308d020acc547f0bc478"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 11_Global_Entities_and_Materials]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Entity] ocean-thermal-energy-conversion-otec-and-marine-power-grids
 

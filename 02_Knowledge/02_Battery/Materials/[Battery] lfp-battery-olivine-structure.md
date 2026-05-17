@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] lfp-battery-olivine-structure]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / LFP-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "0c4e3b183fa5d6a32b47f4e195f3fdd7c393a1384888204197ec185cc4e27e3d"
 object:
   object_type: "Concept"
   tier: 1
-  description: "강한 $P-O$ 공유 결합을 지닌 올리빈 구조를 통해 열적 안정성을 확보하고, 나노 구조화를 통해 낮은 전자 전도성을 극복하기 위한 LFP 소재 설계 지능"
-
+  description: '강한 $P-O$ 공유 결합을 지닌 올리빈 구조를 통해 열적 안정성을 확보하고, 나노 구조화를 통해 낮은 전자 전도성을 극복하기 위한 LFP 소재 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "LFP의 올리빈 구조가 열폭주 시 산소 방출을 억제하여 '열적 안정성 주권'을 확보하는 수리적 기전은?"
-    - "Avrami 상전이 모델을 활용하여 LFP의 $LiFePO_4 \leftrightarrow FePO_4$ 상전이 동역학을 분석하는 방법은?"
-  tags: ["#LFP", "#올리빈구조", "#열적안정성", "#Avrami모델", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Li Diffusion (DLi)"
     predicate: "measured_value"
     object: "> 10^-12 cm2/s"
-    evidence: "[Ref: Battery_Material_RAG_V6.3.7_Tiered] Section 1"
+    evidence_coordinate: "[Ref: Battery_Material_RAG_V6.3.7_Tiered] Section 1"
+    evidence_hash: "0c4e3b183fa5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Plateau Voltage"
     predicate: "measured_value"
     object: "3.36 V"
-    evidence: "[Ref: Lab_Data] Section 2"
-
+    evidence_coordinate: "[Ref: Lab_Data] Section 2"
+    evidence_hash: "0c4e3b183fa5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] lfp-battery-olivine-structure
 

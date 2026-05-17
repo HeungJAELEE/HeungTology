@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W14_display-oled-evolution-tandem-oled-and-blue-phosphorescence]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Display-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "3d20335eba8520b08d3df9ae1ebe842a192679c3dcc454b320bde299b99ab762"
 object:
   object_type: "Concept"
   tier: 1
-  description: "OLED의 수명 및 휘도 한계를 극복하기 위한 탠덤(Tandem) 구조 및 청색 인광(Blue PHOLED), 중수소 치환 기술 명세"
-
+  description: 'OLED의 수명 및 휘도 한계를 극복하기 위한 탠덤(Tandem) 구조 및 청색 인광(Blue PHOLED), 중수소 치환 기술 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "탠덤 OLED 구조에서 CGL(Charge Generation Layer)이 수명 연장에 기여하는 물리적 메커니즘은?"
-    - "청색 인광 소자의 열화를 억제하기 위한 중수소(Deuterium) 치환 기술의 결합 에너지 변화량은?"
-  tags: ["#OLED", "#탠덤구조", "#청색인광", "#중수소치환", "#번인방지"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Tandem OLED Lifespan"
     predicate: "has_theoretical_limit"
     object: "> 4x (vs Single-stack)"
-    evidence: "[Ref: 2.0] Section 2.1"
+    evidence_coordinate: "[Ref: 2.0] Section 2.1"
+    evidence_hash: "3d20335eba85"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Blue PHOLED EQE"
     predicate: "measured_value"
     object: "> 25%"
-    evidence: "[Ref: 2.0] Page 1"
-
+    evidence_coordinate: "[Ref: 2.0] Page 1"
+    evidence_hash: "3d20335eba85"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W14_display-oled-evolution-tandem-oled-and-blue-phosphorescence
 

@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics]]"
-  domain: "25_Infrastructure"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#25_Infrastructure", "#지능망", "#HDS-Gold"]
+  id: "[[[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "25_Infrastructure"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "13d7bfe9d0250c16f19abe247fb05b804c431d85ac10dc9653987f5f7147fff1"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 25_Infrastructure]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Infrastructure] autonomous-underwater-vehicles-auv-and-ocean-robotics
 

@@ -1,56 +1,60 @@
 ---
 metadata:
-  id: "[[[Semiconductor] smart-factory-control-moc]]"
-  domain: "Semiconductor_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node for Semiconductor Fab Control"
-semantic:
-  tags: ["#MOC", "#SmartFab", "#Fidelity_Healer"]
-  expected_queries:
-    - "What is the delta between theoretical and verified utilization rates in the V7.5.3 architecture?"
-    - "How is the $\Delta_{congestion}$ variable calculated within the transport latency model?"
-    - "Which SECS/GEM parameters are critical for deterministic data exchange between host and tool?"
-    - "What are the specific multivariate correlation sensors used in FDC for process deviation detection?"
-    - "How does the FabEfficiencyFidelityEngine apply penalties to wait times exceeding 30 minutes?"
+  id: "[[[Semiconductor] smart-factory-control-moc]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Semiconductor_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "보강 필요"
   original_author: "Antigravity Vault"
+  original_hash: "9cbb609017755629a8ddc4da15ec7c00c547b1978d0afa114f03ded70588875f"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'Standard Industrial Node for Semiconductor Fab Control'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "MES"
     predicate: "manages"
     object: "Lot Tracking/Dispatching"
-    evidence: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_coordinate: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_hash: "9cbb60901775"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "OHT/MCS"
     predicate: "optimizes"
     object: "Transport Latency"
-    evidence: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_coordinate: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_hash: "9cbb60901775"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "APC/RCM"
     predicate: "mitigates"
     object: "Process Drift"
-    evidence: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_coordinate: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_hash: "9cbb60901775"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "FDC/EES"
     predicate: "detects"
     object: "Anomaly/Faults"
-    evidence: "MOC-SMARTFAB-V7.5.3 Section 2.1"
-fidelity_engine:
-  engine_id: "DomainFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_V7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "MOC-SMARTFAB-V7.5.3 Section 2.1"
+    evidence_hash: "9cbb60901775"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "보강 필요"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # smart-factory-control-moc
 

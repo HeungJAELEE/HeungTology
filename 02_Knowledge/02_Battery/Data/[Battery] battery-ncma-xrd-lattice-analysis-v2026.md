@@ -1,24 +1,65 @@
 ---
 metadata:
-  id: "[[[Battery] battery-ncma-xrd-lattice-analysis-v2026]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Battery] battery-ncma-xrd-lattice-analysis-v2026에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#02_Battery", "#지능망", "#HDS-Gold"]
+  id: "[[[Battery] battery-ncma-xrd-lattice-analysis-v2026]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
+  dataset_reference: "battery-ncma-xrd-lattice-analysis-v2026"
+  original_author: "Antigravity Vault / Manufacturing-Execution-System"
+  original_hash: "5269ca7dab07cedeff71319a0d89a9072549c607a36156b22c010545bec4abfd"
+object:
+  object_type: "Data"
+  tier: 1
+  description: 'NCMA 양극 격자 상수 및 결정립 크기 XRD 실측 로그'
+measurement:
+  value: 100.0
+  unit: "percent_compliance"
+  precision: 1.0
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[Battery] High-Nickel-Cathode-and-Silicon-Anode-Materials]]"
+  alternative_parents: []
+spo_graph:
+  - subject: "Lattice Parameter a"
+    predicate: "measured_value"
+    object: "2.825 A"
+    evidence_coordinate: "[Ref: battery-ncma-xrd-lattice-analysis-v2026] Section 2"
+    evidence_hash: "5269ca7dab07"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+  - subject: "Lattice Parameter c"
+    predicate: "measured_value"
+    object: "14.220 A"
+    evidence_coordinate: "[Ref: battery-ncma-xrd-lattice-analysis-v2026] Section 2"
+    evidence_hash: "5269ca7dab07"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+  - subject: "c/a Ratio"
+    predicate: "measured_value"
+    object: "5.033"
+    evidence_coordinate: "[Ref: battery-ncma-xrd-lattice-analysis-v2026] Section 2"
+    evidence_hash: "5269ca7dab07"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+  - subject: "Unit Cell Volume"
+    predicate: "measured_value"
+    object: "98.25 A^3"
+    evidence_coordinate: "[Ref: battery-ncma-xrd-lattice-analysis-v2026] Section 2"
+    evidence_hash: "5269ca7dab07"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
-  T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  T_static: 0.8
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] battery-ncma-xrd-lattice-analysis-v2026
 

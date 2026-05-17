@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[SOP] high-performance-ai-accelerator-architectures]]"
-  domain: "00_System"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "트랜스포머 및 대규모 언어 모델 연산 가속을 위한 시스톨릭 어레이(Systolic Array) 및 초고대역폭 메모리(HBM) 융합 AI 가속기 시스템 아키텍처"
-semantic:
-  tags: ["#AI가속기", "#시스톨릭어레이", "#HBM", "#루프라인모델", "#ASIC", "#HDS-Gold"]
+  id: "[[[SOP] high-performance-ai-accelerator-architectures]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "00_System"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "high-performance-ai-accelerator-performance-log-v2026"
   original_author: "Antigravity Vault / Hardware Systems Group"
+  original_hash: "ee8eefddcc542131ecf595e7535a55cdd5c9e83298ee330cee8e458b1b45dad4"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '트랜스포머 및 대규모 언어 모델 연산 가속을 위한 시스톨릭 어레이(Systolic Array) 및 초고대역폭 메모리(HBM) 융합 AI 가속기 시스템 아키텍처'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 00_System]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [SOP] high-performance-ai-accelerator-architectures
 

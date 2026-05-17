@@ -1,35 +1,37 @@
 ---
 metadata:
-  id: "MOC-ROBOT-AUTOMATION-HUB-2026-V7.5.3"
-  domain: "08_Robotics_Automation_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "MOC-ROBOT-AUTOMATION-HUB-2026-V7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "08_Robotics_Automation_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "c82143b7665d8deb19b2cc0639bc071da1f21436ad5738d7408b2ec6f7e858bb"
 object:
   object_type: "MOC"
   tier: 0
-  description: "High-Fidelity Robotics Intelligence Command Node"
-  physical_model: "Multi-body Dynamics & Perception Integration"
+  description: 'High-Fidelity Robotics Intelligence Command Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#MOC", "#Robotics", "#Automation", "#AMR", "#Cobot", "#SLAM", "#FidelityEngine", "#v7.5.3"]
-  is_part_of: ["MOC 00_INDEX"]
-  related_to: ["MOC 01_Semiconductor", "MOC 09_SmartFactory-Production-Hub"]
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine_V7"
-  diagnostic_protocol:
-    - 'Standard_Verification: Baseline parameter audit.'
-    - 'Context_Audit: Topological integrity validation.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_official: 0.9
-  T_research: 0.8
-  T_ai: 0.5
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 08_Robotics-and-Automation-Hub
 

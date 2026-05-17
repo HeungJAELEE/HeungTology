@@ -1,30 +1,43 @@
 ---
 metadata:
-  id: "[[[Concept] Battery-Fundamental-Performance-Metrics-and-Theoretical-Framework]]"
-  domain: "Battery_Intelligence_Hub"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.1_Concept_Node"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "배터리 시스템의 품질 무결성을 정의하기 위한 수리적 기준점 및 성능 지표 분류 체계 표준"
-semantic:
-  tags: ["#배터리지표", "#MOC", "#에너지밀도", "#수명예측", "#열적안정성", "#LCOS"]
+  id: "[[[Concept] Battery-Fundamental-Performance-Metrics-and-Theoretical-Framework]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Battery_Intelligence_Hub"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-sota-performance-gap-log-v2026"
   original_author: "Antigravity Vault / Performance Engineering Group"
+  original_hash: "f920809079f7496257af01a69a23cbafc595c5e7a4b689b3bbce5c638dcf3c2b"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '배터리 시스템의 품질 무결성을 정의하기 위한 수리적 기준점 및 성능 지표 분류 체계 표준'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Battery Metrics"
     predicate: "defines"
     object: "System Quality Integrity"
-    evidence: "[Ref: BATT-METRICS-v2026] Section 1.1"
-Trust Metrics:
+    evidence_coordinate: "[Ref: BATT-METRICS-v2026] Section 1.1"
+    evidence_hash: "f920809079f7"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_ai: 0.1
-  source: "Battery Performance Engineering Standard Manual"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # fundamental-metrics-moc
 

@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W12_diffusion-model-augmentation]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "industrial-defect-diffusion-dataset-v2026"
   original_author: "Antigravity Vault / Vision-Intelligence-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "b65cf761400b92fc7253c8d5b4c87be3ea9c1ce67e222e84174d47379505c98b"
 object:
   object_type: "Concept"
   tier: 1
-  description: "제조 결함 데이터 부족 문제를 해결하기 위한 Latent Diffusion 기반 합성 데이터 증강 및 ControlNet 가이드"
-
+  description: '제조 결함 데이터 부족 문제를 해결하기 위한 Latent Diffusion 기반 합성 데이터 증강 및 ControlNet 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "확산 모델을 이용해 합성한 결함 이미지의 FID(Frechet Inception Distance) 임계치는?"
-    - "ControlNet을 활용하여 특정 배터리 셀 구조 내에서만 결함을 생성하는 방법은?"
-  tags: ["#확산모델", "#데이터증강", "#ControlNet", "#결함탐지", "#합성데이터"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Diffusion Model"
     predicate: "generates"
     object: "Synthetic Defect Images"
-    evidence: "[Ref: V7.5.2_Audit] Section 5"
+    evidence_coordinate: "[Ref: V7.5.2_Audit] Section 5"
+    evidence_hash: "b65cf761400b"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Structural Consistency"
     predicate: "has_theoretical_limit"
     object: "Error <= 1%"
-    evidence: "[Ref: Geometric_Standard] Page 8"
-
+    evidence_coordinate: "[Ref: Geometric_Standard] Page 8"
+    evidence_hash: "b65cf761400b"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W12_diffusion-model-augmentation
 

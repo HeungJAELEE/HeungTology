@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W13_lfp-plateau-pulse-charging-control]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "lfp-plateau-voltage-response-log-v2026"
   original_author: "Antigravity Vault / BMS-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "dacbafb47ff5d3771195cc2d0947ba4d0b2346166031b0cf17d9b6aa714644e0"
 object:
   object_type: "Concept"
   tier: 1
-  description: "LFP 배터리의 전압 평탄 구간(Plateau) 내 SOC 추정 오차를 극복하기 위한 과도 응답 및 펄스 충전 제어 메커니즘"
-
+  description: 'LFP 배터리의 전압 평탄 구간(Plateau) 내 SOC 추정 오차를 극복하기 위한 과도 응답 및 펄스 충전 제어 메커니즘'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "LFP 전압 평탄 구간에서 SOC 추정의 Blind Spot을 해결하기 위한 펄스 주입 로직은?"
-    - "펄스 충전 시 리튬 플레이팅 임계 전압(0V vs Li/Li+)을 준수하기 위한 dV/dt 제어 방법은?"
-  tags: ["#LFP", "#평탄구간", "#펄스충전", "#SOC추정", "#과도응답"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "LFP Plateau Window"
     predicate: "has_theoretical_limit"
     object: "Delta V < 50 mV"
-    evidence: "[Ref: Gibbs Phase Rule] Section 1"
+    evidence_coordinate: "[Ref: Gibbs Phase Rule] Section 1"
+    evidence_hash: "dacbafb47ff5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "SOC Estimation Error"
     predicate: "measured_value"
     object: "1.2%"
-    evidence: "[Ref: Field Validation] Section 4.3"
-
+    evidence_coordinate: "[Ref: Field Validation] Section 4.3"
+    evidence_hash: "dacbafb47ff5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_lfp-plateau-pulse-charging-control
 

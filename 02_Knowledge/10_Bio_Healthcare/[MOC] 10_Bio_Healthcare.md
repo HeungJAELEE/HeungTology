@@ -1,35 +1,37 @@
 ---
 metadata:
-  id: "MOC-BIO-HEALTHCARE-2026-V7.5.3"
-  domain: "Bio_and_Healthcare_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "MOC-BIO-HEALTHCARE-2026-V7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Bio_and_Healthcare_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "8cd898816cd4240ca153cf5dc82352d6195de8f5753b790988ba1ede08798825"
 object:
   object_type: "MOC"
   tier: 0
-  description: "생명 공학, 정밀 의료 및 신경 인터페이스 통합 지능 사령부"
-  physical_model: "Biochemical Kinetics & Neural Signal Physics"
+  description: '생명 공학, 정밀 의료 및 신경 인터페이스 통합 지능 사령부'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#MOC", "#Bio", "#Healthcare", "#CRISPR", "#BCI", "#Genomics", "#PrecisionMedicine", "#v7.5.3"]
-  is_part_of: ["MOC 00_INDEX"]
-  related_to: ["MOC 01_Semiconductor", "MOC 08_Robotics-and-Automation-Hub"]
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine_V7"
-  diagnostic_protocol:
-    - 'Standard_Verification: Biochemical parameter audit.'
-    - 'Context_Audit: Neural signal path integrity validation.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_official: 0.9
-  T_research: 1.0
-  T_ai: 0.5
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 10_Bio_Healthcare
 

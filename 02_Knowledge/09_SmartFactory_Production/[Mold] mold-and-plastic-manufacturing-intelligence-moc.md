@@ -1,40 +1,42 @@
 ---
 metadata:
+  date: "2026-05-17"
   id: "[[[Mold] mold-and-plastic-manufacturing-intelligence-moc]]"
-  domain: "Plastic_Mold_Intelligence"
   project: "Vault_Modernization"
-  date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-semantic:
-  tags: ["#Plastic_Mold_Intelligence"]
-  expected_queries:
-    - "[Mold] mold-and-plastic-manufacturing-intelligence-moc 관련 핵심 기술 파라미터는?"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Plastic_Mold_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "보강 필요"
   original_author: "Antigravity Vault"
+  original_hash: "5621494278d778cd601ed5dff8a88d1fd5252471a209d37637d2207828b2073a"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
+  alternative_parents: []
 spo_graph:
   - subject: "[Mold] mold-and-plastic-manufacturing-intelligence-moc"
     predicate: "belongs_to"
     object: "Plastic_Mold_Intelligence"
-    evidence: "[Ref: 보강 필요]"
-fidelity_engine:
-  engine_id: "DomainFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_V7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: 보강 필요]"
+    evidence_hash: "5621494278d7"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "보강 필요"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # mold-and-plastic-manufacturing-intelligence-moc
 
@@ -57,6 +59,16 @@ Trust Metrics:
 ### 2.3 [품질 및 변형 해석 (Quality & Simulation)] (COMPLETED)
 - Mold warpage-prediction-and-structural-stiffness-analysis : 잔류 응력과 차등 수축에 의한 뒤틀림 방지 (V6.3.7)
 - Mold molding-process-optimization-and-defect-prevention-ai : AI 기반의 자율 공정 튜닝 및 품질 예측 (V6.3.7)
+
+### 2.4 [품질 보증 및 IATF 거버넌스 (Quality Assurance & IATF Governance)] (COMPLETED)
+- [[[Concept] plastic-injection-molding-iatf-16949-qms]] : IATF 16949 품질 경영 시스템 규격 (V7.6.2)
+- [[[Concept] plastic-injection-molding-apqp-standard]] : 사전 제품 품질 계획 및 시사출 검증 (V7.6.2)
+- [[[Concept] plastic-injection-molding-msa-standard]] : 계측 시스템 변동 및 Gage R&R 통제 (V7.6.2)
+- [[[Concept] plastic-injection-molding-pfmea-standard]] : 사출 고장 모드 영향 분석 및 리스크 제어 (V7.6.2)
+- [[[Concept] plastic-injection-molding-ppap-standard]] : 부품 승인 및 300숏 초기 공정 능력 (V7.6.2)
+- [[[Concept] plastic-injection-molding-spc-standard]] : 실시간 통계적 공정 관리 및 이상 탐지 (V7.6.2)
+- [[[Concept] plastic-injection-molding-analog-factory-sop]] : MES 부재용 수동 SPC 및 물리적 추적성 (V7.6.2)
+- [[[Data] plastic-injection-molding-validation-data-requirements]] : QMS 표준 검수 실측 데이터 요구사항 (V7.6.2)
 
 ## 3. [금형 샵(Mold Shop) 종합 성능 지표 (Command Metrics)]
 

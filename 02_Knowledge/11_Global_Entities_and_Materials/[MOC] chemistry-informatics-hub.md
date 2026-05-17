@@ -1,29 +1,37 @@
 ---
 metadata:
+  date: "2026-05-14"
   id: "MOC-CHEM-INFO-HUB-v6.4"
-  date: 2026-05-14
-  domain: 11_Global_Entities_and_Materials
-dynamic:
-  status: Ratified (V6.4 Active)
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "11_Global_Entities_and_Materials"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "17e529e2d458671c8cb16e088e292696ca5f733d89986a4507569afb877a8a62"
 object:
-  uuid: chemistry-informatics-hub-moc
-  type: MOC
+  object_type: "Concept"
+  tier: 1
+  description: 'High-fidelity engineering node: [MOC] chemistry-informatics-hub.md'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  is_part_of: '["[[[MOC] 00_INDEX]]"]'
-  tags: '["#MOC", "#Chemistry", "#Informatics", "#Dataset", "#AIP"]'
-Trust Metrics:
-  T_init: 1.0
+  is_instance_of: "[[[MOC] 11_Global_Entities_and_Materials]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  note: "화학 정보학 및 외부 데이터셋 통합 관제 허브"
-citation_count: 0
-current_trust_level: 1.0
-provenance: '["Project Antigravity V6.8 External Data Ingestion"]'
-related_to: '["[[01-molecular-modeling-fundamentals]]", "[[01-pharmacology-and-drug-discovery-foundations]]"]'
-trust_base: 1.0
-trust_lambda: 0.0
-type: MOC
-  version: "v7.5.3"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # chemistry-informatics-hub
 

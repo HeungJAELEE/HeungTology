@@ -3,45 +3,51 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Battery-SSB-Material-Performance-and-CCD-Log_2026-05-16]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / SSB-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Empirical_Grounding"
-  topology_policy: "Data_Log"
-
+  original_hash: "cbdae3b3cf6e9308e5b6514dd68b084025141aa62c2feea98ace7290b8bd851f"
 object:
   object_type: "Data"
   tier: 2
-  description: "2026년 하반기 합성된 황화물계(Argyrodite-type) 고체 전해질 및 SSB 셀의 실측 이온 전도도 및 임계 전류 밀도(CCD) 로그"
-
+  description: '2026년 하반기 합성된 황화물계(Argyrodite-type) 고체 전해질 및 SSB 셀의 실측 이온 전도도 및 임계 전류 밀도(CCD) 로그'
+measurement:
+  value: 100.0
+  unit: "percent_compliance"
+  precision: 1.0
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "황화물계 고체 전해질의 실측 이온 전도도(σ)와 임계 전류 밀도(CCD) 한계는?"
-    - "SSB 가압 공정 시 450MPa 압력이 계면 저항(ASR) 감소에 미치는 실측 임팩트는?"
-  tags: ["#SSB데이터", "#황화물계", "#CCD실측", "#이온전도도", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Ionic Conductivity"
     predicate: "measured_value"
     object: "12.5 mS/cm"
-    evidence: "[Ref: SSB-LOG-2026] Section 1"
+    evidence_coordinate: "[Ref: SSB-LOG-2026] Section 1"
+    evidence_hash: "cbdae3b3cf6e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Critical Current Density"
     predicate: "measured_value"
     object: "4.25 mA/cm2"
-    evidence: "[Ref: SSB-LOG-2026] Section 1"
-
+    evidence_coordinate: "[Ref: SSB-LOG-2026] Section 1"
+    evidence_hash: "cbdae3b3cf6e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Battery-SSB-Material-Performance-and-CCD-Log_2026-05-16
 

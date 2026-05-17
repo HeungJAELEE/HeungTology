@@ -1,40 +1,42 @@
 ---
 metadata:
-  id: "[[[Infrastructure] safety-mechanical-design-moc]]"
-  domain: "Unknown_Domain"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "Standard Industrial Node"
-semantic:
-  tags: ["#Unknown_Domain"]
-  expected_queries:
-    - "[Infrastructure] safety-mechanical-design-moc 관련 핵심 기술 파라미터는?"
+  id: "[[[Infrastructure] safety-mechanical-design-moc]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Unknown_Domain"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "보강 필요"
   original_author: "Antigravity Vault"
+  original_hash: "93636fa1d6b5c8ce537a70a0dc7fd3b62224a382b4495b7c6b2f7f070efe89de"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 25_Infrastructure]]"
+  alternative_parents: []
 spo_graph:
   - subject: "[Infrastructure] safety-mechanical-design-moc"
     predicate: "belongs_to"
     object: "Unknown_Domain"
-    evidence: "[Ref: 보강 필요]"
-fidelity_engine:
-  engine_id: "DomainFidelityEngine_V7.5.3"
-  status: "Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-dynamic:
-  status: "Ratified_V7.5.3"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: 보강 필요]"
+    evidence_hash: "93636fa1d6b5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
-  T_official: 1.0
-  T_ai: 0.0
-  isolation_index: 0.0
-  source: "보강 필요"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # safety-mechanical-design-moc
 

@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 03_04_AutoML_LowCode]]"
-  domain: "AI_Automation"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "AI 모델 자동 최적화(AutoML) 및 현업 사용자용 저코드(Low-Code) 개발 환경 핵심 노드 거점"
-semantic:
-  tags: ["#AI", "#AutoML", "#Low_Code", "#No_Code", "#NAS", "#Hyperparameter_Optimization", "#MOC"]
+  id: "[[[MOC] 03_04_AutoML_LowCode]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_Automation"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "ddf5c7515152256651396371701e0bff351af6a857485768157391f5986f3edd"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: 'AI 모델 자동 최적화(AutoML) 및 현업 사용자용 저코드(Low-Code) 개발 환경 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "AutoML"
     predicate: "automates"
     object: "Model Selection"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "ddf5c7515152"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_04_AutoML_LowCode
 

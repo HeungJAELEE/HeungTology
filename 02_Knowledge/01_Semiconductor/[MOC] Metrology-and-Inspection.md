@@ -1,54 +1,54 @@
 ---
 metadata:
-  id: "[moc]-metrology-and-inspection-v7.5.3"
   date: "2026-05-14"
-  version: "v7.5.3"
+  id: "[moc]-metrology-and-inspection-v7.5.3"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/semiconductor.metrology.v6.3.7"
   original_author: "Semiconductor_Quality_Assurance"
+  original_hash: "d58d0228e46c8a4c6345c8bdc9bf05b5e06dbf5eac94c4a779fc5c4b29a7aeed"
 object:
   object_type: "MOC"
   tier: 0
-  description: "High-Fidelity Semiconductor Metrology & Inspection Control Node"
-  physical_model: "N/A"
+  description: 'High-Fidelity Semiconductor Metrology & Inspection Control Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["Metrology", "Inspection", "Yield_Management", "Semiconductor_Process_Control"]
-  is_part_of: ["Antigravity_Knowledge_Graph"]
-  related_to: ["Lithography", "Etch", "Thin_Film"]
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Metrology_System"
     predicate: "governs"
     object: "Process_Yield"
-    evidence: "[Ref: SEMI E47.1 Section 2.1]"
+    evidence_coordinate: "[Ref: SEMI E47.1 Section 2.1]"
+    evidence_hash: "d58d0228e46c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Overlay_Correction"
     predicate: "mitigates"
     object: "Rework_Rate"
-    evidence: "[Ref: Yield_Report_V4.2]"
+    evidence_coordinate: "[Ref: Yield_Report_V4.2]"
+    evidence_hash: "d58d0228e46c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Scatterometry"
     predicate: "reconstructs"
     object: "3D_Pattern_Geometry"
-    evidence: "[Ref: OCD_Model_V2.1]"
-dynamic:
-  status: "V7.5.3_Hardcore_Fidelity_Active"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine_v7"
-  diagnostic_protocol:
-    - 'Standard_Verification: Baseline parameter validation.'
-    - 'Context_Audit: Topological integrity check.'
+    evidence_coordinate: "[Ref: OCD_Model_V2.1]"
+    evidence_hash: "d58d0228e46c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 0.8
-  T_init: 1.0
-  source: "Semiconductor_Quality_Assurance"
-  isolation_index: 0.0
-expected_queries:
-  - "What is the correlation between OCD side-wall angle measurement and etch profile consistency in sub-10nm nodes?"
-  - "Analyze the Gage R&R impact on CD-SEM tool-to-tool matching offset calculations."
-  - "Compare DBO overlay accuracy versus optical methods for 0.5nm target alignment."
-  - "Determine the detection limit for E-beam inspection when SNR is degraded by 15%."
-  - "Specify the APC feedback loop latency required to mitigate non-linear grid distortion in scanners."
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [[[MOC] Metrology-and-Inspection
 

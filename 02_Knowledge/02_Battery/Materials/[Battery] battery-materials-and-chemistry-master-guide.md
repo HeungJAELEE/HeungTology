@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] battery-materials-and-chemistry-master-guide]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Materials-Science-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "9bb61d22a3484357b36a708d398b681561c602edc54badc99ed24424c708e105"
 object:
   object_type: "Concept"
   tier: 1
-  description: "이론적 용량과 물리적 구조 안정성 사이의 정밀 평형을 통해 배터리 에너지 밀도를 최적화하기 위한 소재 화학 마스터 가이드"
-
+  description: '이론적 용량과 물리적 구조 안정성 사이의 정밀 평형을 통해 배터리 에너지 밀도를 최적화하기 위한 소재 화학 마스터 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "하이니켈 양극재의 H1-H3 상전이 응력을 억제하여 구조적 붕괴를 방지하는 수리적 모델은?"
-    - "Si-C 음극재의 부피 팽창을 제어하고 SEI 층의 물리적 무결성을 유지하기 위한 임계 파라미터는?"
-  tags: ["#소재마스터", "#하이니켈", "#실리콘음극", "#상전이분석", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "High-Ni Energy Density"
     predicate: "measured_value"
     object: "765 Wh/kg"
-    evidence: "[Ref: V6.3.7] Section 1"
+    evidence_coordinate: "[Ref: V6.3.7] Section 1"
+    evidence_hash: "9bb61d22a348"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Ionic Conductivity"
     predicate: "has_theoretical_limit"
     object: "> 10 mS/cm"
-    evidence: "[Ref: Tier 0] Section 2"
-
+    evidence_coordinate: "[Ref: Tier 0] Section 2"
+    evidence_hash: "9bb61d22a348"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] battery-materials-and-chemistry-master-guide
 

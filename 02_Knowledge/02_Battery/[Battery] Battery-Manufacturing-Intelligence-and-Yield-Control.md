@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Battery-Manufacturing-Intelligence-and-Yield-Control]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-manufacturing-yield-and-process-precision-log-v2026"
   original_author: "Antigravity Vault / Manufacturing-Intelligence-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "6aa329d0823c3aa63441c9eef6fa1f7950fc27b671aa8ae572785c3976b49c13"
 object:
   object_type: "Concept"
   tier: 1
-  description: "전 공정 데이터를 통합 분석하여 골든 레시피를 유지하고 수율을 극대화하기 위한 제조 지능 시스템 및 공정 정밀도 제어 가이드"
-
+  description: '전 공정 데이터를 통합 분석하여 골든 레시피를 유지하고 수율을 극대화하기 위한 제조 지능 시스템 및 공정 정밀도 제어 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "배터리 코팅 공정에서 평량 오차를 1.5% 이내로 제어하기 위한 폐루프 보정 알고리즘은?"
-    - "조립 공정의 적층 정렬 오차가 리튬 플레이팅 발생 확률에 미치는 인과적 영향은?"
-  tags: ["#제조지능", "#수율제어", "#스마트팩토리", "#공정정밀도", "#믹싱레올로지"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Coating Precision"
     predicate: "has_theoretical_limit"
     object: "< 1.0%"
-    evidence: "[Ref: coat-log-v2026] Section 2.1"
+    evidence_coordinate: "[Ref: coat-log-v2026] Section 2.1"
+    evidence_hash: "6aa329d0823c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Total Yield"
     predicate: "measured_value"
     object: "91.8%"
-    evidence: "[Ref: yield-log-v2026] Page 4"
-
+    evidence_coordinate: "[Ref: yield-log-v2026] Page 4"
+    evidence_hash: "6aa329d0823c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Battery-Manufacturing-Intelligence-and-Yield-Control
 

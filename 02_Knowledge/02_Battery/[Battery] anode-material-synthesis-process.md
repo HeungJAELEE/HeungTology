@@ -1,27 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] anode-material-synthesis-process]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "리튬 이온의 저장 및 확산 속도를 결정하는 음극재 합성(탄화, 피치 코팅, Si-C 복합) 공정의 물리화학적 역학적 제어 가이드"
-semantic:
-  expected_queries:
-    - "음극재 합성 시 d002 층간 거리가 리튬 플레이팅(Li-plating) 리스크에 미치는 영향은?"
-    - "피치(Pitch) 탄화 온도가 BET 비표면적 및 초기 효율(ICE)에 미치는 상관관계는?"
-  tags: ["#음극재공정", "#d002", "#리튬플레이팅", "#비표면적", "#탄화공정", "#HDS-Gold"]
+  id: "[[[Battery] anode-material-synthesis-process]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-anode-synthesis-yield-log-v2026"
   original_author: "Antigravity Vault / Material-Process-Team"
+  original_hash: "a5074811665b5c62225b71a1e0eb6caca5e72b22b31f0ae678ecf3d96a3241d1"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '리튬 이온의 저장 및 확산 속도를 결정하는 음극재 합성(탄화, 피치 코팅, Si-C 복합) 공정의 물리화학적 역학적 제어 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] anode-material-synthesis-process
 

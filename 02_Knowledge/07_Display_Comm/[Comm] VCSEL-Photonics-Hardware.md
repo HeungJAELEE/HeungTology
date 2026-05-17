@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Comm] VCSEL-Photonics-Hardware]]"
-  domain: "07_Display_Comm"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Comm] VCSEL-Photonics-Hardware에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#07_Display_Comm", "#지능망", "#HDS-Gold"]
+  id: "[[[Comm] VCSEL-Photonics-Hardware]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "07_Display_Comm"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "02f712acfefaa4a200a3cb7dc59d2d3526bddfa6a02ccb9b7f22f3c405320b9a"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Comm] VCSEL-Photonics-Hardware에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 07_Display_Comm]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Comm] VCSEL-Photonics-Hardware
 

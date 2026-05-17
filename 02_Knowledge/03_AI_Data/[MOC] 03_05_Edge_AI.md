@@ -1,52 +1,54 @@
 ---
 metadata:
-  id: "[moc]-03_05_edge_ai-v7.5.2"
-  domain: "AI_Engineering"
-  project: "Vault_Modernization"
   date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
-semantic:
-  tags: [Edge_AI, Model_Compression, On-device_Inference]
-  is_part_of: [Antigravity_Knowledge_Graph]
-  related_to: []
-dynamic:
-  status: "Ratified_v7.5.2_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  id: "[moc]-03_05_edge_ai-v7.5.2"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_Engineering"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.1109/EDGE.2024.AI"
   original_author: "Edge_Computing_Reference_Model"
+  original_hash: "64aaf6163e4ca2177e71ce3b40dd155ab8319ba4d29c587f01c1d9bc7c1ebf80"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Edge_AI"
     predicate: "executes"
     object: "Localized_Inference"
-    evidence: "Section 1: Localized processing at data source"
+    evidence_coordinate: "Section 1: Localized processing at data source"
+    evidence_hash: "64aaf6163e4c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Quantization"
     predicate: "reduces"
     object: "Memory_Footprint"
-    evidence: "Section 3.1: FP32 to INT8 conversion"
+    evidence_coordinate: "Section 3.1: FP32 to INT8 conversion"
+    evidence_hash: "64aaf6163e4c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "On-device_Inference"
     predicate: "minimizes"
     object: "Communication_Latency"
-    evidence: "Section 4.1: AMR collision avoidance case"
+    evidence_coordinate: "Section 4.1: AMR collision avoidance case"
+    evidence_hash: "64aaf6163e4c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_research: 0.8
-  T_ai: 0.5
-  source: "Edge_Computing_Reference_Model"
-system_context:
-  fidelity_standard: "V7.5.2_Hardcore"
-  audit_log: "Migration_Complete"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_05_Edge_AI
 

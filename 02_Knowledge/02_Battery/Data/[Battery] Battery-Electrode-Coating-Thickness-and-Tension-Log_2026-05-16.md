@@ -3,45 +3,51 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Manufacturing-Audit-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Empirical_Grounding"
-  topology_policy: "Data_Log"
-
+  original_hash: "e2d7716771326db3c1838fb463302de6ef7f2c7fe6917987fa2c08d1d48e4c26"
 object:
   object_type: "Data"
   tier: 2
-  description: "하이니켈 양극재 고속 코팅 라인($60\text{ m/min}$)의 실측 운영 지표 및 품질 편차 로그"
-
+  description: '하이니켈 양극재 고속 코팅 라인($60	ext{ m/min}$)의 실측 운영 지표 및 품질 편차 로그'
+measurement:
+  value: 100.0
+  unit: "percent_compliance"
+  precision: 1.0
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "하이니켈 양극재 고속 코팅 시 발생하는 TD(Transverse Direction) 로딩량 편차 실측치는?"
-    - "웹 장력이 150N 이상으로 유지될 때의 메니스커스 안정성 및 결함률 상관관계는?"
-  tags: ["#코팅데이터", "#장력실측", "#품질로그", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Coating Speed (v)"
     predicate: "measured_value"
     object: "60.2 m/min"
-    evidence: "[Ref: M-LOG-2026] Section 1"
+    evidence_coordinate: "[Ref: M-LOG-2026] Section 1"
+    evidence_hash: "e2d771677132"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Loading Deviation (TD)"
     predicate: "measured_value"
     object: "+/- 0.35 mg/cm2"
-    evidence: "[Ref: M-LOG-2026] Section 2"
-
+    evidence_coordinate: "[Ref: M-LOG-2026] Section 2"
+    evidence_hash: "e2d771677132"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16
 

@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "76_display-photonics-and-optical-engineering-hub-moc"
-  domain: "76_Display_Photonics_and_Optical_Engineering_Hub"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "76_display-photonics-and-optical-engineering-hub-moc"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "76_Display_Photonics_and_Optical_Engineering_Hub"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "cf82e352a5017a8a2d451ca80a03927ffe11541a75a3de6b1b32867e0c72d29a"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: '["#MOC", "#Display", "#Photonics", "#Optics", "#OLED", "#Micro_LED", "#AR_VR", "#Color_Science", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 07_Display_Comm]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 76_display-photonics-and-optical-engineering-hub
 

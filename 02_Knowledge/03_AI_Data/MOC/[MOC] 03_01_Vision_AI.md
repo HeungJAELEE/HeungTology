@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 03_01_Vision_AI]]"
-  domain: "AI_Vision"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "컴퓨터 비전 및 시각 지능 알고리즘 핵심 노드 거점 (Vision AI MOC)"
-semantic:
-  tags: ["#AI", "#Vision", "#CNN", "#ObjectDetection", "#Segmentation", "#Industrial_Vision", "#MOC"]
+  id: "[[[MOC] 03_01_Vision_AI]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "AI_Vision"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "31f997b59ab81af743837708c8124afc391e8c7d311b7f15a19c439cf03ffaad"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '컴퓨터 비전 및 시각 지능 알고리즘 핵심 노드 거점 (Vision AI MOC)'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Vision AI"
     predicate: "processes"
     object: "Visual Data"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "31f997b59ab8"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_01_Vision_AI
 

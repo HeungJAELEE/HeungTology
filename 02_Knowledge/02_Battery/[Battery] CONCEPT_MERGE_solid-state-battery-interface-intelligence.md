@@ -1,27 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] CONCEPT_MERGE_solid-state-battery-interface-intelligence]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "전고체 배터리(SSB)의 고체-고체 계면 이온 수송 역학 및 덴드라이트 억제 물리 모델 분석 가이드"
-semantic:
-  expected_queries:
-    - "전고체 배터리에서 계면 저항(ASR)을 최소화하기 위한 임계 가압 조건은?"
-    - "Butler-Volmer 식을 이용한 고체 전해질의 전하 전달 속도 계산 방법은?"
-  tags: ["#전고체배터리", "#계면역학", "#덴드라이트억제", "#고체전해질", "#HDS-Gold"]
+  id: "[[[Battery] CONCEPT_MERGE_solid-state-battery-interface-intelligence]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "solid-state-battery-interface-resistance-log-v2026"
   original_author: "Antigravity Vault / Battery Materials Group"
+  original_hash: "d3a38b8e89861150976ed22d98bca6f6f27d2f000c804b6dcda3687a2c00aeda"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '전고체 배터리(SSB)의 고체-고체 계면 이온 수송 역학 및 덴드라이트 억제 물리 모델 분석 가이드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] CONCEPT_MERGE_solid-state-battery-interface-intelligence
 

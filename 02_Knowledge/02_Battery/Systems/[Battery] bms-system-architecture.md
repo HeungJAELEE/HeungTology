@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] bms-system-architecture]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / BMS-Architecture-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "854c8887062be56b6e97792181c75bd55989f780f9e131b40e5ff9269de92d46"
 object:
   object_type: "Concept"
   tier: 1
-  description: "수천 개의 셀 데이터를 수집, 처리하여 시스템의 기능 안전(ASIL-D)을 보장하고 에너지 거버넌스를 수행하는 계층적 제어 아키텍처 설계 지능"
-
+  description: '수천 개의 셀 데이터를 수집, 처리하여 시스템의 기능 안전(ASIL-D)을 보장하고 에너지 거버넌스를 수행하는 계층적 제어 아키텍처 설계 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "ISO 26262 ASIL-D 등급을 충족하기 위한 BMS 하드웨어 이중화(Redundancy) 구조의 수리적 신뢰도 모델링 방법은?"
-    - "무선 BMS(wBMS) 도입 시 패킷 손실률(PER)이 셀 밸런싱 무결성 및 데이터 동기화에 미치는 영향은?"
-  tags: ["#BMS아키텍처", "#기능안전", "#ASIL-D", "#wBMS", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Safety Integrity"
     predicate: "measured_value"
     object: "ASIL-D compliant"
-    evidence: "[Ref: ISO_26262_Spec] Section 1"
+    evidence_coordinate: "[Ref: ISO_26262_Spec] Section 1"
+    evidence_hash: "854c8887062b"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Comm Bandwidth"
     predicate: "measured_value"
     object: "> 2.0 Mbps (CAN-FD)"
-    evidence: "[Ref: Comm_Log_V7] Section 2"
-
+    evidence_coordinate: "[Ref: Comm_Log_V7] Section 2"
+    evidence_hash: "854c8887062b"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] bms-system-architecture
 

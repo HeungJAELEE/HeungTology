@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Strategy] industrial-strategy-and-corporate-governance-master-guide]]"
-  domain: "04_Strategy_Mgmt"
-  project: "Vault_Modernization"
   date: "2026-05-17"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "글로벌 하이테크 제조 기업의 자본 효율성 극대화 및 ESG 컴플라이언스 준수를 위한 의사결정 체계 및 거버넌스 표준 프레임워크"
-semantic:
-  tags: ["#산업전략", "#기업거버넌스", "#자본배분", "#EVA", "#ESG", "#HDS-Gold"]
+  id: "[[[Strategy] industrial-strategy-and-corporate-governance-master-guide]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "04_Strategy_Mgmt"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "industrial-strategy-and-corporate-governance-log-v2026"
   original_author: "Antigravity Vault / Strategic Management Office"
+  original_hash: "e54b4e9ec3a69a6b4c99011b2a4fa3b8c79a3676efb3152e1b879b369af11666"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '글로벌 하이테크 제조 기업의 자본 효율성 극대화 및 ESG 컴플라이언스 준수를 위한 의사결정 체계 및 거버넌스 표준 프레임워크'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 04_Strategy_Mgmt]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Strategy] industrial-strategy-and-corporate-governance-master-guide
 

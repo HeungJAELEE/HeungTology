@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] MANIFEST_SIB_20260426]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "battery-sib-performance-and-inventory-log_2026-05-16"
   original_author: "Antigravity Vault / SIB-Research-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "dba869ddc10c16fc5dcf482f6290c9fba0d6fea7f7419d09e675b6a77487645a"
 object:
   object_type: "Concept"
   tier: 1
-  description: "나트륨 이온 배터리(SIB)의 화학적 구성, 리튬 이온 대비 비교 우위 및 0V 방전 안정성 매니페스트"
-
+  description: '나트륨 이온 배터리(SIB)의 화학적 구성, 리튬 이온 대비 비교 우위 및 0V 방전 안정성 매니페스트'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "나트륨 이온 배터리가 리튬 이온 대비 0V 완전 방전 시 안전한 열역학적 이유는?"
-    - "SIB 하드 카본 음극의 층간 거리(d002) 임계 설계치는?"
-  tags: ["#나트륨이온", "#SIB", "#0V방전", "#하드카본", "#알루미늄집전체"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "SIB Discharge Stability"
     predicate: "allows"
     object: "0V Deep Discharge"
-    evidence: "[Ref: MANIFEST_SIB] Section 3.3"
+    evidence_coordinate: "[Ref: MANIFEST_SIB] Section 3.3"
+    evidence_hash: "dba869ddc10c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Hard Carbon Spacing"
     predicate: "has_theoretical_limit"
     object: "> 0.37 nm"
-    evidence: "[Ref: Stokes-Einstein] Section 3.1"
-
+    evidence_coordinate: "[Ref: Stokes-Einstein] Section 3.1"
+    evidence_hash: "dba869ddc10c"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] MANIFEST_SIB_20260426
 

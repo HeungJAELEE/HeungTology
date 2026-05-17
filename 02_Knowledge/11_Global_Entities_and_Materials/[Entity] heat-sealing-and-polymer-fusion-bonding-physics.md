@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Entity] heat-sealing-and-polymer-fusion-bonding-physics]]"
-  domain: "11_Global_Entities_and_Materials"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Entity] heat-sealing-and-polymer-fusion-bonding-physics에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+  id: "[[[Entity] heat-sealing-and-polymer-fusion-bonding-physics]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "11_Global_Entities_and_Materials"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "19239c625f9b4c56704e750a7d994b496ec84ae6e22b6da5742dbc162b0376bd"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Entity] heat-sealing-and-polymer-fusion-bonding-physics에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 11_Global_Entities_and_Materials]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Entity] heat-sealing-and-polymer-fusion-bonding-physics
 

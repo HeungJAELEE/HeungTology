@@ -3,45 +3,46 @@ metadata:
   date: "2026-05-17"
   id: "[[[Concept] [Display] display-module-assembly-master]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Concept_Node"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "07_Display_Comm"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "display-bonding-assembly-log-v2026"
   original_author: "Antigravity Vault"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "a8d79bb5b9b8eea92b0ab46f1d12920f6cec6e0f45e3d897eda2e1cf4ac0c5fa"
 object:
   object_type: "Concept"
   tier: 1
-  description: "플렉서블 디스플레이 제조를 위한 레이저 리프트오프(Laser Lift-Off, LLO) 수지 박리 공정 및 이방성 도전필름(ACF) 본딩 마이크로 접합 공정 설계 명세"
-
+  description: '플렉서블 디스플레이 제조를 위한 레이저 리프트오프(Laser Lift-Off, LLO) 수지 박리 공정 및 이방성 도전필름(ACF) 본딩 마이크로 접합 공정 설계 명세'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "디스플레이 LLO 공정에서 폴리이미드(PI)와 캐리어 글라스 분리를 위한 Excimer 레이저 플루언스 제어 조건은?"
-    - "ACF 파인 피치(Fine Pitch) 본딩 시 3차원 입자 압착 및 접촉 저항 계산 모델은?"
-  tags: ["#디스플레이공정", "#LLO", "#ACF본딩", "#레이저박리", "#접촉저항", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 07_Display_Comm]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Laser Lift-Off"
     predicate: "dissociates_substrate"
     object: "XeCl Excimer laser at 308nm"
-    evidence: "[Ref: display-bonding-assembly-log-v2026] Section 3.1"
+    evidence_coordinate: "[Ref: display-bonding-assembly-log-v2026] Section 3.1"
+    evidence_hash: "a8d79bb5b9b8"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Anisotropic Conductive Film"
     predicate: "establishes_electrical_connection"
     object: "Conductive particles under vertical compression"
-    evidence: "[Ref: display-bonding-assembly-log-v2026] Section 3.2"
-
+    evidence_coordinate: "[Ref: display-bonding-assembly-log-v2026] Section 3.2"
+    evidence_hash: "a8d79bb5b9b8"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Display] display-module-assembly-master
 

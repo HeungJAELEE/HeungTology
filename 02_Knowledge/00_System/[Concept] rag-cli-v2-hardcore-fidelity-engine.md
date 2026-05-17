@@ -3,45 +3,52 @@ metadata:
   date: "2026-05-17"
   id: "[[[Concept] rag-cli-v2-hardcore-fidelity-engine]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Concept_Node"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "00_System"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "rag_cli_v2.py"
   original_author: "Antigravity V7.6.2 Knowledge Weaver Agent"
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
+  original_hash: "c5c911225bc0e5907ce4487510571059943fff69b6373575844e9e18f3a57fb3"
 object:
   object_type: "Concept"
   tier: 1
-  description: "RTX 4060 CUDA 가속 및 BGE-M3 로컬 재색인을 장착한 V7.6.2 하드코어 피델리티 RAG 검색 엔진 아키텍처"
+  description: 'RTX 4060 CUDA 가속 및 BGE-M3 로컬 재색인을 장착한 V7.6.2 하드코어 피델리티 RAG 검색 엔진 아키텍처'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  is_instance_of: []
-  expected_queries:
-    - "RAG 동기화 중 ChromaDB HNSW 컴팩터 오류 발생 시 해결 방법은 무엇인가?"
-    - "BGE-M3 모델을 CUDA 가속 환경에서 오프라인 락다운 모드로 가동하는 설정은?"
-    - "RAG 검색 시 최고 점수 노드가 Data 유형일 때 상위 Concept을 추적하는 방법은?"
-  tags: ["#00_System", "#RAG_Engine", "#CUDA", "#ChromaDB", "#HDS-Gold"]
+  is_instance_of: "[[[MOC] 00_System]]"
+  alternative_parents: []
 spo_graph:
   - subject: "rag_cli_v2.py"
     predicate: "implements"
     object: "BGE-M3"
-    evidence: "[Ref: rag_cli_v2.py] Line 49-53"
+    evidence_coordinate: "[Ref: rag_cli_v2.py] Line 49-53"
+    evidence_hash: "c5c911225bc0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "rag_cli_v2.py"
     predicate: "requires"
     object: "HF_HUB_OFFLINE=1"
-    evidence: "[Ref: rag_cli_v2.py] Line 4"
+    evidence_coordinate: "[Ref: rag_cli_v2.py] Line 4"
+    evidence_hash: "c5c911225bc0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "rag_cli_v2.py"
     predicate: "uses"
     object: "BAAI/bge-reranker-v2-m3"
-    evidence: "[Ref: rag_cli_v2.py] Line 59"
+    evidence_coordinate: "[Ref: rag_cli_v2.py] Line 59"
+    evidence_hash: "c5c911225bc0"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Concept] rag-cli-v2-hardcore-fidelity-engine
 

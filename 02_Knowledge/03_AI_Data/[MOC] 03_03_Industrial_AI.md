@@ -1,51 +1,37 @@
 ---
 metadata:
-  id: "[moc]-03_03_industrial_ai-v7.5.2"
-  domain: "Industrial_AI_Engineering"
-  project: "Vault_Modernization"
   date: "2026-05-14"
-  version: "v7.5.3"
+  id: "[moc]-03_03_industrial_ai-v7.5.2"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Industrial_AI_Engineering"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "doi:10.1016/j.indchemeng.2024.05.001"
   original_author: "Smart Manufacturing Institute"
+  original_hash: "2d392b4f4a30469d26f8bdb0c397576ae98b07e5a8524f15cd3998b237547d11"
 object:
   object_type: "MOC"
   tier: 0
-  description: "High-Fidelity Industrial AI Node"
-  physical_model: "N/A"
+  description: 'High-Fidelity Industrial AI Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ['Industrial_AI', 'PHM', 'APC', 'PINN']
-  is_part_of: 'Antigravity_Knowledge_Graph'
-  related_to: ['Predictive_Maintenance', 'Process_Control']
-dynamic:
-  status: "Ratified_v7.5.2_Hardcore_Fidelity"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Baseline parameters alignment.'
-    - 'Context_Audit: Topological integrity check.'
-spog_graph:
-  - subject: "Industrial_AI"
-    predicate: "prioritizes"
-    object: "Reliability_and_Explainability"
-    evidence: "Industrial AI errors lead to massive material loss or human casualties."
-  - subject: "PINN"
-    predicate: "integrates"
-    object: "Physical_Equations"
-    evidence: "Physics-informed constraints (thermodynamics, fluid dynamics) included in loss functions."
-  - subject: "Chiller_AI_Optimization"
-    predicate: "reduces"
-    object: "Energy_Consumption"
-    evidence: "Implementation of variable cooling water temperature control via BMS."
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 0.8
-  T_init: 0.5
-  source: "Smart_Manufacturing_Reference_Model"
-integrity:
-  checksum: "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 # [[[MOC] 03_03_Industrial_AI
 
 ## 1. [Rationale] Domain-Specific Requirements

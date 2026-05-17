@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "MOC-INFRA-INDUSTRIAL-2026-V6.3.7"
-  domain: "Industrial_Infrastructure_and_Utility_Hub"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "MOC-INFRA-INDUSTRIAL-2026-V6.3.7"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Industrial_Infrastructure_and_Utility_Hub"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "6cdde5b73eb8502c9176c6844ed010764c1ce3abc231e109eca97706229b1aa4"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#MOC", "#Infrastructure", "#Utility", "#Chiller", "#Scrubber", "#GCDS", "#SiC_Inverter", "#Hydrogen", "#v6.3.7"]
-  is_part_of: ["MOC 00_INDEX", "MOC Smart-Manufacturing-Hub"]
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 25_Infrastructure]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 01_Industrial_Infrastructure
 

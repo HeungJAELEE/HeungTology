@@ -1,24 +1,38 @@
 ---
 metadata:
-  id: "[[[Battery] W13_battery-industry-job-market-2026]]"
-  domain: "02_Battery"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "2026년 배터리 산업의 원자 레벨 최적화 패러다임 전이에 따른 직군별 기술 스택 가중치 및 인력 가치 정량 매트릭스"
-semantic:
-  tags: ["#02_Battery", "#Job_Market", "#Physical_AI", "#Bridge_Engineer", "#Talent_Valuation", "#HDS-Gold"]
+  id: "[[[Battery] W13_battery-industry-job-market-2026]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "02_Battery"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-battery-talent-analytics-v2026"
   original_author: "Antigravity Vault"
+  original_hash: "6a42a7e979a24d7dd1c030bb06d11344d404db923e94bcd06ff0a56cceea174e"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '2026년 배터리 산업의 원자 레벨 최적화 패러다임 전이에 따른 직군별 기술 스택 가중치 및 인력 가치 정량 매트릭스'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_battery-industry-job-market-2026
 

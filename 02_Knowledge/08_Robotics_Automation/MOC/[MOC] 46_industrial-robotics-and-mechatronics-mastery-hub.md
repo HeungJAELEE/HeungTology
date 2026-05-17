@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 46_industrial-robotics-and-mechatronics-mastery-hub]]"
-  domain: "Robotics_Industrial"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "산업용 로봇 아키텍처, 정밀 메카트로닉스 제어 및 생산 자동화 시스템의 핵심 지식 거점"
-semantic:
-  tags: ["#Robotics", "#Mechatronics", "#Industrial_Automation", "#Control_Theory", "#Precision_Engineering", "#MOC"]
+  id: "[[[MOC] 46_industrial-robotics-and-mechatronics-mastery-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Robotics_Industrial"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "0abe1e8083733b3b6da048338b8f35cfa8d3903e3155a1de67399035166a8ad4"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '산업용 로봇 아키텍처, 정밀 메카트로닉스 제어 및 생산 자동화 시스템의 핵심 지식 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Industrial Robotics"
     predicate: "enables"
     object: "High-Precision Manufacturing"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "0abe1e808373"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 46_industrial-robotics-and-mechatronics-mastery-hub
 

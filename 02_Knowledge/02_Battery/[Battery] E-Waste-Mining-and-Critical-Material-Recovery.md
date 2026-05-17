@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] E-Waste-Mining-and-Critical-Material-Recovery]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "urban-mining-resource-density-log-v2026"
   original_author: "Antigravity Vault / Sustainability-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "1521c9bc02211f8103541be29a741949e3ec59df00cb7acf082168020db68a54"
 object:
   object_type: "Concept"
   tier: 1
-  description: "폐전자제품 및 배터리에서 고농도의 핵심 광물(Li, Ni, Co, REE)을 회수하기 위한 도시 광산 기술 및 자원 순환 전략"
-
+  description: '폐전자제품 및 배터리에서 고농도의 핵심 광물(Li, Ni, Co, REE)을 회수하기 위한 도시 광산 기술 및 자원 순환 전략'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "스마트폰 PCB 내 금 함량과 천연 광석 간의 자원 밀도 비교 결과는?"
-    - "희토류(REE) 회수를 위한 습식 제련(Hydrometallurgy)의 화학적 수율 임계치는?"
-  tags: ["#도시광산", "#자원순환", "#희토류회수", "#습식제련", "#친환경제련"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "E-Waste Gold Concentration"
     predicate: "has_theoretical_limit"
     object: "500 g/t"
-    evidence: "[Ref: Section 3.1] Page 2"
+    evidence_coordinate: "[Ref: Section 3.1] Page 2"
+    evidence_hash: "1521c9bc0221"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Metal Recovery Purity"
     predicate: "measured_value"
     object: "99.9%"
-    evidence: "[Ref: Section 2] Page 1"
-
+    evidence_coordinate: "[Ref: Section 2] Page 1"
+    evidence_hash: "1521c9bc0221"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] E-Waste-Mining-and-Critical-Material-Recovery
 

@@ -1,58 +1,54 @@
 ---
 metadata:
   date: "2026-05-14"
-  domain: "Semiconductor_Computing"
   id: "[moc]-high-performance-computing-v7.5.3"
   project: "Vault_Modernization"
-  version: "v7.5.3"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Semiconductor_Computing"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "doi:10.1038/hpc-arch-2026"
   original_author: "HPC_Architecture_Reference"
-diagnostic:
-  protocol:
-    - "Standard_Verification: Baseline parameter integrity check completed."
-    - "Context_Audit: Topological interconnect integrity confirmed."
-  fidelity_engine: "DomainFidelityEngine"
-  status: "Ratified_v7.5.3_Hardcore_Fidelity"
-  topology_policy: "Interconnected_Cluster"
+  original_hash: "3a733057142e2cb236ca2ea04b81041724182748674ee70794e31576314e425a"
 object:
-  description: "Standard Industrial Computing Node"
   object_type: "MOC"
-  physical_model: "N/A"
   tier: 0
+  description: 'Standard Industrial Computing Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "What is the quantitative impact of NVMe-oF on 3nm EDA simulation latency?"
-    - "Calculate the theoretical speedup limit for a 5% sequential fraction using Amdahl's Law."
-    - "Analyze the PUE deviation between theoretical ideal and verified HPC operational data."
-    - "Determine the HBM bandwidth requirements to eliminate bottlenecks in DFT simulations."
-    - "Evaluate the thermal dissipation capacity of 30kW+ liquid cooling systems for high-density racks."
-  is_part_of: "Antigravity_Knowledge_Graph"
-  related_to: []
-  tags: ["HPC", "Semiconductor", "EDA", "Parallel_Computing"]
+  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
+  alternative_parents: []
 spo_graph:
   - subject: "HPC"
     predicate: "accelerates"
     object: "R&D_Cycle"
-    evidence: "[Ref: Section 1]"
+    evidence_coordinate: "[Ref: Section 1]"
+    evidence_hash: "3a733057142e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Amdahl's_Law"
     predicate: "limits"
     object: "Speedup_Efficiency"
-    evidence: "[Ref: Section 3.1]"
+    evidence_coordinate: "[Ref: Section 3.1]"
+    evidence_hash: "3a733057142e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "3nm_EDA_Simulation"
     predicate: "achieved"
     object: "800%_Performance_Improvement"
-    evidence: "[Ref: Section 4.1]"
+    evidence_coordinate: "[Ref: Section 4.1]"
+    evidence_hash: "3a733057142e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_official: 0.8
-  T_ai: 0.5
-  isolation_index: 0.0
-  source: "HPC_Architecture_Reference"
-system_config:
-  encryption: "AES-256"
-  integrity_check: "SHA-512"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # High-Performance-Computing
 

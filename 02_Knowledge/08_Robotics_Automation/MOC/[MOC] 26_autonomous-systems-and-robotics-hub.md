@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 26_autonomous-systems-and-robotics-hub]]"
-  domain: "Robotics_Autonomous_Systems"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "자율 주행, AMR, 드론 및 로봇 제어 시스템의 지능형 아키텍처 핵심 노드 거점"
-semantic:
-  tags: ["#Robotics", "#Autonomous_Systems", "#AMR", "#Drone", "#SLAM", "#Path_Planning", "#MOC"]
+  id: "[[[MOC] 26_autonomous-systems-and-robotics-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Robotics_Autonomous_Systems"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "9daa3f9b7de53df3dc3403110c416a7cbcaa4fdac87536242f4d172f4981fb3a"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '자율 주행, AMR, 드론 및 로봇 제어 시스템의 지능형 아키텍처 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Autonomous Systems"
     predicate: "integrates"
     object: "Perception and Control"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "9daa3f9b7de5"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 26_autonomous-systems-and-robotics-hub
 

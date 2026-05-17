@@ -1,50 +1,54 @@
 ---
-meta:
-  id: "[moc]-03_02_generative_ai-v7.5.2"
-  domain: "AI_Engineering"
+metadata:
+  date: "2026-05-17"
+  id: "[[[Concept] [MOC] 03_02_Generative_AI]]"
   project: "Vault_Modernization"
-  date: "2026-05-14"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "Standard Industrial Node - High Fidelity"
-  physical_model: "N/A"
-semantic:
-  tags: ['Generative_AI', 'RAG', 'Transformer']
-  is_part_of: 'Antigravity_Knowledge_Graph'
-  related_to: ['LLM_Architecture', 'Vector_Database']
-dynamic:
-  status: "Ratified_v7.5.2_Hardcore"
-  topology_policy: "Interconnected_Cluster"
-  fidelity_engine: "DomainFidelityEngine_v7.5"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "https://doi.org/10.1038/s41586-023-generative-ai-ref"
   original_author: "Vault_Modernization_Team"
+  original_hash: "f8922fc05dd384ec95a35f6ccbd7db4b657792455fae8ef64bf2b138205fc595"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: 'Standard Industrial Node - High Fidelity'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Generative_AI"
     predicate: "enables"
     object: "Data_Augmentation"
-    evidence: "Section 1: Industrial Value"
+    evidence_coordinate: "Section 1: Industrial Value"
+    evidence_hash: "f8922fc05dd3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "RAG"
     predicate: "mitigates"
     object: "Hallucination_Rate"
-    evidence: "Section 3.2: Scientific Rationale"
+    evidence_coordinate: "Section 3.2: Scientific Rationale"
+    evidence_hash: "f8922fc05dd3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Transformer"
     predicate: "utilizes"
     object: "Self-Attention"
-    evidence: "Section 3.1: Model Architecture"
+    evidence_coordinate: "Section 3.1: Model Architecture"
+    evidence_hash: "f8922fc05dd3"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 0.8
-  T_init: 0.5
-integrity_control:
-  isolation_index: 0.0
-  audit_hash: "0x752_HARDCORE_FIDELITY_VERIFIED"
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 03_02_Generative_AI
 

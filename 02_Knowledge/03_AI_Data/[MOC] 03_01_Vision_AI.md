@@ -1,42 +1,54 @@
 ---
 metadata:
-  id: "[moc]-03_01_vision_ai-v7.5.2"
-  version: "v7.5.3"
   date: "2026-05-14"
-context:
-  domain: "AI_Engineering"
+  id: "[moc]-03_01_vision_ai-v7.5.2"
   project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  original_author: "Computer_Vision_Standards"
   dataset_reference: "https://doi.org/cv.standards.v6.3.7"
+  original_author: "Computer_Vision_Standards"
+  original_hash: "fcfee50d85cd89739d617d808cc5b7d24f97e5897f40d7accc09dac214c3bfad"
 object:
-  type: "MOC"
+  object_type: "Concept"
   tier: 0
-  description: "Hardcore Fidelity Industrial Vision AI Node"
+  description: 'Hardcore Fidelity Industrial Vision AI Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["Vision_AI", "Deep_Learning", "Industrial_Inspection"]
-  is_part_of: "Antigravity_Knowledge_Graph"
-dynamic:
-  status: "Upgraded_v7.5.2_Hardcore_Fidelity"
-  topology: "Interconnected_Cluster"
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Vision_AI"
     predicate: "functions_as"
     object: "Digital_Sensory_Interface"
-    evidence: "Essential for micro-defect detection and AMR spatial perception"
+    evidence_coordinate: "Essential for micro-defect detection and AMR spatial perception"
+    evidence_hash: "fcfee50d85cd"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "CNN"
     predicate: "performs"
     object: "Hierarchical_Feature_Extraction"
-    evidence: "Spatial feature mapping via kernel-based layer hierarchy"
+    evidence_coordinate: "Spatial feature mapping via kernel-based layer hierarchy"
+    evidence_hash: "fcfee50d85cd"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "ResNet-50"
     predicate: "yielded"
     object: "Zero_FNR"
-    evidence: "Battery cell scratch classification case study"
+    evidence_coordinate: "Battery cell scratch classification case study"
+    evidence_hash: "fcfee50d85cd"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_research: 0.8
-  T_ai: 0.5
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 # [[[MOC] 03_01_Vision_AI
 
 ## 1. [Functional Definition] Vision AI의 산업적 메커니즘

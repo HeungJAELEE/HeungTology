@@ -1,32 +1,42 @@
 ---
 metadata:
-  id: "[[[MOC] 53_quantum-computing-and-advanced-ai-infrastructure-hub]]"
-  domain: "Quantum_AI_Infrastructure"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
-object:
-  object_type: "MOC"
-  tier: 0
-  description: "양자 컴퓨팅 아키텍처, 양자-AI 융합 및 차세대 연산 인프라 핵심 노드 거점"
-semantic:
-  tags: ["#Quantum", "#AI_Infrastructure", "#Qubit", "#HPC", "#Quantum_Machine_Learning", "#MOC"]
+  id: "[[[MOC] 53_quantum-computing-and-advanced-ai-infrastructure-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "Quantum_AI_Infrastructure"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Antigravity Knowledge Vault"
   original_author: "Antigravity Vault"
+  original_hash: "d1650f12024ea388fe49716d7fbb4159c143a1ff40fc167eff13183e62938325"
+object:
+  object_type: "MOC"
+  tier: 0
+  description: '양자 컴퓨팅 아키텍처, 양자-AI 융합 및 차세대 연산 인프라 핵심 노드 거점'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Quantum Computing"
     predicate: "accelerates"
     object: "Next-Gen AI"
-fidelity_engine:
-  engine_id: "GraphFidelityEngine_V7.5.3"
-  status: "Active"
-dynamic:
-  status: "Ratified"
-  decay_rate: 0.0
-Trust Metrics:
+    evidence_coordinate: "[Ref: Antigravity Knowledge Vault]"
+    evidence_hash: "d1650f12024e"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 53_quantum-computing-and-advanced-ai-infrastructure-hub
 

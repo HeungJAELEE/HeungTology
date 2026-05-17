@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] back-end-die-wire-bonding-mechanics]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Backend-Engineering-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "8b3666ab3bcb2d7097fd6dbadcf613144015c2c0f6acb09ad8f472f8d4d26d78"
 object:
   object_type: "Concept"
   tier: 1
-  description: "다이 레벨 미세 회로와 패키지 리드 간의 연결을 위해 열, 압력, 초음파를 활용한 원자 레벨 융합 공정 및 금속 간 화합물(IMC) 성장 제어 역학"
-
+  description: '다이 레벨 미세 회로와 패키지 리드 간의 연결을 위해 열, 압력, 초음파를 활용한 원자 레벨 융합 공정 및 금속 간 화합물(IMC) 성장 제어 역학'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "와이어 본딩 시 IMC(Intermetallic Compound) 두께가 0.8~1.2um 범위를 초과할 경우 발생하는 커켄달 보이드(Kirkendall Voiding) 메커니즘은?"
-    - "초음파 임피던스 실시간 모니터링을 통해 본딩 패드의 산화막(Al2O3) 제거 효율을 판정하는 방법은?"
-  tags: ["#와이어본딩", "#IMC", "#커켄달보이드", "#초음파접합", "#반도체후공정"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Bonding Temperature"
     predicate: "measured_value"
     object: "175 +/- 2 C"
-    evidence: "[Ref: V7.5.2] Section 2.0"
+    evidence_coordinate: "[Ref: V7.5.2] Section 2.0"
+    evidence_hash: "8b3666ab3bcb"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "IMC Thickness"
     predicate: "has_theoretical_limit"
     object: "0.8 ~ 1.2 um"
-    evidence: "[Ref: V7.5.2] Section 2.1"
-
+    evidence_coordinate: "[Ref: V7.5.2] Section 2.1"
+    evidence_hash: "8b3666ab3bcb"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] back-end-die-wire-bonding-mechanics
 

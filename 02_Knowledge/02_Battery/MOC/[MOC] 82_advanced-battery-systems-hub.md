@@ -1,26 +1,38 @@
 ---
 metadata:
-  id: "[[[MOC] 82_advanced-battery-systems-hub]]"
-  domain: "General_Industrial"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.5.3"
+  id: "[[[MOC] 82_advanced-battery-systems-hub]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "General_Industrial"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "Antigravity Vault"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "5b1a650519f733cc43bd2d8931311786aa11391b7b009b02412e573b7407a156"
 object:
   object_type: "Concept"
   tier: 2
-  description: "Modernized legacy node integrated into V7.5.3 Fabric."
+  description: 'Modernized legacy node integrated into V7.5.3 Fabric.'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: ["#Modernized", "#Legacy_Update"]
-lineage:
-  dataset_reference: "Antigravity Vault"
-spo_graph: []
-fidelity_engine:
-  status: "Active"
-dynamic:
-  status: "Ratified"
-Trust Metrics:
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 metadata:
   id: "MOC-BATTERY-HUB-2026-V7.5.2"

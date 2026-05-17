@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[Entity] cupola-furnace-and-iron-melting-metallurgy]]"
-  domain: "11_Global_Entities_and_Materials"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[Entity] cupola-furnace-and-iron-melting-metallurgy에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#11_Global_Entities_and_Materials", "#지능망", "#HDS-Gold"]
+  id: "[[[Entity] cupola-furnace-and-iron-melting-metallurgy]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "11_Global_Entities_and_Materials"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "d807399a060f11697ad6bf1b6c80575b92ef5df596a250db15b5ad2aad668c76"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[Entity] cupola-furnace-and-iron-melting-metallurgy에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] 11_Global_Entities_and_Materials]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Entity] cupola-furnace-and-iron-melting-metallurgy
 

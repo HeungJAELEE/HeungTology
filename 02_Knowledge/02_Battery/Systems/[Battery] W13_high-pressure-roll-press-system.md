@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] W13_high-pressure-roll-press-system]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / Manufacturing-Logic-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "886cbe3261606babdcc9aad00cc9e700834c06e76641e14d88de16aa685dc6af"
 object:
   object_type: "Concept"
   tier: 1
-  description: "전극 합제 밀도를 극대화하고 기공 구조를 최적화하기 위해 헤르츠 접촉 응력(Hertzian Stress) 기반의 초고압 압착 공정을 제어하는 제조 지능"
-
+  description: '전극 합제 밀도를 극대화하고 기공 구조를 최적화하기 위해 헤르츠 접촉 응력(Hertzian Stress) 기반의 초고압 압착 공정을 제어하는 제조 지능'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "하이프레셔 롤프레스 공정에서 롤 직경($\Phi$) 증대가 전극 입자의 파쇄(Pulverization) 억제 및 점진적 압착에 미치는 수리적 기전은?"
-    - "전극 압축 시 발생하는 탄성 복원(Spring-back) 계수를 실시간 보정하여 롤 갭($Gap$)을 제어하는 제어 알고리즘은?"
-  tags: ["#롤프레스", "#고압압착", "#헤르츠응력", "#기공최적화", "#HDS-Gold"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Max Roll Force"
     predicate: "measured_value"
     object: "100 ~ 1,000 Tons"
-    evidence: "[Ref: Press_Spec_V7] Section 1"
+    evidence_coordinate: "[Ref: Press_Spec_V7] Section 1"
+    evidence_hash: "886cbe326160"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Gap Precision"
     predicate: "measured_value"
     object: "+/- 1.0 um"
-    evidence: "[Ref: Control_Log_V7] Section 2"
-
+    evidence_coordinate: "[Ref: Control_Log_V7] Section 2"
+    evidence_hash: "886cbe326160"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] W13_high-pressure-roll-press-system
 

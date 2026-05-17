@@ -1,24 +1,37 @@
 ---
 metadata:
-  id: "[[[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification]]"
-  domain: "03_AI_Data"
-  project: "Vault_Modernization"
   date: "2026-05-16"
-  version: "v7.6.2_Modernized"
-object:
-  object_type: "Concept"
-  tier: 1
-  description: "[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification에 관한 고밀도 지능 노드"
-semantic:
-  tags: ["#03_AI_Data", "#지능망", "#HDS-Gold"]
+  id: "[[[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification]]"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "03_AI_Data"
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
+  original_hash: "c9c35b38eb68f8f854832e17a3c91572ccdbd2f0781731232532764a57021b98"
+object:
+  object_type: "Concept"
+  tier: 1
+  description: '[AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification에 관한 고밀도 지능 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
+semantic:
+  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [AI] Active-Learning-and-Human-in-the-loop-for-Defect-Classification
 

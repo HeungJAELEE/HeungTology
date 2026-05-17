@@ -1,34 +1,37 @@
 ---
 metadata:
-  date: 2026-05-17
+  date: "2026-05-17"
   id: "[[[Concept] bms-and-battery-system-master-guide]]"
   project: "Topology_Reinforcement"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "entities"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
   original_author: "Antigravity Vault"
-
-dynamic:
-  diagnostic_protocol:
-    - "Topological_Integrity_Check"
-  status: "Reinforced (Auto-Healed)"
-  topology_policy: "Blueprint"
-
+  original_hash: "1c1da5b8888a19392cf310c37288ad056642d68ab2bbab58a65bed98f8eb370d"
 object:
   object_type: "Concept"
   tier: 2
-  description: "Concept bms-and-battery-system-master-guide 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
-
+  description: 'Concept bms-and-battery-system-master-guide 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "Concept bms-and-battery-system-master-guide 엔티티의 위상적 연결 고리는? [[Concept bms-and-battery-system-master-guide]]"
-  tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
-
+  is_instance_of: "[[[MOC] entities]]"
+  alternative_parents: []
+spo_graph:
+  []
 trust_metrics:
   T_static: 0.8
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # [Concept] bms-and-battery-system-master-guide
 

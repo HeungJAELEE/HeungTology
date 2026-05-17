@@ -1,34 +1,37 @@
 ---
 metadata:
-  id: "54_robotics-and-autonomous-system-intelligence-hub-moc"
-  domain: "54_Robotics_and_Autonomous_System_Intelligence"
-  project: "Vault_Modernization"
   date: "2026-05-12"
-  version: "v7.5.3"
+  id: "54_robotics-and-autonomous-system-intelligence-hub-moc"
+  project: "Vault_Modernization"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
+  domain: "54_Robotics_and_Autonomous_System_Intelligence"
+  last_updated: "2026-05-17T22:59:20+09:00"
+lineage:
+  dataset_reference: "global-core-log-v2026"
+  original_author: "Antigravity Vault Core Team"
+  original_hash: "d80d64cb4cd9847dcc6a92b71c8c612eb3245162293aaea3dd6101859640b041"
 object:
   object_type: "MOC"
   tier: 0
-  description: "Standard Industrial Node"
-  physical_model: "N/A"
+  description: 'Standard Industrial Node'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  tags: '["#MOC", "#Robotics", "#Autonomous_Systems", "#Humanoid", "#Cobot", "#Swarm", "#AMR", "#Haptic", "#Exoskeleton", "#RPA", "#HDS_Gold_v6_1"]'
-  is_part_of: '["MOC 01_knowledge-global-unified-intelligence-fabric-final-master-hub", "[[GEMINI.md]"]'
-  related_to: []
-dynamic:
-  status: "Ratified_v6.3.7_Migration"
-  topology_policy: "Interconnected_Cluster"
-  graphify_link_external: true
-  fidelity_engine: "DomainFidelityEngine"
-  diagnostic_protocol:
-    - 'Standard_Verification: Verify baseline parameters.'
-    - 'Context_Audit: Ensure topological integrity.'
-Trust Metrics:
+  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
+  alternative_parents: []
+spo_graph:
+  []
+trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  T_init: 1.0
-  source: "Antigravity Vault"
-  isolation_index: 0.0
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
 
 # 54_robotics-and-autonomous-system-intelligence-hub
 

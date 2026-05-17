@@ -3,45 +3,47 @@ metadata:
   date: "2026-05-17"
   id: "[[[Battery] active-learning-industrial-ai]]"
   project: "Vault_Modernization"
-  version: "v7.6.2_Modernized"
+  version: "v7.8_Enterprise_Node"
+  revision: "r1"
   domain: "02_Battery"
-
+  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault / AI-Strategy-Group"
-
-dynamic:
-  diagnostic_protocol:
-    - "Standard_Verification"
-  status: "Theoretical_Baseline"
-  topology_policy: "Blueprint"
-
+  original_hash: "4962a3c5f1437f1b0073094121749b01cca76838aeb69265044026d902e48fb7"
 object:
   object_type: "Concept"
   tier: 1
-  description: "산업 현장의 데이터 불균형 문제를 해결하기 위해 고불확실성 샘플을 우선 학습하여 라벨링 비용을 최소화하는 능동 학습(Active Learning) 프레임워크"
-
+  description: '산업 현장의 데이터 불균형 문제를 해결하기 위해 고불확실성 샘플을 우선 학습하여 라벨링 비용을 최소화하는 능동 학습(Active Learning) 프레임워크'
+temporal:
+  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_to: null
 semantic:
-  expected_queries:
-    - "산업용 결함 탐지 모델에서 라벨링 데이터 5%만으로 전체 성능을 확보하기 위한 샘플링 전략은?"
-    - "BALD(Bayesian Active Learning by Disagreement) 알고리즘을 활용한 모델 불확실성 측정 방법은?"
-  tags: ["#능동학습", "#데이터효율", "#BALD", "#샘플링전략", "#불확실성측정"]
-
+  is_instance_of: "[[[MOC] 02_Battery]]"
+  alternative_parents: []
 spo_graph:
   - subject: "Labeling Density"
     predicate: "has_theoretical_limit"
     object: "1% ~ 5%"
-    evidence: "[Ref: Section 1] Page 1"
+    evidence_coordinate: "[Ref: Section 1] Page 1"
+    evidence_hash: "4962a3c5f143"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
   - subject: "Efficiency Gain"
     predicate: "measured_value"
     object: "5x ~ 10x"
-    evidence: "[Ref: Section 2] Page 1"
-
+    evidence_coordinate: "[Ref: Section 2] Page 1"
+    evidence_hash: "4962a3c5f143"
+    evidence_timestamp: "2026-05-17T22:59:20+09:00"
 trust_metrics:
   T_static: 1.0
-  T_dynamic: 1.0
-  isolation_index: 0.1
+  decay_rate: 0.0
+validation:
+  schema_version: "v7.8"
+  last_validated: "2026-05-17T22:59:20+09:00"
+  validated_by: "global_reinforcer_v7.8"
 ---
+
+
 
 # [Battery] active-learning-industrial-ai
 
