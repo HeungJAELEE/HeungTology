@@ -1,22 +1,22 @@
 ---
 metadata:
   date: "2026-05-16"
-  id: "[[[Entity] etch-node]]"
+  id: "[[[Entity] Fab-Log-2026]]"
   project: "Vault_Modernization"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
-  original_hash: "b3ab4c0e1d150a95fdeb05133a342e6caee3da3505d474ad919ce1726588218a"
+  original_hash: "03935ca5cbad6ab91bc3456941637cd8de5d2a362cdd5ba9161e4d474a038fb7"
 object:
   object_type: "Concept"
   tier: 1
-  description: '[Entity] etch-node에 관한 고밀도 지능 노드'
+  description: '[Entity] Fab-Log-2026에 관한 고밀도 지능 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,12 +28,13 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Entity] etch-node
+
+# [Entity] Fab-Log-2026
 
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
@@ -48,11 +49,11 @@ dynamic:
 object:
   object_type: "Concept"
   tier: 2
-  description: "etch-node 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
+  description: "Fab-Log-2026 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
 
 semantic:
   expected_queries:
-    - "etch-node 엔티티의 위상적 연결 고리는? [[etch-node]]"
+    - "Fab-Log-2026 엔티티의 위상적 연결 고리는? [[Fab-Log-2026]]"
   tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
 
 trust_metrics:

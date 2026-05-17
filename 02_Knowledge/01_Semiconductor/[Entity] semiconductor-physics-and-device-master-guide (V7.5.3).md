@@ -1,22 +1,22 @@
 ---
 metadata:
   date: "2026-05-16"
-  id: "[[[Entity] ald-node]]"
+  id: "[[[Entity] semiconductor-physics-and-device-master-guide (V7.5.3)]]"
   project: "Vault_Modernization"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
-  original_hash: "1a95ed444ef9361b6c4837c4cd094cfeff7d2ce8b59fc13bcc9f7f0c51104075"
+  original_hash: "bc4a5d47196d0e3a82bb084c80f73e4ec93bbc30304173eaf1940fe994a8bd2e"
 object:
   object_type: "Concept"
   tier: 1
-  description: '[Entity] ald-node에 관한 고밀도 지능 노드'
+  description: '[Entity] semiconductor-physics-and-device-master-guide (V7.5.3)에 관한 고밀도 지능 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,12 +28,13 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Entity] ald-node
+
+# [Entity] semiconductor-physics-and-device-master-guide (V7.5.3)
 
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
@@ -48,11 +49,11 @@ dynamic:
 object:
   object_type: "Concept"
   tier: 2
-  description: "ald-node 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
+  description: "Semiconductor semiconductor-physics-and-device-master-guide (V7.5.3) 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
 
 semantic:
   expected_queries:
-    - "ald-node 엔티티의 위상적 연결 고리는? [[ald-node]]"
+    - "Semiconductor semiconductor-physics-and-device-master-guide (V7.5.3) 엔티티의 위상적 연결 고리는? [[Semiconductor semiconductor-physics-and-device-master-guide (V7.5.3)]]"
   tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
 
 trust_metrics:
@@ -60,7 +61,7 @@ trust_metrics:
 
 
 ## 1. [개요: 위상적 브릿지 (Topological Bridge)]
-본 엔티티 노드는 `[Semiconductor] semiconductor-fabrication-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
+본 엔티티 노드는 `[Semiconductor] semiconductor-physics-and-device-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
 
 ## 2. [물리적/화학적 핵심 사양 (Entity Specs Placeholder)]
 

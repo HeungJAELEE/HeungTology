@@ -5,8 +5,8 @@ metadata:
   project: "Vault_Modernization"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "02_Battery"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "battery-bms-safety-and-state-estimation-log-v2026"
   original_author: "Antigravity Vault / Battery Intelligence Group"
@@ -16,7 +16,7 @@ object:
   tier: 1
   description: '배터리 시스템의 안전 무결성을 지키고 SoC/SoH 추정 오차를 제어하며 열폭주 전조를 진단하는 실시간 BMS 안전 제어 체계'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,9 +28,10 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
+
 
 
 # [Concept] Battery-Management-System-BMS-and-Safety-Intelligence

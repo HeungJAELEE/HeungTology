@@ -1,22 +1,22 @@
 ---
 metadata:
   date: "2026-05-17"
-  id: "[[[Concept] High-Nickel-Cathode-and-Silicon-Anode-Materials]]"
+  id: "[[[Concept] btms-battery-thermal-management-system]]"
   project: "Topology_Reinforcement"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "02_Battery"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
   original_author: "Antigravity Vault"
-  original_hash: "9314bda82f60a25ea53ec2b0dec64f2e114ab2feec93b01595d122fbc082c46f"
+  original_hash: "0bb413d8cf6eb2097cf774b4e3b83cd4b86ae230f9873e0f77e7d1f4f6990cf7"
 object:
   object_type: "Concept"
   tier: 2
-  description: 'Concept High-Nickel-Cathode-and-Silicon-Anode-Materials 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
+  description: 'Concept btms-battery-thermal-management-system 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,17 +28,18 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Concept] High-Nickel-Cathode-and-Silicon-Anode-Materials
 
-# [Entity] Concept High-Nickel-Cathode-and-Silicon-Anode-Materials (V7.6.2)
+# [Concept] btms-battery-thermal-management-system
+
+# [Entity] Concept btms-battery-thermal-management-system (V7.6.2)
 
 ## 1. [개요: 위상적 브릿지 (Topological Bridge)]
-본 엔티티 노드는 `[Battery] anode-material-synthesis-process-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
+본 엔티티 노드는 `[Battery] bms-and-battery-system-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
 
 ## 2. [물리적/화학적 핵심 사양 (Entity Specs Placeholder)]
 

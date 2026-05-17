@@ -1,22 +1,22 @@
 ---
 metadata:
   date: "2026-05-16"
-  id: "[[[Entity] hbm-node]]"
+  id: "[[[Entity] ald-node]]"
   project: "Vault_Modernization"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
-  original_hash: "457d9a4d1f0130ee229d266c75808ec50945f268cfe5901416c6e7824f55ed58"
+  original_hash: "1a95ed444ef9361b6c4837c4cd094cfeff7d2ce8b59fc13bcc9f7f0c51104075"
 object:
   object_type: "Concept"
   tier: 1
-  description: '[Entity] hbm-node에 관한 고밀도 지능 노드'
+  description: '[Entity] ald-node에 관한 고밀도 지능 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,12 +28,13 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Entity] hbm-node
+
+# [Entity] ald-node
 
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
@@ -48,11 +49,11 @@ dynamic:
 object:
   object_type: "Concept"
   tier: 2
-  description: "hbm-node 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
+  description: "ald-node 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
 
 semantic:
   expected_queries:
-    - "hbm-node 엔티티의 위상적 연결 고리는? [[hbm-node]]"
+    - "ald-node 엔티티의 위상적 연결 고리는? [[ald-node]]"
   tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
 
 trust_metrics:

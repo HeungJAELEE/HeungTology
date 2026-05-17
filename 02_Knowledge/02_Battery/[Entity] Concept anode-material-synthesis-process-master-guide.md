@@ -1,22 +1,22 @@
 ---
 metadata:
-  date: "2026-05-16"
-  id: "[[[Entity] Fab-Log-2026]]"
-  project: "Vault_Modernization"
+  date: "2026-05-17"
+  id: "[[[Entity] Concept anode-material-synthesis-process-master-guide]]"
+  project: "Topology_Reinforcement"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "02_Battery"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
+  dataset_reference: "Topology_Auto_Healer_V7.6.2"
   original_author: "Antigravity Vault"
-  original_hash: "03935ca5cbad6ab91bc3456941637cd8de5d2a362cdd5ba9161e4d474a038fb7"
+  original_hash: "53e2bdbfeaa241b0efe83b43a16089a93cf1c586f6b30630b4894c74b1d1bcc3"
 object:
   object_type: "Concept"
-  tier: 1
-  description: '[Entity] Fab-Log-2026에 관한 고밀도 지능 노드'
+  tier: 2
+  description: 'Concept anode-material-synthesis-process-master-guide 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -24,43 +24,20 @@ semantic:
 spo_graph:
   []
 trust_metrics:
-  T_static: 1.0
+  T_static: 0.8
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Entity] Fab-Log-2026
 
-lineage:
-  dataset_reference: "Topology_Auto_Healer_V7.6.2"
-  original_author: "Antigravity Vault"
-
-dynamic:
-  diagnostic_protocol:
-    - "Topological_Integrity_Check"
-  status: "Reinforced (Auto-Healed)"
-  topology_policy: "Blueprint"
-
-object:
-  object_type: "Concept"
-  tier: 2
-  description: "Fab-Log-2026 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
-
-semantic:
-  expected_queries:
-    - "Fab-Log-2026 엔티티의 위상적 연결 고리는? [[Fab-Log-2026]]"
-  tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
-
-trust_metrics:
-  t_static: 0.8
-
+# Concept anode-material-synthesis-process-master-guide
 
 ## 1. [개요: 위상적 브릿지 (Topological Bridge)]
-본 엔티티 노드는 `[Semiconductor] semiconductor-fabrication-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
+본 엔티티 노드는 `[Concept] anode-material-synthesis-process-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
 
 ## 2. [물리적/화학적 핵심 사양 (Entity Specs Placeholder)]
 
@@ -76,4 +53,5 @@ trust_metrics:
 1. 본 노드의 핵심 물리 법칙이 상위 마스터 노드의 주장과 수리적으로 일치하는가?
 2. 추가 보강이 필요한 기술적 사양 데이터가 존재하는가?
 
+---
 *Created by Flash (HDS Gold v6.1 & Meta-Fusion v6.1 Topology Auto-Healer)*

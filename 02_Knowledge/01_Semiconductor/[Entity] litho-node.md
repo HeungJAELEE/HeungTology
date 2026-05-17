@@ -1,22 +1,22 @@
 ---
 metadata:
   date: "2026-05-16"
-  id: "[[[Entity] battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade)]]"
+  id: "[[[Entity] litho-node]]"
   project: "Vault_Modernization"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "01_Semiconductor"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "global-dataset-inventory-hub"
   original_author: "Antigravity Vault"
-  original_hash: "aa46237ce492d50ff2e00057dce8458f61cb667804367fc7f9e7a0d98ce34621"
+  original_hash: "2a6043af24f0236729c65cc8d9d2508f357f26540edd9964fad5381a1f9639ca"
 object:
   object_type: "Concept"
   tier: 1
-  description: '[Entity] battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade)에 관한 고밀도 지능 노드'
+  description: '[Entity] litho-node에 관한 고밀도 지능 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,12 +28,13 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
 
 
-# [Entity] battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade)
+
+# [Entity] litho-node
 
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
@@ -48,11 +49,11 @@ dynamic:
 object:
   object_type: "Concept"
   tier: 2
-  description: "Battery battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade) 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
+  description: "litho-node 위상적 무결성 사수를 위한 자동 생성 엔티티 노드"
 
 semantic:
   expected_queries:
-    - "Battery battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade) 엔티티의 위상적 연결 고리는? [[Battery battery-manufacturing-process-master-guide (V7.5.2 Fidelity Upgrade)]]"
+    - "litho-node 엔티티의 위상적 연결 고리는? [[litho-node]]"
   tags: ["#Entity", "#Auto_Healed", "#V7.6.2"]
 
 trust_metrics:
@@ -60,7 +61,7 @@ trust_metrics:
 
 
 ## 1. [개요: 위상적 브릿지 (Topological Bridge)]
-본 엔티티 노드는 `[Battery] battery-manufacturing-process-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
+본 엔티티 노드는 `[Semiconductor] semiconductor-fabrication-master-guide.md` 마스터 허브에서 인용되었으나 물리적 파일이 결손되어 있던 링크를 복구하기 위해 **Topology Auto-Healer V7.6.2**에 의해 자동 생성된 지식 앵커(Anchor)입니다. 시스템의 위상적 무결성을 사수하기 위해 구조적으로 생성되었습니다.
 
 ## 2. [물리적/화학적 핵심 사양 (Entity Specs Placeholder)]
 

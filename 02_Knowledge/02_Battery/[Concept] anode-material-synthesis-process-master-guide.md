@@ -5,8 +5,8 @@ metadata:
   project: "Topology_Reinforcement"
   version: "v7.8_Enterprise_Node"
   revision: "r1"
-  domain: "entities"
-  last_updated: "2026-05-17T22:59:20+09:00"
+  domain: "02_Battery"
+  last_updated: "2026-05-18T00:37:47+09:00"
 lineage:
   dataset_reference: "Topology_Auto_Healer_V7.6.2"
   original_author: "Antigravity Vault"
@@ -16,7 +16,7 @@ object:
   tier: 2
   description: 'Concept anode-material-synthesis-process-master-guide 위상적 무결성 사수를 위한 자동 생성 엔티티 노드'
 temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
+  valid_from: "2026-05-18T00:37:47+09:00"
   valid_to: null
 semantic:
   is_instance_of: "[[[MOC] entities]]"
@@ -28,9 +28,10 @@ trust_metrics:
   decay_rate: 0.0
 validation:
   schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
+  last_validated: "2026-05-18T00:37:47+09:00"
   validated_by: "global_reinforcer_v7.8"
 ---
+
 
 
 # [Concept] anode-material-synthesis-process-master-guide
