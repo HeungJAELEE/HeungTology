@@ -1,37 +1,61 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] product-cost-and-margin-analysis-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "06bb7f3aea0f730383822541a4ac36d303a02c2a79ecce15537af939d857d26b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 06bb7f3aea0f730383822541a4ac36d303a02c2a79ecce15537af939d857d26b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] product-cost-and-margin-analysis-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] product-cost-and-margin-analysis-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  custom_d_dl_pct: 50.0
+  custom_d_dm_pct: 30.0
+  custom_d_margin_pct: 15.0
+  custom_d_oh_pct: 20.0
+  custom_d_revenue_share_pct: 5.0
+  economy_c_dl_pct: 10.0
+  economy_c_dm_pct: 60.0
+  economy_c_margin_pct: 10.0
+  economy_c_oh_pct: 30.0
+  economy_c_revenue_share_pct: 20.0
+  flagship_a_dl_pct: 30.0
+  flagship_a_dm_pct: 20.0
+  flagship_a_margin_pct: 45.0
+  flagship_a_oh_pct: 50.0
+  flagship_a_revenue_share_pct: 25.0
+  high_margin_threshold_pct: 30.0
+  loss_making_target_count: 0
+  margin_calculation_tolerance_limit_pct: 1.0
+  pvm_expected_margin_improvement_pct: 12.0
+  pvm_mix_adjustment_target_pct: 5.0
+  standard_b_dl_pct: 20.0
+  standard_b_dm_pct: 40.0
+  standard_b_margin_pct: 25.0
+  standard_b_oh_pct: 40.0
+  standard_b_revenue_share_pct: 50.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] product-cost-and-margin-analysis-log-v2026
 

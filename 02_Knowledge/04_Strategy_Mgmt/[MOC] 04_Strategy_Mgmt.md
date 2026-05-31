@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "MOC-STRAT-MGMT-2026-V7.5.3"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Global_Strategy_and_Corporate_Governance"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "4dd721f76051af8d4645beba5076d142bb649d5fa698cf4fd7d7a4a8e652a68e"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: 4dd721f76051af8d4645beba5076d142bb649d5fa698cf4fd7d7a4a8e652a68e
+metadata:
+  date: '2026-05-16'
+  domain: Global_Strategy_and_Corporate_Governance
+  id: MOC-STRAT-MGMT-2026-V7.5.3
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Fidelity Strategic Decision Intelligence Command Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Strategic Decision Intelligence Command Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cbam_regulation: carbon_border_adjustment_mechanism
+  coq_parameter: cost_of_quality
+  iatf_16949_standard: iatf-16949
+  intelligence_version: v7.5.3
+  quality_audit_log_endpoint: quality-audit-log-v2026
+  raroc_parameter: risk_adjusted_return_on_capital
+  risk_capital_log_endpoint: risk-capital-log-v2026
+  scm_resilience_log_endpoint: scm-resilience-log-v2026
+  timestamp: '2026-05-16'
+  ttr_parameter: time_to_recover
+  tts_parameter: time_to_survive
 semantic:
-  is_instance_of: "[[[MOC] 04_Strategy_Mgmt]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 04_Strategy_Mgmt]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 04_Strategy_Mgmt
 

@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] energy-smart-grid-v2g-bidirectional-power-flow-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1fdd75a600cd6d1c84f85a14da0a3b958c732b804d7a0cdd09cd125afaf203dd"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1fdd75a600cd6d1c84f85a14da0a3b958c732b804d7a0cdd09cd125afaf203dd
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] energy-smart-grid-v2g-bidirectional-power-flow-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] energy-smart-grid-v2g-bidirectional-power-flow-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] energy-smart-grid-v2g-bidirectional-power-flow-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  annual_battery_degradation_rate: 0.3%
+  bidirectional_efficiency_verified: 92-96%
+  cert_exchange_latency_share: 10%
+  comm_latency_verified: 100-300 ms
+  grid_frequency_tolerance_verified: ±0.2 Hz
+  max_discharge_current_limit: 0.2 C
+  max_discharge_power_verified: 7.0-15.0 kW
+  response_time_verified: < 500 ms
+  soc_safety_margin: 20%
+  thd_compliance_threshold: 5%
+  thd_verified: < 3.0%
+  voltage_deviation_verified: < 5.0%
+  voltage_regulation_recovery_level: 2.5%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] energy-smart-grid-v2g-bidirectional-power-flow-log-v2026
 

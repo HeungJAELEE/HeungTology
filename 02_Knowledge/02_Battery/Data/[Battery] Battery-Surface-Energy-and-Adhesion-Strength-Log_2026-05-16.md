@@ -1,38 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Surface-Energy-and-Adhesion-Strength-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "637dad19baa6b1a54a6bba9538b8f052487a6e94b50759540b3500bb57be400d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 637dad19baa6b1a54a6bba9538b8f052487a6e94b50759540b3500bb57be400d
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Surface-Energy-and-Adhesion-Strength-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Surface-Energy-and-Adhesion-Strength-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Battery-Surface-Energy-and-Adhesion-Strength-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  peel_strength_actual: 112.5 N/m
+  peel_strength_target: '> 100.0 N/m'
+  plasma_treatment_speed: 45 m/min
+  surface_energy_actual: 72.4 mN/m
+  surface_energy_target: '> 70.0 mN/m'
+  surface_roughness_ra_actual: 0.18 μm
+  surface_roughness_ra_target: 0.15 ~ 0.25 μm
+  water_contact_angle_actual: 18.2 °
+  water_contact_angle_target: < 20.0 °
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Surface-Energy-and-Adhesion-Strength-Log_2026-05-16
 

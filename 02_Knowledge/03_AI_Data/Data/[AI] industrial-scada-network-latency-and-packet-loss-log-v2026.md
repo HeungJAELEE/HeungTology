@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-scada-network-latency-and-packet-loss-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5f59e6364458cd0a930080f9cadf05623e9914186c3579f9033caa6627637568"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5f59e6364458cd0a930080f9cadf05623e9914186c3579f9033caa6627637568
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-scada-network-latency-and-packet-loss-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-scada-network-latency-and-packet-loss-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-scada-network-latency-and-packet-loss-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  availability_target: 99.99%
+  error_rate_target: 1e-8
+  measured_availability: 99.999%
+  measured_error_rate: '1.2e-9'
+  measured_network_jitter: 0.8ms
+  measured_packet_loss: 0.0008%
+  measured_rtt_latency: 4.2ms
+  measured_throughput: 845.2Mbps
+  network_jitter_target: 1.0ms
+  packet_loss_target: 0.001%
+  rtt_latency_target: 5.0ms
+  throughput_target: 800.0Mbps
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-scada-network-latency-and-packet-loss-log-v2026
 

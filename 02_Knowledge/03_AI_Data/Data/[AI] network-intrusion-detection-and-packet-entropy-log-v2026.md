@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] network-intrusion-detection-and-packet-entropy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "141181e8c5ac863152dce99a8bce8e1cb481c4ef1c3e34a22200426a679f4216"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 141181e8c5ac863152dce99a8bce8e1cb481c4ef1c3e34a22200426a679f4216
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] network-intrusion-detection-and-packet-entropy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] network-intrusion-detection-and-packet-entropy-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] network-intrusion-detection-and-packet-entropy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  anomaly_score_measured: '12.5'
+  anomaly_score_threshold: '50.0'
+  avg_packet_size: 1,250 Bytes
+  entropy_error_tolerance: 0.1 bit
+  false_positive_rate_measured: 0.004%
+  false_positive_rate_threshold: 0.010%
+  latency_measured: 1.2 ms
+  latency_threshold: 2.0 ms
+  normal_packet_entropy_limit: 4.0 bit
+  packet_entropy_measured: 3.84 bits
+  packet_entropy_target_range: 3.0 ~ 4.5 bits
+  throughput_measured: 45.2 Gbps
+  throughput_target_min: 40.0 Gbps
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] network-intrusion-detection-and-packet-entropy-log-v2026
 

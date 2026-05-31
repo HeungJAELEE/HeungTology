@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "07_Display_Comm"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bf174436b416086841b56a279eb95ea4bbbd2255a763c10429782c6052810f35"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bf174436b416086841b56a279eb95ea4bbbd2255a763c10429782c6052810f35
+metadata:
+  date: '2026-05-16'
+  domain: 07_Display_Comm
+  id: '[[[Data] display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  lateral_alignment_limit: <±15μm
+  lateral_alignment_standard: ±8μm
+  line_speed_max: 50m/min
+  line_speed_standard: 20m/min
+  md_alignment_limit: <±10μm
+  md_alignment_standard: ±5μm
+  pet_thermal_shrinkage_rate: 0.02%
+  roller_parallelism_calibration_limit: 0.01mm/m
+  target_stacking_precision: 10μm
+  tension_profile_stability_limit: 5%
+  web_tension_standard: 80N
+  web_tension_tolerance: ±5N
+  web_width_standard: 500mm
+  web_width_tolerance: ±0.1mm
 semantic:
-  is_instance_of: "[[[MOC] 07_Display_Comm]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 07_Display_Comm]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026
 

@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-cell-assembly-alignment-and-sealing-integrity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0eb9f785368278b5dd5909b2561dbf95abc060eb07516436a48ae1276ae54eb4"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0eb9f785368278b5dd5909b2561dbf95abc060eb07516436a48ae1276ae54eb4
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-cell-assembly-alignment-and-sealing-integrity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] battery-cell-assembly-alignment-and-sealing-integrity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] battery-cell-assembly-alignment-and-sealing-integrity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  helium_leak_rate_threshold_pa_m3_s: 1.0e-08
+  measured_helium_leak_rate_pa_m3_s: 2.5e-09
+  measured_stacking_alignment_um: 85
+  measured_tab_weld_resistance_mohm: 0.15
+  pouch_depth_tolerance_mm: 0.1
+  sealing_pressure_target_mpa: 0.8-1.0
+  sealing_temperature_target_celsius: 190-200
+  stacking_alignment_threshold_um: 100
+  tab_weld_resistance_threshold_mohm: 0.2
+  voltage_deviation_threshold_mv: 10
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-cell-assembly-alignment-and-sealing-integrity-log-v2026
 

@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ar-vr-pancake-lens-optical-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "55b8e4c6fd7bda7b524b027cdb498299b58463e88dcc6fe5e54f38cccf505bf0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 55b8e4c6fd7bda7b524b027cdb498299b58463e88dcc6fe5e54f38cccf505bf0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ar-vr-pancake-lens-optical-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] ar-vr-pancake-lens-optical-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  aberration_suppression_ratio: 15%
+  alignment_tolerance: 0.1 deg
+  ghost_brightness_multiplier_per_degree: 5x
+  micro_oled_brightness: 5000 nits
+  minimum_target_luminance: 600 nits
+  refractive_index_range: 1.5-1.7
+  spatial_compression_ratio: 0.45-0.55x
+  theoretical_total_transmittance: 12.5%
+  thickness_reduction_ratio: 20%
+  verified_total_transmittance: 10.5-15.0%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ar-vr-pancake-lens-optical-efficiency-log-v2026
 

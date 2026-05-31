@@ -1,38 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Trading-Quant-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c6810378ff9da4b41557f8f94caa317c7f83cd18bfbd77b9ef8b12b4d3977f5c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c6810378ff9da4b41557f8f94caa317c7f83cd18bfbd77b9ef8b12b4d3977f5c
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Trading-Quant-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Trading-Quant-Performance-Log_2026-05-16에 관한 고밀도
+    지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Battery-Trading-Quant-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_trade_latency_ms_actual: 9.5
+  avg_trade_latency_ms_target: 10.0
+  degradation_cost_error_actual_pct: 4.2
+  degradation_cost_error_target_pct: 5.0
+  ess_capacity_gwh: 1
+  mdd_actual_pct: 8.4
+  mdd_target_pct: 10.0
+  sharpe_ratio_actual: 1.52
+  sharpe_ratio_target: 1.5
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Trading-Quant-Performance-Log_2026-05-16
 

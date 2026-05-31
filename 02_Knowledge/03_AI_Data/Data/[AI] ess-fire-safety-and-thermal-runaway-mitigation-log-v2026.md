@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ess-fire-safety-and-thermal-runaway-mitigation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "809e720283d4fb747c0872a20aea9edca7c590100ecd0ace6727fdce24966529"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 809e720283d4fb747c0872a20aea9edca7c590100ecd0ace6727fdce24966529
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ess-fire-safety-and-thermal-runaway-mitigation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ess-fire-safety-and-thermal-runaway-mitigation-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ess-fire-safety-and-thermal-runaway-mitigation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  eff_thermal_conductivity_threshold: 0.05 W/mK
+  firewall_propagation_delay: 1 hour
+  gas_sensor_activation_temp: 70°C
+  h2_explosion_threshold: 4%
+  lfp_off_gas_lead_time: 10-20 min
+  lfp_onset_temp_range: 150-210°C
+  lfp_peak_temp_range: 400-600°C
+  nmc_off_gas_lead_time: 5-15 min
+  nmc_onset_temp_range: 120-160°C
+  nmc_peak_temp_range: 800-1100°C
+  smoke_sensor_activation_temp: 100°C
+  vrfb_peak_temp_max: 50°C
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ess-fire-safety-and-thermal-runaway-mitigation-log-v2026
 

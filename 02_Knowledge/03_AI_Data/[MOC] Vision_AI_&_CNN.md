@@ -1,52 +1,59 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "vision-ai-cnn-moc"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://vault.internal/archived/vision-ai-cnn-moc-v6.3.7"
-  original_author: "Flash (HDS Gold V6.3.7)"
-  original_hash: "a2d776ac7abc8614d97e16b487aa13be3e344aca72b1f2fe96055d0273ebd474"
+  dataset_reference: https://vault.internal/archived/vision-ai-cnn-moc-v6.3.7
+  original_author: Flash (HDS Gold V6.3.7)
+  original_hash: a2d776ac7abc8614d97e16b487aa13be3e344aca72b1f2fe96055d0273ebd474
+metadata:
+  date: '2026-05-14'
+  domain: 03_AI_Data
+  id: vision-ai-cnn-moc
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: Visual Intelligence SSOT (Single Source of Truth) Node
+  object_type: Concept
   tier: 2
-  description: 'Visual Intelligence SSOT (Single Source of Truth) Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  alignment_audit_log_endpoint: Data general-process-parameter-log-v2026
+  clip_score_verified: 0.78
+  cnn_inference_latency_edge_theoretical: 2.0ms
+  cnn_inference_latency_edge_verified: 4.5ms
+  rag_retrieval_precision_verified: 0.92
+  visual_hallucination_rate_verified: 0.12%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
 spo_graph:
-  - subject: "vision-ai-cnn-moc"
-    predicate: "functions_as"
-    object: "Tier_2_SSOT"
-    evidence_coordinate: "본 문서는 ... 최상위 지식 위상망(Tier 2 MOC)입니다."
-    evidence_hash: "a2d776ac7abc"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Visual_Intelligence"
-    predicate: "consolidates"
-    object: "7_Master_Hubs"
-    evidence_coordinate: "파편화된 비전 지식을 7개의 고밀도 마스터 허브로 통합하여..."
-    evidence_hash: "a2d776ac7abc"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "RAG_System"
-    predicate: "implements"
-    object: "Cross-modal_Alignment_Audit"
-    evidence_coordinate: "RAG는 ... 시각 정보와 텍스트 설명 사이의 수리적 정합성을 실시간 감리합니다."
-    evidence_hash: "a2d776ac7abc"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: 본 문서는 ... 최상위 지식 위상망(Tier 2 MOC)입니다.
+  intent: architectural_role
+  object: Tier_2_SSOT
+  predicate: functions_as
+  subject: vision-ai-cnn-moc
+  weight: 1.0
+- evidence_coordinate: 파편화된 비전 지식을 7개의 고밀도 마스터 허브로 통합하여...
+  intent: knowledge_aggregation
+  object: 7_Master_Hubs
+  predicate: consolidates
+  subject: Visual_Intelligence
+  weight: 0.9
+- evidence_coordinate: RAG는 ... 시각 정보와 텍스트 설명 사이의 수리적 정합성을 실시간 감리합니다.
+  intent: validation_process
+  object: Cross-modal_Alignment_Audit
+  predicate: implements
+  subject: RAG_System
+  weight: 0.8
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
 
 # [[[MOC] Vision_AI_&_CNN]]]

@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bridge-structural-vibration-and-stress-monitoring-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6961894e7b95f77dc886214398d84c8a12cb74d709f0d6ca82746676ee5e1992"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6961894e7b95f77dc886214398d84c8a12cb74d709f0d6ca82746676ee5e1992
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bridge-structural-vibration-and-stress-monitoring-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] bridge-structural-vibration-and-stress-monitoring-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] bridge-structural-vibration-and-stress-monitoring-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ambient_temperature_measured: 24.5 C
+  bending_moment_measured: 4,580 kN-m
+  bending_moment_target: < 5,500 kN-m
+  damping_ratio_measured: 2.45%
+  damping_ratio_target: 2.0 - 3.0%
+  deflection_measured: 15.2 mm
+  deflection_target: < 25.0 mm
+  frequency_drop_heavy_vehicle: 0.05 Hz
+  infrastructure_integrity_threshold: 99.9%
+  max_stress_measured: 124.5 MPa
+  max_stress_target: < 150.0 MPa
+  natural_frequency_measured: 1.25 Hz
+  natural_frequency_target: '> 1.20 Hz'
+  temp_induced_stress_increase_rate: 15%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bridge-structural-vibration-and-stress-monitoring-log-v2026
 

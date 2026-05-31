@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] annual-operating-plan-aop-and-variance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "14ddf61202cee8a9a5961af673379ca5e8049299f3c78ef3493c76092672dae4"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 14ddf61202cee8a9a5961af673379ca5e8049299f3c78ef3493c76092672dae4
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] annual-operating-plan-aop-and-variance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] annual-operating-plan-aop-and-variance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  actual_capex: 25M
+  actual_cogs: 63M
+  actual_op_profit: 16M
+  actual_opex: 19M
+  actual_revenue: 98M
+  capex_utilization_rate_pct: 83.3
+  cogs_variance_pct: 5.0
+  dol_model_impact_threshold: 5% revenue drop -> 20% op profit collapse
+  op_profit_variance_pct: -20.0
+  opex_variance_pct: -5.0
+  plan_achievement_index_target: 1.0
+  planned_capex: 30M
+  planned_cogs: 60M
+  planned_op_profit: 20M
+  planned_opex: 20M
+  planned_revenue: 100M
+  revenue_variance_pct: -2.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] annual-operating-plan-aop-and-variance-log-v2026
 

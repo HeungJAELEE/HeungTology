@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5060858fac9f2c068a8b6387641baa343271edb6df74f50b09447177cc0eb544"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5060858fac9f2c068a8b6387641baa343271edb6df74f50b09447177cc0eb544
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  byproduct_yield_threshold: < 0.05
+  energy_shunt_range: 20.0-30.0%
+  glucose_consumption_rate_range: 0.5-1.5
+  growth_rate_range: 0.1-0.35
+  mass_balance_range: 98.0-102.0%
+  pathway_ratio_threshold: '> 45.0%'
+  recovery_tolerance: '5.0'
+  respiratory_quotient_range: 1.0-1.1
+  target_recovery: '100.0'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026
 

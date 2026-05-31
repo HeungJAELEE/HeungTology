@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ethylene-cracking-furnace-efficiency-and-emission-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "653c27655a3530c6f12937454d6276b696f248f65ed73958241c92f32fedbbc3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 653c27655a3530c6f12937454d6276b696f248f65ed73958241c92f32fedbbc3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ethylene-cracking-furnace-efficiency-and-emission-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ethylene-cracking-furnace-efficiency-and-emission-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ethylene-cracking-furnace-efficiency-and-emission-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  co2_intensity: 1.15 t/t
+  co2_intensity_target: <1.20
+  coil_temperature: 845.5 C
+  coil_temperature_target: 840 +/- 10 C
+  cracking_severity: '0.62'
+  cracking_severity_target: 0.60-0.65
+  ethylene_yield: 32.4%
+  ethylene_yield_target: '>30.0%'
+  nox_concentration: 45.2 ppm
+  nox_concentration_target: <50.0
+  residence_time_range: 0.1-0.5s
+  thermal_efficiency: 93.5%
+  thermal_efficiency_target: '>92.0%'
+  tmt_coking_threshold: 20 C
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ethylene-cracking-furnace-efficiency-and-emission-log-v2026
 

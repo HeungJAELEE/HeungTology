@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] water-withdrawal-and-discharge-quality-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4253c047e48971d902c46e9b24f30451d7bfa2452322f4b2295f08c1f2e7e554"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4253c047e48971d902c46e9b24f30451d7bfa2452322f4b2295f08c1f2e7e554
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] water-withdrawal-and-discharge-quality-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] water-withdrawal-and-discharge-quality-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  cod_concentration_mg_l_range: 10-30
+  discharge_cod_compliance_rate_percent: 99.9
+  discharge_tss_compliance_rate_percent: 99.9
+  groundwater_compliance_rate_percent: 95.0
+  groundwater_withdrawal_range_m3_d: 100-500
+  municipal_compliance_rate_percent: 100.0
+  municipal_withdrawal_range_m3_d: 500-2000
+  ph_level_range: 6.8-7.5
+  pollutant_load_model_equation: L = V * C
+  recycled_water_rate_percentage: 60-85
+  recycled_water_withdrawal_range_m3_d: 800-1500
+  tss_concentration_mg_l_range: 5-15
+  water_balance_model_equation: V_in + V_rain = V_product + V_evap + V_discharge +
+    V_loss
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] water-withdrawal-and-discharge-quality-log-v2026
 

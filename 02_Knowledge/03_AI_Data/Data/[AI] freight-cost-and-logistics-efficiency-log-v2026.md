@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] freight-cost-and-logistics-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7b3e789dcf8e1b598fea8fca8ddc7dc324970acc0f083378071d53e00db448d8"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7b3e789dcf8e1b598fea8fca8ddc7dc324970acc0f083378071d53e00db448d8
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] freight-cost-and-logistics-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] freight-cost-and-logistics-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  air_cargo_cost_usd_per_kg: 3.0-8.0
+  air_cargo_utilization_rate: 0.85
+  carbon_efficiency_improvement_threshold: 0.15
+  demurrage_target_cost: 0
+  ocean_fcl_cost_usd: 2500-5000
+  ocean_fcl_utilization_rate: 0.95
+  road_full_truck_cost_usd: 1.5-3.0
+  road_full_truck_utilization_rate: 0.92
+  tlc_model_parameters: D, Q, F, H, v
+  utilization_improvement_benchmark: 80%_to_95%
+  warehouse_storage_cost_usd: 10-25
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] freight-cost-and-logistics-efficiency-log-v2026
 
@@ -44,7 +55,7 @@ validation:
 
 ### 2.1 [주요 물류 비용 항목 및 효율 실측 테이블 (v2026)]
 
-| 비용 항목 | 운송 모드 | 단위 비용 ($) | 적재율 (%) | 효율 등급 | 공학적 의미 (Rationale V6.3.7) |
+| 비용 항목 | 운송 모드 | 단위 비용 ($) | 적재율 (%) | 효율 등급 | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **Ocean F.** | **FCL (40ft)** | $\$2,500 \sim 5,000$| $95.0$ | **High** | **Scale**: 대량 해상 수송의 규모 경제 무결성 로그 |
 | **Air F.** | **Cargo (kg)** | $\$3.0 \sim 8.0$ | $85.0$ | **Low** | **Speed**: 긴급 항공 수송의 가치-비용 무결성 지표 |

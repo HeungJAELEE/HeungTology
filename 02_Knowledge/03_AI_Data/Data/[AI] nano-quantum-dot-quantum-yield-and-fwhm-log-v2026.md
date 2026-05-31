@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] nano-quantum-dot-quantum-yield-and-fwhm-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e03bba4cd2ef62fa7e95e225fdc8031b6ae3fef5df399511825d3fb9003831ab"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e03bba4cd2ef62fa7e95e225fdc8031b6ae3fef5df399511825d3fb9003831ab
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] nano-quantum-dot-quantum-yield-and-fwhm-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] nano-quantum-dot-quantum-yield-and-fwhm-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] nano-quantum-dot-quantum-yield-and-fwhm-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  db_endpoint_batch_log: Batch_Log
+  db_endpoint_decay_log: Decay_Log
+  db_endpoint_physics_standard: Physics_Standard
+  db_endpoint_spec_standard: Spec_Standard
+  db_endpoint_spectral_analysis: Spectral_Analysis
+  monodisperse_fwhm_green_limit: < 15.0 nm
+  monodisperse_fwhm_red_limit: < 20.0 nm
+  target_fwhm_threshold: < 20.0 nm
+  target_plqy_threshold: '> 95.0%'
+  theoretical_plqy_limit: 100.0%
+  verified_plqy_average: 92.5%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] nano-quantum-dot-quantum-yield-and-fwhm-log-v2026
 

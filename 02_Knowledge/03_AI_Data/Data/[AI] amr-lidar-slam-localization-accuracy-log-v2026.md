@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] amr-lidar-slam-localization-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "004a89005c9d0f379c1a656d0692eb6a33e6c19af9897cf491a410740c5006e3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 004a89005c9d0f379c1a656d0692eb6a33e6c19af9897cf491a410740c5006e3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] amr-lidar-slam-localization-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] amr-lidar-slam-localization-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  corner_turning_rms_error: 12.8 mm
+  crowded_area_rms_error: 24.2 mm
+  drift_rate_theoretical: 0.1%
+  featureless_hall_rms_error: 55.4 mm
+  lidar_scan_frequency: 10-20 Hz
+  localization_convergence_theoretical: 100 ms
+  low_light_rms_error: 9.2 mm
+  open_loop_drift_rate: < 0.5%
+  point_cloud_density: 64,000-1,280,000 pts/sec
+  rms_error_static_theoretical: 5.0 mm
+  scan_frequency_theoretical: 25 Hz
+  slam_cpu_load: 12-35%
+  static_warehouse_rms_error: 8.5 mm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] amr-lidar-slam-localization-accuracy-log-v2026
 

@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] laser-welding-penetration-depth-and-porosity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1f3d01fbe050eb79096ef9f6a5a96f561473ac2fd264e74838ecfa8ca534a99a"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1f3d01fbe050eb79096ef9f6a5a96f561473ac2fd264e74838ecfa8ca534a99a
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] laser-welding-penetration-depth-and-porosity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] laser-welding-penetration-depth-and-porosity-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] laser-welding-penetration-depth-and-porosity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  heat_affected_zone_measured_mm: 0.2
+  heat_affected_zone_target_max_mm: 0.3
+  laser_power_density_mw_cm2: 1.2
+  max_porosity_threshold_percent: 1.0
+  melt_pool_stability_measured: 0.98
+  melt_pool_stability_target_min: 0.95
+  penetration_depth_measured_mm: 4.5
+  penetration_depth_target_range_mm:
+  - 4.2
+  - 4.8
+  porosity_fraction_measured_percent: 0.8
+  porosity_fraction_target_max_percent: 1.5
+  precision_tolerance_mm: 0.1
+  welding_speed_m_min: 3.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] laser-welding-penetration-depth-and-porosity-log-v2026
 

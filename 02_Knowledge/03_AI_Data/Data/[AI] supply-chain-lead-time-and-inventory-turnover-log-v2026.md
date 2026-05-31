@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] supply-chain-lead-time-and-inventory-turnover-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bde2dee88d7817054d364931c14eafb86b077eaaf0cf1a71769d2358150247e6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bde2dee88d7817054d364931c14eafb86b077eaaf0cf1a71769d2358150247e6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] supply-chain-lead-time-and-inventory-turnover-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] supply-chain-lead-time-and-inventory-turnover-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] supply-chain-lead-time-and-inventory-turnover-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  agility_index_actual: 1.24
+  agility_index_target_min: 1.0
+  inventory_turnover_actual_times_yr: 14.5
+  inventory_turnover_formula: COGS / Inv_avg
+  inventory_turnover_target_min: 12.0
+  otif_rate_actual_pct: 98.5
+  otif_rate_target_min_pct: 95.0
+  safety_stock_actual_units: 1250
+  safety_stock_formula: z * sigma_d * sqrt(L)
+  safety_stock_target_nominal_units: 1200
+  safety_stock_target_tolerance_units: 100
+  stock_out_rate_actual_pct: 0.25
+  stock_out_rate_target_max_pct: 1.0
+  total_lead_time_actual_days: 14.2
+  total_lead_time_target_days: 15.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] supply-chain-lead-time-and-inventory-turnover-log-v2026
 

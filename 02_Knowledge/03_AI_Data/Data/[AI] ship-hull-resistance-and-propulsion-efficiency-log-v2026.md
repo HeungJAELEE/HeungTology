@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ship-hull-resistance-and-propulsion-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "614b7102a8ad9d5ff37380a105ba1dff017446f4a3c0f321bd294ba39989f85f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 614b7102a8ad9d5ff37380a105ba1dff017446f4a3c0f321bd294ba39989f85f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ship-hull-resistance-and-propulsion-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ship-hull-resistance-and-propulsion-efficiency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ship-hull-resistance-and-propulsion-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  froude_number: '0.185'
+  fuel_consumption_g_kwh: '165.2'
+  fuel_consumption_threshold_g_kwh: '170.0'
+  hull_roughness_threshold_um: '150'
+  hull_roughness_um: '125'
+  propulsion_efficiency_pct: '76.4'
+  propulsion_efficiency_threshold_pct: '75.0'
+  total_resistance_kn: '850.5'
+  total_resistance_threshold_kn: '900.0'
+  vessel_speed_knots: '22.4'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ship-hull-resistance-and-propulsion-efficiency-log-v2026
 

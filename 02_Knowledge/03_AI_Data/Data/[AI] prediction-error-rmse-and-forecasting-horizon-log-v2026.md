@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] prediction-error-rmse-and-forecasting-horizon-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "54624156c2e39d63ced6a33a055204de24d77fa4c68de2f8ff359e15e4d6590a"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 54624156c2e39d63ced6a33a055204de24d77fa4c68de2f8ff359e15e4d6590a
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] prediction-error-rmse-and-forecasting-horizon-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] prediction-error-rmse-and-forecasting-horizon-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] prediction-error-rmse-and-forecasting-horizon-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  equip_temp_rmse_pct_range: 0.5-2.0
+  market_price_rmse_pct_range: 8.0-15.0
+  model_drift_index_range: 0-1
+  power_demand_rmse_pct_range: 1.5-3.0
+  process_yield_rmse_pct_range: 1.0-4.0
+  reliability_collapse_horizon_threshold_hr: 12
+  rmse_formula: sqrt(1/n * sum(y_i - y_hat_i)^2)
+  vibration_pdm_rmse_pct_range: 5.0-12.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] prediction-error-rmse-and-forecasting-horizon-log-v2026
 

@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industry-tsn-network-jitter-and-gcl-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6a57fc2e9b8dfe9b02c31d9ce96dd92181a01f2f7bed9bc8cd77aa5fa887e0c1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6a57fc2e9b8dfe9b02c31d9ce96dd92181a01f2f7bed9bc8cd77aa5fa887e0c1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industry-tsn-network-jitter-and-gcl-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industry-tsn-network-jitter-and-gcl-accuracy-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industry-tsn-network-jitter-and-gcl-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  clock_sync_drift_ns: 100
+  engine_jitter_limit_us: 0.5
+  engine_sync_drift_limit_ns: 100.0
+  gcl_switch_error_ns: 50
+  guard_band_width_us: 5.0
+  jitter_gaussian_sigma_us: 0.2
+  max_jitter_us: 1.0
+  mean_path_delay_ns: 500
+  packet_loss_rate_percent: 0.0
+  throughput_gbps: 1.0
+  worst_case_latency_us: 100
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industry-tsn-network-jitter-and-gcl-accuracy-log-v2026
 

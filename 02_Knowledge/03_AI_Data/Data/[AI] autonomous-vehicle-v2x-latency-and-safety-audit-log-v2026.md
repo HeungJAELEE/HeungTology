@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] autonomous-vehicle-v2x-latency-and-safety-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "23f747020837b2a97864b089095ac415042435bebdc84339ea7d7b55087724ae"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 23f747020837b2a97864b089095ac415042435bebdc84339ea7d7b55087724ae
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] autonomous-vehicle-v2x-latency-and-safety-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] autonomous-vehicle-v2x-latency-and-safety-audit-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] autonomous-vehicle-v2x-latency-and-safety-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  handover_packet_retransmission_count: '3'
+  human_reaction_time_avg: 1s
+  message_frequency_threshold: 50Hz
+  message_frequency_verified: 100Hz
+  pdr_threshold: 99.99%
+  pdr_verified: 99.992%
+  safety_distance_error_threshold: 0.30m
+  safety_distance_error_verified: 0.12m
+  snr_verified: 24dB
+  sync_error_threshold: 5.0ms
+  sync_error_verified: 1.5ms
+  throughput_threshold: 30Mbps
+  throughput_verified: 45Mbps
+  v2i_aeb_pre_warning_time: 0.5s
+  v2x_latency_threshold: 10ms
+  v2x_latency_verified: 8.5ms
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] autonomous-vehicle-v2x-latency-and-safety-audit-log-v2026
 

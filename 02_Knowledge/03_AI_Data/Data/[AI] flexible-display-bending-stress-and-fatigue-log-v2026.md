@@ -1,37 +1,56 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] flexible-display-bending-stress-and-fatigue-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1c6e2921964ce7eb3166ee9645ce06da02cbe72abef46cafce31f2c0f57e062a"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1c6e2921964ce7eb3166ee9645ce06da02cbe72abef46cafce31f2c0f57e062a
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] flexible-display-bending-stress-and-fatigue-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] flexible-display-bending-stress-and-fatigue-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] flexible-display-bending-stress-and-fatigue-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bending_stress_model: sigma = E * (y / R)
+  delamination_energy_unit: J/m^2
+  fixed_curved_max_stress_mpa: 25.0
+  fixed_curved_radius: 1000R
+  fixed_curved_resistance_change_pct: 0.05
+  in_folding_curvature_radius_mm: 1.5
+  in_folding_cycle_limit: 200000
+  in_folding_max_stress_mpa: 150.0
+  in_folding_resistance_change_threshold_pct: 2.0
+  out_folding_curvature_radius_mm: 3.0
+  out_folding_cycle_limit: 150000
+  out_folding_max_stress_mpa: 120.0
+  out_folding_resistance_change_threshold_pct: 3.5
+  pi_substrate_property: viscoelasticity
+  rollable_curvature_radius_mm: 5.0
+  rollable_cycle_limit: 100000
+  rollable_max_stress_mpa: 80.0
+  rollable_resistance_change_threshold_pct: 1.5
+  strain_rate_unit: mm/s
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] flexible-display-bending-stress-and-fatigue-log-v2026
 

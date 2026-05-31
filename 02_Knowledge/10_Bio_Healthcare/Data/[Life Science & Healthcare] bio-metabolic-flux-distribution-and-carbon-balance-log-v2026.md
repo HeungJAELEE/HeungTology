@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "159c443d67b7dc276bedcc14a5e08ad2261e863a0b233b286f0ffe0645899653"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 159c443d67b7dc276bedcc14a5e08ad2261e863a0b233b286f0ffe0645899653
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_carbon_recovery_percent: 92.66
+  avg_product_pathway_percent: 36.78
+  avg_tca_cycle_percent: 36.22
+  carbon_recovery_threshold_percent: 80.0
+  metabolic_efficiency_version: v2026
+  target_energy_percent: 30.0
+  target_product_pathway_percent: 50.0
+  target_waste_percent: 20.0
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] bio-metabolic-flux-distribution-and-carbon-balance-log-v2026
 

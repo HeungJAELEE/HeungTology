@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] information-computing-6g-network-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e38b40a72929dbd377eea08507a564ec805dccb31b0004ff403947cf4568efa1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e38b40a72929dbd377eea08507a564ec805dccb31b0004ff403947cf4568efa1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] information-computing-6g-network-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] information-computing-6g-network-performance-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] information-computing-6g-network-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ai_slicing_latency_threshold_ms: 0.1
+  ai_slicing_reliability_target: 0.99999
+  connection_density_per_km2: 10^6-10^7
+  energy_efficiency_bits_j: 10^12-10^15
+  irs_distance_extension_factor: 2.0
+  irs_shadowing_improvement_db: 15.0
+  latency_range_ms: 0.1-1.0
+  mobility_max_km_h: 1000
+  peak_rate_range_tbps: 0.1-1.0
+  spectral_efficiency_bps_hz: 10-100
+  thz_path_loss_db_m: 100-160
+  user_rate_range_gbps: 1-10
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] information-computing-6g-network-performance-log-v2026
 

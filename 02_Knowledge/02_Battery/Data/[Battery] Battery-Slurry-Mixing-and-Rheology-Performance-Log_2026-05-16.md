@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Slurry-Mixing-and-Rheology-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "17de68d9e1d9a41043d14afa33ff5c2ed67ebea2d7949ed0672346284ef3e5e6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 17de68d9e1d9a41043d14afa33ff5c2ed67ebea2d7949ed0672346284ef3e5e6
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Slurry-Mixing-and-Rheology-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Slurry-Mixing-and-Rheology-Performance-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Battery-Slurry-Mixing-and-Rheology-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  mixing_temp_rise_actual: 12.4 °C
+  mixing_temp_rise_target: < 35.0 °C
+  particle_size_d50_actual: 12.4 μm
+  particle_size_d50_target: < 15.0 μm
+  slurry_viscosity_actual: 2,540 mPa·s
+  slurry_viscosity_target: 2,500 ± 200 mPa·s
+  solid_content_actual: 68.5%
+  solid_content_target: 65.0 ~ 70.0%
+  vacuum_level_actual: -78.2 kPa
+  vacuum_level_target: -60.0 ~ -80.0 kPa
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Slurry-Mixing-and-Rheology-Performance-Log_2026-05-16
 

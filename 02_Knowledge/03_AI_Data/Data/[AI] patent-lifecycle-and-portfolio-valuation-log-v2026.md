@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] patent-lifecycle-and-portfolio-valuation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "638e1d00c407973b762a1f3b1e1a615c9aedaa7907dd9a9f2070d9a41c9f339d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 638e1d00c407973b762a1f3b1e1a615c9aedaa7907dd9a9f2070d9a41c9f339d
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] patent-lifecycle-and-portfolio-valuation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] patent-lifecycle-and-portfolio-valuation-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] patent-lifecycle-and-portfolio-valuation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  citation_surge_threshold_pct: 50.0
+  dependency_margin_analysis_log: data_product_cost_and_margin_analysis_log_v2026
+  external_patent_db: derwent
+  market_dominance_impact_pct: 30.0
+  patent_abandoned_count: 300
+  patent_application_count: 1200
+  patent_expiry_near_count: 500
+  patent_granted_count: 3500
+  patent_maintenance_annual_cost_usd: 5500000
+  patent_maintenance_avg_citation: 12.0
+  patent_maintenance_count: 4800
+  patent_maintenance_remaining_life_yr: 8.2
+  tech_obsolescence_decay_constant: k
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] patent-lifecycle-and-portfolio-valuation-log-v2026
 
@@ -44,7 +58,7 @@ validation:
 
 ### 2.1 [특허 생애 단계별 자산 현황 및 성능 테이블 (v2026)]
 
-| 생애 단계 | 자산 수 (Count) | 평균 인용 (Avg) | 유지 비용 ($/yr) | 잔존 수명 (yr) | 공학적 의미 (Rationale V6.3.7) |
+| 생애 단계 | 자산 수 (Count) | 평균 인용 (Avg) | 유지 비용 ($/yr) | 잔존 수명 (yr) | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Application** | $1,200$ | **N/A** | $\$500\text{K}$ | $20.0$ | **Potential**: 미래 혁신의 씨앗 및 기술 가시성 무결성 로그 |
 | **Granted** | $3,500$ | $8.5$ | $\$2.0\text{M}$ | $15.5$ | **Protection**: 공식적 권리 확보 및 기술 지배 무결성 지표 |
@@ -53,7 +67,7 @@ validation:
 | **Abandoned** | $300$ | $1.5$ | **Saved** | $0.0$ | **Pruning**: 비효율 자산 제거 및 자원 최적화 무결성 지표 |
 
 ### 2.2 [IP 자산 가치 및 수명 관리 파라미터]
-- **Portfolio Asset Value ($):** 현재 보유한 전체 특허의 시장 가치 또는 기대 현금 흐름의 현재 가치 합계.
+- **Portfolio Asset Value ($):** 현재 보유한 전체 특허의 시장 가치 또는 기대 현금 흐름의 현재 가치 합계.$
 - **Avg Forward Citations:** 타사 특허에 의해 우리 특허가 인용된 평균 횟수. (기술적 영향력 지표)
 - **Patent Maintenance Rate (%):** 만료 전까지 유지 비용을 지불하여 권리를 지속시킨 비중.
 - **Remaining Economic Life (Years):** 해당 기술이 시장에서 유효하게 가치를 창출할 것으로 예상되는 평균 잔여 기간.

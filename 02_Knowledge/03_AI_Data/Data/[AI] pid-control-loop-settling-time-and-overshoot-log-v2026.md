@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] pid-control-loop-settling-time-and-overshoot-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4a71e4b9dac98d4f53942c56f69ec8b0a19a5e8877a8049a7b3d6b64f474722e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4a71e4b9dac98d4f53942c56f69ec8b0a19a5e8877a8049a7b3d6b64f474722e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] pid-control-loop-settling-time-and-overshoot-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] pid-control-loop-settling-time-and-overshoot-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] pid-control-loop-settling-time-and-overshoot-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  damping_ratio_target_max: 0.8
+  damping_ratio_target_min: 0.7
+  gain_margin_measured_db: 12.5
+  gain_margin_target_db: 10.0
+  overshoot_measured_pct: 1.8
+  overshoot_target_pct: 2.0
+  phase_margin_measured_deg: 62.5
+  phase_margin_target_deg: 60.0
+  rise_time_measured_sec: 1.5
+  rise_time_target_sec: 2.0
+  settling_time_measured_sec: 4.2
+  settling_time_target_sec: 5.0
+  steady_state_error_measured_pct: 0.02
+  steady_state_error_target_pct: 0.05
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] pid-control-loop-settling-time-and-overshoot-log-v2026
 

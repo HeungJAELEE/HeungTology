@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] swarm-coordination-efficiency-and-task-completion-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9ffefa1ecd4d1ef48dd1e5c193981550023d03a73d402102d22e29390f8adec6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9ffefa1ecd4d1ef48dd1e5c193981550023d03a73d402102d22e29390f8adec6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] swarm-coordination-efficiency-and-task-completion-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] swarm-coordination-efficiency-and-task-completion-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] swarm-coordination-efficiency-and-task-completion-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  current_avg_collision_rate_percent: 0.46
+  current_avg_coordination_index: 0.924
+  current_avg_task_completion_min: 156.8
+  dropout_critical_threshold_percent: 20
+  target_max_collision_rate_percent: 0.1
+  target_min_coordination_index: 0.95
+  target_version: v6.3.7
+  version_tag: v2026
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] swarm-coordination-efficiency-and-task-completion-log-v2026
 

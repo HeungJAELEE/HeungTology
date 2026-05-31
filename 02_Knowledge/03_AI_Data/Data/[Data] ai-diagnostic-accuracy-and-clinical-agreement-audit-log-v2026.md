@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] ai-diagnostic-accuracy-and-clinical-agreement-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "86c40e1cad02f8b82c306dbc253f84ab2859c429b418b47fe58b7f9e9dd06e88"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 86c40e1cad02f8b82c306dbc253f84ab2859c429b418b47fe58b7f9e9dd06e88
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] ai-diagnostic-accuracy-and-clinical-agreement-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] ai-diagnostic-accuracy-and-clinical-agreement-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] ai-diagnostic-accuracy-and-clinical-agreement-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  auc_roc_threshold: 0.994
+  audit_engine_version: 7.5.2
+  baseline_prevalence: 0.01
+  kappa_threshold: 0.85
+  latency_threshold_seconds: 5.0
+  logic_score_threshold: 94.0
+  miss_rate_threshold: 0.018
+  sensitivity_threshold: 0.982
+  softmax_score_threshold: 0.95
+  specificity_threshold: 0.965
+  verified_auc_roc: 0.994
+  verified_kappa: 0.872
+  verified_miss_rate: 0.012
+  verified_sensitivity: 0.985
+  verified_specificity: 0.968
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] ai-diagnostic-accuracy-and-clinical-agreement-audit-log-v2026
 

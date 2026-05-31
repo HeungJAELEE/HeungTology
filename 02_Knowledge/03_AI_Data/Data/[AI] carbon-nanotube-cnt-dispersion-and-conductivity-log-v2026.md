@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-nanotube-cnt-dispersion-and-conductivity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "972fcee7e67f66a89cecbe80c543c4d086e7e7b5396bfcb2ade9db279467f7f6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 972fcee7e67f66a89cecbe80c543c4d086e7e7b5396bfcb2ade9db279467f7f6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-nanotube-cnt-dispersion-and-conductivity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] carbon-nanotube-cnt-dispersion-and-conductivity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] carbon-nanotube-cnt-dispersion-and-conductivity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_bundle_size: 15 nm
+  cnt_weight_percent: 0.8%
+  dispersion_index: '0.92'
+  elec_conductivity: 1250 S/m
+  external_db_endpoint: advanced-material-science-and-surface-engineering-hub
+  optimal_energy_density: 100 W/cm^2
+  percolation_threshold: 0.35%
+  zeta_potential: -45 mV
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-nanotube-cnt-dispersion-and-conductivity-log-v2026
 

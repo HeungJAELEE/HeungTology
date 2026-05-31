@@ -1,37 +1,57 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] blue-hydrogen-ccs-efficiency-and-purity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d43248db8ae66b3f1468447f8892067fb23811564650c929f9c51d5fc02018e0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d43248db8ae66b3f1468447f8892067fb23811564650c929f9c51d5fc02018e0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] blue-hydrogen-ccs-efficiency-and-purity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] blue-hydrogen-ccs-efficiency-and-purity-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] blue-hydrogen-ccs-efficiency-and-purity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  advanced_adsorption_capture_efficiency: 90-98%
+  advanced_adsorption_co2_emission: 0.5-1.0 kg/kgH2
+  advanced_adsorption_energy_penalty: 10-18%
+  advanced_adsorption_h2_purity: '> 99.99%'
+  amine_scrubbing_capture_efficiency: 85-95%
+  amine_scrubbing_co2_emission: 0.8-1.5 kg/kgH2
+  amine_scrubbing_energy_penalty: 15-25%
+  amine_scrubbing_h2_purity: '> 99.9%'
+  cryogenic_separation_capture_efficiency: '> 99%'
+  cryogenic_separation_co2_emission: < 0.5 kg/kgH2
+  cryogenic_separation_energy_penalty: 20-30%
+  cryogenic_separation_h2_purity: '> 99.999%'
+  economic_saturation_efficiency_range: 90-95%
+  fuel_cell_grade_impurity_threshold: < 1 ppm
+  grey_hydrogen_co2_emission: 9.0-12.0 kg/kgH2
+  membrane_separation_capture_efficiency: 70-85%
+  membrane_separation_co2_emission: 2.0-3.0 kg/kgH2
+  membrane_separation_energy_penalty: 5-12%
+  membrane_separation_h2_purity: 95-99%
+  methane_slip_impact_ratio: 5x
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] blue-hydrogen-ccs-efficiency-and-purity-log-v2026
 

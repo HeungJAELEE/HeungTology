@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bio-mrna-vaccine-lnp-manufacturing-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "34906510520218bcacfa95cb597fd7fd3e3b08b47c5897cf7053767cf508b411"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 34906510520218bcacfa95cb597fd7fd3e3b08b47c5897cf7053767cf508b411
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bio-mrna-vaccine-lnp-manufacturing-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] bio-mrna-vaccine-lnp-manufacturing-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  avg_particle_size_mean: 82.5nm
+  avg_particle_size_spec: 70-100nm
+  encapsulation_efficiency_mean: 96.8%
+  encapsulation_efficiency_spec: 90-98%
+  flow_rate_ratio_frr: '3:1'
+  freezing_rate_threshold: 0.5C/min
+  impurity_level_mean: 12ppm
+  impurity_level_spec: <100ppm
+  mrna_concentration_mean: 1.2mg/mL
+  mrna_concentration_spec: 0.5-2.0mg/mL
+  np_ratio_mean: '6.0'
+  np_ratio_spec: 4.0-8.0
+  pdi_index_mean: '0.065'
+  pdi_index_spec: <0.15
+  pov_threshold: 1.0meq/kg
+  total_flow_rate_tfr: 12mL/min
+  zeta_potential_mean: +12.4mV
+  zeta_potential_spec: +5 to +25mV
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bio-mrna-vaccine-lnp-manufacturing-log-v2026
 

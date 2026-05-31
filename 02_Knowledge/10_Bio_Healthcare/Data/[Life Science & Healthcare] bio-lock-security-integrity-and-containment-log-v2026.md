@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] bio-lock-security-integrity-and-containment-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ee7ae4a55836209862fc653f21bfef4e0473255c91820c7f5bf4ad6ba0fee933"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ee7ae4a55836209862fc653f21bfef4e0473255c91820c7f5bf4ad6ba0fee933
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] bio-lock-security-integrity-and-containment-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] bio-lock-security-integrity-and-containment-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] bio-lock-security-integrity-and-containment-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_status: MAXIMUM
+  biolock_stability_target: 99.999999%
+  breach_count_target: 0
+  genomic_drift_threshold: < 10^-12 /bp
+  log_version: v2026
+  override_attempts_target: 0
+  physical_leak_status: SECURE
+  self_destruct_success_rate_target: 100%
+  sentinel_sensitivity_threshold: 1 cell
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] bio-lock-security-integrity-and-containment-log-v2026
 

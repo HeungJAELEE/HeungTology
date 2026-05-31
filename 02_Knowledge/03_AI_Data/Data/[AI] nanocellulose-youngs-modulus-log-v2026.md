@@ -1,37 +1,59 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] nanocellulose-youngs-modulus-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e4809af13adc67d177cc78deb27a02ba38d05405c91d92b57a77df9d16514de6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e4809af13adc67d177cc78deb27a02ba38d05405c91d92b57a77df9d16514de6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] nanocellulose-youngs-modulus-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] nanocellulose-youngs-modulus-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  bnc_crystallinity_pct: 80-90
+  bnc_tensile_strength_gpa: 0.2-0.4
+  bnc_youngs_modulus_gpa: 15-35
+  cnc_aspect_ratio: 10-100
+  cnc_crystallinity_pct: '>80'
+  cnc_density_g_cm3: 1.6
+  cnc_polymer_comp_tensile_strength_gpa: 0.5-2.0
+  cnc_polymer_comp_youngs_modulus_gpa: 10-50
+  cnc_tensile_strength_gpa: 2-7.5
+  cnc_youngs_modulus_gpa: 110-150
+  cnf_aspect_ratio: '>1000'
+  cnf_crystallinity_pct: 50-70
+  cnf_density_g_cm3: 1.5
+  cnf_tensile_strength_gpa: 0.2-0.6
+  cnf_youngs_modulus_gpa: 10-30
+  cte_ppm_k: 0.1-1
+  mfc_crystallinity_pct: 40-50
+  mfc_tensile_strength_gpa: '>0.1'
+  mfc_youngs_modulus_gpa: 5-15
+  moisture_induced_modulus_reduction_pct: 50
+  percolation_threshold_phi_c: 0.02
+  steel_youngs_modulus_gpa: 210
+  tempo_oxidation_energy_reduction_pct: 90
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] nanocellulose-youngs-modulus-log-v2026
 

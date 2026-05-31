@@ -1,70 +1,79 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-aging-gas-generation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "battery-aging-gas-generation-log-v2026"
-  original_author: "Antigravity Vault / Manufacturing-Execution-System"
-  original_hash: "705a4876a37ea918e121f7009cb274cde07d4fac9845ee386b320f4115afd5d9"
-object:
-  object_type: "Data"
-  tier: 1
-  description: '고온 에이징 중 가스 발생량 및 성분 분석 실측 로그'
+  dataset_reference: battery-aging-gas-generation-log-v2026
+  original_author: Antigravity Vault / Manufacturing-Execution-System
+  original_hash: 705a4876a37ea918e121f7009cb274cde07d4fac9845ee386b320f4115afd5d9
 measurement:
-  value: 1.25
-  unit: "ml/Ah"
   precision: 0.1
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: ml/Ah
+  value: 1.25
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-aging-gas-generation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: 고온 에이징 중 가스 발생량 및 성분 분석 실측 로그
+  object_type: Data
+  tier: 1
+properties:
+  co2_fraction: 42.5%
+  confidence_level: '0.95'
+  h2_fraction: 12.8%
+  onset_temp: 65.0 C
+  swelling_force: 450.0 N
+  temp_threshold: 60.0 C
+  total_gas_vol: 1.25 ml/Ah
+  vol_limit: 2.0 ml/Ah
+  voltage_threshold: 4.35V
 semantic:
-  is_instance_of: "[[[Battery] battery-formation-and-aging-logic]]"
   alternative_parents: []
+  is_instance_of: '[[[Battery] battery-formation-and-aging-logic]]'
 spo_graph:
-  - subject: "Gas Volume"
-    predicate: "measured_value"
-    object: "3.5 mL"
-    evidence_coordinate: "[Ref: battery-aging-gas-generation-log-v2026] Section 2"
-    evidence_hash: "705a4876a37e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "CO2 Fraction"
-    predicate: "measured_value"
-    object: "45%"
-    evidence_coordinate: "[Ref: battery-aging-gas-generation-log-v2026] Section 2"
-    evidence_hash: "705a4876a37e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "CO Fraction"
-    predicate: "measured_value"
-    object: "25%"
-    evidence_coordinate: "[Ref: battery-aging-gas-generation-log-v2026] Section 2"
-    evidence_hash: "705a4876a37e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "C2H4 Fraction"
-    predicate: "measured_value"
-    object: "20%"
-    evidence_coordinate: "[Ref: battery-aging-gas-generation-log-v2026] Section 2"
-    evidence_hash: "705a4876a37e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: empirical_measurement
+  object: 3.5 mL
+  predicate: measured_value
+  subject: Gas Volume
+  weight: 0.6
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: empirical_measurement
+  object: 45%
+  predicate: measured_value
+  subject: CO2 Fraction
+  weight: 0.6
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: empirical_measurement
+  object: 25%
+  predicate: measured_value
+  subject: CO Fraction
+  weight: 0.6
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: empirical_measurement
+  object: 20%
+  predicate: measured_value
+  subject: C2H4 Fraction
+  weight: 0.6
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 0.8
   decay_rate: 0.0
+  t_static: 0.8
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-aging-gas-generation-log-v2026
 
 ## 1. 개요 (Objective)
-본 로그는 리튬 이온 배터리의 가혹 에이징 테스트 중 발생하는 가스의 양과 성분을 정량적으로 기록합니다. 가스 발생은 전해액의 산화/환원 분해와 SEI 층의 구조적 붕괴를 직접적으로 나타내는 지표이며, 이를 통해 배터리의 안전 수명 무결성을 오딧합니다 [Ref: gas-generation-log-v2026].
+본 로그는 리튬 이온 배터리의 가혹 에이징 테스트 중 발생하는 가스의 양과 성분을 정량적으로 기록합니다. 가스 발생은 전해액의 산화/환원 분해와 SEI 층의 구조적 붕괴를 직접적으로 나타내는 지표이며, 이를 통해 배터리의 안전 수명 무결성을 오딧합니다 [데이터 부재].
 
 ## 2. 가스 발생 및 성분 실측 사양 (Verified Specs)
 
@@ -80,11 +89,11 @@ validation:
 
 ### 3.1 전해액 분해와 가스 발생량의 비선형성
 배터리 전압이 4.35V를 초과하거나 온도가 60도 이상으로 상승할 때 가스 발생량이 지수적으로 증가합니다.
-* **실측 현상**: 고온($65^{\circ}\text{C}$) 보관 테스트 중 14일 경과 시점부터 가스 발생률이 기존 대비 3배 증가하는 '퇴화 변곡점'이 탐지되었습니다 [Ref: gas-generation-log-v2026].
+* **실측 현상**: 고온($65^{\circ}\text{C}$) 보관 테스트 중 14일 경과 시점부터 가스 발생률이 기존 대비 3배 증가하는 '퇴화 변곡점'이 탐지되었습니다 [데이터 부재].
 
 ### 3.2 CO/CO2 조성비와 양극 표면 열화
 양극 활물질 표면의 산소 방출과 전해액의 반응으로 발생하는 가스 조성을 분석합니다.
-* **실측 데이터**: 하이닉켈(NCM811) 양극재 적용 셀에서 CO2 대비 CO의 비율이 상승할 때, 양극 표면의 상전이(Layered $\rightarrow$ Spinel)가 가속화되는 수리적 상관관계가 95% 신뢰도로 확인되었습니다 [Ref: gas-generation-log-v2026].
+* **실측 데이터**: 하이닉켈(NCM811) 양극재 적용 셀에서 CO2 대비 CO의 비율이 상승할 때, 양극 표면의 상전이(Layered $\rightarrow$ Spinel)가 가속화되는 수리적 상관관계가 95% 신뢰도로 확인되었습니다 [데이터 부재].
 
 ## 4. [Skill] Gas Generation Fidelity Auditor
 
@@ -120,7 +129,7 @@ print(f"Gas Audit: {engine.audit_gas_safety()}")
 ## 5. 공학적 검증 프로토콜 (Audit Checklist)
 1. **GC-MS 성분 정량화 오딧**: 표준 가스 샘플과 실제 발생 가스의 피크 강도 비교를 통한 조성비 정밀 검증.
 2. **Archimedes 부력 측정 정밀도**: 온도 변화에 따른 측정 용매의 밀도 보정($\rho(T)$) 수식 적용 여부 실측.
-3. **내부 압력 센서 정합성**: 셀 내부 가스 압력 증가치와 케이스 스웰링 변위 사이의 수리적 일치성 오딧 [Ref: gas-generation-log-v2026].
+3. **내부 압력 센서 정합성**: 셀 내부 가스 압력 증가치와 케이스 스웰링 변위 사이의 수리적 일치성 오딧 [데이터 부재].
 
 ### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
 - [[[MOC] 02_Battery]]

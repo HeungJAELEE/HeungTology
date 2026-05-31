@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-wafer-defect-map-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "219cb89063133c6af5ee90b035a6b14261c7b1e3b669f999bb9e2ce5a5c88782"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 219cb89063133c6af5ee90b035a6b14261c7b1e3b669f999bb9e2ce5a5c88782
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-wafer-defect-map-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Semiconductor] semiconductor-wafer-defect-map-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  cluster_count_threshold: '20'
+  cluster_defect_ratio_ucl: 15%
+  cluster_threshold_dist: '1.0'
+  defect_count_ucl: 100 ea
+  false_alarm_rate_ucl: 1%
+  inspection_resolution_target: 10 nm
+  killer_defect_rate_ucl: 5%
+  slurry_filter_size: 0.1 um
+  wafer_radius_standard_mm: '150.0'
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-wafer-defect-map-v2026
 

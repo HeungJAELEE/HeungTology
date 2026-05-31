@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-footprint-and-greenhouse-gas-ghg-emission-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9ffe34c5275c65a22126b59c89d4fd3211e98a694b4ad8f96ef3e62b512d3d7d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9ffe34c5275c65a22126b59c89d4fd3211e98a694b4ad8f96ef3e62b512d3d7d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-footprint-and-greenhouse-gas-ghg-emission-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] carbon-footprint-and-greenhouse-gas-ghg-emission-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] carbon-footprint-and-greenhouse-gas-ghg-emission-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  biogenic_accuracy: 0.9
+  carbon_intensity_metric: tCO2e/unit
+  gwp_ch4: 28
+  gwp_n2o: 265
+  scope_1_accuracy: 0.99
+  scope_1_contribution_pct: 10-15
+  scope_2_accuracy: 0.999
+  scope_2_contribution_pct: 20-30
+  scope_3_downstream_accuracy: 0.8
+  scope_3_downstream_contribution_pct: 10-20
+  scope_3_upstream_accuracy: 0.85
+  scope_3_upstream_contribution_pct: 40-50
+  total_emissions_formula: sum(activity_data * emission_factor * gwp)
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-footprint-and-greenhouse-gas-ghg-emission-log-v2026
 

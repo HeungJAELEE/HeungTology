@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] atomic-layer-etch-ale-selectivity-and-uniformity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "22d3ad13e265b34842e9e42dce5999cc34a78509aeeb06340741a2613f489d5e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 22d3ad13e265b34842e9e42dce5999cc34a78509aeeb06340741a2613f489d5e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] atomic-layer-etch-ale-selectivity-and-uniformity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] atomic-layer-etch-ale-selectivity-and-uniformity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] atomic-layer-etch-ale-selectivity-and-uniformity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  epc_low_k_range: 3.0-6.0 A/cycle
+  epc_metal_range: 0.5-2.0 A/cycle
+  epc_si_range: 1.0-3.0 A/cycle
+  epc_sin_range: 1.5-4.0 A/cycle
+  epc_sio2_range: 2.0-5.0 A/cycle
+  ion_energy_window_theoretical: 20-50 eV
+  ion_energy_window_verified: 25-45 eV
+  saturation_time_verified: 1.2 * t_min
+  selectivity_metal: '> 100:1'
+  selectivity_sin_ox: '> 20:1'
+  selectivity_sio2_si: '> 50:1'
+  surface_adsorption_model: d_theta/dt = k * P_gas * (1 - theta)
+  wiwnu_low_k: < 3%
+  wiwnu_metal: < 1.5%
+  wiwnu_si: < 1%
+  wiwnu_sin: < 2%
+  wiwnu_sio2: < 2%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] atomic-layer-etch-ale-selectivity-and-uniformity-log-v2026
 

@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] iot-device-battery-life-and-energy-harvesting-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "11985a1772d9156bed7cdc58e5e44a86803f8ee5714ee382df7b6261b6e863ad"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 11985a1772d9156bed7cdc58e5e44a86803f8ee5714ee382df7b6261b6e863ad
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] iot-device-battery-life-and-energy-harvesting-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] iot-device-battery-life-and-energy-harvesting-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] iot-device-battery-life-and-energy-harvesting-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  energy_neutrality_condition: harvested_power >= consumption_power
+  indoor_solar_harvest_uw: 10-100
+  rf_harvesting_harvest_uw: 1-10
+  seebeck_effect_delta_t_threshold_c: 10
+  seebeck_effect_power_multiplier_vs_standby: 5
+  self_discharge_acceleration_per_10c_rise: 2
+  thermal_teg_harvest_uw: 50-500
+  vibration_piezo_harvest_uw: 5-50
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] iot-device-battery-life-and-energy-harvesting-log-v2026
 

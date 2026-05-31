@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] liquid-hydrogen-storage-boil-off-rate-bor-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4c8a6efe5f305a98bb079bf592e35e7eb61c134403f733adc599bd890b131536"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4c8a6efe5f305a98bb079bf592e35e7eb61c134403f733adc599bd890b131536
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] liquid-hydrogen-storage-boil-off-rate-bor-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] liquid-hydrogen-storage-boil-off-rate-bor-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] liquid-hydrogen-storage-boil-off-rate-bor-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bor_advanced_reliquefac_percent_per_day_max: 0.01
+  bor_large_spherical_percent_per_day_range: 0.05-0.1
+  bor_small_iso_tank_percent_per_day_range: 0.5-1.0
+  bor_space_rocket_percent_per_day_range: 2.0-5.0
+  critical_pressure_threshold_bar: 6
+  latent_heat_of_vaporization_kj_kg: 446
+  ortho_to_para_conversion_heat_kj_kg: 527
+  para_conversion_target_percent: 99.9
+  reliquefaction_energy_efficiency_threshold_percent: 15
+  storage_temperature_celsius: -253
+  storage_temperature_kelvin: 20
+  tank_design_pressure_range_bar: 1-10
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] liquid-hydrogen-storage-boil-off-rate-bor-log-v2026
 

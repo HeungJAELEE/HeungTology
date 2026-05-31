@@ -1,38 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-bms-fault-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a5b7ea509b7662959eb0878e480f52cf858cab47f2892438e8983e2343acf182"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a5b7ea509b7662959eb0878e480f52cf858cab47f2892438e8983e2343acf182
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-bms-fault-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-bms-fault-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  can_latency_standard_ms: '1'
+  db_bms_can_bus_log: BMS_CAN_Bus_Log
+  db_ess_rack_7_case: ESS_Rack_7_Case
+  db_ideal_model: Ideal_Model
+  db_python_test_data: Python_Test_Data
+  db_self_checklist: Self_Checklist
+  db_standard_spec: Standard_Spec
+  ot_threshold_c: '60'
+  ov_threshold_v: '4.25'
+  uv_threshold_v: '2.50'
+  v_imbalance_threshold_mv: '50'
+  voltage_drift_ideal_mv_week: '0'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-bms-fault-log-v2026
 

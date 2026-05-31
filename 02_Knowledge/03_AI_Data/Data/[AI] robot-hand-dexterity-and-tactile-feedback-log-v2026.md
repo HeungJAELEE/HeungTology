@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-hand-dexterity-and-tactile-feedback-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "641c8efd0dfed37a084965ae89880f85eef285c82337f6fe0a1d243073d8b407"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 641c8efd0dfed37a084965ae89880f85eef285c82337f6fe0a1d243073d8b407
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-hand-dexterity-and-tactile-feedback-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-hand-dexterity-and-tactile-feedback-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-hand-dexterity-and-tactile-feedback-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cnc_machining_precision_log_endpoint: advanced-cnc-machining-precision-and-tool-wear-log-v2026
+  coating_hardness_log_endpoint: pvd-cvd-coating-hardness-and-adhesion-strength-log-v2026
+  finger_dof: 22
+  grasping_force_precision_n: 0.045
+  manipulation_success_rate_pct: 99.8
+  sensor_bandwidth_khz: 1.2
+  slippage_detection_movement_threshold_mm: 0.1
+  slippage_latency_ms: 0.85
+  tactile_resolution_mm: 0.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-hand-dexterity-and-tactile-feedback-log-v2026
 

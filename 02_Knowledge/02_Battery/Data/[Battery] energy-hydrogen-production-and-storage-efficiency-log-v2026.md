@@ -1,38 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] energy-hydrogen-production-and-storage-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c098ccae2ed456a0216a211be7563f7f0321d14fe6b0489137776ded8d2a9283"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c098ccae2ed456a0216a211be7563f7f0321d14fe6b0489137776ded8d2a9283
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] energy-hydrogen-production-and-storage-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] energy-hydrogen-production-and-storage-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] energy-hydrogen-production-and-storage-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  activation_overpotential_reduction: 50mV
+  boil_off_rate_daily: 0.1-1.0%
+  cooling_temperature_range: 15-35 C
+  external_reference_endpoint: https://doi.org/vault.energy.2026.h2.08
+  h2_purity_range: 99.97-99.9999%
+  operating_temp_optimization: 60-80 C
+  production_rate_range: 10-1000 Nm3/hr
+  specific_energy_range: 45-55 kWh/kg
+  stack_efficiency_lhv: 60-85%
+  storage_pressure_range: 350-900 bar
+  system_uptime: 95-99.9%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] energy-hydrogen-production-and-storage-efficiency-log-v2026
 

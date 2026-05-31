@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] security-zero-trust-access-and-incident-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5e08d5b875e842bc132ffe1906b1290cb1f10dc39fbbb281719159cd0edc43da"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5e08d5b875e842bc132ffe1906b1290cb1f10dc39fbbb281719159cd0edc43da
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] security-zero-trust-access-and-incident-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] security-zero-trust-access-and-incident-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] security-zero-trust-access-and-incident-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  auth_success_limit: 0.99
+  auth_success_rate: 0.998
+  blast_radius_reduction_limit: 0.85
+  blast_radius_reduction_rate: 0.925
+  exfiltration_attempts_limit: 0
+  incident_detection_limit_sec: 5.0
+  incident_detection_time_sec: 1.2
+  insider_threat_anomaly_multiplier: 5.0
+  mfa_bypass_detection_rate: 1.0
+  session_revocation_probability_threshold: 0.5
+  trust_score_avg: 0.88
+  trust_score_threshold: 0.8
+  ux_latency_impact_factor: 0.15
+  verification_latency_limit_ms: 100.0
+  verification_latency_ms: 42.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] security-zero-trust-access-and-incident-log-v2026
 

@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] nuclear-reactor-neutron-flux-and-thermal-power-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "191d37f25897c0929c2fcf2c90ef2a171bd761e16241b4c77acff2c49bd57ac4"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 191d37f25897c0929c2fcf2c90ef2a171bd761e16241b4c77acff2c49bd57ac4
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] nuclear-reactor-neutron-flux-and-thermal-power-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] nuclear-reactor-neutron-flux-and-thermal-power-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] nuclear-reactor-neutron-flux-and-thermal-power-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  control_rod_position_measured: 45.2%
+  control_rod_position_target_range: 40-60%
+  coolant_inlet_temp_measured: 290.5 C
+  coolant_inlet_temp_target_range: 290 +/- 5 C
+  neutron_diffusion_model: D nabla^2 phi - Sigma_a phi + S = (1/v) dphi/dt
+  neutron_flux_measured: 1.25e14 n/cm2s
+  neutron_flux_target: 1.20e14 n/cm2s
+  reactivity_measured: 0.0 pcm
+  reactivity_target_range: 0 +/- 10 pcm
+  reactor_period_measured: inf sec
+  reactor_period_target_min: 100.0 sec
+  thermal_power_measured: 2850 MWth
+  thermal_power_model: Q = m_dot * Cp * (T_out - T_in)
+  thermal_power_target_min: 2800 MWth
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] nuclear-reactor-neutron-flux-and-thermal-power-log-v2026
 

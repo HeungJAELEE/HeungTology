@@ -1,38 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-SHAP-Sensor-Attribution-Audit-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2c903ae38029568a4864b61877b721ef5edfe8a838964829a42fcbfdf85b1f81"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2c903ae38029568a4864b61877b721ef5edfe8a838964829a42fcbfdf85b1f81
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-SHAP-Sensor-Attribution-Audit-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-SHAP-Sensor-Attribution-Audit-Log_2026-05-16에 관한
+    고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Battery-SHAP-Sensor-Attribution-Audit-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  additive_error_threshold: < 0.01 %
+  charging_voltage_deviation: 15 mV
+  internal_resistance: 1.25 mΩ
+  module_temp: 48.2 °C
+  shap_contribution_r_int: '+0.35'
+  shap_contribution_temp: '+0.42'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-SHAP-Sensor-Attribution-Audit-Log_2026-05-16
 

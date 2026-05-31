@@ -1,38 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] vqe-molecular-energy-convergence-and-precision-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2aa90bedf4fc1e8e0ac257308b3d1f36517544a9e6d07af2ec2d1970e36f6fe0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2aa90bedf4fc1e8e0ac257308b3d1f36517544a9e6d07af2ec2d1970e36f6fe0
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] vqe-molecular-energy-convergence-and-precision-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] vqe-molecular-energy-convergence-and-precision-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] vqe-molecular-energy-convergence-and-precision-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  chemical_accuracy_threshold: 1.00 kcal/mol
+  current_avg_convergence_cycles: '878.8'
+  current_avg_energy_error: 1.24 kcal/mol
+  reference_log_version: VQE_Log_v6.3.7
+  reference_sop: SOP_vqe-molecular-hamiltonian-mapping
+  target_convergence_cycles_limit: '500'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] vqe-molecular-energy-convergence-and-precision-log-v2026
 

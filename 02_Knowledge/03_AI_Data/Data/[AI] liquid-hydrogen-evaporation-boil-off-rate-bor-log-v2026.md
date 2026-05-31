@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] liquid-hydrogen-evaporation-boil-off-rate-bor-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6231403ba35f03a458fef6e3806df1aef988531228d95b5900a592c1119ba664"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6231403ba35f03a458fef6e3806df1aef988531228d95b5900a592c1119ba664
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] liquid-hydrogen-evaporation-boil-off-rate-bor-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] liquid-hydrogen-evaporation-boil-off-rate-bor-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] liquid-hydrogen-evaporation-boil-off-rate-bor-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  boiling_point_celsius: -252.87
+  boiling_point_kelvin: 20.28
+  latent_heat_of_vaporization_kj_kg: 446
+  lh2_carrier_bor_range_pct_day: 0.1-0.2
+  lh2_truck_bor_range_pct_day: 0.3-0.8
+  ortho_to_para_conversion_heat_kj_kg: 527
+  para_hydrogen_minimum_content_pct: 99
+  reliquefaction_economic_advantage_pct: 20
+  reliquefaction_economic_threshold_days: 10
+  small_dewar_bor_range_pct_day: 1.0-5.0
+  utility_terminal_bor_max_pct_day: 0.05
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] liquid-hydrogen-evaporation-boil-off-rate-bor-log-v2026
 

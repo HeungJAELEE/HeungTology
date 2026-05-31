@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] semiconductor-fab-yield-ramp-up-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "42066bf6971841a8f2970dab2182fcdbe608995d224b01455bf001e58f580c54"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 42066bf6971841a8f2970dab2182fcdbe608995d224b01455bf001e58f580c54
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] semiconductor-fab-yield-ramp-up-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] semiconductor-fab-yield-ramp-up-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  chip_area_range: 0.5 to 2.5
+  cpgd_cost_limit: '10.0'
+  critical_layer_count: 60 to 120
+  cycle_time_limit: '1.5'
+  defect_density_threshold: '0.05'
+  learning_curve_model: Y(n) = Y0 * n^b
+  learning_index_b: 0.3 to 0.5
+  murphy_model: Y = [(1 - e^(-A * D0)) / (A * D0)]^2
+  poisson_model: Y = e^(-A * D0)
+  weekly_yield_range: 15% to 92%
+  wpm_volume_capacity: 10000 to 100000
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] semiconductor-fab-yield-ramp-up-log-v2026
 
@@ -46,7 +57,7 @@ validation:
 | **Defect Density**| $D_0$ ($/cm^2$) | $< 0.05$ | 단위 면적당 치명 결함 수 (수율 결정의 물리적 무결성 지표) |
 | **Learning Index**| $b$ Factor | $0.3 \sim 0.5$ | 누적 생산량 증가에 따른 수율 개선 기울기 (지식 습득 효율) |
 | **Chip Area** | $A$ ($cm^2$) | $0.5 \sim 2.5$ | 개별 칩의 크기 (면적이 클수록 결함에 의한 수율 하락 민감도 상승) |
-| **CPGD Cost** | Cost per Die ($) | $< 10.0$ | 수율에 따른 다이당 제조 원가 (팹 수익성 무결성 지표) |
+| **CPGD Cost** | Cost per Die ($) | $< 10.0$ | 수율에 따른 다이당 제조 원가 (팹 수익성 무결성 지표) |$
 | **Cycle Time** | Days per Step | $< 1.5$ | 웨이퍼가 팹을 통과하는 시차 (학습 피드백 주기의 무결성) |
 | **Crit. Layers** | Layer Count | $60 \sim 120$ | 수율에 영향을 미치는 핵심 공정 층수 (복잡도 가중치) |
 | **WPM Volume** | Capacity (Wafers)| $10,000 \sim 100,000$| 월간 투입량 (램프업 속도와 자본 효율성의 상관관계) |

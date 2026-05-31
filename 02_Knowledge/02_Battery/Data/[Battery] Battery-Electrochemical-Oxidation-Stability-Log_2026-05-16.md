@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "576114aa3e16db26e638bef14a1c95b2cde9bed1d03003c71beab0b5c5e4a033"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 576114aa3e16db26e638bef14a1c95b2cde9bed1d03003c71beab0b5c5e4a033
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  al_corrosion_current_density_actual: 0.08 μA/cm²
+  al_corrosion_current_density_target: < 0.10 μA/cm²
+  electrolyte_oxidation_potential_actual: 4.55 V
+  electrolyte_oxidation_potential_target: '>= 4.50 V'
+  estimated_corrosion_rate_actual: 1.2 μm/year
+  estimated_corrosion_rate_target: < 2.0 μm/year
+  oxidation_gas_generation_actual: 0.25 mL/Ah
+  oxidation_gas_generation_target: < 0.30 mL/Ah
+  tafel_slope_anodic_actual: 125 mV/dec
+  tafel_slope_anodic_target: 100-150 mV/dec
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Electrochemical-Oxidation-Stability-Log_2026-05-16
 

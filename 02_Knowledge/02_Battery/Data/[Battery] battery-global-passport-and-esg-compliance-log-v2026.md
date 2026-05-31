@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-global-passport-and-esg-compliance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4523f9fa8ec8154ae6990d3fe37e5277c048c590c4b2f9f5a9747ada00a10a4c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4523f9fa8ec8154ae6990d3fe37e5277c048c590c4b2f9f5a9747ada00a10a4c
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-global-passport-and-esg-compliance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] battery-global-passport-and-esg-compliance-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] battery-global-passport-and-esg-compliance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  carbon_intensity_precision: 0.1 kg
+  carbon_intensity_range: 50-150 kgCO2/kWh
+  eol_soh_range: 60-80%
+  external_db_endpoint: Antigravity Vault
+  recycled_cobalt_range: 10-35%
+  recycled_cobalt_stability_threshold: 20%
+  recycled_lithium_range: 5-25%
+  second_life_suitability_range: 0.0-1.0
+  solar_replacement_carbon_reduction: 30%
+  stability_degradation_limit: 1%
+  theoretical_carbon_footprint: 180 kgCO2/kWh
+  transport_score_range: 0.0-100
+  waste_diversion_range: 80-99%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-global-passport-and-esg-compliance-log-v2026
 

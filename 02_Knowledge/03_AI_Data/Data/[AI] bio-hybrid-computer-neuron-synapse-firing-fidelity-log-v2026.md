@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bio-hybrid-computer-neuron-synapse-firing-fidelity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7f43830265a120c1952dc1e0cba1457511e21907e9b0f813628ba1f89f0ec64c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7f43830265a120c1952dc1e0cba1457511e21907e9b0f813628ba1f89f0ec64c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bio-hybrid-computer-neuron-synapse-firing-fidelity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] bio-hybrid-computer-neuron-synapse-firing-fidelity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] bio-hybrid-computer-neuron-synapse-firing-fidelity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  firing_latency_ms: 1.42
+  firing_latency_target_ms: 2.0
+  firing_probability: 0.985
+  firing_probability_target: 0.95
+  isi_stability: 0.994
+  isi_stability_target: 0.99
+  max_firing_delay_ms: 1.5
+  metabolic_cost_target_uj: 0.1
+  metabolic_cost_uj: 0.05
+  min_signal_transmission_fidelity: 0.98
+  signal_snr_db: 45.2
+  signal_snr_target_db: 40.0
+  synaptic_weight: 0.0012
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bio-hybrid-computer-neuron-synapse-firing-fidelity-log-v2026
 

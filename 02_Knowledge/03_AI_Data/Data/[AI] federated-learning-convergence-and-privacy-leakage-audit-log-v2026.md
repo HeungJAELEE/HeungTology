@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] federated-learning-convergence-and-privacy-leakage-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "84bb1e516522c2b1e2e801419be00693863f79adc8ff3b3a1de1cefa0e581e06"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 84bb1e516522c2b1e2e801419be00693863f79adc8ff3b3a1de1cefa0e581e06
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] federated-learning-convergence-and-privacy-leakage-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] federated-learning-convergence-and-privacy-leakage-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] federated-learning-convergence-and-privacy-leakage-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  convergence_degradation_non_iid: 40%
+  failure_probability_delta: 10^-9
+  initial_privacy_budget: '0.1'
+  leakage_prob_blocked: 10^-5
+  max_privacy_budget_epsilon: '8.0'
+  num_nodes_n: '1000'
+  optimal_round_count: '200'
+  saturation_accuracy: 97.1%
+  target_accuracy: 94.8%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] federated-learning-convergence-and-privacy-leakage-audit-log-v2026
 

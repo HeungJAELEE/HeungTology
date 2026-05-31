@@ -1,37 +1,65 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] semiconductor-foundry-capacity-utilization-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8189552d3a1d879c9e1d12b2b3da870d2bfa9c21b4519e1655551e87a2c4ae90"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8189552d3a1d879c9e1d12b2b3da870d2bfa9c21b4519e1655551e87a2c4ae90
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] semiconductor-foundry-capacity-utilization-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] semiconductor-foundry-capacity-utilization-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] semiconductor-foundry-capacity-utilization-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  break_even_utilization_threshold_pct:
+  - 75
+  - 80
+  capex_per_10k_wspm_billion_usd:
+  - 5
+  - 10
+  chip_famine_utilization_threshold_pct: 95.0
+  geopolitical_gdp_risk_pct: 5.0
+  inventory_to_sales_ratio_months:
+  - 2
+  - 4
+  lead_time_14nm_28nm_weeks: 12
+  lead_time_2nm_3nm_weeks: 26
+  lead_time_5nm_7nm_weeks: 18
+  lead_time_cowos_packaging_weeks: 32
+  lead_time_specialty_analog_weeks: 22
+  learning_curve_cost_reduction_rate: 0.15
+  onshoring_cost_increase_pct: 30.0
+  utilization_14nm_28nm_pct: 85.2
+  utilization_2nm_3nm_euv_pct: 98.5
+  utilization_5nm_7nm_duv_pct: 92.4
+  utilization_cowos_packaging_pct: 100.0
+  utilization_specialty_analog_pct: 95.0
+  wspm_max: 150000
+  wspm_min: 20000
+  yield_recovery_rate_monthly_pct:
+  - 0.5
+  - 2.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] semiconductor-foundry-capacity-utilization-log-v2026
 

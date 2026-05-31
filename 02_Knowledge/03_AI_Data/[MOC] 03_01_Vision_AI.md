@@ -1,52 +1,66 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "[moc]-03_01_vision_ai-v7.5.2"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://doi.org/cv.standards.v6.3.7"
-  original_author: "Computer_Vision_Standards"
-  original_hash: "fcfee50d85cd89739d617d808cc5b7d24f97e5897f40d7accc09dac214c3bfad"
+  dataset_reference: https://doi.org/cv.standards.v6.3.7
+  original_author: Computer_Vision_Standards
+  original_hash: fcfee50d85cd89739d617d808cc5b7d24f97e5897f40d7accc09dac214c3bfad
+metadata:
+  ai_status: pending_review
+  date: '2026-05-14'
+  domain: 03_AI_Data
+  id: '[moc]-03_01_vision_ai-v7.5.2'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: Hardcore Fidelity Industrial Vision AI Node
+  object_type: Concept
   tier: 0
-  description: 'Hardcore Fidelity Industrial Vision AI Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  annual_cost_reduction_krw: 500,000,000
+  dataset_size: 50,000
+  edge_hardware: RTX 4060
+  model_architecture: ResNet-50
+  target_fnr: < 0.01%
+  target_fpr: < 1.0%
+  target_inference_time_ms: < 30
+  target_iou: '> 0.85'
+  target_map: '> 92.0%'
+  throughput_improvement: +500%
+  verified_fnr: 0.0%
+  verified_fpr: < 2.0%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
 spo_graph:
-  - subject: "Vision_AI"
-    predicate: "functions_as"
-    object: "Digital_Sensory_Interface"
-    evidence_coordinate: "Essential for micro-defect detection and AMR spatial perception"
-    evidence_hash: "fcfee50d85cd"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "CNN"
-    predicate: "performs"
-    object: "Hierarchical_Feature_Extraction"
-    evidence_coordinate: "Spatial feature mapping via kernel-based layer hierarchy"
-    evidence_hash: "fcfee50d85cd"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "ResNet-50"
-    predicate: "yielded"
-    object: "Zero_FNR"
-    evidence_coordinate: "Battery cell scratch classification case study"
-    evidence_hash: "fcfee50d85cd"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: Essential for micro-defect detection and AMR spatial perception
+  intent: functional_definition
+  object: Digital_Sensory_Interface
+  predicate: functions_as
+  subject: Vision_AI
+  weight: 0.9
+- evidence_coordinate: Spatial feature mapping via kernel-based layer hierarchy
+  intent: operational_mechanism
+  object: Hierarchical_Feature_Extraction
+  predicate: performs
+  subject: CNN
+  weight: 0.8
+- evidence_coordinate: Battery cell scratch classification case study
+  intent: empirical_validation
+  object: Zero_FNR
+  predicate: yielded
+  subject: ResNet-50
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
 
 # [[[MOC] 03_01_Vision_AI
@@ -61,18 +75,18 @@ Vision AI는 고정밀 제조 환경에서 광학적 데이터를 디지털 정�
 ### 2.1 핵심 성능 지표 (KPI)
 | 항목 | 핵심 지표 (KPI) | 목표 수준 (Target) | 비고 |
 | :--- | :--- | :--- | :--- |
-| **mAP** | 객체 검출 정확도 | $> 92.0\%$ [Ref: Computer_Vision_Standards] | 복합 결함 검출 기준 |
-| **Inference Time** | 이미지 당 추론 속도 | $< 30\,\text{ms}$ [Ref: Computer_Vision_Standards] | 실시간 라인 검사 대응 |
-| **IoU** | 세그멘테이션 정밀도 | $> 0.85$ [Ref: Computer_Vision_Standards] | 결함 영역 특정 정확도 |
-| **FPR** | 과검율 (False Positive) | $< 1.0\%$ [Ref: Computer_Vision_Standards] | 생산성 저하 방지 지표 |
-| **FNR** | 미검율 (False Negative) | $< 0.01\%$ [Ref: Computer_Vision_Standards] | 품질 유출 방지 (Critical) |
+| **mAP** | 객체 검출 정확도 | $> 92.0\%$ [데이터 부재] | 복합 결함 검출 기준 |
+| **Inference Time** | 이미지 당 추론 속도 | $< 30\,\text{ms}$ [데이터 부재] | 실시간 라인 검사 대응 |
+| **IoU** | 세그멘테이션 정밀도 | $> 0.85$ [데이터 부재] | 결함 영역 특정 정확도 |
+| **FPR** | 과검율 (False Positive) | $< 1.0\%$ [데이터 부재] | 생산성 저하 방지 지표 |
+| **FNR** | 미검율 (False Negative) | $< 0.01\%$ [데이터 부재] | 품질 유출 방지 (Critical) |
 
 ### 2.2 이론치 vs 검증치 대조 (Theoretical vs. Verified)
 | Metric | Theoretical (Ideal) | Verified (Case Study) | Status |
 | :--- | :--- | :--- | :--- |
-| **FPR** | $0.0\%$ | $< 2.0\%$ [Ref: Python_FidelityEngine_Report] | Optimized |
-| **FNR** | $0.0\%$ | $0.0\%$ [Ref: Python_FidelityEngine_Report] | Achieved |
-| **Throughput** | N/A | $+500\%$ [Ref: Python_FidelityEngine_Report] | Improved |
+| **FPR** | $0.0\%$ | $< 2.0\%$ [데이터 부재] | Optimized |
+| **FNR** | $0.0\%$ | $0.0\%$ [데이터 부재] | Achieved |
+| **Throughput** | N/A | $+500\%$ [데이터 부재] | Improved |
 
 ---
 
@@ -93,13 +107,13 @@ $$Loss = \sum (y_{true} - y_{pred})^2 + \lambda \Omega(w)$$
 ## 4. [Case Study] 이차전지 셀 표면 스크래치 분류
 
 ### 4.1 공정 자동화 분석 결과
-* **Problem**: 작업자 숙련도 편차로 인해 과검율(FPR) $15\%$ 발생 [Ref: Python_FidelityEngine_Report].
-* **Methodology**: $50,000$장의 양/불 데이터셋을 활용, ResNet-50 기반 모델 학습 및 RTX 4060 기반 엣지 컴퓨팅 환경 구축 [Ref: Python_FidelityEngine_Report].
+* **Problem**: 작업자 숙련도 편차로 인해 과검율(FPR) $15\%$ 발생 [데이터 부재].
+* **Methodology**: $50,000$장의 양/불 데이터셋을 활용, ResNet-50 기반 모델 학습 및 RTX 4060 기반 엣지 컴퓨팅 환경 구축 [데이터 부재].
 * **Results**: 
-    - 과검율(FPR): $2\%$ 이내로 저감 [Ref: Python_FidelityEngine_Report].
-    - 미검율(FNR): $0\%$ 달성 [Ref: Python_FidelityEngine_Report].
-    - 검사 속도: 기존 대비 $500\%$ 향상 [Ref: Python_FidelityEngine_Report].
-    - 경제적 효과: 연간 인건비 $5$억 원 절감 [Ref: Python_FidelityEngine_Report].
+    - 과검율(FPR): $2\%$ 이내로 저감 [데이터 부재].
+    - 미검율(FNR): $0\%$ 달성 [데이터 부재].
+    - 검사 속도: 기존 대비 $500\%$ 향상 [데이터 부재].
+    - 경제적 효과: 연간 인건비 $5$억 원 절감 [데이터 부재].
 
 ---
 

@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] thin-film-metrology-ellipsometry-thickness-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d5c5dc37f0fa03bf99d51f3b75dbd204dda3c55b25564b1b6b84a7832691edf3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d5c5dc37f0fa03bf99d51f3b75dbd204dda3c55b25564b1b6b84a7832691edf3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] thin-film-metrology-ellipsometry-thickness-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] thin-film-metrology-ellipsometry-thickness-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] thin-film-metrology-ellipsometry-thickness-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  mse_threshold_photoresist: 3.0
+  mse_threshold_polysilicon: 5.0
+  mse_threshold_si_nitride: 2.0
+  mse_threshold_si_oxide: 1.0
+  refractive_index_shift_si_h4_nh3: 0.05
+  refractive_index_si_nitride_633nm_range:
+  - 2.01
+  - 2.1
+  refractive_index_si_oxide_633nm: 1.457
+  roughness_mse_spike_threshold: 10.0
+  surface_roughness_threshold_rms_nm: 1.0
+  thickness_accuracy_si_oxide_a: 0.1
+  thickness_precision_target_nm: 0.01
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] thin-film-metrology-ellipsometry-thickness-accuracy-log-v2026
 

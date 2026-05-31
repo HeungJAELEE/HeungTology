@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] satellite-constellation-positional-accuracy-and-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "548997a0d523fb3f66185ee4a39a4645cf8409465ef20ffb5c6a0022c4a1b514"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 548997a0d523fb3f66185ee4a39a4645cf8409465ef20ffb5c6a0022c4a1b514
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] satellite-constellation-positional-accuracy-and-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] satellite-constellation-positional-accuracy-and-latency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] satellite-constellation-positional-accuracy-and-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  battery_level_percent: 92.0
+  battery_threshold_percent: 80.0
+  isl_link_rate_gbps: 12.5
+  isl_link_rate_threshold_gbps: 10.0
+  leo_altitude_range_km: 200-2000
+  orbital_drift_m_day: 5.2
+  orbital_drift_threshold_m: 10.0
+  planetary_audit_log_endpoint: planetary-boundary-compliance-and-sovereignty-audit-log-v2026
+  positional_error_m: 0.85
+  positional_error_threshold_m: 1.0
+  reference_altitude_km: 550
+  signal_latency_ms: 28.5
+  signal_latency_threshold_ms: 35.0
+  snr_db: 24.5
+  snr_threshold_db: 20.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] satellite-constellation-positional-accuracy-and-latency-log-v2026
 

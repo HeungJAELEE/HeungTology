@@ -1,53 +1,63 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Battery] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault / Manufacturing-Audit-Group"
-  original_hash: "e2d7716771326db3c1838fb463302de6ef7f2c7fe6917987fa2c08d1d48e4c26"
-object:
-  object_type: "Data"
-  tier: 2
-  description: '하이니켈 양극재 고속 코팅 라인($60	ext{ m/min}$)의 실측 운영 지표 및 품질 편차 로그'
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault / Manufacturing-Audit-Group
+  original_hash: e2d7716771326db3c1838fb463302de6ef7f2c7fe6917987fa2c08d1d48e4c26
 measurement:
-  value: 100.0
-  unit: "percent_compliance"
   precision: 1.0
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: percent_compliance
+  value: 100.0
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: "하이니켈 양극재 고속 코팅 라인($60\text{ m/min}$)의 실측 운영 지표 및 품질 편차 로그"
+  object_type: Data
+  tier: 2
+properties:
+  air_entrainment_defect_rate: 0.02 %
+  coating_speed_v: 60.2 m/min
+  loading_deviation_td: ± 0.35 mg/cm²
+  target_coating_speed: 60.0 ± 2 m/min
+  target_defect_rate: 0.10 %
+  target_loading_deviation: ± 0.50 mg/cm²
+  target_web_tension: 150.0 ± 10 N
+  target_wet_thickness_deviation: ± 1.00 μm
+  web_tension: 152.4 N
+  wet_thickness_tw_deviation: ± 0.82 μm
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] 02_Battery]]'
 spo_graph:
-  - subject: "Coating Speed (v)"
-    predicate: "measured_value"
-    object: "60.2 m/min"
-    evidence_coordinate: "[Ref: M-LOG-2026] Section 1"
-    evidence_hash: "e2d771677132"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Loading Deviation (TD)"
-    predicate: "measured_value"
-    object: "+/- 0.35 mg/cm2"
-    evidence_coordinate: "[Ref: M-LOG-2026] Section 2"
-    evidence_hash: "e2d771677132"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_measurement
+  object: 60.2 m/min
+  predicate: measured_value
+  subject: Coating Speed (v)
+  weight: 1.0
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: empirical_measurement
+  object: +/- 0.35 mg/cm2
+  predicate: measured_value
+  subject: Loading Deviation (TD)
+  weight: 1.0
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Electrode-Coating-Thickness-and-Tension-Log_2026-05-16
 

@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-nanolithography-euv-exposure-yield-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b5dd6b50bde7ff358568105cbafd74359185394f058e6029c0fd4817153cd46c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b5dd6b50bde7ff358568105cbafd74359185394f058e6029c0fd4817153cd46c
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-nanolithography-euv-exposure-yield-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-nanolithography-euv-exposure-yield-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Semiconductor] semiconductor-nanolithography-euv-exposure-yield-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cd_uniformity_3sigma_nm: 0.8
+  cd_uniformity_limit_nm: 1.0
+  dof_verified_nm: 40
+  dose_stability_limit_percent: 0.2
+  dose_stability_percent: 0.1
+  euv_source_power_limit_w: 200
+  euv_source_power_verified_w: 250
+  focus_margin_limit_nm: 30
+  focus_margin_nm: 40
+  high_na_value: 0.55
+  k1_constant: 0.3
+  k2_constant: 0.5
+  lambda_nm: 13.5
+  overlay_accuracy_limit_nm: 1.5
+  overlay_accuracy_nm: 1.2
+  resolution_verified_nm: 15.2
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-nanolithography-euv-exposure-yield-log-v2026
 

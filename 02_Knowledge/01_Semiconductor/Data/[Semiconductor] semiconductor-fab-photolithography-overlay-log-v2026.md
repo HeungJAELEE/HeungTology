@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-fab-photolithography-overlay-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "aeb2bc9a39ac68a59a75f312e465256293d26af263b4184157d57fb6ed8c57e3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: aeb2bc9a39ac68a59a75f312e465256293d26af263b4184157d57fb6ed8c57e3
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-fab-photolithography-overlay-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-fab-photolithography-overlay-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Semiconductor] semiconductor-fab-photolithography-overlay-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  alignment_score_limit: '> 95%'
+  alignment_score_theoretical: '> 99.0%'
+  alignment_score_verified: 98.5%
+  correction_parameters_count: '6'
+  edge_zone_overlay_error_threshold: 3nm
+  mean_offset_limit: 1.5nm
+  mean_offset_theoretical: < 0.5nm
+  mean_offset_verified: 0.2nm
+  std_dev_limit: 2.0nm
+  std_dev_theoretical: < 1.0nm
+  std_dev_verified: 0.8nm
+  wafer_expansion_theoretical: 0.5ppm
+  wafer_expansion_verified: 1.2ppm
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-fab-photolithography-overlay-log-v2026
 

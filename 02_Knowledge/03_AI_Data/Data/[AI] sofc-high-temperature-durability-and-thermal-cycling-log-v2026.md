@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] sofc-high-temperature-durability-and-thermal-cycling-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "27c294c0c0d29567ec689c1a0799bf68429c1c29d5b8511928a1c8b21003bc98"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 27c294c0c0d29567ec689c1a0799bf68429c1c29d5b8511928a1c8b21003bc98
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] sofc-high-temperature-durability-and-thermal-cycling-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] sofc-high-temperature-durability-and-thermal-cycling-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] sofc-high-temperature-durability-and-thermal-cycling-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  asr_increase_pct: 15
+  cte_mismatch_threshold_ppm_k: 1.0
+  metal_supported_degradation_rate_pct_1000h: 0.8-1.5
+  micro_tubular_degradation_rate_pct_1000h: 0.5-1.0
+  ni_oxidation_volume_expansion_pct: 40
+  planar_degradation_rate_pct_1000h: 0.2-0.5
+  sintering_threshold_duration_h: 5000
+  sintering_threshold_temp_c: 800
+  soec_degradation_rate_pct_1000h: 0.5-1.5
+  sofc_operating_temp_range_c: 600-1000
+  target_stack_life_years: 10
+  tpb_area_reduction_pct: 30
+  tubular_degradation_rate_pct_1000h: 0.1-0.3
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] sofc-high-temperature-durability-and-thermal-cycling-log-v2026
 

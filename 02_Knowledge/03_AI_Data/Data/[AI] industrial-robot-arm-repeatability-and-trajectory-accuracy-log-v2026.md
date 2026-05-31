@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-robot-arm-repeatability-and-trajectory-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c711df87684a49db6f6ec113f109de57bddbe47ba900e927b7ff1aaedda01e5d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c711df87684a49db6f6ec113f109de57bddbe47ba900e927b7ff1aaedda01e5d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-robot-arm-repeatability-and-trajectory-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-robot-arm-repeatability-and-trajectory-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-robot-arm-repeatability-and-trajectory-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  external_db_reference: industry-robotics-end-effector-calibration-and-tcp-drift-log-v2026
+  joint_servo_error_measured: 0.002 deg
+  joint_servo_error_target: 0.005 deg
+  payload_index_measured: '0.995'
+  payload_index_target: '0.990'
+  repeatability_measured: 0.015 mm
+  repeatability_target: 0.020 mm
+  settle_time_measured: 120 ms
+  settle_time_target: 150 ms
+  tcp_drift_rate_measured: 5.2 um/h
+  tcp_drift_rate_target: 10.0 um
+  thermal_expansion_delta: 15K
+  trajectory_accuracy_measured: 0.085 mm
+  trajectory_accuracy_target: 0.100 mm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-robot-arm-repeatability-and-trajectory-accuracy-log-v2026
 

@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] high-rise-building-oscillation-and-damper-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "902971c4130681019e829fdfd8149019063adfeb80d37cc1b9a8a309ec5bfaaa"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 902971c4130681019e829fdfd8149019063adfeb80d37cc1b9a8a309ec5bfaaa
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] high-rise-building-oscillation-and-damper-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] high-rise-building-oscillation-and-damper-performance-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] high-rise-building-oscillation-and-damper-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  max_acceleration_comfort_threshold: 15.0 milli-g
+  max_oscillation_amplitude_target: 50.0 mm
+  measured_acceleration: 12.5 milli-g
+  measured_damper_efficiency: 94.2%
+  measured_damping_ratio: 2.45%
+  measured_natural_frequency: 0.125 Hz
+  measured_oscillation_amplitude: 32.4 mm
+  measured_wind_speed: 24.5 m/s
+  min_damper_efficiency_target: 90.0%
+  min_damping_ratio_target: 2.0%
+  natural_frequency_range: 0.1-0.3 Hz
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] high-rise-building-oscillation-and-damper-performance-log-v2026
 

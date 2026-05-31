@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] display-quantum-dot-optical-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4be55b9fc3c5a0e18a733cedbdc4d6bffabc277494288a1c3c0857546c55e61e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4be55b9fc3c5a0e18a733cedbdc4d6bffabc277494288a1c3c0857546c55e61e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] display-quantum-dot-optical-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] display-quantum-dot-optical-performance-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[Data] display-quantum-dot-optical-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  color_gamut_measured: 0.992
+  conversion_efficiency_measured: 0.884
+  external_data_log_ref: display-roll-to-roll-flexible-electronics-alignment-accuracy-log-v2026
+  fwhm_green_measured_nm: 22.4
+  fwhm_green_target_threshold_nm: 25.0
+  peak_wavelength_measured_nm: 525.2
+  quantum_dot_radius_nm: 2.0
+  quantum_yield_measured: 0.965
+  quantum_yield_target_threshold: 0.95
+  reliability_score_measured: 98.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] display-quantum-dot-optical-performance-log-v2026
 

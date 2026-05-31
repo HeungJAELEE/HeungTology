@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-qubit-coherence-time-and-gate-fidelity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bdfda07851e1ee53988e68d698206514e73765286f6d3b478f33fad2e0c76425"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bdfda07851e1ee53988e68d698206514e73765286f6d3b478f33fad2e0c76425
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-qubit-coherence-time-and-gate-fidelity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-qubit-coherence-time-and-gate-fidelity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-qubit-coherence-time-and-gate-fidelity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  control_hardware_log_endpoint: information-computing-quantum-computing-and-qkd-log-v2026
+  crosstalk_noise_db: -45
+  crosstalk_target_noise_threshold_db: -40
+  one_q_gate_fidelity_percent: 99.98
+  one_q_target_fidelity_threshold_percent: 99.9
+  readout_fidelity_percent: 98.5
+  readout_target_fidelity_threshold_percent: 98.0
+  t1_relaxation_us: 250
+  t1_target_threshold_us: 200
+  t2_coherence_us: 180
+  t2_target_threshold_us: 150
+  thermal_load_log_endpoint: quantum-cryogenic-dilution-fridge-thermal-load-log-v2026
+  thermal_noise_threshold_mk: 10
+  two_q_gate_fidelity_percent: 99.5
+  two_q_target_fidelity_threshold_percent: 99.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-qubit-coherence-time-and-gate-fidelity-log-v2026
 

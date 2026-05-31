@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-warehouse-inventory-turnover-and-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0b25b73ac8362caa15647c62484ecdc29cb49c051d1354a3b6df46ecfa877905"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0b25b73ac8362caa15647c62484ecdc29cb49c051d1354a3b6df46ecfa877905
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-warehouse-inventory-turnover-and-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-warehouse-inventory-turnover-and-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-warehouse-inventory-turnover-and-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_storage_measured: 14.5 days
+  avg_storage_target: < 15.0 days
+  cross_docking_measured: 35.2%
+  cross_docking_target: '> 30.0%'
+  dead_stock_occupancy_rate: 15%
+  dead_stock_threshold: 6 months
+  inv_accuracy_measured: 99.992%
+  inv_accuracy_target: '> 99.980%'
+  inv_turnover_measured: 25.2 times/yr
+  inv_turnover_target: '> 24.0'
+  inventory_accuracy_formula: A = (1 - |Isys - Iphy| / Isys) * 100
+  inventory_turnover_formula: IT = 1 / W
+  picking_error_measured: 0.015%
+  picking_error_target: < 0.050%
+  warehouse_utilization_measured: 88.4%
+  warehouse_utilization_target: 85-90%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-warehouse-inventory-turnover-and-accuracy-log-v2026
 

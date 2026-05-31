@@ -1,37 +1,56 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] atmospheric-co2-concentration-and-carbon-sequestration-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9c5be4d0cdf43370655109da9a284057c91ad1bf6742394cf2a901f517974628"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9c5be4d0cdf43370655109da9a284057c91ad1bf6742394cf2a901f517974628
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] atmospheric-co2-concentration-and-carbon-sequestration-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] atmospheric-co2-concentration-and-carbon-sequestration-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] atmospheric-co2-concentration-and-carbon-sequestration-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  current_atmospheric_co2: 424.5 ppm
+  current_capture_efficiency: 94.2%
+  current_global_temp_deviation: 1.24 C
+  current_ocean_uptake: 2.5 GtC/yr
+  current_radiative_forcing: 2.85 W/m^2
+  current_sequestration_rate: 9.8 GtC/yr
+  external_data_endpoints:
+  - NOAA
+  - IEA
+  - IPCC
+  - CCS Audit
+  - NASA
+  radiative_forcing_coefficient: '5.35'
+  target_capture_efficiency: 95.0%
+  target_co2_concentration: 400.0 ppm
+  target_global_temperature_rise: 1.50 C
+  target_radiative_forcing: 1.50 W/m^2
+  target_sequestration_rate: 10.0 GtC/yr
+  theoretical_co2_concentration: 350.0 ppm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] atmospheric-co2-concentration-and-carbon-sequestration-log-v2026
 

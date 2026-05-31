@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] fire-alarm-and-emergency-evacuation-drill-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1c8c35b6abc154103a2c0900fc24f481374b6cbf51694642e86ba9514accf379"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1c8c35b6abc154103a2c0900fc24f481374b6cbf51694642e86ba9514accf379
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] fire-alarm-and-emergency-evacuation-drill-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] fire-alarm-and-emergency-evacuation-drill-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] fire-alarm-and-emergency-evacuation-drill-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  blind_blocked_headcount_accuracy: 99.0%
+  blind_blocked_max_evacuation_time: 10 min
+  blind_blocked_notification_delay_max: 2 sec
+  critical_crowd_density_threshold: 2.0 persons/m2
+  day_announced_headcount_accuracy: 100.0%
+  day_announced_max_evacuation_time: 5 min
+  day_announced_notification_delay_max: 1 sec
+  full_site_sim_headcount_accuracy: 100.0%
+  full_site_sim_max_evacuation_time: 12 min
+  full_site_sim_notification_delay_max: 1 sec
+  night_unannounced_headcount_accuracy: 99.5%
+  night_unannounced_max_evacuation_time: 8 min
+  night_unannounced_notification_delay_max: 5 sec
+  rset_formula: T_det + T_not + T_pre + T_trav
+  safety_margin_formula: ASET - RSET
+  speed_reduction_at_critical_density: 50%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] fire-alarm-and-emergency-evacuation-drill-log-v2026
 

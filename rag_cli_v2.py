@@ -20,11 +20,11 @@ from datetime import datetime
 if sys.platform == "win32":
     sys.stdout.reconfigure(encoding='utf-8')
 
-# ================= CONFIG (V7.7 Enterprise Edition) =================
+# ================= CONFIG (V7.8 Enterprise Edition) =================
 SEARCH_PATHS = [r"C:\Anitigravity\02_Knowledge", r"C:\Anitigravity\03_External_Data"]
 DB_PATH = r"C:\Anitigravity\rag_db"
 EXCLUDE_DIRS = ['.obsidian', '.smart-env', 'rag_db', 'node_modules', '04_Tools', 'Archive', 'lectures', '_Archive_Source', '_backups', '_Archive_LowDensity']
-COLLECTION_NAME = "antigravity_fabric_v77_enterprise" 
+COLLECTION_NAME = "antigravity_fabric_v78_enterprise" 
 # ======================================================================
 
 _client = None
@@ -49,25 +49,24 @@ def get_reranker():
     return _reranker
 
 def log(msg):
-    with open("rag_sync_v7.log", "a", encoding="utf-8") as f:
+    with open("rag_sync_v8.log", "a", encoding="utf-8") as f:
         f.write(f"[{time.ctime()}] {msg}\n")
     print(msg, flush=True)
 
 def calculate_dynamic_trust(t_static, doc_date_str, decay_rate):
     try:
-        # doc_date_str가 date 객체 형태 등 문자열에 상관없이 안전 변환
         doc_date_str = str(doc_date_str).split(" ")[0].strip()
         doc_date = datetime.strptime(doc_date_str, "%Y-%m-%d")
         current_date = datetime.now()
         days_passed = (current_date - doc_date).days
-        # V7.7 JIT 감쇄 연산 공식: 30일(1개월) 단위 비례 감쇄
+        # V7.8 JIT 감쇄 연산 공식: 30일(1개월) 단위 비례 감쇄
         t_dynamic = t_static - (decay_rate * (days_passed / 30.0))
         return max(t_dynamic, 0.1)
     except Exception:
         return t_static
 
 def sync_vault():
-    CHECKPOINT_PATH = os.path.join(DB_PATH, "sync_checkpoint_v77.json")
+    CHECKPOINT_PATH = os.path.join(DB_PATH, "sync_checkpoint_v78.json")
     checkpoint = {}
     if not os.path.exists(DB_PATH):
         os.makedirs(DB_PATH)
@@ -77,7 +76,7 @@ def sync_vault():
                 checkpoint = json.load(f)
         except Exception: pass
 
-    log(f"🚀 Starting Antigravity V7.7 Enterprise Unified Intelligence Global Sync")
+    log(f"🚀 Starting Antigravity V7.8 Enterprise Unified Intelligence Global Sync")
     
     all_md_files = []
     for base_path in SEARCH_PATHS:
@@ -92,12 +91,12 @@ def sync_vault():
     to_sync = [f for f in all_md_files if f not in checkpoint or checkpoint[f] < os.path.getmtime(f)]
     
     if not to_sync:
-        log("✅ [DONE] All nodes are synchronized with V7.7 Enterprise Fabric.")
+        log("✅ [DONE] All nodes are synchronized with V7.8 Enterprise Fabric.")
         return
 
-    log(f"🎯 [PLAN] {len(to_sync)} nodes identified for V7.7 Enterprise Hybrid Integration.")
+    log(f"🎯 [PLAN] {len(to_sync)} nodes identified for V7.8 Enterprise Hybrid Integration.")
     
-    BATCH_SIZE = 4 # RTX 4060 8GB Safety Buffer
+    BATCH_SIZE = 1 # RTX 4060 8GB Safety Buffer - Reduced to 1 to prevent OOM
     for i in range(0, len(to_sync), BATCH_SIZE):
         batch_files = to_sync[i:i + BATCH_SIZE]
         documents = []; metadatas = []; ids = []
@@ -110,7 +109,7 @@ def sync_vault():
                     meta_raw = post.metadata
                     body_text = post.content
                     
-                    # [V7.6.2 하이브리드 대소문자 방어선]
+                    # [V7.8 하이브리드 대소문자 방어선]
                     metadata = meta_raw.get('metadata', meta_raw.get('Basic', {}))
                     object_data = meta_raw.get('object', meta_raw.get('Object', {}))
                     semantic = meta_raw.get('semantic', meta_raw.get('Semantic', {}))
@@ -124,21 +123,18 @@ def sync_vault():
                     tier = int(object_data.get('tier', 1))
                     object_type = object_data.get('object_type', 'Concept')
                     
-                    # T_static 및 decay_rate 대소문자/구조 예외 안전장치 (V7.7)
-                    t_static_raw = trust_metrics.get('T_static', 1.0)
+                    t_static_raw = trust_metrics.get('t_static', trust_metrics.get('T_static', 1.0))
                     if isinstance(t_static_raw, dict):
                         t_static = float(next(iter(t_static_raw.values()), 1.0))
                     else:
                         t_static = float(t_static_raw)
                         
-                    # decay_rate를 trust_metrics 블록에서 우선 탐색 (V7.7), 없을 시 dynamic 블록 탐색 (V7.6.2)
                     decay_rate = float(trust_metrics.get('decay_rate', dynamic.get('decay_rate', 0.0)))
                     
-                    # [V7.7 핫픽스] date 객체 직결 에러 방어: 문자열 변환 강제
                     doc_date_raw = metadata.get('date', datetime.now().strftime("%Y-%m-%d"))
                     doc_date = str(doc_date_raw).split(" ")[0].strip()
 
-                    # [V7.7 단일 상속 DAG 강제] List 다중 상속 폐기 및 단일 문자열 압축
+                    # [V7.8 단일 상속 DAG 강제] List 다중 상속 폐기 및 단일 문자열 압축
                     is_instance_raw = semantic.get('is_instance_of', '')
                     if isinstance(is_instance_raw, list):
                         is_instance_str = str(is_instance_raw[0]) if is_instance_raw else ""
@@ -167,9 +163,9 @@ def sync_vault():
                         "path": file_path,
                         "domain": str(domain),
                         "object_type": str(object_type),
-                        "is_instance_of": is_instance_str, # 단일 상속 좌표 보존
+                        "is_instance_of": is_instance_str, 
                         "tier": tier,
-                        "T_static": t_static,
+                        "t_static": t_static,
                         "doc_date": doc_date,
                         "decay_rate": decay_rate
                     })
@@ -183,22 +179,21 @@ def sync_vault():
                 col.upsert(documents=documents, metadatas=metadatas, ids=ids)
                 for file_id in ids: checkpoint[file_id] = os.path.getmtime(file_id)
                 with open(CHECKPOINT_PATH, 'w', encoding='utf-8') as f: json.dump(checkpoint, f)
-                log(f"  [V7.7_PROGRESS] {i + len(batch_files)} / {len(to_sync)} nodes integrated...")
+                log(f"  [V7.8_PROGRESS] {i + len(batch_files)} / {len(to_sync)} nodes integrated...")
             except Exception as e: 
                 log(f"[ERROR] Batch Integration Failed: {str(e)[:200]}")
             finally:
                 gc.collect()
                 if torch.cuda.is_available(): torch.cuda.empty_cache()
  
-    log(f"🏆 [SUCCESS] V7.7 Enterprise Intelligence Fabric Sealed.")
+    log(f"🏆 [SUCCESS] V7.8 Enterprise Intelligence Fabric Sealed.")
 
 def ask_v7(query):
-    log(f"\n🔍 [V7.7_QUERY] Searching Antigravity Fabric: '{query}'")
+    log(f"\n🔍 [V7.8_QUERY] Searching Antigravity Fabric: '{query}'")
     col = get_collection()
     reranker = get_reranker()
     
     try:
-        # Tier 0 및 일반 데이터 하이브리드 쿼리
         tier0_results = col.query(query_texts=[query], n_results=5, where={"tier": 0})
         std_results = col.query(query_texts=[query], n_results=20)
     except Exception as e:
@@ -210,30 +205,26 @@ def ask_v7(query):
     if not all_docs:
         log("[WARN] No relevant nodes found."); return
 
-    # 중복 노드 제거 로직
     seen_paths = set(); unique_results = []
     for doc, meta in zip(all_docs, all_metas):
         if meta['path'] not in seen_paths:
             seen_paths.add(meta['path'])
             unique_results.append((doc, meta))
 
-    # 리랭킹 및 상속 가중치 계산
     pairs = [[query, re.sub(r'^---.*?---\s*', '', res[0], flags=re.DOTALL)[:3000]] for res in unique_results]
     raw_scores = reranker.compute_score(pairs)
     
     scored_results = []
     for (doc, meta), r_score in zip(unique_results, raw_scores):
         prob_score = 1 / (1 + math.exp(-r_score))
-        t_dyn = calculate_dynamic_trust(meta['T_static'], meta['doc_date'], meta['decay_rate'])
+        t_dyn = calculate_dynamic_trust(meta.get('t_static', meta.get('T_static', 1.0)), meta['doc_date'], meta['decay_rate'])
         
-        # [V7.7 Enterprise] SHA-256 감사 무결성 실시간 측정 검증
         integrity_status = "PASS"
         stored_hash = None
         current_hash = None
         try:
             with open(meta['path'], 'r', encoding='utf-8', errors='ignore') as f:
                 post = frontmatter.load(f)
-            # 바디 텍스트의 SHA-256 계산
             body_content = post.content.strip()
             current_hash = hashlib.sha256(body_content.encode('utf-8')).hexdigest()
             
@@ -253,7 +244,6 @@ def ask_v7(query):
         if meta['tier'] == 0: 
             final_score += 0.1
             
-        # 위변조 감지 시 신뢰 가중치 패널티 부과 (10%로 신뢰도 삭감)
         if integrity_status == "FAIL":
             final_score = final_score * 0.1
         
@@ -261,9 +251,8 @@ def ask_v7(query):
     
     scored_results.sort(key=lambda x: x[2], reverse=True)
     
-    # 상속 추적(Reasoning Bridge) 활성화: 최고 점수 노드가 Data 노드인 경우 부모 Concept 동시 표기
     log("\n" + "═"*80)
-    log("   ANTIGRAVITY V7.7 ENTERPRISE INTEGRITY SCOREBOARD")
+    log("   ANTIGRAVITY V7.8 ENTERPRISE INTEGRITY SCOREBOARD")
     log("═"*80)
     for i, (doc, meta, score, integrity) in enumerate(scored_results[:10], 1):
         type_icon = "🏛️ [Concept]" if meta['object_type'] == "Concept" else "📊 [Data]"

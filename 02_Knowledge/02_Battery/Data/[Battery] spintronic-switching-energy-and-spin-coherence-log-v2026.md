@@ -1,38 +1,60 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] spintronic-switching-energy-and-spin-coherence-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "01bd25fe316f0a93c57fcf6eae2c30ed20d0b86bff4d1a7b09da10a3b8de7b63"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 01bd25fe316f0a93c57fcf6eae2c30ed20d0b86bff4d1a7b09da10a3b8de7b63
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] spintronic-switching-energy-and-spin-coherence-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] spintronic-switching-energy-and-spin-coherence-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[Battery] spintronic-switching-energy-and-spin-coherence-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  eflash_endurance: 10^5
+  eflash_switching_energy: 10 pJ
+  eflash_switching_speed: 10 us
+  eflash_write_error: 10^-6
+  gilbert_damping_coefficient: alpha
+  sot_mram_endurance: 10^15
+  sot_mram_switching_energy: 1-5 fJ
+  sot_mram_switching_speed: 200-500 ps
+  sot_mram_tmr_ratio: '> 300%'
+  sot_mram_write_error: 10^-12
+  spin_polarization: P
+  sram_switching_energy: 100 fJ
+  sram_switching_speed: 100 ps
+  stt_mram_endurance: 10^12
+  stt_mram_switching_energy: 10-50 fJ
+  stt_mram_switching_speed: 1-10 ns
+  stt_mram_tmr_ratio: 150-250%
+  stt_mram_write_error: 10^-9
+  target_endurance: '> 10^16'
+  target_switching_energy: < 0.8 fJ
+  target_switching_speed: < 100 ps
+  target_tmr_ratio: '> 350%'
+  target_write_error: < 10^-14
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] spintronic-switching-energy-and-spin-coherence-log-v2026
 

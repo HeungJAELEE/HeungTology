@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-dry-etch-anisotropy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "642543adb52cd12e5659c85b21a93310169504bef73821e54c65cda894cb0b56"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 642543adb52cd12e5659c85b21a93310169504bef73821e54c65cda894cb0b56
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-dry-etch-anisotropy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-dry-etch-anisotropy-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Semiconductor] semiconductor-dry-etch-anisotropy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  anisotropy_formula: A = 1 - (Rh / Rv)
+  bias_power_measured: 450 W
+  esc_temperature_measured: 45.0 C
+  source_power_reduction_threshold: 5%
+  target_anisotropy_factor: '> 0.92'
+  theoretical_anisotropy_factor: '1.0'
+  theoretical_bias_power_stability: ±0.5 W
+  theoretical_etch_rate: 3600 A/min
+  theoretical_selectivity_si_pr: 20.0:1
+  verified_anisotropy_factor: '0.95'
+  verified_bias_power_stability: ±5 W
+  verified_etch_rate: 3500 A/min
+  verified_selectivity_si_pr: 15.0:1
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-dry-etch-anisotropy-log-v2026
 

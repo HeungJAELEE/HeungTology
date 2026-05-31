@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-electrode-thickness-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "768291437a1639d94e744bd30e71f42ec832197f22cb7937d37a2ae1e72a809e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 768291437a1639d94e744bd30e71f42ec832197f22cb7937d37a2ae1e72a809e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-electrode-thickness-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-electrode-thickness-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  binder_plasticity_index: 0.88
+  compaction_density_measured: 1.54
+  compaction_density_target: 1.55
+  compaction_density_tolerance: 0.02
+  elastic_recovery_range: 1.2-1.5
+  input_thickness_measured: 210.5
+  line_speed_measured: 60.1
+  line_speed_target: 60
+  line_speed_tolerance: 0.5
+  output_thickness_measured: 150.8
+  output_thickness_target: 150
+  output_thickness_tolerance: 1.5
+  roll_pressure_measured: 805.2
+  roll_pressure_target: 800
+  roll_pressure_tolerance: 20
+  roll_temp_measured: 84.8
+  roll_temp_target: 85
+  roll_temp_tolerance: 2.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-electrode-thickness-log-v2026
 

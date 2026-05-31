@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] seismic-wave-velocity-and-earthquake-magnitude-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4ee0cef9250b89476012216e439b40f1cf27e572969100df4bc98435f8ba5fed"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4ee0cef9250b89476012216e439b40f1cf27e572969100df4bc98435f8ba5fed
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] seismic-wave-velocity-and-earthquake-magnitude-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] seismic-wave-velocity-and-earthquake-magnitude-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] seismic-wave-velocity-and-earthquake-magnitude-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  depth_measured_km: 12.5
+  fault_slip_measured_cm: 2.4
+  magnitude_mw: 3.4
+  micro_earthquake_frequency_multiplier: 3.0
+  p_wave_velocity_measured_km_s: 8.2
+  p_wave_velocity_target_km_s: 8.0
+  p_wave_velocity_tolerance_km_s: 0.5
+  pga_measured_g: 0.05
+  pga_target_limit_g: 0.1
+  s_wave_velocity_measured_km_s: 4.5
+  s_wave_velocity_target_km_s: 4.5
+  s_wave_velocity_tolerance_km_s: 0.3
+  tsunami_risk_depth_threshold_km: 10.0
+  tsunami_risk_magnitude_threshold: 7.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] seismic-wave-velocity-and-earthquake-magnitude-log-v2026
 

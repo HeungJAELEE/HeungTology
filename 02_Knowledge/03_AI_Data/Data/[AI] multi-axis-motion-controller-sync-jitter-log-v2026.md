@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] multi-axis-motion-controller-sync-jitter-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "fc313bad6bb46225f3a7f011c0f2ce127a54a150bcc327ca525ff3219a6085bf"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: fc313bad6bb46225f3a7f011c0f2ce127a54a150bcc327ca525ff3219a6085bf
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] multi-axis-motion-controller-sync-jitter-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] multi-axis-motion-controller-sync-jitter-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] multi-axis-motion-controller-sync-jitter-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  axis_skew_error_measured_um: 1.2
+  axis_skew_error_target_um: 2.0
+  cpu_load_measured_percent: 45.2
+  cpu_load_target_percent: 70.0
+  external_db_endpoint: factory-plc-logic-execution-latency-and-jitter-log-v2026
+  interpolation_cycle_measured_us: 250
+  interpolation_cycle_target_us: 500
+  interpolation_polynomial_degree: 5
+  response_latency_measured_us: 42
+  response_latency_target_us: 100
+  sync_error_math_model: e_sync = |t_m - t_s| + delta_t_jitter
+  sync_jitter_measured_us: 0.85
+  sync_jitter_target_us: 1.0
+  velocity_ripple_measured_percent: 0.05
+  velocity_ripple_target_percent: 0.1
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] multi-axis-motion-controller-sync-jitter-log-v2026
 

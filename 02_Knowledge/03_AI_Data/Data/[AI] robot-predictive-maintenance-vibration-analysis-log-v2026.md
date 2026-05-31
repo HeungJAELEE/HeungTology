@@ -1,37 +1,68 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-predictive-maintenance-vibration-analysis-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c09877f69065bf36c57677abd2a679b2b9c31a8bb58569cadac956a7410c0958"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c09877f69065bf36c57677abd2a679b2b9c31a8bb58569cadac956a7410c0958
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-predictive-maintenance-vibration-analysis-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-predictive-maintenance-vibration-analysis-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-predictive-maintenance-vibration-analysis-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  analysis_window_sec: 1.0
+  bearing_crack_kurtosis_threshold: 6.0
+  bearing_defect_kurtosis_min: 5.5
+  bearing_defect_peak_g_range:
+  - 3.5
+  - 6.0
+  crest_factor_threshold: 5.0
+  gear_chipping_kurtosis_min: 7.0
+  gear_chipping_peak_g_range:
+  - 8.0
+  - 15.0
+  lubrication_fail_freq_min_khz: 5.0
+  lubrication_fail_kurtosis_range:
+  - 4.0
+  - 5.0
+  lubrication_fail_peak_g_range:
+  - 0.8
+  - 1.5
+  misalignment_kurtosis_range:
+  - 3.5
+  - 4.5
+  misalignment_peak_g_range:
+  - 1.2
+  - 2.5
+  normal_kurtosis_target: 3.0
+  normal_peak_g_max: 0.5
+  rms_velocity_range_mms:
+  - 1.0
+  - 4.5
+  rul_prediction_error_max_percent: 15.0
+  sampling_rate_min_khz: 25.6
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-predictive-maintenance-vibration-analysis-log-v2026
 

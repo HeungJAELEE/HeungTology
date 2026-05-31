@@ -1,37 +1,61 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ultrasonic-defect-detection-signal-to-noise-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "291d98f5e08284c7ab4e03fc3f93cf4598e93a972c771c513fc22859132f1a63"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 291d98f5e08284c7ab4e03fc3f93cf4598e93a972c771c513fc22859132f1a63
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ultrasonic-defect-detection-signal-to-noise-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ultrasonic-defect-detection-signal-to-noise-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] ultrasonic-defect-detection-signal-to-noise-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  acoustic_impedance_air: 0.0004
+  acoustic_impedance_steel: 45
+  aluminum_6061_attenuation_db_mm: 0.02
+  aluminum_6061_freq_mhz: 10.0
+  aluminum_6061_min_defect_mm: 0.1
+  aluminum_6061_velocity_ms: 6320
+  carbon_steel_attenuation_db_mm: 0.05
+  carbon_steel_freq_mhz: 5.0
+  carbon_steel_min_defect_mm: 0.2
+  carbon_steel_velocity_ms: 5920
+  cfrp_attenuation_db_mm: 1.5
+  cfrp_freq_mhz: 2.25
+  cfrp_min_defect_mm: 0.5
+  cfrp_velocity_ms: 3000
+  dead_zone_range_mm: 1-5
+  recommended_snr_db: 12
+  silicon_wafer_attenuation_db_mm: 0.01
+  silicon_wafer_freq_mhz: 25.0
+  silicon_wafer_min_defect_mm: 0.05
+  silicon_wafer_velocity_ms: 8430
+  stainless_steel_attenuation_db_mm: 0.2
+  stainless_steel_freq_mhz: 4.0
+  stainless_steel_min_defect_mm: 0.4
+  stainless_steel_velocity_ms: 5700
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ultrasonic-defect-detection-signal-to-noise-log-v2026
 

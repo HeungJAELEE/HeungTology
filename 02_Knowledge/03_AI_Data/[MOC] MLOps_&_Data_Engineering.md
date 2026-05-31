@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[MOC] MLOps_&_Data_Engineering]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "General_Industrial"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "Antigravity Vault"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "81ac4658eef52f0225afdcb57d81615a4d6157839d05d69cf7f3b71eaadbc8e0"
+  dataset_reference: Antigravity Vault
+  original_author: Antigravity Vault Core Team
+  original_hash: 81ac4658eef52f0225afdcb57d81615a4d6157839d05d69cf7f3b71eaadbc8e0
+metadata:
+  date: '2026-05-16'
+  domain: General_Industrial
+  id: '[[[MOC] MLOps_&_Data_Engineering]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: Modernized legacy node integrated into V7.5.3 Fabric.
+  object_type: Concept
   tier: 2
-  description: 'Modernized legacy node integrated into V7.5.3 Fabric.'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  mlops_lifecycle_ratio: 95%
+  model_development_ratio: 5%
+  target_data_validation_rate: 100%
+  target_deployment_success_rate: 99.5%
+  target_feature_retrieval_latency: 10 ms
+  target_model_drift_psi: '0.1'
+  target_pipeline_latency: 15 min
+  target_recovery_time_objective: 5 min
+  target_resource_utilization: 75.0%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 meta:
   id: "MOC-MLOPS-DATA-ENG-2026-V7.5.2"

@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-arm-joint-torque-and-position-error-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f3766b7bb8f76b9812981dea8ab81eebec262f27099f1ae03b6c45b438453c97"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f3766b7bb8f76b9812981dea8ab81eebec262f27099f1ae03b6c45b438453c97
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-arm-joint-torque-and-position-error-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-arm-joint-torque-and-position-error-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-arm-joint-torque-and-position-error-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  collision_response_time_ms: 10.0
+  collision_torque_threshold_nm: 15.0
+  dynamic_error_threshold_rad: 0.015
+  friction_increase_detection_percent: 12.0
+  joint_backlash_limit_arcmin: 1.0
+  max_overshoot_limit_percent: 5.0
+  max_payload_kg: 25.0
+  predictive_maintenance_rul_threshold_hours: 500.0
+  rated_payload_kg: 10.0
+  static_error_threshold_rad: 0.001
+  torque_ripple_limit_percent: 2.0
+  vibration_peak_hz_range:
+  - 12
+  - 25
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-arm-joint-torque-and-position-error-log-v2026
 

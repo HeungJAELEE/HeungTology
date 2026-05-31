@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] memory-memristor-switching-reliability-and-durability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "813e442c623f6463195a90689e1030a3f226eab25cce4120679e9e95af03a146"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 813e442c623f6463195a90689e1030a3f226eab25cce4120679e9e95af03a146
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] memory-memristor-switching-reliability-and-durability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] memory-memristor-switching-reliability-and-durability-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] memory-memristor-switching-reliability-and-durability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ai_accuracy_drop_percent: 12.0
+  c2c_variability_accuracy_impact_threshold_percent: 5.0
+  cycle_to_cycle_var_observed_percent: 3.2
+  energy_barrier_ev: 1.1
+  energy_per_switch_observed_fj: 2.5
+  lrs_hrs_ratio_observed: 150
+  lrs_hrs_ratio_target: 1000
+  retention_years_at_85c: 10
+  rtn_weight_distortion_percent: 15.0
+  set_reset_time_observed_ns: 8
+  set_reset_time_target_ns: 5
+  switching_endurance_observed_cycles: 20000000000
+  switching_endurance_target_cycles: 1000000000000
+  synaptic_linearity_observed_index: 0.88
+  vmm_rmse_error_observed_percent: 1.2
+  write_verify_latency_share_percent: 80.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] memory-memristor-switching-reliability-and-durability-log-v2026
 

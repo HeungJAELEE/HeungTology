@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] sensor-fusion-kalman-filter-state-estimation-error-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ce58f62a807269d9b2d4068e4a742d8dbfe953421fc8f3e199c5bdd2c40b11c1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ce58f62a807269d9b2d4068e4a742d8dbfe953421fc8f3e199c5bdd2c40b11c1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] sensor-fusion-kalman-filter-state-estimation-error-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] sensor-fusion-kalman-filter-state-estimation-error-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] sensor-fusion-kalman-filter-state-estimation-error-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  deep_fusion_pos_error_cm: 3.5
+  ekf_linearization_error_threshold_cm: 5.0
+  ekf_pos_error_cm: 5.2
+  factor_graph_pos_error_cm: 25.0
+  fusion_rate_hz_range: 100-1000
+  kalman_gain_range: 0.0-1.0
+  target_position_error_cm: 10
+  ukf_pos_error_cm: 15.8
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] sensor-fusion-kalman-filter-state-estimation-error-log-v2026
 

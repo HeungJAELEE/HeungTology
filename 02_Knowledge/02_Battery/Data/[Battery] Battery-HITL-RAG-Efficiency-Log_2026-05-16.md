@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-HITL-RAG-Efficiency-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8f273358751025bd876c8f741f1a1e08b4836f6b0fe3046e932702581f75a740"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8f273358751025bd876c8f741f1a1e08b4836f6b0fe3046e932702581f75a740
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-HITL-RAG-Efficiency-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] Battery-HITL-RAG-Efficiency-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  analysis_time_base: 1.2 min
+  analysis_time_hitl: 4.5 min
+  avg_token_consumption_base: 4,200 tokens
+  avg_token_consumption_hitl: 850 tokens
+  hallucination_rate_base: 12.4%
+  hallucination_rate_hitl: 0.00%
+  root_cause_accuracy_base: 85.0%
+  root_cause_accuracy_hitl: 100.0%
+  token_reduction_rate: 79.7%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-HITL-RAG-Efficiency-Log_2026-05-16
 

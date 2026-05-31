@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] science-bio-synthetic-biology-circuit-and-metabolic-flux-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "58496bf16990739484383ef079709cb540cd642b74f4924a6e403fa0ac5a03cb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 58496bf16990739484383ef079709cb540cd642b74f4924a6e403fa0ac5a03cb
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] science-bio-synthetic-biology-circuit-and-metabolic-flux-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] science-bio-synthetic-biology-circuit-and-metabolic-flux-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] science-bio-synthetic-biology-circuit-and-metabolic-flux-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  metabolic_precision_threshold_pct: 1
+  mfa_yield_improvement_pct: 40
+  sb_ckt_2026_a1_metabolic_efficiency_pct: 18.5
+  sb_ckt_2026_a1_protein_yield_mg_l: 250
+  sb_ckt_2026_b5_metabolic_efficiency_pct: 5.2
+  sb_ckt_2026_b5_protein_yield_mg_l: 10
+  sb_ckt_2026_c2_metabolic_efficiency_pct: 12.0
+  sb_ckt_2026_c2_oscillation_period_min: 30
+  sb_ckt_2026_f3_lysis_time_min: 10
+  sb_flux_e09_metabolic_efficiency_pct: 25.5
+  sb_flux_e09_protein_yield_mg_l: 850
+  sb_flux_e09_yield_increase_factor: 3
+  transcription_noise_correction_pct: 20
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] science-bio-synthetic-biology-circuit-and-metabolic-flux-log-v2026
 

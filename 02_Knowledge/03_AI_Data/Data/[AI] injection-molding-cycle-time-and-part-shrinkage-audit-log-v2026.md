@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] injection-molding-cycle-time-and-part-shrinkage-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b61c93e050882ca8e9b0926c9129562b7cd55d2c53c53811b07e57d3f0af4fec"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b61c93e050882ca8e9b0926c9129562b7cd55d2c53c53811b07e57d3f0af4fec
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] injection-molding-cycle-time-and-part-shrinkage-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] injection-molding-cycle-time-and-part-shrinkage-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] injection-molding-cycle-time-and-part-shrinkage-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_fidelity: MAXIMUM
+  clamping_force: 2500kN
+  cycle_time_measured: 18.5s
+  cycle_time_target: < 20.0s
+  injection_pressure_measured: 120MPa
+  injection_pressure_target: 100-150MPa
+  mold_temp_measured: 65C
+  mold_temp_target: 60-70C
+  part_shrinkage_measured: 0.45%
+  part_shrinkage_target: 0.4-0.6%
+  part_weight_var_measured: ±0.1g
+  part_weight_var_target: < ±0.2g
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] injection-molding-cycle-time-and-part-shrinkage-audit-log-v2026
 

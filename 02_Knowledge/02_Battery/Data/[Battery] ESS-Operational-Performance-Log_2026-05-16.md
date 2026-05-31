@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] ESS-Operational-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "badcc424d67a7c6b8234e041d488855ce0f57e2ec960d62254433bee264a87b3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: badcc424d67a7c6b8234e041d488855ce0f57e2ec960d62254433bee264a87b3
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] ESS-Operational-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] ESS-Operational-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  ac_ac_system_efficiency_actual: 88.5 %
+  ac_ac_system_efficiency_target: 90.0 %
+  bms_balancing_optimization_target: 10 V
+  dispatch_accuracy_actual: 99.2 %
+  dispatch_accuracy_target: 99.5 %
+  ems_response_time_actual: 85.0 ms
+  ems_response_time_target: 100.0 ms
+  max_rack_voltage_deviation_actual: 12.5 V
+  max_rack_voltage_deviation_target: 20.0 V
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] ESS-Operational-Performance-Log_2026-05-16
 

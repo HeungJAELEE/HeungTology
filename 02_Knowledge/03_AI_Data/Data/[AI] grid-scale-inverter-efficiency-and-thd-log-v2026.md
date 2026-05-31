@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] grid-scale-inverter-efficiency-and-thd-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "46c9bcd06821a4b8ee8b1965cf8b3209ae3185d45c2a7472201a27b96c7b8276"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 46c9bcd06821a4b8ee8b1965cf8b3209ae3185d45c2a7472201a27b96c7b8276
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] grid-scale-inverter-efficiency-and-thd-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] grid-scale-inverter-efficiency-and-thd-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  central_igbt_efficiency_range: 98.5-99.0%
+  central_igbt_thd_range: 1.5-2.5%
+  grid_frequency_standard: 60Hz/50Hz
+  micro_inverter_efficiency_range: 96-97.5%
+  micro_inverter_thd_range: 3.0-5.0%
+  sic_switching_loss_reduction_vs_si: 70%
+  solid_state_transformer_target_efficiency: 99%
+  storage_inverter_efficiency_range: 97-98.5%
+  storage_inverter_thd_range: 2.0-3.0%
+  string_sic_efficiency_range: 99.0-99.5%
+  string_sic_thd_max: 1.0%
+  temp_lifespan_degradation_threshold: 10C_half_life
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] grid-scale-inverter-efficiency-and-thd-log-v2026
 

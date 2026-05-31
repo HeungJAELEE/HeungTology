@@ -1,37 +1,59 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-joint-torque-and-position-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a1a78178ea28a74ad2b9d8e5f995335148b1c62d7811624adfa61c40ce036715"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a1a78178ea28a74ad2b9d8e5f995335148b1c62d7811624adfa61c40ce036715
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-joint-torque-and-position-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-joint-torque-and-position-accuracy-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-joint-torque-and-position-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  arm_length_m: 1.5
+  end_effector_accuracy_mm: 0.05
+  end_effector_repeatability_mm: 0.01
+  j1_dynamic_error_mm: 0.15-0.30
+  j1_max_torque_nm: 2500-5000
+  j1_resolution_pulses_rev: 1048576
+  j1_settle_time_ms: 200-400
+  j2_dynamic_error_mm: 0.10-0.25
+  j2_max_torque_nm: 2000-4000
+  j2_resolution_pulses_rev: 1048576
+  j2_settle_time_ms: 150-300
+  j3_dynamic_error_mm: 0.08-0.15
+  j3_max_torque_nm: 1000-2500
+  j3_resolution_pulses_rev: 524288
+  j3_settle_time_ms: 100-200
+  j4_j6_dynamic_error_mm: 0.02-0.05
+  j4_j6_max_torque_nm: 50-300
+  j4_j6_resolution_pulses_rev: 262144
+  j4_j6_settle_time_ms: 50-100
+  lagrange_dynamics_formula: tau = M(q)q_ddot + C(q, q_dot)q_dot + G(q) + F(q_dot)
+  theoretical_position_error_limit_mm: 0.005
+  thermal_expansion_error_threshold_mm: 0.1
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-joint-torque-and-position-accuracy-log-v2026
 

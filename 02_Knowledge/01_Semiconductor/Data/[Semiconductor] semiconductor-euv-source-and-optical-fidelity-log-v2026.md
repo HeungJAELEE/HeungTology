@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4f8ce8a39daa185f6c518e9fc0e6ee2cc21805858beff3a90ecceed13c205950"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4f8ce8a39daa185f6c518e9fc0e6ee2cc21805858beff3a90ecceed13c205950
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cd_uniformity_theoretical: 0.5 nm
+  cd_uniformity_verified: 0.5-1.2 nm
+  droplet_frequency: 50-80 kHz
+  euv_power_theoretical_limit: 500 W
+  euv_power_verified_range: 250-500 W
+  euv_wavelength: 13.5 nm
+  mirror_reflection_theoretical: 70%
+  mirror_reflection_verified: 68-70%
+  optical_aberration: 0.1-0.5 nm
+  overlay_error_theoretical: 0.5 nm
+  overlay_error_verified: < 1.0 nm
+  plasma_density_fluctuation: 5%
+  plasma_stability: 99.0-99.9%
+  throughput: 150-220 wph
+  wavefront_resolution_limit: 0.1 nm
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-euv-source-and-optical-fidelity-log-v2026
 

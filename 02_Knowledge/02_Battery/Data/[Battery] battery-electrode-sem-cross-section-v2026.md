@@ -1,38 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-electrode-sem-cross-section-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e1e8de21e90b36a1639d55893aadc4dfd62f197606c12c8287b0d8a2926a54a8"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e1e8de21e90b36a1639d55893aadc4dfd62f197606c12c8287b0d8a2926a54a8
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-electrode-sem-cross-section-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-electrode-sem-cross-section-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  adhesion_layer_thickness_measured: 0.5um
+  adhesion_layer_thickness_target: '> 0.3um'
+  binder_distribution_index_measured: '0.85'
+  binder_distribution_index_target: '> 0.8'
+  bruggeman_exponent: 1.5
+  bulk_conductivity_sigma_0: 10.0mS/cm
+  critical_density_threshold: 1.7g/cc
+  optimal_density: 1.62g/cc
+  particle_cracking_rate_measured: 1.2%
+  particle_cracking_rate_target: < 3.0%
+  porosity_measured: 28.5%
+  porosity_target: 25-30%
+  pressing_gap_adjustment: 5um
+  tortuosity_measured: '3.5'
+  tortuosity_target: < 4.0
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-electrode-sem-cross-section-v2026
 

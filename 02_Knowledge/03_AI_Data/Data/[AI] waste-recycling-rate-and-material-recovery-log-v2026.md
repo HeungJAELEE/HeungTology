@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] waste-recycling-rate-and-material-recovery-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "38f4f071648a7c98182d22f07aa5c1bb25fdb1da98e345d86d72db387235ee50"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 38f4f071648a7c98182d22f07aa5c1bb25fdb1da98e345d86d72db387235ee50
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] waste-recycling-rate-and-material-recovery-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] waste-recycling-rate-and-material-recovery-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] waste-recycling-rate-and-material-recovery-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  chemicals_contamination_range: 5-10%
+  chemicals_recycling_rate: 50-80%
+  chemicals_yield: 0.75
+  contamination_quality_degradation_threshold: 0.05
+  e_waste_contamination_range: 2-5%
+  e_waste_recycling_rate: 80-95%
+  e_waste_yield: 0.9
+  hazardous_recycling_rate: 30-60%
+  hazardous_yield: 0.5
+  metals_scrap_contamination_limit: 0.5
+  metals_scrap_recycling_rate: 95-99%
+  metals_scrap_yield: 0.98
+  plastics_contamination_range: 1-3%
+  plastics_recycling_rate: 60-85%
+  plastics_yield: 0.85
+  resource_recovery_value_formula: V_rec = sum(M_in * Y_rec,i * P_market,i) - C_processing
+  tensile_strength_reduction_threshold: 0.2
+  zero_waste_landfill_target_rate: 0.99
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] waste-recycling-rate-and-material-recovery-log-v2026
 

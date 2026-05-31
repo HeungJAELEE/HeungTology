@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] jet-engine-thrust-and-turbine-inlet-temperature-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d6582d23e7a199816c2822599dedce6c2448766bacbc3d32bdd1b6277344c41b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d6582d23e7a199816c2822599dedce6c2448766bacbc3d32bdd1b6277344c41b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] jet-engine-thrust-and-turbine-inlet-temperature-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] jet-engine-thrust-and-turbine-inlet-temperature-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] jet-engine-thrust-and-turbine-inlet-temperature-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  core_speed_measured_rpm: 12450
+  net_thrust_measured_kn: 154.5
+  net_thrust_threshold_kn: 150.0
+  pressure_ratio_measured: 45.2
+  sfc_measured_kg_kn_h: 12.4
+  sfc_threshold_kg_kn_h: 13.0
+  thermal_efficiency_measured_pct: 48.2
+  turbine_inlet_temperature_measured_c: 1685
+  turbine_inlet_temperature_target_c: 1650
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] jet-engine-thrust-and-turbine-inlet-temperature-log-v2026
 

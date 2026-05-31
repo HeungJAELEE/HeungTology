@@ -1,54 +1,66 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "[moc]-03_05_edge_ai-v7.5.2"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "AI_Engineering"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://doi.org/10.1109/EDGE.2024.AI"
-  original_author: "Edge_Computing_Reference_Model"
-  original_hash: "64aaf6163e4ca2177e71ce3b40dd155ab8319ba4d29c587f01c1d9bc7c1ebf80"
+  dataset_reference: https://doi.org/10.1109/EDGE.2024.AI
+  original_author: Edge_Computing_Reference_Model
+  original_hash: 64aaf6163e4ca2177e71ce3b40dd155ab8319ba4d29c587f01c1d9bc7c1ebf80
+metadata:
+  date: '2026-05-14'
+  domain: AI_Engineering
+  id: '[moc]-03_05_edge_ai-v7.5.2'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: Standard Industrial Node
+  object_type: Concept
   tier: 0
-  description: 'Standard Industrial Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_endpoint: Python_FidelityEngine_Audit
+  baseline_failure_latency: '> 100ms'
+  communication_delay_contribution: 90%
+  data_throughput_target: '> 60FPS'
+  inference_latency_target: < 10ms
+  model_compression_target: < 1/10
+  power_consumption_target: < 1W
+  quantization_loss_target: < 1%
+  reference_model: Edge_Computing_Reference_Model
+  verified_accuracy_drop: 0.7%
+  verified_compression_ratio: 4x
+  verified_inference_latency: 5ms
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
 spo_graph:
-  - subject: "Edge_AI"
-    predicate: "executes"
-    object: "Localized_Inference"
-    evidence_coordinate: "Section 1: Localized processing at data source"
-    evidence_hash: "64aaf6163e4c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Quantization"
-    predicate: "reduces"
-    object: "Memory_Footprint"
-    evidence_coordinate: "Section 3.1: FP32 to INT8 conversion"
-    evidence_hash: "64aaf6163e4c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "On-device_Inference"
-    predicate: "minimizes"
-    object: "Communication_Latency"
-    evidence_coordinate: "Section 4.1: AMR collision avoidance case"
-    evidence_hash: "64aaf6163e4c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: 'Section 1: Localized processing at data source'
+  intent: operational_mechanism
+  object: Localized_Inference
+  predicate: executes
+  subject: Edge_AI
+  weight: 1.0
+- evidence_coordinate: 'Section 3.1: FP32 to INT8 conversion'
+  intent: resource_optimization
+  object: Memory_Footprint
+  predicate: reduces
+  subject: Quantization
+  weight: 0.9
+- evidence_coordinate: 'Section 4.1: AMR collision avoidance case'
+  intent: latency_mitigation
+  object: Communication_Latency
+  predicate: minimizes
+  subject: On-device_Inference
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 03_05_Edge_AI
 

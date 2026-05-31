@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] energy-neutral-building-u-value-and-hvac-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c2a33629c7c7706b2e7869dfecd6fa6e82f5ce874711e1ce455ee8aec212563d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c2a33629c7c7706b2e7869dfecd6fa6e82f5ce874711e1ce455ee8aec212563d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] energy-neutral-building-u-value-and-hvac-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] energy-neutral-building-u-value-and-hvac-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] energy-neutral-building-u-value-and-hvac-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  air_tightness_measured: 0.45 ACH50
+  air_tightness_target: < 0.60 ACH50
+  bems_index_measured: 92.4%
+  bems_index_target: '> 90.0%'
+  energy_intensity_measured: 15.4 kWh/m^2y
+  energy_intensity_target: < 20.0 kWh/m^2y
+  hvac_cop_measured: '4.85'
+  hvac_cop_target: '> 4.50'
+  renewable_frac_measured: 105.2%
+  renewable_frac_target: '> 100.0%'
+  u_value_wall_measured: 0.142 W/m^2K
+  u_value_wall_target: < 0.150 W/m^2K
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] energy-neutral-building-u-value-and-hvac-efficiency-log-v2026
 

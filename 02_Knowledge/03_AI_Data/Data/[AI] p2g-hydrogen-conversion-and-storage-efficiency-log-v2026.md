@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] p2g-hydrogen-conversion-and-storage-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2405f7ead8af1d18f1898d339808245758e9a5fecbec3cf141caf3a3849336d9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2405f7ead8af1d18f1898d339808245758e9a5fecbec3cf141caf3a3849336d9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] p2g-hydrogen-conversion-and-storage-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] p2g-hydrogen-conversion-and-storage-efficiency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] p2g-hydrogen-conversion-and-storage-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  availability_measured_percent: 98.5
+  availability_target_percent: 95.0
+  current_efficiency_target_ratio: 0.99
+  elec_efficiency_measured_percent: 78.4
+  elec_efficiency_target_percent: 75.0
+  energy_consumption_measured_kwh_kg: 45.2
+  energy_consumption_target_kwh_kg: 50.0
+  h2_purity_measured_percent: 99.999
+  h2_purity_target_percent: 99.99
+  leakage_rate_measured_percent: 0.002
+  leakage_rate_target_percent: 0.01
+  storage_pressure_measured_bar: 712.0
+  storage_pressure_target_bar: 700.0
+  voltage_rise_threshold_v: 0.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] p2g-hydrogen-conversion-and-storage-efficiency-log-v2026
 

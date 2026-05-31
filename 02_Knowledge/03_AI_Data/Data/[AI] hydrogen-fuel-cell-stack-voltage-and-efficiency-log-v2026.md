@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] hydrogen-fuel-cell-stack-voltage-and-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bff71709f3def781c1deb96874967e6232c90e07e692aa979466641f42558538"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bff71709f3def781c1deb96874967e6232c90e07e692aa979466641f42558538
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] hydrogen-fuel-cell-stack-voltage-and-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] hydrogen-fuel-cell-stack-voltage-and-efficiency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] hydrogen-fuel-cell-stack-voltage-and-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  air_filter_clogging_voltage_drop: 10V
+  coolant_temp_target_range: 70-80C
+  max_h2_consumption_threshold: 7.5kg/h
+  measured_coolant_temp: 75.2C
+  measured_current_density: 1.2A/cm2
+  measured_energy_efficiency: 62.4%
+  measured_h2_consumption: 6.8kg/h
+  measured_power_output: 95.5kW
+  measured_stack_voltage: 350V
+  min_current_density_threshold: 1.0A/cm2
+  min_energy_efficiency_threshold: 60.0%
+  min_power_output_threshold: 90.0kW
+  stack_voltage_target_range: 320-380V
+  target_cell_voltage: 0.7V
+  target_system_efficiency: 60%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] hydrogen-fuel-cell-stack-voltage-and-efficiency-log-v2026
 

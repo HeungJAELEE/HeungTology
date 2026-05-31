@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] urban-mining-resource-recovery-yield-and-purity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e97e7460e7e4a7730714adec05882ac7b3a8620f3e5b89dd344cfd56cb150118"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e97e7460e7e4a7730714adec05882ac7b3a8620f3e5b89dd344cfd56cb150118
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] urban-mining-resource-recovery-yield-and-purity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] urban-mining-resource-recovery-yield-and-purity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] urban-mining-resource-recovery-yield-and-purity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  energy_primary_avg_kwh_kg: 50.0
+  max_energy_intensity_kwh_kg: 5.0
+  max_waste_residue_percentage: 5.0
+  max_water_footprint_l_kg: 20.0
+  min_carbon_footprint_reduction_percentage: 70.0
+  min_eco_viability_index_usd_kg: 1.2
+  purity_limit_percentage: 99.9
+  target_purity_percentage: 99.9
+  target_yield_percentage: 95.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] urban-mining-resource-recovery-yield-and-purity-log-v2026
 
@@ -49,7 +59,7 @@ validation:
 | **Waste Residue** | Residue (%) | $< 5.0$ | 회수 후 남은 최종 폐기물 비중 (Zero-waste 달성 지표) |
 | **Water Foot.** | L/kg | $< 20$ | 공정 중 사용된 수자원량 (환경 영향 최소화 무결성) |
 | **Metal Conc.** | Feed Conc. (ppm)| Register All | 폐기물 내 금속 함량 (회수 공정의 입력을 결정하는 변수) |
-| **Eco Viability**| Index ($/kg) | $> 1.2$ | 회수 자원 가치 대비 공정 비용 비율 (사업 지속 무결성) |
+| **Eco Viability**| Index ($/kg) | $> 1.2$ | 회수 자원 가치 대비 공정 비용 비율 (사업 지속 무결성) |$
 
 ## 3. [공학적 근거 (Scientific Rationale)]
 

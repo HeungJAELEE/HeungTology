@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] false-positive-rate-and-anomaly-score-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "70daa11c4ec1a98019cc459ef011c3d474ac5e6fbbdf4c637fd7783994ca9c98"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 70daa11c4ec1a98019cc459ef011c3d474ac5e6fbbdf4c637fd7783994ca9c98
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] false-positive-rate-and-anomaly-score-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] false-positive-rate-and-anomaly-score-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  alarm_fatigue_fpr_threshold: 5%
+  anomaly_score_range: 0.0-1.0
+  chemical_tank_vae_auc: 0.95-0.99
+  hydraulic_pump_autoencoder_auc: 0.88-0.96
+  imminent_failure_prediction_window: 30_minutes
+  mahalanobis_fpr_reduction_rate: 20%
+  robot_joint_lstm_ae_auc: 0.90-0.97
+  rotary_motor_iso_forest_auc: 0.92-0.98
+  smt_line_cnn_ad_auc: 0.85-0.93
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] false-positive-rate-and-anomaly-score-log-v2026
 

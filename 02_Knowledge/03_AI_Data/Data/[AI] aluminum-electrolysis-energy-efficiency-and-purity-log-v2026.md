@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] aluminum-electrolysis-energy-efficiency-and-purity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "efd8cf10525934a037bc0e0a7b2f22ebed3fa81d4edc36e15f0d509b4bc07758"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: efd8cf10525934a037bc0e0a7b2f22ebed3fa81d4edc36e15f0d509b4bc07758
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] aluminum-electrolysis-energy-efficiency-and-purity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] aluminum-electrolysis-energy-efficiency-and-purity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] aluminum-electrolysis-energy-efficiency-and-purity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  max_energy_consumption_standard: 13.5 kWh/kg
+  measured_al_purity: 99.84%
+  measured_alumina_concentration: 2.45%
+  measured_bath_temperature: 955.5 C
+  measured_cell_voltage: 4.25 V
+  measured_current_efficiency: 95.2%
+  measured_energy_consumption: 13.2 kWh/kg
+  min_purity_target: 99.8%
+  theoretical_al_purity: 99.99%
+  theoretical_cell_voltage: 4.00 V
+  theoretical_current_efficiency: 100.00%
+  theoretical_energy_consumption: 12.50 kWh/kg
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] aluminum-electrolysis-energy-efficiency-and-purity-log-v2026
 

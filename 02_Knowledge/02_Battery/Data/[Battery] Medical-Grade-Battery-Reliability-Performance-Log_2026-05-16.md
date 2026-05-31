@@ -1,38 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Medical-Grade-Battery-Reliability-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7b6cc0a63c4ddc62096ed58c8a970d978d8607437a2505550b523e1f08e2d34f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7b6cc0a63c4ddc62096ed58c8a970d978d8607437a2505550b523e1f08e2d34f
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Medical-Grade-Battery-Reliability-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Medical-Grade-Battery-Reliability-Performance-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Medical-Grade-Battery-Reliability-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  actual_annual_self_discharge_rate: 0.65%
+  actual_failure_precursor_detection_rate: 99.99%
+  actual_operational_lifespan: 12.5 years
+  actual_soc_diagnosis_error: 0.82%
+  case_leaking_rate: 0 / 100,000
+  target_annual_self_discharge_rate: < 1.0%
+  target_failure_precursor_detection_rate: 100%
+  target_operational_lifespan: '> 10.0 years'
+  target_soc_diagnosis_error: < 1.0%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Medical-Grade-Battery-Reliability-Performance-Log_2026-05-16
 

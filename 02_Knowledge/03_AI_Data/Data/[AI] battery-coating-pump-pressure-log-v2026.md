@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-coating-pump-pressure-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "eff94a32cecfa08489c2e19e262a38939103cedc1f272db1604b055d19853703"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: eff94a32cecfa08489c2e19e262a38939103cedc1f272db1604b055d19853703
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-coating-pump-pressure-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-coating-pump-pressure-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  clogging_pressure_multiplier: 1.2
+  coating_pitch_formula: v/f
+  damper_n2_pressure: 2.9
+  hagen_poiseuille_loss_formula: 8*mu*L*Q/(pi*R^4)
+  max_filter_dp_sop: 0.3
+  max_pulsation_sop: 0.05
+  max_pulsation_verified: 0.08
+  min_volumetric_efficiency_sop: 98.0
+  nominal_flow_rate: 350
+  nominal_shear_rate: 500
+  nominal_viscosity: 2500
+  pulsation_critical_threshold: 0.15
+  target_discharge_pressure: 3.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-coating-pump-pressure-log-v2026
 

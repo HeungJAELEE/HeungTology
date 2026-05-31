@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-surface-roughness-profile-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "359c234416e7ad82b509eb421887c3c4dbb5cde7ca869734b88c5b16da1bc32e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 359c234416e7ad82b509eb421887c3c4dbb5cde7ca869734b88c5b16da1bc32e
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-surface-roughness-profile-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-surface-roughness-profile-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  contact_angle_measured: 35 deg
+  contact_angle_target_max: 45 deg
+  faulty_rz_incident: 18 um
+  hardware_endpoint: In-line Laser Confocal Profiler
+  iso_standard: '25178'
+  ra_measured: 1.5 um
+  ra_target_range: 1.2-2.0 um
+  rz_measured: 8.5 um
+  rz_target_max: 12.0 um
+  sku_measured: '3.2'
+  sku_target_range: 2.5 to 4.0
+  ssk_measured: '-0.2'
+  ssk_target_range: -0.5 to 0.5
+  thermal_excursion_delta: 15 degC
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-surface-roughness-profile-v2026
 

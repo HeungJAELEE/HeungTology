@@ -1,38 +1,42 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] energy-hydrogen-storage-metal-hydride-kinetics-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b875727039e9af6f80d2cb7218ad2531505e044a24e29231489b061bf00a9805"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b875727039e9af6f80d2cb7218ad2531505e044a24e29231489b061bf00a9805
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] energy-hydrogen-storage-metal-hydride-kinetics-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] energy-hydrogen-storage-metal-hydride-kinetics-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] energy-hydrogen-storage-metal-hydride-kinetics-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  absorption_model: JMA Nucleation Model
+  cycle_failure_threshold: '5000'
+  fatigue_model: Linear Fatigue Model
+  refueling_target_duration_min: '5.0'
+  thermal_limit_celsius: '80'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] energy-hydrogen-storage-metal-hydride-kinetics-log-v2026
 

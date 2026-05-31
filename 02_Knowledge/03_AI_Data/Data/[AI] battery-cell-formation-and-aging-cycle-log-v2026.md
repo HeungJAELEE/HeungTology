@@ -1,37 +1,56 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-cell-formation-and-aging-cycle-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b299a973b57c3278e94ef26d2516c34158a4ba8fdccdf8da6ee53d0dd7649b2d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b299a973b57c3278e94ef26d2516c34158a4ba8fdccdf8da6ee53d0dd7649b2d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-cell-formation-and-aging-cycle-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-cell-formation-and-aging-cycle-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  acir_variation_limit: 0.2 mOhm
+  ec_peak_intensity: 18.2 mAh/V
+  ec_peak_voltage: 1.25 V
+  external_db_endpoint: nasa-battery-cycle-life-data
+  fec_peak_intensity: 45.5 mAh/V
+  fec_peak_voltage: 1.62 V
+  high_temp_aging_duration: 3 days
+  high_temp_aging_temp: 45°C
+  high_temp_ocv_drop_threshold: 5.0 mV
+  li_solvation_peak_intensity: 8.4 mAh/V
+  li_solvation_peak_voltage: 0.85 V
+  phase_transition_peak_intensity: 2500.0 mAh/V
+  phase_transition_peak_voltage: 0.05 V
+  q_irrev_design_threshold: 10%
+  room_temp_aging_duration: 14 days
+  room_temp_aging_temp: 25°C
+  room_temp_ocv_drop_threshold: 1.5 mV
+  self_discharge_rate_limit: 0.02%/day
+  vc_peak_intensity: 12.8 mAh/V
+  vc_peak_voltage: 1.85 V
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-cell-formation-and-aging-cycle-log-v2026
 

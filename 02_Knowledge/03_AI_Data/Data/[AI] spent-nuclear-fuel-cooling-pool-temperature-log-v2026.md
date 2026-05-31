@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] spent-nuclear-fuel-cooling-pool-temperature-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4d7472fec588e3a011b5b685ab6e2e54206284e2c11f3a224d410ea6000151b6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4d7472fec588e3a011b5b685ab6e2e54206284e2c11f3a224d410ea6000151b6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] spent-nuclear-fuel-cooling-pool-temperature-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] spent-nuclear-fuel-cooling-pool-temperature-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] spent-nuclear-fuel-cooling-pool-temperature-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  boiling_point_celsius: 100.0
+  cooling_margin_measured_celsius: 67.5
+  cooling_margin_target_celsius: 50.0
+  decay_heat_measured_kw: 452.4
+  decay_heat_target_kw: 600.0
+  energy_balance_equation: m * Cp * dT/dt = Q_decay - Q_pump
+  pool_water_temp_measured_celsius: 32.5
+  pool_water_temp_target_celsius: 45.0
+  pump_flow_measured_m3_hr: 125.0
+  pump_flow_target_m3_hr: 120.0
+  radioactivity_measured_bq_m3: 12000.0
+  radioactivity_target_bq_m3: 50000.0
+  water_level_measured_meters: 12.4
+  water_level_target_meters: 12.0
+  way_wigner_decay_heat_model: P(t) = 0.0622 * P0 * [t^-0.2 - (To + t)^-0.2]
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] spent-nuclear-fuel-cooling-pool-temperature-log-v2026
 

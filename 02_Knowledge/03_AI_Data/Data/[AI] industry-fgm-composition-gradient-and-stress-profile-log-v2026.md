@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industry-fgm-composition-gradient-and-stress-profile-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f24375445460d9c0a0a0dc4aaa4ce02939e90f7cda3df106eef3b5c16ec85b81"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f24375445460d9c0a0a0dc4aaa4ce02939e90f7cda3df106eef3b5c16ec85b81
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industry-fgm-composition-gradient-and-stress-profile-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industry-fgm-composition-gradient-and-stress-profile-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industry-fgm-composition-gradient-and-stress-profile-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  default_stress_limit: '250.0'
+  default_thickness_h: '10.0'
+  gradient_index_power_law_n: 0.5 ~ 2.0
+  max_composition_deviation_delta_c: 1.5%
+  max_cte_mismatch_delta_alpha: 2.0e-6/K
+  max_residual_stress_sigma_res: 100 MPa
+  max_void_fraction: 0.5%
+  min_elastic_gradient_e_z: 50.0 GPa/mm
+  min_layer_bond_strength: 150.0 MPa
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industry-fgm-composition-gradient-and-stress-profile-log-v2026
 

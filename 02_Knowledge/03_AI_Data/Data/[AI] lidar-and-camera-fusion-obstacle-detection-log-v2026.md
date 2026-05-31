@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] lidar-and-camera-fusion-obstacle-detection-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "58409f056b6f527657cfbb79f34e4cd59c45731ec394c62a8b712886501bf350"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 58409f056b6f527657cfbb79f34e4cd59c45731ec394c62a8b712886501bf350
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] lidar-and-camera-fusion-obstacle-detection-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] lidar-and-camera-fusion-obstacle-detection-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] lidar-and-camera-fusion-obstacle-detection-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  forklift_error_cm: 10-30
+  forklift_map_min: 0.975
+  kalman_filter_uncertainty_reduction_ratio: 0.3
+  low_light_error_cm: 5-15
+  low_light_map_min: 0.95
+  pallet_box_error_cm: 0.5-2
+  pallet_box_map_min: 0.999
+  person_dynamic_error_cm: 3-8
+  person_dynamic_map_min: 0.98
+  person_static_error_cm: 1-3
+  person_static_map_min: 0.995
+  rationale_version: 6.3.7
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] lidar-and-camera-fusion-obstacle-detection-log-v2026
 

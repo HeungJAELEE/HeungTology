@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] smart-factory-wms-inventory-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "65c2ff3b1cd514c9253d5bafe23454abc8032924611f9467176cefc18fa23d68"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 65c2ff3b1cd514c9253d5bafe23454abc8032924611f9467176cefc18fa23d68
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] smart-factory-wms-inventory-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Infrastructure] smart-factory-wms-inventory-accuracy-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Infrastructure] smart-factory-wms-inventory-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cycle_count_duration_standard_hr: 4.0
+  cycle_count_duration_target_hr: 2.0
+  emergency_order_lead_time_hours: 4.0
+  inventory_accuracy_standard_pct: 99.2
+  inventory_accuracy_target_pct: 99.9
+  inventory_turnover_standard_times_yr: 15.5
+  inventory_turnover_target_times_yr: 18.0
+  max_sync_latency_min: 1.0
+  picking_error_rate_standard_pct: 0.05
+  picking_error_rate_target_pct: 0.01
+  safety_stock_level_days: 3.5
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] smart-factory-wms-inventory-accuracy-log-v2026
 

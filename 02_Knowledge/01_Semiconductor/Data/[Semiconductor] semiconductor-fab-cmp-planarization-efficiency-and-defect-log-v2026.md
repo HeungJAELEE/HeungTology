@@ -1,37 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-fab-cmp-planarization-efficiency-and-defect-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "926594c1bc3b610921afbfe7b42ddc9e4863eeb5f606f41b688d69580ad05e3b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 926594c1bc3b610921afbfe7b42ddc9e4863eeb5f606f41b688d69580ad05e3b
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-fab-cmp-planarization-efficiency-and-defect-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-fab-cmp-planarization-efficiency-and-defect-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Semiconductor] semiconductor-fab-cmp-planarization-efficiency-and-defect-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  defect_count_threshold: 10 ea/wafer
+  dishing_amount_threshold: 25 nm
+  slurry_filter_specification: 0.1 um
+  surface_roughness_threshold: 0.5 nm
+  theoretical_removal_rate: 350 +/- 15 nm/min
+  within_wafer_uniformity_threshold: 4.0%
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-fab-cmp-planarization-efficiency-and-defect-log-v2026
 

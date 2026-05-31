@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] smart-building-hvac-energy-efficiency-and-iaq-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8ef3e7813156c81af487f506a8924169749a88692b01e3f38c53fc062cff0107"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8ef3e7813156c81af487f506a8924169749a88692b01e3f38c53fc062cff0107
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] smart-building-hvac-energy-efficiency-and-iaq-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] smart-building-hvac-energy-efficiency-and-iaq-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] smart-building-hvac-energy-efficiency-and-iaq-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ach_actual_h_1: 0.58
+  ach_target_range: 0.5-0.7
+  carbon_emission_global_share: 0.3
+  co2_actual_ppm: 745
+  co2_target_ppm: 800
+  energy_intensity_actual_kwh_m2: 124.5
+  energy_intensity_target_kwh_m2: 150.0
+  external_humidity_log_ref: battery-cell-environment-control-log-v2026
+  filter_dp_actual_pa: 120
+  filter_dp_target_pa: 250
+  hvac_cop_actual: 4.82
+  hvac_cop_target: 4.5
+  temp_error_actual_c: 0.15
+  temp_error_target_c: 0.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] smart-building-hvac-energy-efficiency-and-iaq-log-v2026
 

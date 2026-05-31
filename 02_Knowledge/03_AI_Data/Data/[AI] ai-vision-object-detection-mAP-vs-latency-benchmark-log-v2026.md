@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ai-vision-object-detection-mAP-vs-latency-benchmark-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0a71be74a6fa3e265f7a0c734236aea24d046f32f0961692b80684fe6c17f4bc"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0a71be74a6fa3e265f7a0c734236aea24d046f32f0961692b80684fe6c17f4bc
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ai-vision-object-detection-mAP-vs-latency-benchmark-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ai-vision-object-detection-mAP-vs-latency-benchmark-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ai-vision-object-detection-mAP-vs-latency-benchmark-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  confidence_threshold_range: 0.2-0.5
+  csp_memory_traffic_reduction: 25%
+  input_scaling_factor: 2x_res_4x_flops
+  map_range: 0-100%
+  nms_latency_range_ms: 0.5-5.0
+  small_object_critical_distance: 10m
+  small_object_detection_drop_threshold: 30%
+  small_object_size_px: 32x32
+  target_latency_threshold: 0.1s
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ai-vision-object-detection-mAP-vs-latency-benchmark-log-v2026
 

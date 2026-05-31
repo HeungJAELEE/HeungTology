@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] gripper-contact-pressure-and-slip-detection-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "42aa1b5cb4798031a76eb77cf3892fc4d3f9c48e6bd1b99b2c59f64acac30280"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 42aa1b5cb4798031a76eb77cf3892fc4d3f9c48e6bd1b99b2c59f64acac30280
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] gripper-contact-pressure-and-slip-detection-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] gripper-contact-pressure-and-slip-detection-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] gripper-contact-pressure-and-slip-detection-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  glass_silicon_detection_delay_ms: 1-5
+  glass_silicon_pressure_kpa: 200-500
+  glass_silicon_slip_threshold_g: 0.2-0.5
+  hertzian_contact_pressure_formula: P(r) = P0 * sqrt(1 - (r/a)^2)
+  macro_slip_lead_time_ms: 5
+  metal_rough_detection_delay_ms: 5-10
+  metal_rough_pressure_kpa: 500-1000
+  metal_rough_slip_threshold_g: 0.8-1.5
+  oily_surface_detection_delay_ms: <1
+  oily_surface_pressure_kpa: 300-600
+  oily_surface_slip_threshold_g: 0.05-0.15
+  slip_prediction_phi_mu_ratio: 0.9
+  soft_plastic_detection_delay_ms: 10-15
+  soft_plastic_pressure_kpa: 50-150
+  soft_plastic_slip_threshold_g: 0.5-0.8
+  thin_paper_box_detection_delay_ms: 2-8
+  thin_paper_box_pressure_kpa: 5-20
+  thin_paper_box_slip_threshold_g: 0.1-0.3
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] gripper-contact-pressure-and-slip-detection-log-v2026
 

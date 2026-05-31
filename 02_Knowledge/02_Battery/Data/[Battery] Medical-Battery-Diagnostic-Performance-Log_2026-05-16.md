@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Medical-Battery-Diagnostic-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "687794438966fa88763a2e0f53c2d821401924fc8eb2bf3b7f15d774334a7c3b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 687794438966fa88763a2e0f53c2d821401924fc8eb2bf3b7f15d774334a7c3b
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Medical-Battery-Diagnostic-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Medical-Battery-Diagnostic-Performance-Log_2026-05-16에 관한
+    고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Medical-Battery-Diagnostic-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  diagnosis_latency: 0.62 s
+  diagnosis_latency_threshold: 1.0 s
+  diagnosis_reliability: 99.92%
+  max_battery_temperature: 38.4 C
+  max_temp_threshold: 40.0 C
+  micro_leakage_detection: 8.5 uA
+  micro_leakage_threshold: 10.0 uA
+  sampling_resolution: 0.04 s
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Medical-Battery-Diagnostic-Performance-Log_2026-05-16
 

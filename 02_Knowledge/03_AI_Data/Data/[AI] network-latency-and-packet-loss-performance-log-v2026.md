@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] network-latency-and-packet-loss-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a471977d940ff266072e69a30d3e1ee2854b90ae808fb0603821cd330b920c3f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a471977d940ff266072e69a30d3e1ee2854b90ae808fb0603821cd330b920c3f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] network-latency-and-packet-loss-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] network-latency-and-packet-loss-performance-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] network-latency-and-packet-loss-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bw_utilization_measured_percent: 65.4
+  dns_resolution_measured_ms: 45
+  dns_resolution_target_ms: 50
+  littles_law_formula: L = lambda * W
+  network_jitter_measured_ms: 2.4
+  network_jitter_target_ms: 5.0
+  packet_loss_measured_percent: 0.008
+  packet_loss_target_percent: 0.01
+  rtt_latency_measured_ms: 18.5
+  rtt_latency_target_ms: 20.0
+  tcp_throughput_formula: T = MSS / (RTT * sqrt(p))
+  throughput_measured_gbps: 850
+  throughput_target_gbps: 800
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] network-latency-and-packet-loss-performance-log-v2026
 

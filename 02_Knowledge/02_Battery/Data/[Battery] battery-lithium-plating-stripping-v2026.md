@@ -1,38 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-lithium-plating-stripping-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ed641eab3a26d08aefcc14fd033c19ac459961e967d8f4e7d66031334ccda277"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ed641eab3a26d08aefcc14fd033c19ac459961e967d8f4e7d66031334ccda277
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-lithium-plating-stripping-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-lithium-plating-stripping-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  anode_potential_range: -0.2 to 0.1 V vs Li/Li+
+  c_rate_range: 0.1C to 3.0C
+  critical_low_temp: -10C
+  cycle_retention_range: 1 to 1,000 cycles
+  ea_increase_factor: '2.0'
+  plating_capacity_range: 0 to 500 mAh/g
+  plating_onset_overpotential: -50mV
+  plating_percentage: 5%
+  reversibility_percentage: 60%
+  reversibility_ratio_range: 10 to 80%
+  stripping_plateau_range: 0.05 to 0.15 V
+  temperature_variance_range: -30 to 45 C
+  ultrasonic_amplitude_range: 0 to 100%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-lithium-plating-stripping-v2026
 

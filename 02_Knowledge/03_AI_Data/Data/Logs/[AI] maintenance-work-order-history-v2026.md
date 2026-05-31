@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] maintenance-work-order-history-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "33b0066ef255b7671afcde777e20db7615d31c6d1fb0a55c8312bc1537f31d87"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 33b0066ef255b7671afcde777e20db7615d31c6d1fb0a55c8312bc1537f31d87
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] maintenance-work-order-history-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] maintenance-work-order-history-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  avg_labor_hours_per_wo: 3.5
+  emergency_rate_standard_pct: 12.0
+  emergency_rate_target_pct: 5.0
+  external_db_wms: warehouse_management_system
+  maintenance_efficiency_ratio_formula: delta_mtbf / sum_maintenance_cost
+  mttr_standard_hr: 1.8
+  mttr_target_hr: 1.5
+  pm_compliance_standard_pct: 96.5
+  pm_compliance_target_pct: 98.0
+  process_temp_increase_celsius: 10.0
+  spare_parts_availability_standard_pct: 98.2
+  spare_parts_availability_target_pct: 99.0
+  spares_consumption_prediction_distribution: poisson
+  text_mining_keyword_threshold_pct: 80.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] maintenance-work-order-history-v2026
 

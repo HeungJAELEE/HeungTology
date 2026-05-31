@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "MOC-BIO-HEALTHCARE-2026-V7.5.3"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Bio_and_Healthcare_Intelligence"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "8cd898816cd4240ca153cf5dc82352d6195de8f5753b790988ba1ede08798825"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: 8cd898816cd4240ca153cf5dc82352d6195de8f5753b790988ba1ede08798825
+metadata:
+  date: '2026-05-16'
+  domain: Bio_and_Healthcare_Intelligence
+  id: MOC-BIO-HEALTHCARE-2026-V7.5.3
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: 생명 공학, 정밀 의료 및 신경 인터페이스 통합 지능 사령부
+  object_type: Concept
   tier: 0
-  description: '생명 공학, 정밀 의료 및 신경 인터페이스 통합 지능 사령부'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bci_neural_signal_log_endpoint: bci-neural-signal-log-v2026
+  drug_docking_energy_log_endpoint: drug-docking-energy-log-v2026
+  fidelity_engine_status: operational
+  genomic_editing_log_endpoint: genomic-editing-log-v2026
+  molecular_binding_energy_parameter: delta_g
+  neural_decoding_accuracy_metric: mAP
+  timestamp: '2026-05-16'
+  vaccine_lnp_physics_log_endpoint: vaccine-lnp-physics-log-v2026
+  version: 7.5.3
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 10_Bio_Healthcare
 

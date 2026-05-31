@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] quantum-error-correction-logical-qubit-stability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6470ce7c69d48d76c01a0893d072590a7cb5b18e40fbb0de2696e6768fa81eab"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6470ce7c69d48d76c01a0893d072590a7cb5b18e40fbb0de2696e6768fa81eab
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] quantum-error-correction-logical-qubit-stability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] quantum-error-correction-logical-qubit-stability-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] quantum-error-correction-logical-qubit-stability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  code_distance_values:
+  - 3
+  - 5
+  - 7
+  - 9
+  decoding_latency_critical_threshold_us: 1.0
+  decoding_latency_ns: 450-850
+  error_propagation_yield_loss_percent: 15.0
+  gate_fidelity_2qubit_min: 0.999
+  logical_error_rate_range: 10^-6 to 10^-12
+  physical_qubit_t1_us: 80-150
+  physical_qubit_t2_us: 50-120
+  physical_to_logical_ratio: 49:1 to 1000:1
+  surface_code_threshold: 0.01
+  syndrome_fidelity_ancilla_percent: 99.5-99.8
+  threshold_error_rate_pt_h: 0.01
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] quantum-error-correction-logical-qubit-stability-log-v2026
 

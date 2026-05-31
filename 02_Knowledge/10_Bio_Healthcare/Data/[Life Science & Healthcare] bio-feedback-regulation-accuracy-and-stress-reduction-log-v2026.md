@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7a0bcfa35877328ea92dcd42d8741d80595b376799ce358fd694a7b599eb95ce"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7a0bcfa35877328ea92dcd42d8741d80595b376799ce358fd694a7b599eb95ce
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_status: MAXIMUM
+  hrv_gain_target: +25.0%
+  regul_accu_target: 99.4%
+  resp_latency_target: 0.8 sec
+  sensor_fid_target: 99.9%
+  stress_reduction_target: -35.0%
+  system_stab_target: 100%
+  user_wellbeing_target: 9.5/10
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] bio-feedback-regulation-accuracy-and-stress-reduction-log-v2026
 

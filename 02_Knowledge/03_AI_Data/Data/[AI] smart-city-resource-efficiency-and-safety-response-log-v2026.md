@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] smart-city-resource-efficiency-and-safety-response-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5e4c6ddd06d3ef81dcc21d1a647d093d1b2cfe2c462e040c431ac77d1f0e9f1c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5e4c6ddd06d3ef81dcc21d1a647d093d1b2cfe2c462e040c431ac77d1f0e9f1c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] smart-city-resource-efficiency-and-safety-response-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] smart-city-resource-efficiency-and-safety-response-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] smart-city-resource-efficiency-and-safety-response-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  aqi_improvement_threshold_pct: 15.0
+  arrival_time_reduction_threshold_pct: 40.0
+  crime_reduction_threshold_pct: 10.0
+  energy_water_gain_threshold_pct: 30.0
+  golden_time_critical_limit_minutes: 5.0
+  hds_gold_version: V6.3.7
+  infra_uptime_availability_pct: 99.99
+  temp_mitigation_threshold_celsius: 2.0
+  traffic_delay_reduction_threshold_pct: 25.0
+  twin_fidelity_accuracy_threshold: 0.98
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] smart-city-resource-efficiency-and-safety-response-log-v2026
 

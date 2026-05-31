@@ -1,37 +1,58 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1431bbfbf07e77ec356e49c915229af36057555dcb30aba7bca029281ee432c1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1431bbfbf07e77ec356e49c915229af36057555dcb30aba7bca029281ee432c1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  butler_volmer_parameters:
+  - j
+  - j0
+  - alpha_a
+  - alpha_c
+  - F
+  - eta_act
+  - R
+  - T
+  catalyst_sintering_degradation_contribution_pct: 40
+  fcev_energy_efficiency_lhv_pct: 50-60
+  fcev_power_density_w_cm2: 2.5-3.0
+  fcev_target_lifetime_h: 5000-8000
+  fcev_voltage_degradation_rate_uv_h: 5-10
+  heavy_duty_truck_target_lifetime_h: 30000
+  heavy_duty_truck_voltage_degradation_uv_h: 1-3
+  maritime_target_lifetime_h: 20000
+  stationary_target_lifetime_h: 80000
+  stationary_voltage_degradation_limit_uv_h: 1
+  uav_target_lifetime_h: 500-1500
+  uav_voltage_degradation_rate_uv_h: 20-50
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] pem-fuel-cell-stack-efficiency-and-voltage-degradation-log-v2026
 

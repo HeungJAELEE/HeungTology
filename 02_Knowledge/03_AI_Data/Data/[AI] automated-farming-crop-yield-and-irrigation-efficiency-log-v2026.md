@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] automated-farming-crop-yield-and-irrigation-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d629b3c5eb07c2317232645323205ff41ebbd20951be31d5bc1b80b13fdac4d3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d629b3c5eb07c2317232645323205ff41ebbd20951be31d5bc1b80b13fdac4d3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] automated-farming-crop-yield-and-irrigation-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] automated-farming-crop-yield-and-irrigation-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] automated-farming-crop-yield-and-irrigation-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  crop_yield_target: 12.0 t/ha
+  harvest_loss_target: 2.0%
+  industry_standard_yield: 12.5 t/ha
+  irrigation_efficiency_target: 95.0%
+  measured_crop_yield: 12.8 t/ha
+  measured_harvest_loss: 1.2%
+  measured_irrigation_efficiency: 96.5%
+  measured_moisture_accuracy: 98.2%
+  measured_nue: '0.84'
+  moisture_accuracy_target: 98.0%
+  nue_target: '0.80'
+  standard_protocol_irrigation_efficiency: 95.0%
+  sunlight_index: 925 W/m2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] automated-farming-crop-yield-and-irrigation-efficiency-log-v2026
 

@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] display-oled-pixel-deposition-accuracy-and-luminance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6ca966f7c2c9806fec2ebb8cb0d022a83a28ca7d16863e205f6e567cc13075bf"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6ca966f7c2c9806fec2ebb8cb0d022a83a28ca7d16863e205f6e567cc13075bf
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] display-oled-pixel-deposition-accuracy-and-luminance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] display-oled-pixel-deposition-accuracy-and-luminance-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] display-oled-pixel-deposition-accuracy-and-luminance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  chamber_temp_control_threshold: 0.1K
+  color_purity_red_cie_1931: (0.68, 0.32)
+  deposition_accuracy_target: < 1.0 um
+  fmm_pixel_gap_reduction: 0.5um
+  fmm_temp_rise_threshold: 0.5K
+  luminance_degradation_limit: 5%
+  luminance_uniformity_target: '> 98.0%'
+  measured_deposition_accuracy: 0.8 um
+  measured_luminance_uniformity: 98.5%
+  measured_pixel_defect: 0.2 PPM
+  panel_flatness_target: < 20 um
+  pixel_defect_target: < 0.5 PPM
+  thickness_deviation_limit: 1%
+  wvtr_target: < 10^-6 g/m^2/d
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] display-oled-pixel-deposition-accuracy-and-luminance-log-v2026
 

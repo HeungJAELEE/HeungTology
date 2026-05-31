@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] chemical-reactor-temperature-and-yield-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3e65b584b4188c288054244dd94f3a94d698931a6eff7cf4f3683079e74079f5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3e65b584b4188c288054244dd94f3a94d698931a6eff7cf4f3683079e74079f5
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] chemical-reactor-temperature-and-yield-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] chemical-reactor-temperature-and-yield-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] chemical-reactor-temperature-and-yield-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  byproduct_increase_rate: 2%
+  catalyst_activity_measured: '0.942'
+  catalyst_activity_threshold: '0.900'
+  chemical_yield_measured: 98.85%
+  chemical_yield_threshold: 98.00%
+  conversion_rate_measured: 99.42%
+  conversion_rate_threshold: 99.00%
+  cooling_valve_response_delay: 2s
+  heat_flux_measured: 12.5 kW/m2
+  reaction_pressure_measured: 35.4 bar
+  reaction_pressure_range: 30.0 ~ 40.0 bar
+  reactor_temp_measured: 245.2 °C
+  reactor_temp_target: 245.0 ± 1.0 °C
+  temp_peak_impact: 3 °C
+  temp_precision_threshold: 0.5 °C
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] chemical-reactor-temperature-and-yield-efficiency-log-v2026
 

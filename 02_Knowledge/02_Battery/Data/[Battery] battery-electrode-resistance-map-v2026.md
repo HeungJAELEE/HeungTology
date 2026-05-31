@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-electrode-resistance-map-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "dc21f7ca92b8831a20028414877360d983d1ee12777487ba72fc4b460c1d3097"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: dc21f7ca92b8831a20028414877360d983d1ee12777487ba72fc4b460c1d3097
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-electrode-resistance-map-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-electrode-resistance-map-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  conductive_agent_ratio: 2.0 wt%
+  drying_temp_initial: 120 C
+  drying_temp_optimized: 105 C
+  four_point_probe_constant: 4.532
+  probe_pressure: 150.0 gf
+  resistance_uniformity_theoretical: 99.0%
+  resistance_uniformity_verified: 98.2%
+  sheet_resistance_theoretical: 14.0 mOhm/sq
+  sheet_resistance_verified: 15.5 mOhm/sq
+  volume_resistivity_theoretical: 2.0 Ohm-cm
+  volume_resistivity_verified: 2.5 Ohm-cm
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-electrode-resistance-map-v2026
 

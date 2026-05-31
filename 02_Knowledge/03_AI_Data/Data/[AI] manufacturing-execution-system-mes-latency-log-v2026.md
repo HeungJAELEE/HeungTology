@@ -1,37 +1,77 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] manufacturing-execution-system-mes-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bfc796c6f286cd585e41dfd6f515522d83e5ab4df5154855e377f20df2368096"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bfc796c6f286cd585e41dfd6f515522d83e5ab4df5154855e377f20df2368096
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] manufacturing-execution-system-mes-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] manufacturing-execution-system-mes-latency-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] manufacturing-execution-system-mes-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ai_vision_availability_pct: 99.9
+  ai_vision_proc_latency_range_ms:
+  - 200
+  - 500
+  ai_vision_tx_latency_range_ms:
+  - 100
+  - 300
+  db_query_delay_threshold_s: 5
+  e2e_latency_target_ms: 200
+  edge_to_cloud_availability_pct: 99.95
+  edge_to_cloud_proc_latency_range_ms:
+  - 100
+  - 300
+  edge_to_cloud_tx_latency_range_ms:
+  - 50
+  - 150
+  erp_sync_availability_pct: 99.0
+  erp_sync_proc_latency_min_ms: 500
+  erp_sync_tx_latency_min_ms: 2000
+  jitter_sampling_threshold_pct: 50
+  lz4_data_size_reduction_pct: 60
+  lz4_latency_reduction_ms: 40
+  manual_input_availability_pct: 99.5
+  manual_input_proc_latency_range_ms:
+  - 100
+  - 200
+  manual_input_tx_latency_range_ms:
+  - 500
+  - 1500
+  max_network_jitter_ms: 5
+  min_tps_target: 1000
+  plc_sensor_availability_pct: 99.999
+  plc_sensor_proc_latency_range_ms:
+  - 20
+  - 50
+  plc_sensor_tx_latency_range_ms:
+  - 10
+  - 30
+  queuing_load_threshold_pct: 80
+  target_availability_pct: 99.99
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] manufacturing-execution-system-mes-latency-log-v2026
 

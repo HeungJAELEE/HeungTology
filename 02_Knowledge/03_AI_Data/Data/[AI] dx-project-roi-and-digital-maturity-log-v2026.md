@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] dx-project-roi-and-digital-maturity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "477c1718a14dbaaa358535ee89bf19e6f3b308ef70cb323250d64b13f3ba56a1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 477c1718a14dbaaa358535ee89bf19e6f3b308ef70cb323250d64b13f3ba56a1
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] dx-project-roi-and-digital-maturity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] dx-project-roi-and-digital-maturity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  avg_cumulative_roi_percent: 172.5
+  avg_digital_maturity_level: 4.55
+  avg_employee_adoption_rate_percent: 91.8
+  infrastructure_system_endpoint: it-infrastructure-and-cloud-architecture-system
+  market_adaptation_integrity_improvement_ratio: 0.4
+  maturity_acceleration_threshold: 1.5
+  payback_period_formula: I/V
+  performance_log_endpoint: server-and-network-performance-log-v2026
+  total_dx_investment_m: 175
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] dx-project-roi-and-digital-maturity-log-v2026
 
@@ -44,7 +53,7 @@ validation:
 
 ### 2.1 [주요 DX 범주별 투자 실적 및 성숙도 테이블 (v2026)]
 
-| DX 범주 | 총 투자 ($M) | 누적 ROI (%) | 성숙도 (1-5) | 채택률 (%) | 공학적 의미 (Rationale V6.3.7) |
+| DX 범주 | 총 투자 ($M) | 누적 ROI (%) | 성숙도 (1-5) | 채택률 (%) | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Smart Factory**| $\$85$ | $210.0$ | $4.8$ | $95.0$ | **Efficiency**: 현장 자동화 및 제조 무결성 로그 |
 | **AI/Data** | $\$45$ | $185.0$ | $4.5$ | $80.0$ | **Intelligence**: 데이터 기반 지능 및 분석 무결성 지표 |
@@ -53,7 +62,7 @@ validation:
 | **Total** | $\$175$ | **Avg 172.5** | **Avg 4.55** | **Avg 91.8** | **Evolution**: 조직의 디지털 진화 및 전략 무결성 지표 |
 
 ### 2.2 [디지털 전환 및 혁신 관리 파라미터]
-- **Total DX Investment ($M):** 현재까지 디지털 전환을 위해 투입된 하드웨어, 소프트웨어, 인건비의 총합.
+- **Total DX Investment ($M):** 현재까지 디지털 전환을 위해 투입된 하드웨어, 소프트웨어, 인건비의 총합.$
 - **Cumulative ROI (%):** DX 투자를 통해 절감된 비용 또는 창출된 추가 이익의 누적 합계 대비 투자액 비율.
 - **Avg Time to Value (Months):** 프로젝트 킥오프부터 실제 비즈니스 가치(ROI)가 발생하기 시작할 때까지의 평균 기간.
 - **Digital Maturity Level (Scale 1-5):** 전사 디지털 역량 진단을 통해 산출된 현재의 진화 단계.

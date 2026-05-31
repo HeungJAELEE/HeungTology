@@ -1,37 +1,56 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] memristor-vmm-computation-error-and-latency-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b3ff1d89a1d2bf64b5845fd42c5e870d078fd7ffd8d5dd3f7c22bff80649caa4"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b3ff1d89a1d2bf64b5845fd42c5e870d078fd7ffd8d5dd3f7c22bff80649caa4
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] memristor-vmm-computation-error-and-latency-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] memristor-vmm-computation-error-and-latency-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] memristor-vmm-computation-error-and-latency-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bit_resolution_mean_bits: 5.2
+  bit_resolution_threshold_bits: 6.0
+  cycle_variability_mean_pct: 2.5
+  cycle_variability_threshold_pct: 1.5
+  energy_per_mac_mean_fj: 1.2
+  energy_per_mac_threshold_fj: 1.0
+  local_minima_risk_increase_pct: 40.0
+  lrs_hrs_ratio_mean: 150
+  lrs_hrs_ratio_threshold: 100
+  non_linearity_critical_alpha: 2.0
+  non_linearity_mean: 1.4
+  non_linearity_threshold: 1.0
+  stdp_deviation_observed_pct: 12.0
+  stdp_symmetry_mean: 0.88
+  stdp_symmetry_threshold: 0.95
+  vmm_rmse_mean_pct: 1.25
+  vmm_rmse_threshold_pct: 1.0
+  write_latency_mean_ns: 45
+  write_latency_threshold_ns: 30
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] memristor-vmm-computation-error-and-latency-audit-log-v2026
 

@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] smart-textile-electrical-conductivity-and-durability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5d2fe72c557a777d08ed05a8bfc848e1bad9cd5692a7df882609fc44adcfde46"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5d2fe72c557a777d08ed05a8bfc848e1bad9cd5692a7df882609fc44adcfde46
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] smart-textile-electrical-conductivity-and-durability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] smart-textile-electrical-conductivity-and-durability-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] smart-textile-electrical-conductivity-and-durability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bending_life_measured: 1.2e5 cycles
+  bending_life_target: '> 1.0e5 cycles'
+  conductivity_measured: 1.2e3 S/m
+  conductivity_target: '> 1.0e3 S/m'
+  critical_wash_temperature: 60 C
+  heating_power_density: 45.0 W/m2
+  resistance_error_threshold: 0.1 ohm
+  sheet_resistance_measured: 8.45 ohm/sq
+  sheet_resistance_target: < 10.0 ohm/sq
+  skin_safety_index_measured: '0.98'
+  skin_safety_index_target: '> 0.95'
+  wash_stability_measured: 97.2%
+  wash_stability_target: '> 95.0%'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] smart-textile-electrical-conductivity-and-durability-log-v2026
 

@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] semiconductor-nanolithography-euv-exposure-yield-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "642d2d79c29f5b2b34377b3092dd3886676dc827d65cb42df1bf163d66e18d5c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 642d2d79c29f5b2b34377b3092dd3886676dc827d65cb42df1bf163d66e18d5c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] semiconductor-nanolithography-euv-exposure-yield-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] semiconductor-nanolithography-euv-exposure-yield-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] semiconductor-nanolithography-euv-exposure-yield-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_dimension_actual_nm: 14.2
+  critical_dimension_target_max_nm: 14.5
+  critical_dimension_target_min_nm: 14.0
+  euv_wavelength_nm: 13.5
+  exposure_dose_actual_mj_cm2: 65.2
+  exposure_dose_target_max_mj_cm2: 70.0
+  exposure_dose_target_min_mj_cm2: 60.0
+  litho_yield_actual_pct: 98.6
+  litho_yield_target_min_pct: 98.5
+  overlay_error_actual_nm: 1.45
+  overlay_error_target_max_nm: 1.5
+  rayleigh_k1_constant: 0.35
+  stochastics_defect_density_per_cm2: 0.02
+  stochastics_defect_density_target_max_per_cm2: 0.05
+  throughput_actual_wph: 165
+  throughput_target_min_wph: 160
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] semiconductor-nanolithography-euv-exposure-yield-log-v2026
 

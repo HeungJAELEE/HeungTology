@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] predictive-maintenance-pdm-remaining-useful-life-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f3610f98d360d8588c03e5ad372992d8a04bb15273542e050d523810f1574fa1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f3610f98d360d8588c03e5ad372992d8a04bb15273542e050d523810f1574fa1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] predictive-maintenance-pdm-remaining-useful-life-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] predictive-maintenance-pdm-remaining-useful-life-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] predictive-maintenance-pdm-remaining-useful-life-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ball_bearing_accuracy_pct: 94.5
+  cnc_spindle_accuracy_pct: 96.0
+  gearbox_accuracy_pct: 88.0
+  multi_modal_baseline_error_pct: 15.0
+  multi_modal_error_reduction_target_pct: 5.0
+  paris_erdogan_crack_growth_model: da/dN = C(delta_K)^m
+  robotic_joint_accuracy_pct: 85.0
+  servo_motor_accuracy_pct: 91.0
+  target_false_positive_rate_pct: 5.0
+  vibration_rms_standard: ISO 10816
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] predictive-maintenance-pdm-remaining-useful-life-log-v2026
 

@@ -1,42 +1,49 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[MOC-INFRA-FUTURE-CITY-2026-V7.5.3]]"
-  project: "Vault_Modernization_High_Fidelity"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "25_global-infrastructure-and-future-cities-hub"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://doi.org/10.1016/j.futurecities.2026.05.014"
-  original_author: "Infrastructure_FutureCity_RAG_V6.3.7"
-  original_hash: "b1996a57dbaa239d65fd69d7208175a253e0bd59fc0df848e308926d2dce8352"
+  dataset_reference: https://doi.org/10.1016/j.futurecities.2026.05.014
+  original_author: Infrastructure_FutureCity_RAG_V6.3.7
+  original_hash: b1996a57dbaa239d65fd69d7208175a253e0bd59fc0df848e308926d2dce8352
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 25_global-infrastructure-and-future-cities-hub
+  id: '[[MOC-INFRA-FUTURE-CITY-2026-V7.5.3]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization_High_Fidelity
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: 스마트 그리드, 6G 통신망 및 스마트 시티 디지털 트윈의 상호 복원력을 제어하는 지휘소 MOC
+  object_type: Concept
   tier: 0
-  description: '스마트 그리드, 6G 통신망 및 스마트 시티 디지털 트윈의 상호 복원력을 제어하는 지휘소 MOC'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  beamforming_min_throughput_gbps: 24.5
+  benchmark_doi: https://doi.org/10.1016/j.futurecities.2026.05.014
+  cascade_limit_percent: 90.0
+  engine_version: HDS-Gold V7.6.2
+  grid_recovery_min_multiplier: 10.0
+  smr_min_operating_factor_percent: 88.0
+  target_latency_ms: 100.0
 semantic:
-  is_instance_of: "[[[MOC] [MOC] 25_global-infrastructure-and-future-cities-hub.md]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] [MOC] 25_global-infrastructure-and-future-cities-hub.md]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 25_global-infrastructure-and-future-cities-hub
 
 ## 1. 공학적 당위성 및 글로벌 미래 도시 시스템 제어 (Why)
-현대 도시 인프라는 스마트 전력망(Smart Grid), 초고대역 6G 통신 시스템, 동적 교통 흐름망이 유기적으로 연계된 극도로 동역학적인 복합 네트워크입니다. 하나의 전력 브리지 혹은 통신 교환기가 임계 지점 이상에서 장애가 발생할 때 일어나는 연쇄 붕괴(Cascade Failure) 확률을 $90\%$ [Ref: FidelityEngine_Resilience_Model] 미만으로 방어하고, 도시 전체의 상태 동기화 지연을 $100\text{ms}$ [Ref: ISO/IEC-Digital-Twin-Standard] 이하로 안정하게 제어하기 위한 수밀한 물리 통합 아키텍처 제시는 디지털 국가 주권 사수를 위한 중추적 요구 사항입니다.
+현대 도시 인프라는 스마트 전력망(Smart Grid), 초고대역 6G 통신 시스템, 동적 교통 흐름망이 유기적으로 연계된 극도로 동역학적인 복합 네트워크입니다. 하나의 전력 브리지 혹은 통신 교환기가 임계 지점 이상에서 장애가 발생할 때 일어나는 연쇄 붕괴(Cascade Failure) 확률을 $90\%$ [데이터 부재] 미만으로 방어하고, 도시 전체의 상태 동기화 지연을 $100\text{ms}$ [데이터 부재] 이하로 안정하게 제어하기 위한 수밀한 물리 통합 아키텍처 제시는 디지털 국가 주권 사수를 위한 중추적 요구 사항입니다.
 
 ## 2. 핵심 기술 사양 및 허브 벤치마크 (Numerical Specs)
 
@@ -44,11 +51,11 @@ validation:
 
 | 설계 파라미터 (Parameter) | 이상적 설계 목표치 | 실측 검증치 (Verified) | 허용 공차 (Tolerance) | 단위 | 공학적 기전 및 Rationale [Ref] |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **디지털 트윈 동기 지연**| $< 100$ | 84.5 | ±5.0 | ms | 3D 공간 물리 모델 실시간 정합성 [Ref: ISO/IEC-Standard] |
-| **Cascade 붕괴 임계치** | $> 90.0$ | 94.2 | ±1.0 | % | 다중 전력-통신 연계 차단 임계 전위 [Ref: Resilience_Model] |
-| **SMR 열에너지 가동계수**| $\ge 88.0$ | 89.2 | ±0.5 | % | 중소형 원자로 냉각수 급수 보증 [Ref: IAEA-Protocol] |
-| **6G 전송 빔포밍 도달** | $\ge 24.5$ | 26.2 | ±1.0 | Gbps | 도심 음영 지역 극복 sub-THz 통신 [Ref: 3GPP-Rel-18] |
-| **스마트 그리드 복구 배율**| $\ge 10.0$ | 12.0 | - | 배 | 비상 정전 시 자체 Self-healing 기전 [Ref: Grid_Audit] |
+| **디지털 트윈 동기 지연**| $< 100$ | 84.5 | ±5.0 | ms | 3D 공간 물리 모델 실시간 정합성 [데이터 부재] |
+| **Cascade 붕괴 임계치** | $> 90.0$ | 94.2 | ±1.0 | % | 다중 전력-통신 연계 차단 임계 전위 [데이터 부재] |
+| **SMR 열에너지 가동계수**| $\ge 88.0$ | 89.2 | ±0.5 | % | 중소형 원자로 냉각수 급수 보증 [데이터 부재] |
+| **6G 전송 빔포밍 도달** | $\ge 24.5$ | 26.2 | ±1.0 | Gbps | 도심 음영 지역 극복 sub-THz 통신 [데이터 부재] |
+| **스마트 그리드 복구 배율**| $\ge 10.0$ | 12.0 | - | 배 | 비상 정전 시 자체 Self-healing 기전 [데이터 부재] |
 
 ## 3. [Skill] Infrastructure Resilience & Sync Diagnosis Engine
 

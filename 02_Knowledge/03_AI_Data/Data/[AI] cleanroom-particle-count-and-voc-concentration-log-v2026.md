@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cleanroom-particle-count-and-voc-concentration-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f0722432c13c68445a824dd806a1a88e8b5fc4144945b3d0c6f04e0c641669bd"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f0722432c13c68445a824dd806a1a88e8b5fc4144945b3d0c6f04e0c641669bd
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cleanroom-particle-count-and-voc-concentration-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cleanroom-particle-count-and-voc-concentration-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] cleanroom-particle-count-and-voc-concentration-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_pressure_threshold_pa: 10
+  iso_1_differential_pressure_pa: 30-50
+  iso_1_particle_limit_0_1um: < 10
+  iso_1_voc_limit_ppb: < 0.1
+  iso_3_differential_pressure_pa: 20-30
+  iso_3_particle_limit_0_1um: < 1000
+  iso_3_voc_limit_ppb: < 5
+  iso_5_differential_pressure_pa: 10-15
+  iso_5_particle_limit_0_1um: < 100000
+  iso_5_voc_limit_ppb: < 20
+  iso_7_differential_pressure_pa: 2-5
+  iso_7_particle_limit_0_1um: < 3.5e6
+  iso_7_voc_limit_ppb: < 100
+  particle_concentration_model: Cn = 10^N * (0.1/D)^2.08
+  reference_particle_size_um: 0.1
+  wake_effect_velocity_threshold_ms: 0.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cleanroom-particle-count-and-voc-concentration-log-v2026
 

@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] transmission-line-efficiency-and-loss-monitoring-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "fcb6382cd682a4db533f201f096ba7c32dc38eed0d5faac092918efad152e1b7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: fcb6382cd682a4db533f201f096ba7c32dc38eed0d5faac092918efad152e1b7
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] transmission-line-efficiency-and-loss-monitoring-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] transmission-line-efficiency-and-loss-monitoring-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] transmission-line-efficiency-and-loss-monitoring-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cond_temp_c: 65.4
+  cond_temp_max_c: 80.0
+  corona_loss_kw_km: 2.5
+  corona_loss_max_kw_km: 5.0
+  current_load_a: 1450
+  current_load_max_a: 1600
+  external_weather_log_endpoint: space-weather-solar-flare-and-radiation-intensity-log-v2026
+  line_loss_measured_mw: 124
+  line_loss_target_pct: 3.5
+  trans_efficiency_measured_pct: 96.8
+  trans_efficiency_target_pct: 96.5
+  voltage_level_kv: 765
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] transmission-line-efficiency-and-loss-monitoring-log-v2026
 

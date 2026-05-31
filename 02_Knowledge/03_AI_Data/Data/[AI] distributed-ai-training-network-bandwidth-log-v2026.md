@@ -1,37 +1,57 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] distributed-ai-training-network-bandwidth-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9f81331d4c82feca24321b2a6f8dc922a82ae8fcee0cf93accba4a00c99db3a0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9f81331d4c82feca24321b2a6f8dc922a82ae8fcee0cf93accba4a00c99db3a0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] distributed-ai-training-network-bandwidth-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] distributed-ai-training-network-bandwidth-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] distributed-ai-training-network-bandwidth-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  all_reduce_ring_bus_bw: 385.0 GB/s
+  all_reduce_ring_scaling_efficiency: 90.2%
+  all_to_all_moe_bus_bw: 120.4 GB/s
+  all_to_all_moe_latency: 150 us
+  all_to_all_moe_scaling_efficiency: 78.5%
+  gradient_compression_ratio: 2x-10x
+  infiniband_ndr_bus_bw: 45.2 GB/s
+  infiniband_ndr_latency: 15-25 us
+  infiniband_ndr_raw_bw: 400 Gbps
+  infiniband_ndr_scaling_efficiency: 92.0%
+  network_packet_loss_threshold: < 10^-6
+  nvlink_4_bus_bw: 810.5 GB/s
+  nvlink_4_latency: < 1 us
+  nvlink_4_raw_bw: 900 GB/s
+  nvlink_4_scaling_efficiency: 99.5%
+  roce_v2_bus_bw: 11.2 GB/s
+  roce_v2_latency: 45-80 us
+  roce_v2_raw_bw: 100 Gbps
+  roce_v2_scaling_efficiency: 85.4%
+  synchronization_overhead_range: 5-25%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] distributed-ai-training-network-bandwidth-log-v2026
 

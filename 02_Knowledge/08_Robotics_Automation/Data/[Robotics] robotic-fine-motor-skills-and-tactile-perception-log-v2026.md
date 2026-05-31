@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] robotic-fine-motor-skills-and-tactile-perception-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7c88a4e9eb4b408aa950f9c81529b2a85ad34b6c8f77668281e397702e306806"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7c88a4e9eb4b408aa950f9c81529b2a85ad34b6c8f77668281e397702e306806
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] robotic-fine-motor-skills-and-tactile-perception-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] robotic-fine-motor-skills-and-tactile-perception-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Robotics] robotic-fine-motor-skills-and-tactile-perception-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  dielectric_permittivity_symbol: epsilon
+  friction_coefficient_symbol: mu
+  grip_success_rate: 0.9992
+  joint_backlash_um: 4.2
+  manip_error_um: 12.5
+  pressure_sensitivity_pa: 0.85
+  slip_detection_ms: 0.95
+  tactile_resolution_px_cm2: 144
+  texture_id_accuracy: 0.985
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] robotic-fine-motor-skills-and-tactile-perception-log-v2026
 

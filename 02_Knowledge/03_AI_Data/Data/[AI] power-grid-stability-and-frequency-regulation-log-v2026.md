@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] power-grid-stability-and-frequency-regulation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "dc36851c4bbb2de37f90aeeb7cb0e621b2236a5edd4ebaaeb4d81109b9c3cf07"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: dc36851c4bbb2de37f90aeeb7cb0e621b2236a5edd4ebaaeb4d81109b9c3cf07
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] power-grid-stability-and-frequency-regulation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] power-grid-stability-and-frequency-regulation-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] power-grid-stability-and-frequency-regulation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  external_space_weather_log_endpoint: space-weather-solar-flare-and-radiation-intensity-log-v2026
+  frequency_deviation_measured_mhz: '5.2'
+  grid_frequency_measured_hz: '60.005'
+  grid_frequency_target_hz: 60.00 +/- 0.05
+  inertia_h_measured_s: '4.85'
+  inertia_h_target_s: '4.0'
+  reserve_power_measured_mw: '1250'
+  reserve_power_target_mw: '800'
+  rocof_measured_hz_s: '0.012'
+  rocof_target_hz_s: '0.100'
+  solar_drop_frequency_impact_hz: '0.15'
+  solar_drop_magnitude_mw: '500'
+  voltage_margin_measured: '0.985'
+  voltage_margin_target: '0.950'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] power-grid-stability-and-frequency-regulation-log-v2026
 

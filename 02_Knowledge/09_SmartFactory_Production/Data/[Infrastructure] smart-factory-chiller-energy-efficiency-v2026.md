@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] smart-factory-chiller-energy-efficiency-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a2cd55ed34a55ab0ba2e0f8dccaf62fe37fedc6ed400ee1b822300b9998adea9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a2cd55ed34a55ab0ba2e0f8dccaf62fe37fedc6ed400ee1b822300b9998adea9
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] smart-factory-chiller-energy-efficiency-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Infrastructure] smart-factory-chiller-energy-efficiency-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Infrastructure] smart-factory-chiller-energy-efficiency-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_power_consumption_kw: 150
+  chilled_water_temp_avg_c: 7.0
+  chilled_water_temp_precision_c: 0.5
+  chiller_energy_share_pct_range: 20-30
+  condenser_pressure_avg_bar: 12.5
+  condenser_pressure_max_bar: 15.0
+  electricity_unit_cost_krw: 150
+  flow_rate_avg_lpm: 800
+  flow_rate_stability_tolerance_pct: 5
+  rt_to_kw_conversion_factor: 3.517
+  sensor_accuracy_threshold_pct: 1
+  target_cop: 5.2
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] smart-factory-chiller-energy-efficiency-v2026
 

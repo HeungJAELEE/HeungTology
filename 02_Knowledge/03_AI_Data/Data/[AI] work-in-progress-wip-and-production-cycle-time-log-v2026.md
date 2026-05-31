@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] work-in-progress-wip-and-production-cycle-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9cc8e3d4b877c20670adad38a1002364d0a50e937dc0c23263c1db558614b3d0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9cc8e3d4b877c20670adad38a1002364d0a50e937dc0c23263c1db558614b3d0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] work-in-progress-wip-and-production-cycle-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] work-in-progress-wip-and-production-cycle-time-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] work-in-progress-wip-and-production-cycle-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  assembly_cycle_time_s: 45-60
+  assembly_takt_time_s: 50
+  assembly_wip_units: 100-300
+  chemical_proc_cycle_time_s: 1800-7200
+  chemical_proc_wip_units: 500-1000
+  littles_law_formula: L = lambda * W
+  packaging_cycle_time_s: 15-25
+  packaging_takt_time_s: 50
+  packaging_wip_units: 20-50
+  smt_line_cycle_time_s: 0.1-1.0
+  smt_line_takt_time_s: 0.5
+  smt_line_wip_units: 200-500
+  takt_time_formula: net_available_time / customer_demand_quantity
+  testing_cycle_time_s: 120-300
+  testing_takt_time_s: 50
+  testing_wip_units: 50-150
+  utilization_rho_critical_threshold: 0.9
+  version: '2026'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] work-in-progress-wip-and-production-cycle-time-log-v2026
 

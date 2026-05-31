@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] lead-time-and-on-time-delivery-otd-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d11e96f6c93d5ec73539eb3fd1f9a64a49647b3e3a1e5ffea927eb7acf5950b9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d11e96f6c93d5ec73539eb3fd1f9a64a49647b3e3a1e5ffea927eb7acf5950b9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] lead-time-and-on-time-delivery-otd-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] lead-time-and-on-time-delivery-otd-performance-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] lead-time-and-on-time-delivery-otd-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  adsb_data_source: ADS-B
+  ais_data_source: AIS
+  consolidated_lead_time_days: 10-20
+  lead_time_variability_cost_impact: 0.1
+  lead_time_variability_parameter: sigma_lt
+  mto_sea_air_lead_time_days: 14-21
+  otd_calculation_formula: N_on_time / N_total
+  otd_threshold: 0.95
+  regional_truck_lead_time_days: 1-3
+  stock_sea_lead_time_days: 30-45
+  urgent_air_lead_time_days: 2-5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] lead-time-and-on-time-delivery-otd-performance-log-v2026
 

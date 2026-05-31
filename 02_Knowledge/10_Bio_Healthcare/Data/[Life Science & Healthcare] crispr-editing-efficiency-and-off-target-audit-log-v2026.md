@@ -1,37 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] crispr-editing-efficiency-and-off-target-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ba7ffd3602cfc255cff7c8d8f8d27c1c1ad37ce2b8e2b220b80fcf83ba178fc9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ba7ffd3602cfc255cff7c8d8f8d27c1c1ad37ce2b8e2b220b80fcf83ba178fc9
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] crispr-editing-efficiency-and-off-target-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] crispr-editing-efficiency-and-off-target-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] crispr-editing-efficiency-and-off-target-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_log_id: CRISPR-Fidelity-v2026-Log
+  cell_viability_rate: 97.5%
+  edit_efficiency: 94.5%
+  hdr_success_rate: 88.2%
+  off_target_threshold: < 0.0001
+  prediction_correlation: 99.1%
+  version: V6.3.7
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] crispr-editing-efficiency-and-off-target-audit-log-v2026
 

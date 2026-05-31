@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] high-performance-fiber-tensile-strength-and-modulus-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e5f1119f51146f3220abf4bed5a2a4f51d953b051cbcb7fa60ba84aca0ace8a3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e5f1119f51146f3220abf4bed5a2a4f51d953b051cbcb7fa60ba84aca0ace8a3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] high-performance-fiber-tensile-strength-and-modulus-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] high-performance-fiber-tensile-strength-and-modulus-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] high-performance-fiber-tensile-strength-and-modulus-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  crystallinity_measured: 84.5 %
+  crystallinity_target: '> 80.0 %'
+  elongation_measured: 1.85 %
+  elongation_target: < 2.0 %
+  fiber_density_measured: 1.76 g/cm3
+  fiber_density_target: < 1.80 g/cm3
+  interlaminar_shear_strength_drop: 10%
+  tenacity_measured: 35.4 g/den
+  tenacity_target: '> 30.0 g/den'
+  tensile_strength_measured: 5.42 GPa
+  tensile_strength_reduction_threshold: 15%
+  tensile_strength_target: '> 5.0 GPa'
+  theoretical_strength_efficiency: 80%
+  youngs_modulus_measured: 285.0 GPa
+  youngs_modulus_target: '> 250.0 GPa'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] high-performance-fiber-tensile-strength-and-modulus-log-v2026
 

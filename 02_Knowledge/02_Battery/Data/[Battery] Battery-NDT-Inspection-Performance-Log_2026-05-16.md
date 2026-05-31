@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-NDT-Inspection-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "51d8e2942d54ce366b423dfadb3faec29c4319209a3b388a66f3ab4a7537b04d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 51d8e2942d54ce366b423dfadb3faec29c4319209a3b388a66f3ab4a7537b04d
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-NDT-Inspection-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-NDT-Inspection-Performance-Log_2026-05-16에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Battery-NDT-Inspection-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  eddy_current_detection_limit_actual: 18.5 μm
+  eddy_current_detection_limit_target: 20.0 μm
+  inspection_snr_actual: 38.5 dB
+  inspection_snr_target: 35.0 dB
+  inspection_takt_time_actual: 1.1 sec/cell
+  inspection_takt_time_target: 1.2 sec/cell
+  ultrasonic_delamination_detection_rate_actual: 98.4%
+  ultrasonic_delamination_detection_rate_target: 98.0%
+  xray_overlap_precision_actual: 0.082 mm
+  xray_overlap_precision_target: 0.10 mm
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-NDT-Inspection-Performance-Log_2026-05-16
 

@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] science-physics-graphene-and-2d-materials-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a191a7abe529d25d6a2c169debb595a47cc2d66179e7e06c3c153f8aee1436c5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a191a7abe529d25d6a2c169debb595a47cc2d66179e7e06c3c153f8aee1436c5
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] science-physics-graphene-and-2d-materials-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] science-physics-graphene-and-2d-materials-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] science-physics-graphene-and-2d-materials-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ballistic_transport_mobility_threshold_cm2_vs: 1000000
+  dirac_point_range_v: -10-10
+  id_ig_ratio_range: 0.01-0.5
+  mobility_range_cm2_vs: 10000-200000
+  sheet_resistance_range_ohm_sq: 100-1000
+  single_layer_confidence_threshold: 0.99
+  single_layer_fwhm_max_nm: 30
+  single_layer_id2g_ratio_threshold: 2.0
+  tensile_strength_range_gpa: 100-130
+  thermal_conductivity_range_wmk: 2000-5000
+  thickness_range_nm: 0.34-3.4
+  transparency_range_percent: 90-97.7
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] science-physics-graphene-and-2d-materials-log-v2026
 

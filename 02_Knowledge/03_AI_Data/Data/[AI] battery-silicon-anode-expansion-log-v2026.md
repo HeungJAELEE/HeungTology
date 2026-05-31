@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-silicon-anode-expansion-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d2ab55e9c7c7c54148dd6eb1bf56f080365de263c2bb67071528f98cac5a361c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d2ab55e9c7c7c54148dd6eb1bf56f080365de263c2bb67071528f98cac5a361c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-silicon-anode-expansion-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-silicon-anode-expansion-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  binder_modulus_min_gpa: 5
+  cell_swelling_limit_percent: 15-25
+  critical_particle_size_d50_nm: 50-150
+  critical_volume_expansion_factor: 3.8
+  graphite_ice_percent: 94
+  lithiation_phase_critical_x: 3.75
+  nanowire_si_content_percent: 15.0
+  nanowire_si_ice_percent: 85
+  sei_destruction_rate_percent: 35
+  si_c_specific_capacity_range_mah_g: 450-1200
+  si_carbon_content_percent: 10.0
+  si_carbon_ice_percent: 88
+  si_oxide_content_percent: 5.5
+  si_oxide_ice_percent: 82
+  si_pure_specific_capacity_mah_g: '> 3500'
+  theoretical_volume_expansion_percent: 400
+  yolk_shell_si_content_percent: 20.0
+  yolk_shell_si_ice_percent: 84
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-silicon-anode-expansion-log-v2026
 

@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] hybrid-cloud-job-latency-and-security-incident-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5b899c202c8569ac67e334ad68656ebdacb77b0186cb3effaee8aa5a3a6975fd"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5b899c202c8569ac67e334ad68656ebdacb77b0186cb3effaee8aa5a3a6975fd
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] hybrid-cloud-job-latency-and-security-incident-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] hybrid-cloud-job-latency-and-security-incident-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] hybrid-cloud-job-latency-and-security-incident-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  api_error_rate_actual: 0.04%
+  api_error_rate_limit: 0.10%
+  auth_failure_count: 1,420
+  breach_attempt_count: '0'
+  channel_uptime_actual: 99.995%
+  channel_uptime_limit: 99.99%
+  ddos_request_threshold: 10,000
+  job_queue_time_actual: 4.8 sec
+  job_queue_time_limit: 10.0 sec
+  network_latency_actual: 42.5 ms
+  network_latency_limit: 50.0 ms
+  packet_loss_threshold: 1e-6
+  sync_drift_actual: 0.8 ms
+  sync_drift_limit: 2.0 ms
+  sync_integrity_target: 1 ms
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] hybrid-cloud-job-latency-and-security-incident-log-v2026
 

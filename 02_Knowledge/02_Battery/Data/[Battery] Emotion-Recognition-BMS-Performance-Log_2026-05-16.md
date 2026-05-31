@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Emotion-Recognition-BMS-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c345935475bf1d5772f1eb05022efed5e79be0ca4fbd91d5ada4827039e54e6e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c345935475bf1d5772f1eb05022efed5e79be0ca4fbd91d5ada4827039e54e6e
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Emotion-Recognition-BMS-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Emotion-Recognition-BMS-Performance-Log_2026-05-16에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Battery] Emotion-Recognition-BMS-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  edge_computing_module: RTX 4060
+  emotion_classification_accuracy_actual: 84.5%
+  emotion_classification_accuracy_standard: 85.0%
+  micro_expression_latency_actual: 35.0ms
+  micro_expression_latency_standard: 40.0ms
+  multimodal_fusion_latency_actual: 42.5ms
+  multimodal_fusion_latency_standard: 40.0ms
+  user_stress_detection_rate: 92.1%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Emotion-Recognition-BMS-Performance-Log_2026-05-16
 

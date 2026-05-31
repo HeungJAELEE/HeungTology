@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ct-radiation-dose-and-image-reconstruction-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "60fc4dfb30679bb6e6e123325e93a00799cbc5482b3a315212f58d654abf4f12"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 60fc4dfb30679bb6e6e123325e93a00799cbc5482b3a315212f58d654abf4f12
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ct-radiation-dose-and-image-reconstruction-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ct-radiation-dose-and-image-reconstruction-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ct-radiation-dose-and-image-reconstruction-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bmi_noise_increase_rate: 30%
+  ctdi_vol_measured: 8.2 mGy
+  ctdi_vol_target: < 10.0 mGy
+  dlp_measured: 452.4 mGy-cm
+  dlp_target: < 500.0 mGy-cm
+  hu_accuracy_measured: ± 2.4 HU
+  hu_accuracy_target: < ± 5.0 HU
+  hu_drift_threshold_example: +5 HU
+  pitch_ratio_measured: '1.2'
+  pitch_ratio_target: 1.0 ~ 1.5
+  recon_time_measured: 12.5 sec
+  recon_time_target: < 15.0 sec
+  rotation_time_measured: 0.35 sec
+  rotation_time_target: < 0.5 sec
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ct-radiation-dose-and-image-reconstruction-log-v2026
 

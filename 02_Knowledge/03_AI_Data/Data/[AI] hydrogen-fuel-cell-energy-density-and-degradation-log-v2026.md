@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] hydrogen-fuel-cell-energy-density-and-degradation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "32f4501718d4363e7870c8f9298ba10874f97c9ec8b79e67a4d1599104d57c13"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 32f4501718d4363e7870c8f9298ba10874f97c9ec8b79e67a4d1599104d57c13
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] hydrogen-fuel-cell-energy-density-and-degradation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] hydrogen-fuel-cell-energy-density-and-degradation-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] hydrogen-fuel-cell-energy-density-and-degradation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cell_voltage_2a_mean: 0.68 V
+  cell_voltage_2a_target: 0.72 V
+  cold_start_time_mean: 22 sec
+  cold_start_time_target: 10 sec
+  degradation_rate_mean: 2.5 uV/hr
+  degradation_rate_target: 1.0 uV/hr
+  ecsa_mean: 65 m2/g
+  ecsa_target: 80 m2/g
+  h2_crossover_mean: 1.2 mA/cm2
+  h2_crossover_target: 2.0 mA/cm2
+  peak_power_density_mean: 3.2 W/cm2
+  peak_power_density_target: 4.0 W/cm2
+  pt_catalyst_loading_mean: 0.08 g/kW
+  pt_catalyst_loading_target: 0.05 g/kW
+  stack_efficiency_mean: 58%
+  stack_efficiency_target: 65%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] hydrogen-fuel-cell-energy-density-and-degradation-log-v2026
 

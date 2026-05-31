@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] quantum-error-correction-logical-failure-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7107af5c77df5099881fda3dfa7d5f82378ee6f51710848029fd12f3e5a9c54f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7107af5c77df5099881fda3dfa7d5f82378ee6f51710848029fd12f3e5a9c54f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] quantum-error-correction-logical-failure-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] quantum-error-correction-logical-failure-rate-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] quantum-error-correction-logical-failure-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  code_distance_d_values:
+  - 3
+  - 5
+  - 7
+  coherence_time_t2_us_min: 100.0
+  decoding_latency_tau_dec_limit: t2/10
+  gate_fidelity_2q_avg_pct: 99.9
+  logical_failure_rate_pl: 1.0e-10
+  physical_error_rate_p_pct: 0.5
+  qec_threshold_p_th_pct: 1.0
+  syndrome_time_ns_max: 500
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] quantum-error-correction-logical-failure-rate-log-v2026
 

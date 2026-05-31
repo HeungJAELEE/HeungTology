@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] geomagnetic-field-intensity-and-polar-drift-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c62d6625ff4f8397b134b6b87fc165f9a1a32da6b979a7db93486f2f61aa9416"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c62d6625ff4f8397b134b6b87fc165f9a1a32da6b979a7db93486f2f61aa9416
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] geomagnetic-field-intensity-and-polar-drift-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] geomagnetic-field-intensity-and-polar-drift-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] geomagnetic-field-intensity-and-polar-drift-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  atmospheric_drag_increase: 30%
+  declination: -7.24 deg
+  dipole_moment: 7.6e22 A*m^2
+  field_intensity_measured: 46245 nT
+  field_intensity_target: '> 45000 nT'
+  inclination: 68.5 deg
+  ins_angle_error_impact: 0.5 deg
+  kp_index_measured: '2.4'
+  kp_index_target: < 4.0
+  polar_drift_measured: 48.5 km/yr
+  polar_drift_target: < 55.0 km/yr
+  satellite_altitude_drop: 2 km
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] geomagnetic-field-intensity-and-polar-drift-log-v2026
 

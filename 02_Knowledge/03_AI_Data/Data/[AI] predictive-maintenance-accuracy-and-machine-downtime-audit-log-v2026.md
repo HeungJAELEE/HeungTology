@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] predictive-maintenance-accuracy-and-machine-downtime-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6ebf6eba27a2869e47d6c5cb1dcd950dc5996bc927ee6adf54339a2a18799c85"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6ebf6eba27a2869e47d6c5cb1dcd950dc5996bc927ee6adf54339a2a18799c85
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] predictive-maintenance-accuracy-and-machine-downtime-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] predictive-maintenance-accuracy-and-machine-downtime-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] predictive-maintenance-accuracy-and-machine-downtime-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  iiot_vibration_data_endpoint: manufacturing-iiot-high-speed-vibration-data-v2026
+  mtbf_measured_h: 4500
+  mtbf_target_h: 4000
+  mttr_measured_h: 1.2
+  mttr_target_h: 2.0
+  pdm_accuracy_measured_pct: 98.5
+  pdm_accuracy_target_pct: 97.0
+  rul_error_measured_h: 12
+  rul_error_target_h: 24
+  sensor_fidelity_measured_pct: 99.9
+  sensor_fidelity_target_pct: 99.5
+  unplanned_downtime_measured_pct: 0.32
+  unplanned_downtime_target_pct: 0.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] predictive-maintenance-accuracy-and-machine-downtime-audit-log-v2026
 

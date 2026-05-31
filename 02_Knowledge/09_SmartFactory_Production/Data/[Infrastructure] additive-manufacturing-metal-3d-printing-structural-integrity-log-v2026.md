@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] additive-manufacturing-metal-3d-printing-structural-integrity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d1ba992724250cd44804bfe6735578cf30f1cf013f4dafe9bb68bb1700ab7a19"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d1ba992724250cd44804bfe6735578cf30f1cf013f4dafe9bb68bb1700ab7a19
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] additive-manufacturing-metal-3d-printing-structural-integrity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Infrastructure] additive-manufacturing-metal-3d-printing-structural-integrity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Infrastructure] additive-manufacturing-metal-3d-printing-structural-integrity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  max_oxygen_level_ppm: 100
+  surface_roughness_ra_um:
+  - 5.0
+  - 15.0
+  ti_6al_4v_hardness_hv:
+  - 350
+  - 450
+  ved_calculation_formula: P / (v * h * t)
+  ved_optimal_range_j_mm3:
+  - 60
+  - 80
+  yield_strength_range_mpa:
+  - 950
+  - 1100
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] additive-manufacturing-metal-3d-printing-structural-integrity-log-v2026
 

@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] smart-grid-load-balancing-and-curtailment-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "645caa466834959bb1042515204980ac7fa071b7d91f750d5e110daa13a076b1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 645caa466834959bb1042515204980ac7fa071b7d91f750d5e110daa13a076b1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] smart-grid-load-balancing-and-curtailment-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] smart-grid-load-balancing-and-curtailment-audit-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] smart-grid-load-balancing-and-curtailment-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  battery_analytics_endpoint: battery-aging-and-self-discharge-analytics
+  curtailment_rate_percent: 1.85
+  curtailment_rate_threshold_max_percent: 2.0
+  dr_success_rate_percent: 97.2
+  dr_success_rate_threshold_min_percent: 95.0
+  ess_utilization_percent: 88.5
+  ess_utilization_threshold_min_percent: 80.0
+  grid_efficiency_percent: 94.5
+  grid_efficiency_threshold_min_percent: 93.0
+  iiot_sensor_data_endpoint: smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026
+  load_peak_mw: 850
+  load_peak_threshold_max_mw: 900
+  peak_reduction_target_mw: 50
+  price_signal_response_ms: 1.2
+  price_signal_response_threshold_max_ms: 5.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] smart-grid-load-balancing-and-curtailment-audit-log-v2026
 

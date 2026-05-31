@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-path-planning-a-star-vs-rrt-benchmark-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "88066ecbd9679d42ab93db52d4baef2bd10957414281aa2860681ded18d52876"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 88066ecbd9679d42ab93db52d4baef2bd10957414281aa2860681ded18d52876
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-path-planning-a-star-vs-rrt-benchmark-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-path-planning-a-star-vs-rrt-benchmark-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-path-planning-a-star-vs-rrt-benchmark-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  heuristic_weight: 1.0-1.5
+  high_dof_threshold: 7
+  obstacle_clearance_mm: 100
+  path_smoothness_index: 0-1
+  replanning_latency_threshold_ms: 50
+  rewiring_radius_m: 2.5
+  robot_speed_critical_m_s: 1.5
+  rrt_max_iterations: 1000-10000
+  rrt_star_saturation_improvement_threshold: 0.02
+  rrt_star_saturation_n: 5000
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-path-planning-a-star-vs-rrt-benchmark-log-v2026
 

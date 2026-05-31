@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] sensor-data-sampling-rate-and-network-jitter-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "15ee256092762f4139c7d0474b88026cff089847e2f9320901b3199bdd4f5472"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 15ee256092762f4139c7d0474b88026cff089847e2f9320901b3199bdd4f5472
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] sensor-data-sampling-rate-and-network-jitter-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] sensor-data-sampling-rate-and-network-jitter-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] sensor-data-sampling-rate-and-network-jitter-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  environmental_jitter_ms: 50-500
+  environmental_packet_loss_pct: <1.0
+  environmental_sampling_hz: 0.1-1.0
+  event_alarm_jitter_ms: 5.0-10.0
+  event_alarm_packet_loss_pct: <0.01
+  high_speed_vib_jitter_ms: <0.1
+  high_speed_vib_packet_loss_pct: <0.001
+  high_speed_vib_sampling_hz: 10000-50000
+  jitter_snr_degradation_db: 10.0
+  nyquist_sampling_condition: fs > 2 * fmax
+  packet_loss_integrity_threshold_pct: 1.0
+  process_jitter_ms: 1.0-5.0
+  process_packet_loss_pct: <0.1
+  process_sampling_hz: 10-100
+  ptp_sync_error_threshold_us: 100.0
+  servo_control_jitter_ms: <0.01
+  servo_control_packet_loss_pct: 0
+  servo_control_sampling_hz: 1000-4000
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] sensor-data-sampling-rate-and-network-jitter-log-v2026
 

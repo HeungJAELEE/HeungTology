@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] autonomous-drone-delivery-success-and-collision-avoidance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4d470365ce322ab1845490aa2cdc7325de07aa8283e5368455fe5d3556ef6d1c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4d470365ce322ab1845490aa2cdc7325de07aa8283e5368455fe5d3556ef6d1c
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] autonomous-drone-delivery-success-and-collision-avoidance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] autonomous-drone-delivery-success-and-collision-avoidance-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Robotics] autonomous-drone-delivery-success-and-collision-avoidance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  arrival_precision_limit: 15cm
+  battery_efficiency_threshold: 10%
+  collision_incidence_threshold: '0'
+  delivery_success_rate_threshold: 99.5%
+  handover_distance_error: 1.5m
+  handover_latency_impact: 50ms
+  headwind_power_multiplier: '2.5'
+  max_pitch_angle_stability: 5deg
+  path_fidelity_rms_limit: 500mm
+  ttc_evasive_maneuver_threshold: 1.5s
+  updraft_altitude_deviation: 20cm
+  utm_sync_latency_limit: 20ms
+  wind_resistance_limit: 18m/s
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] autonomous-drone-delivery-success-and-collision-avoidance-log-v2026
 

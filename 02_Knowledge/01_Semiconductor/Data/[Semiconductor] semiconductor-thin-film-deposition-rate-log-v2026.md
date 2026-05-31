@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-thin-film-deposition-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8ac52a06e4c90145e4a4b28c3e2065ad92a3c46c207b20a59dc5c51b34e20191"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8ac52a06e4c90145e4a4b28c3e2065ad92a3c46c207b20a59dc5c51b34e20191
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-thin-film-deposition-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-thin-film-deposition-rate-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Semiconductor] semiconductor-thin-film-deposition-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  chamber_pressure_limit: ±0.05 Torr
+  chamber_pressure_target: 2.5 Torr
+  deposition_rate_limit: ±3 A/sec
+  deposition_rate_target: 150 A/sec
+  precursor_flow_limit: ±5 sccm
+  precursor_flow_target: 500 sccm
+  rf_power_limit: ±10 W
+  rf_power_target: 1200 W
+  rf_reflected_power_fault_threshold: 5%
+  thickness_uniformity_limit: '>97.0%'
+  thickness_uniformity_target: 98.5%
+  verified_depo_rate_chamber_03: 142 A/sec
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-thin-film-deposition-rate-log-v2026
 

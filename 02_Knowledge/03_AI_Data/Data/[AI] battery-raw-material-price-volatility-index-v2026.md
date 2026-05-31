@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-raw-material-price-volatility-index-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "52a702c6364225490252b8f77f726a5da0b2707ca3e71190bdad609f723318cb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 52a702c6364225490252b8f77f726a5da0b2707ca3e71190bdad609f723318cb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-raw-material-price-volatility-index-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] battery-raw-material-price-volatility-index-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] battery-raw-material-price-volatility-index-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cobalt_pack_cost_impact_per_kwh: '4.2'
+  cobalt_price_usd_ton: '32000'
+  graphite_pack_cost_impact_per_kwh: '2.1'
+  graphite_price_usd_ton: '1250'
+  hedging_coverage: 30-60%
+  hhi_geopolitical_concentration_threshold: '4000'
+  inventory_turnover_days: 30-90
+  lithium_pack_cost_impact_per_kwh: '12.4'
+  lithium_price_usd_ton: '25500'
+  lithium_speculative_volatility_threshold: 60%
+  manganese_pack_cost_impact_per_kwh: '0.8'
+  manganese_price_usd_ton: '1850'
+  nickel_pack_cost_impact_per_kwh: '8.5'
+  nickel_price_usd_ton: '18200'
+  raw_material_cost_ratio: 65-75%
+  recycling_cost_advantage_threshold: 20%
+  usd_exchange_rate_sensitivity: 0.2-0.5%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-raw-material-price-volatility-index-v2026
 

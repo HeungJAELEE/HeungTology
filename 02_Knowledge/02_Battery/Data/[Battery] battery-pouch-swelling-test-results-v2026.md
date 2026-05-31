@@ -1,38 +1,60 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-pouch-swelling-test-results-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "96b948bd96fed9351ad3b13b3d9a0a5a3bf099b0074283b55417f3f4c1251e8c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 96b948bd96fed9351ad3b13b3d9a0a5a3bf099b0074283b55417f3f4c1251e8c
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-pouch-swelling-test-results-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-pouch-swelling-test-results-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  compression_pad_thickness_increase: 0.5 mm
+  degassing_excess_rate: 10%
+  fast_charge_thickness_growth: 4.1%
+  frontal_deformation: 12.5 mm
+  frontal_impact_speed: 64 km/h
+  frontal_max_g_force: 42 G
+  gas_composition_c2h4: 45%
+  gas_composition_co2: 30%
+  gas_composition_h2: 15%
+  high_temp_expansion_limit: < 5.0%
+  high_temp_storage_thickness_growth: 8.5%
+  internal_pressure_threshold: 15 kgf/cm2
+  max_deformation_limit: 20.0 mm
+  max_von_mises_stress: 250 MPa
+  normal_cycle_thickness_growth: 3.2%
+  normal_expansion_limit: < 3.0%
+  overcharge_thickness_growth: '> 25%'
+  plastic_deformation_rate: 15%
+  rear_deformation: 8.2 mm
+  rear_impact_speed: 50 km/h
+  rear_max_g_force: 35 G
+  side_deformation: 28.4 mm
+  side_impact_speed: 32 km/h
+  side_max_g_force: 65 G
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-pouch-swelling-test-results-v2026
 

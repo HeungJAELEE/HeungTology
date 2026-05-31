@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] solid-state-battery-interface-resistance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4ce58de9423b9b9314380239803062bd3b54c87e2a4ef90dd26e112d2f3ab879"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4ce58de9423b9b9314380239803062bd3b54c87e2a4ef90dd26e112d2f3ab879
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] solid-state-battery-interface-resistance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] solid-state-battery-interface-resistance-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] solid-state-battery-interface-resistance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  degradation_cycle_threshold: 50
+  measured_charge_transfer_res_ohm: 15
+  measured_critical_current_density_ma_cm2: 1.5
+  measured_interface_resistance_ohm_cm2: 50
+  measured_ionic_conductivity_ms_cm: 1.0
+  measured_stack_pressure_mpa: 5.0
+  optimized_stack_pressure_mpa: 15
+  resistance_increase_ratio_at_threshold: 3.0
+  target_charge_transfer_res_max_ohm: 5
+  target_critical_current_density_min_ma_cm2: 5.0
+  target_interface_resistance_max_ohm_cm2: 20
+  target_ionic_conductivity_min_ms_cm: 5.0
+  target_stack_pressure_range_mpa: 10-20
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] solid-state-battery-interface-resistance-log-v2026
 

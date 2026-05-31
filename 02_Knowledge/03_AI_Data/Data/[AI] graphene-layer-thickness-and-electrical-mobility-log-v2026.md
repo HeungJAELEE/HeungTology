@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] graphene-layer-thickness-and-electrical-mobility-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "64b09c921277c0cf8daf56759d16dbb81f1bf383fa74d3547f6e98ba1faaa599"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 64b09c921277c0cf8daf56759d16dbb81f1bf383fa74d3547f6e98ba1faaa599
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] graphene-layer-thickness-and-electrical-mobility-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] graphene-layer-thickness-and-electrical-mobility-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] graphene-layer-thickness-and-electrical-mobility-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_thickness_threshold: 0.4 nm
+  cvd_temperature_measured: 1050.0 C
+  cvd_temperature_target: 1000 - 1100 C
+  dirac_point_measured: 1.2 V
+  dirac_point_target: 0.0 +/- 5.0 V
+  layer_thickness_measured: 0.345 nm
+  layer_thickness_target: 0.340 +/- 0.01 nm
+  mobility_measured: 12,450 cm^2/Vs
+  mobility_target: '> 10,000 cm^2/Vs'
+  sheet_resistance_measured: 124.5 Ohm/sq
+  sheet_resistance_target: < 150.0 Ohm/sq
+  transparency_measured: 97.6 %
+  transparency_target: '> 97.0 %'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] graphene-layer-thickness-and-electrical-mobility-log-v2026
 

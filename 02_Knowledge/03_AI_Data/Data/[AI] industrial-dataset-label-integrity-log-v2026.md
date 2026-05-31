@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-dataset-label-integrity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "50e7e2274cadd180b2caad92ae21bd3c997e33bfc8c2420d05e9edfb97628a71"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 50e7e2274cadd180b2caad92ae21bd3c997e33bfc8c2420d05e9edfb97628a71
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-dataset-label-integrity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] industrial-dataset-label-integrity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  external_db_endpoint: AI_Data_Labeling_Platform_Log
+  gold_standard_coverage: 15%
+  kappa_threshold: '0.8'
+  labeling_throughput: 500 items/hr
+  measured_fpr: 12.0%
+  measured_inter_rater_agreement: '0.82'
+  measured_label_accuracy: 98.5%
+  measured_mislabeled_rate: 1.2%
+  target_fpr: 2.0%
+  target_inter_rater_agreement: '0.85'
+  target_label_accuracy: 99.5%
+  target_mislabeled_rate: 0.5%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-dataset-label-integrity-log-v2026
 

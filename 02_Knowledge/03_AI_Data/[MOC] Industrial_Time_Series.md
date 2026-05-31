@@ -1,54 +1,68 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "[[[MOC] Industrial_Time_Series"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "Data general-process-parameter-log-v2026"
-  original_author: "Antigravity Vault Core"
-  original_hash: "874228acea9ccbb09b03580313b5ab75c4d8bee0330d2ad8e350441a4ebb4bf6"
+  dataset_reference: Data general-process-parameter-log-v2026
+  original_author: Antigravity Vault Core
+  original_hash: 874228acea9ccbb09b03580313b5ab75c4d8bee0330d2ad8e350441a4ebb4bf6
+metadata:
+  date: '2026-05-14'
+  domain: 03_AI_Data
+  id: '[[[MOC] Industrial_Time_Series'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Fidelity Industrial Temporal Analytics Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Industrial Temporal Analytics Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  anomaly_latency_theoretical_ms: 10
+  anomaly_latency_verified_ms: 14.5
+  confidence_interval: 0.95
+  data_lake_endpoint: manufacturing-data-lake-and-analytics
+  edge_ai_node: edge-ai-in-industrial-iot
+  hds_gold_version: V7.5.2
+  mape_theoretical: 0.03
+  mape_verified: 0.041
+  rul_accuracy_theoretical: 0.05
+  rul_accuracy_verified: 0.072
+  sync_endpoint: Data general-process-parameter-log-v2026
+  throughput_theoretical_hz: 100000
+  throughput_verified_hz: 92000
+  visual_synthesis_endpoint: computer-vision-for-logistics
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
 spo_graph:
-  - subject: "Industrial_Time_Series"
-    predicate: "analyzes"
-    object: "Temporal_Causality"
-    evidence_coordinate: "Section 1: 산업 데이터의 본질은 시간의 흐름 속에 숨겨진 인과율을 찾는 데 있음."
-    evidence_hash: "874228acea9c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "LSTM"
-    predicate: "predicts"
-    object: "Long-term_Energy_Demand"
-    evidence_coordinate: "Section 2-2: LSTM은 게이트 메커니즘 기반 장기 수요 예측을 수행함."
-    evidence_hash: "874228acea9c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "PdM_Core"
-    predicate: "determines"
-    object: "RUL"
-    evidence_coordinate: "Section 2-3: PdM Core는 RUL 예측 및 설비 건전성 관리를 표준으로 함."
-    evidence_hash: "874228acea9c"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: 'Section 1: 산업 데이터의 본질은 시간의 흐름 속에 숨겨진 인과율을 찾는 데 있음.'
+  intent: causal_inference
+  object: Temporal_Causality
+  predicate: analyzes
+  subject: Industrial_Time_Series
+  weight: 1.0
+- evidence_coordinate: 'Section 2-2: LSTM은 게이트 메커니즘 기반 장기 수요 예측을 수행함.'
+  intent: predictive_modeling
+  object: Long-term_Energy_Demand
+  predicate: predicts
+  subject: LSTM
+  weight: 0.8
+- evidence_coordinate: 'Section 2-3: PdM Core는 RUL 예측 및 설비 건전성 관리를 표준으로 함.'
+  intent: prognostic_estimation
+  object: RUL
+  predicate: determines
+  subject: PdM_Core
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # Industrial_Time_Series
 

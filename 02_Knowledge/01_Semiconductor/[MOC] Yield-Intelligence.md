@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Concept] [MOC] Yield-Intelligence]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "ac1596073d79179e4080cad52d8b668796dc2e43e9938339a18bb674f2f5a1de"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: ac1596073d79179e4080cad52d8b668796dc2e43e9938339a18bb674f2f5a1de
+metadata:
+  date: '2026-05-17'
+  domain: 01_Semiconductor
+  id: '[[[Concept] [MOC] Yield-Intelligence]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: 'High-fidelity engineering node: [MOC] Yield-Intelligence.md'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Concept
+  tier: 1
+properties:
+  bin_7_voltage_leakage_rate: 15.0%
+  commonality_analysis_time: 30.0 min
+  murphy_yield_formula: Y = ((1 - exp(-A*D_0)) / (A*D_0))^2
+  recovered_yield_rate: 5.0%
+  sensor_data_missing_rate_limit: <= 0.1%
+  target_analysis_latency_limit: < 2.0 hr
+  target_data_correlation: '> 85.0%'
+  target_die_yield: '> 92.0%'
+  target_line_yield: '> 98.5%'
+  target_ramp_up_speed_limit: < 6.0 months
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # Yield-Intelligence
 

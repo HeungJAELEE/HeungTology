@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] industry-robotics-cobot-safety-and-interaction-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6aababaa2eeb594c66bddbbd3d58cd5bdabfab5953f77951d6bb9e151aa190e5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6aababaa2eeb594c66bddbbd3d58cd5bdabfab5953f77951d6bb9e151aa190e5
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] industry-robotics-cobot-safety-and-interaction-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] industry-robotics-cobot-safety-and-interaction-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Robotics] industry-robotics-cobot-safety-and-interaction-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  collision_force_threshold_n: 150.0
+  intent_match_accuracy_threshold_pct: 95.0
+  iso_ts_15066_standard: ISO/TS 15066
+  nasa_tlx_methodology: NASA-TLX
+  payload_capacity_max_kg: 15.0
+  payload_capacity_min_kg: 5.0
+  proximity_distance_max_m: 1.5
+  proximity_distance_min_m: 0.2
+  psychological_workload_index_max: 30
+  response_time_threshold_ms: 50
+  stopping_distance_max_mm: 100
+  torque_residue_threshold_nm: 2.0
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] industry-robotics-cobot-safety-and-interaction-log-v2026
 

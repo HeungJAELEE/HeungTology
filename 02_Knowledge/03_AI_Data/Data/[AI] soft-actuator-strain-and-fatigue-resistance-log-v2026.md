@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] soft-actuator-strain-and-fatigue-resistance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0f6d914c239e11fb9d9a13e2ba2f04f66f44aed8635b0c9694b2e07857ab9329"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0f6d914c239e11fb9d9a13e2ba2f04f66f44aed8635b0c9694b2e07857ab9329
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] soft-actuator-strain-and-fatigue-resistance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] soft-actuator-strain-and-fatigue-resistance-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] soft-actuator-strain-and-fatigue-resistance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cyclic_fatigue_cycles: 2,000,000
+  humidity_induced_friction_reduction_percent: 30%
+  hysteresis_percent: 8.0%
+  max_strain_percent: 450%
+  micro_crack_density: '0'
+  pressure_tolerance_kpa: 800 kPa
+  response_speed_ms: 45 ms
+  theoretical_cyclic_fatigue_cycles: 5,000,000
+  theoretical_hysteresis_percent: 5.0%
+  theoretical_max_strain_percent: 500%
+  theoretical_pressure_tolerance_kpa: 1,000 kPa
+  theoretical_response_speed_ms: 30 ms
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] soft-actuator-strain-and-fatigue-resistance-log-v2026
 

@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-dot-qd-photoluminescence-quantum-yield-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a261ce7f1ab21dfe6d5c9950338e2e993ee006c904f2faf3d0a7394f68f06bd0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a261ce7f1ab21dfe6d5c9950338e2e993ee006c904f2faf3d0a7394f68f06bd0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-dot-qd-photoluminescence-quantum-yield-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-dot-qd-photoluminescence-quantum-yield-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-dot-qd-photoluminescence-quantum-yield-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  fwhm_cdse_nm: 20-25
+  fwhm_inp_nm: 35-40
+  fwhm_perovskite_nm: 15-20
+  ligand_desorption_efficiency_drop_pct: '20'
+  plqy_cdse_range_pct: 98-99.9
+  plqy_inp_range_pct: 90-95
+  plqy_perovskite_range_pct: 85-98
+  qd_core_diameter_nm: 2-10
+  t50_cdse_hr: '>100000'
+  t50_inp_hr: '>50000'
+  t50_perovskite_hr: <5000
+  target_plqy_recovery_pct: '99'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-dot-qd-photoluminescence-quantum-yield-log-v2026
 

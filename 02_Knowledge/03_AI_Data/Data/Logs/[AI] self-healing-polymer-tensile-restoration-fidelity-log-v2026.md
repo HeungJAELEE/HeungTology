@@ -1,37 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] self-healing-polymer-tensile-restoration-fidelity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d940e850ed6f7c9047a6082f69ff2faf75f879db0525ddb1173dc489394a0b4e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d940e850ed6f7c9047a6082f69ff2faf75f879db0525ddb1173dc489394a0b4e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] self-healing-polymer-tensile-restoration-fidelity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] self-healing-polymer-tensile-restoration-fidelity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] self-healing-polymer-tensile-restoration-fidelity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_status: MAXIMUM
+  crack_closing_target_percent: 100
+  cyclic_performance_50_cuts_min_percent: 95
+  healing_efficiency_target_percent: 99.8
+  log_version: v2026
+  recovery_time_90_fidelity_min: 12
+  restored_strength_threshold_mpa: 120
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] self-healing-polymer-tensile-restoration-fidelity-log-v2026
 

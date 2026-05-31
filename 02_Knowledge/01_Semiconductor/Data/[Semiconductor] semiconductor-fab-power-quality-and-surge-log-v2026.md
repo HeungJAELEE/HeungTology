@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-fab-power-quality-and-surge-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "dbddf4e7c398ab7180ced7deac11e9777373fb8718c4ab33a8d430a842e6dd74"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: dbddf4e7c398ab7180ced7deac11e9777373fb8718c4ab33a8d430a842e6dd74
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-fab-power-quality-and-surge-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-fab-power-quality-and-surge-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Semiconductor] semiconductor-fab-power-quality-and-surge-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  max_grounding_impedance_ohm: '1'
+  max_thd_percent: '5.0'
+  max_ups_sts_switch_time_ms: '2'
+  max_voltage_sag_duration_sec: '0.1'
+  nominal_voltage_theoretical_v: '22900'
+  nominal_voltage_verified_v: '22915'
+  verified_grounding_impedance_ohm: '0.45'
+  verified_thd_percent: '2.5'
+  verified_ups_sts_switch_time_ms: '1'
+  verified_voltage_sag_duration_sec: '0.05'
+  voltage_sag_event_magnitude: '0.30'
+  voltage_stability_limit: '0.05'
+  voltage_stability_verified: '0.012'
+  wafer_loss_prevention_count: '10000'
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-fab-power-quality-and-surge-log-v2026
 

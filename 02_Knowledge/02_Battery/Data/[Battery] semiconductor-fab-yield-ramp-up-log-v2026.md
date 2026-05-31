@@ -1,38 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] semiconductor-fab-yield-ramp-up-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e9aa66165e76fdd216fed7dacab8193c6740c4298f7e66eb690a711744c945a0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e9aa66165e76fdd216fed7dacab8193c6740c4298f7e66eb690a711744c945a0
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] semiconductor-fab-yield-ramp-up-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] semiconductor-fab-yield-ramp-up-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  bridge_defect_ratio: 0.4
+  chip_area_mm2: 150
+  d0_actual: 0.08
+  d0_target_threshold: 0.1
+  process_node: 3nm GAA
+  theoretical_yield_expectation: 82.4
+  w12_actual_yield: 78.1
+  yield_modeling_distribution: poisson
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] semiconductor-fab-yield-ramp-up-log-v2026
 

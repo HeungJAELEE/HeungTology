@@ -1,37 +1,65 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-thermal-propagation-simulation-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4365420441b34fc8a625f78119801fcc39146c15e66975ac2f10132efe26825d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4365420441b34fc8a625f78119801fcc39146c15e66975ac2f10132efe26825d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-thermal-propagation-simulation-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-thermal-propagation-simulation-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  aerogel_heat_flux_reduction_rate: 0.92
+  aerogel_thickness_mm: 10
+  bms_cooling_maintenance_temp_c: 60
+  cathode_oxygen_release_temp_c: 200
+  cooling_plate_efficiency_threshold_w_k: 500
+  lfp_onset_temp_c: 210
+  lfp_peak_temp_c: 450
+  lfp_total_heat_release_mj: 0.8
+  lfp_transition_time_sec: 600
+  ncm811_onset_temp_c: 165
+  ncm811_peak_temp_c: 950
+  ncm811_total_heat_release_mj: 2.5
+  ncm811_transition_time_sec: 120
+  ncm_damaged_onset_temp_c: 120
+  ncm_damaged_peak_temp_c: 1050
+  ncm_damaged_total_heat_release_mj: 3.2
+  ncm_damaged_transition_time_sec: 45
+  ncma_onset_temp_c: 185
+  ncma_peak_temp_c: 820
+  ncma_total_heat_release_mj: 1.8
+  ncma_transition_time_sec: 240
+  pcm_onset_delay_sec: 180
+  radiation_dominance_threshold_c: 800
+  radiation_energy_share: 0.65
+  sei_decomposition_temp_c: 80
+  sse_onset_temp_c: 320
+  sse_peak_temp_c: 350
+  sse_total_heat_release_mj: 0.2
+  vent_gas_flow_rate_l_min: 50-150
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-thermal-propagation-simulation-v2026
 

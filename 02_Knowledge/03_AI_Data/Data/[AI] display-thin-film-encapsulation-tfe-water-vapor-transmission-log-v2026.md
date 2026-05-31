@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] display-thin-film-encapsulation-tfe-water-vapor-transmission-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6dfa3e1208233019813671b0ca5e755ecdc0d529507a34c2fa5a5056d12e4b9b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6dfa3e1208233019813671b0ca5e755ecdc0d529507a34c2fa5a5056d12e4b9b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] display-thin-film-encapsulation-tfe-water-vapor-transmission-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] display-thin-film-encapsulation-tfe-water-vapor-transmission-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] display-thin-film-encapsulation-tfe-water-vapor-transmission-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_bending_radius_mm: 1.5
+  max_pinhole_density_count_cm2: 0.01
+  min_transmittance_percent: 90
+  target_panel_life_years: 10
+  target_wvtr_g_m2_day: 1.0e-06
+  wvtr_dam_and_fill_dispensing: 0.001
+  wvtr_hybrid_ald_monomer: 1.0e-07
+  wvtr_inorganic_film_lamination: 0.0001
+  wvtr_inorganic_single_ald: 1.0e-05
+  wvtr_multi_layer_pecvd_inkjet: 5.0e-06
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] display-thin-film-encapsulation-tfe-water-vapor-transmission-log-v2026
 

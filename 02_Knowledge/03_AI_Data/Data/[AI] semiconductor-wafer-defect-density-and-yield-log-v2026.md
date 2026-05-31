@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] semiconductor-wafer-defect-density-and-yield-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7ba970daf9aa91b7d01b8d751132b3fd120a5a7b1d023442a5b19dd8faa07111"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7ba970daf9aa91b7d01b8d751132b3fd120a5a7b1d023442a5b19dd8faa07111
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] semiconductor-wafer-defect-density-and-yield-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] semiconductor-wafer-defect-density-and-yield-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] semiconductor-wafer-defect-density-and-yield-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cluster_factor_alpha: 2.5
+  critical_area_mm2: 85.0
+  defect_density_d0: 0.008
+  die_size_mm2: 120
+  external_db_endpoint: semiconductor-cmp-planarization-and-removal-rate-log-v2026
+  fab_uptime_percent: 99.8
+  metrology_accuracy_nm: 0.5
+  target_cluster_factor: 2.0
+  target_defect_density: 0.01
+  target_fab_uptime_percent: 99.9
+  target_metrology_accuracy_nm: 1.0
+  target_yield_rate: 0.95
+  yield_rate_eta: 0.962
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] semiconductor-wafer-defect-density-and-yield-log-v2026
 

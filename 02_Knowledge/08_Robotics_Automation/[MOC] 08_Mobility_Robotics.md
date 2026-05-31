@@ -1,37 +1,43 @@
 ---
-metadata:
-  date: "2026-05-12"
-  id: "MOC-ROBOT-2026-V6.3.7"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Mobility_and_Robotics_Autonomous_Intelligence"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "ebdf1463a964bcbf09bba5a3badaeeea835b683eacfb9ad627e2e8fbbaed915e"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: ebdf1463a964bcbf09bba5a3badaeeea835b683eacfb9ad627e2e8fbbaed915e
+metadata:
+  date: '2026-05-12'
+  domain: Mobility_and_Robotics_Autonomous_Intelligence
+  id: MOC-ROBOT-2026-V6.3.7
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: Standard Industrial Node
+  object_type: Concept
   tier: 0
-  description: 'Standard Industrial Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  control_latency_threshold_ms: 1.0
+  energy_density_target_wh_kg: 300
+  localization_accuracy_threshold_cm: 1.0
+  safety_standard_asil: D
+  safety_standard_sil: 3
+  system_version: V6.3.7
+  timestamp: '2026-05-10'
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 08_Mobility_Robotics
 

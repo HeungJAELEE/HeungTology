@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bio-dna-storage-synthesis-fidelity-and-decay-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e18a1e31d5484827f9acf04dc53f35741e851694d14aaf4adea6494eb7570d13"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e18a1e31d5484827f9acf04dc53f35741e851694d14aaf4adea6494eb7570d13
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bio-dna-storage-synthesis-fidelity-and-decay-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] bio-dna-storage-synthesis-fidelity-and-decay-rate-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] bio-dna-storage-synthesis-fidelity-and-decay-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  decay_half_life: 1500 years
+  decay_half_life_target: '> 1000 years'
+  gc_content: 50.2%
+  gc_content_range: 40-60%
+  read_fidelity: 99.998%
+  read_fidelity_target: '> 99.990%'
+  sequence_stability: '0.95'
+  sequence_stability_target: '> 0.90'
+  storage_density: 215 EB/g
+  storage_density_target: '> 200 EB/g'
+  storage_temperature: 4C
+  synthesis_error: '1.2e-6'
+  synthesis_error_target: < 5.0e-6
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bio-dna-storage-synthesis-fidelity-and-decay-rate-log-v2026
 

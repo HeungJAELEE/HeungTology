@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-nanotube-transistor-mobility-and-yield-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "28b83cbefeb0ff97ee3c37159269b5e08794b71b1534cf0a4a93205b6d428660"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 28b83cbefeb0ff97ee3c37159269b5e08794b71b1534cf0a4a93205b6d428660
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-nanotube-transistor-mobility-and-yield-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] carbon-nanotube-transistor-mobility-and-yield-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] carbon-nanotube-transistor-mobility-and-yield-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ballistic_efficiency_mean: 82%
+  ballistic_efficiency_target: '> 90%'
+  carrier_mobility_mean: 550 cm^2/Vs
+  carrier_mobility_target: '> 1000 cm^2/Vs'
+  contact_resistance_mean: 150 Ohm*um
+  contact_resistance_target: < 100 Ohm*um
+  device_density_mean: 120 CNTs/um
+  device_density_target: '> 200 CNTs/um'
+  gate_leakage_mean: 1.2 pA/um
+  gate_leakage_target: < 1.0 pA/um
+  on_off_ratio_mean: 10^7
+  on_off_ratio_target: '> 10^8'
+  s_cnt_purity_mean: 99.995%
+  s_cnt_purity_target: 99.999%
+  subthreshold_swing_mean: 65 mV/dec
+  subthreshold_swing_target: < 60 mV/dec
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-nanotube-transistor-mobility-and-yield-log-v2026
 

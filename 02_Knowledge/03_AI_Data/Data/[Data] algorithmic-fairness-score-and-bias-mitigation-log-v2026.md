@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] algorithmic-fairness-score-and-bias-mitigation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2721d448c1afe3fecdc6dda7ace7f7ce5f341dcebfad9b743911b610155be6cc"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2721d448c1afe3fecdc6dda7ace7f7ce5f341dcebfad9b743911b610155be6cc
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] algorithmic-fairness-score-and-bias-mitigation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] algorithmic-fairness-score-and-bias-mitigation-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] algorithmic-fairness-score-and-bias-mitigation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  accuracy_loss_threshold: 0.005
+  avg_odds_difference_threshold: 0.03
+  bias_mitigation_efficiency_target: 0.96
+  demographic_parity_variance_threshold: 0.02
+  di_reweighting_threshold_lower_bound: 0.8
+  di_reweighting_threshold_upper_bound: 1.25
+  disparate_impact_ratio_target: 0.90-1.10
+  equal_opportunity_difference_threshold: 0.05
+  external_db_endpoint: cuda-kernel-latency-and-memory-throughput-log-v2026
+  fairness_score_aggregate_index_target: 0.95
+  proxy_correlation_coefficient_threshold: 0.1
+  verified_accuracy_loss: 0.0034
+  verified_bias_mitigation_efficiency: 0.968
+  verified_disparate_impact: 0.97
+  verified_proxy_correlation: 0.08
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] algorithmic-fairness-score-and-bias-mitigation-log-v2026
 

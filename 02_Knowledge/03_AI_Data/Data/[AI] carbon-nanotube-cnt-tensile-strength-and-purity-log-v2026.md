@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-nanotube-cnt-tensile-strength-and-purity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6bd722e8c59f5b30e32da76340ea04452c5163a4b826a863f0f0c7180fb6fd61"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6bd722e8c59f5b30e32da76340ea04452c5163a4b826a863f0f0c7180fb6fd61
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-nanotube-cnt-tensile-strength-and-purity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] carbon-nanotube-cnt-tensile-strength-and-purity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] carbon-nanotube-cnt-tensile-strength-and-purity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  aspect_ratio_measured: '1245.0'
+  aspect_ratio_target: '> 1000.0'
+  cnt_purity_measured: 99.82%
+  cnt_purity_target: '> 99.50%'
+  defect_density_measured: 0.02 ID/IG
+  defect_density_target: < 0.05
+  metal_content_measured: 12.5 ppm
+  metal_content_target: < 50.0 ppm
+  tensile_strength_measured: 62.5 GPa
+  tensile_strength_target: '> 60.0 GPa'
+  youngs_modulus_measured: 1.25 TPa
+  youngs_modulus_target: '> 1.00 TPa'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-nanotube-cnt-tensile-strength-and-purity-log-v2026
 

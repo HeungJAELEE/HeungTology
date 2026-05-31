@@ -1,37 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-network-repeater-entanglement-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2e2e049e2f5e8b2e8ce5380f278a33f1682a0ddf72a26972408f20e6307b1d07"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2e2e049e2f5e8b2e8ce5380f278a33f1682a0ddf72a26972408f20e6307b1d07
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-network-repeater-entanglement-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-network-repeater-entanglement-rate-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-network-repeater-entanglement-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  entanglement_rate_avg_eps: 1018
+  photon_pulse_width_threshold_ps: 100
+  q_net_industrial_std: v2026
+  swapping_fidelity_avg_percent: 87.54
+  sync_jitter_avg_ps: 97
+  thermal_drift_threshold_celsius: 5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-network-repeater-entanglement-rate-log-v2026
 

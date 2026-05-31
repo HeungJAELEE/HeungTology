@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] bio-health-pandemic-surveillance-and-response-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "96e604f44abb9dcbc555027f015a5ece49278da4c1b2ee79e83e39970224d3c7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 96e604f44abb9dcbc555027f015a5ece49278da4c1b2ee79e83e39970224d3c7
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] bio-health-pandemic-surveillance-and-response-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] bio-health-pandemic-surveillance-and-response-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] bio-health-pandemic-surveillance-and-response-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bed_occupancy_precision: ± 0.1%
+  bed_occupancy_range: 50-100%
+  compliance_precision: ± 1%
+  compliance_rate_range: 60-95%
+  ident_time_precision: ± 1 hr
+  ident_time_range: 12-48 hrs
+  lead_time_precision: ± 1 day
+  lead_time_range: 60-120 days
+  mobility_index_precision: ± 0.1
+  mobility_index_range: 0-100
+  r0_value_precision: ± 0.01
+  r0_value_range: 0.5-5.0
+  supply_level_range_days: 0-1000
+  wastewater_density_precision: ± 10%
+  wastewater_density_range: 10^2-10^7 copies/L
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] bio-health-pandemic-surveillance-and-response-log-v2026
 

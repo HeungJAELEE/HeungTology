@@ -1,37 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] robotic-cybersecurity-intrusion-and-firmware-integrity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ec5995a56a6fe2afad71731d3f330608496e763be330d135cde88ea375f2b14e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ec5995a56a6fe2afad71731d3f330608496e763be330d135cde88ea375f2b14e
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] robotic-cybersecurity-intrusion-and-firmware-integrity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] robotic-cybersecurity-intrusion-and-firmware-integrity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Robotics] robotic-cybersecurity-intrusion-and-firmware-integrity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  blocked_rate_target: 100.0
+  entropy_threshold: 4.5
+  firmware_hash_algo: SHA-3 512-bit
+  hds_gold_version: V6.3.7
+  ids_latency_threshold_ms: 5.0
+  key_entropy_bits: 256
+  ota_sync_target_percent: 100.0
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] robotic-cybersecurity-intrusion-and-firmware-integrity-log-v2026
 

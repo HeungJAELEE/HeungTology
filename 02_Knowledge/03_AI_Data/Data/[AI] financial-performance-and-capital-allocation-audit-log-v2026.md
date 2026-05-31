@@ -1,42 +1,58 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] financial-performance-and-capital-allocation-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "86a28cd75ace5d0ffea70053da08eb0f5c3871a55e2ec7886c80c08687bc409d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 86a28cd75ace5d0ffea70053da08eb0f5c3871a55e2ec7886c80c08687bc409d
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] financial-performance-and-capital-allocation-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] financial-performance-and-capital-allocation-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] financial-performance-and-capital-allocation-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  capex_delay_impact_3mo: $250M
+  capital_efficiency_measured: 2.4x
+  capital_efficiency_target: '> 2.0x'
+  debt_to_equity_measured: 42.5%
+  debt_to_equity_target: < 100.0%
+  excess_cash_roic_reduction: 1.5%
+  excess_cash_threshold: $2B
+  financial_integrity_measured: 99.9%
+  financial_integrity_target: 100.0%
+  free_cash_flow: $1.25B
+  rd_reinvestment_measured: 15.0%
+  rd_reinvestment_target: '> 10.0%'
+  roic_measured: 18.4%
+  roic_target: '> 12.0%'
+  wacc_measured: 8.2%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] financial-performance-and-capital-allocation-audit-log-v2026
 
 ## 1. [왜 배우는가? (Why: The Blood of the Corporate Organism)]]
-기업의 자본이 생산성이 낮은 곳에 묶여있지는 않은지, 그리고 매 순간 투입되는 $1달러가 최종적으로 얼마의 이익으로 돌아오는지 숫자로 확인할 수 있을까요? **재무 성과 및 자본 배분 오딧 로그**는 기업이라는 생명체를 흐르는 혈액(Capital)의 순환 속도와 영양가(ROI)를 정밀 기록한 '재무 무결성 진단서'입니다. 
+기업의 자본이 생산성이 낮은 곳에 묶여있지는 않은지, 그리고 매 순간 투입되는 $1달러가 최종적으로 얼마의 이익으로 돌아오는지 숫자로 확인할 수 있을까요? **재무 성과 및 자본 배분 오딧 로그**는 기업이라는 생명체를 흐르는 혈액(Capital)의 순환 속도와 영양가(ROI)를 정밀 기록한 '재무 무결성 진단서'입니다. $
 
 우리가 이를 기록하는 이유는 자본의 효율적 배분이 기업의 생존과 직결되기 때문이며, 데이터를 통해 '돈의 낭비'를 실시간으로 포착하여 성장의 엔진으로 재투입하기 위함입니다. 또한 **"자본의 흐름을 데이터로 확증하고 지배하는 '글로벌 금융 주권 및 투자 지능'을 확보하기" 위함입니다.** $ROIC$와 현금 흐름 수치가 기업의 미래 확장 능력과 시장 신뢰도를 결정합니다.
 

@@ -1,76 +1,87 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-dryroom-dewpoint-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "battery-dryroom-dewpoint-log-v2026"
-  original_author: "Antigravity Vault / Manufacturing-Execution-System"
-  original_hash: "b9f21fde555332c76735f79e7004bf6a8522de738f21dfa38e5546e799b31f60"
-object:
-  object_type: "Data"
-  tier: 1
-  description: '드라이룸 실측 이슬점 및 수분량 센서 실측 로그'
+  dataset_reference: battery-dryroom-dewpoint-log-v2026
+  original_author: Antigravity Vault / Manufacturing-Execution-System
+  original_hash: b9f21fde555332c76735f79e7004bf6a8522de738f21dfa38e5546e799b31f60
 measurement:
-  value: 100.0
-  unit: "percent_compliance"
   precision: 1.0
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: percent_compliance
+  value: 100.0
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-dryroom-dewpoint-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: 드라이룸 실측 이슬점 및 수분량 센서 실측 로그
+  object_type: Concept
+  tier: 1
+properties:
+  air_change_rate_limit_hr: 25
+  air_change_rate_verified_hr: 30
+  dewpoint_limit_c: -40
+  dewpoint_verified_c: -45
+  moisture_content_limit_ppm: 120
+  moisture_content_verified_ppm: 70
+  relative_humidity_limit_percent: 0.5
+  relative_humidity_verified_percent: 0.1
+  room_pressure_limit_mmaq: 1.0
+  room_pressure_verified_mmaq: 2.5
+  standard_pressure_pa: 101325
 semantic:
-  is_instance_of: "[[[Battery] battery-utility-and-environmental-control]]"
   alternative_parents: []
+  is_instance_of: '[[[Battery] battery-utility-and-environmental-control]]'
 spo_graph:
-  - subject: "Dewpoint ($T_d$)"
-    predicate: "measured_value"
-    object: "-45 C"
-    evidence_coordinate: "[Ref: battery-dryroom-dewpoint-log-v2026] Section 2.1"
-    evidence_hash: "b9f21fde5553"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Relative Humidity"
-    predicate: "measured_value"
-    object: "< 0.1%"
-    evidence_coordinate: "[Ref: battery-dryroom-dewpoint-log-v2026] Section 2.1"
-    evidence_hash: "b9f21fde5553"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Room Pressure"
-    predicate: "measured_value"
-    object: "+2.5 mmAq"
-    evidence_coordinate: "[Ref: battery-dryroom-dewpoint-log-v2026] Section 2.1"
-    evidence_hash: "b9f21fde5553"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Moisture Content"
-    predicate: "measured_value"
-    object: "70 ppm"
-    evidence_coordinate: "[Ref: battery-dryroom-dewpoint-log-v2026] Section 2.1"
-    evidence_hash: "b9f21fde5553"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 2.1'
+  intent: empirical_verification
+  object: -45 C
+  predicate: measured_value
+  subject: Dewpoint ($T_d$)
+  weight: 0.9
+- evidence_coordinate: '[데이터 부재] Section 2.1'
+  intent: empirical_verification
+  object: < 0.1%
+  predicate: measured_value
+  subject: Relative Humidity
+  weight: 0.9
+- evidence_coordinate: '[데이터 부재] Section 2.1'
+  intent: empirical_verification
+  object: +2.5 mmAq
+  predicate: measured_value
+  subject: Room Pressure
+  weight: 0.9
+- evidence_coordinate: '[데이터 부재] Section 2.1'
+  intent: empirical_verification
+  object: 70 ppm
+  predicate: measured_value
+  subject: Moisture Content
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 0.8
   decay_rate: 0.0
+  t_static: 0.8
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-dryroom-dewpoint-log-v2026
 
 ## 1. [Rationale] 수분 제어의 화학적 필연성
-배터리 전극 조립 및 전해액 주입 공정 내 수분($\text{H}_2\text{O}$)은 리튬염($\text{LiPF}_6$)과의 반응을 유도하여 부식성 불산($\text{HF}$)을 생성하는 치명적 불순물로 작용한다 [Ref: Dryroom_HVAC_Control_System]. $\text{HF}$ 생성은 양극 활물질의 구조적 붕괴 및 전해액 분해를 가속화하여 셀의 수명(Cycle Life)과 안전성을 저하시킨다. 따라서 드라이룸 이슬점($T_d$)을 $-40^\circ\text{C}$ 이하로 제어하는 것은 소재의 화학적 안정성 보증을 위한 필수 공정 파라미터이다 [Ref: Battery_Safety_Standard].
+배터리 전극 조립 및 전해액 주입 공정 내 수분($\text{H}_2\text{O}$)은 리튬염($\text{LiPF}_6$)과의 반응을 유도하여 부식성 불산($\text{HF}$)을 생성하는 치명적 불순물로 작용한다 [데이터 부재]. $\text{HF}$ 생성은 양극 활물질의 구조적 붕괴 및 전해액 분해를 가속화하여 셀의 수명(Cycle Life)과 안전성을 저하시킨다. 따라서 드라이룸 이슬점($T_d$)을 $-40^\circ\text{C}$ 이하로 제어하는 것은 소재의 화학적 안정성 보증을 위한 필수 공정 파라미터이다 [데이터 부재].
 
 
 ## 2. [Numerical Specs] 드라이룸 환경 파라미터
 
 ### 2.1 Parameter Comparison: Theoretical vs. Verified
-| 항목 (Parameter) | 이론치 (Theoretical) [Ref: Standard_Spec] | 검증치 (Verified) [Ref: HVAC_Log] | 상태 (Status) |
+| 항목 (Parameter) | 이론치 (Theoretical) [데이터 부재] | 검증치 (Verified) [데이터 부재] | 상태 (Status) |
 | :--- | :--- | :--- | :--- |
 | **Dewpoint ($T_d$)** | $\le -40^\circ\text{C}$ | $-45^\circ\text{C}$ | **Optimal** |
 | **Relative Humidity** | $< 0.5\%$ (at $25^\circ\text{C}$) | $< 0.1\%$ | **High Fidelity** |
@@ -80,9 +91,9 @@ validation:
 ### 2.2 Operational Limits
 | 항목 | 관리 한계 (Limit) | 실측 데이터 (Measured) | 비고 |
 | :--- | :--- | :--- | :--- |
-| **Dewpoint ($T_d$)** | $<-40^\circ\text{C}$ [Ref: HVAC_Log] | $-45^\circ\text{C}$ [Ref: HVAC_Log] | 공정 구역 기준 |
-| **Air Change Rate** | $> 25\,\text{times/hr}$ [Ref: HVAC_Log] | $30\,\text{times/hr}$ [Ref: HVAC_Log] | 순환 효율 |
-| **Moisture Content** | $< 120\,\text{ppm}$ [Ref: HVAC_Log] | $70\,\text{ppm}$ [Ref: HVAC_Log] | 중량 기준 |
+| **Dewpoint ($T_d$)** | $<-40^\circ\text{C}$ [데이터 부재] | $-45^\circ\text{C}$ [데이터 부재] | 공정 구역 기준 |
+| **Air Change Rate** | $> 25\,\text{times/hr}$ [데이터 부재] | $30\,\text{times/hr}$ [데이터 부재] | 순환 효율 |
+| **Moisture Content** | $< 120\,\text{ppm}$ [데이터 부재] | $70\,\text{ppm}$ [데이터 부재] | 중량 기준 |
 
 
 ## 3. [Scientific Rationale] 제습 및 수분 평형 모델
@@ -90,7 +101,7 @@ validation:
 ### 3.1 Magnus Formula (이슬점-습도 변환)
 온도($T$)와 상대 습도($RH$) 데이터로부터 이슬점($T_d$)을 산출한다.
 $$T_d(T, RH) = \frac{c \cdot \gamma(T, RH)}{b - \gamma(T, RH)}$$
-*   **Analysis**: $T_d$가 $-40^\circ\text{C}$에서 $-30^\circ\text{C}$로 변동할 경우, 공기 중 수분 절대량은 약 4배 급증하며 이는 $\text{LiPF}_6$ 분해 반응 속도의 지수적 상승을 초래한다 [Ref: Electrochemical_Kinetics_Manual].
+*   **Analysis**: $T_d$가 $-40^\circ\text{C}$에서 $-30^\circ\text{C}$로 변동할 경우, 공기 중 수분 절대량은 약 4배 급증하며 이는 $\text{LiPF}_6$ 분해 반응 속도의 지수적 상승을 초래한다 [데이터 부재].
 
 ### 3.2 Desiccant Wheel Efficiency
 제습 로터(Desiccant Wheel)의 흡착 성능은 유입 공기의 엔탈피 및 재생 온도($T_{reg}$)에 종속된다. 실시간 효율 모니터링을 통해 제습 성능 저하 시 즉각적인 재생 주기를 조정한다.
@@ -100,7 +111,7 @@ $$T_d(T, RH) = \frac{c \cdot \gamma(T, RH)}{b - \gamma(T, RH)}$$
 
 ### 4.1 Case Study: 도어 개방에 의한 수분 오염
 - **Event**: 전해액 주입 공정 중 1번 출입문 센서 결함으로 인한 미세 개방 발생.
-- **Detection**: $5\,\text{min}$ 내 이슬점이 $-45^\circ\text{C} \rightarrow -32^\circ\text{C}$로 급상승 [Ref: FidelityEngine_Log].
+- **Detection**: $5\,\text{min}$ 내 이슬점이 $-45^\circ\text{C} \rightarrow -32^\circ\text{C}$로 급상승 [데이터 부재].
 - **Root Cause**: 외부 습공기 유입에 따른 드라이룸 내부 습도 평형 파괴.
 - **Response**: 
     1. `Python FidelityEngine` 기반 이상 징후 즉각 감지.

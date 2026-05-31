@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Telemetry-Imputation-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "cc50d74afd2763b9de11ed7c64fd24f37dbede53b9c3c753657e220c3e08edf3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: cc50d74afd2763b9de11ed7c64fd24f37dbede53b9c3c753657e220c3e08edf3
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Telemetry-Imputation-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Telemetry-Imputation-Performance-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Battery-Telemetry-Imputation-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  dataset_size_rows: 100000
+  hardware_accelerator: RTX 4060
+  imputation_r2_score: 0.945
+  imputation_r2_threshold: 0.9
+  imputation_time_sec: 285.4
+  imputation_time_target_sec: 300.0
+  littles_mcar_p_value: 0.082
+  littles_mcar_threshold: 0.05
+  physical_range_compliance_rate: 100.0
+  raw_data_missing_rate: 12.4
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Telemetry-Imputation-Performance-Log_2026-05-16
 

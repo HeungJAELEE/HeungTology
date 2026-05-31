@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] food-processing-pasteurization-temperature-and-safety-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "fe94e496890022f08e3b61b5ea896b65317b2e09b905eeb4ab77eccd17c16b72"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: fe94e496890022f08e3b61b5ea896b65317b2e09b905eeb4ab77eccd17c16b72
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] food-processing-pasteurization-temperature-and-safety-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] food-processing-pasteurization-temperature-and-safety-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] food-processing-pasteurization-temperature-and-safety-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  d_value_reduction_actual: 6.2 log
+  d_value_reduction_target: '> 5.0 log'
+  f_value_total_actual: 12.5 min
+  f_value_total_target: '> 12.0 min'
+  holding_time_actual: 15.8 sec
+  holding_time_target: 15.0-16.0 sec
+  nutrient_loss_actual: 4.5 %
+  nutrient_loss_target: < 5.0 %
+  pasteurization_temp_actual: 72.4 C
+  pasteurization_temp_target: 72.0-73.0 C
+  reference_temperature: 121.1 C
+  residual_count_actual: < 1 CFU/mL
+  residual_count_target: < 10 CFU/mL
+  risk_temperature_range: 10-40 C
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] food-processing-pasteurization-temperature-and-safety-log-v2026
 

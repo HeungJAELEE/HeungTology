@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "07_Display_Comm"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "81c5ce48232780f2a0a669e9a3135f10f5f051cf0131ea0b9b1172214c5554d7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 81c5ce48232780f2a0a669e9a3135f10f5f051cf0131ea0b9b1172214c5554d7
+metadata:
+  date: '2026-05-16'
+  domain: 07_Display_Comm
+  id: '[[[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_fluence_phi_crit: phi_crit
+  die_size_um: 15x15
+  laser_fluence_range_mj_cm2: 800-1200
+  max_brightness_uniformity_delta_percent: 2.0
+  max_placement_error_um: 1.0
+  max_repair_rate_percent: 0.001
+  min_bond_strength_mpa: 10.0
+  min_transfer_speed_chips_per_sec: 500000
+  target_success_rate_percent: 99.999
 semantic:
-  is_instance_of: "[[[MOC] 07_Display_Comm]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 07_Display_Comm]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] display-micro-led-mass-transfer-yield-and-accuracy-log-v2026
 

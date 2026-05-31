@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] graphene-nanocomposite-tensile-strength-and-conductivity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a2ad44bf62376fffc3914a4ee382ba32607bae431a25e32e4bd4c05f7ce1ffc2"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a2ad44bf62376fffc3914a4ee382ba32607bae431a25e32e4bd4c05f7ce1ffc2
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] graphene-nanocomposite-tensile-strength-and-conductivity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] graphene-nanocomposite-tensile-strength-and-conductivity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] graphene-nanocomposite-tensile-strength-and-conductivity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  electrical_conductivity_measured: 1.2e5 S/m
+  electrical_conductivity_target: 1.0e5 S/m
+  graphene_content_measured: 2.5 wt%
+  graphene_content_target_range: 1.0-3.0 wt%
+  nano_dispersion_optimization_index: '0.85'
+  percolation_threshold_measured: 0.45%
+  percolation_threshold_target: 0.50%
+  related_env_log_endpoint: battery-cell-environment-control-log-v2026
+  tensile_strength_measured: 2650 MPa
+  tensile_strength_target: 2500 MPa
+  thermal_conductivity_measured: 850 W/mK
+  thermal_conductivity_target: 800 W/mK
+  youngs_modulus_measured: 185 GPa
+  youngs_modulus_target: 170 GPa
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] graphene-nanocomposite-tensile-strength-and-conductivity-log-v2026
 

@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] smart-factory-machine-vision-fpr-fnr-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9365fdb3c575b9176cb9fbb77d4d91f109af42c0154beb302a149d88cc7c1f6c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9365fdb3c575b9176cb9fbb77d4d91f109af42c0154beb302a149d88cc7c1f6c
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] smart-factory-machine-vision-fpr-fnr-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Infrastructure] smart-factory-machine-vision-fpr-fnr-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Infrastructure] smart-factory-machine-vision-fpr-fnr-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  accuracy_standard_pct: 99.1
+  accuracy_target_pct_min: 99.5
+  brightness_reduction_threshold: 0.15
+  confidence_threshold_baseline: 0.85
+  confidence_threshold_optimized: 0.9
+  fnr_standard_pct: 0.005
+  fnr_target_pct_max: 0.01
+  fpr_standard_pct: 0.85
+  fpr_target_pct_max: 1.0
+  precision_standard_pct: 94.2
+  precision_target_pct_min: 95.0
+  recall_standard_pct: 99.995
+  recall_target_pct_min: 99.99
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] smart-factory-machine-vision-fpr-fnr-log-v2026
 

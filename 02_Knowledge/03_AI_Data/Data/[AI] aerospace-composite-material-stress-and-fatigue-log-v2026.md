@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] aerospace-composite-material-stress-and-fatigue-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "402c45f49291f095bd553835de471b1357b767106fc8ee9751f6307acf780ac6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 402c45f49291f095bd553835de471b1357b767106fc8ee9751f6307acf780ac6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] aerospace-composite-material-stress-and-fatigue-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] aerospace-composite-material-stress-and-fatigue-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] aerospace-composite-material-stress-and-fatigue-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  operating_temp_range: -50C to 20C
+  target_crack_rate_threshold: '1.2e-6'
+  target_fatigue_life: 1e7
+  target_stress_threshold: 850 MPa
+  thermal_stress_additive: 50 MPa
+  verified_crack_growth_rate: '1.2e-6'
+  verified_damping_ratio: '0.024'
+  verified_delamination_index: '0.05'
+  verified_fatigue_cycles: 2.5e6
+  verified_stress_level: 850 MPa
+  verified_youngs_modulus: 165 GPa
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] aerospace-composite-material-stress-and-fatigue-log-v2026
 

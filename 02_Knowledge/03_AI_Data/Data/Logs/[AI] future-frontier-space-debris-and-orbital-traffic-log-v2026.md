@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] future-frontier-space-debris-and-orbital-traffic-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "191fadd523510b6fe380219add807e851893b9d5f485a8a702d8af9f6c9e26ae"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 191fadd523510b6fe380219add807e851893b9d5f485a8a702d8af9f6c9e26ae
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] future-frontier-space-debris-and-orbital-traffic-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] future-frontier-space-debris-and-orbital-traffic-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] future-frontier-space-debris-and-orbital-traffic-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  close_approach_events_per_day: 100-1000
+  collision_avoidance_life_reduction_years: 1.2
+  collision_probability_range: 10^-6-10^-2
+  debris_count_range: 30000-100000
+  deorbiting_success_rate_pct: 70-98
+  interference_db_range: -20 to -60
+  kessler_syndrome_critical_altitude_km: 800
+  launch_frequency_per_month: 5-50
+  orbital_decay_m_per_day: 0.1-10
+  slot_utilization_pct: 40-85
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] future-frontier-space-debris-and-orbital-traffic-log-v2026
 

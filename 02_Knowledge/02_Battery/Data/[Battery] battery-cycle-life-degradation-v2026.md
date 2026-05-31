@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-cycle-life-degradation-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b69ef68bc64fefcca11ee4f3b7e540a4fecc16d5554afeb99a39c8fd0cf6dbb0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b69ef68bc64fefcca11ee4f3b7e540a4fecc16d5554afeb99a39c8fd0cf6dbb0
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-cycle-life-degradation-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-cycle-life-degradation-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  charge_discharge_rate: 1C/1C
+  degradation_kinetics_model: t^1/2
+  dryroom_dew_point_measured: -52.4 C
+  dryroom_dew_point_target: -50 C
+  dryroom_humidity_measured: 0.05%
+  dryroom_humidity_target: 0.1%
+  dryroom_pressure_measured: +15 Pa
+  dryroom_pressure_target: '>0 Pa'
+  dryroom_temp_measured: 21.5 C
+  dryroom_temp_target: 21 +/- 2 C
+  eol_capacity_threshold: 80%
+  ncm_chemistry: '811'
+  theoretical_eol_cycles: '1900'
+  verified_eol_cycles_25c: '1850'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-cycle-life-degradation-v2026
 

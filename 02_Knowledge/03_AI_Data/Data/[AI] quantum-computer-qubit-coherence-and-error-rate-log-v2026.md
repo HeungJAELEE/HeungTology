@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-computer-qubit-coherence-and-error-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "318e8f34a519e6e6d2e6e9ccec88f64a00997da4340ec4b4d8bf66bb14b4f0e7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 318e8f34a519e6e6d2e6e9ccec88f64a00997da4340ec4b4d8bf66bb14b4f0e7
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-computer-qubit-coherence-and-error-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-computer-qubit-coherence-and-error-rate-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-computer-qubit-coherence-and-error-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  gate_fidelity_measured_percent: 99.92
+  gate_fidelity_target_threshold_percent: 99.9
+  physical_gate_error_rate_percent: 0.08
+  processor_temp_measured_mk: 12.5
+  processor_temp_target_threshold_mk: 15.0
+  qubit_ratio: '1000:1'
+  readout_error_measured_percent: 0.25
+  readout_error_target_threshold_percent: 0.5
+  t1_relaxation_measured_us: 185.0
+  t1_target_threshold_us: 150.0
+  t2_dephasing_measured_us: 124.2
+  t2_target_threshold_us: 100.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-computer-qubit-coherence-and-error-rate-log-v2026
 

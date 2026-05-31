@@ -1,38 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-ctp-crash-simulation-report-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a7309d1e8b8b8e0fafea9ec1f42341950d57d718962b7d0a1cd7d9cce8b94c36"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a7309d1e8b8b8e0fafea9ec1f42341950d57d718962b7d0a1cd7d9cce8b94c36
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-ctp-crash-simulation-report-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-ctp-crash-simulation-report-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  frontal_deformation: 12.5 mm
+  frontal_impact_speed: 64 km/h
+  frontal_max_g_force: 42 G
+  internal_short_circuit_threshold: 20%
+  max_von_mises_stress: 250 MPa
+  plastic_strain_rate: 15%
+  rear_deformation: 8.2 mm
+  rear_impact_speed: 50 km/h
+  rear_max_g_force: 35 G
+  recommended_stiffness_increase: 10%
+  side_deformation: 28.4 mm
+  side_impact_speed: 32 km/h
+  side_max_g_force: 65 G
+  target_max_von_mises_stress: 200.0 MPa
+  target_plastic_strain_rate: 10.0%
+  target_side_impact_deformation: 20.0 mm
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-ctp-crash-simulation-report-v2026
 

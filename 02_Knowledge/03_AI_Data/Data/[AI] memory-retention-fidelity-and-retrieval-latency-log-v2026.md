@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] memory-retention-fidelity-and-retrieval-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "90507831a39317dba55b84d8b0d8d7ddf75bb8c5c26060bcc2014c904735965d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 90507831a39317dba55b84d8b0d8d7ddf75bb8c5c26060bcc2014c904735965d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] memory-retention-fidelity-and-retrieval-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] memory-retention-fidelity-and-retrieval-latency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] memory-retention-fidelity-and-retrieval-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  feram_endurance_cycles: 10^14
+  feram_retention_years: 10
+  hippocampal_sync_score_range: 0.0-1.0
+  ldpc_target_ber: 0.001
+  min_energy_barrier_ev: 1.2
+  min_thermal_stability_delta: 60
+  reram_endurance_cycles: 10^9
+  reram_retention_years: 10
+  stt_mram_endurance_cycles: '> 10^12'
+  stt_mram_retention_years: '> 20'
+  target_retrieval_latency_ms: 100
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] memory-retention-fidelity-and-retrieval-latency-log-v2026
 

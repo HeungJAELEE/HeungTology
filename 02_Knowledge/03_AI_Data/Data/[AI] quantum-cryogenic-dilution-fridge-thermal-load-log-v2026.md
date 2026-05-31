@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-cryogenic-dilution-fridge-thermal-load-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bbf5b196c7611f1c55e372d9ea855db40dd1a85e6f7d5caeb75dd3372d682858"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bbf5b196c7611f1c55e372d9ea855db40dd1a85e6f7d5caeb75dd3372d682858
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-cryogenic-dilution-fridge-thermal-load-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-cryogenic-dilution-fridge-thermal-load-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-cryogenic-dilution-fridge-thermal-load-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bluefors_spec_endpoint: Bluefors_Spec
+  cooling_power_avg_uw: 354
+  he3_flow_avg_mmol_s: 0.756
+  log_v26_endpoint: Log_V26
+  mixer_temp_avg_mk: 13.8
+  nist_cryo_endpoint: NIST_Cryo
+  oxford_spec_endpoint: Oxford_Spec
+  theoretical_base_temp_mk: 7.0
+  theoretical_cooling_power_uw: 500
+  theoretical_he3_flow_rate_mmol_s: 1.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-cryogenic-dilution-fridge-thermal-load-log-v2026
 

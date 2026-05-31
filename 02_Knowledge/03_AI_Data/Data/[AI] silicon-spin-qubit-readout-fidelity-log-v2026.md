@@ -1,37 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] silicon-spin-qubit-readout-fidelity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9df3a57986411388deffa67475d10dd53d1f9b10eb603e130886ac6736df9401"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9df3a57986411388deffa67475d10dd53d1f9b10eb603e130886ac6736df9401
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] silicon-spin-qubit-readout-fidelity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] silicon-spin-qubit-readout-fidelity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  charging_energy_role: coulomb_blockade_integrity_index
+  hot_qubit_operating_temp_threshold_mK: 1000
+  natural_si_t2_star_us_range: 0.1-1
+  purified_si_28_t2_star_us_range: 10-1000
+  target_readout_fidelity: 0.999
+  valley_splitting_energy_role: charge_contamination_prevention_threshold
+  zeeman_splitting_model_delta_e: g_mu_b_b
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] silicon-spin-qubit-readout-fidelity-log-v2026
 

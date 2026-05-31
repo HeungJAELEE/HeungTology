@@ -1,38 +1,42 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Surface-Oxidation-and-SEI-Kinetics-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2ae2cb0223d2de31a8c35f5e3770d4fb308a1ed35ff601bbabb98c57422875e4"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2ae2cb0223d2de31a8c35f5e3770d4fb308a1ed35ff601bbabb98c57422875e4
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Surface-Oxidation-and-SEI-Kinetics-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Surface-Oxidation-and-SEI-Kinetics-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Battery-Surface-Oxidation-and-SEI-Kinetics-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  linear_rate_constant: 1.2e-3 nm/s
+  oxidation_layer_thickness_precision: 0.52 nm
+  parabolic_rate_constant: 4.5e-5 nm²/s
+  pbr_al_oxidation: '1.28'
+  sei_growth_activation_energy: 0.85 eV
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Surface-Oxidation-and-SEI-Kinetics-Log_2026-05-16
 

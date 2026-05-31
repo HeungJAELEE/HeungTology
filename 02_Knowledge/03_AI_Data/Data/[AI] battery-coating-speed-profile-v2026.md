@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-coating-speed-profile-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1c90a08316220540e7d7e6aef69ceb8cb07ab0d874e6f0394ef7584739f12f83"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1c90a08316220540e7d7e6aef69ceb8cb07ab0d874e6f0394ef7584739f12f83
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-coating-speed-profile-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-coating-speed-profile-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  air_entrainment_limit_speed: 130 m/min
+  bead_stability_threshold: '> 0.95'
+  ca_limit_default: '1.2'
+  capillary_number_limit: < 1.5
+  coating_gap_range: 150-250 um
+  line_speed_range: 80-120 m/min
+  ramp_up_accel_limit: < 0.05 m/s^2
+  speed_jitter_limit: < 0.1 m/min
+  speed_sync_tolerance: '0.005'
+  thickness_variation_limit: 2.5%
+  web_tension_target: 150 +/- 5 N
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-coating-speed-profile-v2026
 

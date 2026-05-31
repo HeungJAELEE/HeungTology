@@ -1,53 +1,58 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Battery] Battery-SIB-Performance-and-Inventory-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault / Materials-Audit-Group"
-  original_hash: "68016c9cfaad4b8cf28b9e07eedb3d9f1c0fd1f88b044984ae00802fcb0055d7"
-object:
-  object_type: "Data"
-  tier: 2
-  description: '2026년 양산 단계에 진입한 나트륨 이온 배터리(SIB)의 실측 에너지 밀도 및 수명 지표'
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault / Materials-Audit-Group
+  original_hash: 68016c9cfaad4b8cf28b9e07eedb3d9f1c0fd1f88b044984ae00802fcb0055d7
 measurement:
-  value: 100.0
-  unit: "percent_compliance"
   precision: 1.0
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: percent_compliance
+  value: 100.0
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-SIB-Performance-and-Inventory-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: 2026년 양산 단계에 진입한 나트륨 이온 배터리(SIB)의 실측 에너지 밀도 및 수명 지표
+  object_type: Hardware
+  tier: 2
+properties:
+  cycle_life_1c: 4,200 Cycles
+  hard_carbon_d002: 0.385 nm
+  lib_cost_reduction_rate: 34.5%
+  na_diffusion_coefficient: 8.5e-11 cm²/s
+  sib_energy_density: 152.4 Wh/kg
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] 02_Battery]]'
 spo_graph:
-  - subject: "SIB Energy Density"
-    predicate: "measured_value"
-    object: "152.4 Wh/kg"
-    evidence_coordinate: "[Ref: SIB-LOG-2026] Section 1"
-    evidence_hash: "68016c9cfaad"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Hard Carbon d002"
-    predicate: "measured_value"
-    object: "0.385 nm"
-    evidence_coordinate: "[Ref: SIB-LOG-2026] Section 2"
-    evidence_hash: "68016c9cfaad"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_performance_validation
+  object: 152.4 Wh/kg
+  predicate: measured_value
+  subject: SIB Energy Density
+  weight: 0.95
+- evidence_coordinate: '[데이터 부재] Section 2'
+  intent: material_property_characterization
+  object: 0.385 nm
+  predicate: measured_value
+  subject: Hard Carbon d002
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-SIB-Performance-and-Inventory-Log_2026-05-16
 

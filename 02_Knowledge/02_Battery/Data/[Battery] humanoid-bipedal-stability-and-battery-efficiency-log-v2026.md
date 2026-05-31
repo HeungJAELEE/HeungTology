@@ -1,38 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] humanoid-bipedal-stability-and-battery-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f5fbc986d40fb9741d1cd2af3963d6a4ec4e86cb2a74fe9708b146ad3a3de0de"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f5fbc986d40fb9741d1cd2af3963d6a4ec4e86cb2a74fe9708b146ad3a3de0de
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] humanoid-bipedal-stability-and-battery-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] humanoid-bipedal-stability-and-battery-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] humanoid-bipedal-stability-and-battery-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  com_drift: < 2 mm
+  energy_cost: 0.2 J/kg/m
+  error_recovery_rate: 99.2%
+  joint_temperature: 42 C
+  soc_degradation: < 5.0%
+  stability_margin: '> 25%'
+  walk_duration: 9.5 hr
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] humanoid-bipedal-stability-and-battery-efficiency-log-v2026
 

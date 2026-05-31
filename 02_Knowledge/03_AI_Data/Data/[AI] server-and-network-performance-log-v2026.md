@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] server-and-network-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "131c4c6a56990867890db2caed625febdebbd76058ea0564c8a733f1429a7b6c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 131c4c6a56990867890db2caed625febdebbd76058ea0564c8a733f1429a7b6c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] server-and-network-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] server-and-network-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  arrival_rate_lambda: math_parameter
+  cpu_load_avg_pct: 52.5
+  cpu_load_normal_range_pct: 40-70
+  jitter_critical_threshold_ms: 5.0
+  memory_util_avg_pct: 68.0
+  memory_util_normal_range_pct: 50-80
+  network_throughput_avg_gbps: 15.2
+  network_throughput_min_gbps: 10.0
+  packet_loss_avg_pct: 0.0002
+  packet_loss_max_pct: 0.001
+  processing_rate_mu: math_parameter
+  resource_warning_threshold_pct: 80.0
+  robot_control_integrity_drop_pct: 20.0
+  server_health_score_range: 0-1
+  storage_iops_avg: 125000
+  storage_iops_min: 100000
+  telemetry_platforms:
+  - Prometheus
+  - Grafana
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] server-and-network-performance-log-v2026
 

@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] information-computing-generative-ai-model-training-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9eec02227ec454f021b9f7fdc891a84ef54ef438fa0ee3121c57250c2424b263"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9eec02227ec454f021b9f7fdc891a84ef54ef438fa0ee3121c57250c2424b263
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] information-computing-generative-ai-model-training-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] information-computing-generative-ai-model-training-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] information-computing-generative-ai-model-training-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  chinchilla_optimal_ratio: '1:20'
+  factual_error_rate_percent: < 5.0
+  loss_divergence_limit_default: 0.5
+  mfu_target_percent: '> 45.0'
+  params_n_billions: 7.0 - 1,000
+  scaling_law_formula: L(N, D) = E + A/N^alpha + B/D^beta
+  target_mfu_default: 0.5
+  throughput_t_s: '> 50,000'
+  token_vol_d_trillions: 1.0 - 15.0
+  total_compute_c_peta_flops: '> 10^25'
+  training_loss_entropy_l: 1.0 - 5.0
+  vram_utilization_percent: 80 - 95
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] information-computing-generative-ai-model-training-log-v2026
 

@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "MOC-CHEM-INFO-HUB-v6.4"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "11_Global_Entities_and_Materials"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "17e529e2d458671c8cb16e088e292696ca5f733d89986a4507569afb877a8a62"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: 17e529e2d458671c8cb16e088e292696ca5f733d89986a4507569afb877a8a62
+metadata:
+  date: '2026-05-14'
+  domain: 11_Global_Entities_and_Materials
+  id: MOC-CHEM-INFO-HUB-v6.4
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: 'High-fidelity engineering node: [MOC] chemistry-informatics-hub.md'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  biorxiv_corpus: bioRxiv
+  coconut_db: COCONUT
+  cod_db: COD
+  ingestor_script: github_ingestor.py
+  moleculenet_benchmark: MoleculeNet
+  pubmed_corpus: PubMed
+  rdb7_db: RDB7
+  tdc_benchmark: TDC
+  uspto_db: USPTO
+  zinc_db: ZINC
 semantic:
-  is_instance_of: "[[[MOC] 11_Global_Entities_and_Materials]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 11_Global_Entities_and_Materials]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # chemistry-informatics-hub
 

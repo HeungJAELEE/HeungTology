@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] global-supply-chain-logistics-and-lead-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9faba0da331de305baa0177f0047355fb2358b252c9fa7e90549baa0f9c47f4c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9faba0da331de305baa0177f0047355fb2358b252c9fa7e90549baa0f9c47f4c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] global-supply-chain-logistics-and-lead-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] global-supply-chain-logistics-and-lead-time-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] global-supply-chain-logistics-and-lead-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_lead_time: 12.4 days
+  eoq_formula: sqrt(2DS/H)
+  external_db_endpoint: global-trade-vessel-congestion-and-throughput-log-v2026
+  fulfillment_rate: 98.5%
+  logistics_cost: 4.2 USD/u
+  on_time_delivery: 99.2%
+  safety_stock_formula: k * sqrt(L * sigma_d^2 + d^2 * sigma_L^2)
+  scm_volatility: '12.5'
+  target_fulfillment_rate: '> 98.0%'
+  target_lead_time: < 14.0 days
+  target_logistics_cost: < 5.0 USD/u
+  target_otd: '> 99.0%'
+  target_scm_volatility: < 15.0
+  target_transit_latency: < 6.0 hours
+  transit_latency: 4.5 hours
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] global-supply-chain-logistics-and-lead-time-log-v2026
 

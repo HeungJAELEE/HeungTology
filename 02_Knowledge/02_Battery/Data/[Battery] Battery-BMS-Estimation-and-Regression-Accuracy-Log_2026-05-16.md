@@ -1,53 +1,63 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Battery] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault / Intelligence-Audit-Group"
-  original_hash: "c23787fcfe3ed5f02413cdec72bd0b10d245cf0746a05c1db9ce28490d26d6c2"
-object:
-  object_type: "Data"
-  tier: 2
-  description: '2026년 양산형 전기차 BMS에 탑재된 EKF/GPR 하이브리드 알고리즘의 실측 SoC/SoH 추정 정확도 로그'
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault / Intelligence-Audit-Group
+  original_hash: c23787fcfe3ed5f02413cdec72bd0b10d245cf0746a05c1db9ce28490d26d6c2
 measurement:
-  value: 100.0
-  unit: "percent_compliance"
   precision: 1.0
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: percent_compliance
+  value: 100.0
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: 2026년 양산형 전기차 BMS에 탑재된 EKF/GPR 하이브리드 알고리즘의 실측 SoC/SoH 추정 정확도 로그
+  object_type: Data
+  tier: 2
+properties:
+  convergence_time_actual: 8.52 sec
+  convergence_time_target: 10.0 sec
+  gpr_mape_actual: 2.12%
+  gpr_mape_target: 3.00%
+  snr_actual: 24.5 dB
+  snr_target: 20.0 dB
+  soc_rmse_actual: 0.82%
+  soc_rmse_target: 1.00%
+  soh_capacity_error_actual: 1.45%
+  soh_capacity_error_target: 2.00%
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] 02_Battery]]'
 spo_graph:
-  - subject: "SoC RMSE"
-    predicate: "measured_value"
-    object: "0.82 %"
-    evidence_coordinate: "[Ref: BMS-LOG-2026] Section 1"
-    evidence_hash: "c23787fcfe3e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Convergence Time"
-    predicate: "measured_value"
-    object: "8.52 sec"
-    evidence_coordinate: "[Ref: BMS-LOG-2026] Section 1"
-    evidence_hash: "c23787fcfe3e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_validation
+  object: 0.82 %
+  predicate: measured_value
+  subject: SoC RMSE
+  weight: 0.95
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_validation
+  object: 8.52 sec
+  predicate: measured_value
+  subject: Convergence Time
+  weight: 0.95
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-BMS-Estimation-and-Regression-Accuracy-Log_2026-05-16
 

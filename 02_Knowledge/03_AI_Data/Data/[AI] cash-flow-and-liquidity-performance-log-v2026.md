@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cash-flow-and-liquidity-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "31a2e4df8823f8ec1f65326fe4c1eb8da5ff6d0b33f171392507129539ab6f24"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 31a2e4df8823f8ec1f65326fe4c1eb8da5ff6d0b33f171392507129539ab6f24
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cash-flow-and-liquidity-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] cash-flow-and-liquidity-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  closing_cash_buffer_threshold: 20.0M+
+  dio_sensitivity_coefficient: '10 days : 5M reduction'
+  fcf_formula: Operating Cash Flow - Capital Expenditures
+  financing_net_flow_range: -1.0 to -2.0 M/mo
+  free_cash_flow_range: +2.0 to +5.0 M/mo
+  investing_net_flow_range: -3.0 to -7.0 M/mo
+  ocf_to_net_income_ratio_target: '> 1.0'
+  operations_net_flow_range: +5.0 to +10.0 M/mo
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cash-flow-and-liquidity-performance-log-v2026
 
@@ -44,7 +52,7 @@ validation:
 
 ### 2.1 [주요 현금 흐름 범주별 순유입/유출 테이블 (v2026)]
 
-| 현금 흐름 범주 | 주요 활동 내용 | 순액 ($M/mo) | 목표 상태 | 공학적 의미 (Rationale V6.3.7) |
+| 현금 흐름 범주 | 주요 활동 내용 | 순액 ($M/mo) | 목표 상태 | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :--- | :---: | :---: | :--- |
 | **Operations** | **Sales / Expenses** | $+5.0 \sim +10.0$| **Positive** | **Vitality**: 본원적 사업의 현금 창출 무결성 로그 |
 | **Investing** | **CAPEX / Assets** | $-3.0 \sim -7.0$ | **Negative** | **Growth**: 미래를 위한 자산 투자 및 확장 무결성 지표 |

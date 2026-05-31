@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] bump-shear-strength-and-thermal-cycling-failure-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "08eba0d347715a1868b6b988ee9d3e0dee50b6f8b278e358678813c8fb8697ee"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 08eba0d347715a1868b6b988ee9d3e0dee50b6f8b278e358678813c8fb8697ee
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] bump-shear-strength-and-thermal-cycling-failure-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] bump-shear-strength-and-thermal-cycling-failure-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] bump-shear-strength-and-thermal-cycling-failure-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  coffin_manson_exponent_m: 1.5-2.5
+  high_ag_alloy_avg_failure_cycle: 500-1200
+  high_ag_alloy_shear_strength: 35-50 gf/bump
+  high_ag_alloy_temp_range: -55 to 150 C
+  indium_avg_failure_cycle: '>5000'
+  indium_shear_strength: 5-15 gf/bump
+  indium_temp_range: -40 to 125 C
+  sac305_avg_failure_cycle: 1000-2500
+  sac305_shear_strength: 25-40 gf/bump
+  sac305_temp_range: -40 to 125 C
+  shear_strength_decay_rate: 0.01 gf/cycle
+  sn_avg_failure_cycle: 2000-4000
+  sn_low_temp_range: 0 to 100 C
+  sn_shear_strength: 15-30 gf/bump
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] bump-shear-strength-and-thermal-cycling-failure-log-v2026
 

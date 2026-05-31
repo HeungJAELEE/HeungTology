@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] renewable-energy-grid-stability-and-vpp-response-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "eb4d01eda6804fe92db777705371b9b530ba9e9292858f48f2fb025020f92e7b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: eb4d01eda6804fe92db777705371b9b530ba9e9292858f48f2fb025020f92e7b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] renewable-energy-grid-stability-and-vpp-response-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] renewable-energy-grid-stability-and-vpp-response-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] renewable-energy-grid-stability-and-vpp-response-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ev_charging_data_endpoint: ev-powertrain-energy-conversion-efficiency-and-thermal-log-v2026
+  grid_frequency_target_max_hz: 60.05
+  grid_frequency_target_min_hz: 59.95
+  inertia_target_min_s: 3.0
+  measured_grid_frequency_hz: 60.02
+  measured_inertia_constant_s: 3.2
+  measured_reactive_power_mvar: 450
+  measured_renewable_penetration_percent: 42.5
+  measured_voltage_deviation_v: 0.8
+  measured_vpp_response_time_ms: 185
+  renewable_penetration_target_min_percent: 40.0
+  voltage_deviation_target_max_v: 2.0
+  vpp_response_time_threshold_ms: 200
+  weather_data_endpoint: planetary-boundary-compliance-and-sovereignty-audit-log-v2026
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] renewable-energy-grid-stability-and-vpp-response-log-v2026
 

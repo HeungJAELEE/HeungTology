@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cobot-impact-force-and-human-detection-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0728b62a5773ed4970154d3c4820e5526ccfec6020a399b5cf6f82a927e76848"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0728b62a5773ed4970154d3c4820e5526ccfec6020a399b5cf6f82a927e76848
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cobot-impact-force-and-human-detection-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cobot-impact-force-and-human-detection-latency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] cobot-impact-force-and-human-detection-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  braking_distance_reduction_threshold: 10 mm
+  chest_back_force_limit: 210 N
+  critical_contact_area_threshold: 1 cm^2
+  dynamic_braking_distance_reduction: 20%
+  dynamic_braking_latency_gain: 30 ms
+  hand_palm_force_limit: 140 N
+  peak_impact_force_formula: F_peak = v * sqrt(k * m_eff)
+  sensor_sampling_cycle_improvement: 10ms_to_1ms
+  total_safety_response_time_formula: T_total = t_sensor + t_logic + t_actuator_stop
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cobot-impact-force-and-human-detection-latency-log-v2026
 

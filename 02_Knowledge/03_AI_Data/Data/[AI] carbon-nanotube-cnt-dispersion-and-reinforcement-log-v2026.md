@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-nanotube-cnt-dispersion-and-reinforcement-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2e0f94bd031e44b2b520a6ec8aee945e9c66e6fed6ee7343832277db83a96084"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2e0f94bd031e44b2b520a6ec8aee945e9c66e6fed6ee7343832277db83a96084
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-nanotube-cnt-dispersion-and-reinforcement-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] carbon-nanotube-cnt-dispersion-and-reinforcement-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] carbon-nanotube-cnt-dispersion-and-reinforcement-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  aspect_ratio: 1,250
+  aspect_ratio_target: '> 1,000'
+  dispersion_index: 96.2%
+  dispersion_index_target: '> 95.0%'
+  electrical_conductivity: 1.5e3 S/m
+  interfacial_correction_index: '0.92'
+  interfacial_shear_strength: 85.4 MPa
+  interfacial_shear_strength_target: '> 80.0 MPa'
+  percolation_threshold: 1.24%
+  percolation_threshold_target: < 1.50%
+  tensile_strength: 3,250 MPa
+  tensile_strength_target: '> 3,000 MPa'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-nanotube-cnt-dispersion-and-reinforcement-log-v2026
 

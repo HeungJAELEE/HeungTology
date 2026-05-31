@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] fiber-tensile-strength-and-elongation-at-break-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e32c4f8105eb6c1be2b3c7aa16e3b34389992de66bfd64708728f609bc30693b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e32c4f8105eb6c1be2b3c7aa16e3b34389992de66bfd64708728f609bc30693b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] fiber-tensile-strength-and-elongation-at-break-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] fiber-tensile-strength-and-elongation-at-break-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] fiber-tensile-strength-and-elongation-at-break-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  crystallinity_min: 0.65
+  elongation_measured: 18.4 %
+  elongation_non_uniformity_rate: 10 %
+  elongation_target: '> 15.0 %'
+  external_log_endpoint: urban-water-distribution-leakage-and-pressure-monitoring-log-v2026
+  fiber_diameter_measured: 12.5 um
+  fiber_diameter_range: 10-15 um
+  fiber_tenacity_measured: 48.5 cN/tex
+  fiber_tenacity_target: '> 45.0 cN/tex'
+  fracture_work_measured: 2.4 J/g
+  fracture_work_target: '> 2.0 J/g'
+  moisture_regain_measured: 8.5 %
+  moisture_regain_range: 7-10 %
+  orientation_degree_min: 0.85
+  strength_decrease_rate: 5 %
+  temp_variation_threshold: 5 C
+  youngs_modulus_measured: 12.5 GPa
+  youngs_modulus_target: '> 10.0 GPa'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] fiber-tensile-strength-and-elongation-at-break-log-v2026
 

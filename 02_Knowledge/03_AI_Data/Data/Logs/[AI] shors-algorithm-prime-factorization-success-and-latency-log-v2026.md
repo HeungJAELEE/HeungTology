@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] shors-algorithm-prime-factorization-success-and-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "96839d010eb80d6be4488cefef8e167b6d9eb252aad30cb03ba7007f60f9b231"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 96839d010eb80d6be4488cefef8e167b6d9eb252aad30cb03ba7007f60f9b231
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] shors-algorithm-prime-factorization-success-and-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] shors-algorithm-prime-factorization-success-and-latency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] shors-algorithm-prime-factorization-success-and-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  current_avg_success_rate_pct: 57.31
+  current_avg_total_latency_sec: 340.69
+  modular_exponentiation_complexity: O(L^3)
+  modular_exponentiation_latency_share_pct: 95.0
+  rsa_1024_success_rate_pct: 42.0
+  rsa_1024_total_latency_sec: 150.0
+  rsa_2048_success_rate_pct: 2.1
+  rsa_2048_total_latency_sec: 1200.0
+  rsa_512_success_rate_pct: 85.2
+  rsa_512_total_latency_sec: 12.5
+  rsa_64_success_rate_pct: 99.95
+  rsa_64_total_latency_sec: 0.25
+  target_v6_3_7_modular_exp_threshold_sec: 500.0
+  target_v6_3_7_success_rate_threshold_pct: 95.0
+  target_v6_3_7_total_latency_threshold_sec: 600.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] shors-algorithm-prime-factorization-success-and-latency-log-v2026
 

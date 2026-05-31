@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] amr-fleet-traffic-congestion-and-throughput-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3d3baaffaf457dd9a61bf1e92bf16b1a73cf05dcb27bdee76245e5822d667ae9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3d3baaffaf457dd9a61bf1e92bf16b1a73cf05dcb27bdee76245e5822d667ae9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] amr-fleet-traffic-congestion-and-throughput-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] amr-fleet-traffic-congestion-and-throughput-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] amr-fleet-traffic-congestion-and-throughput-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_velocity_range_m_s: 1.2-1.8
+  comm_latency_threshold_ms: '50'
+  default_k_jam: '0.5'
+  default_v_max: '1.5'
+  path_deviation_threshold_cm: '2.0'
+  target_congestion_index_threshold: '0.15'
+  target_deadlock_event_count: '0'
+  target_fleet_utilization_ratio: '0.88'
+  target_throughput_units_per_hour: '450'
+  task_error_rate_threshold: '0.001'
+  theoretical_comm_latency_ms: '20'
+  theoretical_congestion_index: '0.10'
+  theoretical_throughput: '500'
+  theoretical_velocity_m_s: '1.5'
+  verified_comm_latency_ms: '48'
+  verified_congestion_index: '0.14'
+  verified_throughput: '452'
+  verified_velocity_m_s: '1.32'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] amr-fleet-traffic-congestion-and-throughput-log-v2026
 

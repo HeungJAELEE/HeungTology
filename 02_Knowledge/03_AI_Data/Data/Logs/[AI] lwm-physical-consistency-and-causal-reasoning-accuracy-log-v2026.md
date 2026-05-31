@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] lwm-physical-consistency-and-causal-reasoning-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "05cf14179eb8d5fe547192becb14a5b12e96acf8d17594845382e0bd5099c4cd"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 05cf14179eb8d5fe547192becb14a5b12e96acf8d17594845382e0bd5099c4cd
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] lwm-physical-consistency-and-causal-reasoning-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] lwm-physical-consistency-and-causal-reasoning-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] lwm-physical-consistency-and-causal-reasoning-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  fluid_dynamics_causal_accuracy: 82.0
+  fluid_dynamics_phys_consistency: 0.85
+  gravity_falling_causal_accuracy: 98.5
+  gravity_falling_phys_consistency: 0.992
+  human_motion_causal_accuracy: 94.2
+  human_motion_phys_consistency: 0.968
+  model_version: V6.3.7
+  multi_obj_collision_causal_accuracy: 89.8
+  multi_obj_collision_phys_consistency: 0.925
+  overall_causal_accuracy: 88.0
+  overall_phys_consistency: 0.903
+  prediction_horizon_chaos_relation: mathematical_chaos_path
+  weather_evolution_causal_accuracy: 75.5
+  weather_evolution_phys_consistency: 0.78
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] lwm-physical-consistency-and-causal-reasoning-accuracy-log-v2026
 

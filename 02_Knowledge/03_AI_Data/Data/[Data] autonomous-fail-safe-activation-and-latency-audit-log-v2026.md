@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Data] autonomous-fail-safe-activation-and-latency-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c13c6451aa555556b57636df0f96319893779e1bda54f64055cabaa375e9fd4b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c13c6451aa555556b57636df0f96319893779e1bda54f64055cabaa375e9fd4b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[Data] autonomous-fail-safe-activation-and-latency-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Data] autonomous-fail-safe-activation-and-latency-audit-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Data] autonomous-fail-safe-activation-and-latency-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  braking_distance_formula: d = v * tau + (v^2 / 2a)
+  hardware_fault_tolerance: 1
+  max_brake_fidelity_error_mm: 10.0
+  max_control_loop_cycle_ms: 1.0
+  max_pfh_sil3: 1.0e-08
+  min_diagnostic_coverage_percent: 90.0
+  min_mttfd_years: 100
+  safe_failure_fraction_threshold: 0.99
+  sil_level: SIL 3
+  target_response_time_ms: 4.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Data] autonomous-fail-safe-activation-and-latency-audit-log-v2026
 

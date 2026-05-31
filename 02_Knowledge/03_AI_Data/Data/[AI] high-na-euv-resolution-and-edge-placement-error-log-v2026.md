@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] high-na-euv-resolution-and-edge-placement-error-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3696d06006f9d3a59c429e10ca81a83ed84c5f2a74ee62d89ce6b6890cae97aa"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3696d06006f9d3a59c429e10ca81a83ed84c5f2a74ee62d89ce6b6890cae97aa
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] high-na-euv-resolution-and-edge-placement-error-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] high-na-euv-resolution-and-edge-placement-error-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] high-na-euv-resolution-and-edge-placement-error-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  anamorphic_ratio_x: 4x
+  anamorphic_ratio_y: 8x
+  cdu_3sigma_high_na: 0.4nm
+  dose_increase_threshold: '0.20'
+  epe_total_budget_high_na: 1.8nm
+  focus_window_high_na: 45nm
+  na_high: '0.55'
+  na_low: '0.33'
+  opc_residual_high_na: 0.2nm
+  overlay_global_high_na: 0.6nm
+  resolution_limit_high_na: 8.0nm
+  shadowing_effect_overlay_error: 0.1nm
+  stochastic_contribution_threshold: '0.30'
+  stochastic_error_high_na: 0.4nm
+  wavelength_lambda: 13.5nm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] high-na-euv-resolution-and-edge-placement-error-log-v2026
 

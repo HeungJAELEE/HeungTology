@@ -1,37 +1,62 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-fab-di-water-resistivity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "bd6e79edf6d7722031a9a45427e050c4e82600082391e538b3809a5859ea3259"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: bd6e79edf6d7722031a9a45427e050c4e82600082391e538b3809a5859ea3259
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-fab-di-water-resistivity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-fab-di-water-resistivity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Semiconductor] semiconductor-fab-di-water-resistivity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bacteria_threshold_cfu_100ml: 1.0
+  critical_resistivity_alert_mohm_cm: 0.1
+  do_threshold_ppb: 5.0
+  nacl_equivalent_estimation_constant: 500
+  operational_bacteria_cfu_100ml: 0.0
+  operational_do_ppb: 1.2
+  operational_particles_ea_ml: 0.5
+  operational_resistivity_mohm_cm: 18.2
+  operational_toc_ppb: 0.8
+  particle_threshold_ea_ml: 1.0
+  ref_fab_process_audit: Fab_Process_Audit
+  ref_manufacturing_log: Manufacturing_Log
+  ref_phys_chem_std: Phys_Chem_Std
+  ref_standard_temp: Standard_Reference_Temp
+  ref_upw_log: UPW_Log_v6.3.7
+  resistivity_tolerance: 0.05
+  standard_reference_temp_c: 25
+  tds_limit_ppb: 1.0
+  theoretical_bacteria_cfu_100ml: 0.0
+  theoretical_do_ppb: 0.0
+  theoretical_particles_ea_ml: 0.0
+  theoretical_resistivity_mohm_cm: 18.25
+  theoretical_toc_ppb: 0.0
+  toc_threshold_ppb: 1.0
+  upw_process_share_pct: 30
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-fab-di-water-resistivity-log-v2026
 

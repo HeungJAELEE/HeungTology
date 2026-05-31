@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] genomic-treatment-efficacy-and-patient-response-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "752030d033bf300526164dcd43251b201f726ba6d7d24f093588d05e09f77604"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 752030d033bf300526164dcd43251b201f726ba6d7d24f093588d05e09f77604
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] genomic-treatment-efficacy-and-patient-response-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] genomic-treatment-efficacy-and-patient-response-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] genomic-treatment-efficacy-and-patient-response-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  genomic_rx_adverse_rx_rate: 0.8
+  genomic_rx_recovery_days: 5.5
+  genomic_rx_success_rate: 94.8
+  master_med_v2026_adverse_rx_improvement: -17.7
+  master_med_v2026_recovery_improvement: -8.7
+  master_med_v2026_success_improvement: 32.3
+  standard_rx_adverse_rx_rate: 18.5
+  standard_rx_recovery_days: 14.2
+  standard_rx_success_rate: 62.5
+  target_v6_3_7_adverse_rx_threshold: 0.1
+  target_v6_3_7_recovery_days_threshold: 3.0
+  target_v6_3_7_success_rate_threshold: 98.0
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] genomic-treatment-efficacy-and-patient-response-log-v2026
 

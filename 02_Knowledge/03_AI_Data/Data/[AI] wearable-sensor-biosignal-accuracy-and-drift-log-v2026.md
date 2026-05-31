@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] wearable-sensor-biosignal-accuracy-and-drift-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0b1d259786d10a69011b5437fc458000f3ff3a7fba40ec065f7f55cb1aaec200"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0b1d259786d10a69011b5437fc458000f3ff3a7fba40ec065f7f55cb1aaec200
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] wearable-sensor-biosignal-accuracy-and-drift-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] wearable-sensor-biosignal-accuracy-and-drift-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] wearable-sensor-biosignal-accuracy-and-drift-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  artifact_ratio_measured_db: 42.0
+  artifact_ratio_target_db: 35.0
+  audit_fidelity_status: MAXIMUM
+  battery_index_measured: 92.4
+  battery_index_target: 85.0
+  hr_accuracy_measured_pct: 99.2
+  hr_accuracy_target_pct: 98.0
+  sampling_rate_measured_hz: 250
+  sampling_rate_target_hz: 100
+  signal_drift_measured_per_hr: 0.002
+  signal_drift_target_per_hr: 0.01
+  spo2_error_measured_pct: 0.85
+  spo2_error_target_pct: 1.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] wearable-sensor-biosignal-accuracy-and-drift-log-v2026
 

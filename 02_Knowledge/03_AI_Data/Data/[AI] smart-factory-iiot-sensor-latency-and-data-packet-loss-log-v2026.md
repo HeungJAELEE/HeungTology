@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8e88670ecc3fbceba212943344e8c2c958e1bcf10db7e1b7811aa1142476d3e5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8e88670ecc3fbceba212943344e8c2c958e1bcf10db7e1b7811aa1142476d3e5
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ber_target: 1.0e-09
+  edge_proc_time_ms: 2.5
+  edge_proc_time_target_ms: 5.0
+  network_jitter_target_us: 100
+  network_jitter_us: 45
+  network_latency_ms: 0.85
+  network_latency_target_ms: 1.0
+  packet_loss_rate_pct: 0.0002
+  packet_loss_rate_target_pct: 0.001
+  snr_target_db: 30
+  sync_accuracy_ns: 100
+  sync_accuracy_target_ns: 500
+  throughput_mbps: 850
+  throughput_target_mbps: 500
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] smart-factory-iiot-sensor-latency-and-data-packet-loss-log-v2026
 

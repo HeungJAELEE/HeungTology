@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] radiation-hardened-electronics-seu-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6e805d41a077a4d0aed9779ec563e641434ea4962d239b63ad200a3964015031"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6e805d41a077a4d0aed9779ec563e641434ea4962d239b63ad200a3964015031
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] radiation-hardened-electronics-seu-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] radiation-hardened-electronics-seu-rate-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] radiation-hardened-electronics-seu-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cpu_let_threshold: 15 to 30
+  cpu_seu_rate_range_err_bit_day: 10^-7 to 10^-9
+  cpu_tid_threshold_krad: 100 to 200
+  flash_seu_rate_range_err_bit_day: 10^-11 to 10^-13
+  fpga_let_threshold: 60
+  fpga_seu_rate_range_err_bit_day: 10^-10 to 10^-12
+  fpga_tid_threshold_krad: 300
+  mosfet_tid_threshold_krad: 1000
+  mosfet_vth_drift_threshold_krad: 100
+  mosfet_vth_drift_voltage_v: 0.5
+  spe_proton_flux_increase_factor: 1000
+  sram_let_threshold: 10 to 20
+  sram_seu_rate_range_err_bit_day: 10^-8 to 10^-10
+  sram_tid_threshold_krad: 50 to 150
+  tmr_mission_success_rate_target: 0.9999
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] radiation-hardened-electronics-seu-rate-log-v2026
 

@@ -1,38 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] desalination-water-purity-and-energy-consumption-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d69a30712e43225c9612111f31498200565b9f41472fce18f852dae530714d78"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d69a30712e43225c9612111f31498200565b9f41472fce18f852dae530714d78
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] desalination-water-purity-and-energy-consumption-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] desalination-water-purity-and-energy-consumption-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] desalination-water-purity-and-energy-consumption-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_pressure_param: p_critical
+  differential_pressure_param: delta_p
+  theoretical_daily_output: 1,500,000 m³/day
+  theoretical_pre_treat_eff: 99.5%
+  theoretical_salt_rejection: 99.9%
+  theoretical_sec: 2.0 kWh/m³
+  theoretical_system_availability: 99.8%
+  theoretical_tds_threshold: 100 mg/L
+  verified_daily_output: 1,200,000 m³/day
+  verified_pre_treat_eff: 99.0%
+  verified_salt_rejection: 99.85%
+  verified_sec: 2.3 kWh/m³
+  verified_system_availability: 99.5%
+  verified_tds: 120 mg/L
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] desalination-water-purity-and-energy-consumption-log-v2026
 

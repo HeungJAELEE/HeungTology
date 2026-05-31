@@ -1,37 +1,57 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] robotic-social-interaction-satisfaction-and-trust-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7c1eed35b83382aee1f1cb48d281830adacdede33f71f414989a84906f73d0bf"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7c1eed35b83382aee1f1cb48d281830adacdede33f71f414989a84906f73d0bf
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] robotic-social-interaction-satisfaction-and-trust-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] robotic-social-interaction-satisfaction-and-trust-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Robotics] robotic-social-interaction-satisfaction-and-trust-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  emotional_sync_measured: 0.85
+  emotional_sync_target: 0.8
+  etiquette_compliance_measured: 0.998
+  etiquette_compliance_target: 0.995
+  gaze_discomfort_increase_pct: 35.0
+  latency_distrust_threshold_s: 1.0
+  negative_interaction_cases_target: 0
+  optimal_gaze_duration_s:
+  - 1.5
+  - 2.5
+  proximity_adherence_measured: 1.0
+  proximity_adherence_target: 1.0
+  response_latency_measured_ms: 450
+  response_latency_target_ms: 800
+  satisfaction_score_measured: 9.2
+  satisfaction_score_target: 8.5
+  social_force_d_min_m: 0.45
+  trust_dynamics_min_threshold: 0.8
+  trust_fidelity_measured: 0.985
+  trust_fidelity_target: 0.95
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] robotic-social-interaction-satisfaction-and-trust-log-v2026
 

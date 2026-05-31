@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] rag-retrieval-precision-recall-metrics-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3f1dfbeed9a3ecb037ae1d26647e02dbb728061d303b9d006b844fcece27669c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3f1dfbeed9a3ecb037ae1d26647e02dbb728061d303b9d006b844fcece27669c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] rag-retrieval-precision-recall-metrics-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] rag-retrieval-precision-recall-metrics-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Concept
+  tier: 1
+properties:
+  audit_log_2026_ref: Audit_Log_2026
+  industry_standard_ref: Industry_Standard
+  ir_benchmark_ref: IR_Benchmark
+  llm_eval_protocol_ref: LLM_Eval_Protocol
+  semantic_ambiguity_mrr_failure_point: 0.45
+  sla_target_ref: SLA_Target
+  system_log_ref: System_Log
+  target_faithfulness: 0.95
+  target_hit_rate_at3: 0.85
+  target_mrr: 0.75
+  target_precision_at5: 0.6
+  target_retrieval_latency_ms: 100.0
+  verified_hit_rate_at3: 0.882
+  verified_latency_ms: 82.4
+  verified_mrr: 0.82
+  verified_precision_at5: 0.65
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] rag-retrieval-precision-recall-metrics-v2026
 

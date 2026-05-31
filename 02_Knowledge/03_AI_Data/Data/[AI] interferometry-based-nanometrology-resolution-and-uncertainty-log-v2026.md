@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] interferometry-based-nanometrology-resolution-and-uncertainty-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1635d7fd6496db015aaa5e7048d5356a43cc7f4943f4a1c9334f648e579331ec"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1635d7fd6496db015aaa5e7048d5356a43cc7f4943f4a1c9334f648e579331ec
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] interferometry-based-nanometrology-resolution-and-uncertainty-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] interferometry-based-nanometrology-resolution-and-uncertainty-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] interferometry-based-nanometrology-resolution-and-uncertainty-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  confidence_level: 0.95
+  env_vibration_um_s: 0.02
+  laser_stability_target: 1.0e-09
+  laser_stability_value: 1.0e-10
+  laser_wavelength_nm: 632.8
+  meas_resolution_nm: 0.05
+  meas_resolution_target_nm: 0.1
+  meas_uncertainty_nm: 0.8
+  meas_uncertainty_target_nm: 1.5
+  optical_path_diff_um: 50
+  phase_shift_accuracy_deg: 0.01
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] interferometry-based-nanometrology-resolution-and-uncertainty-log-v2026
 

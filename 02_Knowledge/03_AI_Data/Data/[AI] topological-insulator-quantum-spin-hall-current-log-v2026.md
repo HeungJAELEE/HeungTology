@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] topological-insulator-quantum-spin-hall-current-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "96eb024b87deeba519689db724ed937f50d48a40042af9e64e158f00fa722216"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 96eb024b87deeba519689db724ed937f50d48a40042af9e64e158f00fa722216
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] topological-insulator-quantum-spin-hall-current-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] topological-insulator-quantum-spin-hall-current-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] topological-insulator-quantum-spin-hall-current-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bulk_band_gap_measured: 325 meV
+  bulk_band_gap_target_min: 300 meV
+  coherence_length_measured: 450 nm
+  coherence_length_target_min: 400
+  defect_characterization_db_endpoint: Data nano-atomic-scale-defect-density-and-characterization-log-v2026
+  edge_mobility_measured: 25000 cm^2/Vs
+  edge_mobility_target_min: 20000
+  quantized_conductance_formula: 2(e^2/h)
+  robustness_score_measured: 98.5
+  robustness_score_target_min: 95.0
+  spin_hall_cond_measured: 1.02 e/2pi
+  spin_hall_cond_target: '1.00'
+  spin_polarization_measured: 99.2%
+  spin_polarization_target_min: 98.0
+  strain_induced_bandgap_reduction: 50 meV
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] topological-insulator-quantum-spin-hall-current-log-v2026
 

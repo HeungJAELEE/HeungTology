@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-wastewater-purity-and-heavy-metal-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6e6f64d287ec6bbf129de6feab11b08103ce09e99ec92c5a3aab98baad582e26"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6e6f64d287ec6bbf129de6feab11b08103ce09e99ec92c5a3aab98baad582e26
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-wastewater-purity-and-heavy-metal-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-wastewater-purity-and-heavy-metal-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-wastewater-purity-and-heavy-metal-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cod_target_max: 20.0 mg/L
+  freundlich_adsorption_model: q = K * C^(1/n)
+  heavy_metal_target_max: 10.0 ppb
+  measured_cod: 18.5 mg/L
+  measured_metal_conc: 4.2 ppb
+  measured_ph: '7.25'
+  measured_removal_eff: 99.94%
+  measured_total_nitrogen: 4.8 mg/L
+  measured_turbidity: 0.45 NTU
+  oxidation_reduction_rate_model: r = k * C_ox^a * C_org^b
+  ph_target_range: 7.0 +/- 0.5
+  removal_efficiency_target_min: 99.90%
+  total_nitrogen_target_max: 5.0 mg/L
+  turbidity_target_max: 1.0 NTU
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-wastewater-purity-and-heavy-metal-log-v2026
 

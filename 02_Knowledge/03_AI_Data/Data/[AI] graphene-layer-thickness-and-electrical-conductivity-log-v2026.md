@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] graphene-layer-thickness-and-electrical-conductivity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c5a1145a6036f839f834a8f26020d6d89f41d403a8cfe868bbc51a08434438fb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c5a1145a6036f839f834a8f26020d6d89f41d403a8cfe868bbc51a08434438fb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] graphene-layer-thickness-and-electrical-conductivity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] graphene-layer-thickness-and-electrical-conductivity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] graphene-layer-thickness-and-electrical-conductivity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  carrier_mobility_measured: 12450
+  carrier_mobility_target: 10000
+  grain_size_measured: 45.2
+  grain_size_target: 40.0
+  layer_count_measured: 1.05
+  layer_count_target: 1.1
+  optical_transparency_measured: 97.6
+  optical_transparency_target: 97.0
+  sheet_resistance_measured: 125.4
+  sheet_resistance_target: 150.0
+  single_layer_absorption_rate: 0.023
+  work_function_measured: 4.52
+  work_function_target: 4.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] graphene-layer-thickness-and-electrical-conductivity-log-v2026
 

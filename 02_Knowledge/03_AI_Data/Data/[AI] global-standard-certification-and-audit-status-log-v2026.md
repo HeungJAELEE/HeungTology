@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] global-standard-certification-and-audit-status-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "549b6aa97e920f5ca3942a4e8e7b35faae3454aa3edd1eaf2a8d556f691c9c0b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 549b6aa97e920f5ca3942a4e8e7b35faae3454aa3edd1eaf2a8d556f691c9c0b
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] global-standard-certification-and-audit-status-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] global-standard-certification-and-audit-status-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] global-standard-certification-and-audit-status-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_findings_log_endpoint: audit-findings-and-remediation-tracking-log-v2026
+  cap_completion_rate_target: 100.0
+  iso_14001_score: 96.5
+  iso_27001_score: 99.5
+  iso_45001_score: 97.0
+  iso_50001_score: 95.8
+  iso_9001_score: 98.2
+  major_non_conformities_target: 0
+  nc_recurrence_improvement_threshold: 0.9
+  sri_formula: S * exp(-alpha * D_NC)
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] global-standard-certification-and-audit-status-log-v2026
 
@@ -58,7 +69,7 @@ validation:
 - **Major Non-conformities (Count):** 인증 취소 사유가 될 수 있는 중대한 시스템 결함 수. (Target 0)
 - **Average Audit Score (%):** 외부 인증 기관의 정기 심사에서 획득한 평균 점수.
 - **CAP Completion Rate (%):** 지적 사항에 대한 시정 조치 계획(Corrective Action Plan)의 이행 완료 비중.
-- **Certification Maintenance Cost ($):** 인증 취득 및 유지, 심사 대응에 투입된 총비용. (효율성 지표)
+- **Certification Maintenance Cost ($):** 인증 취득 및 유지, 심사 대응에 투입된 총비용. (효율성 지표)$
 
 ## 3. [Scientific Rationale: 규격 무결성의 수리적 인과성]
 

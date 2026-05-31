@@ -1,37 +1,54 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[MOC] Advanced-Package]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://doi.org/semiconductor.roadmap.2026.advanced.pkg"
-  original_author: "antigravity_industrial_process_engineer"
-  original_hash: "606763881d5179b20e56f55163f7da08dd64f53de5ce682138c34f9e7d0f1e9f"
+  dataset_reference: https://doi.org/semiconductor.roadmap.2026.advanced.pkg
+  original_author: antigravity_industrial_process_engineer
+  original_hash: 606763881d5179b20e56f55163f7da08dd64f53de5ce682138c34f9e7d0f1e9f
+metadata:
+  date: '2026-05-17'
+  domain: 01_Semiconductor
+  id: '[[[MOC] Advanced-Package]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: Moore의 법칙 연산 한계 극복을 위한 TSV 및 Cu-to-Cu 하이브리드 본딩 마이크로 접합 후공정 지휘 MOC
+  object_type: Concept
   tier: 0
-  description: 'Moore의 법칙 연산 한계 극복을 위한 TSV 및 Cu-to-Cu 하이브리드 본딩 마이크로 접합 후공정 지휘 MOC'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bonding_yield_target_pct: '>= 99.5'
+  bonding_yield_tolerance_pct: '0.05'
+  bonding_yield_verified_pct: '99.6'
+  critical_bump_pitch_max_um: '12.0'
+  critical_bump_pitch_min_um: '5.0'
+  critical_warpage_limit_um: '100.0'
+  cu_to_cu_bump_pitch_target_um: < 10.0
+  cu_to_cu_bump_pitch_tolerance_um: '0.5'
+  cu_to_cu_bump_pitch_verified_um: '8.2'
+  interconnect_bandwidth_target_tbs: '>= 2.0'
+  interconnect_bandwidth_tolerance_tbs: '0.1'
+  interconnect_bandwidth_verified_tbs: '2.4'
+  tsv_vertical_alignment_density_target_vias_per_mm2: '>= 100000.0'
+  tsv_vertical_alignment_density_tolerance_vias_per_mm2: '5000.0'
+  tsv_vertical_alignment_density_verified_vias_per_mm2: '115000.0'
+  wafer_warpage_control_limit_um: < 100.0
+  wafer_warpage_tolerance_um: '5.0'
+  wafer_warpage_verified_um: '75.0'
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [MOC] Advanced-Package
 

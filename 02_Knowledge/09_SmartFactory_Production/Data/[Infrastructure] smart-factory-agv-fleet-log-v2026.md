@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] smart-factory-agv-fleet-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b4caba4bc4557d36bbac5b71ce0237eb9318e2b30850593ca3619a1e3f59f658"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b4caba4bc4557d36bbac5b71ce0237eb9318e2b30850593ca3619a1e3f59f658
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] smart-factory-agv-fleet-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Infrastructure] smart-factory-agv-fleet-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  battery_dcr_early_rise_percent: 5
+  battery_swap_latency_min: 3-8
+  cbs_node_expansion_factor: 5
+  collision_avoidance_latency_ms: 50-150
+  communication_jitter_ms_max: 20
+  fleet_density_percent: 15-25
+  logistics_delay_s: 12
+  mapf_success_rate_threshold: 99.5
+  max_payload_kg: 500-1500
+  max_payload_velocity_ms: 1.2-2.0
+  path_deviation_mm_limit: 50
+  positioning_accuracy_mm: 10-30
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] smart-factory-agv-fleet-log-v2026
 

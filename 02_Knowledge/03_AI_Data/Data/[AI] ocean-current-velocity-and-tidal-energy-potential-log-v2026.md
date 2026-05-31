@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ocean-current-velocity-and-tidal-energy-potential-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "30620a73d988fc132c5f84d55287b958265fa42c880d7d53215a2bd198f0da01"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 30620a73d988fc132c5f84d55287b958265fa42c880d7d53215a2bd198f0da01
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ocean-current-velocity-and-tidal-energy-potential-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ocean-current-velocity-and-tidal-energy-potential-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ocean-current-velocity-and-tidal-energy-potential-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  betz_limit_efficiency: 0.593
+  current_velocity_m_s: 2.84
+  growth_factor_percent: 1.2
+  max_water_level_error_m: 0.1
+  min_current_velocity_threshold_m_s: 2.5
+  min_tidal_range_threshold_m: 5.0
+  power_potential_mw: 42.5
+  salinity_level_psu: 34.8
+  target_power_potential_mw: 30.0
+  target_turbine_efficiency_percent: 35.0
+  tidal_range_m: 8.45
+  turbine_efficiency_percent: 38.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ocean-current-velocity-and-tidal-energy-potential-log-v2026
 

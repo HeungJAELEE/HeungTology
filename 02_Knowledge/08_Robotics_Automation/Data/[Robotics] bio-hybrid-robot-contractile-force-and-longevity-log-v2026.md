@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Robotics] bio-hybrid-robot-contractile-force-and-longevity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d5bb02914a6f863a3b292c06091f5679199f49e88f73655aa066d619c67c91ae"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d5bb02914a6f863a3b292c06091f5679199f49e88f73655aa066d619c67c91ae
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation
+  id: '[[[Robotics] bio-hybrid-robot-contractile-force-and-longevity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Robotics] bio-hybrid-robot-contractile-force-and-longevity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Robotics] bio-hybrid-robot-contractile-force-and-longevity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  autophagy_glucose_threshold_mm: 2.5
+  diagnostic_engine_spec: HDS-Gold V6.3.7
+  glucose_consumption_pmol_min: 5.0-15.0
+  hills_equation: (P + a)(v + b) = b(P0 + a)
+  max_force_p0_mn: 15.0-30.0
+  max_response_latency_ms: 30
+  min_cell_viability_percent: 85.0
+  min_operating_days: 45
+  min_specific_force_mn_mm2: 5.0
+  stiffness_kpa: 10-50
+  tissue_thickness_um: 100-300
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Robotics] bio-hybrid-robot-contractile-force-and-longevity-log-v2026
 

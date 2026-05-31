@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] robot-arm-trajectory-precision-and-repeatability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b358bdc472ac912110a0251300a06199c3df1992e9a92e10fd8f068b5a79114c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b358bdc472ac912110a0251300a06199c3df1992e9a92e10fd8f068b5a79114c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] robot-arm-trajectory-precision-and-repeatability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] robot-arm-trajectory-precision-and-repeatability-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] robot-arm-trajectory-precision-and-repeatability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  encoder_resolution: 24-bit
+  joint_backlash_measured: 0.002 deg
+  joint_backlash_target: < 0.005 deg
+  path_error_measured: 0.12 mm
+  path_error_target: < 0.15 mm
+  payload_index_measured: '99.2'
+  payload_index_target: '> 98.0'
+  pos_accuracy_measured: 0.042 mm
+  pos_accuracy_target: < 0.050 mm
+  repeatability_measured: 0.008 mm
+  repeatability_target: < 0.010 mm
+  settling_time_measured: 45 ms
+  settling_time_target: < 60 ms
+  thermal_drift_impact: 0.005 mm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] robot-arm-trajectory-precision-and-repeatability-log-v2026
 

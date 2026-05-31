@@ -1,38 +1,54 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-cell-temperature-sensor-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f5fbae805dc911cfa11018397084d5e68c850a20af8a38a24b415b0fa09e782a"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f5fbae805dc911cfa11018397084d5e68c850a20af8a38a24b415b0fa09e782a
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-cell-temperature-sensor-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-cell-temperature-sensor-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  ambient_critical_threshold: '>55°C'
+  ambient_normal_range: 15-35°C
+  ambient_warning_threshold: '>45°C'
+  case_countermeasure_current: 0.2C
+  cell_core_critical_threshold: '>65°C'
+  cell_core_normal_range: 25-45°C
+  cell_core_warning_threshold: '>55°C'
+  cooling_delta_critical: '>12°C'
+  cooling_delta_normal: <5°C
+  cooling_delta_warning: '>8°C'
+  fidelity_engine_endpoint: Python FidelityEngine
+  sim_current: 100A
+  sim_mass: 1.2kg
+  sim_resistance: 0.001Ohm
+  sim_specific_heat_capacity: 1000J/kgK
+  tab_busbar_critical_threshold: '>75°C'
+  tab_busbar_normal_range: 20-50°C
+  tab_busbar_warning_threshold: '>60°C'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-cell-temperature-sensor-log-v2026
 

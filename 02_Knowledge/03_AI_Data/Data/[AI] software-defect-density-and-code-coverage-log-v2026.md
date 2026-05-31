@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] software-defect-density-and-code-coverage-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "86f936db5050aa029837070ea75fb071dadd30e525e46d78d4bd73569cf42d6c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 86f936db5050aa029837070ea75fb071dadd30e525e46d78d4bd73569cf42d6c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] software-defect-density-and-code-coverage-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] software-defect-density-and-code-coverage-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] software-defect-density-and-code-coverage-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  code_coverage_measured: 92.4
+  code_coverage_target: 90.0
+  complexity_measured: 8.45
+  complexity_target: 10.0
+  cyclomatic_complexity_model: v(G) = E - N + 2P
+  debt_ratio_measured: 4.2
+  debt_ratio_target: 5.0
+  defect_density_measured: 0.32
+  defect_density_target: 0.5
+  mttf_measured: 2450.0
+  mttf_target: 2000.0
+  reliability_growth_model: M(t) = a(1 - e^-bt)
+  review_rate_measured: 98.5
+  review_rate_target: 95.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] software-defect-density-and-code-coverage-log-v2026
 

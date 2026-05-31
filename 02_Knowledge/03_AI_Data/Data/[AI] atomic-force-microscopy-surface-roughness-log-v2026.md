@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] atomic-force-microscopy-surface-roughness-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7a3530495cfd41af10f7a341ba71f19e99180d1c11aa39561839591fa5b1c4b0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7a3530495cfd41af10f7a341ba71f19e99180d1c11aa39561839591fa5b1c4b0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] atomic-force-microscopy-surface-roughness-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] atomic-force-microscopy-surface-roughness-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] atomic-force-microscopy-surface-roughness-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  after_cmp_rq_verified: 0.58 nm
+  bare_si_wafer_rq_verified: 0.15 nm
+  battery_anode_rq_verified: 15.80 nm
+  bonding_strength_reduction_rate: 40%
+  cantilever_spring_constant_range: 0.01-100 N/m
+  cu_interconnect_rq_verified: 1.95 nm
+  dielectric_breakdown_rq_threshold: 0.5 nm
+  dielectric_voltage_drop_rate: 15%
+  optical_mirror_rq_verified: 0.32 nm
+  scanning_speed_range: 0.5-2.0 Hz
+  tip_radius_range: 5-20 nm
+  tip_wear_convolution_threshold: 50 nm
+  z_axis_resolution_limit: < 0.05 nm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] atomic-force-microscopy-surface-roughness-log-v2026
 

@@ -1,38 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-raw-material-psd-analysis]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "7043e198cf095232353cdb3ebd1d725958ad12ad036c157a27079dfe18891b92"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 7043e198cf095232353cdb3ebd1d725958ad12ad036c157a27079dfe18891b92
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-raw-material-psd-analysis]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-raw-material-psd-analysis에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  bi_modal_mixing_ratio: '7:3'
+  d10_fine_um: 4.2
+  d50_median_um: 11.5
+  d90_coarse_um: 22.8
+  lip_gap_max_particle_ratio: 0.5
+  psd_span_ratio: 1.62
+  shear_rate_reference_s_inv: 100
+  span_critical_limit: 2.0
+  specific_surface_area_m2_g: 0.85
+  tap_density_actual_g_cm3: 2.45
+  tap_density_target_g_cm3: 2.4
+  viscosity_span_threshold: 1.8
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-raw-material-psd-analysis
 

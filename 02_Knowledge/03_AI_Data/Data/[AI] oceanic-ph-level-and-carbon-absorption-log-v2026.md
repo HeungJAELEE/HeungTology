@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] oceanic-ph-level-and-carbon-absorption-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ceb06c338f94d871e1d687b41017b5175691f573a6afc54c506e551e97ca951d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ceb06c338f94d871e1d687b41017b5175691f573a6afc54c506e551e97ca951d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] oceanic-ph-level-and-carbon-absorption-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] oceanic-ph-level-and-carbon-absorption-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  annual_carbon_absorption_threshold_pgc: 2.5
+  carbon_flux_measured_mol_m2_yr: 2.45
+  carbon_flux_target_min_mol_m2_yr: 2.0
+  dic_measured_umol_kg: 2045
+  dic_target_min_umol_kg: 2000
+  ocean_ph_measured: 8.08
+  ocean_ph_target: 8.1
+  ocean_ph_tolerance: 0.05
+  pco2_ocean_measured_um_atm: 412.5
+  sea_surface_temp_measured_c: 18.5
+  sea_surface_temp_target_c: 18.0
+  sea_surface_temp_tolerance_c: 1.0
+  sst_carbon_reduction_per_degree_pgc: 0.1
+  sst_co2_solubility_reduction_per_degree: 0.04
+  total_alkalinity_measured_umol_kg: 2350
+  total_alkalinity_target_min_umol_kg: 2300
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] oceanic-ph-level-and-carbon-absorption-log-v2026
 

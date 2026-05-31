@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] spectral-analysis-material-composition-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "088fc44810c91e173c82e9fe52040cb39f6c90c901f39056f5ea1e37d61f2866"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 088fc44810c91e173c82e9fe52040cb39f6c90c901f39056f5ea1e37d61f2866
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] spectral-analysis-material-composition-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] spectral-analysis-material-composition-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Concept
+  tier: 1
+properties:
+  beer_lambert_law_formula: A = epsilon * c * l
+  ftir_detection_limit_ppm: 10
+  icp_oes_detection_limit_ppb: 1
+  integration_time_range_sec: 1-60
+  oxygen_vacancy_threshold_percent: 5
+  raman_detection_limit_ppm: 100
+  raman_effect_energy_model: nu_raman = nu_0 +/- nu_m
+  snr_threshold_ratio: '1000:1'
+  spectral_resolution_range_cm1: 0.1-4.0
+  wave_number_accuracy_cm1: 0.01
+  xps_detection_limit_at_percent: 0.1
+  xrf_detection_limit_ppm: 1
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] spectral-analysis-material-composition-log-v2026
 

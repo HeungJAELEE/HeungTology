@@ -1,37 +1,60 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] gaafet-threshold-voltage-stability-and-leakage-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ad21ddf2b058f53a0526845fabd1ee9e6d089f16f8e7905ee608b04fc72292c6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ad21ddf2b058f53a0526845fabd1ee9e6d089f16f8e7905ee608b04fc72292c6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] gaafet-threshold-voltage-stability-and-leakage-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] gaafet-threshold-voltage-stability-and-leakage-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] gaafet-threshold-voltage-stability-and-leakage-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  dibl_3l: 35 mV/V
+  dibl_4l: 28 mV/V
+  dibl_tolerance: ± 1 mV
+  effective_drive_current_3l: 1.4 mA/um
+  effective_drive_current_4l: 1.8 mA/um
+  effective_drive_current_tolerance: ± 0.05 mA
+  i_off_3l: 80 pA/um
+  i_off_4l: 45 pA/um
+  i_off_tolerance: ± 2 pA
+  sheet_thickness_3l: 5.2 nm
+  sheet_thickness_4l: 4.8 nm
+  sheet_thickness_tolerance: ± 0.1 nm
+  ss_3l: 64 mV/dec
+  ss_4l: 62 mV/dec
+  ss_theoretical_limit: 60 mV/dec
+  ss_tolerance: ± 0.5 mV
+  vth_3l: 0.28 V
+  vth_4l: 0.31 V
+  vth_sensitivity_per_nm_tsi: 25 mV
+  vth_tolerance: ± 5 mV
+  wfm_3l: 15.5 A
+  wfm_4l: 17.2 A
+  wfm_tolerance: ± 0.2 A
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] gaafet-threshold-voltage-stability-and-leakage-log-v2026
 

@@ -1,37 +1,65 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] global-shipping-freight-rate-and-lead-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d56bd07b8e48463372600e3941e2d1ecbbb0c05682d34504657a3450a7a2e64c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d56bd07b8e48463372600e3941e2d1ecbbb0c05682d34504657a3450a7a2e64c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] global-shipping-freight-rate-and-lead-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] global-shipping-freight-rate-and-lead-time-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] global-shipping-freight-rate-and-lead-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  blank_sailing_rate: 0.05-0.15
+  busan_hamburg_dwell_time: 4.8 days
+  busan_hamburg_freight: 6100 USD/FEU
+  busan_hamburg_lead_time: 42 days
+  busan_hamburg_scfi: '3320'
+  container_turnaround_time: 15-25 days
+  port_congestion_threshold_rho: '0.9'
+  schedule_reliability: 0.40-0.65
+  shanghai_longbeach_dwell_time: 8.4 days
+  shanghai_longbeach_freight: 4850 USD/FEU
+  shanghai_longbeach_lead_time: 18 days
+  shanghai_longbeach_scfi: '2800'
+  shanghai_newyork_dwell_time: 6.5 days
+  shanghai_newyork_freight: 7500 USD/FEU
+  shanghai_newyork_lead_time: 35 days
+  shanghai_newyork_scfi: '3850'
+  shanghai_rotterdam_dwell_time: 5.2 days
+  shanghai_rotterdam_freight: 6250 USD/FEU
+  shanghai_rotterdam_lead_time: 38 days
+  shanghai_rotterdam_scfi: '3450'
+  singapore_rotterdam_dwell_time: 3.2 days
+  singapore_rotterdam_freight: 5800 USD/FEU
+  singapore_rotterdam_lead_time: 32 days
+  singapore_rotterdam_scfi: '3100'
+  slow_steaming_efficiency_ratio: '0.40'
+  slow_steaming_factor: -0.10 to -0.20
+  suez_diversion_fuel_cost_increase: '0.30'
+  suez_diversion_lead_time_increase: 14 days
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] global-shipping-freight-rate-and-lead-time-log-v2026
 

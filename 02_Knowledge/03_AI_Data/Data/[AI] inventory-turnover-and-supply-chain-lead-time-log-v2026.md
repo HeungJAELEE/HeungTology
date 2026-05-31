@@ -1,37 +1,57 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] inventory-turnover-and-supply-chain-lead-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "22bd05cf54de511cc36f5b9640b537c9bb6cd7ea496d2a246543caf6fa54b27e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 22bd05cf54de511cc36f5b9640b537c9bb6cd7ea496d2a246543caf6fa54b27e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] inventory-turnover-and-supply-chain-lead-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] inventory-turnover-and-supply-chain-lead-time-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] inventory-turnover-and-supply-chain-lead-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  critical_parts_lead_time_range: 15-45
+  critical_parts_stockout_rate: 0.1
+  critical_parts_turnover_range: 2-5
+  finished_goods_lead_time_range: 7-20
+  finished_goods_stockout_rate: 1.2
+  finished_goods_turnover_range: 8-15
+  l_parameter: average_lead_time
+  mro_supplies_lead_time_range: 3-10
+  mro_supplies_stockout_rate: 5.0
+  mro_supplies_turnover_range: 3-6
+  raw_materials_lead_time_range: 30-60
+  raw_materials_stockout_rate: 2.5
+  raw_materials_turnover_range: 4-8
+  safety_stock_formula: Z * sqrt(L * sigma_D^2 + D^2 * sigma_L^2)
+  sigma_d_parameter: demand_volatility
+  sigma_l_parameter: lead_time_volatility
+  wip_lead_time_range: 1-5
+  wip_stockout_rate: 0.5
+  wip_turnover_range: 12-25
+  z_coefficient: service_level_coefficient
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] inventory-turnover-and-supply-chain-lead-time-log-v2026
 

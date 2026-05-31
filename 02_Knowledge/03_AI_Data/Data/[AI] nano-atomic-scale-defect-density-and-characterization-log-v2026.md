@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] nano-atomic-scale-defect-density-and-characterization-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2ca781714757e1011b605be51ff64d08b62beec3c004fa5491f5c359f98b648c"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2ca781714757e1011b605be51ff64d08b62beec3c004fa5491f5c359f98b648c
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] nano-atomic-scale-defect-density-and-characterization-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] nano-atomic-scale-defect-density-and-characterization-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] nano-atomic-scale-defect-density-and-characterization-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  boltzmann_k_ev_k: 8.617e-05
+  burgers_vector_range_angstrom: 2.5-5.0
+  dislocation_density_threshold_cm2: 10000.0
+  formation_energy_range_ev: 1.5-3.0
+  impurity_level_threshold_ppb: 1.0
+  lattice_constant_a_angstrom: 5.43
+  lattice_strain_threshold_percent: 0.1
+  resolution_limit_angstrom: 0.5
+  vacancy_density_threshold_cm3: 1000000000000.0
+  xrd_fwhm_limit_arcsec: 20.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] nano-atomic-scale-defect-density-and-characterization-log-v2026
 

@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] lithium-iron-phosphate-lfp-ess-cycle-life-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0da9e8bb59cc3fdff68c587decce0179618763c0703d92b675ee28ee018af47f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0da9e8bb59cc3fdff68c587decce0179618763c0703d92b675ee28ee018af47f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] lithium-iron-phosphate-lfp-ess-cycle-life-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] lithium-iron-phosphate-lfp-ess-cycle-life-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] lithium-iron-phosphate-lfp-ess-cycle-life-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  arrhenius_temp_increase_multiplier: 2.0
+  deep_cycle_dod_pct: 100
+  fast_charge_c_rate: 1
+  high_temp_capacity_retention_threshold_pct: 70
+  high_temp_celsius: 45
+  sei_formation_life_gain_pct: 20
+  standard_capacity_retention_threshold_pct: 80
+  standard_cycle_life_max: 10000
+  standard_cycle_life_min: 6000
+  standard_dod_pct: 80
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] lithium-iron-phosphate-lfp-ess-cycle-life-log-v2026
 

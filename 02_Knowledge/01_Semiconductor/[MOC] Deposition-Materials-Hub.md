@@ -1,54 +1,62 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "[[[MOC] Deposition-Materials-Hub]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "DOI:10.1109/TSM.2026.V7.5.3_SEMICON"
-  original_author: "Flash (HDS Gold V6.3.7)"
-  original_hash: "f5d444f25cf0e99e996759a3f2cd7a6757b652772ce04f6917a34d79d1ac6a89"
+  dataset_reference: DOI:10.1109/TSM.2026.V7.5.3_SEMICON
+  original_author: Flash (HDS Gold V6.3.7)
+  original_hash: f5d444f25cf0e99e996759a3f2cd7a6757b652772ce04f6917a34d79d1ac6a89
+metadata:
+  date: '2026-05-14'
+  domain: 01_Semiconductor
+  id: '[[[MOC] Deposition-Materials-Hub]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Density Semiconductor Deposition Material Intelligence Node
+  object_type: Concept
   tier: 0
-  description: 'High-Density Semiconductor Deposition Material Intelligence Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ald_dep_temp_theoretical: < 150°C
+  ald_dep_temp_verified: 150 - 200°C
+  barrier_metal_thickness_adv: < 2 nm
+  barrier_metal_thickness_std: 5 - 10 nm
+  low_k_dielectric_k_adv: < 2.0
+  low_k_dielectric_k_std: 2.5 - 3.0
+  pvd_target_purity_adv: 6N+
+  pvd_target_purity_std: 5N
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
 spo_graph:
-  - subject: "Deposition Materials"
-    predicate: "defines"
-    object: "Device Reliability"
-    evidence_coordinate: "SEMI-Mat.2026 Sec 1.1"
-    evidence_hash: "f5d444f25cf0"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "High-k Dielectric"
-    predicate: "suppresses"
-    object: "Gate Leakage Current"
-    evidence_coordinate: "IEEE-STD-1140 Sec 3.3"
-    evidence_hash: "f5d444f25cf0"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Barrier Metals"
-    predicate: "prevents"
-    object: "Metal Migration"
-    evidence_coordinate: "SEMI-E47.1 Sec 2.1"
-    evidence_hash: "f5d444f25cf0"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: SEMI-Mat.2026 Sec 1.1
+  intent: defines_performance_metric
+  object: Device Reliability
+  predicate: defines
+  subject: Deposition Materials
+  weight: 0.85
+- evidence_coordinate: IEEE-STD-1140 Sec 3.3
+  intent: suppresses_leakage
+  object: Gate Leakage Current
+  predicate: suppresses
+  subject: High-k Dielectric
+  weight: 0.95
+- evidence_coordinate: SEMI-E47.1 Sec 2.1
+  intent: prevents_diffusion
+  object: Metal Migration
+  predicate: prevents
+  subject: Barrier Metals
+  weight: 0.9
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [[[MOC] Deposition-Materials-Hub
 

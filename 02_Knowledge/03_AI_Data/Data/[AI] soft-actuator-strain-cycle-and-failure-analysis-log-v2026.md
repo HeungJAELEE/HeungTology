@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] soft-actuator-strain-cycle-and-failure-analysis-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "52492e4ee1e4a5d1ffff0851ae7ad9bf09cb87ef3f667bcff686a0e056ce13d9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 52492e4ee1e4a5d1ffff0851ae7ad9bf09cb87ef3f667bcff686a0e056ce13d9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] soft-actuator-strain-cycle-and-failure-analysis-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] soft-actuator-strain-cycle-and-failure-analysis-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] soft-actuator-strain-cycle-and-failure-analysis-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  current_avg_cycle_endurance: 7.5e6
+  current_avg_strain_capacity: 140%
+  cycle_endurance_variance_pct: '-92.5'
+  sa_finger_09_strain_pct: '120'
+  sa_gripper_12_strain_pct: '250'
+  sa_heart_03_strain_pct: '40'
+  sa_muscle_01_strain_pct: '150'
+  strain_capacity_variance_pct: '-53.3'
+  target_max_cycle_endurance: '> 10^8'
+  target_max_strain_capacity: 300%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] soft-actuator-strain-cycle-and-failure-analysis-log-v2026
 

@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] gene-editing-crispr-cas9-fidelity-and-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "273dccc340f3eaff44dd4711e83a7afb04648613148a20f2f0d691a8879879c3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 273dccc340f3eaff44dd4711e83a7afb04648613148a20f2f0d691a8879879c3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] gene-editing-crispr-cas9-fidelity-and-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] gene-editing-crispr-cas9-fidelity-and-accuracy-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] gene-editing-crispr-cas9-fidelity-and-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cas9_activity_ph_threshold: 6.8
+  cas9_efficiency_reduction_at_threshold: 0.2
+  editing_fidelity_measured: 0.9935
+  editing_fidelity_target: 0.992
+  endpoint_protein_folding_log: synthetic-biology-protein-folding-prediction-accuracy-log-v2026
+  endpoint_protein_purification_log: bio-protein-purification-purity-and-activity-audit-log-v2026
+  grna_binding_energy_measured_kcal_mol: -12.5
+  grna_binding_energy_target_kcal_mol: -10.0
+  indel_efficiency_measured: 0.854
+  indel_efficiency_target: 0.8
+  off_target_rate_measured: 0.00038
+  off_target_rate_target: 0.0005
+  repair_fidelity_measured: 0.982
+  repair_fidelity_target: 0.95
+  target_access_measured: 0.925
+  target_access_target: 0.9
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] gene-editing-crispr-cas9-fidelity-and-accuracy-log-v2026
 

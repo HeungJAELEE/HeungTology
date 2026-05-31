@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-swelling-pressure-and-mechanical-stress-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1ffaa99821b0b58dd164554b89aa60ee77e0bb6bf3524b7592a98bef34851543"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1ffaa99821b0b58dd164554b89aa60ee77e0bb6bf3524b7592a98bef34851543
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-swelling-pressure-and-mechanical-stress-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] battery-swelling-pressure-and-mechanical-stress-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] battery-swelling-pressure-and-mechanical-stress-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  breathing_space_mm: 0.5
+  cutoff_temp_adjustment_celsius: -5.0
+  expansion_rate_limit_pct: 10.0
+  expansion_rate_standard_pct: 5.5
+  gas_evolution_rate_limit_ml_ah: 2.0
+  gas_evolution_rate_standard_ml_ah: 0.5
+  graphite_expansion_pct: 10.0
+  ideal_gas_constant_j_mol_k: 8.314
+  pre_load_force_kn: 2.0
+  silicon_anode_expansion_pct: 300.0
+  strain_gauge_resolution_micro_epsilon: 0.1
+  swelling_pressure_limit_mpa: 1.0
+  swelling_pressure_standard_mpa: 0.2
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-swelling-pressure-and-mechanical-stress-log-v2026
 

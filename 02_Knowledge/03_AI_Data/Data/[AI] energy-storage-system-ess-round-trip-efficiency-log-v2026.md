@@ -1,37 +1,63 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] energy-storage-system-ess-round-trip-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a115ed150695def6bde05c3e89abb86e32723ac8f9e0df1471baea0654ef60af"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a115ed150695def6bde05c3e89abb86e32723ac8f9e0df1471baea0654ef60af
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] energy-storage-system-ess-round-trip-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] energy-storage-system-ess-round-trip-efficiency-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] energy-storage-system-ess-round-trip-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  battery_efficiency_approx: 95%
+  dod_integrity_range: 80-95%
+  laes_cycle_life: '>30000'
+  laes_rte_range: 50.0-60.0%
+  laes_standby_loss_per_day: 0.5-1.0%
+  lfp_cycle_life: 5000-8000
+  lfp_pcs_efficiency: 98.5%
+  lfp_rte_range: 88.0-92.5%
+  lfp_standby_loss_per_day: 0.05%
+  parasitic_load_ratio: 3-5%
+  ri_doubling_efficiency_loss: 4%
+  sib_cycle_life: 3000-5000
+  sib_pcs_efficiency: 98.0%
+  sib_rte_range: 85.0-88.0%
+  sib_standby_loss_per_day: 0.10%
+  solid_state_cycle_life: '>10000'
+  solid_state_pcs_efficiency: 99.0%
+  solid_state_rte_range: 92.0-95.0%
+  solid_state_standby_loss_per_day: <0.01%
+  standby_loss_target: <0.1%
+  thd_rte_impact_drop: 2%
+  thd_threshold_critical: 5%
+  vrfb_cycle_life: '>20000'
+  vrfb_pcs_efficiency: 97.0%
+  vrfb_rte_range: 72.0-78.0%
+  vrfb_standby_loss_per_day: <0.01%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] energy-storage-system-ess-round-trip-efficiency-log-v2026
 

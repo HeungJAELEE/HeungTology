@@ -1,37 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-silicon-spin-qubit-valley-splitting-and-noise-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "fef9787be681386b9caaf10c6b2fc0a3d6128f2ada96b1e6257229929a79cd50"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: fef9787be681386b9caaf10c6b2fc0a3d6128f2ada96b1e6257229929a79cd50
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-silicon-spin-qubit-valley-splitting-and-noise-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-silicon-spin-qubit-valley-splitting-and-noise-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-silicon-spin-qubit-valley-splitting-and-noise-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  delta_ev_observed_mev: 0.544
+  delta_ev_theoretical_limit_mev: 1.0
+  p_err_formula: exp(-delta_ev / (kb * t))
+  sq_observed_uv_per_sqrt_hz: 1.26
+  sq_theoretical_limit_uv_per_sqrt_hz: 0.5
+  t2_observed_ms: 18.64
+  t2_theoretical_limit_ms: 100.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-silicon-spin-qubit-valley-splitting-and-noise-log-v2026
 

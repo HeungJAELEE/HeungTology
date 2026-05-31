@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c110a1412796defcba63769b941a3b22dc4fcf79b077fdb66d5034817f8c4976"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c110a1412796defcba63769b941a3b22dc4fcf79b077fdb66d5034817f8c4976
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bias_voltage_v_max: 500
+  bias_voltage_v_min: 100
+  cd_bias_max_nm: 1.0
+  chamber_pressure_mtorr_max: 50
+  chamber_pressure_mtorr_min: 10
+  engine_specification: HDS-Gold V6.3.7
+  etch_rate_target_ang_max: 5000
+  etch_rate_target_ang_min: 2000
+  etch_rate_uniformity_max_pct: 2.0
+  ion_bombardment_energy_model: ER_perp proportional to sqrt(V_bias) * n_i
+  mask_erosion_rate_max_ang_min: 100
+  passivation_gas_mix:
+  - CF4
+  - O2
+  - CH2F2
+  selectivity_target_min: 20
+  sidewall_angle_deg_max: 90.0
+  sidewall_angle_deg_min: 89.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] semiconductor-plasma-etching-selectivity-and-cd-control-log-v2026
 

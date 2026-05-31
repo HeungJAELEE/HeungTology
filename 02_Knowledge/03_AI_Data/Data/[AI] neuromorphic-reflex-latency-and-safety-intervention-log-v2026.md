@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] neuromorphic-reflex-latency-and-safety-intervention-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "deab4fc121f1962ff8ac17ae43f686558492711dc81061a9f395e9a5391a46f2"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: deab4fc121f1962ff8ac17ae43f686558492711dc81061a9f395e9a5391a46f2
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] neuromorphic-reflex-latency-and-safety-intervention-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] neuromorphic-reflex-latency-and-safety-intervention-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] neuromorphic-reflex-latency-and-safety-intervention-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  circuit_energy_theoretical_uj_per_event: 15
+  circuit_energy_verified_uj_per_event: 12
+  false_positive_rate_theoretical_percent: 0.05
+  false_positive_rate_verified_percent: 0.02
+  reflex_latency_theoretical_us: 450
+  reflex_latency_verified_us: 385
+  safety_interventions_theoretical_daily: 12000
+  safety_interventions_verified_daily: 12450
+  spike_fidelity_theoretical_percent: 99.9
+  spike_fidelity_verified_percent: 99.98
+  success_rate_theoretical_percent: 99.99
+  success_rate_verified_percent: 100.0
+  thermal_bottleneck_latency_increase_us: 50
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] neuromorphic-reflex-latency-and-safety-intervention-log-v2026
 

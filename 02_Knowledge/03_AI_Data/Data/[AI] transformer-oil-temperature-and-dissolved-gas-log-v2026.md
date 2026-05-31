@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] transformer-oil-temperature-and-dissolved-gas-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "74e98817d6c6caf3888df7ad432888033e705af571c9fd9bebee10dd3ac92e60"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 74e98817d6c6caf3888df7ad432888033e705af571c9fd9bebee10dd3ac92e60
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] transformer-oil-temperature-and-dissolved-gas-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] transformer-oil-temperature-and-dissolved-gas-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] transformer-oil-temperature-and-dissolved-gas-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  c2h2_threshold_ppm: 1.0
+  ch4_threshold_ppm: 120.0
+  dielectric_strength_min_kv: 50.0
+  h2_threshold_ppm: 100.0
+  max_temp_rise_rate_c_per_h: 2.0
+  measured_c2h2_ppm: 0.0
+  measured_ch4_ppm: 12.4
+  measured_dielectric_strength_kv: 65.2
+  measured_h2_ppm: 45.2
+  measured_moisture_content_ppm: 8.5
+  measured_top_oil_temp_c: 62.5
+  moisture_content_max_ppm: 15.0
+  peak_load_threshold_pct: 90.0
+  top_oil_temp_threshold_c: 85.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] transformer-oil-temperature-and-dissolved-gas-log-v2026
 

@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cleanroom-environmental-particle-count-and-hvac-stability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8f4387f59a9db725917ab507e9f7c131939fac269af5110452e2c0d2f38d35ec"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8f4387f59a9db725917ab507e9f7c131939fac269af5110452e2c0d2f38d35ec
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cleanroom-environmental-particle-count-and-hvac-stability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cleanroom-environmental-particle-count-and-hvac-stability-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] cleanroom-environmental-particle-count-and-hvac-stability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cmp_zone_particle_threshold: 10-50 particles/ft^3
+  cmp_zone_rh_tolerance: 1.0 %
+  cmp_zone_temp_tolerance: 0.2 C
+  etch_zone_particle_threshold: 5-15 particles/ft^3
+  etch_zone_rh_tolerance: 0.8 %
+  etch_zone_temp_tolerance: 0.1 C
+  euv_zone_particle_threshold: 0-2 particles/ft^3
+  euv_zone_rh_tolerance: 0.5 %
+  euv_zone_temp_tolerance: 0.05 C
+  gen_zone_particle_threshold: 100-500 particles/ft^3
+  gen_zone_rh_tolerance: 2.0 %
+  gen_zone_temp_tolerance: 0.5 C
+  hvac_alarm_particle_threshold: '> 500 particles/ft^3'
+  hvac_alarm_rh_threshold: 52.0 +/- 5.0 %
+  hvac_alarm_temp_threshold: 24.5 +/- 1.5 C
+  positive_pressure_critical_threshold: 2 Pa
+  pressure_loss_inflow_multiplier: 10x
+  thermal_expansion_error_coefficient: 0.5nm / 0.1C
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cleanroom-environmental-particle-count-and-hvac-stability-log-v2026
 

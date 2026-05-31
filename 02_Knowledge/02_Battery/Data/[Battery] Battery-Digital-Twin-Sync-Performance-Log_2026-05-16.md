@@ -1,38 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Digital-Twin-Sync-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "55da2838a18ed665459e181a0921cea8ace819133dd9f420b46ae4c7ae5615d0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 55da2838a18ed665459e181a0921cea8ace819133dd9f420b46ae4c7ae5615d0
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Digital-Twin-Sync-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Digital-Twin-Sync-Performance-Log_2026-05-16에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Battery] Battery-Digital-Twin-Sync-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  data_throughput_actual: 1.2 Gbps
+  data_throughput_target: 10 Gbps
+  hardware_environment: NVIDIA RTX 4060 (8GB VRAM)
+  inference_delay_actual: 0.85 ms
+  inference_delay_target: < 1.0 ms
+  prediction_accuracy_actual: 98.4 %
+  prediction_accuracy_target: '> 99.0 %'
+  sync_delay_actual: 22.5 ms
+  sync_delay_target: < 10 ms
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Digital-Twin-Sync-Performance-Log_2026-05-16
 

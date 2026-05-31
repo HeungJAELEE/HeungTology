@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Energy-Market-Sentiment-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "fcc9a18c07e6110fcc64c03cdbaab0abe6d49f567921ab3c3172bf7b940a43d7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: fcc9a18c07e6110fcc64c03cdbaab0abe6d49f567921ab3c3172bf7b940a43d7
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Energy-Market-Sentiment-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Energy-Market-Sentiment-Performance-Log_2026-05-16에 관한 고밀도
+    지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[Battery] Energy-Market-Sentiment-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  classification_f1_score: 0.86
+  correlation_target: 0.6
+  data_throughput_art_sec: 1240
+  f1_score_target: 0.85
+  inference_latency_ms: 8.2
+  latency_target_ms: 10.0
+  price_correlation_coefficient: 0.64
+  throughput_target_art_sec: 1000
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Energy-Market-Sentiment-Performance-Log_2026-05-16
 

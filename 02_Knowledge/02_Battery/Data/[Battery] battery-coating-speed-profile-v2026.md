@@ -1,38 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-coating-speed-profile-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d833f3179bd11cc2cc16f49cb13f03de23796130e86b0762d5818a802f825e95"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d833f3179bd11cc2cc16f49cb13f03de23796130e86b0762d5818a802f825e95
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-coating-speed-profile-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] battery-coating-speed-profile-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  capillary_number_range: 0.3-0.7
+  line_speed_range: 30-100 m/min
+  oven_length: 120 m
+  theoretical_line_speed: 100 m/min
+  verified_acceleration: 0.2 m/s^2
+  verified_capillary_number: '0.45'
+  verified_line_speed: 60 m/min
+  verified_residence_time: 120 sec
+  verified_web_tension: 150 N
+  web_tension_range: 150N +/- 10N
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-coating-speed-profile-v2026
 

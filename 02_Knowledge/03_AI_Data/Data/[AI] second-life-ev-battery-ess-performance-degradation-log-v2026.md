@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] second-life-ev-battery-ess-performance-degradation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "97136bb9b92fc4ed2c4e33abd295859ce594643947f4ea63cf4464313c9fcedd"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 97136bb9b92fc4ed2c4e33abd295859ce594643947f4ea63cf4464313c9fcedd
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] second-life-ev-battery-ess-performance-degradation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] second-life-ev-battery-ess-performance-degradation-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] second-life-ev-battery-ess-performance-degradation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cell_imbalance_capacity_reduction_limit_pct: 15
+  fast_charging_resistance_acceleration_factor: 3.0
+  fast_charging_stress_threshold_cycles: 500
+  grade_a_soh_range_pct: 80-85
+  grade_b_soh_range_pct: 75-80
+  grade_c_soh_range_pct: 70-75
+  grade_d_soh_threshold_pct: <70
+  knee_point_mathematical_condition: d2C/dn2 > epsilon
+  thermal_runaway_onset_temp_reduction_celsius: 20
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] second-life-ev-battery-ess-performance-degradation-log-v2026
 

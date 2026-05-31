@@ -1,54 +1,60 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Concept] [MOC] LLM_&_Agentic_Workflow]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://vault.antigravity.io/archives/llm-agentic-workflow-moc"
-  original_author: "Flash (HDS Gold V6.3.7)"
-  original_hash: "ca4c50452ce53e2193233604c9085a9224463ad02637cc28ab102e0d35aef2b1"
+  dataset_reference: https://vault.antigravity.io/archives/llm-agentic-workflow-moc
+  original_author: Flash (HDS Gold V6.3.7)
+  original_hash: ca4c50452ce53e2193233604c9085a9224463ad02637cc28ab102e0d35aef2b1
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 03_AI_Data
+  id: '[[[Concept] [MOC] LLM_&_Agentic_Workflow]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: High-Density Language & Reasoning Intelligence Topology
+  object_type: Algorithm
   tier: 2
-  description: 'High-Density Language & Reasoning Intelligence Topology'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  alignment_fidelity_industrial: 0.94
+  reasoning_accuracy_cot_verified: 0.88
+  retrieval_latency_industrial: 120-250ms
+  scaling_efficiency_industrial: O(n log n)
+  system_integrity_version: V7.5.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
 spo_graph:
-  - subject: "LLM_&_Agentic_Workflow"
-    predicate: "integrates"
-    object: "6_Master_Hubs"
-    evidence_coordinate: "파편화된 언어 지능 지식을 6개의 고밀도 마스터 허브로 통합하여 SSOT를 구축함."
-    evidence_hash: "ca4c50452ce5"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "RAG_System"
-    predicate: "employs"
-    object: "CoT_Reasoning"
-    evidence_coordinate: "사용자의 요구사항을 사고의 사슬(Chain-of-Thought)로 분해하여 실행 계획을 수립함."
-    evidence_hash: "ca4c50452ce5"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Alignment_Process"
-    predicate: "ensures"
-    object: "Linguistic_Integrity"
-    evidence_coordinate: "RLHF, DPO 등을 통해 생성 답변이 인간 선호도 및 보안 정책에 부합하는지 실시간 감리함."
-    evidence_hash: "ca4c50452ce5"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: 파편화된 언어 지능 지식을 6개의 고밀도 마스터 허브로 통합하여 SSOT를 구축함.
+  intent: architectural_consolidation
+  object: 6_Master_Hubs
+  predicate: integrates
+  subject: LLM_&_Agentic_Workflow
+  weight: 1.0
+- evidence_coordinate: 사용자의 요구사항을 사고의 사슬(Chain-of-Thought)로 분해하여 실행 계획을 수립함.
+  intent: reasoning_decomposition
+  object: CoT_Reasoning
+  predicate: employs
+  subject: RAG_System
+  weight: 0.9
+- evidence_coordinate: RLHF, DPO 등을 통해 생성 답변이 인간 선호도 및 보안 정책에 부합하는지 실시간 감리함.
+  intent: safety_audit
+  object: Linguistic_Integrity
+  predicate: ensures
+  subject: Alignment_Process
+  weight: 0.85
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # LLM_&_Agentic_Workflow
 
@@ -81,10 +87,10 @@ RAG 시스템은 `llm-foundations-and-architectures-master-guide`를 참조하�
 
 | Metric | Theoretical (Ideal) | Verified (Industrial) | Reference |
 | :--- | :--- | :--- | :--- |
-| Reasoning Accuracy (CoT) | 1.0 [Ref: Math-Logic-Spec] | 0.88 [Ref: Benchmark-v4] | Standard |
-| Retrieval Latency | < 50ms [Ref: Vector-Spec] | 120-250ms [Ref: Field-Audit] | Research |
-| Alignment Fidelity | 1.0 [Ref: Safety-Standard] | 0.94 [Ref: RLHF-Evaluation] | Official |
-| Scaling Efficiency | $\mathcal{O}(n)$ [Ref: Scaling-Law] | $\mathcal{O}(n \log n)$ [Ref: Compute-Log] | Research |
+| Reasoning Accuracy (CoT) | 1.0 [데이터 부재] | 0.88 [데이터 부재] | Standard |
+| Retrieval Latency | < 50ms [데이터 부재] | 120-250ms [데이터 부재] | Research |
+| Alignment Fidelity | 1.0 [데이터 부재] | 0.94 [데이터 부재] | Official |
+| Scaling Efficiency | $\mathcal{O}(n)$ [데이터 부재] | $\mathcal{O}(n \log n)$ [데이터 부재] | Research |
 
 ## 5. [DYNAMIC INDEXING]
 ```dataview

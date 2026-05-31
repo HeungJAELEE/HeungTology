@@ -1,37 +1,59 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] renewable-energy-lcoe-and-grid-parity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "daca6c5d4efb55a3486ada39c2a34d0c65847eeb4e902e610a2ea21eabfb0d97"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: daca6c5d4efb55a3486ada39c2a34d0c65847eeb4e902e610a2ea21eabfb0d97
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] renewable-energy-lcoe-and-grid-parity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] renewable-energy-lcoe-and-grid-parity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  carbon_tax_premium_usd_mwh:
+  - 15.0
+  - 45.0
+  china_utility_solar_lcoe_usd_mwh: 22.4
+  eu_offshore_wind_lcoe_usd_mwh: 48.2
+  grid_integration_cost_usd_mwh:
+  - 5.0
+  - 15.0
+  korea_utility_solar_lcoe_usd_mwh: 55.8
+  lcos_usd_mwh:
+  - 120.0
+  - 250.0
+  solar_learning_curve_coefficient_b: 0.32
+  solar_learning_rate_range:
+  - 0.2
+  - 0.3
+  usa_onshore_wind_lcoe_usd_mwh: 32.5
+  wacc_range:
+  - 0.03
+  - 0.08
+  wind_learning_rate_range:
+  - 0.1
+  - 0.15
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] renewable-energy-lcoe-and-grid-parity-log-v2026
 

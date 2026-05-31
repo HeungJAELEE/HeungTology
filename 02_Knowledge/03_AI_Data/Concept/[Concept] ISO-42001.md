@@ -1,0 +1,143 @@
+---
+lineage:
+  dataset_reference: ISO-42001
+  original_author: Antigravity_Agent_Flash_Offline
+  original_hash: auto_generated
+metadata:
+  ai_modified_date: '2026-05-24'
+  ai_status: pending_review
+  date: '2026-05-24'
+  domain: 03_AI_Data
+  id: '[[ [03_AI_Data] [Concept] ISO-42001]]'
+  last_updated: '2026-05-24T02:50:00+09:00'
+  project: Antigravity_SDF_Core
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: Auto-parsed Concept node for ISO-42001
+  object_type: Concept
+  tier: 1
+properties:
+  annex_a_controls_count: 38
+  audit_frequency: annual
+  certification_validity_period_years: 3
+  documentation_coverage_threshold: 1.0
+  domain_categories_count: 10
+  eu_ai_act_alignment_threshold: 0.9
+  risk_assessment_formula: sum(P_hallucination * S_consequence) + sum(P_bias * S_discrimination)
+semantic:
+  alternative_parents: []
+  is_instance_of: '[[[MOC] 03_AI_Data]]'
+spo_graph:
+- evidence_coordinate: '[데이터 부재]'
+  intent: type_assignment
+  object: Concept
+  predicate: auto_mapped
+  subject: ISO-42001
+  weight: 1.0
+temporal:
+  valid_from: '2026-05-24T02:50:00+09:00'
+  valid_to: null
+trust_metrics:
+  decay_rate: 0.0
+  t_static: 1.0
+validation:
+  last_validated: '2026-05-24T02:50:00+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
+---
+
+# [Concept] Iso 42001
+
+## 1. [왜 배우는가? (Why)]
+인공지능 기술의 급격한 자율성 확대와 '블랙박스' 특성은 조직에 전례 없는 법적, 윤리적 리스크를 부여하고 있습니다. ISO/IEC 42001은 세계 최초의 AI 경영 시스템(AIMS) 국제 표준으로, AI 시스템의 기획, 개발, 운영, 폐기에 이르는 전 과정을 체계적으로 관리하기 위한 글로벌 프레임워크를 제공합니다. 이 표준을 준수하는 것은 단순히 기술적 우위를 넘어, EU AI Act와 같은 강력한 국제 규제에 선제적으로 대응하고 고객 및 투자자에게 '신뢰할 수 있는 AI(Trustworthy AI)'를 제공하는 기업 거버넌스의 핵심 이정표입니다.
+
+## 2. [핵심 기술 사양 (Numerical Specs)]
+
+| Parameter Category | Specific Detail | Management Specification | Engineering Rationale |
+|:---|:---:|:---:|:---|
+| **Structure** | Clauses 4 to 10 | High-Level Structure (HLS) | 타 ISO 표준(27001 등)과의 통합 운영성 확보 |
+| **Annex A Controls** | 38 Controls | 10 Domain Categories | 데이터, 알고리즘, 인프라 전반의 통제 항목 |
+| **Audit Frequency** | Internal / External | Annual Cycle | 지속적 개선(PDCA)의 실효성 검증 |
+| **Risk Assessment** | Impact Assessment | Probability $\times$ Severity | AI 시스템이 사회/개인에 미치는 리항 정량화 |
+| **Documentation** | Traceability Log | $100\%$ Coverage | 사고 발생 시 데이터-모델-결정 간 인과 추적 |
+| **Compliance** | EU AI Act Alignment | $> 90\%$ Mapping | 주요 국제 법안과의 준거성 일치도 |
+| **Performance** | Monitoring Metrics | KPI-based | AI 시스템의 정확도, 편향성, 자원 효율성 측정 |
+| **Certification** | Validity Period | 3 Years | 갱신 심사를 통한 경영 시스템의 품질 유지 |
+
+## 3. [공학적 근거 (Scientific Rationale)]
+
+### 3.1 PDCA (Plan-Do-Check-Act) 기반 AIMS 프레임워크
+AI 경영 시스템은 정적인 상태가 아닌, 동적인 환류 루프를 통해 완성됩니다.
+1. **Plan (조직 상황 및 리스크 식별)**: AI 시스템의 목적과 잠재적 위험(편향, 보안)을 정의합니다.
+2. **Do (개발 및 운영)**: 부속서 A의 통제 항목을 적용하여 시스템을 구축합니다.
+3. **Check (모니터링 및 측정)**: 설정된 KPI와 리스크 지표를 상시 감시합니다.
+4. **Act (개선)**: 오작동 또는 성능 저하 시 즉각적인 재학습 및 정책 수정을 수행합니다.
+
+### 3.2 위험 관리 매커니즘 (Clause 6.1.2)
+전통적인 IT 리스크와 달리, AI 리스크는 **'비결정론적 결과'**와 **'데이터 편향'**에 집중합니다.
+- **수식적 접근**: $Risk_{AI} = \sum (P_{hallucination} \cdot S_{consequence}) + \sum (P_{bias} \cdot S_{discrimination})$
+- ISO 42001은 이러한 리스크를 수용 가능한 수준(Residual Risk) 이하로 관리하도록 강제합니다.
+
+### 3.3 투명성과 책임성 (Accountability)
+모델의 입력 데이터 출처(Provenance)와 전처리 과정, 사용된 알고리즘의 버전을 기록하여 의사결정에 대한 법적 소명 능력을 확보합니다.
+
+## 4. [코드 연결 해설 (AI Compliance Monitoring Engine)]
+아래 코드는 ISO 42001 부속서 A의 주요 통제 항목을 모델 메타데이터와 대조하여 준수율을 점수로 환산하는 거버넌스 엔진입니다.
+
+```python
+class ISO42001ComplianceEngine:
+    """
+    HDS-Gold V6.3.7 규격의 AI 거버넌스 준거성 평가 모듈
+    """
+    def __init__(self, controls_config):
+        self.controls = controls_config # Annex A 38개 항목 설정
+
+    def evaluate_model_governance(self, model_metadata):
+        score_card = {}
+        total_score = 0
+        
+        # 1. 데이터 품질 및 편향 관리 (Annex A.5)
+        if model_metadata.get('bias_report_exists'):
+            score_card['Data_Quality'] = 1.0
+        else:
+            score_card['Data_Quality'] = 0.0
+            
+        # 2. AI 시스템 가용성 및 보안 (Annex A.8)
+        score_card['Robustness'] = model_metadata.get('adversarial_test_score', 0)
+        
+        # 3. 라이프사이클 로그 기록 (Annex A.6)
+        if model_metadata.get('traceability_log_count') > 100:
+            score_card['Traceability'] = 1.0
+        else:
+            score_card['Traceability'] = 0.5
+            
+        # 가중 합산 점수 산출
+        final_score = (score_card['Data_Quality'] * 0.4 + 
+                       score_card['Robustness'] * 0.3 + 
+                       score_card['Traceability'] * 0.3)
+        
+        return {
+            "compliance_score": final_score,
+            "is_certified_ready": final_score > 0.85,
+            "details": score_card
+        }
+
+# Usage Example:
+# engine = ISO42001ComplianceEngine(config_standard_v1)
+# report = engine.evaluate_model_governance(current_ai_meta)
+# print(f"Audit Readiness: {report['is_certified_ready']}")
+```
+
+## 5. [스스로 체크 (Self-Audit)]
+1. ISO 42001의 **Clause 6.1 (Risk Assessment)** 과정에서 일반적인 사이버 보안 리스크와 'AI 모델 고유의 리스크'를 분리하여 평가해야 하는 이유는?
+2. **Annex A.5 (Resources for AI)** 통제 항목에서 데이터의 '공정성(Fairness)'이 단순한 통계적 수치를 넘어 법적 효력을 갖기 위한 요건은?
+3. **PDCA** 루프가 AI 시스템의 **'재학습(Retraining)'** 주기와 어떻게 동기화되어야 경영 시스템의 실효성이 확보되는가?
+
+### 🔗 참조된 로컬 지식망 (Retrieved Nodes)
+- 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-Governance
+- 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI Explainable-AI
+- 02_Knowledge/03_AI_Data/Governance_and_Evaluation/AI AI-TRiSM
+
+**[V6.3.7_THE_GENESIS_STATE_VERIFIED_BY_FLASH]**
+**[TIMESTAMP: 2026-05-08]**

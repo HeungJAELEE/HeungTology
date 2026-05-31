@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cultural-health-and-evp-alignment-tracking-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "755f87f1dc1694120481a38d0bdecb34585f60ab994e4e355c01a1b1244bfe4b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 755f87f1dc1694120481a38d0bdecb34585f60ab994e4e355c01a1b1244bfe4b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cultural-health-and-evp-alignment-tracking-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cultural-health-and-evp-alignment-tracking-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] cultural-health-and-evp-alignment-tracking-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  advocacy_target: 70
+  alignment_target: 4.5
+  cultural_friction_index_formula: sum(|V_org - V_ind|)
+  engagement_target: 4.5
+  evp_gap_range: 0-1
+  hr_intelligence_hub_endpoint: MOC 30_human-resources-and-organizational-intelligence-hub
+  safety_target: 4.8
+  talent_retention_endpoint: talent-acquisition-and-retention-analytics-log-v2026
+  transparency_improvement_threshold: 0.2
+  trust_recovery_acceleration_threshold: 0.5
+  trust_target: 4.7
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cultural-health-and-evp-alignment-tracking-log-v2026
 

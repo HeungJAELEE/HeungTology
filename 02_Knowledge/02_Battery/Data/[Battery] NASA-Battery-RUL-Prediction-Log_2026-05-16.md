@@ -1,38 +1,43 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] NASA-Battery-RUL-Prediction-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9b9014cc5c3f16d6ac95c547a4acf229bac169e578c5b4cf812c94a239dfa789"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9b9014cc5c3f16d6ac95c547a4acf229bac169e578c5b4cf812c94a239dfa789
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] NASA-Battery-RUL-Prediction-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[Battery] NASA-Battery-RUL-Prediction-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Algorithm
+  tier: 1
+properties:
+  cross_attention_error: '0.12'
+  information_compression_rate: 1/16
+  rul_prediction_rmse: 2.4%
+  target_convergence_time_threshold: 180 min
+  target_cross_attention_threshold: '0.15'
+  target_rmse_threshold: 3.0%
+  training_convergence_time: 145 min
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] NASA-Battery-RUL-Prediction-Log_2026-05-16
 

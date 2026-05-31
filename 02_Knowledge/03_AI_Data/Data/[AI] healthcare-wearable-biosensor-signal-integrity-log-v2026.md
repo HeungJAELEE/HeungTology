@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] healthcare-wearable-biosensor-signal-integrity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "091f95464f88563149853f562e2d44f679611fc698641f8e763d95a13d6aef74"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 091f95464f88563149853f562e2d44f679611fc698641f8e763d95a13d6aef74
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] healthcare-wearable-biosensor-signal-integrity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] healthcare-wearable-biosensor-signal-integrity-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] healthcare-wearable-biosensor-signal-integrity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  battery_power_max: 500 uW
+  cmrr_min: 100.0 dB
+  contact_impedance_max: 10.0 kOhm
+  engine_impedance_limit: 50.0 kOhm
+  engine_snr_threshold: '30.0'
+  motion_power_max: '0.05'
+  resolution_bit_depth: 16-24 bits
+  sampling_frequency_range: 250-1000 Hz
+  snr_target_min: 40.0 dB
+  sync_latency_max: 100 ms
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] healthcare-wearable-biosensor-signal-integrity-log-v2026
 

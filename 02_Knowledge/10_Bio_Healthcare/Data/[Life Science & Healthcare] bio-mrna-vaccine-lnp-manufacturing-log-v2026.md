@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Life Science & Healthcare] bio-mrna-vaccine-lnp-manufacturing-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "10_Bio_Healthcare"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ce23f9986839676ec94a733457e26c1f83955c520a626f27a3139e8a91127784"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ce23f9986839676ec94a733457e26c1f83955c520a626f27a3139e8a91127784
+metadata:
+  date: '2026-05-16'
+  domain: 10_Bio_Healthcare
+  id: '[[[Life Science & Healthcare] bio-mrna-vaccine-lnp-manufacturing-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Life Science & Healthcare] bio-mrna-vaccine-lnp-manufacturing-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Life Science & Healthcare] bio-mrna-vaccine-lnp-manufacturing-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  encapsulation_efficiency_precision: 0.5%
+  encapsulation_efficiency_range: 85-98%
+  escape_rate_range_percent: 10-30
+  frr_ratio_range: 3:1 to 4:1
+  impurity_max_ppm: '100'
+  lipid_recovery_min_percent: '90'
+  mrna_concentration_range_mg_ml: 0.5-5.0
+  particle_size_precision_nm: '1'
+  particle_size_range_nm: 70-120
+  pdi_index_precision: '0.01'
+  pdi_index_range: 0.05-0.20
+  shelf_life_stability_months: '12'
+  storage_temperature_celsius: '-70'
+  zeta_potential_precision_mv: '0.1'
+  zeta_potential_range_mv: -10 to +20
 semantic:
-  is_instance_of: "[[[MOC] 10_Bio_Healthcare]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 10_Bio_Healthcare]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Life Science & Healthcare] bio-mrna-vaccine-lnp-manufacturing-log-v2026
 

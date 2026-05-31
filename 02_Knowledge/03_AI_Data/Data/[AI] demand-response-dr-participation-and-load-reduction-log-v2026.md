@@ -1,37 +1,56 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] demand-response-dr-participation-and-load-reduction-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "89e1095ae2bd9122bf470f5259ec165158057793bd529bf0de5b164c37359da5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 89e1095ae2bd9122bf470f5259ec165158057793bd529bf0de5b164c37359da5
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] demand-response-dr-participation-and-load-reduction-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] demand-response-dr-participation-and-load-reduction-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] demand-response-dr-participation-and-load-reduction-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ac_rejection_rate_surge_pct: 50
+  commercial_compliance_rate_pct: 85~95
+  commercial_reduction_capacity_mw: 0.1~1.0
+  commercial_response_time_min: 5~30
+  ev_charging_compliance_rate_pct: '>98'
+  ev_charging_reduction_capacity_mw: 0.007~0.05
+  ev_charging_response_time_min: <5
+  indoor_temp_critical_threshold_celsius: 28
+  industrial_compliance_rate_pct: 95~100
+  industrial_demand_price_elasticity: 20% incentive increase -> 5% reduction increase
+  industrial_reduction_capacity_mw: 5~50
+  industrial_response_time_min: 15~60
+  residential_compliance_rate_pct: 70~85
+  residential_demand_price_elasticity: 20% incentive increase -> 15% reduction increase
+  residential_reduction_capacity_mw: 0.001~0.005
+  residential_response_time_min: <1
+  vpp_compliance_rate_pct: 90~98
+  vpp_reduction_capacity_mw: 10~100
+  vpp_response_time_min: 1~10
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] demand-response-dr-participation-and-load-reduction-log-v2026
 

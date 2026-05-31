@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-defi-liquidity-and-smart-contract-security-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4daf5ec24cdc2a93bdd505ed619260032a2104e3a1585c4d0ff3af0d5e19c7db"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4daf5ec24cdc2a93bdd505ed619260032a2104e3a1585c4d0ff3af0d5e19c7db
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-defi-liquidity-and-smart-contract-security-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-defi-liquidity-and-smart-contract-security-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-defi-liquidity-and-smart-contract-security-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_fidelity: MAXIMUM
+  collateral_ratio: 145.2%
+  collateral_ratio_target: '> 120%'
+  contract_vuln_target: < 0.01
+  contract_vulnerability: '0.00'
+  isolation_time: 0.8 ms
+  isolation_time_target: < 1.0 ms
+  liquidity_util_target: 60-80%
+  liquidity_utilization: 72.4%
+  slippage_rate: 0.001%
+  slippage_rate_target: < 0.01%
+  tvl: 10.8 T USD
+  tvl_target: '> 10 T USD'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-defi-liquidity-and-smart-contract-security-log-v2026
 

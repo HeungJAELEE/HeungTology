@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] nano-lithography-mask-precision-and-defect-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "147367edb3173b4d593d7fcf631dad13286b43a30068ed3a895ac3cc63311388"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 147367edb3173b4d593d7fcf631dad13286b43a30068ed3a895ac3cc63311388
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] nano-lithography-mask-precision-and-defect-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] nano-lithography-mask-precision-and-defect-rate-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] nano-lithography-mask-precision-and-defect-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cd_uniformity_measured_nm: 0.65
+  cd_uniformity_target_nm: 1.0
+  cleanliness_index_measured: 99.98
+  cleanliness_index_target: 99.9
+  defect_density_measured_cm2: 0.0042
+  defect_density_target_cm2: 0.005
+  euv_wavelength_nm: 13.5
+  m_eef_limit: 1.5
+  min_resolution_target_nm: 10.0
+  phase_error_measured_deg: 0.12
+  phase_error_target_deg: 0.5
+  placement_error_measured_nm: 0.78
+  placement_error_target_nm: 1.0
+  trans_efficiency_measured: 0.945
+  trans_efficiency_target: 0.92
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] nano-lithography-mask-precision-and-defect-rate-log-v2026
 

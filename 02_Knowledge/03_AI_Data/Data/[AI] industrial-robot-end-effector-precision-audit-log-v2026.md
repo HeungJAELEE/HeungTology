@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industrial-robot-end-effector-precision-audit-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "9e547399aa97948e505e8787aa3473c74b06f690aa41051e0d387b9afc4e0b89"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 9e547399aa97948e505e8787aa3473c74b06f690aa41051e0d387b9afc4e0b89
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industrial-robot-end-effector-precision-audit-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industrial-robot-end-effector-precision-audit-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industrial-robot-end-effector-precision-audit-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  absolute_accuracy: 0.1-0.5 mm
+  compliance_stiffness_inverse: 0.2-0.8 um/N
+  max_path_deviation: < 0.1 mm @ 1.5 m/s
+  payload_deflection_value: 0.45 mm
+  payload_deflection_weight: 200 kg
+  repeatability_iso_9283: 0.01-0.05 mm
+  singularity_avoidance_radius: 20-50 mm
+  thermal_drift_active_compensation: 8.5 um
+  thermal_drift_high_temp: 185.4 um
+  thermal_drift_steady_state: 125.8 um
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industrial-robot-end-effector-precision-audit-log-v2026
 

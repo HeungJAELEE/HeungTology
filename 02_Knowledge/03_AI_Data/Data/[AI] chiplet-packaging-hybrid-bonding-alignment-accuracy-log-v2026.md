@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] chiplet-packaging-hybrid-bonding-alignment-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a060677f6576378906a0e1ac793ad8e9ab859c201988b02473fb2eafd2cb7155"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a060677f6576378906a0e1ac793ad8e9ab859c201988b02473fb2eafd2cb7155
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] chiplet-packaging-hybrid-bonding-alignment-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] chiplet-packaging-hybrid-bonding-alignment-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] chiplet-packaging-hybrid-bonding-alignment-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  annealing_temperature_celsius: 250
+  cow_alignment_accuracy_nm: 150-300
+  critical_overlay_threshold_ratio: 0.2
+  high_speed_computing_integrity_threshold_nm: 100
+  hybrid_ultra_fine_alignment_accuracy_nm: <50
+  microbump_alignment_accuracy_nm: 1000-3000
+  optical_io_alignment_accuracy_nm: 100-200
+  plasma_attraction_multiplier: 5
+  void_density_reliability_threshold_pct: 1.0
+  w2w_alignment_accuracy_nm: 50-150
+  warpage_runout_error_increase_nm: 200
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] chiplet-packaging-hybrid-bonding-alignment-accuracy-log-v2026
 

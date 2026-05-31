@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-fab-airflow-and-pressure-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "34645f0d2459987ec3dbff685a9dc0d655b9e47efdc60b99f5f8d60b9a51372b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 34645f0d2459987ec3dbff685a9dc0d655b9e47efdc60b99f5f8d60b9a51372b
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-fab-airflow-and-pressure-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-fab-airflow-and-pressure-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Semiconductor] semiconductor-fab-airflow-and-pressure-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  air_velocity_tolerance_ms: 0.05
+  backflow_critical_threshold_pa: 5
+  external_db_endpoints:
+  - Fab_HVAC_BMS_Log
+  - BMS_Log
+  max_particle_count_eacf: 1
+  max_recovery_time_sec: 300
+  measured_differential_pressure_pa: 15.5
+  min_differential_pressure_pa: 10.0
+  min_ffu_efficiency_pct: 85
+  recovery_target_ratio: 0.9
+  standard_references:
+  - ISO-14644-1
+  - SEMI-S2
+  target_air_velocity_ms: 0.45
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-fab-airflow-and-pressure-log-v2026
 

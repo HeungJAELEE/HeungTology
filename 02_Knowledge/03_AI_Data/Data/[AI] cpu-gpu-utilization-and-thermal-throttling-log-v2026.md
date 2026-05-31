@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cpu-gpu-utilization-and-thermal-throttling-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "207be0a14cf7084968479463c54601709e3aff6331770330a478d4048dfdb137"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 207be0a14cf7084968479463c54601709e3aff6331770330a478d4048dfdb137
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cpu-gpu-utilization-and-thermal-throttling-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cpu-gpu-utilization-and-thermal-throttling-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] cpu-gpu-utilization-and-thermal-throttling-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  clock_speed_ghz: '4.85'
+  cpu_usage_measured: 88.5%
+  cpu_usage_target_range: 70-90%
+  gpu_load_measured: 92.4%
+  gpu_load_target_min: 90.0%
+  mem_bw_usage_measured: 72.5%
+  mem_bw_usage_target_max: 80.0%
+  min_throttling_data_threshold_ms: 100ms
+  package_temp_measured: 78.5C
+  package_temp_target_max: 85.0C
+  peak_power_spike_percentage: 30%
+  throttling_duration_measured: 0.25s
+  throttling_duration_target_max: 1.00s
+  utilization_threshold_high: 85%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cpu-gpu-utilization-and-thermal-throttling-log-v2026
 

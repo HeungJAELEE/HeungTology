@@ -1,38 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Factory-PM-and-PdM-Performance-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "a97178b3035348f169f1c68c2dde7fedbb058008d9dd0b1e7d5d50076dbb48ab"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: a97178b3035348f169f1c68c2dde7fedbb058008d9dd0b1e7d5d50076dbb48ab
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Factory-PM-and-PdM-Performance-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Factory-PM-and-PdM-Performance-Log_2026-05-16에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] Battery-Factory-PM-and-PdM-Performance-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  downtime_reduction_rate_actual: 32.5%
+  downtime_reduction_rate_target: '> 30.0%'
+  factory_capacity: 40GWh
+  om_cost_reduction_rate_actual: 24.8%
+  om_cost_reduction_rate_target: '> 20.0%'
+  parallelization_ratio_actual: 85.0%
+  parallelization_ratio_target: '> 80.0%'
+  pdm_accuracy_actual: 96.2%
+  pdm_accuracy_target: '> 95.0%'
+  pdm_failure_lead_time: 72h
+  schedule_reduction_rate_actual: 15.4%
+  schedule_reduction_rate_target: '> 10.0%'
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Factory-PM-and-PdM-Performance-Log_2026-05-16
 

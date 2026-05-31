@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ai-hpc-cluster-gpu-utilization-and-training-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "57de86e152e03339735f1a0a29ff163be3e13a21f5983a9338f5143f4ac46a44"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 57de86e152e03339735f1a0a29ff163be3e13a21f5983a9338f5143f4ac46a44
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ai-hpc-cluster-gpu-utilization-and-training-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ai-hpc-cluster-gpu-utilization-and-training-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] ai-hpc-cluster-gpu-utilization-and-training-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  gpu_bubble_rate: 15%
+  gpu_utilization_verified: 96.5%
+  interconnect_bw_verified: 800 Gbps
+  memory_bandwidth_verified: 3.2 TB/s
+  parallel_integrity_p: '0.999'
+  pue_verified: '1.08'
+  target_gpu_utilization: 95%
+  target_pue: '1.1'
+  tflops_node_verified: 2,500 TFLOPS
+  thermal_throttling_impact: 20%
+  training_throughput_verified: 1.2M smp/s
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ai-hpc-cluster-gpu-utilization-and-training-efficiency-log-v2026
 

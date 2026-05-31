@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "MOC-DISPLAY-COMM-2026-V7.5.3"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Global_Display_and_Connectivity_Sovereignty"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "d1a8058e320f81d1ec5111d5ce0fdb36f63602dc1c816e3194086aad2807e8b2"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: d1a8058e320f81d1ec5111d5ce0fdb36f63602dc1c816e3194086aad2807e8b2
+metadata:
+  date: '2026-05-16'
+  domain: Global_Display_and_Connectivity_Sovereignty
+  id: MOC-DISPLAY-COMM-2026-V7.5.3
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Fidelity Display and Communication Intelligence Command Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Display and Communication Intelligence Command Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  communication_standard: 6G
+  frequency_regime: terahertz
+  intelligence_version: V7.5.3
+  reference_log_flex_reliability: flex-reliability-log-v2026
+  reference_log_micro_led: micro-led-log-v2026
+  reference_log_tandem_oled: tandem-oled-log-v2026
+  shannon_limit_parameters:
+  - SNR
+  - BER
+  system_status: OPERATIONAL
+  timestamp: '2026-05-16'
 semantic:
-  is_instance_of: "[[[MOC] 07_Display_Comm]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 07_Display_Comm]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 07_Display_Comm
 

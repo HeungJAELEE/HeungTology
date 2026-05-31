@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-ion-trap-gate-fidelity-and-heating-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "639bd473cfe831948ee33a2cf0c157b19033ac7ed2f3ebca2f1f6f161ac88a48"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 639bd473cfe831948ee33a2cf0c157b19033ac7ed2f3ebca2f1f6f161ac88a48
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-ion-trap-gate-fidelity-and-heating-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-ion-trap-gate-fidelity-and-heating-rate-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-ion-trap-gate-fidelity-and-heating-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  external_db_reference: Antigravity Vault
+  ideal_2_qubit_gate_fidelity_threshold_pct: 99.99
+  ideal_heating_rate_threshold_quanta_s: 0.1
+  ideal_trap_freq_drift_threshold_khz: 0.01
+  verified_2_qubit_gate_fidelity_avg_pct: 99.866
+  verified_heating_rate_avg_quanta_s: 3.1
+  verified_trap_freq_drift_avg_khz: 0.394
+  voltage_fluctuation_frequency_drift_correlation: 1ppm_to_100hz
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-ion-trap-gate-fidelity-and-heating-rate-log-v2026
 

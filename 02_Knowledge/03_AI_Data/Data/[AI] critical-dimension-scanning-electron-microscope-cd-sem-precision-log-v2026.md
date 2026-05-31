@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] critical-dimension-scanning-electron-microscope-cd-sem-precision-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8ea4981881fbd949a076ca77aff514e1871fb6f17d908c57656d9b898fd24479"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8ea4981881fbd949a076ca77aff514e1871fb6f17d908c57656d9b898fd24479
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] critical-dimension-scanning-electron-microscope-cd-sem-precision-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] critical-dimension-scanning-electron-microscope-cd-sem-precision-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] critical-dimension-scanning-electron-microscope-cd-sem-precision-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  after_dev_pr_voltage_range: 300-500V
+  after_etch_si_voltage_range: 500-1000V
+  contact_hole_voltage_range: 800-1500V
+  de_broglie_wavelength_at_500v: 0.05nm
+  edge_effect_error_contribution: '0.7'
+  next_gen_eb_precision_threshold: <0.1nm
+  next_gen_eb_resolution_threshold: <0.8nm
+  next_gen_eb_voltage_threshold: '>2000V'
+  pr_shrinkage_per_measurement: 0.1nm
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] critical-dimension-scanning-electron-microscope-cd-sem-precision-log-v2026
 

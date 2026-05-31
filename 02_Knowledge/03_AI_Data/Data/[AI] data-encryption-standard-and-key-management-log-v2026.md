@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] data-encryption-standard-and-key-management-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "21c8df27c17d7bffa1f16a30020568207bd853755b7940a84adfc6a2786b693f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 21c8df27c17d7bffa1f16a30020568207bd853755b7940a84adfc6a2786b693f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] data-encryption-standard-and-key-management-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] data-encryption-standard-and-key-management-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] data-encryption-standard-and-key-management-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  aes_256_key_length_bits: '256'
+  chacha20_key_length_bits: '256'
+  ecc_384_key_length_bits: '384'
+  entropy_score_range: 0-1
+  kyber_1024_key_length_bits: '1024'
+  max_key_rotation_threshold_days: '90'
+  rsa_4096_key_length_bits: '4096'
+  shannon_entropy_formula: H(X) = -sum_{i=1}^n P(x_i) log2 P(x_i)
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] data-encryption-standard-and-key-management-log-v2026
 

@@ -1,38 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] Battery-Solid-State-Performance-and-Interface-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b4b689fe94764766fd1556758c05c81d31450a0f23cbc5d6f60a4cdd2965a75e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b4b689fe94764766fd1556758c05c81d31450a0f23cbc5d6f60a4cdd2965a75e
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-Solid-State-Performance-and-Interface-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] Battery-Solid-State-Performance-and-Interface-Log_2026-05-16에
+    관한 고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[Battery] Battery-Solid-State-Performance-and-Interface-Log_2026-05-16에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  asr_actual: 42.5 Ω·cm²
+  asr_target: < 10.0 Ω·cm²
+  ccd_actual: 1.15 mA/cm²
+  ccd_target: '> 2.0 mA/cm²'
+  energy_density_actual: 342 Wh/kg
+  energy_density_target: '> 400 Wh/kg'
+  ionic_conductivity_actual: 12.4 mS/cm
+  ionic_conductivity_target: '> 10.0 mS/cm'
+  stack_pressure_actual: 5.8 MPa
+  stack_pressure_target: 1.0 ~ 10.0 MPa
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-Solid-State-Performance-and-Interface-Log_2026-05-16
 

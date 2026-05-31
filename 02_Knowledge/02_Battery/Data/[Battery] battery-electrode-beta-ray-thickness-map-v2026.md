@@ -1,38 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] battery-electrode-beta-ray-thickness-map-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "e7b1f545e8264695ceeb7cbca7c5e11d3410ffb1559344e1596e49ea7447535d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: e7b1f545e8264695ceeb7cbca7c5e11d3410ffb1559344e1596e49ea7447535d
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] battery-electrode-beta-ray-thickness-map-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] battery-electrode-beta-ray-thickness-map-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Concept
   tier: 1
-  description: '[Battery] battery-electrode-beta-ray-thickness-map-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  agc_heater_adjustment_rate: 3%
+  cd_variation_limit: 2.0%
+  coating_weight_target: 25.5 mg/cm^2
+  md_variation_limit: 1.5%
+  mu_ncm_absorption_coeff: '0.0165'
+  sensor_resolution_spec: 0.05 mg/cm^2
+  weight_tolerance: 0.3 mg/cm^2
+  wet_thickness_target: 150 um
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] battery-electrode-beta-ray-thickness-map-v2026
 

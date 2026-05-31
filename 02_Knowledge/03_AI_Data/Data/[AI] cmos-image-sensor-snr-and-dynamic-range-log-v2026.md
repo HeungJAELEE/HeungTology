@@ -1,37 +1,66 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] cmos-image-sensor-snr-and-dynamic-range-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "ebdefc6458dd5c1ebd2083d242b7993d4257342326e6f1d517ef10183316ae33"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: ebdefc6458dd5c1ebd2083d242b7993d4257342326e6f1d517ef10183316ae33
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] cmos-image-sensor-snr-and-dynamic-range-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] cmos-image-sensor-snr-and-dynamic-range-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] cmos-image-sensor-snr-and-dynamic-range-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bsi_dynamic_range_db: 72.0
+  bsi_pixel_size_um: 1.2
+  bsi_quantum_efficiency_pct: 85.0
+  bsi_snr_max_db: 42.5
+  conversion_gain_uv_e_max: 250
+  conversion_gain_uv_e_min: 50
+  dark_current_temp_doubling_interval_c: 8
+  dark_current_temp_reference_c: 60
+  dark_current_threshold_e_s_pixel: 10
+  full_well_capacity_e_max: 50000
+  full_well_capacity_e_min: 5000
+  global_shutter_dynamic_range_db: 65.0
+  global_shutter_pixel_size_um: 2.5
+  global_shutter_quantum_efficiency_pct: 70.0
+  global_shutter_snr_max_db: 38.0
+  hdr_dynamic_range_db: 140.0
+  hdr_pixel_size_um: 3.0
+  hdr_quantum_efficiency_pct: 92.0
+  hdr_snr_max_db: 48.5
+  read_noise_e_max: 3.0
+  read_noise_e_min: 1.0
+  small_pixel_dynamic_range_db: 60.0
+  small_pixel_pixel_size_um: 0.6
+  small_pixel_quantum_efficiency_pct: 65.0
+  small_pixel_snr_max_db: 35.5
+  stacked_dynamic_range_db: 68.0
+  stacked_pixel_size_um: 0.8
+  stacked_quantum_efficiency_pct: 78.5
+  stacked_snr_max_db: 40.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] cmos-image-sensor-snr-and-dynamic-range-log-v2026
 

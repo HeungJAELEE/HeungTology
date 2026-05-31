@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] display-quantum-dot-optical-performance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "8a64690435310ebfb97fc6782c12831f067cbf16dfa62f98368874973b19ff8d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 8a64690435310ebfb97fc6782c12831f067cbf16dfa62f98368874973b19ff8d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] display-quantum-dot-optical-performance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] display-quantum-dot-optical-performance-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] display-quantum-dot-optical-performance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  absorbance_coefficient_range: 10^5-10^6 cm^-1
+  color_shift_threshold: < 0.005
+  external_db_endpoint: Vault
+  fwhm_range: 18-35 nm
+  non_radiative_recombination_contribution: 15%
+  particle_size_range: 2.0-10.0 nm
+  peak_wavelength_range: 450-650 nm
+  pl_lifetime_range: 10-100 ns
+  quantum_yield_range: 85-98%
+  size_deviation_fwhm_impact: 0.2nm increase -> 3nm expansion
+  size_deviation_gamut_impact: 0.2nm increase -> 5% decrease
+  stability_85c_threshold: '> 1,000 hrs'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] display-quantum-dot-optical-performance-log-v2026
 

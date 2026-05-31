@@ -1,37 +1,44 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] meta-surface-refractive-index-and-beam-steering-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "35b06487f80a63f74c64faeb1042ed12fedeafc04ff82c5d9ebbb640bdbf3b74"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 35b06487f80a63f74c64faeb1042ed12fedeafc04ff82c5d9ebbb640bdbf3b74
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] meta-surface-refractive-index-and-beam-steering-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] meta-surface-refractive-index-and-beam-steering-accuracy-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] meta-surface-refractive-index-and-beam-steering-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  audit_status: MAXIMUM
+  bandwidth_threshold_thz: 450
+  invisibility_index_pct: 99.2
+  phase_discontinuity_accuracy: 0.99
+  refractive_index_target: -1.45
+  steering_error_threshold_deg: 0.05
+  transmission_efficiency_pct: 96.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] meta-surface-refractive-index-and-beam-steering-accuracy-log-v2026
 

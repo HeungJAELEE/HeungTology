@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] sustainable-energy-storage-ess-round-trip-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "118f5713bc9d37ce15c0bc0d3780c7752cce78fd0b677a241cdac11a240a3332"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 118f5713bc9d37ce15c0bc0d3780c7752cce78fd0b677a241cdac11a240a3332
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] sustainable-energy-storage-ess-round-trip-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] sustainable-energy-storage-ess-round-trip-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] sustainable-energy-storage-ess-round-trip-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cooling_load_increase_pct: 20.0
+  cooling_load_threshold_temp_c: 35
+  degradation_rate_measured_pct_per_year: 0.45
+  degradation_rate_target_max_pct_per_year: 0.6
+  efficiency_loss_at_threshold_pct: 1.5
+  response_time_measured_ms: 25
+  response_time_target_max_ms: 100
+  round_trip_efficiency_measured_pct: 91.5
+  round_trip_efficiency_target_min_pct: 90.0
+  self_discharge_rate_measured_pct_per_day: 0.15
+  self_discharge_rate_target_max_pct_per_day: 0.2
+  smart_grid_log_endpoint: smart-grid-load-balancing-and-curtailment-log-v2026
+  space_weather_log_endpoint: space-weather-solar-flare-and-radiation-intensity-log-v2026
+  storage_capacity_mwh: 500
+  temperature_stability_measured_c: 25.4
+  temperature_target_range_c: 25 +/- 2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] sustainable-energy-storage-ess-round-trip-efficiency-log-v2026
 

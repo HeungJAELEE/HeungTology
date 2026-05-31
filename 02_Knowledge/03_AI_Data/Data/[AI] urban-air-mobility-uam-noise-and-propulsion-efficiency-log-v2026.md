@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] urban-air-mobility-uam-noise-and-propulsion-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "16b49bc31f52a86a94535363d528f3db9f96cb3acad3cb8844962f7d7c5ef309"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 16b49bc31f52a86a94535363d528f3db9f96cb3acad3cb8844962f7d7c5ef309
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] urban-air-mobility-uam-noise-and-propulsion-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] urban-air-mobility-uam-noise-and-propulsion-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] urban-air-mobility-uam-noise-and-propulsion-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  altitude_reference_m: 120
+  blade_passing_frequency_hz: 123.3
+  lift_drag_ratio_measured: 12.5
+  lift_drag_ratio_target: 10.0
+  noise_level_measured_dba: 62.5
+  noise_level_target_dba: 65.0
+  propulsion_efficiency_measured_percent: 87.4
+  propulsion_efficiency_target_percent: 85.0
+  rotor_rpm: 1850
+  thrust_weight_ratio_measured: 1.45
+  thrust_weight_ratio_target: 1.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] urban-air-mobility-uam-noise-and-propulsion-efficiency-log-v2026
 

@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] graphene-supercapacitor-capacitance-and-cycle-life-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "02e6f302f81394d4f1969f2decd66e61e49cdf0250c3b7fcf1051c3bf91a82bb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 02e6f302f81394d4f1969f2decd66e61e49cdf0250c3b7fcf1051c3bf91a82bb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] graphene-supercapacitor-capacitance-and-cycle-life-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] graphene-supercapacitor-capacitance-and-cycle-life-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] graphene-supercapacitor-capacitance-and-cycle-life-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bet_surface_area_range: 1800-2400m^2/g
+  charge_separation_distance_max: 1nm
+  cycle_life_retention_1m: '>98.0%'
+  energy_density_range: 15-25Wh/kg
+  esr_threshold: <0.45mOhm
+  power_density_threshold: '>15.0kW/kg'
+  quantum_capacitance_threshold: '>20.0uF/cm^2'
+  specific_capacitance_range: 200-550F/g
+  theoretical_specific_surface_area: 2630m^2/g
+  tortuosity_ideal: '1.0'
+  voltage_window_threshold: '>3.0V'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] graphene-supercapacitor-capacitance-and-cycle-life-log-v2026
 

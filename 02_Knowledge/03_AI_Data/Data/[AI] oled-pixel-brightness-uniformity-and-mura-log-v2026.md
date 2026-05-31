@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] oled-pixel-brightness-uniformity-and-mura-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3e6dee0d84530000745ed51b22dc30a9eb4ae18b1d4fd874c3950008f207eef3"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3e6dee0d84530000745ed51b22dc30a9eb4ae18b1d4fd874c3950008f207eef3
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] oled-pixel-brightness-uniformity-and-mura-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] oled-pixel-brightness-uniformity-and-mura-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] oled-pixel-brightness-uniformity-and-mura-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cloud_mura_jnd: 1.8
+  color_deviation_limit: 0.003
+  demura_bits_range: 10-14
+  line_mura_jnd: 4.2
+  low_gray_mura_jnd: 5.5
+  low_grayscale_sensitivity_multiplier: 5.0
+  low_grayscale_threshold_nit: 10
+  mura_contrast_target: 0.01
+  peak_brightness_hdr: 1000-4000 nits
+  rubbing_mura_jnd: 2.1
+  spot_mura_jnd: 3.5
+  temp_drift_threshold_celsius: 10
+  temp_red_luminance_decrease_rate: 0.02
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] oled-pixel-brightness-uniformity-and-mura-log-v2026
 

@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industry-phononic-crystal-acoustic-transmission-loss-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "54a819d0cbb443668420045e687320c28d82dd565f81455026a8da93cc1b0ac9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 54a819d0cbb443668420045e687320c28d82dd565f81455026a8da93cc1b0ac9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industry-phononic-crystal-acoustic-transmission-loss-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industry-phononic-crystal-acoustic-transmission-loss-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] industry-phononic-crystal-acoustic-transmission-loss-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bragg_error_threshold_pct: '10'
+  default_target_tl_db: '35.0'
+  effective_mass_characteristic: negative
+  filling_fraction_index: 0.3-0.6
+  lattice_constant_range_um: 500-5000
+  max_absorption_coefficient: '0.1'
+  min_bandgap_width_hz: '500'
+  min_impedance_ratio: '5.0'
+  speed_of_sound_ms: '343.0'
+  target_transmission_loss_db: '40.0'
+  unit_precision_tolerance_um: '10'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industry-phononic-crystal-acoustic-transmission-loss-log-v2026
 

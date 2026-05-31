@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Infrastructure] smart-factory-digital-twin-op-metrics-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "09_SmartFactory_Production"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "89e09d1b952055b00494a4308f89f1cd086c4da0599bd3e90eddbeb630b35cea"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 89e09d1b952055b00494a4308f89f1cd086c4da0599bd3e90eddbeb630b35cea
+metadata:
+  date: '2026-05-16'
+  domain: 09_SmartFactory_Production
+  id: '[[[Infrastructure] smart-factory-digital-twin-op-metrics-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Infrastructure] smart-factory-digital-twin-op-metrics-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Infrastructure] smart-factory-digital-twin-op-metrics-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  assembly_error_threshold: 0.1mm
+  availability_threshold: '> 95%'
+  energy_index_measured: '94.2'
+  energy_index_target: '> 90.0'
+  maintenance_dev_measured: 12.5%
+  maintenance_dev_target: < 15.0%
+  mtbf_measured: 1250 hours
+  mtbf_target: '> 1200 hours'
+  oee_measured: 88.5%
+  oee_target: '> 85.0%'
+  robot_arm_log_endpoint: robot-arm-trajectory-precision-and-repeatability-log-v2026
+  smart_grid_log_endpoint: smart-grid-load-balancing-and-curtailment-log-v2026
+  stability_index_measured: '96.8'
+  stability_index_target: '> 95.0'
+  throughput_measured: 450 units/hr
+  throughput_target: 440-460 units/hr
 semantic:
-  is_instance_of: "[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] mold-and-plastic-manufacturing-intelligence-moc]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Infrastructure] smart-factory-digital-twin-op-metrics-v2026
 

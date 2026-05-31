@@ -1,37 +1,43 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[MOC_SEMICON_WHITEPAPER_HUB]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://vault.antigravity.io/semicon/MOC_SEMICON_WHITEPAPER_HUB"
-  original_author: "Antigravity V6.3.7 Chief Knowledge Architect (Flash)"
-  original_hash: "9c4b832909bc847dea08637bff3c9761e3b65766f1c3bc82d122c00492119b35"
+  dataset_reference: https://vault.antigravity.io/semicon/MOC_SEMICON_WHITEPAPER_HUB
+  original_author: Antigravity V6.3.7 Chief Knowledge Architect (Flash)
+  original_hash: 9c4b832909bc847dea08637bff3c9761e3b65766f1c3bc82d122c00492119b35
+metadata:
+  date: '2026-05-17'
+  domain: 01_Semiconductor
+  id: '[[MOC_SEMICON_WHITEPAPER_HUB]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: 8대 반도체 단위 공정(노광, 식각, ALD, HBM 패키징)의 전산 지식망을 통합 중계하는 마스터 지휘소 MOC
+  object_type: Concept
   tier: 0
-  description: '8대 반도체 단위 공정(노광, 식각, ALD, HBM 패키징)의 전산 지식망을 통합 중계하는 마스터 지휘소 MOC'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  engine_version: HDS-Gold V7.6.2
+  max_tsv_pitch_um: 8.0
+  min_ald_gpc_nm_per_cycle: 0.12
+  min_etch_selectivity: 35.0
+  min_pellicle_transmittance_percent: 92.0
+  reference_standard: HDS-Gold V7.5.3
+  target_fidelity_index: 1.0
 semantic:
-  is_instance_of: "[[[MOC] [MOC] 반도체_백서_통합_지휘소.md]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] [MOC] 반도체_백서_통합_지휘소.md]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [MOC] 반도체_백서_통합_지휘소
 

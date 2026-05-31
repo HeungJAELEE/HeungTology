@@ -1,38 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Battery] energy-smart-grid-demand-supply-balance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "04e0f714e172a79db41f3096a883d97dfc9572911cb57fcd84e9ad3968d5f8a5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 04e0f714e172a79db41f3096a883d97dfc9572911cb57fcd84e9ad3968d5f8a5
+metadata:
+  date: '2026-05-16'
+  domain: 02_Battery
+  id: '[[[Battery] energy-smart-grid-demand-supply-balance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Battery] energy-smart-grid-demand-supply-balance-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[Battery] energy-smart-grid-demand-supply-balance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  blackout_threshold_delay: 300ms
+  carbon_intensity_range: 100-500gCO2/kWh
+  congestion_index_range: 0-1.0
+  ess_discharge_range: 0-5GW
+  frequency_drop_acceleration_factor: '1.8'
+  grid_frequency_measured_range: 59.9-60.1Hz
+  grid_frequency_standard: 60Hz
+  renewable_generation_range: 0-30GW
+  renewable_penetration_threshold: 40%
+  total_demand_range: 50-100GW
+  total_supply_range: 50-100GW
+  voltage_fluctuation_limit: ±5%
+  vpp_inertia_response_time: 300ms
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 02_Battery]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] energy-smart-grid-demand-supply-balance-log-v2026
 

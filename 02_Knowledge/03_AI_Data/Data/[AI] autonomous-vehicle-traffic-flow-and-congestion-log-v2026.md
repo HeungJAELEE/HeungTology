@@ -1,37 +1,57 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] autonomous-vehicle-traffic-flow-and-congestion-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "dc065392308b984c3614d61ff3b80dd525017e3eeb511d0a0a6232acad626210"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: dc065392308b984c3614d61ff3b80dd525017e3eeb511d0a0a6232acad626210
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] autonomous-vehicle-traffic-flow-and-congestion-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] autonomous-vehicle-traffic-flow-and-congestion-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] autonomous-vehicle-traffic-flow-and-congestion-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  measured_mean_speed_kmh: '82.4'
+  measured_traffic_density_vehkm: '26.5'
+  measured_traffic_flow_vehhln: '2150'
+  measured_travel_time_index: '1.12'
+  measured_wait_time_s: '12.4'
+  platooning_capacity_multiplier: '2.0'
+  platooning_headway_s: '0.5'
+  target_mean_speed_kmh: '80'
+  target_mean_speed_min_kmh: '70.0'
+  target_traffic_density_max_vehkm: '40.0'
+  target_traffic_flow_vehhln: '2000'
+  target_travel_time_index_max: '1.30'
+  target_tti: '1.2'
+  target_wait_time_max_s: '30.0'
+  theoretical_critical_density_vehkm: '30.0'
+  theoretical_free_flow_speed_kmh: '100.0'
+  theoretical_max_capacity_vehhln: '2850'
+  v2x_latency_threshold_ms: '100'
+  v2x_success_rate_measured: 99.85%
+  v2x_success_rate_target: 99.00%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] autonomous-vehicle-traffic-flow-and-congestion-log-v2026
 

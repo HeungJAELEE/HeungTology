@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-entanglement-fidelity-and-coherence-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "85d8ab767c14b30221ca98c0d5d26c5c403ddd6753746f78d6169f609467645b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 85d8ab767c14b30221ca98c0d5d26c5c403ddd6753746f78d6169f609467645b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-entanglement-fidelity-and-coherence-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-entanglement-fidelity-and-coherence-time-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-entanglement-fidelity-and-coherence-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  coherence_t2_measured_us: 185.5
+  coherence_t2_target_threshold_us: 150.0
+  db_endpoint_cryogenic_thermal_log: quantum-cryogenic-dilution-fridge-thermal-load-log-v2026
+  db_endpoint_magnetic_drift_log: quantum-diamond-nv-magnetic-sensitivity-drift-log-v2026
+  entanglement_fidelity_measured: 0.9994
+  entanglement_fidelity_target_threshold: 0.999
+  gate_fidelity_measured: 0.9999
+  gate_fidelity_target_threshold: 0.9995
+  magnetic_noise_frequency_hz: 60.0
+  max_electromagnetic_noise_nv: 1.0
+  relaxation_t1_measured_us: 245.2
+  relaxation_t1_target_threshold_us: 200.0
+  state_purity_measured: 0.985
+  state_purity_target_threshold: 0.98
+  t1_reduction_impact_us: 50.0
+  thermal_excitation_temp_increase_mk: 10.0
+  tomography_accuracy_measured: 0.998
+  tomography_accuracy_target_threshold: 0.995
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-entanglement-fidelity-and-coherence-time-log-v2026
 

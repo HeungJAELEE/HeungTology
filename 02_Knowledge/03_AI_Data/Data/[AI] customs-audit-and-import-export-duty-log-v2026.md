@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] customs-audit-and-import-export-duty-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "14b51dc6a839ca3330ab83a7c4707d60320e9b1ba35f4b2cb382da78343a8f9e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 14b51dc6a839ca3330ab83a7c4707d60320e9b1ba35f4b2cb382da78343a8f9e
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] customs-audit-and-import-export-duty-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] customs-audit-and-import-export-duty-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  audit_finding_count: parameter
+  bom_variance_refund_impact_ratio: '1:5'
+  duty_drawback_recovered: parameter
+  duty_drawback_recovered_min: '500000'
+  duty_drawback_refund_rate: 98.0%
+  duty_savings_amount: parameter
+  fta_duty_savings_min: '1000000'
+  fta_utilization_rate: parameter
+  general_duty_refund_rate: 95.0%
+  total_duties_paid: parameter
+  total_tax_formula: (V * R_duty) + (V * (1 + R_duty) * R_vat)
+  valuation_accuracy: parameter
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] customs-audit-and-import-export-duty-log-v2026
 
@@ -44,7 +56,7 @@ validation:
 
 ### 2.1 [주요 관세 유형별 납부 및 절감 성능 테이블 (v2026)]
 
-| 관세 유형 | 적용 원리 | 납부 비중 | 절감액 ($) | 환급율 (%) | 공학적 의미 (Rationale V6.3.7) |
+| 관세 유형 | 적용 원리 | 납부 비중 | 절감액 ($) | 환급율 (%) | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :--- | :---: | :---: | :---: | :--- |
 | **General Duty** | **MFN Rate** | **High** | **N/A** | $95.0$ | **Baseline**: 기본 수입 관세 납부 및 환급 무결성 로그 |
 | **FTA Duty** | **Preferential** | **Medium** | $\$1M+$ | **N/A** | **Benefit**: 특혜 관세 활용을 통한 비용 절감 무결성 지표 |

@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] industry-liquid-metal-circuit-stretchability-and-healing-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "72abf8e8cc39d553d6000698f139b102a3ab66021cee2affd88686fdb1feb9b5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 72abf8e8cc39d553d6000698f139b102a3ab66021cee2affd88686fdb1feb9b5
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] industry-liquid-metal-circuit-stretchability-and-healing-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] industry-liquid-metal-circuit-stretchability-and-healing-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Hardware
   tier: 1
-  description: '[AI] industry-liquid-metal-circuit-stretchability-and-healing-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  cycle_retention_min: '> 90%'
+  cycle_stability_count: 10k
+  healing_efficiency_min: '> 95.0%'
+  healing_limit: '0.9'
+  healing_time_limit: < 1.0s
+  max_strain_elongation: '> 400.0%'
+  oxide_skin_thickness_nm: 1.0-3.0
+  res_change_threshold_300pct: < 2.0
+  rho_target: '0.15'
+  surface_tension_range: 400-600 mN/m
+  viscosity_range: 1.5-2.5 mPa·s
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] industry-liquid-metal-circuit-stretchability-and-healing-log-v2026
 

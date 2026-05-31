@@ -1,53 +1,59 @@
 ---
-metadata:
-  date: "2026-05-17"
-  id: "[[[Battery] Battery-SSB-Material-Performance-and-CCD-Log_2026-05-16]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "02_Battery"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault / SSB-Engineering-Group"
-  original_hash: "cbdae3b3cf6e9308e5b6514dd68b084025141aa62c2feea98ace7290b8bd851f"
-object:
-  object_type: "Data"
-  tier: 2
-  description: '2026년 하반기 합성된 황화물계(Argyrodite-type) 고체 전해질 및 SSB 셀의 실측 이온 전도도 및 임계 전류 밀도(CCD) 로그'
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault / SSB-Engineering-Group
+  original_hash: cbdae3b3cf6e9308e5b6514dd68b084025141aa62c2feea98ace7290b8bd851f
 measurement:
-  value: 100.0
-  unit: "percent_compliance"
   precision: 1.0
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  unit: percent_compliance
+  value: 100.0
+metadata:
+  ai_status: pending_review
+  date: '2026-05-17'
+  domain: 02_Battery
+  id: '[[[Battery] Battery-SSB-Material-Performance-and-CCD-Log_2026-05-16]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
+object:
+  description: 2026년 하반기 합성된 황화물계(Argyrodite-type) 고체 전해질 및 SSB 셀의 실측 이온 전도도 및 임계
+    전류 밀도(CCD) 로그
+  object_type: Data
+  tier: 2
+properties:
+  activation_energy: 0.28 eV
+  area_specific_resistance: 15.2 Ω·cm2
+  critical_current_density: 4.25 mA/cm2
+  ionic_conductivity: 12.5 mS/cm
+  working_interface_pressure: 450 MPa
 semantic:
-  is_instance_of: "[[[MOC] 02_Battery]]"
   alternative_parents: []
+  is_instance_of: '[[[MOC] 02_Battery]]'
 spo_graph:
-  - subject: "Ionic Conductivity"
-    predicate: "measured_value"
-    object: "12.5 mS/cm"
-    evidence_coordinate: "[Ref: SSB-LOG-2026] Section 1"
-    evidence_hash: "cbdae3b3cf6e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
-  - subject: "Critical Current Density"
-    predicate: "measured_value"
-    object: "4.25 mA/cm2"
-    evidence_coordinate: "[Ref: SSB-LOG-2026] Section 1"
-    evidence_hash: "cbdae3b3cf6e"
-    evidence_timestamp: "2026-05-17T22:59:20+09:00"
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_measurement
+  object: 12.5 mS/cm
+  predicate: measured_value
+  subject: Ionic Conductivity
+  weight: 1.0
+- evidence_coordinate: '[데이터 부재] Section 1'
+  intent: empirical_measurement
+  object: 4.25 mA/cm2
+  predicate: measured_value
+  subject: Critical Current Density
+  weight: 1.0
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
-
 
 # [Battery] Battery-SSB-Material-Performance-and-CCD-Log_2026-05-16
 

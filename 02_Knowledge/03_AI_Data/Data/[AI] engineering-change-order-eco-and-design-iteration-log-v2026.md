@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] engineering-change-order-eco-and-design-iteration-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "d26931120d5da338d0e906013139216df1b15020747eab66bf6bce8868cbb3c6"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: d26931120d5da338d0e906013139216df1b15020747eab66bf6bce8868cbb3c6
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] engineering-change-order-eco-and-design-iteration-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] engineering-change-order-eco-and-design-iteration-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] engineering-change-order-eco-and-design-iteration-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  affected_items_per_change: average number of BOM sub-items affected per ECO
+  avg_eco_lead_time: average days from ECR to ECN
+  compliance_lead_time_threshold: 5-10 days
+  convergence_model: e_n = alpha^n * e_0
+  cost_per_eco: C_eco
+  cost_reduction_lead_time_threshold: 10-20 days
+  eco_cost_model: C_eco = C_design + C_scrap + C_tooling * exp(lambda * t)
+  eco_frequency_monthly: total number of engineering change orders issued per month
+  fit_lead_time_threshold: 2-4 days
+  form_lead_time_threshold: 3-5 days
+  function_lead_time_threshold: 7-14 days
+  iterations_per_design: n
+  rft_rate: right first time rate (%)
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] engineering-change-order-eco-and-design-iteration-log-v2026
 

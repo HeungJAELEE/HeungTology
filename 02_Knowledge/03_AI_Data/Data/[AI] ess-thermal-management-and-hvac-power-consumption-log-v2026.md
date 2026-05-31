@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ess-thermal-management-and-hvac-power-consumption-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "f62379ee07b13611c6f89c8a70ce3becf7dc2156513db06e21ba5aac6e372e33"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: f62379ee07b13611c6f89c8a70ce3becf7dc2156513db06e21ba5aac6e372e33
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ess-thermal-management-and-hvac-power-consumption-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ess-thermal-management-and-hvac-power-consumption-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ess-thermal-management-and-hvac-power-consumption-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  air_cooled_cop_range: 2.5-3.5
+  critical_ambient_temp_threshold: 35C
+  hvac_load_multiplier_at_threshold: '2.0'
+  immersion_cooled_cop_range: 6.0-7.5
+  liquid_cooled_cop_range: 4.0-5.5
+  recommended_target_temp_range: 15-30C
+  reversible_heat_load_contribution: 30%
+  rte_degradation_at_threshold: 4%
+  soh_decay_rate_per_5deg_increase: 25%
+  total_heat_generation_model: Q_total = I^2R + I*T*(dUoc/dT)
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ess-thermal-management-and-hvac-power-consumption-log-v2026
 

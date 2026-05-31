@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] tech-war-export-control-impact-analysis-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1c61a0bfc038c974dd8af43e122865bbbb5944bf62ee0009907a5dbfc7f7411e"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1c61a0bfc038c974dd8af43e122865bbbb5944bf62ee0009907a5dbfc7f7411e
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] tech-war-export-control-impact-analysis-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] tech-war-export-control-impact-analysis-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Risk
   tier: 1
-  description: '[AI] tech-war-export-control-impact-analysis-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  advanced_logic_chips_rev_loss_pct: 12.0
+  ai_gpu_rev_loss_pct: 15.4
+  compliance_cost_index_usd_range: 10M-500M
+  eda_rev_loss_pct: 8.2
+  entity_list_count_range: 1000-5000
+  euv_rev_loss_pct: 22.5
+  gaafet_rev_loss_pct: 5.5
+  localization_rate_range_pct: 20-80
+  market_share_shift_multiplier: 1.5
+  splinternet_compatibility_cost_increase_pct: 15.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] tech-war-export-control-impact-analysis-log-v2026
 

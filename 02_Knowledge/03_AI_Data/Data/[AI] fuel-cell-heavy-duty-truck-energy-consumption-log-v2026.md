@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] fuel-cell-heavy-duty-truck-energy-consumption-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "4e7353a58d4a90b8ff5d4a12999a6509a25e7ce40a6f897b81b32e9ca1cad7f1"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 4e7353a58d4a90b8ff5d4a12999a6509a25e7ce40a6f897b81b32e9ca1cad7f1
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] fuel-cell-heavy-duty-truck-energy-consumption-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] fuel-cell-heavy-duty-truck-energy-consumption-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] fuel-cell-heavy-duty-truck-energy-consumption-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  battery_buffer_absorption_threshold: 0.7
+  curb_weight_tons: 18
+  downhill_energy_recovery_ratio: 2.5
+  highway_speed_kmh: 80
+  hydrogen_consumption_cold_range: 10-13
+  hydrogen_consumption_empty_range: 4.5-6.0
+  hydrogen_consumption_highway_range: 8.0-10.0
+  hydrogen_consumption_uphill_range: 25-40
+  hydrogen_consumption_urban_range: 9.0-12.0
+  max_payload_tons: 40
+  parasitic_load_cooling_percent: 0.1
+  regenerative_braking_efficiency_urban: 25-35%
+  stack_voltage_drop_reduction: 0.2
+  uphill_grade_percent: 6
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] fuel-cell-heavy-duty-truck-energy-consumption-log-v2026
 

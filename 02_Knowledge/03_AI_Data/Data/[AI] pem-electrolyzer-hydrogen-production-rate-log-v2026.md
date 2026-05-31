@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] pem-electrolyzer-hydrogen-production-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "758754ea6d3811cd92b5e8ed160fd1a0fcf20ef3c6811c3160ba458420b14cbb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 758754ea6d3811cd92b5e8ed160fd1a0fcf20ef3c6811c3160ba458420b14cbb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] pem-electrolyzer-hydrogen-production-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] pem-electrolyzer-hydrogen-production-rate-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] pem-electrolyzer-hydrogen-production-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  alkaline_operating_temp_range_c: 60-90
+  alkaline_production_rate_range_nm3_hr_m2: 5.0-15.0
+  critical_current_density_a_cm2: 2
+  faraday_efficiency_threshold_percent: 95
+  h2_concentration_safety_limit_percent: 2
+  h2_purity_threshold_percent: 99.999
+  hhv_energy_density_kwh_kg: 39.4
+  high_pressure_operation_bar: 30
+  pem_efficiency_hhv_range_percent: 75-82
+  pem_operating_temp_range_c: 50-80
+  pem_power_consumption_range_kwh_kg: 50-55
+  pem_production_rate_range_nm3_hr_m2: 20.0-50.0
+  soec_operating_temp_range_c: 600-850
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] pem-electrolyzer-hydrogen-production-rate-log-v2026
 

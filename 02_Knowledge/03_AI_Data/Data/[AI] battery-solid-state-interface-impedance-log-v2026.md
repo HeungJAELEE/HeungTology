@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-solid-state-interface-impedance-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0cb1f9ef40188d89dab45b73844f0bd8d22e06b3f536388238e2b99d8950a808"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0cb1f9ef40188d89dab45b73844f0bd8d22e06b3f536388238e2b99d8950a808
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-solid-state-interface-impedance-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] battery-solid-state-interface-impedance-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] battery-solid-state-interface-impedance-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  composite_ccd: 1.2 mA/cm^2
+  composite_interface_resistance: 30 Ohm cm^2
+  composite_ion_conductivity: 2.5e-3 S/cm
+  critical_current_density_limit: 1.0 mA/cm^2
+  impedance_dominance_ratio: '0.85'
+  interface_thickness_range: 5-20 nm
+  linbo3_coating_optimal_thickness: 5 nm
+  operating_pressure_range: 10-30 MPa
+  oxide_ccd: 0.8 mA/cm^2
+  oxide_interface_resistance: 85 Ohm cm^2
+  oxide_ion_conductivity: 1.0e-3 S/cm
+  polymer_ccd: 0.5 mA/cm^2
+  polymer_interface_resistance: 45 Ohm cm^2
+  polymer_ion_conductivity: 1.0e-5 S/cm
+  sulfide_ccd: 1.5 mA/cm^2
+  sulfide_interface_resistance: 15 Ohm cm^2
+  sulfide_ion_conductivity: 1.2e-2 S/cm
+  voltage_window: 0-4.5 V
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-solid-state-interface-impedance-log-v2026
 

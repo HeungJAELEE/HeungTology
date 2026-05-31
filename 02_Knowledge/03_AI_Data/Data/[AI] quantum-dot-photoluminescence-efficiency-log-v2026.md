@@ -1,37 +1,46 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] quantum-dot-photoluminescence-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "5d061da2f3f4d4482908efa6904ea0f502c7cea1adb3c9d18ef5f1b70d26fcfb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 5d061da2f3f4d4482908efa6904ea0f502c7cea1adb3c9d18ef5f1b70d26fcfb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] quantum-dot-photoluminescence-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] quantum-dot-photoluminescence-efficiency-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] quantum-dot-photoluminescence-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  energy_bandgap_equation: E_g(QD) = E_{g,bulk} + h^2/(8R^2)*(1/m_e* + 1/m_h*) - 1.8e^2/(epsilon*R)
+  fwhm_range_nm:
+  - 20.0
+  - 40.0
+  max_thermal_quenching_ratio_at_80c: 0.1
+  particle_size_deviation_limit: 0.05
+  quantum_yield_equation: QY = k_r / (k_r + k_{nr})
+  rec2020_coverage_target_pct: 95.0
+  target_quantum_yield_pct: 90.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] quantum-dot-photoluminescence-efficiency-log-v2026
 

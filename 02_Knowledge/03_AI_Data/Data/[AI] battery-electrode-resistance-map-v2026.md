@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-electrode-resistance-map-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "48f5a58d0e91b8d494f8efd9652538d4f99509803aea2f9953fe0f6a251203d7"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 48f5a58d0e91b8d494f8efd9652538d4f99509803aea2f9953fe0f6a251203d7
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-electrode-resistance-map-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-electrode-resistance-map-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  anode_rolling_density: 1.6 g/cc
+  cathode_rolling_density: 3.4 g/cc
+  delamination_threshold_ratio: 10%
+  edge_resistance_deviation: 15%
+  graphite_anode_target_asr: 0.15 ± 0.02
+  grid_resolution: 10mm x 10mm
+  hotspot_cv_threshold: 5%
+  hotspot_probability_multiplier: '3.5'
+  interface_resistance_limit: 0.1 ohm_cm2
+  lfp_cathode_target_asr: 1.50 ± 0.2
+  ncma_cathode_target_asr: 0.85 ± 0.1
+  probe_pressure_standard: 3 N
+  sic_composite_target_asr: 0.45 ± 0.05
+  ssb_target_asr: 25.0 ± 5.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-electrode-resistance-map-v2026
 

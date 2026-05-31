@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] vaccine-cold-chain-temperature-and-stability-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "683f42df5fa262cd8d4384c338a2037755b9a27dd4c650d55212f49a09666ff2"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 683f42df5fa262cd8d4384c338a2037755b9a27dd4c650d55212f49a09666ff2
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] vaccine-cold-chain-temperature-and-stability-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] vaccine-cold-chain-temperature-and-stability-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] vaccine-cold-chain-temperature-and-stability-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  excursion_duration_threshold_min: 5.0
+  external_data_endpoint: urban-traffic-flow-and-congestion-index-log-v2026
+  insulation_r_measured: 12.5
+  insulation_r_target: 10.0
+  power_backup_target_hr: 12.0
+  stability_index_measured_pct: 99.4
+  stability_index_target_pct: 98.0
+  storage_temp_measured_c: -72.4
+  storage_temp_target_c: -70 +/- 5.0
+  track_success_target_pct: 100.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] vaccine-cold-chain-temperature-and-stability-log-v2026
 

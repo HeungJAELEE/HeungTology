@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[Semiconductor] semiconductor-equipment-commonality-analysis-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "01_Semiconductor"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b578cad9ad40a7436801505d5d478a805151a71f20862c729faea0f49d54237b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b578cad9ad40a7436801505d5d478a805151a71f20862c729faea0f49d54237b
+metadata:
+  date: '2026-05-16'
+  domain: 01_Semiconductor
+  id: '[[[Semiconductor] semiconductor-equipment-commonality-analysis-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[Semiconductor] semiconductor-equipment-commonality-analysis-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[Semiconductor] semiconductor-equipment-commonality-analysis-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  control_system_target: '> 98%'
+  external_db_endpoint: Equipment_Commonality_Database
+  mechanical_interface_target: '> 95%'
+  non_standard_inventory_holding_cost_multiplier: '2.5'
+  non_standard_mfc_downtime: 48h
+  power_supply_unit_target: '> 90%'
+  repair_response_time_reduction: 60%
+  sensor_actuator_target: '> 80%'
+  simulation_tool: Python FidelityEngine
+  spares_interchangeability_target: '> 75%'
+  spares_inventory_reduction_threshold: 30%
+  verified_inventory_cost_reduction: 35%
 semantic:
-  is_instance_of: "[[[MOC] 반도체_백서_통합_지휘소]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 반도체_백서_통합_지휘소]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [Semiconductor] semiconductor-equipment-commonality-analysis-v2026
 

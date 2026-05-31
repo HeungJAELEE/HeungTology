@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] subsea-pipeline-pressure-and-corrosion-rate-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "b6b48cbb88d92d3ec96a89ea1efa8f1c222d79bcae39ce8e3978e6ec98c6ba70"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: b6b48cbb88d92d3ec96a89ea1efa8f1c222d79bcae39ce8e3978e6ec98c6ba70
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] subsea-pipeline-pressure-and-corrosion-rate-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] subsea-pipeline-pressure-and-corrosion-rate-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] subsea-pipeline-pressure-and-corrosion-rate-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  ambient_pressure_bar: 102.5
+  corrosion_rate_mm_yr: 0.042
+  corrosion_rate_threshold_mm_yr: 0.05
+  cp_voltage_target_range_v:
+  - -0.85
+  - -1.1
+  cp_voltage_v: -1.05
+  flow_velocity_m_s: 3.2
+  flow_velocity_max_target_m_s: 5.0
+  internal_pressure_bar: 154.2
+  internal_pressure_target_bar: 150.0
+  wall_thickness_min_target_mm: 23.5
+  wall_thickness_mm: 24.5
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] subsea-pipeline-pressure-and-corrosion-rate-log-v2026
 

@@ -1,37 +1,55 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] information-computing-generative-ai-model-training-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "6cb0754ebde0c87f21e5ea2b737581f07e4c27904b5829d694cacae6e55736fb"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 6cb0754ebde0c87f21e5ea2b737581f07e4c27904b5829d694cacae6e55736fb
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] information-computing-generative-ai-model-training-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] information-computing-generative-ai-model-training-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] information-computing-generative-ai-model-training-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  gpu_memory_precision: 0.1%
+  gpu_memory_utilization_range: 80-98%
+  gradient_norm_precision: '0.01'
+  gradient_norm_range: 0.0-1.0
+  hallucination_prediction_precision: 90%
+  hallucination_rate_precision: 0.1%
+  hallucination_rate_range: 1-15%
+  inference_latency_precision: 1 ms
+  inference_latency_range: 10-100 ms
+  perplexity_precision: '0.1'
+  perplexity_range: 10-100
+  reasoning_accuracy_precision: 1%
+  reasoning_accuracy_range: 70-95%
+  scaling_law_loss_reduction_rate: 15% per 2x parameter increase
+  throughput_precision: 10 t/s
+  throughput_range: 1000-10000 t/s
+  training_loss_precision: '0.001'
+  training_loss_range: 1.0-5.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] information-computing-generative-ai-model-training-log-v2026
 

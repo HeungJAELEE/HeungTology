@@ -1,37 +1,53 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] grid-frequency-regulation-and-response-time-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "eea931f3682bee4006f080c8f1f67f7667fe68216c9a6f1058cc1c81a61aef0f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: eea931f3682bee4006f080c8f1f67f7667fe68216c9a6f1058cc1c81a61aef0f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] grid-frequency-regulation-and-response-time-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] grid-frequency-regulation-and-response-time-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] grid-frequency-regulation-and-response-time-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bess_frequency_range: 60.00 +/- 0.01 Hz
+  bess_ramp_rate_min: 100 MW/s
+  bess_response_time_max: 20 ms
+  bess_trigger_window: 100 ms
+  deadband_threshold: 0.02 Hz
+  demand_response_frequency_range: 60.00 +/- 0.05 Hz
+  demand_response_response_time: 1-10 s
+  ems_comm_latency_threshold: 200 ms
+  gas_turbine_frequency_range: 60.00 +/- 0.20 Hz
+  gas_turbine_ramp_rate: 0.5-2 MW/s
+  gas_turbine_response_time: 1-5 min
+  grid_frequency_standard: 60.00 Hz
+  pumped_hydro_frequency_range: 60.00 +/- 0.10 Hz
+  pumped_hydro_ramp_rate: 1-5 MW/s
+  pumped_hydro_response_time: 10-30 s
+  rocof_critical_threshold: 0.5 Hz/s
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] grid-frequency-regulation-and-response-time-log-v2026
 

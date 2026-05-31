@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] csr-impact-and-community-engagement-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "da52121f25d261ac4da1e6ed3446c7496460b597c3b83e042fee2fe1f01758b5"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: da52121f25d261ac4da1e6ed3446c7496460b597c3b83e042fee2fe1f01758b5
+metadata:
+  ai_status: pending_review
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] csr-impact-and-community-engagement-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] csr-impact-and-community-engagement-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  digi_academy_sroi: '1:5.2'
+  eco_forest_sroi: '1:3.8'
+  health_care_sroi: '1:4.1'
+  impact_acceleration_formula: d^2V/dt^2
+  local_vendor_sroi: '1:2.5'
+  media_sentiment_range: 0-1
+  social_license_sroi_threshold: '1:4'
+  social_license_strengthening_rate: 0.25
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] csr-impact-and-community-engagement-log-v2026
 
@@ -44,7 +52,7 @@ validation:
 
 ### 2.1 [활동별 사회적 임팩트 및 공동체 반응 테이블 (v2026)]
 
-| 활동 프로젝트 | 집행액 ($K) | 수혜 인원 | 실측 SROI | 지역 지지율 | 공학적 의미 (Rationale V6.3.7) |
+| 활동 프로젝트 | 집행액 ($K) | 수혜 인원 | 실측 SROI | 지역 지지율 | 공학적 의미 (Rationale V6.3.7) |$
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | **Digi-Academy** | $\$450$ | $1,200$ | $1:5.2$ | $92.0$ | **Future**: 기술 교육을 통한 기회 무결성 로그 |
 | **Eco-Forest** | $\$200$ | $45,000$ | $1:3.8$ | $88.5$ | **Eco**: 환경 복원을 통한 생태 무결성 지표 |
@@ -53,7 +61,7 @@ validation:
 | **Crisis-Relief**| $\$150$ | $12,000$ | **N/A** | $98.0$ | **Trust**: 긴급 구호를 통한 신뢰 무결성 지표 |
 
 ### 2.2 [CSR 임팩트 및 소통 관리 파라미터]
-- **Total CSR Spending ($):** 연간 사회 공헌 및 자선 활동에 사용된 직접 투자비 총액.
+- **Total CSR Spending ($):** 연간 사회 공헌 및 자선 활동에 사용된 직접 투자비 총액.$
 - **Verified SROI Ratio (Social Return on Investment):** 외부 전문 기관에 의해 검증된 투입 비용 대비 사회적 편익 가치 창출 비율.
 - **Community Satisfaction Rate (%):** 지역 주민 설문을 통해 산출된 기업의 사회 공헌 활동에 대한 만족도 점수.
 - **NGO Partner Satisfaction (%):** 협력 파트너 기관들이 평가한 공동 프로젝트 수행의 원활함과 신뢰도 점수.

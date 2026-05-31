@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] sustainability-smart-water-desalination-efficiency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1783dec2ff13b1235b3a9bed033a2dfaa1b023c47d2a36f2a9e6d0753a8f9501"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1783dec2ff13b1235b3a9bed033a2dfaa1b023c47d2a36f2a9e6d0753a8f9501
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] sustainability-smart-water-desalination-efficiency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] sustainability-smart-water-desalination-efficiency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] sustainability-smart-water-desalination-efficiency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  bio_fouling_probability_threshold: 0.95
+  chem_dosing_range_l_hr: 0.1-2.0
+  diff_pressure_range_bar: 1.0-3.5
+  energy_consumption_range_kwh_m3: 2.5-4.5
+  feed_salinity_range_ppm: 30000-45000
+  pressure_rise_acceleration_threshold: 1.5
+  product_tds_range_ppm: 50-150
+  recovery_rate_range_percent: 40-55
+  temp_increase_efficiency_gain_ratio: 0.005
+  temp_increase_tmp_reduction_ratio: 0.02
+  turbidity_range_ntu: 0.1-1.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] sustainability-smart-water-desalination-efficiency-log-v2026
 

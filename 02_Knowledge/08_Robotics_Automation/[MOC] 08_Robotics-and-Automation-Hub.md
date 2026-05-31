@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "MOC-ROBOT-AUTOMATION-HUB-2026-V7.5.3"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "08_Robotics_Automation_Intelligence"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-core-log-v2026"
-  original_author: "Antigravity Vault Core Team"
-  original_hash: "c82143b7665d8deb19b2cc0639bc071da1f21436ad5738d7408b2ec6f7e858bb"
+  dataset_reference: global-core-log-v2026
+  original_author: Antigravity Vault Core Team
+  original_hash: c82143b7665d8deb19b2cc0639bc071da1f21436ad5738d7408b2ec6f7e858bb
+metadata:
+  date: '2026-05-16'
+  domain: 08_Robotics_Automation_Intelligence
+  id: MOC-ROBOT-AUTOMATION-HUB-2026-V7.5.3
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Fidelity Robotics Intelligence Command Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Robotics Intelligence Command Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  amr_position_accuracy_cm_target: 1.0
+  amr_position_accuracy_cm_verified: 2.45
+  amr_speed_m_s_target: 3.0
+  amr_speed_m_s_verified: 1.85
+  collision_detection_latency_ms_target: 1.0
+  collision_detection_latency_ms_verified: 4.85
+  control_cycle_hz_target: 4000
+  control_cycle_hz_verified: 1000
+  repeatability_mm_target: 0.005
+  repeatability_mm_verified: 0.012
+  timestamp: '2026-05-16'
+  torque_resolution_nm_target: 0.1
+  torque_resolution_nm_verified: 0.24
+  version_id: V7.5.3
 semantic:
-  is_instance_of: "[[[MOC] 08_Robotics_Automation]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] 08_Robotics_Automation]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 08_Robotics-and-Automation-Hub
 

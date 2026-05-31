@@ -1,35 +1,44 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "[moc]-03_03_industrial_ai-v7.5.2"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Industrial_AI_Engineering"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "doi:10.1016/j.indchemeng.2024.05.001"
-  original_author: "Smart Manufacturing Institute"
-  original_hash: "2d392b4f4a30469d26f8bdb0c397576ae98b07e5a8524f15cd3998b237547d11"
+  dataset_reference: doi:10.1016/j.indchemeng.2024.05.001
+  original_author: Smart Manufacturing Institute
+  original_hash: 2d392b4f4a30469d26f8bdb0c397576ae98b07e5a8524f15cd3998b237547d11
+metadata:
+  ai_status: pending_review
+  date: '2026-05-14'
+  domain: Industrial_AI_Engineering
+  id: '[moc]-03_03_industrial_ai-v7.5.2'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "MOC"
+  description: High-Fidelity Industrial AI Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Industrial AI Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  annual_energy_cost_reduction_krw: 2,000,000,000
+  chiller_load_optimization_rate: 12%
+  energy_saving_ratio_target: '> 15%'
+  failure_threshold: 0.2
+  model_drift_index_target: < 2%/month
+  prediction_lead_time_target: '> 96hr'
+  process_loop_time_target: < 50ms
+  xai_fidelity_target: '> 95%'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
 
 # [[[MOC] 03_03_Industrial_AI
@@ -43,11 +52,11 @@ Industrial AI (IAI) distinguishes itself from consumer AI through mandatory **Re
 
 | Parameter | Theoretical (Target) | Verified (Actual) | Variance | [Ref] |
 | :--- | :--- | :--- | :--- | :--- |
-| **Prediction Lead Time** | $> 96\,\text{hr}$ | $> 72\,\text{hr}$ | $-25\%$ | [Ref: SMRM] |
-| **Model Drift Index** | $< 2\% / \text{month}$ | $< 5\% / \text{month}$ | $+150\%$ | [Ref: SMRM] |
-| **Energy Saving Ratio** | $> 15\%$ | $> 10\%$ | $-33.3\%$ | [Ref: SMRM] |
-| **Process Loop Time** | $< 50\,\text{ms}$ | $< 100\,\text{ms}$ | $+100\%$ | [Ref: SMRM] |
-| **XAI Fidelity** | $> 95\%$ | $> 90\%$ | $-5.3\%$ | [Ref: SMRM] |
+| **Prediction Lead Time** | $> 96\,\text{hr}$ | $> 72\,\text{hr}$ | $-25\%$ | [데이터 부재] |
+| **Model Drift Index** | $< 2\% / \text{month}$ | $< 5\% / \text{month}$ | $+150\%$ | [데이터 부재] |
+| **Energy Saving Ratio** | $> 15\%$ | $> 10\%$ | $-33.3\%$ | [데이터 부재] |
+| **Process Loop Time** | $< 50\,\text{ms}$ | $< 100\,\text{ms}$ | $+100\%$ | [데이터 부재] |
+| **XAI Fidelity** | $> 95\%$ | $> 90\%$ | $-5.3\%$ | [데이터 부재] |
 
 ## 3. [Mathematical Foundations] Modeling Frameworks
 
@@ -66,8 +75,8 @@ $$Loss = Loss_{data} + \lambda Loss_{physics}$$
 - **Methodology:** Deployment of **Python FidelityEngine**. Input vectors: Ambient temperature, Advanced Planning and Scheduling (APS) data, and equipment heat load.
 - **Control Logic:** Integration of AI-driven variable cooling water temperature control with Building Management Systems (BMS).
 - **Quantitative Results:** 
-    - Annual energy cost reduction: $2,000,000,000\,\text{KRW}$ [Ref: SMRM].
-    - Carbon emission reduction: Achieved via $12\%$ [Ref: SMRM] chiller load optimization.
+    - Annual energy cost reduction: $2,000,000,000\,\text{KRW}$ [데이터 부재].
+    - Carbon emission reduction: Achieved via $12\%$ [데이터 부재] chiller load optimization.
 
 ## 5. [Fidelity Engine] RUL Simulation Module
 

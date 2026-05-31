@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ai-model-drift-and-real-time-re-training-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "10a888abf7095a47bb364be39c3dab06447d27e4ac27cd072c5956d97f30263b"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 10a888abf7095a47bb364be39c3dab06447d27e4ac27cd072c5956d97f30263b
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ai-model-drift-and-real-time-re-training-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ai-model-drift-and-real-time-re-training-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] ai-model-drift-and-real-time-re-training-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  accuracy_drop_map_threshold: 0.01
+  catastrophic_forgetting_index_threshold: 0.02
+  concept_drift_latency_range: 1-24h
+  critical_forgetting_loss_mitigated: 0.02
+  critical_forgetting_loss_unmitigated: 0.15
+  detection_latency_threshold: 1.0
+  drift_score_p_value_threshold: 0.05
+  incremental_learning_rate_range: 1e-5 to 1e-4
+  ks_statistic_range: 0-1
+  retraining_time_gpu_h_threshold: 10.0
+  retraining_trigger_accuracy_drop: 3-5%
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ai-model-drift-and-real-time-re-training-log-v2026
 

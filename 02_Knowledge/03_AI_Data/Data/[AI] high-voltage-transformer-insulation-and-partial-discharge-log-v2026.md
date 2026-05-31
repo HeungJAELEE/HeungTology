@@ -1,37 +1,50 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] high-voltage-transformer-insulation-and-partial-discharge-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0cefe9dd5c6408885e0e855882ab0d2b70505aa4a633498f27af0503d00eadad"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0cefe9dd5c6408885e0e855882ab0d2b70505aa4a633498f27af0503d00eadad
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] high-voltage-transformer-insulation-and-partial-discharge-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] high-voltage-transformer-insulation-and-partial-discharge-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] high-voltage-transformer-insulation-and-partial-discharge-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  arcing_temperature_threshold: 700°C
+  hotspot_temp_threshold: 95.0°C
+  insulation_resistance_threshold: 100.0 GΩ
+  measured_hotspot_temp: 84.5°C
+  measured_insulation_res: 124.5 GΩ
+  measured_moisture_content: 8.2 ppm
+  measured_oil_strength: 68.4 kV
+  measured_partial_discharge: 42.0 pC
+  measured_tan_delta: '0.0032'
+  moisture_content_threshold: 10.0 ppm
+  oil_strength_threshold: 60.0 kV
+  partial_discharge_threshold: 100.0 pC
+  tan_delta_threshold: '0.0050'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] high-voltage-transformer-insulation-and-partial-discharge-log-v2026
 

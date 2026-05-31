@@ -1,37 +1,47 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] ergonomic-workstation-posture-and-strain-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "0fb1d21679dc946ce95fd31bdb9d44f6213b1238af2c6a8558fbebbc2a98de2d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 0fb1d21679dc946ce95fd31bdb9d44f6213b1238af2c6a8558fbebbc2a98de2d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] ergonomic-workstation-posture-and-strain-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] ergonomic-workstation-posture-and-strain-log-v2026에 관한 고밀도 지능
+    노드'
+  object_type: Data
   tier: 1
-  description: '[AI] ergonomic-workstation-posture-and-strain-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  backrest_angle_optimal_deg: 110.0
+  backrest_angle_suboptimal_deg: 90.0
+  joint_deviation_target_deg: 15.0
+  lumbar_pressure_increase_rate: 0.3
+  monitor_height_critical_threshold_cm: 10.0
+  muscle_strain_target_uv: 200.0
+  neck_inclination_target_deg: 20.0
+  reba_score_target: 4.0
+  spinal_loading_target_n: 500.0
+  work_rest_ratio_target: 0.8
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] ergonomic-workstation-posture-and-strain-log-v2026
 

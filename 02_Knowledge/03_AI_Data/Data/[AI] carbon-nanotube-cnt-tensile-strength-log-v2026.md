@@ -1,37 +1,59 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] carbon-nanotube-cnt-tensile-strength-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "c995391822f60a1ea62372ea7cfd9538b08798c74e45b640e81f037bf106c1f9"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: c995391822f60a1ea62372ea7cfd9538b08798c74e45b640e81f037bf106c1f9
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] carbon-nanotube-cnt-tensile-strength-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] carbon-nanotube-cnt-tensile-strength-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  alignment_deviation_threshold_deg: 10
+  alignment_reinforcement_drop_ratio: 0.5
+  cnt_bundle_elongation_percent: 2-5
+  cnt_bundle_specific_strength_knm_kg: 1000-
+  cnt_bundle_tensile_strength_gpa: 1-10
+  cnt_bundle_youngs_modulus_tpa: 0.1-0.3
+  cnt_fiber_elongation_percent: 1-3
+  cnt_fiber_tensile_strength_gpa: 3-8
+  cnt_fiber_youngs_modulus_tpa: 0.1-0.2
+  defect_density_strength_drop_ratio: 40% per 1% increase
+  defected_cnt_elongation_percent: <2
+  defected_cnt_tensile_strength_gpa: 10-30
+  defected_cnt_youngs_modulus_tpa: 0.5-0.7
+  interface_slip_strength_loss_ratio: 0.9
+  min_aspect_ratio_threshold: 1000000
+  mwcnt_elongation_percent: 5-10
+  mwcnt_specific_strength_knm_kg: 20000-
+  mwcnt_tensile_strength_gpa: 30-100
+  mwcnt_youngs_modulus_tpa: 0.8-1.0
+  swcnt_elongation_percent: 10-15
+  swcnt_specific_strength_knm_kg: '>50000'
+  swcnt_tensile_strength_gpa: 100-200
+  swcnt_youngs_modulus_tpa: 1.0-1.2
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] carbon-nanotube-cnt-tensile-strength-log-v2026
 

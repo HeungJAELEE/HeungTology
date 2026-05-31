@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] oee-overall-equipment-effectiveness-calculation-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "09a5062b8c465c08822d0482f5dceec4fe8b2dd6acb750514f4e7c367e9db027"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 09a5062b8c465c08822d0482f5dceec4fe8b2dd6acb750514f4e7c367e9db027
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] oee-overall-equipment-effectiveness-calculation-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] oee-overall-equipment-effectiveness-calculation-log-v2026에 관한
+    고밀도 지능 노드'
+  object_type: Concept
   tier: 1
-  description: '[AI] oee-overall-equipment-effectiveness-calculation-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  continuous_process_oee_threshold: 90.0
+  ict_parameter: ideal_cycle_time
+  industry_average_oee_max: 75.0
+  industry_average_oee_min: 60.0
+  mtbf_definition: mean_time_between_failures
+  mttr_definition: mean_time_to_repair
+  quality_loss_velocity_exponent: 2.0
+  setup_adjustment_downtime_ratio: 0.4
+  world_class_availability_threshold: 90.0
+  world_class_oee_threshold: 85.0
+  world_class_performance_threshold: 95.0
+  world_class_quality_threshold: 99.9
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] oee-overall-equipment-effectiveness-calculation-log-v2026
 

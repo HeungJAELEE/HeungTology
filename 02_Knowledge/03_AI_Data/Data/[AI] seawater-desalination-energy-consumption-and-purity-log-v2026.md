@@ -1,37 +1,51 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] seawater-desalination-energy-consumption-and-purity-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3bd4f3a700015849b5790e96b62e54701cdfc389930b662ac0f9b302127b044d"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3bd4f3a700015849b5790e96b62e54701cdfc389930b662ac0f9b302127b044d
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] seawater-desalination-energy-consumption-and-purity-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] seawater-desalination-energy-consumption-and-purity-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] seawater-desalination-energy-consumption-and-purity-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  energy_consumption_measured_kwh_m3: 2.42
+  energy_consumption_threshold_kwh_m3: 2.5
+  external_data_endpoint: space-weather-solar-flare-and-radiation-intensity-log-v2026
+  flux_increase_per_temp_rise_percent: 10.0
+  membrane_flux_measured_lmh: 14.5
+  membrane_flux_target_range_lmh: 12-16
+  osmotic_pressure_measured_bar: 25.2
+  product_tds_measured_mg_l: 185
+  product_tds_threshold_mg_l: 500
+  recovery_rate_measured_percent: 45.4
+  recovery_rate_target_range: 40-50
+  salt_rejection_measured_percent: 99.85
+  salt_rejection_threshold_percent: 99.8
+  temperature_rise_sensitivity_celsius: 5.0
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] seawater-desalination-energy-consumption-and-purity-log-v2026
 

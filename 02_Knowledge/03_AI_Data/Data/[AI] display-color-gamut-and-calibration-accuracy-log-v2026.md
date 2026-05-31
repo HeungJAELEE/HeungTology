@@ -1,37 +1,48 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] display-color-gamut-and-calibration-accuracy-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "1a48cd713bbfcd2089c358bd41e8ccc499f7fc3a392c69a128909bafefc00c6f"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 1a48cd713bbfcd2089c358bd41e8ccc499f7fc3a392c69a128909bafefc00c6f
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] display-color-gamut-and-calibration-accuracy-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] display-color-gamut-and-calibration-accuracy-log-v2026에 관한 고밀도
+    지능 노드'
+  object_type: Algorithm
   tier: 1
-  description: '[AI] display-color-gamut-and-calibration-accuracy-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  blue_organic_degradation_rate_offset: 0.2
+  delta_e_professional_threshold: 1.0
+  gamma_accuracy_deviation_threshold: 0.05
+  hdr_washout_threshold_nits: 1000
+  initial_calibration_delta_e: 3.5
+  lut_size_range: 17^3 to 65^3
+  standard_gamma_curves:
+  - '2.2'
+  - BT.1886
+  target_calibration_delta_e: 0.8
+  white_point_error_threshold_uv: 0.002
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] display-color-gamut-and-calibration-accuracy-log-v2026
 

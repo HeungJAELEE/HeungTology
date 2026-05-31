@@ -1,37 +1,49 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] battery-cell-temperature-sensor-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "2777294ba65338aaaf57cbfc52d480b6946cacecd8dd6e82b3b9ab9a29ef7df0"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 2777294ba65338aaaf57cbfc52d480b6946cacecd8dd6e82b3b9ab9a29ef7df0
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] battery-cell-temperature-sensor-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
-  tier: 1
   description: '[AI] battery-cell-temperature-sensor-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+  object_type: Data
+  tier: 1
+properties:
+  cell_temp_range: 25~65
+  cooling_efficiency_min: '85.0'
+  hysteresis_error_limit: '0.2'
+  ntc_nominal_resistance: '10'
+  ntc_tolerance: 1%
+  precision_resolution: '0.1'
+  rise_rate_threshold: '5.0'
+  sampling_rate: 0.1s
+  sensor_response_time_limit: '2.0'
+  steinhart_hart_a: 1e-3
+  steinhart_hart_b: 2e-4
+  steinhart_hart_c: 1e-7
+  temp_gradient_limit: '5.0'
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] battery-cell-temperature-sensor-log-v2026
 

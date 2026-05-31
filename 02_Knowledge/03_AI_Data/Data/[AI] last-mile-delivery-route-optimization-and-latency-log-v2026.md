@@ -1,37 +1,52 @@
 ---
-metadata:
-  date: "2026-05-16"
-  id: "[[[AI] last-mile-delivery-route-optimization-and-latency-log-v2026]]"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "03_AI_Data"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "global-dataset-inventory-hub"
-  original_author: "Antigravity Vault"
-  original_hash: "3ca3b077550b1a7654d61bd02f5c1db59260ec79c52b3353a7c863992de79e09"
+  dataset_reference: global-dataset-inventory-hub
+  original_author: Antigravity Vault
+  original_hash: 3ca3b077550b1a7654d61bd02f5c1db59260ec79c52b3353a7c863992de79e09
+metadata:
+  date: '2026-05-16'
+  domain: 03_AI_Data
+  id: '[[[AI] last-mile-delivery-route-optimization-and-latency-log-v2026]]'
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: '[AI] last-mile-delivery-route-optimization-and-latency-log-v2026에
+    관한 고밀도 지능 노드'
+  object_type: Data
   tier: 1
-  description: '[AI] last-mile-delivery-route-optimization-and-latency-log-v2026에 관한 고밀도 지능 노드'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  avg_delivery_time_min: 45.8
+  delivery_latency_sec: 12.5
+  delivery_success_rate: 0.992
+  drone_delivery_endpoint: autonomous-drone-delivery-success-and-collision-avoidance-log-v2026
+  drop_off_time_min: 1.5
+  fuel_per_delivery_l: 0.12
+  logistics_cost_share_ratio: 0.5
+  route_efficiency_index: 0.94
+  target_avg_delivery_time_min: 50.0
+  target_delivery_latency_sec: 30.0
+  target_delivery_success_rate: 0.98
+  target_drop_off_time_min: 2.0
+  target_fuel_per_delivery_l: 0.15
+  target_route_efficiency_index: 0.9
+  urban_traffic_flow_endpoint: urban-traffic-flow-and-congestion-index-log-v2026
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # [AI] last-mile-delivery-route-optimization-and-latency-log-v2026
 

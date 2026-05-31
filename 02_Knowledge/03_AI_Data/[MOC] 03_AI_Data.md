@@ -1,37 +1,45 @@
 ---
-metadata:
-  date: "2026-05-14"
-  id: "MOC-AI-DATA-2026-V7.5.2"
-  project: "Vault_Modernization"
-  version: "v7.8_Enterprise_Node"
-  revision: "r1"
-  domain: "Artificial_Intelligence_and_Data_Governance"
-  last_updated: "2026-05-17T22:59:20+09:00"
 lineage:
-  dataset_reference: "https://vault.antigravity.io/archives/MOC-AI-DATA-2026-V6.3.7"
-  original_author: "Antigravity Vault"
-  original_hash: "cc67969a2a37e1616c8c839472d7db7ba7cadbf202ea8a4e8423d3d82e665cb3"
+  dataset_reference: https://vault.antigravity.io/archives/MOC-AI-DATA-2026-V6.3.7
+  original_author: Antigravity Vault
+  original_hash: cc67969a2a37e1616c8c839472d7db7ba7cadbf202ea8a4e8423d3d82e665cb3
+metadata:
+  date: '2026-05-14'
+  domain: Artificial_Intelligence_and_Data_Governance
+  id: MOC-AI-DATA-2026-V7.5.2
+  last_updated: '2026-05-17T22:59:20+09:00'
+  project: Vault_Modernization
+  revision: r1
+  version: v7.9_Enterprise_Node
 object:
-  object_type: "Concept"
+  description: High-Fidelity Neural Architecture Node
+  object_type: Concept
   tier: 0
-  description: 'High-Fidelity Neural Architecture Node'
-temporal:
-  valid_from: "2026-05-17T22:59:20+09:00"
-  valid_to: null
+properties:
+  dpu_theoretical_offloading_latency_us: 50
+  dpu_verified_offloading_latency_us: 58
+  hbm_theoretical_throughput_tbs: 3.2
+  hbm_verified_throughput_tbs: 3.15
+  nvlink_theoretical_bandwidth_gbps: 900
+  nvlink_verified_bandwidth_gbps: 875
+  spec_version: v7.5.2
+  tensor_core_fp8_theoretical_efficiency: 1.0
+  tensor_core_fp8_verified_efficiency: 0.925
 semantic:
-  is_instance_of: "[[[MOC] Global-Dataset-Inventory-Hub]]"
   alternative_parents: []
-spo_graph:
-  []
+  is_instance_of: '[[[MOC] Global-Dataset-Inventory-Hub]]'
+spo_graph: []
+temporal:
+  valid_from: '2026-05-17T22:59:20+09:00'
+  valid_to: null
 trust_metrics:
-  T_static: 1.0
   decay_rate: 0.0
+  t_static: 1.0
 validation:
-  schema_version: "v7.8"
-  last_validated: "2026-05-17T22:59:20+09:00"
-  validated_by: "global_reinforcer_v7.8"
+  last_validated: '2026-05-17T22:59:20+09:00'
+  schema_version: v7.8
+  validated_by: global_reinforcer_v7.8
 ---
-
 
 # 03_AI_Data
 
