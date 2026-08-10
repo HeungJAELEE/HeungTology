@@ -1,107 +1,147 @@
-# 🪐 HeungTology (LLMWIKI V7.8 Enterprise): The Sovereign Industrial Intelligence Fabric
+# HeungTology
 
-> **"지능은 소유하는 것이 아니라, 무결한 구조로 배양하고 완벽한 해시로 방어하는 것이다."**
+제조·반도체·배터리 분야의 Markdown 지식을 **변경분만 증분 색인**하고, 자연어 질문과 관련된 **원문 후보 파일을 검색·재정렬**하는 로컬 RAG 검색 프로토타입입니다.
 
-**HeungTology**는 현대 첨단 산업(반도체, 배터리, 스마트팩토리)의 복잡성을 결정론적으로 지배하고 통제하기 위해 설계된 **글로벌 엔터프라이즈급 지식 배양 및 Graph-RAG 지능망 패브릭**입니다. V7.8 Enterprise 사양의 실시간 보안 방어선과 결정론적 지식 결합 체계를 기반으로 파편화된 원시 로그를 'HDS-Gold' 규격의 무결한 공학적 자산으로 정제합니다.
-
----
-
-## 📂 System Topology: File Structure
-
-HeungTology는 지식의 엄격한 격리와 SSOT(Single Source of Truth) 신뢰를 수호하기 위해 다음과 같은 거버넌스 트리 구조를 강력하게 유지합니다.
+현재 구현은 답변을 자동 생성하는 사내 챗봇이 아니라 다음 작업에 집중합니다.
 
 ```text
-C:\Anitigravity
-├── 00_Plan/                # [Master Control] 마스터플랜 및 세션별 인수인계서
-├── 01_Inbox/               # [Quarantine] 외부망 유입 데이터 및 미검증 초안 검역소 (t_static: 0.0)
-├── 02_Knowledge/           # [SSOT Vault] HDS-Gold 규격의 핵심 고밀도 지식 저장소 (Read-Only)
-│   ├── 00_Companies/       # 글로벌 기업 분석 및 공급망 데이터
-│   ├── 00_System/          # 시스템 운영 SOP 및 거버넌스 노드
-│   ├── 01_Semiconductor/   # 전공정/후공정 반도체 고밀도 지능
-│   ├── 02_Battery/         # 배터리 소재 및 셀 매뉴팩처링
-│   ├── 03_AI_Data/         # 인공지능 모델 및 데이터 사이언스
-│   ├── 04_Strategy_Mgmt/   # 경영 전략 및 품질 관리 (ISO 9001 / IATF 16949)
-│   ├── 07_Display_Comm/    # 디스플레이 및 차세대 통신 기술
-│   ├── 08_Robotics_Auto/   # 로보틱스 및 공정 자동화
-│   ├── 25_Infrastructure/  # 스마트시티 및 신재생 에너지 그리드
-│   └── _index/             # [Topology] Neo4j 및 RAG 벡터 인덱스 캐시
-├── 03_Skills/              # [AI Skillset] 도메인별 파이썬 연산 및 TDD 스크립트
-├── 04_Tools/               # [Utilities] 시스템 관리 및 Google Drive 연동 동기화 툴
-├── 05_System_Modes/        # [Protocols] 세션 모드별 행동 강령 및 YAML 표준 교범
-├── 06_Output/              # [Production] 최종 컴파일 및 발행 완료된 기술 백서
-├── global_reinforcer_v7.py # [Reinforcement] 3배 고밀도 팽창 및 SHA-256 해시 인클로저 엔진 (V7.8 업그레이드 완료)
-├── rag_cli_v2.py           # [Core RAG Engine] V7.8 Enterprise 통합 RAG & 융합 엔진 (V7.8 업그레이드 완료)
-└── README.md               # [Documentation] 본 시스템 기술 백서 (이 문서)
+Markdown·YAML 원문
+→ 변경 파일 감지
+→ Metadata·관계정보 파싱
+→ BGE-M3 Embedding
+→ ChromaDB 증분 Upsert
+→ 후보 검색
+→ BGE Reranker
+→ 원문 후보 순위·무결성 상태 출력
 ```
 
----
+## 해결하려는 문제
 
-## 🏛️ V7.8 Enterprise Core Pillars: HDS-Gold Standard
+제조 현장의 공정·설비·품질 지식은 파일마다 용어, 폴더, 링크와 작성 형식이 달라 같은 문제를 다시 조사할 때 과거 원문을 찾는 데 시간이 듭니다.
 
-모든 지식 노드는 **HDS-Gold (High-Density, Deterministic, Scalable)** 규격을 만족하며, V7.8 사양에 따라 다음 4대 코어 메커니즘을 강제 이식받았습니다:
+HeungTology는 기존 문서를 대규모 시스템으로 이관하기 전에 다음과 같은 작은 시작점을 제공합니다.
 
-### 1. 🏛️ DAG 단일 상속 강제 (Single Inheritance DAG)
-- 다중 상속(`is_instance_of`가 리스트 구조인 경우)으로 발생하는 위상 탐색 루프 및 Neo4j 그래프 다운 현상을 차단합니다.
-- 부모 노드 ID를 **단일 문자열(`str`)**로 직결 처리하여 최적의 방향성 비순환 그래프(DAG)를 실현합니다.
+- 기존 Markdown 문서를 지식 Source로 유지
+- YAML Frontmatter로 Domain·문서유형·상위관계·신뢰도 구조화
+- 신규·수정 파일만 다시 색인해 전체 재처리 최소화
+- 자연어 질문으로 관련 원문 후보 탐색
+- Reranking으로 후보 우선순위 재정렬
+- 최종 사실판단과 공개판정은 사용자가 원문에서 수행
 
-### 2. 📉 질의 시점 시간 감쇄 (Query-Time Time Decay)
-- 정적 메타데이터의 한계를 극복하고, 시간의 흐름에 따라 실측 데이터의 신뢰도를 실시간으로 감쇄하여 랭킹에 JIT(Just-In-Time)로 반영합니다.
-- **수학적 모델**:
-  $$t_{dynamic} = t_{static} - \lambda \times \left(\frac{t_{current} - t_{doc}}{30.0}\right)$$
-  - 감쇄율($\lambda$): `Concept` 계열은 `0.0` (영구적 가치), `Data` 계열은 `0.05`로 동적 가중치 감쇄.
-  - 최저 신뢰도 하한 마진을 `0.1`로 락다운하여 원천적인 소거 오류 방지.
+## 현재 구현 구조
 
-### 3. 🛡️ SHA-256 실시간 해시 무결성 감사 (Real-Time Integrity Audit)
-- YAML 헤더 내에 본문 생성 시점의 해시(`original_hash`)를 식각합니다.
-- 사용자가 질문하는 찰나의 시점(Query-Time)에 RAG 구문분석기가 실시간으로 마크다운 본문의 SHA-256 해시를 재연산하여 검증합니다.
-- 만약 누군가 본문을 수동으로 위변조하거나 오염시킨 경우, 즉시 신뢰도를 **90% 삭감(0.1 곱연산)**하고 스코어보드에 `[🚨 위변조 감지]` 플래그를 표기해 탈락시킵니다.
+### 1. Knowledge Source
 
----
+지식 원문은 `02_Knowledge` 아래 Markdown 파일로 관리합니다. YAML Frontmatter에서 다음 항목을 읽습니다.
 
-## 🧠 Advanced Architecture: Dual-Core Search Protocol
+- Domain
+- Object Type
+- Tier
+- `is_instance_of`
+- Expected Queries
+- SPO 관계 Metadata
+- 문서 일자와 정적 신뢰도
 
-HeungTology는 단순한 키워드 매칭 RAG의 한계를 격파하고, **시맨틱 의미망(Semantic)**과 **위상 관계망(Topological)**을 실시간으로 교차 결합합니다.
+현재 관계정보는 별도 Graph DB를 순회하는 구조가 아니라, 검색 문맥에 포함해 Vector Retrieval과 Reranking에 활용합니다.
 
-### 1. Phase 1: 시맨틱 타겟팅 (Vector RAG)
-- **Engine**: ChromaDB (`antigravity_fabric_v78_enterprise` 컬렉션) + BGE-M3
-- **Logic**: 자연어 질문의 공학적 의도를 정밀 파악하여 3,177개 노드 중 가장 신뢰도가 높은 상위 의미 도메인을 0.05초 만에 식별합니다.
+### 2. Incremental Sync
 
-### 2. Phase 2: 위상망 연관 확장 (GraphRAG)
-- **Engine**: Obsidian-style `[[Link]]` Edges + Neo4j Graph Database
-- **Logic**: 식별된 노드의 `related_to` 및 `is_instance_of` 연결 경로를 따라 관계망을 무결한 단일 상속 DAG로 선형 확장 및 수집합니다.
+`rag_cli_v2.py --sync` 실행 시 다음 순서로 동작합니다.
 
-### 3. Phase 3: JIT 무결성 스코어링 & 융합 (Late Fusion Synthesis)
-- **Engine**: Gemini 2.5 Pro / Flash + Reranker-V2-M3
-- **Logic**: 실시간 본문 SHA-256 감사 검증을 필두로 최종 무결성 스코어보드를 정렬하고, 수집된 팩트들을 수학적 인과관계에 따라 환각(Zero Hallucination) 없는 고정밀 백서 형식으로 융합 출력합니다.
+1. 대상 폴더의 Markdown 파일 탐색
+2. 제외 폴더 필터링
+3. 파일 수정시각과 Checkpoint 비교
+4. 신규·수정 파일만 파싱
+5. ChromaDB에 문서 단위 Upsert
+6. 동기화 Checkpoint 갱신
 
----
+현재 구현은 신규·수정 파일의 증분 Upsert를 지원합니다. 삭제된 원문과 Index의 자동 정합화는 다음 Engineering Gate입니다.
 
-## 🛠️ Operational Commands (CUDA Environment)
+### 3. Local Retrieval Stack
 
-시스템의 재색인, 무결성 검증, 에이전트 융합 질의를 가동하기 위한 터미널 인터페이스입니다:
+| 구분 | 현재 구현 |
+|---|---|
+| Vector DB | ChromaDB Persistent Client |
+| Embedding | `BAAI/bge-m3` |
+| Reranker | `BAAI/bge-reranker-v2-m3` |
+| Runtime | Windows 로컬 환경·CUDA |
+| Interface | Python CLI |
+| Output | 후보 파일명·상위관계·재정렬 점수·무결성 상태 |
+
+Embedding과 Reranker는 로컬 모델을 사용합니다. 현재 Query 경로는 Google·Gemini 등 외부 LLM API를 호출하지 않습니다.
+
+### 4. Retrieval and Reranking
+
+질문 입력 후 다음 과정을 수행합니다.
+
+1. Tier 0 후보와 일반 후보 검색
+2. 동일 파일경로 중복 제거
+3. Query–Document Pair Reranking
+4. 문서일자 기반 동적 신뢰도 반영
+5. 본문 SHA-256과 저장된 Evidence Hash 비교
+6. 최종 후보 순위 출력
+
+Hash가 불일치하면 해당 후보의 Score를 낮추고 무결성 경고를 표시합니다. Hash가 없는 문서는 기존 신뢰도 기준으로 처리합니다.
+
+## 실행
+
+### 환경
+
+현재 코드는 CUDA 사용을 전제로 합니다.
+
+- Python
+- CUDA 대응 PyTorch
+- ChromaDB
+- Sentence Transformers
+- FlagEmbedding
+- python-frontmatter
+- 로컬에 준비된 BGE-M3·BGE Reranker Model
+
+### 전체 또는 변경분 동기화
 
 ```powershell
-# 1. 지식망 전수 동기화 및 V7.8 Enterprise 빌드 (CUDA 가속)
-.\.venv_cuda\Scripts\python.exe rag_cli_v2.py --sync
-
-# 2. 고해상도 지능 검색 (실시간 무결성 스코어보드 표출)
-.\.venv_cuda\Scripts\python.exe rag_cli_v2.py "질문 내용"
-
-# 3. 전역 고밀도 보강 및 메타데이터 자동 마이그레이션 격발
-.\.venv_cuda\Scripts\python.exe global_reinforcer_v7.py
+python rag_cli_v2.py --sync
 ```
 
----
+### 자연어 검색
 
-## 💻 Hardware Grounding (The Forge)
+```powershell
+python rag_cli_v2.py "2170 저항용접 미접합과 Formation IR의 관계"
+```
 
-HeungTology는 아래의 물리적 연산 환경에서 최대 가속 성능을 보장받도록 설계되었습니다.
+CLI는 관련 원문 후보를 순위로 보여줍니다. 최종 답변 생성, 인용문 조립과 권한판정은 현재 실행범위에 포함되지 않습니다.
 
-- **Hardware**: Lenovo Legion 5 (GeForce RTX 4060 Laptop 8GB VRAM / 32GB RAM / AMD Ryzen 7)
-- **AI Engine**: CUDA 12.5.1 / PyTorch v2.10.0 / OpenVINO v2025.4.0
-- **Database**: ChromaDB Local Engine & Neo4j Community Server
+## 전통 제조기업 적용 관점
 
----
-**[V7.8_ENTERPRISE_SYSTEM_LOCKED]**
-**[HEUNGTOLOGY COGNITIVE FABRIC ACTIVE]**
-**[CHIEF KNOWLEDGE ARCHITECT & MODERATOR: FLASH]**
+이 프로젝트의 실용성은 고가의 Enterprise Platform을 즉시 도입했다는 데 있지 않습니다. 기존 파일을 유지하면서 작은 범위부터 검색 가능하게 만들 수 있다는 점에 있습니다.
+
+- 기존 Markdown·문서 폴더 재사용
+- 변경분 중심의 증분 색인
+- 원문 후보를 먼저 보여주는 검토형 검색
+- 제조 Domain·문서유형·관계 Metadata 보존
+- 향후 부서별 권한·Web UI·외부 API Adapter로 확장 가능한 분리구조
+
+현재 로컬 CUDA 구조는 외부 API 사용료가 없지만 GPU 환경을 요구합니다. 표준 사무용 PC와 외부 API를 사용하는 경량 배포형은 현재 구현이 아니라 후속 Architecture Option입니다.
+
+## 다음 Engineering Gate
+
+- CPU Fallback과 표준 PC Benchmark
+- 외부 Embedding·LLM API Adapter 및 비용정책
+- 삭제·이동 파일과 Index 정합화
+- 문서 Chunking·원문 위치 표시
+- 대표 Query·정답문서 Ground Truth 기반 Retrieval 평가
+- Web UI·사용자 인증·부서별 권한
+- 생성답변·Citation·원문 Readback
+- Secret·감사로그·장애복구와 운영배포
+
+## 현재 완료범위
+
+- Markdown·YAML Source 구조
+- 신규·수정 파일 증분 동기화
+- ChromaDB 문서 Index
+- BGE-M3 후보검색
+- BGE Reranker 재정렬
+- 신뢰도·Hash 기반 후보 Score 보정
+- CLI 검색결과 출력
+
+HeungTology는 현재 **로컬 제조지식 검색 프로토타입**입니다. 운영형 사내 LLM Wiki는 위 Engineering Gate를 통과한 다음 단계입니다.
