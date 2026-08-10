@@ -1,0 +1,96 @@
+name: Publish HeungTology Graphfy and Gemma 12B evidence
+
+on:
+  push:
+    branches:
+      - work/heungtology-agent-evidence-20260810
+    paths:
+      - '.github/workflows/publish-heungtology-agent-evidence.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out evidence branch
+        uses: actions/checkout@v4
+        with:
+          ref: work/heungtology-agent-evidence-20260810
+          fetch-depth: 0
+
+      - name: Refresh exact branch head
+        shell: bash
+        run: |
+          set -euo pipefail
+          git pull --ff-only origin work/heungtology-agent-evidence-20260810
+
+      - name: Materialize user-approved WebP evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs/evidence
+          base64 -d .github/runtime-evidence/heungtology-graph-before.webp.b64 > docs/evidence/heungtology-graph-before.webp
+          cat \
+            .github/runtime-evidence/heungtology-graphfy-connected.webp.b64.part00 \
+            .github/runtime-evidence/heungtology-graphfy-connected.webp.b64.part01 \
+            | base64 -d > docs/evidence/heungtology-graphfy-connected.webp
+          cat \
+            .github/runtime-evidence/heungtology-agent-document-example.webp.b64.part00 \
+            .github/runtime-evidence/heungtology-agent-document-example.webp.b64.part01 \
+            .github/runtime-evidence/heungtology-agent-document-example.webp.b64.part02 \
+            | base64 -d > docs/evidence/heungtology-agent-document-example.webp
+
+          test "$(stat -c%s docs/evidence/heungtology-graph-before.webp)" = '2280'
+          test "$(stat -c%s docs/evidence/heungtology-graphfy-connected.webp)" = '7982'
+          test "$(stat -c%s docs/evidence/heungtology-agent-document-example.webp)" = '15346'
+          file docs/evidence/*.webp | grep -c 'Web/P image' | grep -q '^3$'
+
+      - name: Verify Graph, RAG, and Agent evidence contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          for phrase in \
+            'Graphfy 관계 연결' \
+            'Gemma 12B Agent 문서생성' \
+            '엔지니어 원문·수치·적용범위 검토' \
+            'heungtology-graph-before.webp' \
+            'heungtology-graphfy-connected.webp' \
+            'heungtology-agent-document-example.webp'; do
+            grep -Fq "$phrase" README.md
+          done
+
+          test -s examples/agent_outputs/REPORT_LFP_ELECTRODE_ADHESION_DENSITY_ANALYSIS_GEMMA12B_DRAFT.md
+          test -s examples/agent_outputs/SIB_50Ah_CELL_MANUFACTURING_PROCESS_SPEC_GEMMA12B_DRAFT.md
+          test -s examples/agent_outputs/SIB_50Ah_CELL_DESIGN_SPECIFICATION_GEMMA12B_DRAFT.md
+
+          grep -Fq 'Public_Sanitized_Agent_Output' examples/agent_outputs/REPORT_LFP_ELECTRODE_ADHESION_DENSITY_ANALYSIS_GEMMA12B_DRAFT.md
+          if grep -RFiq 'Enterprise_Confidential' examples/agent_outputs; then
+            echo 'Confidential classification leaked into public samples' >&2
+            exit 1
+          fi
+          for file in examples/agent_outputs/*_DRAFT.md; do
+            grep -Fq 'Gemma 12B Agent 실행에서 생성된 엔지니어링 초안' "$file"
+            grep -Fq '실제 사용 전 원문 근거와 엔지니어 검토가 필요' "$file"
+          done
+
+      - name: Squash public evidence onto main
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE='5e1dd72ef6defba33507767730cb77a69ea17045'
+          rm -rf .github/runtime-evidence
+          rm -f .github/workflows/publish-heungtology-agent-evidence.yml
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --check
+          git reset --soft "$BASE"
+          git add -A
+          git diff --cached --check
+          git commit -m 'feat: add Graphfy and Gemma 12B runtime evidence'
+          git push origin HEAD:main
