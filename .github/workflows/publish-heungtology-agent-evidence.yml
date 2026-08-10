@@ -1,4 +1,5 @@
 name: Publish HeungTology Graphfy and Gemma 12B evidence
+# rerun: normalize public Markdown whitespace before squashing
 
 on:
   push:
@@ -84,6 +85,7 @@ jobs:
           BASE='5e1dd72ef6defba33507767730cb77a69ea17045'
           rm -rf .github/runtime-evidence
           rm -f .github/workflows/publish-heungtology-agent-evidence.yml
+          sed -i 's/[[:space:]]\+$//' README.md examples/agent_outputs/*.md
 
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
