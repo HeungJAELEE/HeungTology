@@ -1,93 +1,113 @@
 # HeungTology
 
-제조·반도체·배터리 분야의 Markdown 지식을 **변경분만 증분 색인**하고, 자연어 질문과 관련된 **원문 후보 파일을 검색·재정렬**하는 로컬 RAG 검색 프로토타입입니다.
-
-현재 구현은 답변을 자동 생성하는 사내 챗봇이 아니라 다음 작업에 집중합니다.
+제조·반도체·배터리 분야의 Markdown 지식을 **관계형 Graph와 RAG 검색으로 연결**하고, 검색된 근거를 바탕으로 **Gemma 12B Agent가 검토용 엔지니어링 문서 초안**을 작성하는 개인 제조 AX 프로토타입입니다.
 
 ```text
 Markdown·YAML 원문
+→ Graphfy 관계 연결
 → 변경 파일 감지
-→ Metadata·관계정보 파싱
-→ BGE-M3 Embedding
-→ ChromaDB 증분 Upsert
-→ 후보 검색
-→ BGE Reranker
-→ 원문 후보 순위·무결성 상태 출력
+→ BGE-M3 Embedding·ChromaDB 증분 Upsert
+→ 후보 검색·BGE Reranking
+→ Gemma 12B 문서 초안
+→ 엔지니어 원문·수치·적용범위 검토
 ```
 
 ## 해결하려는 문제
 
-제조 현장의 공정·설비·품질 지식은 파일마다 용어, 폴더, 링크와 작성 형식이 달라 같은 문제를 다시 조사할 때 과거 원문을 찾는 데 시간이 듭니다.
+제조 현장의 공정·설비·품질 지식은 파일마다 용어, 폴더, 링크와 작성 형식이 달라 같은 문제가 재발해도 과거 원문과 관련 문서를 다시 찾는 데 시간이 듭니다. 검색 결과를 찾은 뒤에도 원인분석 보고서, 공정 Spec과 실행계획으로 재구성하려면 별도의 정리 작업이 필요합니다.
 
-HeungTology는 기존 문서를 대규모 시스템으로 이관하기 전에 다음과 같은 작은 시작점을 제공합니다.
+HeungTology는 기존 Markdown 원장을 유지하면서 다음 흐름을 연결합니다.
 
-- 기존 Markdown 문서를 지식 Source로 유지
-- YAML Frontmatter로 Domain·문서유형·상위관계·신뢰도 구조화
-- 신규·수정 파일만 다시 색인해 전체 재처리 최소화
-- 자연어 질문으로 관련 원문 후보 탐색
-- Reranking으로 후보 우선순위 재정렬
-- 최종 사실판단과 공개판정은 사용자가 원문에서 수행
+- YAML Frontmatter와 문서 링크를 이용한 지식 구조화
+- Graphfy를 이용한 분산 문서의 관계 시각화
+- 신규·수정 파일만 반영하는 증분 RAG 색인
+- 자연어 질문에 대한 후보 원문 검색·재정렬
+- 검색된 지식노드를 사용한 Gemma 12B 엔지니어링 초안 생성
+- 원문 근거·수치·공정조건을 사람이 다시 확인하는 검토 Gate
 
-## 현재 구현 구조
+## 1. Knowledge Graph: 분산 문서에서 관계형 지식으로
 
-### 1. Knowledge Source
+### 분산된 지식 상태
 
-지식 원문은 `02_Knowledge` 아래 Markdown 파일로 관리합니다. YAML Frontmatter에서 다음 항목을 읽습니다.
+![분산된 제조 지식망](docs/evidence/heungtology-graph-before.webp)
 
-- Domain
-- Object Type
-- Tier
-- `is_instance_of`
-- Expected Queries
-- SPO 관계 Metadata
-- 문서 일자와 정적 신뢰도
+문서와 Metadata는 존재하지만 도메인·상위개념·관련문서의 연결이 약한 상태입니다.
 
-현재 관계정보는 별도 Graph DB를 순회하는 구조가 아니라, 검색 문맥에 포함해 Vector Retrieval과 Reranking에 활용합니다.
+### Graphfy 연결 후
 
-### 2. Incremental Sync
+![Graphfy 연결 후 제조 지식망](docs/evidence/heungtology-graphfy-connected.webp)
+
+문서 링크, Frontmatter와 관계 Metadata를 바탕으로 지식노드 간 연결을 시각화했습니다. Graph View는 검색결과의 원문·상위관계·연관문서를 탐색하는 보조계층입니다.
+
+## 2. RAG Retrieval Core
+
+공개 코드의 검색 코어는 다음 순서로 동작합니다.
+
+### Knowledge Source
+
+지식 원문은 `02_Knowledge` 아래 Markdown 파일로 관리합니다. YAML Frontmatter에서 Domain, Object Type, Tier, `is_instance_of`, Expected Queries, SPO 관계, 문서일자와 신뢰도 값을 읽습니다.
+
+### Incremental Sync
 
 `rag_cli_v2.py --sync` 실행 시 다음 순서로 동작합니다.
 
 1. 대상 폴더의 Markdown 파일 탐색
 2. 제외 폴더 필터링
 3. 파일 수정시각과 Checkpoint 비교
-4. 신규·수정 파일만 파싱
-5. ChromaDB에 문서 단위 Upsert
+4. 신규·수정 파일만 Parsing
+5. ChromaDB 문서 단위 Upsert
 6. 동기화 Checkpoint 갱신
 
-현재 구현은 신규·수정 파일의 증분 Upsert를 지원합니다. 삭제된 원문과 Index의 자동 정합화는 다음 Engineering Gate입니다.
+### Retrieval and Reranking
 
-### 3. Local Retrieval Stack
+1. BGE-M3 Query Embedding
+2. Tier 0 후보와 일반 후보 검색
+3. 동일 파일경로 중복 제거
+4. BGE Reranker 기반 Query–Document 재정렬
+5. 문서일자·Trust Score 반영
+6. 본문 SHA-256과 Evidence Hash 비교
+7. 후보 파일명·상위관계·Score·무결성 상태 출력
 
-| 구분 | 현재 구현 |
-|---|---|
-| Vector DB | ChromaDB Persistent Client |
-| Embedding | `BAAI/bge-m3` |
-| Reranker | `BAAI/bge-reranker-v2-m3` |
-| Runtime | Windows 로컬 환경·CUDA |
-| Interface | Python CLI |
-| Output | 후보 파일명·상위관계·재정렬 점수·무결성 상태 |
+## 3. Gemma 12B Agent 문서생성
 
-Embedding과 Reranker는 로컬 모델을 사용합니다. 현재 Query 경로는 Google·Gemini 등 외부 LLM API를 호출하지 않습니다.
+RAG 검색 결과와 관계형 지식노드를 Gemma 12B Agent의 Context로 전달해 Markdown 형식의 엔지니어링 초안을 생성했습니다.
 
-### 4. Retrieval and Reranking
+![Gemma 12B Agent가 생성한 엔지니어링 문서 예시](docs/evidence/heungtology-agent-document-example.webp)
 
-질문 입력 후 다음 과정을 수행합니다.
+```text
+사용자 요청
+→ Graph·RAG 후보검색
+→ 관련 지식노드·원문 Context
+→ Gemma 12B Agent
+→ 원인분석·Spec·FMEA·실행계획 Markdown
+→ 엔지니어 검토·수정
+```
 
-1. Tier 0 후보와 일반 후보 검색
-2. 동일 파일경로 중복 제거
-3. Query–Document Pair Reranking
-4. 문서일자 기반 동적 신뢰도 반영
-5. 본문 SHA-256과 저장된 Evidence Hash 비교
-6. 최종 후보 순위 출력
+### 공개 실행 예시
 
-Hash가 불일치하면 해당 후보의 Score를 낮추고 무결성 경고를 표시합니다. Hash가 없는 문서는 기존 신뢰도 기준으로 처리합니다.
+- [LFP 전극 탈리·밀도 부족 원인분석 초안](examples/agent_outputs/REPORT_LFP_ELECTRODE_ADHESION_DENSITY_ANALYSIS_GEMMA12B_DRAFT.md)
+- [SIB 50Ah 제조공정 Spec 초안](examples/agent_outputs/SIB_50Ah_CELL_MANUFACTURING_PROCESS_SPEC_GEMMA12B_DRAFT.md)
+- [SIB 50Ah Cell 설계 Spec 초안](examples/agent_outputs/SIB_50Ah_CELL_DESIGN_SPECIFICATION_GEMMA12B_DRAFT.md)
+- [Agent Output Sample 설명](examples/agent_outputs/README.md)
+
+위 산출물은 로컬 지식망과 Gemma 12B 실행에서 생성된 **검토용 문서 초안**입니다. 실제 공정·제품 적용 전에는 출처, 수치, 조건, 적용범위와 보안등급을 엔지니어가 다시 판정합니다.
+
+## 현재 구성과 증거
+
+| 계층 | 현재 상태 | 공개 증거 |
+|---|---|---|
+| Markdown·YAML 지식원장 | 구현 | `02_Knowledge` |
+| 관계 Graph | 로컬 실행 | Graphfy 전·후 Screenshot |
+| 증분 RAG 검색 | 구현 | `rag_cli_v2.py` |
+| ChromaDB·BGE-M3·Reranker | 구현 | 공개 검색코드 |
+| Gemma 12B 문서생성 | 로컬 실행 | Screenshot·Markdown Sample 3건 |
+| Web·권한·감사로그 | 후속 | Engineering Gate |
 
 ## 실행
 
 ### 환경
 
-현재 코드는 CUDA 사용을 전제로 합니다.
+현재 공개 검색코드는 Windows 로컬 CUDA 환경을 사용합니다.
 
 - Python
 - CUDA 대응 PyTorch
@@ -95,7 +115,7 @@ Hash가 불일치하면 해당 후보의 Score를 낮추고 무결성 경고를 
 - Sentence Transformers
 - FlagEmbedding
 - python-frontmatter
-- 로컬에 준비된 BGE-M3·BGE Reranker Model
+- BGE-M3·BGE Reranker Model
 
 ### 전체 또는 변경분 동기화
 
@@ -109,39 +129,33 @@ python rag_cli_v2.py --sync
 python rag_cli_v2.py "2170 저항용접 미접합과 Formation IR의 관계"
 ```
 
-CLI는 관련 원문 후보를 순위로 보여줍니다. 최종 답변 생성, 인용문 조립과 권한판정은 현재 실행범위에 포함되지 않습니다.
-
 ## 전통 제조기업 적용 관점
 
-이 프로젝트의 실용성은 고가의 Enterprise Platform을 즉시 도입했다는 데 있지 않습니다. 기존 파일을 유지하면서 작은 범위부터 검색 가능하게 만들 수 있다는 점에 있습니다.
+이 프로젝트의 핵심은 기존 문서를 대규모 시스템으로 이관하기 전에 작은 범위에서 다음 선순환을 만드는 것입니다.
+
+```text
+문서 표준화
+→ 검색 가능성 향상
+→ 관련 원문 재사용
+→ Agent 문서초안 생성
+→ 엔지니어 검토
+→ 수정된 지식 재색인
+```
 
 - 기존 Markdown·문서 폴더 재사용
 - 변경분 중심의 증분 색인
-- 원문 후보를 먼저 보여주는 검토형 검색
-- 제조 Domain·문서유형·관계 Metadata 보존
-- 향후 부서별 권한·Web UI·외부 API Adapter로 확장 가능한 분리구조
-
-현재 로컬 CUDA 구조는 외부 API 사용료가 없지만 GPU 환경을 요구합니다. 표준 사무용 PC와 외부 API를 사용하는 경량 배포형은 현재 구현이 아니라 후속 Architecture Option입니다.
+- Graph 관계와 원문 후보를 함께 탐색
+- 반복 보고서·Spec 초안 작성 지원
+- 잘 검색되지 않는 문서의 Metadata·용어 개선
 
 ## 다음 Engineering Gate
 
-- CPU Fallback과 표준 PC Benchmark
-- 외부 Embedding·LLM API Adapter 및 비용정책
 - 삭제·이동 파일과 Index 정합화
-- 문서 Chunking·원문 위치 표시
+- 문서 Chunking·원문 위치 Anchor
 - 대표 Query·정답문서 Ground Truth 기반 Retrieval 평가
+- Graphfy 관계 생성·갱신 절차의 코드화
+- Gemma 12B Agent Prompt·Context·Output Version 고정
+- 생성문서 Citation·원문 Readback
+- CPU Fallback·External API Adapter
 - Web UI·사용자 인증·부서별 권한
-- 생성답변·Citation·원문 Readback
-- Secret·감사로그·장애복구와 운영배포
-
-## 현재 완료범위
-
-- Markdown·YAML Source 구조
-- 신규·수정 파일 증분 동기화
-- ChromaDB 문서 Index
-- BGE-M3 후보검색
-- BGE Reranker 재정렬
-- 신뢰도·Hash 기반 후보 Score 보정
-- CLI 검색결과 출력
-
-HeungTology는 현재 **로컬 제조지식 검색 프로토타입**입니다. 운영형 사내 LLM Wiki는 위 Engineering Gate를 통과한 다음 단계입니다.
+- Secret·감사로그·장애복구·운영배포
